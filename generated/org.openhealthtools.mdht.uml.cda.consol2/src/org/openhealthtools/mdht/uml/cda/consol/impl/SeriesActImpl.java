@@ -10,6 +10,7 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -55,7 +56,6 @@ public class SeriesActImpl extends ActImpl implements SeriesAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateSeriesActIdHasRoot(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SeriesActOperations.validateSeriesActIdHasRoot(this, diagnostics, context);
 	}
@@ -65,7 +65,6 @@ public class SeriesActImpl extends ActImpl implements SeriesAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateSeriesActIdNoExtension(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SeriesActOperations.validateSeriesActIdNoExtension(this, diagnostics, context);
 	}
@@ -75,7 +74,6 @@ public class SeriesActImpl extends ActImpl implements SeriesAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateSeriesActCodeQualifier(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SeriesActOperations.validateSeriesActCodeQualifier(this, diagnostics, context);
 	}
@@ -85,7 +83,6 @@ public class SeriesActImpl extends ActImpl implements SeriesAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateSeriesActCodeQualifierCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SeriesActOperations.validateSeriesActCodeQualifierCode(this, diagnostics, context);
 	}
@@ -95,7 +92,6 @@ public class SeriesActImpl extends ActImpl implements SeriesAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateSeriesActCodeQualifierValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SeriesActOperations.validateSeriesActCodeQualifierValue(this, diagnostics, context);
 	}
@@ -105,7 +101,6 @@ public class SeriesActImpl extends ActImpl implements SeriesAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateSeriesActCodeQualifierValueCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SeriesActOperations.validateSeriesActCodeQualifierValueCode(this, diagnostics, context);
 	}
@@ -115,7 +110,6 @@ public class SeriesActImpl extends ActImpl implements SeriesAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateSeriesActTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SeriesActOperations.validateSeriesActTemplateId(this, diagnostics, context);
 	}
@@ -125,7 +119,6 @@ public class SeriesActImpl extends ActImpl implements SeriesAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateSeriesActClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SeriesActOperations.validateSeriesActClassCode(this, diagnostics, context);
 	}
@@ -135,7 +128,6 @@ public class SeriesActImpl extends ActImpl implements SeriesAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateSeriesActMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SeriesActOperations.validateSeriesActMoodCode(this, diagnostics, context);
 	}
@@ -145,7 +137,6 @@ public class SeriesActImpl extends ActImpl implements SeriesAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateSeriesActCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SeriesActOperations.validateSeriesActCode(this, diagnostics, context);
 	}
@@ -155,7 +146,6 @@ public class SeriesActImpl extends ActImpl implements SeriesAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateSeriesActEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SeriesActOperations.validateSeriesActEffectiveTime(this, diagnostics, context);
 	}
@@ -165,7 +155,6 @@ public class SeriesActImpl extends ActImpl implements SeriesAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateSeriesActId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SeriesActOperations.validateSeriesActId(this, diagnostics, context);
 	}
@@ -175,7 +164,6 @@ public class SeriesActImpl extends ActImpl implements SeriesAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateSeriesActText(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SeriesActOperations.validateSeriesActText(this, diagnostics, context);
 	}
@@ -185,17 +173,15 @@ public class SeriesActImpl extends ActImpl implements SeriesAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateSeriesActSOPInstanceObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SeriesActOperations.validateSeriesActSOPInstanceObservation(this, diagnostics, context);
 	}
 
 	/**
 	 * <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EList<SOPInstanceObservation> getSOPInstanceObservations() {
 		return SeriesActOperations.getSOPInstanceObservations(this);
 	}
@@ -205,17 +191,15 @@ public class SeriesActImpl extends ActImpl implements SeriesAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public SeriesAct init() {
 		return Initializer.Util.init(this);
 	}
 
 	/**
 	 * <!-- begin-user-doc -->
-	   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public SeriesAct init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

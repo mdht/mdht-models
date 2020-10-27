@@ -6,6 +6,7 @@
  */
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -62,7 +63,6 @@ public class ProcedureIndicationsSection2Impl extends ProcedureIndicationsSectio
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EList<Indication2> getConsolIndication2s() {
 		return ProcedureIndicationsSection2Operations.getConsolIndication2s(this);
 	}

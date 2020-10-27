@@ -6,6 +6,7 @@
  */
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -68,7 +69,6 @@ public class HealthStatusObservation2Impl extends HealthStatusObservationImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateHealthStatusObservationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return HealthStatusObservation2Operations.validateHealthStatusObservationCodeP(this, diagnostics, context);
 	}
@@ -78,7 +78,6 @@ public class HealthStatusObservation2Impl extends HealthStatusObservationImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateHealthStatusObservationStatusCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return HealthStatusObservation2Operations.validateHealthStatusObservationStatusCodeP(

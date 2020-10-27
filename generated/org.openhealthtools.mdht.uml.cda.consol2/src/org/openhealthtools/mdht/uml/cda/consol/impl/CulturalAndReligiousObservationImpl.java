@@ -6,6 +6,7 @@
  */
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -60,7 +61,6 @@ public class CulturalAndReligiousObservationImpl extends ObservationImpl impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateCulturalAndReligiousObservationTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CulturalAndReligiousObservationOperations.validateCulturalAndReligiousObservationTemplateId(
@@ -72,7 +72,6 @@ public class CulturalAndReligiousObservationImpl extends ObservationImpl impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateCulturalAndReligiousObservationClassCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CulturalAndReligiousObservationOperations.validateCulturalAndReligiousObservationClassCode(
@@ -84,7 +83,6 @@ public class CulturalAndReligiousObservationImpl extends ObservationImpl impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateCulturalAndReligiousObservationMoodCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CulturalAndReligiousObservationOperations.validateCulturalAndReligiousObservationMoodCode(
@@ -96,7 +94,6 @@ public class CulturalAndReligiousObservationImpl extends ObservationImpl impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateCulturalAndReligiousObservationId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CulturalAndReligiousObservationOperations.validateCulturalAndReligiousObservationId(
 			this, diagnostics, context);
@@ -107,7 +104,6 @@ public class CulturalAndReligiousObservationImpl extends ObservationImpl impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateCulturalAndReligiousObservationCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CulturalAndReligiousObservationOperations.validateCulturalAndReligiousObservationCodeP(
@@ -119,7 +115,6 @@ public class CulturalAndReligiousObservationImpl extends ObservationImpl impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateCulturalAndReligiousObservationCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CulturalAndReligiousObservationOperations.validateCulturalAndReligiousObservationCode(
@@ -131,7 +126,6 @@ public class CulturalAndReligiousObservationImpl extends ObservationImpl impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateCulturalAndReligiousObservationStatusCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CulturalAndReligiousObservationOperations.validateCulturalAndReligiousObservationStatusCode(
@@ -143,7 +137,6 @@ public class CulturalAndReligiousObservationImpl extends ObservationImpl impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateCulturalAndReligiousObservationStatusCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CulturalAndReligiousObservationOperations.validateCulturalAndReligiousObservationStatusCodeP(
@@ -155,7 +148,6 @@ public class CulturalAndReligiousObservationImpl extends ObservationImpl impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateCulturalAndReligiousObservationValue(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CulturalAndReligiousObservationOperations.validateCulturalAndReligiousObservationValue(
@@ -167,7 +159,6 @@ public class CulturalAndReligiousObservationImpl extends ObservationImpl impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public CulturalAndReligiousObservation init() {
 		return Initializer.Util.init(this);
 	}
@@ -177,7 +168,6 @@ public class CulturalAndReligiousObservationImpl extends ObservationImpl impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public CulturalAndReligiousObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

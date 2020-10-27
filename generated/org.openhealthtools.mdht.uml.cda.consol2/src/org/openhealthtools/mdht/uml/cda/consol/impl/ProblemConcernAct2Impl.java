@@ -6,6 +6,7 @@
  */
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -60,7 +61,6 @@ public class ProblemConcernAct2Impl extends ProblemConcernActImpl implements Pro
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateProblemConcernActStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProblemConcernAct2Operations.validateProblemConcernActStatusCodeP(this, diagnostics, context);
 	}
@@ -70,7 +70,6 @@ public class ProblemConcernAct2Impl extends ProblemConcernActImpl implements Pro
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateProblemConcernAct2AuthorParticipation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProblemConcernAct2Operations.validateProblemConcernAct2AuthorParticipation(this, diagnostics, context);
@@ -100,7 +99,6 @@ public class ProblemConcernAct2Impl extends ProblemConcernActImpl implements Pro
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EList<ProblemObservation2> getConsolProblemObservation2s() {
 		return ProblemConcernAct2Operations.getConsolProblemObservation2s(this);
 	}

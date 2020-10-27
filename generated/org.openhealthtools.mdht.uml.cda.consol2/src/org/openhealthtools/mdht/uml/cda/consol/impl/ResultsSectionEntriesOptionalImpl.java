@@ -10,6 +10,7 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -55,7 +56,6 @@ public class ResultsSectionEntriesOptionalImpl extends SectionImpl implements Re
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateResultsSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ResultsSectionEntriesOptionalOperations.validateResultsSectionEntriesOptionalTemplateId(
@@ -67,7 +67,6 @@ public class ResultsSectionEntriesOptionalImpl extends SectionImpl implements Re
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateResultsSectionEntriesOptionalCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ResultsSectionEntriesOptionalOperations.validateResultsSectionEntriesOptionalCode(
 			this, diagnostics, context);
@@ -75,10 +74,9 @@ public class ResultsSectionEntriesOptionalImpl extends SectionImpl implements Re
 
 	/**
 	 * <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateResultsSectionEntriesOptionalCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ResultsSectionEntriesOptionalOperations.validateResultsSectionEntriesOptionalCodeP(
@@ -90,7 +88,6 @@ public class ResultsSectionEntriesOptionalImpl extends SectionImpl implements Re
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateResultsSectionEntriesOptionalTitle(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ResultsSectionEntriesOptionalOperations.validateResultsSectionEntriesOptionalTitle(
@@ -102,7 +99,6 @@ public class ResultsSectionEntriesOptionalImpl extends SectionImpl implements Re
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateResultsSectionEntriesOptionalText(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ResultsSectionEntriesOptionalOperations.validateResultsSectionEntriesOptionalText(
 			this, diagnostics, context);
@@ -113,7 +109,6 @@ public class ResultsSectionEntriesOptionalImpl extends SectionImpl implements Re
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateResultsSectionEntriesOptionalResultOrganizer(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ResultsSectionEntriesOptionalOperations.validateResultsSectionEntriesOptionalResultOrganizer(
@@ -125,7 +120,6 @@ public class ResultsSectionEntriesOptionalImpl extends SectionImpl implements Re
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EList<ResultOrganizer> getResultOrganizers() {
 		return ResultsSectionEntriesOptionalOperations.getResultOrganizers(this);
 	}
@@ -135,17 +129,15 @@ public class ResultsSectionEntriesOptionalImpl extends SectionImpl implements Re
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public ResultsSectionEntriesOptional init() {
 		return Initializer.Util.init(this);
 	}
 
 	/**
 	 * <!-- begin-user-doc -->
-	   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public ResultsSectionEntriesOptional init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

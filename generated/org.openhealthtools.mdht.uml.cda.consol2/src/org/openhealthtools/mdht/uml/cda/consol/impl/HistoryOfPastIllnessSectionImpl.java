@@ -10,6 +10,7 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -55,7 +56,6 @@ public class HistoryOfPastIllnessSectionImpl extends SectionImpl implements Hist
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateHistoryOfPastIllnessSectionTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return HistoryOfPastIllnessSectionOperations.validateHistoryOfPastIllnessSectionTemplateId(
@@ -67,7 +67,6 @@ public class HistoryOfPastIllnessSectionImpl extends SectionImpl implements Hist
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateHistoryOfPastIllnessSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return HistoryOfPastIllnessSectionOperations.validateHistoryOfPastIllnessSectionCode(
 			this, diagnostics, context);
@@ -75,10 +74,9 @@ public class HistoryOfPastIllnessSectionImpl extends SectionImpl implements Hist
 
 	/**
 	 * <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateHistoryOfPastIllnessSectionCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return HistoryOfPastIllnessSectionOperations.validateHistoryOfPastIllnessSectionCodeP(
 			this, diagnostics, context);
@@ -89,7 +87,6 @@ public class HistoryOfPastIllnessSectionImpl extends SectionImpl implements Hist
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateHistoryOfPastIllnessSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return HistoryOfPastIllnessSectionOperations.validateHistoryOfPastIllnessSectionTitle(
 			this, diagnostics, context);
@@ -100,7 +97,6 @@ public class HistoryOfPastIllnessSectionImpl extends SectionImpl implements Hist
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateHistoryOfPastIllnessSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return HistoryOfPastIllnessSectionOperations.validateHistoryOfPastIllnessSectionText(
 			this, diagnostics, context);
@@ -111,7 +107,6 @@ public class HistoryOfPastIllnessSectionImpl extends SectionImpl implements Hist
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateHistoryOfPastIllnessSectionProblemObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return HistoryOfPastIllnessSectionOperations.validateHistoryOfPastIllnessSectionProblemObservation(
@@ -123,7 +118,6 @@ public class HistoryOfPastIllnessSectionImpl extends SectionImpl implements Hist
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EList<ProblemObservation> getProblemObservations() {
 		return HistoryOfPastIllnessSectionOperations.getProblemObservations(this);
 	}
@@ -133,17 +127,15 @@ public class HistoryOfPastIllnessSectionImpl extends SectionImpl implements Hist
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public HistoryOfPastIllnessSection init() {
 		return Initializer.Util.init(this);
 	}
 
 	/**
 	 * <!-- begin-user-doc -->
-	   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public HistoryOfPastIllnessSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

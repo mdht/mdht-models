@@ -10,6 +10,7 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -55,7 +56,6 @@ public class PlannedProcedureSectionImpl extends SectionImpl implements PlannedP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validatePlannedProcedureSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PlannedProcedureSectionOperations.validatePlannedProcedureSectionTemplateId(this, diagnostics, context);
 	}
@@ -65,17 +65,15 @@ public class PlannedProcedureSectionImpl extends SectionImpl implements PlannedP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validatePlannedProcedureSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PlannedProcedureSectionOperations.validatePlannedProcedureSectionCode(this, diagnostics, context);
 	}
 
 	/**
 	 * <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validatePlannedProcedureSectionCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PlannedProcedureSectionOperations.validatePlannedProcedureSectionCodeP(this, diagnostics, context);
 	}
@@ -85,17 +83,6 @@ public class PlannedProcedureSectionImpl extends SectionImpl implements PlannedP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validatePlannedProcedureSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PlannedProcedureSectionOperations.validatePlannedProcedureSectionText(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public boolean validatePlannedProcedureSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PlannedProcedureSectionOperations.validatePlannedProcedureSectionTitle(this, diagnostics, context);
 	}
@@ -105,7 +92,15 @@ public class PlannedProcedureSectionImpl extends SectionImpl implements PlannedP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
+	public boolean validatePlannedProcedureSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PlannedProcedureSectionOperations.validatePlannedProcedureSectionText(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validatePlannedProcedureSectionPlanOfCareActivityProcedure(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PlannedProcedureSectionOperations.validatePlannedProcedureSectionPlanOfCareActivityProcedure(
@@ -117,7 +112,6 @@ public class PlannedProcedureSectionImpl extends SectionImpl implements PlannedP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EList<PlanOfCareActivityProcedure> getPlanOfCareActivityProcedures() {
 		return PlannedProcedureSectionOperations.getPlanOfCareActivityProcedures(this);
 	}
@@ -127,17 +121,15 @@ public class PlannedProcedureSectionImpl extends SectionImpl implements PlannedP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public PlannedProcedureSection init() {
 		return Initializer.Util.init(this);
 	}
 
 	/**
 	 * <!-- begin-user-doc -->
-	   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public PlannedProcedureSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

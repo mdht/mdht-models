@@ -568,7 +568,7 @@ public class CarePlanTest extends CDAValidationTest {
 				/* HealthConcernsSection */
 				HealthConcernsSection section =
 
-				ConsolFactory.eINSTANCE.createHealthConcernsSection().init();
+						ConsolFactory.eINSTANCE.createHealthConcernsSection().init();
 
 				target.addSection(section);
 
@@ -609,7 +609,7 @@ public class CarePlanTest extends CDAValidationTest {
 				/* GoalsSection */
 				GoalsSection section =
 
-				ConsolFactory.eINSTANCE.createGoalsSection().init();
+						ConsolFactory.eINSTANCE.createGoalsSection().init();
 
 				target.addSection(section);
 
@@ -1547,7 +1547,7 @@ public class CarePlanTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(CarePlan target) {
 				target.getParticipants().get(0).getAssociatedEntity().setCode(
-					DatatypesFactory.eINSTANCE.createCE("CodeNotCurrentlyChecked", "2.16.840.1.113883.5.111"));
+					DatatypesFactory.eINSTANCE.createCE("DAUINLAW", "2.16.840.1.113883.5.111"));
 			}
 
 			@Override

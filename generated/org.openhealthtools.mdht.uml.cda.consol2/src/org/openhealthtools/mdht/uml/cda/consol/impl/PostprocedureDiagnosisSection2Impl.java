@@ -6,6 +6,7 @@
  */
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -61,7 +62,6 @@ public class PostprocedureDiagnosisSection2Impl extends PostprocedureDiagnosisSe
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public PostprocedureDiagnosis2 getConsolPostprocedureDiagnosis2() {
 		return PostprocedureDiagnosisSection2Operations.getConsolPostprocedureDiagnosis2(this);
 	}

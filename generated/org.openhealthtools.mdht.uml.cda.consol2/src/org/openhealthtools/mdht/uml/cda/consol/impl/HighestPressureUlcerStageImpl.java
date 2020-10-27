@@ -6,6 +6,7 @@
  */
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -49,7 +50,6 @@ public class HighestPressureUlcerStageImpl extends ObservationImpl implements Hi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateHighestPressureUlcerStageTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return HighestPressureUlcerStageOperations.validateHighestPressureUlcerStageTemplateId(
@@ -61,7 +61,6 @@ public class HighestPressureUlcerStageImpl extends ObservationImpl implements Hi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateHighestPressureUlcerStageClassCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return HighestPressureUlcerStageOperations.validateHighestPressureUlcerStageClassCode(
@@ -73,7 +72,6 @@ public class HighestPressureUlcerStageImpl extends ObservationImpl implements Hi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateHighestPressureUlcerStageMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return HighestPressureUlcerStageOperations.validateHighestPressureUlcerStageMoodCode(
 			this, diagnostics, context);
@@ -84,7 +82,6 @@ public class HighestPressureUlcerStageImpl extends ObservationImpl implements Hi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateHighestPressureUlcerStageId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return HighestPressureUlcerStageOperations.validateHighestPressureUlcerStageId(this, diagnostics, context);
 	}
@@ -94,7 +91,6 @@ public class HighestPressureUlcerStageImpl extends ObservationImpl implements Hi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateHighestPressureUlcerStageCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return HighestPressureUlcerStageOperations.validateHighestPressureUlcerStageCodeP(this, diagnostics, context);
 	}
@@ -104,7 +100,6 @@ public class HighestPressureUlcerStageImpl extends ObservationImpl implements Hi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateHighestPressureUlcerStageCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return HighestPressureUlcerStageOperations.validateHighestPressureUlcerStageCode(this, diagnostics, context);
 	}
@@ -114,7 +109,6 @@ public class HighestPressureUlcerStageImpl extends ObservationImpl implements Hi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateHighestPressureUlcerStageValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return HighestPressureUlcerStageOperations.validateHighestPressureUlcerStageValue(this, diagnostics, context);
 	}
@@ -124,7 +118,6 @@ public class HighestPressureUlcerStageImpl extends ObservationImpl implements Hi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public HighestPressureUlcerStage init() {
 		return Initializer.Util.init(this);
 	}
@@ -134,7 +127,6 @@ public class HighestPressureUlcerStageImpl extends ObservationImpl implements Hi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public HighestPressureUlcerStage init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

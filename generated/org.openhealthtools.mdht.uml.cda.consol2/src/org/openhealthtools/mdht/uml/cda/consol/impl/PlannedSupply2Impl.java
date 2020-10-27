@@ -6,6 +6,7 @@
  */
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -74,7 +75,6 @@ public class PlannedSupply2Impl extends PlanOfCareActivitySupplyImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validatePlannedSupply2StatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PlannedSupply2Operations.validatePlannedSupply2StatusCode(this, diagnostics, context);
 	}
@@ -84,7 +84,6 @@ public class PlannedSupply2Impl extends PlanOfCareActivitySupplyImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validatePlannedSupply2StatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PlannedSupply2Operations.validatePlannedSupply2StatusCodeP(this, diagnostics, context);
 	}
@@ -94,7 +93,6 @@ public class PlannedSupply2Impl extends PlanOfCareActivitySupplyImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validatePlannedSupply2EffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PlannedSupply2Operations.validatePlannedSupply2EffectiveTime(this, diagnostics, context);
 	}
@@ -104,7 +102,6 @@ public class PlannedSupply2Impl extends PlanOfCareActivitySupplyImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validatePlannedSupply2RepeatNumber(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PlannedSupply2Operations.validatePlannedSupply2RepeatNumber(this, diagnostics, context);
 	}
@@ -114,7 +111,6 @@ public class PlannedSupply2Impl extends PlanOfCareActivitySupplyImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validatePlannedSupply2Quantity(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PlannedSupply2Operations.validatePlannedSupply2Quantity(this, diagnostics, context);
 	}
@@ -124,7 +120,6 @@ public class PlannedSupply2Impl extends PlanOfCareActivitySupplyImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validatePlannedSupply2Product(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PlannedSupply2Operations.validatePlannedSupply2Product(this, diagnostics, context);
 	}
@@ -134,7 +129,6 @@ public class PlannedSupply2Impl extends PlanOfCareActivitySupplyImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validatePlannedSupply2Performer(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PlannedSupply2Operations.validatePlannedSupply2Performer(this, diagnostics, context);
 	}
@@ -144,7 +138,6 @@ public class PlannedSupply2Impl extends PlanOfCareActivitySupplyImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validatePlannedSupply2AuthorParticipation(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PlannedSupply2Operations.validatePlannedSupply2AuthorParticipation(this, diagnostics, context);
 	}
@@ -154,7 +147,6 @@ public class PlannedSupply2Impl extends PlanOfCareActivitySupplyImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validatePlannedSupply2ProductInstance(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PlannedSupply2Operations.validatePlannedSupply2ProductInstance(this, diagnostics, context);
 	}
@@ -173,7 +165,6 @@ public class PlannedSupply2Impl extends PlanOfCareActivitySupplyImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validatePlannedSupply2Indication2(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PlannedSupply2Operations.validatePlannedSupply2Indication2(this, diagnostics, context);
 	}
@@ -183,7 +174,6 @@ public class PlannedSupply2Impl extends PlanOfCareActivitySupplyImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validatePlannedSupply2Instruction2(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PlannedSupply2Operations.validatePlannedSupply2Instruction2(this, diagnostics, context);
 	}
@@ -193,7 +183,6 @@ public class PlannedSupply2Impl extends PlanOfCareActivitySupplyImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validatePlannedSupply2PlannedCoverage(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PlannedSupply2Operations.validatePlannedSupply2PlannedCoverage(this, diagnostics, context);
 	}
@@ -233,7 +222,6 @@ public class PlannedSupply2Impl extends PlanOfCareActivitySupplyImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public ProductInstance getProductInstance() {
 		return PlannedSupply2Operations.getProductInstance(this);
 	}
@@ -252,7 +240,6 @@ public class PlannedSupply2Impl extends PlanOfCareActivitySupplyImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EList<Indication2> getIndication2s() {
 		return PlannedSupply2Operations.getIndication2s(this);
 	}
@@ -262,7 +249,6 @@ public class PlannedSupply2Impl extends PlanOfCareActivitySupplyImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EList<Instruction2> getInstruction2s() {
 		return PlannedSupply2Operations.getInstruction2s(this);
 	}
@@ -272,7 +258,6 @@ public class PlannedSupply2Impl extends PlanOfCareActivitySupplyImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EList<PlannedCoverage> getPlannedCoverages() {
 		return PlannedSupply2Operations.getPlannedCoverages(this);
 	}

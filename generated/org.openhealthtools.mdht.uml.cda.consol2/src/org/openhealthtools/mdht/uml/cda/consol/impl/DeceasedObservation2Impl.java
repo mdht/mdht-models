@@ -6,6 +6,7 @@
  */
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -58,7 +59,6 @@ public class DeceasedObservation2Impl extends DeceasedObservationImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public ProblemObservation2 getConsolProblemObservation2() {
 		return DeceasedObservation2Operations.getConsolProblemObservation2(this);
 	}

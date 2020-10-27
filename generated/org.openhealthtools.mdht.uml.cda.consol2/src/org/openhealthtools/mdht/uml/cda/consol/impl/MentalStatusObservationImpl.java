@@ -6,6 +6,7 @@
  */
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -51,7 +52,6 @@ public class MentalStatusObservationImpl extends ObservationImpl implements Ment
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateMentalStatusObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MentalStatusObservationOperations.validateMentalStatusObservationTemplateId(this, diagnostics, context);
 	}
@@ -61,7 +61,6 @@ public class MentalStatusObservationImpl extends ObservationImpl implements Ment
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateMentalStatusObservationClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MentalStatusObservationOperations.validateMentalStatusObservationClassCode(this, diagnostics, context);
 	}
@@ -71,7 +70,6 @@ public class MentalStatusObservationImpl extends ObservationImpl implements Ment
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateMentalStatusObservationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MentalStatusObservationOperations.validateMentalStatusObservationMoodCode(this, diagnostics, context);
 	}
@@ -81,7 +79,6 @@ public class MentalStatusObservationImpl extends ObservationImpl implements Ment
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateMentalStatusObservationId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MentalStatusObservationOperations.validateMentalStatusObservationId(this, diagnostics, context);
 	}
@@ -91,7 +88,6 @@ public class MentalStatusObservationImpl extends ObservationImpl implements Ment
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateMentalStatusObservationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MentalStatusObservationOperations.validateMentalStatusObservationCodeP(this, diagnostics, context);
 	}
@@ -101,7 +97,6 @@ public class MentalStatusObservationImpl extends ObservationImpl implements Ment
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateMentalStatusObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MentalStatusObservationOperations.validateMentalStatusObservationCode(this, diagnostics, context);
 	}
@@ -111,7 +106,6 @@ public class MentalStatusObservationImpl extends ObservationImpl implements Ment
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateMentalStatusObservationStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MentalStatusObservationOperations.validateMentalStatusObservationStatusCode(this, diagnostics, context);
 	}
@@ -121,7 +115,6 @@ public class MentalStatusObservationImpl extends ObservationImpl implements Ment
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateMentalStatusObservationStatusCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return MentalStatusObservationOperations.validateMentalStatusObservationStatusCodeP(this, diagnostics, context);
@@ -132,7 +125,6 @@ public class MentalStatusObservationImpl extends ObservationImpl implements Ment
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateMentalStatusObservationEffectiveTime(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return MentalStatusObservationOperations.validateMentalStatusObservationEffectiveTime(
@@ -144,7 +136,6 @@ public class MentalStatusObservationImpl extends ObservationImpl implements Ment
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateMentalStatusObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MentalStatusObservationOperations.validateMentalStatusObservationValue(this, diagnostics, context);
 	}
@@ -154,7 +145,6 @@ public class MentalStatusObservationImpl extends ObservationImpl implements Ment
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateMentalStatusObservationValueP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MentalStatusObservationOperations.validateMentalStatusObservationValueP(this, diagnostics, context);
 	}
@@ -164,7 +154,6 @@ public class MentalStatusObservationImpl extends ObservationImpl implements Ment
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateMentalStatusObservationAssessmentScaleObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return MentalStatusObservationOperations.validateMentalStatusObservationAssessmentScaleObservation(
@@ -176,7 +165,6 @@ public class MentalStatusObservationImpl extends ObservationImpl implements Ment
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateMentalStatusObservationAuthorParticipation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return MentalStatusObservationOperations.validateMentalStatusObservationAuthorParticipation(
@@ -188,7 +176,6 @@ public class MentalStatusObservationImpl extends ObservationImpl implements Ment
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EList<AssessmentScaleObservation> getAssessmentScaleObservations() {
 		return MentalStatusObservationOperations.getAssessmentScaleObservations(this);
 	}
@@ -198,7 +185,6 @@ public class MentalStatusObservationImpl extends ObservationImpl implements Ment
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public MentalStatusObservation init() {
 		return Initializer.Util.init(this);
 	}
@@ -208,7 +194,6 @@ public class MentalStatusObservationImpl extends ObservationImpl implements Ment
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public MentalStatusObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

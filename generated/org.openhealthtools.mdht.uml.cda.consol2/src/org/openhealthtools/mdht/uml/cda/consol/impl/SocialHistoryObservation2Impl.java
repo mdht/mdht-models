@@ -6,6 +6,7 @@
  */
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -92,7 +93,6 @@ public class SocialHistoryObservation2Impl extends SocialHistoryObservationImpl 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateSocialHistoryObservationStatusCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return SocialHistoryObservation2Operations.validateSocialHistoryObservationStatusCodeP(
@@ -104,7 +104,6 @@ public class SocialHistoryObservation2Impl extends SocialHistoryObservationImpl 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateSocialHistoryObservation2EffectiveTime(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return SocialHistoryObservation2Operations.validateSocialHistoryObservation2EffectiveTime(
@@ -116,7 +115,6 @@ public class SocialHistoryObservation2Impl extends SocialHistoryObservationImpl 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateSocialHistoryObservation2AuthorParticipation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return SocialHistoryObservation2Operations.validateSocialHistoryObservation2AuthorParticipation(
@@ -151,16 +149,6 @@ public class SocialHistoryObservation2Impl extends SocialHistoryObservationImpl 
 	 * @generated
 	 */
 	@Override
-	public boolean validateSocialHistoryObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SocialHistoryObservation2Operations.validateSocialHistoryObservationValue(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public boolean validateSocialHistoryObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SocialHistoryObservation2Operations.validateSocialHistoryObservationCode(this, diagnostics, context);
 	}
@@ -185,6 +173,16 @@ public class SocialHistoryObservation2Impl extends SocialHistoryObservationImpl 
 			Map<Object, Object> context) {
 		return SocialHistoryObservation2Operations.validateSocialHistoryObservationStatusCode(
 			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateSocialHistoryObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SocialHistoryObservation2Operations.validateSocialHistoryObservationValue(this, diagnostics, context);
 	}
 
 	/**

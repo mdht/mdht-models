@@ -1645,7 +1645,7 @@ The Problem Status records whether the indicated problem is active, inactive, or
   </CDA:CDATemplate>
   <CDA:ConformsTo xmi:id="_hayAcEfOEeiFfJtNAawVHw" base_Generalization="_vycfAEfNEeiFfJtNAawVHw" requiresParentId="true"/>
   <CDA:ValueSetConstraint xmi:id="_xmknsEfQEeiFfJtNAawVHw" base_Property="_xmkAoEfQEeiFfJtNAawVHw">
-    <reference href="pathmap://CONSOL_MODEL///consol-vocab.uml#_8V8fAEfREeiFfJtNAawVHw"/>
+    <reference href="pathmap://CONSOL_MODEL/consol-vocab.uml#_8V8fAEfREeiFfJtNAawVHw"/>
     <ruleId>CONF:1098-7365</ruleId>
     <ruleId>DSTU:815/1357</ruleId>
     <ruleId>DSTU:1363</ruleId>

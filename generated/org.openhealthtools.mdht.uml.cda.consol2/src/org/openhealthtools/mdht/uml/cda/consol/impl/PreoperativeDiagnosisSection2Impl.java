@@ -6,6 +6,7 @@
  */
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -61,7 +62,6 @@ public class PreoperativeDiagnosisSection2Impl extends PreoperativeDiagnosisSect
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public PreoperativeDiagnosis2 getConsolPreoperativeDiagnosis2() {
 		return PreoperativeDiagnosisSection2Operations.getConsolPreoperativeDiagnosis2(this);
 	}

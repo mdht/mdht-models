@@ -10,6 +10,7 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -55,7 +56,6 @@ public class PreoperativeDiagnosisImpl extends ActImpl implements PreoperativeDi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validatePreoperativeDiagnosisTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PreoperativeDiagnosisOperations.validatePreoperativeDiagnosisTemplateId(this, diagnostics, context);
 	}
@@ -65,7 +65,6 @@ public class PreoperativeDiagnosisImpl extends ActImpl implements PreoperativeDi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validatePreoperativeDiagnosisClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PreoperativeDiagnosisOperations.validatePreoperativeDiagnosisClassCode(this, diagnostics, context);
 	}
@@ -75,17 +74,6 @@ public class PreoperativeDiagnosisImpl extends ActImpl implements PreoperativeDi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validatePreoperativeDiagnosisCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PreoperativeDiagnosisOperations.validatePreoperativeDiagnosisCode(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public boolean validatePreoperativeDiagnosisMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PreoperativeDiagnosisOperations.validatePreoperativeDiagnosisMoodCode(this, diagnostics, context);
 	}
@@ -95,7 +83,15 @@ public class PreoperativeDiagnosisImpl extends ActImpl implements PreoperativeDi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
+	public boolean validatePreoperativeDiagnosisCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PreoperativeDiagnosisOperations.validatePreoperativeDiagnosisCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validatePreoperativeDiagnosisProblemObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PreoperativeDiagnosisOperations.validatePreoperativeDiagnosisProblemObservation(
@@ -104,10 +100,9 @@ public class PreoperativeDiagnosisImpl extends ActImpl implements PreoperativeDi
 
 	/**
 	 * <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EList<ProblemObservation> getProblemObservations() {
 		return PreoperativeDiagnosisOperations.getProblemObservations(this);
 	}
@@ -117,17 +112,15 @@ public class PreoperativeDiagnosisImpl extends ActImpl implements PreoperativeDi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public PreoperativeDiagnosis init() {
 		return Initializer.Util.init(this);
 	}
 
 	/**
 	 * <!-- begin-user-doc -->
-	   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public PreoperativeDiagnosis init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

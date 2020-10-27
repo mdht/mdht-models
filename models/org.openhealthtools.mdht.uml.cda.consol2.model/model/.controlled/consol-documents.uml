@@ -7153,7 +7153,7 @@ The Care Plan is continually evolving and dynamic. The Care Plan CDA instance is
     <ruleId>CONF:1198-29893</ruleId>
   </CDA:AssociationValidation>
   <CDA:ValueSetConstraint xmi:id="_fsopoJ8TEeOr4eM3k36wAg" base_Property="_Pj-kAJ8TEeOr4eM3k36wAg">
-    <reference href="pathmap://CONSOL_MODEL///consol-vocab.uml#_nQiIEDdVEeiFfJtNAawVHw"/>
+    <reference href="pathmap://CONSOL_MODEL/consol-vocab.uml#_nQiIEDdVEeiFfJtNAawVHw"/>
     <ruleId>CONF:1198-31889</ruleId>
     <ruleId>DSTU:1267</ruleId>
     <ruleId>DSTU:1333</ruleId>
@@ -12538,7 +12538,7 @@ This performer represents any assistants.</body>
   </CDA:AssociationValidation>
   <CDA:PropertyValidation xmi:id="_NvbMMC1oEeSoCqqrpX8LzQ" severity="WARNING" base_Property="_NF4f8C1oEeSoCqqrpX8LzQ"/>
   <CDA:ValueSetConstraint xmi:id="_WMkXoC1oEeSoCqqrpX8LzQ" base_Property="_NF4f8C1oEeSoCqqrpX8LzQ">
-    <reference href="pathmap://CONSOL_MODEL///consol-vocab.uml#_-bWMgT-UEeGvOdejHZ7dYg"/>
+    <reference href="pathmap://CONSOL_MODEL/consol-vocab.uml#_-bWMgT-UEeGvOdejHZ7dYg"/>
     <ruleId>CONF:1198-8490</ruleId>
     <ruleId>DSTU:1331</ruleId>
     <ruleId>DSTU:1369</ruleId>
@@ -14686,7 +14686,7 @@ The nonXMLBody/text element also has a &quot;compression&quot; attribute that ca
   </CDA:AssociationValidation>
   <CDA:PropertyValidation xmi:id="_w-8d4J3KEeSofqct4VeYrw" severity="WARNING" base_Property="_wHsFwJ3KEeSofqct4VeYrw"/>
   <CDA:ValueSetConstraint xmi:id="_zT1RoJ3KEeSofqct4VeYrw" base_Property="_wHsFwJ3KEeSofqct4VeYrw">
-    <reference href="pathmap://CONSOL_MODEL///consol-vocab.uml#_-bWMgT-UEeGvOdejHZ7dYg"/>
+    <reference href="pathmap://CONSOL_MODEL/consol-vocab.uml#_-bWMgT-UEeGvOdejHZ7dYg"/>
     <ruleId>CONF:1198-32739</ruleId>
     <ruleId>DSTU:1331</ruleId>
   </CDA:ValueSetConstraint>
@@ -14832,14 +14832,14 @@ The nonXMLBody/text element also has a &quot;compression&quot; attribute that ca
     <ruleId>1198-32901</ruleId>
   </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_W-4zcIdqEeeEdPtCCB--vA" base_Property="_Ul7_EIdqEeeEdPtCCB--vA" uri="consol-vocab::Detailed Ethnicity">
-    <reference href="pathmap://CONSOL_MODEL///consol-vocab.uml#_cL0AwIdpEeeAsbPrNOnubg"/>
+    <reference href="pathmap://CONSOL_MODEL/consol-vocab.uml#_cL0AwIdpEeeAsbPrNOnubg"/>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_z8M-4DdUEeiFfJtNAawVHw" base_Property="_vLvgkDdUEeiFfJtNAawVHw">
     <ruleId>CONF:1198-32949</ruleId>
     <ruleId>DSTU:1267</ruleId>
   </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_xsqpUDzzEeiFfJtNAawVHw" base_Property="_WQ858J5xEeOr4eM3k36wAg">
-    <reference href="pathmap://CONSOL_MODEL///consol-vocab.uml#_av2kwDzyEeiFfJtNAawVHw"/>
+    <reference href="pathmap://CONSOL_MODEL/consol-vocab.uml#_av2kwDzyEeiFfJtNAawVHw"/>
     <ruleId>CONF:1198-32959</ruleId>
     <ruleId>DSTU:1048</ruleId>
     <ruleId>DSTU:1260</ruleId>

@@ -6,6 +6,7 @@
  */
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -53,7 +54,6 @@ public class HealthConcernsSectionImpl extends SectionImpl implements HealthConc
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateHealthConcernsSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return HealthConcernsSectionOperations.validateHealthConcernsSectionTemplateId(this, diagnostics, context);
 	}
@@ -72,7 +72,6 @@ public class HealthConcernsSectionImpl extends SectionImpl implements HealthConc
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateHealthConcernsSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return HealthConcernsSectionOperations.validateHealthConcernsSectionCode(this, diagnostics, context);
 	}
@@ -82,7 +81,6 @@ public class HealthConcernsSectionImpl extends SectionImpl implements HealthConc
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateHealthConcernsSectionCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return HealthConcernsSectionOperations.validateHealthConcernsSectionCodeP(this, diagnostics, context);
 	}
@@ -92,7 +90,6 @@ public class HealthConcernsSectionImpl extends SectionImpl implements HealthConc
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateHealthConcernsSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return HealthConcernsSectionOperations.validateHealthConcernsSectionTitle(this, diagnostics, context);
 	}
@@ -102,7 +99,6 @@ public class HealthConcernsSectionImpl extends SectionImpl implements HealthConc
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateHealthConcernsSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return HealthConcernsSectionOperations.validateHealthConcernsSectionText(this, diagnostics, context);
 	}
@@ -112,7 +108,6 @@ public class HealthConcernsSectionImpl extends SectionImpl implements HealthConc
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateHealthConcernsSectionHealthConcernAct(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return HealthConcernsSectionOperations.validateHealthConcernsSectionHealthConcernAct(
@@ -145,7 +140,6 @@ public class HealthConcernsSectionImpl extends SectionImpl implements HealthConc
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EList<HealthConcernAct> getHealthConcernActs() {
 		return HealthConcernsSectionOperations.getHealthConcernActs(this);
 	}
@@ -173,7 +167,6 @@ public class HealthConcernsSectionImpl extends SectionImpl implements HealthConc
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public HealthConcernsSection init() {
 		return Initializer.Util.init(this);
 	}
@@ -183,7 +176,6 @@ public class HealthConcernsSectionImpl extends SectionImpl implements HealthConc
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public HealthConcernsSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

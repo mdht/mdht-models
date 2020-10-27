@@ -1,0 +1,832 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="CDA.xsl"?>
+<!--
+ Title:        New Sections
+ Filename:     10 New Sections.xml 
+ Created by:   HL7
+ Initial Publish Date: 10/31/2019 
+ $LastChangedDate: 10/31/2019 $
+  
+ ********************************************************
+Disclaimer: The data in this sample file is not intended to represent real patients, people or clinical events. The file depicts a fictional character's health data. 
+Any resemblance to a real person is coincidental. To illustrate as many data elements as possible, the clinical scenario may not be plausible. Dates and times also may not coorelate well from a temporal perspective.
+
+This sample is not a valid document.
+It is designed to be used in conjunction with the HL7 CDA® R2 IG: C-CDA Templates for Clinical Notes R2.1 Companion Guide, Release 2.
+It only demonstrates new section templates introduced with the HL7 C-CDA R2.1 Companion Guide R2.
+ ********************************************************
+ -->
+<ClinicalDocument xmlns="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:voc="urn:hl7-org:v3/voc" xmlns:sdtc="urn:hl7-org:sdtc">
+  <realmCode code="US"/>
+  <typeId root="2.16.840.1.113883.1.3" extension="POCD_HD000040"/>
+  <templateId root="2.16.840.1.113883.10.20.22.1.9" extension="2014-06-09"/>
+  <id root="cab4fbc2-87b3-47c7-985e-8a3762f8c6d8" extension="0472af3b-4c8c-4d02-9e6e-ffa9395d1142"/>
+  <code code="11506-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Progress Note (V2)"/>
+  <title>Progress Note</title>
+  <effectiveTime value="20190211101600-0600"/>
+  <confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25"/>
+  <languageCode code="en-US"/>
+  <versionNumber value="1"/>
+  <recordTarget>
+    <patientRole>
+      <id root="2.16.840.1.113883.3.4988" extension="M20190410142248.5"/>
+      <id root="1.3.6.1.4.1.41179.2.4" extension="Tula.Leven@direct.MyPHD.us"/>
+      <addr><streetAddressLine>123 State Street</streetAddressLine><city>Chicago</city><state>IL</state><postalCode>60601</postalCode><country>US</country></addr>
+      <telecom value="tel:312 999 4321" use="HP"/>
+      <telecom value="tel:312 123 1234" use="MC"/>
+      <telecom value="mailto:TulaLeven400@gmail.com"/>
+      <telecom value="mailto:Tula.Leven@direct.MyPHD.us" use="HP"/>
+      <patient>
+        <name><given>Tula</given><family>Leven</family></name>
+        <administrativeGenderCode code="F" codeSystem="2.16.840.1.113883.5.1" codeSystemName="AdministrativeGender" displayName="Female"/>
+        <birthTime value="19420322"/>
+        <maritalStatusCode code="W" codeSystem="2.16.840.1.113883.5.2" codeSystemName="MaritalStatus" displayName="Widowed"/>
+        <religiousAffiliationCode code="1013" codeSystem="2.16.840.1.113883.5.1076" codeSystemName="ReligiousAffiliation" displayName="Christian (non-Catholic, non-specific)"/>
+      </patient>
+    </patientRole>
+  </recordTarget>
+  <author>
+    <time value="20190211101600-0600"/>
+    <assignedAuthor>
+      <id root="2.16.840.1.113883.4.6" extension="234599999" assigningAuthorityName="NPI"/>
+      <id root="1.3.6.1.4.1.41179.2.1" extension="Dr.Smith@direct.JohnSmithMd.com"/>
+        <id root="B00B14E8-CDE4-48EA-8A09-01BC4945122A" extension="1"/>
+        <id root="1.5.5.5.5.5.5"/>
+      <addr><streetAddressLine>40 Healthcare Ave.</streetAddressLine><streetAddressLine>Suite 100</streetAddressLine><city>Chicago</city><state>IL</state><postalCode>60643</postalCode><country>US</country></addr>
+      <telecom value="tel:312 222 4321" use="WP"/>
+      <telecom value="mailto:JohnSmithMD@gmail.com" use="HP"/>
+      <assignedPerson>
+          <name><given>John</given><given>D</given><family>Smith</family>,<suffix>MD</suffix> </name>
+      </assignedPerson>
+      <representedOrganization>
+        <name>John Smith, MD, LLC</name>
+        <addr><streetAddressLine>40 Healthcare Ave.</streetAddressLine><streetAddressLine>Suite 100</streetAddressLine><city>Chicago</city><state>IL</state><postalCode>60643</postalCode><country>US</country></addr>
+      </representedOrganization>
+    </assignedAuthor>
+  </author>
+  <author>
+    <time value="20190211101600-0600"/>
+    <assignedAuthor>
+      <id root="a23fffac-c5a3-4a67-8f3e-4cd6ead8de60" extension="MaxMD C-CDA Creator"/>
+      <addr><streetAddressLine>2200 Fletcher Ave.</streetAddressLine><streetAddressLine>Suite 506</streetAddressLine><city>Fort Lee</city><state>NJ</state><postalCode>07024</postalCode><country>US</country></addr>
+      <telecom value="tel:201 963 0005" use="WP"/>
+      <telecom value="mailto:syntheticDataMaker@max.md" use="HP"/>
+      <assignedAuthoringDevice>
+        <manufacturerModelName>MaxMD FHIR Connectathon21</manufacturerModelName>
+        <softwareName>MaxMD C-CDA Creator</softwareName>
+      </assignedAuthoringDevice>
+    </assignedAuthor>
+  </author>
+  <custodian>
+    <assignedCustodian>
+      <representedCustodianOrganization>
+        <id root="1.3.6.1.4.1.41179.2.4" extension="Office@direct.JohnSmithMd.com"/>
+          <id root="B00B14E8-CDE4-48EA-8A09-01BC4945122A" extension="1"/>
+        <name>John D. Smith, MD, LLC</name>
+        <telecom value="tel:312 555 5555" use="WP"/>
+        <addr><streetAddressLine>40 Healthcare Ave.</streetAddressLine><streetAddressLine>Suite 100</streetAddressLine><city>Chicago</city><state>IL</state><postalCode>60643</postalCode><country>US</country></addr>
+      </representedCustodianOrganization>
+    </assignedCustodian>
+  </custodian>
+  <componentOf>
+    <encompassingEncounter>
+      <id root="cab4fbc2-87b3-47c7-985e-8a3762f8c6d8" extension="b8e269a4-e47b-4b67-bb24-5ca89abdaa00"/>
+      <effectiveTime>
+          <low value="20190211094500-0600"/>
+<!-- Omit effectiveTime/high if only start-time of encounter is known. -->          
+<!--          <high value="20190211101500-0600"/>-->
+      </effectiveTime>
+    </encompassingEncounter>
+  </componentOf>
+  <component>
+    <structuredBody>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.22.2.500" extension="2019-07-01"/>
+          <code code="85847-2" codeSystem="2.16.840.1.113883.6.1"/>
+          <title>Patient Care Teams</title>
+          <text>
+              <list>
+                  <item>
+                      <content ID= "CareTeamName1">Inpatient Diabetes Care Team</content> (<content>Active</content>) (10/08/2018 - )
+                      <table>
+                          <thead>
+                              <tr>
+                                  <th>Member</th>
+                                  <th>Role on Team</th>
+                                  <th>Status</th>
+                                  <th>Date</th>
+                              </tr>
+                          </thead>
+                          <tbody>
+                              <tr>
+                                  <td>Dr. Henry Seven </td>
+                                  <td ID="CT1_M01">PCP</td>
+                                  <td>(Active)</td>
+                                  <td>10/18/2019</td>
+                              </tr>
+                          </tbody>
+                      </table>
+                  </item>
+              </list>
+              
+          </text>
+          <!--Care Team Organizer-->
+          <entry>
+            <organizer classCode="CLUSTER" moodCode="EVN">
+                <templateId root="2.16.840.1.113883.10.20.22.4.500" extension="2019-07-01"/>
+              <!--NEW Care Team Organizer Entry Template ID and extension-->
+              <id root="1.1.1.1.1.1"/>
+              <code code="86744-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Care Team">
+                <originalText><reference value="#CareTeamName1"></reference></originalText>
+              </code>
+              <!--Care Team Status - https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.1.11.15933/expansion-->
+              <statusCode code="active"/>
+                <effectiveTime>
+                    <low value="201810081426-0500"/>
+                </effectiveTime>
+              <!-- This participant is the Care Team Lead (1..1)-->
+              <!-- Care Team Lead is one of the contained care team members in the list of care team members-->
+              <!--<participant typeCode="PPRF">
+                <!-\-<This id matches at least one of the member's id in the Care Team Member act template>-\->
+                <participantRole>
+                  <id root="1.5.5.5.5.5.5"/>
+                </participantRole>
+              </participant>-->
+              <!-- #1 Care Team Member Act - This component is a care team member who is a provider -->
+              <component>
+                <act classCode="PCPR" moodCode="EVN">
+                    <templateId root="2.16.840.1.113883.10.20.22.4.500.1" extension="2019-07-01"/>
+                  <id root="1.5.5.5.5.5.5"/>
+                  <code code="85847-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Care Team Information"/>
+                  <!--Care Team Member Status - https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.1.11.15933/expansion-->
+                  <statusCode code="active"/>
+                  <effectiveTime xsi:type="IVL_TS">
+                    <low value="201810081426-0500"/>
+                  </effectiveTime>
+                  <!--Attributes about the provider member - name-->
+                  <performer typeCode="PRF">
+                      <functionCode xmlns="urn:hl7-org:sdtc" code="PCP" displayName="primary care physician"
+                          codeSystem="2.16.840.1.113883.5.55" codeSystemName="ParticipationFunction">
+                          <originalText xmlns="urn:hl7-org:v3">
+                              <reference value="#CT1_M01"></reference>
+                          </originalText>
+                      </functionCode> <!-- A care team member role -->
+                    <assignedEntity>
+                        <id root="B00B14E8-CDE4-48EA-8A09-01BC4945122A" extension="1"/>
+                        <id root="1.5.5.5.5.5.5"/>
+                      <assignedPerson>
+                        <name><given>John</given><given>D</given><family>Smith</family>,<suffix>MD</suffix> </name>
+                      </assignedPerson>
+                    </assignedEntity>
+                  </performer>
+                </act>
+              </component>
+            </organizer>
+          </entry>
+        </section>
+      </component>
+        
+        
+        <component>
+            <section>
+                <templateId root="2.16.840.1.113883.10.20.22.2.65" extension="2016-11-01 "/>
+                <id root="15C1B550-00D6-11E6-B041-0050568B0001"/>
+                <code code="34746-8" displayName="Nursing Note"
+                    codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                <title>Nursing Notes section</title>
+                <text>
+                    <table>
+                        <colgroup>
+                            <col width="75%"/>
+                            <col width="10%"/>
+                            <col width="15%"/>
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th>Summary</th>
+                                <th>Written by:</th>
+                                <th>Date</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td ID="NurseNote_1">The patient arrived with burns on her pelvis
+                                    and burns on both upper thighs. <br/> The thigh
+                                    burns were exacerbated by the wheelchair pad which retained
+                                    the water and the heat causing the blistering and pain.<br/>
+                                    Tylenol 3s were administered for pain</td>
+                                <td>Colon, Wilma</td>
+                                <td>04/12/2016 11:59 AM</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </text>
+                <!-- Note Activity entry -->
+                <entry>
+                    <act classCode="ACT" moodCode="EVN">
+                        <templateId root="2.16.840.1.113883.10.20.22.4.202" extension="2016-11-01"/>
+                        <code code="34109-9" displayName="Note"
+                            codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC">
+                            <translation code="34109-9" displayName="Note"
+                                codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"></translation>
+                        </code>
+                        <text>
+                            <reference value="#NurseNote_1"></reference>
+                        </text>
+                        <statusCode code="completed"/>
+                        <effectiveTime value="20160412"></effectiveTime>
+                        <author>
+                            <templateId root="2.16.840.1.113883.10.20.22.4.119"/>
+                            <time value="20160412120258"/>
+                            <assignedAuthor>
+                                <id extension="1" root="1.2.840.114350.1.13.6289.1.7.2.697780"/>
+                                <assignedPerson>
+                                    <name>
+                                        <given>Wilma</given>
+                                        <family>Colon</family>
+                                    </name>
+                                </assignedPerson>
+                            </assignedAuthor>
+                        </author>
+                    </act>
+                </entry>
+            </section>
+        </component>
+        
+              <component>
+                <section>
+                    <templateId root="2.16.840.1.113883.10.20.22.2.23" extension="2014-06-09"/>
+                    <code code="46264-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"
+                        displayName="Medical Equipment"/>
+                    <title>Implantable Device List</title>
+                    <text>
+                        <table>
+                            <colgroup>
+                                <col width="10%"/>
+                                <col width="20%"/>
+                                <col width="20%"/>
+                                <col width="10%"/>
+                                <col width="30%"/>
+                                <col width="10%"/>
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>Date</th>
+                                    <th>Implant Procedure</th>
+                                    <th>Body Site</th>
+                                    <th>Device</th>
+                                    <th>Device Details</th>
+                                    <th>Performer</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>04/13/2019</td>
+                                    <td><content ID="ProcedureCode_1">Percutaneous insertion of drug
+                                        eluting stent into coronary artery using fluoroscopic
+                                        guidance</content></td>
+                                    <td><content ID="SiteCode_1">Left Anterior Descending Coronary Artery</content></td>
+                                    <td><content ID="DeviceType_1">Stent</content></td>
+                                    <td> 
+                                       <content>Device Identifier</content >: <content ID="DeviceIdentfier_1">99994328998989</content><br/>
+                                       <content>Serial Number</content>: <content ID="SerialNumber_1">6767671234</content><br/>
+                                       <content>Lot or Batch Number</content>: <content ID="LotOrBatchNumber_1">ABC124</content><br/>
+                                       <content>Manufacturing Date</content>: <content ID="ManufacturingDate_1">2018-10-15</content><br/>
+                                       <content>Expiration Date</content>: <content ID="ExpirationDate_1">2022-10-15</content><br/>
+                                       <content>Distinct Identification Code</content>: <content ID="DistinctIdentificationCode_1">0984093</content><br/>
+                                       <content>Company</content>: <content ID="CompanyName_1">ACME Scientific</content><br/>
+                                       <content>Brand Name</content>: <content ID="BrandName_1">Drug Eluting Coronary Stent</content><br/>
+                                       <content>Model</content>: <content ID="ModelNumber_1">D-8000</content><br/>
+                                       <content>Catalog</content>: <content ID="CatalogNumber_1">D-8000-EU</content><br/>
+                                       <content>MRI Safety</content>: <content ID="MRISafety_1">Labeling does not contain MRI Safety Information</content><br/>
+                                       <content>Latex Safety</content>: <content ID="LatexSafety_1">Not Made with Natural Rubber Latex</content><br/>
+                                       <content>Implantable Status</content>: <content ID="ImplantableDeviceStatus_1">Reduced Function</content><br/>
+                                    </td>
+                                    <td><content ID="Provider_1">Fleming, Barry</content></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </text>
+                    <entry>
+                        <procedure classCode="PROC" moodCode="EVN">
+                            <templateId root="2.16.840.1.113883.10.20.22.4.14"
+                                extension="2014-06-09"/>
+                            <id extension="27456789" root="1.2.840.114350.1.13.5552.1.7.2.737780"/>
+                            <code code="609153008" codeSystem="2.16.840.1.113883.6.96"
+                                codeSystemName="SNOMED CT"
+                                displayName="Percutaneous insertion of drug eluting stent into coronary artery using fluoroscopic guidance">
+                                <originalText>
+                                    <reference value="#ProcedureCode_1"/>
+                                </originalText>
+                            </code>
+                            <!-- Procedure is completed, even though the implant is still active -->
+                            <statusCode code="completed"/>
+                            <effectiveTime>
+                                <!-- Procedure Date -->
+                                <low value="20190413"/>
+                            </effectiveTime>
+                            <targetSiteCode code="59438005" codeSystem="2.16.840.1.113883.6.96"
+                                codeSystemName="SNOMED CT"
+                                displayName="Structure of anterior descending branch of left coronary artery">
+                                <originalText>
+                                    <reference value="#SiteCode_1"/>
+                                </originalText>
+                            </targetSiteCode>
+                            <performer typeCode="PRF">
+                                <assignedEntity>
+                                    <id extension="2222222222" root="2.16.840.1.113883.4.6"/>
+                                    <addr>
+                                        <streetAddressLine>#456, Lincon Street</streetAddressLine>
+                                        <streetAddressLine>Wilson Garden</streetAddressLine>
+                                        <city>Colorado</city>
+                                        <postalCode>80203</postalCode>
+                                        <country>US</country>
+                                    </addr>
+                                    <telecom value="tel:+1-(859)085-0945"/>
+                                    <assignedPerson>
+                                        <name>
+                                            <family>Barry</family>
+                                            <given>Fleming</given>
+                                        </name>
+                                    </assignedPerson>
+                                </assignedEntity>
+                            </performer>
+                            <participant typeCode="DEV">
+                                <participantRole classCode="MANU">
+                                    <templateId root="2.16.840.1.113883.10.20.22.4.37"/>
+                                    <id assigningAuthorityName="FDA"
+                                        extension="(01)99994328998989(11)160330(10)ABC124"
+                                        root="2.16.840.1.113883.3.3719"/>
+                                    <playingDevice>
+                                        <!-- Mandatory: SNOMED CT code or GMDN label-->
+                                        <code code="65818007" codeSystem="2.16.840.1.113883.6.96"
+                                            codeSystemName="SNOMED CT" displayName="Stent">
+                                            <originalText>
+                                                <reference value="#DeviceType_1"/>
+                                            </originalText>
+                                        </code>
+                                    </playingDevice>
+                                    <!-- Mandatory: indicates the FDA or the appropriate issuing agency. -->
+                                    <scopingEntity>
+                                        <!-- one or more may be included -->
+                                        <id root="2.16.840.1.113883.3.3719"
+                                            assigningAuthorityName="FDA"/>
+                                        <id root="1.3.160" assigningAuthorityName="GS1"/>
+                                    </scopingEntity>
+                                </participantRole>
+                            </participant>
+                            <entryRelationship typeCode="COMP">
+                                <!-- UDI Organizer -->
+                                <organizer classCode="CLUSTER" moodCode="EVN">
+                                    <templateId root="2.16.840.1.113883.10.20.22.4.311"
+                                        extension="2019-06-21"/>
+                                    <id extension="(01)99994328998989(11)160330(10)ABC124"
+                                        root="GS1"/>
+                                    <code code="74711-3" codeSystem="2.16.840.1.113883.6.1"
+                                        displayName="Unique Device Identifier"/>
+                                    <statusCode code="completed"/>
+                                    <!-- UDI components -->
+                                    <component>
+                                        <observation classCode="OBS" moodCode="EVN">
+                                            <templateId root="2.16.840.1.113883.10.20.22.4.304"
+                                                extension="2019-06-21"/>
+                                            
+                                            <code code="C101722" displayName="Primary DI Number"
+                                                codeSystem="2.16.840.1.113883.3.26.1.1"
+                                                codeSystemName="NCI Thesaurus"/>
+                                            <!-- GS1 Device Identifier -->
+                                            <value xsi:type="II" root="1.3.160"
+                                                extension="99994328998989" displayable="true"
+                                                assigningAuthorityName="GS1"/>
+                                        </observation>
+                                    </component>
+                                    <component>
+                                        <observation classCode="OBS" moodCode="EVN">
+                                            <templateId root="2.16.840.1.113883.10.20.22.4.315"
+                                                extension="2019-06-21"/>
+                                            <code code="C101672" displayName="Lot or Batch Number"
+                                                codeSystem="2.16.840.1.113883.3.26.1.1"
+                                                codeSystemName="NCI Thesaurus"/>
+                                            <value xsi:type="ED">
+                                                <reference value="#LotOrBatchNumber_1"/>
+                                            </value>
+                                        </observation>
+                                    </component>
+                                    <component>
+                                        <observation classCode="OBS" moodCode="EVN">
+                                            <templateId root="2.16.840.1.113883.10.20.22.4.319"
+                                                extension="2019-06-21"/>
+                                            <code code="C101671" displayName="Serial Number"
+                                                codeSystem="2.16.840.1.113883.3.26.1.1"
+                                                codeSystemName="NCI Thesaurus"/>
+                                            <value xsi:type="ED">
+                                                <reference value="#SerialNumber_1"/>
+                                            </value>
+                                        </observation>
+                                    </component>
+                                    <component>
+                                        <observation classCode="OBS" moodCode="EVN">
+                                            <templateId root="2.16.840.1.113883.10.20.22.4.316"
+                                                extension="2019-06-21"/>
+                                            <code code="C101669" displayName="Manufacturing Date"
+                                                codeSystem="2.16.840.1.113883.3.26.1.1"
+                                                codeSystemName="NCI Thesaurus"/>
+                                            <value xsi:type="TS" value="20181015"/>
+                                        </observation>
+                                    </component>
+                                    <component>
+                                        <observation classCode="OBS" moodCode="EVN">
+                                            <templateId root="2.16.840.1.113883.10.20.22.4.309"
+                                                extension="2019-06-21"/>
+                                            <code code="C101670" displayName="Expiration Date"
+                                                codeSystem="2.16.840.1.113883.3.26.1.1"
+                                                codeSystemName="NCI Thesaurus"/>
+                                            <value xsi:type="TS" value="20221015"/>
+                                        </observation>
+                                    </component>
+                                    <component>
+                                        <observation classCode="OBS" moodCode="EVN">
+                                            <templateId root="2.16.840.1.113883.10.20.22.4.308"
+                                                extension="2019-06-21"/>
+                                            <code code="C113843"
+                                                displayName="Distinct Identification Code"
+                                                codeSystem="2.16.840.1.113883.3.26.1.1"
+                                                codeSystemName="NCI Thesaurus"/>
+                                            <value xsi:type="ED">
+                                                <reference value="#DistinctIdentificationCode_1"/>
+                                            </value>
+                                        </observation>
+                                    </component>
+                                    <component>
+                                        <observation classCode="OBS" moodCode="EVN">
+                                            <templateId root="2.16.840.1.113883.10.20.22.4.301"
+                                                extension="2019-06-21"/>
+                                            <code code="C71898" displayName="Brand Name"
+                                                codeSystem="2.16.840.1.113883.3.26.1.1"
+                                                codeSystemName="NCI Thesaurus"/>
+                                            <value xsi:type="ED">
+                                                <reference value="#BrandName_1"/>
+                                            </value>
+                                        </observation>
+                                    </component>
+                                    <component>
+                                        <observation classCode="OBS" moodCode="EVN">
+                                            <templateId root="2.16.840.1.113883.10.20.22.4.317"
+                                                extension="2019-06-21"/>
+                                            <code code="C99285" displayName="Model Number"
+                                                codeSystem="2.16.840.1.113883.3.26.1.1"
+                                                codeSystemName="NCI Thesaurus"/>
+                                            <value xsi:type="ED">
+                                                <reference value="#ModelNumber_1"/>
+                                            </value>
+                                        </observation>
+                                    </component>
+                                    <component>
+                                        <observation classCode="OBS" moodCode="EVN">
+                                            <templateId root="2.16.840.1.113883.10.20.22.4.302"
+                                                extension="2019-06-21"/>
+                                            <code code="C99286" displayName="Catalog Number"
+                                                codeSystem="2.16.840.1.113883.3.26.1.1"
+                                                codeSystemName="NCI Thesaurus"/>
+                                            <value xsi:type="ED">
+                                                <reference value="#CatalogNumber_1"/>
+                                            </value>
+                                        </observation>
+                                    </component>
+                                    <component>
+                                        <observation classCode="OBS" moodCode="EVN">
+                                            <templateId root="2.16.840.1.113883.10.20.22.4.303"
+                                                extension="2019-06-21"/>
+                                            <code code="C54131" displayName="Company Name"
+                                                codeSystem="2.16.840.1.113883.3.26.1.1"
+                                                codeSystemName="NCI Thesaurus"/>
+                                            <value xsi:type="ED">
+                                                <reference value="#CompanyName_1"/>
+                                            </value>
+                                        </observation>
+                                    </component>
+                                    <component>
+                                        <observation classCode="OBS" moodCode="EVN">
+                                            <templateId root="2.16.840.1.113883.10.20.22.4.318"
+                                                extension="2019-06-21"/>
+                                            <code code="C106044" displayName="MRI Safety Status"
+                                                codeSystem="2.16.840.1.113883.3.26.1.1"
+                                                codeSystemName="NCI Thesaurus"/>
+                                            <value xsi:type="CD" code="C113844"
+                                                codeSystem="2.16.840.1.113883.3.26.1.1" displayName="Labeling does not contain MRI Safety Information"
+                                                codeSystemName="NCI Thesaurus" sdtc:valueSet="2.16.840.1.113762.1.4.1021.46">
+                                                <originalText>
+                                                  <reference value="#MRISafety_1"/>
+                                                </originalText>
+                                            </value>
+                                        </observation>
+                                    </component>
+                                    <component>
+                                        <observation classCode="OBS" moodCode="EVN">
+                                            <templateId root="2.16.840.1.113883.10.20.22.4.314"
+                                                extension="2019-06-21"/>
+                                            <code code="C160938" displayName="Latex Safety Status"
+                                                codeSystem="2.16.840.1.113883.3.26.1.1" 
+                                                codeSystemName="NCI Thesaurus"/>
+                                            <value xsi:type="CD" code="C106038"
+                                                codeSystem="2.16.840.1.113883.3.26.1.1" displayName="Not Made with Natural Rubber Latex"
+                                                codeSystemName="NCI Thesaurus" sdtc:valueSet="2.16.840.1.113762.1.4.1021.47">
+                                                <originalText>
+                                                    <reference value="#LatexSafety_1"/>
+                                                </originalText>
+                                            </value>
+                                        </observation>
+                                    </component>
+                                    <component>
+                                        <observation classCode="OBS" moodCode="EVN">
+                                            <templateId root="2.16.840.1.113883.10.20.22.4.305"
+                                                extension="2019-06-21"/>
+                                            <code code="C160939" displayName="Implantable Device Status"
+                                                codeSystem="2.16.840.1.113883.3.26.1.1"
+                                                codeSystemName="NCI Thesaurus"/>
+                                            <value xsi:type="CD" code="C160942"
+                                                codeSystem="2.16.840.1.113883.3.26.1.1" displayName="Reduced Function"
+                                                codeSystemName="NCI Thesaurus" sdtc:valueSet="2.16.840.1.113762.1.4.1021.48">
+                                                <originalText>
+                                                    <reference value="#ImplantableDeviceStatus_1"/>
+                                                </originalText>
+                                            </value>
+                                        </observation>
+                                    </component>
+                                </organizer>
+                            </entryRelationship>
+                        </procedure>
+                    </entry>
+                </section>
+            </component>
+        <component>
+            <section>
+                <templateId root="2.16.840.1.113883.10.20.22.2.80" extension="2018-04-01"/>
+                <code code="90767-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"
+                    displayName="Pregnancy summary document"/>
+                <title>Pregnancy Status</title>
+                <text>
+                    <table>
+                        <colgroup>
+                            <col width="10%"/>
+                            <col width="40%"/>
+                            <col width="50%"/>
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>Pregnancy Status</th>
+                                <th>Date of Last Menstral Cycle</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr ID="Preg_obs1">
+                                <td>02/11/2019</td>
+                                <td ID="Preg_status">Not Pregnant</td>
+                                <td>1990</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </text>
+                <entry>
+                    <observation classCode="OBS" moodCode="EVN">
+                        <!-- [C-CDA R1] Pregnancy Observation -->
+                        <templateId root="2.16.840.1.113883.10.20.15.3.8" />
+                        <!-- [C-CDA PREG] Pregnancy Observation (SUPPLEMENTAL PREGNANCY)-->
+                        <templateId root="2.16.840.1.113883.10.20.22.4.293" extension="2018-04-01" />
+                        <id root="beee38ad-68a4-45fd-9a8b-2d2c4ab4bb6a" />
+                        <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" />
+                        <text>
+                            <reference value="#Preg_obs1"></reference>
+                        </text>
+                        <statusCode code="completed" />
+                        <!-- Use the effectiveTime to indicate the date range over which the patient
+                             was pregnant/possibly pregnant/not pregnant/unknown. -->
+                        <!-- Using a value indicates it is a point in time observation-->
+                        <effectiveTime value="20190211">
+                        </effectiveTime>
+                        <value xsi:type="CD" code="60001007"
+                            displayName="Not pregnant"
+                            codeSystem="2.16.840.1.113883.6.96"
+                            codeSystemName="SNOMED CT" >
+                            <originalText>
+                                <reference value="#Preg_status"></reference>
+                            </originalText>
+                        </value>
+                    </observation>
+                </entry>
+            </section>
+        </component>
+        
+        <component>
+            <section>
+                <templateId root="2.16.840.1.113883.10.20.22.2.7"/>
+                <templateId root="2.16.840.1.113883.10.20.22.2.7" extension="2014-06-09"/>
+                <templateId root="2.16.840.1.113883.10.20.22.2.7.1"/>
+                <templateId root="2.16.840.1.113883.10.20.22.2.7.1" extension="2014-06-09"/>
+                <id root="4536582C-018F-11E6-9EF4-0050568B1D1B"/>
+                <code code="47519-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of procedures"/>
+                <title>Procedures</title>
+                
+                <text>
+                    <content  ID="Proc_STR" styleCode="Italics">Procedure information limited to past seven years. (02/11/2012 - )</content>
+                    <table>
+                        <colgroup>
+                            <col width="25%"/>
+                            <col width="10%"/>
+                            <col width="15%"/>
+                            <col width="25%"/>
+                            <col width="25%"/>
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th>Procedure Name</th>
+                                <th>Priority</th>
+                                <th>Associated Diagnoses</th>
+                                <th>Facility | Performer</th>
+                                <th>Date/Time</th>
+                                <th>Documented By</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr ID="Procedure1" styleCode="normRow">
+                                <td ID="Procedure1name">Osteotomy of proximal femur (procedure)</td>
+                                <td>Routine</td>
+                                <td>
+                                    <content>Osteoarthritis</content>
+                                </td>
+                                <td> | A.Moreland</td>
+                                <td>(04/13/2016)</td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </text>
+                <entry>
+                    <observation classCode="OBS" moodCode="EVN">
+                        <!-- Section Time Range Observation -->
+                        <templateId root="2.16.840.1.113883.10.20.22.4.201" extension="2016-06-01"/>
+                        <code  code="82607-3" displayName="Clinical data [Date and Time Range]" codeSystem="2.16.840.1.113883.6.1"
+                                codeSystemName="LOINC"></code>
+                        <text><reference value="#Proc_STR"></reference></text>
+                        <statusCode code="completed"/>
+                        <value xsi:type="IVL_TS">
+                            <low value="20120211"/>
+                            <high value="20190211"/>
+                        </value> 
+                    </observation>
+                </entry>
+                <entry>
+                    <procedure classCode="PROC" moodCode="EVN">
+                        <templateId root="2.16.840.1.113883.10.20.22.4.14"/>
+                        <templateId root="2.16.840.1.113883.10.20.22.4.14"
+                            extension="2014-06-09"/>
+                        <id extension="2448483" root="1.2.840.114350.1.13.5552.1.7.2.798268"/>
+                        <code code="239311006" 
+                            codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT">
+                            <originalText>
+                                <reference value="#Procedure1name"/>
+                            </originalText>
+                        </code>
+                        <text>
+                            <reference value="#Procedure1"/>
+                        </text>
+                        <statusCode code="completed"/>
+                        <effectiveTime value="20160413"/>
+                        <performer typeCode="PRF">
+                            <assignedEntity classCode="ASSIGNED">
+                                <id nullFlavor="UNK"/>
+                                <addr>
+                                    <streetAddressLine>613 Jefferson Street</streetAddressLine>
+                                    <city>NATCHEZ</city>
+                                    <state>MS</state>
+                                    <postalCode>39120</postalCode>
+                                </addr>
+                                <telecom use="WP" value="tel:+1-601-555-5593"/>
+                                <assignedPerson>
+                                    <name>
+                                        <given>Andrew</given>
+                                        <family>Moreland</family>
+                                    </name>
+                                </assignedPerson>
+                                <representedOrganization classCode="ORG">
+                                    <name nullFlavor="UNK"/>
+                                    <telecom nullFlavor="UNK"/>
+                                    <addr nullFlavor="UNK"/>
+                                </representedOrganization>
+                            </assignedEntity>
+                        </performer>
+                        <entryRelationship typeCode="RSON">
+                            <observation classCode="OBS" moodCode="EVN">
+                                <templateId root="2.16.840.1.113883.10.20.22.4.19"/>
+                                <templateId root="2.16.840.1.113883.10.20.22.4.19"
+                                    extension="2014-06-09"/>
+                                <id extension="131788"
+                                    root="1.2.840.114350.1.13.5552.1.7.2.696871"/>
+                                <code code="282291009" codeSystem="2.16.840.1.113883.6.96"
+                                    codeSystemName="SNOMED CT" displayName="Diagnosis"/>
+                                <text>Osteoarthritis</text>
+                                <statusCode code="completed"/>
+                                <value code="396275006" codeSystem="2.16.840.1.113883.6.96"
+                                    codeSystemName="SNOMED CT" displayName="Osteoarthritis"
+                                    xsi:type="CD"
+                                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                            </observation>
+                        </entryRelationship>
+                    </procedure>
+                </entry>
+            </section>
+        </component>
+        
+        <component>
+            <section>
+                <templateId root="2.16.840.1.113883.10.20.22.2.17"/>
+                <templateId root="2.16.840.1.113883.10.20.22.2.17" extension="2015-08-01"/>
+                <code code="29762-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"
+                    displayName="Social history"/>
+                <title>Social History</title>
+                <text>
+                    <table>
+                        <colgroup>
+                            <col width="25%"/>
+                            <col width="25%"/>
+                            <col width="25%"/>
+                            <col width="25%"/>
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th>Information Type</th>
+                                <th>Date</th>
+                                <th>Relevant Information</th>
+                                <th>Documented By</th>
+                                
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr ID="SocialHistory_2">
+                                <td>Birth Sex</td>
+                                <td><content>(04/12/2016)</content></td>
+                                <td><content>Male</content></td>
+                                <td><content>M.Smith</content> <content>(04/12/2016)</content></td>
+                            </tr>
+                            <tr ID="SocialHistory_3">
+                                <td>Sexual Orientation</td>
+                                <td><content>(04/12/2016)</content></td>
+                                <td><content ID="SH3_SO">Straight</content></td>
+                                <td><content>M.Smith</content> <content>(04/12/2016)</content></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </text>
+                <entry>
+                    <observation classCode="OBS" moodCode="EVN">
+                        <templateId root="2.16.840.1.113883.10.20.22.4.38"/>
+                        <templateId root="2.16.840.1.113883.10.20.22.4.38" extension="2015-08-01"/>
+                        <id extension="64020-Z9311" root="1.2.840.114350.1.13.6289.1.7.1.1040.1"/>
+                        <code code="76690-7" codeSystem="2.16.840.1.113883.6.1"
+                            codeSystemName="LOINC" displayName="Sexual orientation"/>
+                        <text><reference value="#SocialHistory_3"></reference></text>
+                        <statusCode code="completed"/>
+                        <effectiveTime value="20160412"/>
+                        <value xsi:type="CD" code="20430005" displayName="Heterosexual (finding)"
+                            codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT">
+                            <originalText>
+                                <reference value="#SH3_SO"></reference>
+                            </originalText>
+                        </value>
+                        <author>
+                            <time value="20160412"/>
+                            <assignedAuthor>
+                                <id extension="10.1" root="1.2.840.114350.1.1"/>
+                            </assignedAuthor>
+                        </author>
+                    </observation>
+                </entry>
+               
+                <entry>
+                    <observation classCode="OBS" moodCode="EVN">
+                        <templateId root="2.16.840.1.113883.10.20.22.4.200" extension="2016-06-01"/>
+                        <id root="1.2.840.114350.1.13.6289.1.7.1.1040.1" extension="64020-Z9302"/>
+                        <code code="76689-9" codeSystem="2.16.840.1.113883.6.1"
+                            codeSystemName="LOINC" displayName="Sex Assigned At Birth"/>
+                        <text><reference value="#SocialHistory_2"></reference></text>
+                        <statusCode code="completed"/>
+                        <effectiveTime value="19530829"/>
+                        <value xsi:type="CD" code="M" displayName="Male"  
+                            codeSystem="2.16.840.1.113883.5.1"  codeSystemName="AdministrativeGender"/>
+                        <author>
+                            <time value="20160412"/>
+                            <assignedAuthor>
+                                <id extension="10.1" root="1.2.840.114350.1.1"/>
+                            </assignedAuthor>
+                        </author>
+                    </observation>
+                </entry>
+            </section>
+        </component>
+        
+        
+    </structuredBody>
+  </component>
+</ClinicalDocument>

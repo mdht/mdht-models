@@ -10,6 +10,7 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -54,7 +55,6 @@ public class ChiefComplaintAndReasonForVisitSectionImpl extends SectionImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateChiefComplaintAndReasonForVisitSectionTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ChiefComplaintAndReasonForVisitSectionOperations.validateChiefComplaintAndReasonForVisitSectionTemplateId(
@@ -66,7 +66,6 @@ public class ChiefComplaintAndReasonForVisitSectionImpl extends SectionImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateChiefComplaintAndReasonForVisitSectionCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ChiefComplaintAndReasonForVisitSectionOperations.validateChiefComplaintAndReasonForVisitSectionCode(
@@ -75,10 +74,9 @@ public class ChiefComplaintAndReasonForVisitSectionImpl extends SectionImpl
 
 	/**
 	 * <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateChiefComplaintAndReasonForVisitSectionCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ChiefComplaintAndReasonForVisitSectionOperations.validateChiefComplaintAndReasonForVisitSectionCodeP(
@@ -90,7 +88,6 @@ public class ChiefComplaintAndReasonForVisitSectionImpl extends SectionImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateChiefComplaintAndReasonForVisitSectionText(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ChiefComplaintAndReasonForVisitSectionOperations.validateChiefComplaintAndReasonForVisitSectionText(
@@ -102,7 +99,6 @@ public class ChiefComplaintAndReasonForVisitSectionImpl extends SectionImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateChiefComplaintAndReasonForVisitSectionTitle(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ChiefComplaintAndReasonForVisitSectionOperations.validateChiefComplaintAndReasonForVisitSectionTitle(
@@ -114,17 +110,15 @@ public class ChiefComplaintAndReasonForVisitSectionImpl extends SectionImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public ChiefComplaintAndReasonForVisitSection init() {
 		return Initializer.Util.init(this);
 	}
 
 	/**
 	 * <!-- begin-user-doc -->
-	   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public ChiefComplaintAndReasonForVisitSection init(
 			Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);

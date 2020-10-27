@@ -756,7 +756,7 @@ public class AdvanceDirectiveObservation2Test extends CDAValidationTest {
 			@Override
 			protected void updateToPass(AdvanceDirectiveObservation2 target) {
 				target.getParticipants().get(0).getParticipantRole().setCode(
-					DatatypesFactory.eINSTANCE.createCE("NotCurrentlyChecked", "2.16.840.1.113883.5.111"));
+					DatatypesFactory.eINSTANCE.createCE("DAUINLAW", "2.16.840.1.113883.5.111"));
 			}
 
 			@Override

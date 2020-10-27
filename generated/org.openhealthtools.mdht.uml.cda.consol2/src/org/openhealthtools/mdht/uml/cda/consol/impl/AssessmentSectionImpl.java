@@ -10,6 +10,7 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -53,7 +54,6 @@ public class AssessmentSectionImpl extends SectionImpl implements AssessmentSect
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateAssessmentSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AssessmentSectionOperations.validateAssessmentSectionTemplateId(this, diagnostics, context);
 	}
@@ -63,17 +63,15 @@ public class AssessmentSectionImpl extends SectionImpl implements AssessmentSect
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateAssessmentSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AssessmentSectionOperations.validateAssessmentSectionCode(this, diagnostics, context);
 	}
 
 	/**
 	 * <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateAssessmentSectionCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AssessmentSectionOperations.validateAssessmentSectionCodeP(this, diagnostics, context);
 	}
@@ -83,17 +81,15 @@ public class AssessmentSectionImpl extends SectionImpl implements AssessmentSect
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateAssessmentSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AssessmentSectionOperations.validateAssessmentSectionText(this, diagnostics, context);
 	}
 
 	/**
 	 * <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateAssessmentSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AssessmentSectionOperations.validateAssessmentSectionTitle(this, diagnostics, context);
 	}
@@ -103,17 +99,15 @@ public class AssessmentSectionImpl extends SectionImpl implements AssessmentSect
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public AssessmentSection init() {
 		return Initializer.Util.init(this);
 	}
 
 	/**
 	 * <!-- begin-user-doc -->
-	   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public AssessmentSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

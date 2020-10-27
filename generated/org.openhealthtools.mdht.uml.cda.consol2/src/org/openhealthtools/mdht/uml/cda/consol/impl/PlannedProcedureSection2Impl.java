@@ -6,6 +6,7 @@
  */
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -61,7 +62,6 @@ public class PlannedProcedureSection2Impl extends PlannedProcedureSectionImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EList<PlannedProcedure2> getConsolPlannedProcedure2s() {
 		return PlannedProcedureSection2Operations.getConsolPlannedProcedure2s(this);
 	}

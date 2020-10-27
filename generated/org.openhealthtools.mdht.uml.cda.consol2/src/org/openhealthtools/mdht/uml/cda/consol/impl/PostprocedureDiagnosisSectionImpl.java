@@ -10,6 +10,7 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -54,7 +55,6 @@ public class PostprocedureDiagnosisSectionImpl extends SectionImpl implements Po
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validatePostprocedureDiagnosisSectionTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PostprocedureDiagnosisSectionOperations.validatePostprocedureDiagnosisSectionTemplateId(
@@ -63,10 +63,19 @@ public class PostprocedureDiagnosisSectionImpl extends SectionImpl implements Po
 
 	/**
 	 * <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
+	public boolean validatePostprocedureDiagnosisSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PostprocedureDiagnosisSectionOperations.validatePostprocedureDiagnosisSectionCode(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validatePostprocedureDiagnosisSectionCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PostprocedureDiagnosisSectionOperations.validatePostprocedureDiagnosisSectionCodeP(
@@ -78,29 +87,6 @@ public class PostprocedureDiagnosisSectionImpl extends SectionImpl implements Po
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validatePostprocedureDiagnosisSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PostprocedureDiagnosisSectionOperations.validatePostprocedureDiagnosisSectionCode(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validatePostprocedureDiagnosisSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PostprocedureDiagnosisSectionOperations.validatePostprocedureDiagnosisSectionText(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public boolean validatePostprocedureDiagnosisSectionTitle(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PostprocedureDiagnosisSectionOperations.validatePostprocedureDiagnosisSectionTitle(
@@ -112,7 +98,16 @@ public class PostprocedureDiagnosisSectionImpl extends SectionImpl implements Po
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
+	public boolean validatePostprocedureDiagnosisSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PostprocedureDiagnosisSectionOperations.validatePostprocedureDiagnosisSectionText(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validatePostprocedureDiagnosisSectionPostprocedureDiagnosis(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PostprocedureDiagnosisSectionOperations.validatePostprocedureDiagnosisSectionPostprocedureDiagnosis(
@@ -124,7 +119,6 @@ public class PostprocedureDiagnosisSectionImpl extends SectionImpl implements Po
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public PostprocedureDiagnosis getPostprocedureDiagnosis() {
 		return PostprocedureDiagnosisSectionOperations.getPostprocedureDiagnosis(this);
 	}
@@ -134,17 +128,15 @@ public class PostprocedureDiagnosisSectionImpl extends SectionImpl implements Po
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public PostprocedureDiagnosisSection init() {
 		return Initializer.Util.init(this);
 	}
 
 	/**
 	 * <!-- begin-user-doc -->
-	   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public PostprocedureDiagnosisSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

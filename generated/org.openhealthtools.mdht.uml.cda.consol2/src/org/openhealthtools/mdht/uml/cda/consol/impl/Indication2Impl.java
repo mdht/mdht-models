@@ -6,6 +6,7 @@
  */
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -86,6 +87,16 @@ public class Indication2Impl extends IndicationImpl implements Indication2 {
 	 * @generated
 	 */
 	@Override
+	public boolean validateIndicationId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return Indication2Operations.validateIndicationId(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public boolean validateIndicationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return Indication2Operations.validateIndicationCodeP(this, diagnostics, context);
 	}
@@ -98,16 +109,6 @@ public class Indication2Impl extends IndicationImpl implements Indication2 {
 	@Override
 	public boolean validateIndicationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return Indication2Operations.validateIndicationCode(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateIndicationId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return Indication2Operations.validateIndicationId(this, diagnostics, context);
 	}
 
 	/**

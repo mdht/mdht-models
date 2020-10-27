@@ -6,6 +6,7 @@
  */
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -64,7 +65,6 @@ public class ImmunizationActivity2Impl extends ImmunizationActivityImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateImmunizationActivityStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ImmunizationActivity2Operations.validateImmunizationActivityStatusCodeP(this, diagnostics, context);
 	}
@@ -74,7 +74,6 @@ public class ImmunizationActivity2Impl extends ImmunizationActivityImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateImmunizationActivity2AuthorParticipation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ImmunizationActivity2Operations.validateImmunizationActivity2AuthorParticipation(
@@ -161,7 +160,6 @@ public class ImmunizationActivity2Impl extends ImmunizationActivityImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EList<DrugVehicle> getConsolDrugVehicles() {
 		return ImmunizationActivity2Operations.getConsolDrugVehicles(this);
 	}
@@ -171,7 +169,6 @@ public class ImmunizationActivity2Impl extends ImmunizationActivityImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EList<Indication2> getConsolIndication2s() {
 		return ImmunizationActivity2Operations.getConsolIndication2s(this);
 	}
@@ -181,7 +178,6 @@ public class ImmunizationActivity2Impl extends ImmunizationActivityImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public MedicationSupplyOrder2 getConsolMedicationSupplyOrder2() {
 		return ImmunizationActivity2Operations.getConsolMedicationSupplyOrder2(this);
 	}
@@ -191,7 +187,6 @@ public class ImmunizationActivity2Impl extends ImmunizationActivityImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public MedicationDispense2 getConsolMedicationDispense2() {
 		return ImmunizationActivity2Operations.getConsolMedicationDispense2(this);
 	}
@@ -201,7 +196,6 @@ public class ImmunizationActivity2Impl extends ImmunizationActivityImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public ReactionObservation2 getConsolReactionObservation2() {
 		return ImmunizationActivity2Operations.getConsolReactionObservation2(this);
 	}
@@ -211,7 +205,6 @@ public class ImmunizationActivity2Impl extends ImmunizationActivityImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public Instruction2 getConsolInstruction2() {
 		return ImmunizationActivity2Operations.getConsolInstruction2(this);
 	}

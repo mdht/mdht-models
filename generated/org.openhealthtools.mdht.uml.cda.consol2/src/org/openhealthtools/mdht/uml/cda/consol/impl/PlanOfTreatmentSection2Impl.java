@@ -6,6 +6,7 @@
  */
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -69,7 +70,6 @@ public class PlanOfTreatmentSection2Impl extends PlanOfCareSectionImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validatePlanOfTreatmentSection2HandoffCommunication(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PlanOfTreatmentSection2Operations.validatePlanOfTreatmentSection2HandoffCommunication(
@@ -114,7 +114,6 @@ public class PlanOfTreatmentSection2Impl extends PlanOfCareSectionImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EList<PlannedObservation2> getConsolPlannedObservation2s() {
 		return PlanOfTreatmentSection2Operations.getConsolPlannedObservation2s(this);
 	}
@@ -124,7 +123,6 @@ public class PlanOfTreatmentSection2Impl extends PlanOfCareSectionImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EList<PlannedEncounter2> getConsolPlannedEncounter2s() {
 		return PlanOfTreatmentSection2Operations.getConsolPlannedEncounter2s(this);
 	}
@@ -134,7 +132,6 @@ public class PlanOfTreatmentSection2Impl extends PlanOfCareSectionImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EList<PlannedAct2> getConsolPlannedAct2s() {
 		return PlanOfTreatmentSection2Operations.getConsolPlannedAct2s(this);
 	}
@@ -144,7 +141,6 @@ public class PlanOfTreatmentSection2Impl extends PlanOfCareSectionImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EList<PlannedProcedure2> getConsolPlannedProcedure2s() {
 		return PlanOfTreatmentSection2Operations.getConsolPlannedProcedure2s(this);
 	}
@@ -154,7 +150,6 @@ public class PlanOfTreatmentSection2Impl extends PlanOfCareSectionImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EList<PlannedMedicationActivity2> getConsolPlannedMedicationActivity2s() {
 		return PlanOfTreatmentSection2Operations.getConsolPlannedMedicationActivity2s(this);
 	}
@@ -164,7 +159,6 @@ public class PlanOfTreatmentSection2Impl extends PlanOfCareSectionImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EList<PlannedSupply2> getConsolPlannedSupply2s() {
 		return PlanOfTreatmentSection2Operations.getConsolPlannedSupply2s(this);
 	}
@@ -174,7 +168,6 @@ public class PlanOfTreatmentSection2Impl extends PlanOfCareSectionImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EList<Instruction2> getConsolInstruction2s() {
 		return PlanOfTreatmentSection2Operations.getConsolInstruction2s(this);
 	}
@@ -184,7 +177,6 @@ public class PlanOfTreatmentSection2Impl extends PlanOfCareSectionImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EList<HandoffCommunicationParticipants> getHandoffCommunications() {
 		return PlanOfTreatmentSection2Operations.getHandoffCommunications(this);
 	}

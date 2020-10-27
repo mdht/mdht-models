@@ -2,6 +2,7 @@
  */
 package org.openhealthtools.mdht.uml.cda.consol;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -72,7 +73,7 @@ public interface ProgressNote2 extends USRealmHeader2 {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and \r\nlet value : datatypes::CE = self.code.oclAsType(datatypes::CE) in \r\nvalue.codeSystem = \'2.16.840.1.113883.6.1\' and (value.code = \'11506-3\' or value.code = \'18733-6\' or value.code = \'18762-5\' or value.code = \'28569-2\' or value.code = \'28617-9\' or value.code = \'34900-1\' or value.code = \'34904-3\' or value.code = \'18764-1\' or value.code = \'28623-7\' or value.code = \'11507-1\' or value.code = \'11508-9\' or value.code = \'11509-7\' or value.code = \'28627-8\' or value.code = \'11510-5\' or value.code = \'28656-7\' or value.code = \'11512-1\' or value.code = \'34126-3\' or value.code = \'15507-7\' or value.code = \'34129-7\' or value.code = \'34125-5\' or value.code = \'34130-5\' or value.code = \'34131-3\' or value.code = \'34124-8\' or value.code = \'34127-1\' or value.code = \'34128-9\' or value.code = \'34901-9\' or value.code = \'34132-1\'))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and \nlet value : datatypes::CE = self.code.oclAsType(datatypes::CE) in \nvalue.codeSystem = \'2.16.840.1.113883.6.1\' and (value.code = \'11506-3\' or value.code = \'18733-6\' or value.code = \'18762-5\' or value.code = \'28569-2\' or value.code = \'28617-9\' or value.code = \'34900-1\' or value.code = \'34904-3\' or value.code = \'18764-1\' or value.code = \'28623-7\' or value.code = \'11507-1\' or value.code = \'11508-9\' or value.code = \'11509-7\' or value.code = \'28627-8\' or value.code = \'11510-5\' or value.code = \'28656-7\' or value.code = \'11512-1\' or value.code = \'34126-3\' or value.code = \'15507-7\' or value.code = \'34129-7\' or value.code = \'34125-5\' or value.code = \'34130-5\' or value.code = \'34131-3\' or value.code = \'34124-8\' or value.code = \'34127-1\' or value.code = \'34128-9\' or value.code = \'34901-9\' or value.code = \'34132-1\'))'"
 	 * @generated
 	 */
 	boolean validateProgressNote2Code(DiagnosticChain diagnostics, Map<Object, Object> context);

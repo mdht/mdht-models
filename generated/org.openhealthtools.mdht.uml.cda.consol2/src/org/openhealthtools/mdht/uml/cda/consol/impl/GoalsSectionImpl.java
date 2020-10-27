@@ -6,6 +6,7 @@
  */
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -51,7 +52,6 @@ public class GoalsSectionImpl extends SectionImpl implements GoalsSection {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateGoalsSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return GoalsSectionOperations.validateGoalsSectionTemplateId(this, diagnostics, context);
 	}
@@ -70,7 +70,6 @@ public class GoalsSectionImpl extends SectionImpl implements GoalsSection {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateGoalsSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return GoalsSectionOperations.validateGoalsSectionCode(this, diagnostics, context);
 	}
@@ -80,7 +79,6 @@ public class GoalsSectionImpl extends SectionImpl implements GoalsSection {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateGoalsSectionCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return GoalsSectionOperations.validateGoalsSectionCodeP(this, diagnostics, context);
 	}
@@ -90,7 +88,6 @@ public class GoalsSectionImpl extends SectionImpl implements GoalsSection {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateGoalsSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return GoalsSectionOperations.validateGoalsSectionTitle(this, diagnostics, context);
 	}
@@ -100,7 +97,6 @@ public class GoalsSectionImpl extends SectionImpl implements GoalsSection {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateGoalsSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return GoalsSectionOperations.validateGoalsSectionText(this, diagnostics, context);
 	}
@@ -110,7 +106,6 @@ public class GoalsSectionImpl extends SectionImpl implements GoalsSection {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateGoalsSectionGoalObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return GoalsSectionOperations.validateGoalsSectionGoalObservation(this, diagnostics, context);
 	}
@@ -120,7 +115,6 @@ public class GoalsSectionImpl extends SectionImpl implements GoalsSection {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EList<GoalObservation> getGoalObservations() {
 		return GoalsSectionOperations.getGoalObservations(this);
 	}
@@ -130,7 +124,6 @@ public class GoalsSectionImpl extends SectionImpl implements GoalsSection {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public GoalsSection init() {
 		return Initializer.Util.init(this);
 	}
@@ -140,7 +133,6 @@ public class GoalsSectionImpl extends SectionImpl implements GoalsSection {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public GoalsSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

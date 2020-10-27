@@ -10,6 +10,7 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -55,7 +56,6 @@ public class InstructionsSectionImpl extends SectionImpl implements Instructions
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateInstructionsSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return InstructionsSectionOperations.validateInstructionsSectionTemplateId(this, diagnostics, context);
 	}
@@ -65,17 +65,15 @@ public class InstructionsSectionImpl extends SectionImpl implements Instructions
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateInstructionsSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return InstructionsSectionOperations.validateInstructionsSectionCode(this, diagnostics, context);
 	}
 
 	/**
 	 * <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean validateInstructionsSectionCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return InstructionsSectionOperations.validateInstructionsSectionCodeP(this, diagnostics, context);
 	}
@@ -85,17 +83,6 @@ public class InstructionsSectionImpl extends SectionImpl implements Instructions
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validateInstructionsSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return InstructionsSectionOperations.validateInstructionsSectionText(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public boolean validateInstructionsSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return InstructionsSectionOperations.validateInstructionsSectionTitle(this, diagnostics, context);
 	}
@@ -105,7 +92,15 @@ public class InstructionsSectionImpl extends SectionImpl implements Instructions
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
+	public boolean validateInstructionsSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return InstructionsSectionOperations.validateInstructionsSectionText(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateInstructionsSectionInstructions(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return InstructionsSectionOperations.validateInstructionsSectionInstructions(this, diagnostics, context);
 	}
@@ -115,7 +110,6 @@ public class InstructionsSectionImpl extends SectionImpl implements Instructions
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public EList<Instructions> getInstructionss() {
 		return InstructionsSectionOperations.getInstructionss(this);
 	}
@@ -125,17 +119,15 @@ public class InstructionsSectionImpl extends SectionImpl implements Instructions
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public InstructionsSection init() {
 		return Initializer.Util.init(this);
 	}
 
 	/**
 	 * <!-- begin-user-doc -->
-	   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public InstructionsSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;
