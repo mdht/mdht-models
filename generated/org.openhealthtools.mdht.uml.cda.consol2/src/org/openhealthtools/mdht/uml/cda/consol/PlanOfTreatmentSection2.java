@@ -18,6 +18,7 @@ import org.eclipse.mdht.emf.runtime.util.Initializer;
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getPlanOfTreatmentSection2()
  * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='PlanOfTreatmentSection2TemplateId PlanOfCareSectionCode PlanOfCareSectionCodeP' templateId.root='2.16.840.1.113883.10.20.22.2.10' templateId.extension='2014-06-09' constraints.validation.dependOn.PlanOfCareSectionCode='PlanOfCareSectionCodeP' constraints.validation.info='PlanOfCareSectionPlanOfCareActivityObservation PlanOfCareSectionPlanOfCareActivityEncounter PlanOfCareSectionPlanOfCareActivityAct PlanOfCareSectionPlanOfCareActivityProcedure PlanOfCareSectionPlanOfCareActivitySubstanceAdministration PlanOfCareSectionPlanOfCareActivitySupply PlanOfCareSectionInstructions PlanOfTreatmentSection2HandoffCommunication PlanOfTreatmentSection2NutritionRecommendation PlanOfTreatmentSection2PlannedImmunizationActivity PlanOfTreatmentSection2GoalObservation'"
+ *        annotation="duplicates"
  * @generated
  */
 public interface PlanOfTreatmentSection2 extends PlanOfCareSection {

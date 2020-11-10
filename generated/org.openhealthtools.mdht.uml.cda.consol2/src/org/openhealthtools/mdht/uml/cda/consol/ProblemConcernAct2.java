@@ -18,6 +18,7 @@ import org.eclipse.mdht.emf.runtime.util.Initializer;
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getProblemConcernAct2()
  * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ProblemConcernAct2TemplateId ProblemConcernActEffectiveTimeLow ProblemConcernActStatusCode ProblemConcernActStatusCodeP ProblemConcernActEffectiveTime ProblemConcernActCode ProblemConcernActCodeP ProblemConcernActProblemObservation' templateId.root='2.16.840.1.113883.10.20.22.4.3' templateId.extension='2015-08-01' constraints.validation.info='ProblemConcernActEffectiveTimeHigh ProblemConcernAct2PriorityPreference' constraints.validation.dependOn.ProblemConcernActStatusCode='ProblemConcernActStatusCodeP' constraints.validation.dependOn.ProblemConcernActCode='ProblemConcernActCodeP' constraints.validation.warning='ProblemConcernAct2AuthorParticipation'"
+ *        annotation="duplicates"
  * @generated
  */
 public interface ProblemConcernAct2 extends ProblemConcernAct {

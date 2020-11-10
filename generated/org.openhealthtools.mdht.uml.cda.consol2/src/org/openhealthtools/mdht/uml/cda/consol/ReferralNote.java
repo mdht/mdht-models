@@ -26,6 +26,7 @@ import org.eclipse.mdht.emf.runtime.util.Initializer;
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolReferralNoteParticipantCallbackContact typeCode='CALLBCK' constraints.validation.error='ReferralNoteParticipantCallbackContactTypeCode ReferralNoteParticipantCallbackContactAssociatedEntity'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolReferralNoteParticipantCallbackContactAssociatedEntity constraints.validation.error='ReferralNoteParticipantCallbackContactAssociatedEntityId ReferralNoteParticipantCallbackContactAssociatedEntityTelecom ReferralNoteParticipantCallbackContactAssociatedEntityClassCode ReferralNoteParticipantCallbackContactAssociatedEntityAssociatedPerson' constraints.validation.warning='ReferralNoteParticipantCallbackContactAssociatedEntityAddr' classCode='ASSIGNED' constraints.validation.info='ReferralNoteParticipantCallbackContactAssociatedEntityScopingOrganization'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolReferralNoteParticipantCallbackContactAssociatedEntityAssociatedPerson constraints.validation.error='ReferralNoteParticipantCallbackContactAssociatedEntityAssociatedPersonName'"
+ *        annotation="duplicates"
  * @generated
  */
 public interface ReferralNote extends USRealmHeader2 {

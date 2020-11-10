@@ -25,6 +25,7 @@ import org.eclipse.mdht.emf.runtime.util.Initializer;
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolPolicyActivity2CoverageCoverageRole constraints.validation.error='PolicyActivityCoverageCoverageRoleId' constraints.validation.warning='PolicyActivityCoverageCoverageRoleCoveragePlayingEntity'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolPolicyActivity2CoverageCoverageRoleCoveragePlayingEntity constraints.validation.info='PolicyActivityCoverageCoverageRoleCoveragePlayingEntityDateOfBirthInSDTCbirthTime' constraints.validation.error='PolicyActivityCoverageCoverageRoleCoveragePlayingEntityName PolicyActivity2CoverageCoverageRoleCoveragePlayingEntitySDTCBirthTime'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolPolicyActivity2CD translation.codeSystem='2.16.840.1.113883.3.221.5' translation.codeSystemName='Source of Payment Typology (PHDSC)' constraints.validation.warning='PolicyActivity2CDTranslation' constraints.validation.error='PolicyActivity2CDTranslationP'"
+ *        annotation="duplicates"
  * @generated
  */
 public interface PolicyActivity2 extends PolicyActivity {

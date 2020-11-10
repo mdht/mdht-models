@@ -23,6 +23,7 @@ import org.eclipse.mdht.emf.runtime.util.Initializer;
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolProgressNoteComponentOfEncompassingEncounter6 constraints.validation.error='ProgressNoteComponentOfEncompassingEncounter6PreciseToTheDay ProgressNoteComponentOfEncompassingEncounter6EffectiveTime ProgressNoteComponentOfEncompassingEncounter6Id ProgressNoteComponentOfEncompassingEncounter6Location' constraints.validation.warning='ProgressNoteComponentOfEncompassingEncounter6PreciseToTheMinute ProgressNoteComponentOfEncompassingEncounter6IfMorePreciseThanDayIncludeTimeZoneOffset' constraints.validation.info='ProgressNoteComponentOfEncompassingEncounter6PreciseToTheSecond'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolProgressNoteComponentOfEncompassingEncounter6Location constraints.validation.error='ProgressNoteComponentOfEncompassingEncounter6LocationHealthCareFacility'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolProgressNoteComponentOfEncompassingEncounter6LocationHealthCareFacility1 constraints.validation.error='ProgressNoteComponentOfEncompassingEncounter6LocationHealthCareFacility1Id'"
+ *        annotation="duplicates"
  * @generated
  */
 public interface ProgressNote extends GeneralHeaderConstraints {

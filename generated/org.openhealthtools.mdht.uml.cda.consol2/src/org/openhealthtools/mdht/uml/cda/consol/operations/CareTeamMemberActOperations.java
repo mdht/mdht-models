@@ -572,7 +572,7 @@ public class CareTeamMemberActOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_CARE_TEAM_MEMBER_ACT_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.performer->exists(performer : cda::Performer2 | not performer.oclIsUndefined() and performer.oclIsKindOf(cda::Performer2))";
+	protected static final String VALIDATE_CARE_TEAM_MEMBER_ACT_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.performer->one(performer : cda::Performer2 | not performer.oclIsUndefined() and performer.oclIsKindOf(cda::Performer2))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateCareTeamMemberActPerformer(CareTeamMemberAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Team Member Act Performer</em>}' invariant operation.
@@ -729,8 +729,7 @@ public class CareTeamMemberActOperations extends ClinicalStatementOperations {
 	public static boolean validateCareTeamMemberActCareTeamMemberScheduleObservation(
 			CareTeamMemberAct careTeamMemberAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		DatatypesUtil.increment(
-			context, "CareTeamMemberActCareTeamMemberActCareTeamMemberScheduleObservation", "ERROR");
+		DatatypesUtil.increment(context, "CareTeamMemberActCareTeamMemberActCareTeamMemberScheduleObservation", "INFO");
 
 		if (VALIDATE_CARE_TEAM_MEMBER_ACT_CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -751,7 +750,7 @@ public class CareTeamMemberActOperations extends ClinicalStatementOperations {
 			if (diagnostics != null) {
 				diagnostics.add(
 					new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CARE_TEAM_MEMBER_ACT__CARE_TEAM_MEMBER_ACT_CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION,
 						ConsolPlugin.INSTANCE.getString(
 							"CareTeamMemberActCareTeamMemberActCareTeamMemberScheduleObservation"),
@@ -865,7 +864,7 @@ public class CareTeamMemberActOperations extends ClinicalStatementOperations {
 	public static boolean validateCareTeamMemberActParticipant2(CareTeamMemberAct careTeamMemberAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		DatatypesUtil.increment(context, "CareTeamMemberActCareTeamMemberActParticipant2", "ERROR");
+		DatatypesUtil.increment(context, "CareTeamMemberActCareTeamMemberActParticipant2", "INFO");
 
 		if (VALIDATE_CARE_TEAM_MEMBER_ACT_PARTICIPANT2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -885,7 +884,7 @@ public class CareTeamMemberActOperations extends ClinicalStatementOperations {
 			if (diagnostics != null) {
 				diagnostics.add(
 					new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CARE_TEAM_MEMBER_ACT__CARE_TEAM_MEMBER_ACT_PARTICIPANT2,
 						ConsolPlugin.INSTANCE.getString("CareTeamMemberActCareTeamMemberActParticipant2"),
 						new Object[] { careTeamMemberAct }));

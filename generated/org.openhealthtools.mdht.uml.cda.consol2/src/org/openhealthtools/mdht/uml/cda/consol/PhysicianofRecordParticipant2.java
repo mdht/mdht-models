@@ -20,6 +20,7 @@ import org.eclipse.mdht.emf.runtime.util.Initializer;
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolPhysicianofRecordParticipant2AssignedEntity constraints.validation.warning='PhysicianofRecordParticipantAssignedEntityHasNationalProviderId PhysicianofRecordParticipantAssignedEntityAssignedPerson' constraints.validation.info='PhysicianofRecordParticipant2AssignedEntityRepresentedOrganization'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolPhysicianofRecordParticipant2AssignedEntityAssignedPerson constraints.validation.error='PhysicianofRecordParticipantAssignedEntityAssignedPersonName'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolPhysicianofRecordParticipant2AssignedEntityRepresentedOrganization constraints.validation.warning='PhysicianofRecordParticipant2AssignedEntityRepresentedOrganizationName'"
+ *        annotation="duplicates"
  * @generated
  */
 public interface PhysicianofRecordParticipant2 extends PhysicianofRecordParticipant {

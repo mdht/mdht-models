@@ -17,6 +17,7 @@ import org.eclipse.mdht.emf.runtime.util.Initializer;
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getNonMedicinalSupplyActivity2()
  * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='NonMedicinalSupplyActivity2TemplateId NonMedicinalSupplyActivity2Instruction2InversionInd NonMedicinalSupplyActivityStatusCode NonMedicinalSupplyActivityStatusCodeP' templateId.root='2.16.840.1.113883.10.20.22.4.50' templateId.extension='2014-06-09' constraints.validation.dependOn.NonMedicinalSupplyActivityStatusCode='NonMedicinalSupplyActivityStatusCodeP' constraints.validation.info='NonMedicinalSupplyActivity2Instruction2 NonMedicinalSupplyActivityProductInstance'"
+ *        annotation="duplicates"
  * @generated
  */
 public interface NonMedicinalSupplyActivity2 extends NonMedicinalSupplyActivity {

@@ -393,8 +393,8 @@ public class CareTeamOrganizerTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
-	* @Test NOT
+	* @generated NOT
+	* @Test
 	*/
 
 	@Test

@@ -18,6 +18,7 @@ import org.eclipse.mdht.emf.runtime.util.Initializer;
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getSocialHistorySection2()
  * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='SocialHistorySection2TemplateId SocialHistorySectionCode SocialHistorySectionCodeP' templateId.root='2.16.840.1.113883.10.20.22.2.17' templateId.extension='2015-08-01' constraints.validation.dependOn.SocialHistorySectionCode='SocialHistorySectionCodeP' constraints.validation.info='SocialHistorySectionSocialHistoryObservation SocialHistorySectionTobaccoUse SocialHistorySection2CaregiverCharacteristics SocialHistorySection2CulturalAndReligiousObservation SocialHistorySection2CharacteristicsOfHomeEnvironment SocialHistorySection2BirthSexObservation' constraints.validation.warning='SocialHistorySectionSmokingStatusObservation'"
+ *        annotation="duplicates"
  * @generated
  */
 public interface SocialHistorySection2 extends SocialHistorySection {

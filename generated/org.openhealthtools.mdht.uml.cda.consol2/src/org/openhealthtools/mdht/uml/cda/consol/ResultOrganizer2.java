@@ -19,6 +19,7 @@ import org.eclipse.mdht.emf.runtime.util.Initializer;
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getResultOrganizer2()
  * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ResultOrganizer2TemplateId ResultOrganizerResultObservation ResultOrganizer2IVLTSLow ResultOrganizer2IVLTSHigh' templateId.root='2.16.840.1.113883.10.20.22.4.1' templateId.extension='2015-08-01' constraints.validation.warning='ResultOrganizerCodeValue ResultOrganizer2AuthorParticipation' constraints.validation.info='ResultOrganizerClassCodeValue ResultOrganizer2EffectiveTime' constraints.validation.query='ResultOrganizer2IVLTSLow ResultOrganizer2IVLTSHigh'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolResultOrganizer2IVLTS constraints.validation.error='ResultOrganizer2IVLTSLow ResultOrganizer2IVLTSHigh'"
+ *        annotation="duplicates"
  * @generated
  */
 public interface ResultOrganizer2 extends ResultOrganizer {

@@ -22,6 +22,7 @@ import org.eclipse.mdht.emf.runtime.util.Initializer;
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getEncountersSection()
  * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='EncountersSectionEntriesOptionalTemplateId EncountersSectionEntriesOptionalCode EncountersSectionEntriesOptionalCodeP EncountersSectionEntriesOptionalText EncountersSectionEntriesOptionalTitle EncountersSectionEncounterActivities' templateId.root='2.16.840.1.113883.10.20.22.2.22.1' constraints.validation.dependOn.EncountersSectionEntriesOptionalCode='EncountersSectionEntriesOptionalCodeP'"
+ *        annotation="duplicates"
  * @generated
  */
 public interface EncountersSection extends EncountersSectionEntriesOptional {

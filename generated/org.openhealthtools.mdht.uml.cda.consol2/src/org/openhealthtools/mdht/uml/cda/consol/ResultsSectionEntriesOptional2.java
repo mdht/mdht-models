@@ -15,6 +15,7 @@ import org.eclipse.mdht.emf.runtime.util.Initializer;
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getResultsSectionEntriesOptional2()
  * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ResultsSectionEntriesOptionalTemplateId ResultsSectionEntriesOptionalCode ResultsSectionEntriesOptionalCodeP' templateId.root='2.16.840.1.113883.10.20.22.2.3' templateId.extension='2015-08-01' constraints.validation.dependOn.ResultsSectionEntriesOptionalCode='ResultsSectionEntriesOptionalCodeP' constraints.validation.warning='ResultsSectionEntriesOptionalResultOrganizer'"
+ *        annotation="duplicates"
  * @generated
  */
 public interface ResultsSectionEntriesOptional2 extends ResultsSectionEntriesOptional {

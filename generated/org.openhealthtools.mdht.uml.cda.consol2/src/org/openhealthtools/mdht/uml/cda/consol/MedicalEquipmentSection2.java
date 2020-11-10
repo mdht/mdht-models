@@ -18,6 +18,7 @@ import org.eclipse.mdht.emf.runtime.util.Initializer;
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getMedicalEquipmentSection2()
  * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='MedicalEquipmentSection2TemplateId MedicalEquipmentSectionCode MedicalEquipmentSectionCodeP' templateId.root='2.16.840.1.113883.10.20.22.2.23' templateId.extension='2014-06-09' constraints.validation.dependOn.MedicalEquipmentSectionCode='MedicalEquipmentSectionCodeP' constraints.validation.warning='MedicalEquipmentSectionNonMedicinalSupplyActivity MedicalEquipmentSection2ProcedureActivityProcedure2' constraints.validation.info='MedicalEquipmentSection2MedicalEquipmentOrganizer'"
+ *        annotation="duplicates"
  * @generated
  */
 public interface MedicalEquipmentSection2 extends MedicalEquipmentSection {

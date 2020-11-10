@@ -24,6 +24,7 @@ import org.eclipse.mdht.emf.runtime.util.Initializer;
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolContinuityOfCareDocument2DocumentationOfServiceEventIVLTS constraints.validation.error='ContinuityOfCareDocument2DocumentationOfServiceEventIVLTSLow ContinuityOfCareDocument2DocumentationOfServiceEventIVLTSHigh'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolContinuityOfCareDocument2DocumentationOfServiceEventPerformer typeCode='PRF' constraints.validation.error='ContinuityOfCareDocument2DocumentationOfServiceEventPerformerTypeCode' constraints.validation.info='ContinuityOfCareDocument2DocumentationOfServiceEventPerformerAssignedEntity'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolContinuityOfCareDocument2DocumentationOfServiceEventPerformerAssignedEntity constraints.validation.warning='ContinuityOfCareDocument2DocumentationOfServiceEventPerformerAssignedEntityHasNationalProviderIdentifier' constraints.validation.error='ContinuityOfCareDocument2DocumentationOfServiceEventPerformerAssignedEntityId' constraints.validation.info='ContinuityOfCareDocument2DocumentationOfServiceEventPerformerAssignedEntityAssignedPerson'"
+ *        annotation="duplicates"
  * @generated
  */
 public interface ContinuityOfCareDocument2 extends USRealmHeader2 {

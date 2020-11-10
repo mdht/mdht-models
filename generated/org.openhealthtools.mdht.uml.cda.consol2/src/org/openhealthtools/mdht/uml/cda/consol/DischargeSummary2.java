@@ -25,6 +25,7 @@ import org.eclipse.mdht.emf.runtime.util.Initializer;
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolDischargeSummary2ComponentOfEncompassingEncounterEncounterParticipantAssignedEntity constraints.validation.warning='DischargeSummary2ComponentOfEncompassingEncounterEncounterParticipantAssignedEntityAssignedPerson DischargeSummary2ComponentOfEncompassingEncounterEncounterParticipantAssignedEntityRepresentedOrganization'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolDischargeSummary2ComponentOfEncompassingEncounterResponsibleParty constraints.validation.error='DischargeSummary2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntityHasPersonOrOrganization DischargeSummary2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntity'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolDischargeSummary2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntity constraints.validation.warning='DischargeSummary2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntityAssignedPerson DischargeSummary2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntityRepresentedOrganization'"
+ *        annotation="duplicates"
  * @generated
  */
 public interface DischargeSummary2 extends USRealmHeader2 {

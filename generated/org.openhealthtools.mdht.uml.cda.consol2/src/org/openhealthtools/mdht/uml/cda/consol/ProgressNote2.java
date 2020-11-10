@@ -25,6 +25,7 @@ import org.eclipse.mdht.emf.runtime.util.Initializer;
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolProgressNote2ComponentOfEncompassingEncounterLocation constraints.validation.error='ProgressNote2ComponentOfEncompassingEncounterLocationHealthCareFacility'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolProgressNote2ComponentOfEncompassingEncounterLocationHealthCareFacility constraints.validation.error='ProgressNote2ComponentOfEncompassingEncounterLocationHealthCareFacilityId'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolProgressNote2ComponentOfEncompassingEncounterUSRealmDateAndTimeDT constraints.validation.error='ProgressNote2ComponentOfEncompassingEncounterUSRealmDateAndTimeDTLow'"
+ *        annotation="duplicates"
  * @generated
  */
 public interface ProgressNote2 extends USRealmHeader2 {

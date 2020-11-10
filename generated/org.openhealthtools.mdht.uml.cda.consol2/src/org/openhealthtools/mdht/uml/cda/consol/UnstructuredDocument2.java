@@ -24,6 +24,7 @@ import org.eclipse.mdht.emf.runtime.util.Initializer;
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolUnstructuredDocument2Component constraints.validation.error='UnstructuredDocument2ComponentNonXMLBody'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolUnstructuredDocument2ComponentNonXMLBody constraints.validation.error='UnstructuredDocument2ComponentNonXMLBodyHasReferenceOrRepresentation UnstructuredDocument2ComponentNonXMLBodyMediaTypeFileFormats UnstructuredDocument2ComponentNonXMLBodyText' constraints.validation.info='UnstructuredDocument2ComponentNonXMLBodyEDMediaType' constraints.validation.query='UnstructuredDocument2ComponentNonXMLBodyEDMediaType'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolUnstructuredDocument2ComponentNonXMLBodyED mediaType='text/plain' constraints.validation.info='UnstructuredDocument2ComponentNonXMLBodyEDMediaType'"
+ *        annotation="duplicates"
  * @generated
  */
 public interface UnstructuredDocument2 extends USRealmHeader2 {

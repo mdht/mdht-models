@@ -18,6 +18,7 @@ import org.eclipse.mdht.emf.runtime.util.Initializer;
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getFunctionalStatusSection2()
  * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='FunctionalStatusSection2TemplateId FunctionalStatusSectionCode FunctionalStatusSectionCodeP FunctionalStatusSectionCognitiveStatusResultOrganizer FunctionalStatusSectionCognitiveStatusResultObservation FunctionalStatusSectionNumberOfPressureUlcersObservation FunctionalStatusSectionHighestPressureUlcerStage' templateId.root='2.16.840.1.113883.10.20.22.2.14' templateId.extension='2014-06-09' constraints.validation.dependOn.FunctionalStatusSectionCode='FunctionalStatusSectionCodeP' constraints.validation.info='FunctionalStatusSectionFunctionalStatusResultOrganizer FunctionalStatusSectionFunctionalStatusResultObservation FunctionalStatusSectionNonMedicinalSupplyActivity FunctionalStatusSection2SelfCareActivities FunctionalStatusSection2SensoryAndSpeechStatus'"
+ *        annotation="duplicates"
  * @generated
  */
 public interface FunctionalStatusSection2 extends FunctionalStatusSection {

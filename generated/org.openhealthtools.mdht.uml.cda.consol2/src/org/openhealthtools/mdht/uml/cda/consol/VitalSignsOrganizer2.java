@@ -19,6 +19,7 @@ import org.eclipse.mdht.emf.runtime.util.Initializer;
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getVitalSignsOrganizer2()
  * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='VitalSignsOrganizer2TemplateId VitalSignsOrganizerCode VitalSignsOrganizerCodeP VitalSignsOrganizerEffectiveTime VitalSignsOrganizerVitalSignObservation VitalSignsOrganizer2CDTranslation VitalSignsOrganizer2CDTranslationP' templateId.root='2.16.840.1.113883.10.20.22.4.26' templateId.extension='2015-08-01' constraints.validation.dependOn.VitalSignsOrganizerCode='VitalSignsOrganizerCodeP' constraints.validation.warning='VitalSignsOrganizer2AuthorParticipation' constraints.validation.query='VitalSignsOrganizer2CDTranslation VitalSignsOrganizer2CDTranslationP'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolVitalSignsOrganizer2CD translation.code='74728-7' translation.codeSystem='2.16.840.1.113883.6.1' translation.codeSystemName='LOINC' translation.displayName='Vital signs, weight, height, head circumference, oximetry, BMI, and BSA panel - HL7.CCDAr1.1' constraints.validation.error='VitalSignsOrganizer2CDTranslation VitalSignsOrganizer2CDTranslationP'"
+ *        annotation="duplicates"
  * @generated
  */
 public interface VitalSignsOrganizer2 extends VitalSignsOrganizer {

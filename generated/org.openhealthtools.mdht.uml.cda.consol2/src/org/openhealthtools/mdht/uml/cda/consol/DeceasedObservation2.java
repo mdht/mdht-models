@@ -17,6 +17,7 @@ import org.eclipse.mdht.emf.runtime.util.Initializer;
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getDeceasedObservation2()
  * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='DeceasedObservation2TemplateId DeceasedObservationCode DeceasedObservationCodeP' templateId.root='2.16.840.1.113883.10.20.22.4.79' templateId.extension='2015-08-01' constraints.validation.dependOn.DeceasedObservationCode='DeceasedObservationCodeP' constraints.validation.warning='DeceasedObservationProblemObservation'"
+ *        annotation="duplicates"
  * @generated
  */
 public interface DeceasedObservation2 extends DeceasedObservation {

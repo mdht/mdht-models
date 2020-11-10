@@ -18,6 +18,7 @@ import org.eclipse.mdht.emf.runtime.util.Initializer;
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getAdmissionDiagnosisSection2()
  * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='AdmissionDiagnosisSection2TemplateId HospitalAdmissionDiagnosisSectionCode HospitalAdmissionDiagnosisSectionCodeP AdmissionDiagnosisSection2CETranslation AdmissionDiagnosisSection2CETranslationP' templateId.root='2.16.840.1.113883.10.20.22.2.43' templateId.extension='2015-08-01' constraints.validation.dependOn.HospitalAdmissionDiagnosisSectionCode='HospitalAdmissionDiagnosisSectionCodeP' constraints.validation.warning='HospitalAdmissionDiagnosisSectionHospitalAdmissionDiagnosis' constraints.validation.query='AdmissionDiagnosisSection2CETranslation AdmissionDiagnosisSection2CETranslationP'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolAdmissionDiagnosisSection2CE translation.code='42347-5' translation.codeSystem='2.16.840.1.113883.6.1' translation.codeSystemName='LOINC' translation.displayName='Admission Diagnosis' constraints.validation.error='AdmissionDiagnosisSection2CETranslation AdmissionDiagnosisSection2CETranslationP'"
+ *        annotation="duplicates"
  * @generated
  */
 public interface AdmissionDiagnosisSection2 extends HospitalAdmissionDiagnosisSection {
