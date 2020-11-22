@@ -150,7 +150,8 @@ public class RegressionValidationHandler implements ValidationHandler {
 	/*
 	 * (non-Javadoc)
 	 *
-	 * @see org.eclipse.mdht.uml.cda.util.CDAUtil.ValidationHandler#setValidationStatistics(org.eclipse.mdht.uml.cda.util.CDAUtil.ValidationStatistics)
+	 * @see
+	 * org.eclipse.mdht.uml.cda.util.CDAUtil.ValidationHandler#setValidationStatistics(org.eclipse.mdht.uml.cda.util.CDAUtil.ValidationStatistics)
 	 */
 	@Override
 	public void setValidationStatistics(ValidationStatistics validationStatistics) {
