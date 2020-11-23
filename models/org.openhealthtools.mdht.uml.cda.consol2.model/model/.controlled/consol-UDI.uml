@@ -10,8 +10,8 @@
     </ownedAttribute>
     <ownedAttribute xmi:id="_FrP0oS0JEeuxZ80rBBFFIQ" name="value" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_CowXkDxaEd6JwqSGecoePg"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FrP0oi0JEeuxZ80rBBFFIQ"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FrP0oy0JEeuxZ80rBBFFIQ" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MNI5oS3gEeu0qLzLs4h0DQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MNI5oC3gEeu0qLzLs4h0DQ" value="1"/>
       <subsettedProperty href="pathmap://CDA_MODEL///cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
   </uml:Class>
@@ -99,57 +99,57 @@
       <redefinedProperty href="pathmap://CDA_MODEL///cda.uml#_Z5I4MErcEd6FXKclYGEDCw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_967BAC0KEeuxZ80rBBFFIQ" name="deviceIdentifierObservation" type="_aXaegC0FEeuxZ80rBBFFIQ" association="_967oEC0KEeuxZ80rBBFFIQ">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_967BAS0KEeuxZ80rBBFFIQ"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_967BAi0KEeuxZ80rBBFFIQ" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lNIBwS3fEeu0qLzLs4h0DQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lNIBwC3fEeu0qLzLs4h0DQ" value="1"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_A6ja4C0LEeuxZ80rBBFFIQ" name="lotOrBatchNumberObservation" type="_YvpowC0AEeuxZ80rBBFFIQ" association="_A6kB8S0LEeuxZ80rBBFFIQ">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_A6ja4S0LEeuxZ80rBBFFIQ"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_A6kB8C0LEeuxZ80rBBFFIQ" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_mDYUUS3fEeu0qLzLs4h0DQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_mDYUUC3fEeu0qLzLs4h0DQ" value="1"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_DAnIcC0LEeuxZ80rBBFFIQ" name="serialNumberObservation" type="_iyVA4Cz7EeuxZ80rBBFFIQ" association="_DAnIcy0LEeuxZ80rBBFFIQ">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DAnIcS0LEeuxZ80rBBFFIQ"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DAnIci0LEeuxZ80rBBFFIQ" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_m5YvQC3fEeu0qLzLs4h0DQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_m5YIMC3fEeu0qLzLs4h0DQ" value="1"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_FDIZ0C0LEeuxZ80rBBFFIQ" name="manufacturingDateObservation" association="_FDJA4i0LEeuxZ80rBBFFIQ">
       <type xmi:type="uml:Class" href="../consol.uml#_uvNFwCz_EeuxZ80rBBFFIQ"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FDJA4C0LEeuxZ80rBBFFIQ"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FDJA4S0LEeuxZ80rBBFFIQ" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nl9hYS3fEeu0qLzLs4h0DQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nl9hYC3fEeu0qLzLs4h0DQ" value="1"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_G2Lr0C0LEeuxZ80rBBFFIQ" name="expirationDateObservation" type="_oDgF8C0DEeuxZ80rBBFFIQ" association="_G2Lr0y0LEeuxZ80rBBFFIQ">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G2Lr0S0LEeuxZ80rBBFFIQ"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G2Lr0i0LEeuxZ80rBBFFIQ" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oXcosS3fEeu0qLzLs4h0DQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oXcosC3fEeu0qLzLs4h0DQ" value="1"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_I1lXwC0LEeuxZ80rBBFFIQ" name="distinctIdentificationCodeObservation" type="_q-hQIC0EEeuxZ80rBBFFIQ" association="_I1l-0i0LEeuxZ80rBBFFIQ">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_I1l-0C0LEeuxZ80rBBFFIQ"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_I1l-0S0LEeuxZ80rBBFFIQ" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_pIZkgS3fEeu0qLzLs4h0DQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_pIZkgC3fEeu0qLzLs4h0DQ" value="1"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_Kzen0C0LEeuxZ80rBBFFIQ" name="brandNameObservation" type="_E41gQC0JEeuxZ80rBBFFIQ" association="_KzfO4i0LEeuxZ80rBBFFIQ">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KzfO4C0LEeuxZ80rBBFFIQ"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KzfO4S0LEeuxZ80rBBFFIQ" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_p6yqwS3fEeu0qLzLs4h0DQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_p6yqwC3fEeu0qLzLs4h0DQ" value="1"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_MMIc0C0LEeuxZ80rBBFFIQ" name="modelNumberObservation" type="_2V3xoCz-EeuxZ80rBBFFIQ" association="_MMIc0y0LEeuxZ80rBBFFIQ">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MMIc0S0LEeuxZ80rBBFFIQ"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MMIc0i0LEeuxZ80rBBFFIQ" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_q527ES3fEeu0qLzLs4h0DQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_q527EC3fEeu0qLzLs4h0DQ" value="1"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_O_bD0C0LEeuxZ80rBBFFIQ" name="companyNameObservation" type="_CsrcoC0HEeuxZ80rBBFFIQ" association="_O_bD0y0LEeuxZ80rBBFFIQ">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_O_bD0S0LEeuxZ80rBBFFIQ"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_O_bD0i0LEeuxZ80rBBFFIQ" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rnzmMS3fEeu0qLzLs4h0DQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rnzmMC3fEeu0qLzLs4h0DQ" value="1"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_QpVn8C0LEeuxZ80rBBFFIQ" name="catalogNumberObservation" type="_BUBLIC0IEeuxZ80rBBFFIQ" association="_QpVn8y0LEeuxZ80rBBFFIQ">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QpVn8S0LEeuxZ80rBBFFIQ"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QpVn8i0LEeuxZ80rBBFFIQ" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_sWTD4S3fEeu0qLzLs4h0DQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_sWTD4C3fEeu0qLzLs4h0DQ" value="1"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_R3F0gC0LEeuxZ80rBBFFIQ" name="latexSafetyObservation" type="_YK8jwC0BEeuxZ80rBBFFIQ" association="_R3F0gy0LEeuxZ80rBBFFIQ">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_R3F0gS0LEeuxZ80rBBFFIQ"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_R3F0gi0LEeuxZ80rBBFFIQ" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_tF-0YS3fEeu0qLzLs4h0DQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tF-0YC3fEeu0qLzLs4h0DQ" value="1"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_UhHKwC0LEeuxZ80rBBFFIQ" name="mRISafetyObservation" type="_azjXACz8EeuxZ80rBBFFIQ" association="_UhHKwy0LEeuxZ80rBBFFIQ">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UhHKwS0LEeuxZ80rBBFFIQ"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UhHKwi0LEeuxZ80rBBFFIQ" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_t3oTwS3fEeu0qLzLs4h0DQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_t3oTwC3fEeu0qLzLs4h0DQ" value="1"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_WbyHsC0LEeuxZ80rBBFFIQ" name="implantableDeviceStatusObservation" type="_fdGGQC0CEeuxZ80rBBFFIQ" association="_WbyHsy0LEeuxZ80rBBFFIQ">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WbyHsS0LEeuxZ80rBBFFIQ"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WbyHsi0LEeuxZ80rBBFFIQ" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_utpVwS3fEeu0qLzLs4h0DQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_utpVwC3fEeu0qLzLs4h0DQ" value="1"/>
     </ownedAttribute>
   </uml:Class>
   <uml:Association xmi:id="_967oEC0KEeuxZ80rBBFFIQ" memberEnd="_967BAC0KEeuxZ80rBBFFIQ _967oES0KEeuxZ80rBBFFIQ">
@@ -534,7 +534,9 @@
       <ownedRule xmi:id="_Vm9KwC0GEeuxZ80rBBFFIQ" name="UDI issuing agency" constrainedElement="_FT6aEC0GEeuxZ80rBBFFIQ">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_fdQhgC0GEeuxZ80rBBFFIQ">
           <language>OCL</language>
-          <body>false;</body>
+          <language>Analysis</language>
+          <body>(self.root = '1.3.160' or self.root ='2.16.840.1.113883.6.18'  or self.root = '2.16.840.1.113883.6.40')</body>
+          <body>UDI issuing agency</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_FUBu0C0GEeuxZ80rBBFFIQ">
