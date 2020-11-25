@@ -8,6 +8,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.Observation;
 
 /**
  * <!-- begin-user-doc -->
@@ -19,7 +20,7 @@ import org.eclipse.mdht.emf.runtime.util.Initializer;
  * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='SerialNumberObservationTemplateId SerialNumberObservationCode SerialNumberObservationCodeP SerialNumberObservationValue' templateId.root='2.16.840.1.113883.10.20.22.4.319' templateId.extension='2019-06-21' code.code='C101671' code.codeSystem='2.16.840.1.113883.3.26.1.1' code.codeSystemName='NCI Thesaurus' code.displayName='Serial Number' constraints.validation.dependOn.SerialNumberObservationCode='SerialNumberObservationCodeP'"
  * @generated
  */
-public interface SerialNumberObservation extends EObject {
+public interface SerialNumberObservation extends Observation {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

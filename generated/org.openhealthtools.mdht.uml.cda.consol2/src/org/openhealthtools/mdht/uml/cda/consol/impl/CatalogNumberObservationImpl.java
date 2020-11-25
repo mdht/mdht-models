@@ -12,6 +12,7 @@ import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.impl.EObjectImpl;
 
 import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.impl.ObservationImpl;
 import org.openhealthtools.mdht.uml.cda.consol.CatalogNumberObservation;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 
@@ -24,7 +25,7 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.CatalogNumberObservati
  *
  * @generated
  */
-public class CatalogNumberObservationImpl extends EObjectImpl implements CatalogNumberObservation {
+public class CatalogNumberObservationImpl extends ObservationImpl implements CatalogNumberObservation {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

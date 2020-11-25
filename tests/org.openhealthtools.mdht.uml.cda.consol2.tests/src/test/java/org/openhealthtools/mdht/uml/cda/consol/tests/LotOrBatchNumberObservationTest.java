@@ -128,8 +128,7 @@ public class LotOrBatchNumberObservationTest extends CDAValidationTest {
 			protected void updateToPass(LotOrBatchNumberObservation target) {
 				target.init();
 
-				CD cd = DatatypesFactory.eINSTANCE.createCD();
-				// target.setCode(cd);
+				DatatypesFactory.eINSTANCE.createCD();
 
 			}
 
@@ -154,7 +153,7 @@ public class LotOrBatchNumberObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 
@@ -172,9 +171,7 @@ public class LotOrBatchNumberObservationTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(LotOrBatchNumberObservation target) {
 				target.init();
-
-				CD value = DatatypesFactory.eINSTANCE.createCD();
-				// target.getValues().add(value);
+				target.getValues().add(DatatypesFactory.eINSTANCE.createST("LOTNUMBER"));
 
 			}
 

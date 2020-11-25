@@ -12,6 +12,7 @@ import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.impl.EObjectImpl;
 
 import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.impl.ObservationImpl;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.DeviceIdentifierObservation;
 
@@ -24,7 +25,7 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.DeviceIdentifierObserv
  *
  * @generated
  */
-public class DeviceIdentifierObservationImpl extends EObjectImpl implements DeviceIdentifierObservation {
+public class DeviceIdentifierObservationImpl extends ObservationImpl implements DeviceIdentifierObservation {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

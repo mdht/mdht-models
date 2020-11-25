@@ -11,6 +11,7 @@ import org.eclipse.emf.ecore.EObject;
 import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
 import org.eclipse.mdht.uml.hl7.datatypes.CD;
 import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+import org.eclipse.mdht.uml.hl7.datatypes.II;
 import org.junit.Test;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.DeviceIdentifierObservation;
@@ -131,8 +132,7 @@ public class DeviceIdentifierObservationTest extends CDAValidationTest {
 			protected void updateToPass(DeviceIdentifierObservation target) {
 				target.init();
 
-				CD cd = DatatypesFactory.eINSTANCE.createCD();
-				// target.setCode(cd);
+				DatatypesFactory.eINSTANCE.createCD();
 
 			}
 
@@ -157,7 +157,7 @@ public class DeviceIdentifierObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 
@@ -176,8 +176,7 @@ public class DeviceIdentifierObservationTest extends CDAValidationTest {
 			protected void updateToPass(DeviceIdentifierObservation target) {
 				target.init();
 
-				CD value = DatatypesFactory.eINSTANCE.createCD();
-				// target.getValues().add(value);
+				DatatypesFactory.eINSTANCE.createCD();
 
 			}
 
@@ -195,7 +194,7 @@ public class DeviceIdentifierObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 
@@ -214,6 +213,9 @@ public class DeviceIdentifierObservationTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(DeviceIdentifierObservation target) {
 				target.init();
+				target.getIds().clear();
+				II ii = DatatypesFactory.eINSTANCE.createII();
+				target.getIds().add(ii);
 
 			}
 
@@ -231,7 +233,7 @@ public class DeviceIdentifierObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 
@@ -243,12 +245,16 @@ public class DeviceIdentifierObservationTest extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(DeviceIdentifierObservation target) {
-
+				II ii = DatatypesFactory.eINSTANCE.createII();
+				target.getIds().add(ii);
 			}
 
 			@Override
 			protected void updateToPass(DeviceIdentifierObservation target) {
 				target.init();
+				target.getIds().clear();
+				II ii = DatatypesFactory.eINSTANCE.createII();
+				target.getIds().add(ii);
 
 			}
 
@@ -266,7 +272,7 @@ public class DeviceIdentifierObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 
@@ -278,12 +284,19 @@ public class DeviceIdentifierObservationTest extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(DeviceIdentifierObservation target) {
+				II ii = DatatypesFactory.eINSTANCE.createII();
+				target.getIds().add(ii);
 
 			}
 
 			@Override
 			protected void updateToPass(DeviceIdentifierObservation target) {
 				target.init();
+
+				target.getIds().clear();
+				II ii = DatatypesFactory.eINSTANCE.createII();
+				ii.setExtension("extension");
+				target.getIds().add(ii);
 
 			}
 
@@ -301,7 +314,7 @@ public class DeviceIdentifierObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 
@@ -314,13 +327,16 @@ public class DeviceIdentifierObservationTest extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(DeviceIdentifierObservation target) {
-
+				II ii = DatatypesFactory.eINSTANCE.createII();
+				target.getIds().add(ii);
 			}
 
 			@Override
 			protected void updateToPass(DeviceIdentifierObservation target) {
 				target.init();
-
+				target.getIds().clear();
+				II ii = DatatypesFactory.eINSTANCE.createII();
+				target.getIds().add(ii);
 			}
 
 			@Override

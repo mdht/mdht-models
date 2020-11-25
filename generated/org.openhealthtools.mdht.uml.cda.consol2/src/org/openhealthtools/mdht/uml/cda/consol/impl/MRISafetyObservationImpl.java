@@ -12,6 +12,7 @@ import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.impl.EObjectImpl;
 
 import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.impl.ObservationImpl;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.MRISafetyObservation;
 
@@ -24,7 +25,7 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.MRISafetyObservationOp
  *
  * @generated
  */
-public class MRISafetyObservationImpl extends EObjectImpl implements MRISafetyObservation {
+public class MRISafetyObservationImpl extends ObservationImpl implements MRISafetyObservation {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

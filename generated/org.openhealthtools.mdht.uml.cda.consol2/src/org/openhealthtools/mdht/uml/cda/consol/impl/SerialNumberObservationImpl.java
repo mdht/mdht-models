@@ -12,6 +12,7 @@ import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.impl.EObjectImpl;
 
 import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.impl.ObservationImpl;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.SerialNumberObservation;
 
@@ -24,7 +25,7 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.SerialNumberObservatio
  *
  * @generated
  */
-public class SerialNumberObservationImpl extends EObjectImpl implements SerialNumberObservation {
+public class SerialNumberObservationImpl extends ObservationImpl implements SerialNumberObservation {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

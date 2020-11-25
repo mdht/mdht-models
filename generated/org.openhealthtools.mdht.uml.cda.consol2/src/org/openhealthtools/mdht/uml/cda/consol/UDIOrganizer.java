@@ -8,6 +8,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.Organizer;
 
 /**
  * <!-- begin-user-doc -->
@@ -19,7 +20,7 @@ import org.eclipse.mdht.emf.runtime.util.Initializer;
  * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='UDIOrganizerTemplateId UDIOrganizerId UDIOrganizerStatusCode UDIOrganizerStatusCodeP UDIOrganizerClassCode UDIOrganizerMoodCode UDIOrganizerDeviceIdentifierObservation' templateId.root='2.16.840.1.113883.10.20.22.4.311' templateId.extension='2019-06-21' constraints.validation.info='UDIOrganizerCode UDIOrganizerCodeP UDIOrganizerBrandNameObservation UDIOrganizerModelNumberObservation UDIOrganizerCompanyNameObservation UDIOrganizerCatalogNumberObservation UDIOrganizerLatexSafetyObservation UDIOrganizerMRISafetyObservation UDIOrganizerImplantableDeviceStatusObservation' constraints.validation.dependOn.UDIOrganizerCode='UDIOrganizerCodeP' statusCode.code='completed' constraints.validation.dependOn.UDIOrganizerStatusCode='UDIOrganizerStatusCodeP' classCode='CLUSTER' moodCode='EVN' constraints.validation.warning='UDIOrganizerLotOrBatchNumberObservation UDIOrganizerSerialNumberObservation UDIOrganizerManufacturingDateObservation UDIOrganizerExpirationDateObservation UDIOrganizerDistinctIdentificationCodeObservation'"
  * @generated
  */
-public interface UDIOrganizer extends EObject {
+public interface UDIOrganizer extends Organizer {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

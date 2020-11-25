@@ -12,6 +12,7 @@ import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.impl.EObjectImpl;
 
 import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.impl.ObservationImpl;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.ManufacturingDateObservation;
 
@@ -24,7 +25,7 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.ManufacturingDateObser
  *
  * @generated
  */
-public class ManufacturingDateObservationImpl extends EObjectImpl implements ManufacturingDateObservation {
+public class ManufacturingDateObservationImpl extends ObservationImpl implements ManufacturingDateObservation {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

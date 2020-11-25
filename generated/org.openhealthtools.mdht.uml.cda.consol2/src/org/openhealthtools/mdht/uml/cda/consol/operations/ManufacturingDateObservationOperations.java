@@ -8,6 +8,7 @@ import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 
+import org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations;
 import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 
@@ -36,7 +37,7 @@ import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
  *
  * @generated
  */
-public class ManufacturingDateObservationOperations {
+public class ManufacturingDateObservationOperations extends ClinicalStatementOperations {
 	/**
 	 * The cached environment for evaluating OCL expressions.
 	 * <!-- begin-user-doc -->

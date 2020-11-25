@@ -91,8 +91,7 @@ public class MRISafetyObservationTest extends CDAValidationTest {
 			protected void updateToPass(MRISafetyObservation target) {
 				target.init();
 
-				CD cd = DatatypesFactory.eINSTANCE.createCD();
-				// target.setCode(cd);
+				DatatypesFactory.eINSTANCE.createCD();
 
 			}
 
@@ -110,7 +109,7 @@ public class MRISafetyObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 
@@ -129,8 +128,8 @@ public class MRISafetyObservationTest extends CDAValidationTest {
 			protected void updateToPass(MRISafetyObservation target) {
 				target.init();
 
-				CD value = DatatypesFactory.eINSTANCE.createCD();
-				// target.getValues().add(value);
+				CD value = DatatypesFactory.eINSTANCE.createCD("C113844", "2.16.840.1.113883.3.26.1.1");
+				target.getValues().add(value);
 
 			}
 
@@ -148,7 +147,7 @@ public class MRISafetyObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 
@@ -166,6 +165,8 @@ public class MRISafetyObservationTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(MRISafetyObservation target) {
 				target.init();
+				CD value = DatatypesFactory.eINSTANCE.createCD();
+				target.getValues().add(value);
 
 			}
 

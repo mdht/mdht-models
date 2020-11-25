@@ -128,8 +128,7 @@ public class LatexSafetyObservationTest extends CDAValidationTest {
 			protected void updateToPass(LatexSafetyObservation target) {
 				target.init();
 
-				CD cd = DatatypesFactory.eINSTANCE.createCD();
-				// target.setCode(cd);
+				DatatypesFactory.eINSTANCE.createCD();
 
 			}
 
@@ -154,7 +153,7 @@ public class LatexSafetyObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 
@@ -173,8 +172,8 @@ public class LatexSafetyObservationTest extends CDAValidationTest {
 			protected void updateToPass(LatexSafetyObservation target) {
 				target.init();
 
-				CD value = DatatypesFactory.eINSTANCE.createCD();
-				// target.getValues().add(value);
+				CD value = DatatypesFactory.eINSTANCE.createCD("C106043", "2.16.840.1.113883.3.26.1.1");
+				target.getValues().add(value);
 
 			}
 
@@ -192,7 +191,7 @@ public class LatexSafetyObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 
@@ -210,6 +209,8 @@ public class LatexSafetyObservationTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(LatexSafetyObservation target) {
 				target.init();
+				CD value = DatatypesFactory.eINSTANCE.createCD();
+				target.getValues().add(value);
 
 			}
 

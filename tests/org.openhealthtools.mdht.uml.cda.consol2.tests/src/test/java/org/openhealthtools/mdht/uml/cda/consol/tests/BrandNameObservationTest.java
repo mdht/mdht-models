@@ -9,7 +9,6 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
-import org.eclipse.mdht.uml.hl7.datatypes.CD;
 import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
 import org.junit.Test;
 import org.openhealthtools.mdht.uml.cda.consol.BrandNameObservation;
@@ -152,7 +151,7 @@ public class BrandNameObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 
@@ -171,7 +170,7 @@ public class BrandNameObservationTest extends CDAValidationTest {
 			protected void updateToPass(BrandNameObservation target) {
 				target.init();
 
-				DatatypesFactory.eINSTANCE.createCD();
+				target.getValues().add(DatatypesFactory.eINSTANCE.createED("BRANDNAME"));
 
 			}
 

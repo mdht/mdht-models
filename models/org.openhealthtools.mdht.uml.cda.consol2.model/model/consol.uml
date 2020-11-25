@@ -2803,17 +2803,17 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
     <packagedElement xmi:type="uml:Class" href=".controlled/consol-UDI.uml#_2V3xoCz-EeuxZ80rBBFFIQ"/>
     <packagedElement xmi:type="uml:Class" xmi:id="_uvNFwCz_EeuxZ80rBBFFIQ" name="ManufacturingDateObservation">
       <generalization xmi:id="_uvNFwSz_EeuxZ80rBBFFIQ">
-        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL///cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
       </generalization>
       <ownedAttribute xmi:id="_vvs5cCz_EeuxZ80rBBFFIQ" name="code" visibility="private" aggregation="composite">
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-        <redefinedProperty href="pathmap://CDA_MODEL///cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
+        <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_vvs5cSz_EeuxZ80rBBFFIQ" name="value" visibility="private" aggregation="composite">
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_4ysYYD59Ed6cla2oXsPtlA"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7qdbQCz_EeuxZ80rBBFFIQ" value="1"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7qc0MCz_EeuxZ80rBBFFIQ" value="1"/>
-        <subsettedProperty href="pathmap://CDA_MODEL///cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
+        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" href=".controlled/consol-UDI.uml#_YvpowC0AEeuxZ80rBBFFIQ"/>

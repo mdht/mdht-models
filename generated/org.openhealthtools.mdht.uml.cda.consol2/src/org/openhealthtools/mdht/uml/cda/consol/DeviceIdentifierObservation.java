@@ -8,6 +8,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.Observation;
 
 /**
  * <!-- begin-user-doc -->
@@ -20,7 +21,7 @@ import org.eclipse.mdht.emf.runtime.util.Initializer;
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolDeviceIdentifierObservationII constraints.validation.error='DeviceIdentifierObservationIIUDI issuing agency DeviceIdentifierObservationIIRoot DeviceIdentifierObservationIIExtension DeviceIdentifierObservationIIDisplayable' displayable='true'"
  * @generated
  */
-public interface DeviceIdentifierObservation extends EObject {
+public interface DeviceIdentifierObservation extends Observation {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -77,7 +78,7 @@ public interface DeviceIdentifierObservation extends EObject {
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
 	 * @model annotation="http://www.eclipse.org/uml2/2.0.0/UML originalName='DeviceIdentifierObservationIIUDI issuing agency'"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId-&gt;excluding(null)-&gt;select(isNullFlavorUndefined())-&gt;reject((root = \'1.3.160\' or root =\'2.16.840.1.113883.6.18\'  or root = \'2.16.840.1.113883.6.40\'))'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.value-&gt;excluding(null)-&gt;select(isNullFlavorUndefined())-&gt;reject((root = \'1.3.160\' or root =\'2.16.840.1.113883.6.18\'  or root = \'2.16.840.1.113883.6.40\'))'"
 	 * @generated
 	 */
 	boolean validateDeviceIdentifierObservationIIUDIissuingagency(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -89,7 +90,7 @@ public interface DeviceIdentifierObservation extends EObject {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId-&gt;excluding(null)-&gt;select(isNullFlavorUndefined())-&gt;reject( ( isNullFlavorUndefined() implies (not root.oclIsUndefined() )))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.value-&gt;excluding(null)-&gt;select(isNullFlavorUndefined())-&gt;reject( ( isNullFlavorUndefined() implies (not root.oclIsUndefined() )))'"
 	 * @generated
 	 */
 	boolean validateDeviceIdentifierObservationIIRoot(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -101,7 +102,7 @@ public interface DeviceIdentifierObservation extends EObject {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId-&gt;excluding(null)-&gt;select(isNullFlavorUndefined())-&gt;reject( ( isNullFlavorUndefined() implies (not extension.oclIsUndefined() )))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.value-&gt;excluding(null)-&gt;select(isNullFlavorUndefined())-&gt;reject( ( isNullFlavorUndefined() implies (not extension.oclIsUndefined() )))'"
 	 * @generated
 	 */
 	boolean validateDeviceIdentifierObservationIIExtension(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -113,7 +114,7 @@ public interface DeviceIdentifierObservation extends EObject {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId-&gt;excluding(null)-&gt;select(isNullFlavorUndefined())-&gt;reject( ( isNullFlavorUndefined() implies (not displayable.oclIsUndefined() )))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.value-&gt;excluding(null)-&gt;select(isNullFlavorUndefined())-&gt;reject( ( isNullFlavorUndefined() implies (not displayable.oclIsUndefined() )))'"
 	 * @generated
 	 */
 	boolean validateDeviceIdentifierObservationIIDisplayable(DiagnosticChain diagnostics, Map<Object, Object> context);

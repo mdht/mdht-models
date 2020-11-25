@@ -61,14 +61,14 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.UDIOrganizerOperations
  * </ul>
  * </p>
  *
- * @generated
+ * @generated NOT
  */
 
 public class UDIOrganizerTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 
@@ -103,7 +103,7 @@ public class UDIOrganizerTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 
@@ -120,6 +120,7 @@ public class UDIOrganizerTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(UDIOrganizer target) {
 				target.init();
+				target.getIds().add(DatatypesFactory.eINSTANCE.createII());
 
 			}
 
@@ -136,7 +137,7 @@ public class UDIOrganizerTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 
@@ -154,6 +155,7 @@ public class UDIOrganizerTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(UDIOrganizer target) {
 				target.init();
+				target.setCode(DatatypesFactory.eINSTANCE.createCD());
 
 			}
 
@@ -171,7 +173,7 @@ public class UDIOrganizerTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 
@@ -189,6 +191,7 @@ public class UDIOrganizerTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(UDIOrganizer target) {
 				target.init();
+				target.setCode(DatatypesFactory.eINSTANCE.createCD("code", "2.16.840.1.113883.6.1"));
 
 			}
 
@@ -212,7 +215,7 @@ public class UDIOrganizerTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 
@@ -247,7 +250,7 @@ public class UDIOrganizerTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 
@@ -266,8 +269,7 @@ public class UDIOrganizerTest extends CDAValidationTest {
 			protected void updateToPass(UDIOrganizer target) {
 				target.init();
 
-				CS cs = DatatypesFactory.eINSTANCE.createCS("completed");
-				// target.setStatusCode(cs);
+				DatatypesFactory.eINSTANCE.createCS("completed");
 
 			}
 
@@ -292,7 +294,7 @@ public class UDIOrganizerTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 
@@ -327,7 +329,7 @@ public class UDIOrganizerTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 
@@ -362,7 +364,7 @@ public class UDIOrganizerTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 
@@ -381,6 +383,7 @@ public class UDIOrganizerTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(UDIOrganizer target) {
 				target.init();
+				target.addObservation(ConsolFactory.eINSTANCE.createDeviceIdentifierObservation().init());
 
 			}
 
@@ -398,7 +401,7 @@ public class UDIOrganizerTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 
@@ -417,6 +420,7 @@ public class UDIOrganizerTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(UDIOrganizer target) {
 				target.init();
+				target.addObservation(ConsolFactory.eINSTANCE.createLotOrBatchNumberObservation().init());
 
 			}
 
@@ -434,7 +438,7 @@ public class UDIOrganizerTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 
@@ -452,6 +456,7 @@ public class UDIOrganizerTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(UDIOrganizer target) {
 				target.init();
+				target.addObservation(ConsolFactory.eINSTANCE.createSerialNumberObservation().init());
 
 			}
 
@@ -469,7 +474,7 @@ public class UDIOrganizerTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 
@@ -488,6 +493,7 @@ public class UDIOrganizerTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(UDIOrganizer target) {
 				target.init();
+				target.addObservation(ConsolFactory.eINSTANCE.createManufacturingDateObservation().init());
 
 			}
 
@@ -505,7 +511,7 @@ public class UDIOrganizerTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 
@@ -523,6 +529,7 @@ public class UDIOrganizerTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(UDIOrganizer target) {
 				target.init();
+				target.addObservation(ConsolFactory.eINSTANCE.createExpirationDateObservation().init());
 
 			}
 
@@ -540,7 +547,7 @@ public class UDIOrganizerTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 
@@ -559,6 +566,7 @@ public class UDIOrganizerTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(UDIOrganizer target) {
 				target.init();
+				target.addObservation(ConsolFactory.eINSTANCE.createDistinctIdentificationCodeObservation().init());
 
 			}
 
@@ -576,7 +584,7 @@ public class UDIOrganizerTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 
@@ -594,6 +602,7 @@ public class UDIOrganizerTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(UDIOrganizer target) {
 				target.init();
+				target.addObservation(ConsolFactory.eINSTANCE.createBrandNameObservation().init());
 
 			}
 
@@ -611,7 +620,7 @@ public class UDIOrganizerTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 
@@ -629,6 +638,7 @@ public class UDIOrganizerTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(UDIOrganizer target) {
 				target.init();
+				target.addObservation(ConsolFactory.eINSTANCE.createModelNumberObservation().init());
 
 			}
 
@@ -646,7 +656,7 @@ public class UDIOrganizerTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 
@@ -664,6 +674,7 @@ public class UDIOrganizerTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(UDIOrganizer target) {
 				target.init();
+				target.addObservation(ConsolFactory.eINSTANCE.createCompanyNameObservation().init());
 
 			}
 
@@ -681,7 +692,7 @@ public class UDIOrganizerTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 
@@ -699,6 +710,7 @@ public class UDIOrganizerTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(UDIOrganizer target) {
 				target.init();
+				target.addObservation(ConsolFactory.eINSTANCE.createCatalogNumberObservation().init());
 
 			}
 
@@ -716,7 +728,7 @@ public class UDIOrganizerTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 
@@ -734,6 +746,7 @@ public class UDIOrganizerTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(UDIOrganizer target) {
 				target.init();
+				target.addObservation(ConsolFactory.eINSTANCE.createLatexSafetyObservation().init());
 
 			}
 
@@ -751,7 +764,7 @@ public class UDIOrganizerTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 
@@ -769,6 +782,7 @@ public class UDIOrganizerTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(UDIOrganizer target) {
 				target.init();
+				target.addObservation(ConsolFactory.eINSTANCE.createMRISafetyObservation().init());
 
 			}
 
@@ -786,7 +800,7 @@ public class UDIOrganizerTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 
@@ -805,6 +819,7 @@ public class UDIOrganizerTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(UDIOrganizer target) {
 				target.init();
+				target.addObservation(ConsolFactory.eINSTANCE.createImplantableDeviceStatusObservation().init());
 
 			}
 
@@ -822,7 +837,7 @@ public class UDIOrganizerTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 
@@ -835,7 +850,7 @@ public class UDIOrganizerTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 
@@ -848,7 +863,7 @@ public class UDIOrganizerTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 
@@ -861,7 +876,7 @@ public class UDIOrganizerTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 
@@ -874,7 +889,7 @@ public class UDIOrganizerTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 
@@ -887,7 +902,7 @@ public class UDIOrganizerTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 
@@ -900,7 +915,7 @@ public class UDIOrganizerTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 
@@ -913,7 +928,7 @@ public class UDIOrganizerTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 
@@ -926,7 +941,7 @@ public class UDIOrganizerTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 
@@ -939,7 +954,7 @@ public class UDIOrganizerTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 
@@ -952,7 +967,7 @@ public class UDIOrganizerTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 
@@ -965,7 +980,7 @@ public class UDIOrganizerTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 
@@ -978,7 +993,7 @@ public class UDIOrganizerTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 
@@ -991,7 +1006,7 @@ public class UDIOrganizerTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	private static class OperationsForOCL extends UDIOrganizerOperations {
 		public String getOCLValue(String fieldName) {
@@ -1009,7 +1024,7 @@ public class UDIOrganizerTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	private static class ObjectFactory implements TestObjectFactory<UDIOrganizer> {
 		public UDIOrganizer create() {
@@ -1019,26 +1034,26 @@ public class UDIOrganizerTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	private static OperationsForOCL operationsForOCL = new OperationsForOCL();
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	private static ObjectFactory objectFactory = new ObjectFactory();
 
 	/**
 	* Tests Operations Constructor for 100% coverage
-	* @generated
+	* @generated NOT
 	*/
 	private static class ConstructorTestClass extends UDIOrganizerOperations {
 	};
 
 	/**
 	* Tests Operations Constructor for 100% coverage
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 	public void testConstructor() {
@@ -1047,7 +1062,7 @@ public class UDIOrganizerTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Override
 	protected EObject getObjectToTest() {

@@ -12,6 +12,7 @@ import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.impl.EObjectImpl;
 
 import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.impl.ObservationImpl;
 import org.openhealthtools.mdht.uml.cda.consol.CompanyNameObservation;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 
@@ -24,7 +25,7 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.CompanyNameObservation
  *
  * @generated
  */
-public class CompanyNameObservationImpl extends EObjectImpl implements CompanyNameObservation {
+public class CompanyNameObservationImpl extends ObservationImpl implements CompanyNameObservation {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

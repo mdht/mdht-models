@@ -130,8 +130,7 @@ public class DistinctIdentificationCodeObservationTest extends CDAValidationTest
 			protected void updateToPass(DistinctIdentificationCodeObservation target) {
 				target.init();
 
-				CD cd = DatatypesFactory.eINSTANCE.createCD();
-				// target.setCode(cd);
+				DatatypesFactory.eINSTANCE.createCD();
 
 			}
 
@@ -157,7 +156,7 @@ public class DistinctIdentificationCodeObservationTest extends CDAValidationTest
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 
@@ -177,8 +176,7 @@ public class DistinctIdentificationCodeObservationTest extends CDAValidationTest
 			protected void updateToPass(DistinctIdentificationCodeObservation target) {
 				target.init();
 
-				CD value = DatatypesFactory.eINSTANCE.createCD();
-				// target.getValues().add(value);
+				target.getValues().add(DatatypesFactory.eINSTANCE.createED("GUID"));
 
 			}
 

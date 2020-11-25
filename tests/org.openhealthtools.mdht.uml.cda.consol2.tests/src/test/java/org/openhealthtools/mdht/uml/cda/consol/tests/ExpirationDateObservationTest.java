@@ -127,8 +127,7 @@ public class ExpirationDateObservationTest extends CDAValidationTest {
 			protected void updateToPass(ExpirationDateObservation target) {
 				target.init();
 
-				CD cd = DatatypesFactory.eINSTANCE.createCD();
-				// target.setCode(cd);
+				DatatypesFactory.eINSTANCE.createCD();
 
 			}
 
@@ -153,7 +152,7 @@ public class ExpirationDateObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 
@@ -172,8 +171,7 @@ public class ExpirationDateObservationTest extends CDAValidationTest {
 			protected void updateToPass(ExpirationDateObservation target) {
 				target.init();
 
-				CD value = DatatypesFactory.eINSTANCE.createCD();
-				// target.getValues().add(value);
+				target.getValues().add(DatatypesFactory.eINSTANCE.createTS("2020"));
 
 			}
 

@@ -90,8 +90,7 @@ public class ManufacturingDateObservationTest extends CDAValidationTest {
 			protected void updateToPass(ManufacturingDateObservation target) {
 				target.init();
 
-				CD cd = DatatypesFactory.eINSTANCE.createCD();
-				// target.setCode(cd);
+				DatatypesFactory.eINSTANCE.createCD();
 
 			}
 
@@ -109,7 +108,7 @@ public class ManufacturingDateObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 
@@ -128,8 +127,8 @@ public class ManufacturingDateObservationTest extends CDAValidationTest {
 			protected void updateToPass(ManufacturingDateObservation target) {
 				target.init();
 
-				CD value = DatatypesFactory.eINSTANCE.createCD();
-				// target.getValues().add(value);
+				// CD value = DatatypesFactory.eINSTANCE.createCD();
+				target.getValues().add(DatatypesFactory.eINSTANCE.createTS("2020"));
 
 			}
 

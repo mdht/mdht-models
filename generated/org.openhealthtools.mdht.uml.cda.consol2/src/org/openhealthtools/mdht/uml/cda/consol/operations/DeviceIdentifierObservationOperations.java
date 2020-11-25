@@ -11,6 +11,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations;
 import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 
@@ -46,7 +47,7 @@ import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
  *
  * @generated
  */
-public class DeviceIdentifierObservationOperations {
+public class DeviceIdentifierObservationOperations extends ClinicalStatementOperations {
 	/**
 	 * The cached environment for evaluating OCL expressions.
 	 * <!-- begin-user-doc -->
@@ -394,7 +395,7 @@ public class DeviceIdentifierObservationOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_DEVICE_IDENTIFIER_OBSERVATION_IIUD_IISSUINGAGENCY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->excluding(null)->select(isNullFlavorUndefined())->reject((root = '1.3.160' or root ='2.16.840.1.113883.6.18'  or root = '2.16.840.1.113883.6.40'))";
+	protected static final String VALIDATE_DEVICE_IDENTIFIER_OBSERVATION_IIUD_IISSUINGAGENCY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.value->excluding(null)->select(isNullFlavorUndefined())->reject((root = '1.3.160' or root ='2.16.840.1.113883.6.18'  or root = '2.16.840.1.113883.6.40'))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateDeviceIdentifierObservationIIUDIissuingagency(DeviceIdentifierObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Device Identifier Observation IIUD Iissuingagency</em>}' invariant operation.
@@ -468,7 +469,7 @@ public class DeviceIdentifierObservationOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_DEVICE_IDENTIFIER_OBSERVATION_II_ROOT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->excluding(null)->select(isNullFlavorUndefined())->reject( ( isNullFlavorUndefined() implies (not root.oclIsUndefined() )))";
+	protected static final String VALIDATE_DEVICE_IDENTIFIER_OBSERVATION_II_ROOT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.value->excluding(null)->select(isNullFlavorUndefined())->reject( ( isNullFlavorUndefined() implies (not root.oclIsUndefined() )))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateDeviceIdentifierObservationIIRoot(DeviceIdentifierObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Device Identifier Observation II Root</em>}' invariant operation.
@@ -555,7 +556,7 @@ public class DeviceIdentifierObservationOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_DEVICE_IDENTIFIER_OBSERVATION_II_EXTENSION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->excluding(null)->select(isNullFlavorUndefined())->reject( ( isNullFlavorUndefined() implies (not extension.oclIsUndefined() )))";
+	protected static final String VALIDATE_DEVICE_IDENTIFIER_OBSERVATION_II_EXTENSION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.value->excluding(null)->select(isNullFlavorUndefined())->reject( ( isNullFlavorUndefined() implies (not extension.oclIsUndefined() )))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateDeviceIdentifierObservationIIExtension(DeviceIdentifierObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Device Identifier Observation II Extension</em>}' invariant operation.
@@ -642,7 +643,7 @@ public class DeviceIdentifierObservationOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_DEVICE_IDENTIFIER_OBSERVATION_II_DISPLAYABLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->excluding(null)->select(isNullFlavorUndefined())->reject( ( isNullFlavorUndefined() implies (not displayable.oclIsUndefined() )))";
+	protected static final String VALIDATE_DEVICE_IDENTIFIER_OBSERVATION_II_DISPLAYABLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.value->excluding(null)->select(isNullFlavorUndefined())->reject( ( isNullFlavorUndefined() implies (not displayable.oclIsUndefined() )))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateDeviceIdentifierObservationIIDisplayable(DeviceIdentifierObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Device Identifier Observation II Displayable</em>}' invariant operation.

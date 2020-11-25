@@ -9,7 +9,6 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
-import org.eclipse.mdht.uml.hl7.datatypes.CD;
 import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
 import org.junit.Test;
 import org.openhealthtools.mdht.uml.cda.consol.CompanyNameObservation;
@@ -171,7 +170,7 @@ public class CompanyNameObservationTest extends CDAValidationTest {
 			protected void updateToPass(CompanyNameObservation target) {
 				target.init();
 
-				DatatypesFactory.eINSTANCE.createCD();
+				target.getValues().add(DatatypesFactory.eINSTANCE.createED("COMPANYNAME"));
 
 			}
 

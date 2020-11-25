@@ -9,7 +9,6 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
-import org.eclipse.mdht.uml.hl7.datatypes.CD;
 import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
 import org.junit.Test;
 import org.openhealthtools.mdht.uml.cda.consol.CatalogNumberObservation;
@@ -152,7 +151,7 @@ public class CatalogNumberObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 
@@ -171,8 +170,7 @@ public class CatalogNumberObservationTest extends CDAValidationTest {
 			protected void updateToPass(CatalogNumberObservation target) {
 				target.init();
 
-				DatatypesFactory.eINSTANCE.createCD();
-
+				target.getValues().add(DatatypesFactory.eINSTANCE.createED("CATALOGNUMBER"));
 			}
 
 			@Override

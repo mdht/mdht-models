@@ -8,6 +8,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.Observation;
 
 /**
  * <!-- begin-user-doc -->
@@ -19,7 +20,7 @@ import org.eclipse.mdht.emf.runtime.util.Initializer;
  * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ImplantableDeviceStatusObservationTemplateId ImplantableDeviceStatusObservationCode ImplantableDeviceStatusObservationCodeP ImplantableDeviceStatusObservationValue ImplantableDeviceStatusObservationValueP' templateId.root='2.16.840.1.113883.10.20.22.4.305' templateId.extension='2019-06-21' code.code='C160939' code.codeSystem='2.16.840.1.113883.3.26.1.1' code.codeSystemName='NCI Thesaurus' code.displayName='Implantable Device Status' constraints.validation.dependOn.ImplantableDeviceStatusObservationCode='ImplantableDeviceStatusObservationCodeP' value.codeSystem='2.16.840.1.113883.3.26.1.1' value.codeSystemName='NCI Thesaurus'"
  * @generated
  */
-public interface ImplantableDeviceStatusObservation extends EObject {
+public interface ImplantableDeviceStatusObservation extends Observation {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

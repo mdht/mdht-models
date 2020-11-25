@@ -127,8 +127,7 @@ public class SerialNumberObservationTest extends CDAValidationTest {
 			protected void updateToPass(SerialNumberObservation target) {
 				target.init();
 
-				CD cd = DatatypesFactory.eINSTANCE.createCD();
-				// target.setCode(cd);
+				DatatypesFactory.eINSTANCE.createCD();
 
 			}
 
@@ -153,7 +152,7 @@ public class SerialNumberObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 
@@ -172,8 +171,8 @@ public class SerialNumberObservationTest extends CDAValidationTest {
 			protected void updateToPass(SerialNumberObservation target) {
 				target.init();
 
-				CD value = DatatypesFactory.eINSTANCE.createCD();
-				// target.getValues().add(value);
+				// CD value = DatatypesFactory.eINSTANCE.createCD();
+				target.getValues().add(DatatypesFactory.eINSTANCE.createED("SERIAL #"));
 
 			}
 

@@ -12,6 +12,7 @@ import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.impl.EObjectImpl;
 
 import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.impl.OrganizerImpl;
 import org.openhealthtools.mdht.uml.cda.consol.BrandNameObservation;
 import org.openhealthtools.mdht.uml.cda.consol.CatalogNumberObservation;
 import org.openhealthtools.mdht.uml.cda.consol.CompanyNameObservation;
@@ -37,7 +38,7 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.UDIOrganizerOperations
  *
  * @generated
  */
-public class UDIOrganizerImpl extends EObjectImpl implements UDIOrganizer {
+public class UDIOrganizerImpl extends OrganizerImpl implements UDIOrganizer {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

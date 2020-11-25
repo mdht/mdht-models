@@ -130,8 +130,7 @@ public class ImplantableDeviceStatusObservationTest extends CDAValidationTest {
 			protected void updateToPass(ImplantableDeviceStatusObservation target) {
 				target.init();
 
-				CD cd = DatatypesFactory.eINSTANCE.createCD();
-				// target.setCode(cd);
+				DatatypesFactory.eINSTANCE.createCD();
 
 			}
 
@@ -156,7 +155,7 @@ public class ImplantableDeviceStatusObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 
@@ -176,8 +175,7 @@ public class ImplantableDeviceStatusObservationTest extends CDAValidationTest {
 			protected void updateToPass(ImplantableDeviceStatusObservation target) {
 				target.init();
 
-				CD value = DatatypesFactory.eINSTANCE.createCD();
-				// target.getValues().add(value);
+				target.getValues().add(DatatypesFactory.eINSTANCE.createCD("C45329", "2.16.840.1.113883.3.26.1.1"));
 
 			}
 
@@ -195,7 +193,7 @@ public class ImplantableDeviceStatusObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 
@@ -214,6 +212,7 @@ public class ImplantableDeviceStatusObservationTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(ImplantableDeviceStatusObservation target) {
 				target.init();
+				target.getValues().add(DatatypesFactory.eINSTANCE.createCD());
 
 			}
 

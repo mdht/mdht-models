@@ -11,6 +11,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 
 import org.eclipse.emf.ecore.EClassifier;
 
+import org.eclipse.mdht.uml.cda.operations.OrganizerOperations;
 import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
 
@@ -85,7 +86,7 @@ import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
  *
  * @generated
  */
-public class UDIOrganizerOperations {
+public class UDIOrganizerOperations extends OrganizerOperations {
 	/**
 	 * The cached environment for evaluating OCL expressions.
 	 * <!-- begin-user-doc -->
@@ -1736,7 +1737,7 @@ public class UDIOrganizerOperations {
 		
 	 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.UDI_ORGANIZER, ConsolPackage.Literals.UDI_ORGANIZER.getEAllOperations().get(21));
+			helper.setOperationContext(ConsolPackage.Literals.UDI_ORGANIZER, ConsolPackage.Literals.UDI_ORGANIZER.getEAllOperations().get(73));
 			try {
 				GET_DEVICE_IDENTIFIER_OBSERVATION__EOCL_QRY = helper.createQuery(GET_DEVICE_IDENTIFIER_OBSERVATION__EOCL_EXP);
 			}
@@ -1782,7 +1783,7 @@ public class UDIOrganizerOperations {
 		
 	 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.UDI_ORGANIZER, ConsolPackage.Literals.UDI_ORGANIZER.getEAllOperations().get(22));
+			helper.setOperationContext(ConsolPackage.Literals.UDI_ORGANIZER, ConsolPackage.Literals.UDI_ORGANIZER.getEAllOperations().get(74));
 			try {
 				GET_LOT_OR_BATCH_NUMBER_OBSERVATION__EOCL_QRY = helper.createQuery(GET_LOT_OR_BATCH_NUMBER_OBSERVATION__EOCL_EXP);
 			}
@@ -1828,7 +1829,7 @@ public class UDIOrganizerOperations {
 		
 	 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.UDI_ORGANIZER, ConsolPackage.Literals.UDI_ORGANIZER.getEAllOperations().get(23));
+			helper.setOperationContext(ConsolPackage.Literals.UDI_ORGANIZER, ConsolPackage.Literals.UDI_ORGANIZER.getEAllOperations().get(75));
 			try {
 				GET_SERIAL_NUMBER_OBSERVATION__EOCL_QRY = helper.createQuery(GET_SERIAL_NUMBER_OBSERVATION__EOCL_EXP);
 			}
@@ -1874,7 +1875,7 @@ public class UDIOrganizerOperations {
 		
 	 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.UDI_ORGANIZER, ConsolPackage.Literals.UDI_ORGANIZER.getEAllOperations().get(24));
+			helper.setOperationContext(ConsolPackage.Literals.UDI_ORGANIZER, ConsolPackage.Literals.UDI_ORGANIZER.getEAllOperations().get(76));
 			try {
 				GET_MANUFACTURING_DATE_OBSERVATION__EOCL_QRY = helper.createQuery(GET_MANUFACTURING_DATE_OBSERVATION__EOCL_EXP);
 			}
@@ -1920,7 +1921,7 @@ public class UDIOrganizerOperations {
 		
 	 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.UDI_ORGANIZER, ConsolPackage.Literals.UDI_ORGANIZER.getEAllOperations().get(25));
+			helper.setOperationContext(ConsolPackage.Literals.UDI_ORGANIZER, ConsolPackage.Literals.UDI_ORGANIZER.getEAllOperations().get(77));
 			try {
 				GET_EXPIRATION_DATE_OBSERVATION__EOCL_QRY = helper.createQuery(GET_EXPIRATION_DATE_OBSERVATION__EOCL_EXP);
 			}
@@ -1966,7 +1967,7 @@ public class UDIOrganizerOperations {
 		
 	 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.UDI_ORGANIZER, ConsolPackage.Literals.UDI_ORGANIZER.getEAllOperations().get(26));
+			helper.setOperationContext(ConsolPackage.Literals.UDI_ORGANIZER, ConsolPackage.Literals.UDI_ORGANIZER.getEAllOperations().get(78));
 			try {
 				GET_DISTINCT_IDENTIFICATION_CODE_OBSERVATION__EOCL_QRY = helper.createQuery(GET_DISTINCT_IDENTIFICATION_CODE_OBSERVATION__EOCL_EXP);
 			}
@@ -2012,7 +2013,7 @@ public class UDIOrganizerOperations {
 		
 	 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.UDI_ORGANIZER, ConsolPackage.Literals.UDI_ORGANIZER.getEAllOperations().get(27));
+			helper.setOperationContext(ConsolPackage.Literals.UDI_ORGANIZER, ConsolPackage.Literals.UDI_ORGANIZER.getEAllOperations().get(79));
 			try {
 				GET_BRAND_NAME_OBSERVATION__EOCL_QRY = helper.createQuery(GET_BRAND_NAME_OBSERVATION__EOCL_EXP);
 			}
@@ -2058,7 +2059,7 @@ public class UDIOrganizerOperations {
 		
 	 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.UDI_ORGANIZER, ConsolPackage.Literals.UDI_ORGANIZER.getEAllOperations().get(28));
+			helper.setOperationContext(ConsolPackage.Literals.UDI_ORGANIZER, ConsolPackage.Literals.UDI_ORGANIZER.getEAllOperations().get(80));
 			try {
 				GET_MODEL_NUMBER_OBSERVATION__EOCL_QRY = helper.createQuery(GET_MODEL_NUMBER_OBSERVATION__EOCL_EXP);
 			}
@@ -2104,7 +2105,7 @@ public class UDIOrganizerOperations {
 		
 	 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.UDI_ORGANIZER, ConsolPackage.Literals.UDI_ORGANIZER.getEAllOperations().get(29));
+			helper.setOperationContext(ConsolPackage.Literals.UDI_ORGANIZER, ConsolPackage.Literals.UDI_ORGANIZER.getEAllOperations().get(81));
 			try {
 				GET_COMPANY_NAME_OBSERVATION__EOCL_QRY = helper.createQuery(GET_COMPANY_NAME_OBSERVATION__EOCL_EXP);
 			}
@@ -2150,7 +2151,7 @@ public class UDIOrganizerOperations {
 		
 	 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.UDI_ORGANIZER, ConsolPackage.Literals.UDI_ORGANIZER.getEAllOperations().get(30));
+			helper.setOperationContext(ConsolPackage.Literals.UDI_ORGANIZER, ConsolPackage.Literals.UDI_ORGANIZER.getEAllOperations().get(82));
 			try {
 				GET_CATALOG_NUMBER_OBSERVATION__EOCL_QRY = helper.createQuery(GET_CATALOG_NUMBER_OBSERVATION__EOCL_EXP);
 			}
@@ -2196,7 +2197,7 @@ public class UDIOrganizerOperations {
 		
 	 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.UDI_ORGANIZER, ConsolPackage.Literals.UDI_ORGANIZER.getEAllOperations().get(31));
+			helper.setOperationContext(ConsolPackage.Literals.UDI_ORGANIZER, ConsolPackage.Literals.UDI_ORGANIZER.getEAllOperations().get(83));
 			try {
 				GET_LATEX_SAFETY_OBSERVATION__EOCL_QRY = helper.createQuery(GET_LATEX_SAFETY_OBSERVATION__EOCL_EXP);
 			}
@@ -2242,7 +2243,7 @@ public class UDIOrganizerOperations {
 		
 	 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.UDI_ORGANIZER, ConsolPackage.Literals.UDI_ORGANIZER.getEAllOperations().get(32));
+			helper.setOperationContext(ConsolPackage.Literals.UDI_ORGANIZER, ConsolPackage.Literals.UDI_ORGANIZER.getEAllOperations().get(84));
 			try {
 				GET_MRI_SAFETY_OBSERVATION__EOCL_QRY = helper.createQuery(GET_MRI_SAFETY_OBSERVATION__EOCL_EXP);
 			}
@@ -2288,7 +2289,7 @@ public class UDIOrganizerOperations {
 		
 	 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.UDI_ORGANIZER, ConsolPackage.Literals.UDI_ORGANIZER.getEAllOperations().get(33));
+			helper.setOperationContext(ConsolPackage.Literals.UDI_ORGANIZER, ConsolPackage.Literals.UDI_ORGANIZER.getEAllOperations().get(85));
 			try {
 				GET_IMPLANTABLE_DEVICE_STATUS_OBSERVATION__EOCL_QRY = helper.createQuery(GET_IMPLANTABLE_DEVICE_STATUS_OBSERVATION__EOCL_EXP);
 			}
