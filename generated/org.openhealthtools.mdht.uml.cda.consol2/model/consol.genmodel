@@ -17383,7 +17383,7 @@
       </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//CareTeamOrganizer/getNoteActivity"/>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//CareTeamOrganizer/getCareTeamTypeObservation"/>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//CareTeamOrganizer/getCareTeamMemberAct"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//CareTeamOrganizer/getCareTeamMemberActs"/>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="consol.ecore#//NoteActivity">
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//NoteActivity/NoteActivityTemplateId">
@@ -17538,8 +17538,8 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CareTeamMemberAct/CareTeamMemberActIVLTSHigh/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CareTeamMemberAct/CareTeamMemberActIVLTSHigh/context"/>
       </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//CareTeamMemberAct/getCareTeamMemberScheduleObservations"/>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//CareTeamMemberAct/getNoteActivities"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//CareTeamMemberAct/getCareTeamMemberScheduleObservation"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//CareTeamMemberAct/getNoteActivity"/>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="consol.ecore#//CareTeamMemberScheduleObservation">
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//CareTeamMemberScheduleObservation/CareTeamMemberScheduleObservationTemplateId">

@@ -7,6 +7,7 @@ import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
+import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EObject;
 
 import org.eclipse.mdht.emf.runtime.util.Initializer;
@@ -193,7 +194,7 @@ public interface CareTeamOrganizer extends Organizer {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component-&gt;one(component : cda::Component4 | not component.act.oclIsUndefined() and component.act.oclIsKindOf(consol::CareTeamMemberAct))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component-&gt;exists(component : cda::Component4 | not component.act.oclIsUndefined() and component.act.oclIsKindOf(consol::CareTeamMemberAct))'"
 	 * @generated
 	 */
 	boolean validateCareTeamOrganizerCareTeamMemberAct(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -256,10 +257,10 @@ public interface CareTeamOrganizer extends Organizer {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getActs()-&gt;select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::CareTeamMemberAct))-&gt;asSequence()-&gt;any(true).oclAsType(consol::CareTeamMemberAct)'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getActs()-&gt;select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::CareTeamMemberAct)).oclAsType(consol::CareTeamMemberAct)'"
 	 * @generated
 	 */
-	CareTeamMemberAct getCareTeamMemberAct();
+	EList<CareTeamMemberAct> getCareTeamMemberActs();
 
 	/**
 	 * <!-- begin-user-doc -->

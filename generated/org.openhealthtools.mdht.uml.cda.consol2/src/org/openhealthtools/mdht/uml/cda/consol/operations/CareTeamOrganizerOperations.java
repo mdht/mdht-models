@@ -6,8 +6,10 @@ import java.util.Collection;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
+import org.eclipse.emf.common.util.BasicEList;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
+import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClassifier;
 
 import org.eclipse.emf.ecore.EObject;
@@ -60,7 +62,7 @@ import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CareTeamOrganizer#validateCareTeamOrganizerIVLTSHigh(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Team Organizer IVLTS High</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CareTeamOrganizer#getNoteActivity() <em>Get Note Activity</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CareTeamOrganizer#getCareTeamTypeObservation() <em>Get Care Team Type Observation</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CareTeamOrganizer#getCareTeamMemberAct() <em>Get Care Team Member Act</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CareTeamOrganizer#getCareTeamMemberActs() <em>Get Care Team Member Acts</em>}</li>
  * </ul>
  * </p>
  *
@@ -970,7 +972,7 @@ public class CareTeamOrganizerOperations extends OrganizerOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_CARE_TEAM_ORGANIZER_CARE_TEAM_MEMBER_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.component->one(component : cda::Component4 | not component.act.oclIsUndefined() and component.act.oclIsKindOf(consol::CareTeamMemberAct))";
+	protected static final String VALIDATE_CARE_TEAM_ORGANIZER_CARE_TEAM_MEMBER_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.component->exists(component : cda::Component4 | not component.act.oclIsUndefined() and component.act.oclIsKindOf(consol::CareTeamMemberAct))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateCareTeamOrganizerCareTeamMemberAct(CareTeamOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Team Organizer Care Team Member Act</em>}' invariant operation.
@@ -1331,24 +1333,24 @@ public class CareTeamOrganizerOperations extends OrganizerOperations {
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getCareTeamMemberAct(CareTeamOrganizer) <em>Get Care Team Member Act</em>}' operation.
+	 * The cached OCL expression body for the '{@link #getCareTeamMemberActs(CareTeamOrganizer) <em>Get Care Team Member Acts</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getCareTeamMemberAct(CareTeamOrganizer)
+	 * @see #getCareTeamMemberActs(CareTeamOrganizer)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_CARE_TEAM_MEMBER_ACT__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::CareTeamMemberAct))->asSequence()->any(true).oclAsType(consol::CareTeamMemberAct)";
+	protected static final String GET_CARE_TEAM_MEMBER_ACTS__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::CareTeamMemberAct)).oclAsType(consol::CareTeamMemberAct)";
 
 	/**
-	 * The cached OCL query for the '{@link #getCareTeamMemberAct(CareTeamOrganizer) <em>Get Care Team Member Act</em>}' query operation.
+	 * The cached OCL query for the '{@link #getCareTeamMemberActs(CareTeamOrganizer) <em>Get Care Team Member Acts</em>}' query operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getCareTeamMemberAct(CareTeamOrganizer)
+	 * @see #getCareTeamMemberActs(CareTeamOrganizer)
 	 * @generated
 	 * @ordered
 	 */
-	protected static OCLExpression<EClassifier> GET_CARE_TEAM_MEMBER_ACT__EOCL_QRY;
+	protected static OCLExpression<EClassifier> GET_CARE_TEAM_MEMBER_ACTS__EOCL_QRY;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1356,23 +1358,25 @@ public class CareTeamOrganizerOperations extends OrganizerOperations {
 	 * @generated
 	 */
 
-	public static CareTeamMemberAct getCareTeamMemberAct(CareTeamOrganizer careTeamOrganizer) {
+	public static EList<CareTeamMemberAct> getCareTeamMemberActs(CareTeamOrganizer careTeamOrganizer) {
 
-		if (GET_CARE_TEAM_MEMBER_ACT__EOCL_QRY == null) {
+		if (GET_CARE_TEAM_MEMBER_ACTS__EOCL_QRY == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.CARE_TEAM_ORGANIZER,
 				ConsolPackage.Literals.CARE_TEAM_ORGANIZER.getEAllOperations().get(71));
 			try {
-				GET_CARE_TEAM_MEMBER_ACT__EOCL_QRY = helper.createQuery(GET_CARE_TEAM_MEMBER_ACT__EOCL_EXP);
+				GET_CARE_TEAM_MEMBER_ACTS__EOCL_QRY = helper.createQuery(GET_CARE_TEAM_MEMBER_ACTS__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 
-		OCL.Query query = EOCL_ENV.get().createQuery(GET_CARE_TEAM_MEMBER_ACT__EOCL_QRY);
-		return (CareTeamMemberAct) query.evaluate(careTeamOrganizer);
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_CARE_TEAM_MEMBER_ACTS__EOCL_QRY);
+		@SuppressWarnings("unchecked")
+		Collection<CareTeamMemberAct> result = (Collection<CareTeamMemberAct>) query.evaluate(careTeamOrganizer);
+		return new BasicEList.UnmodifiableEList<CareTeamMemberAct>(result.size(), result.toArray());
 	}
 
 } // CareTeamOrganizerOperations

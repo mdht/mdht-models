@@ -512,7 +512,7 @@ public class NoteActivityTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(NoteActivity target) {
 				for (CD trans : target.getCode().getTranslations()) {
-					trans.setCode("11488-4");
+					trans.setCode("28570-0");
 					trans.setCodeSystem("2.16.840.1.113883.6.1");
 				}
 

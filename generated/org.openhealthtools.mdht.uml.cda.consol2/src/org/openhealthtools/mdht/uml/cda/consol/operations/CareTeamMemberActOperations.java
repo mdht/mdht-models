@@ -6,11 +6,8 @@ import java.util.Collection;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
-import org.eclipse.emf.common.util.BasicEList;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
-import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClassifier;
 
 import org.eclipse.emf.ecore.EObject;
@@ -57,8 +54,8 @@ import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CareTeamMemberAct#validateCareTeamMemberActParticipant2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Team Member Act Participant2</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CareTeamMemberAct#validateCareTeamMemberActIVLTSLow(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Team Member Act IVLTS Low</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CareTeamMemberAct#validateCareTeamMemberActIVLTSHigh(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Team Member Act IVLTS High</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CareTeamMemberAct#getCareTeamMemberScheduleObservations() <em>Get Care Team Member Schedule Observations</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CareTeamMemberAct#getNoteActivities() <em>Get Note Activities</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CareTeamMemberAct#getCareTeamMemberScheduleObservation() <em>Get Care Team Member Schedule Observation</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CareTeamMemberAct#getNoteActivity() <em>Get Note Activity</em>}</li>
  * </ul>
  * </p>
  *
@@ -681,7 +678,7 @@ public class CareTeamMemberActOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_CARE_TEAM_MEMBER_ACT_CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::CareTeamMemberScheduleObservation) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)";
+	protected static final String VALIDATE_CARE_TEAM_MEMBER_ACT_CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::CareTeamMemberScheduleObservation) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateCareTeamMemberActCareTeamMemberScheduleObservation(CareTeamMemberAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Team Member Act Care Team Member Schedule Observation</em>}' invariant operation.
@@ -749,7 +746,7 @@ public class CareTeamMemberActOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_CARE_TEAM_MEMBER_ACT_NOTE_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.act.oclIsUndefined() and entryRelationship.act.oclIsKindOf(consol::NoteActivity) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)";
+	protected static final String VALIDATE_CARE_TEAM_MEMBER_ACT_NOTE_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.act.oclIsUndefined() and entryRelationship.act.oclIsKindOf(consol::NoteActivity) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateCareTeamMemberActNoteActivity(CareTeamMemberAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Team Member Act Note Activity</em>}' invariant operation.
@@ -816,7 +813,7 @@ public class CareTeamMemberActOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_CARE_TEAM_MEMBER_ACT_PARTICIPANT2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.participant->exists(participant : cda::Participant2 | not participant.oclIsUndefined() and participant.oclIsKindOf(cda::Participant2))";
+	protected static final String VALIDATE_CARE_TEAM_MEMBER_ACT_PARTICIPANT2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.participant->one(participant : cda::Participant2 | not participant.oclIsUndefined() and participant.oclIsKindOf(cda::Participant2))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateCareTeamMemberActParticipant2(CareTeamMemberAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Team Member Act Participant2</em>}' invariant operation.
@@ -1021,24 +1018,24 @@ public class CareTeamMemberActOperations extends ClinicalStatementOperations {
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getCareTeamMemberScheduleObservations(CareTeamMemberAct) <em>Get Care Team Member Schedule Observations</em>}' operation.
+	 * The cached OCL expression body for the '{@link #getCareTeamMemberScheduleObservation(CareTeamMemberAct) <em>Get Care Team Member Schedule Observation</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getCareTeamMemberScheduleObservations(CareTeamMemberAct)
+	 * @see #getCareTeamMemberScheduleObservation(CareTeamMemberAct)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_CARE_TEAM_MEMBER_SCHEDULE_OBSERVATIONS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::CareTeamMemberScheduleObservation)).oclAsType(consol::CareTeamMemberScheduleObservation)";
+	protected static final String GET_CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::CareTeamMemberScheduleObservation))->asSequence()->any(true).oclAsType(consol::CareTeamMemberScheduleObservation)";
 
 	/**
-	 * The cached OCL query for the '{@link #getCareTeamMemberScheduleObservations(CareTeamMemberAct) <em>Get Care Team Member Schedule Observations</em>}' query operation.
+	 * The cached OCL query for the '{@link #getCareTeamMemberScheduleObservation(CareTeamMemberAct) <em>Get Care Team Member Schedule Observation</em>}' query operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getCareTeamMemberScheduleObservations(CareTeamMemberAct)
+	 * @see #getCareTeamMemberScheduleObservation(CareTeamMemberAct)
 	 * @generated
 	 * @ordered
 	 */
-	protected static OCLExpression<EClassifier> GET_CARE_TEAM_MEMBER_SCHEDULE_OBSERVATIONS__EOCL_QRY;
+	protected static OCLExpression<EClassifier> GET_CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION__EOCL_QRY;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1046,49 +1043,46 @@ public class CareTeamMemberActOperations extends ClinicalStatementOperations {
 	 * @generated
 	 */
 
-	public static EList<CareTeamMemberScheduleObservation> getCareTeamMemberScheduleObservations(
+	public static CareTeamMemberScheduleObservation getCareTeamMemberScheduleObservation(
 			CareTeamMemberAct careTeamMemberAct) {
 
-		if (GET_CARE_TEAM_MEMBER_SCHEDULE_OBSERVATIONS__EOCL_QRY == null) {
+		if (GET_CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION__EOCL_QRY == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.CARE_TEAM_MEMBER_ACT,
 				ConsolPackage.Literals.CARE_TEAM_MEMBER_ACT.getEAllOperations().get(65));
 			try {
-				GET_CARE_TEAM_MEMBER_SCHEDULE_OBSERVATIONS__EOCL_QRY = helper.createQuery(
-					GET_CARE_TEAM_MEMBER_SCHEDULE_OBSERVATIONS__EOCL_EXP);
+				GET_CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION__EOCL_QRY = helper.createQuery(
+					GET_CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 
-		OCL.Query query = EOCL_ENV.get().createQuery(GET_CARE_TEAM_MEMBER_SCHEDULE_OBSERVATIONS__EOCL_QRY);
-		@SuppressWarnings("unchecked")
-		Collection<CareTeamMemberScheduleObservation> result = (Collection<CareTeamMemberScheduleObservation>) query.evaluate(
-			careTeamMemberAct);
-		return new BasicEList.UnmodifiableEList<CareTeamMemberScheduleObservation>(result.size(), result.toArray());
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION__EOCL_QRY);
+		return (CareTeamMemberScheduleObservation) query.evaluate(careTeamMemberAct);
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getNoteActivities(CareTeamMemberAct) <em>Get Note Activities</em>}' operation.
+	 * The cached OCL expression body for the '{@link #getNoteActivity(CareTeamMemberAct) <em>Get Note Activity</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getNoteActivities(CareTeamMemberAct)
+	 * @see #getNoteActivity(CareTeamMemberAct)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_NOTE_ACTIVITIES__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::NoteActivity)).oclAsType(consol::NoteActivity)";
+	protected static final String GET_NOTE_ACTIVITY__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::NoteActivity))->asSequence()->any(true).oclAsType(consol::NoteActivity)";
 
 	/**
-	 * The cached OCL query for the '{@link #getNoteActivities(CareTeamMemberAct) <em>Get Note Activities</em>}' query operation.
+	 * The cached OCL query for the '{@link #getNoteActivity(CareTeamMemberAct) <em>Get Note Activity</em>}' query operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getNoteActivities(CareTeamMemberAct)
+	 * @see #getNoteActivity(CareTeamMemberAct)
 	 * @generated
 	 * @ordered
 	 */
-	protected static OCLExpression<EClassifier> GET_NOTE_ACTIVITIES__EOCL_QRY;
+	protected static OCLExpression<EClassifier> GET_NOTE_ACTIVITY__EOCL_QRY;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1096,25 +1090,23 @@ public class CareTeamMemberActOperations extends ClinicalStatementOperations {
 	 * @generated
 	 */
 
-	public static EList<NoteActivity> getNoteActivities(CareTeamMemberAct careTeamMemberAct) {
+	public static NoteActivity getNoteActivity(CareTeamMemberAct careTeamMemberAct) {
 
-		if (GET_NOTE_ACTIVITIES__EOCL_QRY == null) {
+		if (GET_NOTE_ACTIVITY__EOCL_QRY == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.CARE_TEAM_MEMBER_ACT,
 				ConsolPackage.Literals.CARE_TEAM_MEMBER_ACT.getEAllOperations().get(66));
 			try {
-				GET_NOTE_ACTIVITIES__EOCL_QRY = helper.createQuery(GET_NOTE_ACTIVITIES__EOCL_EXP);
+				GET_NOTE_ACTIVITY__EOCL_QRY = helper.createQuery(GET_NOTE_ACTIVITY__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 
-		OCL.Query query = EOCL_ENV.get().createQuery(GET_NOTE_ACTIVITIES__EOCL_QRY);
-		@SuppressWarnings("unchecked")
-		Collection<NoteActivity> result = (Collection<NoteActivity>) query.evaluate(careTeamMemberAct);
-		return new BasicEList.UnmodifiableEList<NoteActivity>(result.size(), result.toArray());
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_NOTE_ACTIVITY__EOCL_QRY);
+		return (NoteActivity) query.evaluate(careTeamMemberAct);
 	}
 
 } // CareTeamMemberActOperations

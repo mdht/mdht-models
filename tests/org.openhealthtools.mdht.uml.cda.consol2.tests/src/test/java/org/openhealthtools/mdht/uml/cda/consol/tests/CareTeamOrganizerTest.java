@@ -45,7 +45,7 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.CareTeamOrganizerOpera
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CareTeamOrganizer#validateCareTeamOrganizerIVLTSHigh(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Team Organizer IVLTS High</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CareTeamOrganizer#getNoteActivity() <em>Get Note Activity</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CareTeamOrganizer#getCareTeamTypeObservation() <em>Get Care Team Type Observation</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CareTeamOrganizer#getCareTeamMemberAct() <em>Get Care Team Member Act</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CareTeamOrganizer#getCareTeamMemberActs() <em>Get Care Team Member Acts</em>}</li>
  * </ul>
  * </p>
  *
@@ -713,10 +713,10 @@ public class CareTeamOrganizerTest extends CDAValidationTest {
 	*/
 	@Test
 
-	public void testGetCareTeamMemberAct() {
+	public void testGetCareTeamMemberActs() {
 
 		CareTeamOrganizer target = objectFactory.create();
-		target.getCareTeamMemberAct();
+		target.getCareTeamMemberActs();
 
 	}
 

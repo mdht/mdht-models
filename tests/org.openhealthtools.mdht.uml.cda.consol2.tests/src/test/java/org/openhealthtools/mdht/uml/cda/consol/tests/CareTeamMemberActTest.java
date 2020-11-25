@@ -41,8 +41,8 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.CareTeamMemberActOpera
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CareTeamMemberAct#validateCareTeamMemberActParticipant2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Team Member Act Participant2</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CareTeamMemberAct#validateCareTeamMemberActIVLTSLow(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Team Member Act IVLTS Low</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CareTeamMemberAct#validateCareTeamMemberActIVLTSHigh(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Team Member Act IVLTS High</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CareTeamMemberAct#getCareTeamMemberScheduleObservations() <em>Get Care Team Member Schedule Observations</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CareTeamMemberAct#getNoteActivities() <em>Get Note Activities</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CareTeamMemberAct#getCareTeamMemberScheduleObservation() <em>Get Care Team Member Schedule Observation</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CareTeamMemberAct#getNoteActivity() <em>Get Note Activity</em>}</li>
  * </ul>
  * </p>
  *
@@ -583,10 +583,10 @@ public class CareTeamMemberActTest extends CDAValidationTest {
 	*/
 	@Test
 
-	public void testGetCareTeamMemberScheduleObservations() {
+	public void testGetCareTeamMemberScheduleObservation() {
 
 		CareTeamMemberAct target = objectFactory.create();
-		target.getCareTeamMemberScheduleObservations();
+		target.getCareTeamMemberScheduleObservation();
 
 	}
 
@@ -596,10 +596,10 @@ public class CareTeamMemberActTest extends CDAValidationTest {
 	*/
 	@Test
 
-	public void testGetNoteActivities() {
+	public void testGetNoteActivity() {
 
 		CareTeamMemberAct target = objectFactory.create();
-		target.getNoteActivities();
+		target.getNoteActivity();
 
 	}
 
