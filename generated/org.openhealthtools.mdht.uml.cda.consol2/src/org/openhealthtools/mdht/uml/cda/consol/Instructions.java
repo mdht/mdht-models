@@ -149,9 +149,9 @@ public interface Instructions extends Act {
 	public Instructions init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public Instructions init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // Instructions

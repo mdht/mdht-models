@@ -81,8 +81,7 @@ public class MedicationsSection2Impl extends MedicationsSectionEntriesOptional2I
 	@Override
 	public boolean validateMedicationsSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationsSection2Operations.validateMedicationsSectionEntriesOptionalTemplateId(
-			this, diagnostics, context);
+		return MedicationsSection2Operations.validateMedicationsSectionEntriesOptionalTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -115,8 +114,7 @@ public class MedicationsSection2Impl extends MedicationsSectionEntriesOptional2I
 	@Override
 	public boolean validateMedicationsSectionEntriesOptionalMedicationActivity(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationsSection2Operations.validateMedicationsSectionEntriesOptionalMedicationActivity(
-			this, diagnostics, context);
+		return MedicationsSection2Operations.validateMedicationsSectionEntriesOptionalMedicationActivity(this, diagnostics, context);
 	}
 
 	/**
@@ -136,17 +134,17 @@ public class MedicationsSection2Impl extends MedicationsSectionEntriesOptional2I
 	 */
 	@Override
 	public MedicationsSection2 init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public MedicationsSection2 init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // MedicationsSection2Impl

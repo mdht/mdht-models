@@ -52,8 +52,7 @@ public class MentalStatusObservation2Impl extends CognitiveStatusResultObservati
 	 */
 	public boolean validateMentalStatusObservation2TemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MentalStatusObservation2Operations.validateMentalStatusObservation2TemplateId(
-			this, diagnostics, context);
+		return MentalStatusObservation2Operations.validateMentalStatusObservation2TemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -63,8 +62,7 @@ public class MentalStatusObservation2Impl extends CognitiveStatusResultObservati
 	 */
 	public boolean validateMentalStatusObservation2AuthorParticipation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MentalStatusObservation2Operations.validateMentalStatusObservation2AuthorParticipation(
-			this, diagnostics, context);
+		return MentalStatusObservation2Operations.validateMentalStatusObservation2AuthorParticipation(this, diagnostics, context);
 	}
 
 	/**
@@ -74,8 +72,7 @@ public class MentalStatusObservation2Impl extends CognitiveStatusResultObservati
 	 */
 	public boolean validateMentalStatusObservation2CDTranslation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MentalStatusObservation2Operations.validateMentalStatusObservation2CDTranslation(
-			this, diagnostics, context);
+		return MentalStatusObservation2Operations.validateMentalStatusObservation2CDTranslation(this, diagnostics, context);
 	}
 
 	/**
@@ -85,8 +82,7 @@ public class MentalStatusObservation2Impl extends CognitiveStatusResultObservati
 	 */
 	public boolean validateMentalStatusObservation2CDTranslationP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MentalStatusObservation2Operations.validateMentalStatusObservation2CDTranslationP(
-			this, diagnostics, context);
+		return MentalStatusObservation2Operations.validateMentalStatusObservation2CDTranslationP(this, diagnostics, context);
 	}
 
 	/**
@@ -124,8 +120,7 @@ public class MentalStatusObservation2Impl extends CognitiveStatusResultObservati
 	@Override
 	public boolean validateCognitiveStatusResultObservationValueDatatype(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MentalStatusObservation2Operations.validateCognitiveStatusResultObservationValueDatatype(
-			this, diagnostics, context);
+		return MentalStatusObservation2Operations.validateCognitiveStatusResultObservationValueDatatype(this, diagnostics, context);
 	}
 
 	/**
@@ -146,8 +141,7 @@ public class MentalStatusObservation2Impl extends CognitiveStatusResultObservati
 	@Override
 	public boolean validateResultObservationTextReferenceValue(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MentalStatusObservation2Operations.validateResultObservationTextReferenceValue(
-			this, diagnostics, context);
+		return MentalStatusObservation2Operations.validateResultObservationTextReferenceValue(this, diagnostics, context);
 	}
 
 	/**
@@ -178,8 +172,7 @@ public class MentalStatusObservation2Impl extends CognitiveStatusResultObservati
 	@Override
 	public boolean validateResultObservationNoObservationRangeCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MentalStatusObservation2Operations.validateResultObservationNoObservationRangeCode(
-			this, diagnostics, context);
+		return MentalStatusObservation2Operations.validateResultObservationNoObservationRangeCode(this, diagnostics, context);
 	}
 
 	/**
@@ -190,8 +183,7 @@ public class MentalStatusObservation2Impl extends CognitiveStatusResultObservati
 	@Override
 	public boolean validateResultObservationAuthorMultiplicity(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MentalStatusObservation2Operations.validateResultObservationAuthorMultiplicity(
-			this, diagnostics, context);
+		return MentalStatusObservation2Operations.validateResultObservationAuthorMultiplicity(this, diagnostics, context);
 	}
 
 	/**
@@ -302,8 +294,7 @@ public class MentalStatusObservation2Impl extends CognitiveStatusResultObservati
 	@Override
 	public boolean validateResultObservationInterpretationCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MentalStatusObservation2Operations.validateResultObservationInterpretationCode(
-			this, diagnostics, context);
+		return MentalStatusObservation2Operations.validateResultObservationInterpretationCode(this, diagnostics, context);
 	}
 
 	/**
@@ -334,8 +325,7 @@ public class MentalStatusObservation2Impl extends CognitiveStatusResultObservati
 	@Override
 	public boolean validateCognitiveStatusResultObservationAssessmentScaleObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MentalStatusObservation2Operations.validateCognitiveStatusResultObservationAssessmentScaleObservation(
-			this, diagnostics, context);
+		return MentalStatusObservation2Operations.validateCognitiveStatusResultObservationAssessmentScaleObservation(this, diagnostics, context);
 	}
 
 	/**
@@ -346,8 +336,7 @@ public class MentalStatusObservation2Impl extends CognitiveStatusResultObservati
 	@Override
 	public boolean validateCognitiveStatusResultObservationReferenceRange(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MentalStatusObservation2Operations.validateCognitiveStatusResultObservationReferenceRange(
-			this, diagnostics, context);
+		return MentalStatusObservation2Operations.validateCognitiveStatusResultObservationReferenceRange(this, diagnostics, context);
 	}
 
 	/**
@@ -358,8 +347,7 @@ public class MentalStatusObservation2Impl extends CognitiveStatusResultObservati
 	@Override
 	public boolean validateCognitiveStatusResultObservationAuthor(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MentalStatusObservation2Operations.validateCognitiveStatusResultObservationAuthor(
-			this, diagnostics, context);
+		return MentalStatusObservation2Operations.validateCognitiveStatusResultObservationAuthor(this, diagnostics, context);
 	}
 
 	/**
@@ -370,8 +358,7 @@ public class MentalStatusObservation2Impl extends CognitiveStatusResultObservati
 	@Override
 	public boolean validateCognitiveStatusResultObservationNonMedicinalSupplyActivity(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MentalStatusObservation2Operations.validateCognitiveStatusResultObservationNonMedicinalSupplyActivity(
-			this, diagnostics, context);
+		return MentalStatusObservation2Operations.validateCognitiveStatusResultObservationNonMedicinalSupplyActivity(this, diagnostics, context);
 	}
 
 	/**
@@ -382,8 +369,7 @@ public class MentalStatusObservation2Impl extends CognitiveStatusResultObservati
 	@Override
 	public boolean validateCognitiveStatusResultObservationCaregiverCharacteristics(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MentalStatusObservation2Operations.validateCognitiveStatusResultObservationCaregiverCharacteristics(
-			this, diagnostics, context);
+		return MentalStatusObservation2Operations.validateCognitiveStatusResultObservationCaregiverCharacteristics(this, diagnostics, context);
 	}
 
 	/**
@@ -394,8 +380,7 @@ public class MentalStatusObservation2Impl extends CognitiveStatusResultObservati
 	@Override
 	public boolean validateCognitiveStatusResultObservationReferenceRangeObservationRangeNoCode(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MentalStatusObservation2Operations.validateCognitiveStatusResultObservationReferenceRangeObservationRangeNoCode(
-			this, diagnostics, context);
+		return MentalStatusObservation2Operations.validateCognitiveStatusResultObservationReferenceRangeObservationRangeNoCode(this, diagnostics, context);
 	}
 
 	/**
@@ -406,8 +391,7 @@ public class MentalStatusObservation2Impl extends CognitiveStatusResultObservati
 	@Override
 	public boolean validateCognitiveStatusResultObservationReferenceRangeObservationRange(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MentalStatusObservation2Operations.validateCognitiveStatusResultObservationReferenceRangeObservationRange(
-			this, diagnostics, context);
+		return MentalStatusObservation2Operations.validateCognitiveStatusResultObservationReferenceRangeObservationRange(this, diagnostics, context);
 	}
 
 	/**
@@ -417,17 +401,17 @@ public class MentalStatusObservation2Impl extends CognitiveStatusResultObservati
 	 */
 	@Override
 	public MentalStatusObservation2 init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public MentalStatusObservation2 init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // MentalStatusObservation2Impl

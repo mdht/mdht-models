@@ -51,8 +51,7 @@ public class HealthStatusObservation2Impl extends HealthStatusObservationImpl im
 	 */
 	public boolean validateHealthStatusObservation2TemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HealthStatusObservation2Operations.validateHealthStatusObservation2TemplateId(
-			this, diagnostics, context);
+		return HealthStatusObservation2Operations.validateHealthStatusObservation2TemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -80,8 +79,7 @@ public class HealthStatusObservation2Impl extends HealthStatusObservationImpl im
 	 */
 	public boolean validateHealthStatusObservationStatusCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HealthStatusObservation2Operations.validateHealthStatusObservationStatusCodeP(
-			this, diagnostics, context);
+		return HealthStatusObservation2Operations.validateHealthStatusObservationStatusCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -92,8 +90,7 @@ public class HealthStatusObservation2Impl extends HealthStatusObservationImpl im
 	@Override
 	public boolean validateHealthStatusObservationHasTextReference(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HealthStatusObservation2Operations.validateHealthStatusObservationHasTextReference(
-			this, diagnostics, context);
+		return HealthStatusObservation2Operations.validateHealthStatusObservationHasTextReference(this, diagnostics, context);
 	}
 
 	/**
@@ -104,8 +101,7 @@ public class HealthStatusObservation2Impl extends HealthStatusObservationImpl im
 	@Override
 	public boolean validateHealthStatusObservationTextReferenceValue(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HealthStatusObservation2Operations.validateHealthStatusObservationTextReferenceValue(
-			this, diagnostics, context);
+		return HealthStatusObservation2Operations.validateHealthStatusObservationTextReferenceValue(this, diagnostics, context);
 	}
 
 	/**
@@ -116,8 +112,7 @@ public class HealthStatusObservation2Impl extends HealthStatusObservationImpl im
 	@Override
 	public boolean validateHealthStatusObservationHasTextReferenceValue(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HealthStatusObservation2Operations.validateHealthStatusObservationHasTextReferenceValue(
-			this, diagnostics, context);
+		return HealthStatusObservation2Operations.validateHealthStatusObservationHasTextReferenceValue(this, diagnostics, context);
 	}
 
 	/**
@@ -157,17 +152,17 @@ public class HealthStatusObservation2Impl extends HealthStatusObservationImpl im
 	 */
 	@Override
 	public HealthStatusObservation2 init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public HealthStatusObservation2 init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // HealthStatusObservation2Impl

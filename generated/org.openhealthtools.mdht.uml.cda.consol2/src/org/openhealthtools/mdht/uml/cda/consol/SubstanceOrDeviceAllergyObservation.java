@@ -446,9 +446,9 @@ public interface SubstanceOrDeviceAllergyObservation extends Observation {
 	public SubstanceOrDeviceAllergyObservation init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public SubstanceOrDeviceAllergyObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // SubstanceOrDeviceAllergyObservation

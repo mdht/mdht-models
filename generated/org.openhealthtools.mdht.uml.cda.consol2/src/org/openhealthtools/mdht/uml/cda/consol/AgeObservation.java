@@ -141,9 +141,9 @@ public interface AgeObservation extends Observation {
 	public AgeObservation init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public AgeObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // AgeObservation

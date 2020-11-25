@@ -55,9 +55,9 @@ public interface EncountersSection extends EncountersSectionEntriesOptional {
 	public EncountersSection init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public EncountersSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // EncountersSection

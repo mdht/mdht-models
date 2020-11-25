@@ -76,7 +76,7 @@ public class BirthSexObservationOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_BIRTH_SEX_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<  Constraint> VALIDATE_BIRTH_SEX_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -91,33 +91,44 @@ public class BirthSexObservationOperations extends ClinicalStatementOperations {
 
 	public static boolean validateBirthSexObservationTemplateId(BirthSexObservation birthSexObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		DatatypesUtil.increment(context, "BirthSexObservationBirthSexObservationTemplateId", "ERROR");
-
+	
+	
+	
+  	  
+  	  
+  	  
+  	  
+  	 
+  	 
+  	 
+    DatatypesUtil.increment(context,"BirthSexObservationBirthSexObservationTemplateId","ERROR");
+    
+  	  
+  	  
 		if (VALIDATE_BIRTH_SEX_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-
+		
+	 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.BIRTH_SEX_OBSERVATION);
 			try {
-				VALIDATE_BIRTH_SEX_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
-					helper.createInvariant(VALIDATE_BIRTH_SEX_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			} catch (ParserException pe) {
+				VALIDATE_BIRTH_SEX_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_BIRTH_SEX_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-
-		if (!EOCL_ENV.get().createQuery(
-			VALIDATE_BIRTH_SEX_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
-				birthSexObservation)) {
-			if (diagnostics != null) {
-				diagnostics.add(
-					new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.BIRTH_SEX_OBSERVATION__BIRTH_SEX_OBSERVATION_TEMPLATE_ID,
-						ConsolPlugin.INSTANCE.getString("BirthSexObservationBirthSexObservationTemplateId"),
-						new Object[] { birthSexObservation }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_BIRTH_SEX_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(birthSexObservation)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.BIRTH_SEX_OBSERVATION__BIRTH_SEX_OBSERVATION_TEMPLATE_ID,
+						 ConsolPlugin.INSTANCE.getString("BirthSexObservationBirthSexObservationTemplateId"),
+						 new Object [] { birthSexObservation }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -142,7 +153,7 @@ public class BirthSexObservationOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_BIRTH_SEX_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<  Constraint> VALIDATE_BIRTH_SEX_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -157,33 +168,44 @@ public class BirthSexObservationOperations extends ClinicalStatementOperations {
 
 	public static boolean validateBirthSexObservationClassCode(BirthSexObservation birthSexObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		DatatypesUtil.increment(context, "BirthSexObservationBirthSexObservationClassCode", "ERROR");
-
+	
+	
+	
+  	  
+  	  
+  	  
+  	  
+  	 
+  	 
+  	 
+    DatatypesUtil.increment(context,"BirthSexObservationBirthSexObservationClassCode","ERROR");
+    
+  	  
+  	  
 		if (VALIDATE_BIRTH_SEX_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-
+		
+	 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.BIRTH_SEX_OBSERVATION);
 			try {
-				VALIDATE_BIRTH_SEX_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
-					helper.createInvariant(VALIDATE_BIRTH_SEX_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			} catch (ParserException pe) {
+				VALIDATE_BIRTH_SEX_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_BIRTH_SEX_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-
-		if (!EOCL_ENV.get().createQuery(
-			VALIDATE_BIRTH_SEX_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
-				birthSexObservation)) {
-			if (diagnostics != null) {
-				diagnostics.add(
-					new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.BIRTH_SEX_OBSERVATION__BIRTH_SEX_OBSERVATION_CLASS_CODE,
-						ConsolPlugin.INSTANCE.getString("BirthSexObservationBirthSexObservationClassCode"),
-						new Object[] { birthSexObservation }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_BIRTH_SEX_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(birthSexObservation)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.BIRTH_SEX_OBSERVATION__BIRTH_SEX_OBSERVATION_CLASS_CODE,
+						 ConsolPlugin.INSTANCE.getString("BirthSexObservationBirthSexObservationClassCode"),
+						 new Object [] { birthSexObservation }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -208,7 +230,7 @@ public class BirthSexObservationOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_BIRTH_SEX_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<  Constraint> VALIDATE_BIRTH_SEX_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -223,33 +245,44 @@ public class BirthSexObservationOperations extends ClinicalStatementOperations {
 
 	public static boolean validateBirthSexObservationMoodCode(BirthSexObservation birthSexObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		DatatypesUtil.increment(context, "BirthSexObservationBirthSexObservationMoodCode", "ERROR");
-
+	
+	
+	
+  	  
+  	  
+  	  
+  	  
+  	 
+  	 
+  	 
+    DatatypesUtil.increment(context,"BirthSexObservationBirthSexObservationMoodCode","ERROR");
+    
+  	  
+  	  
 		if (VALIDATE_BIRTH_SEX_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-
+		
+	 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.BIRTH_SEX_OBSERVATION);
 			try {
-				VALIDATE_BIRTH_SEX_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
-					helper.createInvariant(VALIDATE_BIRTH_SEX_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			} catch (ParserException pe) {
+				VALIDATE_BIRTH_SEX_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_BIRTH_SEX_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-
-		if (!EOCL_ENV.get().createQuery(
-			VALIDATE_BIRTH_SEX_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
-				birthSexObservation)) {
-			if (diagnostics != null) {
-				diagnostics.add(
-					new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.BIRTH_SEX_OBSERVATION__BIRTH_SEX_OBSERVATION_MOOD_CODE,
-						ConsolPlugin.INSTANCE.getString("BirthSexObservationBirthSexObservationMoodCode"),
-						new Object[] { birthSexObservation }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_BIRTH_SEX_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(birthSexObservation)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.BIRTH_SEX_OBSERVATION__BIRTH_SEX_OBSERVATION_MOOD_CODE,
+						 ConsolPlugin.INSTANCE.getString("BirthSexObservationBirthSexObservationMoodCode"),
+						 new Object [] { birthSexObservation }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -274,7 +307,7 @@ public class BirthSexObservationOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_BIRTH_SEX_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<  Constraint> VALIDATE_BIRTH_SEX_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -289,37 +322,48 @@ public class BirthSexObservationOperations extends ClinicalStatementOperations {
 
 	public static boolean validateBirthSexObservationCodeP(BirthSexObservation birthSexObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		DatatypesUtil.increment(context, "BirthSexObservationBirthSexObservationCodeP", "ERROR");
-
+	
+	
+	
+  	  
+  	  
+  	  
+  	  
+  	 
+  	 
+  	 
+    DatatypesUtil.increment(context,"BirthSexObservationBirthSexObservationCodeP","ERROR");
+    
+  	  
+  	  
 		if (VALIDATE_BIRTH_SEX_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-
+		
+	 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.BIRTH_SEX_OBSERVATION);
 			try {
-				VALIDATE_BIRTH_SEX_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
-					helper.createInvariant(VALIDATE_BIRTH_SEX_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			} catch (ParserException pe) {
+				VALIDATE_BIRTH_SEX_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_BIRTH_SEX_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-
-		if (!EOCL_ENV.get().createQuery(
-			VALIDATE_BIRTH_SEX_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(birthSexObservation)) {
-			if (diagnostics != null) {
-				diagnostics.add(
-					new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.BIRTH_SEX_OBSERVATION__BIRTH_SEX_OBSERVATION_CODE_P,
-						ConsolPlugin.INSTANCE.getString("BirthSexObservationBirthSexObservationCodeP"),
-						new Object[] { birthSexObservation }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_BIRTH_SEX_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(birthSexObservation)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.BIRTH_SEX_OBSERVATION__BIRTH_SEX_OBSERVATION_CODE_P,
+						 ConsolPlugin.INSTANCE.getString("BirthSexObservationBirthSexObservationCodeP"),
+						 new Object [] { birthSexObservation }));
+			}
+			
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
-				Collection<Object> passToken = (Collection<Object>) context.get(
-					"org.openhealthtools.mdht.uml.cda.consol.BirthSexObservationCodeP");
+				Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.consol.BirthSexObservationCodeP");
 				if (passToken == null) {
 					// anticipate a reasonably healthy model
 					passToken = new java.util.ArrayList<Object>(3);
@@ -327,7 +371,7 @@ public class BirthSexObservationOperations extends ClinicalStatementOperations {
 				}
 				passToken.add(birthSexObservation);
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -341,9 +385,9 @@ public class BirthSexObservationOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_BIRTH_SEX_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and " +
-			"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in " +
-			"value.code = '76689-9' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_BIRTH_SEX_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
+"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
+"value.code = '76689-9' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateBirthSexObservationCode(BirthSexObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Birth Sex Observation Code</em>}' invariant operation.
@@ -354,7 +398,7 @@ public class BirthSexObservationOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_BIRTH_SEX_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<  Constraint> VALIDATE_BIRTH_SEX_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -369,40 +413,50 @@ public class BirthSexObservationOperations extends ClinicalStatementOperations {
 
 	public static boolean validateBirthSexObservationCode(BirthSexObservation birthSexObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		Object passToken = (context == null)
-				? null
-				: context.get("org.openhealthtools.mdht.uml.cda.consol.BirthSexObservationCodeP");
+	
+	
+	
+  	  
+		Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.consol.BirthSexObservationCodeP");
 		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(birthSexObservation)) {
 			// I have a free pass to short-circuit
 			return true;
 		}
-
-		DatatypesUtil.increment(context, "BirthSexObservationBirthSexObservationCode", "ERROR");
-
+  	  
+  	  
+  	  
+  	  
+  	 
+  	 
+  	 
+    DatatypesUtil.increment(context,"BirthSexObservationBirthSexObservationCode","ERROR");
+    
+  	  
+  	  
 		if (VALIDATE_BIRTH_SEX_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-
+		
+	 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.BIRTH_SEX_OBSERVATION);
 			try {
-				VALIDATE_BIRTH_SEX_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
-					helper.createInvariant(VALIDATE_BIRTH_SEX_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			} catch (ParserException pe) {
+				VALIDATE_BIRTH_SEX_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_BIRTH_SEX_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-
-		if (!EOCL_ENV.get().createQuery(
-			VALIDATE_BIRTH_SEX_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(birthSexObservation)) {
-			if (diagnostics != null) {
-				diagnostics.add(
-					new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.BIRTH_SEX_OBSERVATION__BIRTH_SEX_OBSERVATION_CODE,
-						ConsolPlugin.INSTANCE.getString("BirthSexObservationBirthSexObservationCode"),
-						new Object[] { birthSexObservation }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_BIRTH_SEX_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(birthSexObservation)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.BIRTH_SEX_OBSERVATION__BIRTH_SEX_OBSERVATION_CODE,
+						 ConsolPlugin.INSTANCE.getString("BirthSexObservationBirthSexObservationCode"),
+						 new Object [] { birthSexObservation }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -416,8 +470,9 @@ public class BirthSexObservationOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_BIRTH_SEX_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and " +
-			"let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in " + "value.code = 'completed')";
+	protected static final String VALIDATE_BIRTH_SEX_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and "+
+"let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in "+
+"value.code = 'completed')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateBirthSexObservationStatusCode(BirthSexObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Birth Sex Observation Status Code</em>}' invariant operation.
@@ -428,7 +483,7 @@ public class BirthSexObservationOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_BIRTH_SEX_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<  Constraint> VALIDATE_BIRTH_SEX_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -443,33 +498,44 @@ public class BirthSexObservationOperations extends ClinicalStatementOperations {
 
 	public static boolean validateBirthSexObservationStatusCode(BirthSexObservation birthSexObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		DatatypesUtil.increment(context, "BirthSexObservationBirthSexObservationStatusCode", "ERROR");
-
+	
+	
+	
+  	  
+  	  
+  	  
+  	  
+  	 
+  	 
+  	 
+    DatatypesUtil.increment(context,"BirthSexObservationBirthSexObservationStatusCode","ERROR");
+    
+  	  
+  	  
 		if (VALIDATE_BIRTH_SEX_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-
+		
+	 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.BIRTH_SEX_OBSERVATION);
 			try {
-				VALIDATE_BIRTH_SEX_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
-					helper.createInvariant(VALIDATE_BIRTH_SEX_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			} catch (ParserException pe) {
+				VALIDATE_BIRTH_SEX_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_BIRTH_SEX_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-
-		if (!EOCL_ENV.get().createQuery(
-			VALIDATE_BIRTH_SEX_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
-				birthSexObservation)) {
-			if (diagnostics != null) {
-				diagnostics.add(
-					new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.BIRTH_SEX_OBSERVATION__BIRTH_SEX_OBSERVATION_STATUS_CODE,
-						ConsolPlugin.INSTANCE.getString("BirthSexObservationBirthSexObservationStatusCode"),
-						new Object[] { birthSexObservation }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_BIRTH_SEX_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(birthSexObservation)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.BIRTH_SEX_OBSERVATION__BIRTH_SEX_OBSERVATION_STATUS_CODE,
+						 ConsolPlugin.INSTANCE.getString("BirthSexObservationBirthSexObservationStatusCode"),
+						 new Object [] { birthSexObservation }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -494,7 +560,7 @@ public class BirthSexObservationOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_BIRTH_SEX_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<  Constraint> VALIDATE_BIRTH_SEX_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -509,34 +575,44 @@ public class BirthSexObservationOperations extends ClinicalStatementOperations {
 
 	public static boolean validateBirthSexObservationStatusCodeP(BirthSexObservation birthSexObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		DatatypesUtil.increment(context, "BirthSexObservationBirthSexObservationStatusCodeP", "ERROR");
-
+	
+	
+	
+  	  
+  	  
+  	  
+  	  
+  	 
+  	 
+  	 
+    DatatypesUtil.increment(context,"BirthSexObservationBirthSexObservationStatusCodeP","ERROR");
+    
+  	  
+  	  
 		if (VALIDATE_BIRTH_SEX_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-
+		
+	 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.BIRTH_SEX_OBSERVATION);
 			try {
-				VALIDATE_BIRTH_SEX_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
-					helper.createInvariant(
-						VALIDATE_BIRTH_SEX_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			} catch (ParserException pe) {
+				VALIDATE_BIRTH_SEX_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_BIRTH_SEX_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-
-		if (!EOCL_ENV.get().createQuery(
-			VALIDATE_BIRTH_SEX_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
-				birthSexObservation)) {
-			if (diagnostics != null) {
-				diagnostics.add(
-					new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.BIRTH_SEX_OBSERVATION__BIRTH_SEX_OBSERVATION_STATUS_CODE_P,
-						ConsolPlugin.INSTANCE.getString("BirthSexObservationBirthSexObservationStatusCodeP"),
-						new Object[] { birthSexObservation }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_BIRTH_SEX_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(birthSexObservation)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.BIRTH_SEX_OBSERVATION__BIRTH_SEX_OBSERVATION_STATUS_CODE_P,
+						 ConsolPlugin.INSTANCE.getString("BirthSexObservationBirthSexObservationStatusCodeP"),
+						 new Object [] { birthSexObservation }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -550,9 +626,9 @@ public class BirthSexObservationOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_BIRTH_SEX_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and " +
-			"let value : datatypes::CD = element.oclAsType(datatypes::CD) in " +
-			"value.codeSystem = '2.16.840.1.113883.5.1' and (value.code = 'F' or value.code = 'M')))";
+	protected static final String VALIDATE_BIRTH_SEX_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "+
+"let value : datatypes::CD = element.oclAsType(datatypes::CD) in "+
+"value.codeSystem = '2.16.840.1.113883.5.1' and (value.code = 'F' or value.code = 'M')))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateBirthSexObservationValue(BirthSexObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Birth Sex Observation Value</em>}' invariant operation.
@@ -563,7 +639,7 @@ public class BirthSexObservationOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_BIRTH_SEX_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<  Constraint> VALIDATE_BIRTH_SEX_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -578,32 +654,44 @@ public class BirthSexObservationOperations extends ClinicalStatementOperations {
 
 	public static boolean validateBirthSexObservationValue(BirthSexObservation birthSexObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		DatatypesUtil.increment(context, "BirthSexObservationBirthSexObservationValue", "ERROR");
-
+	
+	
+	
+  	  
+  	  
+  	  
+  	  
+  	 
+  	 
+  	 
+    DatatypesUtil.increment(context,"BirthSexObservationBirthSexObservationValue","ERROR");
+    
+  	  
+  	  
 		if (VALIDATE_BIRTH_SEX_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-
+		
+	 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.BIRTH_SEX_OBSERVATION);
 			try {
-				VALIDATE_BIRTH_SEX_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
-					helper.createInvariant(VALIDATE_BIRTH_SEX_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			} catch (ParserException pe) {
+				VALIDATE_BIRTH_SEX_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_BIRTH_SEX_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-
-		if (!EOCL_ENV.get().createQuery(
-			VALIDATE_BIRTH_SEX_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(birthSexObservation)) {
-			if (diagnostics != null) {
-				diagnostics.add(
-					new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.BIRTH_SEX_OBSERVATION__BIRTH_SEX_OBSERVATION_VALUE,
-						ConsolPlugin.INSTANCE.getString("BirthSexObservationBirthSexObservationValue"),
-						new Object[] { birthSexObservation }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_BIRTH_SEX_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(birthSexObservation)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.BIRTH_SEX_OBSERVATION__BIRTH_SEX_OBSERVATION_VALUE,
+						 ConsolPlugin.INSTANCE.getString("BirthSexObservationBirthSexObservationValue"),
+						 new Object [] { birthSexObservation }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -628,7 +716,7 @@ public class BirthSexObservationOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_BIRTH_SEX_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<  Constraint> VALIDATE_BIRTH_SEX_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -643,32 +731,44 @@ public class BirthSexObservationOperations extends ClinicalStatementOperations {
 
 	public static boolean validateBirthSexObservationValueP(BirthSexObservation birthSexObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		DatatypesUtil.increment(context, "BirthSexObservationBirthSexObservationValueP", "ERROR");
-
+	
+	
+	
+  	  
+  	  
+  	  
+  	  
+  	 
+  	 
+  	 
+    DatatypesUtil.increment(context,"BirthSexObservationBirthSexObservationValueP","ERROR");
+    
+  	  
+  	  
 		if (VALIDATE_BIRTH_SEX_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-
+		
+	 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.BIRTH_SEX_OBSERVATION);
 			try {
-				VALIDATE_BIRTH_SEX_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
-					helper.createInvariant(VALIDATE_BIRTH_SEX_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			} catch (ParserException pe) {
+				VALIDATE_BIRTH_SEX_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_BIRTH_SEX_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-
-		if (!EOCL_ENV.get().createQuery(
-			VALIDATE_BIRTH_SEX_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(birthSexObservation)) {
-			if (diagnostics != null) {
-				diagnostics.add(
-					new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.BIRTH_SEX_OBSERVATION__BIRTH_SEX_OBSERVATION_VALUE_P,
-						ConsolPlugin.INSTANCE.getString("BirthSexObservationBirthSexObservationValueP"),
-						new Object[] { birthSexObservation }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_BIRTH_SEX_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(birthSexObservation)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.BIRTH_SEX_OBSERVATION__BIRTH_SEX_OBSERVATION_VALUE_P,
+						 ConsolPlugin.INSTANCE.getString("BirthSexObservationBirthSexObservationValueP"),
+						 new Object [] { birthSexObservation }));
+			}
+			 
 			return false;
 		}
 		return true;

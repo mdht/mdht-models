@@ -66,9 +66,9 @@ public interface FamilyHistoryObservation2 extends FamilyHistoryObservation {
 	public FamilyHistoryObservation2 init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public FamilyHistoryObservation2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // FamilyHistoryObservation2

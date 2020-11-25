@@ -56,8 +56,7 @@ public class PurposeofReferenceObservationImpl extends ObservationImpl implement
 	 */
 	public boolean validatePurposeofReferenceObservationCodeCodeSystem(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PurposeofReferenceObservationOperations.validatePurposeofReferenceObservationCodeCodeSystem(
-			this, diagnostics, context);
+		return PurposeofReferenceObservationOperations.validatePurposeofReferenceObservationCodeCodeSystem(this, diagnostics, context);
 	}
 
 	/**
@@ -67,8 +66,7 @@ public class PurposeofReferenceObservationImpl extends ObservationImpl implement
 	 */
 	public boolean validatePurposeofReferenceObservationTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PurposeofReferenceObservationOperations.validatePurposeofReferenceObservationTemplateId(
-			this, diagnostics, context);
+		return PurposeofReferenceObservationOperations.validatePurposeofReferenceObservationTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -78,8 +76,7 @@ public class PurposeofReferenceObservationImpl extends ObservationImpl implement
 	 */
 	public boolean validatePurposeofReferenceObservationClassCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PurposeofReferenceObservationOperations.validatePurposeofReferenceObservationClassCode(
-			this, diagnostics, context);
+		return PurposeofReferenceObservationOperations.validatePurposeofReferenceObservationClassCode(this, diagnostics, context);
 	}
 
 	/**
@@ -88,8 +85,7 @@ public class PurposeofReferenceObservationImpl extends ObservationImpl implement
 	 * @generated
 	 */
 	public boolean validatePurposeofReferenceObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PurposeofReferenceObservationOperations.validatePurposeofReferenceObservationCode(
-			this, diagnostics, context);
+		return PurposeofReferenceObservationOperations.validatePurposeofReferenceObservationCode(this, diagnostics, context);
 	}
 
 	/**
@@ -99,8 +95,7 @@ public class PurposeofReferenceObservationImpl extends ObservationImpl implement
 	 */
 	public boolean validatePurposeofReferenceObservationMoodCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PurposeofReferenceObservationOperations.validatePurposeofReferenceObservationMoodCode(
-			this, diagnostics, context);
+		return PurposeofReferenceObservationOperations.validatePurposeofReferenceObservationMoodCode(this, diagnostics, context);
 	}
 
 	/**
@@ -110,8 +105,7 @@ public class PurposeofReferenceObservationImpl extends ObservationImpl implement
 	 */
 	public boolean validatePurposeofReferenceObservationValue(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PurposeofReferenceObservationOperations.validatePurposeofReferenceObservationValue(
-			this, diagnostics, context);
+		return PurposeofReferenceObservationOperations.validatePurposeofReferenceObservationValue(this, diagnostics, context);
 	}
 
 	/**
@@ -120,16 +114,16 @@ public class PurposeofReferenceObservationImpl extends ObservationImpl implement
 	 * @generated
 	 */
 	public PurposeofReferenceObservation init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public PurposeofReferenceObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // PurposeofReferenceObservationImpl

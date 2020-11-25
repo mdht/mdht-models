@@ -137,9 +137,9 @@ public interface BirthSexObservation extends Observation {
 	public BirthSexObservation init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public BirthSexObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // BirthSexObservation

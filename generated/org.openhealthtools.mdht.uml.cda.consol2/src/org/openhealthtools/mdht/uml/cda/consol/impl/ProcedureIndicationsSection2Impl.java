@@ -54,8 +54,7 @@ public class ProcedureIndicationsSection2Impl extends ProcedureIndicationsSectio
 	 */
 	public boolean validateProcedureIndicationsSection2TemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProcedureIndicationsSection2Operations.validateProcedureIndicationsSection2TemplateId(
-			this, diagnostics, context);
+		return ProcedureIndicationsSection2Operations.validateProcedureIndicationsSection2TemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -74,8 +73,7 @@ public class ProcedureIndicationsSection2Impl extends ProcedureIndicationsSectio
 	 */
 	@Override
 	public boolean validateProcedureIndicationsSectionCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureIndicationsSection2Operations.validateProcedureIndicationsSectionCodeP(
-			this, diagnostics, context);
+		return ProcedureIndicationsSection2Operations.validateProcedureIndicationsSectionCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -85,8 +83,7 @@ public class ProcedureIndicationsSection2Impl extends ProcedureIndicationsSectio
 	 */
 	@Override
 	public boolean validateProcedureIndicationsSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureIndicationsSection2Operations.validateProcedureIndicationsSectionCode(
-			this, diagnostics, context);
+		return ProcedureIndicationsSection2Operations.validateProcedureIndicationsSectionCode(this, diagnostics, context);
 	}
 
 	/**
@@ -97,8 +94,7 @@ public class ProcedureIndicationsSection2Impl extends ProcedureIndicationsSectio
 	@Override
 	public boolean validateProcedureIndicationsSectionIndication(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProcedureIndicationsSection2Operations.validateProcedureIndicationsSectionIndication(
-			this, diagnostics, context);
+		return ProcedureIndicationsSection2Operations.validateProcedureIndicationsSectionIndication(this, diagnostics, context);
 	}
 
 	/**
@@ -108,17 +104,17 @@ public class ProcedureIndicationsSection2Impl extends ProcedureIndicationsSectio
 	 */
 	@Override
 	public ProcedureIndicationsSection2 init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public ProcedureIndicationsSection2 init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // ProcedureIndicationsSection2Impl

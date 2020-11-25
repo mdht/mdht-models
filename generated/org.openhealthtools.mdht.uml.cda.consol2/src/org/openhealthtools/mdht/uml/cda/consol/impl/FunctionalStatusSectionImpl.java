@@ -105,8 +105,7 @@ public class FunctionalStatusSectionImpl extends SectionImpl implements Function
 	 */
 	public boolean validateFunctionalStatusSectionFunctionalStatusResultOrganizer(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return FunctionalStatusSectionOperations.validateFunctionalStatusSectionFunctionalStatusResultOrganizer(
-			this, diagnostics, context);
+		return FunctionalStatusSectionOperations.validateFunctionalStatusSectionFunctionalStatusResultOrganizer(this, diagnostics, context);
 	}
 
 	/**
@@ -116,8 +115,7 @@ public class FunctionalStatusSectionImpl extends SectionImpl implements Function
 	 */
 	public boolean validateFunctionalStatusSectionCognitiveStatusResultOrganizer(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return FunctionalStatusSectionOperations.validateFunctionalStatusSectionCognitiveStatusResultOrganizer(
-			this, diagnostics, context);
+		return FunctionalStatusSectionOperations.validateFunctionalStatusSectionCognitiveStatusResultOrganizer(this, diagnostics, context);
 	}
 
 	/**
@@ -127,8 +125,7 @@ public class FunctionalStatusSectionImpl extends SectionImpl implements Function
 	 */
 	public boolean validateFunctionalStatusSectionFunctionalStatusResultObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return FunctionalStatusSectionOperations.validateFunctionalStatusSectionFunctionalStatusResultObservation(
-			this, diagnostics, context);
+		return FunctionalStatusSectionOperations.validateFunctionalStatusSectionFunctionalStatusResultObservation(this, diagnostics, context);
 	}
 
 	/**
@@ -138,8 +135,7 @@ public class FunctionalStatusSectionImpl extends SectionImpl implements Function
 	 */
 	public boolean validateFunctionalStatusSectionCognitiveStatusResultObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return FunctionalStatusSectionOperations.validateFunctionalStatusSectionCognitiveStatusResultObservation(
-			this, diagnostics, context);
+		return FunctionalStatusSectionOperations.validateFunctionalStatusSectionCognitiveStatusResultObservation(this, diagnostics, context);
 	}
 
 	/**
@@ -149,8 +145,7 @@ public class FunctionalStatusSectionImpl extends SectionImpl implements Function
 	 */
 	public boolean validateFunctionalStatusSectionFunctionalStatusProblemObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return FunctionalStatusSectionOperations.validateFunctionalStatusSectionFunctionalStatusProblemObservation(
-			this, diagnostics, context);
+		return FunctionalStatusSectionOperations.validateFunctionalStatusSectionFunctionalStatusProblemObservation(this, diagnostics, context);
 	}
 
 	/**
@@ -160,8 +155,7 @@ public class FunctionalStatusSectionImpl extends SectionImpl implements Function
 	 */
 	public boolean validateFunctionalStatusSectionCognitiveStatusProblemObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return FunctionalStatusSectionOperations.validateFunctionalStatusSectionCognitiveStatusProblemObservation(
-			this, diagnostics, context);
+		return FunctionalStatusSectionOperations.validateFunctionalStatusSectionCognitiveStatusProblemObservation(this, diagnostics, context);
 	}
 
 	/**
@@ -171,8 +165,7 @@ public class FunctionalStatusSectionImpl extends SectionImpl implements Function
 	 */
 	public boolean validateFunctionalStatusSectionCaregiverCharacteristics(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return FunctionalStatusSectionOperations.validateFunctionalStatusSectionCaregiverCharacteristics(
-			this, diagnostics, context);
+		return FunctionalStatusSectionOperations.validateFunctionalStatusSectionCaregiverCharacteristics(this, diagnostics, context);
 	}
 
 	/**
@@ -182,8 +175,7 @@ public class FunctionalStatusSectionImpl extends SectionImpl implements Function
 	 */
 	public boolean validateFunctionalStatusSectionAssessmentScaleObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return FunctionalStatusSectionOperations.validateFunctionalStatusSectionAssessmentScaleObservation(
-			this, diagnostics, context);
+		return FunctionalStatusSectionOperations.validateFunctionalStatusSectionAssessmentScaleObservation(this, diagnostics, context);
 	}
 
 	/**
@@ -193,8 +185,7 @@ public class FunctionalStatusSectionImpl extends SectionImpl implements Function
 	 */
 	public boolean validateFunctionalStatusSectionNonMedicinalSupplyActivity(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return FunctionalStatusSectionOperations.validateFunctionalStatusSectionNonMedicinalSupplyActivity(
-			this, diagnostics, context);
+		return FunctionalStatusSectionOperations.validateFunctionalStatusSectionNonMedicinalSupplyActivity(this, diagnostics, context);
 	}
 
 	/**
@@ -204,8 +195,7 @@ public class FunctionalStatusSectionImpl extends SectionImpl implements Function
 	 */
 	public boolean validateFunctionalStatusSectionPressureUlcerObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return FunctionalStatusSectionOperations.validateFunctionalStatusSectionPressureUlcerObservation(
-			this, diagnostics, context);
+		return FunctionalStatusSectionOperations.validateFunctionalStatusSectionPressureUlcerObservation(this, diagnostics, context);
 	}
 
 	/**
@@ -215,8 +205,7 @@ public class FunctionalStatusSectionImpl extends SectionImpl implements Function
 	 */
 	public boolean validateFunctionalStatusSectionNumberOfPressureUlcersObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return FunctionalStatusSectionOperations.validateFunctionalStatusSectionNumberOfPressureUlcersObservation(
-			this, diagnostics, context);
+		return FunctionalStatusSectionOperations.validateFunctionalStatusSectionNumberOfPressureUlcersObservation(this, diagnostics, context);
 	}
 
 	/**
@@ -226,8 +215,7 @@ public class FunctionalStatusSectionImpl extends SectionImpl implements Function
 	 */
 	public boolean validateFunctionalStatusSectionHighestPressureUlcerStage(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return FunctionalStatusSectionOperations.validateFunctionalStatusSectionHighestPressureUlcerStage(
-			this, diagnostics, context);
+		return FunctionalStatusSectionOperations.validateFunctionalStatusSectionHighestPressureUlcerStage(this, diagnostics, context);
 	}
 
 	/**
@@ -344,16 +332,16 @@ public class FunctionalStatusSectionImpl extends SectionImpl implements Function
 	 * @generated
 	 */
 	public FunctionalStatusSection init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public FunctionalStatusSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // FunctionalStatusSectionImpl

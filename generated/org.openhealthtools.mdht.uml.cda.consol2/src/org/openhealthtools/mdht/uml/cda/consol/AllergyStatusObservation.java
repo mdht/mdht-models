@@ -107,9 +107,9 @@ public interface AllergyStatusObservation extends Observation {
 	public AllergyStatusObservation init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public AllergyStatusObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // AllergyStatusObservation

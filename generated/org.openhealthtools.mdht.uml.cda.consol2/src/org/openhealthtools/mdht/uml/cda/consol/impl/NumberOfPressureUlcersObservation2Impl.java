@@ -48,8 +48,7 @@ public class NumberOfPressureUlcersObservation2Impl extends NumberOfPressureUlce
 	 */
 	public boolean validateNumberOfPressureUlcersObservation2TemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return NumberOfPressureUlcersObservation2Operations.validateNumberOfPressureUlcersObservation2TemplateId(
-			this, diagnostics, context);
+		return NumberOfPressureUlcersObservation2Operations.validateNumberOfPressureUlcersObservation2TemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -59,8 +58,7 @@ public class NumberOfPressureUlcersObservation2Impl extends NumberOfPressureUlce
 	 */
 	public boolean validateNumberOfPressureUlcersObservation2CDTranslation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return NumberOfPressureUlcersObservation2Operations.validateNumberOfPressureUlcersObservation2CDTranslation(
-			this, diagnostics, context);
+		return NumberOfPressureUlcersObservation2Operations.validateNumberOfPressureUlcersObservation2CDTranslation(this, diagnostics, context);
 	}
 
 	/**
@@ -70,8 +68,7 @@ public class NumberOfPressureUlcersObservation2Impl extends NumberOfPressureUlce
 	 */
 	public boolean validateNumberOfPressureUlcersObservation2CDTranslationP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return NumberOfPressureUlcersObservation2Operations.validateNumberOfPressureUlcersObservation2CDTranslationP(
-			this, diagnostics, context);
+		return NumberOfPressureUlcersObservation2Operations.validateNumberOfPressureUlcersObservation2CDTranslationP(this, diagnostics, context);
 	}
 
 	/**
@@ -81,8 +78,7 @@ public class NumberOfPressureUlcersObservation2Impl extends NumberOfPressureUlce
 	 */
 	public boolean validateNumberOfPressureUlcersObservation2EntryRelationshipObservationCodeP(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return NumberOfPressureUlcersObservation2Operations.validateNumberOfPressureUlcersObservation2EntryRelationshipObservationCodeP(
-			this, diagnostics, context);
+		return NumberOfPressureUlcersObservation2Operations.validateNumberOfPressureUlcersObservation2EntryRelationshipObservationCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -92,8 +88,7 @@ public class NumberOfPressureUlcersObservation2Impl extends NumberOfPressureUlce
 	 */
 	public boolean validateNumberOfPressureUlcersObservation2EntryRelationshipObservationCode(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return NumberOfPressureUlcersObservation2Operations.validateNumberOfPressureUlcersObservation2EntryRelationshipObservationCode(
-			this, diagnostics, context);
+		return NumberOfPressureUlcersObservation2Operations.validateNumberOfPressureUlcersObservation2EntryRelationshipObservationCode(this, diagnostics, context);
 	}
 
 	/**
@@ -104,8 +99,7 @@ public class NumberOfPressureUlcersObservation2Impl extends NumberOfPressureUlce
 	@Override
 	public boolean validateNumberOfPressureUlcersObservationCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return NumberOfPressureUlcersObservation2Operations.validateNumberOfPressureUlcersObservationCodeP(
-			this, diagnostics, context);
+		return NumberOfPressureUlcersObservation2Operations.validateNumberOfPressureUlcersObservationCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -116,8 +110,7 @@ public class NumberOfPressureUlcersObservation2Impl extends NumberOfPressureUlce
 	@Override
 	public boolean validateNumberOfPressureUlcersObservationCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return NumberOfPressureUlcersObservation2Operations.validateNumberOfPressureUlcersObservationCode(
-			this, diagnostics, context);
+		return NumberOfPressureUlcersObservation2Operations.validateNumberOfPressureUlcersObservationCode(this, diagnostics, context);
 	}
 
 	/**
@@ -128,8 +121,7 @@ public class NumberOfPressureUlcersObservation2Impl extends NumberOfPressureUlce
 	@Override
 	public boolean validateNumberOfPressureUlcersObservationEntryRelationship(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return NumberOfPressureUlcersObservation2Operations.validateNumberOfPressureUlcersObservationEntryRelationship(
-			this, diagnostics, context);
+		return NumberOfPressureUlcersObservation2Operations.validateNumberOfPressureUlcersObservationEntryRelationship(this, diagnostics, context);
 	}
 
 	/**
@@ -140,8 +132,7 @@ public class NumberOfPressureUlcersObservation2Impl extends NumberOfPressureUlce
 	@Override
 	public boolean validateNumberOfPressureUlcersObservationEntryRelationshipObservationClassCode(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return NumberOfPressureUlcersObservation2Operations.validateNumberOfPressureUlcersObservationEntryRelationshipObservationClassCode(
-			this, diagnostics, context);
+		return NumberOfPressureUlcersObservation2Operations.validateNumberOfPressureUlcersObservationEntryRelationshipObservationClassCode(this, diagnostics, context);
 	}
 
 	/**
@@ -152,8 +143,7 @@ public class NumberOfPressureUlcersObservation2Impl extends NumberOfPressureUlce
 	@Override
 	public boolean validateNumberOfPressureUlcersObservationEntryRelationshipObservationMoodCode(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return NumberOfPressureUlcersObservation2Operations.validateNumberOfPressureUlcersObservationEntryRelationshipObservationMoodCode(
-			this, diagnostics, context);
+		return NumberOfPressureUlcersObservation2Operations.validateNumberOfPressureUlcersObservationEntryRelationshipObservationMoodCode(this, diagnostics, context);
 	}
 
 	/**
@@ -164,8 +154,7 @@ public class NumberOfPressureUlcersObservation2Impl extends NumberOfPressureUlce
 	@Override
 	public boolean validateNumberOfPressureUlcersObservationEntryRelationshipObservationValueP(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return NumberOfPressureUlcersObservation2Operations.validateNumberOfPressureUlcersObservationEntryRelationshipObservationValueP(
-			this, diagnostics, context);
+		return NumberOfPressureUlcersObservation2Operations.validateNumberOfPressureUlcersObservationEntryRelationshipObservationValueP(this, diagnostics, context);
 	}
 
 	/**
@@ -176,8 +165,7 @@ public class NumberOfPressureUlcersObservation2Impl extends NumberOfPressureUlce
 	@Override
 	public boolean validateNumberOfPressureUlcersObservationEntryRelationshipObservationValue(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return NumberOfPressureUlcersObservation2Operations.validateNumberOfPressureUlcersObservationEntryRelationshipObservationValue(
-			this, diagnostics, context);
+		return NumberOfPressureUlcersObservation2Operations.validateNumberOfPressureUlcersObservationEntryRelationshipObservationValue(this, diagnostics, context);
 	}
 
 	/**
@@ -188,8 +176,7 @@ public class NumberOfPressureUlcersObservation2Impl extends NumberOfPressureUlce
 	@Override
 	public boolean validateNumberOfPressureUlcersObservationEntryRelationshipTypeCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return NumberOfPressureUlcersObservation2Operations.validateNumberOfPressureUlcersObservationEntryRelationshipTypeCode(
-			this, diagnostics, context);
+		return NumberOfPressureUlcersObservation2Operations.validateNumberOfPressureUlcersObservationEntryRelationshipTypeCode(this, diagnostics, context);
 	}
 
 	/**
@@ -200,8 +187,7 @@ public class NumberOfPressureUlcersObservation2Impl extends NumberOfPressureUlce
 	@Override
 	public boolean validateNumberOfPressureUlcersObservationEntryRelationshipObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return NumberOfPressureUlcersObservation2Operations.validateNumberOfPressureUlcersObservationEntryRelationshipObservation(
-			this, diagnostics, context);
+		return NumberOfPressureUlcersObservation2Operations.validateNumberOfPressureUlcersObservationEntryRelationshipObservation(this, diagnostics, context);
 	}
 
 	/**
@@ -211,17 +197,17 @@ public class NumberOfPressureUlcersObservation2Impl extends NumberOfPressureUlce
 	 */
 	@Override
 	public NumberOfPressureUlcersObservation2 init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public NumberOfPressureUlcersObservation2 init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // NumberOfPressureUlcersObservation2Impl

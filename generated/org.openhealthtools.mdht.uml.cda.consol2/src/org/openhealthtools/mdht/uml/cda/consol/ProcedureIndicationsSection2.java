@@ -51,9 +51,9 @@ public interface ProcedureIndicationsSection2 extends ProcedureIndicationsSectio
 	public ProcedureIndicationsSection2 init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public ProcedureIndicationsSection2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ProcedureIndicationsSection2

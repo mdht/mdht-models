@@ -156,9 +156,9 @@ public interface AssessmentScaleSupportingObservation extends Observation {
 	public AssessmentScaleSupportingObservation init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public AssessmentScaleSupportingObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // AssessmentScaleSupportingObservation

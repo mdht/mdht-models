@@ -84,7 +84,7 @@ public class CareTeamTypeObservationOperations extends ClinicalStatementOperatio
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_CARE_TEAM_TYPE_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<  Constraint> VALIDATE_CARE_TEAM_TYPE_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -99,34 +99,44 @@ public class CareTeamTypeObservationOperations extends ClinicalStatementOperatio
 
 	public static boolean validateCareTeamTypeObservationTemplateId(CareTeamTypeObservation careTeamTypeObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		DatatypesUtil.increment(context, "CareTeamTypeObservationCareTeamTypeObservationTemplateId", "ERROR");
-
+	
+	
+	
+  	  
+  	  
+  	  
+  	  
+  	 
+  	 
+  	 
+    DatatypesUtil.increment(context,"CareTeamTypeObservationCareTeamTypeObservationTemplateId","ERROR");
+    
+  	  
+  	  
 		if (VALIDATE_CARE_TEAM_TYPE_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-
+		
+	 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CARE_TEAM_TYPE_OBSERVATION);
 			try {
-				VALIDATE_CARE_TEAM_TYPE_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
-					helper.createInvariant(
-						VALIDATE_CARE_TEAM_TYPE_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			} catch (ParserException pe) {
+				VALIDATE_CARE_TEAM_TYPE_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_CARE_TEAM_TYPE_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-
-		if (!EOCL_ENV.get().createQuery(
-			VALIDATE_CARE_TEAM_TYPE_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
-				careTeamTypeObservation)) {
-			if (diagnostics != null) {
-				diagnostics.add(
-					new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.CARE_TEAM_TYPE_OBSERVATION__CARE_TEAM_TYPE_OBSERVATION_TEMPLATE_ID,
-						ConsolPlugin.INSTANCE.getString("CareTeamTypeObservationCareTeamTypeObservationTemplateId"),
-						new Object[] { careTeamTypeObservation }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_CARE_TEAM_TYPE_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(careTeamTypeObservation)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.CARE_TEAM_TYPE_OBSERVATION__CARE_TEAM_TYPE_OBSERVATION_TEMPLATE_ID,
+						 ConsolPlugin.INSTANCE.getString("CareTeamTypeObservationCareTeamTypeObservationTemplateId"),
+						 new Object [] { careTeamTypeObservation }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -151,7 +161,7 @@ public class CareTeamTypeObservationOperations extends ClinicalStatementOperatio
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_CARE_TEAM_TYPE_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<  Constraint> VALIDATE_CARE_TEAM_TYPE_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -166,38 +176,48 @@ public class CareTeamTypeObservationOperations extends ClinicalStatementOperatio
 
 	public static boolean validateCareTeamTypeObservationCodeP(CareTeamTypeObservation careTeamTypeObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		DatatypesUtil.increment(context, "CareTeamTypeObservationCareTeamTypeObservationCodeP", "ERROR");
-
+	
+	
+	
+  	  
+  	  
+  	  
+  	  
+  	 
+  	 
+  	 
+    DatatypesUtil.increment(context,"CareTeamTypeObservationCareTeamTypeObservationCodeP","ERROR");
+    
+  	  
+  	  
 		if (VALIDATE_CARE_TEAM_TYPE_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-
+		
+	 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CARE_TEAM_TYPE_OBSERVATION);
 			try {
-				VALIDATE_CARE_TEAM_TYPE_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
-					helper.createInvariant(VALIDATE_CARE_TEAM_TYPE_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			} catch (ParserException pe) {
+				VALIDATE_CARE_TEAM_TYPE_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_CARE_TEAM_TYPE_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-
-		if (!EOCL_ENV.get().createQuery(
-			VALIDATE_CARE_TEAM_TYPE_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
-				careTeamTypeObservation)) {
-			if (diagnostics != null) {
-				diagnostics.add(
-					new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.CARE_TEAM_TYPE_OBSERVATION__CARE_TEAM_TYPE_OBSERVATION_CODE_P,
-						ConsolPlugin.INSTANCE.getString("CareTeamTypeObservationCareTeamTypeObservationCodeP"),
-						new Object[] { careTeamTypeObservation }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_CARE_TEAM_TYPE_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(careTeamTypeObservation)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.CARE_TEAM_TYPE_OBSERVATION__CARE_TEAM_TYPE_OBSERVATION_CODE_P,
+						 ConsolPlugin.INSTANCE.getString("CareTeamTypeObservationCareTeamTypeObservationCodeP"),
+						 new Object [] { careTeamTypeObservation }));
+			}
+			
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
-				Collection<Object> passToken = (Collection<Object>) context.get(
-					"org.openhealthtools.mdht.uml.cda.consol.CareTeamTypeObservationCodeP");
+				Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.consol.CareTeamTypeObservationCodeP");
 				if (passToken == null) {
 					// anticipate a reasonably healthy model
 					passToken = new java.util.ArrayList<Object>(3);
@@ -205,7 +225,7 @@ public class CareTeamTypeObservationOperations extends ClinicalStatementOperatio
 				}
 				passToken.add(careTeamTypeObservation);
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -219,9 +239,9 @@ public class CareTeamTypeObservationOperations extends ClinicalStatementOperatio
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_CARE_TEAM_TYPE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and " +
-			"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in " +
-			"value.code = '86744-0' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_CARE_TEAM_TYPE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
+"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
+"value.code = '86744-0' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateCareTeamTypeObservationCode(CareTeamTypeObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Team Type Observation Code</em>}' invariant operation.
@@ -232,7 +252,7 @@ public class CareTeamTypeObservationOperations extends ClinicalStatementOperatio
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_CARE_TEAM_TYPE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<  Constraint> VALIDATE_CARE_TEAM_TYPE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -247,41 +267,50 @@ public class CareTeamTypeObservationOperations extends ClinicalStatementOperatio
 
 	public static boolean validateCareTeamTypeObservationCode(CareTeamTypeObservation careTeamTypeObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		Object passToken = (context == null)
-				? null
-				: context.get("org.openhealthtools.mdht.uml.cda.consol.CareTeamTypeObservationCodeP");
+	
+	
+	
+  	  
+		Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.consol.CareTeamTypeObservationCodeP");
 		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(careTeamTypeObservation)) {
 			// I have a free pass to short-circuit
 			return true;
 		}
-
-		DatatypesUtil.increment(context, "CareTeamTypeObservationCareTeamTypeObservationCode", "ERROR");
-
+  	  
+  	  
+  	  
+  	  
+  	 
+  	 
+  	 
+    DatatypesUtil.increment(context,"CareTeamTypeObservationCareTeamTypeObservationCode","ERROR");
+    
+  	  
+  	  
 		if (VALIDATE_CARE_TEAM_TYPE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-
+		
+	 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CARE_TEAM_TYPE_OBSERVATION);
 			try {
-				VALIDATE_CARE_TEAM_TYPE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
-					helper.createInvariant(VALIDATE_CARE_TEAM_TYPE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			} catch (ParserException pe) {
+				VALIDATE_CARE_TEAM_TYPE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_CARE_TEAM_TYPE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-
-		if (!EOCL_ENV.get().createQuery(
-			VALIDATE_CARE_TEAM_TYPE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
-				careTeamTypeObservation)) {
-			if (diagnostics != null) {
-				diagnostics.add(
-					new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.CARE_TEAM_TYPE_OBSERVATION__CARE_TEAM_TYPE_OBSERVATION_CODE,
-						ConsolPlugin.INSTANCE.getString("CareTeamTypeObservationCareTeamTypeObservationCode"),
-						new Object[] { careTeamTypeObservation }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_CARE_TEAM_TYPE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(careTeamTypeObservation)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.CARE_TEAM_TYPE_OBSERVATION__CARE_TEAM_TYPE_OBSERVATION_CODE,
+						 ConsolPlugin.INSTANCE.getString("CareTeamTypeObservationCareTeamTypeObservationCode"),
+						 new Object [] { careTeamTypeObservation }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -300,34 +329,44 @@ public class CareTeamTypeObservationOperations extends ClinicalStatementOperatio
 
 	public static boolean validateCareTeamTypeObservationStatusCodeP(CareTeamTypeObservation careTeamTypeObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		DatatypesUtil.increment(context, "CareTeamTypeObservationCareTeamTypeObservationStatusCodeP", "ERROR");
-
+	
+	
+	
+  	  
+  	  
+  	  
+  	  
+  	 
+  	 
+  	 
+    DatatypesUtil.increment(context,"CareTeamTypeObservationCareTeamTypeObservationStatusCodeP","ERROR");
+    
+  	  
+  	  
 		if (VALIDATE_CARE_TEAM_TYPE_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-
+		
+	 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CARE_TEAM_TYPE_OBSERVATION);
 			try {
-				VALIDATE_CARE_TEAM_TYPE_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
-					helper.createInvariant(
-						VALIDATE_CARE_TEAM_TYPE_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			} catch (ParserException pe) {
+				VALIDATE_CARE_TEAM_TYPE_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_CARE_TEAM_TYPE_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-
-		if (!EOCL_ENV.get().createQuery(
-			VALIDATE_CARE_TEAM_TYPE_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
-				careTeamTypeObservation)) {
-			if (diagnostics != null) {
-				diagnostics.add(
-					new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.CARE_TEAM_TYPE_OBSERVATION__CARE_TEAM_TYPE_OBSERVATION_STATUS_CODE_P,
-						ConsolPlugin.INSTANCE.getString("CareTeamTypeObservationCareTeamTypeObservationStatusCodeP"),
-						new Object[] { careTeamTypeObservation }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_CARE_TEAM_TYPE_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(careTeamTypeObservation)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.CARE_TEAM_TYPE_OBSERVATION__CARE_TEAM_TYPE_OBSERVATION_STATUS_CODE_P,
+						 ConsolPlugin.INSTANCE.getString("CareTeamTypeObservationCareTeamTypeObservationStatusCodeP"),
+						 new Object [] { careTeamTypeObservation }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -341,8 +380,9 @@ public class CareTeamTypeObservationOperations extends ClinicalStatementOperatio
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_CARE_TEAM_TYPE_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and " +
-			"let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in " + "value.code = 'completed')";
+	protected static final String VALIDATE_CARE_TEAM_TYPE_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and "+
+"let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in "+
+"value.code = 'completed')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateCareTeamTypeObservationStatusCode(CareTeamTypeObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Team Type Observation Status Code</em>}' invariant operation.
@@ -353,7 +393,7 @@ public class CareTeamTypeObservationOperations extends ClinicalStatementOperatio
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_CARE_TEAM_TYPE_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<  Constraint> VALIDATE_CARE_TEAM_TYPE_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * The cached OCL expression body for the '{@link #validateCareTeamTypeObservationStatusCodeP(CareTeamTypeObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Team Type Observation Status Code P</em>}' operation.
@@ -374,7 +414,7 @@ public class CareTeamTypeObservationOperations extends ClinicalStatementOperatio
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_CARE_TEAM_TYPE_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<  Constraint> VALIDATE_CARE_TEAM_TYPE_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -389,34 +429,44 @@ public class CareTeamTypeObservationOperations extends ClinicalStatementOperatio
 
 	public static boolean validateCareTeamTypeObservationStatusCode(CareTeamTypeObservation careTeamTypeObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		DatatypesUtil.increment(context, "CareTeamTypeObservationCareTeamTypeObservationStatusCode", "ERROR");
-
+	
+	
+	
+  	  
+  	  
+  	  
+  	  
+  	 
+  	 
+  	 
+    DatatypesUtil.increment(context,"CareTeamTypeObservationCareTeamTypeObservationStatusCode","ERROR");
+    
+  	  
+  	  
 		if (VALIDATE_CARE_TEAM_TYPE_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-
+		
+	 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CARE_TEAM_TYPE_OBSERVATION);
 			try {
-				VALIDATE_CARE_TEAM_TYPE_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
-					helper.createInvariant(
-						VALIDATE_CARE_TEAM_TYPE_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			} catch (ParserException pe) {
+				VALIDATE_CARE_TEAM_TYPE_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_CARE_TEAM_TYPE_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-
-		if (!EOCL_ENV.get().createQuery(
-			VALIDATE_CARE_TEAM_TYPE_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
-				careTeamTypeObservation)) {
-			if (diagnostics != null) {
-				diagnostics.add(
-					new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.CARE_TEAM_TYPE_OBSERVATION__CARE_TEAM_TYPE_OBSERVATION_STATUS_CODE,
-						ConsolPlugin.INSTANCE.getString("CareTeamTypeObservationCareTeamTypeObservationStatusCode"),
-						new Object[] { careTeamTypeObservation }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_CARE_TEAM_TYPE_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(careTeamTypeObservation)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.CARE_TEAM_TYPE_OBSERVATION__CARE_TEAM_TYPE_OBSERVATION_STATUS_CODE,
+						 ConsolPlugin.INSTANCE.getString("CareTeamTypeObservationCareTeamTypeObservationStatusCode"),
+						 new Object [] { careTeamTypeObservation }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -430,9 +480,9 @@ public class CareTeamTypeObservationOperations extends ClinicalStatementOperatio
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_CARE_TEAM_TYPE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and " +
-			"let value : datatypes::CD = element.oclAsType(datatypes::CD) in " +
-			"value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA27975-4' or value.code = 'LA27976-2' or value.code = 'LA27977-0' or value.code = 'LA27978-8' or value.code = 'LA27980-4' or value.code = 'LA28865-6' or value.code = 'LA28866-4' or value.code = 'LA28867-2')))";
+	protected static final String VALIDATE_CARE_TEAM_TYPE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "+
+"let value : datatypes::CD = element.oclAsType(datatypes::CD) in "+
+"value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA27975-4' or value.code = 'LA27976-2' or value.code = 'LA27977-0' or value.code = 'LA27978-8' or value.code = 'LA27980-4' or value.code = 'LA28865-6' or value.code = 'LA28866-4' or value.code = 'LA28867-2')))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateCareTeamTypeObservationValue(CareTeamTypeObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Team Type Observation Value</em>}' invariant operation.
@@ -443,7 +493,7 @@ public class CareTeamTypeObservationOperations extends ClinicalStatementOperatio
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_CARE_TEAM_TYPE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<  Constraint> VALIDATE_CARE_TEAM_TYPE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -458,33 +508,44 @@ public class CareTeamTypeObservationOperations extends ClinicalStatementOperatio
 
 	public static boolean validateCareTeamTypeObservationValue(CareTeamTypeObservation careTeamTypeObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		DatatypesUtil.increment(context, "CareTeamTypeObservationCareTeamTypeObservationValue", "ERROR");
-
+	
+	
+	
+  	  
+  	  
+  	  
+  	  
+  	 
+  	 
+  	 
+    DatatypesUtil.increment(context,"CareTeamTypeObservationCareTeamTypeObservationValue","ERROR");
+    
+  	  
+  	  
 		if (VALIDATE_CARE_TEAM_TYPE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-
+		
+	 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CARE_TEAM_TYPE_OBSERVATION);
 			try {
-				VALIDATE_CARE_TEAM_TYPE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
-					helper.createInvariant(VALIDATE_CARE_TEAM_TYPE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			} catch (ParserException pe) {
+				VALIDATE_CARE_TEAM_TYPE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_CARE_TEAM_TYPE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-
-		if (!EOCL_ENV.get().createQuery(
-			VALIDATE_CARE_TEAM_TYPE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
-				careTeamTypeObservation)) {
-			if (diagnostics != null) {
-				diagnostics.add(
-					new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.CARE_TEAM_TYPE_OBSERVATION__CARE_TEAM_TYPE_OBSERVATION_VALUE,
-						ConsolPlugin.INSTANCE.getString("CareTeamTypeObservationCareTeamTypeObservationValue"),
-						new Object[] { careTeamTypeObservation }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_CARE_TEAM_TYPE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(careTeamTypeObservation)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.CARE_TEAM_TYPE_OBSERVATION__CARE_TEAM_TYPE_OBSERVATION_VALUE,
+						 ConsolPlugin.INSTANCE.getString("CareTeamTypeObservationCareTeamTypeObservationValue"),
+						 new Object [] { careTeamTypeObservation }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -509,7 +570,7 @@ public class CareTeamTypeObservationOperations extends ClinicalStatementOperatio
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_CARE_TEAM_TYPE_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<  Constraint> VALIDATE_CARE_TEAM_TYPE_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -524,34 +585,44 @@ public class CareTeamTypeObservationOperations extends ClinicalStatementOperatio
 
 	public static boolean validateCareTeamTypeObservationValueP(CareTeamTypeObservation careTeamTypeObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		DatatypesUtil.increment(context, "CareTeamTypeObservationCareTeamTypeObservationValueP", "ERROR");
-
+	
+	
+	
+  	  
+  	  
+  	  
+  	  
+  	 
+  	 
+  	 
+    DatatypesUtil.increment(context,"CareTeamTypeObservationCareTeamTypeObservationValueP","ERROR");
+    
+  	  
+  	  
 		if (VALIDATE_CARE_TEAM_TYPE_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-
+		
+	 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CARE_TEAM_TYPE_OBSERVATION);
 			try {
-				VALIDATE_CARE_TEAM_TYPE_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
-					helper.createInvariant(
-						VALIDATE_CARE_TEAM_TYPE_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			} catch (ParserException pe) {
+				VALIDATE_CARE_TEAM_TYPE_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_CARE_TEAM_TYPE_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-
-		if (!EOCL_ENV.get().createQuery(
-			VALIDATE_CARE_TEAM_TYPE_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
-				careTeamTypeObservation)) {
-			if (diagnostics != null) {
-				diagnostics.add(
-					new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.CARE_TEAM_TYPE_OBSERVATION__CARE_TEAM_TYPE_OBSERVATION_VALUE_P,
-						ConsolPlugin.INSTANCE.getString("CareTeamTypeObservationCareTeamTypeObservationValueP"),
-						new Object[] { careTeamTypeObservation }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_CARE_TEAM_TYPE_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(careTeamTypeObservation)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.CARE_TEAM_TYPE_OBSERVATION__CARE_TEAM_TYPE_OBSERVATION_VALUE_P,
+						 ConsolPlugin.INSTANCE.getString("CareTeamTypeObservationCareTeamTypeObservationValueP"),
+						 new Object [] { careTeamTypeObservation }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -576,7 +647,7 @@ public class CareTeamTypeObservationOperations extends ClinicalStatementOperatio
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_CARE_TEAM_TYPE_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<  Constraint> VALIDATE_CARE_TEAM_TYPE_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -591,34 +662,44 @@ public class CareTeamTypeObservationOperations extends ClinicalStatementOperatio
 
 	public static boolean validateCareTeamTypeObservationClassCode(CareTeamTypeObservation careTeamTypeObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		DatatypesUtil.increment(context, "CareTeamTypeObservationCareTeamTypeObservationClassCode", "ERROR");
-
+	
+	
+	
+  	  
+  	  
+  	  
+  	  
+  	 
+  	 
+  	 
+    DatatypesUtil.increment(context,"CareTeamTypeObservationCareTeamTypeObservationClassCode","ERROR");
+    
+  	  
+  	  
 		if (VALIDATE_CARE_TEAM_TYPE_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-
+		
+	 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CARE_TEAM_TYPE_OBSERVATION);
 			try {
-				VALIDATE_CARE_TEAM_TYPE_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
-					helper.createInvariant(
-						VALIDATE_CARE_TEAM_TYPE_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			} catch (ParserException pe) {
+				VALIDATE_CARE_TEAM_TYPE_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_CARE_TEAM_TYPE_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-
-		if (!EOCL_ENV.get().createQuery(
-			VALIDATE_CARE_TEAM_TYPE_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
-				careTeamTypeObservation)) {
-			if (diagnostics != null) {
-				diagnostics.add(
-					new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.CARE_TEAM_TYPE_OBSERVATION__CARE_TEAM_TYPE_OBSERVATION_CLASS_CODE,
-						ConsolPlugin.INSTANCE.getString("CareTeamTypeObservationCareTeamTypeObservationClassCode"),
-						new Object[] { careTeamTypeObservation }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_CARE_TEAM_TYPE_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(careTeamTypeObservation)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.CARE_TEAM_TYPE_OBSERVATION__CARE_TEAM_TYPE_OBSERVATION_CLASS_CODE,
+						 ConsolPlugin.INSTANCE.getString("CareTeamTypeObservationCareTeamTypeObservationClassCode"),
+						 new Object [] { careTeamTypeObservation }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -643,7 +724,7 @@ public class CareTeamTypeObservationOperations extends ClinicalStatementOperatio
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_CARE_TEAM_TYPE_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<  Constraint> VALIDATE_CARE_TEAM_TYPE_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -658,34 +739,44 @@ public class CareTeamTypeObservationOperations extends ClinicalStatementOperatio
 
 	public static boolean validateCareTeamTypeObservationMoodCode(CareTeamTypeObservation careTeamTypeObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		DatatypesUtil.increment(context, "CareTeamTypeObservationCareTeamTypeObservationMoodCode", "ERROR");
-
+	
+	
+	
+  	  
+  	  
+  	  
+  	  
+  	 
+  	 
+  	 
+    DatatypesUtil.increment(context,"CareTeamTypeObservationCareTeamTypeObservationMoodCode","ERROR");
+    
+  	  
+  	  
 		if (VALIDATE_CARE_TEAM_TYPE_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-
+		
+	 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CARE_TEAM_TYPE_OBSERVATION);
 			try {
-				VALIDATE_CARE_TEAM_TYPE_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
-					helper.createInvariant(
-						VALIDATE_CARE_TEAM_TYPE_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			} catch (ParserException pe) {
+				VALIDATE_CARE_TEAM_TYPE_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_CARE_TEAM_TYPE_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-
-		if (!EOCL_ENV.get().createQuery(
-			VALIDATE_CARE_TEAM_TYPE_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
-				careTeamTypeObservation)) {
-			if (diagnostics != null) {
-				diagnostics.add(
-					new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.CARE_TEAM_TYPE_OBSERVATION__CARE_TEAM_TYPE_OBSERVATION_MOOD_CODE,
-						ConsolPlugin.INSTANCE.getString("CareTeamTypeObservationCareTeamTypeObservationMoodCode"),
-						new Object[] { careTeamTypeObservation }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_CARE_TEAM_TYPE_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(careTeamTypeObservation)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.CARE_TEAM_TYPE_OBSERVATION__CARE_TEAM_TYPE_OBSERVATION_MOOD_CODE,
+						 ConsolPlugin.INSTANCE.getString("CareTeamTypeObservationCareTeamTypeObservationMoodCode"),
+						 new Object [] { careTeamTypeObservation }));
+			}
+			 
 			return false;
 		}
 		return true;

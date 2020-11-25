@@ -112,9 +112,9 @@ public interface PhysicalFindingsOfSkinSection extends Section {
 	public PhysicalFindingsOfSkinSection init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public PhysicalFindingsOfSkinSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // PhysicalFindingsOfSkinSection

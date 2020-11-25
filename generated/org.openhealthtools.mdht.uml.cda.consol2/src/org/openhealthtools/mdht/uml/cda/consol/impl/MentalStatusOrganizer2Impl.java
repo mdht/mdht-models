@@ -49,8 +49,7 @@ public class MentalStatusOrganizer2Impl extends CognitiveStatusResultOrganizerIm
 	 */
 	public boolean validateMentalStatusOrganizer2HasCodeOrEffectiveTime(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MentalStatusOrganizer2Operations.validateMentalStatusOrganizer2HasCodeOrEffectiveTime(
-			this, diagnostics, context);
+		return MentalStatusOrganizer2Operations.validateMentalStatusOrganizer2HasCodeOrEffectiveTime(this, diagnostics, context);
 	}
 
 	/**
@@ -98,8 +97,7 @@ public class MentalStatusOrganizer2Impl extends CognitiveStatusResultOrganizerIm
 	@Override
 	public boolean validateCognitiveStatusResultOrganizerCodeCodeSystem(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MentalStatusOrganizer2Operations.validateCognitiveStatusResultOrganizerCodeCodeSystem(
-			this, diagnostics, context);
+		return MentalStatusOrganizer2Operations.validateCognitiveStatusResultOrganizerCodeCodeSystem(this, diagnostics, context);
 	}
 
 	/**
@@ -129,17 +127,17 @@ public class MentalStatusOrganizer2Impl extends CognitiveStatusResultOrganizerIm
 	 */
 	@Override
 	public MentalStatusOrganizer2 init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public MentalStatusOrganizer2 init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // MentalStatusOrganizer2Impl

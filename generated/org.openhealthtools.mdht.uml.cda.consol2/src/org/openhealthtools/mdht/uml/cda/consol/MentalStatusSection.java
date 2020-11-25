@@ -155,9 +155,9 @@ public interface MentalStatusSection extends Section {
 	public MentalStatusSection init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public MentalStatusSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // MentalStatusSection

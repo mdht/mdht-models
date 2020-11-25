@@ -193,9 +193,9 @@ public interface MedicationFreeTextSig extends SubstanceAdministration {
 	public MedicationFreeTextSig init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public MedicationFreeTextSig init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // MedicationFreeTextSig

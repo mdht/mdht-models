@@ -74,8 +74,7 @@ public class InterventionsSection2Impl extends InterventionsSectionImpl implemen
 	 */
 	public boolean validateInterventionsSection2HandoffCommunication(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return InterventionsSection2Operations.validateInterventionsSection2HandoffCommunication(
-			this, diagnostics, context);
+		return InterventionsSection2Operations.validateInterventionsSection2HandoffCommunication(this, diagnostics, context);
 	}
 
 	/**
@@ -85,8 +84,7 @@ public class InterventionsSection2Impl extends InterventionsSectionImpl implemen
 	 */
 	public boolean validateInterventionsSection2PlannedInterventionAct(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return InterventionsSection2Operations.validateInterventionsSection2PlannedInterventionAct(
-			this, diagnostics, context);
+		return InterventionsSection2Operations.validateInterventionsSection2PlannedInterventionAct(this, diagnostics, context);
 	}
 
 	/**
@@ -143,17 +141,17 @@ public class InterventionsSection2Impl extends InterventionsSectionImpl implemen
 	 */
 	@Override
 	public InterventionsSection2 init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public InterventionsSection2 init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // InterventionsSection2Impl

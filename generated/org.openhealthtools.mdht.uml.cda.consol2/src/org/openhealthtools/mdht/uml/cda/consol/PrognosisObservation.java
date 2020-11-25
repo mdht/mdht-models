@@ -137,9 +137,9 @@ public interface PrognosisObservation extends Observation {
 	public PrognosisObservation init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public PrognosisObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // PrognosisObservation

@@ -51,9 +51,9 @@ public interface AdmissionMedication2 extends AdmissionMedication {
 	public AdmissionMedication2 init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public AdmissionMedication2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // AdmissionMedication2

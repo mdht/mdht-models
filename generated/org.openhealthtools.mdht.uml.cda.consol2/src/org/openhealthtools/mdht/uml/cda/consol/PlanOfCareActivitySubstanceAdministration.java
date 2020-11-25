@@ -81,10 +81,10 @@ public interface PlanOfCareActivitySubstanceAdministration extends SubstanceAdmi
 	public PlanOfCareActivitySubstanceAdministration init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public PlanOfCareActivitySubstanceAdministration init(
 			Iterable<? extends Initializer<? extends EObject>> initializers);
 } // PlanOfCareActivitySubstanceAdministration

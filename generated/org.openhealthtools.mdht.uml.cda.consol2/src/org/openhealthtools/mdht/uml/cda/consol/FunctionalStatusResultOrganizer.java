@@ -52,9 +52,9 @@ public interface FunctionalStatusResultOrganizer extends ResultOrganizer {
 	public FunctionalStatusResultOrganizer init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public FunctionalStatusResultOrganizer init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // FunctionalStatusResultOrganizer

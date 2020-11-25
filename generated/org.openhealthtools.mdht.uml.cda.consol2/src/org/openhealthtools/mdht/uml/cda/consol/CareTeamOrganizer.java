@@ -269,9 +269,9 @@ public interface CareTeamOrganizer extends Organizer {
 	public CareTeamOrganizer init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public CareTeamOrganizer init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // CareTeamOrganizer

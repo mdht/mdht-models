@@ -52,8 +52,7 @@ public class ExternalDocumentReferenceImpl extends ExternalDocumentImpl implemen
 	 */
 	public boolean validateExternalDocumentReferenceTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ExternalDocumentReferenceOperations.validateExternalDocumentReferenceTemplateId(
-			this, diagnostics, context);
+		return ExternalDocumentReferenceOperations.validateExternalDocumentReferenceTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -63,8 +62,7 @@ public class ExternalDocumentReferenceImpl extends ExternalDocumentImpl implemen
 	 */
 	public boolean validateExternalDocumentReferenceClassCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ExternalDocumentReferenceOperations.validateExternalDocumentReferenceClassCode(
-			this, diagnostics, context);
+		return ExternalDocumentReferenceOperations.validateExternalDocumentReferenceClassCode(this, diagnostics, context);
 	}
 
 	/**
@@ -73,8 +71,7 @@ public class ExternalDocumentReferenceImpl extends ExternalDocumentImpl implemen
 	 * @generated
 	 */
 	public boolean validateExternalDocumentReferenceMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ExternalDocumentReferenceOperations.validateExternalDocumentReferenceMoodCode(
-			this, diagnostics, context);
+		return ExternalDocumentReferenceOperations.validateExternalDocumentReferenceMoodCode(this, diagnostics, context);
 	}
 
 	/**
@@ -111,8 +108,7 @@ public class ExternalDocumentReferenceImpl extends ExternalDocumentImpl implemen
 	 */
 	public boolean validateExternalDocumentReferenceVersionNumber(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ExternalDocumentReferenceOperations.validateExternalDocumentReferenceVersionNumber(
-			this, diagnostics, context);
+		return ExternalDocumentReferenceOperations.validateExternalDocumentReferenceVersionNumber(this, diagnostics, context);
 	}
 
 	/**
@@ -121,16 +117,16 @@ public class ExternalDocumentReferenceImpl extends ExternalDocumentImpl implemen
 	 * @generated
 	 */
 	public ExternalDocumentReference init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public ExternalDocumentReference init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // ExternalDocumentReferenceImpl

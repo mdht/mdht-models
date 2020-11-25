@@ -161,9 +161,9 @@ public interface SelfCareActivities extends Observation {
 	public SelfCareActivities init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public SelfCareActivities init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // SelfCareActivities

@@ -188,9 +188,9 @@ public interface SubstanceOrDeviceAllergyObservation2 extends SubstanceOrDeviceA
 	public SubstanceOrDeviceAllergyObservation2 init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public SubstanceOrDeviceAllergyObservation2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // SubstanceOrDeviceAllergyObservation2

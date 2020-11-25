@@ -63,9 +63,9 @@ public interface HospitalAdmissionDiagnosis2 extends HospitalAdmissionDiagnosis 
 	public HospitalAdmissionDiagnosis2 init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public HospitalAdmissionDiagnosis2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // HospitalAdmissionDiagnosis2

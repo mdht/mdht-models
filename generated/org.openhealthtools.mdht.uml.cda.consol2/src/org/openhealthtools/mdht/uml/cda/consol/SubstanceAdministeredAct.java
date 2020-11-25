@@ -137,9 +137,9 @@ public interface SubstanceAdministeredAct extends Act {
 	public SubstanceAdministeredAct init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public SubstanceAdministeredAct init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // SubstanceAdministeredAct

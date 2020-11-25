@@ -56,8 +56,7 @@ public class ProcedureEstimatedBloodLossSectionImpl extends SectionImpl implemen
 	 */
 	public boolean validateProcedureEstimatedBloodLossSectionTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProcedureEstimatedBloodLossSectionOperations.validateProcedureEstimatedBloodLossSectionTemplateId(
-			this, diagnostics, context);
+		return ProcedureEstimatedBloodLossSectionOperations.validateProcedureEstimatedBloodLossSectionTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -67,8 +66,7 @@ public class ProcedureEstimatedBloodLossSectionImpl extends SectionImpl implemen
 	 */
 	public boolean validateProcedureEstimatedBloodLossSectionCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProcedureEstimatedBloodLossSectionOperations.validateProcedureEstimatedBloodLossSectionCode(
-			this, diagnostics, context);
+		return ProcedureEstimatedBloodLossSectionOperations.validateProcedureEstimatedBloodLossSectionCode(this, diagnostics, context);
 	}
 
 	/**
@@ -78,8 +76,7 @@ public class ProcedureEstimatedBloodLossSectionImpl extends SectionImpl implemen
 	 */
 	public boolean validateProcedureEstimatedBloodLossSectionCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProcedureEstimatedBloodLossSectionOperations.validateProcedureEstimatedBloodLossSectionCodeP(
-			this, diagnostics, context);
+		return ProcedureEstimatedBloodLossSectionOperations.validateProcedureEstimatedBloodLossSectionCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -89,8 +86,7 @@ public class ProcedureEstimatedBloodLossSectionImpl extends SectionImpl implemen
 	 */
 	public boolean validateProcedureEstimatedBloodLossSectionText(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProcedureEstimatedBloodLossSectionOperations.validateProcedureEstimatedBloodLossSectionText(
-			this, diagnostics, context);
+		return ProcedureEstimatedBloodLossSectionOperations.validateProcedureEstimatedBloodLossSectionText(this, diagnostics, context);
 	}
 
 	/**
@@ -100,8 +96,7 @@ public class ProcedureEstimatedBloodLossSectionImpl extends SectionImpl implemen
 	 */
 	public boolean validateProcedureEstimatedBloodLossSectionTitle(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProcedureEstimatedBloodLossSectionOperations.validateProcedureEstimatedBloodLossSectionTitle(
-			this, diagnostics, context);
+		return ProcedureEstimatedBloodLossSectionOperations.validateProcedureEstimatedBloodLossSectionTitle(this, diagnostics, context);
 	}
 
 	/**
@@ -110,16 +105,16 @@ public class ProcedureEstimatedBloodLossSectionImpl extends SectionImpl implemen
 	 * @generated
 	 */
 	public ProcedureEstimatedBloodLossSection init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public ProcedureEstimatedBloodLossSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // ProcedureEstimatedBloodLossSectionImpl

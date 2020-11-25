@@ -166,9 +166,9 @@ public interface HealthConcernsSection extends Section {
 	public HealthConcernsSection init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public HealthConcernsSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // HealthConcernsSection

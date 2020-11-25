@@ -89,9 +89,9 @@ public interface BoundaryObservation extends Observation {
 	public BoundaryObservation init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public BoundaryObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // BoundaryObservation

@@ -55,8 +55,7 @@ public class MedicalEquipmentOrganizerImpl extends OrganizerImpl implements Medi
 	 */
 	public boolean validateMedicalEquipmentOrganizerHasNonMedSupActOrProcActProc(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicalEquipmentOrganizerOperations.validateMedicalEquipmentOrganizerHasNonMedSupActOrProcActProc(
-			this, diagnostics, context);
+		return MedicalEquipmentOrganizerOperations.validateMedicalEquipmentOrganizerHasNonMedSupActOrProcActProc(this, diagnostics, context);
 	}
 
 	/**
@@ -66,8 +65,7 @@ public class MedicalEquipmentOrganizerImpl extends OrganizerImpl implements Medi
 	 */
 	public boolean validateMedicalEquipmentOrganizerTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicalEquipmentOrganizerOperations.validateMedicalEquipmentOrganizerTemplateId(
-			this, diagnostics, context);
+		return MedicalEquipmentOrganizerOperations.validateMedicalEquipmentOrganizerTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -77,8 +75,7 @@ public class MedicalEquipmentOrganizerImpl extends OrganizerImpl implements Medi
 	 */
 	public boolean validateMedicalEquipmentOrganizerClassCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicalEquipmentOrganizerOperations.validateMedicalEquipmentOrganizerClassCode(
-			this, diagnostics, context);
+		return MedicalEquipmentOrganizerOperations.validateMedicalEquipmentOrganizerClassCode(this, diagnostics, context);
 	}
 
 	/**
@@ -87,8 +84,7 @@ public class MedicalEquipmentOrganizerImpl extends OrganizerImpl implements Medi
 	 * @generated
 	 */
 	public boolean validateMedicalEquipmentOrganizerMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicalEquipmentOrganizerOperations.validateMedicalEquipmentOrganizerMoodCode(
-			this, diagnostics, context);
+		return MedicalEquipmentOrganizerOperations.validateMedicalEquipmentOrganizerMoodCode(this, diagnostics, context);
 	}
 
 	/**
@@ -116,8 +112,7 @@ public class MedicalEquipmentOrganizerImpl extends OrganizerImpl implements Medi
 	 */
 	public boolean validateMedicalEquipmentOrganizerStatusCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicalEquipmentOrganizerOperations.validateMedicalEquipmentOrganizerStatusCodeP(
-			this, diagnostics, context);
+		return MedicalEquipmentOrganizerOperations.validateMedicalEquipmentOrganizerStatusCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -127,8 +122,7 @@ public class MedicalEquipmentOrganizerImpl extends OrganizerImpl implements Medi
 	 */
 	public boolean validateMedicalEquipmentOrganizerStatusCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicalEquipmentOrganizerOperations.validateMedicalEquipmentOrganizerStatusCode(
-			this, diagnostics, context);
+		return MedicalEquipmentOrganizerOperations.validateMedicalEquipmentOrganizerStatusCode(this, diagnostics, context);
 	}
 
 	/**
@@ -138,8 +132,7 @@ public class MedicalEquipmentOrganizerImpl extends OrganizerImpl implements Medi
 	 */
 	public boolean validateMedicalEquipmentOrganizerEffectiveTime(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicalEquipmentOrganizerOperations.validateMedicalEquipmentOrganizerEffectiveTime(
-			this, diagnostics, context);
+		return MedicalEquipmentOrganizerOperations.validateMedicalEquipmentOrganizerEffectiveTime(this, diagnostics, context);
 	}
 
 	/**
@@ -149,8 +142,7 @@ public class MedicalEquipmentOrganizerImpl extends OrganizerImpl implements Medi
 	 */
 	public boolean validateMedicalEquipmentOrganizerNonMedicinalSupplyActivity2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicalEquipmentOrganizerOperations.validateMedicalEquipmentOrganizerNonMedicinalSupplyActivity2(
-			this, diagnostics, context);
+		return MedicalEquipmentOrganizerOperations.validateMedicalEquipmentOrganizerNonMedicinalSupplyActivity2(this, diagnostics, context);
 	}
 
 	/**
@@ -160,8 +152,7 @@ public class MedicalEquipmentOrganizerImpl extends OrganizerImpl implements Medi
 	 */
 	public boolean validateMedicalEquipmentOrganizerProcedureActivityProcedure2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicalEquipmentOrganizerOperations.validateMedicalEquipmentOrganizerProcedureActivityProcedure2(
-			this, diagnostics, context);
+		return MedicalEquipmentOrganizerOperations.validateMedicalEquipmentOrganizerProcedureActivityProcedure2(this, diagnostics, context);
 	}
 
 	/**
@@ -170,8 +161,7 @@ public class MedicalEquipmentOrganizerImpl extends OrganizerImpl implements Medi
 	 * @generated
 	 */
 	public boolean validateMedicalEquipmentOrganizerIVLTSLow(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicalEquipmentOrganizerOperations.validateMedicalEquipmentOrganizerIVLTSLow(
-			this, diagnostics, context);
+		return MedicalEquipmentOrganizerOperations.validateMedicalEquipmentOrganizerIVLTSLow(this, diagnostics, context);
 	}
 
 	/**
@@ -181,8 +171,7 @@ public class MedicalEquipmentOrganizerImpl extends OrganizerImpl implements Medi
 	 */
 	public boolean validateMedicalEquipmentOrganizerIVLTSHigh(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicalEquipmentOrganizerOperations.validateMedicalEquipmentOrganizerIVLTSHigh(
-			this, diagnostics, context);
+		return MedicalEquipmentOrganizerOperations.validateMedicalEquipmentOrganizerIVLTSHigh(this, diagnostics, context);
 	}
 
 	/**
@@ -209,16 +198,16 @@ public class MedicalEquipmentOrganizerImpl extends OrganizerImpl implements Medi
 	 * @generated
 	 */
 	public MedicalEquipmentOrganizer init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public MedicalEquipmentOrganizer init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // MedicalEquipmentOrganizerImpl

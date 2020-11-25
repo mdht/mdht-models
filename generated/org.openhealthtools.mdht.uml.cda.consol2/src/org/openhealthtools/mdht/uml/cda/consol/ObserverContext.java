@@ -54,9 +54,9 @@ public interface ObserverContext extends Author {
 	public ObserverContext init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public ObserverContext init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ObserverContext

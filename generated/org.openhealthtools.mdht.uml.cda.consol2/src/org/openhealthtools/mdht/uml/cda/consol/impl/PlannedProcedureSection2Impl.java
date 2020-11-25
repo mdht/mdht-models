@@ -53,8 +53,7 @@ public class PlannedProcedureSection2Impl extends PlannedProcedureSectionImpl im
 	 */
 	public boolean validatePlannedProcedureSection2TemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PlannedProcedureSection2Operations.validatePlannedProcedureSection2TemplateId(
-			this, diagnostics, context);
+		return PlannedProcedureSection2Operations.validatePlannedProcedureSection2TemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -94,8 +93,7 @@ public class PlannedProcedureSection2Impl extends PlannedProcedureSectionImpl im
 	@Override
 	public boolean validatePlannedProcedureSectionPlanOfCareActivityProcedure(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PlannedProcedureSection2Operations.validatePlannedProcedureSectionPlanOfCareActivityProcedure(
-			this, diagnostics, context);
+		return PlannedProcedureSection2Operations.validatePlannedProcedureSectionPlanOfCareActivityProcedure(this, diagnostics, context);
 	}
 
 	/**
@@ -105,17 +103,17 @@ public class PlannedProcedureSection2Impl extends PlannedProcedureSectionImpl im
 	 */
 	@Override
 	public PlannedProcedureSection2 init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public PlannedProcedureSection2 init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // PlannedProcedureSection2Impl

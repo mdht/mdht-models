@@ -58,8 +58,7 @@ public class ProblemSectionEntriesOptionalImpl extends SectionImpl implements Pr
 	 */
 	public boolean validateProblemSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProblemSectionEntriesOptionalOperations.validateProblemSectionEntriesOptionalTemplateId(
-			this, diagnostics, context);
+		return ProblemSectionEntriesOptionalOperations.validateProblemSectionEntriesOptionalTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -68,8 +67,7 @@ public class ProblemSectionEntriesOptionalImpl extends SectionImpl implements Pr
 	 * @generated
 	 */
 	public boolean validateProblemSectionEntriesOptionalCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProblemSectionEntriesOptionalOperations.validateProblemSectionEntriesOptionalCode(
-			this, diagnostics, context);
+		return ProblemSectionEntriesOptionalOperations.validateProblemSectionEntriesOptionalCode(this, diagnostics, context);
 	}
 
 	/**
@@ -79,8 +77,7 @@ public class ProblemSectionEntriesOptionalImpl extends SectionImpl implements Pr
 	 */
 	public boolean validateProblemSectionEntriesOptionalCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProblemSectionEntriesOptionalOperations.validateProblemSectionEntriesOptionalCodeP(
-			this, diagnostics, context);
+		return ProblemSectionEntriesOptionalOperations.validateProblemSectionEntriesOptionalCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -90,8 +87,7 @@ public class ProblemSectionEntriesOptionalImpl extends SectionImpl implements Pr
 	 */
 	public boolean validateProblemSectionEntriesOptionalTitle(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProblemSectionEntriesOptionalOperations.validateProblemSectionEntriesOptionalTitle(
-			this, diagnostics, context);
+		return ProblemSectionEntriesOptionalOperations.validateProblemSectionEntriesOptionalTitle(this, diagnostics, context);
 	}
 
 	/**
@@ -100,8 +96,7 @@ public class ProblemSectionEntriesOptionalImpl extends SectionImpl implements Pr
 	 * @generated
 	 */
 	public boolean validateProblemSectionEntriesOptionalText(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProblemSectionEntriesOptionalOperations.validateProblemSectionEntriesOptionalText(
-			this, diagnostics, context);
+		return ProblemSectionEntriesOptionalOperations.validateProblemSectionEntriesOptionalText(this, diagnostics, context);
 	}
 
 	/**
@@ -111,8 +106,7 @@ public class ProblemSectionEntriesOptionalImpl extends SectionImpl implements Pr
 	 */
 	public boolean validateProblemSectionEntriesOptionalProblemConcern(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProblemSectionEntriesOptionalOperations.validateProblemSectionEntriesOptionalProblemConcern(
-			this, diagnostics, context);
+		return ProblemSectionEntriesOptionalOperations.validateProblemSectionEntriesOptionalProblemConcern(this, diagnostics, context);
 	}
 
 	/**
@@ -130,16 +124,16 @@ public class ProblemSectionEntriesOptionalImpl extends SectionImpl implements Pr
 	 * @generated
 	 */
 	public ProblemSectionEntriesOptional init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public ProblemSectionEntriesOptional init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // ProblemSectionEntriesOptionalImpl

@@ -112,9 +112,9 @@ public interface ProblemSectionEntriesOptional extends Section {
 	public ProblemSectionEntriesOptional init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public ProblemSectionEntriesOptional init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ProblemSectionEntriesOptional

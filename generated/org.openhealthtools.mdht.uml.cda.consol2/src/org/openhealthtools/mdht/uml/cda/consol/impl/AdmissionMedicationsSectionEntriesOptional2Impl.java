@@ -60,8 +60,7 @@ public class AdmissionMedicationsSectionEntriesOptional2Impl extends
 	@Override
 	public boolean validateHospitalAdmissionMedicationsSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AdmissionMedicationsSectionEntriesOptional2Operations.validateHospitalAdmissionMedicationsSectionEntriesOptionalTemplateId(
-			this, diagnostics, context);
+		return AdmissionMedicationsSectionEntriesOptional2Operations.validateHospitalAdmissionMedicationsSectionEntriesOptionalTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -72,8 +71,7 @@ public class AdmissionMedicationsSectionEntriesOptional2Impl extends
 	@Override
 	public boolean validateHospitalAdmissionMedicationsSectionEntriesOptionalCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AdmissionMedicationsSectionEntriesOptional2Operations.validateHospitalAdmissionMedicationsSectionEntriesOptionalCodeP(
-			this, diagnostics, context);
+		return AdmissionMedicationsSectionEntriesOptional2Operations.validateHospitalAdmissionMedicationsSectionEntriesOptionalCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -84,8 +82,7 @@ public class AdmissionMedicationsSectionEntriesOptional2Impl extends
 	@Override
 	public boolean validateHospitalAdmissionMedicationsSectionEntriesOptionalCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AdmissionMedicationsSectionEntriesOptional2Operations.validateHospitalAdmissionMedicationsSectionEntriesOptionalCode(
-			this, diagnostics, context);
+		return AdmissionMedicationsSectionEntriesOptional2Operations.validateHospitalAdmissionMedicationsSectionEntriesOptionalCode(this, diagnostics, context);
 	}
 
 	/**
@@ -96,8 +93,7 @@ public class AdmissionMedicationsSectionEntriesOptional2Impl extends
 	@Override
 	public boolean validateHospitalAdmissionMedicationsSectionEntriesOptionalAdmissionMedication(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AdmissionMedicationsSectionEntriesOptional2Operations.validateHospitalAdmissionMedicationsSectionEntriesOptionalAdmissionMedication(
-			this, diagnostics, context);
+		return AdmissionMedicationsSectionEntriesOptional2Operations.validateHospitalAdmissionMedicationsSectionEntriesOptionalAdmissionMedication(this, diagnostics, context);
 	}
 
 	/**
@@ -107,18 +103,18 @@ public class AdmissionMedicationsSectionEntriesOptional2Impl extends
 	 */
 	@Override
 	public AdmissionMedicationsSectionEntriesOptional2 init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public AdmissionMedicationsSectionEntriesOptional2 init(
 			Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // AdmissionMedicationsSectionEntriesOptional2Impl

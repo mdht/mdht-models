@@ -96,9 +96,9 @@ public interface ImmunizationMedicationInformation2 extends ImmunizationMedicati
 	public ImmunizationMedicationInformation2 init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public ImmunizationMedicationInformation2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ImmunizationMedicationInformation2

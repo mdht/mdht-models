@@ -90,9 +90,9 @@ public interface HospitalDischargePhysicalSection extends Section {
 	public HospitalDischargePhysicalSection init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public HospitalDischargePhysicalSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // HospitalDischargePhysicalSection

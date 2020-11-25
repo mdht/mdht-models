@@ -48,8 +48,7 @@ public class PreconditionForSubstanceAdministration2Impl extends PreconditionFor
 	 */
 	public boolean validatePreconditionForSubstanceAdministration2TemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PreconditionForSubstanceAdministration2Operations.validatePreconditionForSubstanceAdministration2TemplateId(
-			this, diagnostics, context);
+		return PreconditionForSubstanceAdministration2Operations.validatePreconditionForSubstanceAdministration2TemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -59,8 +58,7 @@ public class PreconditionForSubstanceAdministration2Impl extends PreconditionFor
 	 */
 	public boolean validatePreconditionForSubstanceAdministrationCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PreconditionForSubstanceAdministration2Operations.validatePreconditionForSubstanceAdministrationCodeP(
-			this, diagnostics, context);
+		return PreconditionForSubstanceAdministration2Operations.validatePreconditionForSubstanceAdministrationCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -70,8 +68,7 @@ public class PreconditionForSubstanceAdministration2Impl extends PreconditionFor
 	 */
 	public boolean validatePreconditionForSubstanceAdministrationValueP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PreconditionForSubstanceAdministration2Operations.validatePreconditionForSubstanceAdministrationValueP(
-			this, diagnostics, context);
+		return PreconditionForSubstanceAdministration2Operations.validatePreconditionForSubstanceAdministrationValueP(this, diagnostics, context);
 	}
 
 	/**
@@ -82,8 +79,7 @@ public class PreconditionForSubstanceAdministration2Impl extends PreconditionFor
 	@Override
 	public boolean validatePreconditionForSubstanceAdministrationCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PreconditionForSubstanceAdministration2Operations.validatePreconditionForSubstanceAdministrationCode(
-			this, diagnostics, context);
+		return PreconditionForSubstanceAdministration2Operations.validatePreconditionForSubstanceAdministrationCode(this, diagnostics, context);
 	}
 
 	/**
@@ -94,8 +90,7 @@ public class PreconditionForSubstanceAdministration2Impl extends PreconditionFor
 	@Override
 	public boolean validatePreconditionForSubstanceAdministrationText(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PreconditionForSubstanceAdministration2Operations.validatePreconditionForSubstanceAdministrationText(
-			this, diagnostics, context);
+		return PreconditionForSubstanceAdministration2Operations.validatePreconditionForSubstanceAdministrationText(this, diagnostics, context);
 	}
 
 	/**
@@ -106,8 +101,7 @@ public class PreconditionForSubstanceAdministration2Impl extends PreconditionFor
 	@Override
 	public boolean validatePreconditionForSubstanceAdministrationValue(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PreconditionForSubstanceAdministration2Operations.validatePreconditionForSubstanceAdministrationValue(
-			this, diagnostics, context);
+		return PreconditionForSubstanceAdministration2Operations.validatePreconditionForSubstanceAdministrationValue(this, diagnostics, context);
 	}
 
 	/**
@@ -117,18 +111,18 @@ public class PreconditionForSubstanceAdministration2Impl extends PreconditionFor
 	 */
 	@Override
 	public PreconditionForSubstanceAdministration2 init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public PreconditionForSubstanceAdministration2 init(
 			Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // PreconditionForSubstanceAdministration2Impl

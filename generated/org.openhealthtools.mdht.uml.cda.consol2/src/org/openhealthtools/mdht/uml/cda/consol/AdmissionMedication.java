@@ -111,9 +111,9 @@ public interface AdmissionMedication extends Act {
 	public AdmissionMedication init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public AdmissionMedication init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // AdmissionMedication

@@ -60,8 +60,7 @@ public class MedicationActivity2Impl extends MedicationActivityImpl implements M
 	 */
 	public boolean validateMedicationActivity2SubstanceAdministeredActInversionInd(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationActivity2Operations.validateMedicationActivity2SubstanceAdministeredActInversionInd(
-			this, diagnostics, context);
+		return MedicationActivity2Operations.validateMedicationActivity2SubstanceAdministeredActInversionInd(this, diagnostics, context);
 	}
 
 	/**
@@ -71,8 +70,7 @@ public class MedicationActivity2Impl extends MedicationActivityImpl implements M
 	 */
 	public boolean validateMedicationActivity2SubstanceAdministeredActSequenceNumber(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationActivity2Operations.validateMedicationActivity2SubstanceAdministeredActSequenceNumber(
-			this, diagnostics, context);
+		return MedicationActivity2Operations.validateMedicationActivity2SubstanceAdministeredActSequenceNumber(this, diagnostics, context);
 	}
 
 	/**
@@ -82,8 +80,7 @@ public class MedicationActivity2Impl extends MedicationActivityImpl implements M
 	 */
 	public boolean validateMedicationActivity2EffectiveTimeIVLTSLowXorValue(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationActivity2Operations.validateMedicationActivity2EffectiveTimeIVLTSLowXorValue(
-			this, diagnostics, context);
+		return MedicationActivity2Operations.validateMedicationActivity2EffectiveTimeIVLTSLowXorValue(this, diagnostics, context);
 	}
 
 	/**
@@ -131,8 +128,7 @@ public class MedicationActivity2Impl extends MedicationActivityImpl implements M
 	 */
 	public boolean validateMedicationActivity2SubstanceAdministeredAct(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationActivity2Operations.validateMedicationActivity2SubstanceAdministeredAct(
-			this, diagnostics, context);
+		return MedicationActivity2Operations.validateMedicationActivity2SubstanceAdministeredAct(this, diagnostics, context);
 	}
 
 	/**
@@ -142,8 +138,7 @@ public class MedicationActivity2Impl extends MedicationActivityImpl implements M
 	 */
 	public boolean validateMedicationActivity2MedicationFreeTextSig(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationActivity2Operations.validateMedicationActivity2MedicationFreeTextSig(
-			this, diagnostics, context);
+		return MedicationActivity2Operations.validateMedicationActivity2MedicationFreeTextSig(this, diagnostics, context);
 	}
 
 	/**
@@ -275,8 +270,7 @@ public class MedicationActivity2Impl extends MedicationActivityImpl implements M
 	@Override
 	public boolean validateMedicationActivityInstructionsInversionInd(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationActivity2Operations.validateMedicationActivityInstructionsInversionInd(
-			this, diagnostics, context);
+		return MedicationActivity2Operations.validateMedicationActivityInstructionsInversionInd(this, diagnostics, context);
 	}
 
 	/**
@@ -287,8 +281,7 @@ public class MedicationActivity2Impl extends MedicationActivityImpl implements M
 	@Override
 	public boolean validateMedicationActivityDoseQuantityorrateQuantity(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationActivity2Operations.validateMedicationActivityDoseQuantityorrateQuantity(
-			this, diagnostics, context);
+		return MedicationActivity2Operations.validateMedicationActivityDoseQuantityorrateQuantity(this, diagnostics, context);
 	}
 
 	/**
@@ -299,8 +292,7 @@ public class MedicationActivity2Impl extends MedicationActivityImpl implements M
 	@Override
 	public boolean validateMedicationActivityEffectiveTimeIVLTSorTS(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationActivity2Operations.validateMedicationActivityEffectiveTimeIVLTSorTS(
-			this, diagnostics, context);
+		return MedicationActivity2Operations.validateMedicationActivityEffectiveTimeIVLTSorTS(this, diagnostics, context);
 	}
 
 	/**
@@ -311,8 +303,7 @@ public class MedicationActivity2Impl extends MedicationActivityImpl implements M
 	@Override
 	public boolean validateMedicationActivityEffectiveTimeIVLTSLow(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationActivity2Operations.validateMedicationActivityEffectiveTimeIVLTSLow(
-			this, diagnostics, context);
+		return MedicationActivity2Operations.validateMedicationActivityEffectiveTimeIVLTSLow(this, diagnostics, context);
 	}
 
 	/**
@@ -323,8 +314,7 @@ public class MedicationActivity2Impl extends MedicationActivityImpl implements M
 	@Override
 	public boolean validateMedicationActivityEffectiveTimeIVLTSHigh(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationActivity2Operations.validateMedicationActivityEffectiveTimeIVLTSHigh(
-			this, diagnostics, context);
+		return MedicationActivity2Operations.validateMedicationActivityEffectiveTimeIVLTSHigh(this, diagnostics, context);
 	}
 
 	/**
@@ -406,8 +396,7 @@ public class MedicationActivity2Impl extends MedicationActivityImpl implements M
 	@Override
 	public boolean validateMedicationActivityAdministrationUnitCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationActivity2Operations.validateMedicationActivityAdministrationUnitCodeP(
-			this, diagnostics, context);
+		return MedicationActivity2Operations.validateMedicationActivityAdministrationUnitCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -418,8 +407,7 @@ public class MedicationActivity2Impl extends MedicationActivityImpl implements M
 	@Override
 	public boolean validateMedicationActivityAdministrationUnitCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationActivity2Operations.validateMedicationActivityAdministrationUnitCode(
-			this, diagnostics, context);
+		return MedicationActivity2Operations.validateMedicationActivityAdministrationUnitCode(this, diagnostics, context);
 	}
 
 	/**
@@ -470,8 +458,7 @@ public class MedicationActivity2Impl extends MedicationActivityImpl implements M
 	@Override
 	public boolean validateMedicationActivityMedicationSupplyOrder(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationActivity2Operations.validateMedicationActivityMedicationSupplyOrder(
-			this, diagnostics, context);
+		return MedicationActivity2Operations.validateMedicationActivityMedicationSupplyOrder(this, diagnostics, context);
 	}
 
 	/**
@@ -525,8 +512,7 @@ public class MedicationActivity2Impl extends MedicationActivityImpl implements M
 	@Override
 	public boolean validateMedicationActivityPreconditionPreconditionForSubstanceAdministration(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationActivity2Operations.validateMedicationActivityPreconditionPreconditionForSubstanceAdministration(
-			this, diagnostics, context);
+		return MedicationActivity2Operations.validateMedicationActivityPreconditionPreconditionForSubstanceAdministration(this, diagnostics, context);
 	}
 
 	/**
@@ -537,8 +523,7 @@ public class MedicationActivity2Impl extends MedicationActivityImpl implements M
 	@Override
 	public boolean validateMedicationActivityConsumableMedicationInformation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationActivity2Operations.validateMedicationActivityConsumableMedicationInformation(
-			this, diagnostics, context);
+		return MedicationActivity2Operations.validateMedicationActivityConsumableMedicationInformation(this, diagnostics, context);
 	}
 
 	/**
@@ -548,17 +533,17 @@ public class MedicationActivity2Impl extends MedicationActivityImpl implements M
 	 */
 	@Override
 	public MedicationActivity2 init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public MedicationActivity2 init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // MedicationActivity2Impl

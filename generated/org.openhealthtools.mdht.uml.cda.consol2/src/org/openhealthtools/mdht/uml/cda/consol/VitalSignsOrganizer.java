@@ -159,9 +159,9 @@ public interface VitalSignsOrganizer extends Organizer {
 	public VitalSignsOrganizer init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public VitalSignsOrganizer init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // VitalSignsOrganizer

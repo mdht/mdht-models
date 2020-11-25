@@ -204,9 +204,9 @@ public interface NoteActivity extends Act {
 	public NoteActivity init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public NoteActivity init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // NoteActivity

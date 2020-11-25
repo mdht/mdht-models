@@ -66,9 +66,9 @@ public interface FetusSubjectContext extends RelatedSubject {
 	public FetusSubjectContext init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public FetusSubjectContext init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // FetusSubjectContext

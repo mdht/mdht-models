@@ -174,9 +174,9 @@ public interface NutritionAssessment extends Observation {
 	public NutritionAssessment init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public NutritionAssessment init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // NutritionAssessment

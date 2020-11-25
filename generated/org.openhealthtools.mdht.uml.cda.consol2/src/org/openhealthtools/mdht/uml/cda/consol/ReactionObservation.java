@@ -313,9 +313,9 @@ public interface ReactionObservation extends Observation {
 	public ReactionObservation init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public ReactionObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ReactionObservation

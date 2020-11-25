@@ -146,9 +146,9 @@ public interface PhysicianofRecordParticipant extends EncounterParticipant {
 	public PhysicianofRecordParticipant init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public PhysicianofRecordParticipant init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // PhysicianofRecordParticipant

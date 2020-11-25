@@ -307,9 +307,9 @@ public interface LongitudinalCareWoundObservation extends ProblemObservation2 {
 	public LongitudinalCareWoundObservation init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public LongitudinalCareWoundObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // LongitudinalCareWoundObservation

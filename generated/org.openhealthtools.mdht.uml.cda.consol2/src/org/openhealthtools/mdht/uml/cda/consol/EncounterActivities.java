@@ -294,9 +294,9 @@ public interface EncounterActivities extends Encounter {
 	public EncounterActivities init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public EncounterActivities init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // EncounterActivities

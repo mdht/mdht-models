@@ -89,9 +89,9 @@ public interface ProcedureDispositionSection extends Section {
 	public ProcedureDispositionSection init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public ProcedureDispositionSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ProcedureDispositionSection

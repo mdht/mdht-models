@@ -197,9 +197,9 @@ public interface MentalStatusObservation extends Observation {
 	public MentalStatusObservation init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public MentalStatusObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // MentalStatusObservation

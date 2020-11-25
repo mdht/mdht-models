@@ -55,8 +55,7 @@ public class PlannedEncounter2Impl extends PlanOfCareActivityEncounterImpl imple
 	 */
 	public boolean validatePlannedEncounter2ParticipantServiceDeliveryLocationTypeCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PlannedEncounter2Operations.validatePlannedEncounter2ParticipantServiceDeliveryLocationTypeCode(
-			this, diagnostics, context);
+		return PlannedEncounter2Operations.validatePlannedEncounter2ParticipantServiceDeliveryLocationTypeCode(this, diagnostics, context);
 	}
 
 	/**
@@ -216,17 +215,17 @@ public class PlannedEncounter2Impl extends PlanOfCareActivityEncounterImpl imple
 	 */
 	@Override
 	public PlannedEncounter2 init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public PlannedEncounter2 init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // PlannedEncounter2Impl

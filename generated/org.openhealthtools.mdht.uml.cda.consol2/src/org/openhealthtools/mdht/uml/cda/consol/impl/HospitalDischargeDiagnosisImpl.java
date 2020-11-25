@@ -58,8 +58,7 @@ public class HospitalDischargeDiagnosisImpl extends ActImpl implements HospitalD
 	 */
 	public boolean validateHospitalDischargeDiagnosisProblemObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HospitalDischargeDiagnosisOperations.validateHospitalDischargeDiagnosisProblemObservation(
-			this, diagnostics, context);
+		return HospitalDischargeDiagnosisOperations.validateHospitalDischargeDiagnosisProblemObservation(this, diagnostics, context);
 	}
 
 	/**
@@ -69,8 +68,7 @@ public class HospitalDischargeDiagnosisImpl extends ActImpl implements HospitalD
 	 */
 	public boolean validateHospitalDischargeDiagnosisTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HospitalDischargeDiagnosisOperations.validateHospitalDischargeDiagnosisTemplateId(
-			this, diagnostics, context);
+		return HospitalDischargeDiagnosisOperations.validateHospitalDischargeDiagnosisTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -80,8 +78,7 @@ public class HospitalDischargeDiagnosisImpl extends ActImpl implements HospitalD
 	 */
 	public boolean validateHospitalDischargeDiagnosisClassCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HospitalDischargeDiagnosisOperations.validateHospitalDischargeDiagnosisClassCode(
-			this, diagnostics, context);
+		return HospitalDischargeDiagnosisOperations.validateHospitalDischargeDiagnosisClassCode(this, diagnostics, context);
 	}
 
 	/**
@@ -91,8 +88,7 @@ public class HospitalDischargeDiagnosisImpl extends ActImpl implements HospitalD
 	 */
 	public boolean validateHospitalDischargeDiagnosisMoodCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HospitalDischargeDiagnosisOperations.validateHospitalDischargeDiagnosisMoodCode(
-			this, diagnostics, context);
+		return HospitalDischargeDiagnosisOperations.validateHospitalDischargeDiagnosisMoodCode(this, diagnostics, context);
 	}
 
 	/**
@@ -119,16 +115,16 @@ public class HospitalDischargeDiagnosisImpl extends ActImpl implements HospitalD
 	 * @generated
 	 */
 	public HospitalDischargeDiagnosis init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public HospitalDischargeDiagnosis init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // HospitalDischargeDiagnosisImpl

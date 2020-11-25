@@ -149,9 +149,9 @@ public interface WoundMeasurementObservation extends Observation {
 	public WoundMeasurementObservation init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public WoundMeasurementObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // WoundMeasurementObservation

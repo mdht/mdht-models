@@ -194,9 +194,9 @@ public interface DeceasedObservation extends Observation {
 	public DeceasedObservation init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public DeceasedObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // DeceasedObservation

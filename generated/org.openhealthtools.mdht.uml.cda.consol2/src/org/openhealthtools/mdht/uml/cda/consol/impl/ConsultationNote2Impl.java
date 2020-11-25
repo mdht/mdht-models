@@ -72,8 +72,7 @@ public class ConsultationNote2Impl extends USRealmHeader2Impl implements Consult
 	 */
 	public boolean validateConsultationNote2HasAnAssementAndPlanSection2OrBothAssementSectionAndPlanOfTreatmentSection2(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ConsultationNote2Operations.validateConsultationNote2HasAnAssementAndPlanSection2OrBothAssementSectionAndPlanOfTreatmentSection2(
-			this, diagnostics, context);
+		return ConsultationNote2Operations.validateConsultationNote2HasAnAssementAndPlanSection2OrBothAssementSectionAndPlanOfTreatmentSection2(this, diagnostics, context);
 	}
 
 	/**
@@ -83,8 +82,7 @@ public class ConsultationNote2Impl extends USRealmHeader2Impl implements Consult
 	 */
 	public boolean validateConsultationNote2DoesNotHaveAssementAndPlanSection2WhenAssementOrPlanOfTreatment2ArePresent(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ConsultationNote2Operations.validateConsultationNote2DoesNotHaveAssementAndPlanSection2WhenAssementOrPlanOfTreatment2ArePresent(
-			this, diagnostics, context);
+		return ConsultationNote2Operations.validateConsultationNote2DoesNotHaveAssementAndPlanSection2WhenAssementOrPlanOfTreatment2ArePresent(this, diagnostics, context);
 	}
 
 	/**
@@ -94,8 +92,7 @@ public class ConsultationNote2Impl extends USRealmHeader2Impl implements Consult
 	 */
 	public boolean validateConsultationNote2DoesNotHaveChiefComplaintWithChiefComplaintOrReasonForVisitSection(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ConsultationNote2Operations.validateConsultationNote2DoesNotHaveChiefComplaintWithChiefComplaintOrReasonForVisitSection(
-			this, diagnostics, context);
+		return ConsultationNote2Operations.validateConsultationNote2DoesNotHaveChiefComplaintWithChiefComplaintOrReasonForVisitSection(this, diagnostics, context);
 	}
 
 	/**
@@ -105,8 +102,7 @@ public class ConsultationNote2Impl extends USRealmHeader2Impl implements Consult
 	 */
 	public boolean validateConsultationNote2HasAnAssementAndPlanSectionOrIndividualAssementAndPlanSections(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ConsultationNote2Operations.validateConsultationNote2HasAnAssementAndPlanSectionOrIndividualAssementAndPlanSections(
-			this, diagnostics, context);
+		return ConsultationNote2Operations.validateConsultationNote2HasAnAssementAndPlanSectionOrIndividualAssementAndPlanSections(this, diagnostics, context);
 	}
 
 	/**
@@ -171,8 +167,7 @@ public class ConsultationNote2Impl extends USRealmHeader2Impl implements Consult
 	 */
 	public boolean validateConsultationNote2AssessmentAndPlanSection2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ConsultationNote2Operations.validateConsultationNote2AssessmentAndPlanSection2(
-			this, diagnostics, context);
+		return ConsultationNote2Operations.validateConsultationNote2AssessmentAndPlanSection2(this, diagnostics, context);
 	}
 
 	/**
@@ -202,8 +197,7 @@ public class ConsultationNote2Impl extends USRealmHeader2Impl implements Consult
 	 */
 	public boolean validateConsultationNote2HistoryOfPresentIllnessSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ConsultationNote2Operations.validateConsultationNote2HistoryOfPresentIllnessSection(
-			this, diagnostics, context);
+		return ConsultationNote2Operations.validateConsultationNote2HistoryOfPresentIllnessSection(this, diagnostics, context);
 	}
 
 	/**
@@ -243,8 +237,7 @@ public class ConsultationNote2Impl extends USRealmHeader2Impl implements Consult
 	 */
 	public boolean validateConsultationNote2ChiefComplaintAndReasonForVisitSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ConsultationNote2Operations.validateConsultationNote2ChiefComplaintAndReasonForVisitSection(
-			this, diagnostics, context);
+		return ConsultationNote2Operations.validateConsultationNote2ChiefComplaintAndReasonForVisitSection(this, diagnostics, context);
 	}
 
 	/**
@@ -264,8 +257,7 @@ public class ConsultationNote2Impl extends USRealmHeader2Impl implements Consult
 	 */
 	public boolean validateConsultationNote2HistoryOfPastIllnessSection2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ConsultationNote2Operations.validateConsultationNote2HistoryOfPastIllnessSection2(
-			this, diagnostics, context);
+		return ConsultationNote2Operations.validateConsultationNote2HistoryOfPastIllnessSection2(this, diagnostics, context);
 	}
 
 	/**
@@ -275,8 +267,7 @@ public class ConsultationNote2Impl extends USRealmHeader2Impl implements Consult
 	 */
 	public boolean validateConsultationNote2ImmunizationsSectionEntriesOptional2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ConsultationNote2Operations.validateConsultationNote2ImmunizationsSectionEntriesOptional2(
-			this, diagnostics, context);
+		return ConsultationNote2Operations.validateConsultationNote2ImmunizationsSectionEntriesOptional2(this, diagnostics, context);
 	}
 
 	/**
@@ -305,8 +296,7 @@ public class ConsultationNote2Impl extends USRealmHeader2Impl implements Consult
 	 */
 	public boolean validateConsultationNote2ProceduresSectionEntriesOptional2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ConsultationNote2Operations.validateConsultationNote2ProceduresSectionEntriesOptional2(
-			this, diagnostics, context);
+		return ConsultationNote2Operations.validateConsultationNote2ProceduresSectionEntriesOptional2(this, diagnostics, context);
 	}
 
 	/**
@@ -345,8 +335,7 @@ public class ConsultationNote2Impl extends USRealmHeader2Impl implements Consult
 	 */
 	public boolean validateConsultationNote2AdvanceDirectivesSectionEntriesOptional2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ConsultationNote2Operations.validateConsultationNote2AdvanceDirectivesSectionEntriesOptional2(
-			this, diagnostics, context);
+		return ConsultationNote2Operations.validateConsultationNote2AdvanceDirectivesSectionEntriesOptional2(this, diagnostics, context);
 	}
 
 	/**
@@ -356,8 +345,7 @@ public class ConsultationNote2Impl extends USRealmHeader2Impl implements Consult
 	 */
 	public boolean validateConsultationNote2FunctionalStatusSection2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ConsultationNote2Operations.validateConsultationNote2FunctionalStatusSection2(
-			this, diagnostics, context);
+		return ConsultationNote2Operations.validateConsultationNote2FunctionalStatusSection2(this, diagnostics, context);
 	}
 
 	/**
@@ -377,8 +365,7 @@ public class ConsultationNote2Impl extends USRealmHeader2Impl implements Consult
 	 */
 	public boolean validateConsultationNote2MedicalEquipmentSection2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ConsultationNote2Operations.validateConsultationNote2MedicalEquipmentSection2(
-			this, diagnostics, context);
+		return ConsultationNote2Operations.validateConsultationNote2MedicalEquipmentSection2(this, diagnostics, context);
 	}
 
 	/**
@@ -417,8 +404,7 @@ public class ConsultationNote2Impl extends USRealmHeader2Impl implements Consult
 	 */
 	public boolean validateConsultationNote2ParticipantAssociatedEntityAssociatedPersonName(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ConsultationNote2Operations.validateConsultationNote2ParticipantAssociatedEntityAssociatedPersonName(
-			this, diagnostics, context);
+		return ConsultationNote2Operations.validateConsultationNote2ParticipantAssociatedEntityAssociatedPersonName(this, diagnostics, context);
 	}
 
 	/**
@@ -428,8 +414,7 @@ public class ConsultationNote2Impl extends USRealmHeader2Impl implements Consult
 	 */
 	public boolean validateConsultationNote2ParticipantAssociatedEntityClassCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ConsultationNote2Operations.validateConsultationNote2ParticipantAssociatedEntityClassCode(
-			this, diagnostics, context);
+		return ConsultationNote2Operations.validateConsultationNote2ParticipantAssociatedEntityClassCode(this, diagnostics, context);
 	}
 
 	/**
@@ -439,8 +424,7 @@ public class ConsultationNote2Impl extends USRealmHeader2Impl implements Consult
 	 */
 	public boolean validateConsultationNote2ParticipantAssociatedEntityId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ConsultationNote2Operations.validateConsultationNote2ParticipantAssociatedEntityId(
-			this, diagnostics, context);
+		return ConsultationNote2Operations.validateConsultationNote2ParticipantAssociatedEntityId(this, diagnostics, context);
 	}
 
 	/**
@@ -450,8 +434,7 @@ public class ConsultationNote2Impl extends USRealmHeader2Impl implements Consult
 	 */
 	public boolean validateConsultationNote2ParticipantAssociatedEntityAddr(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ConsultationNote2Operations.validateConsultationNote2ParticipantAssociatedEntityAddr(
-			this, diagnostics, context);
+		return ConsultationNote2Operations.validateConsultationNote2ParticipantAssociatedEntityAddr(this, diagnostics, context);
 	}
 
 	/**
@@ -461,8 +444,7 @@ public class ConsultationNote2Impl extends USRealmHeader2Impl implements Consult
 	 */
 	public boolean validateConsultationNote2ParticipantAssociatedEntityTelecom(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ConsultationNote2Operations.validateConsultationNote2ParticipantAssociatedEntityTelecom(
-			this, diagnostics, context);
+		return ConsultationNote2Operations.validateConsultationNote2ParticipantAssociatedEntityTelecom(this, diagnostics, context);
 	}
 
 	/**
@@ -472,8 +454,7 @@ public class ConsultationNote2Impl extends USRealmHeader2Impl implements Consult
 	 */
 	public boolean validateConsultationNote2ParticipantAssociatedEntityAssociatedPerson(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ConsultationNote2Operations.validateConsultationNote2ParticipantAssociatedEntityAssociatedPerson(
-			this, diagnostics, context);
+		return ConsultationNote2Operations.validateConsultationNote2ParticipantAssociatedEntityAssociatedPerson(this, diagnostics, context);
 	}
 
 	/**
@@ -483,8 +464,7 @@ public class ConsultationNote2Impl extends USRealmHeader2Impl implements Consult
 	 */
 	public boolean validateConsultationNote2ParticipantAssociatedEntityScopingOrganization(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ConsultationNote2Operations.validateConsultationNote2ParticipantAssociatedEntityScopingOrganization(
-			this, diagnostics, context);
+		return ConsultationNote2Operations.validateConsultationNote2ParticipantAssociatedEntityScopingOrganization(this, diagnostics, context);
 	}
 
 	/**
@@ -504,8 +484,7 @@ public class ConsultationNote2Impl extends USRealmHeader2Impl implements Consult
 	 */
 	public boolean validateConsultationNote2ParticipantAssociatedEntity(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ConsultationNote2Operations.validateConsultationNote2ParticipantAssociatedEntity(
-			this, diagnostics, context);
+		return ConsultationNote2Operations.validateConsultationNote2ParticipantAssociatedEntity(this, diagnostics, context);
 	}
 
 	/**
@@ -535,8 +514,7 @@ public class ConsultationNote2Impl extends USRealmHeader2Impl implements Consult
 	 */
 	public boolean validateConsultationNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheDayIVLTS(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ConsultationNote2Operations.validateConsultationNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheDayIVLTS(
-			this, diagnostics, context);
+		return ConsultationNote2Operations.validateConsultationNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheDayIVLTS(this, diagnostics, context);
 	}
 
 	/**
@@ -546,8 +524,7 @@ public class ConsultationNote2Impl extends USRealmHeader2Impl implements Consult
 	 */
 	public boolean validateConsultationNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheMinuteIVLTS(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ConsultationNote2Operations.validateConsultationNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheMinuteIVLTS(
-			this, diagnostics, context);
+		return ConsultationNote2Operations.validateConsultationNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheMinuteIVLTS(this, diagnostics, context);
 	}
 
 	/**
@@ -557,8 +534,7 @@ public class ConsultationNote2Impl extends USRealmHeader2Impl implements Consult
 	 */
 	public boolean validateConsultationNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheSecondIVLTS(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ConsultationNote2Operations.validateConsultationNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheSecondIVLTS(
-			this, diagnostics, context);
+		return ConsultationNote2Operations.validateConsultationNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheSecondIVLTS(this, diagnostics, context);
 	}
 
 	/**
@@ -568,8 +544,7 @@ public class ConsultationNote2Impl extends USRealmHeader2Impl implements Consult
 	 */
 	public boolean validateConsultationNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTIfMorePreciseThanDayIncludeTimeZoneOffsetIVLTS(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ConsultationNote2Operations.validateConsultationNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTIfMorePreciseThanDayIncludeTimeZoneOffsetIVLTS(
-			this, diagnostics, context);
+		return ConsultationNote2Operations.validateConsultationNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTIfMorePreciseThanDayIncludeTimeZoneOffsetIVLTS(this, diagnostics, context);
 	}
 
 	/**
@@ -579,8 +554,7 @@ public class ConsultationNote2Impl extends USRealmHeader2Impl implements Consult
 	 */
 	public boolean validateConsultationNote2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntityHasPersonOrganizationOrBoth(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ConsultationNote2Operations.validateConsultationNote2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntityHasPersonOrganizationOrBoth(
-			this, diagnostics, context);
+		return ConsultationNote2Operations.validateConsultationNote2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntityHasPersonOrganizationOrBoth(this, diagnostics, context);
 	}
 
 	/**
@@ -590,8 +564,7 @@ public class ConsultationNote2Impl extends USRealmHeader2Impl implements Consult
 	 */
 	public boolean validateConsultationNote2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntity(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ConsultationNote2Operations.validateConsultationNote2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntity(
-			this, diagnostics, context);
+		return ConsultationNote2Operations.validateConsultationNote2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntity(this, diagnostics, context);
 	}
 
 	/**
@@ -601,8 +574,7 @@ public class ConsultationNote2Impl extends USRealmHeader2Impl implements Consult
 	 */
 	public boolean validateConsultationNote2ComponentOfEncompassingEncounterEncounterParticipantAssignedEntityHasPersonOrganizationOrBoth(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ConsultationNote2Operations.validateConsultationNote2ComponentOfEncompassingEncounterEncounterParticipantAssignedEntityHasPersonOrganizationOrBoth(
-			this, diagnostics, context);
+		return ConsultationNote2Operations.validateConsultationNote2ComponentOfEncompassingEncounterEncounterParticipantAssignedEntityHasPersonOrganizationOrBoth(this, diagnostics, context);
 	}
 
 	/**
@@ -612,8 +584,7 @@ public class ConsultationNote2Impl extends USRealmHeader2Impl implements Consult
 	 */
 	public boolean validateConsultationNote2ComponentOfEncompassingEncounterEncounterParticipantAssignedEntity(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ConsultationNote2Operations.validateConsultationNote2ComponentOfEncompassingEncounterEncounterParticipantAssignedEntity(
-			this, diagnostics, context);
+		return ConsultationNote2Operations.validateConsultationNote2ComponentOfEncompassingEncounterEncounterParticipantAssignedEntity(this, diagnostics, context);
 	}
 
 	/**
@@ -623,8 +594,7 @@ public class ConsultationNote2Impl extends USRealmHeader2Impl implements Consult
 	 */
 	public boolean validateConsultationNote2ComponentOfEncompassingEncounterId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ConsultationNote2Operations.validateConsultationNote2ComponentOfEncompassingEncounterId(
-			this, diagnostics, context);
+		return ConsultationNote2Operations.validateConsultationNote2ComponentOfEncompassingEncounterId(this, diagnostics, context);
 	}
 
 	/**
@@ -634,8 +604,7 @@ public class ConsultationNote2Impl extends USRealmHeader2Impl implements Consult
 	 */
 	public boolean validateConsultationNote2ComponentOfEncompassingEncounterEffectiveTime(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ConsultationNote2Operations.validateConsultationNote2ComponentOfEncompassingEncounterEffectiveTime(
-			this, diagnostics, context);
+		return ConsultationNote2Operations.validateConsultationNote2ComponentOfEncompassingEncounterEffectiveTime(this, diagnostics, context);
 	}
 
 	/**
@@ -645,8 +614,7 @@ public class ConsultationNote2Impl extends USRealmHeader2Impl implements Consult
 	 */
 	public boolean validateConsultationNote2ComponentOfEncompassingEncounterResponsibleParty(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ConsultationNote2Operations.validateConsultationNote2ComponentOfEncompassingEncounterResponsibleParty(
-			this, diagnostics, context);
+		return ConsultationNote2Operations.validateConsultationNote2ComponentOfEncompassingEncounterResponsibleParty(this, diagnostics, context);
 	}
 
 	/**
@@ -656,8 +624,7 @@ public class ConsultationNote2Impl extends USRealmHeader2Impl implements Consult
 	 */
 	public boolean validateConsultationNote2ComponentOfEncompassingEncounterEncounterParticipant(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ConsultationNote2Operations.validateConsultationNote2ComponentOfEncompassingEncounterEncounterParticipant(
-			this, diagnostics, context);
+		return ConsultationNote2Operations.validateConsultationNote2ComponentOfEncompassingEncounterEncounterParticipant(this, diagnostics, context);
 	}
 
 	/**
@@ -667,8 +634,7 @@ public class ConsultationNote2Impl extends USRealmHeader2Impl implements Consult
 	 */
 	public boolean validateConsultationNote2ComponentOfEncompassingEncounter(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ConsultationNote2Operations.validateConsultationNote2ComponentOfEncompassingEncounter(
-			this, diagnostics, context);
+		return ConsultationNote2Operations.validateConsultationNote2ComponentOfEncompassingEncounter(this, diagnostics, context);
 	}
 
 	/**
@@ -913,17 +879,17 @@ public class ConsultationNote2Impl extends USRealmHeader2Impl implements Consult
 	 */
 	@Override
 	public ConsultationNote2 init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public ConsultationNote2 init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // ConsultationNote2Impl

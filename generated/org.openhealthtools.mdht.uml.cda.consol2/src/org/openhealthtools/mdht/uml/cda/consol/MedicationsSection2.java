@@ -65,9 +65,9 @@ public interface MedicationsSection2 extends MedicationsSectionEntriesOptional2 
 	public MedicationsSection2 init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public MedicationsSection2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // MedicationsSection2

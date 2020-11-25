@@ -69,8 +69,7 @@ public class USRealmHeader2Impl extends GeneralHeaderConstraintsImpl implements 
 	 */
 	public boolean validateUSRealmHeader2RecordTargetPatientRolePatientGuardianCodeTerminology(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return USRealmHeader2Operations.validateUSRealmHeader2RecordTargetPatientRolePatientGuardianCodeTerminology(
-			this, diagnostics, context);
+		return USRealmHeader2Operations.validateUSRealmHeader2RecordTargetPatientRolePatientGuardianCodeTerminology(this, diagnostics, context);
 	}
 
 	/**
@@ -80,8 +79,7 @@ public class USRealmHeader2Impl extends GeneralHeaderConstraintsImpl implements 
 	 */
 	public boolean validateUSRealmHeader2RecordTargetPatientRolePatientTSBirthTimePreciseToMinute(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return USRealmHeader2Operations.validateUSRealmHeader2RecordTargetPatientRolePatientTSBirthTimePreciseToMinute(
-			this, diagnostics, context);
+		return USRealmHeader2Operations.validateUSRealmHeader2RecordTargetPatientRolePatientTSBirthTimePreciseToMinute(this, diagnostics, context);
 	}
 
 	/**
@@ -91,8 +89,7 @@ public class USRealmHeader2Impl extends GeneralHeaderConstraintsImpl implements 
 	 */
 	public boolean validateUSRealmHeader2RecordTargetPatientRolePatientSDTCEthnicGroupCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return USRealmHeader2Operations.validateUSRealmHeader2RecordTargetPatientRolePatientSDTCEthnicGroupCodeP(
-			this, diagnostics, context);
+		return USRealmHeader2Operations.validateUSRealmHeader2RecordTargetPatientRolePatientSDTCEthnicGroupCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -102,8 +99,7 @@ public class USRealmHeader2Impl extends GeneralHeaderConstraintsImpl implements 
 	 */
 	public boolean validateUSRealmHeader2RecordTargetPatientRolePatientSDTCEthnicGroupCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return USRealmHeader2Operations.validateUSRealmHeader2RecordTargetPatientRolePatientSDTCEthnicGroupCode(
-			this, diagnostics, context);
+		return USRealmHeader2Operations.validateUSRealmHeader2RecordTargetPatientRolePatientSDTCEthnicGroupCode(this, diagnostics, context);
 	}
 
 	/**
@@ -113,8 +109,7 @@ public class USRealmHeader2Impl extends GeneralHeaderConstraintsImpl implements 
 	 */
 	public boolean validateUSRealmHeader2AuthorAssignedAuthorIfAssignedPersonThenContainsCode(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return USRealmHeader2Operations.validateUSRealmHeader2AuthorAssignedAuthorIfAssignedPersonThenContainsCode(
-			this, diagnostics, context);
+		return USRealmHeader2Operations.validateUSRealmHeader2AuthorAssignedAuthorIfAssignedPersonThenContainsCode(this, diagnostics, context);
 	}
 
 	/**
@@ -124,8 +119,7 @@ public class USRealmHeader2Impl extends GeneralHeaderConstraintsImpl implements 
 	 */
 	public boolean validateUSRealmHeader2AuthorAssignedAuthorCodeTerminology(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return USRealmHeader2Operations.validateUSRealmHeader2AuthorAssignedAuthorCodeTerminology(
-			this, diagnostics, context);
+		return USRealmHeader2Operations.validateUSRealmHeader2AuthorAssignedAuthorCodeTerminology(this, diagnostics, context);
 	}
 
 	/**
@@ -135,8 +129,7 @@ public class USRealmHeader2Impl extends GeneralHeaderConstraintsImpl implements 
 	 */
 	public boolean validateUSRealmHeader2InformationRecipientIntendedRecipientId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return USRealmHeader2Operations.validateUSRealmHeader2InformationRecipientIntendedRecipientId(
-			this, diagnostics, context);
+		return USRealmHeader2Operations.validateUSRealmHeader2InformationRecipientIntendedRecipientId(this, diagnostics, context);
 	}
 
 	/**
@@ -146,8 +139,7 @@ public class USRealmHeader2Impl extends GeneralHeaderConstraintsImpl implements 
 	 */
 	public boolean validateUSRealmHeader2LegalAuthenticatorSDTCSignatureText(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return USRealmHeader2Operations.validateUSRealmHeader2LegalAuthenticatorSDTCSignatureText(
-			this, diagnostics, context);
+		return USRealmHeader2Operations.validateUSRealmHeader2LegalAuthenticatorSDTCSignatureText(this, diagnostics, context);
 	}
 
 	/**
@@ -157,8 +149,7 @@ public class USRealmHeader2Impl extends GeneralHeaderConstraintsImpl implements 
 	 */
 	public boolean validateUSRealmHeader2AuthenticatorSDTCSignatureText(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return USRealmHeader2Operations.validateUSRealmHeader2AuthenticatorSDTCSignatureText(
-			this, diagnostics, context);
+		return USRealmHeader2Operations.validateUSRealmHeader2AuthenticatorSDTCSignatureText(this, diagnostics, context);
 	}
 
 	/**
@@ -168,8 +159,7 @@ public class USRealmHeader2Impl extends GeneralHeaderConstraintsImpl implements 
 	 */
 	public boolean validateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return USRealmHeader2Operations.validateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet(
-			this, diagnostics, context);
+		return USRealmHeader2Operations.validateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet(this, diagnostics, context);
 	}
 
 	/**
@@ -179,8 +169,7 @@ public class USRealmHeader2Impl extends GeneralHeaderConstraintsImpl implements 
 	 */
 	public boolean validateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequireStateElement(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return USRealmHeader2Operations.validateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequireStateElement(
-			this, diagnostics, context);
+		return USRealmHeader2Operations.validateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequireStateElement(this, diagnostics, context);
 	}
 
 	/**
@@ -190,8 +179,7 @@ public class USRealmHeader2Impl extends GeneralHeaderConstraintsImpl implements 
 	 */
 	public boolean validateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequirePostalCodeElement(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return USRealmHeader2Operations.validateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequirePostalCodeElement(
-			this, diagnostics, context);
+		return USRealmHeader2Operations.validateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequirePostalCodeElement(this, diagnostics, context);
 	}
 
 	/**
@@ -201,8 +189,7 @@ public class USRealmHeader2Impl extends GeneralHeaderConstraintsImpl implements 
 	 */
 	public boolean validateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressUse(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return USRealmHeader2Operations.validateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressUse(
-			this, diagnostics, context);
+		return USRealmHeader2Operations.validateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressUse(this, diagnostics, context);
 	}
 
 	/**
@@ -212,8 +199,7 @@ public class USRealmHeader2Impl extends GeneralHeaderConstraintsImpl implements 
 	 */
 	public boolean validateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressUseP(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return USRealmHeader2Operations.validateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressUseP(
-			this, diagnostics, context);
+		return USRealmHeader2Operations.validateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressUseP(this, diagnostics, context);
 	}
 
 	/**
@@ -223,8 +209,7 @@ public class USRealmHeader2Impl extends GeneralHeaderConstraintsImpl implements 
 	 */
 	public boolean validateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressCountry(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return USRealmHeader2Operations.validateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressCountry(
-			this, diagnostics, context);
+		return USRealmHeader2Operations.validateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressCountry(this, diagnostics, context);
 	}
 
 	/**
@@ -234,8 +219,7 @@ public class USRealmHeader2Impl extends GeneralHeaderConstraintsImpl implements 
 	 */
 	public boolean validateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressState(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return USRealmHeader2Operations.validateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressState(
-			this, diagnostics, context);
+		return USRealmHeader2Operations.validateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressState(this, diagnostics, context);
 	}
 
 	/**
@@ -245,8 +229,7 @@ public class USRealmHeader2Impl extends GeneralHeaderConstraintsImpl implements 
 	 */
 	public boolean validateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressCity(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return USRealmHeader2Operations.validateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressCity(
-			this, diagnostics, context);
+		return USRealmHeader2Operations.validateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressCity(this, diagnostics, context);
 	}
 
 	/**
@@ -256,8 +239,7 @@ public class USRealmHeader2Impl extends GeneralHeaderConstraintsImpl implements 
 	 */
 	public boolean validateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressPostalCode(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return USRealmHeader2Operations.validateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressPostalCode(
-			this, diagnostics, context);
+		return USRealmHeader2Operations.validateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressPostalCode(this, diagnostics, context);
 	}
 
 	/**
@@ -267,8 +249,7 @@ public class USRealmHeader2Impl extends GeneralHeaderConstraintsImpl implements 
 	 */
 	public boolean validateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressStreetAddressLine(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return USRealmHeader2Operations.validateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressStreetAddressLine(
-			this, diagnostics, context);
+		return USRealmHeader2Operations.validateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressStreetAddressLine(this, diagnostics, context);
 	}
 
 	/**
@@ -278,8 +259,7 @@ public class USRealmHeader2Impl extends GeneralHeaderConstraintsImpl implements 
 	 */
 	public boolean validateUSRealmHeader2GeneralHeaderConstraintsInformantAssignedEntity(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return USRealmHeader2Operations.validateUSRealmHeader2GeneralHeaderConstraintsInformantAssignedEntity(
-			this, diagnostics, context);
+		return USRealmHeader2Operations.validateUSRealmHeader2GeneralHeaderConstraintsInformantAssignedEntity(this, diagnostics, context);
 	}
 
 	/**
@@ -289,8 +269,7 @@ public class USRealmHeader2Impl extends GeneralHeaderConstraintsImpl implements 
 	 */
 	public boolean validateUSRealmHeader2GeneralHeaderConstraintsInformantRelatedEntity(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return USRealmHeader2Operations.validateUSRealmHeader2GeneralHeaderConstraintsInformantRelatedEntity(
-			this, diagnostics, context);
+		return USRealmHeader2Operations.validateUSRealmHeader2GeneralHeaderConstraintsInformantRelatedEntity(this, diagnostics, context);
 	}
 
 	/**
@@ -363,8 +342,7 @@ public class USRealmHeader2Impl extends GeneralHeaderConstraintsImpl implements 
 	@Override
 	public boolean validateGeneralHeaderConstraintsInformationRecipient(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return USRealmHeader2Operations.validateGeneralHeaderConstraintsInformationRecipient(
-			this, diagnostics, context);
+		return USRealmHeader2Operations.validateGeneralHeaderConstraintsInformationRecipient(this, diagnostics, context);
 	}
 
 	/**
@@ -462,8 +440,7 @@ public class USRealmHeader2Impl extends GeneralHeaderConstraintsImpl implements 
 	@Override
 	public boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianTELUse(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return USRealmHeader2Operations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianTELUse(
-			this, diagnostics, context);
+		return USRealmHeader2Operations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianTELUse(this, diagnostics, context);
 	}
 
 	/**
@@ -474,8 +451,7 @@ public class USRealmHeader2Impl extends GeneralHeaderConstraintsImpl implements 
 	@Override
 	public boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianCodeFromPersonalRelationshipOrResponsibleParty(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return USRealmHeader2Operations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianCodeFromPersonalRelationshipOrResponsibleParty(
-			this, diagnostics, context);
+		return USRealmHeader2Operations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianCodeFromPersonalRelationshipOrResponsibleParty(this, diagnostics, context);
 	}
 
 	/**
@@ -486,8 +462,7 @@ public class USRealmHeader2Impl extends GeneralHeaderConstraintsImpl implements 
 	@Override
 	public boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianCode(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return USRealmHeader2Operations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianCode(
-			this, diagnostics, context);
+		return USRealmHeader2Operations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianCode(this, diagnostics, context);
 	}
 
 	/**
@@ -498,8 +473,7 @@ public class USRealmHeader2Impl extends GeneralHeaderConstraintsImpl implements 
 	@Override
 	public boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianTelecom(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return USRealmHeader2Operations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianTelecom(
-			this, diagnostics, context);
+		return USRealmHeader2Operations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianTelecom(this, diagnostics, context);
 	}
 
 	/**
@@ -510,8 +484,7 @@ public class USRealmHeader2Impl extends GeneralHeaderConstraintsImpl implements 
 	@Override
 	public boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCodeP(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return USRealmHeader2Operations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCodeP(
-			this, diagnostics, context);
+		return USRealmHeader2Operations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -522,8 +495,7 @@ public class USRealmHeader2Impl extends GeneralHeaderConstraintsImpl implements 
 	@Override
 	public boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCode(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return USRealmHeader2Operations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCode(
-			this, diagnostics, context);
+		return USRealmHeader2Operations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCode(this, diagnostics, context);
 	}
 
 	/**
@@ -534,8 +506,7 @@ public class USRealmHeader2Impl extends GeneralHeaderConstraintsImpl implements 
 	@Override
 	public boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationPreferenceInd(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return USRealmHeader2Operations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationPreferenceInd(
-			this, diagnostics, context);
+		return USRealmHeader2Operations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationPreferenceInd(this, diagnostics, context);
 	}
 
 	/**
@@ -546,8 +517,7 @@ public class USRealmHeader2Impl extends GeneralHeaderConstraintsImpl implements 
 	@Override
 	public boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientTSBirthTimePreciseToYear(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return USRealmHeader2Operations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientTSBirthTimePreciseToYear(
-			this, diagnostics, context);
+		return USRealmHeader2Operations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientTSBirthTimePreciseToYear(this, diagnostics, context);
 	}
 
 	/**
@@ -558,8 +528,7 @@ public class USRealmHeader2Impl extends GeneralHeaderConstraintsImpl implements 
 	@Override
 	public boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientTSBirthTimePreciseToDay(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return USRealmHeader2Operations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientTSBirthTimePreciseToDay(
-			this, diagnostics, context);
+		return USRealmHeader2Operations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientTSBirthTimePreciseToDay(this, diagnostics, context);
 	}
 
 	/**
@@ -570,8 +539,7 @@ public class USRealmHeader2Impl extends GeneralHeaderConstraintsImpl implements 
 	@Override
 	public boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientTSValue(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return USRealmHeader2Operations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientTSValue(
-			this, diagnostics, context);
+		return USRealmHeader2Operations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientTSValue(this, diagnostics, context);
 	}
 
 	/**
@@ -582,8 +550,7 @@ public class USRealmHeader2Impl extends GeneralHeaderConstraintsImpl implements 
 	@Override
 	public boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthplacePlaceHasState(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return USRealmHeader2Operations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthplacePlaceHasState(
-			this, diagnostics, context);
+		return USRealmHeader2Operations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthplacePlaceHasState(this, diagnostics, context);
 	}
 
 	/**
@@ -594,8 +561,7 @@ public class USRealmHeader2Impl extends GeneralHeaderConstraintsImpl implements 
 	@Override
 	public boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthplacePlace(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return USRealmHeader2Operations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthplacePlace(
-			this, diagnostics, context);
+		return USRealmHeader2Operations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthplacePlace(this, diagnostics, context);
 	}
 
 	/**
@@ -606,8 +572,7 @@ public class USRealmHeader2Impl extends GeneralHeaderConstraintsImpl implements 
 	@Override
 	public boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return USRealmHeader2Operations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCode(
-			this, diagnostics, context);
+		return USRealmHeader2Operations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCode(this, diagnostics, context);
 	}
 
 	/**
@@ -618,8 +583,7 @@ public class USRealmHeader2Impl extends GeneralHeaderConstraintsImpl implements 
 	@Override
 	public boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return USRealmHeader2Operations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCodeP(
-			this, diagnostics, context);
+		return USRealmHeader2Operations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -630,8 +594,7 @@ public class USRealmHeader2Impl extends GeneralHeaderConstraintsImpl implements 
 	@Override
 	public boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCode(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return USRealmHeader2Operations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCode(
-			this, diagnostics, context);
+		return USRealmHeader2Operations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCode(this, diagnostics, context);
 	}
 
 	/**
@@ -642,8 +605,7 @@ public class USRealmHeader2Impl extends GeneralHeaderConstraintsImpl implements 
 	@Override
 	public boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCodeP(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return USRealmHeader2Operations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCodeP(
-			this, diagnostics, context);
+		return USRealmHeader2Operations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -654,8 +616,7 @@ public class USRealmHeader2Impl extends GeneralHeaderConstraintsImpl implements 
 	@Override
 	public boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthTime(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return USRealmHeader2Operations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthTime(
-			this, diagnostics, context);
+		return USRealmHeader2Operations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthTime(this, diagnostics, context);
 	}
 
 	/**
@@ -666,8 +627,7 @@ public class USRealmHeader2Impl extends GeneralHeaderConstraintsImpl implements 
 	@Override
 	public boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardian(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return USRealmHeader2Operations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardian(
-			this, diagnostics, context);
+		return USRealmHeader2Operations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardian(this, diagnostics, context);
 	}
 
 	/**
@@ -678,8 +638,7 @@ public class USRealmHeader2Impl extends GeneralHeaderConstraintsImpl implements 
 	@Override
 	public boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunication(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return USRealmHeader2Operations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunication(
-			this, diagnostics, context);
+		return USRealmHeader2Operations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunication(this, diagnostics, context);
 	}
 
 	/**
@@ -690,8 +649,7 @@ public class USRealmHeader2Impl extends GeneralHeaderConstraintsImpl implements 
 	@Override
 	public boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthplace(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return USRealmHeader2Operations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthplace(
-			this, diagnostics, context);
+		return USRealmHeader2Operations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthplace(this, diagnostics, context);
 	}
 
 	/**
@@ -702,8 +660,7 @@ public class USRealmHeader2Impl extends GeneralHeaderConstraintsImpl implements 
 	@Override
 	public boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatient(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return USRealmHeader2Operations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatient(
-			this, diagnostics, context);
+		return USRealmHeader2Operations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatient(this, diagnostics, context);
 	}
 
 	/**
@@ -714,8 +671,7 @@ public class USRealmHeader2Impl extends GeneralHeaderConstraintsImpl implements 
 	@Override
 	public boolean validateGeneralHeaderConstraintsRecordTargetPatientRole(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return USRealmHeader2Operations.validateGeneralHeaderConstraintsRecordTargetPatientRole(
-			this, diagnostics, context);
+		return USRealmHeader2Operations.validateGeneralHeaderConstraintsRecordTargetPatientRole(this, diagnostics, context);
 	}
 
 	/**
@@ -726,8 +682,7 @@ public class USRealmHeader2Impl extends GeneralHeaderConstraintsImpl implements 
 	@Override
 	public boolean validateGeneralHeaderConstraintsDataEntererAssignedEntityCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return USRealmHeader2Operations.validateGeneralHeaderConstraintsDataEntererAssignedEntityCodeP(
-			this, diagnostics, context);
+		return USRealmHeader2Operations.validateGeneralHeaderConstraintsDataEntererAssignedEntityCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -738,8 +693,7 @@ public class USRealmHeader2Impl extends GeneralHeaderConstraintsImpl implements 
 	@Override
 	public boolean validateGeneralHeaderConstraintsDataEntererAssignedEntityCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return USRealmHeader2Operations.validateGeneralHeaderConstraintsDataEntererAssignedEntityCode(
-			this, diagnostics, context);
+		return USRealmHeader2Operations.validateGeneralHeaderConstraintsDataEntererAssignedEntityCode(this, diagnostics, context);
 	}
 
 	/**
@@ -750,8 +704,7 @@ public class USRealmHeader2Impl extends GeneralHeaderConstraintsImpl implements 
 	@Override
 	public boolean validateGeneralHeaderConstraintsDataEntererAssignedEntity(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return USRealmHeader2Operations.validateGeneralHeaderConstraintsDataEntererAssignedEntity(
-			this, diagnostics, context);
+		return USRealmHeader2Operations.validateGeneralHeaderConstraintsDataEntererAssignedEntity(this, diagnostics, context);
 	}
 
 	/**
@@ -762,8 +715,7 @@ public class USRealmHeader2Impl extends GeneralHeaderConstraintsImpl implements 
 	@Override
 	public boolean validateGeneralHeaderConstraintsAuthorAssignedAuthorCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return USRealmHeader2Operations.validateGeneralHeaderConstraintsAuthorAssignedAuthorCodeP(
-			this, diagnostics, context);
+		return USRealmHeader2Operations.validateGeneralHeaderConstraintsAuthorAssignedAuthorCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -774,8 +726,7 @@ public class USRealmHeader2Impl extends GeneralHeaderConstraintsImpl implements 
 	@Override
 	public boolean validateGeneralHeaderConstraintsAuthorAssignedAuthorCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return USRealmHeader2Operations.validateGeneralHeaderConstraintsAuthorAssignedAuthorCode(
-			this, diagnostics, context);
+		return USRealmHeader2Operations.validateGeneralHeaderConstraintsAuthorAssignedAuthorCode(this, diagnostics, context);
 	}
 
 	/**
@@ -786,8 +737,7 @@ public class USRealmHeader2Impl extends GeneralHeaderConstraintsImpl implements 
 	@Override
 	public boolean validateGeneralHeaderConstraintsAuthorAssignedAuthor(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return USRealmHeader2Operations.validateGeneralHeaderConstraintsAuthorAssignedAuthor(
-			this, diagnostics, context);
+		return USRealmHeader2Operations.validateGeneralHeaderConstraintsAuthorAssignedAuthor(this, diagnostics, context);
 	}
 
 	/**
@@ -798,8 +748,7 @@ public class USRealmHeader2Impl extends GeneralHeaderConstraintsImpl implements 
 	@Override
 	public boolean validateGeneralHeaderConstraintsInformationRecipientIntendedRecipient(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return USRealmHeader2Operations.validateGeneralHeaderConstraintsInformationRecipientIntendedRecipient(
-			this, diagnostics, context);
+		return USRealmHeader2Operations.validateGeneralHeaderConstraintsInformationRecipientIntendedRecipient(this, diagnostics, context);
 	}
 
 	/**
@@ -810,8 +759,7 @@ public class USRealmHeader2Impl extends GeneralHeaderConstraintsImpl implements 
 	@Override
 	public boolean validateGeneralHeaderConstraintsInformantAssignedEntityCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return USRealmHeader2Operations.validateGeneralHeaderConstraintsInformantAssignedEntityCodeP(
-			this, diagnostics, context);
+		return USRealmHeader2Operations.validateGeneralHeaderConstraintsInformantAssignedEntityCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -822,8 +770,7 @@ public class USRealmHeader2Impl extends GeneralHeaderConstraintsImpl implements 
 	@Override
 	public boolean validateGeneralHeaderConstraintsInformantAssignedEntityCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return USRealmHeader2Operations.validateGeneralHeaderConstraintsInformantAssignedEntityCode(
-			this, diagnostics, context);
+		return USRealmHeader2Operations.validateGeneralHeaderConstraintsInformantAssignedEntityCode(this, diagnostics, context);
 	}
 
 	/**
@@ -834,8 +781,7 @@ public class USRealmHeader2Impl extends GeneralHeaderConstraintsImpl implements 
 	@Override
 	public boolean validateGeneralHeaderConstraintsInformantAssignedEntityAddr(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return USRealmHeader2Operations.validateGeneralHeaderConstraintsInformantAssignedEntityAddr(
-			this, diagnostics, context);
+		return USRealmHeader2Operations.validateGeneralHeaderConstraintsInformantAssignedEntityAddr(this, diagnostics, context);
 	}
 
 	/**
@@ -846,8 +792,7 @@ public class USRealmHeader2Impl extends GeneralHeaderConstraintsImpl implements 
 	@Override
 	public boolean validateGeneralHeaderConstraintsInformantRelatedEntityAddr(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return USRealmHeader2Operations.validateGeneralHeaderConstraintsInformantRelatedEntityAddr(
-			this, diagnostics, context);
+		return USRealmHeader2Operations.validateGeneralHeaderConstraintsInformantRelatedEntityAddr(this, diagnostics, context);
 	}
 
 	/**
@@ -858,8 +803,7 @@ public class USRealmHeader2Impl extends GeneralHeaderConstraintsImpl implements 
 	@Override
 	public boolean validateGeneralHeaderConstraintsInformantRelatedEntityPerson(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return USRealmHeader2Operations.validateGeneralHeaderConstraintsInformantRelatedEntityPerson(
-			this, diagnostics, context);
+		return USRealmHeader2Operations.validateGeneralHeaderConstraintsInformantRelatedEntityPerson(this, diagnostics, context);
 	}
 
 	/**
@@ -870,8 +814,7 @@ public class USRealmHeader2Impl extends GeneralHeaderConstraintsImpl implements 
 	@Override
 	public boolean validateGeneralHeaderConstraintsInformantHasAssignedEntityOrRelatedEntity(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return USRealmHeader2Operations.validateGeneralHeaderConstraintsInformantHasAssignedEntityOrRelatedEntity(
-			this, diagnostics, context);
+		return USRealmHeader2Operations.validateGeneralHeaderConstraintsInformantHasAssignedEntityOrRelatedEntity(this, diagnostics, context);
 	}
 
 	/**
@@ -882,8 +825,7 @@ public class USRealmHeader2Impl extends GeneralHeaderConstraintsImpl implements 
 	@Override
 	public boolean validateGeneralHeaderConstraintsComponentOfEncompassingEncounter(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return USRealmHeader2Operations.validateGeneralHeaderConstraintsComponentOfEncompassingEncounter(
-			this, diagnostics, context);
+		return USRealmHeader2Operations.validateGeneralHeaderConstraintsComponentOfEncompassingEncounter(this, diagnostics, context);
 	}
 
 	/**
@@ -894,8 +836,7 @@ public class USRealmHeader2Impl extends GeneralHeaderConstraintsImpl implements 
 	@Override
 	public boolean validateGeneralHeaderConstraintsParticipantSupportAssociatedEntityHasAssociatedPersonOrScopingOrganization(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return USRealmHeader2Operations.validateGeneralHeaderConstraintsParticipantSupportAssociatedEntityHasAssociatedPersonOrScopingOrganization(
-			this, diagnostics, context);
+		return USRealmHeader2Operations.validateGeneralHeaderConstraintsParticipantSupportAssociatedEntityHasAssociatedPersonOrScopingOrganization(this, diagnostics, context);
 	}
 
 	/**
@@ -906,8 +847,7 @@ public class USRealmHeader2Impl extends GeneralHeaderConstraintsImpl implements 
 	@Override
 	public boolean validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1AssignedEntityCodeP(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return USRealmHeader2Operations.validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1AssignedEntityCodeP(
-			this, diagnostics, context);
+		return USRealmHeader2Operations.validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1AssignedEntityCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -918,8 +858,7 @@ public class USRealmHeader2Impl extends GeneralHeaderConstraintsImpl implements 
 	@Override
 	public boolean validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1AssignedEntityCode(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return USRealmHeader2Operations.validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1AssignedEntityCode(
-			this, diagnostics, context);
+		return USRealmHeader2Operations.validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1AssignedEntityCode(this, diagnostics, context);
 	}
 
 	/**
@@ -930,8 +869,7 @@ public class USRealmHeader2Impl extends GeneralHeaderConstraintsImpl implements 
 	@Override
 	public boolean validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1FunctionCodeP(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return USRealmHeader2Operations.validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1FunctionCodeP(
-			this, diagnostics, context);
+		return USRealmHeader2Operations.validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1FunctionCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -942,8 +880,7 @@ public class USRealmHeader2Impl extends GeneralHeaderConstraintsImpl implements 
 	@Override
 	public boolean validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1FunctionCode(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return USRealmHeader2Operations.validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1FunctionCode(
-			this, diagnostics, context);
+		return USRealmHeader2Operations.validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1FunctionCode(this, diagnostics, context);
 	}
 
 	/**
@@ -954,8 +891,7 @@ public class USRealmHeader2Impl extends GeneralHeaderConstraintsImpl implements 
 	@Override
 	public boolean validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1AssignedEntity(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return USRealmHeader2Operations.validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1AssignedEntity(
-			this, diagnostics, context);
+		return USRealmHeader2Operations.validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1AssignedEntity(this, diagnostics, context);
 	}
 
 	/**
@@ -966,8 +902,7 @@ public class USRealmHeader2Impl extends GeneralHeaderConstraintsImpl implements 
 	@Override
 	public boolean validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return USRealmHeader2Operations.validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer(
-			this, diagnostics, context);
+		return USRealmHeader2Operations.validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer(this, diagnostics, context);
 	}
 
 	/**
@@ -978,8 +913,7 @@ public class USRealmHeader2Impl extends GeneralHeaderConstraintsImpl implements 
 	@Override
 	public boolean validateGeneralHeaderConstraintsDocumentationOfServiceEvent(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return USRealmHeader2Operations.validateGeneralHeaderConstraintsDocumentationOfServiceEvent(
-			this, diagnostics, context);
+		return USRealmHeader2Operations.validateGeneralHeaderConstraintsDocumentationOfServiceEvent(this, diagnostics, context);
 	}
 
 	/**
@@ -989,17 +923,17 @@ public class USRealmHeader2Impl extends GeneralHeaderConstraintsImpl implements 
 	 */
 	@Override
 	public USRealmHeader2 init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public USRealmHeader2 init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // USRealmHeader2Impl

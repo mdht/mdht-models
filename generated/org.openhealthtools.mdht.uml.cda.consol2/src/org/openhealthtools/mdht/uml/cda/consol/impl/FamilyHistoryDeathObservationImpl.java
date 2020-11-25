@@ -56,8 +56,7 @@ public class FamilyHistoryDeathObservationImpl extends ObservationImpl implement
 	 */
 	public boolean validateFamilyHistoryDeathObservationTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return FamilyHistoryDeathObservationOperations.validateFamilyHistoryDeathObservationTemplateId(
-			this, diagnostics, context);
+		return FamilyHistoryDeathObservationOperations.validateFamilyHistoryDeathObservationTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -67,8 +66,7 @@ public class FamilyHistoryDeathObservationImpl extends ObservationImpl implement
 	 */
 	public boolean validateFamilyHistoryDeathObservationClassCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return FamilyHistoryDeathObservationOperations.validateFamilyHistoryDeathObservationClassCode(
-			this, diagnostics, context);
+		return FamilyHistoryDeathObservationOperations.validateFamilyHistoryDeathObservationClassCode(this, diagnostics, context);
 	}
 
 	/**
@@ -78,8 +76,7 @@ public class FamilyHistoryDeathObservationImpl extends ObservationImpl implement
 	 */
 	public boolean validateFamilyHistoryDeathObservationMoodCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return FamilyHistoryDeathObservationOperations.validateFamilyHistoryDeathObservationMoodCode(
-			this, diagnostics, context);
+		return FamilyHistoryDeathObservationOperations.validateFamilyHistoryDeathObservationMoodCode(this, diagnostics, context);
 	}
 
 	/**
@@ -88,8 +85,7 @@ public class FamilyHistoryDeathObservationImpl extends ObservationImpl implement
 	 * @generated
 	 */
 	public boolean validateFamilyHistoryDeathObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return FamilyHistoryDeathObservationOperations.validateFamilyHistoryDeathObservationCode(
-			this, diagnostics, context);
+		return FamilyHistoryDeathObservationOperations.validateFamilyHistoryDeathObservationCode(this, diagnostics, context);
 	}
 
 	/**
@@ -99,8 +95,7 @@ public class FamilyHistoryDeathObservationImpl extends ObservationImpl implement
 	 */
 	public boolean validateFamilyHistoryDeathObservationStatusCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return FamilyHistoryDeathObservationOperations.validateFamilyHistoryDeathObservationStatusCode(
-			this, diagnostics, context);
+		return FamilyHistoryDeathObservationOperations.validateFamilyHistoryDeathObservationStatusCode(this, diagnostics, context);
 	}
 
 	/**
@@ -110,8 +105,7 @@ public class FamilyHistoryDeathObservationImpl extends ObservationImpl implement
 	 */
 	public boolean validateFamilyHistoryDeathObservationValue(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return FamilyHistoryDeathObservationOperations.validateFamilyHistoryDeathObservationValue(
-			this, diagnostics, context);
+		return FamilyHistoryDeathObservationOperations.validateFamilyHistoryDeathObservationValue(this, diagnostics, context);
 	}
 
 	/**
@@ -121,8 +115,7 @@ public class FamilyHistoryDeathObservationImpl extends ObservationImpl implement
 	 */
 	public boolean validateFamilyHistoryDeathObservationValueP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return FamilyHistoryDeathObservationOperations.validateFamilyHistoryDeathObservationValueP(
-			this, diagnostics, context);
+		return FamilyHistoryDeathObservationOperations.validateFamilyHistoryDeathObservationValueP(this, diagnostics, context);
 	}
 
 	/**
@@ -131,16 +124,16 @@ public class FamilyHistoryDeathObservationImpl extends ObservationImpl implement
 	 * @generated
 	 */
 	public FamilyHistoryDeathObservation init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public FamilyHistoryDeathObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // FamilyHistoryDeathObservationImpl

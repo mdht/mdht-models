@@ -208,9 +208,9 @@ public interface MedicalEquipmentOrganizer extends Organizer {
 	public MedicalEquipmentOrganizer init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public MedicalEquipmentOrganizer init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // MedicalEquipmentOrganizer

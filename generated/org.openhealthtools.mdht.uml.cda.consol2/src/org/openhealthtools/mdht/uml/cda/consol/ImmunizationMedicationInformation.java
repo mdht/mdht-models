@@ -172,9 +172,9 @@ public interface ImmunizationMedicationInformation extends ManufacturedProduct {
 	public ImmunizationMedicationInformation init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public ImmunizationMedicationInformation init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ImmunizationMedicationInformation

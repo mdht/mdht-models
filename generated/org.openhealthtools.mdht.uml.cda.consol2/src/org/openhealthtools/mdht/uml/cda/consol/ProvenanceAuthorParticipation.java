@@ -217,9 +217,9 @@ public interface ProvenanceAuthorParticipation extends Author {
 	public ProvenanceAuthorParticipation init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public ProvenanceAuthorParticipation init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ProvenanceAuthorParticipation

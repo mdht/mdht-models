@@ -64,8 +64,7 @@ public class EncountersSectionEntriesOptional2Impl extends EncountersSectionEntr
 	@Override
 	public boolean validateEncountersSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return EncountersSectionEntriesOptional2Operations.validateEncountersSectionEntriesOptionalTemplateId(
-			this, diagnostics, context);
+		return EncountersSectionEntriesOptional2Operations.validateEncountersSectionEntriesOptionalTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -76,8 +75,7 @@ public class EncountersSectionEntriesOptional2Impl extends EncountersSectionEntr
 	@Override
 	public boolean validateEncountersSectionEntriesOptionalCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return EncountersSectionEntriesOptional2Operations.validateEncountersSectionEntriesOptionalCodeP(
-			this, diagnostics, context);
+		return EncountersSectionEntriesOptional2Operations.validateEncountersSectionEntriesOptionalCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -88,8 +86,7 @@ public class EncountersSectionEntriesOptional2Impl extends EncountersSectionEntr
 	@Override
 	public boolean validateEncountersSectionEntriesOptionalCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return EncountersSectionEntriesOptional2Operations.validateEncountersSectionEntriesOptionalCode(
-			this, diagnostics, context);
+		return EncountersSectionEntriesOptional2Operations.validateEncountersSectionEntriesOptionalCode(this, diagnostics, context);
 	}
 
 	/**
@@ -100,8 +97,7 @@ public class EncountersSectionEntriesOptional2Impl extends EncountersSectionEntr
 	@Override
 	public boolean validateEncountersSectionEntriesOptionalEncounterActivities(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return EncountersSectionEntriesOptional2Operations.validateEncountersSectionEntriesOptionalEncounterActivities(
-			this, diagnostics, context);
+		return EncountersSectionEntriesOptional2Operations.validateEncountersSectionEntriesOptionalEncounterActivities(this, diagnostics, context);
 	}
 
 	/**
@@ -111,17 +107,17 @@ public class EncountersSectionEntriesOptional2Impl extends EncountersSectionEntr
 	 */
 	@Override
 	public EncountersSectionEntriesOptional2 init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public EncountersSectionEntriesOptional2 init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // EncountersSectionEntriesOptional2Impl

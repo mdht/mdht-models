@@ -1216,9 +1216,9 @@ public interface ProcedureNote2 extends USRealmHeader2 {
 	public ProcedureNote2 init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public ProcedureNote2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ProcedureNote2

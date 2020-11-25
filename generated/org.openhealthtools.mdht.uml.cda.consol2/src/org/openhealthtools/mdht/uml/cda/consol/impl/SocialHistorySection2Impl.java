@@ -68,8 +68,7 @@ public class SocialHistorySection2Impl extends SocialHistorySectionImpl implemen
 	 */
 	public boolean validateSocialHistorySection2CaregiverCharacteristics(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return SocialHistorySection2Operations.validateSocialHistorySection2CaregiverCharacteristics(
-			this, diagnostics, context);
+		return SocialHistorySection2Operations.validateSocialHistorySection2CaregiverCharacteristics(this, diagnostics, context);
 	}
 
 	/**
@@ -79,8 +78,7 @@ public class SocialHistorySection2Impl extends SocialHistorySectionImpl implemen
 	 */
 	public boolean validateSocialHistorySection2CulturalAndReligiousObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return SocialHistorySection2Operations.validateSocialHistorySection2CulturalAndReligiousObservation(
-			this, diagnostics, context);
+		return SocialHistorySection2Operations.validateSocialHistorySection2CulturalAndReligiousObservation(this, diagnostics, context);
 	}
 
 	/**
@@ -90,8 +88,7 @@ public class SocialHistorySection2Impl extends SocialHistorySectionImpl implemen
 	 */
 	public boolean validateSocialHistorySection2CharacteristicsOfHomeEnvironment(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return SocialHistorySection2Operations.validateSocialHistorySection2CharacteristicsOfHomeEnvironment(
-			this, diagnostics, context);
+		return SocialHistorySection2Operations.validateSocialHistorySection2CharacteristicsOfHomeEnvironment(this, diagnostics, context);
 	}
 
 	/**
@@ -101,8 +98,7 @@ public class SocialHistorySection2Impl extends SocialHistorySectionImpl implemen
 	 */
 	public boolean validateSocialHistorySection2BirthSexObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return SocialHistorySection2Operations.validateSocialHistorySection2BirthSexObservation(
-			this, diagnostics, context);
+		return SocialHistorySection2Operations.validateSocialHistorySection2BirthSexObservation(this, diagnostics, context);
 	}
 
 	/**
@@ -196,8 +192,7 @@ public class SocialHistorySection2Impl extends SocialHistorySectionImpl implemen
 	@Override
 	public boolean validateSocialHistorySectionSocialHistoryObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return SocialHistorySection2Operations.validateSocialHistorySectionSocialHistoryObservation(
-			this, diagnostics, context);
+		return SocialHistorySection2Operations.validateSocialHistorySectionSocialHistoryObservation(this, diagnostics, context);
 	}
 
 	/**
@@ -208,8 +203,7 @@ public class SocialHistorySection2Impl extends SocialHistorySectionImpl implemen
 	@Override
 	public boolean validateSocialHistorySectionSmokingStatusObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return SocialHistorySection2Operations.validateSocialHistorySectionSmokingStatusObservation(
-			this, diagnostics, context);
+		return SocialHistorySection2Operations.validateSocialHistorySectionSmokingStatusObservation(this, diagnostics, context);
 	}
 
 	/**
@@ -229,17 +223,17 @@ public class SocialHistorySection2Impl extends SocialHistorySectionImpl implemen
 	 */
 	@Override
 	public SocialHistorySection2 init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public SocialHistorySection2 init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // SocialHistorySection2Impl

@@ -58,8 +58,7 @@ public class EncountersSectionEntriesOptionalImpl extends SectionImpl implements
 	 */
 	public boolean validateEncountersSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return EncountersSectionEntriesOptionalOperations.validateEncountersSectionEntriesOptionalTemplateId(
-			this, diagnostics, context);
+		return EncountersSectionEntriesOptionalOperations.validateEncountersSectionEntriesOptionalTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -69,8 +68,7 @@ public class EncountersSectionEntriesOptionalImpl extends SectionImpl implements
 	 */
 	public boolean validateEncountersSectionEntriesOptionalCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return EncountersSectionEntriesOptionalOperations.validateEncountersSectionEntriesOptionalCode(
-			this, diagnostics, context);
+		return EncountersSectionEntriesOptionalOperations.validateEncountersSectionEntriesOptionalCode(this, diagnostics, context);
 	}
 
 	/**
@@ -80,8 +78,7 @@ public class EncountersSectionEntriesOptionalImpl extends SectionImpl implements
 	 */
 	public boolean validateEncountersSectionEntriesOptionalCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return EncountersSectionEntriesOptionalOperations.validateEncountersSectionEntriesOptionalCodeP(
-			this, diagnostics, context);
+		return EncountersSectionEntriesOptionalOperations.validateEncountersSectionEntriesOptionalCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -91,8 +88,7 @@ public class EncountersSectionEntriesOptionalImpl extends SectionImpl implements
 	 */
 	public boolean validateEncountersSectionEntriesOptionalTitle(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return EncountersSectionEntriesOptionalOperations.validateEncountersSectionEntriesOptionalTitle(
-			this, diagnostics, context);
+		return EncountersSectionEntriesOptionalOperations.validateEncountersSectionEntriesOptionalTitle(this, diagnostics, context);
 	}
 
 	/**
@@ -102,8 +98,7 @@ public class EncountersSectionEntriesOptionalImpl extends SectionImpl implements
 	 */
 	public boolean validateEncountersSectionEntriesOptionalText(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return EncountersSectionEntriesOptionalOperations.validateEncountersSectionEntriesOptionalText(
-			this, diagnostics, context);
+		return EncountersSectionEntriesOptionalOperations.validateEncountersSectionEntriesOptionalText(this, diagnostics, context);
 	}
 
 	/**
@@ -113,8 +108,7 @@ public class EncountersSectionEntriesOptionalImpl extends SectionImpl implements
 	 */
 	public boolean validateEncountersSectionEntriesOptionalEncounterActivities(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return EncountersSectionEntriesOptionalOperations.validateEncountersSectionEntriesOptionalEncounterActivities(
-			this, diagnostics, context);
+		return EncountersSectionEntriesOptionalOperations.validateEncountersSectionEntriesOptionalEncounterActivities(this, diagnostics, context);
 	}
 
 	/**
@@ -132,16 +126,16 @@ public class EncountersSectionEntriesOptionalImpl extends SectionImpl implements
 	 * @generated
 	 */
 	public EncountersSectionEntriesOptional init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public EncountersSectionEntriesOptional init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // EncountersSectionEntriesOptionalImpl

@@ -89,9 +89,9 @@ public interface HospitalConsultationsSection extends Section {
 	public HospitalConsultationsSection init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public HospitalConsultationsSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // HospitalConsultationsSection

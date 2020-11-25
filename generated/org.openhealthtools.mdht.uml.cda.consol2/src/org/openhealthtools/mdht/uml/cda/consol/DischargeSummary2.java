@@ -903,9 +903,9 @@ public interface DischargeSummary2 extends USRealmHeader2 {
 	public DischargeSummary2 init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public DischargeSummary2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // DischargeSummary2

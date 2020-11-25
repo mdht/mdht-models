@@ -53,8 +53,7 @@ public class AssessmentAndPlanSection2Impl extends AssessmentAndPlanSectionImpl 
 	 */
 	public boolean validateAssessmentAndPlanSection2TemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AssessmentAndPlanSection2Operations.validateAssessmentAndPlanSection2TemplateId(
-			this, diagnostics, context);
+		return AssessmentAndPlanSection2Operations.validateAssessmentAndPlanSection2TemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -94,8 +93,7 @@ public class AssessmentAndPlanSection2Impl extends AssessmentAndPlanSectionImpl 
 	@Override
 	public boolean validateAssessmentAndPlanSectionPlanOfCareActivityAct(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AssessmentAndPlanSection2Operations.validateAssessmentAndPlanSectionPlanOfCareActivityAct(
-			this, diagnostics, context);
+		return AssessmentAndPlanSection2Operations.validateAssessmentAndPlanSectionPlanOfCareActivityAct(this, diagnostics, context);
 	}
 
 	/**
@@ -105,17 +103,17 @@ public class AssessmentAndPlanSection2Impl extends AssessmentAndPlanSectionImpl 
 	 */
 	@Override
 	public AssessmentAndPlanSection2 init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public AssessmentAndPlanSection2 init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // AssessmentAndPlanSection2Impl

@@ -80,7 +80,7 @@ public class HistoryOfPastIllnessSection2Operations extends HistoryOfPastIllness
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_HISTORY_OF_PAST_ILLNESS_SECTION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<  Constraint> VALIDATE_HISTORY_OF_PAST_ILLNESS_SECTION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -96,35 +96,44 @@ public class HistoryOfPastIllnessSection2Operations extends HistoryOfPastIllness
 	public static boolean validateHistoryOfPastIllnessSection2TemplateId(
 			HistoryOfPastIllnessSection2 historyOfPastIllnessSection2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		DatatypesUtil.increment(context, "HistoryOfPastIllnessSection2HistoryOfPastIllnessSection2TemplateId", "ERROR");
-
+	
+	
+	
+  	  
+  	  
+  	  
+  	  
+  	 
+  	 
+  	 
+    DatatypesUtil.increment(context,"HistoryOfPastIllnessSection2HistoryOfPastIllnessSection2TemplateId","ERROR");
+    
+  	  
+  	  
 		if (VALIDATE_HISTORY_OF_PAST_ILLNESS_SECTION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-
+		
+	 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.HISTORY_OF_PAST_ILLNESS_SECTION2);
 			try {
-				VALIDATE_HISTORY_OF_PAST_ILLNESS_SECTION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
-					helper.createInvariant(
-						VALIDATE_HISTORY_OF_PAST_ILLNESS_SECTION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			} catch (ParserException pe) {
+				VALIDATE_HISTORY_OF_PAST_ILLNESS_SECTION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_HISTORY_OF_PAST_ILLNESS_SECTION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-
-		if (!EOCL_ENV.get().createQuery(
-			VALIDATE_HISTORY_OF_PAST_ILLNESS_SECTION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
-				historyOfPastIllnessSection2)) {
-			if (diagnostics != null) {
-				diagnostics.add(
-					new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.HISTORY_OF_PAST_ILLNESS_SECTION2__HISTORY_OF_PAST_ILLNESS_SECTION2_TEMPLATE_ID,
-						ConsolPlugin.INSTANCE.getString(
-							"HistoryOfPastIllnessSection2HistoryOfPastIllnessSection2TemplateId"),
-						new Object[] { historyOfPastIllnessSection2 }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_HISTORY_OF_PAST_ILLNESS_SECTION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(historyOfPastIllnessSection2)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.HISTORY_OF_PAST_ILLNESS_SECTION2__HISTORY_OF_PAST_ILLNESS_SECTION2_TEMPLATE_ID,
+						 ConsolPlugin.INSTANCE.getString("HistoryOfPastIllnessSection2HistoryOfPastIllnessSection2TemplateId"),
+						 new Object [] { historyOfPastIllnessSection2 }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -158,25 +167,25 @@ public class HistoryOfPastIllnessSection2Operations extends HistoryOfPastIllness
 
 	public static EList<ProblemObservation2> getConsolProblemObservation2s(
 			HistoryOfPastIllnessSection2 historyOfPastIllnessSection2) {
-
+	
+	
+	
 		if (GET_CONSOL_PROBLEM_OBSERVATION2S__EOCL_QRY == null) {
-
+		
+	 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.HISTORY_OF_PAST_ILLNESS_SECTION2,
-				ConsolPackage.Literals.HISTORY_OF_PAST_ILLNESS_SECTION2.getEAllOperations().get(63));
+			helper.setOperationContext(ConsolPackage.Literals.HISTORY_OF_PAST_ILLNESS_SECTION2, ConsolPackage.Literals.HISTORY_OF_PAST_ILLNESS_SECTION2.getEAllOperations().get(63));
 			try {
-				GET_CONSOL_PROBLEM_OBSERVATION2S__EOCL_QRY = helper.createQuery(
-					GET_CONSOL_PROBLEM_OBSERVATION2S__EOCL_EXP);
-			} catch (ParserException pe) {
+				GET_CONSOL_PROBLEM_OBSERVATION2S__EOCL_QRY = helper.createQuery(GET_CONSOL_PROBLEM_OBSERVATION2S__EOCL_EXP);
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-
+			}
+		 
 		OCL.Query query = EOCL_ENV.get().createQuery(GET_CONSOL_PROBLEM_OBSERVATION2S__EOCL_QRY);
 		@SuppressWarnings("unchecked")
-		Collection<ProblemObservation2> result = (Collection<ProblemObservation2>) query.evaluate(
-			historyOfPastIllnessSection2);
+		Collection<ProblemObservation2> result = (Collection<ProblemObservation2>) query.evaluate(historyOfPastIllnessSection2);
 		return new BasicEList.UnmodifiableEList<ProblemObservation2>(result.size(), result.toArray());
 	}
 
@@ -199,7 +208,7 @@ public class HistoryOfPastIllnessSection2Operations extends HistoryOfPastIllness
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_HISTORY_OF_PAST_ILLNESS_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<  Constraint> VALIDATE_HISTORY_OF_PAST_ILLNESS_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -215,39 +224,48 @@ public class HistoryOfPastIllnessSection2Operations extends HistoryOfPastIllness
 	public static boolean validateHistoryOfPastIllnessSectionCodeP(
 			HistoryOfPastIllnessSection2 historyOfPastIllnessSection2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		DatatypesUtil.increment(context, "HistoryOfPastIllnessSection2HistoryOfPastIllnessSectionCodeP", "ERROR");
-
+	
+	
+	
+  	  
+  	  
+  	  
+  	  
+  	 
+  	 
+  	 
+    DatatypesUtil.increment(context,"HistoryOfPastIllnessSection2HistoryOfPastIllnessSectionCodeP","ERROR");
+    
+  	  
+  	  
 		if (VALIDATE_HISTORY_OF_PAST_ILLNESS_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-
+		
+	 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.HISTORY_OF_PAST_ILLNESS_SECTION2);
 			try {
-				VALIDATE_HISTORY_OF_PAST_ILLNESS_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
-					helper.createInvariant(
-						VALIDATE_HISTORY_OF_PAST_ILLNESS_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			} catch (ParserException pe) {
+				VALIDATE_HISTORY_OF_PAST_ILLNESS_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_HISTORY_OF_PAST_ILLNESS_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-
-		if (!EOCL_ENV.get().createQuery(
-			VALIDATE_HISTORY_OF_PAST_ILLNESS_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
-				historyOfPastIllnessSection2)) {
-			if (diagnostics != null) {
-				diagnostics.add(
-					new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.HISTORY_OF_PAST_ILLNESS_SECTION2__HISTORY_OF_PAST_ILLNESS_SECTION_CODE_P,
-						ConsolPlugin.INSTANCE.getString("HistoryOfPastIllnessSection2HistoryOfPastIllnessSectionCodeP"),
-						new Object[] { historyOfPastIllnessSection2 }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_HISTORY_OF_PAST_ILLNESS_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(historyOfPastIllnessSection2)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.HISTORY_OF_PAST_ILLNESS_SECTION2__HISTORY_OF_PAST_ILLNESS_SECTION_CODE_P,
+						 ConsolPlugin.INSTANCE.getString("HistoryOfPastIllnessSection2HistoryOfPastIllnessSectionCodeP"),
+						 new Object [] { historyOfPastIllnessSection2 }));
+			}
+			
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
-				Collection<Object> passToken = (Collection<Object>) context.get(
-					"org.openhealthtools.mdht.uml.cda.consol.HistoryOfPastIllnessSectionCodeP");
+				Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.consol.HistoryOfPastIllnessSectionCodeP");
 				if (passToken == null) {
 					// anticipate a reasonably healthy model
 					passToken = new java.util.ArrayList<Object>(3);
@@ -255,7 +273,7 @@ public class HistoryOfPastIllnessSection2Operations extends HistoryOfPastIllness
 				}
 				passToken.add(historyOfPastIllnessSection2);
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -269,9 +287,9 @@ public class HistoryOfPastIllnessSection2Operations extends HistoryOfPastIllness
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_HISTORY_OF_PAST_ILLNESS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and " +
-			"let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in " +
-			"value.code = '11348-0' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_HISTORY_OF_PAST_ILLNESS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "+
+"let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "+
+"value.code = '11348-0' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateHistoryOfPastIllnessSectionCode(HistoryOfPastIllnessSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History Of Past Illness Section Code</em>}' invariant operation.
@@ -282,7 +300,7 @@ public class HistoryOfPastIllnessSection2Operations extends HistoryOfPastIllness
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_HISTORY_OF_PAST_ILLNESS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<  Constraint> VALIDATE_HISTORY_OF_PAST_ILLNESS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -298,43 +316,50 @@ public class HistoryOfPastIllnessSection2Operations extends HistoryOfPastIllness
 	public static boolean validateHistoryOfPastIllnessSectionCode(
 			HistoryOfPastIllnessSection2 historyOfPastIllnessSection2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		Object passToken = (context == null)
-				? null
-				: context.get("org.openhealthtools.mdht.uml.cda.consol.HistoryOfPastIllnessSectionCodeP");
-		if ((passToken instanceof Collection<?>) &&
-				((Collection<?>) passToken).contains(historyOfPastIllnessSection2)) {
+	
+	
+	
+  	  
+		Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.consol.HistoryOfPastIllnessSectionCodeP");
+		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(historyOfPastIllnessSection2)) {
 			// I have a free pass to short-circuit
 			return true;
 		}
-
-		DatatypesUtil.increment(context, "HistoryOfPastIllnessSection2HistoryOfPastIllnessSectionCode", "ERROR");
-
+  	  
+  	  
+  	  
+  	  
+  	 
+  	 
+  	 
+    DatatypesUtil.increment(context,"HistoryOfPastIllnessSection2HistoryOfPastIllnessSectionCode","ERROR");
+    
+  	  
+  	  
 		if (VALIDATE_HISTORY_OF_PAST_ILLNESS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-
+		
+	 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.HISTORY_OF_PAST_ILLNESS_SECTION2);
 			try {
-				VALIDATE_HISTORY_OF_PAST_ILLNESS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
-					helper.createInvariant(
-						VALIDATE_HISTORY_OF_PAST_ILLNESS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			} catch (ParserException pe) {
+				VALIDATE_HISTORY_OF_PAST_ILLNESS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_HISTORY_OF_PAST_ILLNESS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-
-		if (!EOCL_ENV.get().createQuery(
-			VALIDATE_HISTORY_OF_PAST_ILLNESS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
-				historyOfPastIllnessSection2)) {
-			if (diagnostics != null) {
-				diagnostics.add(
-					new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.HISTORY_OF_PAST_ILLNESS_SECTION2__HISTORY_OF_PAST_ILLNESS_SECTION_CODE,
-						ConsolPlugin.INSTANCE.getString("HistoryOfPastIllnessSection2HistoryOfPastIllnessSectionCode"),
-						new Object[] { historyOfPastIllnessSection2 }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_HISTORY_OF_PAST_ILLNESS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(historyOfPastIllnessSection2)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.HISTORY_OF_PAST_ILLNESS_SECTION2__HISTORY_OF_PAST_ILLNESS_SECTION_CODE,
+						 ConsolPlugin.INSTANCE.getString("HistoryOfPastIllnessSection2HistoryOfPastIllnessSectionCode"),
+						 new Object [] { historyOfPastIllnessSection2 }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -359,7 +384,7 @@ public class HistoryOfPastIllnessSection2Operations extends HistoryOfPastIllness
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_HISTORY_OF_PAST_ILLNESS_SECTION_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<  Constraint> VALIDATE_HISTORY_OF_PAST_ILLNESS_SECTION_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -375,36 +400,44 @@ public class HistoryOfPastIllnessSection2Operations extends HistoryOfPastIllness
 	public static boolean validateHistoryOfPastIllnessSectionProblemObservation(
 			HistoryOfPastIllnessSection2 historyOfPastIllnessSection2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		DatatypesUtil.increment(
-			context, "HistoryOfPastIllnessSection2HistoryOfPastIllnessSectionProblemObservation", "INFO");
-
+	
+	
+	
+  	  
+  	  
+  	  
+  	  
+  	 
+  	 
+  	 
+    DatatypesUtil.increment(context,"HistoryOfPastIllnessSection2HistoryOfPastIllnessSectionProblemObservation","INFO");
+    
+  	  
+  	  
 		if (VALIDATE_HISTORY_OF_PAST_ILLNESS_SECTION_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-
+		
+	 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.HISTORY_OF_PAST_ILLNESS_SECTION2);
 			try {
-				VALIDATE_HISTORY_OF_PAST_ILLNESS_SECTION_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
-					helper.createInvariant(
-						VALIDATE_HISTORY_OF_PAST_ILLNESS_SECTION_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			} catch (ParserException pe) {
+				VALIDATE_HISTORY_OF_PAST_ILLNESS_SECTION_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_HISTORY_OF_PAST_ILLNESS_SECTION_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-
-		if (!EOCL_ENV.get().createQuery(
-			VALIDATE_HISTORY_OF_PAST_ILLNESS_SECTION_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
-				historyOfPastIllnessSection2)) {
-			if (diagnostics != null) {
-				diagnostics.add(
-					new BasicDiagnostic(
-						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.HISTORY_OF_PAST_ILLNESS_SECTION2__HISTORY_OF_PAST_ILLNESS_SECTION_PROBLEM_OBSERVATION,
-						ConsolPlugin.INSTANCE.getString(
-							"HistoryOfPastIllnessSection2HistoryOfPastIllnessSectionProblemObservation"),
-						new Object[] { historyOfPastIllnessSection2 }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_HISTORY_OF_PAST_ILLNESS_SECTION_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(historyOfPastIllnessSection2)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.HISTORY_OF_PAST_ILLNESS_SECTION2__HISTORY_OF_PAST_ILLNESS_SECTION_PROBLEM_OBSERVATION,
+						 ConsolPlugin.INSTANCE.getString("HistoryOfPastIllnessSection2HistoryOfPastIllnessSectionProblemObservation"),
+						 new Object [] { historyOfPastIllnessSection2 }));
+			}
+			 
 			return false;
 		}
 		return true;
