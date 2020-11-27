@@ -41,9 +41,9 @@ public interface ProblemStatus2 extends ProblemStatus {
 	public ProblemStatus2 init();
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public ProblemStatus2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ProblemStatus2

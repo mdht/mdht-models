@@ -173,9 +173,9 @@ public interface CareTeamMemberScheduleObservation extends Observation {
 	public CareTeamMemberScheduleObservation init();
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public CareTeamMemberScheduleObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // CareTeamMemberScheduleObservation

@@ -67,10 +67,10 @@ public interface DischargeMedicationsSectionEntriesOptional2
 	public DischargeMedicationsSectionEntriesOptional2 init();
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public DischargeMedicationsSectionEntriesOptional2 init(
 			Iterable<? extends Initializer<? extends EObject>> initializers);
 } // DischargeMedicationsSectionEntriesOptional2

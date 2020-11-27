@@ -56,7 +56,8 @@ public class ProblemObservation2Impl extends ProblemObservationImpl implements P
 	 */
 	public boolean validateProblemObservationValueNullFlavorUnknown(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProblemObservation2Operations.validateProblemObservationValueNullFlavorUnknown(this, diagnostics, context);
+		return ProblemObservation2Operations.validateProblemObservationValueNullFlavorUnknown(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -66,7 +67,8 @@ public class ProblemObservation2Impl extends ProblemObservationImpl implements P
 	 */
 	public boolean validateProblemObservation2IfSnomedRequireTranslation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProblemObservation2Operations.validateProblemObservation2IfSnomedRequireTranslation(this, diagnostics, context);
+		return ProblemObservation2Operations.validateProblemObservation2IfSnomedRequireTranslation(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -76,7 +78,8 @@ public class ProblemObservation2Impl extends ProblemObservationImpl implements P
 	 */
 	public boolean validateProblemObservation2IfSnomedRequireTranslationFromLoinc(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProblemObservation2Operations.validateProblemObservation2IfSnomedRequireTranslationFromLoinc(this, diagnostics, context);
+		return ProblemObservation2Operations.validateProblemObservation2IfSnomedRequireTranslationFromLoinc(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -104,7 +107,8 @@ public class ProblemObservation2Impl extends ProblemObservationImpl implements P
 	 */
 	public boolean validateProblemObservation2PrognosisObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProblemObservation2Operations.validateProblemObservation2PrognosisObservation(this, diagnostics, context);
+		return ProblemObservation2Operations.validateProblemObservation2PrognosisObservation(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -231,7 +235,8 @@ public class ProblemObservation2Impl extends ProblemObservationImpl implements P
 	@Override
 	public boolean validateProblemObservationHasTextReferenceValue(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProblemObservation2Operations.validateProblemObservationHasTextReferenceValue(this, diagnostics, context);
+		return ProblemObservation2Operations.validateProblemObservationHasTextReferenceValue(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -353,7 +358,8 @@ public class ProblemObservation2Impl extends ProblemObservationImpl implements P
 	@Override
 	public boolean validateProblemObservationHealthStatusObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProblemObservation2Operations.validateProblemObservationHealthStatusObservation(this, diagnostics, context);
+		return ProblemObservation2Operations.validateProblemObservationHealthStatusObservation(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -373,17 +379,17 @@ public class ProblemObservation2Impl extends ProblemObservationImpl implements P
 	 */
 	@Override
 	public ProblemObservation2 init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public ProblemObservation2 init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // ProblemObservation2Impl

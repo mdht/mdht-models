@@ -49,7 +49,8 @@ public class AdmissionDiagnosisSection2Impl extends HospitalAdmissionDiagnosisSe
 	 */
 	public boolean validateAdmissionDiagnosisSection2TemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AdmissionDiagnosisSection2Operations.validateAdmissionDiagnosisSection2TemplateId(this, diagnostics, context);
+		return AdmissionDiagnosisSection2Operations.validateAdmissionDiagnosisSection2TemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -59,7 +60,8 @@ public class AdmissionDiagnosisSection2Impl extends HospitalAdmissionDiagnosisSe
 	 */
 	public boolean validateAdmissionDiagnosisSection2CETranslation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AdmissionDiagnosisSection2Operations.validateAdmissionDiagnosisSection2CETranslation(this, diagnostics, context);
+		return AdmissionDiagnosisSection2Operations.validateAdmissionDiagnosisSection2CETranslation(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -69,7 +71,8 @@ public class AdmissionDiagnosisSection2Impl extends HospitalAdmissionDiagnosisSe
 	 */
 	public boolean validateAdmissionDiagnosisSection2CETranslationP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AdmissionDiagnosisSection2Operations.validateAdmissionDiagnosisSection2CETranslationP(this, diagnostics, context);
+		return AdmissionDiagnosisSection2Operations.validateAdmissionDiagnosisSection2CETranslationP(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -89,7 +92,8 @@ public class AdmissionDiagnosisSection2Impl extends HospitalAdmissionDiagnosisSe
 	@Override
 	public boolean validateHospitalAdmissionDiagnosisSectionCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AdmissionDiagnosisSection2Operations.validateHospitalAdmissionDiagnosisSectionCodeP(this, diagnostics, context);
+		return AdmissionDiagnosisSection2Operations.validateHospitalAdmissionDiagnosisSectionCodeP(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -100,7 +104,8 @@ public class AdmissionDiagnosisSection2Impl extends HospitalAdmissionDiagnosisSe
 	@Override
 	public boolean validateHospitalAdmissionDiagnosisSectionCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AdmissionDiagnosisSection2Operations.validateHospitalAdmissionDiagnosisSectionCode(this, diagnostics, context);
+		return AdmissionDiagnosisSection2Operations.validateHospitalAdmissionDiagnosisSectionCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -111,7 +116,8 @@ public class AdmissionDiagnosisSection2Impl extends HospitalAdmissionDiagnosisSe
 	@Override
 	public boolean validateHospitalAdmissionDiagnosisSectionHospitalAdmissionDiagnosis(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AdmissionDiagnosisSection2Operations.validateHospitalAdmissionDiagnosisSectionHospitalAdmissionDiagnosis(this, diagnostics, context);
+		return AdmissionDiagnosisSection2Operations.validateHospitalAdmissionDiagnosisSectionHospitalAdmissionDiagnosis(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -121,17 +127,17 @@ public class AdmissionDiagnosisSection2Impl extends HospitalAdmissionDiagnosisSe
 	 */
 	@Override
 	public AdmissionDiagnosisSection2 init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public AdmissionDiagnosisSection2 init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // AdmissionDiagnosisSection2Impl

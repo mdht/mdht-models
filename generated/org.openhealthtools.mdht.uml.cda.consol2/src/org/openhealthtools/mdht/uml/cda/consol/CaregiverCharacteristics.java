@@ -228,9 +228,9 @@ public interface CaregiverCharacteristics extends Observation {
 	public CaregiverCharacteristics init();
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public CaregiverCharacteristics init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // CaregiverCharacteristics

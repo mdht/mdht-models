@@ -88,9 +88,9 @@ public interface MedicationDispense2 extends MedicationDispense {
 	public MedicationDispense2 init();
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public MedicationDispense2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // MedicationDispense2

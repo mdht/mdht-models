@@ -305,9 +305,9 @@ public interface GoalObservation extends Observation {
 	public GoalObservation init();
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public GoalObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // GoalObservation

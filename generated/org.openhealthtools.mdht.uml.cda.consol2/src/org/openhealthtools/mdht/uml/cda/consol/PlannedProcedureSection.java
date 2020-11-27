@@ -112,9 +112,9 @@ public interface PlannedProcedureSection extends Section {
 	public PlannedProcedureSection init();
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public PlannedProcedureSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // PlannedProcedureSection

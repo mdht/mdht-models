@@ -56,7 +56,8 @@ public class PlanOfCareActivitySupplyImpl extends SupplyImpl implements PlanOfCa
 	 */
 	public boolean validatePlanOfCareActivitySupplyTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PlanOfCareActivitySupplyOperations.validatePlanOfCareActivitySupplyTemplateId(this, diagnostics, context);
+		return PlanOfCareActivitySupplyOperations.validatePlanOfCareActivitySupplyTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -92,16 +93,16 @@ public class PlanOfCareActivitySupplyImpl extends SupplyImpl implements PlanOfCa
 	 * @generated
 	 */
 	public PlanOfCareActivitySupply init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public PlanOfCareActivitySupply init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // PlanOfCareActivitySupplyImpl

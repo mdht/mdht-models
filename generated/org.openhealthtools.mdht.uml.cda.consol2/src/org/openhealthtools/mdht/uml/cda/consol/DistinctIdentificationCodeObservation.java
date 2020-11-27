@@ -31,7 +31,8 @@ public interface DistinctIdentificationCodeObservation extends Observation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId-&gt;exists(id : datatypes::II | id.root = \'2.16.840.1.113883.10.20.22.4.308\' and id.extension = \'2019-06-21\')'"
 	 * @generated
 	 */
-	boolean validateDistinctIdentificationCodeObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateDistinctIdentificationCodeObservationTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -43,7 +44,8 @@ public interface DistinctIdentificationCodeObservation extends Observation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())'"
 	 * @generated
 	 */
-	boolean validateDistinctIdentificationCodeObservationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateDistinctIdentificationCodeObservationCodeP(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -67,7 +69,8 @@ public interface DistinctIdentificationCodeObservation extends Observation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.value-&gt;isEmpty() or self.value-&gt;exists(element | element.isNullFlavorUndefined())) implies (self.value-&gt;size() =  1 and self.value-&gt;forAll(element | element.oclIsTypeOf(datatypes::ED)))'"
 	 * @generated
 	 */
-	boolean validateDistinctIdentificationCodeObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateDistinctIdentificationCodeObservationValue(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -77,10 +80,10 @@ public interface DistinctIdentificationCodeObservation extends Observation {
 	public DistinctIdentificationCodeObservation init();
 
 	/**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public DistinctIdentificationCodeObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public DistinctIdentificationCodeObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
 
 } // DistinctIdentificationCodeObservation

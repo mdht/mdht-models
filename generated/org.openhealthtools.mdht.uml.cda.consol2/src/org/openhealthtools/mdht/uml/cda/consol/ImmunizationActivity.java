@@ -17,15 +17,15 @@ import org.eclipse.mdht.uml.cda.SubstanceAdministration;
  *
  * <!-- begin-model-doc -->
  * <p>An Immunization Activity describes immunization substance administrations that have actually occurred or are intended to occur. Immunization Activities in "INT" mood are reflections of immunizations a clinician intends a patient to receive. Immunization Activities in "EVN" mood reflect immunizations actually received.</p>
- * 
+ *
  * <p>An Immunization Activity is very similar to a Medication Activity with some key differentiators. The drug code system is constrained to CVX codes. Administration timing is less complex. Patient refusal reasons should be captured. All vaccines administered should be fully documented in the patient's permanent medical record. Healthcare providers who administer vaccines covered by the National Childhood Vaccine Injury Act are required to ensure that the permanent medical record of the recipient indicates: </p>
- * 
+ *
  * <ol>
  * <li>Date of administration </li>
  * <li>Vaccine manufacturer </li>
  * <li>Vaccine lot number </li>
  * <li>Name and title of the person who administered the vaccine and the address of the clinic or facility where the permanent record will reside </li>
- * <li>Vaccine information statement (VIS) 
+ * <li>Vaccine information statement (VIS)
  * <ol>
  * <li>date printed on the VIS</li>
  * <li>date VIS given to patient or parent/guardian.</li>
@@ -550,9 +550,9 @@ public interface ImmunizationActivity extends SubstanceAdministration {
 	public ImmunizationActivity init();
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public ImmunizationActivity init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ImmunizationActivity

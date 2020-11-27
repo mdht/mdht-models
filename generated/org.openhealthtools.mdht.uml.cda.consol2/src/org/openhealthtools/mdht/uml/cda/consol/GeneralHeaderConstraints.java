@@ -17,7 +17,7 @@ import org.eclipse.mdht.uml.cda.ClinicalDocument;
  *
  * <!-- begin-model-doc -->
  * This section describes constraints that apply to the header for all documents within the scope of this implementation guide. Header constraints specific to each document type are described in the appropriate document-specific section below
- * 
+ *
  * Document Type Codes
  * CDA R2 states that LOINC is the preferred vocabulary for document type codes, which specify the type of document being exchanged (e.g., History and Physical). Each document type in this guide recommends a single preferred clinicalDocument/code, with further specification provided by author or performer, setting, or specialty
  * <!-- end-model-doc -->
@@ -3851,9 +3851,9 @@ public interface GeneralHeaderConstraints extends ClinicalDocument {
 	public GeneralHeaderConstraints init();
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public GeneralHeaderConstraints init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // GeneralHeaderConstraints

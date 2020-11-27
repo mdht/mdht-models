@@ -91,7 +91,8 @@ public class PostprocedureDiagnosis2Impl extends PostprocedureDiagnosisImpl impl
 	@Override
 	public boolean validatePostprocedureDiagnosisProblemObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PostprocedureDiagnosis2Operations.validatePostprocedureDiagnosisProblemObservation(this, diagnostics, context);
+		return PostprocedureDiagnosis2Operations.validatePostprocedureDiagnosisProblemObservation(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -101,17 +102,17 @@ public class PostprocedureDiagnosis2Impl extends PostprocedureDiagnosisImpl impl
 	 */
 	@Override
 	public PostprocedureDiagnosis2 init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public PostprocedureDiagnosis2 init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // PostprocedureDiagnosis2Impl

@@ -91,7 +91,8 @@ public class ContinuityOfCareDocument2Impl extends USRealmHeader2Impl implements
 	 */
 	public boolean validateContinuityOfCareDocument2DocumentationOf(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ContinuityOfCareDocument2Operations.validateContinuityOfCareDocument2DocumentationOf(this, diagnostics, context);
+		return ContinuityOfCareDocument2Operations.validateContinuityOfCareDocument2DocumentationOf(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -101,7 +102,8 @@ public class ContinuityOfCareDocument2Impl extends USRealmHeader2Impl implements
 	 */
 	public boolean validateContinuityOfCareDocument2AllergiesSection2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ContinuityOfCareDocument2Operations.validateContinuityOfCareDocument2AllergiesSection2(this, diagnostics, context);
+		return ContinuityOfCareDocument2Operations.validateContinuityOfCareDocument2AllergiesSection2(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -111,7 +113,8 @@ public class ContinuityOfCareDocument2Impl extends USRealmHeader2Impl implements
 	 */
 	public boolean validateContinuityOfCareDocument2MedicationsSection2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ContinuityOfCareDocument2Operations.validateContinuityOfCareDocument2MedicationsSection2(this, diagnostics, context);
+		return ContinuityOfCareDocument2Operations.validateContinuityOfCareDocument2MedicationsSection2(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -121,7 +124,8 @@ public class ContinuityOfCareDocument2Impl extends USRealmHeader2Impl implements
 	 */
 	public boolean validateContinuityOfCareDocument2ProblemSection2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ContinuityOfCareDocument2Operations.validateContinuityOfCareDocument2ProblemSection2(this, diagnostics, context);
+		return ContinuityOfCareDocument2Operations.validateContinuityOfCareDocument2ProblemSection2(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -131,7 +135,8 @@ public class ContinuityOfCareDocument2Impl extends USRealmHeader2Impl implements
 	 */
 	public boolean validateContinuityOfCareDocument2ProceduresSection2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ContinuityOfCareDocument2Operations.validateContinuityOfCareDocument2ProceduresSection2(this, diagnostics, context);
+		return ContinuityOfCareDocument2Operations.validateContinuityOfCareDocument2ProceduresSection2(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -141,7 +146,8 @@ public class ContinuityOfCareDocument2Impl extends USRealmHeader2Impl implements
 	 */
 	public boolean validateContinuityOfCareDocument2ResultsSection2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ContinuityOfCareDocument2Operations.validateContinuityOfCareDocument2ResultsSection2(this, diagnostics, context);
+		return ContinuityOfCareDocument2Operations.validateContinuityOfCareDocument2ResultsSection2(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -151,7 +157,8 @@ public class ContinuityOfCareDocument2Impl extends USRealmHeader2Impl implements
 	 */
 	public boolean validateContinuityOfCareDocument2AdvanceDirectivesSectionEntriesOptional2(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ContinuityOfCareDocument2Operations.validateContinuityOfCareDocument2AdvanceDirectivesSectionEntriesOptional2(this, diagnostics, context);
+		return ContinuityOfCareDocument2Operations.validateContinuityOfCareDocument2AdvanceDirectivesSectionEntriesOptional2(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -161,7 +168,8 @@ public class ContinuityOfCareDocument2Impl extends USRealmHeader2Impl implements
 	 */
 	public boolean validateContinuityOfCareDocument2EncountersSectionEntriesOptional2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ContinuityOfCareDocument2Operations.validateContinuityOfCareDocument2EncountersSectionEntriesOptional2(this, diagnostics, context);
+		return ContinuityOfCareDocument2Operations.validateContinuityOfCareDocument2EncountersSectionEntriesOptional2(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -171,7 +179,8 @@ public class ContinuityOfCareDocument2Impl extends USRealmHeader2Impl implements
 	 */
 	public boolean validateContinuityOfCareDocument2FunctionalStatusSection2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ContinuityOfCareDocument2Operations.validateContinuityOfCareDocument2FunctionalStatusSection2(this, diagnostics, context);
+		return ContinuityOfCareDocument2Operations.validateContinuityOfCareDocument2FunctionalStatusSection2(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -181,7 +190,8 @@ public class ContinuityOfCareDocument2Impl extends USRealmHeader2Impl implements
 	 */
 	public boolean validateContinuityOfCareDocument2ImmunizationsSection2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ContinuityOfCareDocument2Operations.validateContinuityOfCareDocument2ImmunizationsSection2(this, diagnostics, context);
+		return ContinuityOfCareDocument2Operations.validateContinuityOfCareDocument2ImmunizationsSection2(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -191,7 +201,8 @@ public class ContinuityOfCareDocument2Impl extends USRealmHeader2Impl implements
 	 */
 	public boolean validateContinuityOfCareDocument2MedicalEquipmentSection2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ContinuityOfCareDocument2Operations.validateContinuityOfCareDocument2MedicalEquipmentSection2(this, diagnostics, context);
+		return ContinuityOfCareDocument2Operations.validateContinuityOfCareDocument2MedicalEquipmentSection2(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -201,7 +212,8 @@ public class ContinuityOfCareDocument2Impl extends USRealmHeader2Impl implements
 	 */
 	public boolean validateContinuityOfCareDocument2PayersSection2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ContinuityOfCareDocument2Operations.validateContinuityOfCareDocument2PayersSection2(this, diagnostics, context);
+		return ContinuityOfCareDocument2Operations.validateContinuityOfCareDocument2PayersSection2(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -211,7 +223,8 @@ public class ContinuityOfCareDocument2Impl extends USRealmHeader2Impl implements
 	 */
 	public boolean validateContinuityOfCareDocument2PlanOfTreatmentSection2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ContinuityOfCareDocument2Operations.validateContinuityOfCareDocument2PlanOfTreatmentSection2(this, diagnostics, context);
+		return ContinuityOfCareDocument2Operations.validateContinuityOfCareDocument2PlanOfTreatmentSection2(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -221,7 +234,8 @@ public class ContinuityOfCareDocument2Impl extends USRealmHeader2Impl implements
 	 */
 	public boolean validateContinuityOfCareDocument2SocialHistorySection2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ContinuityOfCareDocument2Operations.validateContinuityOfCareDocument2SocialHistorySection2(this, diagnostics, context);
+		return ContinuityOfCareDocument2Operations.validateContinuityOfCareDocument2SocialHistorySection2(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -231,7 +245,8 @@ public class ContinuityOfCareDocument2Impl extends USRealmHeader2Impl implements
 	 */
 	public boolean validateContinuityOfCareDocument2VitalSignsSection2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ContinuityOfCareDocument2Operations.validateContinuityOfCareDocument2VitalSignsSection2(this, diagnostics, context);
+		return ContinuityOfCareDocument2Operations.validateContinuityOfCareDocument2VitalSignsSection2(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -241,7 +256,8 @@ public class ContinuityOfCareDocument2Impl extends USRealmHeader2Impl implements
 	 */
 	public boolean validateContinuityOfCareDocument2MentalStatusSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ContinuityOfCareDocument2Operations.validateContinuityOfCareDocument2MentalStatusSection(this, diagnostics, context);
+		return ContinuityOfCareDocument2Operations.validateContinuityOfCareDocument2MentalStatusSection(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -251,7 +267,8 @@ public class ContinuityOfCareDocument2Impl extends USRealmHeader2Impl implements
 	 */
 	public boolean validateContinuityOfCareDocument2NutritionSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ContinuityOfCareDocument2Operations.validateContinuityOfCareDocument2NutritionSection(this, diagnostics, context);
+		return ContinuityOfCareDocument2Operations.validateContinuityOfCareDocument2NutritionSection(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -261,7 +278,8 @@ public class ContinuityOfCareDocument2Impl extends USRealmHeader2Impl implements
 	 */
 	public boolean validateContinuityOfCareDocument2FamilyHistorySection2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ContinuityOfCareDocument2Operations.validateContinuityOfCareDocument2FamilyHistorySection2(this, diagnostics, context);
+		return ContinuityOfCareDocument2Operations.validateContinuityOfCareDocument2FamilyHistorySection2(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -271,7 +289,8 @@ public class ContinuityOfCareDocument2Impl extends USRealmHeader2Impl implements
 	 */
 	public boolean validateContinuityOfCareDocument2AuthorAssignedAuthorHasAssignedPersonOrRepresentedOrganization(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ContinuityOfCareDocument2Operations.validateContinuityOfCareDocument2AuthorAssignedAuthorHasAssignedPersonOrRepresentedOrganization(this, diagnostics, context);
+		return ContinuityOfCareDocument2Operations.validateContinuityOfCareDocument2AuthorAssignedAuthorHasAssignedPersonOrRepresentedOrganization(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -281,7 +300,8 @@ public class ContinuityOfCareDocument2Impl extends USRealmHeader2Impl implements
 	 */
 	public boolean validateContinuityOfCareDocument2AuthorAssignedAuthorHasRepresentOrganization(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ContinuityOfCareDocument2Operations.validateContinuityOfCareDocument2AuthorAssignedAuthorHasRepresentOrganization(this, diagnostics, context);
+		return ContinuityOfCareDocument2Operations.validateContinuityOfCareDocument2AuthorAssignedAuthorHasRepresentOrganization(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -291,7 +311,8 @@ public class ContinuityOfCareDocument2Impl extends USRealmHeader2Impl implements
 	 */
 	public boolean validateContinuityOfCareDocument2AuthorAssignedAuthor(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ContinuityOfCareDocument2Operations.validateContinuityOfCareDocument2AuthorAssignedAuthor(this, diagnostics, context);
+		return ContinuityOfCareDocument2Operations.validateContinuityOfCareDocument2AuthorAssignedAuthor(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -301,7 +322,8 @@ public class ContinuityOfCareDocument2Impl extends USRealmHeader2Impl implements
 	 */
 	public boolean validateContinuityOfCareDocument2DocumentationOfServiceEventIVLTSLow(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ContinuityOfCareDocument2Operations.validateContinuityOfCareDocument2DocumentationOfServiceEventIVLTSLow(this, diagnostics, context);
+		return ContinuityOfCareDocument2Operations.validateContinuityOfCareDocument2DocumentationOfServiceEventIVLTSLow(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -311,7 +333,8 @@ public class ContinuityOfCareDocument2Impl extends USRealmHeader2Impl implements
 	 */
 	public boolean validateContinuityOfCareDocument2DocumentationOfServiceEventIVLTSHigh(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ContinuityOfCareDocument2Operations.validateContinuityOfCareDocument2DocumentationOfServiceEventIVLTSHigh(this, diagnostics, context);
+		return ContinuityOfCareDocument2Operations.validateContinuityOfCareDocument2DocumentationOfServiceEventIVLTSHigh(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -321,7 +344,8 @@ public class ContinuityOfCareDocument2Impl extends USRealmHeader2Impl implements
 	 */
 	public boolean validateContinuityOfCareDocument2DocumentationOfServiceEventPerformerAssignedEntityHasNationalProviderIdentifier(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ContinuityOfCareDocument2Operations.validateContinuityOfCareDocument2DocumentationOfServiceEventPerformerAssignedEntityHasNationalProviderIdentifier(this, diagnostics, context);
+		return ContinuityOfCareDocument2Operations.validateContinuityOfCareDocument2DocumentationOfServiceEventPerformerAssignedEntityHasNationalProviderIdentifier(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -331,7 +355,8 @@ public class ContinuityOfCareDocument2Impl extends USRealmHeader2Impl implements
 	 */
 	public boolean validateContinuityOfCareDocument2DocumentationOfServiceEventPerformerAssignedEntityId(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ContinuityOfCareDocument2Operations.validateContinuityOfCareDocument2DocumentationOfServiceEventPerformerAssignedEntityId(this, diagnostics, context);
+		return ContinuityOfCareDocument2Operations.validateContinuityOfCareDocument2DocumentationOfServiceEventPerformerAssignedEntityId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -341,7 +366,8 @@ public class ContinuityOfCareDocument2Impl extends USRealmHeader2Impl implements
 	 */
 	public boolean validateContinuityOfCareDocument2DocumentationOfServiceEventPerformerAssignedEntityAssignedPerson(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ContinuityOfCareDocument2Operations.validateContinuityOfCareDocument2DocumentationOfServiceEventPerformerAssignedEntityAssignedPerson(this, diagnostics, context);
+		return ContinuityOfCareDocument2Operations.validateContinuityOfCareDocument2DocumentationOfServiceEventPerformerAssignedEntityAssignedPerson(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -351,7 +377,8 @@ public class ContinuityOfCareDocument2Impl extends USRealmHeader2Impl implements
 	 */
 	public boolean validateContinuityOfCareDocument2DocumentationOfServiceEventPerformerTypeCode(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ContinuityOfCareDocument2Operations.validateContinuityOfCareDocument2DocumentationOfServiceEventPerformerTypeCode(this, diagnostics, context);
+		return ContinuityOfCareDocument2Operations.validateContinuityOfCareDocument2DocumentationOfServiceEventPerformerTypeCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -361,7 +388,8 @@ public class ContinuityOfCareDocument2Impl extends USRealmHeader2Impl implements
 	 */
 	public boolean validateContinuityOfCareDocument2DocumentationOfServiceEventPerformerAssignedEntity(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ContinuityOfCareDocument2Operations.validateContinuityOfCareDocument2DocumentationOfServiceEventPerformerAssignedEntity(this, diagnostics, context);
+		return ContinuityOfCareDocument2Operations.validateContinuityOfCareDocument2DocumentationOfServiceEventPerformerAssignedEntity(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -371,7 +399,8 @@ public class ContinuityOfCareDocument2Impl extends USRealmHeader2Impl implements
 	 */
 	public boolean validateContinuityOfCareDocument2DocumentationOfServiceEventClassCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ContinuityOfCareDocument2Operations.validateContinuityOfCareDocument2DocumentationOfServiceEventClassCode(this, diagnostics, context);
+		return ContinuityOfCareDocument2Operations.validateContinuityOfCareDocument2DocumentationOfServiceEventClassCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -381,7 +410,8 @@ public class ContinuityOfCareDocument2Impl extends USRealmHeader2Impl implements
 	 */
 	public boolean validateContinuityOfCareDocument2DocumentationOfServiceEventEffectiveTime(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ContinuityOfCareDocument2Operations.validateContinuityOfCareDocument2DocumentationOfServiceEventEffectiveTime(this, diagnostics, context);
+		return ContinuityOfCareDocument2Operations.validateContinuityOfCareDocument2DocumentationOfServiceEventEffectiveTime(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -391,7 +421,8 @@ public class ContinuityOfCareDocument2Impl extends USRealmHeader2Impl implements
 	 */
 	public boolean validateContinuityOfCareDocument2DocumentationOfServiceEventPerformer(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ContinuityOfCareDocument2Operations.validateContinuityOfCareDocument2DocumentationOfServiceEventPerformer(this, diagnostics, context);
+		return ContinuityOfCareDocument2Operations.validateContinuityOfCareDocument2DocumentationOfServiceEventPerformer(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -401,7 +432,8 @@ public class ContinuityOfCareDocument2Impl extends USRealmHeader2Impl implements
 	 */
 	public boolean validateContinuityOfCareDocument2DocumentationOfServiceEvent(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ContinuityOfCareDocument2Operations.validateContinuityOfCareDocument2DocumentationOfServiceEvent(this, diagnostics, context);
+		return ContinuityOfCareDocument2Operations.validateContinuityOfCareDocument2DocumentationOfServiceEvent(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -574,17 +606,17 @@ public class ContinuityOfCareDocument2Impl extends USRealmHeader2Impl implements
 	 */
 	@Override
 	public ContinuityOfCareDocument2 init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public ContinuityOfCareDocument2 init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // ContinuityOfCareDocument2Impl

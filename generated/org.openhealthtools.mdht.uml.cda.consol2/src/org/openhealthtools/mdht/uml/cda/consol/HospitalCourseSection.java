@@ -93,9 +93,9 @@ public interface HospitalCourseSection extends Section {
 	public HospitalCourseSection init();
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public HospitalCourseSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // HospitalCourseSection

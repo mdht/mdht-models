@@ -159,7 +159,8 @@ public class TextObservationImpl extends ObservationImpl implements TextObservat
 	 */
 	public boolean validateTextObservationQuantityMeasurementObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return TextObservationOperations.validateTextObservationQuantityMeasurementObservation(this, diagnostics, context);
+		return TextObservationOperations.validateTextObservationQuantityMeasurementObservation(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -186,16 +187,16 @@ public class TextObservationImpl extends ObservationImpl implements TextObservat
 	 * @generated
 	 */
 	public TextObservation init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public TextObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // TextObservationImpl

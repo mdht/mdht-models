@@ -128,7 +128,8 @@ public class NutritionRecommendationImpl extends ActImpl implements NutritionRec
 	 */
 	public boolean validateNutritionRecommendationEffectiveTime(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return NutritionRecommendationOperations.validateNutritionRecommendationEffectiveTime(this, diagnostics, context);
+		return NutritionRecommendationOperations.validateNutritionRecommendationEffectiveTime(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -138,7 +139,8 @@ public class NutritionRecommendationImpl extends ActImpl implements NutritionRec
 	 */
 	public boolean validateNutritionRecommendationPlannedEncounter2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return NutritionRecommendationOperations.validateNutritionRecommendationPlannedEncounter2(this, diagnostics, context);
+		return NutritionRecommendationOperations.validateNutritionRecommendationPlannedEncounter2(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -148,7 +150,8 @@ public class NutritionRecommendationImpl extends ActImpl implements NutritionRec
 	 */
 	public boolean validateNutritionRecommendationPlannedMedicationActivity2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return NutritionRecommendationOperations.validateNutritionRecommendationPlannedMedicationActivity2(this, diagnostics, context);
+		return NutritionRecommendationOperations.validateNutritionRecommendationPlannedMedicationActivity2(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -158,7 +161,8 @@ public class NutritionRecommendationImpl extends ActImpl implements NutritionRec
 	 */
 	public boolean validateNutritionRecommendationPlannedObservation2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return NutritionRecommendationOperations.validateNutritionRecommendationPlannedObservation2(this, diagnostics, context);
+		return NutritionRecommendationOperations.validateNutritionRecommendationPlannedObservation2(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -168,7 +172,8 @@ public class NutritionRecommendationImpl extends ActImpl implements NutritionRec
 	 */
 	public boolean validateNutritionRecommendationPlannedProcedure2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return NutritionRecommendationOperations.validateNutritionRecommendationPlannedProcedure2(this, diagnostics, context);
+		return NutritionRecommendationOperations.validateNutritionRecommendationPlannedProcedure2(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -178,7 +183,8 @@ public class NutritionRecommendationImpl extends ActImpl implements NutritionRec
 	 */
 	public boolean validateNutritionRecommendationPlannedSupply2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return NutritionRecommendationOperations.validateNutritionRecommendationPlannedSupply2(this, diagnostics, context);
+		return NutritionRecommendationOperations.validateNutritionRecommendationPlannedSupply2(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -251,16 +257,16 @@ public class NutritionRecommendationImpl extends ActImpl implements NutritionRec
 	 * @generated
 	 */
 	public NutritionRecommendation init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public NutritionRecommendation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // NutritionRecommendationImpl

@@ -149,9 +149,9 @@ public interface PriorityPreference extends Observation {
 	public PriorityPreference init();
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public PriorityPreference init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // PriorityPreference

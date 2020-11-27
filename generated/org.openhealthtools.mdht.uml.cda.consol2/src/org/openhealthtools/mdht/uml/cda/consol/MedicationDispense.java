@@ -329,9 +329,9 @@ public interface MedicationDispense extends Supply {
 	public MedicationDispense init();
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public MedicationDispense init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // MedicationDispense

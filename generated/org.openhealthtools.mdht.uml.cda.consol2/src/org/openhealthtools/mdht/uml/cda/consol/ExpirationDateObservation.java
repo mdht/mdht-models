@@ -77,10 +77,10 @@ public interface ExpirationDateObservation extends Observation {
 	public ExpirationDateObservation init();
 
 	/**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public ExpirationDateObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ExpirationDateObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
 
 } // ExpirationDateObservation

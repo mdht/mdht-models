@@ -533,10 +533,10 @@
     <nestedClassifier xmi:type="uml:Class" xmi:id="_FT6aEC0GEeuxZ80rBBFFIQ" name="II">
       <ownedRule xmi:id="_Vm9KwC0GEeuxZ80rBBFFIQ" name="UDI issuing agency" constrainedElement="_FT6aEC0GEeuxZ80rBBFFIQ">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_fdQhgC0GEeuxZ80rBBFFIQ">
-          <language>OCL</language>
           <language>Analysis</language>
-          <body>(self.root = '1.3.160' or self.root ='2.16.840.1.113883.6.18'  or self.root = '2.16.840.1.113883.6.40')</body>
+          <language>OCL</language>
           <body>UDI issuing agency</body>
+          <body>matches('root','\\\\b1.3.160\\\\b')</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_FUBu0C0GEeuxZ80rBBFFIQ">

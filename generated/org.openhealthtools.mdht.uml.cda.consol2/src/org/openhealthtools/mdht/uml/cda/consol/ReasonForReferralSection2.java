@@ -64,9 +64,9 @@ public interface ReasonForReferralSection2 extends ReasonForReferralSection {
 	public ReasonForReferralSection2 init();
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public ReasonForReferralSection2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ReasonForReferralSection2

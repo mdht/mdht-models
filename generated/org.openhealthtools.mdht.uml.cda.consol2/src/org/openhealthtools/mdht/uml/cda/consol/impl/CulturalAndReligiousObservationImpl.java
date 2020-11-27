@@ -52,7 +52,8 @@ public class CulturalAndReligiousObservationImpl extends ObservationImpl impleme
 	 */
 	public boolean validateCulturalAndReligiousObservationValueOfTypeCDIsFromSnomed(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return CulturalAndReligiousObservationOperations.validateCulturalAndReligiousObservationValueOfTypeCDIsFromSnomed(this, diagnostics, context);
+		return CulturalAndReligiousObservationOperations.validateCulturalAndReligiousObservationValueOfTypeCDIsFromSnomed(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -62,7 +63,8 @@ public class CulturalAndReligiousObservationImpl extends ObservationImpl impleme
 	 */
 	public boolean validateCulturalAndReligiousObservationTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return CulturalAndReligiousObservationOperations.validateCulturalAndReligiousObservationTemplateId(this, diagnostics, context);
+		return CulturalAndReligiousObservationOperations.validateCulturalAndReligiousObservationTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -72,7 +74,8 @@ public class CulturalAndReligiousObservationImpl extends ObservationImpl impleme
 	 */
 	public boolean validateCulturalAndReligiousObservationClassCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return CulturalAndReligiousObservationOperations.validateCulturalAndReligiousObservationClassCode(this, diagnostics, context);
+		return CulturalAndReligiousObservationOperations.validateCulturalAndReligiousObservationClassCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -82,7 +85,8 @@ public class CulturalAndReligiousObservationImpl extends ObservationImpl impleme
 	 */
 	public boolean validateCulturalAndReligiousObservationMoodCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return CulturalAndReligiousObservationOperations.validateCulturalAndReligiousObservationMoodCode(this, diagnostics, context);
+		return CulturalAndReligiousObservationOperations.validateCulturalAndReligiousObservationMoodCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -91,7 +95,8 @@ public class CulturalAndReligiousObservationImpl extends ObservationImpl impleme
 	 * @generated
 	 */
 	public boolean validateCulturalAndReligiousObservationId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return CulturalAndReligiousObservationOperations.validateCulturalAndReligiousObservationId(this, diagnostics, context);
+		return CulturalAndReligiousObservationOperations.validateCulturalAndReligiousObservationId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -101,7 +106,8 @@ public class CulturalAndReligiousObservationImpl extends ObservationImpl impleme
 	 */
 	public boolean validateCulturalAndReligiousObservationCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return CulturalAndReligiousObservationOperations.validateCulturalAndReligiousObservationCodeP(this, diagnostics, context);
+		return CulturalAndReligiousObservationOperations.validateCulturalAndReligiousObservationCodeP(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -111,7 +117,8 @@ public class CulturalAndReligiousObservationImpl extends ObservationImpl impleme
 	 */
 	public boolean validateCulturalAndReligiousObservationCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return CulturalAndReligiousObservationOperations.validateCulturalAndReligiousObservationCode(this, diagnostics, context);
+		return CulturalAndReligiousObservationOperations.validateCulturalAndReligiousObservationCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -121,7 +128,8 @@ public class CulturalAndReligiousObservationImpl extends ObservationImpl impleme
 	 */
 	public boolean validateCulturalAndReligiousObservationStatusCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return CulturalAndReligiousObservationOperations.validateCulturalAndReligiousObservationStatusCode(this, diagnostics, context);
+		return CulturalAndReligiousObservationOperations.validateCulturalAndReligiousObservationStatusCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -131,7 +139,8 @@ public class CulturalAndReligiousObservationImpl extends ObservationImpl impleme
 	 */
 	public boolean validateCulturalAndReligiousObservationStatusCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return CulturalAndReligiousObservationOperations.validateCulturalAndReligiousObservationStatusCodeP(this, diagnostics, context);
+		return CulturalAndReligiousObservationOperations.validateCulturalAndReligiousObservationStatusCodeP(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -141,7 +150,8 @@ public class CulturalAndReligiousObservationImpl extends ObservationImpl impleme
 	 */
 	public boolean validateCulturalAndReligiousObservationValue(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return CulturalAndReligiousObservationOperations.validateCulturalAndReligiousObservationValue(this, diagnostics, context);
+		return CulturalAndReligiousObservationOperations.validateCulturalAndReligiousObservationValue(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -150,16 +160,16 @@ public class CulturalAndReligiousObservationImpl extends ObservationImpl impleme
 	 * @generated
 	 */
 	public CulturalAndReligiousObservation init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public CulturalAndReligiousObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // CulturalAndReligiousObservationImpl

@@ -829,9 +829,9 @@ public interface HistoryAndPhysicalNote2 extends USRealmHeader2 {
 	public HistoryAndPhysicalNote2 init();
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public HistoryAndPhysicalNote2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // HistoryAndPhysicalNote2

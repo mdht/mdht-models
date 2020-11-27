@@ -111,9 +111,9 @@ public interface EncounterDiagnosis extends Act {
 	public EncounterDiagnosis init();
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public EncounterDiagnosis init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // EncounterDiagnosis

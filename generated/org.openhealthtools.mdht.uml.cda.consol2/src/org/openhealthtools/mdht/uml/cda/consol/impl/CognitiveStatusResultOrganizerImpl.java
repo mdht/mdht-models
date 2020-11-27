@@ -53,7 +53,8 @@ public class CognitiveStatusResultOrganizerImpl extends ResultOrganizerImpl impl
 	 */
 	public boolean validateCognitiveStatusResultOrganizerCodeCodeSystem(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return CognitiveStatusResultOrganizerOperations.validateCognitiveStatusResultOrganizerCodeCodeSystem(this, diagnostics, context);
+		return CognitiveStatusResultOrganizerOperations.validateCognitiveStatusResultOrganizerCodeCodeSystem(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -142,7 +143,8 @@ public class CognitiveStatusResultOrganizerImpl extends ResultOrganizerImpl impl
 	 */
 	@Override
 	public boolean validateResultOrganizerResultObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return CognitiveStatusResultOrganizerOperations.validateResultOrganizerResultObservation(this, diagnostics, context);
+		return CognitiveStatusResultOrganizerOperations.validateResultOrganizerResultObservation(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -152,17 +154,17 @@ public class CognitiveStatusResultOrganizerImpl extends ResultOrganizerImpl impl
 	 */
 	@Override
 	public CognitiveStatusResultOrganizer init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public CognitiveStatusResultOrganizer init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // CognitiveStatusResultOrganizerImpl

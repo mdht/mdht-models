@@ -55,7 +55,8 @@ public class ProblemSectionEntriesOptional2Impl extends ProblemSectionEntriesOpt
 	 */
 	public boolean validateProblemSectionEntriesOptional2HealthStatusObservation2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProblemSectionEntriesOptional2Operations.validateProblemSectionEntriesOptional2HealthStatusObservation2(this, diagnostics, context);
+		return ProblemSectionEntriesOptional2Operations.validateProblemSectionEntriesOptional2HealthStatusObservation2(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -84,7 +85,8 @@ public class ProblemSectionEntriesOptional2Impl extends ProblemSectionEntriesOpt
 	@Override
 	public boolean validateProblemSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProblemSectionEntriesOptional2Operations.validateProblemSectionEntriesOptionalTemplateId(this, diagnostics, context);
+		return ProblemSectionEntriesOptional2Operations.validateProblemSectionEntriesOptionalTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -95,7 +97,8 @@ public class ProblemSectionEntriesOptional2Impl extends ProblemSectionEntriesOpt
 	@Override
 	public boolean validateProblemSectionEntriesOptionalCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProblemSectionEntriesOptional2Operations.validateProblemSectionEntriesOptionalCodeP(this, diagnostics, context);
+		return ProblemSectionEntriesOptional2Operations.validateProblemSectionEntriesOptionalCodeP(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -105,7 +108,8 @@ public class ProblemSectionEntriesOptional2Impl extends ProblemSectionEntriesOpt
 	 */
 	@Override
 	public boolean validateProblemSectionEntriesOptionalCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProblemSectionEntriesOptional2Operations.validateProblemSectionEntriesOptionalCode(this, diagnostics, context);
+		return ProblemSectionEntriesOptional2Operations.validateProblemSectionEntriesOptionalCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -116,7 +120,8 @@ public class ProblemSectionEntriesOptional2Impl extends ProblemSectionEntriesOpt
 	@Override
 	public boolean validateProblemSectionEntriesOptionalProblemConcern(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProblemSectionEntriesOptional2Operations.validateProblemSectionEntriesOptionalProblemConcern(this, diagnostics, context);
+		return ProblemSectionEntriesOptional2Operations.validateProblemSectionEntriesOptionalProblemConcern(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -126,17 +131,17 @@ public class ProblemSectionEntriesOptional2Impl extends ProblemSectionEntriesOpt
 	 */
 	@Override
 	public ProblemSectionEntriesOptional2 init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public ProblemSectionEntriesOptional2 init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // ProblemSectionEntriesOptional2Impl

@@ -57,7 +57,8 @@ public class PlannedSupply2Impl extends PlanOfCareActivitySupplyImpl implements 
 	 */
 	public boolean validatePlannedSupply2MedInfoXorImmunXorProductInstance(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PlannedSupply2Operations.validatePlannedSupply2MedInfoXorImmunXorProductInstance(this, diagnostics, context);
+		return PlannedSupply2Operations.validatePlannedSupply2MedInfoXorImmunXorProductInstance(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -202,7 +203,8 @@ public class PlannedSupply2Impl extends PlanOfCareActivitySupplyImpl implements 
 	 */
 	public boolean validatePlannedSupply2ProductManufacturedProductMedInfo2XorImmunMedInfo2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PlannedSupply2Operations.validatePlannedSupply2ProductManufacturedProductMedInfo2XorImmunMedInfo2(this, diagnostics, context);
+		return PlannedSupply2Operations.validatePlannedSupply2ProductManufacturedProductMedInfo2XorImmunMedInfo2(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -277,17 +279,17 @@ public class PlannedSupply2Impl extends PlanOfCareActivitySupplyImpl implements 
 	 */
 	@Override
 	public PlannedSupply2 init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public PlannedSupply2 init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // PlannedSupply2Impl

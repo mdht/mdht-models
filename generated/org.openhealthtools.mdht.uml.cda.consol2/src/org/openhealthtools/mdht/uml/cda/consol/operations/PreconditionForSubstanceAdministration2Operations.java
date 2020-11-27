@@ -72,7 +72,7 @@ public class PreconditionForSubstanceAdministration2Operations
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -88,44 +88,37 @@ public class PreconditionForSubstanceAdministration2Operations
 	public static boolean validatePreconditionForSubstanceAdministration2TemplateId(
 			PreconditionForSubstanceAdministration2 preconditionForSubstanceAdministration2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"PreconditionForSubstanceAdministration2PreconditionForSubstanceAdministration2TemplateId","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(
+			context, "PreconditionForSubstanceAdministration2PreconditionForSubstanceAdministration2TemplateId",
+			"ERROR");
+
 		if (VALIDATE_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION2);
 			try {
-				VALIDATE_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(preconditionForSubstanceAdministration2)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				preconditionForSubstanceAdministration2)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION2__PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION2_TEMPLATE_ID,
-						 ConsolPlugin.INSTANCE.getString("PreconditionForSubstanceAdministration2PreconditionForSubstanceAdministration2TemplateId"),
-						 new Object [] { preconditionForSubstanceAdministration2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION2__PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION2_TEMPLATE_ID,
+						ConsolPlugin.INSTANCE.getString(
+							"PreconditionForSubstanceAdministration2PreconditionForSubstanceAdministration2TemplateId"),
+						new Object[] { preconditionForSubstanceAdministration2 }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -150,7 +143,7 @@ public class PreconditionForSubstanceAdministration2Operations
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -166,44 +159,36 @@ public class PreconditionForSubstanceAdministration2Operations
 	public static boolean validatePreconditionForSubstanceAdministrationCodeP(
 			PreconditionForSubstanceAdministration2 preconditionForSubstanceAdministration2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"PreconditionForSubstanceAdministration2PreconditionForSubstanceAdministrationCodeP","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(
+			context, "PreconditionForSubstanceAdministration2PreconditionForSubstanceAdministrationCodeP", "ERROR");
+
 		if (VALIDATE_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION2);
 			try {
-				VALIDATE_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(preconditionForSubstanceAdministration2)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				preconditionForSubstanceAdministration2)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION2__PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_CODE_P,
-						 ConsolPlugin.INSTANCE.getString("PreconditionForSubstanceAdministration2PreconditionForSubstanceAdministrationCodeP"),
-						 new Object [] { preconditionForSubstanceAdministration2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION2__PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_CODE_P,
+						ConsolPlugin.INSTANCE.getString(
+							"PreconditionForSubstanceAdministration2PreconditionForSubstanceAdministrationCodeP"),
+						new Object[] { preconditionForSubstanceAdministration2 }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -228,7 +213,7 @@ public class PreconditionForSubstanceAdministration2Operations
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -244,44 +229,36 @@ public class PreconditionForSubstanceAdministration2Operations
 	public static boolean validatePreconditionForSubstanceAdministrationValueP(
 			PreconditionForSubstanceAdministration2 preconditionForSubstanceAdministration2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"PreconditionForSubstanceAdministration2PreconditionForSubstanceAdministrationValueP","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(
+			context, "PreconditionForSubstanceAdministration2PreconditionForSubstanceAdministrationValueP", "ERROR");
+
 		if (VALIDATE_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION2);
 			try {
-				VALIDATE_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(preconditionForSubstanceAdministration2)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				preconditionForSubstanceAdministration2)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION2__PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_VALUE_P,
-						 ConsolPlugin.INSTANCE.getString("PreconditionForSubstanceAdministration2PreconditionForSubstanceAdministrationValueP"),
-						 new Object [] { preconditionForSubstanceAdministration2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION2__PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_VALUE_P,
+						ConsolPlugin.INSTANCE.getString(
+							"PreconditionForSubstanceAdministration2PreconditionForSubstanceAdministrationValueP"),
+						new Object[] { preconditionForSubstanceAdministration2 }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -295,9 +272,9 @@ public class PreconditionForSubstanceAdministration2Operations
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
-"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
-"value.code = 'ASSERTION' and value.codeSystem = '2.16.840.1.113883.5.4')";
+	protected static final String VALIDATE_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and " +
+			"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in " +
+			"value.code = 'ASSERTION' and value.codeSystem = '2.16.840.1.113883.5.4')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePreconditionForSubstanceAdministrationCode(PreconditionForSubstanceAdministration2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Precondition For Substance Administration Code</em>}' invariant operation.
@@ -308,7 +285,7 @@ public class PreconditionForSubstanceAdministration2Operations
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -324,44 +301,36 @@ public class PreconditionForSubstanceAdministration2Operations
 	public static boolean validatePreconditionForSubstanceAdministrationCode(
 			PreconditionForSubstanceAdministration2 preconditionForSubstanceAdministration2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"PreconditionForSubstanceAdministration2PreconditionForSubstanceAdministrationCode","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(
+			context, "PreconditionForSubstanceAdministration2PreconditionForSubstanceAdministrationCode", "ERROR");
+
 		if (VALIDATE_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION2);
 			try {
-				VALIDATE_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(preconditionForSubstanceAdministration2)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				preconditionForSubstanceAdministration2)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION2__PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_CODE,
-						 ConsolPlugin.INSTANCE.getString("PreconditionForSubstanceAdministration2PreconditionForSubstanceAdministrationCode"),
-						 new Object [] { preconditionForSubstanceAdministration2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION2__PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_CODE,
+						ConsolPlugin.INSTANCE.getString(
+							"PreconditionForSubstanceAdministration2PreconditionForSubstanceAdministrationCode"),
+						new Object[] { preconditionForSubstanceAdministration2 }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -386,7 +355,7 @@ public class PreconditionForSubstanceAdministration2Operations
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -402,44 +371,36 @@ public class PreconditionForSubstanceAdministration2Operations
 	public static boolean validatePreconditionForSubstanceAdministrationText(
 			PreconditionForSubstanceAdministration2 preconditionForSubstanceAdministration2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"PreconditionForSubstanceAdministration2PreconditionForSubstanceAdministrationText","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(
+			context, "PreconditionForSubstanceAdministration2PreconditionForSubstanceAdministrationText", "ERROR");
+
 		if (VALIDATE_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION2);
 			try {
-				VALIDATE_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(preconditionForSubstanceAdministration2)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				preconditionForSubstanceAdministration2)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION2__PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_TEXT,
-						 ConsolPlugin.INSTANCE.getString("PreconditionForSubstanceAdministration2PreconditionForSubstanceAdministrationText"),
-						 new Object [] { preconditionForSubstanceAdministration2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION2__PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_TEXT,
+						ConsolPlugin.INSTANCE.getString(
+							"PreconditionForSubstanceAdministration2PreconditionForSubstanceAdministrationText"),
+						new Object[] { preconditionForSubstanceAdministration2 }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -453,9 +414,9 @@ public class PreconditionForSubstanceAdministration2Operations
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value.oclIsUndefined() or self.value.isNullFlavorUndefined()) implies (not self.value.oclIsUndefined() and self.value.oclIsKindOf(datatypes::CD) and "+
-"let value : datatypes::CD = self.value.oclAsType(datatypes::CD) in "+
-"value.codeSystem = '2.16.840.1.113883.6.96' and not value.code.oclIsUndefined())";
+	protected static final String VALIDATE_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value.oclIsUndefined() or self.value.isNullFlavorUndefined()) implies (not self.value.oclIsUndefined() and self.value.oclIsKindOf(datatypes::CD) and " +
+			"let value : datatypes::CD = self.value.oclAsType(datatypes::CD) in " +
+			"value.codeSystem = '2.16.840.1.113883.6.96' and not value.code.oclIsUndefined())";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePreconditionForSubstanceAdministrationValue(PreconditionForSubstanceAdministration2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Precondition For Substance Administration Value</em>}' invariant operation.
@@ -466,7 +427,7 @@ public class PreconditionForSubstanceAdministration2Operations
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -482,44 +443,36 @@ public class PreconditionForSubstanceAdministration2Operations
 	public static boolean validatePreconditionForSubstanceAdministrationValue(
 			PreconditionForSubstanceAdministration2 preconditionForSubstanceAdministration2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"PreconditionForSubstanceAdministration2PreconditionForSubstanceAdministrationValue","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(
+			context, "PreconditionForSubstanceAdministration2PreconditionForSubstanceAdministrationValue", "ERROR");
+
 		if (VALIDATE_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION2);
 			try {
-				VALIDATE_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(preconditionForSubstanceAdministration2)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				preconditionForSubstanceAdministration2)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION2__PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_VALUE,
-						 ConsolPlugin.INSTANCE.getString("PreconditionForSubstanceAdministration2PreconditionForSubstanceAdministrationValue"),
-						 new Object [] { preconditionForSubstanceAdministration2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION2__PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_VALUE,
+						ConsolPlugin.INSTANCE.getString(
+							"PreconditionForSubstanceAdministration2PreconditionForSubstanceAdministrationValue"),
+						new Object[] { preconditionForSubstanceAdministration2 }));
 			}
-			 
+
 			return false;
 		}
 		return true;

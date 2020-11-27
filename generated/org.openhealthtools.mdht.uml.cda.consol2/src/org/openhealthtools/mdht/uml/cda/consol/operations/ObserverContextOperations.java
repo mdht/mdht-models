@@ -72,7 +72,7 @@ public class ObserverContextOperations extends AuthorOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_OBSERVER_CONTEXT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_OBSERVER_CONTEXT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -87,44 +87,32 @@ public class ObserverContextOperations extends AuthorOperations {
 
 	public static boolean validateObserverContextTemplateId(ObserverContext observerContext,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"ObserverContextObserverContextTemplateId","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "ObserverContextObserverContextTemplateId", "ERROR");
+
 		if (VALIDATE_OBSERVER_CONTEXT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.OBSERVER_CONTEXT);
 			try {
-				VALIDATE_OBSERVER_CONTEXT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_OBSERVER_CONTEXT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_OBSERVER_CONTEXT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_OBSERVER_CONTEXT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_OBSERVER_CONTEXT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(observerContext)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_OBSERVER_CONTEXT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(observerContext)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.OBSERVER_CONTEXT__OBSERVER_CONTEXT_TEMPLATE_ID,
-						 ConsolPlugin.INSTANCE.getString("ObserverContextObserverContextTemplateId"),
-						 new Object [] { observerContext }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.OBSERVER_CONTEXT__OBSERVER_CONTEXT_TEMPLATE_ID,
+						ConsolPlugin.INSTANCE.getString("ObserverContextObserverContextTemplateId"),
+						new Object[] { observerContext }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -149,7 +137,7 @@ public class ObserverContextOperations extends AuthorOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_OBSERVER_CONTEXT_ASSIGNED_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_OBSERVER_CONTEXT_ASSIGNED_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -164,44 +152,32 @@ public class ObserverContextOperations extends AuthorOperations {
 
 	public static boolean validateObserverContextAssignedAuthor(ObserverContext observerContext,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"ObserverContextObserverContextAssignedAuthor","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "ObserverContextObserverContextAssignedAuthor", "ERROR");
+
 		if (VALIDATE_OBSERVER_CONTEXT_ASSIGNED_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.OBSERVER_CONTEXT);
 			try {
-				VALIDATE_OBSERVER_CONTEXT_ASSIGNED_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_OBSERVER_CONTEXT_ASSIGNED_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_OBSERVER_CONTEXT_ASSIGNED_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_OBSERVER_CONTEXT_ASSIGNED_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_OBSERVER_CONTEXT_ASSIGNED_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(observerContext)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_OBSERVER_CONTEXT_ASSIGNED_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(observerContext)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.OBSERVER_CONTEXT__OBSERVER_CONTEXT_ASSIGNED_AUTHOR,
-						 ConsolPlugin.INSTANCE.getString("ObserverContextObserverContextAssignedAuthor"),
-						 new Object [] { observerContext }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.OBSERVER_CONTEXT__OBSERVER_CONTEXT_ASSIGNED_AUTHOR,
+						ConsolPlugin.INSTANCE.getString("ObserverContextObserverContextAssignedAuthor"),
+						new Object[] { observerContext }));
 			}
-			 
+
 			return false;
 		}
 		return true;

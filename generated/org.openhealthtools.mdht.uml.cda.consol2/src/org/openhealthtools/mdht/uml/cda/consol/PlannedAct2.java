@@ -189,9 +189,9 @@ public interface PlannedAct2 extends PlanOfCareActivityAct {
 	public PlannedAct2 init();
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public PlannedAct2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // PlannedAct2

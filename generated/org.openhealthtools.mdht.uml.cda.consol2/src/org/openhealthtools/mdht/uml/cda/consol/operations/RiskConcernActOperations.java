@@ -190,7 +190,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_RISK_CONCERN_ACT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_RISK_CONCERN_ACT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -205,44 +205,32 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 
 	public static boolean validateRiskConcernActTemplateId(RiskConcernAct riskConcernAct, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"RiskConcernActRiskConcernActTemplateId","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "RiskConcernActRiskConcernActTemplateId", "ERROR");
+
 		if (VALIDATE_RISK_CONCERN_ACT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.RISK_CONCERN_ACT);
 			try {
-				VALIDATE_RISK_CONCERN_ACT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_RISK_CONCERN_ACT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_RISK_CONCERN_ACT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_RISK_CONCERN_ACT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_RISK_CONCERN_ACT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(riskConcernAct)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_RISK_CONCERN_ACT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(riskConcernAct)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.RISK_CONCERN_ACT__RISK_CONCERN_ACT_TEMPLATE_ID,
-						 ConsolPlugin.INSTANCE.getString("RiskConcernActRiskConcernActTemplateId"),
-						 new Object [] { riskConcernAct }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.RISK_CONCERN_ACT__RISK_CONCERN_ACT_TEMPLATE_ID,
+						ConsolPlugin.INSTANCE.getString("RiskConcernActRiskConcernActTemplateId"),
+						new Object[] { riskConcernAct }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -267,7 +255,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_RISK_CONCERN_ACT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_RISK_CONCERN_ACT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -282,44 +270,32 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 
 	public static boolean validateRiskConcernActClassCode(RiskConcernAct riskConcernAct, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"RiskConcernActRiskConcernActClassCode","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "RiskConcernActRiskConcernActClassCode", "ERROR");
+
 		if (VALIDATE_RISK_CONCERN_ACT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.RISK_CONCERN_ACT);
 			try {
-				VALIDATE_RISK_CONCERN_ACT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_RISK_CONCERN_ACT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_RISK_CONCERN_ACT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_RISK_CONCERN_ACT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_RISK_CONCERN_ACT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(riskConcernAct)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_RISK_CONCERN_ACT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(riskConcernAct)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.RISK_CONCERN_ACT__RISK_CONCERN_ACT_CLASS_CODE,
-						 ConsolPlugin.INSTANCE.getString("RiskConcernActRiskConcernActClassCode"),
-						 new Object [] { riskConcernAct }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.RISK_CONCERN_ACT__RISK_CONCERN_ACT_CLASS_CODE,
+						ConsolPlugin.INSTANCE.getString("RiskConcernActRiskConcernActClassCode"),
+						new Object[] { riskConcernAct }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -344,7 +320,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_RISK_CONCERN_ACT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_RISK_CONCERN_ACT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -359,44 +335,32 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 
 	public static boolean validateRiskConcernActMoodCode(RiskConcernAct riskConcernAct, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"RiskConcernActRiskConcernActMoodCode","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "RiskConcernActRiskConcernActMoodCode", "ERROR");
+
 		if (VALIDATE_RISK_CONCERN_ACT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.RISK_CONCERN_ACT);
 			try {
-				VALIDATE_RISK_CONCERN_ACT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_RISK_CONCERN_ACT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_RISK_CONCERN_ACT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_RISK_CONCERN_ACT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_RISK_CONCERN_ACT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(riskConcernAct)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_RISK_CONCERN_ACT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(riskConcernAct)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.RISK_CONCERN_ACT__RISK_CONCERN_ACT_MOOD_CODE,
-						 ConsolPlugin.INSTANCE.getString("RiskConcernActRiskConcernActMoodCode"),
-						 new Object [] { riskConcernAct }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.RISK_CONCERN_ACT__RISK_CONCERN_ACT_MOOD_CODE,
+						ConsolPlugin.INSTANCE.getString("RiskConcernActRiskConcernActMoodCode"),
+						new Object[] { riskConcernAct }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -421,7 +385,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_RISK_CONCERN_ACT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_RISK_CONCERN_ACT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -436,44 +400,32 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 
 	public static boolean validateRiskConcernActId(RiskConcernAct riskConcernAct, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"RiskConcernActRiskConcernActId","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "RiskConcernActRiskConcernActId", "ERROR");
+
 		if (VALIDATE_RISK_CONCERN_ACT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.RISK_CONCERN_ACT);
 			try {
-				VALIDATE_RISK_CONCERN_ACT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_RISK_CONCERN_ACT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_RISK_CONCERN_ACT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_RISK_CONCERN_ACT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_RISK_CONCERN_ACT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(riskConcernAct)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(VALIDATE_RISK_CONCERN_ACT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+			riskConcernAct)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.RISK_CONCERN_ACT__RISK_CONCERN_ACT_ID,
-						 ConsolPlugin.INSTANCE.getString("RiskConcernActRiskConcernActId"),
-						 new Object [] { riskConcernAct }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.RISK_CONCERN_ACT__RISK_CONCERN_ACT_ID,
+						ConsolPlugin.INSTANCE.getString("RiskConcernActRiskConcernActId"),
+						new Object[] { riskConcernAct }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -498,7 +450,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_RISK_CONCERN_ACT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_RISK_CONCERN_ACT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -513,48 +465,37 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 
 	public static boolean validateRiskConcernActCodeP(RiskConcernAct riskConcernAct, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"RiskConcernActRiskConcernActCodeP","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "RiskConcernActRiskConcernActCodeP", "ERROR");
+
 		if (VALIDATE_RISK_CONCERN_ACT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.RISK_CONCERN_ACT);
 			try {
-				VALIDATE_RISK_CONCERN_ACT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_RISK_CONCERN_ACT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_RISK_CONCERN_ACT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_RISK_CONCERN_ACT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_RISK_CONCERN_ACT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(riskConcernAct)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(VALIDATE_RISK_CONCERN_ACT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+			riskConcernAct)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.RISK_CONCERN_ACT__RISK_CONCERN_ACT_CODE_P,
-						 ConsolPlugin.INSTANCE.getString("RiskConcernActRiskConcernActCodeP"),
-						 new Object [] { riskConcernAct }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.RISK_CONCERN_ACT__RISK_CONCERN_ACT_CODE_P,
+						ConsolPlugin.INSTANCE.getString("RiskConcernActRiskConcernActCodeP"),
+						new Object[] { riskConcernAct }));
 			}
-			
+
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
-				Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.consol.RiskConcernActCodeP");
+				Collection<Object> passToken = (Collection<Object>) context.get(
+					"org.openhealthtools.mdht.uml.cda.consol.RiskConcernActCodeP");
 				if (passToken == null) {
 					// anticipate a reasonably healthy model
 					passToken = new java.util.ArrayList<Object>(3);
@@ -562,7 +503,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 				}
 				passToken.add(riskConcernAct);
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -576,9 +517,9 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_RISK_CONCERN_ACT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
-"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
-"value.code = '281694009' and value.codeSystem = '2.16.840.1.113883.6.96')";
+	protected static final String VALIDATE_RISK_CONCERN_ACT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and " +
+			"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in " +
+			"value.code = '281694009' and value.codeSystem = '2.16.840.1.113883.6.96')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateRiskConcernActCode(RiskConcernAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Risk Concern Act Code</em>}' invariant operation.
@@ -589,7 +530,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_RISK_CONCERN_ACT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_RISK_CONCERN_ACT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -604,50 +545,40 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 
 	public static boolean validateRiskConcernActCode(RiskConcernAct riskConcernAct, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-	
-	
-	
-  	  
-		Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.consol.RiskConcernActCodeP");
+
+		Object passToken = (context == null)
+				? null
+				: context.get("org.openhealthtools.mdht.uml.cda.consol.RiskConcernActCodeP");
 		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(riskConcernAct)) {
 			// I have a free pass to short-circuit
 			return true;
 		}
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"RiskConcernActRiskConcernActCode","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "RiskConcernActRiskConcernActCode", "ERROR");
+
 		if (VALIDATE_RISK_CONCERN_ACT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.RISK_CONCERN_ACT);
 			try {
-				VALIDATE_RISK_CONCERN_ACT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_RISK_CONCERN_ACT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_RISK_CONCERN_ACT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_RISK_CONCERN_ACT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_RISK_CONCERN_ACT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(riskConcernAct)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(VALIDATE_RISK_CONCERN_ACT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+			riskConcernAct)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.RISK_CONCERN_ACT__RISK_CONCERN_ACT_CODE,
-						 ConsolPlugin.INSTANCE.getString("RiskConcernActRiskConcernActCode"),
-						 new Object [] { riskConcernAct }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.RISK_CONCERN_ACT__RISK_CONCERN_ACT_CODE,
+						ConsolPlugin.INSTANCE.getString("RiskConcernActRiskConcernActCode"),
+						new Object[] { riskConcernAct }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -661,9 +592,9 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_RISK_CONCERN_ACT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and "+
-"let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in "+
-"value.code = 'active' or value.code = 'suspended' or value.code = 'aborted' or value.code = 'completed')";
+	protected static final String VALIDATE_RISK_CONCERN_ACT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and " +
+			"let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in " +
+			"value.code = 'active' or value.code = 'suspended' or value.code = 'aborted' or value.code = 'completed')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateRiskConcernActStatusCode(RiskConcernAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Risk Concern Act Status Code</em>}' invariant operation.
@@ -674,7 +605,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_RISK_CONCERN_ACT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_RISK_CONCERN_ACT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -689,44 +620,32 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 
 	public static boolean validateRiskConcernActStatusCode(RiskConcernAct riskConcernAct, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"RiskConcernActRiskConcernActStatusCode","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "RiskConcernActRiskConcernActStatusCode", "ERROR");
+
 		if (VALIDATE_RISK_CONCERN_ACT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.RISK_CONCERN_ACT);
 			try {
-				VALIDATE_RISK_CONCERN_ACT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_RISK_CONCERN_ACT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_RISK_CONCERN_ACT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_RISK_CONCERN_ACT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_RISK_CONCERN_ACT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(riskConcernAct)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_RISK_CONCERN_ACT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(riskConcernAct)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.RISK_CONCERN_ACT__RISK_CONCERN_ACT_STATUS_CODE,
-						 ConsolPlugin.INSTANCE.getString("RiskConcernActRiskConcernActStatusCode"),
-						 new Object [] { riskConcernAct }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.RISK_CONCERN_ACT__RISK_CONCERN_ACT_STATUS_CODE,
+						ConsolPlugin.INSTANCE.getString("RiskConcernActRiskConcernActStatusCode"),
+						new Object[] { riskConcernAct }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -751,7 +670,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_RISK_CONCERN_ACT_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_RISK_CONCERN_ACT_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -766,44 +685,32 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 
 	public static boolean validateRiskConcernActStatusCodeP(RiskConcernAct riskConcernAct, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"RiskConcernActRiskConcernActStatusCodeP","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "RiskConcernActRiskConcernActStatusCodeP", "ERROR");
+
 		if (VALIDATE_RISK_CONCERN_ACT_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.RISK_CONCERN_ACT);
 			try {
-				VALIDATE_RISK_CONCERN_ACT_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_RISK_CONCERN_ACT_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_RISK_CONCERN_ACT_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_RISK_CONCERN_ACT_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_RISK_CONCERN_ACT_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(riskConcernAct)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_RISK_CONCERN_ACT_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(riskConcernAct)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.RISK_CONCERN_ACT__RISK_CONCERN_ACT_STATUS_CODE_P,
-						 ConsolPlugin.INSTANCE.getString("RiskConcernActRiskConcernActStatusCodeP"),
-						 new Object [] { riskConcernAct }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.RISK_CONCERN_ACT__RISK_CONCERN_ACT_STATUS_CODE_P,
+						ConsolPlugin.INSTANCE.getString("RiskConcernActRiskConcernActStatusCodeP"),
+						new Object[] { riskConcernAct }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -828,7 +735,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_RISK_CONCERN_ACT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_RISK_CONCERN_ACT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -843,44 +750,32 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 
 	public static boolean validateRiskConcernActEffectiveTime(RiskConcernAct riskConcernAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"RiskConcernActRiskConcernActEffectiveTime","INFO");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "RiskConcernActRiskConcernActEffectiveTime", "INFO");
+
 		if (VALIDATE_RISK_CONCERN_ACT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.RISK_CONCERN_ACT);
 			try {
-				VALIDATE_RISK_CONCERN_ACT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_RISK_CONCERN_ACT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_RISK_CONCERN_ACT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_RISK_CONCERN_ACT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_RISK_CONCERN_ACT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(riskConcernAct)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_RISK_CONCERN_ACT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(riskConcernAct)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.RISK_CONCERN_ACT__RISK_CONCERN_ACT_EFFECTIVE_TIME,
-						 ConsolPlugin.INSTANCE.getString("RiskConcernActRiskConcernActEffectiveTime"),
-						 new Object [] { riskConcernAct }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.RISK_CONCERN_ACT__RISK_CONCERN_ACT_EFFECTIVE_TIME,
+						ConsolPlugin.INSTANCE.getString("RiskConcernActRiskConcernActEffectiveTime"),
+						new Object[] { riskConcernAct }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -905,7 +800,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_RISK_CONCERN_ACT_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_RISK_CONCERN_ACT_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -920,44 +815,34 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 
 	public static boolean validateRiskConcernActAuthorParticipation(RiskConcernAct riskConcernAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"RiskConcernActRiskConcernActAuthorParticipation","WARNING");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "RiskConcernActRiskConcernActAuthorParticipation", "WARNING");
+
 		if (VALIDATE_RISK_CONCERN_ACT_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.RISK_CONCERN_ACT);
 			try {
-				VALIDATE_RISK_CONCERN_ACT_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_RISK_CONCERN_ACT_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_RISK_CONCERN_ACT_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_RISK_CONCERN_ACT_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_RISK_CONCERN_ACT_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(riskConcernAct)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_RISK_CONCERN_ACT_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				riskConcernAct)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.WARNING,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.RISK_CONCERN_ACT__RISK_CONCERN_ACT_AUTHOR_PARTICIPATION,
-						 ConsolPlugin.INSTANCE.getString("RiskConcernActRiskConcernActAuthorParticipation"),
-						 new Object [] { riskConcernAct }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.RISK_CONCERN_ACT__RISK_CONCERN_ACT_AUTHOR_PARTICIPATION,
+						ConsolPlugin.INSTANCE.getString("RiskConcernActRiskConcernActAuthorParticipation"),
+						new Object[] { riskConcernAct }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -982,7 +867,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_RISK_CONCERN_ACT_PROBLEM_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_RISK_CONCERN_ACT_PROBLEM_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -997,44 +882,34 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 
 	public static boolean validateRiskConcernActProblemObservation2(RiskConcernAct riskConcernAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"RiskConcernActRiskConcernActProblemObservation2","INFO");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "RiskConcernActRiskConcernActProblemObservation2", "INFO");
+
 		if (VALIDATE_RISK_CONCERN_ACT_PROBLEM_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.RISK_CONCERN_ACT);
 			try {
-				VALIDATE_RISK_CONCERN_ACT_PROBLEM_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_RISK_CONCERN_ACT_PROBLEM_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_RISK_CONCERN_ACT_PROBLEM_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_RISK_CONCERN_ACT_PROBLEM_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_RISK_CONCERN_ACT_PROBLEM_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(riskConcernAct)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_RISK_CONCERN_ACT_PROBLEM_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				riskConcernAct)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.RISK_CONCERN_ACT__RISK_CONCERN_ACT_PROBLEM_OBSERVATION2,
-						 ConsolPlugin.INSTANCE.getString("RiskConcernActRiskConcernActProblemObservation2"),
-						 new Object [] { riskConcernAct }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.RISK_CONCERN_ACT__RISK_CONCERN_ACT_PROBLEM_OBSERVATION2,
+						ConsolPlugin.INSTANCE.getString("RiskConcernActRiskConcernActProblemObservation2"),
+						new Object[] { riskConcernAct }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -1059,7 +934,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_RISK_CONCERN_ACT_ALLERGY_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_RISK_CONCERN_ACT_ALLERGY_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1074,44 +949,34 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 
 	public static boolean validateRiskConcernActAllergyObservation2(RiskConcernAct riskConcernAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"RiskConcernActRiskConcernActAllergyObservation2","INFO");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "RiskConcernActRiskConcernActAllergyObservation2", "INFO");
+
 		if (VALIDATE_RISK_CONCERN_ACT_ALLERGY_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.RISK_CONCERN_ACT);
 			try {
-				VALIDATE_RISK_CONCERN_ACT_ALLERGY_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_RISK_CONCERN_ACT_ALLERGY_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_RISK_CONCERN_ACT_ALLERGY_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_RISK_CONCERN_ACT_ALLERGY_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_RISK_CONCERN_ACT_ALLERGY_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(riskConcernAct)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_RISK_CONCERN_ACT_ALLERGY_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				riskConcernAct)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.RISK_CONCERN_ACT__RISK_CONCERN_ACT_ALLERGY_OBSERVATION2,
-						 ConsolPlugin.INSTANCE.getString("RiskConcernActRiskConcernActAllergyObservation2"),
-						 new Object [] { riskConcernAct }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.RISK_CONCERN_ACT__RISK_CONCERN_ACT_ALLERGY_OBSERVATION2,
+						ConsolPlugin.INSTANCE.getString("RiskConcernActRiskConcernActAllergyObservation2"),
+						new Object[] { riskConcernAct }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -1136,7 +1001,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_RISK_CONCERN_ACT_ENTRY_REFERENCE_RELATES_TO__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_RISK_CONCERN_ACT_ENTRY_REFERENCE_RELATES_TO__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1151,44 +1016,34 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 
 	public static boolean validateRiskConcernActEntryReferenceRelatesTo(RiskConcernAct riskConcernAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"RiskConcernActRiskConcernActEntryReferenceRelatesTo","INFO");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "RiskConcernActRiskConcernActEntryReferenceRelatesTo", "INFO");
+
 		if (VALIDATE_RISK_CONCERN_ACT_ENTRY_REFERENCE_RELATES_TO__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.RISK_CONCERN_ACT);
 			try {
-				VALIDATE_RISK_CONCERN_ACT_ENTRY_REFERENCE_RELATES_TO__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_RISK_CONCERN_ACT_ENTRY_REFERENCE_RELATES_TO__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_RISK_CONCERN_ACT_ENTRY_REFERENCE_RELATES_TO__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_RISK_CONCERN_ACT_ENTRY_REFERENCE_RELATES_TO__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_RISK_CONCERN_ACT_ENTRY_REFERENCE_RELATES_TO__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(riskConcernAct)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_RISK_CONCERN_ACT_ENTRY_REFERENCE_RELATES_TO__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				riskConcernAct)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.RISK_CONCERN_ACT__RISK_CONCERN_ACT_ENTRY_REFERENCE_RELATES_TO,
-						 ConsolPlugin.INSTANCE.getString("RiskConcernActRiskConcernActEntryReferenceRelatesTo"),
-						 new Object [] { riskConcernAct }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.RISK_CONCERN_ACT__RISK_CONCERN_ACT_ENTRY_REFERENCE_RELATES_TO,
+						ConsolPlugin.INSTANCE.getString("RiskConcernActRiskConcernActEntryReferenceRelatesTo"),
+						new Object[] { riskConcernAct }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -1213,7 +1068,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_RISK_CONCERN_ACT_ENTRY_REFERENCE_HAS_COMPONENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_RISK_CONCERN_ACT_ENTRY_REFERENCE_HAS_COMPONENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1228,44 +1083,34 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 
 	public static boolean validateRiskConcernActEntryReferenceHasComponent(RiskConcernAct riskConcernAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"RiskConcernActRiskConcernActEntryReferenceHasComponent","INFO");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "RiskConcernActRiskConcernActEntryReferenceHasComponent", "INFO");
+
 		if (VALIDATE_RISK_CONCERN_ACT_ENTRY_REFERENCE_HAS_COMPONENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.RISK_CONCERN_ACT);
 			try {
-				VALIDATE_RISK_CONCERN_ACT_ENTRY_REFERENCE_HAS_COMPONENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_RISK_CONCERN_ACT_ENTRY_REFERENCE_HAS_COMPONENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_RISK_CONCERN_ACT_ENTRY_REFERENCE_HAS_COMPONENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_RISK_CONCERN_ACT_ENTRY_REFERENCE_HAS_COMPONENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_RISK_CONCERN_ACT_ENTRY_REFERENCE_HAS_COMPONENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(riskConcernAct)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_RISK_CONCERN_ACT_ENTRY_REFERENCE_HAS_COMPONENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				riskConcernAct)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.RISK_CONCERN_ACT__RISK_CONCERN_ACT_ENTRY_REFERENCE_HAS_COMPONENT,
-						 ConsolPlugin.INSTANCE.getString("RiskConcernActRiskConcernActEntryReferenceHasComponent"),
-						 new Object [] { riskConcernAct }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.RISK_CONCERN_ACT__RISK_CONCERN_ACT_ENTRY_REFERENCE_HAS_COMPONENT,
+						ConsolPlugin.INSTANCE.getString("RiskConcernActRiskConcernActEntryReferenceHasComponent"),
+						new Object[] { riskConcernAct }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -1290,7 +1135,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_RISK_CONCERN_ACT_ASSESSMENT_SCALE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_RISK_CONCERN_ACT_ASSESSMENT_SCALE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1305,44 +1150,34 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 
 	public static boolean validateRiskConcernActAssessmentScaleObservation(RiskConcernAct riskConcernAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"RiskConcernActRiskConcernActAssessmentScaleObservation","INFO");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "RiskConcernActRiskConcernActAssessmentScaleObservation", "INFO");
+
 		if (VALIDATE_RISK_CONCERN_ACT_ASSESSMENT_SCALE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.RISK_CONCERN_ACT);
 			try {
-				VALIDATE_RISK_CONCERN_ACT_ASSESSMENT_SCALE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_RISK_CONCERN_ACT_ASSESSMENT_SCALE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_RISK_CONCERN_ACT_ASSESSMENT_SCALE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_RISK_CONCERN_ACT_ASSESSMENT_SCALE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_RISK_CONCERN_ACT_ASSESSMENT_SCALE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(riskConcernAct)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_RISK_CONCERN_ACT_ASSESSMENT_SCALE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				riskConcernAct)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.RISK_CONCERN_ACT__RISK_CONCERN_ACT_ASSESSMENT_SCALE_OBSERVATION,
-						 ConsolPlugin.INSTANCE.getString("RiskConcernActRiskConcernActAssessmentScaleObservation"),
-						 new Object [] { riskConcernAct }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.RISK_CONCERN_ACT__RISK_CONCERN_ACT_ASSESSMENT_SCALE_OBSERVATION,
+						ConsolPlugin.INSTANCE.getString("RiskConcernActRiskConcernActAssessmentScaleObservation"),
+						new Object[] { riskConcernAct }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -1367,7 +1202,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_RISK_CONCERN_ACT_MENTAL_STATUS_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_RISK_CONCERN_ACT_MENTAL_STATUS_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1382,44 +1217,34 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 
 	public static boolean validateRiskConcernActMentalStatusObservation2(RiskConcernAct riskConcernAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"RiskConcernActRiskConcernActMentalStatusObservation2","INFO");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "RiskConcernActRiskConcernActMentalStatusObservation2", "INFO");
+
 		if (VALIDATE_RISK_CONCERN_ACT_MENTAL_STATUS_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.RISK_CONCERN_ACT);
 			try {
-				VALIDATE_RISK_CONCERN_ACT_MENTAL_STATUS_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_RISK_CONCERN_ACT_MENTAL_STATUS_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_RISK_CONCERN_ACT_MENTAL_STATUS_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_RISK_CONCERN_ACT_MENTAL_STATUS_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_RISK_CONCERN_ACT_MENTAL_STATUS_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(riskConcernAct)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_RISK_CONCERN_ACT_MENTAL_STATUS_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				riskConcernAct)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.RISK_CONCERN_ACT__RISK_CONCERN_ACT_MENTAL_STATUS_OBSERVATION2,
-						 ConsolPlugin.INSTANCE.getString("RiskConcernActRiskConcernActMentalStatusObservation2"),
-						 new Object [] { riskConcernAct }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.RISK_CONCERN_ACT__RISK_CONCERN_ACT_MENTAL_STATUS_OBSERVATION2,
+						ConsolPlugin.INSTANCE.getString("RiskConcernActRiskConcernActMentalStatusObservation2"),
+						new Object[] { riskConcernAct }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -1444,7 +1269,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_RISK_CONCERN_ACT_SELF_CARE_ACTIVITIES__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_RISK_CONCERN_ACT_SELF_CARE_ACTIVITIES__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1459,44 +1284,34 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 
 	public static boolean validateRiskConcernActSelfCareActivities(RiskConcernAct riskConcernAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"RiskConcernActRiskConcernActSelfCareActivities","INFO");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "RiskConcernActRiskConcernActSelfCareActivities", "INFO");
+
 		if (VALIDATE_RISK_CONCERN_ACT_SELF_CARE_ACTIVITIES__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.RISK_CONCERN_ACT);
 			try {
-				VALIDATE_RISK_CONCERN_ACT_SELF_CARE_ACTIVITIES__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_RISK_CONCERN_ACT_SELF_CARE_ACTIVITIES__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_RISK_CONCERN_ACT_SELF_CARE_ACTIVITIES__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_RISK_CONCERN_ACT_SELF_CARE_ACTIVITIES__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_RISK_CONCERN_ACT_SELF_CARE_ACTIVITIES__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(riskConcernAct)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_RISK_CONCERN_ACT_SELF_CARE_ACTIVITIES__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				riskConcernAct)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.RISK_CONCERN_ACT__RISK_CONCERN_ACT_SELF_CARE_ACTIVITIES,
-						 ConsolPlugin.INSTANCE.getString("RiskConcernActRiskConcernActSelfCareActivities"),
-						 new Object [] { riskConcernAct }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.RISK_CONCERN_ACT__RISK_CONCERN_ACT_SELF_CARE_ACTIVITIES,
+						ConsolPlugin.INSTANCE.getString("RiskConcernActRiskConcernActSelfCareActivities"),
+						new Object[] { riskConcernAct }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -1521,7 +1336,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_RISK_CONCERN_ACT_MENTAL_STATUS_OBSERVATION2_B__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_RISK_CONCERN_ACT_MENTAL_STATUS_OBSERVATION2_B__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1536,44 +1351,34 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 
 	public static boolean validateRiskConcernActMentalStatusObservation2B(RiskConcernAct riskConcernAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"RiskConcernActRiskConcernActMentalStatusObservation2B","INFO");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "RiskConcernActRiskConcernActMentalStatusObservation2B", "INFO");
+
 		if (VALIDATE_RISK_CONCERN_ACT_MENTAL_STATUS_OBSERVATION2_B__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.RISK_CONCERN_ACT);
 			try {
-				VALIDATE_RISK_CONCERN_ACT_MENTAL_STATUS_OBSERVATION2_B__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_RISK_CONCERN_ACT_MENTAL_STATUS_OBSERVATION2_B__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_RISK_CONCERN_ACT_MENTAL_STATUS_OBSERVATION2_B__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_RISK_CONCERN_ACT_MENTAL_STATUS_OBSERVATION2_B__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_RISK_CONCERN_ACT_MENTAL_STATUS_OBSERVATION2_B__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(riskConcernAct)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_RISK_CONCERN_ACT_MENTAL_STATUS_OBSERVATION2_B__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				riskConcernAct)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.RISK_CONCERN_ACT__RISK_CONCERN_ACT_MENTAL_STATUS_OBSERVATION2_B,
-						 ConsolPlugin.INSTANCE.getString("RiskConcernActRiskConcernActMentalStatusObservation2B"),
-						 new Object [] { riskConcernAct }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.RISK_CONCERN_ACT__RISK_CONCERN_ACT_MENTAL_STATUS_OBSERVATION2_B,
+						ConsolPlugin.INSTANCE.getString("RiskConcernActRiskConcernActMentalStatusObservation2B"),
+						new Object[] { riskConcernAct }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -1598,7 +1403,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_RISK_CONCERN_ACT_SMOKING_STATUS_MEANINGFUL_USE2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_RISK_CONCERN_ACT_SMOKING_STATUS_MEANINGFUL_USE2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1613,44 +1418,34 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 
 	public static boolean validateRiskConcernActSmokingStatusMeaningfulUse2(RiskConcernAct riskConcernAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"RiskConcernActRiskConcernActSmokingStatusMeaningfulUse2","INFO");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "RiskConcernActRiskConcernActSmokingStatusMeaningfulUse2", "INFO");
+
 		if (VALIDATE_RISK_CONCERN_ACT_SMOKING_STATUS_MEANINGFUL_USE2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.RISK_CONCERN_ACT);
 			try {
-				VALIDATE_RISK_CONCERN_ACT_SMOKING_STATUS_MEANINGFUL_USE2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_RISK_CONCERN_ACT_SMOKING_STATUS_MEANINGFUL_USE2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_RISK_CONCERN_ACT_SMOKING_STATUS_MEANINGFUL_USE2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_RISK_CONCERN_ACT_SMOKING_STATUS_MEANINGFUL_USE2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_RISK_CONCERN_ACT_SMOKING_STATUS_MEANINGFUL_USE2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(riskConcernAct)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_RISK_CONCERN_ACT_SMOKING_STATUS_MEANINGFUL_USE2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				riskConcernAct)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.RISK_CONCERN_ACT__RISK_CONCERN_ACT_SMOKING_STATUS_MEANINGFUL_USE2,
-						 ConsolPlugin.INSTANCE.getString("RiskConcernActRiskConcernActSmokingStatusMeaningfulUse2"),
-						 new Object [] { riskConcernAct }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.RISK_CONCERN_ACT__RISK_CONCERN_ACT_SMOKING_STATUS_MEANINGFUL_USE2,
+						ConsolPlugin.INSTANCE.getString("RiskConcernActRiskConcernActSmokingStatusMeaningfulUse2"),
+						new Object[] { riskConcernAct }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -1675,7 +1470,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_RISK_CONCERN_ACT_ENCOUNTER_DIAGNOSIS2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_RISK_CONCERN_ACT_ENCOUNTER_DIAGNOSIS2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1690,44 +1485,34 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 
 	public static boolean validateRiskConcernActEncounterDiagnosis2(RiskConcernAct riskConcernAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"RiskConcernActRiskConcernActEncounterDiagnosis2","INFO");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "RiskConcernActRiskConcernActEncounterDiagnosis2", "INFO");
+
 		if (VALIDATE_RISK_CONCERN_ACT_ENCOUNTER_DIAGNOSIS2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.RISK_CONCERN_ACT);
 			try {
-				VALIDATE_RISK_CONCERN_ACT_ENCOUNTER_DIAGNOSIS2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_RISK_CONCERN_ACT_ENCOUNTER_DIAGNOSIS2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_RISK_CONCERN_ACT_ENCOUNTER_DIAGNOSIS2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_RISK_CONCERN_ACT_ENCOUNTER_DIAGNOSIS2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_RISK_CONCERN_ACT_ENCOUNTER_DIAGNOSIS2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(riskConcernAct)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_RISK_CONCERN_ACT_ENCOUNTER_DIAGNOSIS2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				riskConcernAct)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.RISK_CONCERN_ACT__RISK_CONCERN_ACT_ENCOUNTER_DIAGNOSIS2,
-						 ConsolPlugin.INSTANCE.getString("RiskConcernActRiskConcernActEncounterDiagnosis2"),
-						 new Object [] { riskConcernAct }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.RISK_CONCERN_ACT__RISK_CONCERN_ACT_ENCOUNTER_DIAGNOSIS2,
+						ConsolPlugin.INSTANCE.getString("RiskConcernActRiskConcernActEncounterDiagnosis2"),
+						new Object[] { riskConcernAct }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -1752,7 +1537,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_RISK_CONCERN_ACT_FAMILY_HISTORY_ORGANIZER2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_RISK_CONCERN_ACT_FAMILY_HISTORY_ORGANIZER2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1767,44 +1552,34 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 
 	public static boolean validateRiskConcernActFamilyHistoryOrganizer2(RiskConcernAct riskConcernAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"RiskConcernActRiskConcernActFamilyHistoryOrganizer2","INFO");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "RiskConcernActRiskConcernActFamilyHistoryOrganizer2", "INFO");
+
 		if (VALIDATE_RISK_CONCERN_ACT_FAMILY_HISTORY_ORGANIZER2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.RISK_CONCERN_ACT);
 			try {
-				VALIDATE_RISK_CONCERN_ACT_FAMILY_HISTORY_ORGANIZER2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_RISK_CONCERN_ACT_FAMILY_HISTORY_ORGANIZER2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_RISK_CONCERN_ACT_FAMILY_HISTORY_ORGANIZER2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_RISK_CONCERN_ACT_FAMILY_HISTORY_ORGANIZER2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_RISK_CONCERN_ACT_FAMILY_HISTORY_ORGANIZER2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(riskConcernAct)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_RISK_CONCERN_ACT_FAMILY_HISTORY_ORGANIZER2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				riskConcernAct)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.RISK_CONCERN_ACT__RISK_CONCERN_ACT_FAMILY_HISTORY_ORGANIZER2,
-						 ConsolPlugin.INSTANCE.getString("RiskConcernActRiskConcernActFamilyHistoryOrganizer2"),
-						 new Object [] { riskConcernAct }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.RISK_CONCERN_ACT__RISK_CONCERN_ACT_FAMILY_HISTORY_ORGANIZER2,
+						ConsolPlugin.INSTANCE.getString("RiskConcernActRiskConcernActFamilyHistoryOrganizer2"),
+						new Object[] { riskConcernAct }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -1829,7 +1604,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_RISK_CONCERN_ACT_FUNCTIONAL_STATUS_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_RISK_CONCERN_ACT_FUNCTIONAL_STATUS_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1844,44 +1619,34 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 
 	public static boolean validateRiskConcernActFunctionalStatusObservation2(RiskConcernAct riskConcernAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"RiskConcernActRiskConcernActFunctionalStatusObservation2","INFO");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "RiskConcernActRiskConcernActFunctionalStatusObservation2", "INFO");
+
 		if (VALIDATE_RISK_CONCERN_ACT_FUNCTIONAL_STATUS_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.RISK_CONCERN_ACT);
 			try {
-				VALIDATE_RISK_CONCERN_ACT_FUNCTIONAL_STATUS_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_RISK_CONCERN_ACT_FUNCTIONAL_STATUS_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_RISK_CONCERN_ACT_FUNCTIONAL_STATUS_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_RISK_CONCERN_ACT_FUNCTIONAL_STATUS_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_RISK_CONCERN_ACT_FUNCTIONAL_STATUS_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(riskConcernAct)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_RISK_CONCERN_ACT_FUNCTIONAL_STATUS_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				riskConcernAct)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.RISK_CONCERN_ACT__RISK_CONCERN_ACT_FUNCTIONAL_STATUS_OBSERVATION2,
-						 ConsolPlugin.INSTANCE.getString("RiskConcernActRiskConcernActFunctionalStatusObservation2"),
-						 new Object [] { riskConcernAct }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.RISK_CONCERN_ACT__RISK_CONCERN_ACT_FUNCTIONAL_STATUS_OBSERVATION2,
+						ConsolPlugin.INSTANCE.getString("RiskConcernActRiskConcernActFunctionalStatusObservation2"),
+						new Object[] { riskConcernAct }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -1906,7 +1671,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_RISK_CONCERN_ACT_HOSPITAL_ADMISSION_DIAGNOSIS2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_RISK_CONCERN_ACT_HOSPITAL_ADMISSION_DIAGNOSIS2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1921,44 +1686,34 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 
 	public static boolean validateRiskConcernActHospitalAdmissionDiagnosis2(RiskConcernAct riskConcernAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"RiskConcernActRiskConcernActHospitalAdmissionDiagnosis2","INFO");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "RiskConcernActRiskConcernActHospitalAdmissionDiagnosis2", "INFO");
+
 		if (VALIDATE_RISK_CONCERN_ACT_HOSPITAL_ADMISSION_DIAGNOSIS2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.RISK_CONCERN_ACT);
 			try {
-				VALIDATE_RISK_CONCERN_ACT_HOSPITAL_ADMISSION_DIAGNOSIS2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_RISK_CONCERN_ACT_HOSPITAL_ADMISSION_DIAGNOSIS2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_RISK_CONCERN_ACT_HOSPITAL_ADMISSION_DIAGNOSIS2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_RISK_CONCERN_ACT_HOSPITAL_ADMISSION_DIAGNOSIS2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_RISK_CONCERN_ACT_HOSPITAL_ADMISSION_DIAGNOSIS2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(riskConcernAct)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_RISK_CONCERN_ACT_HOSPITAL_ADMISSION_DIAGNOSIS2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				riskConcernAct)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.RISK_CONCERN_ACT__RISK_CONCERN_ACT_HOSPITAL_ADMISSION_DIAGNOSIS2,
-						 ConsolPlugin.INSTANCE.getString("RiskConcernActRiskConcernActHospitalAdmissionDiagnosis2"),
-						 new Object [] { riskConcernAct }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.RISK_CONCERN_ACT__RISK_CONCERN_ACT_HOSPITAL_ADMISSION_DIAGNOSIS2,
+						ConsolPlugin.INSTANCE.getString("RiskConcernActRiskConcernActHospitalAdmissionDiagnosis2"),
+						new Object[] { riskConcernAct }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -1983,7 +1738,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_RISK_CONCERN_ACT_MENTAL_STATUS_OBSERVATION2_C__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_RISK_CONCERN_ACT_MENTAL_STATUS_OBSERVATION2_C__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1998,44 +1753,34 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 
 	public static boolean validateRiskConcernActMentalStatusObservation2C(RiskConcernAct riskConcernAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"RiskConcernActRiskConcernActMentalStatusObservation2C","INFO");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "RiskConcernActRiskConcernActMentalStatusObservation2C", "INFO");
+
 		if (VALIDATE_RISK_CONCERN_ACT_MENTAL_STATUS_OBSERVATION2_C__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.RISK_CONCERN_ACT);
 			try {
-				VALIDATE_RISK_CONCERN_ACT_MENTAL_STATUS_OBSERVATION2_C__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_RISK_CONCERN_ACT_MENTAL_STATUS_OBSERVATION2_C__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_RISK_CONCERN_ACT_MENTAL_STATUS_OBSERVATION2_C__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_RISK_CONCERN_ACT_MENTAL_STATUS_OBSERVATION2_C__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_RISK_CONCERN_ACT_MENTAL_STATUS_OBSERVATION2_C__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(riskConcernAct)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_RISK_CONCERN_ACT_MENTAL_STATUS_OBSERVATION2_C__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				riskConcernAct)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.RISK_CONCERN_ACT__RISK_CONCERN_ACT_MENTAL_STATUS_OBSERVATION2_C,
-						 ConsolPlugin.INSTANCE.getString("RiskConcernActRiskConcernActMentalStatusObservation2C"),
-						 new Object [] { riskConcernAct }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.RISK_CONCERN_ACT__RISK_CONCERN_ACT_MENTAL_STATUS_OBSERVATION2_C,
+						ConsolPlugin.INSTANCE.getString("RiskConcernActRiskConcernActMentalStatusObservation2C"),
+						new Object[] { riskConcernAct }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -2060,7 +1805,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_RISK_CONCERN_ACT_NUTRITION_ASSESSMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_RISK_CONCERN_ACT_NUTRITION_ASSESSMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -2075,44 +1820,34 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 
 	public static boolean validateRiskConcernActNutritionAssessment(RiskConcernAct riskConcernAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"RiskConcernActRiskConcernActNutritionAssessment","INFO");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "RiskConcernActRiskConcernActNutritionAssessment", "INFO");
+
 		if (VALIDATE_RISK_CONCERN_ACT_NUTRITION_ASSESSMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.RISK_CONCERN_ACT);
 			try {
-				VALIDATE_RISK_CONCERN_ACT_NUTRITION_ASSESSMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_RISK_CONCERN_ACT_NUTRITION_ASSESSMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_RISK_CONCERN_ACT_NUTRITION_ASSESSMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_RISK_CONCERN_ACT_NUTRITION_ASSESSMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_RISK_CONCERN_ACT_NUTRITION_ASSESSMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(riskConcernAct)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_RISK_CONCERN_ACT_NUTRITION_ASSESSMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				riskConcernAct)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.RISK_CONCERN_ACT__RISK_CONCERN_ACT_NUTRITION_ASSESSMENT,
-						 ConsolPlugin.INSTANCE.getString("RiskConcernActRiskConcernActNutritionAssessment"),
-						 new Object [] { riskConcernAct }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.RISK_CONCERN_ACT__RISK_CONCERN_ACT_NUTRITION_ASSESSMENT,
+						ConsolPlugin.INSTANCE.getString("RiskConcernActRiskConcernActNutritionAssessment"),
+						new Object[] { riskConcernAct }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -2137,7 +1872,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_RISK_CONCERN_ACT_NUTRITION_ASSESSMENT_B__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_RISK_CONCERN_ACT_NUTRITION_ASSESSMENT_B__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -2152,44 +1887,34 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 
 	public static boolean validateRiskConcernActNutritionAssessmentB(RiskConcernAct riskConcernAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"RiskConcernActRiskConcernActNutritionAssessmentB","INFO");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "RiskConcernActRiskConcernActNutritionAssessmentB", "INFO");
+
 		if (VALIDATE_RISK_CONCERN_ACT_NUTRITION_ASSESSMENT_B__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.RISK_CONCERN_ACT);
 			try {
-				VALIDATE_RISK_CONCERN_ACT_NUTRITION_ASSESSMENT_B__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_RISK_CONCERN_ACT_NUTRITION_ASSESSMENT_B__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_RISK_CONCERN_ACT_NUTRITION_ASSESSMENT_B__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_RISK_CONCERN_ACT_NUTRITION_ASSESSMENT_B__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_RISK_CONCERN_ACT_NUTRITION_ASSESSMENT_B__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(riskConcernAct)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_RISK_CONCERN_ACT_NUTRITION_ASSESSMENT_B__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				riskConcernAct)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.RISK_CONCERN_ACT__RISK_CONCERN_ACT_NUTRITION_ASSESSMENT_B,
-						 ConsolPlugin.INSTANCE.getString("RiskConcernActRiskConcernActNutritionAssessmentB"),
-						 new Object [] { riskConcernAct }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.RISK_CONCERN_ACT__RISK_CONCERN_ACT_NUTRITION_ASSESSMENT_B,
+						ConsolPlugin.INSTANCE.getString("RiskConcernActRiskConcernActNutritionAssessmentB"),
+						new Object[] { riskConcernAct }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -2214,7 +1939,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_RISK_CONCERN_ACT_POSTPROCEDURE_DIAGNOSIS2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_RISK_CONCERN_ACT_POSTPROCEDURE_DIAGNOSIS2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -2229,44 +1954,34 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 
 	public static boolean validateRiskConcernActPostprocedureDiagnosis2(RiskConcernAct riskConcernAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"RiskConcernActRiskConcernActPostprocedureDiagnosis2","INFO");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "RiskConcernActRiskConcernActPostprocedureDiagnosis2", "INFO");
+
 		if (VALIDATE_RISK_CONCERN_ACT_POSTPROCEDURE_DIAGNOSIS2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.RISK_CONCERN_ACT);
 			try {
-				VALIDATE_RISK_CONCERN_ACT_POSTPROCEDURE_DIAGNOSIS2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_RISK_CONCERN_ACT_POSTPROCEDURE_DIAGNOSIS2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_RISK_CONCERN_ACT_POSTPROCEDURE_DIAGNOSIS2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_RISK_CONCERN_ACT_POSTPROCEDURE_DIAGNOSIS2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_RISK_CONCERN_ACT_POSTPROCEDURE_DIAGNOSIS2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(riskConcernAct)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_RISK_CONCERN_ACT_POSTPROCEDURE_DIAGNOSIS2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				riskConcernAct)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.RISK_CONCERN_ACT__RISK_CONCERN_ACT_POSTPROCEDURE_DIAGNOSIS2,
-						 ConsolPlugin.INSTANCE.getString("RiskConcernActRiskConcernActPostprocedureDiagnosis2"),
-						 new Object [] { riskConcernAct }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.RISK_CONCERN_ACT__RISK_CONCERN_ACT_POSTPROCEDURE_DIAGNOSIS2,
+						ConsolPlugin.INSTANCE.getString("RiskConcernActRiskConcernActPostprocedureDiagnosis2"),
+						new Object[] { riskConcernAct }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -2291,7 +2006,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_RISK_CONCERN_ACT_PREGNANCY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_RISK_CONCERN_ACT_PREGNANCY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -2306,44 +2021,34 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 
 	public static boolean validateRiskConcernActPregnancyObservation(RiskConcernAct riskConcernAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"RiskConcernActRiskConcernActPregnancyObservation","INFO");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "RiskConcernActRiskConcernActPregnancyObservation", "INFO");
+
 		if (VALIDATE_RISK_CONCERN_ACT_PREGNANCY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.RISK_CONCERN_ACT);
 			try {
-				VALIDATE_RISK_CONCERN_ACT_PREGNANCY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_RISK_CONCERN_ACT_PREGNANCY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_RISK_CONCERN_ACT_PREGNANCY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_RISK_CONCERN_ACT_PREGNANCY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_RISK_CONCERN_ACT_PREGNANCY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(riskConcernAct)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_RISK_CONCERN_ACT_PREGNANCY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				riskConcernAct)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.RISK_CONCERN_ACT__RISK_CONCERN_ACT_PREGNANCY_OBSERVATION,
-						 ConsolPlugin.INSTANCE.getString("RiskConcernActRiskConcernActPregnancyObservation"),
-						 new Object [] { riskConcernAct }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.RISK_CONCERN_ACT__RISK_CONCERN_ACT_PREGNANCY_OBSERVATION,
+						ConsolPlugin.INSTANCE.getString("RiskConcernActRiskConcernActPregnancyObservation"),
+						new Object[] { riskConcernAct }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -2368,7 +2073,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_RISK_CONCERN_ACT_PREOPERATIVE_DIAGNOSIS2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_RISK_CONCERN_ACT_PREOPERATIVE_DIAGNOSIS2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -2383,44 +2088,34 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 
 	public static boolean validateRiskConcernActPreoperativeDiagnosis2(RiskConcernAct riskConcernAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"RiskConcernActRiskConcernActPreoperativeDiagnosis2","INFO");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "RiskConcernActRiskConcernActPreoperativeDiagnosis2", "INFO");
+
 		if (VALIDATE_RISK_CONCERN_ACT_PREOPERATIVE_DIAGNOSIS2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.RISK_CONCERN_ACT);
 			try {
-				VALIDATE_RISK_CONCERN_ACT_PREOPERATIVE_DIAGNOSIS2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_RISK_CONCERN_ACT_PREOPERATIVE_DIAGNOSIS2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_RISK_CONCERN_ACT_PREOPERATIVE_DIAGNOSIS2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_RISK_CONCERN_ACT_PREOPERATIVE_DIAGNOSIS2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_RISK_CONCERN_ACT_PREOPERATIVE_DIAGNOSIS2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(riskConcernAct)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_RISK_CONCERN_ACT_PREOPERATIVE_DIAGNOSIS2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				riskConcernAct)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.RISK_CONCERN_ACT__RISK_CONCERN_ACT_PREOPERATIVE_DIAGNOSIS2,
-						 ConsolPlugin.INSTANCE.getString("RiskConcernActRiskConcernActPreoperativeDiagnosis2"),
-						 new Object [] { riskConcernAct }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.RISK_CONCERN_ACT__RISK_CONCERN_ACT_PREOPERATIVE_DIAGNOSIS2,
+						ConsolPlugin.INSTANCE.getString("RiskConcernActRiskConcernActPreoperativeDiagnosis2"),
+						new Object[] { riskConcernAct }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -2445,7 +2140,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_RISK_CONCERN_ACT_REACTION_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_RISK_CONCERN_ACT_REACTION_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -2460,44 +2155,34 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 
 	public static boolean validateRiskConcernActReactionObservation2(RiskConcernAct riskConcernAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"RiskConcernActRiskConcernActReactionObservation2","INFO");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "RiskConcernActRiskConcernActReactionObservation2", "INFO");
+
 		if (VALIDATE_RISK_CONCERN_ACT_REACTION_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.RISK_CONCERN_ACT);
 			try {
-				VALIDATE_RISK_CONCERN_ACT_REACTION_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_RISK_CONCERN_ACT_REACTION_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_RISK_CONCERN_ACT_REACTION_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_RISK_CONCERN_ACT_REACTION_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_RISK_CONCERN_ACT_REACTION_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(riskConcernAct)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_RISK_CONCERN_ACT_REACTION_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				riskConcernAct)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.RISK_CONCERN_ACT__RISK_CONCERN_ACT_REACTION_OBSERVATION2,
-						 ConsolPlugin.INSTANCE.getString("RiskConcernActRiskConcernActReactionObservation2"),
-						 new Object [] { riskConcernAct }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.RISK_CONCERN_ACT__RISK_CONCERN_ACT_REACTION_OBSERVATION2,
+						ConsolPlugin.INSTANCE.getString("RiskConcernActRiskConcernActReactionObservation2"),
+						new Object[] { riskConcernAct }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -2522,7 +2207,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_RISK_CONCERN_ACT_RESULT_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_RISK_CONCERN_ACT_RESULT_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -2537,44 +2222,34 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 
 	public static boolean validateRiskConcernActResultObservation2(RiskConcernAct riskConcernAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"RiskConcernActRiskConcernActResultObservation2","INFO");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "RiskConcernActRiskConcernActResultObservation2", "INFO");
+
 		if (VALIDATE_RISK_CONCERN_ACT_RESULT_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.RISK_CONCERN_ACT);
 			try {
-				VALIDATE_RISK_CONCERN_ACT_RESULT_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_RISK_CONCERN_ACT_RESULT_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_RISK_CONCERN_ACT_RESULT_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_RISK_CONCERN_ACT_RESULT_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_RISK_CONCERN_ACT_RESULT_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(riskConcernAct)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_RISK_CONCERN_ACT_RESULT_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				riskConcernAct)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.RISK_CONCERN_ACT__RISK_CONCERN_ACT_RESULT_OBSERVATION2,
-						 ConsolPlugin.INSTANCE.getString("RiskConcernActRiskConcernActResultObservation2"),
-						 new Object [] { riskConcernAct }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.RISK_CONCERN_ACT__RISK_CONCERN_ACT_RESULT_OBSERVATION2,
+						ConsolPlugin.INSTANCE.getString("RiskConcernActRiskConcernActResultObservation2"),
+						new Object[] { riskConcernAct }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -2599,7 +2274,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_RISK_CONCERN_ACT_SENSORY_STATUS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_RISK_CONCERN_ACT_SENSORY_STATUS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -2614,44 +2289,32 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 
 	public static boolean validateRiskConcernActSensoryStatus(RiskConcernAct riskConcernAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"RiskConcernActRiskConcernActSensoryStatus","INFO");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "RiskConcernActRiskConcernActSensoryStatus", "INFO");
+
 		if (VALIDATE_RISK_CONCERN_ACT_SENSORY_STATUS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.RISK_CONCERN_ACT);
 			try {
-				VALIDATE_RISK_CONCERN_ACT_SENSORY_STATUS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_RISK_CONCERN_ACT_SENSORY_STATUS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_RISK_CONCERN_ACT_SENSORY_STATUS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_RISK_CONCERN_ACT_SENSORY_STATUS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_RISK_CONCERN_ACT_SENSORY_STATUS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(riskConcernAct)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_RISK_CONCERN_ACT_SENSORY_STATUS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(riskConcernAct)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.RISK_CONCERN_ACT__RISK_CONCERN_ACT_SENSORY_STATUS,
-						 ConsolPlugin.INSTANCE.getString("RiskConcernActRiskConcernActSensoryStatus"),
-						 new Object [] { riskConcernAct }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.RISK_CONCERN_ACT__RISK_CONCERN_ACT_SENSORY_STATUS,
+						ConsolPlugin.INSTANCE.getString("RiskConcernActRiskConcernActSensoryStatus"),
+						new Object[] { riskConcernAct }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -2676,7 +2339,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_RISK_CONCERN_ACT_SOCIAL_HISTORY_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_RISK_CONCERN_ACT_SOCIAL_HISTORY_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -2691,44 +2354,34 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 
 	public static boolean validateRiskConcernActSocialHistoryObservation2(RiskConcernAct riskConcernAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"RiskConcernActRiskConcernActSocialHistoryObservation2","INFO");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "RiskConcernActRiskConcernActSocialHistoryObservation2", "INFO");
+
 		if (VALIDATE_RISK_CONCERN_ACT_SOCIAL_HISTORY_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.RISK_CONCERN_ACT);
 			try {
-				VALIDATE_RISK_CONCERN_ACT_SOCIAL_HISTORY_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_RISK_CONCERN_ACT_SOCIAL_HISTORY_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_RISK_CONCERN_ACT_SOCIAL_HISTORY_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_RISK_CONCERN_ACT_SOCIAL_HISTORY_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_RISK_CONCERN_ACT_SOCIAL_HISTORY_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(riskConcernAct)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_RISK_CONCERN_ACT_SOCIAL_HISTORY_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				riskConcernAct)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.RISK_CONCERN_ACT__RISK_CONCERN_ACT_SOCIAL_HISTORY_OBSERVATION2,
-						 ConsolPlugin.INSTANCE.getString("RiskConcernActRiskConcernActSocialHistoryObservation2"),
-						 new Object [] { riskConcernAct }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.RISK_CONCERN_ACT__RISK_CONCERN_ACT_SOCIAL_HISTORY_OBSERVATION2,
+						ConsolPlugin.INSTANCE.getString("RiskConcernActRiskConcernActSocialHistoryObservation2"),
+						new Object[] { riskConcernAct }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -2753,7 +2406,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_RISK_CONCERN_ACT_SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_RISK_CONCERN_ACT_SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -2768,44 +2421,35 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 
 	public static boolean validateRiskConcernActSubstanceOrDeviceAllergyObservation2(RiskConcernAct riskConcernAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"RiskConcernActRiskConcernActSubstanceOrDeviceAllergyObservation2","INFO");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "RiskConcernActRiskConcernActSubstanceOrDeviceAllergyObservation2", "INFO");
+
 		if (VALIDATE_RISK_CONCERN_ACT_SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.RISK_CONCERN_ACT);
 			try {
-				VALIDATE_RISK_CONCERN_ACT_SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_RISK_CONCERN_ACT_SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_RISK_CONCERN_ACT_SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_RISK_CONCERN_ACT_SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_RISK_CONCERN_ACT_SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(riskConcernAct)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_RISK_CONCERN_ACT_SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				riskConcernAct)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.RISK_CONCERN_ACT__RISK_CONCERN_ACT_SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION2,
-						 ConsolPlugin.INSTANCE.getString("RiskConcernActRiskConcernActSubstanceOrDeviceAllergyObservation2"),
-						 new Object [] { riskConcernAct }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.RISK_CONCERN_ACT__RISK_CONCERN_ACT_SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION2,
+						ConsolPlugin.INSTANCE.getString(
+							"RiskConcernActRiskConcernActSubstanceOrDeviceAllergyObservation2"),
+						new Object[] { riskConcernAct }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -2830,7 +2474,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_RISK_CONCERN_ACT_TOBACCO_USE2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_RISK_CONCERN_ACT_TOBACCO_USE2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -2845,44 +2489,32 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 
 	public static boolean validateRiskConcernActTobaccoUse2(RiskConcernAct riskConcernAct, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"RiskConcernActRiskConcernActTobaccoUse2","INFO");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "RiskConcernActRiskConcernActTobaccoUse2", "INFO");
+
 		if (VALIDATE_RISK_CONCERN_ACT_TOBACCO_USE2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.RISK_CONCERN_ACT);
 			try {
-				VALIDATE_RISK_CONCERN_ACT_TOBACCO_USE2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_RISK_CONCERN_ACT_TOBACCO_USE2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_RISK_CONCERN_ACT_TOBACCO_USE2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_RISK_CONCERN_ACT_TOBACCO_USE2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_RISK_CONCERN_ACT_TOBACCO_USE2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(riskConcernAct)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_RISK_CONCERN_ACT_TOBACCO_USE2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(riskConcernAct)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.RISK_CONCERN_ACT__RISK_CONCERN_ACT_TOBACCO_USE2,
-						 ConsolPlugin.INSTANCE.getString("RiskConcernActRiskConcernActTobaccoUse2"),
-						 new Object [] { riskConcernAct }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.RISK_CONCERN_ACT__RISK_CONCERN_ACT_TOBACCO_USE2,
+						ConsolPlugin.INSTANCE.getString("RiskConcernActRiskConcernActTobaccoUse2"),
+						new Object[] { riskConcernAct }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -2907,7 +2539,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_RISK_CONCERN_ACT_VITAL_SIGN_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_RISK_CONCERN_ACT_VITAL_SIGN_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -2922,44 +2554,34 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 
 	public static boolean validateRiskConcernActVitalSignObservation2(RiskConcernAct riskConcernAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"RiskConcernActRiskConcernActVitalSignObservation2","INFO");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "RiskConcernActRiskConcernActVitalSignObservation2", "INFO");
+
 		if (VALIDATE_RISK_CONCERN_ACT_VITAL_SIGN_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.RISK_CONCERN_ACT);
 			try {
-				VALIDATE_RISK_CONCERN_ACT_VITAL_SIGN_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_RISK_CONCERN_ACT_VITAL_SIGN_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_RISK_CONCERN_ACT_VITAL_SIGN_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_RISK_CONCERN_ACT_VITAL_SIGN_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_RISK_CONCERN_ACT_VITAL_SIGN_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(riskConcernAct)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_RISK_CONCERN_ACT_VITAL_SIGN_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				riskConcernAct)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.RISK_CONCERN_ACT__RISK_CONCERN_ACT_VITAL_SIGN_OBSERVATION2,
-						 ConsolPlugin.INSTANCE.getString("RiskConcernActRiskConcernActVitalSignObservation2"),
-						 new Object [] { riskConcernAct }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.RISK_CONCERN_ACT__RISK_CONCERN_ACT_VITAL_SIGN_OBSERVATION2,
+						ConsolPlugin.INSTANCE.getString("RiskConcernActRiskConcernActVitalSignObservation2"),
+						new Object[] { riskConcernAct }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -2984,7 +2606,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_RISK_CONCERN_ACT_WOUND_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_RISK_CONCERN_ACT_WOUND_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -2999,44 +2621,33 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 
 	public static boolean validateRiskConcernActWoundObservation(RiskConcernAct riskConcernAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"RiskConcernActRiskConcernActWoundObservation","INFO");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "RiskConcernActRiskConcernActWoundObservation", "INFO");
+
 		if (VALIDATE_RISK_CONCERN_ACT_WOUND_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.RISK_CONCERN_ACT);
 			try {
-				VALIDATE_RISK_CONCERN_ACT_WOUND_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_RISK_CONCERN_ACT_WOUND_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_RISK_CONCERN_ACT_WOUND_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_RISK_CONCERN_ACT_WOUND_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_RISK_CONCERN_ACT_WOUND_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(riskConcernAct)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_RISK_CONCERN_ACT_WOUND_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(riskConcernAct)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.RISK_CONCERN_ACT__RISK_CONCERN_ACT_WOUND_OBSERVATION,
-						 ConsolPlugin.INSTANCE.getString("RiskConcernActRiskConcernActWoundObservation"),
-						 new Object [] { riskConcernAct }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.RISK_CONCERN_ACT__RISK_CONCERN_ACT_WOUND_OBSERVATION,
+						ConsolPlugin.INSTANCE.getString("RiskConcernActRiskConcernActWoundObservation"),
+						new Object[] { riskConcernAct }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -3061,7 +2672,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_RISK_CONCERN_ACT_PROBLEM_OBSERVATION2_HAS_SUPPORT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_RISK_CONCERN_ACT_PROBLEM_OBSERVATION2_HAS_SUPPORT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -3076,44 +2687,34 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 
 	public static boolean validateRiskConcernActProblemObservation2HasSupport(RiskConcernAct riskConcernAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"RiskConcernActRiskConcernActProblemObservation2HasSupport","INFO");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "RiskConcernActRiskConcernActProblemObservation2HasSupport", "INFO");
+
 		if (VALIDATE_RISK_CONCERN_ACT_PROBLEM_OBSERVATION2_HAS_SUPPORT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.RISK_CONCERN_ACT);
 			try {
-				VALIDATE_RISK_CONCERN_ACT_PROBLEM_OBSERVATION2_HAS_SUPPORT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_RISK_CONCERN_ACT_PROBLEM_OBSERVATION2_HAS_SUPPORT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_RISK_CONCERN_ACT_PROBLEM_OBSERVATION2_HAS_SUPPORT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_RISK_CONCERN_ACT_PROBLEM_OBSERVATION2_HAS_SUPPORT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_RISK_CONCERN_ACT_PROBLEM_OBSERVATION2_HAS_SUPPORT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(riskConcernAct)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_RISK_CONCERN_ACT_PROBLEM_OBSERVATION2_HAS_SUPPORT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				riskConcernAct)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.RISK_CONCERN_ACT__RISK_CONCERN_ACT_PROBLEM_OBSERVATION2_HAS_SUPPORT,
-						 ConsolPlugin.INSTANCE.getString("RiskConcernActRiskConcernActProblemObservation2HasSupport"),
-						 new Object [] { riskConcernAct }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.RISK_CONCERN_ACT__RISK_CONCERN_ACT_PROBLEM_OBSERVATION2_HAS_SUPPORT,
+						ConsolPlugin.INSTANCE.getString("RiskConcernActRiskConcernActProblemObservation2HasSupport"),
+						new Object[] { riskConcernAct }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -3138,7 +2739,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_RISK_CONCERN_ACT_CAREGIVER_CHARACTERISTICS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_RISK_CONCERN_ACT_CAREGIVER_CHARACTERISTICS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -3153,44 +2754,34 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 
 	public static boolean validateRiskConcernActCaregiverCharacteristics(RiskConcernAct riskConcernAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"RiskConcernActRiskConcernActCaregiverCharacteristics","INFO");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "RiskConcernActRiskConcernActCaregiverCharacteristics", "INFO");
+
 		if (VALIDATE_RISK_CONCERN_ACT_CAREGIVER_CHARACTERISTICS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.RISK_CONCERN_ACT);
 			try {
-				VALIDATE_RISK_CONCERN_ACT_CAREGIVER_CHARACTERISTICS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_RISK_CONCERN_ACT_CAREGIVER_CHARACTERISTICS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_RISK_CONCERN_ACT_CAREGIVER_CHARACTERISTICS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_RISK_CONCERN_ACT_CAREGIVER_CHARACTERISTICS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_RISK_CONCERN_ACT_CAREGIVER_CHARACTERISTICS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(riskConcernAct)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_RISK_CONCERN_ACT_CAREGIVER_CHARACTERISTICS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				riskConcernAct)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.RISK_CONCERN_ACT__RISK_CONCERN_ACT_CAREGIVER_CHARACTERISTICS,
-						 ConsolPlugin.INSTANCE.getString("RiskConcernActRiskConcernActCaregiverCharacteristics"),
-						 new Object [] { riskConcernAct }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.RISK_CONCERN_ACT__RISK_CONCERN_ACT_CAREGIVER_CHARACTERISTICS,
+						ConsolPlugin.INSTANCE.getString("RiskConcernActRiskConcernActCaregiverCharacteristics"),
+						new Object[] { riskConcernAct }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -3215,7 +2806,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_RISK_CONCERN_ACT_CULTURAL_AND_RELIGIOUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_RISK_CONCERN_ACT_CULTURAL_AND_RELIGIOUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -3230,44 +2821,34 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 
 	public static boolean validateRiskConcernActCulturalAndReligiousObservation(RiskConcernAct riskConcernAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"RiskConcernActRiskConcernActCulturalAndReligiousObservation","INFO");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "RiskConcernActRiskConcernActCulturalAndReligiousObservation", "INFO");
+
 		if (VALIDATE_RISK_CONCERN_ACT_CULTURAL_AND_RELIGIOUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.RISK_CONCERN_ACT);
 			try {
-				VALIDATE_RISK_CONCERN_ACT_CULTURAL_AND_RELIGIOUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_RISK_CONCERN_ACT_CULTURAL_AND_RELIGIOUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_RISK_CONCERN_ACT_CULTURAL_AND_RELIGIOUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_RISK_CONCERN_ACT_CULTURAL_AND_RELIGIOUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_RISK_CONCERN_ACT_CULTURAL_AND_RELIGIOUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(riskConcernAct)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_RISK_CONCERN_ACT_CULTURAL_AND_RELIGIOUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				riskConcernAct)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.RISK_CONCERN_ACT__RISK_CONCERN_ACT_CULTURAL_AND_RELIGIOUS_OBSERVATION,
-						 ConsolPlugin.INSTANCE.getString("RiskConcernActRiskConcernActCulturalAndReligiousObservation"),
-						 new Object [] { riskConcernAct }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.RISK_CONCERN_ACT__RISK_CONCERN_ACT_CULTURAL_AND_RELIGIOUS_OBSERVATION,
+						ConsolPlugin.INSTANCE.getString("RiskConcernActRiskConcernActCulturalAndReligiousObservation"),
+						new Object[] { riskConcernAct }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -3292,7 +2873,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_RISK_CONCERN_ACT_CHARACTERISTICS_OF_HOME_ENVIRONMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_RISK_CONCERN_ACT_CHARACTERISTICS_OF_HOME_ENVIRONMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -3307,44 +2888,34 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 
 	public static boolean validateRiskConcernActCharacteristicsOfHomeEnvironment(RiskConcernAct riskConcernAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"RiskConcernActRiskConcernActCharacteristicsOfHomeEnvironment","INFO");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "RiskConcernActRiskConcernActCharacteristicsOfHomeEnvironment", "INFO");
+
 		if (VALIDATE_RISK_CONCERN_ACT_CHARACTERISTICS_OF_HOME_ENVIRONMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.RISK_CONCERN_ACT);
 			try {
-				VALIDATE_RISK_CONCERN_ACT_CHARACTERISTICS_OF_HOME_ENVIRONMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_RISK_CONCERN_ACT_CHARACTERISTICS_OF_HOME_ENVIRONMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_RISK_CONCERN_ACT_CHARACTERISTICS_OF_HOME_ENVIRONMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_RISK_CONCERN_ACT_CHARACTERISTICS_OF_HOME_ENVIRONMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_RISK_CONCERN_ACT_CHARACTERISTICS_OF_HOME_ENVIRONMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(riskConcernAct)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_RISK_CONCERN_ACT_CHARACTERISTICS_OF_HOME_ENVIRONMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				riskConcernAct)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.RISK_CONCERN_ACT__RISK_CONCERN_ACT_CHARACTERISTICS_OF_HOME_ENVIRONMENT,
-						 ConsolPlugin.INSTANCE.getString("RiskConcernActRiskConcernActCharacteristicsOfHomeEnvironment"),
-						 new Object [] { riskConcernAct }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.RISK_CONCERN_ACT__RISK_CONCERN_ACT_CHARACTERISTICS_OF_HOME_ENVIRONMENT,
+						ConsolPlugin.INSTANCE.getString("RiskConcernActRiskConcernActCharacteristicsOfHomeEnvironment"),
+						new Object[] { riskConcernAct }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -3369,7 +2940,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_RISK_CONCERN_ACT_NUTRITIONAL_STATUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_RISK_CONCERN_ACT_NUTRITIONAL_STATUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -3384,44 +2955,34 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 
 	public static boolean validateRiskConcernActNutritionalStatusObservation(RiskConcernAct riskConcernAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"RiskConcernActRiskConcernActNutritionalStatusObservation","INFO");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "RiskConcernActRiskConcernActNutritionalStatusObservation", "INFO");
+
 		if (VALIDATE_RISK_CONCERN_ACT_NUTRITIONAL_STATUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.RISK_CONCERN_ACT);
 			try {
-				VALIDATE_RISK_CONCERN_ACT_NUTRITIONAL_STATUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_RISK_CONCERN_ACT_NUTRITIONAL_STATUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_RISK_CONCERN_ACT_NUTRITIONAL_STATUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_RISK_CONCERN_ACT_NUTRITIONAL_STATUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_RISK_CONCERN_ACT_NUTRITIONAL_STATUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(riskConcernAct)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_RISK_CONCERN_ACT_NUTRITIONAL_STATUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				riskConcernAct)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.RISK_CONCERN_ACT__RISK_CONCERN_ACT_NUTRITIONAL_STATUS_OBSERVATION,
-						 ConsolPlugin.INSTANCE.getString("RiskConcernActRiskConcernActNutritionalStatusObservation"),
-						 new Object [] { riskConcernAct }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.RISK_CONCERN_ACT__RISK_CONCERN_ACT_NUTRITIONAL_STATUS_OBSERVATION,
+						ConsolPlugin.INSTANCE.getString("RiskConcernActRiskConcernActNutritionalStatusObservation"),
+						new Object[] { riskConcernAct }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -3446,7 +3007,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_RISK_CONCERN_ACT_RESULT_ORGANIZER2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_RISK_CONCERN_ACT_RESULT_ORGANIZER2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -3461,44 +3022,33 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 
 	public static boolean validateRiskConcernActResultOrganizer2(RiskConcernAct riskConcernAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"RiskConcernActRiskConcernActResultOrganizer2","INFO");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "RiskConcernActRiskConcernActResultOrganizer2", "INFO");
+
 		if (VALIDATE_RISK_CONCERN_ACT_RESULT_ORGANIZER2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.RISK_CONCERN_ACT);
 			try {
-				VALIDATE_RISK_CONCERN_ACT_RESULT_ORGANIZER2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_RISK_CONCERN_ACT_RESULT_ORGANIZER2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_RISK_CONCERN_ACT_RESULT_ORGANIZER2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_RISK_CONCERN_ACT_RESULT_ORGANIZER2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_RISK_CONCERN_ACT_RESULT_ORGANIZER2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(riskConcernAct)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_RISK_CONCERN_ACT_RESULT_ORGANIZER2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(riskConcernAct)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.RISK_CONCERN_ACT__RISK_CONCERN_ACT_RESULT_ORGANIZER2,
-						 ConsolPlugin.INSTANCE.getString("RiskConcernActRiskConcernActResultOrganizer2"),
-						 new Object [] { riskConcernAct }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.RISK_CONCERN_ACT__RISK_CONCERN_ACT_RESULT_ORGANIZER2,
+						ConsolPlugin.INSTANCE.getString("RiskConcernActRiskConcernActResultOrganizer2"),
+						new Object[] { riskConcernAct }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -3523,7 +3073,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_RISK_CONCERN_ACT_PRIORITY_PREFERENCE_PATIENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_RISK_CONCERN_ACT_PRIORITY_PREFERENCE_PATIENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -3538,44 +3088,34 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 
 	public static boolean validateRiskConcernActPriorityPreferencePatient(RiskConcernAct riskConcernAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"RiskConcernActRiskConcernActPriorityPreferencePatient","INFO");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "RiskConcernActRiskConcernActPriorityPreferencePatient", "INFO");
+
 		if (VALIDATE_RISK_CONCERN_ACT_PRIORITY_PREFERENCE_PATIENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.RISK_CONCERN_ACT);
 			try {
-				VALIDATE_RISK_CONCERN_ACT_PRIORITY_PREFERENCE_PATIENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_RISK_CONCERN_ACT_PRIORITY_PREFERENCE_PATIENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_RISK_CONCERN_ACT_PRIORITY_PREFERENCE_PATIENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_RISK_CONCERN_ACT_PRIORITY_PREFERENCE_PATIENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_RISK_CONCERN_ACT_PRIORITY_PREFERENCE_PATIENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(riskConcernAct)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_RISK_CONCERN_ACT_PRIORITY_PREFERENCE_PATIENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				riskConcernAct)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.RISK_CONCERN_ACT__RISK_CONCERN_ACT_PRIORITY_PREFERENCE_PATIENT,
-						 ConsolPlugin.INSTANCE.getString("RiskConcernActRiskConcernActPriorityPreferencePatient"),
-						 new Object [] { riskConcernAct }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.RISK_CONCERN_ACT__RISK_CONCERN_ACT_PRIORITY_PREFERENCE_PATIENT,
+						ConsolPlugin.INSTANCE.getString("RiskConcernActRiskConcernActPriorityPreferencePatient"),
+						new Object[] { riskConcernAct }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -3600,7 +3140,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_RISK_CONCERN_ACT_PRIORITY_PREFERENCE_PROVIDER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_RISK_CONCERN_ACT_PRIORITY_PREFERENCE_PROVIDER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -3615,44 +3155,34 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 
 	public static boolean validateRiskConcernActPriorityPreferenceProvider(RiskConcernAct riskConcernAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"RiskConcernActRiskConcernActPriorityPreferenceProvider","INFO");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "RiskConcernActRiskConcernActPriorityPreferenceProvider", "INFO");
+
 		if (VALIDATE_RISK_CONCERN_ACT_PRIORITY_PREFERENCE_PROVIDER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.RISK_CONCERN_ACT);
 			try {
-				VALIDATE_RISK_CONCERN_ACT_PRIORITY_PREFERENCE_PROVIDER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_RISK_CONCERN_ACT_PRIORITY_PREFERENCE_PROVIDER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_RISK_CONCERN_ACT_PRIORITY_PREFERENCE_PROVIDER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_RISK_CONCERN_ACT_PRIORITY_PREFERENCE_PROVIDER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_RISK_CONCERN_ACT_PRIORITY_PREFERENCE_PROVIDER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(riskConcernAct)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_RISK_CONCERN_ACT_PRIORITY_PREFERENCE_PROVIDER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				riskConcernAct)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.RISK_CONCERN_ACT__RISK_CONCERN_ACT_PRIORITY_PREFERENCE_PROVIDER,
-						 ConsolPlugin.INSTANCE.getString("RiskConcernActRiskConcernActPriorityPreferenceProvider"),
-						 new Object [] { riskConcernAct }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.RISK_CONCERN_ACT__RISK_CONCERN_ACT_PRIORITY_PREFERENCE_PROVIDER,
+						ConsolPlugin.INSTANCE.getString("RiskConcernActRiskConcernActPriorityPreferenceProvider"),
+						new Object[] { riskConcernAct }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -3677,7 +3207,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_RISK_CONCERN_ACT_PROBLEM_CONCERN_ACT2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_RISK_CONCERN_ACT_PROBLEM_CONCERN_ACT2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -3692,44 +3222,34 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 
 	public static boolean validateRiskConcernActProblemConcernAct2(RiskConcernAct riskConcernAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"RiskConcernActRiskConcernActProblemConcernAct2","INFO");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "RiskConcernActRiskConcernActProblemConcernAct2", "INFO");
+
 		if (VALIDATE_RISK_CONCERN_ACT_PROBLEM_CONCERN_ACT2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.RISK_CONCERN_ACT);
 			try {
-				VALIDATE_RISK_CONCERN_ACT_PROBLEM_CONCERN_ACT2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_RISK_CONCERN_ACT_PROBLEM_CONCERN_ACT2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_RISK_CONCERN_ACT_PROBLEM_CONCERN_ACT2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_RISK_CONCERN_ACT_PROBLEM_CONCERN_ACT2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_RISK_CONCERN_ACT_PROBLEM_CONCERN_ACT2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(riskConcernAct)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_RISK_CONCERN_ACT_PROBLEM_CONCERN_ACT2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				riskConcernAct)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.RISK_CONCERN_ACT__RISK_CONCERN_ACT_PROBLEM_CONCERN_ACT2,
-						 ConsolPlugin.INSTANCE.getString("RiskConcernActRiskConcernActProblemConcernAct2"),
-						 new Object [] { riskConcernAct }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.RISK_CONCERN_ACT__RISK_CONCERN_ACT_PROBLEM_CONCERN_ACT2,
+						ConsolPlugin.INSTANCE.getString("RiskConcernActRiskConcernActProblemConcernAct2"),
+						new Object[] { riskConcernAct }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -3754,7 +3274,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_RISK_CONCERN_ACT_ENTRY_REFERENCE_HEALTH_CONCERN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_RISK_CONCERN_ACT_ENTRY_REFERENCE_HEALTH_CONCERN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -3769,44 +3289,34 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 
 	public static boolean validateRiskConcernActEntryReferenceHealthConcern(RiskConcernAct riskConcernAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"RiskConcernActRiskConcernActEntryReferenceHealthConcern","INFO");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "RiskConcernActRiskConcernActEntryReferenceHealthConcern", "INFO");
+
 		if (VALIDATE_RISK_CONCERN_ACT_ENTRY_REFERENCE_HEALTH_CONCERN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.RISK_CONCERN_ACT);
 			try {
-				VALIDATE_RISK_CONCERN_ACT_ENTRY_REFERENCE_HEALTH_CONCERN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_RISK_CONCERN_ACT_ENTRY_REFERENCE_HEALTH_CONCERN__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_RISK_CONCERN_ACT_ENTRY_REFERENCE_HEALTH_CONCERN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_RISK_CONCERN_ACT_ENTRY_REFERENCE_HEALTH_CONCERN__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_RISK_CONCERN_ACT_ENTRY_REFERENCE_HEALTH_CONCERN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(riskConcernAct)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_RISK_CONCERN_ACT_ENTRY_REFERENCE_HEALTH_CONCERN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				riskConcernAct)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.RISK_CONCERN_ACT__RISK_CONCERN_ACT_ENTRY_REFERENCE_HEALTH_CONCERN,
-						 ConsolPlugin.INSTANCE.getString("RiskConcernActRiskConcernActEntryReferenceHealthConcern"),
-						 new Object [] { riskConcernAct }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.RISK_CONCERN_ACT__RISK_CONCERN_ACT_ENTRY_REFERENCE_HEALTH_CONCERN,
+						ConsolPlugin.INSTANCE.getString("RiskConcernActRiskConcernActEntryReferenceHealthConcern"),
+						new Object[] { riskConcernAct }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -3831,7 +3341,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_RISK_CONCERN_ACT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_RISK_CONCERN_ACT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -3846,44 +3356,32 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 
 	public static boolean validateRiskConcernActReference(RiskConcernAct riskConcernAct, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"RiskConcernActRiskConcernActReference","INFO");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "RiskConcernActRiskConcernActReference", "INFO");
+
 		if (VALIDATE_RISK_CONCERN_ACT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.RISK_CONCERN_ACT);
 			try {
-				VALIDATE_RISK_CONCERN_ACT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_RISK_CONCERN_ACT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_RISK_CONCERN_ACT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_RISK_CONCERN_ACT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_RISK_CONCERN_ACT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(riskConcernAct)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_RISK_CONCERN_ACT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(riskConcernAct)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.RISK_CONCERN_ACT__RISK_CONCERN_ACT_REFERENCE,
-						 ConsolPlugin.INSTANCE.getString("RiskConcernActRiskConcernActReference"),
-						 new Object [] { riskConcernAct }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.RISK_CONCERN_ACT__RISK_CONCERN_ACT_REFERENCE,
+						ConsolPlugin.INSTANCE.getString("RiskConcernActRiskConcernActReference"),
+						new Object[] { riskConcernAct }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -3908,7 +3406,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal< Query<?, ?, ?> > VALIDATE_RISK_CONCERN_ACT_REFERENCE_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal< Query<?, ?, ?> >();
+	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_RISK_CONCERN_ACT_REFERENCE_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<Query<?, ?, ?>>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -3923,49 +3421,38 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateRiskConcernActReferenceTypeCode(RiskConcernAct riskConcernAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"RiskConcernActRiskConcernActReferenceTypeCode","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "RiskConcernActRiskConcernActReferenceTypeCode", "ERROR");
+
 		if (VALIDATE_RISK_CONCERN_ACT_REFERENCE_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.RISK_CONCERN_ACT);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_RISK_CONCERN_ACT_REFERENCE_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_RISK_CONCERN_ACT_REFERENCE_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(EOCL_ENV.get().createQuery(oclExpression));
-			}
-			catch (ParserException pe) {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_RISK_CONCERN_ACT_REFERENCE_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_RISK_CONCERN_ACT_REFERENCE_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(
+					EOCL_ENV.get().createQuery(oclExpression));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		Object oclResult = VALIDATE_RISK_CONCERN_ACT_REFERENCE_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(riskConcernAct);		
+		}
+
+		Object oclResult = VALIDATE_RISK_CONCERN_ACT_REFERENCE_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(
+			riskConcernAct);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-  			
+
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.RISK_CONCERN_ACT__RISK_CONCERN_ACT_REFERENCE_TYPE_CODE,
-						 ConsolPlugin.INSTANCE.getString("RiskConcernActRiskConcernActReferenceTypeCode"),
-						 new Object [] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.RISK_CONCERN_ACT__RISK_CONCERN_ACT_REFERENCE_TYPE_CODE,
+							ConsolPlugin.INSTANCE.getString("RiskConcernActRiskConcernActReferenceTypeCode"),
+							new Object[] { eObject }));
 				}
-				 
+
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -3991,7 +3478,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal< Query<?, ?, ?> > VALIDATE_RISK_CONCERN_ACT_REFERENCE_EXTERNAL_DOCUMENT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal< Query<?, ?, ?> >();
+	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_RISK_CONCERN_ACT_REFERENCE_EXTERNAL_DOCUMENT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<Query<?, ?, ?>>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -4006,49 +3493,39 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateRiskConcernActReferenceExternalDocumentReference(RiskConcernAct riskConcernAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"RiskConcernActRiskConcernActReferenceExternalDocumentReference","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "RiskConcernActRiskConcernActReferenceExternalDocumentReference", "ERROR");
+
 		if (VALIDATE_RISK_CONCERN_ACT_REFERENCE_EXTERNAL_DOCUMENT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.RISK_CONCERN_ACT);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_RISK_CONCERN_ACT_REFERENCE_EXTERNAL_DOCUMENT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_RISK_CONCERN_ACT_REFERENCE_EXTERNAL_DOCUMENT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(EOCL_ENV.get().createQuery(oclExpression));
-			}
-			catch (ParserException pe) {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_RISK_CONCERN_ACT_REFERENCE_EXTERNAL_DOCUMENT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_RISK_CONCERN_ACT_REFERENCE_EXTERNAL_DOCUMENT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(
+					EOCL_ENV.get().createQuery(oclExpression));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		Object oclResult = VALIDATE_RISK_CONCERN_ACT_REFERENCE_EXTERNAL_DOCUMENT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(riskConcernAct);		
+		}
+
+		Object oclResult = VALIDATE_RISK_CONCERN_ACT_REFERENCE_EXTERNAL_DOCUMENT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(
+			riskConcernAct);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-  			
+
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.RISK_CONCERN_ACT__RISK_CONCERN_ACT_REFERENCE_EXTERNAL_DOCUMENT_REFERENCE,
-						 ConsolPlugin.INSTANCE.getString("RiskConcernActRiskConcernActReferenceExternalDocumentReference"),
-						 new Object [] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.RISK_CONCERN_ACT__RISK_CONCERN_ACT_REFERENCE_EXTERNAL_DOCUMENT_REFERENCE,
+							ConsolPlugin.INSTANCE.getString(
+								"RiskConcernActRiskConcernActReferenceExternalDocumentReference"),
+							new Object[] { eObject }));
 				}
-				 
+
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -4082,22 +3559,20 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 */
 
 	public static EList<ProblemObservation2> getProblemObservation2s(RiskConcernAct riskConcernAct) {
-	
-	
-	
+
 		if (GET_PROBLEM_OBSERVATION2S__EOCL_QRY == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.RISK_CONCERN_ACT, ConsolPackage.Literals.RISK_CONCERN_ACT.getEAllOperations().get(101));
+			helper.setOperationContext(
+				ConsolPackage.Literals.RISK_CONCERN_ACT,
+				ConsolPackage.Literals.RISK_CONCERN_ACT.getEAllOperations().get(101));
 			try {
 				GET_PROBLEM_OBSERVATION2S__EOCL_QRY = helper.createQuery(GET_PROBLEM_OBSERVATION2S__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
+		}
+
 		OCL.Query query = EOCL_ENV.get().createQuery(GET_PROBLEM_OBSERVATION2S__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<ProblemObservation2> result = (Collection<ProblemObservation2>) query.evaluate(riskConcernAct);
@@ -4131,22 +3606,20 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 */
 
 	public static EList<AllergyObservation2> getAllergyObservation2s(RiskConcernAct riskConcernAct) {
-	
-	
-	
+
 		if (GET_ALLERGY_OBSERVATION2S__EOCL_QRY == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.RISK_CONCERN_ACT, ConsolPackage.Literals.RISK_CONCERN_ACT.getEAllOperations().get(102));
+			helper.setOperationContext(
+				ConsolPackage.Literals.RISK_CONCERN_ACT,
+				ConsolPackage.Literals.RISK_CONCERN_ACT.getEAllOperations().get(102));
 			try {
 				GET_ALLERGY_OBSERVATION2S__EOCL_QRY = helper.createQuery(GET_ALLERGY_OBSERVATION2S__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
+		}
+
 		OCL.Query query = EOCL_ENV.get().createQuery(GET_ALLERGY_OBSERVATION2S__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<AllergyObservation2> result = (Collection<AllergyObservation2>) query.evaluate(riskConcernAct);
@@ -4180,22 +3653,21 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 */
 
 	public static EList<EntryReference> getEntryReferenceRelatesTos(RiskConcernAct riskConcernAct) {
-	
-	
-	
+
 		if (GET_ENTRY_REFERENCE_RELATES_TOS__EOCL_QRY == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.RISK_CONCERN_ACT, ConsolPackage.Literals.RISK_CONCERN_ACT.getEAllOperations().get(103));
+			helper.setOperationContext(
+				ConsolPackage.Literals.RISK_CONCERN_ACT,
+				ConsolPackage.Literals.RISK_CONCERN_ACT.getEAllOperations().get(103));
 			try {
-				GET_ENTRY_REFERENCE_RELATES_TOS__EOCL_QRY = helper.createQuery(GET_ENTRY_REFERENCE_RELATES_TOS__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+				GET_ENTRY_REFERENCE_RELATES_TOS__EOCL_QRY = helper.createQuery(
+					GET_ENTRY_REFERENCE_RELATES_TOS__EOCL_EXP);
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
+		}
+
 		OCL.Query query = EOCL_ENV.get().createQuery(GET_ENTRY_REFERENCE_RELATES_TOS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<EntryReference> result = (Collection<EntryReference>) query.evaluate(riskConcernAct);
@@ -4229,22 +3701,21 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 */
 
 	public static EList<EntryReference> getEntryReferenceHasComponents(RiskConcernAct riskConcernAct) {
-	
-	
-	
+
 		if (GET_ENTRY_REFERENCE_HAS_COMPONENTS__EOCL_QRY == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.RISK_CONCERN_ACT, ConsolPackage.Literals.RISK_CONCERN_ACT.getEAllOperations().get(104));
+			helper.setOperationContext(
+				ConsolPackage.Literals.RISK_CONCERN_ACT,
+				ConsolPackage.Literals.RISK_CONCERN_ACT.getEAllOperations().get(104));
 			try {
-				GET_ENTRY_REFERENCE_HAS_COMPONENTS__EOCL_QRY = helper.createQuery(GET_ENTRY_REFERENCE_HAS_COMPONENTS__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+				GET_ENTRY_REFERENCE_HAS_COMPONENTS__EOCL_QRY = helper.createQuery(
+					GET_ENTRY_REFERENCE_HAS_COMPONENTS__EOCL_EXP);
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
+		}
+
 		OCL.Query query = EOCL_ENV.get().createQuery(GET_ENTRY_REFERENCE_HAS_COMPONENTS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<EntryReference> result = (Collection<EntryReference>) query.evaluate(riskConcernAct);
@@ -4278,25 +3749,25 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 */
 
 	public static EList<AssessmentScaleObservation> getAssessmentScaleObservations(RiskConcernAct riskConcernAct) {
-	
-	
-	
+
 		if (GET_ASSESSMENT_SCALE_OBSERVATIONS__EOCL_QRY == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.RISK_CONCERN_ACT, ConsolPackage.Literals.RISK_CONCERN_ACT.getEAllOperations().get(105));
+			helper.setOperationContext(
+				ConsolPackage.Literals.RISK_CONCERN_ACT,
+				ConsolPackage.Literals.RISK_CONCERN_ACT.getEAllOperations().get(105));
 			try {
-				GET_ASSESSMENT_SCALE_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_ASSESSMENT_SCALE_OBSERVATIONS__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+				GET_ASSESSMENT_SCALE_OBSERVATIONS__EOCL_QRY = helper.createQuery(
+					GET_ASSESSMENT_SCALE_OBSERVATIONS__EOCL_EXP);
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
+		}
+
 		OCL.Query query = EOCL_ENV.get().createQuery(GET_ASSESSMENT_SCALE_OBSERVATIONS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
-		Collection<AssessmentScaleObservation> result = (Collection<AssessmentScaleObservation>) query.evaluate(riskConcernAct);
+		Collection<AssessmentScaleObservation> result = (Collection<AssessmentScaleObservation>) query.evaluate(
+			riskConcernAct);
 		return new BasicEList.UnmodifiableEList<AssessmentScaleObservation>(result.size(), result.toArray());
 	}
 
@@ -4327,25 +3798,25 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 */
 
 	public static EList<MentalStatusObservation2> getMentalStatusObservation2s(RiskConcernAct riskConcernAct) {
-	
-	
-	
+
 		if (GET_MENTAL_STATUS_OBSERVATION2S__EOCL_QRY == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.RISK_CONCERN_ACT, ConsolPackage.Literals.RISK_CONCERN_ACT.getEAllOperations().get(106));
+			helper.setOperationContext(
+				ConsolPackage.Literals.RISK_CONCERN_ACT,
+				ConsolPackage.Literals.RISK_CONCERN_ACT.getEAllOperations().get(106));
 			try {
-				GET_MENTAL_STATUS_OBSERVATION2S__EOCL_QRY = helper.createQuery(GET_MENTAL_STATUS_OBSERVATION2S__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+				GET_MENTAL_STATUS_OBSERVATION2S__EOCL_QRY = helper.createQuery(
+					GET_MENTAL_STATUS_OBSERVATION2S__EOCL_EXP);
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
+		}
+
 		OCL.Query query = EOCL_ENV.get().createQuery(GET_MENTAL_STATUS_OBSERVATION2S__EOCL_QRY);
 		@SuppressWarnings("unchecked")
-		Collection<MentalStatusObservation2> result = (Collection<MentalStatusObservation2>) query.evaluate(riskConcernAct);
+		Collection<MentalStatusObservation2> result = (Collection<MentalStatusObservation2>) query.evaluate(
+			riskConcernAct);
 		return new BasicEList.UnmodifiableEList<MentalStatusObservation2>(result.size(), result.toArray());
 	}
 
@@ -4376,22 +3847,20 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 */
 
 	public static EList<SelfCareActivities> getSelfCareActivitiess(RiskConcernAct riskConcernAct) {
-	
-	
-	
+
 		if (GET_SELF_CARE_ACTIVITIESS__EOCL_QRY == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.RISK_CONCERN_ACT, ConsolPackage.Literals.RISK_CONCERN_ACT.getEAllOperations().get(107));
+			helper.setOperationContext(
+				ConsolPackage.Literals.RISK_CONCERN_ACT,
+				ConsolPackage.Literals.RISK_CONCERN_ACT.getEAllOperations().get(107));
 			try {
 				GET_SELF_CARE_ACTIVITIESS__EOCL_QRY = helper.createQuery(GET_SELF_CARE_ACTIVITIESS__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
+		}
+
 		OCL.Query query = EOCL_ENV.get().createQuery(GET_SELF_CARE_ACTIVITIESS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<SelfCareActivities> result = (Collection<SelfCareActivities>) query.evaluate(riskConcernAct);
@@ -4425,25 +3894,25 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 */
 
 	public static EList<MentalStatusObservation2> getMentalStatusObservation2Bs(RiskConcernAct riskConcernAct) {
-	
-	
-	
+
 		if (GET_MENTAL_STATUS_OBSERVATION2_BS__EOCL_QRY == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.RISK_CONCERN_ACT, ConsolPackage.Literals.RISK_CONCERN_ACT.getEAllOperations().get(108));
+			helper.setOperationContext(
+				ConsolPackage.Literals.RISK_CONCERN_ACT,
+				ConsolPackage.Literals.RISK_CONCERN_ACT.getEAllOperations().get(108));
 			try {
-				GET_MENTAL_STATUS_OBSERVATION2_BS__EOCL_QRY = helper.createQuery(GET_MENTAL_STATUS_OBSERVATION2_BS__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+				GET_MENTAL_STATUS_OBSERVATION2_BS__EOCL_QRY = helper.createQuery(
+					GET_MENTAL_STATUS_OBSERVATION2_BS__EOCL_EXP);
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
+		}
+
 		OCL.Query query = EOCL_ENV.get().createQuery(GET_MENTAL_STATUS_OBSERVATION2_BS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
-		Collection<MentalStatusObservation2> result = (Collection<MentalStatusObservation2>) query.evaluate(riskConcernAct);
+		Collection<MentalStatusObservation2> result = (Collection<MentalStatusObservation2>) query.evaluate(
+			riskConcernAct);
 		return new BasicEList.UnmodifiableEList<MentalStatusObservation2>(result.size(), result.toArray());
 	}
 
@@ -4474,25 +3943,25 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 */
 
 	public static EList<SmokingStatusMeaningfulUse2> getSmokingStatusMeaningfulUse2s(RiskConcernAct riskConcernAct) {
-	
-	
-	
+
 		if (GET_SMOKING_STATUS_MEANINGFUL_USE2S__EOCL_QRY == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.RISK_CONCERN_ACT, ConsolPackage.Literals.RISK_CONCERN_ACT.getEAllOperations().get(109));
+			helper.setOperationContext(
+				ConsolPackage.Literals.RISK_CONCERN_ACT,
+				ConsolPackage.Literals.RISK_CONCERN_ACT.getEAllOperations().get(109));
 			try {
-				GET_SMOKING_STATUS_MEANINGFUL_USE2S__EOCL_QRY = helper.createQuery(GET_SMOKING_STATUS_MEANINGFUL_USE2S__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+				GET_SMOKING_STATUS_MEANINGFUL_USE2S__EOCL_QRY = helper.createQuery(
+					GET_SMOKING_STATUS_MEANINGFUL_USE2S__EOCL_EXP);
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
+		}
+
 		OCL.Query query = EOCL_ENV.get().createQuery(GET_SMOKING_STATUS_MEANINGFUL_USE2S__EOCL_QRY);
 		@SuppressWarnings("unchecked")
-		Collection<SmokingStatusMeaningfulUse2> result = (Collection<SmokingStatusMeaningfulUse2>) query.evaluate(riskConcernAct);
+		Collection<SmokingStatusMeaningfulUse2> result = (Collection<SmokingStatusMeaningfulUse2>) query.evaluate(
+			riskConcernAct);
 		return new BasicEList.UnmodifiableEList<SmokingStatusMeaningfulUse2>(result.size(), result.toArray());
 	}
 
@@ -4523,22 +3992,20 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 */
 
 	public static EList<EncounterDiagnosis2> getEncounterDiagnosis2s(RiskConcernAct riskConcernAct) {
-	
-	
-	
+
 		if (GET_ENCOUNTER_DIAGNOSIS2S__EOCL_QRY == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.RISK_CONCERN_ACT, ConsolPackage.Literals.RISK_CONCERN_ACT.getEAllOperations().get(110));
+			helper.setOperationContext(
+				ConsolPackage.Literals.RISK_CONCERN_ACT,
+				ConsolPackage.Literals.RISK_CONCERN_ACT.getEAllOperations().get(110));
 			try {
 				GET_ENCOUNTER_DIAGNOSIS2S__EOCL_QRY = helper.createQuery(GET_ENCOUNTER_DIAGNOSIS2S__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
+		}
+
 		OCL.Query query = EOCL_ENV.get().createQuery(GET_ENCOUNTER_DIAGNOSIS2S__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<EncounterDiagnosis2> result = (Collection<EncounterDiagnosis2>) query.evaluate(riskConcernAct);
@@ -4572,25 +4039,24 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 */
 
 	public static EList<FamilyHistoryOrganizer2> getFamilyHistoryOrganizer2s(RiskConcernAct riskConcernAct) {
-	
-	
-	
+
 		if (GET_FAMILY_HISTORY_ORGANIZER2S__EOCL_QRY == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.RISK_CONCERN_ACT, ConsolPackage.Literals.RISK_CONCERN_ACT.getEAllOperations().get(111));
+			helper.setOperationContext(
+				ConsolPackage.Literals.RISK_CONCERN_ACT,
+				ConsolPackage.Literals.RISK_CONCERN_ACT.getEAllOperations().get(111));
 			try {
 				GET_FAMILY_HISTORY_ORGANIZER2S__EOCL_QRY = helper.createQuery(GET_FAMILY_HISTORY_ORGANIZER2S__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
+		}
+
 		OCL.Query query = EOCL_ENV.get().createQuery(GET_FAMILY_HISTORY_ORGANIZER2S__EOCL_QRY);
 		@SuppressWarnings("unchecked")
-		Collection<FamilyHistoryOrganizer2> result = (Collection<FamilyHistoryOrganizer2>) query.evaluate(riskConcernAct);
+		Collection<FamilyHistoryOrganizer2> result = (Collection<FamilyHistoryOrganizer2>) query.evaluate(
+			riskConcernAct);
 		return new BasicEList.UnmodifiableEList<FamilyHistoryOrganizer2>(result.size(), result.toArray());
 	}
 
@@ -4621,25 +4087,25 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 */
 
 	public static EList<FunctionalStatusObservation2> getFunctionalStatusObservation2s(RiskConcernAct riskConcernAct) {
-	
-	
-	
+
 		if (GET_FUNCTIONAL_STATUS_OBSERVATION2S__EOCL_QRY == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.RISK_CONCERN_ACT, ConsolPackage.Literals.RISK_CONCERN_ACT.getEAllOperations().get(112));
+			helper.setOperationContext(
+				ConsolPackage.Literals.RISK_CONCERN_ACT,
+				ConsolPackage.Literals.RISK_CONCERN_ACT.getEAllOperations().get(112));
 			try {
-				GET_FUNCTIONAL_STATUS_OBSERVATION2S__EOCL_QRY = helper.createQuery(GET_FUNCTIONAL_STATUS_OBSERVATION2S__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+				GET_FUNCTIONAL_STATUS_OBSERVATION2S__EOCL_QRY = helper.createQuery(
+					GET_FUNCTIONAL_STATUS_OBSERVATION2S__EOCL_EXP);
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
+		}
+
 		OCL.Query query = EOCL_ENV.get().createQuery(GET_FUNCTIONAL_STATUS_OBSERVATION2S__EOCL_QRY);
 		@SuppressWarnings("unchecked")
-		Collection<FunctionalStatusObservation2> result = (Collection<FunctionalStatusObservation2>) query.evaluate(riskConcernAct);
+		Collection<FunctionalStatusObservation2> result = (Collection<FunctionalStatusObservation2>) query.evaluate(
+			riskConcernAct);
 		return new BasicEList.UnmodifiableEList<FunctionalStatusObservation2>(result.size(), result.toArray());
 	}
 
@@ -4670,25 +4136,25 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 */
 
 	public static EList<HospitalAdmissionDiagnosis2> getHospitalAdmissionDiagnosis2s(RiskConcernAct riskConcernAct) {
-	
-	
-	
+
 		if (GET_HOSPITAL_ADMISSION_DIAGNOSIS2S__EOCL_QRY == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.RISK_CONCERN_ACT, ConsolPackage.Literals.RISK_CONCERN_ACT.getEAllOperations().get(113));
+			helper.setOperationContext(
+				ConsolPackage.Literals.RISK_CONCERN_ACT,
+				ConsolPackage.Literals.RISK_CONCERN_ACT.getEAllOperations().get(113));
 			try {
-				GET_HOSPITAL_ADMISSION_DIAGNOSIS2S__EOCL_QRY = helper.createQuery(GET_HOSPITAL_ADMISSION_DIAGNOSIS2S__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+				GET_HOSPITAL_ADMISSION_DIAGNOSIS2S__EOCL_QRY = helper.createQuery(
+					GET_HOSPITAL_ADMISSION_DIAGNOSIS2S__EOCL_EXP);
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
+		}
+
 		OCL.Query query = EOCL_ENV.get().createQuery(GET_HOSPITAL_ADMISSION_DIAGNOSIS2S__EOCL_QRY);
 		@SuppressWarnings("unchecked")
-		Collection<HospitalAdmissionDiagnosis2> result = (Collection<HospitalAdmissionDiagnosis2>) query.evaluate(riskConcernAct);
+		Collection<HospitalAdmissionDiagnosis2> result = (Collection<HospitalAdmissionDiagnosis2>) query.evaluate(
+			riskConcernAct);
 		return new BasicEList.UnmodifiableEList<HospitalAdmissionDiagnosis2>(result.size(), result.toArray());
 	}
 
@@ -4719,25 +4185,25 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 */
 
 	public static EList<MentalStatusObservation2> getMentalStatusObservation2Cs(RiskConcernAct riskConcernAct) {
-	
-	
-	
+
 		if (GET_MENTAL_STATUS_OBSERVATION2_CS__EOCL_QRY == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.RISK_CONCERN_ACT, ConsolPackage.Literals.RISK_CONCERN_ACT.getEAllOperations().get(114));
+			helper.setOperationContext(
+				ConsolPackage.Literals.RISK_CONCERN_ACT,
+				ConsolPackage.Literals.RISK_CONCERN_ACT.getEAllOperations().get(114));
 			try {
-				GET_MENTAL_STATUS_OBSERVATION2_CS__EOCL_QRY = helper.createQuery(GET_MENTAL_STATUS_OBSERVATION2_CS__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+				GET_MENTAL_STATUS_OBSERVATION2_CS__EOCL_QRY = helper.createQuery(
+					GET_MENTAL_STATUS_OBSERVATION2_CS__EOCL_EXP);
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
+		}
+
 		OCL.Query query = EOCL_ENV.get().createQuery(GET_MENTAL_STATUS_OBSERVATION2_CS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
-		Collection<MentalStatusObservation2> result = (Collection<MentalStatusObservation2>) query.evaluate(riskConcernAct);
+		Collection<MentalStatusObservation2> result = (Collection<MentalStatusObservation2>) query.evaluate(
+			riskConcernAct);
 		return new BasicEList.UnmodifiableEList<MentalStatusObservation2>(result.size(), result.toArray());
 	}
 
@@ -4768,22 +4234,20 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 */
 
 	public static EList<NutritionAssessment> getNutritionAssessments(RiskConcernAct riskConcernAct) {
-	
-	
-	
+
 		if (GET_NUTRITION_ASSESSMENTS__EOCL_QRY == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.RISK_CONCERN_ACT, ConsolPackage.Literals.RISK_CONCERN_ACT.getEAllOperations().get(115));
+			helper.setOperationContext(
+				ConsolPackage.Literals.RISK_CONCERN_ACT,
+				ConsolPackage.Literals.RISK_CONCERN_ACT.getEAllOperations().get(115));
 			try {
 				GET_NUTRITION_ASSESSMENTS__EOCL_QRY = helper.createQuery(GET_NUTRITION_ASSESSMENTS__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
+		}
+
 		OCL.Query query = EOCL_ENV.get().createQuery(GET_NUTRITION_ASSESSMENTS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<NutritionAssessment> result = (Collection<NutritionAssessment>) query.evaluate(riskConcernAct);
@@ -4817,22 +4281,20 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 */
 
 	public static EList<NutritionAssessment> getNutritionAssessmentBs(RiskConcernAct riskConcernAct) {
-	
-	
-	
+
 		if (GET_NUTRITION_ASSESSMENT_BS__EOCL_QRY == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.RISK_CONCERN_ACT, ConsolPackage.Literals.RISK_CONCERN_ACT.getEAllOperations().get(116));
+			helper.setOperationContext(
+				ConsolPackage.Literals.RISK_CONCERN_ACT,
+				ConsolPackage.Literals.RISK_CONCERN_ACT.getEAllOperations().get(116));
 			try {
 				GET_NUTRITION_ASSESSMENT_BS__EOCL_QRY = helper.createQuery(GET_NUTRITION_ASSESSMENT_BS__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
+		}
+
 		OCL.Query query = EOCL_ENV.get().createQuery(GET_NUTRITION_ASSESSMENT_BS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<NutritionAssessment> result = (Collection<NutritionAssessment>) query.evaluate(riskConcernAct);
@@ -4866,25 +4328,24 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 */
 
 	public static EList<PostprocedureDiagnosis2> getPostprocedureDiagnosis2s(RiskConcernAct riskConcernAct) {
-	
-	
-	
+
 		if (GET_POSTPROCEDURE_DIAGNOSIS2S__EOCL_QRY == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.RISK_CONCERN_ACT, ConsolPackage.Literals.RISK_CONCERN_ACT.getEAllOperations().get(117));
+			helper.setOperationContext(
+				ConsolPackage.Literals.RISK_CONCERN_ACT,
+				ConsolPackage.Literals.RISK_CONCERN_ACT.getEAllOperations().get(117));
 			try {
 				GET_POSTPROCEDURE_DIAGNOSIS2S__EOCL_QRY = helper.createQuery(GET_POSTPROCEDURE_DIAGNOSIS2S__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
+		}
+
 		OCL.Query query = EOCL_ENV.get().createQuery(GET_POSTPROCEDURE_DIAGNOSIS2S__EOCL_QRY);
 		@SuppressWarnings("unchecked")
-		Collection<PostprocedureDiagnosis2> result = (Collection<PostprocedureDiagnosis2>) query.evaluate(riskConcernAct);
+		Collection<PostprocedureDiagnosis2> result = (Collection<PostprocedureDiagnosis2>) query.evaluate(
+			riskConcernAct);
 		return new BasicEList.UnmodifiableEList<PostprocedureDiagnosis2>(result.size(), result.toArray());
 	}
 
@@ -4915,22 +4376,20 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 */
 
 	public static EList<PregnancyObservation> getPregnancyObservations(RiskConcernAct riskConcernAct) {
-	
-	
-	
+
 		if (GET_PREGNANCY_OBSERVATIONS__EOCL_QRY == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.RISK_CONCERN_ACT, ConsolPackage.Literals.RISK_CONCERN_ACT.getEAllOperations().get(118));
+			helper.setOperationContext(
+				ConsolPackage.Literals.RISK_CONCERN_ACT,
+				ConsolPackage.Literals.RISK_CONCERN_ACT.getEAllOperations().get(118));
 			try {
 				GET_PREGNANCY_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_PREGNANCY_OBSERVATIONS__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
+		}
+
 		OCL.Query query = EOCL_ENV.get().createQuery(GET_PREGNANCY_OBSERVATIONS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<PregnancyObservation> result = (Collection<PregnancyObservation>) query.evaluate(riskConcernAct);
@@ -4964,22 +4423,20 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 */
 
 	public static EList<PreoperativeDiagnosis2> getPreoperativeDiagnosis2s(RiskConcernAct riskConcernAct) {
-	
-	
-	
+
 		if (GET_PREOPERATIVE_DIAGNOSIS2S__EOCL_QRY == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.RISK_CONCERN_ACT, ConsolPackage.Literals.RISK_CONCERN_ACT.getEAllOperations().get(119));
+			helper.setOperationContext(
+				ConsolPackage.Literals.RISK_CONCERN_ACT,
+				ConsolPackage.Literals.RISK_CONCERN_ACT.getEAllOperations().get(119));
 			try {
 				GET_PREOPERATIVE_DIAGNOSIS2S__EOCL_QRY = helper.createQuery(GET_PREOPERATIVE_DIAGNOSIS2S__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
+		}
+
 		OCL.Query query = EOCL_ENV.get().createQuery(GET_PREOPERATIVE_DIAGNOSIS2S__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<PreoperativeDiagnosis2> result = (Collection<PreoperativeDiagnosis2>) query.evaluate(riskConcernAct);
@@ -5013,22 +4470,20 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 */
 
 	public static EList<ReactionObservation2> getReactionObservation2s(RiskConcernAct riskConcernAct) {
-	
-	
-	
+
 		if (GET_REACTION_OBSERVATION2S__EOCL_QRY == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.RISK_CONCERN_ACT, ConsolPackage.Literals.RISK_CONCERN_ACT.getEAllOperations().get(120));
+			helper.setOperationContext(
+				ConsolPackage.Literals.RISK_CONCERN_ACT,
+				ConsolPackage.Literals.RISK_CONCERN_ACT.getEAllOperations().get(120));
 			try {
 				GET_REACTION_OBSERVATION2S__EOCL_QRY = helper.createQuery(GET_REACTION_OBSERVATION2S__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
+		}
+
 		OCL.Query query = EOCL_ENV.get().createQuery(GET_REACTION_OBSERVATION2S__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<ReactionObservation2> result = (Collection<ReactionObservation2>) query.evaluate(riskConcernAct);
@@ -5062,22 +4517,20 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 */
 
 	public static EList<ResultObservation2> getResultObservation2s(RiskConcernAct riskConcernAct) {
-	
-	
-	
+
 		if (GET_RESULT_OBSERVATION2S__EOCL_QRY == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.RISK_CONCERN_ACT, ConsolPackage.Literals.RISK_CONCERN_ACT.getEAllOperations().get(121));
+			helper.setOperationContext(
+				ConsolPackage.Literals.RISK_CONCERN_ACT,
+				ConsolPackage.Literals.RISK_CONCERN_ACT.getEAllOperations().get(121));
 			try {
 				GET_RESULT_OBSERVATION2S__EOCL_QRY = helper.createQuery(GET_RESULT_OBSERVATION2S__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
+		}
+
 		OCL.Query query = EOCL_ENV.get().createQuery(GET_RESULT_OBSERVATION2S__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<ResultObservation2> result = (Collection<ResultObservation2>) query.evaluate(riskConcernAct);
@@ -5111,22 +4564,20 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 */
 
 	public static EList<SensoryStatus> getSensoryStatuss(RiskConcernAct riskConcernAct) {
-	
-	
-	
+
 		if (GET_SENSORY_STATUSS__EOCL_QRY == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.RISK_CONCERN_ACT, ConsolPackage.Literals.RISK_CONCERN_ACT.getEAllOperations().get(122));
+			helper.setOperationContext(
+				ConsolPackage.Literals.RISK_CONCERN_ACT,
+				ConsolPackage.Literals.RISK_CONCERN_ACT.getEAllOperations().get(122));
 			try {
 				GET_SENSORY_STATUSS__EOCL_QRY = helper.createQuery(GET_SENSORY_STATUSS__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
+		}
+
 		OCL.Query query = EOCL_ENV.get().createQuery(GET_SENSORY_STATUSS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<SensoryStatus> result = (Collection<SensoryStatus>) query.evaluate(riskConcernAct);
@@ -5160,25 +4611,25 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 */
 
 	public static EList<SocialHistoryObservation2> getSocialHistoryObservation2s(RiskConcernAct riskConcernAct) {
-	
-	
-	
+
 		if (GET_SOCIAL_HISTORY_OBSERVATION2S__EOCL_QRY == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.RISK_CONCERN_ACT, ConsolPackage.Literals.RISK_CONCERN_ACT.getEAllOperations().get(123));
+			helper.setOperationContext(
+				ConsolPackage.Literals.RISK_CONCERN_ACT,
+				ConsolPackage.Literals.RISK_CONCERN_ACT.getEAllOperations().get(123));
 			try {
-				GET_SOCIAL_HISTORY_OBSERVATION2S__EOCL_QRY = helper.createQuery(GET_SOCIAL_HISTORY_OBSERVATION2S__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+				GET_SOCIAL_HISTORY_OBSERVATION2S__EOCL_QRY = helper.createQuery(
+					GET_SOCIAL_HISTORY_OBSERVATION2S__EOCL_EXP);
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
+		}
+
 		OCL.Query query = EOCL_ENV.get().createQuery(GET_SOCIAL_HISTORY_OBSERVATION2S__EOCL_QRY);
 		@SuppressWarnings("unchecked")
-		Collection<SocialHistoryObservation2> result = (Collection<SocialHistoryObservation2>) query.evaluate(riskConcernAct);
+		Collection<SocialHistoryObservation2> result = (Collection<SocialHistoryObservation2>) query.evaluate(
+			riskConcernAct);
 		return new BasicEList.UnmodifiableEList<SocialHistoryObservation2>(result.size(), result.toArray());
 	}
 
@@ -5210,25 +4661,25 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 
 	public static EList<SubstanceOrDeviceAllergyObservation2> getSubstanceOrDeviceAllergyObservation2s(
 			RiskConcernAct riskConcernAct) {
-	
-	
-	
+
 		if (GET_SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION2S__EOCL_QRY == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.RISK_CONCERN_ACT, ConsolPackage.Literals.RISK_CONCERN_ACT.getEAllOperations().get(124));
+			helper.setOperationContext(
+				ConsolPackage.Literals.RISK_CONCERN_ACT,
+				ConsolPackage.Literals.RISK_CONCERN_ACT.getEAllOperations().get(124));
 			try {
-				GET_SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION2S__EOCL_QRY = helper.createQuery(GET_SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION2S__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+				GET_SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION2S__EOCL_QRY = helper.createQuery(
+					GET_SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION2S__EOCL_EXP);
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
+		}
+
 		OCL.Query query = EOCL_ENV.get().createQuery(GET_SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION2S__EOCL_QRY);
 		@SuppressWarnings("unchecked")
-		Collection<SubstanceOrDeviceAllergyObservation2> result = (Collection<SubstanceOrDeviceAllergyObservation2>) query.evaluate(riskConcernAct);
+		Collection<SubstanceOrDeviceAllergyObservation2> result = (Collection<SubstanceOrDeviceAllergyObservation2>) query.evaluate(
+			riskConcernAct);
 		return new BasicEList.UnmodifiableEList<SubstanceOrDeviceAllergyObservation2>(result.size(), result.toArray());
 	}
 
@@ -5259,22 +4710,20 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 */
 
 	public static EList<TobaccoUse2> getTobaccoUse2s(RiskConcernAct riskConcernAct) {
-	
-	
-	
+
 		if (GET_TOBACCO_USE2S__EOCL_QRY == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.RISK_CONCERN_ACT, ConsolPackage.Literals.RISK_CONCERN_ACT.getEAllOperations().get(125));
+			helper.setOperationContext(
+				ConsolPackage.Literals.RISK_CONCERN_ACT,
+				ConsolPackage.Literals.RISK_CONCERN_ACT.getEAllOperations().get(125));
 			try {
 				GET_TOBACCO_USE2S__EOCL_QRY = helper.createQuery(GET_TOBACCO_USE2S__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
+		}
+
 		OCL.Query query = EOCL_ENV.get().createQuery(GET_TOBACCO_USE2S__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<TobaccoUse2> result = (Collection<TobaccoUse2>) query.evaluate(riskConcernAct);
@@ -5308,22 +4757,20 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 */
 
 	public static EList<VitalSignObservation2> getVitalSignObservation2s(RiskConcernAct riskConcernAct) {
-	
-	
-	
+
 		if (GET_VITAL_SIGN_OBSERVATION2S__EOCL_QRY == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.RISK_CONCERN_ACT, ConsolPackage.Literals.RISK_CONCERN_ACT.getEAllOperations().get(126));
+			helper.setOperationContext(
+				ConsolPackage.Literals.RISK_CONCERN_ACT,
+				ConsolPackage.Literals.RISK_CONCERN_ACT.getEAllOperations().get(126));
 			try {
 				GET_VITAL_SIGN_OBSERVATION2S__EOCL_QRY = helper.createQuery(GET_VITAL_SIGN_OBSERVATION2S__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
+		}
+
 		OCL.Query query = EOCL_ENV.get().createQuery(GET_VITAL_SIGN_OBSERVATION2S__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<VitalSignObservation2> result = (Collection<VitalSignObservation2>) query.evaluate(riskConcernAct);
@@ -5357,25 +4804,24 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 */
 
 	public static EList<LongitudinalCareWoundObservation> getWoundObservations(RiskConcernAct riskConcernAct) {
-	
-	
-	
+
 		if (GET_WOUND_OBSERVATIONS__EOCL_QRY == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.RISK_CONCERN_ACT, ConsolPackage.Literals.RISK_CONCERN_ACT.getEAllOperations().get(127));
+			helper.setOperationContext(
+				ConsolPackage.Literals.RISK_CONCERN_ACT,
+				ConsolPackage.Literals.RISK_CONCERN_ACT.getEAllOperations().get(127));
 			try {
 				GET_WOUND_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_WOUND_OBSERVATIONS__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
+		}
+
 		OCL.Query query = EOCL_ENV.get().createQuery(GET_WOUND_OBSERVATIONS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
-		Collection<LongitudinalCareWoundObservation> result = (Collection<LongitudinalCareWoundObservation>) query.evaluate(riskConcernAct);
+		Collection<LongitudinalCareWoundObservation> result = (Collection<LongitudinalCareWoundObservation>) query.evaluate(
+			riskConcernAct);
 		return new BasicEList.UnmodifiableEList<LongitudinalCareWoundObservation>(result.size(), result.toArray());
 	}
 
@@ -5406,22 +4852,21 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 */
 
 	public static EList<ProblemObservation2> getProblemObservation2HasSupports(RiskConcernAct riskConcernAct) {
-	
-	
-	
+
 		if (GET_PROBLEM_OBSERVATION2_HAS_SUPPORTS__EOCL_QRY == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.RISK_CONCERN_ACT, ConsolPackage.Literals.RISK_CONCERN_ACT.getEAllOperations().get(128));
+			helper.setOperationContext(
+				ConsolPackage.Literals.RISK_CONCERN_ACT,
+				ConsolPackage.Literals.RISK_CONCERN_ACT.getEAllOperations().get(128));
 			try {
-				GET_PROBLEM_OBSERVATION2_HAS_SUPPORTS__EOCL_QRY = helper.createQuery(GET_PROBLEM_OBSERVATION2_HAS_SUPPORTS__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+				GET_PROBLEM_OBSERVATION2_HAS_SUPPORTS__EOCL_QRY = helper.createQuery(
+					GET_PROBLEM_OBSERVATION2_HAS_SUPPORTS__EOCL_EXP);
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
+		}
+
 		OCL.Query query = EOCL_ENV.get().createQuery(GET_PROBLEM_OBSERVATION2_HAS_SUPPORTS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<ProblemObservation2> result = (Collection<ProblemObservation2>) query.evaluate(riskConcernAct);
@@ -5455,25 +4900,24 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 */
 
 	public static EList<CaregiverCharacteristics> getCaregiverCharacteristicss(RiskConcernAct riskConcernAct) {
-	
-	
-	
+
 		if (GET_CAREGIVER_CHARACTERISTICSS__EOCL_QRY == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.RISK_CONCERN_ACT, ConsolPackage.Literals.RISK_CONCERN_ACT.getEAllOperations().get(129));
+			helper.setOperationContext(
+				ConsolPackage.Literals.RISK_CONCERN_ACT,
+				ConsolPackage.Literals.RISK_CONCERN_ACT.getEAllOperations().get(129));
 			try {
 				GET_CAREGIVER_CHARACTERISTICSS__EOCL_QRY = helper.createQuery(GET_CAREGIVER_CHARACTERISTICSS__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
+		}
+
 		OCL.Query query = EOCL_ENV.get().createQuery(GET_CAREGIVER_CHARACTERISTICSS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
-		Collection<CaregiverCharacteristics> result = (Collection<CaregiverCharacteristics>) query.evaluate(riskConcernAct);
+		Collection<CaregiverCharacteristics> result = (Collection<CaregiverCharacteristics>) query.evaluate(
+			riskConcernAct);
 		return new BasicEList.UnmodifiableEList<CaregiverCharacteristics>(result.size(), result.toArray());
 	}
 
@@ -5505,25 +4949,25 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 
 	public static EList<CulturalAndReligiousObservation> getCulturalAndReligiousObservations(
 			RiskConcernAct riskConcernAct) {
-	
-	
-	
+
 		if (GET_CULTURAL_AND_RELIGIOUS_OBSERVATIONS__EOCL_QRY == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.RISK_CONCERN_ACT, ConsolPackage.Literals.RISK_CONCERN_ACT.getEAllOperations().get(130));
+			helper.setOperationContext(
+				ConsolPackage.Literals.RISK_CONCERN_ACT,
+				ConsolPackage.Literals.RISK_CONCERN_ACT.getEAllOperations().get(130));
 			try {
-				GET_CULTURAL_AND_RELIGIOUS_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_CULTURAL_AND_RELIGIOUS_OBSERVATIONS__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+				GET_CULTURAL_AND_RELIGIOUS_OBSERVATIONS__EOCL_QRY = helper.createQuery(
+					GET_CULTURAL_AND_RELIGIOUS_OBSERVATIONS__EOCL_EXP);
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
+		}
+
 		OCL.Query query = EOCL_ENV.get().createQuery(GET_CULTURAL_AND_RELIGIOUS_OBSERVATIONS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
-		Collection<CulturalAndReligiousObservation> result = (Collection<CulturalAndReligiousObservation>) query.evaluate(riskConcernAct);
+		Collection<CulturalAndReligiousObservation> result = (Collection<CulturalAndReligiousObservation>) query.evaluate(
+			riskConcernAct);
 		return new BasicEList.UnmodifiableEList<CulturalAndReligiousObservation>(result.size(), result.toArray());
 	}
 
@@ -5555,25 +4999,25 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 
 	public static EList<CharacteristicsOfHomeEnvironment> getCharacteristicsOfHomeEnvironments(
 			RiskConcernAct riskConcernAct) {
-	
-	
-	
+
 		if (GET_CHARACTERISTICS_OF_HOME_ENVIRONMENTS__EOCL_QRY == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.RISK_CONCERN_ACT, ConsolPackage.Literals.RISK_CONCERN_ACT.getEAllOperations().get(131));
+			helper.setOperationContext(
+				ConsolPackage.Literals.RISK_CONCERN_ACT,
+				ConsolPackage.Literals.RISK_CONCERN_ACT.getEAllOperations().get(131));
 			try {
-				GET_CHARACTERISTICS_OF_HOME_ENVIRONMENTS__EOCL_QRY = helper.createQuery(GET_CHARACTERISTICS_OF_HOME_ENVIRONMENTS__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+				GET_CHARACTERISTICS_OF_HOME_ENVIRONMENTS__EOCL_QRY = helper.createQuery(
+					GET_CHARACTERISTICS_OF_HOME_ENVIRONMENTS__EOCL_EXP);
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
+		}
+
 		OCL.Query query = EOCL_ENV.get().createQuery(GET_CHARACTERISTICS_OF_HOME_ENVIRONMENTS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
-		Collection<CharacteristicsOfHomeEnvironment> result = (Collection<CharacteristicsOfHomeEnvironment>) query.evaluate(riskConcernAct);
+		Collection<CharacteristicsOfHomeEnvironment> result = (Collection<CharacteristicsOfHomeEnvironment>) query.evaluate(
+			riskConcernAct);
 		return new BasicEList.UnmodifiableEList<CharacteristicsOfHomeEnvironment>(result.size(), result.toArray());
 	}
 
@@ -5604,25 +5048,25 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 */
 
 	public static EList<NutritionalStatusObservation> getNutritionalStatusObservations(RiskConcernAct riskConcernAct) {
-	
-	
-	
+
 		if (GET_NUTRITIONAL_STATUS_OBSERVATIONS__EOCL_QRY == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.RISK_CONCERN_ACT, ConsolPackage.Literals.RISK_CONCERN_ACT.getEAllOperations().get(132));
+			helper.setOperationContext(
+				ConsolPackage.Literals.RISK_CONCERN_ACT,
+				ConsolPackage.Literals.RISK_CONCERN_ACT.getEAllOperations().get(132));
 			try {
-				GET_NUTRITIONAL_STATUS_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_NUTRITIONAL_STATUS_OBSERVATIONS__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+				GET_NUTRITIONAL_STATUS_OBSERVATIONS__EOCL_QRY = helper.createQuery(
+					GET_NUTRITIONAL_STATUS_OBSERVATIONS__EOCL_EXP);
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
+		}
+
 		OCL.Query query = EOCL_ENV.get().createQuery(GET_NUTRITIONAL_STATUS_OBSERVATIONS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
-		Collection<NutritionalStatusObservation> result = (Collection<NutritionalStatusObservation>) query.evaluate(riskConcernAct);
+		Collection<NutritionalStatusObservation> result = (Collection<NutritionalStatusObservation>) query.evaluate(
+			riskConcernAct);
 		return new BasicEList.UnmodifiableEList<NutritionalStatusObservation>(result.size(), result.toArray());
 	}
 
@@ -5653,22 +5097,20 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 */
 
 	public static EList<ResultOrganizer2> getResultOrganizer2s(RiskConcernAct riskConcernAct) {
-	
-	
-	
+
 		if (GET_RESULT_ORGANIZER2S__EOCL_QRY == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.RISK_CONCERN_ACT, ConsolPackage.Literals.RISK_CONCERN_ACT.getEAllOperations().get(133));
+			helper.setOperationContext(
+				ConsolPackage.Literals.RISK_CONCERN_ACT,
+				ConsolPackage.Literals.RISK_CONCERN_ACT.getEAllOperations().get(133));
 			try {
 				GET_RESULT_ORGANIZER2S__EOCL_QRY = helper.createQuery(GET_RESULT_ORGANIZER2S__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
+		}
+
 		OCL.Query query = EOCL_ENV.get().createQuery(GET_RESULT_ORGANIZER2S__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<ResultOrganizer2> result = (Collection<ResultOrganizer2>) query.evaluate(riskConcernAct);
@@ -5702,22 +5144,21 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 */
 
 	public static EList<PriorityPreference> getPriorityPreferencePatients(RiskConcernAct riskConcernAct) {
-	
-	
-	
+
 		if (GET_PRIORITY_PREFERENCE_PATIENTS__EOCL_QRY == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.RISK_CONCERN_ACT, ConsolPackage.Literals.RISK_CONCERN_ACT.getEAllOperations().get(134));
+			helper.setOperationContext(
+				ConsolPackage.Literals.RISK_CONCERN_ACT,
+				ConsolPackage.Literals.RISK_CONCERN_ACT.getEAllOperations().get(134));
 			try {
-				GET_PRIORITY_PREFERENCE_PATIENTS__EOCL_QRY = helper.createQuery(GET_PRIORITY_PREFERENCE_PATIENTS__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+				GET_PRIORITY_PREFERENCE_PATIENTS__EOCL_QRY = helper.createQuery(
+					GET_PRIORITY_PREFERENCE_PATIENTS__EOCL_EXP);
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
+		}
+
 		OCL.Query query = EOCL_ENV.get().createQuery(GET_PRIORITY_PREFERENCE_PATIENTS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<PriorityPreference> result = (Collection<PriorityPreference>) query.evaluate(riskConcernAct);
@@ -5751,22 +5192,21 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 */
 
 	public static EList<PriorityPreference> getPriorityPreferenceProviders(RiskConcernAct riskConcernAct) {
-	
-	
-	
+
 		if (GET_PRIORITY_PREFERENCE_PROVIDERS__EOCL_QRY == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.RISK_CONCERN_ACT, ConsolPackage.Literals.RISK_CONCERN_ACT.getEAllOperations().get(135));
+			helper.setOperationContext(
+				ConsolPackage.Literals.RISK_CONCERN_ACT,
+				ConsolPackage.Literals.RISK_CONCERN_ACT.getEAllOperations().get(135));
 			try {
-				GET_PRIORITY_PREFERENCE_PROVIDERS__EOCL_QRY = helper.createQuery(GET_PRIORITY_PREFERENCE_PROVIDERS__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+				GET_PRIORITY_PREFERENCE_PROVIDERS__EOCL_QRY = helper.createQuery(
+					GET_PRIORITY_PREFERENCE_PROVIDERS__EOCL_EXP);
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
+		}
+
 		OCL.Query query = EOCL_ENV.get().createQuery(GET_PRIORITY_PREFERENCE_PROVIDERS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<PriorityPreference> result = (Collection<PriorityPreference>) query.evaluate(riskConcernAct);
@@ -5800,22 +5240,20 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 */
 
 	public static EList<ProblemConcernAct2> getProblemConcernAct2s(RiskConcernAct riskConcernAct) {
-	
-	
-	
+
 		if (GET_PROBLEM_CONCERN_ACT2S__EOCL_QRY == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.RISK_CONCERN_ACT, ConsolPackage.Literals.RISK_CONCERN_ACT.getEAllOperations().get(136));
+			helper.setOperationContext(
+				ConsolPackage.Literals.RISK_CONCERN_ACT,
+				ConsolPackage.Literals.RISK_CONCERN_ACT.getEAllOperations().get(136));
 			try {
 				GET_PROBLEM_CONCERN_ACT2S__EOCL_QRY = helper.createQuery(GET_PROBLEM_CONCERN_ACT2S__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
+		}
+
 		OCL.Query query = EOCL_ENV.get().createQuery(GET_PROBLEM_CONCERN_ACT2S__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<ProblemConcernAct2> result = (Collection<ProblemConcernAct2>) query.evaluate(riskConcernAct);
@@ -5849,22 +5287,21 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 */
 
 	public static EList<EntryReference> getEntryReferenceHealthConcerns(RiskConcernAct riskConcernAct) {
-	
-	
-	
+
 		if (GET_ENTRY_REFERENCE_HEALTH_CONCERNS__EOCL_QRY == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.RISK_CONCERN_ACT, ConsolPackage.Literals.RISK_CONCERN_ACT.getEAllOperations().get(137));
+			helper.setOperationContext(
+				ConsolPackage.Literals.RISK_CONCERN_ACT,
+				ConsolPackage.Literals.RISK_CONCERN_ACT.getEAllOperations().get(137));
 			try {
-				GET_ENTRY_REFERENCE_HEALTH_CONCERNS__EOCL_QRY = helper.createQuery(GET_ENTRY_REFERENCE_HEALTH_CONCERNS__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+				GET_ENTRY_REFERENCE_HEALTH_CONCERNS__EOCL_QRY = helper.createQuery(
+					GET_ENTRY_REFERENCE_HEALTH_CONCERNS__EOCL_EXP);
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
+		}
+
 		OCL.Query query = EOCL_ENV.get().createQuery(GET_ENTRY_REFERENCE_HEALTH_CONCERNS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<EntryReference> result = (Collection<EntryReference>) query.evaluate(riskConcernAct);

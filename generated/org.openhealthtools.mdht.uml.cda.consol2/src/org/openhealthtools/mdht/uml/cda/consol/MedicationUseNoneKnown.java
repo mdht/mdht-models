@@ -209,9 +209,9 @@ public interface MedicationUseNoneKnown extends Observation {
 	public MedicationUseNoneKnown init();
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public MedicationUseNoneKnown init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // MedicationUseNoneKnown

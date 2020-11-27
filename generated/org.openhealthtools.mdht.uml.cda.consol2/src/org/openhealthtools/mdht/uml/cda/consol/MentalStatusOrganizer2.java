@@ -89,9 +89,9 @@ public interface MentalStatusOrganizer2 extends CognitiveStatusResultOrganizer {
 	public MentalStatusOrganizer2 init();
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public MentalStatusOrganizer2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // MentalStatusOrganizer2

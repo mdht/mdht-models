@@ -9,8 +9,6 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.ecore.EObject;
-import org.eclipse.emf.ecore.impl.EObjectImpl;
-
 import org.eclipse.mdht.emf.runtime.util.Initializer;
 import org.eclipse.mdht.uml.cda.impl.ObservationImpl;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
@@ -50,8 +48,10 @@ public class ExpirationDateObservationImpl extends ObservationImpl implements Ex
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateExpirationDateObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ExpirationDateObservationOperations.validateExpirationDateObservationTemplateId(this, diagnostics, context);
+	public boolean validateExpirationDateObservationTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ExpirationDateObservationOperations.validateExpirationDateObservationTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -87,17 +87,17 @@ public class ExpirationDateObservationImpl extends ObservationImpl implements Ex
 	 * @generated
 	 */
 	public ExpirationDateObservation init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
 
 	/**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public ExpirationDateObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ExpirationDateObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 
-} //ExpirationDateObservationImpl
+} // ExpirationDateObservationImpl

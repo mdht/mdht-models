@@ -145,9 +145,9 @@ public interface ProcedureActivityObservation2 extends ProcedureActivityObservat
 	public ProcedureActivityObservation2 init();
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public ProcedureActivityObservation2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ProcedureActivityObservation2

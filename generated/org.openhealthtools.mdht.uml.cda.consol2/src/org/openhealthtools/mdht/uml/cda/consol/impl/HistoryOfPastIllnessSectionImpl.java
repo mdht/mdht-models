@@ -58,7 +58,8 @@ public class HistoryOfPastIllnessSectionImpl extends SectionImpl implements Hist
 	 */
 	public boolean validateHistoryOfPastIllnessSectionTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HistoryOfPastIllnessSectionOperations.validateHistoryOfPastIllnessSectionTemplateId(this, diagnostics, context);
+		return HistoryOfPastIllnessSectionOperations.validateHistoryOfPastIllnessSectionTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -67,7 +68,8 @@ public class HistoryOfPastIllnessSectionImpl extends SectionImpl implements Hist
 	 * @generated
 	 */
 	public boolean validateHistoryOfPastIllnessSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return HistoryOfPastIllnessSectionOperations.validateHistoryOfPastIllnessSectionCode(this, diagnostics, context);
+		return HistoryOfPastIllnessSectionOperations.validateHistoryOfPastIllnessSectionCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -76,7 +78,8 @@ public class HistoryOfPastIllnessSectionImpl extends SectionImpl implements Hist
 	 * @generated
 	 */
 	public boolean validateHistoryOfPastIllnessSectionCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return HistoryOfPastIllnessSectionOperations.validateHistoryOfPastIllnessSectionCodeP(this, diagnostics, context);
+		return HistoryOfPastIllnessSectionOperations.validateHistoryOfPastIllnessSectionCodeP(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -85,7 +88,8 @@ public class HistoryOfPastIllnessSectionImpl extends SectionImpl implements Hist
 	 * @generated
 	 */
 	public boolean validateHistoryOfPastIllnessSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return HistoryOfPastIllnessSectionOperations.validateHistoryOfPastIllnessSectionTitle(this, diagnostics, context);
+		return HistoryOfPastIllnessSectionOperations.validateHistoryOfPastIllnessSectionTitle(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -94,7 +98,8 @@ public class HistoryOfPastIllnessSectionImpl extends SectionImpl implements Hist
 	 * @generated
 	 */
 	public boolean validateHistoryOfPastIllnessSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return HistoryOfPastIllnessSectionOperations.validateHistoryOfPastIllnessSectionText(this, diagnostics, context);
+		return HistoryOfPastIllnessSectionOperations.validateHistoryOfPastIllnessSectionText(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -104,7 +109,8 @@ public class HistoryOfPastIllnessSectionImpl extends SectionImpl implements Hist
 	 */
 	public boolean validateHistoryOfPastIllnessSectionProblemObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HistoryOfPastIllnessSectionOperations.validateHistoryOfPastIllnessSectionProblemObservation(this, diagnostics, context);
+		return HistoryOfPastIllnessSectionOperations.validateHistoryOfPastIllnessSectionProblemObservation(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -122,16 +128,16 @@ public class HistoryOfPastIllnessSectionImpl extends SectionImpl implements Hist
 	 * @generated
 	 */
 	public HistoryOfPastIllnessSection init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public HistoryOfPastIllnessSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // HistoryOfPastIllnessSectionImpl

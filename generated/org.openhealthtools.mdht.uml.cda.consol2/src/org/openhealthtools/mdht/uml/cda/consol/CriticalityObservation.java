@@ -137,9 +137,9 @@ public interface CriticalityObservation extends Observation {
 	public CriticalityObservation init();
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public CriticalityObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // CriticalityObservation

@@ -89,9 +89,9 @@ public interface ProcedureSpecimensTakenSection extends Section {
 	public ProcedureSpecimensTakenSection init();
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public ProcedureSpecimensTakenSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ProcedureSpecimensTakenSection

@@ -40,9 +40,9 @@ public interface PhysicianReadingStudyPerformer2 extends PhysicianReadingStudyPe
 	public PhysicianReadingStudyPerformer2 init();
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public PhysicianReadingStudyPerformer2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // PhysicianReadingStudyPerformer2

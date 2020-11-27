@@ -770,9 +770,9 @@ public interface DiagnosticImagingReport2 extends USRealmHeader2 {
 	public DiagnosticImagingReport2 init();
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public DiagnosticImagingReport2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // DiagnosticImagingReport2

@@ -430,9 +430,9 @@ public interface PatientReferralAct extends Act {
 	public PatientReferralAct init();
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public PatientReferralAct init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // PatientReferralAct

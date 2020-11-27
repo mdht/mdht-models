@@ -258,9 +258,9 @@ public interface PlannedObservation2 extends PlanOfCareActivityObservation {
 	public PlannedObservation2 init();
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public PlannedObservation2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // PlannedObservation2

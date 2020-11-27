@@ -162,9 +162,9 @@ public interface ProceduresSectionEntriesOptional extends Section {
 	public ProceduresSectionEntriesOptional init();
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public ProceduresSectionEntriesOptional init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ProceduresSectionEntriesOptional

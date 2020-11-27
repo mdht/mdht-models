@@ -52,7 +52,8 @@ public class CharacteristicsOfHomeEnvironmentImpl extends ObservationImpl implem
 	 */
 	public boolean validateCharacteristicsOfHomeEnvironmentTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return CharacteristicsOfHomeEnvironmentOperations.validateCharacteristicsOfHomeEnvironmentTemplateId(this, diagnostics, context);
+		return CharacteristicsOfHomeEnvironmentOperations.validateCharacteristicsOfHomeEnvironmentTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -62,7 +63,8 @@ public class CharacteristicsOfHomeEnvironmentImpl extends ObservationImpl implem
 	 */
 	public boolean validateCharacteristicsOfHomeEnvironmentClassCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return CharacteristicsOfHomeEnvironmentOperations.validateCharacteristicsOfHomeEnvironmentClassCode(this, diagnostics, context);
+		return CharacteristicsOfHomeEnvironmentOperations.validateCharacteristicsOfHomeEnvironmentClassCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -72,7 +74,8 @@ public class CharacteristicsOfHomeEnvironmentImpl extends ObservationImpl implem
 	 */
 	public boolean validateCharacteristicsOfHomeEnvironmentMoodCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return CharacteristicsOfHomeEnvironmentOperations.validateCharacteristicsOfHomeEnvironmentMoodCode(this, diagnostics, context);
+		return CharacteristicsOfHomeEnvironmentOperations.validateCharacteristicsOfHomeEnvironmentMoodCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -82,7 +85,8 @@ public class CharacteristicsOfHomeEnvironmentImpl extends ObservationImpl implem
 	 */
 	public boolean validateCharacteristicsOfHomeEnvironmentId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return CharacteristicsOfHomeEnvironmentOperations.validateCharacteristicsOfHomeEnvironmentId(this, diagnostics, context);
+		return CharacteristicsOfHomeEnvironmentOperations.validateCharacteristicsOfHomeEnvironmentId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -92,7 +96,8 @@ public class CharacteristicsOfHomeEnvironmentImpl extends ObservationImpl implem
 	 */
 	public boolean validateCharacteristicsOfHomeEnvironmentCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return CharacteristicsOfHomeEnvironmentOperations.validateCharacteristicsOfHomeEnvironmentCodeP(this, diagnostics, context);
+		return CharacteristicsOfHomeEnvironmentOperations.validateCharacteristicsOfHomeEnvironmentCodeP(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -102,7 +107,8 @@ public class CharacteristicsOfHomeEnvironmentImpl extends ObservationImpl implem
 	 */
 	public boolean validateCharacteristicsOfHomeEnvironmentCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return CharacteristicsOfHomeEnvironmentOperations.validateCharacteristicsOfHomeEnvironmentCode(this, diagnostics, context);
+		return CharacteristicsOfHomeEnvironmentOperations.validateCharacteristicsOfHomeEnvironmentCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -112,7 +118,8 @@ public class CharacteristicsOfHomeEnvironmentImpl extends ObservationImpl implem
 	 */
 	public boolean validateCharacteristicsOfHomeEnvironmentStatusCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return CharacteristicsOfHomeEnvironmentOperations.validateCharacteristicsOfHomeEnvironmentStatusCode(this, diagnostics, context);
+		return CharacteristicsOfHomeEnvironmentOperations.validateCharacteristicsOfHomeEnvironmentStatusCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -122,7 +129,8 @@ public class CharacteristicsOfHomeEnvironmentImpl extends ObservationImpl implem
 	 */
 	public boolean validateCharacteristicsOfHomeEnvironmentStatusCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return CharacteristicsOfHomeEnvironmentOperations.validateCharacteristicsOfHomeEnvironmentStatusCodeP(this, diagnostics, context);
+		return CharacteristicsOfHomeEnvironmentOperations.validateCharacteristicsOfHomeEnvironmentStatusCodeP(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -132,7 +140,8 @@ public class CharacteristicsOfHomeEnvironmentImpl extends ObservationImpl implem
 	 */
 	public boolean validateCharacteristicsOfHomeEnvironmentValue(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return CharacteristicsOfHomeEnvironmentOperations.validateCharacteristicsOfHomeEnvironmentValue(this, diagnostics, context);
+		return CharacteristicsOfHomeEnvironmentOperations.validateCharacteristicsOfHomeEnvironmentValue(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -142,7 +151,8 @@ public class CharacteristicsOfHomeEnvironmentImpl extends ObservationImpl implem
 	 */
 	public boolean validateCharacteristicsOfHomeEnvironmentValueP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return CharacteristicsOfHomeEnvironmentOperations.validateCharacteristicsOfHomeEnvironmentValueP(this, diagnostics, context);
+		return CharacteristicsOfHomeEnvironmentOperations.validateCharacteristicsOfHomeEnvironmentValueP(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -151,16 +161,16 @@ public class CharacteristicsOfHomeEnvironmentImpl extends ObservationImpl implem
 	 * @generated
 	 */
 	public CharacteristicsOfHomeEnvironment init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public CharacteristicsOfHomeEnvironment init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // CharacteristicsOfHomeEnvironmentImpl

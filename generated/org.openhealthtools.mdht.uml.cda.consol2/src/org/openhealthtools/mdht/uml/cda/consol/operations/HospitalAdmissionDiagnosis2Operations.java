@@ -80,7 +80,7 @@ public class HospitalAdmissionDiagnosis2Operations extends HospitalAdmissionDiag
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_HOSPITAL_ADMISSION_DIAGNOSIS2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_HOSPITAL_ADMISSION_DIAGNOSIS2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -96,44 +96,35 @@ public class HospitalAdmissionDiagnosis2Operations extends HospitalAdmissionDiag
 	public static boolean validateHospitalAdmissionDiagnosis2TemplateId(
 			HospitalAdmissionDiagnosis2 hospitalAdmissionDiagnosis2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"HospitalAdmissionDiagnosis2HospitalAdmissionDiagnosis2TemplateId","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "HospitalAdmissionDiagnosis2HospitalAdmissionDiagnosis2TemplateId", "ERROR");
+
 		if (VALIDATE_HOSPITAL_ADMISSION_DIAGNOSIS2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.HOSPITAL_ADMISSION_DIAGNOSIS2);
 			try {
-				VALIDATE_HOSPITAL_ADMISSION_DIAGNOSIS2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_HOSPITAL_ADMISSION_DIAGNOSIS2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_HOSPITAL_ADMISSION_DIAGNOSIS2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_HOSPITAL_ADMISSION_DIAGNOSIS2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_HOSPITAL_ADMISSION_DIAGNOSIS2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(hospitalAdmissionDiagnosis2)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_HOSPITAL_ADMISSION_DIAGNOSIS2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				hospitalAdmissionDiagnosis2)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.HOSPITAL_ADMISSION_DIAGNOSIS2__HOSPITAL_ADMISSION_DIAGNOSIS2_TEMPLATE_ID,
-						 ConsolPlugin.INSTANCE.getString("HospitalAdmissionDiagnosis2HospitalAdmissionDiagnosis2TemplateId"),
-						 new Object [] { hospitalAdmissionDiagnosis2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.HOSPITAL_ADMISSION_DIAGNOSIS2__HOSPITAL_ADMISSION_DIAGNOSIS2_TEMPLATE_ID,
+						ConsolPlugin.INSTANCE.getString(
+							"HospitalAdmissionDiagnosis2HospitalAdmissionDiagnosis2TemplateId"),
+						new Object[] { hospitalAdmissionDiagnosis2 }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -153,48 +144,39 @@ public class HospitalAdmissionDiagnosis2Operations extends HospitalAdmissionDiag
 	public static boolean validateHospitalAdmissionDiagnosisCodeP(
 			HospitalAdmissionDiagnosis2 hospitalAdmissionDiagnosis2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"HospitalAdmissionDiagnosis2HospitalAdmissionDiagnosisCodeP","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "HospitalAdmissionDiagnosis2HospitalAdmissionDiagnosisCodeP", "ERROR");
+
 		if (VALIDATE_HOSPITAL_ADMISSION_DIAGNOSIS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.HOSPITAL_ADMISSION_DIAGNOSIS2);
 			try {
-				VALIDATE_HOSPITAL_ADMISSION_DIAGNOSIS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_HOSPITAL_ADMISSION_DIAGNOSIS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_HOSPITAL_ADMISSION_DIAGNOSIS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_HOSPITAL_ADMISSION_DIAGNOSIS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_HOSPITAL_ADMISSION_DIAGNOSIS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(hospitalAdmissionDiagnosis2)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_HOSPITAL_ADMISSION_DIAGNOSIS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				hospitalAdmissionDiagnosis2)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.HOSPITAL_ADMISSION_DIAGNOSIS2__HOSPITAL_ADMISSION_DIAGNOSIS_CODE_P,
-						 ConsolPlugin.INSTANCE.getString("HospitalAdmissionDiagnosis2HospitalAdmissionDiagnosisCodeP"),
-						 new Object [] { hospitalAdmissionDiagnosis2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.HOSPITAL_ADMISSION_DIAGNOSIS2__HOSPITAL_ADMISSION_DIAGNOSIS_CODE_P,
+						ConsolPlugin.INSTANCE.getString("HospitalAdmissionDiagnosis2HospitalAdmissionDiagnosisCodeP"),
+						new Object[] { hospitalAdmissionDiagnosis2 }));
 			}
-			
+
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
-				Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.consol.HospitalAdmissionDiagnosisCodeP");
+				Collection<Object> passToken = (Collection<Object>) context.get(
+					"org.openhealthtools.mdht.uml.cda.consol.HospitalAdmissionDiagnosisCodeP");
 				if (passToken == null) {
 					// anticipate a reasonably healthy model
 					passToken = new java.util.ArrayList<Object>(3);
@@ -202,7 +184,7 @@ public class HospitalAdmissionDiagnosis2Operations extends HospitalAdmissionDiag
 				}
 				passToken.add(hospitalAdmissionDiagnosis2);
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -216,25 +198,25 @@ public class HospitalAdmissionDiagnosis2Operations extends HospitalAdmissionDiag
 
 	public static EList<ProblemObservation2> getConsolProblemObservation2s(
 			HospitalAdmissionDiagnosis2 hospitalAdmissionDiagnosis2) {
-	
-	
-	
+
 		if (GET_CONSOL_PROBLEM_OBSERVATION2S__EOCL_QRY == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.HOSPITAL_ADMISSION_DIAGNOSIS2, ConsolPackage.Literals.HOSPITAL_ADMISSION_DIAGNOSIS2.getEAllOperations().get(59));
+			helper.setOperationContext(
+				ConsolPackage.Literals.HOSPITAL_ADMISSION_DIAGNOSIS2,
+				ConsolPackage.Literals.HOSPITAL_ADMISSION_DIAGNOSIS2.getEAllOperations().get(59));
 			try {
-				GET_CONSOL_PROBLEM_OBSERVATION2S__EOCL_QRY = helper.createQuery(GET_CONSOL_PROBLEM_OBSERVATION2S__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+				GET_CONSOL_PROBLEM_OBSERVATION2S__EOCL_QRY = helper.createQuery(
+					GET_CONSOL_PROBLEM_OBSERVATION2S__EOCL_EXP);
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
+		}
+
 		OCL.Query query = EOCL_ENV.get().createQuery(GET_CONSOL_PROBLEM_OBSERVATION2S__EOCL_QRY);
 		@SuppressWarnings("unchecked")
-		Collection<ProblemObservation2> result = (Collection<ProblemObservation2>) query.evaluate(hospitalAdmissionDiagnosis2);
+		Collection<ProblemObservation2> result = (Collection<ProblemObservation2>) query.evaluate(
+			hospitalAdmissionDiagnosis2);
 		return new BasicEList.UnmodifiableEList<ProblemObservation2>(result.size(), result.toArray());
 	}
 
@@ -257,7 +239,7 @@ public class HospitalAdmissionDiagnosis2Operations extends HospitalAdmissionDiag
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_HOSPITAL_ADMISSION_DIAGNOSIS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_HOSPITAL_ADMISSION_DIAGNOSIS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * The cached OCL expression body for the '{@link #getConsolProblemObservation2s(HospitalAdmissionDiagnosis2) <em>Get Consol Problem Observation2s</em>}' operation.
@@ -287,9 +269,9 @@ public class HospitalAdmissionDiagnosis2Operations extends HospitalAdmissionDiag
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_HOSPITAL_ADMISSION_DIAGNOSIS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
-"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
-"value.code = '46241-6' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_HOSPITAL_ADMISSION_DIAGNOSIS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and " +
+			"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in " +
+			"value.code = '46241-6' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateHospitalAdmissionDiagnosisCode(HospitalAdmissionDiagnosis2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Hospital Admission Diagnosis Code</em>}' invariant operation.
@@ -300,7 +282,7 @@ public class HospitalAdmissionDiagnosis2Operations extends HospitalAdmissionDiag
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_HOSPITAL_ADMISSION_DIAGNOSIS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_HOSPITAL_ADMISSION_DIAGNOSIS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -316,50 +298,41 @@ public class HospitalAdmissionDiagnosis2Operations extends HospitalAdmissionDiag
 	public static boolean validateHospitalAdmissionDiagnosisCode(
 			HospitalAdmissionDiagnosis2 hospitalAdmissionDiagnosis2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-	
-	
-	
-  	  
-		Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.consol.HospitalAdmissionDiagnosisCodeP");
+
+		Object passToken = (context == null)
+				? null
+				: context.get("org.openhealthtools.mdht.uml.cda.consol.HospitalAdmissionDiagnosisCodeP");
 		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(hospitalAdmissionDiagnosis2)) {
 			// I have a free pass to short-circuit
 			return true;
 		}
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"HospitalAdmissionDiagnosis2HospitalAdmissionDiagnosisCode","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "HospitalAdmissionDiagnosis2HospitalAdmissionDiagnosisCode", "ERROR");
+
 		if (VALIDATE_HOSPITAL_ADMISSION_DIAGNOSIS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.HOSPITAL_ADMISSION_DIAGNOSIS2);
 			try {
-				VALIDATE_HOSPITAL_ADMISSION_DIAGNOSIS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_HOSPITAL_ADMISSION_DIAGNOSIS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_HOSPITAL_ADMISSION_DIAGNOSIS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_HOSPITAL_ADMISSION_DIAGNOSIS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_HOSPITAL_ADMISSION_DIAGNOSIS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(hospitalAdmissionDiagnosis2)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_HOSPITAL_ADMISSION_DIAGNOSIS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				hospitalAdmissionDiagnosis2)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.HOSPITAL_ADMISSION_DIAGNOSIS2__HOSPITAL_ADMISSION_DIAGNOSIS_CODE,
-						 ConsolPlugin.INSTANCE.getString("HospitalAdmissionDiagnosis2HospitalAdmissionDiagnosisCode"),
-						 new Object [] { hospitalAdmissionDiagnosis2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.HOSPITAL_ADMISSION_DIAGNOSIS2__HOSPITAL_ADMISSION_DIAGNOSIS_CODE,
+						ConsolPlugin.INSTANCE.getString("HospitalAdmissionDiagnosis2HospitalAdmissionDiagnosisCode"),
+						new Object[] { hospitalAdmissionDiagnosis2 }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -384,7 +357,7 @@ public class HospitalAdmissionDiagnosis2Operations extends HospitalAdmissionDiag
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_HOSPITAL_ADMISSION_DIAGNOSIS_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_HOSPITAL_ADMISSION_DIAGNOSIS_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -400,44 +373,36 @@ public class HospitalAdmissionDiagnosis2Operations extends HospitalAdmissionDiag
 	public static boolean validateHospitalAdmissionDiagnosisProblemObservation(
 			HospitalAdmissionDiagnosis2 hospitalAdmissionDiagnosis2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"HospitalAdmissionDiagnosis2HospitalAdmissionDiagnosisProblemObservation","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(
+			context, "HospitalAdmissionDiagnosis2HospitalAdmissionDiagnosisProblemObservation", "ERROR");
+
 		if (VALIDATE_HOSPITAL_ADMISSION_DIAGNOSIS_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.HOSPITAL_ADMISSION_DIAGNOSIS2);
 			try {
-				VALIDATE_HOSPITAL_ADMISSION_DIAGNOSIS_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_HOSPITAL_ADMISSION_DIAGNOSIS_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_HOSPITAL_ADMISSION_DIAGNOSIS_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_HOSPITAL_ADMISSION_DIAGNOSIS_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_HOSPITAL_ADMISSION_DIAGNOSIS_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(hospitalAdmissionDiagnosis2)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_HOSPITAL_ADMISSION_DIAGNOSIS_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				hospitalAdmissionDiagnosis2)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.HOSPITAL_ADMISSION_DIAGNOSIS2__HOSPITAL_ADMISSION_DIAGNOSIS_PROBLEM_OBSERVATION,
-						 ConsolPlugin.INSTANCE.getString("HospitalAdmissionDiagnosis2HospitalAdmissionDiagnosisProblemObservation"),
-						 new Object [] { hospitalAdmissionDiagnosis2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.HOSPITAL_ADMISSION_DIAGNOSIS2__HOSPITAL_ADMISSION_DIAGNOSIS_PROBLEM_OBSERVATION,
+						ConsolPlugin.INSTANCE.getString(
+							"HospitalAdmissionDiagnosis2HospitalAdmissionDiagnosisProblemObservation"),
+						new Object[] { hospitalAdmissionDiagnosis2 }));
 			}
-			 
+
 			return false;
 		}
 		return true;

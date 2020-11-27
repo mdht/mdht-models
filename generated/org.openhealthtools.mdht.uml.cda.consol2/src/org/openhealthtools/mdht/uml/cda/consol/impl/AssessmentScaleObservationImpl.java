@@ -54,7 +54,8 @@ public class AssessmentScaleObservationImpl extends ObservationImpl implements A
 	 */
 	public boolean validateAssessmentScaleObservationCodeCodeSystem(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AssessmentScaleObservationOperations.validateAssessmentScaleObservationCodeCodeSystem(this, diagnostics, context);
+		return AssessmentScaleObservationOperations.validateAssessmentScaleObservationCodeCodeSystem(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -64,7 +65,8 @@ public class AssessmentScaleObservationImpl extends ObservationImpl implements A
 	 */
 	public boolean validateAssessmentScaleObservationInterpretationCodeTranslation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AssessmentScaleObservationOperations.validateAssessmentScaleObservationInterpretationCodeTranslation(this, diagnostics, context);
+		return AssessmentScaleObservationOperations.validateAssessmentScaleObservationInterpretationCodeTranslation(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -74,7 +76,8 @@ public class AssessmentScaleObservationImpl extends ObservationImpl implements A
 	 */
 	public boolean validateAssessmentScaleObservationTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AssessmentScaleObservationOperations.validateAssessmentScaleObservationTemplateId(this, diagnostics, context);
+		return AssessmentScaleObservationOperations.validateAssessmentScaleObservationTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -84,7 +87,8 @@ public class AssessmentScaleObservationImpl extends ObservationImpl implements A
 	 */
 	public boolean validateAssessmentScaleObservationClassCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AssessmentScaleObservationOperations.validateAssessmentScaleObservationClassCode(this, diagnostics, context);
+		return AssessmentScaleObservationOperations.validateAssessmentScaleObservationClassCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -94,7 +98,8 @@ public class AssessmentScaleObservationImpl extends ObservationImpl implements A
 	 */
 	public boolean validateAssessmentScaleObservationMoodCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AssessmentScaleObservationOperations.validateAssessmentScaleObservationMoodCode(this, diagnostics, context);
+		return AssessmentScaleObservationOperations.validateAssessmentScaleObservationMoodCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -113,7 +118,8 @@ public class AssessmentScaleObservationImpl extends ObservationImpl implements A
 	 */
 	public boolean validateAssessmentScaleObservationDerivationExpr(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AssessmentScaleObservationOperations.validateAssessmentScaleObservationDerivationExpr(this, diagnostics, context);
+		return AssessmentScaleObservationOperations.validateAssessmentScaleObservationDerivationExpr(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -123,7 +129,8 @@ public class AssessmentScaleObservationImpl extends ObservationImpl implements A
 	 */
 	public boolean validateAssessmentScaleObservationEffectiveTime(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AssessmentScaleObservationOperations.validateAssessmentScaleObservationEffectiveTime(this, diagnostics, context);
+		return AssessmentScaleObservationOperations.validateAssessmentScaleObservationEffectiveTime(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -142,7 +149,8 @@ public class AssessmentScaleObservationImpl extends ObservationImpl implements A
 	 */
 	public boolean validateAssessmentScaleObservationInterpretationCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AssessmentScaleObservationOperations.validateAssessmentScaleObservationInterpretationCode(this, diagnostics, context);
+		return AssessmentScaleObservationOperations.validateAssessmentScaleObservationInterpretationCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -152,7 +160,8 @@ public class AssessmentScaleObservationImpl extends ObservationImpl implements A
 	 */
 	public boolean validateAssessmentScaleObservationStatusCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AssessmentScaleObservationOperations.validateAssessmentScaleObservationStatusCode(this, diagnostics, context);
+		return AssessmentScaleObservationOperations.validateAssessmentScaleObservationStatusCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -162,7 +171,8 @@ public class AssessmentScaleObservationImpl extends ObservationImpl implements A
 	 */
 	public boolean validateAssessmentScaleObservationStatusCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AssessmentScaleObservationOperations.validateAssessmentScaleObservationStatusCodeP(this, diagnostics, context);
+		return AssessmentScaleObservationOperations.validateAssessmentScaleObservationStatusCodeP(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -180,7 +190,8 @@ public class AssessmentScaleObservationImpl extends ObservationImpl implements A
 	 * @generated
 	 */
 	public boolean validateAssessmentScaleObservationAuthor(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AssessmentScaleObservationOperations.validateAssessmentScaleObservationAuthor(this, diagnostics, context);
+		return AssessmentScaleObservationOperations.validateAssessmentScaleObservationAuthor(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -190,7 +201,8 @@ public class AssessmentScaleObservationImpl extends ObservationImpl implements A
 	 */
 	public boolean validateAssessmentScaleObservationReferenceRange(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AssessmentScaleObservationOperations.validateAssessmentScaleObservationReferenceRange(this, diagnostics, context);
+		return AssessmentScaleObservationOperations.validateAssessmentScaleObservationReferenceRange(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -200,7 +212,8 @@ public class AssessmentScaleObservationImpl extends ObservationImpl implements A
 	 */
 	public boolean validateAssessmentScaleObservationAssessmentScaleSupportingObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AssessmentScaleObservationOperations.validateAssessmentScaleObservationAssessmentScaleSupportingObservation(this, diagnostics, context);
+		return AssessmentScaleObservationOperations.validateAssessmentScaleObservationAssessmentScaleSupportingObservation(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -210,7 +223,8 @@ public class AssessmentScaleObservationImpl extends ObservationImpl implements A
 	 */
 	public boolean validateAssessmentScaleObservationReferenceRangeObservationRangeTextReference(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AssessmentScaleObservationOperations.validateAssessmentScaleObservationReferenceRangeObservationRangeTextReference(this, diagnostics, context);
+		return AssessmentScaleObservationOperations.validateAssessmentScaleObservationReferenceRangeObservationRangeTextReference(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -220,7 +234,8 @@ public class AssessmentScaleObservationImpl extends ObservationImpl implements A
 	 */
 	public boolean validateAssessmentScaleObservationReferenceRangeObservationRangeTextReferenceValue(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AssessmentScaleObservationOperations.validateAssessmentScaleObservationReferenceRangeObservationRangeTextReferenceValue(this, diagnostics, context);
+		return AssessmentScaleObservationOperations.validateAssessmentScaleObservationReferenceRangeObservationRangeTextReferenceValue(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -230,7 +245,8 @@ public class AssessmentScaleObservationImpl extends ObservationImpl implements A
 	 */
 	public boolean validateAssessmentScaleObservationReferenceRangeObservationRangeReferenceValue(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AssessmentScaleObservationOperations.validateAssessmentScaleObservationReferenceRangeObservationRangeReferenceValue(this, diagnostics, context);
+		return AssessmentScaleObservationOperations.validateAssessmentScaleObservationReferenceRangeObservationRangeReferenceValue(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -240,7 +256,8 @@ public class AssessmentScaleObservationImpl extends ObservationImpl implements A
 	 */
 	public boolean validateAssessmentScaleObservationReferenceRangeObservationRangeText(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AssessmentScaleObservationOperations.validateAssessmentScaleObservationReferenceRangeObservationRangeText(this, diagnostics, context);
+		return AssessmentScaleObservationOperations.validateAssessmentScaleObservationReferenceRangeObservationRangeText(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -250,7 +267,8 @@ public class AssessmentScaleObservationImpl extends ObservationImpl implements A
 	 */
 	public boolean validateAssessmentScaleObservationReferenceRangeObservationRange(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AssessmentScaleObservationOperations.validateAssessmentScaleObservationReferenceRangeObservationRange(this, diagnostics, context);
+		return AssessmentScaleObservationOperations.validateAssessmentScaleObservationReferenceRangeObservationRange(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -268,16 +286,16 @@ public class AssessmentScaleObservationImpl extends ObservationImpl implements A
 	 * @generated
 	 */
 	public AssessmentScaleObservation init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public AssessmentScaleObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // AssessmentScaleObservationImpl

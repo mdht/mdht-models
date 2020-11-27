@@ -156,9 +156,9 @@ public interface MedicationInformation extends ManufacturedProduct {
 	public MedicationInformation init();
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public MedicationInformation init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // MedicationInformation

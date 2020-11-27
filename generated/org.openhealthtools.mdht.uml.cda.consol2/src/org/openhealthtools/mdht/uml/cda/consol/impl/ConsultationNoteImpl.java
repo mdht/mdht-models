@@ -76,7 +76,8 @@ public class ConsultationNoteImpl extends GeneralHeaderConstraintsImpl implement
 	 */
 	public boolean validateConsultationNoteHasAnAssementAndPlanSectionOrIndividualAssementAndPlanSections(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ConsultationNoteOperations.validateConsultationNoteHasAnAssementAndPlanSectionOrIndividualAssementAndPlanSections(this, diagnostics, context);
+		return ConsultationNoteOperations.validateConsultationNoteHasAnAssementAndPlanSectionOrIndividualAssementAndPlanSections(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -86,7 +87,8 @@ public class ConsultationNoteImpl extends GeneralHeaderConstraintsImpl implement
 	 */
 	public boolean validateConsultationNoteDoesNotHaveIndividualAssementAndPlanSectionsWhenAssementAndPlanSectionPresent(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ConsultationNoteOperations.validateConsultationNoteDoesNotHaveIndividualAssementAndPlanSectionsWhenAssementAndPlanSectionPresent(this, diagnostics, context);
+		return ConsultationNoteOperations.validateConsultationNoteDoesNotHaveIndividualAssementAndPlanSectionsWhenAssementAndPlanSectionPresent(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -96,7 +98,8 @@ public class ConsultationNoteImpl extends GeneralHeaderConstraintsImpl implement
 	 */
 	public boolean validateConsultationNoteDoesNotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ConsultationNoteOperations.validateConsultationNoteDoesNotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection(this, diagnostics, context);
+		return ConsultationNoteOperations.validateConsultationNoteDoesNotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -106,7 +109,8 @@ public class ConsultationNoteImpl extends GeneralHeaderConstraintsImpl implement
 	 */
 	public boolean validateConsultationNoteHasReasonForReferralOrReasonForVisit(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ConsultationNoteOperations.validateConsultationNoteHasReasonForReferralOrReasonForVisit(this, diagnostics, context);
+		return ConsultationNoteOperations.validateConsultationNoteHasReasonForReferralOrReasonForVisit(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -221,7 +225,8 @@ public class ConsultationNoteImpl extends GeneralHeaderConstraintsImpl implement
 	 */
 	public boolean validateConsultationNoteChiefComplaintAndReasonForVisitSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ConsultationNoteOperations.validateConsultationNoteChiefComplaintAndReasonForVisitSection(this, diagnostics, context);
+		return ConsultationNoteOperations.validateConsultationNoteChiefComplaintAndReasonForVisitSection(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -251,7 +256,8 @@ public class ConsultationNoteImpl extends GeneralHeaderConstraintsImpl implement
 	 */
 	public boolean validateConsultationNoteHistoryOfPastIllnessSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ConsultationNoteOperations.validateConsultationNoteHistoryOfPastIllnessSection(this, diagnostics, context);
+		return ConsultationNoteOperations.validateConsultationNoteHistoryOfPastIllnessSection(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -271,7 +277,8 @@ public class ConsultationNoteImpl extends GeneralHeaderConstraintsImpl implement
 	 */
 	public boolean validateConsultationNoteMedicationsSectionEntriesOptional(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ConsultationNoteOperations.validateConsultationNoteMedicationsSectionEntriesOptional(this, diagnostics, context);
+		return ConsultationNoteOperations.validateConsultationNoteMedicationsSectionEntriesOptional(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -281,7 +288,8 @@ public class ConsultationNoteImpl extends GeneralHeaderConstraintsImpl implement
 	 */
 	public boolean validateConsultationNoteProblemSectionEntriesOptional(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ConsultationNoteOperations.validateConsultationNoteProblemSectionEntriesOptional(this, diagnostics, context);
+		return ConsultationNoteOperations.validateConsultationNoteProblemSectionEntriesOptional(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -291,7 +299,8 @@ public class ConsultationNoteImpl extends GeneralHeaderConstraintsImpl implement
 	 */
 	public boolean validateConsultationNoteProceduresSectionEntriesOptional(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ConsultationNoteOperations.validateConsultationNoteProceduresSectionEntriesOptional(this, diagnostics, context);
+		return ConsultationNoteOperations.validateConsultationNoteProceduresSectionEntriesOptional(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -301,7 +310,8 @@ public class ConsultationNoteImpl extends GeneralHeaderConstraintsImpl implement
 	 */
 	public boolean validateConsultationNoteResultsSectionEntriesOptional(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ConsultationNoteOperations.validateConsultationNoteResultsSectionEntriesOptional(this, diagnostics, context);
+		return ConsultationNoteOperations.validateConsultationNoteResultsSectionEntriesOptional(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -331,7 +341,8 @@ public class ConsultationNoteImpl extends GeneralHeaderConstraintsImpl implement
 	 */
 	public boolean validateConsultationNoteVitalSignsSectionEntriesOptional(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ConsultationNoteOperations.validateConsultationNoteVitalSignsSectionEntriesOptional(this, diagnostics, context);
+		return ConsultationNoteOperations.validateConsultationNoteVitalSignsSectionEntriesOptional(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -350,7 +361,8 @@ public class ConsultationNoteImpl extends GeneralHeaderConstraintsImpl implement
 	 */
 	public boolean validateConsultationNoteComponentOfEncompassingEncounter2ResponsiblePartyAssignedEntityHasPersonOrganizationOrBoth(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ConsultationNoteOperations.validateConsultationNoteComponentOfEncompassingEncounter2ResponsiblePartyAssignedEntityHasPersonOrganizationOrBoth(this, diagnostics, context);
+		return ConsultationNoteOperations.validateConsultationNoteComponentOfEncompassingEncounter2ResponsiblePartyAssignedEntityHasPersonOrganizationOrBoth(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -360,7 +372,8 @@ public class ConsultationNoteImpl extends GeneralHeaderConstraintsImpl implement
 	 */
 	public boolean validateConsultationNoteComponentOfEncompassingEncounter2ResponsiblePartyAssignedEntity(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ConsultationNoteOperations.validateConsultationNoteComponentOfEncompassingEncounter2ResponsiblePartyAssignedEntity(this, diagnostics, context);
+		return ConsultationNoteOperations.validateConsultationNoteComponentOfEncompassingEncounter2ResponsiblePartyAssignedEntity(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -370,7 +383,8 @@ public class ConsultationNoteImpl extends GeneralHeaderConstraintsImpl implement
 	 */
 	public boolean validateConsultationNoteComponentOfEncompassingEncounter2EncounterParticipantAssignedEntityHasPersonOrganizationOrBoth(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ConsultationNoteOperations.validateConsultationNoteComponentOfEncompassingEncounter2EncounterParticipantAssignedEntityHasPersonOrganizationOrBoth(this, diagnostics, context);
+		return ConsultationNoteOperations.validateConsultationNoteComponentOfEncompassingEncounter2EncounterParticipantAssignedEntityHasPersonOrganizationOrBoth(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -380,7 +394,8 @@ public class ConsultationNoteImpl extends GeneralHeaderConstraintsImpl implement
 	 */
 	public boolean validateConsultationNoteComponentOfEncompassingEncounter2EncounterParticipantAssignedEntity(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ConsultationNoteOperations.validateConsultationNoteComponentOfEncompassingEncounter2EncounterParticipantAssignedEntity(this, diagnostics, context);
+		return ConsultationNoteOperations.validateConsultationNoteComponentOfEncompassingEncounter2EncounterParticipantAssignedEntity(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -390,7 +405,8 @@ public class ConsultationNoteImpl extends GeneralHeaderConstraintsImpl implement
 	 */
 	public boolean validateConsultationNoteComponentOfEncompassingEncounter2PreciseToTheDay(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ConsultationNoteOperations.validateConsultationNoteComponentOfEncompassingEncounter2PreciseToTheDay(this, diagnostics, context);
+		return ConsultationNoteOperations.validateConsultationNoteComponentOfEncompassingEncounter2PreciseToTheDay(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -400,7 +416,8 @@ public class ConsultationNoteImpl extends GeneralHeaderConstraintsImpl implement
 	 */
 	public boolean validateConsultationNoteComponentOfEncompassingEncounter2PreciseToTheMinute(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ConsultationNoteOperations.validateConsultationNoteComponentOfEncompassingEncounter2PreciseToTheMinute(this, diagnostics, context);
+		return ConsultationNoteOperations.validateConsultationNoteComponentOfEncompassingEncounter2PreciseToTheMinute(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -410,7 +427,8 @@ public class ConsultationNoteImpl extends GeneralHeaderConstraintsImpl implement
 	 */
 	public boolean validateConsultationNoteComponentOfEncompassingEncounter2PreciseToTheSecond(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ConsultationNoteOperations.validateConsultationNoteComponentOfEncompassingEncounter2PreciseToTheSecond(this, diagnostics, context);
+		return ConsultationNoteOperations.validateConsultationNoteComponentOfEncompassingEncounter2PreciseToTheSecond(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -420,7 +438,8 @@ public class ConsultationNoteImpl extends GeneralHeaderConstraintsImpl implement
 	 */
 	public boolean validateConsultationNoteComponentOfEncompassingEncounter2IfMorePreciseThanDayIncludeTimeZoneOffset(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ConsultationNoteOperations.validateConsultationNoteComponentOfEncompassingEncounter2IfMorePreciseThanDayIncludeTimeZoneOffset(this, diagnostics, context);
+		return ConsultationNoteOperations.validateConsultationNoteComponentOfEncompassingEncounter2IfMorePreciseThanDayIncludeTimeZoneOffset(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -430,7 +449,8 @@ public class ConsultationNoteImpl extends GeneralHeaderConstraintsImpl implement
 	 */
 	public boolean validateConsultationNoteComponentOfEncompassingEncounter2EffectiveTime(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ConsultationNoteOperations.validateConsultationNoteComponentOfEncompassingEncounter2EffectiveTime(this, diagnostics, context);
+		return ConsultationNoteOperations.validateConsultationNoteComponentOfEncompassingEncounter2EffectiveTime(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -440,7 +460,8 @@ public class ConsultationNoteImpl extends GeneralHeaderConstraintsImpl implement
 	 */
 	public boolean validateConsultationNoteComponentOfEncompassingEncounter2Id(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ConsultationNoteOperations.validateConsultationNoteComponentOfEncompassingEncounter2Id(this, diagnostics, context);
+		return ConsultationNoteOperations.validateConsultationNoteComponentOfEncompassingEncounter2Id(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -450,7 +471,8 @@ public class ConsultationNoteImpl extends GeneralHeaderConstraintsImpl implement
 	 */
 	public boolean validateConsultationNoteComponentOfEncompassingEncounter2ResponsibleParty(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ConsultationNoteOperations.validateConsultationNoteComponentOfEncompassingEncounter2ResponsibleParty(this, diagnostics, context);
+		return ConsultationNoteOperations.validateConsultationNoteComponentOfEncompassingEncounter2ResponsibleParty(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -460,7 +482,8 @@ public class ConsultationNoteImpl extends GeneralHeaderConstraintsImpl implement
 	 */
 	public boolean validateConsultationNoteComponentOfEncompassingEncounter2EncounterParticipant(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ConsultationNoteOperations.validateConsultationNoteComponentOfEncompassingEncounter2EncounterParticipant(this, diagnostics, context);
+		return ConsultationNoteOperations.validateConsultationNoteComponentOfEncompassingEncounter2EncounterParticipant(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -470,7 +493,8 @@ public class ConsultationNoteImpl extends GeneralHeaderConstraintsImpl implement
 	 */
 	public boolean validateConsultationNoteComponentOfEncompassingEncounter(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ConsultationNoteOperations.validateConsultationNoteComponentOfEncompassingEncounter(this, diagnostics, context);
+		return ConsultationNoteOperations.validateConsultationNoteComponentOfEncompassingEncounter(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -710,17 +734,17 @@ public class ConsultationNoteImpl extends GeneralHeaderConstraintsImpl implement
 	 */
 	@Override
 	public ConsultationNote init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public ConsultationNote init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // ConsultationNoteImpl

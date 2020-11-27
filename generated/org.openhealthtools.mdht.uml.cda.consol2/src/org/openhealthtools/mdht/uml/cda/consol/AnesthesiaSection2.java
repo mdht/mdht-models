@@ -60,9 +60,9 @@ public interface AnesthesiaSection2 extends AnesthesiaSection {
 	public AnesthesiaSection2 init();
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public AnesthesiaSection2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // AnesthesiaSection2

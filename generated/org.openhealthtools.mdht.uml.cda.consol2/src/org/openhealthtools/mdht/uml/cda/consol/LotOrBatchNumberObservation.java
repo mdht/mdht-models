@@ -77,10 +77,10 @@ public interface LotOrBatchNumberObservation extends Observation {
 	public LotOrBatchNumberObservation init();
 
 	/**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public LotOrBatchNumberObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public LotOrBatchNumberObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
 
 } // LotOrBatchNumberObservation

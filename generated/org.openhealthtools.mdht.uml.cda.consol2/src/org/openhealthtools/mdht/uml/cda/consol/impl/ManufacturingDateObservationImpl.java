@@ -9,8 +9,6 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.ecore.EObject;
-import org.eclipse.emf.ecore.impl.EObjectImpl;
-
 import org.eclipse.mdht.emf.runtime.util.Initializer;
 import org.eclipse.mdht.uml.cda.impl.ObservationImpl;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
@@ -50,8 +48,10 @@ public class ManufacturingDateObservationImpl extends ObservationImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateManufacturingDateObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ManufacturingDateObservationOperations.validateManufacturingDateObservationTemplateId(this, diagnostics, context);
+	public boolean validateManufacturingDateObservationTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ManufacturingDateObservationOperations.validateManufacturingDateObservationTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -60,7 +60,8 @@ public class ManufacturingDateObservationImpl extends ObservationImpl implements
 	 * @generated
 	 */
 	public boolean validateManufacturingDateObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ManufacturingDateObservationOperations.validateManufacturingDateObservationCode(this, diagnostics, context);
+		return ManufacturingDateObservationOperations.validateManufacturingDateObservationCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -69,7 +70,8 @@ public class ManufacturingDateObservationImpl extends ObservationImpl implements
 	 * @generated
 	 */
 	public boolean validateManufacturingDateObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ManufacturingDateObservationOperations.validateManufacturingDateObservationValue(this, diagnostics, context);
+		return ManufacturingDateObservationOperations.validateManufacturingDateObservationValue(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -78,17 +80,17 @@ public class ManufacturingDateObservationImpl extends ObservationImpl implements
 	 * @generated
 	 */
 	public ManufacturingDateObservation init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
 
 	/**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public ManufacturingDateObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ManufacturingDateObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 
-} //ManufacturingDateObservationImpl
+} // ManufacturingDateObservationImpl

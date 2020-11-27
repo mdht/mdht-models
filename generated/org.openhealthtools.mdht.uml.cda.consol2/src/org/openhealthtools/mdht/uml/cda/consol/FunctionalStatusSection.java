@@ -17,7 +17,7 @@ import org.eclipse.mdht.uml.cda.Section;
  * <!-- end-user-doc -->
  *
  * <!-- begin-model-doc -->
- * The Functional Status section describes the patient's physical state, status of functioning, and environmental status at the time the document was created. 
+ * The Functional Status section describes the patient's physical state, status of functioning, and environmental status at the time the document was created.
  * A patient's physical state may include information regarding the patient's physical findings as they relate to problems, including but not limited to:
  * Pressure Ulcers
  * Amputations
@@ -368,9 +368,9 @@ public interface FunctionalStatusSection extends Section {
 	public FunctionalStatusSection init();
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public FunctionalStatusSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // FunctionalStatusSection

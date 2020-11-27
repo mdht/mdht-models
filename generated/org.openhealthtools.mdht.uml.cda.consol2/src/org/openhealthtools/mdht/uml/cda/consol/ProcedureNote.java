@@ -1032,9 +1032,9 @@ public interface ProcedureNote extends GeneralHeaderConstraints {
 	public ProcedureNote init();
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public ProcedureNote init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ProcedureNote

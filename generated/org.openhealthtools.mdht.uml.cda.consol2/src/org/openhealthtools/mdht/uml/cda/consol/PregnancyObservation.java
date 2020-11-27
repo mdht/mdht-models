@@ -159,9 +159,9 @@ public interface PregnancyObservation extends Observation {
 	public PregnancyObservation init();
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public PregnancyObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // PregnancyObservation

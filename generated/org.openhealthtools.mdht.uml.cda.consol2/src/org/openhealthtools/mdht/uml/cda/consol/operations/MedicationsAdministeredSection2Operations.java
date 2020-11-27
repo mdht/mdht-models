@@ -80,7 +80,7 @@ public class MedicationsAdministeredSection2Operations extends MedicationsAdmini
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_MEDICATIONS_ADMINISTERED_SECTION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_MEDICATIONS_ADMINISTERED_SECTION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -96,44 +96,36 @@ public class MedicationsAdministeredSection2Operations extends MedicationsAdmini
 	public static boolean validateMedicationsAdministeredSection2TemplateId(
 			MedicationsAdministeredSection2 medicationsAdministeredSection2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"MedicationsAdministeredSection2MedicationsAdministeredSection2TemplateId","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(
+			context, "MedicationsAdministeredSection2MedicationsAdministeredSection2TemplateId", "ERROR");
+
 		if (VALIDATE_MEDICATIONS_ADMINISTERED_SECTION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MEDICATIONS_ADMINISTERED_SECTION2);
 			try {
-				VALIDATE_MEDICATIONS_ADMINISTERED_SECTION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_MEDICATIONS_ADMINISTERED_SECTION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_MEDICATIONS_ADMINISTERED_SECTION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_MEDICATIONS_ADMINISTERED_SECTION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_MEDICATIONS_ADMINISTERED_SECTION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(medicationsAdministeredSection2)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_MEDICATIONS_ADMINISTERED_SECTION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				medicationsAdministeredSection2)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.MEDICATIONS_ADMINISTERED_SECTION2__MEDICATIONS_ADMINISTERED_SECTION2_TEMPLATE_ID,
-						 ConsolPlugin.INSTANCE.getString("MedicationsAdministeredSection2MedicationsAdministeredSection2TemplateId"),
-						 new Object [] { medicationsAdministeredSection2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.MEDICATIONS_ADMINISTERED_SECTION2__MEDICATIONS_ADMINISTERED_SECTION2_TEMPLATE_ID,
+						ConsolPlugin.INSTANCE.getString(
+							"MedicationsAdministeredSection2MedicationsAdministeredSection2TemplateId"),
+						new Object[] { medicationsAdministeredSection2 }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -167,25 +159,25 @@ public class MedicationsAdministeredSection2Operations extends MedicationsAdmini
 
 	public static EList<MedicationActivity2> getConsolMedicationActivity2s(
 			MedicationsAdministeredSection2 medicationsAdministeredSection2) {
-	
-	
-	
+
 		if (GET_CONSOL_MEDICATION_ACTIVITY2S__EOCL_QRY == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.MEDICATIONS_ADMINISTERED_SECTION2, ConsolPackage.Literals.MEDICATIONS_ADMINISTERED_SECTION2.getEAllOperations().get(63));
+			helper.setOperationContext(
+				ConsolPackage.Literals.MEDICATIONS_ADMINISTERED_SECTION2,
+				ConsolPackage.Literals.MEDICATIONS_ADMINISTERED_SECTION2.getEAllOperations().get(63));
 			try {
-				GET_CONSOL_MEDICATION_ACTIVITY2S__EOCL_QRY = helper.createQuery(GET_CONSOL_MEDICATION_ACTIVITY2S__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+				GET_CONSOL_MEDICATION_ACTIVITY2S__EOCL_QRY = helper.createQuery(
+					GET_CONSOL_MEDICATION_ACTIVITY2S__EOCL_EXP);
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
+		}
+
 		OCL.Query query = EOCL_ENV.get().createQuery(GET_CONSOL_MEDICATION_ACTIVITY2S__EOCL_QRY);
 		@SuppressWarnings("unchecked")
-		Collection<MedicationActivity2> result = (Collection<MedicationActivity2>) query.evaluate(medicationsAdministeredSection2);
+		Collection<MedicationActivity2> result = (Collection<MedicationActivity2>) query.evaluate(
+			medicationsAdministeredSection2);
 		return new BasicEList.UnmodifiableEList<MedicationActivity2>(result.size(), result.toArray());
 	}
 
@@ -208,7 +200,7 @@ public class MedicationsAdministeredSection2Operations extends MedicationsAdmini
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_MEDICATIONS_ADMINISTERED_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_MEDICATIONS_ADMINISTERED_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -224,56 +216,49 @@ public class MedicationsAdministeredSection2Operations extends MedicationsAdmini
 	public static boolean validateMedicationsAdministeredSectionCodeP(
 			MedicationsAdministeredSection2 medicationsAdministeredSection2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"MedicationsAdministeredSection2MedicationsAdministeredSectionCodeP","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "MedicationsAdministeredSection2MedicationsAdministeredSectionCodeP", "ERROR");
+
 		if (VALIDATE_MEDICATIONS_ADMINISTERED_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MEDICATIONS_ADMINISTERED_SECTION2);
 			try {
-				VALIDATE_MEDICATIONS_ADMINISTERED_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_MEDICATIONS_ADMINISTERED_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_MEDICATIONS_ADMINISTERED_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_MEDICATIONS_ADMINISTERED_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_MEDICATIONS_ADMINISTERED_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(medicationsAdministeredSection2)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_MEDICATIONS_ADMINISTERED_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				medicationsAdministeredSection2)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.MEDICATIONS_ADMINISTERED_SECTION2__MEDICATIONS_ADMINISTERED_SECTION_CODE_P,
-						 ConsolPlugin.INSTANCE.getString("MedicationsAdministeredSection2MedicationsAdministeredSectionCodeP"),
-						 new Object [] { medicationsAdministeredSection2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.MEDICATIONS_ADMINISTERED_SECTION2__MEDICATIONS_ADMINISTERED_SECTION_CODE_P,
+						ConsolPlugin.INSTANCE.getString(
+							"MedicationsAdministeredSection2MedicationsAdministeredSectionCodeP"),
+						new Object[] { medicationsAdministeredSection2 }));
 			}
-			
+
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
-				Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.consol.MedicationsAdministeredSectionCodeP");
+				Collection<Object> passToken = (Collection<Object>) context.get(
+					"org.openhealthtools.mdht.uml.cda.consol.MedicationsAdministeredSectionCodeP");
 				if (passToken == null) {
 					// anticipate a reasonably healthy model
 					passToken = new java.util.ArrayList<Object>(3);
-					context.put("org.openhealthtools.mdht.uml.cda.consol.MedicationsAdministeredSectionCodeP", passToken);
+					context.put(
+						"org.openhealthtools.mdht.uml.cda.consol.MedicationsAdministeredSectionCodeP", passToken);
 				}
 				passToken.add(medicationsAdministeredSection2);
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -287,9 +272,9 @@ public class MedicationsAdministeredSection2Operations extends MedicationsAdmini
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_MEDICATIONS_ADMINISTERED_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "+
-"let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "+
-"value.code = '29549-3' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_MEDICATIONS_ADMINISTERED_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and " +
+			"let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in " +
+			"value.code = '29549-3' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateMedicationsAdministeredSectionCode(MedicationsAdministeredSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medications Administered Section Code</em>}' invariant operation.
@@ -300,7 +285,7 @@ public class MedicationsAdministeredSection2Operations extends MedicationsAdmini
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_MEDICATIONS_ADMINISTERED_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_MEDICATIONS_ADMINISTERED_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -316,50 +301,44 @@ public class MedicationsAdministeredSection2Operations extends MedicationsAdmini
 	public static boolean validateMedicationsAdministeredSectionCode(
 			MedicationsAdministeredSection2 medicationsAdministeredSection2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-	
-	
-	
-  	  
-		Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.consol.MedicationsAdministeredSectionCodeP");
-		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(medicationsAdministeredSection2)) {
+
+		Object passToken = (context == null)
+				? null
+				: context.get("org.openhealthtools.mdht.uml.cda.consol.MedicationsAdministeredSectionCodeP");
+		if ((passToken instanceof Collection<?>) &&
+				((Collection<?>) passToken).contains(medicationsAdministeredSection2)) {
 			// I have a free pass to short-circuit
 			return true;
 		}
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"MedicationsAdministeredSection2MedicationsAdministeredSectionCode","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "MedicationsAdministeredSection2MedicationsAdministeredSectionCode", "ERROR");
+
 		if (VALIDATE_MEDICATIONS_ADMINISTERED_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MEDICATIONS_ADMINISTERED_SECTION2);
 			try {
-				VALIDATE_MEDICATIONS_ADMINISTERED_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_MEDICATIONS_ADMINISTERED_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_MEDICATIONS_ADMINISTERED_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_MEDICATIONS_ADMINISTERED_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_MEDICATIONS_ADMINISTERED_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(medicationsAdministeredSection2)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_MEDICATIONS_ADMINISTERED_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				medicationsAdministeredSection2)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.MEDICATIONS_ADMINISTERED_SECTION2__MEDICATIONS_ADMINISTERED_SECTION_CODE,
-						 ConsolPlugin.INSTANCE.getString("MedicationsAdministeredSection2MedicationsAdministeredSectionCode"),
-						 new Object [] { medicationsAdministeredSection2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.MEDICATIONS_ADMINISTERED_SECTION2__MEDICATIONS_ADMINISTERED_SECTION_CODE,
+						ConsolPlugin.INSTANCE.getString(
+							"MedicationsAdministeredSection2MedicationsAdministeredSectionCode"),
+						new Object[] { medicationsAdministeredSection2 }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -384,7 +363,7 @@ public class MedicationsAdministeredSection2Operations extends MedicationsAdmini
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_MEDICATIONS_ADMINISTERED_SECTION_MEDICATION_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_MEDICATIONS_ADMINISTERED_SECTION_MEDICATION_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -400,44 +379,36 @@ public class MedicationsAdministeredSection2Operations extends MedicationsAdmini
 	public static boolean validateMedicationsAdministeredSectionMedicationActivity(
 			MedicationsAdministeredSection2 medicationsAdministeredSection2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"MedicationsAdministeredSection2MedicationsAdministeredSectionMedicationActivity","INFO");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(
+			context, "MedicationsAdministeredSection2MedicationsAdministeredSectionMedicationActivity", "INFO");
+
 		if (VALIDATE_MEDICATIONS_ADMINISTERED_SECTION_MEDICATION_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MEDICATIONS_ADMINISTERED_SECTION2);
 			try {
-				VALIDATE_MEDICATIONS_ADMINISTERED_SECTION_MEDICATION_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_MEDICATIONS_ADMINISTERED_SECTION_MEDICATION_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_MEDICATIONS_ADMINISTERED_SECTION_MEDICATION_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_MEDICATIONS_ADMINISTERED_SECTION_MEDICATION_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_MEDICATIONS_ADMINISTERED_SECTION_MEDICATION_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(medicationsAdministeredSection2)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_MEDICATIONS_ADMINISTERED_SECTION_MEDICATION_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				medicationsAdministeredSection2)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.MEDICATIONS_ADMINISTERED_SECTION2__MEDICATIONS_ADMINISTERED_SECTION_MEDICATION_ACTIVITY,
-						 ConsolPlugin.INSTANCE.getString("MedicationsAdministeredSection2MedicationsAdministeredSectionMedicationActivity"),
-						 new Object [] { medicationsAdministeredSection2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.MEDICATIONS_ADMINISTERED_SECTION2__MEDICATIONS_ADMINISTERED_SECTION_MEDICATION_ACTIVITY,
+						ConsolPlugin.INSTANCE.getString(
+							"MedicationsAdministeredSection2MedicationsAdministeredSectionMedicationActivity"),
+						new Object[] { medicationsAdministeredSection2 }));
 			}
-			 
+
 			return false;
 		}
 		return true;

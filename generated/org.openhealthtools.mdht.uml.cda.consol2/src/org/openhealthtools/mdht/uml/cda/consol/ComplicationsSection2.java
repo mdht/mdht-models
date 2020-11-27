@@ -63,9 +63,9 @@ public interface ComplicationsSection2 extends ComplicationsSection {
 	public ComplicationsSection2 init();
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public ComplicationsSection2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ComplicationsSection2

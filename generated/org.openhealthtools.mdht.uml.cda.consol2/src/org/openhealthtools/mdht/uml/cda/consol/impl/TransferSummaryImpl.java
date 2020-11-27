@@ -80,7 +80,8 @@ public class TransferSummaryImpl extends USRealmHeader2Impl implements TransferS
 	 */
 	public boolean validateTransferSummaryHasAnAssementAndPlanSection2OrBothAssementSectionAndPlanOfTreatmentSection2(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return TransferSummaryOperations.validateTransferSummaryHasAnAssementAndPlanSection2OrBothAssementSectionAndPlanOfTreatmentSection2(this, diagnostics, context);
+		return TransferSummaryOperations.validateTransferSummaryHasAnAssementAndPlanSection2OrBothAssementSectionAndPlanOfTreatmentSection2(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -90,7 +91,8 @@ public class TransferSummaryImpl extends USRealmHeader2Impl implements TransferS
 	 */
 	public boolean validateTransferSummaryDoesNotHaveAssementAndPlanSection2WhenAssementAndPlanOfTreatment2ArePresent(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return TransferSummaryOperations.validateTransferSummaryDoesNotHaveAssementAndPlanSection2WhenAssementAndPlanOfTreatment2ArePresent(this, diagnostics, context);
+		return TransferSummaryOperations.validateTransferSummaryDoesNotHaveAssementAndPlanSection2WhenAssementAndPlanOfTreatment2ArePresent(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -213,7 +215,8 @@ public class TransferSummaryImpl extends USRealmHeader2Impl implements TransferS
 	 */
 	public boolean validateTransferSummaryImmunizationsSectionEntriesOptional2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return TransferSummaryOperations.validateTransferSummaryImmunizationsSectionEntriesOptional2(this, diagnostics, context);
+		return TransferSummaryOperations.validateTransferSummaryImmunizationsSectionEntriesOptional2(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -357,7 +360,8 @@ public class TransferSummaryImpl extends USRealmHeader2Impl implements TransferS
 	 */
 	public boolean validateTransferSummaryHistoryOfPastIllnessSection2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return TransferSummaryOperations.validateTransferSummaryHistoryOfPastIllnessSection2(this, diagnostics, context);
+		return TransferSummaryOperations.validateTransferSummaryHistoryOfPastIllnessSection2(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -367,7 +371,8 @@ public class TransferSummaryImpl extends USRealmHeader2Impl implements TransferS
 	 */
 	public boolean validateTransferSummaryHistoryOfPresentIllnessSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return TransferSummaryOperations.validateTransferSummaryHistoryOfPresentIllnessSection(this, diagnostics, context);
+		return TransferSummaryOperations.validateTransferSummaryHistoryOfPresentIllnessSection(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -406,7 +411,8 @@ public class TransferSummaryImpl extends USRealmHeader2Impl implements TransferS
 	 */
 	public boolean validateTransferSummaryAdmissionMedicationsSectionEntriesOptional2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return TransferSummaryOperations.validateTransferSummaryAdmissionMedicationsSectionEntriesOptional2(this, diagnostics, context);
+		return TransferSummaryOperations.validateTransferSummaryAdmissionMedicationsSectionEntriesOptional2(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -436,7 +442,8 @@ public class TransferSummaryImpl extends USRealmHeader2Impl implements TransferS
 	 */
 	public boolean validateTransferSummaryParticipantSupportAssociatedEntityAssociatedPersonName(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return TransferSummaryOperations.validateTransferSummaryParticipantSupportAssociatedEntityAssociatedPersonName(this, diagnostics, context);
+		return TransferSummaryOperations.validateTransferSummaryParticipantSupportAssociatedEntityAssociatedPersonName(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -446,7 +453,8 @@ public class TransferSummaryImpl extends USRealmHeader2Impl implements TransferS
 	 */
 	public boolean validateTransferSummaryParticipantSupportAssociatedEntityClassCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return TransferSummaryOperations.validateTransferSummaryParticipantSupportAssociatedEntityClassCodeP(this, diagnostics, context);
+		return TransferSummaryOperations.validateTransferSummaryParticipantSupportAssociatedEntityClassCodeP(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -456,7 +464,8 @@ public class TransferSummaryImpl extends USRealmHeader2Impl implements TransferS
 	 */
 	public boolean validateTransferSummaryParticipantSupportAssociatedEntityClassCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return TransferSummaryOperations.validateTransferSummaryParticipantSupportAssociatedEntityClassCode(this, diagnostics, context);
+		return TransferSummaryOperations.validateTransferSummaryParticipantSupportAssociatedEntityClassCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -466,7 +475,8 @@ public class TransferSummaryImpl extends USRealmHeader2Impl implements TransferS
 	 */
 	public boolean validateTransferSummaryParticipantSupportAssociatedEntityAssociatedPerson(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return TransferSummaryOperations.validateTransferSummaryParticipantSupportAssociatedEntityAssociatedPerson(this, diagnostics, context);
+		return TransferSummaryOperations.validateTransferSummaryParticipantSupportAssociatedEntityAssociatedPerson(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -486,7 +496,8 @@ public class TransferSummaryImpl extends USRealmHeader2Impl implements TransferS
 	 */
 	public boolean validateTransferSummaryParticipantSupportAssociatedEntity(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return TransferSummaryOperations.validateTransferSummaryParticipantSupportAssociatedEntity(this, diagnostics, context);
+		return TransferSummaryOperations.validateTransferSummaryParticipantSupportAssociatedEntity(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -496,7 +507,8 @@ public class TransferSummaryImpl extends USRealmHeader2Impl implements TransferS
 	 */
 	public boolean validateTransferSummaryParticipantCallbackContactAssociatedEntityAssociatedPersonName(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return TransferSummaryOperations.validateTransferSummaryParticipantCallbackContactAssociatedEntityAssociatedPersonName(this, diagnostics, context);
+		return TransferSummaryOperations.validateTransferSummaryParticipantCallbackContactAssociatedEntityAssociatedPersonName(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -506,7 +518,8 @@ public class TransferSummaryImpl extends USRealmHeader2Impl implements TransferS
 	 */
 	public boolean validateTransferSummaryParticipantCallbackContactAssociatedEntityClassCode(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return TransferSummaryOperations.validateTransferSummaryParticipantCallbackContactAssociatedEntityClassCode(this, diagnostics, context);
+		return TransferSummaryOperations.validateTransferSummaryParticipantCallbackContactAssociatedEntityClassCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -516,7 +529,8 @@ public class TransferSummaryImpl extends USRealmHeader2Impl implements TransferS
 	 */
 	public boolean validateTransferSummaryParticipantCallbackContactAssociatedEntityId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return TransferSummaryOperations.validateTransferSummaryParticipantCallbackContactAssociatedEntityId(this, diagnostics, context);
+		return TransferSummaryOperations.validateTransferSummaryParticipantCallbackContactAssociatedEntityId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -526,7 +540,8 @@ public class TransferSummaryImpl extends USRealmHeader2Impl implements TransferS
 	 */
 	public boolean validateTransferSummaryParticipantCallbackContactAssociatedEntityAddr(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return TransferSummaryOperations.validateTransferSummaryParticipantCallbackContactAssociatedEntityAddr(this, diagnostics, context);
+		return TransferSummaryOperations.validateTransferSummaryParticipantCallbackContactAssociatedEntityAddr(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -536,7 +551,8 @@ public class TransferSummaryImpl extends USRealmHeader2Impl implements TransferS
 	 */
 	public boolean validateTransferSummaryParticipantCallbackContactAssociatedEntityTelecom(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return TransferSummaryOperations.validateTransferSummaryParticipantCallbackContactAssociatedEntityTelecom(this, diagnostics, context);
+		return TransferSummaryOperations.validateTransferSummaryParticipantCallbackContactAssociatedEntityTelecom(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -546,7 +562,8 @@ public class TransferSummaryImpl extends USRealmHeader2Impl implements TransferS
 	 */
 	public boolean validateTransferSummaryParticipantCallbackContactAssociatedEntityAssociatedPerson(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return TransferSummaryOperations.validateTransferSummaryParticipantCallbackContactAssociatedEntityAssociatedPerson(this, diagnostics, context);
+		return TransferSummaryOperations.validateTransferSummaryParticipantCallbackContactAssociatedEntityAssociatedPerson(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -556,7 +573,8 @@ public class TransferSummaryImpl extends USRealmHeader2Impl implements TransferS
 	 */
 	public boolean validateTransferSummaryParticipantCallbackContactAssociatedEntityScopingOrganization(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return TransferSummaryOperations.validateTransferSummaryParticipantCallbackContactAssociatedEntityScopingOrganization(this, diagnostics, context);
+		return TransferSummaryOperations.validateTransferSummaryParticipantCallbackContactAssociatedEntityScopingOrganization(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -566,7 +584,8 @@ public class TransferSummaryImpl extends USRealmHeader2Impl implements TransferS
 	 */
 	public boolean validateTransferSummaryParticipantCallbackContactTypeCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return TransferSummaryOperations.validateTransferSummaryParticipantCallbackContactTypeCode(this, diagnostics, context);
+		return TransferSummaryOperations.validateTransferSummaryParticipantCallbackContactTypeCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -576,7 +595,8 @@ public class TransferSummaryImpl extends USRealmHeader2Impl implements TransferS
 	 */
 	public boolean validateTransferSummaryParticipantCallbackContactAssociatedEntity(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return TransferSummaryOperations.validateTransferSummaryParticipantCallbackContactAssociatedEntity(this, diagnostics, context);
+		return TransferSummaryOperations.validateTransferSummaryParticipantCallbackContactAssociatedEntity(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -586,7 +606,8 @@ public class TransferSummaryImpl extends USRealmHeader2Impl implements TransferS
 	 */
 	public boolean validateTransferSummaryDocumentationOfServiceEventPerformerTypeCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return TransferSummaryOperations.validateTransferSummaryDocumentationOfServiceEventPerformerTypeCode(this, diagnostics, context);
+		return TransferSummaryOperations.validateTransferSummaryDocumentationOfServiceEventPerformerTypeCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -596,7 +617,8 @@ public class TransferSummaryImpl extends USRealmHeader2Impl implements TransferS
 	 */
 	public boolean validateTransferSummaryDocumentationOfServiceEventPerformerFunctionCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return TransferSummaryOperations.validateTransferSummaryDocumentationOfServiceEventPerformerFunctionCodeP(this, diagnostics, context);
+		return TransferSummaryOperations.validateTransferSummaryDocumentationOfServiceEventPerformerFunctionCodeP(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -606,7 +628,8 @@ public class TransferSummaryImpl extends USRealmHeader2Impl implements TransferS
 	 */
 	public boolean validateTransferSummaryDocumentationOfServiceEventPerformerFunctionCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return TransferSummaryOperations.validateTransferSummaryDocumentationOfServiceEventPerformerFunctionCode(this, diagnostics, context);
+		return TransferSummaryOperations.validateTransferSummaryDocumentationOfServiceEventPerformerFunctionCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -616,7 +639,8 @@ public class TransferSummaryImpl extends USRealmHeader2Impl implements TransferS
 	 */
 	public boolean validateTransferSummaryDocumentationOfServiceEventClassCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return TransferSummaryOperations.validateTransferSummaryDocumentationOfServiceEventClassCode(this, diagnostics, context);
+		return TransferSummaryOperations.validateTransferSummaryDocumentationOfServiceEventClassCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -626,7 +650,8 @@ public class TransferSummaryImpl extends USRealmHeader2Impl implements TransferS
 	 */
 	public boolean validateTransferSummaryDocumentationOfServiceEventCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return TransferSummaryOperations.validateTransferSummaryDocumentationOfServiceEventCode(this, diagnostics, context);
+		return TransferSummaryOperations.validateTransferSummaryDocumentationOfServiceEventCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -636,7 +661,8 @@ public class TransferSummaryImpl extends USRealmHeader2Impl implements TransferS
 	 */
 	public boolean validateTransferSummaryDocumentationOfServiceEventPerformer1(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return TransferSummaryOperations.validateTransferSummaryDocumentationOfServiceEventPerformer1(this, diagnostics, context);
+		return TransferSummaryOperations.validateTransferSummaryDocumentationOfServiceEventPerformer1(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -927,17 +953,17 @@ public class TransferSummaryImpl extends USRealmHeader2Impl implements TransferS
 	 */
 	@Override
 	public TransferSummary init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public TransferSummary init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // TransferSummaryImpl

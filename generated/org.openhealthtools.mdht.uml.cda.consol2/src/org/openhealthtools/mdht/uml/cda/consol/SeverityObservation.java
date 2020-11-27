@@ -165,9 +165,9 @@ public interface SeverityObservation extends Observation {
 	public SeverityObservation init();
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public SeverityObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // SeverityObservation

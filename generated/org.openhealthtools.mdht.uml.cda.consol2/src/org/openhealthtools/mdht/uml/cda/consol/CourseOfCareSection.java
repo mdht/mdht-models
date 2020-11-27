@@ -89,9 +89,9 @@ public interface CourseOfCareSection extends Section {
 	public CourseOfCareSection init();
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public CourseOfCareSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // CourseOfCareSection

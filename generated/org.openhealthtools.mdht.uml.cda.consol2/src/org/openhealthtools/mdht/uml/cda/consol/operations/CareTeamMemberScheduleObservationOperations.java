@@ -92,7 +92,7 @@ public class CareTeamMemberScheduleObservationOperations extends ClinicalStateme
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -108,44 +108,36 @@ public class CareTeamMemberScheduleObservationOperations extends ClinicalStateme
 	public static boolean validateCareTeamMemberScheduleObservationTemplateId(
 			CareTeamMemberScheduleObservation careTeamMemberScheduleObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"CareTeamMemberScheduleObservationCareTeamMemberScheduleObservationTemplateId","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(
+			context, "CareTeamMemberScheduleObservationCareTeamMemberScheduleObservationTemplateId", "ERROR");
+
 		if (VALIDATE_CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION);
 			try {
-				VALIDATE_CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(careTeamMemberScheduleObservation)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				careTeamMemberScheduleObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION__CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION_TEMPLATE_ID,
-						 ConsolPlugin.INSTANCE.getString("CareTeamMemberScheduleObservationCareTeamMemberScheduleObservationTemplateId"),
-						 new Object [] { careTeamMemberScheduleObservation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION__CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION_TEMPLATE_ID,
+						ConsolPlugin.INSTANCE.getString(
+							"CareTeamMemberScheduleObservationCareTeamMemberScheduleObservationTemplateId"),
+						new Object[] { careTeamMemberScheduleObservation }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -170,7 +162,7 @@ public class CareTeamMemberScheduleObservationOperations extends ClinicalStateme
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -186,56 +178,50 @@ public class CareTeamMemberScheduleObservationOperations extends ClinicalStateme
 	public static boolean validateCareTeamMemberScheduleObservationCodeP(
 			CareTeamMemberScheduleObservation careTeamMemberScheduleObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"CareTeamMemberScheduleObservationCareTeamMemberScheduleObservationCodeP","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(
+			context, "CareTeamMemberScheduleObservationCareTeamMemberScheduleObservationCodeP", "ERROR");
+
 		if (VALIDATE_CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION);
 			try {
-				VALIDATE_CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(careTeamMemberScheduleObservation)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				careTeamMemberScheduleObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION__CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION_CODE_P,
-						 ConsolPlugin.INSTANCE.getString("CareTeamMemberScheduleObservationCareTeamMemberScheduleObservationCodeP"),
-						 new Object [] { careTeamMemberScheduleObservation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION__CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION_CODE_P,
+						ConsolPlugin.INSTANCE.getString(
+							"CareTeamMemberScheduleObservationCareTeamMemberScheduleObservationCodeP"),
+						new Object[] { careTeamMemberScheduleObservation }));
 			}
-			
+
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
-				Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.consol.CareTeamMemberScheduleObservationCodeP");
+				Collection<Object> passToken = (Collection<Object>) context.get(
+					"org.openhealthtools.mdht.uml.cda.consol.CareTeamMemberScheduleObservationCodeP");
 				if (passToken == null) {
 					// anticipate a reasonably healthy model
 					passToken = new java.util.ArrayList<Object>(3);
-					context.put("org.openhealthtools.mdht.uml.cda.consol.CareTeamMemberScheduleObservationCodeP", passToken);
+					context.put(
+						"org.openhealthtools.mdht.uml.cda.consol.CareTeamMemberScheduleObservationCodeP", passToken);
 				}
 				passToken.add(careTeamMemberScheduleObservation);
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -249,9 +235,9 @@ public class CareTeamMemberScheduleObservationOperations extends ClinicalStateme
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
-"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
-"value.code = '57203-2' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and " +
+			"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in " +
+			"value.code = '57203-2' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateCareTeamMemberScheduleObservationCode(CareTeamMemberScheduleObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Team Member Schedule Observation Code</em>}' invariant operation.
@@ -262,7 +248,7 @@ public class CareTeamMemberScheduleObservationOperations extends ClinicalStateme
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -278,50 +264,45 @@ public class CareTeamMemberScheduleObservationOperations extends ClinicalStateme
 	public static boolean validateCareTeamMemberScheduleObservationCode(
 			CareTeamMemberScheduleObservation careTeamMemberScheduleObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-	
-	
-	
-  	  
-		Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.consol.CareTeamMemberScheduleObservationCodeP");
-		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(careTeamMemberScheduleObservation)) {
+
+		Object passToken = (context == null)
+				? null
+				: context.get("org.openhealthtools.mdht.uml.cda.consol.CareTeamMemberScheduleObservationCodeP");
+		if ((passToken instanceof Collection<?>) &&
+				((Collection<?>) passToken).contains(careTeamMemberScheduleObservation)) {
 			// I have a free pass to short-circuit
 			return true;
 		}
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"CareTeamMemberScheduleObservationCareTeamMemberScheduleObservationCode","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(
+			context, "CareTeamMemberScheduleObservationCareTeamMemberScheduleObservationCode", "ERROR");
+
 		if (VALIDATE_CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION);
 			try {
-				VALIDATE_CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(careTeamMemberScheduleObservation)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				careTeamMemberScheduleObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION__CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION_CODE,
-						 ConsolPlugin.INSTANCE.getString("CareTeamMemberScheduleObservationCareTeamMemberScheduleObservationCode"),
-						 new Object [] { careTeamMemberScheduleObservation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION__CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION_CODE,
+						ConsolPlugin.INSTANCE.getString(
+							"CareTeamMemberScheduleObservationCareTeamMemberScheduleObservationCode"),
+						new Object[] { careTeamMemberScheduleObservation }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -346,7 +327,7 @@ public class CareTeamMemberScheduleObservationOperations extends ClinicalStateme
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -362,44 +343,36 @@ public class CareTeamMemberScheduleObservationOperations extends ClinicalStateme
 	public static boolean validateCareTeamMemberScheduleObservationText(
 			CareTeamMemberScheduleObservation careTeamMemberScheduleObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"CareTeamMemberScheduleObservationCareTeamMemberScheduleObservationText","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(
+			context, "CareTeamMemberScheduleObservationCareTeamMemberScheduleObservationText", "ERROR");
+
 		if (VALIDATE_CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION);
 			try {
-				VALIDATE_CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(careTeamMemberScheduleObservation)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				careTeamMemberScheduleObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION__CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION_TEXT,
-						 ConsolPlugin.INSTANCE.getString("CareTeamMemberScheduleObservationCareTeamMemberScheduleObservationText"),
-						 new Object [] { careTeamMemberScheduleObservation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION__CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION_TEXT,
+						ConsolPlugin.INSTANCE.getString(
+							"CareTeamMemberScheduleObservationCareTeamMemberScheduleObservationText"),
+						new Object[] { careTeamMemberScheduleObservation }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -424,7 +397,7 @@ public class CareTeamMemberScheduleObservationOperations extends ClinicalStateme
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -440,44 +413,36 @@ public class CareTeamMemberScheduleObservationOperations extends ClinicalStateme
 	public static boolean validateCareTeamMemberScheduleObservationValue(
 			CareTeamMemberScheduleObservation careTeamMemberScheduleObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"CareTeamMemberScheduleObservationCareTeamMemberScheduleObservationValue","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(
+			context, "CareTeamMemberScheduleObservationCareTeamMemberScheduleObservationValue", "ERROR");
+
 		if (VALIDATE_CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION);
 			try {
-				VALIDATE_CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(careTeamMemberScheduleObservation)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				careTeamMemberScheduleObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION__CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION_VALUE,
-						 ConsolPlugin.INSTANCE.getString("CareTeamMemberScheduleObservationCareTeamMemberScheduleObservationValue"),
-						 new Object [] { careTeamMemberScheduleObservation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION__CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION_VALUE,
+						ConsolPlugin.INSTANCE.getString(
+							"CareTeamMemberScheduleObservationCareTeamMemberScheduleObservationValue"),
+						new Object[] { careTeamMemberScheduleObservation }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -502,7 +467,7 @@ public class CareTeamMemberScheduleObservationOperations extends ClinicalStateme
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -518,44 +483,36 @@ public class CareTeamMemberScheduleObservationOperations extends ClinicalStateme
 	public static boolean validateCareTeamMemberScheduleObservationClassCode(
 			CareTeamMemberScheduleObservation careTeamMemberScheduleObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"CareTeamMemberScheduleObservationCareTeamMemberScheduleObservationClassCode","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(
+			context, "CareTeamMemberScheduleObservationCareTeamMemberScheduleObservationClassCode", "ERROR");
+
 		if (VALIDATE_CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION);
 			try {
-				VALIDATE_CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(careTeamMemberScheduleObservation)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				careTeamMemberScheduleObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION__CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION_CLASS_CODE,
-						 ConsolPlugin.INSTANCE.getString("CareTeamMemberScheduleObservationCareTeamMemberScheduleObservationClassCode"),
-						 new Object [] { careTeamMemberScheduleObservation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION__CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION_CLASS_CODE,
+						ConsolPlugin.INSTANCE.getString(
+							"CareTeamMemberScheduleObservationCareTeamMemberScheduleObservationClassCode"),
+						new Object[] { careTeamMemberScheduleObservation }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -580,7 +537,7 @@ public class CareTeamMemberScheduleObservationOperations extends ClinicalStateme
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -596,44 +553,36 @@ public class CareTeamMemberScheduleObservationOperations extends ClinicalStateme
 	public static boolean validateCareTeamMemberScheduleObservationMoodCode(
 			CareTeamMemberScheduleObservation careTeamMemberScheduleObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"CareTeamMemberScheduleObservationCareTeamMemberScheduleObservationMoodCode","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(
+			context, "CareTeamMemberScheduleObservationCareTeamMemberScheduleObservationMoodCode", "ERROR");
+
 		if (VALIDATE_CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION);
 			try {
-				VALIDATE_CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(careTeamMemberScheduleObservation)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				careTeamMemberScheduleObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION__CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION_MOOD_CODE,
-						 ConsolPlugin.INSTANCE.getString("CareTeamMemberScheduleObservationCareTeamMemberScheduleObservationMoodCode"),
-						 new Object [] { careTeamMemberScheduleObservation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION__CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION_MOOD_CODE,
+						ConsolPlugin.INSTANCE.getString(
+							"CareTeamMemberScheduleObservationCareTeamMemberScheduleObservationMoodCode"),
+						new Object[] { careTeamMemberScheduleObservation }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -653,44 +602,36 @@ public class CareTeamMemberScheduleObservationOperations extends ClinicalStateme
 	public static boolean validateCareTeamMemberScheduleObservationStatusCodeP(
 			CareTeamMemberScheduleObservation careTeamMemberScheduleObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"CareTeamMemberScheduleObservationCareTeamMemberScheduleObservationStatusCodeP","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(
+			context, "CareTeamMemberScheduleObservationCareTeamMemberScheduleObservationStatusCodeP", "ERROR");
+
 		if (VALIDATE_CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION);
 			try {
-				VALIDATE_CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(careTeamMemberScheduleObservation)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				careTeamMemberScheduleObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION__CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION_STATUS_CODE_P,
-						 ConsolPlugin.INSTANCE.getString("CareTeamMemberScheduleObservationCareTeamMemberScheduleObservationStatusCodeP"),
-						 new Object [] { careTeamMemberScheduleObservation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION__CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION_STATUS_CODE_P,
+						ConsolPlugin.INSTANCE.getString(
+							"CareTeamMemberScheduleObservationCareTeamMemberScheduleObservationStatusCodeP"),
+						new Object[] { careTeamMemberScheduleObservation }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -704,9 +645,8 @@ public class CareTeamMemberScheduleObservationOperations extends ClinicalStateme
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and "+
-"let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in "+
-"value.code = 'completed')";
+	protected static final String VALIDATE_CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and " +
+			"let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in " + "value.code = 'completed')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateCareTeamMemberScheduleObservationStatusCode(CareTeamMemberScheduleObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Team Member Schedule Observation Status Code</em>}' invariant operation.
@@ -717,7 +657,7 @@ public class CareTeamMemberScheduleObservationOperations extends ClinicalStateme
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * The cached OCL expression body for the '{@link #validateCareTeamMemberScheduleObservationStatusCodeP(CareTeamMemberScheduleObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Team Member Schedule Observation Status Code P</em>}' operation.
@@ -738,7 +678,7 @@ public class CareTeamMemberScheduleObservationOperations extends ClinicalStateme
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -754,44 +694,36 @@ public class CareTeamMemberScheduleObservationOperations extends ClinicalStateme
 	public static boolean validateCareTeamMemberScheduleObservationStatusCode(
 			CareTeamMemberScheduleObservation careTeamMemberScheduleObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"CareTeamMemberScheduleObservationCareTeamMemberScheduleObservationStatusCode","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(
+			context, "CareTeamMemberScheduleObservationCareTeamMemberScheduleObservationStatusCode", "ERROR");
+
 		if (VALIDATE_CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION);
 			try {
-				VALIDATE_CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(careTeamMemberScheduleObservation)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				careTeamMemberScheduleObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION__CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION_STATUS_CODE,
-						 ConsolPlugin.INSTANCE.getString("CareTeamMemberScheduleObservationCareTeamMemberScheduleObservationStatusCode"),
-						 new Object [] { careTeamMemberScheduleObservation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION__CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION_STATUS_CODE,
+						ConsolPlugin.INSTANCE.getString(
+							"CareTeamMemberScheduleObservationCareTeamMemberScheduleObservationStatusCode"),
+						new Object[] { careTeamMemberScheduleObservation }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -816,7 +748,7 @@ public class CareTeamMemberScheduleObservationOperations extends ClinicalStateme
 	 * @ordered
 	 */
 
-	protected static ThreadLocal< Query<?, ?, ?> > VALIDATE_CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION_EDTEL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal< Query<?, ?, ?> >();
+	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION_EDTEL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<Query<?, ?, ?>>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -832,49 +764,40 @@ public class CareTeamMemberScheduleObservationOperations extends ClinicalStateme
 	public static boolean validateCareTeamMemberScheduleObservationEDTELValue(
 			CareTeamMemberScheduleObservation careTeamMemberScheduleObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"CareTeamMemberScheduleObservationCareTeamMemberScheduleObservationEDTELValue","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(
+			context, "CareTeamMemberScheduleObservationCareTeamMemberScheduleObservationEDTELValue", "ERROR");
+
 		if (VALIDATE_CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION_EDTEL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION_EDTEL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION_EDTEL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(EOCL_ENV.get().createQuery(oclExpression));
-			}
-			catch (ParserException pe) {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION_EDTEL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION_EDTEL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(
+					EOCL_ENV.get().createQuery(oclExpression));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		Object oclResult = VALIDATE_CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION_EDTEL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(careTeamMemberScheduleObservation);		
+		}
+
+		Object oclResult = VALIDATE_CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION_EDTEL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(
+			careTeamMemberScheduleObservation);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-  			
+
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION__CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION_EDTEL_VALUE,
-						 ConsolPlugin.INSTANCE.getString("CareTeamMemberScheduleObservationCareTeamMemberScheduleObservationEDTELValue"),
-						 new Object [] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION__CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION_EDTEL_VALUE,
+							ConsolPlugin.INSTANCE.getString(
+								"CareTeamMemberScheduleObservationCareTeamMemberScheduleObservationEDTELValue"),
+							new Object[] { eObject }));
 				}
-				 
+
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -900,7 +823,7 @@ public class CareTeamMemberScheduleObservationOperations extends ClinicalStateme
 	 * @ordered
 	 */
 
-	protected static ThreadLocal< Query<?, ?, ?> > VALIDATE_CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION_ED_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal< Query<?, ?, ?> >();
+	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION_ED_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<Query<?, ?, ?>>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -916,49 +839,40 @@ public class CareTeamMemberScheduleObservationOperations extends ClinicalStateme
 	public static boolean validateCareTeamMemberScheduleObservationEDReference(
 			CareTeamMemberScheduleObservation careTeamMemberScheduleObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"CareTeamMemberScheduleObservationCareTeamMemberScheduleObservationEDReference","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(
+			context, "CareTeamMemberScheduleObservationCareTeamMemberScheduleObservationEDReference", "ERROR");
+
 		if (VALIDATE_CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION_ED_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION_ED_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION_ED_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(EOCL_ENV.get().createQuery(oclExpression));
-			}
-			catch (ParserException pe) {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION_ED_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION_ED_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(
+					EOCL_ENV.get().createQuery(oclExpression));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		Object oclResult = VALIDATE_CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION_ED_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(careTeamMemberScheduleObservation);		
+		}
+
+		Object oclResult = VALIDATE_CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION_ED_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(
+			careTeamMemberScheduleObservation);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-  			
+
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION__CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION_ED_REFERENCE,
-						 ConsolPlugin.INSTANCE.getString("CareTeamMemberScheduleObservationCareTeamMemberScheduleObservationEDReference"),
-						 new Object [] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION__CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION_ED_REFERENCE,
+							ConsolPlugin.INSTANCE.getString(
+								"CareTeamMemberScheduleObservationCareTeamMemberScheduleObservationEDReference"),
+							new Object[] { eObject }));
 				}
-				 
+
 			}
 			return oclResultSet.isEmpty();
 		}

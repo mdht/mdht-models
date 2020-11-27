@@ -51,9 +51,9 @@ public interface ProcedureFindingsSection2 extends ProcedureFindingsSection {
 	public ProcedureFindingsSection2 init();
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public ProcedureFindingsSection2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ProcedureFindingsSection2

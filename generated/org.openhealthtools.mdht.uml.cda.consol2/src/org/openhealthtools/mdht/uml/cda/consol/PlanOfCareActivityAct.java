@@ -77,9 +77,9 @@ public interface PlanOfCareActivityAct extends Act {
 	public PlanOfCareActivityAct init();
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public PlanOfCareActivityAct init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // PlanOfCareActivityAct

@@ -113,9 +113,9 @@ public interface HighestPressureUlcerStage extends Observation {
 	public HighestPressureUlcerStage init();
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public HighestPressureUlcerStage init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // HighestPressureUlcerStage

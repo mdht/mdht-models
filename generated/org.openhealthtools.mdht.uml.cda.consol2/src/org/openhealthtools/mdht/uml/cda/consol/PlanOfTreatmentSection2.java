@@ -192,9 +192,9 @@ public interface PlanOfTreatmentSection2 extends PlanOfCareSection {
 	public PlanOfTreatmentSection2 init();
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public PlanOfTreatmentSection2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // PlanOfTreatmentSection2

@@ -55,7 +55,8 @@ public class FunctionalStatusOrganizer2Impl extends FunctionalStatusResultOrgani
 	 */
 	public boolean validateFunctionalStatusOrganizer2TemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return FunctionalStatusOrganizer2Operations.validateFunctionalStatusOrganizer2TemplateId(this, diagnostics, context);
+		return FunctionalStatusOrganizer2Operations.validateFunctionalStatusOrganizer2TemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -65,7 +66,8 @@ public class FunctionalStatusOrganizer2Impl extends FunctionalStatusResultOrgani
 	 */
 	public boolean validateFunctionalStatusOrganizer2SelfCareActivities(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return FunctionalStatusOrganizer2Operations.validateFunctionalStatusOrganizer2SelfCareActivities(this, diagnostics, context);
+		return FunctionalStatusOrganizer2Operations.validateFunctionalStatusOrganizer2SelfCareActivities(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -75,7 +77,8 @@ public class FunctionalStatusOrganizer2Impl extends FunctionalStatusResultOrgani
 	 */
 	public boolean validateFunctionalStatusOrganizer2AuthorParticipation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return FunctionalStatusOrganizer2Operations.validateFunctionalStatusOrganizer2AuthorParticipation(this, diagnostics, context);
+		return FunctionalStatusOrganizer2Operations.validateFunctionalStatusOrganizer2AuthorParticipation(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -144,7 +147,8 @@ public class FunctionalStatusOrganizer2Impl extends FunctionalStatusResultOrgani
 	@Override
 	public boolean validateFunctionalStatusResultOrganizerFunctionalStatusResultObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return FunctionalStatusOrganizer2Operations.validateFunctionalStatusResultOrganizerFunctionalStatusResultObservation(this, diagnostics, context);
+		return FunctionalStatusOrganizer2Operations.validateFunctionalStatusResultOrganizerFunctionalStatusResultObservation(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -154,17 +158,17 @@ public class FunctionalStatusOrganizer2Impl extends FunctionalStatusResultOrgani
 	 */
 	@Override
 	public FunctionalStatusOrganizer2 init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public FunctionalStatusOrganizer2 init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // FunctionalStatusOrganizer2Impl

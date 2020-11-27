@@ -53,7 +53,8 @@ public class PreoperativeDiagnosisSection2Impl extends PreoperativeDiagnosisSect
 	 */
 	public boolean validatePreoperativeDiagnosisSection2TemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PreoperativeDiagnosisSection2Operations.validatePreoperativeDiagnosisSection2TemplateId(this, diagnostics, context);
+		return PreoperativeDiagnosisSection2Operations.validatePreoperativeDiagnosisSection2TemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -72,7 +73,8 @@ public class PreoperativeDiagnosisSection2Impl extends PreoperativeDiagnosisSect
 	 */
 	@Override
 	public boolean validatePreoperativeDiagnosisSectionCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PreoperativeDiagnosisSection2Operations.validatePreoperativeDiagnosisSectionCodeP(this, diagnostics, context);
+		return PreoperativeDiagnosisSection2Operations.validatePreoperativeDiagnosisSectionCodeP(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -82,7 +84,8 @@ public class PreoperativeDiagnosisSection2Impl extends PreoperativeDiagnosisSect
 	 */
 	@Override
 	public boolean validatePreoperativeDiagnosisSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PreoperativeDiagnosisSection2Operations.validatePreoperativeDiagnosisSectionCode(this, diagnostics, context);
+		return PreoperativeDiagnosisSection2Operations.validatePreoperativeDiagnosisSectionCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -93,7 +96,8 @@ public class PreoperativeDiagnosisSection2Impl extends PreoperativeDiagnosisSect
 	@Override
 	public boolean validatePreoperativeDiagnosisSectionPreoperativeDiagnosis(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PreoperativeDiagnosisSection2Operations.validatePreoperativeDiagnosisSectionPreoperativeDiagnosis(this, diagnostics, context);
+		return PreoperativeDiagnosisSection2Operations.validatePreoperativeDiagnosisSectionPreoperativeDiagnosis(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -103,17 +107,17 @@ public class PreoperativeDiagnosisSection2Impl extends PreoperativeDiagnosisSect
 	 */
 	@Override
 	public PreoperativeDiagnosisSection2 init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public PreoperativeDiagnosisSection2 init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // PreoperativeDiagnosisSection2Impl

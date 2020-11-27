@@ -47,7 +47,7 @@ public class CatalogNumberObservationOperations extends ClinicalStatementOperati
 	 * @generated
 	 * @ordered
 	 */
-	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+	protected static final ThreadLocal<OCL> EOCL_ENV = new ThreadLocal<OCL>() {
 		@Override
 		public OCL initialValue() {
 			return OCL.newInstance();
@@ -81,7 +81,7 @@ public class CatalogNumberObservationOperations extends ClinicalStatementOperati
 	 * @generated
 	 * @ordered
 	 */
-	protected static ThreadLocal<  Constraint> VALIDATE_CATALOG_NUMBER_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_CATALOG_NUMBER_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -93,45 +93,36 @@ public class CatalogNumberObservationOperations extends ClinicalStatementOperati
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateCatalogNumberObservationTemplateId(CatalogNumberObservation catalogNumberObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"CatalogNumberObservationCatalogNumberObservationTemplateId","ERROR");
-    
-  	  
-  	  
+	public static boolean validateCatalogNumberObservationTemplateId(CatalogNumberObservation catalogNumberObservation,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "CatalogNumberObservationCatalogNumberObservationTemplateId", "ERROR");
+
 		if (VALIDATE_CATALOG_NUMBER_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CATALOG_NUMBER_OBSERVATION);
 			try {
-				VALIDATE_CATALOG_NUMBER_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_CATALOG_NUMBER_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_CATALOG_NUMBER_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_CATALOG_NUMBER_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_CATALOG_NUMBER_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(catalogNumberObservation)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_CATALOG_NUMBER_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				catalogNumberObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.CATALOG_NUMBER_OBSERVATION__CATALOG_NUMBER_OBSERVATION_TEMPLATE_ID,
-						 ConsolPlugin.INSTANCE.getString("CatalogNumberObservationCatalogNumberObservationTemplateId"),
-						 new Object [] { catalogNumberObservation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.CATALOG_NUMBER_OBSERVATION__CATALOG_NUMBER_OBSERVATION_TEMPLATE_ID,
+						ConsolPlugin.INSTANCE.getString("CatalogNumberObservationCatalogNumberObservationTemplateId"),
+						new Object[] { catalogNumberObservation }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -155,7 +146,7 @@ public class CatalogNumberObservationOperations extends ClinicalStatementOperati
 	 * @generated
 	 * @ordered
 	 */
-	protected static ThreadLocal<  Constraint> VALIDATE_CATALOG_NUMBER_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_CATALOG_NUMBER_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -167,49 +158,40 @@ public class CatalogNumberObservationOperations extends ClinicalStatementOperati
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateCatalogNumberObservationCodeP(CatalogNumberObservation catalogNumberObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"CatalogNumberObservationCatalogNumberObservationCodeP","ERROR");
-    
-  	  
-  	  
+	public static boolean validateCatalogNumberObservationCodeP(CatalogNumberObservation catalogNumberObservation,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "CatalogNumberObservationCatalogNumberObservationCodeP", "ERROR");
+
 		if (VALIDATE_CATALOG_NUMBER_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CATALOG_NUMBER_OBSERVATION);
 			try {
-				VALIDATE_CATALOG_NUMBER_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_CATALOG_NUMBER_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_CATALOG_NUMBER_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_CATALOG_NUMBER_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_CATALOG_NUMBER_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(catalogNumberObservation)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_CATALOG_NUMBER_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				catalogNumberObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.CATALOG_NUMBER_OBSERVATION__CATALOG_NUMBER_OBSERVATION_CODE_P,
-						 ConsolPlugin.INSTANCE.getString("CatalogNumberObservationCatalogNumberObservationCodeP"),
-						 new Object [] { catalogNumberObservation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.CATALOG_NUMBER_OBSERVATION__CATALOG_NUMBER_OBSERVATION_CODE_P,
+						ConsolPlugin.INSTANCE.getString("CatalogNumberObservationCatalogNumberObservationCodeP"),
+						new Object[] { catalogNumberObservation }));
 			}
-			
+
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
-				Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.consol.CatalogNumberObservationCodeP");
+				Collection<Object> passToken = (Collection<Object>) context.get(
+					"org.openhealthtools.mdht.uml.cda.consol.CatalogNumberObservationCodeP");
 				if (passToken == null) {
 					// anticipate a reasonably healthy model
 					passToken = new java.util.ArrayList<Object>(3);
@@ -217,7 +199,7 @@ public class CatalogNumberObservationOperations extends ClinicalStatementOperati
 				}
 				passToken.add(catalogNumberObservation);
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -231,9 +213,9 @@ public class CatalogNumberObservationOperations extends ClinicalStatementOperati
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_CATALOG_NUMBER_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
-"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
-"value.code = 'C99286' and value.codeSystem = '2.16.840.1.113883.3.26.1.1')";
+	protected static final String VALIDATE_CATALOG_NUMBER_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and " +
+			"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in " +
+			"value.code = 'C99286' and value.codeSystem = '2.16.840.1.113883.3.26.1.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateCatalogNumberObservationCode(CatalogNumberObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Catalog Number Observation Code</em>}' invariant operation.
@@ -243,7 +225,7 @@ public class CatalogNumberObservationOperations extends ClinicalStatementOperati
 	 * @generated
 	 * @ordered
 	 */
-	protected static ThreadLocal<  Constraint> VALIDATE_CATALOG_NUMBER_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_CATALOG_NUMBER_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -255,51 +237,43 @@ public class CatalogNumberObservationOperations extends ClinicalStatementOperati
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateCatalogNumberObservationCode(CatalogNumberObservation catalogNumberObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-		Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.consol.CatalogNumberObservationCodeP");
+	public static boolean validateCatalogNumberObservationCode(CatalogNumberObservation catalogNumberObservation,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		Object passToken = (context == null)
+				? null
+				: context.get("org.openhealthtools.mdht.uml.cda.consol.CatalogNumberObservationCodeP");
 		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(catalogNumberObservation)) {
 			// I have a free pass to short-circuit
 			return true;
 		}
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"CatalogNumberObservationCatalogNumberObservationCode","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "CatalogNumberObservationCatalogNumberObservationCode", "ERROR");
+
 		if (VALIDATE_CATALOG_NUMBER_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CATALOG_NUMBER_OBSERVATION);
 			try {
-				VALIDATE_CATALOG_NUMBER_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_CATALOG_NUMBER_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_CATALOG_NUMBER_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_CATALOG_NUMBER_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_CATALOG_NUMBER_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(catalogNumberObservation)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_CATALOG_NUMBER_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				catalogNumberObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.CATALOG_NUMBER_OBSERVATION__CATALOG_NUMBER_OBSERVATION_CODE,
-						 ConsolPlugin.INSTANCE.getString("CatalogNumberObservationCatalogNumberObservationCode"),
-						 new Object [] { catalogNumberObservation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.CATALOG_NUMBER_OBSERVATION__CATALOG_NUMBER_OBSERVATION_CODE,
+						ConsolPlugin.INSTANCE.getString("CatalogNumberObservationCatalogNumberObservationCode"),
+						new Object[] { catalogNumberObservation }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -323,7 +297,7 @@ public class CatalogNumberObservationOperations extends ClinicalStatementOperati
 	 * @generated
 	 * @ordered
 	 */
-	protected static ThreadLocal<  Constraint> VALIDATE_CATALOG_NUMBER_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_CATALOG_NUMBER_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -335,45 +309,35 @@ public class CatalogNumberObservationOperations extends ClinicalStatementOperati
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateCatalogNumberObservationValue(CatalogNumberObservation catalogNumberObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"CatalogNumberObservationCatalogNumberObservationValue","ERROR");
-    
-  	  
-  	  
+	public static boolean validateCatalogNumberObservationValue(CatalogNumberObservation catalogNumberObservation,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "CatalogNumberObservationCatalogNumberObservationValue", "ERROR");
+
 		if (VALIDATE_CATALOG_NUMBER_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CATALOG_NUMBER_OBSERVATION);
 			try {
-				VALIDATE_CATALOG_NUMBER_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_CATALOG_NUMBER_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_CATALOG_NUMBER_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_CATALOG_NUMBER_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_CATALOG_NUMBER_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(catalogNumberObservation)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_CATALOG_NUMBER_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				catalogNumberObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.CATALOG_NUMBER_OBSERVATION__CATALOG_NUMBER_OBSERVATION_VALUE,
-						 ConsolPlugin.INSTANCE.getString("CatalogNumberObservationCatalogNumberObservationValue"),
-						 new Object [] { catalogNumberObservation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.CATALOG_NUMBER_OBSERVATION__CATALOG_NUMBER_OBSERVATION_VALUE,
+						ConsolPlugin.INSTANCE.getString("CatalogNumberObservationCatalogNumberObservationValue"),
+						new Object[] { catalogNumberObservation }));
 			}
-			 
+
 			return false;
 		}
 		return true;

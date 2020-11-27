@@ -149,9 +149,9 @@ public interface ProgressTowardGoalObservation extends Observation {
 	public ProgressTowardGoalObservation init();
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public ProgressTowardGoalObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ProgressTowardGoalObservation

@@ -94,7 +94,7 @@ public class UDIOrganizerOperations extends OrganizerOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+	protected static final ThreadLocal<OCL> EOCL_ENV = new ThreadLocal<OCL>() {
 		@Override
 		public OCL initialValue() {
 			return OCL.newInstance();
@@ -128,7 +128,7 @@ public class UDIOrganizerOperations extends OrganizerOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static ThreadLocal<  Constraint> VALIDATE_UDI_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_UDI_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -140,45 +140,34 @@ public class UDIOrganizerOperations extends OrganizerOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateUDIOrganizerTemplateId(UDIOrganizer udiOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"UDIOrganizerUDIOrganizerTemplateId","ERROR");
-    
-  	  
-  	  
+	public static boolean validateUDIOrganizerTemplateId(UDIOrganizer udiOrganizer, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "UDIOrganizerUDIOrganizerTemplateId", "ERROR");
+
 		if (VALIDATE_UDI_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.UDI_ORGANIZER);
 			try {
-				VALIDATE_UDI_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_UDI_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_UDI_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_UDI_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_UDI_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(udiOrganizer)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(VALIDATE_UDI_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+			udiOrganizer)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.UDI_ORGANIZER__UDI_ORGANIZER_TEMPLATE_ID,
-						 ConsolPlugin.INSTANCE.getString("UDIOrganizerUDIOrganizerTemplateId"),
-						 new Object [] { udiOrganizer }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.UDI_ORGANIZER__UDI_ORGANIZER_TEMPLATE_ID,
+						ConsolPlugin.INSTANCE.getString("UDIOrganizerUDIOrganizerTemplateId"),
+						new Object[] { udiOrganizer }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -202,7 +191,7 @@ public class UDIOrganizerOperations extends OrganizerOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static ThreadLocal<  Constraint> VALIDATE_UDI_ORGANIZER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_UDI_ORGANIZER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -214,45 +203,33 @@ public class UDIOrganizerOperations extends OrganizerOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateUDIOrganizerId(UDIOrganizer udiOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"UDIOrganizerUDIOrganizerId","ERROR");
-    
-  	  
-  	  
+	public static boolean validateUDIOrganizerId(UDIOrganizer udiOrganizer, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "UDIOrganizerUDIOrganizerId", "ERROR");
+
 		if (VALIDATE_UDI_ORGANIZER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.UDI_ORGANIZER);
 			try {
-				VALIDATE_UDI_ORGANIZER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_UDI_ORGANIZER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_UDI_ORGANIZER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_UDI_ORGANIZER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_UDI_ORGANIZER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(udiOrganizer)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(VALIDATE_UDI_ORGANIZER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+			udiOrganizer)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.UDI_ORGANIZER__UDI_ORGANIZER_ID,
-						 ConsolPlugin.INSTANCE.getString("UDIOrganizerUDIOrganizerId"),
-						 new Object [] { udiOrganizer }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.UDI_ORGANIZER__UDI_ORGANIZER_ID,
+						ConsolPlugin.INSTANCE.getString("UDIOrganizerUDIOrganizerId"), new Object[] { udiOrganizer }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -276,7 +253,7 @@ public class UDIOrganizerOperations extends OrganizerOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static ThreadLocal<  Constraint> VALIDATE_UDI_ORGANIZER_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_UDI_ORGANIZER_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -288,49 +265,39 @@ public class UDIOrganizerOperations extends OrganizerOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateUDIOrganizerCodeP(UDIOrganizer udiOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"UDIOrganizerUDIOrganizerCodeP","INFO");
-    
-  	  
-  	  
+	public static boolean validateUDIOrganizerCodeP(UDIOrganizer udiOrganizer, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "UDIOrganizerUDIOrganizerCodeP", "INFO");
+
 		if (VALIDATE_UDI_ORGANIZER_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.UDI_ORGANIZER);
 			try {
-				VALIDATE_UDI_ORGANIZER_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_UDI_ORGANIZER_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_UDI_ORGANIZER_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_UDI_ORGANIZER_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_UDI_ORGANIZER_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(udiOrganizer)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(VALIDATE_UDI_ORGANIZER_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+			udiOrganizer)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.UDI_ORGANIZER__UDI_ORGANIZER_CODE_P,
-						 ConsolPlugin.INSTANCE.getString("UDIOrganizerUDIOrganizerCodeP"),
-						 new Object [] { udiOrganizer }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.UDI_ORGANIZER__UDI_ORGANIZER_CODE_P,
+						ConsolPlugin.INSTANCE.getString("UDIOrganizerUDIOrganizerCodeP"),
+						new Object[] { udiOrganizer }));
 			}
-			
+
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
-				Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.consol.UDIOrganizerCodeP");
+				Collection<Object> passToken = (Collection<Object>) context.get(
+					"org.openhealthtools.mdht.uml.cda.consol.UDIOrganizerCodeP");
 				if (passToken == null) {
 					// anticipate a reasonably healthy model
 					passToken = new java.util.ArrayList<Object>(3);
@@ -338,7 +305,7 @@ public class UDIOrganizerOperations extends OrganizerOperations {
 				}
 				passToken.add(udiOrganizer);
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -352,9 +319,9 @@ public class UDIOrganizerOperations extends OrganizerOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_UDI_ORGANIZER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
-"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
-"not value.codeSystem.oclIsUndefined() or not value.codeSystemName.oclIsUndefined())";
+	protected static final String VALIDATE_UDI_ORGANIZER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and " +
+			"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in " +
+			"not value.codeSystem.oclIsUndefined() or not value.codeSystemName.oclIsUndefined())";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateUDIOrganizerCode(UDIOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate UDI Organizer Code</em>}' invariant operation.
@@ -364,7 +331,7 @@ public class UDIOrganizerOperations extends OrganizerOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static ThreadLocal<  Constraint> VALIDATE_UDI_ORGANIZER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_UDI_ORGANIZER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -376,51 +343,42 @@ public class UDIOrganizerOperations extends OrganizerOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateUDIOrganizerCode(UDIOrganizer udiOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-		Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.consol.UDIOrganizerCodeP");
+	public static boolean validateUDIOrganizerCode(UDIOrganizer udiOrganizer, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
+		Object passToken = (context == null)
+				? null
+				: context.get("org.openhealthtools.mdht.uml.cda.consol.UDIOrganizerCodeP");
 		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(udiOrganizer)) {
 			// I have a free pass to short-circuit
 			return true;
 		}
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"UDIOrganizerUDIOrganizerCode","INFO");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "UDIOrganizerUDIOrganizerCode", "INFO");
+
 		if (VALIDATE_UDI_ORGANIZER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.UDI_ORGANIZER);
 			try {
-				VALIDATE_UDI_ORGANIZER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_UDI_ORGANIZER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_UDI_ORGANIZER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_UDI_ORGANIZER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_UDI_ORGANIZER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(udiOrganizer)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(VALIDATE_UDI_ORGANIZER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+			udiOrganizer)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.UDI_ORGANIZER__UDI_ORGANIZER_CODE,
-						 ConsolPlugin.INSTANCE.getString("UDIOrganizerUDIOrganizerCode"),
-						 new Object [] { udiOrganizer }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.UDI_ORGANIZER__UDI_ORGANIZER_CODE,
+						ConsolPlugin.INSTANCE.getString("UDIOrganizerUDIOrganizerCode"),
+						new Object[] { udiOrganizer }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -444,7 +402,7 @@ public class UDIOrganizerOperations extends OrganizerOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static ThreadLocal<  Constraint> VALIDATE_UDI_ORGANIZER_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_UDI_ORGANIZER_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -456,49 +414,39 @@ public class UDIOrganizerOperations extends OrganizerOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateUDIOrganizerStatusCodeP(UDIOrganizer udiOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"UDIOrganizerUDIOrganizerStatusCodeP","ERROR");
-    
-  	  
-  	  
+	public static boolean validateUDIOrganizerStatusCodeP(UDIOrganizer udiOrganizer, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "UDIOrganizerUDIOrganizerStatusCodeP", "ERROR");
+
 		if (VALIDATE_UDI_ORGANIZER_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.UDI_ORGANIZER);
 			try {
-				VALIDATE_UDI_ORGANIZER_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_UDI_ORGANIZER_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_UDI_ORGANIZER_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_UDI_ORGANIZER_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_UDI_ORGANIZER_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(udiOrganizer)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_UDI_ORGANIZER_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(udiOrganizer)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.UDI_ORGANIZER__UDI_ORGANIZER_STATUS_CODE_P,
-						 ConsolPlugin.INSTANCE.getString("UDIOrganizerUDIOrganizerStatusCodeP"),
-						 new Object [] { udiOrganizer }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.UDI_ORGANIZER__UDI_ORGANIZER_STATUS_CODE_P,
+						ConsolPlugin.INSTANCE.getString("UDIOrganizerUDIOrganizerStatusCodeP"),
+						new Object[] { udiOrganizer }));
 			}
-			
+
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
-				Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.consol.UDIOrganizerStatusCodeP");
+				Collection<Object> passToken = (Collection<Object>) context.get(
+					"org.openhealthtools.mdht.uml.cda.consol.UDIOrganizerStatusCodeP");
 				if (passToken == null) {
 					// anticipate a reasonably healthy model
 					passToken = new java.util.ArrayList<Object>(3);
@@ -506,7 +454,7 @@ public class UDIOrganizerOperations extends OrganizerOperations {
 				}
 				passToken.add(udiOrganizer);
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -520,9 +468,8 @@ public class UDIOrganizerOperations extends OrganizerOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_UDI_ORGANIZER_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and "+
-"let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in "+
-"value.code = 'completed')";
+	protected static final String VALIDATE_UDI_ORGANIZER_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and " +
+			"let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in " + "value.code = 'completed')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateUDIOrganizerStatusCode(UDIOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate UDI Organizer Status Code</em>}' invariant operation.
@@ -532,7 +479,7 @@ public class UDIOrganizerOperations extends OrganizerOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static ThreadLocal<  Constraint> VALIDATE_UDI_ORGANIZER_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_UDI_ORGANIZER_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -544,51 +491,42 @@ public class UDIOrganizerOperations extends OrganizerOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateUDIOrganizerStatusCode(UDIOrganizer udiOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-		Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.consol.UDIOrganizerStatusCodeP");
+	public static boolean validateUDIOrganizerStatusCode(UDIOrganizer udiOrganizer, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
+		Object passToken = (context == null)
+				? null
+				: context.get("org.openhealthtools.mdht.uml.cda.consol.UDIOrganizerStatusCodeP");
 		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(udiOrganizer)) {
 			// I have a free pass to short-circuit
 			return true;
 		}
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"UDIOrganizerUDIOrganizerStatusCode","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "UDIOrganizerUDIOrganizerStatusCode", "ERROR");
+
 		if (VALIDATE_UDI_ORGANIZER_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.UDI_ORGANIZER);
 			try {
-				VALIDATE_UDI_ORGANIZER_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_UDI_ORGANIZER_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_UDI_ORGANIZER_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_UDI_ORGANIZER_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_UDI_ORGANIZER_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(udiOrganizer)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(VALIDATE_UDI_ORGANIZER_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+			udiOrganizer)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.UDI_ORGANIZER__UDI_ORGANIZER_STATUS_CODE,
-						 ConsolPlugin.INSTANCE.getString("UDIOrganizerUDIOrganizerStatusCode"),
-						 new Object [] { udiOrganizer }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.UDI_ORGANIZER__UDI_ORGANIZER_STATUS_CODE,
+						ConsolPlugin.INSTANCE.getString("UDIOrganizerUDIOrganizerStatusCode"),
+						new Object[] { udiOrganizer }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -612,7 +550,7 @@ public class UDIOrganizerOperations extends OrganizerOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static ThreadLocal<  Constraint> VALIDATE_UDI_ORGANIZER_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_UDI_ORGANIZER_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -624,45 +562,34 @@ public class UDIOrganizerOperations extends OrganizerOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateUDIOrganizerClassCode(UDIOrganizer udiOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"UDIOrganizerUDIOrganizerClassCode","ERROR");
-    
-  	  
-  	  
+	public static boolean validateUDIOrganizerClassCode(UDIOrganizer udiOrganizer, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "UDIOrganizerUDIOrganizerClassCode", "ERROR");
+
 		if (VALIDATE_UDI_ORGANIZER_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.UDI_ORGANIZER);
 			try {
-				VALIDATE_UDI_ORGANIZER_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_UDI_ORGANIZER_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_UDI_ORGANIZER_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_UDI_ORGANIZER_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_UDI_ORGANIZER_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(udiOrganizer)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(VALIDATE_UDI_ORGANIZER_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+			udiOrganizer)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.UDI_ORGANIZER__UDI_ORGANIZER_CLASS_CODE,
-						 ConsolPlugin.INSTANCE.getString("UDIOrganizerUDIOrganizerClassCode"),
-						 new Object [] { udiOrganizer }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.UDI_ORGANIZER__UDI_ORGANIZER_CLASS_CODE,
+						ConsolPlugin.INSTANCE.getString("UDIOrganizerUDIOrganizerClassCode"),
+						new Object[] { udiOrganizer }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -686,7 +613,7 @@ public class UDIOrganizerOperations extends OrganizerOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static ThreadLocal<  Constraint> VALIDATE_UDI_ORGANIZER_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_UDI_ORGANIZER_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -698,45 +625,34 @@ public class UDIOrganizerOperations extends OrganizerOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateUDIOrganizerMoodCode(UDIOrganizer udiOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"UDIOrganizerUDIOrganizerMoodCode","ERROR");
-    
-  	  
-  	  
+	public static boolean validateUDIOrganizerMoodCode(UDIOrganizer udiOrganizer, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "UDIOrganizerUDIOrganizerMoodCode", "ERROR");
+
 		if (VALIDATE_UDI_ORGANIZER_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.UDI_ORGANIZER);
 			try {
-				VALIDATE_UDI_ORGANIZER_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_UDI_ORGANIZER_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_UDI_ORGANIZER_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_UDI_ORGANIZER_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_UDI_ORGANIZER_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(udiOrganizer)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(VALIDATE_UDI_ORGANIZER_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+			udiOrganizer)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.UDI_ORGANIZER__UDI_ORGANIZER_MOOD_CODE,
-						 ConsolPlugin.INSTANCE.getString("UDIOrganizerUDIOrganizerMoodCode"),
-						 new Object [] { udiOrganizer }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.UDI_ORGANIZER__UDI_ORGANIZER_MOOD_CODE,
+						ConsolPlugin.INSTANCE.getString("UDIOrganizerUDIOrganizerMoodCode"),
+						new Object[] { udiOrganizer }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -760,7 +676,7 @@ public class UDIOrganizerOperations extends OrganizerOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static ThreadLocal<  Constraint> VALIDATE_UDI_ORGANIZER_DEVICE_IDENTIFIER_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_UDI_ORGANIZER_DEVICE_IDENTIFIER_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -772,45 +688,36 @@ public class UDIOrganizerOperations extends OrganizerOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateUDIOrganizerDeviceIdentifierObservation(UDIOrganizer udiOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"UDIOrganizerUDIOrganizerDeviceIdentifierObservation","ERROR");
-    
-  	  
-  	  
+	public static boolean validateUDIOrganizerDeviceIdentifierObservation(UDIOrganizer udiOrganizer,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "UDIOrganizerUDIOrganizerDeviceIdentifierObservation", "ERROR");
+
 		if (VALIDATE_UDI_ORGANIZER_DEVICE_IDENTIFIER_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.UDI_ORGANIZER);
 			try {
-				VALIDATE_UDI_ORGANIZER_DEVICE_IDENTIFIER_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_UDI_ORGANIZER_DEVICE_IDENTIFIER_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_UDI_ORGANIZER_DEVICE_IDENTIFIER_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_UDI_ORGANIZER_DEVICE_IDENTIFIER_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_UDI_ORGANIZER_DEVICE_IDENTIFIER_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(udiOrganizer)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_UDI_ORGANIZER_DEVICE_IDENTIFIER_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				udiOrganizer)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.UDI_ORGANIZER__UDI_ORGANIZER_DEVICE_IDENTIFIER_OBSERVATION,
-						 ConsolPlugin.INSTANCE.getString("UDIOrganizerUDIOrganizerDeviceIdentifierObservation"),
-						 new Object [] { udiOrganizer }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.UDI_ORGANIZER__UDI_ORGANIZER_DEVICE_IDENTIFIER_OBSERVATION,
+						ConsolPlugin.INSTANCE.getString("UDIOrganizerUDIOrganizerDeviceIdentifierObservation"),
+						new Object[] { udiOrganizer }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -834,7 +741,7 @@ public class UDIOrganizerOperations extends OrganizerOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static ThreadLocal<  Constraint> VALIDATE_UDI_ORGANIZER_LOT_OR_BATCH_NUMBER_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_UDI_ORGANIZER_LOT_OR_BATCH_NUMBER_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -846,45 +753,36 @@ public class UDIOrganizerOperations extends OrganizerOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateUDIOrganizerLotOrBatchNumberObservation(UDIOrganizer udiOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"UDIOrganizerUDIOrganizerLotOrBatchNumberObservation","WARNING");
-    
-  	  
-  	  
+	public static boolean validateUDIOrganizerLotOrBatchNumberObservation(UDIOrganizer udiOrganizer,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "UDIOrganizerUDIOrganizerLotOrBatchNumberObservation", "WARNING");
+
 		if (VALIDATE_UDI_ORGANIZER_LOT_OR_BATCH_NUMBER_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.UDI_ORGANIZER);
 			try {
-				VALIDATE_UDI_ORGANIZER_LOT_OR_BATCH_NUMBER_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_UDI_ORGANIZER_LOT_OR_BATCH_NUMBER_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_UDI_ORGANIZER_LOT_OR_BATCH_NUMBER_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_UDI_ORGANIZER_LOT_OR_BATCH_NUMBER_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_UDI_ORGANIZER_LOT_OR_BATCH_NUMBER_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(udiOrganizer)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_UDI_ORGANIZER_LOT_OR_BATCH_NUMBER_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				udiOrganizer)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.WARNING,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.UDI_ORGANIZER__UDI_ORGANIZER_LOT_OR_BATCH_NUMBER_OBSERVATION,
-						 ConsolPlugin.INSTANCE.getString("UDIOrganizerUDIOrganizerLotOrBatchNumberObservation"),
-						 new Object [] { udiOrganizer }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.UDI_ORGANIZER__UDI_ORGANIZER_LOT_OR_BATCH_NUMBER_OBSERVATION,
+						ConsolPlugin.INSTANCE.getString("UDIOrganizerUDIOrganizerLotOrBatchNumberObservation"),
+						new Object[] { udiOrganizer }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -908,7 +806,7 @@ public class UDIOrganizerOperations extends OrganizerOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static ThreadLocal<  Constraint> VALIDATE_UDI_ORGANIZER_SERIAL_NUMBER_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_UDI_ORGANIZER_SERIAL_NUMBER_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -920,45 +818,36 @@ public class UDIOrganizerOperations extends OrganizerOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateUDIOrganizerSerialNumberObservation(UDIOrganizer udiOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"UDIOrganizerUDIOrganizerSerialNumberObservation","WARNING");
-    
-  	  
-  	  
+	public static boolean validateUDIOrganizerSerialNumberObservation(UDIOrganizer udiOrganizer,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "UDIOrganizerUDIOrganizerSerialNumberObservation", "WARNING");
+
 		if (VALIDATE_UDI_ORGANIZER_SERIAL_NUMBER_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.UDI_ORGANIZER);
 			try {
-				VALIDATE_UDI_ORGANIZER_SERIAL_NUMBER_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_UDI_ORGANIZER_SERIAL_NUMBER_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_UDI_ORGANIZER_SERIAL_NUMBER_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_UDI_ORGANIZER_SERIAL_NUMBER_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_UDI_ORGANIZER_SERIAL_NUMBER_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(udiOrganizer)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_UDI_ORGANIZER_SERIAL_NUMBER_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				udiOrganizer)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.WARNING,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.UDI_ORGANIZER__UDI_ORGANIZER_SERIAL_NUMBER_OBSERVATION,
-						 ConsolPlugin.INSTANCE.getString("UDIOrganizerUDIOrganizerSerialNumberObservation"),
-						 new Object [] { udiOrganizer }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.UDI_ORGANIZER__UDI_ORGANIZER_SERIAL_NUMBER_OBSERVATION,
+						ConsolPlugin.INSTANCE.getString("UDIOrganizerUDIOrganizerSerialNumberObservation"),
+						new Object[] { udiOrganizer }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -982,7 +871,7 @@ public class UDIOrganizerOperations extends OrganizerOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static ThreadLocal<  Constraint> VALIDATE_UDI_ORGANIZER_MANUFACTURING_DATE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_UDI_ORGANIZER_MANUFACTURING_DATE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -994,45 +883,36 @@ public class UDIOrganizerOperations extends OrganizerOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateUDIOrganizerManufacturingDateObservation(UDIOrganizer udiOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"UDIOrganizerUDIOrganizerManufacturingDateObservation","WARNING");
-    
-  	  
-  	  
+	public static boolean validateUDIOrganizerManufacturingDateObservation(UDIOrganizer udiOrganizer,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "UDIOrganizerUDIOrganizerManufacturingDateObservation", "WARNING");
+
 		if (VALIDATE_UDI_ORGANIZER_MANUFACTURING_DATE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.UDI_ORGANIZER);
 			try {
-				VALIDATE_UDI_ORGANIZER_MANUFACTURING_DATE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_UDI_ORGANIZER_MANUFACTURING_DATE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_UDI_ORGANIZER_MANUFACTURING_DATE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_UDI_ORGANIZER_MANUFACTURING_DATE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_UDI_ORGANIZER_MANUFACTURING_DATE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(udiOrganizer)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_UDI_ORGANIZER_MANUFACTURING_DATE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				udiOrganizer)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.WARNING,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.UDI_ORGANIZER__UDI_ORGANIZER_MANUFACTURING_DATE_OBSERVATION,
-						 ConsolPlugin.INSTANCE.getString("UDIOrganizerUDIOrganizerManufacturingDateObservation"),
-						 new Object [] { udiOrganizer }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.UDI_ORGANIZER__UDI_ORGANIZER_MANUFACTURING_DATE_OBSERVATION,
+						ConsolPlugin.INSTANCE.getString("UDIOrganizerUDIOrganizerManufacturingDateObservation"),
+						new Object[] { udiOrganizer }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -1056,7 +936,7 @@ public class UDIOrganizerOperations extends OrganizerOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static ThreadLocal<  Constraint> VALIDATE_UDI_ORGANIZER_EXPIRATION_DATE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_UDI_ORGANIZER_EXPIRATION_DATE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1068,45 +948,36 @@ public class UDIOrganizerOperations extends OrganizerOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateUDIOrganizerExpirationDateObservation(UDIOrganizer udiOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"UDIOrganizerUDIOrganizerExpirationDateObservation","WARNING");
-    
-  	  
-  	  
+	public static boolean validateUDIOrganizerExpirationDateObservation(UDIOrganizer udiOrganizer,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "UDIOrganizerUDIOrganizerExpirationDateObservation", "WARNING");
+
 		if (VALIDATE_UDI_ORGANIZER_EXPIRATION_DATE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.UDI_ORGANIZER);
 			try {
-				VALIDATE_UDI_ORGANIZER_EXPIRATION_DATE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_UDI_ORGANIZER_EXPIRATION_DATE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_UDI_ORGANIZER_EXPIRATION_DATE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_UDI_ORGANIZER_EXPIRATION_DATE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_UDI_ORGANIZER_EXPIRATION_DATE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(udiOrganizer)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_UDI_ORGANIZER_EXPIRATION_DATE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				udiOrganizer)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.WARNING,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.UDI_ORGANIZER__UDI_ORGANIZER_EXPIRATION_DATE_OBSERVATION,
-						 ConsolPlugin.INSTANCE.getString("UDIOrganizerUDIOrganizerExpirationDateObservation"),
-						 new Object [] { udiOrganizer }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.UDI_ORGANIZER__UDI_ORGANIZER_EXPIRATION_DATE_OBSERVATION,
+						ConsolPlugin.INSTANCE.getString("UDIOrganizerUDIOrganizerExpirationDateObservation"),
+						new Object[] { udiOrganizer }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -1130,7 +1001,7 @@ public class UDIOrganizerOperations extends OrganizerOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static ThreadLocal<  Constraint> VALIDATE_UDI_ORGANIZER_DISTINCT_IDENTIFICATION_CODE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_UDI_ORGANIZER_DISTINCT_IDENTIFICATION_CODE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1142,45 +1013,37 @@ public class UDIOrganizerOperations extends OrganizerOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateUDIOrganizerDistinctIdentificationCodeObservation(UDIOrganizer udiOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"UDIOrganizerUDIOrganizerDistinctIdentificationCodeObservation","WARNING");
-    
-  	  
-  	  
+	public static boolean validateUDIOrganizerDistinctIdentificationCodeObservation(UDIOrganizer udiOrganizer,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "UDIOrganizerUDIOrganizerDistinctIdentificationCodeObservation", "WARNING");
+
 		if (VALIDATE_UDI_ORGANIZER_DISTINCT_IDENTIFICATION_CODE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.UDI_ORGANIZER);
 			try {
-				VALIDATE_UDI_ORGANIZER_DISTINCT_IDENTIFICATION_CODE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_UDI_ORGANIZER_DISTINCT_IDENTIFICATION_CODE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_UDI_ORGANIZER_DISTINCT_IDENTIFICATION_CODE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_UDI_ORGANIZER_DISTINCT_IDENTIFICATION_CODE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_UDI_ORGANIZER_DISTINCT_IDENTIFICATION_CODE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(udiOrganizer)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_UDI_ORGANIZER_DISTINCT_IDENTIFICATION_CODE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				udiOrganizer)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.WARNING,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.UDI_ORGANIZER__UDI_ORGANIZER_DISTINCT_IDENTIFICATION_CODE_OBSERVATION,
-						 ConsolPlugin.INSTANCE.getString("UDIOrganizerUDIOrganizerDistinctIdentificationCodeObservation"),
-						 new Object [] { udiOrganizer }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.UDI_ORGANIZER__UDI_ORGANIZER_DISTINCT_IDENTIFICATION_CODE_OBSERVATION,
+						ConsolPlugin.INSTANCE.getString(
+							"UDIOrganizerUDIOrganizerDistinctIdentificationCodeObservation"),
+						new Object[] { udiOrganizer }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -1204,7 +1067,7 @@ public class UDIOrganizerOperations extends OrganizerOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static ThreadLocal<  Constraint> VALIDATE_UDI_ORGANIZER_BRAND_NAME_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_UDI_ORGANIZER_BRAND_NAME_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1216,45 +1079,35 @@ public class UDIOrganizerOperations extends OrganizerOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateUDIOrganizerBrandNameObservation(UDIOrganizer udiOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"UDIOrganizerUDIOrganizerBrandNameObservation","INFO");
-    
-  	  
-  	  
+	public static boolean validateUDIOrganizerBrandNameObservation(UDIOrganizer udiOrganizer,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "UDIOrganizerUDIOrganizerBrandNameObservation", "INFO");
+
 		if (VALIDATE_UDI_ORGANIZER_BRAND_NAME_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.UDI_ORGANIZER);
 			try {
-				VALIDATE_UDI_ORGANIZER_BRAND_NAME_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_UDI_ORGANIZER_BRAND_NAME_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_UDI_ORGANIZER_BRAND_NAME_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_UDI_ORGANIZER_BRAND_NAME_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_UDI_ORGANIZER_BRAND_NAME_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(udiOrganizer)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_UDI_ORGANIZER_BRAND_NAME_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(udiOrganizer)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.UDI_ORGANIZER__UDI_ORGANIZER_BRAND_NAME_OBSERVATION,
-						 ConsolPlugin.INSTANCE.getString("UDIOrganizerUDIOrganizerBrandNameObservation"),
-						 new Object [] { udiOrganizer }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.UDI_ORGANIZER__UDI_ORGANIZER_BRAND_NAME_OBSERVATION,
+						ConsolPlugin.INSTANCE.getString("UDIOrganizerUDIOrganizerBrandNameObservation"),
+						new Object[] { udiOrganizer }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -1278,7 +1131,7 @@ public class UDIOrganizerOperations extends OrganizerOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static ThreadLocal<  Constraint> VALIDATE_UDI_ORGANIZER_MODEL_NUMBER_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_UDI_ORGANIZER_MODEL_NUMBER_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1290,45 +1143,36 @@ public class UDIOrganizerOperations extends OrganizerOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateUDIOrganizerModelNumberObservation(UDIOrganizer udiOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"UDIOrganizerUDIOrganizerModelNumberObservation","INFO");
-    
-  	  
-  	  
+	public static boolean validateUDIOrganizerModelNumberObservation(UDIOrganizer udiOrganizer,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "UDIOrganizerUDIOrganizerModelNumberObservation", "INFO");
+
 		if (VALIDATE_UDI_ORGANIZER_MODEL_NUMBER_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.UDI_ORGANIZER);
 			try {
-				VALIDATE_UDI_ORGANIZER_MODEL_NUMBER_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_UDI_ORGANIZER_MODEL_NUMBER_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_UDI_ORGANIZER_MODEL_NUMBER_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_UDI_ORGANIZER_MODEL_NUMBER_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_UDI_ORGANIZER_MODEL_NUMBER_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(udiOrganizer)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_UDI_ORGANIZER_MODEL_NUMBER_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				udiOrganizer)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.UDI_ORGANIZER__UDI_ORGANIZER_MODEL_NUMBER_OBSERVATION,
-						 ConsolPlugin.INSTANCE.getString("UDIOrganizerUDIOrganizerModelNumberObservation"),
-						 new Object [] { udiOrganizer }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.UDI_ORGANIZER__UDI_ORGANIZER_MODEL_NUMBER_OBSERVATION,
+						ConsolPlugin.INSTANCE.getString("UDIOrganizerUDIOrganizerModelNumberObservation"),
+						new Object[] { udiOrganizer }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -1352,7 +1196,7 @@ public class UDIOrganizerOperations extends OrganizerOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static ThreadLocal<  Constraint> VALIDATE_UDI_ORGANIZER_COMPANY_NAME_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_UDI_ORGANIZER_COMPANY_NAME_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1364,45 +1208,36 @@ public class UDIOrganizerOperations extends OrganizerOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateUDIOrganizerCompanyNameObservation(UDIOrganizer udiOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"UDIOrganizerUDIOrganizerCompanyNameObservation","INFO");
-    
-  	  
-  	  
+	public static boolean validateUDIOrganizerCompanyNameObservation(UDIOrganizer udiOrganizer,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "UDIOrganizerUDIOrganizerCompanyNameObservation", "INFO");
+
 		if (VALIDATE_UDI_ORGANIZER_COMPANY_NAME_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.UDI_ORGANIZER);
 			try {
-				VALIDATE_UDI_ORGANIZER_COMPANY_NAME_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_UDI_ORGANIZER_COMPANY_NAME_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_UDI_ORGANIZER_COMPANY_NAME_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_UDI_ORGANIZER_COMPANY_NAME_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_UDI_ORGANIZER_COMPANY_NAME_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(udiOrganizer)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_UDI_ORGANIZER_COMPANY_NAME_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				udiOrganizer)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.UDI_ORGANIZER__UDI_ORGANIZER_COMPANY_NAME_OBSERVATION,
-						 ConsolPlugin.INSTANCE.getString("UDIOrganizerUDIOrganizerCompanyNameObservation"),
-						 new Object [] { udiOrganizer }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.UDI_ORGANIZER__UDI_ORGANIZER_COMPANY_NAME_OBSERVATION,
+						ConsolPlugin.INSTANCE.getString("UDIOrganizerUDIOrganizerCompanyNameObservation"),
+						new Object[] { udiOrganizer }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -1426,7 +1261,7 @@ public class UDIOrganizerOperations extends OrganizerOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static ThreadLocal<  Constraint> VALIDATE_UDI_ORGANIZER_CATALOG_NUMBER_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_UDI_ORGANIZER_CATALOG_NUMBER_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1438,45 +1273,36 @@ public class UDIOrganizerOperations extends OrganizerOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateUDIOrganizerCatalogNumberObservation(UDIOrganizer udiOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"UDIOrganizerUDIOrganizerCatalogNumberObservation","INFO");
-    
-  	  
-  	  
+	public static boolean validateUDIOrganizerCatalogNumberObservation(UDIOrganizer udiOrganizer,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "UDIOrganizerUDIOrganizerCatalogNumberObservation", "INFO");
+
 		if (VALIDATE_UDI_ORGANIZER_CATALOG_NUMBER_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.UDI_ORGANIZER);
 			try {
-				VALIDATE_UDI_ORGANIZER_CATALOG_NUMBER_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_UDI_ORGANIZER_CATALOG_NUMBER_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_UDI_ORGANIZER_CATALOG_NUMBER_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_UDI_ORGANIZER_CATALOG_NUMBER_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_UDI_ORGANIZER_CATALOG_NUMBER_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(udiOrganizer)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_UDI_ORGANIZER_CATALOG_NUMBER_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				udiOrganizer)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.UDI_ORGANIZER__UDI_ORGANIZER_CATALOG_NUMBER_OBSERVATION,
-						 ConsolPlugin.INSTANCE.getString("UDIOrganizerUDIOrganizerCatalogNumberObservation"),
-						 new Object [] { udiOrganizer }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.UDI_ORGANIZER__UDI_ORGANIZER_CATALOG_NUMBER_OBSERVATION,
+						ConsolPlugin.INSTANCE.getString("UDIOrganizerUDIOrganizerCatalogNumberObservation"),
+						new Object[] { udiOrganizer }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -1500,7 +1326,7 @@ public class UDIOrganizerOperations extends OrganizerOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static ThreadLocal<  Constraint> VALIDATE_UDI_ORGANIZER_LATEX_SAFETY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_UDI_ORGANIZER_LATEX_SAFETY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1512,45 +1338,36 @@ public class UDIOrganizerOperations extends OrganizerOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateUDIOrganizerLatexSafetyObservation(UDIOrganizer udiOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"UDIOrganizerUDIOrganizerLatexSafetyObservation","INFO");
-    
-  	  
-  	  
+	public static boolean validateUDIOrganizerLatexSafetyObservation(UDIOrganizer udiOrganizer,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "UDIOrganizerUDIOrganizerLatexSafetyObservation", "INFO");
+
 		if (VALIDATE_UDI_ORGANIZER_LATEX_SAFETY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.UDI_ORGANIZER);
 			try {
-				VALIDATE_UDI_ORGANIZER_LATEX_SAFETY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_UDI_ORGANIZER_LATEX_SAFETY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_UDI_ORGANIZER_LATEX_SAFETY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_UDI_ORGANIZER_LATEX_SAFETY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_UDI_ORGANIZER_LATEX_SAFETY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(udiOrganizer)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_UDI_ORGANIZER_LATEX_SAFETY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				udiOrganizer)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.UDI_ORGANIZER__UDI_ORGANIZER_LATEX_SAFETY_OBSERVATION,
-						 ConsolPlugin.INSTANCE.getString("UDIOrganizerUDIOrganizerLatexSafetyObservation"),
-						 new Object [] { udiOrganizer }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.UDI_ORGANIZER__UDI_ORGANIZER_LATEX_SAFETY_OBSERVATION,
+						ConsolPlugin.INSTANCE.getString("UDIOrganizerUDIOrganizerLatexSafetyObservation"),
+						new Object[] { udiOrganizer }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -1574,7 +1391,7 @@ public class UDIOrganizerOperations extends OrganizerOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static ThreadLocal<  Constraint> VALIDATE_UDI_ORGANIZER_MRI_SAFETY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_UDI_ORGANIZER_MRI_SAFETY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1586,45 +1403,35 @@ public class UDIOrganizerOperations extends OrganizerOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateUDIOrganizerMRISafetyObservation(UDIOrganizer udiOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"UDIOrganizerUDIOrganizerMRISafetyObservation","INFO");
-    
-  	  
-  	  
+	public static boolean validateUDIOrganizerMRISafetyObservation(UDIOrganizer udiOrganizer,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "UDIOrganizerUDIOrganizerMRISafetyObservation", "INFO");
+
 		if (VALIDATE_UDI_ORGANIZER_MRI_SAFETY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.UDI_ORGANIZER);
 			try {
-				VALIDATE_UDI_ORGANIZER_MRI_SAFETY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_UDI_ORGANIZER_MRI_SAFETY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_UDI_ORGANIZER_MRI_SAFETY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_UDI_ORGANIZER_MRI_SAFETY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_UDI_ORGANIZER_MRI_SAFETY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(udiOrganizer)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_UDI_ORGANIZER_MRI_SAFETY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(udiOrganizer)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.UDI_ORGANIZER__UDI_ORGANIZER_MRI_SAFETY_OBSERVATION,
-						 ConsolPlugin.INSTANCE.getString("UDIOrganizerUDIOrganizerMRISafetyObservation"),
-						 new Object [] { udiOrganizer }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.UDI_ORGANIZER__UDI_ORGANIZER_MRI_SAFETY_OBSERVATION,
+						ConsolPlugin.INSTANCE.getString("UDIOrganizerUDIOrganizerMRISafetyObservation"),
+						new Object[] { udiOrganizer }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -1648,7 +1455,7 @@ public class UDIOrganizerOperations extends OrganizerOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static ThreadLocal<  Constraint> VALIDATE_UDI_ORGANIZER_IMPLANTABLE_DEVICE_STATUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_UDI_ORGANIZER_IMPLANTABLE_DEVICE_STATUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1660,45 +1467,36 @@ public class UDIOrganizerOperations extends OrganizerOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateUDIOrganizerImplantableDeviceStatusObservation(UDIOrganizer udiOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"UDIOrganizerUDIOrganizerImplantableDeviceStatusObservation","INFO");
-    
-  	  
-  	  
+	public static boolean validateUDIOrganizerImplantableDeviceStatusObservation(UDIOrganizer udiOrganizer,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "UDIOrganizerUDIOrganizerImplantableDeviceStatusObservation", "INFO");
+
 		if (VALIDATE_UDI_ORGANIZER_IMPLANTABLE_DEVICE_STATUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.UDI_ORGANIZER);
 			try {
-				VALIDATE_UDI_ORGANIZER_IMPLANTABLE_DEVICE_STATUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_UDI_ORGANIZER_IMPLANTABLE_DEVICE_STATUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_UDI_ORGANIZER_IMPLANTABLE_DEVICE_STATUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_UDI_ORGANIZER_IMPLANTABLE_DEVICE_STATUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_UDI_ORGANIZER_IMPLANTABLE_DEVICE_STATUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(udiOrganizer)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_UDI_ORGANIZER_IMPLANTABLE_DEVICE_STATUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				udiOrganizer)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.UDI_ORGANIZER__UDI_ORGANIZER_IMPLANTABLE_DEVICE_STATUS_OBSERVATION,
-						 ConsolPlugin.INSTANCE.getString("UDIOrganizerUDIOrganizerImplantableDeviceStatusObservation"),
-						 new Object [] { udiOrganizer }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.UDI_ORGANIZER__UDI_ORGANIZER_IMPLANTABLE_DEVICE_STATUS_OBSERVATION,
+						ConsolPlugin.INSTANCE.getString("UDIOrganizerUDIOrganizerImplantableDeviceStatusObservation"),
+						new Object[] { udiOrganizer }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -1729,23 +1527,21 @@ public class UDIOrganizerOperations extends OrganizerOperations {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static  DeviceIdentifierObservation getDeviceIdentifierObservation(UDIOrganizer udiOrganizer) {
-	
-	
-	
+	public static DeviceIdentifierObservation getDeviceIdentifierObservation(UDIOrganizer udiOrganizer) {
+
 		if (GET_DEVICE_IDENTIFIER_OBSERVATION__EOCL_QRY == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.UDI_ORGANIZER, ConsolPackage.Literals.UDI_ORGANIZER.getEAllOperations().get(73));
+			helper.setOperationContext(
+				ConsolPackage.Literals.UDI_ORGANIZER, ConsolPackage.Literals.UDI_ORGANIZER.getEAllOperations().get(73));
 			try {
-				GET_DEVICE_IDENTIFIER_OBSERVATION__EOCL_QRY = helper.createQuery(GET_DEVICE_IDENTIFIER_OBSERVATION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+				GET_DEVICE_IDENTIFIER_OBSERVATION__EOCL_QRY = helper.createQuery(
+					GET_DEVICE_IDENTIFIER_OBSERVATION__EOCL_EXP);
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
+		}
+
 		OCL.Query query = EOCL_ENV.get().createQuery(GET_DEVICE_IDENTIFIER_OBSERVATION__EOCL_QRY);
 		return (DeviceIdentifierObservation) query.evaluate(udiOrganizer);
 	}
@@ -1775,23 +1571,21 @@ public class UDIOrganizerOperations extends OrganizerOperations {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static  LotOrBatchNumberObservation getLotOrBatchNumberObservation(UDIOrganizer udiOrganizer) {
-	
-	
-	
+	public static LotOrBatchNumberObservation getLotOrBatchNumberObservation(UDIOrganizer udiOrganizer) {
+
 		if (GET_LOT_OR_BATCH_NUMBER_OBSERVATION__EOCL_QRY == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.UDI_ORGANIZER, ConsolPackage.Literals.UDI_ORGANIZER.getEAllOperations().get(74));
+			helper.setOperationContext(
+				ConsolPackage.Literals.UDI_ORGANIZER, ConsolPackage.Literals.UDI_ORGANIZER.getEAllOperations().get(74));
 			try {
-				GET_LOT_OR_BATCH_NUMBER_OBSERVATION__EOCL_QRY = helper.createQuery(GET_LOT_OR_BATCH_NUMBER_OBSERVATION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+				GET_LOT_OR_BATCH_NUMBER_OBSERVATION__EOCL_QRY = helper.createQuery(
+					GET_LOT_OR_BATCH_NUMBER_OBSERVATION__EOCL_EXP);
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
+		}
+
 		OCL.Query query = EOCL_ENV.get().createQuery(GET_LOT_OR_BATCH_NUMBER_OBSERVATION__EOCL_QRY);
 		return (LotOrBatchNumberObservation) query.evaluate(udiOrganizer);
 	}
@@ -1821,23 +1615,20 @@ public class UDIOrganizerOperations extends OrganizerOperations {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static  SerialNumberObservation getSerialNumberObservation(UDIOrganizer udiOrganizer) {
-	
-	
-	
+	public static SerialNumberObservation getSerialNumberObservation(UDIOrganizer udiOrganizer) {
+
 		if (GET_SERIAL_NUMBER_OBSERVATION__EOCL_QRY == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.UDI_ORGANIZER, ConsolPackage.Literals.UDI_ORGANIZER.getEAllOperations().get(75));
+			helper.setOperationContext(
+				ConsolPackage.Literals.UDI_ORGANIZER, ConsolPackage.Literals.UDI_ORGANIZER.getEAllOperations().get(75));
 			try {
 				GET_SERIAL_NUMBER_OBSERVATION__EOCL_QRY = helper.createQuery(GET_SERIAL_NUMBER_OBSERVATION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
+		}
+
 		OCL.Query query = EOCL_ENV.get().createQuery(GET_SERIAL_NUMBER_OBSERVATION__EOCL_QRY);
 		return (SerialNumberObservation) query.evaluate(udiOrganizer);
 	}
@@ -1867,23 +1658,21 @@ public class UDIOrganizerOperations extends OrganizerOperations {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static  ManufacturingDateObservation getManufacturingDateObservation(UDIOrganizer udiOrganizer) {
-	
-	
-	
+	public static ManufacturingDateObservation getManufacturingDateObservation(UDIOrganizer udiOrganizer) {
+
 		if (GET_MANUFACTURING_DATE_OBSERVATION__EOCL_QRY == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.UDI_ORGANIZER, ConsolPackage.Literals.UDI_ORGANIZER.getEAllOperations().get(76));
+			helper.setOperationContext(
+				ConsolPackage.Literals.UDI_ORGANIZER, ConsolPackage.Literals.UDI_ORGANIZER.getEAllOperations().get(76));
 			try {
-				GET_MANUFACTURING_DATE_OBSERVATION__EOCL_QRY = helper.createQuery(GET_MANUFACTURING_DATE_OBSERVATION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+				GET_MANUFACTURING_DATE_OBSERVATION__EOCL_QRY = helper.createQuery(
+					GET_MANUFACTURING_DATE_OBSERVATION__EOCL_EXP);
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
+		}
+
 		OCL.Query query = EOCL_ENV.get().createQuery(GET_MANUFACTURING_DATE_OBSERVATION__EOCL_QRY);
 		return (ManufacturingDateObservation) query.evaluate(udiOrganizer);
 	}
@@ -1913,23 +1702,21 @@ public class UDIOrganizerOperations extends OrganizerOperations {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static  ExpirationDateObservation getExpirationDateObservation(UDIOrganizer udiOrganizer) {
-	
-	
-	
+	public static ExpirationDateObservation getExpirationDateObservation(UDIOrganizer udiOrganizer) {
+
 		if (GET_EXPIRATION_DATE_OBSERVATION__EOCL_QRY == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.UDI_ORGANIZER, ConsolPackage.Literals.UDI_ORGANIZER.getEAllOperations().get(77));
+			helper.setOperationContext(
+				ConsolPackage.Literals.UDI_ORGANIZER, ConsolPackage.Literals.UDI_ORGANIZER.getEAllOperations().get(77));
 			try {
-				GET_EXPIRATION_DATE_OBSERVATION__EOCL_QRY = helper.createQuery(GET_EXPIRATION_DATE_OBSERVATION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+				GET_EXPIRATION_DATE_OBSERVATION__EOCL_QRY = helper.createQuery(
+					GET_EXPIRATION_DATE_OBSERVATION__EOCL_EXP);
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
+		}
+
 		OCL.Query query = EOCL_ENV.get().createQuery(GET_EXPIRATION_DATE_OBSERVATION__EOCL_QRY);
 		return (ExpirationDateObservation) query.evaluate(udiOrganizer);
 	}
@@ -1959,23 +1746,22 @@ public class UDIOrganizerOperations extends OrganizerOperations {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static  DistinctIdentificationCodeObservation getDistinctIdentificationCodeObservation(UDIOrganizer udiOrganizer) {
-	
-	
-	
+	public static DistinctIdentificationCodeObservation getDistinctIdentificationCodeObservation(
+			UDIOrganizer udiOrganizer) {
+
 		if (GET_DISTINCT_IDENTIFICATION_CODE_OBSERVATION__EOCL_QRY == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.UDI_ORGANIZER, ConsolPackage.Literals.UDI_ORGANIZER.getEAllOperations().get(78));
+			helper.setOperationContext(
+				ConsolPackage.Literals.UDI_ORGANIZER, ConsolPackage.Literals.UDI_ORGANIZER.getEAllOperations().get(78));
 			try {
-				GET_DISTINCT_IDENTIFICATION_CODE_OBSERVATION__EOCL_QRY = helper.createQuery(GET_DISTINCT_IDENTIFICATION_CODE_OBSERVATION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+				GET_DISTINCT_IDENTIFICATION_CODE_OBSERVATION__EOCL_QRY = helper.createQuery(
+					GET_DISTINCT_IDENTIFICATION_CODE_OBSERVATION__EOCL_EXP);
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
+		}
+
 		OCL.Query query = EOCL_ENV.get().createQuery(GET_DISTINCT_IDENTIFICATION_CODE_OBSERVATION__EOCL_QRY);
 		return (DistinctIdentificationCodeObservation) query.evaluate(udiOrganizer);
 	}
@@ -2005,23 +1791,20 @@ public class UDIOrganizerOperations extends OrganizerOperations {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static  BrandNameObservation getBrandNameObservation(UDIOrganizer udiOrganizer) {
-	
-	
-	
+	public static BrandNameObservation getBrandNameObservation(UDIOrganizer udiOrganizer) {
+
 		if (GET_BRAND_NAME_OBSERVATION__EOCL_QRY == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.UDI_ORGANIZER, ConsolPackage.Literals.UDI_ORGANIZER.getEAllOperations().get(79));
+			helper.setOperationContext(
+				ConsolPackage.Literals.UDI_ORGANIZER, ConsolPackage.Literals.UDI_ORGANIZER.getEAllOperations().get(79));
 			try {
 				GET_BRAND_NAME_OBSERVATION__EOCL_QRY = helper.createQuery(GET_BRAND_NAME_OBSERVATION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
+		}
+
 		OCL.Query query = EOCL_ENV.get().createQuery(GET_BRAND_NAME_OBSERVATION__EOCL_QRY);
 		return (BrandNameObservation) query.evaluate(udiOrganizer);
 	}
@@ -2051,23 +1834,20 @@ public class UDIOrganizerOperations extends OrganizerOperations {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static  ModelNumberObservation getModelNumberObservation(UDIOrganizer udiOrganizer) {
-	
-	
-	
+	public static ModelNumberObservation getModelNumberObservation(UDIOrganizer udiOrganizer) {
+
 		if (GET_MODEL_NUMBER_OBSERVATION__EOCL_QRY == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.UDI_ORGANIZER, ConsolPackage.Literals.UDI_ORGANIZER.getEAllOperations().get(80));
+			helper.setOperationContext(
+				ConsolPackage.Literals.UDI_ORGANIZER, ConsolPackage.Literals.UDI_ORGANIZER.getEAllOperations().get(80));
 			try {
 				GET_MODEL_NUMBER_OBSERVATION__EOCL_QRY = helper.createQuery(GET_MODEL_NUMBER_OBSERVATION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
+		}
+
 		OCL.Query query = EOCL_ENV.get().createQuery(GET_MODEL_NUMBER_OBSERVATION__EOCL_QRY);
 		return (ModelNumberObservation) query.evaluate(udiOrganizer);
 	}
@@ -2097,23 +1877,20 @@ public class UDIOrganizerOperations extends OrganizerOperations {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static  CompanyNameObservation getCompanyNameObservation(UDIOrganizer udiOrganizer) {
-	
-	
-	
+	public static CompanyNameObservation getCompanyNameObservation(UDIOrganizer udiOrganizer) {
+
 		if (GET_COMPANY_NAME_OBSERVATION__EOCL_QRY == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.UDI_ORGANIZER, ConsolPackage.Literals.UDI_ORGANIZER.getEAllOperations().get(81));
+			helper.setOperationContext(
+				ConsolPackage.Literals.UDI_ORGANIZER, ConsolPackage.Literals.UDI_ORGANIZER.getEAllOperations().get(81));
 			try {
 				GET_COMPANY_NAME_OBSERVATION__EOCL_QRY = helper.createQuery(GET_COMPANY_NAME_OBSERVATION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
+		}
+
 		OCL.Query query = EOCL_ENV.get().createQuery(GET_COMPANY_NAME_OBSERVATION__EOCL_QRY);
 		return (CompanyNameObservation) query.evaluate(udiOrganizer);
 	}
@@ -2143,23 +1920,20 @@ public class UDIOrganizerOperations extends OrganizerOperations {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static  CatalogNumberObservation getCatalogNumberObservation(UDIOrganizer udiOrganizer) {
-	
-	
-	
+	public static CatalogNumberObservation getCatalogNumberObservation(UDIOrganizer udiOrganizer) {
+
 		if (GET_CATALOG_NUMBER_OBSERVATION__EOCL_QRY == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.UDI_ORGANIZER, ConsolPackage.Literals.UDI_ORGANIZER.getEAllOperations().get(82));
+			helper.setOperationContext(
+				ConsolPackage.Literals.UDI_ORGANIZER, ConsolPackage.Literals.UDI_ORGANIZER.getEAllOperations().get(82));
 			try {
 				GET_CATALOG_NUMBER_OBSERVATION__EOCL_QRY = helper.createQuery(GET_CATALOG_NUMBER_OBSERVATION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
+		}
+
 		OCL.Query query = EOCL_ENV.get().createQuery(GET_CATALOG_NUMBER_OBSERVATION__EOCL_QRY);
 		return (CatalogNumberObservation) query.evaluate(udiOrganizer);
 	}
@@ -2189,23 +1963,20 @@ public class UDIOrganizerOperations extends OrganizerOperations {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static  LatexSafetyObservation getLatexSafetyObservation(UDIOrganizer udiOrganizer) {
-	
-	
-	
+	public static LatexSafetyObservation getLatexSafetyObservation(UDIOrganizer udiOrganizer) {
+
 		if (GET_LATEX_SAFETY_OBSERVATION__EOCL_QRY == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.UDI_ORGANIZER, ConsolPackage.Literals.UDI_ORGANIZER.getEAllOperations().get(83));
+			helper.setOperationContext(
+				ConsolPackage.Literals.UDI_ORGANIZER, ConsolPackage.Literals.UDI_ORGANIZER.getEAllOperations().get(83));
 			try {
 				GET_LATEX_SAFETY_OBSERVATION__EOCL_QRY = helper.createQuery(GET_LATEX_SAFETY_OBSERVATION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
+		}
+
 		OCL.Query query = EOCL_ENV.get().createQuery(GET_LATEX_SAFETY_OBSERVATION__EOCL_QRY);
 		return (LatexSafetyObservation) query.evaluate(udiOrganizer);
 	}
@@ -2235,23 +2006,20 @@ public class UDIOrganizerOperations extends OrganizerOperations {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static  MRISafetyObservation getMRISafetyObservation(UDIOrganizer udiOrganizer) {
-	
-	
-	
+	public static MRISafetyObservation getMRISafetyObservation(UDIOrganizer udiOrganizer) {
+
 		if (GET_MRI_SAFETY_OBSERVATION__EOCL_QRY == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.UDI_ORGANIZER, ConsolPackage.Literals.UDI_ORGANIZER.getEAllOperations().get(84));
+			helper.setOperationContext(
+				ConsolPackage.Literals.UDI_ORGANIZER, ConsolPackage.Literals.UDI_ORGANIZER.getEAllOperations().get(84));
 			try {
 				GET_MRI_SAFETY_OBSERVATION__EOCL_QRY = helper.createQuery(GET_MRI_SAFETY_OBSERVATION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
+		}
+
 		OCL.Query query = EOCL_ENV.get().createQuery(GET_MRI_SAFETY_OBSERVATION__EOCL_QRY);
 		return (MRISafetyObservation) query.evaluate(udiOrganizer);
 	}
@@ -2281,23 +2049,21 @@ public class UDIOrganizerOperations extends OrganizerOperations {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static  ImplantableDeviceStatusObservation getImplantableDeviceStatusObservation(UDIOrganizer udiOrganizer) {
-	
-	
-	
+	public static ImplantableDeviceStatusObservation getImplantableDeviceStatusObservation(UDIOrganizer udiOrganizer) {
+
 		if (GET_IMPLANTABLE_DEVICE_STATUS_OBSERVATION__EOCL_QRY == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.UDI_ORGANIZER, ConsolPackage.Literals.UDI_ORGANIZER.getEAllOperations().get(85));
+			helper.setOperationContext(
+				ConsolPackage.Literals.UDI_ORGANIZER, ConsolPackage.Literals.UDI_ORGANIZER.getEAllOperations().get(85));
 			try {
-				GET_IMPLANTABLE_DEVICE_STATUS_OBSERVATION__EOCL_QRY = helper.createQuery(GET_IMPLANTABLE_DEVICE_STATUS_OBSERVATION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+				GET_IMPLANTABLE_DEVICE_STATUS_OBSERVATION__EOCL_QRY = helper.createQuery(
+					GET_IMPLANTABLE_DEVICE_STATUS_OBSERVATION__EOCL_EXP);
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
+		}
+
 		OCL.Query query = EOCL_ENV.get().createQuery(GET_IMPLANTABLE_DEVICE_STATUS_OBSERVATION__EOCL_QRY);
 		return (ImplantableDeviceStatusObservation) query.evaluate(udiOrganizer);
 	}

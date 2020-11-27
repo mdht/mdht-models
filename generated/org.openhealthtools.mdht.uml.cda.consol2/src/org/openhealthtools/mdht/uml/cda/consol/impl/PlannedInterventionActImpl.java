@@ -160,7 +160,8 @@ public class PlannedInterventionActImpl extends ActImpl implements PlannedInterv
 	 */
 	public boolean validatePlannedInterventionActAuthorParticipation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PlannedInterventionActOperations.validatePlannedInterventionActAuthorParticipation(this, diagnostics, context);
+		return PlannedInterventionActOperations.validatePlannedInterventionActAuthorParticipation(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -170,7 +171,8 @@ public class PlannedInterventionActImpl extends ActImpl implements PlannedInterv
 	 */
 	public boolean validatePlannedInterventionActAdvanceDirectiveObservation2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PlannedInterventionActOperations.validatePlannedInterventionActAdvanceDirectiveObservation2(this, diagnostics, context);
+		return PlannedInterventionActOperations.validatePlannedInterventionActAdvanceDirectiveObservation2(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -180,7 +182,8 @@ public class PlannedInterventionActImpl extends ActImpl implements PlannedInterv
 	 */
 	public boolean validatePlannedInterventionActImmunizationActivity2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PlannedInterventionActOperations.validatePlannedInterventionActImmunizationActivity2(this, diagnostics, context);
+		return PlannedInterventionActOperations.validatePlannedInterventionActImmunizationActivity2(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -190,7 +193,8 @@ public class PlannedInterventionActImpl extends ActImpl implements PlannedInterv
 	 */
 	public boolean validatePlannedInterventionActMedicationActivity2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PlannedInterventionActOperations.validatePlannedInterventionActMedicationActivity2(this, diagnostics, context);
+		return PlannedInterventionActOperations.validatePlannedInterventionActMedicationActivity2(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -200,7 +204,8 @@ public class PlannedInterventionActImpl extends ActImpl implements PlannedInterv
 	 */
 	public boolean validatePlannedInterventionActProcedureActivityAct2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PlannedInterventionActOperations.validatePlannedInterventionActProcedureActivityAct2(this, diagnostics, context);
+		return PlannedInterventionActOperations.validatePlannedInterventionActProcedureActivityAct2(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -210,7 +215,8 @@ public class PlannedInterventionActImpl extends ActImpl implements PlannedInterv
 	 */
 	public boolean validatePlannedInterventionActInterventionAct(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PlannedInterventionActOperations.validatePlannedInterventionActInterventionAct(this, diagnostics, context);
+		return PlannedInterventionActOperations.validatePlannedInterventionActInterventionAct(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -220,7 +226,8 @@ public class PlannedInterventionActImpl extends ActImpl implements PlannedInterv
 	 */
 	public boolean validatePlannedInterventionActProcedureActivityObservation2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PlannedInterventionActOperations.validatePlannedInterventionActProcedureActivityObservation2(this, diagnostics, context);
+		return PlannedInterventionActOperations.validatePlannedInterventionActProcedureActivityObservation2(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -230,7 +237,8 @@ public class PlannedInterventionActImpl extends ActImpl implements PlannedInterv
 	 */
 	public boolean validatePlannedInterventionActProcedureActivityProcedure2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PlannedInterventionActOperations.validatePlannedInterventionActProcedureActivityProcedure2(this, diagnostics, context);
+		return PlannedInterventionActOperations.validatePlannedInterventionActProcedureActivityProcedure2(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -240,7 +248,8 @@ public class PlannedInterventionActImpl extends ActImpl implements PlannedInterv
 	 */
 	public boolean validatePlannedInterventionActEncounterActivity2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PlannedInterventionActOperations.validatePlannedInterventionActEncounterActivity2(this, diagnostics, context);
+		return PlannedInterventionActOperations.validatePlannedInterventionActEncounterActivity2(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -260,7 +269,8 @@ public class PlannedInterventionActImpl extends ActImpl implements PlannedInterv
 	 */
 	public boolean validatePlannedInterventionActNonMedicinalSupplyActivity2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PlannedInterventionActOperations.validatePlannedInterventionActNonMedicinalSupplyActivity2(this, diagnostics, context);
+		return PlannedInterventionActOperations.validatePlannedInterventionActNonMedicinalSupplyActivity2(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -279,7 +289,8 @@ public class PlannedInterventionActImpl extends ActImpl implements PlannedInterv
 	 */
 	public boolean validatePlannedInterventionActPlannedEncounter2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PlannedInterventionActOperations.validatePlannedInterventionActPlannedEncounter2(this, diagnostics, context);
+		return PlannedInterventionActOperations.validatePlannedInterventionActPlannedEncounter2(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -289,7 +300,8 @@ public class PlannedInterventionActImpl extends ActImpl implements PlannedInterv
 	 */
 	public boolean validatePlannedInterventionActPlannedObservation2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PlannedInterventionActOperations.validatePlannedInterventionActPlannedObservation2(this, diagnostics, context);
+		return PlannedInterventionActOperations.validatePlannedInterventionActPlannedObservation2(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -299,7 +311,8 @@ public class PlannedInterventionActImpl extends ActImpl implements PlannedInterv
 	 */
 	public boolean validatePlannedInterventionActPlannedProcedure2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PlannedInterventionActOperations.validatePlannedInterventionActPlannedProcedure2(this, diagnostics, context);
+		return PlannedInterventionActOperations.validatePlannedInterventionActPlannedProcedure2(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -309,7 +322,8 @@ public class PlannedInterventionActImpl extends ActImpl implements PlannedInterv
 	 */
 	public boolean validatePlannedInterventionActPlannedMedicationActivity2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PlannedInterventionActOperations.validatePlannedInterventionActPlannedMedicationActivity2(this, diagnostics, context);
+		return PlannedInterventionActOperations.validatePlannedInterventionActPlannedMedicationActivity2(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -319,7 +333,8 @@ public class PlannedInterventionActImpl extends ActImpl implements PlannedInterv
 	 */
 	public boolean validatePlannedInterventionActPlannedSupply2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PlannedInterventionActOperations.validatePlannedInterventionActPlannedSupply2(this, diagnostics, context);
+		return PlannedInterventionActOperations.validatePlannedInterventionActPlannedSupply2(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -329,7 +344,8 @@ public class PlannedInterventionActImpl extends ActImpl implements PlannedInterv
 	 */
 	public boolean validatePlannedInterventionActNutritionRecommendation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PlannedInterventionActOperations.validatePlannedInterventionActNutritionRecommendation(this, diagnostics, context);
+		return PlannedInterventionActOperations.validatePlannedInterventionActNutritionRecommendation(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -339,7 +355,8 @@ public class PlannedInterventionActImpl extends ActImpl implements PlannedInterv
 	 */
 	public boolean validatePlannedInterventionActEntryReferenceDocInstance(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PlannedInterventionActOperations.validatePlannedInterventionActEntryReferenceDocInstance(this, diagnostics, context);
+		return PlannedInterventionActOperations.validatePlannedInterventionActEntryReferenceDocInstance(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -349,7 +366,8 @@ public class PlannedInterventionActImpl extends ActImpl implements PlannedInterv
 	 */
 	public boolean validatePlannedInterventionActEntryReferenceGoalObs(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PlannedInterventionActOperations.validatePlannedInterventionActEntryReferenceGoalObs(this, diagnostics, context);
+		return PlannedInterventionActOperations.validatePlannedInterventionActEntryReferenceGoalObs(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -359,7 +377,8 @@ public class PlannedInterventionActImpl extends ActImpl implements PlannedInterv
 	 */
 	public boolean validatePlannedInterventionActHandoffCommunicationParticipants(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PlannedInterventionActOperations.validatePlannedInterventionActHandoffCommunicationParticipants(this, diagnostics, context);
+		return PlannedInterventionActOperations.validatePlannedInterventionActHandoffCommunicationParticipants(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -369,7 +388,8 @@ public class PlannedInterventionActImpl extends ActImpl implements PlannedInterv
 	 */
 	public boolean validatePlannedInterventionActPlannedImmunizationActivity(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PlannedInterventionActOperations.validatePlannedInterventionActPlannedImmunizationActivity(this, diagnostics, context);
+		return PlannedInterventionActOperations.validatePlannedInterventionActPlannedImmunizationActivity(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -388,7 +408,8 @@ public class PlannedInterventionActImpl extends ActImpl implements PlannedInterv
 	 */
 	public boolean validatePlannedInterventionActReferenceTypeCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PlannedInterventionActOperations.validatePlannedInterventionActReferenceTypeCode(this, diagnostics, context);
+		return PlannedInterventionActOperations.validatePlannedInterventionActReferenceTypeCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -398,7 +419,8 @@ public class PlannedInterventionActImpl extends ActImpl implements PlannedInterv
 	 */
 	public boolean validatePlannedInterventionActReferenceExternalDocumentReference(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PlannedInterventionActOperations.validatePlannedInterventionActReferenceExternalDocumentReference(this, diagnostics, context);
+		return PlannedInterventionActOperations.validatePlannedInterventionActReferenceExternalDocumentReference(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -596,16 +618,16 @@ public class PlannedInterventionActImpl extends ActImpl implements PlannedInterv
 	 * @generated
 	 */
 	public PlannedInterventionAct init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public PlannedInterventionAct init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // PlannedInterventionActImpl

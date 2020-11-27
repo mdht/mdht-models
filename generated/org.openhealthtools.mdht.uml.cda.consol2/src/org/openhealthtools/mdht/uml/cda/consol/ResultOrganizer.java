@@ -159,9 +159,9 @@ public interface ResultOrganizer extends Organizer {
 	public ResultOrganizer init();
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public ResultOrganizer init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ResultOrganizer

@@ -241,9 +241,9 @@ public interface MedicationActivity2 extends MedicationActivity {
 	public MedicationActivity2 init();
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public MedicationActivity2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // MedicationActivity2

@@ -57,7 +57,8 @@ public class ReferencedFramesObservationImpl extends ObservationImpl implements 
 	 */
 	public boolean validateReferencedFramesObservationTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ReferencedFramesObservationOperations.validateReferencedFramesObservationTemplateId(this, diagnostics, context);
+		return ReferencedFramesObservationOperations.validateReferencedFramesObservationTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -67,7 +68,8 @@ public class ReferencedFramesObservationImpl extends ObservationImpl implements 
 	 */
 	public boolean validateReferencedFramesObservationClassCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ReferencedFramesObservationOperations.validateReferencedFramesObservationClassCode(this, diagnostics, context);
+		return ReferencedFramesObservationOperations.validateReferencedFramesObservationClassCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -77,7 +79,8 @@ public class ReferencedFramesObservationImpl extends ObservationImpl implements 
 	 */
 	public boolean validateReferencedFramesObservationMoodCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ReferencedFramesObservationOperations.validateReferencedFramesObservationMoodCode(this, diagnostics, context);
+		return ReferencedFramesObservationOperations.validateReferencedFramesObservationMoodCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -86,7 +89,8 @@ public class ReferencedFramesObservationImpl extends ObservationImpl implements 
 	 * @generated
 	 */
 	public boolean validateReferencedFramesObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ReferencedFramesObservationOperations.validateReferencedFramesObservationCode(this, diagnostics, context);
+		return ReferencedFramesObservationOperations.validateReferencedFramesObservationCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -96,7 +100,8 @@ public class ReferencedFramesObservationImpl extends ObservationImpl implements 
 	 */
 	public boolean validateReferencedFramesObservationBoundaryObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ReferencedFramesObservationOperations.validateReferencedFramesObservationBoundaryObservation(this, diagnostics, context);
+		return ReferencedFramesObservationOperations.validateReferencedFramesObservationBoundaryObservation(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -114,16 +119,16 @@ public class ReferencedFramesObservationImpl extends ObservationImpl implements 
 	 * @generated
 	 */
 	public ReferencedFramesObservation init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public ReferencedFramesObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // ReferencedFramesObservationImpl

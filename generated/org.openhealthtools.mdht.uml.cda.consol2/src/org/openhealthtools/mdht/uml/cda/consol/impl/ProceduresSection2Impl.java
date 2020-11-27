@@ -101,7 +101,8 @@ public class ProceduresSection2Impl extends ProceduresSectionEntriesOptional2Imp
 	 */
 	public boolean validateProceduresSection2EntryProcedureActivityAct2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProceduresSection2Operations.validateProceduresSection2EntryProcedureActivityAct2(this, diagnostics, context);
+		return ProceduresSection2Operations.validateProceduresSection2EntryProcedureActivityAct2(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -111,7 +112,8 @@ public class ProceduresSection2Impl extends ProceduresSectionEntriesOptional2Imp
 	 */
 	public boolean validateProceduresSection2EntryProcedureActivityObservation2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProceduresSection2Operations.validateProceduresSection2EntryProcedureActivityObservation2(this, diagnostics, context);
+		return ProceduresSection2Operations.validateProceduresSection2EntryProcedureActivityObservation2(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -121,7 +123,8 @@ public class ProceduresSection2Impl extends ProceduresSectionEntriesOptional2Imp
 	 */
 	public boolean validateProceduresSection2EntryProcedureActivityProcedure2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProceduresSection2Operations.validateProceduresSection2EntryProcedureActivityProcedure2(this, diagnostics, context);
+		return ProceduresSection2Operations.validateProceduresSection2EntryProcedureActivityProcedure2(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -132,7 +135,8 @@ public class ProceduresSection2Impl extends ProceduresSectionEntriesOptional2Imp
 	@Override
 	public boolean validateProceduresSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProceduresSection2Operations.validateProceduresSectionEntriesOptionalTemplateId(this, diagnostics, context);
+		return ProceduresSection2Operations.validateProceduresSectionEntriesOptionalTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -165,7 +169,8 @@ public class ProceduresSection2Impl extends ProceduresSectionEntriesOptional2Imp
 	@Override
 	public boolean validateProceduresSectionEntriesOptionalProcedureActivityProcedure(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProceduresSection2Operations.validateProceduresSectionEntriesOptionalProcedureActivityProcedure(this, diagnostics, context);
+		return ProceduresSection2Operations.validateProceduresSectionEntriesOptionalProcedureActivityProcedure(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -176,7 +181,8 @@ public class ProceduresSection2Impl extends ProceduresSectionEntriesOptional2Imp
 	@Override
 	public boolean validateProceduresSectionEntriesOptionalProcedureActivityObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProceduresSection2Operations.validateProceduresSectionEntriesOptionalProcedureActivityObservation(this, diagnostics, context);
+		return ProceduresSection2Operations.validateProceduresSectionEntriesOptionalProcedureActivityObservation(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -187,7 +193,8 @@ public class ProceduresSection2Impl extends ProceduresSectionEntriesOptional2Imp
 	@Override
 	public boolean validateProceduresSectionEntriesOptionalProcedureActivityAct(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProceduresSection2Operations.validateProceduresSectionEntriesOptionalProcedureActivityAct(this, diagnostics, context);
+		return ProceduresSection2Operations.validateProceduresSectionEntriesOptionalProcedureActivityAct(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -227,17 +234,17 @@ public class ProceduresSection2Impl extends ProceduresSectionEntriesOptional2Imp
 	 */
 	@Override
 	public ProceduresSection2 init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public ProceduresSection2 init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // ProceduresSection2Impl

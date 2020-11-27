@@ -110,7 +110,8 @@ public class HealthConcernsSectionImpl extends SectionImpl implements HealthConc
 	 */
 	public boolean validateHealthConcernsSectionHealthConcernAct(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HealthConcernsSectionOperations.validateHealthConcernsSectionHealthConcernAct(this, diagnostics, context);
+		return HealthConcernsSectionOperations.validateHealthConcernsSectionHealthConcernAct(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -120,7 +121,8 @@ public class HealthConcernsSectionImpl extends SectionImpl implements HealthConc
 	 */
 	public boolean validateHealthConcernsSectionHealthStatusObservation2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HealthConcernsSectionOperations.validateHealthConcernsSectionHealthStatusObservation2(this, diagnostics, context);
+		return HealthConcernsSectionOperations.validateHealthConcernsSectionHealthStatusObservation2(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -166,16 +168,16 @@ public class HealthConcernsSectionImpl extends SectionImpl implements HealthConc
 	 * @generated
 	 */
 	public HealthConcernsSection init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public HealthConcernsSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // HealthConcernsSectionImpl

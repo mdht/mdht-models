@@ -53,7 +53,8 @@ public class PostprocedureDiagnosisSection2Impl extends PostprocedureDiagnosisSe
 	 */
 	public boolean validatePostprocedureDiagnosisSection2TemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PostprocedureDiagnosisSection2Operations.validatePostprocedureDiagnosisSection2TemplateId(this, diagnostics, context);
+		return PostprocedureDiagnosisSection2Operations.validatePostprocedureDiagnosisSection2TemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -73,7 +74,8 @@ public class PostprocedureDiagnosisSection2Impl extends PostprocedureDiagnosisSe
 	@Override
 	public boolean validatePostprocedureDiagnosisSectionCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PostprocedureDiagnosisSection2Operations.validatePostprocedureDiagnosisSectionCodeP(this, diagnostics, context);
+		return PostprocedureDiagnosisSection2Operations.validatePostprocedureDiagnosisSectionCodeP(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -83,7 +85,8 @@ public class PostprocedureDiagnosisSection2Impl extends PostprocedureDiagnosisSe
 	 */
 	@Override
 	public boolean validatePostprocedureDiagnosisSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PostprocedureDiagnosisSection2Operations.validatePostprocedureDiagnosisSectionCode(this, diagnostics, context);
+		return PostprocedureDiagnosisSection2Operations.validatePostprocedureDiagnosisSectionCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -94,7 +97,8 @@ public class PostprocedureDiagnosisSection2Impl extends PostprocedureDiagnosisSe
 	@Override
 	public boolean validatePostprocedureDiagnosisSectionPostprocedureDiagnosis(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PostprocedureDiagnosisSection2Operations.validatePostprocedureDiagnosisSectionPostprocedureDiagnosis(this, diagnostics, context);
+		return PostprocedureDiagnosisSection2Operations.validatePostprocedureDiagnosisSectionPostprocedureDiagnosis(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -104,17 +108,17 @@ public class PostprocedureDiagnosisSection2Impl extends PostprocedureDiagnosisSe
 	 */
 	@Override
 	public PostprocedureDiagnosisSection2 init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public PostprocedureDiagnosisSection2 init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // PostprocedureDiagnosisSection2Impl

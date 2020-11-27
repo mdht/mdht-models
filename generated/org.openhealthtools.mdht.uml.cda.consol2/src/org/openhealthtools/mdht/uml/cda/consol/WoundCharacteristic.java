@@ -161,9 +161,9 @@ public interface WoundCharacteristic extends Observation {
 	public WoundCharacteristic init();
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public WoundCharacteristic init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // WoundCharacteristic

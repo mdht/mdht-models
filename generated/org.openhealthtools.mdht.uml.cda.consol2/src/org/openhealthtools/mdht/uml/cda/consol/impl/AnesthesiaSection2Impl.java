@@ -102,7 +102,8 @@ public class AnesthesiaSection2Impl extends AnesthesiaSectionImpl implements Ane
 	@Override
 	public boolean validateAnesthesiaSectionProcedureActivityProcedure(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AnesthesiaSection2Operations.validateAnesthesiaSectionProcedureActivityProcedure(this, diagnostics, context);
+		return AnesthesiaSection2Operations.validateAnesthesiaSectionProcedureActivityProcedure(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -123,17 +124,17 @@ public class AnesthesiaSection2Impl extends AnesthesiaSectionImpl implements Ane
 	 */
 	@Override
 	public AnesthesiaSection2 init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public AnesthesiaSection2 init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // AnesthesiaSection2Impl

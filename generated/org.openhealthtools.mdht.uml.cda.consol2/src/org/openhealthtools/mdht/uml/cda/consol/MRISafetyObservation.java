@@ -77,10 +77,10 @@ public interface MRISafetyObservation extends Observation {
 	public MRISafetyObservation init();
 
 	/**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public MRISafetyObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public MRISafetyObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
 
 } // MRISafetyObservation

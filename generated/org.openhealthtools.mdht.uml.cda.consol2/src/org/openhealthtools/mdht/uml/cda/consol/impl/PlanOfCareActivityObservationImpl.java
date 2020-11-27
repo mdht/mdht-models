@@ -56,7 +56,8 @@ public class PlanOfCareActivityObservationImpl extends ObservationImpl implement
 	 */
 	public boolean validatePlanOfCareActivityObservationTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PlanOfCareActivityObservationOperations.validatePlanOfCareActivityObservationTemplateId(this, diagnostics, context);
+		return PlanOfCareActivityObservationOperations.validatePlanOfCareActivityObservationTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -66,7 +67,8 @@ public class PlanOfCareActivityObservationImpl extends ObservationImpl implement
 	 */
 	public boolean validatePlanOfCareActivityObservationClassCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PlanOfCareActivityObservationOperations.validatePlanOfCareActivityObservationClassCode(this, diagnostics, context);
+		return PlanOfCareActivityObservationOperations.validatePlanOfCareActivityObservationClassCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -76,7 +78,8 @@ public class PlanOfCareActivityObservationImpl extends ObservationImpl implement
 	 */
 	public boolean validatePlanOfCareActivityObservationMoodCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PlanOfCareActivityObservationOperations.validatePlanOfCareActivityObservationMoodCode(this, diagnostics, context);
+		return PlanOfCareActivityObservationOperations.validatePlanOfCareActivityObservationMoodCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -85,7 +88,8 @@ public class PlanOfCareActivityObservationImpl extends ObservationImpl implement
 	 * @generated
 	 */
 	public boolean validatePlanOfCareActivityObservationId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PlanOfCareActivityObservationOperations.validatePlanOfCareActivityObservationId(this, diagnostics, context);
+		return PlanOfCareActivityObservationOperations.validatePlanOfCareActivityObservationId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -94,16 +98,16 @@ public class PlanOfCareActivityObservationImpl extends ObservationImpl implement
 	 * @generated
 	 */
 	public PlanOfCareActivityObservation init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public PlanOfCareActivityObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // PlanOfCareActivityObservationImpl

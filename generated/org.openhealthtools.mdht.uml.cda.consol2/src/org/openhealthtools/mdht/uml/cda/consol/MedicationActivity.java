@@ -606,9 +606,9 @@ public interface MedicationActivity extends SubstanceAdministration {
 	public MedicationActivity init();
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public MedicationActivity init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // MedicationActivity

@@ -50,7 +50,8 @@ public class DischargeMedicationsSectionEntriesOptional2Impl extends
 	 */
 	public boolean validateDischargeMedicationsSectionEntriesOptional2CETranslation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return DischargeMedicationsSectionEntriesOptional2Operations.validateDischargeMedicationsSectionEntriesOptional2CETranslation(this, diagnostics, context);
+		return DischargeMedicationsSectionEntriesOptional2Operations.validateDischargeMedicationsSectionEntriesOptional2CETranslation(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -60,7 +61,8 @@ public class DischargeMedicationsSectionEntriesOptional2Impl extends
 	 */
 	public boolean validateDischargeMedicationsSectionEntriesOptional2CETranslationP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return DischargeMedicationsSectionEntriesOptional2Operations.validateDischargeMedicationsSectionEntriesOptional2CETranslationP(this, diagnostics, context);
+		return DischargeMedicationsSectionEntriesOptional2Operations.validateDischargeMedicationsSectionEntriesOptional2CETranslationP(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -80,7 +82,8 @@ public class DischargeMedicationsSectionEntriesOptional2Impl extends
 	@Override
 	public boolean validateHospitalDischargeMedicationsSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return DischargeMedicationsSectionEntriesOptional2Operations.validateHospitalDischargeMedicationsSectionEntriesOptionalTemplateId(this, diagnostics, context);
+		return DischargeMedicationsSectionEntriesOptional2Operations.validateHospitalDischargeMedicationsSectionEntriesOptionalTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -91,7 +94,8 @@ public class DischargeMedicationsSectionEntriesOptional2Impl extends
 	@Override
 	public boolean validateHospitalDischargeMedicationsSectionEntriesOptionalCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return DischargeMedicationsSectionEntriesOptional2Operations.validateHospitalDischargeMedicationsSectionEntriesOptionalCodeP(this, diagnostics, context);
+		return DischargeMedicationsSectionEntriesOptional2Operations.validateHospitalDischargeMedicationsSectionEntriesOptionalCodeP(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -102,7 +106,8 @@ public class DischargeMedicationsSectionEntriesOptional2Impl extends
 	@Override
 	public boolean validateHospitalDischargeMedicationsSectionEntriesOptionalCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return DischargeMedicationsSectionEntriesOptional2Operations.validateHospitalDischargeMedicationsSectionEntriesOptionalCode(this, diagnostics, context);
+		return DischargeMedicationsSectionEntriesOptional2Operations.validateHospitalDischargeMedicationsSectionEntriesOptionalCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -113,7 +118,8 @@ public class DischargeMedicationsSectionEntriesOptional2Impl extends
 	@Override
 	public boolean validateHospitalDischargeMedicationsSectionEntriesOptionalDischargeMedication(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return DischargeMedicationsSectionEntriesOptional2Operations.validateHospitalDischargeMedicationsSectionEntriesOptionalDischargeMedication(this, diagnostics, context);
+		return DischargeMedicationsSectionEntriesOptional2Operations.validateHospitalDischargeMedicationsSectionEntriesOptionalDischargeMedication(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -123,18 +129,18 @@ public class DischargeMedicationsSectionEntriesOptional2Impl extends
 	 */
 	@Override
 	public DischargeMedicationsSectionEntriesOptional2 init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public DischargeMedicationsSectionEntriesOptional2 init(
 			Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // DischargeMedicationsSectionEntriesOptional2Impl

@@ -54,7 +54,8 @@ public class PhysicalFindingsOfSkinSectionImpl extends SectionImpl implements Ph
 	 */
 	public boolean validatePhysicalFindingsOfSkinSectionTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PhysicalFindingsOfSkinSectionOperations.validatePhysicalFindingsOfSkinSectionTemplateId(this, diagnostics, context);
+		return PhysicalFindingsOfSkinSectionOperations.validatePhysicalFindingsOfSkinSectionTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -63,7 +64,8 @@ public class PhysicalFindingsOfSkinSectionImpl extends SectionImpl implements Ph
 	 * @generated
 	 */
 	public boolean validatePhysicalFindingsOfSkinSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PhysicalFindingsOfSkinSectionOperations.validatePhysicalFindingsOfSkinSectionCode(this, diagnostics, context);
+		return PhysicalFindingsOfSkinSectionOperations.validatePhysicalFindingsOfSkinSectionCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -73,7 +75,8 @@ public class PhysicalFindingsOfSkinSectionImpl extends SectionImpl implements Ph
 	 */
 	public boolean validatePhysicalFindingsOfSkinSectionCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PhysicalFindingsOfSkinSectionOperations.validatePhysicalFindingsOfSkinSectionCodeP(this, diagnostics, context);
+		return PhysicalFindingsOfSkinSectionOperations.validatePhysicalFindingsOfSkinSectionCodeP(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -83,7 +86,8 @@ public class PhysicalFindingsOfSkinSectionImpl extends SectionImpl implements Ph
 	 */
 	public boolean validatePhysicalFindingsOfSkinSectionTitle(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PhysicalFindingsOfSkinSectionOperations.validatePhysicalFindingsOfSkinSectionTitle(this, diagnostics, context);
+		return PhysicalFindingsOfSkinSectionOperations.validatePhysicalFindingsOfSkinSectionTitle(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -92,7 +96,8 @@ public class PhysicalFindingsOfSkinSectionImpl extends SectionImpl implements Ph
 	 * @generated
 	 */
 	public boolean validatePhysicalFindingsOfSkinSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PhysicalFindingsOfSkinSectionOperations.validatePhysicalFindingsOfSkinSectionText(this, diagnostics, context);
+		return PhysicalFindingsOfSkinSectionOperations.validatePhysicalFindingsOfSkinSectionText(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -102,7 +107,8 @@ public class PhysicalFindingsOfSkinSectionImpl extends SectionImpl implements Ph
 	 */
 	public boolean validatePhysicalFindingsOfSkinSectionWoundObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PhysicalFindingsOfSkinSectionOperations.validatePhysicalFindingsOfSkinSectionWoundObservation(this, diagnostics, context);
+		return PhysicalFindingsOfSkinSectionOperations.validatePhysicalFindingsOfSkinSectionWoundObservation(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -120,16 +126,16 @@ public class PhysicalFindingsOfSkinSectionImpl extends SectionImpl implements Ph
 	 * @generated
 	 */
 	public PhysicalFindingsOfSkinSection init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public PhysicalFindingsOfSkinSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // PhysicalFindingsOfSkinSectionImpl

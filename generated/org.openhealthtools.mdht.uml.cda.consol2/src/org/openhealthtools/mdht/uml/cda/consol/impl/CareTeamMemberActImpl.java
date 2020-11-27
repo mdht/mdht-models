@@ -138,7 +138,8 @@ public class CareTeamMemberActImpl extends ActImpl implements CareTeamMemberAct 
 	 */
 	public boolean validateCareTeamMemberActCareTeamMemberScheduleObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return CareTeamMemberActOperations.validateCareTeamMemberActCareTeamMemberScheduleObservation(this, diagnostics, context);
+		return CareTeamMemberActOperations.validateCareTeamMemberActCareTeamMemberScheduleObservation(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -201,16 +202,16 @@ public class CareTeamMemberActImpl extends ActImpl implements CareTeamMemberAct 
 	 * @generated
 	 */
 	public CareTeamMemberAct init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public CareTeamMemberAct init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // CareTeamMemberActImpl

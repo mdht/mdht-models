@@ -47,7 +47,7 @@ public class LotOrBatchNumberObservationOperations extends ClinicalStatementOper
 	 * @generated
 	 * @ordered
 	 */
-	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+	protected static final ThreadLocal<OCL> EOCL_ENV = new ThreadLocal<OCL>() {
 		@Override
 		public OCL initialValue() {
 			return OCL.newInstance();
@@ -81,7 +81,7 @@ public class LotOrBatchNumberObservationOperations extends ClinicalStatementOper
 	 * @generated
 	 * @ordered
 	 */
-	protected static ThreadLocal<  Constraint> VALIDATE_LOT_OR_BATCH_NUMBER_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_LOT_OR_BATCH_NUMBER_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -93,45 +93,38 @@ public class LotOrBatchNumberObservationOperations extends ClinicalStatementOper
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateLotOrBatchNumberObservationTemplateId(LotOrBatchNumberObservation lotOrBatchNumberObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"LotOrBatchNumberObservationLotOrBatchNumberObservationTemplateId","ERROR");
-    
-  	  
-  	  
+	public static boolean validateLotOrBatchNumberObservationTemplateId(
+			LotOrBatchNumberObservation lotOrBatchNumberObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "LotOrBatchNumberObservationLotOrBatchNumberObservationTemplateId", "ERROR");
+
 		if (VALIDATE_LOT_OR_BATCH_NUMBER_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.LOT_OR_BATCH_NUMBER_OBSERVATION);
 			try {
-				VALIDATE_LOT_OR_BATCH_NUMBER_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_LOT_OR_BATCH_NUMBER_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_LOT_OR_BATCH_NUMBER_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_LOT_OR_BATCH_NUMBER_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_LOT_OR_BATCH_NUMBER_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(lotOrBatchNumberObservation)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_LOT_OR_BATCH_NUMBER_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				lotOrBatchNumberObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.LOT_OR_BATCH_NUMBER_OBSERVATION__LOT_OR_BATCH_NUMBER_OBSERVATION_TEMPLATE_ID,
-						 ConsolPlugin.INSTANCE.getString("LotOrBatchNumberObservationLotOrBatchNumberObservationTemplateId"),
-						 new Object [] { lotOrBatchNumberObservation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.LOT_OR_BATCH_NUMBER_OBSERVATION__LOT_OR_BATCH_NUMBER_OBSERVATION_TEMPLATE_ID,
+						ConsolPlugin.INSTANCE.getString(
+							"LotOrBatchNumberObservationLotOrBatchNumberObservationTemplateId"),
+						new Object[] { lotOrBatchNumberObservation }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -155,7 +148,7 @@ public class LotOrBatchNumberObservationOperations extends ClinicalStatementOper
 	 * @generated
 	 * @ordered
 	 */
-	protected static ThreadLocal<  Constraint> VALIDATE_LOT_OR_BATCH_NUMBER_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_LOT_OR_BATCH_NUMBER_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -167,49 +160,42 @@ public class LotOrBatchNumberObservationOperations extends ClinicalStatementOper
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateLotOrBatchNumberObservationCodeP(LotOrBatchNumberObservation lotOrBatchNumberObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"LotOrBatchNumberObservationLotOrBatchNumberObservationCodeP","ERROR");
-    
-  	  
-  	  
+	public static boolean validateLotOrBatchNumberObservationCodeP(
+			LotOrBatchNumberObservation lotOrBatchNumberObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "LotOrBatchNumberObservationLotOrBatchNumberObservationCodeP", "ERROR");
+
 		if (VALIDATE_LOT_OR_BATCH_NUMBER_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.LOT_OR_BATCH_NUMBER_OBSERVATION);
 			try {
-				VALIDATE_LOT_OR_BATCH_NUMBER_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_LOT_OR_BATCH_NUMBER_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_LOT_OR_BATCH_NUMBER_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_LOT_OR_BATCH_NUMBER_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_LOT_OR_BATCH_NUMBER_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(lotOrBatchNumberObservation)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_LOT_OR_BATCH_NUMBER_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				lotOrBatchNumberObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.LOT_OR_BATCH_NUMBER_OBSERVATION__LOT_OR_BATCH_NUMBER_OBSERVATION_CODE_P,
-						 ConsolPlugin.INSTANCE.getString("LotOrBatchNumberObservationLotOrBatchNumberObservationCodeP"),
-						 new Object [] { lotOrBatchNumberObservation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.LOT_OR_BATCH_NUMBER_OBSERVATION__LOT_OR_BATCH_NUMBER_OBSERVATION_CODE_P,
+						ConsolPlugin.INSTANCE.getString("LotOrBatchNumberObservationLotOrBatchNumberObservationCodeP"),
+						new Object[] { lotOrBatchNumberObservation }));
 			}
-			
+
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
-				Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.consol.LotOrBatchNumberObservationCodeP");
+				Collection<Object> passToken = (Collection<Object>) context.get(
+					"org.openhealthtools.mdht.uml.cda.consol.LotOrBatchNumberObservationCodeP");
 				if (passToken == null) {
 					// anticipate a reasonably healthy model
 					passToken = new java.util.ArrayList<Object>(3);
@@ -217,7 +203,7 @@ public class LotOrBatchNumberObservationOperations extends ClinicalStatementOper
 				}
 				passToken.add(lotOrBatchNumberObservation);
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -231,9 +217,9 @@ public class LotOrBatchNumberObservationOperations extends ClinicalStatementOper
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_LOT_OR_BATCH_NUMBER_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
-"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
-"value.code = 'C101672' and value.codeSystem = '2.16.840.1.113883.3.26.1.1')";
+	protected static final String VALIDATE_LOT_OR_BATCH_NUMBER_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and " +
+			"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in " +
+			"value.code = 'C101672' and value.codeSystem = '2.16.840.1.113883.3.26.1.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateLotOrBatchNumberObservationCode(LotOrBatchNumberObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Lot Or Batch Number Observation Code</em>}' invariant operation.
@@ -243,7 +229,7 @@ public class LotOrBatchNumberObservationOperations extends ClinicalStatementOper
 	 * @generated
 	 * @ordered
 	 */
-	protected static ThreadLocal<  Constraint> VALIDATE_LOT_OR_BATCH_NUMBER_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_LOT_OR_BATCH_NUMBER_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -255,51 +241,45 @@ public class LotOrBatchNumberObservationOperations extends ClinicalStatementOper
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateLotOrBatchNumberObservationCode(LotOrBatchNumberObservation lotOrBatchNumberObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-		Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.consol.LotOrBatchNumberObservationCodeP");
+	public static boolean validateLotOrBatchNumberObservationCode(
+			LotOrBatchNumberObservation lotOrBatchNumberObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
+		Object passToken = (context == null)
+				? null
+				: context.get("org.openhealthtools.mdht.uml.cda.consol.LotOrBatchNumberObservationCodeP");
 		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(lotOrBatchNumberObservation)) {
 			// I have a free pass to short-circuit
 			return true;
 		}
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"LotOrBatchNumberObservationLotOrBatchNumberObservationCode","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "LotOrBatchNumberObservationLotOrBatchNumberObservationCode", "ERROR");
+
 		if (VALIDATE_LOT_OR_BATCH_NUMBER_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.LOT_OR_BATCH_NUMBER_OBSERVATION);
 			try {
-				VALIDATE_LOT_OR_BATCH_NUMBER_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_LOT_OR_BATCH_NUMBER_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_LOT_OR_BATCH_NUMBER_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_LOT_OR_BATCH_NUMBER_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_LOT_OR_BATCH_NUMBER_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(lotOrBatchNumberObservation)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_LOT_OR_BATCH_NUMBER_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				lotOrBatchNumberObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.LOT_OR_BATCH_NUMBER_OBSERVATION__LOT_OR_BATCH_NUMBER_OBSERVATION_CODE,
-						 ConsolPlugin.INSTANCE.getString("LotOrBatchNumberObservationLotOrBatchNumberObservationCode"),
-						 new Object [] { lotOrBatchNumberObservation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.LOT_OR_BATCH_NUMBER_OBSERVATION__LOT_OR_BATCH_NUMBER_OBSERVATION_CODE,
+						ConsolPlugin.INSTANCE.getString("LotOrBatchNumberObservationLotOrBatchNumberObservationCode"),
+						new Object[] { lotOrBatchNumberObservation }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -323,7 +303,7 @@ public class LotOrBatchNumberObservationOperations extends ClinicalStatementOper
 	 * @generated
 	 * @ordered
 	 */
-	protected static ThreadLocal<  Constraint> VALIDATE_LOT_OR_BATCH_NUMBER_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_LOT_OR_BATCH_NUMBER_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -335,45 +315,37 @@ public class LotOrBatchNumberObservationOperations extends ClinicalStatementOper
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateLotOrBatchNumberObservationValue(LotOrBatchNumberObservation lotOrBatchNumberObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"LotOrBatchNumberObservationLotOrBatchNumberObservationValue","ERROR");
-    
-  	  
-  	  
+	public static boolean validateLotOrBatchNumberObservationValue(
+			LotOrBatchNumberObservation lotOrBatchNumberObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "LotOrBatchNumberObservationLotOrBatchNumberObservationValue", "ERROR");
+
 		if (VALIDATE_LOT_OR_BATCH_NUMBER_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.LOT_OR_BATCH_NUMBER_OBSERVATION);
 			try {
-				VALIDATE_LOT_OR_BATCH_NUMBER_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_LOT_OR_BATCH_NUMBER_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_LOT_OR_BATCH_NUMBER_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_LOT_OR_BATCH_NUMBER_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_LOT_OR_BATCH_NUMBER_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(lotOrBatchNumberObservation)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_LOT_OR_BATCH_NUMBER_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				lotOrBatchNumberObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.LOT_OR_BATCH_NUMBER_OBSERVATION__LOT_OR_BATCH_NUMBER_OBSERVATION_VALUE,
-						 ConsolPlugin.INSTANCE.getString("LotOrBatchNumberObservationLotOrBatchNumberObservationValue"),
-						 new Object [] { lotOrBatchNumberObservation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.LOT_OR_BATCH_NUMBER_OBSERVATION__LOT_OR_BATCH_NUMBER_OBSERVATION_VALUE,
+						ConsolPlugin.INSTANCE.getString("LotOrBatchNumberObservationLotOrBatchNumberObservationValue"),
+						new Object[] { lotOrBatchNumberObservation }));
 			}
-			 
+
 			return false;
 		}
 		return true;

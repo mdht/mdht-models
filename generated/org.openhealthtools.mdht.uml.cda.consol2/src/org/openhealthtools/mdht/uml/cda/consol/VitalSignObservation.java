@@ -245,9 +245,9 @@ public interface VitalSignObservation extends Observation {
 	public VitalSignObservation init();
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public VitalSignObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // VitalSignObservation

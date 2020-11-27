@@ -9,8 +9,6 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.ecore.EObject;
-import org.eclipse.emf.ecore.impl.EObjectImpl;
-
 import org.eclipse.mdht.emf.runtime.util.Initializer;
 import org.eclipse.mdht.uml.cda.impl.OrganizerImpl;
 import org.openhealthtools.mdht.uml.cda.consol.BrandNameObservation;
@@ -135,7 +133,8 @@ public class UDIOrganizerImpl extends OrganizerImpl implements UDIOrganizer {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateUDIOrganizerDeviceIdentifierObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateUDIOrganizerDeviceIdentifierObservation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return UDIOrganizerOperations.validateUDIOrganizerDeviceIdentifierObservation(this, diagnostics, context);
 	}
 
@@ -144,7 +143,8 @@ public class UDIOrganizerImpl extends OrganizerImpl implements UDIOrganizer {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateUDIOrganizerLotOrBatchNumberObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateUDIOrganizerLotOrBatchNumberObservation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return UDIOrganizerOperations.validateUDIOrganizerLotOrBatchNumberObservation(this, diagnostics, context);
 	}
 
@@ -153,7 +153,8 @@ public class UDIOrganizerImpl extends OrganizerImpl implements UDIOrganizer {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateUDIOrganizerSerialNumberObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateUDIOrganizerSerialNumberObservation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return UDIOrganizerOperations.validateUDIOrganizerSerialNumberObservation(this, diagnostics, context);
 	}
 
@@ -162,7 +163,8 @@ public class UDIOrganizerImpl extends OrganizerImpl implements UDIOrganizer {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateUDIOrganizerManufacturingDateObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateUDIOrganizerManufacturingDateObservation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return UDIOrganizerOperations.validateUDIOrganizerManufacturingDateObservation(this, diagnostics, context);
 	}
 
@@ -171,7 +173,8 @@ public class UDIOrganizerImpl extends OrganizerImpl implements UDIOrganizer {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateUDIOrganizerExpirationDateObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateUDIOrganizerExpirationDateObservation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return UDIOrganizerOperations.validateUDIOrganizerExpirationDateObservation(this, diagnostics, context);
 	}
 
@@ -180,8 +183,10 @@ public class UDIOrganizerImpl extends OrganizerImpl implements UDIOrganizer {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateUDIOrganizerDistinctIdentificationCodeObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return UDIOrganizerOperations.validateUDIOrganizerDistinctIdentificationCodeObservation(this, diagnostics, context);
+	public boolean validateUDIOrganizerDistinctIdentificationCodeObservation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return UDIOrganizerOperations.validateUDIOrganizerDistinctIdentificationCodeObservation(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -198,7 +203,8 @@ public class UDIOrganizerImpl extends OrganizerImpl implements UDIOrganizer {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateUDIOrganizerModelNumberObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateUDIOrganizerModelNumberObservation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return UDIOrganizerOperations.validateUDIOrganizerModelNumberObservation(this, diagnostics, context);
 	}
 
@@ -207,7 +213,8 @@ public class UDIOrganizerImpl extends OrganizerImpl implements UDIOrganizer {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateUDIOrganizerCompanyNameObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateUDIOrganizerCompanyNameObservation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return UDIOrganizerOperations.validateUDIOrganizerCompanyNameObservation(this, diagnostics, context);
 	}
 
@@ -216,7 +223,8 @@ public class UDIOrganizerImpl extends OrganizerImpl implements UDIOrganizer {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateUDIOrganizerCatalogNumberObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateUDIOrganizerCatalogNumberObservation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return UDIOrganizerOperations.validateUDIOrganizerCatalogNumberObservation(this, diagnostics, context);
 	}
 
@@ -225,7 +233,8 @@ public class UDIOrganizerImpl extends OrganizerImpl implements UDIOrganizer {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateUDIOrganizerLatexSafetyObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateUDIOrganizerLatexSafetyObservation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return UDIOrganizerOperations.validateUDIOrganizerLatexSafetyObservation(this, diagnostics, context);
 	}
 
@@ -243,8 +252,10 @@ public class UDIOrganizerImpl extends OrganizerImpl implements UDIOrganizer {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateUDIOrganizerImplantableDeviceStatusObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return UDIOrganizerOperations.validateUDIOrganizerImplantableDeviceStatusObservation(this, diagnostics, context);
+	public boolean validateUDIOrganizerImplantableDeviceStatusObservation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return UDIOrganizerOperations.validateUDIOrganizerImplantableDeviceStatusObservation(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -370,17 +381,17 @@ public class UDIOrganizerImpl extends OrganizerImpl implements UDIOrganizer {
 	 * @generated
 	 */
 	public UDIOrganizer init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
 
 	/**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public UDIOrganizer init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public UDIOrganizer init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 
-} //UDIOrganizerImpl
+} // UDIOrganizerImpl

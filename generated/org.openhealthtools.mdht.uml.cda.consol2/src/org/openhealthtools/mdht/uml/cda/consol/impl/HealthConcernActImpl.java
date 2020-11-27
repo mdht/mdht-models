@@ -184,7 +184,8 @@ public class HealthConcernActImpl extends ActImpl implements HealthConcernAct {
 	 */
 	public boolean validateHealthConcernActAssessmentScaleObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HealthConcernActOperations.validateHealthConcernActAssessmentScaleObservation(this, diagnostics, context);
+		return HealthConcernActOperations.validateHealthConcernActAssessmentScaleObservation(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -234,7 +235,8 @@ public class HealthConcernActImpl extends ActImpl implements HealthConcernAct {
 	 */
 	public boolean validateHealthConcernActCulturalAndReligiousObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HealthConcernActOperations.validateHealthConcernActCulturalAndReligiousObservation(this, diagnostics, context);
+		return HealthConcernActOperations.validateHealthConcernActCulturalAndReligiousObservation(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -244,7 +246,8 @@ public class HealthConcernActImpl extends ActImpl implements HealthConcernAct {
 	 */
 	public boolean validateHealthConcernActCharacteristicsOfHomeEnvironment(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HealthConcernActOperations.validateHealthConcernActCharacteristicsOfHomeEnvironment(this, diagnostics, context);
+		return HealthConcernActOperations.validateHealthConcernActCharacteristicsOfHomeEnvironment(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -254,7 +257,8 @@ public class HealthConcernActImpl extends ActImpl implements HealthConcernAct {
 	 */
 	public boolean validateHealthConcernActNutritionalStatusObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HealthConcernActOperations.validateHealthConcernActNutritionalStatusObservation(this, diagnostics, context);
+		return HealthConcernActOperations.validateHealthConcernActNutritionalStatusObservation(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -303,7 +307,8 @@ public class HealthConcernActImpl extends ActImpl implements HealthConcernAct {
 	 */
 	public boolean validateHealthConcernActLongitudinalCareWoundObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HealthConcernActOperations.validateHealthConcernActLongitudinalCareWoundObservation(this, diagnostics, context);
+		return HealthConcernActOperations.validateHealthConcernActLongitudinalCareWoundObservation(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -353,7 +358,8 @@ public class HealthConcernActImpl extends ActImpl implements HealthConcernAct {
 	 */
 	public boolean validateHealthConcernActSmokingStatusMeaningfulUse2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HealthConcernActOperations.validateHealthConcernActSmokingStatusMeaningfulUse2(this, diagnostics, context);
+		return HealthConcernActOperations.validateHealthConcernActSmokingStatusMeaningfulUse2(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -373,7 +379,8 @@ public class HealthConcernActImpl extends ActImpl implements HealthConcernAct {
 	 */
 	public boolean validateHealthConcernActFunctionalStatusObservation2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HealthConcernActOperations.validateHealthConcernActFunctionalStatusObservation2(this, diagnostics, context);
+		return HealthConcernActOperations.validateHealthConcernActFunctionalStatusObservation2(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -383,7 +390,8 @@ public class HealthConcernActImpl extends ActImpl implements HealthConcernAct {
 	 */
 	public boolean validateHealthConcernActHospitalAdmissionDiagnosis2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HealthConcernActOperations.validateHealthConcernActHospitalAdmissionDiagnosis2(this, diagnostics, context);
+		return HealthConcernActOperations.validateHealthConcernActHospitalAdmissionDiagnosis2(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -443,7 +451,8 @@ public class HealthConcernActImpl extends ActImpl implements HealthConcernAct {
 	 */
 	public boolean validateHealthConcernActSubstanceOrDeviceAllergyObservation2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HealthConcernActOperations.validateHealthConcernActSubstanceOrDeviceAllergyObservation2(this, diagnostics, context);
+		return HealthConcernActOperations.validateHealthConcernActSubstanceOrDeviceAllergyObservation2(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -472,7 +481,8 @@ public class HealthConcernActImpl extends ActImpl implements HealthConcernAct {
 	 */
 	public boolean validateHealthConcernActProblemObservation2Support(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HealthConcernActOperations.validateHealthConcernActProblemObservation2Support(this, diagnostics, context);
+		return HealthConcernActOperations.validateHealthConcernActProblemObservation2Support(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -519,7 +529,8 @@ public class HealthConcernActImpl extends ActImpl implements HealthConcernAct {
 	 */
 	public boolean validateHealthConcernActReferenceExternalDocumentReference(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HealthConcernActOperations.validateHealthConcernActReferenceExternalDocumentReference(this, diagnostics, context);
+		return HealthConcernActOperations.validateHealthConcernActReferenceExternalDocumentReference(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -807,16 +818,16 @@ public class HealthConcernActImpl extends ActImpl implements HealthConcernAct {
 	 * @generated
 	 */
 	public HealthConcernAct init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public HealthConcernAct init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // HealthConcernActImpl

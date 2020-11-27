@@ -187,7 +187,8 @@ public interface UDIOrganizer extends Organizer {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component-&gt;one(component : cda::Component4 | not component.observation.oclIsUndefined() and component.observation.oclIsKindOf(consol::DistinctIdentificationCodeObservation))'"
 	 * @generated
 	 */
-	boolean validateUDIOrganizerDistinctIdentificationCodeObservation(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateUDIOrganizerDistinctIdentificationCodeObservation(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -271,7 +272,8 @@ public interface UDIOrganizer extends Organizer {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component-&gt;one(component : cda::Component4 | not component.observation.oclIsUndefined() and component.observation.oclIsKindOf(consol::ImplantableDeviceStatusObservation))'"
 	 * @generated
 	 */
-	boolean validateUDIOrganizerImplantableDeviceStatusObservation(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateUDIOrganizerImplantableDeviceStatusObservation(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -398,10 +400,10 @@ public interface UDIOrganizer extends Organizer {
 	public UDIOrganizer init();
 
 	/**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public UDIOrganizer init(Iterable<? extends Initializer<? extends EObject>> initializers);
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public UDIOrganizer init(Iterable<? extends Initializer<? extends EObject>> initializers);
 
 } // UDIOrganizer

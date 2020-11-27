@@ -89,9 +89,9 @@ public interface ObjectiveSection extends Section {
 	public ObjectiveSection init();
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public ObjectiveSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ObjectiveSection

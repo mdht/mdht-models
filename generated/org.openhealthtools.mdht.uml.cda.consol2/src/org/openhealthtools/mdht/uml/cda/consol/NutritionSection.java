@@ -112,9 +112,9 @@ public interface NutritionSection extends Section {
 	public NutritionSection init();
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public NutritionSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // NutritionSection

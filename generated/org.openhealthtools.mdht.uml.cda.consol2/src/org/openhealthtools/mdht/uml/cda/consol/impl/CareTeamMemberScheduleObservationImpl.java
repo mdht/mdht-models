@@ -55,7 +55,8 @@ public class CareTeamMemberScheduleObservationImpl extends ObservationImpl
 	 */
 	public boolean validateCareTeamMemberScheduleObservationTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return CareTeamMemberScheduleObservationOperations.validateCareTeamMemberScheduleObservationTemplateId(this, diagnostics, context);
+		return CareTeamMemberScheduleObservationOperations.validateCareTeamMemberScheduleObservationTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -65,7 +66,8 @@ public class CareTeamMemberScheduleObservationImpl extends ObservationImpl
 	 */
 	public boolean validateCareTeamMemberScheduleObservationCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return CareTeamMemberScheduleObservationOperations.validateCareTeamMemberScheduleObservationCodeP(this, diagnostics, context);
+		return CareTeamMemberScheduleObservationOperations.validateCareTeamMemberScheduleObservationCodeP(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -75,7 +77,8 @@ public class CareTeamMemberScheduleObservationImpl extends ObservationImpl
 	 */
 	public boolean validateCareTeamMemberScheduleObservationCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return CareTeamMemberScheduleObservationOperations.validateCareTeamMemberScheduleObservationCode(this, diagnostics, context);
+		return CareTeamMemberScheduleObservationOperations.validateCareTeamMemberScheduleObservationCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -85,7 +88,8 @@ public class CareTeamMemberScheduleObservationImpl extends ObservationImpl
 	 */
 	public boolean validateCareTeamMemberScheduleObservationText(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return CareTeamMemberScheduleObservationOperations.validateCareTeamMemberScheduleObservationText(this, diagnostics, context);
+		return CareTeamMemberScheduleObservationOperations.validateCareTeamMemberScheduleObservationText(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -95,7 +99,8 @@ public class CareTeamMemberScheduleObservationImpl extends ObservationImpl
 	 */
 	public boolean validateCareTeamMemberScheduleObservationValue(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return CareTeamMemberScheduleObservationOperations.validateCareTeamMemberScheduleObservationValue(this, diagnostics, context);
+		return CareTeamMemberScheduleObservationOperations.validateCareTeamMemberScheduleObservationValue(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -105,7 +110,8 @@ public class CareTeamMemberScheduleObservationImpl extends ObservationImpl
 	 */
 	public boolean validateCareTeamMemberScheduleObservationClassCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return CareTeamMemberScheduleObservationOperations.validateCareTeamMemberScheduleObservationClassCode(this, diagnostics, context);
+		return CareTeamMemberScheduleObservationOperations.validateCareTeamMemberScheduleObservationClassCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -115,7 +121,8 @@ public class CareTeamMemberScheduleObservationImpl extends ObservationImpl
 	 */
 	public boolean validateCareTeamMemberScheduleObservationMoodCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return CareTeamMemberScheduleObservationOperations.validateCareTeamMemberScheduleObservationMoodCode(this, diagnostics, context);
+		return CareTeamMemberScheduleObservationOperations.validateCareTeamMemberScheduleObservationMoodCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -125,7 +132,8 @@ public class CareTeamMemberScheduleObservationImpl extends ObservationImpl
 	 */
 	public boolean validateCareTeamMemberScheduleObservationStatusCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return CareTeamMemberScheduleObservationOperations.validateCareTeamMemberScheduleObservationStatusCodeP(this, diagnostics, context);
+		return CareTeamMemberScheduleObservationOperations.validateCareTeamMemberScheduleObservationStatusCodeP(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -135,7 +143,8 @@ public class CareTeamMemberScheduleObservationImpl extends ObservationImpl
 	 */
 	public boolean validateCareTeamMemberScheduleObservationStatusCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return CareTeamMemberScheduleObservationOperations.validateCareTeamMemberScheduleObservationStatusCode(this, diagnostics, context);
+		return CareTeamMemberScheduleObservationOperations.validateCareTeamMemberScheduleObservationStatusCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -145,7 +154,8 @@ public class CareTeamMemberScheduleObservationImpl extends ObservationImpl
 	 */
 	public boolean validateCareTeamMemberScheduleObservationEDTELValue(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return CareTeamMemberScheduleObservationOperations.validateCareTeamMemberScheduleObservationEDTELValue(this, diagnostics, context);
+		return CareTeamMemberScheduleObservationOperations.validateCareTeamMemberScheduleObservationEDTELValue(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -155,7 +165,8 @@ public class CareTeamMemberScheduleObservationImpl extends ObservationImpl
 	 */
 	public boolean validateCareTeamMemberScheduleObservationEDReference(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return CareTeamMemberScheduleObservationOperations.validateCareTeamMemberScheduleObservationEDReference(this, diagnostics, context);
+		return CareTeamMemberScheduleObservationOperations.validateCareTeamMemberScheduleObservationEDReference(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -164,16 +175,16 @@ public class CareTeamMemberScheduleObservationImpl extends ObservationImpl
 	 * @generated
 	 */
 	public CareTeamMemberScheduleObservation init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public CareTeamMemberScheduleObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // CareTeamMemberScheduleObservationImpl

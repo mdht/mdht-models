@@ -94,7 +94,8 @@ public class PostprocedureDiagnosisImpl extends ActImpl implements Postprocedure
 	 */
 	public boolean validatePostprocedureDiagnosisProblemObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PostprocedureDiagnosisOperations.validatePostprocedureDiagnosisProblemObservation(this, diagnostics, context);
+		return PostprocedureDiagnosisOperations.validatePostprocedureDiagnosisProblemObservation(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -112,16 +113,16 @@ public class PostprocedureDiagnosisImpl extends ActImpl implements Postprocedure
 	 * @generated
 	 */
 	public PostprocedureDiagnosis init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public PostprocedureDiagnosis init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // PostprocedureDiagnosisImpl

@@ -164,9 +164,9 @@ public interface PhysicalExamSection2 extends PhysicalExamSection {
 	public PhysicalExamSection2 init();
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public PhysicalExamSection2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // PhysicalExamSection2

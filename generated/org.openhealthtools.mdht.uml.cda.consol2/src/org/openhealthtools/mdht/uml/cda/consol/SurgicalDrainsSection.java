@@ -89,9 +89,9 @@ public interface SurgicalDrainsSection extends Section {
 	public SurgicalDrainsSection init();
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public SurgicalDrainsSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // SurgicalDrainsSection

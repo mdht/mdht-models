@@ -81,7 +81,8 @@ public class CoverageActivity2Impl extends CoverageActivityImpl implements Cover
 	 */
 	public boolean validateCoverageActivity2EntryRelationshipINTValue(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return CoverageActivity2Operations.validateCoverageActivity2EntryRelationshipINTValue(this, diagnostics, context);
+		return CoverageActivity2Operations.validateCoverageActivity2EntryRelationshipINTValue(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -91,7 +92,8 @@ public class CoverageActivity2Impl extends CoverageActivityImpl implements Cover
 	 */
 	public boolean validateCoverageActivity2EntryRelationshipTypeCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return CoverageActivity2Operations.validateCoverageActivity2EntryRelationshipTypeCode(this, diagnostics, context);
+		return CoverageActivity2Operations.validateCoverageActivity2EntryRelationshipTypeCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -101,7 +103,8 @@ public class CoverageActivity2Impl extends CoverageActivityImpl implements Cover
 	 */
 	public boolean validateCoverageActivity2EntryRelationshipSequenceNumber(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return CoverageActivity2Operations.validateCoverageActivity2EntryRelationshipSequenceNumber(this, diagnostics, context);
+		return CoverageActivity2Operations.validateCoverageActivity2EntryRelationshipSequenceNumber(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -111,7 +114,8 @@ public class CoverageActivity2Impl extends CoverageActivityImpl implements Cover
 	 */
 	public boolean validateCoverageActivity2EntryRelationshipPolicyActivity2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return CoverageActivity2Operations.validateCoverageActivity2EntryRelationshipPolicyActivity2(this, diagnostics, context);
+		return CoverageActivity2Operations.validateCoverageActivity2EntryRelationshipPolicyActivity2(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -131,7 +135,8 @@ public class CoverageActivity2Impl extends CoverageActivityImpl implements Cover
 	@Override
 	public boolean validateCoverageActivityCoverageActivityRelationshipSequenceNumber(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return CoverageActivity2Operations.validateCoverageActivityCoverageActivityRelationshipSequenceNumber(this, diagnostics, context);
+		return CoverageActivity2Operations.validateCoverageActivityCoverageActivityRelationshipSequenceNumber(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -161,17 +166,17 @@ public class CoverageActivity2Impl extends CoverageActivityImpl implements Cover
 	 */
 	@Override
 	public CoverageActivity2 init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public CoverageActivity2 init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // CoverageActivity2Impl

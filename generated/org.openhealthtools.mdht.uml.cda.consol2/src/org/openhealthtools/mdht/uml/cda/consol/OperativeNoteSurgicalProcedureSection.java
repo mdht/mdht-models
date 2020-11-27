@@ -92,9 +92,9 @@ public interface OperativeNoteSurgicalProcedureSection extends Section {
 	public OperativeNoteSurgicalProcedureSection init();
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public OperativeNoteSurgicalProcedureSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // OperativeNoteSurgicalProcedureSection

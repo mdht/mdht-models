@@ -48,7 +48,8 @@ public class SmokingStatusMeaningfulUse2Impl extends SmokingStatusObservationImp
 	 */
 	public boolean validateSmokingStatusMeaningfulUse2TemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return SmokingStatusMeaningfulUse2Operations.validateSmokingStatusMeaningfulUse2TemplateId(this, diagnostics, context);
+		return SmokingStatusMeaningfulUse2Operations.validateSmokingStatusMeaningfulUse2TemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -76,7 +77,8 @@ public class SmokingStatusMeaningfulUse2Impl extends SmokingStatusObservationImp
 	 */
 	public boolean validateSmokingStatusMeaningfulUse2AuthorParticipation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return SmokingStatusMeaningfulUse2Operations.validateSmokingStatusMeaningfulUse2AuthorParticipation(this, diagnostics, context);
+		return SmokingStatusMeaningfulUse2Operations.validateSmokingStatusMeaningfulUse2AuthorParticipation(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -86,7 +88,8 @@ public class SmokingStatusMeaningfulUse2Impl extends SmokingStatusObservationImp
 	 */
 	public boolean validateSmokingStatusMeaningfulUse2CDCodeTermAssertionOrLoinc(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return SmokingStatusMeaningfulUse2Operations.validateSmokingStatusMeaningfulUse2CDCodeTermAssertionOrLoinc(this, diagnostics, context);
+		return SmokingStatusMeaningfulUse2Operations.validateSmokingStatusMeaningfulUse2CDCodeTermAssertionOrLoinc(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -127,7 +130,8 @@ public class SmokingStatusMeaningfulUse2Impl extends SmokingStatusObservationImp
 	@Override
 	public boolean validateSmokingStatusObservationEffectiveTime(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return SmokingStatusMeaningfulUse2Operations.validateSmokingStatusObservationEffectiveTime(this, diagnostics, context);
+		return SmokingStatusMeaningfulUse2Operations.validateSmokingStatusObservationEffectiveTime(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -138,7 +142,8 @@ public class SmokingStatusMeaningfulUse2Impl extends SmokingStatusObservationImp
 	@Override
 	public boolean validateSmokingStatusObservationIVLTSCenter(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return SmokingStatusMeaningfulUse2Operations.validateSmokingStatusObservationIVLTSCenter(this, diagnostics, context);
+		return SmokingStatusMeaningfulUse2Operations.validateSmokingStatusObservationIVLTSCenter(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -148,7 +153,8 @@ public class SmokingStatusMeaningfulUse2Impl extends SmokingStatusObservationImp
 	 */
 	@Override
 	public boolean validateSmokingStatusObservationIVLTSHigh(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SmokingStatusMeaningfulUse2Operations.validateSmokingStatusObservationIVLTSHigh(this, diagnostics, context);
+		return SmokingStatusMeaningfulUse2Operations.validateSmokingStatusObservationIVLTSHigh(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -158,7 +164,8 @@ public class SmokingStatusMeaningfulUse2Impl extends SmokingStatusObservationImp
 	 */
 	@Override
 	public boolean validateSmokingStatusObservationIVLTSLow(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SmokingStatusMeaningfulUse2Operations.validateSmokingStatusObservationIVLTSLow(this, diagnostics, context);
+		return SmokingStatusMeaningfulUse2Operations.validateSmokingStatusObservationIVLTSLow(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -169,7 +176,8 @@ public class SmokingStatusMeaningfulUse2Impl extends SmokingStatusObservationImp
 	@Override
 	public boolean validateSmokingStatusObservationIVLTSWidth(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return SmokingStatusMeaningfulUse2Operations.validateSmokingStatusObservationIVLTSWidth(this, diagnostics, context);
+		return SmokingStatusMeaningfulUse2Operations.validateSmokingStatusObservationIVLTSWidth(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -179,17 +187,17 @@ public class SmokingStatusMeaningfulUse2Impl extends SmokingStatusObservationImp
 	 */
 	@Override
 	public SmokingStatusMeaningfulUse2 init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public SmokingStatusMeaningfulUse2 init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // SmokingStatusMeaningfulUse2Impl

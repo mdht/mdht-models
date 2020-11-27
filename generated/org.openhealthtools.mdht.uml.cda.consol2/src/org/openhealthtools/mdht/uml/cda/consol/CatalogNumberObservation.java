@@ -77,10 +77,10 @@ public interface CatalogNumberObservation extends Observation {
 	public CatalogNumberObservation init();
 
 	/**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public CatalogNumberObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public CatalogNumberObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
 
 } // CatalogNumberObservation

@@ -9,8 +9,6 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.ecore.EObject;
-import org.eclipse.emf.ecore.impl.EObjectImpl;
-
 import org.eclipse.mdht.emf.runtime.util.Initializer;
 import org.eclipse.mdht.uml.cda.impl.ObservationImpl;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
@@ -25,7 +23,8 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.DistinctIdentification
  *
  * @generated
  */
-public class DistinctIdentificationCodeObservationImpl extends ObservationImpl implements DistinctIdentificationCodeObservation {
+public class DistinctIdentificationCodeObservationImpl extends ObservationImpl
+		implements DistinctIdentificationCodeObservation {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -50,8 +49,10 @@ public class DistinctIdentificationCodeObservationImpl extends ObservationImpl i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateDistinctIdentificationCodeObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return DistinctIdentificationCodeObservationOperations.validateDistinctIdentificationCodeObservationTemplateId(this, diagnostics, context);
+	public boolean validateDistinctIdentificationCodeObservationTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return DistinctIdentificationCodeObservationOperations.validateDistinctIdentificationCodeObservationTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -59,8 +60,10 @@ public class DistinctIdentificationCodeObservationImpl extends ObservationImpl i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateDistinctIdentificationCodeObservationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return DistinctIdentificationCodeObservationOperations.validateDistinctIdentificationCodeObservationCodeP(this, diagnostics, context);
+	public boolean validateDistinctIdentificationCodeObservationCodeP(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return DistinctIdentificationCodeObservationOperations.validateDistinctIdentificationCodeObservationCodeP(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -68,8 +71,10 @@ public class DistinctIdentificationCodeObservationImpl extends ObservationImpl i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateDistinctIdentificationCodeObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return DistinctIdentificationCodeObservationOperations.validateDistinctIdentificationCodeObservationCode(this, diagnostics, context);
+	public boolean validateDistinctIdentificationCodeObservationCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return DistinctIdentificationCodeObservationOperations.validateDistinctIdentificationCodeObservationCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -77,8 +82,10 @@ public class DistinctIdentificationCodeObservationImpl extends ObservationImpl i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateDistinctIdentificationCodeObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return DistinctIdentificationCodeObservationOperations.validateDistinctIdentificationCodeObservationValue(this, diagnostics, context);
+	public boolean validateDistinctIdentificationCodeObservationValue(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return DistinctIdentificationCodeObservationOperations.validateDistinctIdentificationCodeObservationValue(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -87,17 +94,17 @@ public class DistinctIdentificationCodeObservationImpl extends ObservationImpl i
 	 * @generated
 	 */
 	public DistinctIdentificationCodeObservation init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
 
 	/**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public DistinctIdentificationCodeObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public DistinctIdentificationCodeObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 
-} //DistinctIdentificationCodeObservationImpl
+} // DistinctIdentificationCodeObservationImpl

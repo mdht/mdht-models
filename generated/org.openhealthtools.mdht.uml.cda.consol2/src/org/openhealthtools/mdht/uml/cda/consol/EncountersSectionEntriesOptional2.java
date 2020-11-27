@@ -36,9 +36,9 @@ public interface EncountersSectionEntriesOptional2 extends EncountersSectionEntr
 	public EncountersSectionEntriesOptional2 init();
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public EncountersSectionEntriesOptional2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // EncountersSectionEntriesOptional2

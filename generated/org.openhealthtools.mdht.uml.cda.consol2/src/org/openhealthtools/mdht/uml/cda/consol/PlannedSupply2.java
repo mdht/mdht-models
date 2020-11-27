@@ -295,9 +295,9 @@ public interface PlannedSupply2 extends PlanOfCareActivitySupply {
 	public PlannedSupply2 init();
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public PlannedSupply2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // PlannedSupply2

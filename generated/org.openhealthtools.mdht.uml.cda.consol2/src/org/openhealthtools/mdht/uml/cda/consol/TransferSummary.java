@@ -1034,9 +1034,9 @@ public interface TransferSummary extends USRealmHeader2 {
 	public TransferSummary init();
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public TransferSummary init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // TransferSummary

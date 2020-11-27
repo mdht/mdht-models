@@ -262,9 +262,9 @@ public interface HandoffCommunicationParticipants extends Act {
 	public HandoffCommunicationParticipants init();
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public HandoffCommunicationParticipants init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // HandoffCommunicationParticipants

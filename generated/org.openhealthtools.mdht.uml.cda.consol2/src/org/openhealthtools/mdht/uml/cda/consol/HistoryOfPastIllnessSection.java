@@ -116,9 +116,9 @@ public interface HistoryOfPastIllnessSection extends Section {
 	public HistoryOfPastIllnessSection init();
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public HistoryOfPastIllnessSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // HistoryOfPastIllnessSection

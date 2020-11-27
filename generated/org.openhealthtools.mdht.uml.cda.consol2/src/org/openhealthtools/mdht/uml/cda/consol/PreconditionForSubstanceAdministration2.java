@@ -68,10 +68,10 @@ public interface PreconditionForSubstanceAdministration2 extends PreconditionFor
 	public PreconditionForSubstanceAdministration2 init();
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public PreconditionForSubstanceAdministration2 init(
 			Iterable<? extends Initializer<? extends EObject>> initializers);
 } // PreconditionForSubstanceAdministration2

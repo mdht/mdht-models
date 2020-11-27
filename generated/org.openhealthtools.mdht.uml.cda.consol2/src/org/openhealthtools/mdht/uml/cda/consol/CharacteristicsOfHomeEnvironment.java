@@ -152,9 +152,9 @@ public interface CharacteristicsOfHomeEnvironment extends Observation {
 	public CharacteristicsOfHomeEnvironment init();
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public CharacteristicsOfHomeEnvironment init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // CharacteristicsOfHomeEnvironment
