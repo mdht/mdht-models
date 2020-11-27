@@ -111,7 +111,7 @@ public class ImplantableDeviceStatusObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 
@@ -130,7 +130,8 @@ public class ImplantableDeviceStatusObservationTest extends CDAValidationTest {
 			protected void updateToPass(ImplantableDeviceStatusObservation target) {
 				target.init();
 
-				DatatypesFactory.eINSTANCE.createCD();
+				CD value = DatatypesFactory.eINSTANCE.createCD("C160939", "2.16.840.1.113883.3.26.1.1");
+				target.getValues().add(value);
 
 			}
 

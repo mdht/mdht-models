@@ -9,6 +9,7 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.CD;
 import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
 import org.junit.Test;
 import org.openhealthtools.mdht.uml.cda.consol.CompanyNameObservation;
@@ -107,7 +108,7 @@ public class CompanyNameObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 
@@ -126,7 +127,8 @@ public class CompanyNameObservationTest extends CDAValidationTest {
 			protected void updateToPass(CompanyNameObservation target) {
 				target.init();
 
-				DatatypesFactory.eINSTANCE.createCD();
+				CD value = DatatypesFactory.eINSTANCE.createCD("C160939", "2.16.840.1.113883.3.26.1.1");
+				target.getValues().add(value);
 
 			}
 
@@ -151,7 +153,7 @@ public class CompanyNameObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 

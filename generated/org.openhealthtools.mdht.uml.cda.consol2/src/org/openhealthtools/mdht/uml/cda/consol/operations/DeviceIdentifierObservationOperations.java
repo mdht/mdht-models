@@ -508,8 +508,8 @@ public class DeviceIdentifierObservationOperations extends ClinicalStatementOper
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #validateDeviceIdentifierObservationIIExtension(DeviceIdentifierObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered NOT
+	 * @generated NOT
+	 * @ordered
 	 */
 	protected static final String VALIDATE_DEVICE_IDENTIFIER_OBSERVATION_II_EXTENSION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.value->excluding(null)->select(isNullFlavorUndefined())->reject( isNullFlavorDefined() or isDefined('extension') )";
 

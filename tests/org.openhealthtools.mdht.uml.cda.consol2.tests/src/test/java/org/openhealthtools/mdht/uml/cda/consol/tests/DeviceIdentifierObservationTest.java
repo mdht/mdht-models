@@ -9,6 +9,7 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.CD;
 import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
 import org.eclipse.mdht.uml.hl7.datatypes.II;
 import org.junit.Test;
@@ -112,7 +113,7 @@ public class DeviceIdentifierObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 
@@ -131,7 +132,8 @@ public class DeviceIdentifierObservationTest extends CDAValidationTest {
 			protected void updateToPass(DeviceIdentifierObservation target) {
 				target.init();
 
-				DatatypesFactory.eINSTANCE.createCD();
+				CD value = DatatypesFactory.eINSTANCE.createCD("C160939", "2.16.840.1.113883.3.26.1.1");
+				target.getValues().add(value);
 
 			}
 
