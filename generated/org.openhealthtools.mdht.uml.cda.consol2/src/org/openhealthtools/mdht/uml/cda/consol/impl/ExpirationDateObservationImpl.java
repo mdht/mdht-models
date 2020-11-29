@@ -86,6 +86,15 @@ public class ExpirationDateObservationImpl extends ObservationImpl implements Ex
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateExpirationDateObservationTSValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ExpirationDateObservationOperations.validateExpirationDateObservationTSValue(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public ExpirationDateObservation init() {
 		return Initializer.Util.init(this);
 	}

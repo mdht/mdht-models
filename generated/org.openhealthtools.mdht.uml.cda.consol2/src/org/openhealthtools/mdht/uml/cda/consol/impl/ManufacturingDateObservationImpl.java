@@ -59,6 +59,16 @@ public class ManufacturingDateObservationImpl extends ObservationImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateManufacturingDateObservationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ManufacturingDateObservationOperations.validateManufacturingDateObservationCodeP(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateManufacturingDateObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ManufacturingDateObservationOperations.validateManufacturingDateObservationCode(
 			this, diagnostics, context);
@@ -71,6 +81,17 @@ public class ManufacturingDateObservationImpl extends ObservationImpl implements
 	 */
 	public boolean validateManufacturingDateObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ManufacturingDateObservationOperations.validateManufacturingDateObservationValue(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateManufacturingDateObservationTSValue(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ManufacturingDateObservationOperations.validateManufacturingDateObservationTSValue(
 			this, diagnostics, context);
 	}
 

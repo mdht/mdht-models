@@ -108,7 +108,7 @@ public class ModelNumberObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 

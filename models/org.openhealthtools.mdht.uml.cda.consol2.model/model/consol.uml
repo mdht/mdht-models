@@ -2809,12 +2809,22 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
         <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_vvs5cSz_EeuxZ80rBBFFIQ" name="value" visibility="private" aggregation="composite">
-        <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_4ysYYD59Ed6cla2oXsPtlA"/>
+      <ownedAttribute xmi:id="_vvs5cSz_EeuxZ80rBBFFIQ" name="value" visibility="private" type="_WiHy4DIyEeuZ4JQfWCUcKA" aggregation="composite">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7qdbQCz_EeuxZ80rBBFFIQ" value="1"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7qc0MCz_EeuxZ80rBBFFIQ" value="1"/>
         <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
       </ownedAttribute>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_WiHy4DIyEeuZ4JQfWCUcKA" name="TS">
+        <generalization xmi:id="_WiIZ8DIyEeuZ4JQfWCUcKA">
+          <general xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_4ysYYD59Ed6cla2oXsPtlA"/>
+        </generalization>
+        <ownedAttribute xmi:id="_XCR5oDIyEeuZ4JQfWCUcKA" name="value" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://DATATYPES_MODEL/datatypes.uml#_CWZPMEWyEeC7E8_5Rmjcog"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KQXJgDI2EeuZ4JQfWCUcKA" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KQWicDI2EeuZ4JQfWCUcKA" value="1"/>
+          <redefinedProperty href="pathmap://DATATYPES_MODEL/datatypes.uml#_HXr2YD5_Ed6cla2oXsPtlA"/>
+        </ownedAttribute>
+      </nestedClassifier>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" href=".controlled/consol-UDI.uml#_YvpowC0AEeuxZ80rBBFFIQ"/>
     <packagedElement xmi:type="uml:Class" href=".controlled/consol-UDI.uml#_YK8jwC0BEeuxZ80rBBFFIQ"/>
@@ -4464,4 +4474,8 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
     <ruleId>CONF:4437-3467</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_PTsEoC0AEeuxZ80rBBFFIQ" base_Property="_vvs5cSz_EeuxZ80rBBFFIQ"/>
+  <CDA:PropertyValidation xmi:id="_Qe6TQDIyEeuZ4JQfWCUcKA" base_Property="_vvs5cCz_EeuxZ80rBBFFIQ"/>
+  <CDA:PropertyValidation xmi:id="_X_dTkDIyEeuZ4JQfWCUcKA" base_Property="_XCR5oDIyEeuZ4JQfWCUcKA">
+    <ruleId>CONF:4437-3461</ruleId>
+  </CDA:PropertyValidation>
 </xmi:XMI>

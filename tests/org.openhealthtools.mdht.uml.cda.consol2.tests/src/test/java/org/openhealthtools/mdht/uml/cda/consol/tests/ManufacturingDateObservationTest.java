@@ -10,6 +10,7 @@ import org.eclipse.emf.ecore.EObject;
 import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
 import org.eclipse.mdht.uml.hl7.datatypes.CD;
 import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+import org.eclipse.mdht.uml.hl7.datatypes.TS;
 import org.junit.Test;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.ManufacturingDateObservation;
@@ -24,8 +25,10 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.ManufacturingDateObser
  * The following operations are supported:
  * <ul>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ManufacturingDateObservation#validateManufacturingDateObservationTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Manufacturing Date Observation Template Id</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ManufacturingDateObservation#validateManufacturingDateObservationCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Manufacturing Date Observation Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ManufacturingDateObservation#validateManufacturingDateObservationCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Manufacturing Date Observation Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ManufacturingDateObservation#validateManufacturingDateObservationValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Manufacturing Date Observation Value</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ManufacturingDateObservation#validateManufacturingDateObservationTSValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Manufacturing Date Observation TS Value</em>}</li>
  * </ul>
  * </p>
  *
@@ -67,6 +70,41 @@ public class ManufacturingDateObservationTest extends CDAValidationTest {
 		};
 
 		validateManufacturingDateObservationTemplateIdTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateManufacturingDateObservationCodeP() {
+		OperationsTestCase<ManufacturingDateObservation> validateManufacturingDateObservationCodePTestCase = new OperationsTestCase<ManufacturingDateObservation>(
+			"validateManufacturingDateObservationCodeP", operationsForOCL.getOCLValue(
+				"VALIDATE_MANUFACTURING_DATE_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(ManufacturingDateObservation target) {
+
+			}
+
+			@Override
+			protected void updateToPass(ManufacturingDateObservation target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return ManufacturingDateObservationOperations.validateManufacturingDateObservationCodeP(
+					(ManufacturingDateObservation) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateManufacturingDateObservationCodePTestCase.doValidationTest();
 	}
 
 	/**
@@ -143,6 +181,44 @@ public class ManufacturingDateObservationTest extends CDAValidationTest {
 		};
 
 		validateManufacturingDateObservationValueTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+
+	public void testValidateManufacturingDateObservationTSValue() {
+		OperationsTestCase<ManufacturingDateObservation> validateManufacturingDateObservationTSValueTestCase = new OperationsTestCase<ManufacturingDateObservation>(
+			"validateManufacturingDateObservationTSValue", operationsForOCL.getOCLValue(
+				"VALIDATE_MANUFACTURING_DATE_OBSERVATION_TS_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(ManufacturingDateObservation target) {
+				TS value = DatatypesFactory.eINSTANCE.createTS();
+				target.getValues().add(value);
+			}
+
+			@Override
+			protected void updateToPass(ManufacturingDateObservation target) {
+				target.init();
+				target.getValues().clear();
+				TS value = DatatypesFactory.eINSTANCE.createTS("2020");
+				target.getValues().add(value);
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return ManufacturingDateObservationOperations.validateManufacturingDateObservationTSValue(
+					(ManufacturingDateObservation) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateManufacturingDateObservationTSValueTestCase.doValidationTest();
 	}
 
 	/**

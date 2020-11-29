@@ -218,7 +218,9 @@
   <CDA:PropertyValidation xmi:id="_uA2xAC0KEeuxZ80rBBFFIQ" base_Property="_2SAkUS0JEeuxZ80rBBFFIQ">
     <ruleId>CONF:4437-3482</ruleId>
   </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_wA254C0KEeuxZ80rBBFFIQ" base_Property="_2SAkUi0JEeuxZ80rBBFFIQ"/>
+  <CDA:PropertyValidation xmi:id="_wA254C0KEeuxZ80rBBFFIQ" base_Property="_2SAkUi0JEeuxZ80rBBFFIQ">
+    <ruleId>CONF:4437-3483</ruleId>
+  </CDA:PropertyValidation>
   <CDA:AssociationValidation xmi:id="_chqg0C0LEeuxZ80rBBFFIQ" base_Association="_967oEC0KEeuxZ80rBBFFIQ">
     <ruleId>CONF:4437-3488</ruleId>
   </CDA:AssociationValidation>
@@ -286,7 +288,9 @@
     <ruleId>CONF:4437-3378</ruleId>
     <ruleId>CONF:4437-3379</ruleId>
   </CDA:CodeSystemConstraint>
-  <CDA:PropertyValidation xmi:id="_tldMQCz7EeuxZ80rBBFFIQ" base_Property="_knRwUCz7EeuxZ80rBBFFIQ"/>
+  <CDA:PropertyValidation xmi:id="_tldMQCz7EeuxZ80rBBFFIQ" base_Property="_knRwUCz7EeuxZ80rBBFFIQ">
+    <ruleId>CONF:4437-3372</ruleId>
+  </CDA:PropertyValidation>
   <uml:Class xmi:id="_azjXACz8EeuxZ80rBBFFIQ" name="MRISafetyObservation">
     <generalization xmi:id="_azjXASz8EeuxZ80rBBFFIQ">
       <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
@@ -385,7 +389,9 @@
   <CDA:PropertyValidation xmi:id="_zkj1sC0AEeuxZ80rBBFFIQ" base_Property="_aduUIC0AEeuxZ80rBBFFIQ">
     <ruleId>CONF:4437-3451</ruleId>
   </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_rPTa8C0AEeuxZ80rBBFFIQ" base_Property="_aduUIS0AEeuxZ80rBBFFIQ"/>
+  <CDA:PropertyValidation xmi:id="_rPTa8C0AEeuxZ80rBBFFIQ" base_Property="_aduUIS0AEeuxZ80rBBFFIQ">
+    <ruleId>CONF:4437-3458</ruleId>
+  </CDA:PropertyValidation>
   <uml:Class xmi:id="_YK8jwC0BEeuxZ80rBBFFIQ" name="LatexSafetyObservation">
     <generalization xmi:id="_YK8jwS0BEeuxZ80rBBFFIQ">
       <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
@@ -416,9 +422,13 @@
     <ruleId>CONF:4437-3498</ruleId>
     <ruleId>CONF:4437-3499</ruleId>
   </CDA:CodeSystemConstraint>
-  <CDA:PropertyValidation xmi:id="_kH9IUC0BEeuxZ80rBBFFIQ" base_Property="_Y1hx0S0BEeuxZ80rBBFFIQ"/>
+  <CDA:PropertyValidation xmi:id="_kH9IUC0BEeuxZ80rBBFFIQ" base_Property="_Y1hx0S0BEeuxZ80rBBFFIQ">
+    <ruleId>CONF:4437-3493</ruleId>
+  </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_CXu5oC0CEeuxZ80rBBFFIQ" base_Property="_Y1hx0S0BEeuxZ80rBBFFIQ" uri="consol-vocab::LatexSafetyStatus">
     <reference href="pathmap://CONSOL_MODEL///consol-vocab.uml#_wqxIoC0BEeuxZ80rBBFFIQ"/>
+    <ruleId>CONF:4437-3500</ruleId>
+    <ruleId>CONF:4437-3501</ruleId>
   </CDA:ValueSetConstraint>
   <uml:Class xmi:id="_fdGGQC0CEeuxZ80rBBFFIQ" name="ImplantableDeviceStatusObservation">
     <generalization xmi:id="_fdGGQS0CEeuxZ80rBBFFIQ">
@@ -432,7 +442,7 @@
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_srNGUC0CEeuxZ80rBBFFIQ" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_srL4MC0CEeuxZ80rBBFFIQ" value="1"/>
-      <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_jZviAC0CEeuxZ80rBBFFIQ" base_Class="_fdGGQC0CEeuxZ80rBBFFIQ" templateId="2.16.840.1.113883.10.20.22.4.305" templateVersion="2019-06-21">
@@ -467,14 +477,28 @@
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_qP2owC0DEeuxZ80rBBFFIQ" name="value" visibility="private" aggregation="composite">
-      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_4ysYYD59Ed6cla2oXsPtlA"/>
+    <ownedAttribute xmi:id="_qP2owC0DEeuxZ80rBBFFIQ" name="value" visibility="private" type="_ZNUqUDIxEeuZ4JQfWCUcKA" aggregation="composite">
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NUAIAC0EEeuxZ80rBBFFIQ" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NT-S0C0EEeuxZ80rBBFFIQ" value="1"/>
-      <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_ZNUqUDIxEeuZ4JQfWCUcKA" name="TS">
+      <generalization xmi:id="_ZNUqUTIxEeuZ4JQfWCUcKA">
+        <general xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_4ysYYD59Ed6cla2oXsPtlA"/>
+      </generalization>
+      <ownedAttribute xmi:id="_Z6mAADIxEeuZ4JQfWCUcKA" name="value" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://DATATYPES_MODEL/datatypes.uml#_CWZPMEWyEeC7E8_5Rmjcog"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NZFJwDI9EeuZ4JQfWCUcKA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NZEisDI9EeuZ4JQfWCUcKA" value="1"/>
+        <redefinedProperty href="pathmap://DATATYPES_MODEL/datatypes.uml#_HXr2YD5_Ed6cla2oXsPtlA"/>
+      </ownedAttribute>
+    </nestedClassifier>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_uecJEC0DEeuxZ80rBBFFIQ" base_Class="_oDgF8C0DEeuxZ80rBBFFIQ" templateId="2.16.840.1.113883.10.20.22.4.309" templateVersion="2019-06-21"/>
+  <CDA:CDATemplate xmi:id="_uecJEC0DEeuxZ80rBBFFIQ" base_Class="_oDgF8C0DEeuxZ80rBBFFIQ" templateId="2.16.840.1.113883.10.20.22.4.309" templateVersion="2019-06-21">
+    <ruleId>CONF:4437-3393</ruleId>
+    <ruleId>CONF:4437-3396</ruleId>
+    <ruleId>CONF:4437-3397</ruleId>
+  </CDA:CDATemplate>
   <CDA:CodeSystemConstraint xmi:id="_xIvMIC0DEeuxZ80rBBFFIQ" code="C101670" displayName="Expiration Date" base_Property="_qP2BsC0DEeuxZ80rBBFFIQ">
     <reference href="pathmap://TERM_MODEL///CodeSystems.uml#_dWKSsaDqEd-dVeaMP0XXQw"/>
     <ruleId>CONF:4437-3398</ruleId>
@@ -484,7 +508,9 @@
   <CDA:PropertyValidation xmi:id="_9S0jYC0DEeuxZ80rBBFFIQ" base_Property="_qP2BsC0DEeuxZ80rBBFFIQ">
     <ruleId>CONF:4437-3394</ruleId>
   </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_iXvnkC0EEeuxZ80rBBFFIQ" base_Property="_qP2owC0DEeuxZ80rBBFFIQ"/>
+  <CDA:PropertyValidation xmi:id="_iXvnkC0EEeuxZ80rBBFFIQ" base_Property="_qP2owC0DEeuxZ80rBBFFIQ">
+    <ruleId>CONF:4437-3395</ruleId>
+  </CDA:PropertyValidation>
   <uml:Class xmi:id="_q-hQIC0EEeuxZ80rBBFFIQ" name="DistinctIdentificationCodeObservation">
     <generalization xmi:id="_q-hQIS0EEeuxZ80rBBFFIQ">
       <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
@@ -625,5 +651,8 @@
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_jPUocC0HEeuxZ80rBBFFIQ" base_Property="_EgT9cS0HEeuxZ80rBBFFIQ">
     <ruleId>CONF:4437-3449</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_bGYdsDIxEeuZ4JQfWCUcKA" base_Property="_Z6mAADIxEeuZ4JQfWCUcKA">
+    <ruleId>CONF:4437-3402</ruleId>
   </CDA:PropertyValidation>
 </xmi:XMI>

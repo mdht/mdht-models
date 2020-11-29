@@ -17,7 +17,8 @@ import org.eclipse.mdht.uml.cda.Observation;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getExpirationDateObservation()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ExpirationDateObservationTemplateId ExpirationDateObservationCode ExpirationDateObservationCodeP ExpirationDateObservationValue' templateId.root='2.16.840.1.113883.10.20.22.4.309' templateId.extension='2019-06-21' code.code='C101670' code.codeSystem='2.16.840.1.113883.3.26.1.1' code.codeSystemName='NCI Thesaurus' code.displayName='Expiration Date' constraints.validation.dependOn.ExpirationDateObservationCode='ExpirationDateObservationCodeP'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ExpirationDateObservationTemplateId ExpirationDateObservationCode ExpirationDateObservationCodeP ExpirationDateObservationValue ExpirationDateObservationTSValue' templateId.root='2.16.840.1.113883.10.20.22.4.309' templateId.extension='2019-06-21' code.code='C101670' code.codeSystem='2.16.840.1.113883.3.26.1.1' code.codeSystemName='NCI Thesaurus' code.displayName='Expiration Date' constraints.validation.dependOn.ExpirationDateObservationCode='ExpirationDateObservationCodeP' constraints.validation.query='ExpirationDateObservationTSValue'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolExpirationDateObservationTS constraints.validation.error='ExpirationDateObservationTSValue'"
  * @generated
  */
 public interface ExpirationDateObservation extends Observation {
@@ -68,6 +69,18 @@ public interface ExpirationDateObservation extends Observation {
 	 * @generated
 	 */
 	boolean validateExpirationDateObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.value-&gt;excluding(null)-&gt;select(isNullFlavorUndefined())-&gt;reject( ( isNullFlavorUndefined() implies (not value.oclIsUndefined() )))'"
+	 * @generated
+	 */
+	boolean validateExpirationDateObservationTSValue(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

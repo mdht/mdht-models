@@ -17,7 +17,8 @@ import org.eclipse.mdht.uml.cda.Observation;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getManufacturingDateObservation()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ManufacturingDateObservationTemplateId ManufacturingDateObservationCode ManufacturingDateObservationValue' templateId.root='2.16.840.1.113883.10.20.22.4.316' templateId.extension='2019-06' code.code='C101669' code.codeSystem='2.16.840.1.113883.3.26.1.1' code.codeSystemName='NCI Thesaurus' code.displayName='Manufacturing Date'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ManufacturingDateObservationTemplateId ManufacturingDateObservationCode ManufacturingDateObservationCodeP ManufacturingDateObservationValue ManufacturingDateObservationTSValue' templateId.root='2.16.840.1.113883.10.20.22.4.316' templateId.extension='2019-06' code.code='C101669' code.codeSystem='2.16.840.1.113883.3.26.1.1' code.codeSystemName='NCI Thesaurus' code.displayName='Manufacturing Date' constraints.validation.dependOn.ManufacturingDateObservationCode='ManufacturingDateObservationCodeP' constraints.validation.query='ManufacturingDateObservationTSValue'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolManufacturingDateObservationTS constraints.validation.error='ManufacturingDateObservationTSValue'"
  * @generated
  */
 public interface ManufacturingDateObservation extends Observation {
@@ -32,6 +33,18 @@ public interface ManufacturingDateObservation extends Observation {
 	 * @generated
 	 */
 	boolean validateManufacturingDateObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())'"
+	 * @generated
+	 */
+	boolean validateManufacturingDateObservationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -56,6 +69,18 @@ public interface ManufacturingDateObservation extends Observation {
 	 * @generated
 	 */
 	boolean validateManufacturingDateObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.value-&gt;excluding(null)-&gt;select(isNullFlavorUndefined())-&gt;reject( ( isNullFlavorUndefined() implies (not value.oclIsUndefined() )))'"
+	 * @generated
+	 */
+	boolean validateManufacturingDateObservationTSValue(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
