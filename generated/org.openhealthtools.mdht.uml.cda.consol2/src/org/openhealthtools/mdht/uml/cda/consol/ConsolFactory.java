@@ -2974,6 +2974,132 @@ public interface ConsolFactory extends EFactory {
 	ProvenanceAuthorParticipation createProvenanceAuthorParticipation();
 
 	/**
+	 * Returns a new object of class '<em>Serial Number Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Serial Number Observation</em>'.
+	 * @generated
+	 */
+	SerialNumberObservation createSerialNumberObservation();
+
+	/**
+	 * Returns a new object of class '<em>MRI Safety Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>MRI Safety Observation</em>'.
+	 * @generated
+	 */
+	MRISafetyObservation createMRISafetyObservation();
+
+	/**
+	 * Returns a new object of class '<em>Model Number Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Model Number Observation</em>'.
+	 * @generated
+	 */
+	ModelNumberObservation createModelNumberObservation();
+
+	/**
+	 * Returns a new object of class '<em>Manufacturing Date Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Manufacturing Date Observation</em>'.
+	 * @generated
+	 */
+	ManufacturingDateObservation createManufacturingDateObservation();
+
+	/**
+	 * Returns a new object of class '<em>Lot Or Batch Number Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Lot Or Batch Number Observation</em>'.
+	 * @generated
+	 */
+	LotOrBatchNumberObservation createLotOrBatchNumberObservation();
+
+	/**
+	 * Returns a new object of class '<em>Latex Safety Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Latex Safety Observation</em>'.
+	 * @generated
+	 */
+	LatexSafetyObservation createLatexSafetyObservation();
+
+	/**
+	 * Returns a new object of class '<em>Implantable Device Status Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Implantable Device Status Observation</em>'.
+	 * @generated
+	 */
+	ImplantableDeviceStatusObservation createImplantableDeviceStatusObservation();
+
+	/**
+	 * Returns a new object of class '<em>Expiration Date Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Expiration Date Observation</em>'.
+	 * @generated
+	 */
+	ExpirationDateObservation createExpirationDateObservation();
+
+	/**
+	 * Returns a new object of class '<em>Distinct Identification Code Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Distinct Identification Code Observation</em>'.
+	 * @generated
+	 */
+	DistinctIdentificationCodeObservation createDistinctIdentificationCodeObservation();
+
+	/**
+	 * Returns a new object of class '<em>Device Identifier Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Device Identifier Observation</em>'.
+	 * @generated
+	 */
+	DeviceIdentifierObservation createDeviceIdentifierObservation();
+
+	/**
+	 * Returns a new object of class '<em>Company Name Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Company Name Observation</em>'.
+	 * @generated
+	 */
+	CompanyNameObservation createCompanyNameObservation();
+
+	/**
+	 * Returns a new object of class '<em>Catalog Number Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Catalog Number Observation</em>'.
+	 * @generated
+	 */
+	CatalogNumberObservation createCatalogNumberObservation();
+
+	/**
+	 * Returns a new object of class '<em>Brand Name Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Brand Name Observation</em>'.
+	 * @generated
+	 */
+	BrandNameObservation createBrandNameObservation();
+
+	/**
+	 * Returns a new object of class '<em>UDI Organizer</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>UDI Organizer</em>'.
+	 * @generated
+	 */
+	UDIOrganizer createUDIOrganizer();
+
+	/**
 	 * Returns a new object of class '<em>Criticality Observation</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

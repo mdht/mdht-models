@@ -6735,6 +6735,286 @@ public class ConsolSwitch<T> {
 				}
 				return result;
 			}
+			case ConsolPackage.SERIAL_NUMBER_OBSERVATION: {
+				SerialNumberObservation serialNumberObservation = (SerialNumberObservation) theEObject;
+				T result = caseSerialNumberObservation(serialNumberObservation);
+				if (result == null) {
+					result = caseObservation(serialNumberObservation);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(serialNumberObservation);
+				}
+				if (result == null) {
+					result = caseAct(serialNumberObservation);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(serialNumberObservation);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.MRI_SAFETY_OBSERVATION: {
+				MRISafetyObservation mriSafetyObservation = (MRISafetyObservation) theEObject;
+				T result = caseMRISafetyObservation(mriSafetyObservation);
+				if (result == null) {
+					result = caseObservation(mriSafetyObservation);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(mriSafetyObservation);
+				}
+				if (result == null) {
+					result = caseAct(mriSafetyObservation);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(mriSafetyObservation);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.MODEL_NUMBER_OBSERVATION: {
+				ModelNumberObservation modelNumberObservation = (ModelNumberObservation) theEObject;
+				T result = caseModelNumberObservation(modelNumberObservation);
+				if (result == null) {
+					result = caseObservation(modelNumberObservation);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(modelNumberObservation);
+				}
+				if (result == null) {
+					result = caseAct(modelNumberObservation);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(modelNumberObservation);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.MANUFACTURING_DATE_OBSERVATION: {
+				ManufacturingDateObservation manufacturingDateObservation = (ManufacturingDateObservation) theEObject;
+				T result = caseManufacturingDateObservation(manufacturingDateObservation);
+				if (result == null) {
+					result = caseObservation(manufacturingDateObservation);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(manufacturingDateObservation);
+				}
+				if (result == null) {
+					result = caseAct(manufacturingDateObservation);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(manufacturingDateObservation);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.LOT_OR_BATCH_NUMBER_OBSERVATION: {
+				LotOrBatchNumberObservation lotOrBatchNumberObservation = (LotOrBatchNumberObservation) theEObject;
+				T result = caseLotOrBatchNumberObservation(lotOrBatchNumberObservation);
+				if (result == null) {
+					result = caseObservation(lotOrBatchNumberObservation);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(lotOrBatchNumberObservation);
+				}
+				if (result == null) {
+					result = caseAct(lotOrBatchNumberObservation);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(lotOrBatchNumberObservation);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.LATEX_SAFETY_OBSERVATION: {
+				LatexSafetyObservation latexSafetyObservation = (LatexSafetyObservation) theEObject;
+				T result = caseLatexSafetyObservation(latexSafetyObservation);
+				if (result == null) {
+					result = caseObservation(latexSafetyObservation);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(latexSafetyObservation);
+				}
+				if (result == null) {
+					result = caseAct(latexSafetyObservation);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(latexSafetyObservation);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.IMPLANTABLE_DEVICE_STATUS_OBSERVATION: {
+				ImplantableDeviceStatusObservation implantableDeviceStatusObservation = (ImplantableDeviceStatusObservation) theEObject;
+				T result = caseImplantableDeviceStatusObservation(implantableDeviceStatusObservation);
+				if (result == null) {
+					result = caseObservation(implantableDeviceStatusObservation);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(implantableDeviceStatusObservation);
+				}
+				if (result == null) {
+					result = caseAct(implantableDeviceStatusObservation);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(implantableDeviceStatusObservation);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.EXPIRATION_DATE_OBSERVATION: {
+				ExpirationDateObservation expirationDateObservation = (ExpirationDateObservation) theEObject;
+				T result = caseExpirationDateObservation(expirationDateObservation);
+				if (result == null) {
+					result = caseObservation(expirationDateObservation);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(expirationDateObservation);
+				}
+				if (result == null) {
+					result = caseAct(expirationDateObservation);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(expirationDateObservation);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.DISTINCT_IDENTIFICATION_CODE_OBSERVATION: {
+				DistinctIdentificationCodeObservation distinctIdentificationCodeObservation = (DistinctIdentificationCodeObservation) theEObject;
+				T result = caseDistinctIdentificationCodeObservation(distinctIdentificationCodeObservation);
+				if (result == null) {
+					result = caseObservation(distinctIdentificationCodeObservation);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(distinctIdentificationCodeObservation);
+				}
+				if (result == null) {
+					result = caseAct(distinctIdentificationCodeObservation);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(distinctIdentificationCodeObservation);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.DEVICE_IDENTIFIER_OBSERVATION: {
+				DeviceIdentifierObservation deviceIdentifierObservation = (DeviceIdentifierObservation) theEObject;
+				T result = caseDeviceIdentifierObservation(deviceIdentifierObservation);
+				if (result == null) {
+					result = caseObservation(deviceIdentifierObservation);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(deviceIdentifierObservation);
+				}
+				if (result == null) {
+					result = caseAct(deviceIdentifierObservation);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(deviceIdentifierObservation);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.COMPANY_NAME_OBSERVATION: {
+				CompanyNameObservation companyNameObservation = (CompanyNameObservation) theEObject;
+				T result = caseCompanyNameObservation(companyNameObservation);
+				if (result == null) {
+					result = caseObservation(companyNameObservation);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(companyNameObservation);
+				}
+				if (result == null) {
+					result = caseAct(companyNameObservation);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(companyNameObservation);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.CATALOG_NUMBER_OBSERVATION: {
+				CatalogNumberObservation catalogNumberObservation = (CatalogNumberObservation) theEObject;
+				T result = caseCatalogNumberObservation(catalogNumberObservation);
+				if (result == null) {
+					result = caseObservation(catalogNumberObservation);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(catalogNumberObservation);
+				}
+				if (result == null) {
+					result = caseAct(catalogNumberObservation);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(catalogNumberObservation);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.BRAND_NAME_OBSERVATION: {
+				BrandNameObservation brandNameObservation = (BrandNameObservation) theEObject;
+				T result = caseBrandNameObservation(brandNameObservation);
+				if (result == null) {
+					result = caseObservation(brandNameObservation);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(brandNameObservation);
+				}
+				if (result == null) {
+					result = caseAct(brandNameObservation);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(brandNameObservation);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.UDI_ORGANIZER: {
+				UDIOrganizer udiOrganizer = (UDIOrganizer) theEObject;
+				T result = caseUDIOrganizer(udiOrganizer);
+				if (result == null) {
+					result = caseOrganizer(udiOrganizer);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(udiOrganizer);
+				}
+				if (result == null) {
+					result = caseAct(udiOrganizer);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(udiOrganizer);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
 			default:
 				return defaultCase(theEObject);
 		}
@@ -11614,6 +11894,216 @@ public class ConsolSwitch<T> {
 	 * @generated
 	 */
 	public T caseProvenanceAuthorParticipation(ProvenanceAuthorParticipation object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Serial Number Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Serial Number Observation</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseSerialNumberObservation(SerialNumberObservation object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>MRI Safety Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>MRI Safety Observation</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseMRISafetyObservation(MRISafetyObservation object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Model Number Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Model Number Observation</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseModelNumberObservation(ModelNumberObservation object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Manufacturing Date Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Manufacturing Date Observation</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseManufacturingDateObservation(ManufacturingDateObservation object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Lot Or Batch Number Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Lot Or Batch Number Observation</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseLotOrBatchNumberObservation(LotOrBatchNumberObservation object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Latex Safety Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Latex Safety Observation</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseLatexSafetyObservation(LatexSafetyObservation object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Implantable Device Status Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Implantable Device Status Observation</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseImplantableDeviceStatusObservation(ImplantableDeviceStatusObservation object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Expiration Date Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Expiration Date Observation</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseExpirationDateObservation(ExpirationDateObservation object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Distinct Identification Code Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Distinct Identification Code Observation</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseDistinctIdentificationCodeObservation(DistinctIdentificationCodeObservation object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Device Identifier Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Device Identifier Observation</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseDeviceIdentifierObservation(DeviceIdentifierObservation object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Company Name Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Company Name Observation</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseCompanyNameObservation(CompanyNameObservation object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Catalog Number Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Catalog Number Observation</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseCatalogNumberObservation(CatalogNumberObservation object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Brand Name Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Brand Name Observation</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseBrandNameObservation(BrandNameObservation object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>UDI Organizer</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>UDI Organizer</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseUDIOrganizer(UDIOrganizer object) {
 		return null;
 	}
 
