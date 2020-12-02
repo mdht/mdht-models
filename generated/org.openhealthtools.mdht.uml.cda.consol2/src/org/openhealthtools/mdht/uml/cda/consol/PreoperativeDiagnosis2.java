@@ -18,6 +18,7 @@ import org.eclipse.mdht.emf.runtime.util.Initializer;
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getPreoperativeDiagnosis2()
  * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='PreoperativeDiagnosis2TemplateId PreoperativeDiagnosisCode PreoperativeDiagnosisCodeP PreoperativeDiagnosisProblemObservation' templateId.root='2.16.840.1.113883.10.20.22.4.65' templateId.extension='2015-08-01' constraints.validation.dependOn.PreoperativeDiagnosisCode='PreoperativeDiagnosisCodeP'"
+ *        annotation="duplicates"
  * @generated
  */
 public interface PreoperativeDiagnosis2 extends PreoperativeDiagnosis {

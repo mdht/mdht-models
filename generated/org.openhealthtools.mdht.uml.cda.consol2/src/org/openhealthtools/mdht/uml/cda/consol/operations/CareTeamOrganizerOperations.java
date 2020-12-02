@@ -6,8 +6,10 @@ import java.util.Collection;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
+import org.eclipse.emf.common.util.BasicEList;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
+import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClassifier;
 
 import org.eclipse.emf.ecore.EObject;
@@ -43,8 +45,8 @@ import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
  * <ul>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CareTeamOrganizer#validateCareTeamOrganizerTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Team Organizer Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CareTeamOrganizer#validateCareTeamOrganizerId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Team Organizer Id</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CareTeamOrganizer#validateCareTeamOrganizerCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Team Organizer Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CareTeamOrganizer#validateCareTeamOrganizerCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Team Organizer Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CareTeamOrganizer#validateCareTeamOrganizerCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Team Organizer Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CareTeamOrganizer#validateCareTeamOrganizerStatusCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Team Organizer Status Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CareTeamOrganizer#validateCareTeamOrganizerStatusCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Team Organizer Status Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CareTeamOrganizer#validateCareTeamOrganizerEffectiveTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Team Organizer Effective Time</em>}</li>
@@ -60,7 +62,7 @@ import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CareTeamOrganizer#validateCareTeamOrganizerIVLTSHigh(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Team Organizer IVLTS High</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CareTeamOrganizer#getNoteActivity() <em>Get Note Activity</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CareTeamOrganizer#getCareTeamTypeObservation() <em>Get Care Team Type Observation</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CareTeamOrganizer#getCareTeamMemberAct() <em>Get Care Team Member Act</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CareTeamOrganizer#getCareTeamMemberActs() <em>Get Care Team Member Acts</em>}</li>
  * </ul>
  * </p>
  *
@@ -157,7 +159,7 @@ public class CareTeamOrganizerOperations extends OrganizerOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_CARE_TEAM_ORGANIZER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (not self.id->isEmpty())";
+	protected static final String VALIDATE_CARE_TEAM_ORGANIZER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (( not self.id->isEmpty()) )";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateCareTeamOrganizerId(CareTeamOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Team Organizer Id</em>}' invariant operation.
@@ -215,27 +217,6 @@ public class CareTeamOrganizerOperations extends OrganizerOperations {
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateCareTeamOrganizerCodeP(CareTeamOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Team Organizer Code P</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateCareTeamOrganizerCodeP(CareTeamOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_CARE_TEAM_ORGANIZER_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateCareTeamOrganizerCodeP(CareTeamOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Team Organizer Code P</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateCareTeamOrganizerCodeP(CareTeamOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-
-	protected static ThreadLocal<Constraint> VALIDATE_CARE_TEAM_ORGANIZER_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
-
-	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
@@ -274,19 +255,6 @@ public class CareTeamOrganizerOperations extends OrganizerOperations {
 						new Object[] { careTeamOrganizer }));
 			}
 
-			if (context != null) {
-				// generate a pass token for my dependent constraints to short-circuit or filter results
-				@SuppressWarnings("unchecked")
-				Collection<Object> passToken = (Collection<Object>) context.get(
-					"org.openhealthtools.mdht.uml.cda.consol.CareTeamOrganizerCodeP");
-				if (passToken == null) {
-					// anticipate a reasonably healthy model
-					passToken = new java.util.ArrayList<Object>(3);
-					context.put("org.openhealthtools.mdht.uml.cda.consol.CareTeamOrganizerCodeP", passToken);
-				}
-				passToken.add(careTeamOrganizer);
-			}
-
 			return false;
 		}
 		return true;
@@ -315,6 +283,27 @@ public class CareTeamOrganizerOperations extends OrganizerOperations {
 	protected static ThreadLocal<Constraint> VALIDATE_CARE_TEAM_ORGANIZER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
+	 * The cached OCL expression body for the '{@link #validateCareTeamOrganizerCodeP(CareTeamOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Team Organizer Code P</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateCareTeamOrganizerCodeP(CareTeamOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_CARE_TEAM_ORGANIZER_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateCareTeamOrganizerCodeP(CareTeamOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Team Organizer Code P</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateCareTeamOrganizerCodeP(CareTeamOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static ThreadLocal<Constraint> VALIDATE_CARE_TEAM_ORGANIZER_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+
+	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
@@ -327,14 +316,6 @@ public class CareTeamOrganizerOperations extends OrganizerOperations {
 
 	public static boolean validateCareTeamOrganizerCode(CareTeamOrganizer careTeamOrganizer,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		Object passToken = (context == null)
-				? null
-				: context.get("org.openhealthtools.mdht.uml.cda.consol.CareTeamOrganizerCodeP");
-		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(careTeamOrganizer)) {
-			// I have a free pass to short-circuit
-			return true;
-		}
 
 		DatatypesUtil.increment(context, "CareTeamOrganizerCareTeamOrganizerCode", "ERROR");
 
@@ -991,7 +972,7 @@ public class CareTeamOrganizerOperations extends OrganizerOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_CARE_TEAM_ORGANIZER_CARE_TEAM_MEMBER_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.component->one(component : cda::Component4 | not component.act.oclIsUndefined() and component.act.oclIsKindOf(consol::CareTeamMemberAct))";
+	protected static final String VALIDATE_CARE_TEAM_ORGANIZER_CARE_TEAM_MEMBER_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.component->exists(component : cda::Component4 | not component.act.oclIsUndefined() and component.act.oclIsKindOf(consol::CareTeamMemberAct))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateCareTeamOrganizerCareTeamMemberAct(CareTeamOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Team Organizer Care Team Member Act</em>}' invariant operation.
@@ -1352,24 +1333,24 @@ public class CareTeamOrganizerOperations extends OrganizerOperations {
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getCareTeamMemberAct(CareTeamOrganizer) <em>Get Care Team Member Act</em>}' operation.
+	 * The cached OCL expression body for the '{@link #getCareTeamMemberActs(CareTeamOrganizer) <em>Get Care Team Member Acts</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getCareTeamMemberAct(CareTeamOrganizer)
+	 * @see #getCareTeamMemberActs(CareTeamOrganizer)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_CARE_TEAM_MEMBER_ACT__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::CareTeamMemberAct))->asSequence()->any(true).oclAsType(consol::CareTeamMemberAct)";
+	protected static final String GET_CARE_TEAM_MEMBER_ACTS__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::CareTeamMemberAct)).oclAsType(consol::CareTeamMemberAct)";
 
 	/**
-	 * The cached OCL query for the '{@link #getCareTeamMemberAct(CareTeamOrganizer) <em>Get Care Team Member Act</em>}' query operation.
+	 * The cached OCL query for the '{@link #getCareTeamMemberActs(CareTeamOrganizer) <em>Get Care Team Member Acts</em>}' query operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getCareTeamMemberAct(CareTeamOrganizer)
+	 * @see #getCareTeamMemberActs(CareTeamOrganizer)
 	 * @generated
 	 * @ordered
 	 */
-	protected static OCLExpression<EClassifier> GET_CARE_TEAM_MEMBER_ACT__EOCL_QRY;
+	protected static OCLExpression<EClassifier> GET_CARE_TEAM_MEMBER_ACTS__EOCL_QRY;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1377,23 +1358,25 @@ public class CareTeamOrganizerOperations extends OrganizerOperations {
 	 * @generated
 	 */
 
-	public static CareTeamMemberAct getCareTeamMemberAct(CareTeamOrganizer careTeamOrganizer) {
+	public static EList<CareTeamMemberAct> getCareTeamMemberActs(CareTeamOrganizer careTeamOrganizer) {
 
-		if (GET_CARE_TEAM_MEMBER_ACT__EOCL_QRY == null) {
+		if (GET_CARE_TEAM_MEMBER_ACTS__EOCL_QRY == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.CARE_TEAM_ORGANIZER,
 				ConsolPackage.Literals.CARE_TEAM_ORGANIZER.getEAllOperations().get(71));
 			try {
-				GET_CARE_TEAM_MEMBER_ACT__EOCL_QRY = helper.createQuery(GET_CARE_TEAM_MEMBER_ACT__EOCL_EXP);
+				GET_CARE_TEAM_MEMBER_ACTS__EOCL_QRY = helper.createQuery(GET_CARE_TEAM_MEMBER_ACTS__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 
-		OCL.Query query = EOCL_ENV.get().createQuery(GET_CARE_TEAM_MEMBER_ACT__EOCL_QRY);
-		return (CareTeamMemberAct) query.evaluate(careTeamOrganizer);
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_CARE_TEAM_MEMBER_ACTS__EOCL_QRY);
+		@SuppressWarnings("unchecked")
+		Collection<CareTeamMemberAct> result = (Collection<CareTeamMemberAct>) query.evaluate(careTeamOrganizer);
+		return new BasicEList.UnmodifiableEList<CareTeamMemberAct>(result.size(), result.toArray());
 	}
 
 } // CareTeamOrganizerOperations

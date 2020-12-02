@@ -17,6 +17,7 @@ import org.eclipse.mdht.emf.runtime.util.Initializer;
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getMedicationDispense2()
  * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='MedicationDispense2TemplateId MedicationDispenseContainsMedicationOrImmunization MedicationDispenseStatusCode MedicationDispenseStatusCodeP' templateId.root='2.16.840.1.113883.10.20.22.4.18' templateId.extension='2014-06-09' constraints.validation.info='MedicationDispense2ContainsMedicationInformation2 MedicationDispense2ContainsImmunizationMedicationInformation2 MedicationDispenseMedicationSupplyOrder' constraints.validation.dependOn.MedicationDispenseStatusCode='MedicationDispenseStatusCodeP' constraints.validation.warning='MedicationDispenseRepeatNumber'"
+ *        annotation="duplicates"
  * @generated
  */
 public interface MedicationDispense2 extends MedicationDispense {

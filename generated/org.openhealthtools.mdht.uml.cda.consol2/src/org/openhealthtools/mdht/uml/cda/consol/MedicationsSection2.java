@@ -17,6 +17,7 @@ import org.eclipse.mdht.emf.runtime.util.Initializer;
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getMedicationsSection2()
  * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='MedicationsSectionEntriesOptionalTemplateId MedicationsSectionEntriesOptionalCode MedicationsSectionEntriesOptionalCodeP MedicationsSection2Title MedicationsSection2Text MedicationsSectionEntriesOptionalMedicationActivity' templateId.root='2.16.840.1.113883.10.20.22.2.1.1' templateId.extension='2014-06-09' nullFlavor='NI' constraints.validation.info='MedicationsSection2NullFlavor' constraints.validation.dependOn.MedicationsSectionEntriesOptionalCode='MedicationsSectionEntriesOptionalCodeP'"
+ *        annotation="duplicates"
  * @generated
  */
 public interface MedicationsSection2 extends MedicationsSectionEntriesOptional2 {

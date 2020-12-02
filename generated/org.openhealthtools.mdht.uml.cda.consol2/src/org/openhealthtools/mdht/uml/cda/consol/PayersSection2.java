@@ -18,6 +18,7 @@ import org.eclipse.mdht.emf.runtime.util.Initializer;
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getPayersSection2()
  * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='PayersSection2TemplateId PayersSectionCode PayersSectionCodeP' templateId.root='2.16.840.1.113883.10.20.22.2.18' templateId.extension='2015-08-01' constraints.validation.dependOn.PayersSectionCode='PayersSectionCodeP' constraints.validation.warning='PayersSectionCoverageActivity'"
+ *        annotation="duplicates"
  * @generated
  */
 public interface PayersSection2 extends PayersSection {

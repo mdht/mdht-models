@@ -17,6 +17,7 @@ import org.eclipse.mdht.emf.runtime.util.Initializer;
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getVitalSignObservation2()
  * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='VitalSignObservation2TemplateId VitalSignObservationEffectiveTime VitalSignObservationValue VitalSignObservationText VitalSignObservationInterpretationCode VitalSignObservationAuthor' templateId.root='2.16.840.1.113883.10.20.22.4.27' templateId.extension='2014-06-09' constraints.validation.info='VitalSignObservationTextReference VitalSignObservationReferenceValue VitalSignObservationTextReferenceValue VitalSignObservationInterpretationCodeP' interpretationCode.codeSystem='2.16.840.1.113883.5.83' interpretationCode.codeSystemName='ObservationInterpretation' constraints.validation.dependOn.VitalSignObservationInterpretationCode='VitalSignObservationInterpretationCodeP' constraints.validation.warning='VitalSignObservation2AuthorParticipation'"
+ *        annotation="duplicates"
  * @generated
  */
 public interface VitalSignObservation2 extends VitalSignObservation {

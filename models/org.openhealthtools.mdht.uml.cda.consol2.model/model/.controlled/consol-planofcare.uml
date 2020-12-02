@@ -2631,7 +2631,7 @@ MethodCode SHALL NOT conflict with the method inherent in Procedure / code.</bod
     <ruleId>CONF:1098-32088</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:ValueSetConstraint xmi:id="_NlzeYOgVEeO-iJTuAv7BKQ" base_Property="_NrQ4GegTEeO-iJTuAv7BKQ">
-    <reference href="pathmap://CONSOL_MODEL/consol-vocab.uml#_2H150RSVEeGGzu7fmW9pXw"/>
+    <reference href="../consol-vocab.uml#_2H150RSVEeGGzu7fmW9pXw"/>
     <ruleId>CONF:1098-32067</ruleId>
     <ruleId>DSTU:1276</ruleId>
   </CDA:ValueSetConstraint>
@@ -3316,7 +3316,7 @@ When used in a document that does not include a Goals Section, the Plan of Treat
     <ruleId>CONF:1098-31069</ruleId>
   </CDA:EntryRelationship>
   <CDA:ValueSetConstraint xmi:id="_X6AF4MafEeSY-qHOFt9wVQ" base_Property="_X5-3wMafEeSY-qHOFt9wVQ">
-    <reference href="pathmap://CONSOL_MODEL/consol-vocab.uml#_kX95d_8pEeS4jrgU1p4iug"/>
+    <reference href="../consol-vocab.uml#_kX95d_8pEeS4jrgU1p4iug"/>
     <ruleId>CONF:1098-8565</ruleId>
     <ruleId>DSTU:1047</ruleId>
   </CDA:ValueSetConstraint>
@@ -4488,7 +4488,7 @@ A Risk Concern Act represents a health concern that is a risk. A risk is a clini
   <CDA:Inline xmi:id="_oOpQ0FPKEeieWreClOUydw" base_Class="_l_PaAFPKEeieWreClOUydw"/>
   <CDA:PropertyValidation xmi:id="_rsX78FPKEeieWreClOUydw" severity="WARNING" base_Property="_mY2z4FPKEeieWreClOUydw"/>
   <CDA:ValueSetConstraint xmi:id="_sJPeIFPKEeieWreClOUydw" base_Property="_mY2z4FPKEeieWreClOUydw">
-    <reference href="pathmap://CONSOL_MODEL/consol-vocab.uml#_8VEfQD2fEeiFfJtNAawVHw"/>
+    <reference href="../consol-vocab.uml#_8VEfQD2fEeiFfJtNAawVHw"/>
     <ruleId>CONF:1098-32952</ruleId>
     <ruleId>DSTU:1276</ruleId>
   </CDA:ValueSetConstraint>
@@ -4498,19 +4498,19 @@ A Risk Concern Act represents a health concern that is a risk. A risk is a clini
     </generalization>
     <ownedAttribute xmi:id="_8pLRUAmUEeut3_ZvYAZhww" name="id" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8pLRUQmUEeut3_ZvYAZhww"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8pLRUgmUEeut3_ZvYAZhww" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_gScqoSzmEeu0qLzLs4h0DQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_gScqoCzmEeu0qLzLs4h0DQ" value="*"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_FHobYEocEd6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_8pL4YAmUEeut3_ZvYAZhww" name="statusCode" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8pL4YQmUEeut3_ZvYAZhww"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8pL4YgmUEeut3_ZvYAZhww" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_eiB14SzmEeu0qLzLs4h0DQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_eiB14CzmEeu0qLzLs4h0DQ" value="1"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_Q0j8kEocEd6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_8pL4YwmUEeut3_ZvYAZhww" name="effectiveTime" visibility="private" type="_fLSagAmVEeut3_ZvYAZhww" aggregation="composite">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8pL4ZAmUEeut3_ZvYAZhww"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8pL4ZQmUEeut3_ZvYAZhww" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hQNTYSzmEeu0qLzLs4h0DQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hQNTYCzmEeu0qLzLs4h0DQ" value="1"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_hbddYEocEd6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_8pL4ZgmUEeut3_ZvYAZhww" name="classCode" visibility="private">
@@ -4534,16 +4534,16 @@ A Risk Concern Act represents a health concern that is a risk. A risk is a clini
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_ZqOVgUxoEd6h-an5IXo-DA"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_QL9oMAvJEeuHK5c-vnh5Wg" name="careTeamMemberScheduleObservation" type="_yf1BYAvGEeuHK5c-vnh5Wg" association="_QL9oMwvJEeuHK5c-vnh5Wg">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QL9oMQvJEeuHK5c-vnh5Wg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QL9oMgvJEeuHK5c-vnh5Wg" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_sbkusS9OEeuSkcbYSul7WA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_sbkusC9OEeuSkcbYSul7WA" value="1"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_5E-DABMREeuSZb_3V465dg" name="noteActivity" type="_hBwkAAmBEeut3_ZvYAZhww" association="_5E-qEhMREeuSZb_3V465dg">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5E-qEBMREeuSZb_3V465dg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5E-qERMREeuSZb_3V465dg" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_tLbeUS9OEeuSkcbYSul7WA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tLbeUC9OEeuSkcbYSul7WA" value="1"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_Zt2ZsBMSEeuSZb_3V465dg" name="participant2" type="_b8yWcBMSEeuSZb_3V465dg" association="_Zt2ZsxMSEeuSZb_3V465dg">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Zt2ZsRMSEeuSZb_3V465dg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Zt2ZshMSEeuSZb_3V465dg" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_t6iAAS9OEeuSkcbYSul7WA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_t6iAAC9OEeuSkcbYSul7WA" value="1"/>
     </ownedAttribute>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_fLSagAmVEeut3_ZvYAZhww" name="IVLTS">
       <generalization xmi:id="_fLTBkAmVEeut3_ZvYAZhww">
@@ -4551,8 +4551,8 @@ A Risk Concern Act represents a health concern that is a risk. A risk is a clini
       </generalization>
       <ownedAttribute xmi:id="_f5eWMAmVEeut3_ZvYAZhww" name="low" visibility="private" aggregation="composite">
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_BY5uUD6AEd6cla2oXsPtlA"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_f5eWMQmVEeut3_ZvYAZhww"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_f5eWMgmVEeut3_ZvYAZhww" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_mjvCgSzmEeu0qLzLs4h0DQ" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_mjvCgCzmEeu0qLzLs4h0DQ" value="1"/>
         <redefinedProperty href="pathmap://DATATYPES_MODEL/datatypes.uml#_fmxbID6AEd6cla2oXsPtlA"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_f5eWMwmVEeut3_ZvYAZhww" name="high" visibility="private" aggregation="composite">
@@ -4584,8 +4584,8 @@ A Risk Concern Act represents a health concern that is a risk. A risk is a clini
       </ownedAttribute>
       <ownedAttribute xmi:id="_SpqQgAmWEeut3_ZvYAZhww" name="sDTCFunctionCode" visibility="private" aggregation="composite">
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_SpqQgQmWEeut3_ZvYAZhww"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SpqQggmWEeut3_ZvYAZhww" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_jHqkQSzmEeu0qLzLs4h0DQ" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jHqkQCzmEeu0qLzLs4h0DQ" value="1"/>
         <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_h6Q8kF-aEeia4fKTb08hoA"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_ZGcwkBMUEeuSZb_3V465dg" name="participantRole" visibility="private" type="_aRAfMBMUEeuSZb_3V465dg" aggregation="composite">
@@ -4600,8 +4600,8 @@ A Risk Concern Act represents a health concern that is a risk. A risk is a clini
         </generalization>
         <ownedAttribute xmi:id="_az5w4BMUEeuSZb_3V465dg" name="nullFlavor" visibility="private">
           <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__yyDSUDcEd6xYZuu1VKCVw"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_az5w4RMUEeuSZb_3V465dg"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_az5w4hMUEeuSZb_3V465dg" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lWBSMCzmEeu0qLzLs4h0DQ" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lWArICzmEeu0qLzLs4h0DQ" value="1"/>
           <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_fSVT-ExwEd6h-an5IXo-DA"/>
         </ownedAttribute>
       </nestedClassifier>
@@ -4652,7 +4652,7 @@ A Risk Concern Act represents a health concern that is a risk. A risk is a clini
     <ruleId>CONF:4435-167</ruleId>
   </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_mQ6ZYAmVEeut3_ZvYAZhww" base_Property="_klYEoAmVEeut3_ZvYAZhww" uri="consol-vocab::CareTeamMemberFunction">
-    <reference href="pathmap://CONSOL_MODEL/consol-vocab.uml#_ojbOkAmVEeut3_ZvYAZhww"/>
+    <reference href="../consol-vocab.uml#_ojbOkAmVEeut3_ZvYAZhww"/>
     <ruleId>CONF:4435-161</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_3NE_kAmVEeut3_ZvYAZhww" base_Property="_klYEoAmVEeut3_ZvYAZhww">
@@ -4678,14 +4678,14 @@ A Risk Concern Act represents a health concern that is a risk. A risk is a clini
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_4BU7EAvGEeuHK5c-vnh5Wg" name="text" visibility="private" type="_FS_wAAvIEeuHK5c-vnh5Wg" aggregation="composite">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4BU7EQvGEeuHK5c-vnh5Wg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4BU7EgvGEeuHK5c-vnh5Wg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_pwJUISzmEeu0qLzLs4h0DQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_pwJUICzmEeu0qLzLs4h0DQ" value="1"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_bHcUEEo8Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_4BViIAvGEeuHK5c-vnh5Wg" name="value" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_4ysYYD59Ed6cla2oXsPtlA"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_AWT5EQzEEeuzkrfERpFDKQ"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_AWT5EAzEEeuzkrfERpFDKQ" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ql2NECzmEeu0qLzLs4h0DQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ql1mACzmEeu0qLzLs4h0DQ" value="1"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_4BWwQAvGEeuHK5c-vnh5Wg" name="classCode" visibility="private">
@@ -4700,8 +4700,8 @@ A Risk Concern Act represents a health concern that is a risk. A risk is a clini
     </ownedAttribute>
     <ownedAttribute xmi:id="_k7A8EAvHEeuHK5c-vnh5Wg" name="statusCode" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_k7A8EQvHEeuHK5c-vnh5Wg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_k7A8EgvHEeuHK5c-vnh5Wg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oYC4wCzmEeu0qLzLs4h0DQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oYCRsCzmEeu0qLzLs4h0DQ" value="1"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_c-D3cEo8Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_FS_wAAvIEeuHK5c-vnh5Wg" name="ED">
@@ -4719,8 +4719,8 @@ A Risk Concern Act represents a health concern that is a risk. A risk is a clini
         </generalization>
         <ownedAttribute xmi:id="_LDtxcAvIEeuHK5c-vnh5Wg" name="value" visibility="private">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_LDtxcQvIEeuHK5c-vnh5Wg"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_LDtxcgvIEeuHK5c-vnh5Wg" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_sdrRYSzmEeu0qLzLs4h0DQ" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_sdrRYCzmEeu0qLzLs4h0DQ" value="1"/>
           <redefinedProperty href="pathmap://DATATYPES_MODEL/datatypes.uml#_TBfLED5_Ed6cla2oXsPtlA"/>
         </ownedAttribute>
       </nestedClassifier>
@@ -4762,14 +4762,14 @@ A Risk Concern Act represents a health concern that is a risk. A risk is a clini
     </generalization>
     <ownedAttribute xmi:id="_ICj6sAdAEeu0W_grHCxLsQ" name="id" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ICj6sQdAEeu0W_grHCxLsQ"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ICj6sgdAEeu0W_grHCxLsQ" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xZnm8SzmEeu0qLzLs4h0DQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xZnm8CzmEeu0qLzLs4h0DQ" value="*"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_G_dccErcEd6FXKclYGEDCw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_IClI0AdAEeu0W_grHCxLsQ" name="code" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_IClI0QdAEeu0W_grHCxLsQ"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_IClI0gdAEeu0W_grHCxLsQ" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_uo39oCzmEeu0qLzLs4h0DQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_uo3WkCzmEeu0qLzLs4h0DQ" value="1"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_JKfJkErcEd6FXKclYGEDCw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_IClI0wdAEeu0W_grHCxLsQ" name="statusCode" visibility="private" aggregation="composite">
@@ -4777,8 +4777,8 @@ A Risk Concern Act represents a health concern that is a risk. A risk is a clini
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_SaXZgErcEd6FXKclYGEDCw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_IClI1AdAEeu0W_grHCxLsQ" name="effectiveTime" visibility="private" type="_ZD3iwAdEEeu6cuZQ8fwlvQ" aggregation="composite">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_IClI1QdAEeu0W_grHCxLsQ"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_IClI1gdAEeu0W_grHCxLsQ" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vWhGwSzmEeu0qLzLs4h0DQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vWhGwCzmEeu0qLzLs4h0DQ" value="1"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_VIaUIErcEd6FXKclYGEDCw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_IClI1wdAEeu0W_grHCxLsQ" name="classCode" visibility="private">
@@ -4811,8 +4811,8 @@ A Risk Concern Act represents a health concern that is a risk. A risk is a clini
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_C_n_gAzWEeuzkrfERpFDKQ" value="1"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_IuCeEAvJEeuHK5c-vnh5Wg" name="careTeamMemberAct" type="_zwKpQAmUEeut3_ZvYAZhww" association="_IuCeEwvJEeuHK5c-vnh5Wg">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DyAesQzWEeuzkrfERpFDKQ"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DyAesAzWEeuzkrfERpFDKQ" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2wVjES9OEeuSkcbYSul7WA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2wVjEC9OEeuSkcbYSul7WA" value="*"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_6w4o8A2EEeuzkrfERpFDKQ" name="author" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="consol-other.uml#_7jqj4KrlEeOxqJAXCMXUYg"/>
@@ -4827,8 +4827,8 @@ A Risk Concern Act represents a health concern that is a risk. A risk is a clini
       </generalization>
       <ownedAttribute xmi:id="_Zz4qcAdEEeu6cuZQ8fwlvQ" name="low" visibility="private" aggregation="composite">
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_BY5uUD6AEd6cla2oXsPtlA"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Zz4qcQdEEeu6cuZQ8fwlvQ"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Zz4qcgdEEeu6cuZQ8fwlvQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-5RC8CzmEeu0qLzLs4h0DQ" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-5Qb4CzmEeu0qLzLs4h0DQ" value="1"/>
         <redefinedProperty href="pathmap://DATATYPES_MODEL/datatypes.uml#_fmxbID6AEd6cla2oXsPtlA"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_Zz5RgAdEEeu6cuZQ8fwlvQ" name="high" visibility="private" aggregation="composite">
@@ -4849,8 +4849,8 @@ A Risk Concern Act represents a health concern that is a risk. A risk is a clini
       </ownedAttribute>
       <ownedAttribute xmi:id="_-xhBkAdJEeu6cuZQ8fwlvQ" name="sDTCFunctionCode" visibility="private" aggregation="composite">
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-xhBkQdJEeu6cuZQ8fwlvQ"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-xhBkgdJEeu6cuZQ8fwlvQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7_qYkSzmEeu0qLzLs4h0DQ" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7_qYkCzmEeu0qLzLs4h0DQ" value="1"/>
         <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_h6Q8kF-aEeia4fKTb08hoA"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_-xhBkwdJEeu6cuZQ8fwlvQ" name="participantRole" visibility="private" type="_EuiZoAdKEeu6cuZQ8fwlvQ" aggregation="composite">
@@ -4865,8 +4865,8 @@ A Risk Concern Act represents a health concern that is a risk. A risk is a clini
         </generalization>
         <ownedAttribute xmi:id="_FvhVgAdKEeu6cuZQ8fwlvQ" name="id" visibility="private" aggregation="composite">
           <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FvhVgQdKEeu6cuZQ8fwlvQ"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FvhVggdKEeu6cuZQ8fwlvQ" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9DvrwCzmEeu0qLzLs4h0DQ" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9DvEsCzmEeu0qLzLs4h0DQ" value="*"/>
           <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_KfydsEreEd6FXKclYGEDCw"/>
         </ownedAttribute>
       </nestedClassifier>
@@ -4892,8 +4892,8 @@ A Risk Concern Act represents a health concern that is a risk. A risk is a clini
         </generalization>
         <ownedAttribute xmi:id="_j2o6EAdKEeu6cuZQ8fwlvQ" name="id" visibility="private" aggregation="composite">
           <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_j2o6EQdKEeu6cuZQ8fwlvQ"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_j2o6EgdKEeu6cuZQ8fwlvQ" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_159loSzmEeu0qLzLs4h0DQ" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_159loCzmEeu0qLzLs4h0DQ" value="*"/>
           <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_KfydsEreEd6FXKclYGEDCw"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_j2phIAdKEeu6cuZQ8fwlvQ" name="addr" visibility="private" aggregation="composite">
@@ -4909,8 +4909,8 @@ A Risk Concern Act represents a health concern that is a risk. A risk is a clini
           <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_VObxsEreEd6FXKclYGEDCw"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_j2qIMAdKEeu6cuZQ8fwlvQ" name="playingEntity" visibility="private" type="_k7uS0AdKEeu6cuZQ8fwlvQ" aggregation="composite">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_j2qIMQdKEeu6cuZQ8fwlvQ"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_j2qIMgdKEeu6cuZQ8fwlvQ" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2hF3ESzmEeu0qLzLs4h0DQ" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2hF3ECzmEeu0qLzLs4h0DQ" value="1"/>
           <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_1ZUk4UoaEd6c3qsAxlFHaQ"/>
           <association href="../consol.uml#_j2qIMwdKEeu6cuZQ8fwlvQ"/>
         </ownedAttribute>
@@ -4920,14 +4920,14 @@ A Risk Concern Act represents a health concern that is a risk. A risk is a clini
           </generalization>
           <ownedAttribute xmi:id="_nGdFAAdKEeu6cuZQ8fwlvQ" name="name" visibility="private" aggregation="composite">
             <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_3VD9wD5yEd6cla2oXsPtlA"/>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nGdFAQdKEeu6cuZQ8fwlvQ"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nGdFAgdKEeu6cuZQ8fwlvQ" value="*"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UBCt8CznEeu0qLzLs4h0DQ" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UBCG4CznEeu0qLzLs4h0DQ" value="*"/>
             <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_OQPJIErhEd6FXKclYGEDCw"/>
           </ownedAttribute>
           <ownedAttribute xmi:id="_nGdsEAdKEeu6cuZQ8fwlvQ" name="classCode" visibility="private">
             <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__yoL-EDcEd6xYZuu1VKCVw"/>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nGdsEQdKEeu6cuZQ8fwlvQ"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nGdsEgdKEeu6cuZQ8fwlvQ" value="1"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5JcZYCzmEeu0qLzLs4h0DQ" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5JbyUCzmEeu0qLzLs4h0DQ" value="1"/>
             <defaultValue xmi:type="uml:InstanceValue" xmi:id="_nGdsEwdKEeu6cuZQ8fwlvQ" name="ENT">
               <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__yoL-EDcEd6xYZuu1VKCVw"/>
               <instance xmi:type="uml:EnumerationLiteral" href="pathmap://VOCAB_MODEL/vocab.uml#__yoL-UDcEd6xYZuu1VKCVw"/>
@@ -4969,7 +4969,7 @@ A Risk Concern Act represents a health concern that is a risk. A risk is a clini
     <ruleId>CONF:4435-113</ruleId>
   </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_FotxoAdEEeu6cuZQ8fwlvQ" base_Property="_IClI0wdAEeu0W_grHCxLsQ" uri="consol-vocab::ActStatus">
-    <reference href="pathmap://CONSOL_MODEL/consol-vocab.uml#_SdFiQeHGEeO04sHNODkHmQ"/>
+    <reference href="../consol-vocab.uml#_SdFiQeHGEeO04sHNODkHmQ"/>
     <ruleId>CONF:4435-119</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_foMycAdEEeu6cuZQ8fwlvQ" base_Property="_IClI1AdAEeu0W_grHCxLsQ">
@@ -5005,20 +5005,20 @@ A Risk Concern Act represents a health concern that is a risk. A risk is a clini
     </generalization>
     <ownedAttribute xmi:id="_FCkJ4Ac_Eeu0W_grHCxLsQ" name="code" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FCkJ4Qc_Eeu0W_grHCxLsQ"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FCkJ4gc_Eeu0W_grHCxLsQ" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_AZEo0CznEeu0qLzLs4h0DQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_AZEBwCznEeu0qLzLs4h0DQ" value="1"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_9lgCcErmEd6FXKclYGEDCw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_FCl_EAc_Eeu0W_grHCxLsQ" name="title" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FCl_EQc_Eeu0W_grHCxLsQ"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FCl_Egc_Eeu0W_grHCxLsQ" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_A6G5USznEeu0qLzLs4h0DQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_A6G5UCznEeu0qLzLs4h0DQ" value="1"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_AP-EoErnEd6FXKclYGEDCw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_FCmmIAc_Eeu0W_grHCxLsQ" name="text" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_0jvq8E8AEd6ohP_YEXs4Wg"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FCmmIQc_Eeu0W_grHCxLsQ"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FCnNMAc_Eeu0W_grHCxLsQ" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_BdQCoSznEeu0qLzLs4h0DQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_BdQCoCznEeu0qLzLs4h0DQ" value="1"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_vJtnoEAMEd6wZe6nFLrjsw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_zMX0AA2XEeuzkrfERpFDKQ" name="careTeamOrganizer" type="_aigdQAc_Eeu0W_grHCxLsQ" association="_zMYbEg2XEeuzkrfERpFDKQ">
@@ -5047,9 +5047,8 @@ A Risk Concern Act represents a health concern that is a risk. A risk is a clini
     </ownedAttribute>
     <ownedAttribute xmi:id="_6wiC8QdKEeu6cuZQ8fwlvQ" name="statusCode" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6wiC8gdKEeu6cuZQ8fwlvQ"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6wiC8wdKEeu6cuZQ8fwlvQ" value="1"/>
-      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_c-D3cEo8Ed6c3qsAxlFHaQ"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_El5OkSznEeu0qLzLs4h0DQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_El5OkCznEeu0qLzLs4h0DQ" value="1"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_6wiC9AdKEeu6cuZQ8fwlvQ" name="value" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
@@ -5080,7 +5079,7 @@ A Risk Concern Act represents a health concern that is a risk. A risk is a clini
     <ruleId>4435-107</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:ValueSetConstraint xmi:id="_apFI4AdLEeu6cuZQ8fwlvQ" base_Property="_6wiC9AdKEeu6cuZQ8fwlvQ" uri="consol-vocab::CareTeamCategory">
-    <reference href="pathmap://CONSOL_MODEL/consol-vocab.uml#_MPemEAdLEeu6cuZQ8fwlvQ"/>
+    <reference href="../consol-vocab.uml#_MPemEAdLEeu6cuZQ8fwlvQ"/>
     <ruleId>4435-109</ruleId>
   </CDA:ValueSetConstraint>
   <uml:Class xmi:id="_hBwkAAmBEeut3_ZvYAZhww" name="NoteActivity">
@@ -5092,14 +5091,14 @@ A Risk Concern Act represents a health concern that is a risk. A risk is a clini
     </ownedAttribute>
     <ownedAttribute xmi:id="_p-cyMAmBEeut3_ZvYAZhww" name="text" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_CowXkDxaEd6JwqSGecoePg"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_p-cyMQmBEeut3_ZvYAZhww"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_p-cyMgmBEeut3_ZvYAZhww" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HHnkcSznEeu0qLzLs4h0DQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HHnkcCznEeu0qLzLs4h0DQ" value="1"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_Njf0cEocEd6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_p-dZQAmBEeut3_ZvYAZhww" name="statusCode" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_p-dZQQmBEeut3_ZvYAZhww"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_p-dZQgmBEeut3_ZvYAZhww" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Hvv7cSznEeu0qLzLs4h0DQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Hvv7cCznEeu0qLzLs4h0DQ" value="1"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_Q0j8kEocEd6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_p-dZQwmBEeut3_ZvYAZhww" name="effectiveTime" visibility="private" type="_Qsq6AAmDEeut3_ZvYAZhww" aggregation="composite">
@@ -5119,8 +5118,8 @@ A Risk Concern Act represents a health concern that is a risk. A risk is a clini
     </ownedAttribute>
     <ownedAttribute xmi:id="_p-dZSAmBEeut3_ZvYAZhww" name="author" visibility="private" aggregation="composite" association="_p-fOcAmBEeut3_ZvYAZhww">
       <type xmi:type="uml:Class" href="consol-other.uml#_7jqj4KrlEeOxqJAXCMXUYg"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_p-eAUAmBEeut3_ZvYAZhww"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_p-eAUQmBEeut3_ZvYAZhww" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1DqfwSnFEeu-dLKWjq3_MQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1DqfwCnFEeu-dLKWjq3_MQ" value="*"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_Dbo-AUxpEd6h-an5IXo-DA"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_p-fOcgmBEeut3_ZvYAZhww" name="participant" visibility="private" type="_knhe4AmDEeut3_ZvYAZhww" aggregation="composite" association="_p-gckAmBEeut3_ZvYAZhww">
@@ -5150,8 +5149,8 @@ A Risk Concern Act represents a health concern that is a risk. A risk is a clini
       </generalization>
       <ownedAttribute xmi:id="_RNa2oAmDEeut3_ZvYAZhww" name="value" visibility="private">
         <type xmi:type="uml:PrimitiveType" href="pathmap://DATATYPES_MODEL/datatypes.uml#_CWZPMEWyEeC7E8_5Rmjcog"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_57hBAQ2hEeuzkrfERpFDKQ" value="1"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_57hBAA2hEeuzkrfERpFDKQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KgasQSznEeu0qLzLs4h0DQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KgasQCznEeu0qLzLs4h0DQ" value="1"/>
         <redefinedProperty href="pathmap://DATATYPES_MODEL/datatypes.uml#_HXr2YD5_Ed6cla2oXsPtlA"/>
       </ownedAttribute>
     </nestedClassifier>
@@ -5161,8 +5160,8 @@ A Risk Concern Act represents a health concern that is a risk. A risk is a clini
       </generalization>
       <ownedAttribute xmi:id="_ny0WMAmDEeut3_ZvYAZhww" name="time" visibility="private" aggregation="composite">
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ny0WMQmDEeut3_ZvYAZhww"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ny0WMgmDEeut3_ZvYAZhww" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_VrZ-ACznEeu0qLzLs4h0DQ" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_VrZW8CznEeu0qLzLs4h0DQ" value="1"/>
         <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_vWA0AErdEd6FXKclYGEDCw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_ny0WMwmDEeut3_ZvYAZhww" name="typeCode" visibility="private">
@@ -5182,8 +5181,8 @@ A Risk Concern Act represents a health concern that is a risk. A risk is a clini
         </generalization>
         <ownedAttribute xmi:id="_vmEQEAmDEeut3_ZvYAZhww" name="id" visibility="private" aggregation="composite">
           <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vmEQEQmDEeut3_ZvYAZhww"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vmEQEgmDEeut3_ZvYAZhww" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XDWoYCznEeu0qLzLs4h0DQ" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_XDWBUCznEeu0qLzLs4h0DQ" value="*"/>
           <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_KfydsEreEd6FXKclYGEDCw"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_vmE3IAmDEeut3_ZvYAZhww" name="playingEntity" visibility="private" type="_4L628BMYEeuSZb_3V465dg" aggregation="composite">
@@ -5198,8 +5197,8 @@ A Risk Concern Act represents a health concern that is a risk. A risk is a clini
           </generalization>
           <ownedAttribute xmi:id="_7U72UBMYEeuSZb_3V465dg" name="name1" visibility="private" aggregation="composite">
             <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_3VD9wD5yEd6cla2oXsPtlA"/>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7U72URMYEeuSZb_3V465dg"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7U72UhMYEeuSZb_3V465dg" value="*"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YlyEcSznEeu0qLzLs4h0DQ" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YlyEcCznEeu0qLzLs4h0DQ" value="*"/>
             <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_OQPJIErhEd6FXKclYGEDCw"/>
           </ownedAttribute>
         </nestedClassifier>
@@ -5210,8 +5209,8 @@ A Risk Concern Act represents a health concern that is a risk. A risk is a clini
         <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_NDnXkEcIEd6besF9iFIJkQ"/>
       </generalization>
       <ownedAttribute xmi:id="_VZwpUAmFEeut3_ZvYAZhww" name="externalDocument" visibility="private" type="_WuK3gAmFEeut3_ZvYAZhww" aggregation="composite">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_VZwpUQmFEeut3_ZvYAZhww"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_VZwpUgmFEeut3_ZvYAZhww" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Z747wSznEeu0qLzLs4h0DQ" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Z747wCznEeu0qLzLs4h0DQ" value="1"/>
         <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_ST8BsEcIEd6besF9iFIJkQ"/>
         <association href="../consol.uml#_VZxQYAmFEeut3_ZvYAZhww"/>
       </ownedAttribute>
@@ -5221,8 +5220,8 @@ A Risk Concern Act represents a health concern that is a risk. A risk is a clini
         </generalization>
         <ownedAttribute xmi:id="_YKtuAAmFEeut3_ZvYAZhww" name="id" visibility="private" aggregation="composite">
           <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YKtuAQmFEeut3_ZvYAZhww"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YKtuAgmFEeut3_ZvYAZhww" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fwFH8CznEeu0qLzLs4h0DQ" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fwEg4CznEeu0qLzLs4h0DQ" value="*"/>
           <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_efn_kEo2Ed6c3qsAxlFHaQ"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_YKuVEAmFEeut3_ZvYAZhww" name="code" visibility="private" aggregation="composite">
@@ -5269,7 +5268,7 @@ A Risk Concern Act represents a health concern that is a risk. A risk is a clini
     <ruleId>3250-16900</ruleId>
   </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_9VRngAmCEeut3_ZvYAZhww" base_Property="_8H_8EAmCEeut3_ZvYAZhww" uri="consol-vocab::NoteTypes">
-    <reference href="pathmap://CONSOL_MODEL/consol-vocab.uml#_HJ8cAAmCEeut3_ZvYAZhww"/>
+    <reference href="../consol-vocab.uml#_HJ8cAAmCEeut3_ZvYAZhww"/>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="__QLN8AmCEeut3_ZvYAZhww" severity="WARNING" base_Property="_8H_8EAmCEeut3_ZvYAZhww"/>
   <CDA:PropertyValidation xmi:id="_SgBuAAmDEeut3_ZvYAZhww" severity="WARNING" base_Property="_RNa2oAmDEeut3_ZvYAZhww">

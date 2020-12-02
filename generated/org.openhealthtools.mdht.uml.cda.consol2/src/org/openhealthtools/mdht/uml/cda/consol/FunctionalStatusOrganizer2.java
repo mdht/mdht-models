@@ -18,6 +18,7 @@ import org.eclipse.mdht.emf.runtime.util.Initializer;
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getFunctionalStatusOrganizer2()
  * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='FunctionalStatusOrganizer2TemplateId ResultOrganizerCode ResultOrganizerStatusCode ResultOrganizerStatusCodeP FunctionalStatusResultOrganizerFunctionalStatusResultObservation FunctionalStatusOrganizer2SelfCareActivities' templateId.root='2.16.840.1.113883.10.20.22.4.66' templateId.extension='2014-06-09' constraints.validation.warning='ResultOrganizerCodeValue FunctionalStatusOrganizer2AuthorParticipation' constraints.validation.dependOn.ResultOrganizerStatusCode='ResultOrganizerStatusCodeP'"
+ *        annotation="duplicates"
  * @generated
  */
 public interface FunctionalStatusOrganizer2 extends FunctionalStatusResultOrganizer {

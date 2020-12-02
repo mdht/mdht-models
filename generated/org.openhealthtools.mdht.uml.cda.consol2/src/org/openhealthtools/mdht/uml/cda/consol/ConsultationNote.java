@@ -23,6 +23,7 @@ import org.eclipse.mdht.emf.runtime.util.Initializer;
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolConsultationNoteComponentOfEncompassingEncounter2EncounterParticipant constraints.validation.error='ConsultationNoteComponentOfEncompassingEncounter2EncounterParticipantAssignedEntityHasPersonOrganizationOrBoth ConsultationNoteComponentOfEncompassingEncounter2EncounterParticipantAssignedEntity'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolConsultationNoteInFulfillmentOf constraints.validation.error='ConsultationNoteInFulfillmentOfOrder'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolConsultationNoteInFulfillmentOfOrder constraints.validation.error='ConsultationNoteInFulfillmentOfOrderId'"
+ *        annotation="duplicates"
  * @generated
  */
 public interface ConsultationNote extends GeneralHeaderConstraints {

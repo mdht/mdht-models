@@ -1828,15 +1828,7 @@ Used to enumerate the relationships between two clinical documents for document 
       <ownedLiteral xmi:id="_2HlFYAdLEeu6cuZQ8fwlvQ" name="LA28866-4"/>
       <ownedLiteral xmi:id="_3ifkMAdLEeu6cuZQ8fwlvQ" name="LA28867-2"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_HJ708AmCEeut3_ZvYAZhww" name="NoteTypes">
-      <ownedLiteral xmi:id="_VTctUAmCEeut3_ZvYAZhww" name="11488-4"/>
-      <ownedLiteral xmi:id="_ZZOP4AmCEeut3_ZvYAZhww" name="11490-0"/>
-      <ownedLiteral xmi:id="_comV8AmCEeut3_ZvYAZhww" name="11492-6"/>
-      <ownedLiteral xmi:id="_ffBwgAmCEeut3_ZvYAZhww" name="11504-8"/>
-      <ownedLiteral xmi:id="_iudg8AmCEeut3_ZvYAZhww" name="11505-5"/>
-      <ownedLiteral xmi:id="_kcUJ4AmCEeut3_ZvYAZhww" name="11506-3"/>
-      <ownedLiteral xmi:id="_nSd3oAmCEeut3_ZvYAZhww" name="11507-1"/>
-    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_HJ708AmCEeut3_ZvYAZhww" name="NoteTypes"/>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_ojangAmVEeut3_ZvYAZhww" name="CareTeamMemberFunction"/>
     <profileApplication xmi:id="_2B97WxSVEeGGzu7fmW9pXw">
       <eAnnotations xmi:id="_2B97XBSVEeGGzu7fmW9pXw" source="http://www.eclipse.org/uml2/2.0.0/UML">
@@ -3436,13 +3428,6 @@ Used to enumerate the relationships between two clinical documents for document 
   <term:ValueSetVersion xmi:id="_HJ8cAAmCEeut3_ZvYAZhww" identifier="2.16.840.1.113883.11.20.9.68" version="20191017" fullName="Note Types" url="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.11.20.9.68/expansion" base_Enumeration="_HJ708AmCEeut3_ZvYAZhww">
     <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
-  <term:ValueSetCode xmi:id="_VTdUYAmCEeut3_ZvYAZhww" conceptName="Consult note" base_EnumerationLiteral="_VTctUAmCEeut3_ZvYAZhww"/>
-  <term:ValueSetCode xmi:id="_ZZOP4QmCEeut3_ZvYAZhww" conceptName="Physician Discharge summary" base_EnumerationLiteral="_ZZOP4AmCEeut3_ZvYAZhww"/>
-  <term:ValueSetCode xmi:id="_comV8QmCEeut3_ZvYAZhww" conceptName="Provider-unspecifed, History and physical note" base_EnumerationLiteral="_comV8AmCEeut3_ZvYAZhww"/>
-  <term:ValueSetCode xmi:id="_ffCXkAmCEeut3_ZvYAZhww" conceptName="Surgical operation note" base_EnumerationLiteral="_ffBwgAmCEeut3_ZvYAZhww"/>
-  <term:ValueSetCode xmi:id="_iueIAAmCEeut3_ZvYAZhww" conceptName="Physician procedure note" base_EnumerationLiteral="_iudg8AmCEeut3_ZvYAZhww"/>
-  <term:ValueSetCode xmi:id="_kcUJ4QmCEeut3_ZvYAZhww" conceptName="Progress note" base_EnumerationLiteral="_kcUJ4AmCEeut3_ZvYAZhww"/>
-  <term:ValueSetCode xmi:id="_nSd3oQmCEeut3_ZvYAZhww" conceptName="Occupational therapy Progress note" base_EnumerationLiteral="_nSd3oAmCEeut3_ZvYAZhww"/>
   <term:ValueSetVersion xmi:id="_ojbOkAmVEeut3_ZvYAZhww" identifier="2.16.840.1.113762.1.4.1099.30" version="20191016." fullName="Care Team Member Function" url="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1099.30/expansion" base_Enumeration="_ojangAmVEeut3_ZvYAZhww">
     <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>

@@ -19,6 +19,7 @@ import org.eclipse.mdht.emf.runtime.util.Initializer;
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getDischargeMedication2()
  * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='DischargeMedication2TemplateId DischargeMedicationCode DischargeMedicationCodeP DischargeMedication2StatusCode DischargeMedication2StatusCodeP DischargeMedicationMedicationActivity DischargeMedication2CDTranslation DischargeMedication2CDTranslationP' templateId.root='2.16.840.1.113883.10.20.22.4.35' templateId.extension='2016-03-01' constraints.validation.dependOn.DischargeMedicationCode='DischargeMedicationCodeP' statusCode.code='completed' constraints.validation.query='DischargeMedication2CDTranslation DischargeMedication2CDTranslationP'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolDischargeMedication2CD translation.code='75311-1' translation.codeSystem='2.16.840.1.113883.6.1' translation.codeSystemName='LOINC' translation.displayName='Discharge medication' constraints.validation.error='DischargeMedication2CDTranslation DischargeMedication2CDTranslationP'"
+ *        annotation="duplicates"
  * @generated
  */
 public interface DischargeMedication2 extends DischargeMedication {

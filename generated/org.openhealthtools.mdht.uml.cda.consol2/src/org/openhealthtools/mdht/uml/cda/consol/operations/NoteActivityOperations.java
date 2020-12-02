@@ -908,7 +908,7 @@ public class NoteActivityOperations extends ClinicalStatementOperations {
 	 */
 	protected static final String VALIDATE_NOTE_ACTIVITY_CD_TRANSLATION1__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.code->excluding(null)->select(isNullFlavorUndefined())->reject( ( isNullFlavorUndefined() implies ((translation->isEmpty() or translation->exists(element | element.isNullFlavorUndefined())) implies (translation->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and " +
 			"let value : datatypes::CD = element.oclAsType(datatypes::CD) in " +
-			"value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = '11488-4' or value.code = '11490-0' or value.code = '11492-6' or value.code = '11504-8' or value.code = '11505-5' or value.code = '11506-3' or value.code = '11507-1'))) )))";
+			"value.codeSystem = '2.16.840.1.113883.6.1' and not value.code.oclIsUndefined())) )))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateNoteActivityCDTranslation1(NoteActivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Note Activity CD Translation1</em>}' invariant operation.

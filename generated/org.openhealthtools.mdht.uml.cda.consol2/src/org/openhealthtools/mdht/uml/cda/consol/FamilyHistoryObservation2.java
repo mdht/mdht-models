@@ -18,6 +18,7 @@ import org.eclipse.mdht.emf.runtime.util.Initializer;
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getFamilyHistoryObservation2()
  * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='FamilyHistoryObservation2TemplateId FamilyHistoryObservationCodeP FamilyHistoryObservation2CDTranslationP' templateId.root='2.16.840.1.113883.10.20.22.4.46' templateId.extension='2015-08-01' code.codeSystem='2.16.840.1.113883.6.96' code.codeSystemName='SNOMEDCT' constraints.validation.warning='FamilyHistoryObservationCode FamilyHistoryObservation2CDTranslation' constraints.validation.dependOn.FamilyHistoryObservationCode='FamilyHistoryObservationCodeP' constraints.validation.query='FamilyHistoryObservation2CDTranslation FamilyHistoryObservation2CDTranslationP'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolFamilyHistoryObservation2CD translation.codeSystem='2.16.840.1.113883.6.1' translation.codeSystemName='LOINC' constraints.validation.warning='FamilyHistoryObservation2CDTranslation' constraints.validation.error='FamilyHistoryObservation2CDTranslationP'"
+ *        annotation="duplicates"
  * @generated
  */
 public interface FamilyHistoryObservation2 extends FamilyHistoryObservation {
