@@ -17,6 +17,7 @@ import org.eclipse.mdht.emf.runtime.util.Initializer;
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getPostprocedureDiagnosisSection2()
  * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='PostprocedureDiagnosisSection2TemplateId PostprocedureDiagnosisSectionCode PostprocedureDiagnosisSectionCodeP' templateId.root='2.16.840.1.113883.10.20.22.2.36' templateId.extension='2015-08-01' constraints.validation.dependOn.PostprocedureDiagnosisSectionCode='PostprocedureDiagnosisSectionCodeP' constraints.validation.warning='PostprocedureDiagnosisSectionPostprocedureDiagnosis'"
+ *        annotation="duplicates"
  * @generated
  */
 public interface PostprocedureDiagnosisSection2 extends PostprocedureDiagnosisSection {

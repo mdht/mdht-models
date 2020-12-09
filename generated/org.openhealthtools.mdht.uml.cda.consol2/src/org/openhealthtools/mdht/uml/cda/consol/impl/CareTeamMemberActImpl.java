@@ -7,8 +7,6 @@ import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
 
@@ -183,8 +181,8 @@ public class CareTeamMemberActImpl extends ActImpl implements CareTeamMemberAct 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<CareTeamMemberScheduleObservation> getCareTeamMemberScheduleObservations() {
-		return CareTeamMemberActOperations.getCareTeamMemberScheduleObservations(this);
+	public CareTeamMemberScheduleObservation getCareTeamMemberScheduleObservation() {
+		return CareTeamMemberActOperations.getCareTeamMemberScheduleObservation(this);
 	}
 
 	/**
@@ -192,8 +190,8 @@ public class CareTeamMemberActImpl extends ActImpl implements CareTeamMemberAct 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<NoteActivity> getNoteActivities() {
-		return CareTeamMemberActOperations.getNoteActivities(this);
+	public NoteActivity getNoteActivity() {
+		return CareTeamMemberActOperations.getNoteActivity(this);
 	}
 
 	/**

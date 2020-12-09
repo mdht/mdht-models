@@ -19,6 +19,7 @@ import org.eclipse.mdht.emf.runtime.util.Initializer;
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getMentalStatusOrganizer2()
  * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='MentalStatusOrganizer2TemplateId MentalStatusOrganizer2HasCodeOrEffectiveTime ResultOrganizerCode ResultOrganizerResultObservation MentalStatusOrganizer2CDCode' templateId.root='2.16.840.1.113883.10.20.22.4.75' templateId.extension='2015-08-01' constraints.validation.warning='CognitiveStatusResultOrganizerCodeCodeSystem MentalStatusOrganizer2EffectiveTime' constraints.validation.query='MentalStatusOrganizer2CDCode'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolMentalStatusOrganizer2CD constraints.validation.error='MentalStatusOrganizer2CDCode'"
+ *        annotation="duplicates"
  * @generated
  */
 public interface MentalStatusOrganizer2 extends CognitiveStatusResultOrganizer {

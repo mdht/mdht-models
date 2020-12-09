@@ -28,8 +28,8 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.CareTeamOrganizerOpera
  * <ul>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CareTeamOrganizer#validateCareTeamOrganizerTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Team Organizer Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CareTeamOrganizer#validateCareTeamOrganizerId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Team Organizer Id</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CareTeamOrganizer#validateCareTeamOrganizerCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Team Organizer Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CareTeamOrganizer#validateCareTeamOrganizerCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Team Organizer Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CareTeamOrganizer#validateCareTeamOrganizerCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Team Organizer Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CareTeamOrganizer#validateCareTeamOrganizerStatusCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Team Organizer Status Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CareTeamOrganizer#validateCareTeamOrganizerStatusCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Team Organizer Status Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CareTeamOrganizer#validateCareTeamOrganizerEffectiveTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Team Organizer Effective Time</em>}</li>
@@ -45,7 +45,7 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.CareTeamOrganizerOpera
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CareTeamOrganizer#validateCareTeamOrganizerIVLTSHigh(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Team Organizer IVLTS High</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CareTeamOrganizer#getNoteActivity() <em>Get Note Activity</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CareTeamOrganizer#getCareTeamTypeObservation() <em>Get Care Team Type Observation</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CareTeamOrganizer#getCareTeamMemberAct() <em>Get Care Team Member Act</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CareTeamOrganizer#getCareTeamMemberActs() <em>Get Care Team Member Acts</em>}</li>
  * </ul>
  * </p>
  *
@@ -181,13 +181,6 @@ public class CareTeamOrganizerTest extends CDAValidationTest {
 			protected void updateToPass(CareTeamOrganizer target) {
 				target.init();
 
-			}
-
-			@Override
-			protected void setDependency(CareTeamOrganizer target) {
-				Collection<Object> passToken = new java.util.ArrayList<Object>(3);
-				passToken.add(target);
-				map.put("org.openhealthtools.mdht.uml.cda.consol.CareTeamOrganizerCodeP", passToken);
 			}
 
 			@Override
@@ -393,8 +386,8 @@ public class CareTeamOrganizerTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
-	* @Test NOT
+	* @generated NOT
+	* @Test
 	*/
 
 	@Test
@@ -720,10 +713,10 @@ public class CareTeamOrganizerTest extends CDAValidationTest {
 	*/
 	@Test
 
-	public void testGetCareTeamMemberAct() {
+	public void testGetCareTeamMemberActs() {
 
 		CareTeamOrganizer target = objectFactory.create();
-		target.getCareTeamMemberAct();
+		target.getCareTeamMemberActs();
 
 	}
 

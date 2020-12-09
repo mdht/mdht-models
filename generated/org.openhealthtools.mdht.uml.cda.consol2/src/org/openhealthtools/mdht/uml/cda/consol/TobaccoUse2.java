@@ -19,6 +19,7 @@ import org.eclipse.mdht.emf.runtime.util.Initializer;
  * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='TobaccoUse2TemplateId TobaccoUse2Id TobaccoUseCode TobaccoUseCodeP TobaccoUseEffectiveTime' templateId.root='2.16.840.1.113883.10.20.22.4.85' templateId.extension='2014-06-09' code.code='11367-0' code.codeSystemName='' code.displayName='History of tobacco use' constraints.validation.dependOn.TobaccoUseCode='TobaccoUseCodeP' constraints.validation.warning='TobaccoUse2AuthorParticipation' constraints.validation.info='TobaccoUse2CDCodeTermAssertionOrLoinc TobaccoUse2IVLTSHigh' constraints.validation.query='TobaccoUse2CDCodeTermAssertionOrLoinc TobaccoUse2IVLTSHigh'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolTobaccoUse2IVLTS constraints.validation.info='TobaccoUse2IVLTSHigh'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolTobaccoUse2CD constraints.validation.info='TobaccoUse2CDCodeTermAssertionOrLoinc'"
+ *        annotation="duplicates"
  * @generated
  */
 public interface TobaccoUse2 extends TobaccoUse {

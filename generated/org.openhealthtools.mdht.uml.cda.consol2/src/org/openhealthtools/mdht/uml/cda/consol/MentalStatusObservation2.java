@@ -21,6 +21,7 @@ import org.eclipse.mdht.emf.runtime.util.Initializer;
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolMentalStatusObservation2CD translation.code='75275-8' translation.codeSystem='2.16.840.1.113883.6.1' translation.codeSystemName='LOINC' translation.displayName='Cognitive Function' constraints.validation.error='MentalStatusObservation2CDTranslation MentalStatusObservation2CDTranslationP'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolMentalStatusObservation2ReferenceRange constraints.validation.error='CognitiveStatusResultObservationReferenceRangeObservationRange'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolMentalStatusObservation2ReferenceRangeObservationRange constraints.validation.info='CognitiveStatusResultObservationReferenceRangeObservationRangeNoCode'"
+ *        annotation="duplicates"
  * @generated
  */
 public interface MentalStatusObservation2 extends CognitiveStatusResultObservation {

@@ -18,6 +18,7 @@ import org.eclipse.mdht.emf.runtime.util.Initializer;
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getPlannedProcedure2()
  * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='PlannedProcedure2TemplateId PlannedProcedure2Instruction2InversionInd PlanOfCareActivityProcedureMoodCode PlannedProcedure2Code PlannedProcedure2StatusCode PlannedProcedure2StatusCodeP PlannedProcedure2TargetSiteCode' templateId.root='2.16.840.1.113883.10.20.22.4.41' templateId.extension='2014-06-09' constraints.validation.warning='PlannedProcedure2CodeFromLoincOrSnomed PlannedProcedure2EffectiveTime PlannedProcedure2AuthorParticipation' constraints.validation.info='PlannedProcedure2CodeFromCptOrIcd PlannedProcedure2MethodCode PlannedProcedure2TargetSiteCodeP PlannedProcedure2Performer PlannedProcedure2PriorityPreference PlannedProcedure2Indication2 PlannedProcedure2Instruction2 PlannedProcedure2PlannedCoverage' statusCode.code='active' targetSiteCode.codeSystem='2.16.840.1.113883.6.96' targetSiteCode.codeSystemName='SNOMEDCT' constraints.validation.dependOn.PlannedProcedure2TargetSiteCode='PlannedProcedure2TargetSiteCodeP'"
+ *        annotation="duplicates"
  * @generated
  */
 public interface PlannedProcedure2 extends PlanOfCareActivityProcedure {

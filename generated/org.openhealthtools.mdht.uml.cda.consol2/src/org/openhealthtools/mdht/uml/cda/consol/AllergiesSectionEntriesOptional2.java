@@ -15,6 +15,7 @@ import org.eclipse.mdht.emf.runtime.util.Initializer;
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getAllergiesSectionEntriesOptional2()
  * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='AllergiesSectionEntriesOptionalTemplateId AllergiesSectionEntriesOptionalCode AllergiesSectionEntriesOptionalCodeP' templateId.root='2.16.840.1.113883.10.20.22.2.6' templateId.extension='2015-08-01' constraints.validation.dependOn.AllergiesSectionEntriesOptionalCode='AllergiesSectionEntriesOptionalCodeP' constraints.validation.warning='AllergiesSectionEntriesOptionalAllergyProblemAct'"
+ *        annotation="duplicates"
  * @generated
  */
 public interface AllergiesSectionEntriesOptional2 extends AllergiesSectionEntriesOptional {
