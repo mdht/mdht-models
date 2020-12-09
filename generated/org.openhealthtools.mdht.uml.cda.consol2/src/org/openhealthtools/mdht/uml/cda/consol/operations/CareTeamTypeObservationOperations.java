@@ -36,8 +36,8 @@ import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CareTeamTypeObservation#validateCareTeamTypeObservationTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Team Type Observation Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CareTeamTypeObservation#validateCareTeamTypeObservationCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Team Type Observation Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CareTeamTypeObservation#validateCareTeamTypeObservationCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Team Type Observation Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CareTeamTypeObservation#validateCareTeamTypeObservationStatusCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Team Type Observation Status Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CareTeamTypeObservation#validateCareTeamTypeObservationStatusCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Team Type Observation Status Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CareTeamTypeObservation#validateCareTeamTypeObservationStatusCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Team Type Observation Status Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CareTeamTypeObservation#validateCareTeamTypeObservationValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Team Type Observation Value</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CareTeamTypeObservation#validateCareTeamTypeObservationValueP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Team Type Observation Value P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CareTeamTypeObservation#validateCareTeamTypeObservationClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Team Type Observation Class Code</em>}</li>
@@ -288,27 +288,6 @@ public class CareTeamTypeObservationOperations extends ClinicalStatementOperatio
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateCareTeamTypeObservationStatusCodeP(CareTeamTypeObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Team Type Observation Status Code P</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateCareTeamTypeObservationStatusCodeP(CareTeamTypeObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_CARE_TEAM_TYPE_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined())";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateCareTeamTypeObservationStatusCodeP(CareTeamTypeObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Team Type Observation Status Code P</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateCareTeamTypeObservationStatusCodeP(CareTeamTypeObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-
-	protected static ThreadLocal<Constraint> VALIDATE_CARE_TEAM_TYPE_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
-
-	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
@@ -349,20 +328,6 @@ public class CareTeamTypeObservationOperations extends ClinicalStatementOperatio
 						new Object[] { careTeamTypeObservation }));
 			}
 
-			if (context != null) {
-				// generate a pass token for my dependent constraints to short-circuit or filter results
-				@SuppressWarnings("unchecked")
-				Collection<Object> passToken = (Collection<Object>) context.get(
-					"org.openhealthtools.mdht.uml.cda.consol.CareTeamTypeObservationStatusCodeP");
-				if (passToken == null) {
-					// anticipate a reasonably healthy model
-					passToken = new java.util.ArrayList<Object>(3);
-					context.put(
-						"org.openhealthtools.mdht.uml.cda.consol.CareTeamTypeObservationStatusCodeP", passToken);
-				}
-				passToken.add(careTeamTypeObservation);
-			}
-
 			return false;
 		}
 		return true;
@@ -391,6 +356,27 @@ public class CareTeamTypeObservationOperations extends ClinicalStatementOperatio
 	protected static ThreadLocal<Constraint> VALIDATE_CARE_TEAM_TYPE_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
+	 * The cached OCL expression body for the '{@link #validateCareTeamTypeObservationStatusCodeP(CareTeamTypeObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Team Type Observation Status Code P</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateCareTeamTypeObservationStatusCodeP(CareTeamTypeObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_CARE_TEAM_TYPE_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined())";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateCareTeamTypeObservationStatusCodeP(CareTeamTypeObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Team Type Observation Status Code P</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateCareTeamTypeObservationStatusCodeP(CareTeamTypeObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static ThreadLocal<Constraint> VALIDATE_CARE_TEAM_TYPE_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+
+	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
@@ -403,14 +389,6 @@ public class CareTeamTypeObservationOperations extends ClinicalStatementOperatio
 
 	public static boolean validateCareTeamTypeObservationStatusCode(CareTeamTypeObservation careTeamTypeObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		Object passToken = (context == null)
-				? null
-				: context.get("org.openhealthtools.mdht.uml.cda.consol.CareTeamTypeObservationStatusCodeP");
-		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(careTeamTypeObservation)) {
-			// I have a free pass to short-circuit
-			return true;
-		}
 
 		DatatypesUtil.increment(context, "CareTeamTypeObservationCareTeamTypeObservationStatusCode", "ERROR");
 

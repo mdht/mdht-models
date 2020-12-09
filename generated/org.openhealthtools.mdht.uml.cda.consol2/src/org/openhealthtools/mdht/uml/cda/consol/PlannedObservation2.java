@@ -18,6 +18,7 @@ import org.eclipse.mdht.emf.runtime.util.Initializer;
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getPlannedObservation2()
  * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='PlannedObservation2TemplateId PlanOfCareActivityObservationMoodCode PlannedObservation2CodeP PlannedObservation2StatusCode PlannedObservation2StatusCodeP PlannedObservation2TargetSiteCode' templateId.root='2.16.840.1.113883.10.20.22.4.44' templateId.extension='2014-06-09' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' constraints.validation.warning='PlannedObservation2Code PlannedObservation2EffectiveTime PlannedObservation2TargetSiteCodeP PlannedObservation2AuthorParticipation' constraints.validation.dependOn.PlannedObservation2Code='PlannedObservation2CodeP' statusCode.code='active' constraints.validation.info='PlannedObservation2Value PlannedObservation2MethodCode PlannedObservation2Performer PlannedObservation2PriorityPreference PlannedObservation2Indication2 PlannedObservation2Instruction2 PlannedObservation2PlannedCoverage' targetSiteCode.codeSystem='2.16.840.1.113883.6.96' targetSiteCode.codeSystemName='SNOMEDCT' constraints.validation.dependOn.PlannedObservation2TargetSiteCode='PlannedObservation2TargetSiteCodeP'"
+ *        annotation="duplicates"
  * @generated
  */
 public interface PlannedObservation2 extends PlanOfCareActivityObservation {

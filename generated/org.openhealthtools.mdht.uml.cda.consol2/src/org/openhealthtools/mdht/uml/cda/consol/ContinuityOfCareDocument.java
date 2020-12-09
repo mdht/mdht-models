@@ -30,6 +30,7 @@ import org.eclipse.mdht.emf.runtime.util.Initializer;
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolContinuityOfCareDocumentDocumentationOfServiceEventEffectiveTime constraints.validation.error='ContinuityOfCareDocumentDocumentationOfServiceEventEffectiveTimeHigh ContinuityOfCareDocumentDocumentationOfServiceEventEffectiveTimeLow'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolContinuityOfCareDocumentAuthor constraints.validation.error='ContinuityOfCareDocumentAuthorAssignedAuthor'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolContinuityOfCareDocumentAuthorAssignedAuthor constraints.validation.error='ContinuityOfCareDocumentAuthorAssignedAuthorHasAssignedPersonOrRepresentedOrganization ContinuityOfCareDocumentAuthorAssignedAuthorHasRepresentOrganization'"
+ *        annotation="duplicates"
  * @generated
  */
 public interface ContinuityOfCareDocument extends GeneralHeaderConstraints {

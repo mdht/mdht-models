@@ -23,6 +23,7 @@ import org.eclipse.mdht.emf.runtime.util.Initializer;
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolPlannedMedicationActivity2Consumable constraints.validation.error='PlannedMedicationActivity2ConsumableMedicationInformation2'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolPlannedMedicationActivity2Precondition typeCode='PRCN' constraints.validation.error='PlannedMedicationActivity2PreconditionTypeCode PlannedMedicationActivity2PreconditionPreconditionForSubstanceAdministration2'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolPlannedMedicationActivity2CE translation.codeSystem='2.16.840.1.113883.6.96' translation.codeSystemName='SNOMEDCT' constraints.validation.error='PlannedMedicationActivity2CETranslation' constraints.validation.warning='PlannedMedicationActivity2CETranslationP' constraints.validation.dependOn.PlannedMedicationActivity2CETranslation='PlannedMedicationActivity2CETranslationP'"
+ *        annotation="duplicates"
  * @generated
  */
 public interface PlannedMedicationActivity2 extends PlanOfCareActivitySubstanceAdministration {

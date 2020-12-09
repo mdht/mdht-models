@@ -39,8 +39,8 @@ import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
  * The following operations are supported:
  * <ul>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CareTeams#validateCareTeamsTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Teams Template Id</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CareTeams#validateCareTeamsCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Teams Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CareTeams#validateCareTeamsCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Teams Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CareTeams#validateCareTeamsCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Teams Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CareTeams#validateCareTeamsTitle(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Teams Title</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CareTeams#validateCareTeamsText(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Teams Text</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CareTeams#validateCareTeamsCareTeamOrganizer(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Teams Care Team Organizer</em>}</li>
@@ -133,27 +133,6 @@ public class CareTeamsOperations extends SectionOperations {
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateCareTeamsCodeP(CareTeams, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Teams Code P</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateCareTeamsCodeP(CareTeams, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_CARE_TEAMS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateCareTeamsCodeP(CareTeams, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Teams Code P</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateCareTeamsCodeP(CareTeams, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-
-	protected static ThreadLocal<Constraint> VALIDATE_CARE_TEAMS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
-
-	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
@@ -191,19 +170,6 @@ public class CareTeamsOperations extends SectionOperations {
 						ConsolPlugin.INSTANCE.getString("CareTeamsCareTeamsCodeP"), new Object[] { careTeams }));
 			}
 
-			if (context != null) {
-				// generate a pass token for my dependent constraints to short-circuit or filter results
-				@SuppressWarnings("unchecked")
-				Collection<Object> passToken = (Collection<Object>) context.get(
-					"org.openhealthtools.mdht.uml.cda.consol.CareTeamsCodeP");
-				if (passToken == null) {
-					// anticipate a reasonably healthy model
-					passToken = new java.util.ArrayList<Object>(3);
-					context.put("org.openhealthtools.mdht.uml.cda.consol.CareTeamsCodeP", passToken);
-				}
-				passToken.add(careTeams);
-			}
-
 			return false;
 		}
 		return true;
@@ -233,6 +199,27 @@ public class CareTeamsOperations extends SectionOperations {
 	protected static ThreadLocal<Constraint> VALIDATE_CARE_TEAMS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
+	 * The cached OCL expression body for the '{@link #validateCareTeamsCodeP(CareTeams, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Teams Code P</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateCareTeamsCodeP(CareTeams, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_CARE_TEAMS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateCareTeamsCodeP(CareTeams, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Teams Code P</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateCareTeamsCodeP(CareTeams, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static ThreadLocal<Constraint> VALIDATE_CARE_TEAMS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+
+	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
@@ -245,14 +232,6 @@ public class CareTeamsOperations extends SectionOperations {
 
 	public static boolean validateCareTeamsCode(CareTeams careTeams, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		Object passToken = (context == null)
-				? null
-				: context.get("org.openhealthtools.mdht.uml.cda.consol.CareTeamsCodeP");
-		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(careTeams)) {
-			// I have a free pass to short-circuit
-			return true;
-		}
 
 		DatatypesUtil.increment(context, "CareTeamsCareTeamsCode", "ERROR");
 

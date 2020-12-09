@@ -8,20 +8,25 @@
 	<version>3.0.0-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<repositories>
-		<repository>
-			<id>MDHT.ext-release-local</id>
-			<name>MDHT.ext-release-local</name>
-			<url>http://devsoap.sitenv.org:8081/artifactory/ext-release-local</url>
-		</repository>
-		<repository>
-			<id>MDHT.libs-snapshot-local</id>
-			<name>MDHT.libs-snapshot-local</name>
-			<url>http://devsoap.sitenv.org:8081/artifactory/libs-snapshot-local</url>
-		</repository>
-	</repositories>
 
- 
+
+<repositories>
+<repository>
+<id>mdixsnaphpt</id>
+<name>7ed03140605b-snapshots</name>
+<url>http://artifactory.mdixinc.net:8081/artifactory/libs-snapshot</url>
+<snapshots>
+<enabled>true</enabled>
+</snapshots>
+</repository>
+<repository>
+<id>mdixlibs</id>
+<name>7ed03140605b-releases</name>
+<url>http://artifactory.mdixinc.net:8081/artifactory/libs-release-local</url>
+</repository>
+</repositories>
+
+
 	<dependencyManagement>
 		<dependencies>
 			<dependency>

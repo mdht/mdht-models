@@ -21,6 +21,7 @@ import org.eclipse.mdht.emf.runtime.util.Initializer;
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolProcedureActivityObservation2ANY constraints.validation.info='ProcedureActivityObservation2ANYNullFlavor'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolProcedureActivityObservation2ProcedureObservationPerformer constraints.validation.error='ProcedureActivityObservationProcedureObservationPerformerAssignedEntity'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolProcedureActivityObservation2ProcedureObservationPerformerProcedureObservationAssignedEntity constraints.validation.error='ProcedureActivityObservationProcedureObservationPerformerProcedureObservationAssignedEntityAddr ProcedureActivityObservationProcedureObservationPerformerProcedureObservationAssignedEntityTelecom'"
+ *        annotation="duplicates"
  * @generated
  */
 public interface ProcedureActivityObservation2 extends ProcedureActivityObservation {

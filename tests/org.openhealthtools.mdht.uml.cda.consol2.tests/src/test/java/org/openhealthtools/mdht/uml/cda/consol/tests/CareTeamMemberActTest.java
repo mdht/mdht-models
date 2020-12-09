@@ -3,7 +3,6 @@
  */
 package org.openhealthtools.mdht.uml.cda.consol.tests;
 
-import java.util.Collection;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
@@ -30,8 +29,8 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.CareTeamMemberActOpera
  * <ul>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CareTeamMemberAct#validateCareTeamMemberActTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Team Member Act Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CareTeamMemberAct#validateCareTeamMemberActId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Team Member Act Id</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CareTeamMemberAct#validateCareTeamMemberActStatusCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Team Member Act Status Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CareTeamMemberAct#validateCareTeamMemberActStatusCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Team Member Act Status Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CareTeamMemberAct#validateCareTeamMemberActStatusCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Team Member Act Status Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CareTeamMemberAct#validateCareTeamMemberActEffectiveTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Team Member Act Effective Time</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CareTeamMemberAct#validateCareTeamMemberActClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Team Member Act Class Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CareTeamMemberAct#validateCareTeamMemberActMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Team Member Act Mood Code</em>}</li>
@@ -42,8 +41,8 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.CareTeamMemberActOpera
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CareTeamMemberAct#validateCareTeamMemberActParticipant2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Team Member Act Participant2</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CareTeamMemberAct#validateCareTeamMemberActIVLTSLow(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Team Member Act IVLTS Low</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CareTeamMemberAct#validateCareTeamMemberActIVLTSHigh(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Team Member Act IVLTS High</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CareTeamMemberAct#getCareTeamMemberScheduleObservations() <em>Get Care Team Member Schedule Observations</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CareTeamMemberAct#getNoteActivities() <em>Get Note Activities</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CareTeamMemberAct#getCareTeamMemberScheduleObservation() <em>Get Care Team Member Schedule Observation</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CareTeamMemberAct#getNoteActivity() <em>Get Note Activity</em>}</li>
  * </ul>
  * </p>
  *
@@ -183,13 +182,6 @@ public class CareTeamMemberActTest extends CDAValidationTest {
 				CS cs = DatatypesFactory.eINSTANCE.createCS("completed");
 				target.setStatusCode(cs);
 
-			}
-
-			@Override
-			protected void setDependency(CareTeamMemberAct target) {
-				Collection<Object> passToken = new java.util.ArrayList<Object>(3);
-				passToken.add(target);
-				map.put("org.openhealthtools.mdht.uml.cda.consol.CareTeamMemberActStatusCodeP", passToken);
 			}
 
 			@Override
@@ -591,10 +583,10 @@ public class CareTeamMemberActTest extends CDAValidationTest {
 	*/
 	@Test
 
-	public void testGetCareTeamMemberScheduleObservations() {
+	public void testGetCareTeamMemberScheduleObservation() {
 
 		CareTeamMemberAct target = objectFactory.create();
-		target.getCareTeamMemberScheduleObservations();
+		target.getCareTeamMemberScheduleObservation();
 
 	}
 
@@ -604,10 +596,10 @@ public class CareTeamMemberActTest extends CDAValidationTest {
 	*/
 	@Test
 
-	public void testGetNoteActivities() {
+	public void testGetNoteActivity() {
 
 		CareTeamMemberAct target = objectFactory.create();
-		target.getNoteActivities();
+		target.getNoteActivity();
 
 	}
 

@@ -17,6 +17,7 @@ import org.eclipse.mdht.emf.runtime.util.Initializer;
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getIndication2()
  * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='Indication2TemplateId IndicationId IndicationCodeP' templateId.root='2.16.840.1.113883.10.20.22.4.19' templateId.extension='2014-06-09' constraints.validation.info='IndicationProblemIndication IndicationCodeNullFlavor IndicationCodeNullFlavorValue IndicationCode IndicationValueP' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' constraints.validation.dependOn.IndicationCode='IndicationCodeP' value.codeSystem='2.16.840.1.113883.6.96' value.codeSystemName='SNOMEDCT' constraints.validation.warning='IndicationValue' constraints.validation.dependOn.IndicationValue='IndicationValueP'"
+ *        annotation="duplicates"
  * @generated
  */
 public interface Indication2 extends Indication {

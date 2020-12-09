@@ -721,6 +721,34 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createCareTeamMemberScheduleObservation();
 			case ConsolPackage.PROVENANCE_AUTHOR_PARTICIPATION:
 				return createProvenanceAuthorParticipation();
+			case ConsolPackage.SERIAL_NUMBER_OBSERVATION:
+				return createSerialNumberObservation();
+			case ConsolPackage.MRI_SAFETY_OBSERVATION:
+				return createMRISafetyObservation();
+			case ConsolPackage.MODEL_NUMBER_OBSERVATION:
+				return createModelNumberObservation();
+			case ConsolPackage.MANUFACTURING_DATE_OBSERVATION:
+				return createManufacturingDateObservation();
+			case ConsolPackage.LOT_OR_BATCH_NUMBER_OBSERVATION:
+				return createLotOrBatchNumberObservation();
+			case ConsolPackage.LATEX_SAFETY_OBSERVATION:
+				return createLatexSafetyObservation();
+			case ConsolPackage.IMPLANTABLE_DEVICE_STATUS_OBSERVATION:
+				return createImplantableDeviceStatusObservation();
+			case ConsolPackage.EXPIRATION_DATE_OBSERVATION:
+				return createExpirationDateObservation();
+			case ConsolPackage.DISTINCT_IDENTIFICATION_CODE_OBSERVATION:
+				return createDistinctIdentificationCodeObservation();
+			case ConsolPackage.DEVICE_IDENTIFIER_OBSERVATION:
+				return createDeviceIdentifierObservation();
+			case ConsolPackage.COMPANY_NAME_OBSERVATION:
+				return createCompanyNameObservation();
+			case ConsolPackage.CATALOG_NUMBER_OBSERVATION:
+				return createCatalogNumberObservation();
+			case ConsolPackage.BRAND_NAME_OBSERVATION:
+				return createBrandNameObservation();
+			case ConsolPackage.UDI_ORGANIZER:
+				return createUDIOrganizer();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -4060,6 +4088,146 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	public ProvenanceAuthorParticipation createProvenanceAuthorParticipation() {
 		ProvenanceAuthorParticipationImpl provenanceAuthorParticipation = new ProvenanceAuthorParticipationImpl();
 		return provenanceAuthorParticipation;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public SerialNumberObservation createSerialNumberObservation() {
+		SerialNumberObservationImpl serialNumberObservation = new SerialNumberObservationImpl();
+		return serialNumberObservation;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public MRISafetyObservation createMRISafetyObservation() {
+		MRISafetyObservationImpl mriSafetyObservation = new MRISafetyObservationImpl();
+		return mriSafetyObservation;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ModelNumberObservation createModelNumberObservation() {
+		ModelNumberObservationImpl modelNumberObservation = new ModelNumberObservationImpl();
+		return modelNumberObservation;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ManufacturingDateObservation createManufacturingDateObservation() {
+		ManufacturingDateObservationImpl manufacturingDateObservation = new ManufacturingDateObservationImpl();
+		return manufacturingDateObservation;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public LotOrBatchNumberObservation createLotOrBatchNumberObservation() {
+		LotOrBatchNumberObservationImpl lotOrBatchNumberObservation = new LotOrBatchNumberObservationImpl();
+		return lotOrBatchNumberObservation;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public LatexSafetyObservation createLatexSafetyObservation() {
+		LatexSafetyObservationImpl latexSafetyObservation = new LatexSafetyObservationImpl();
+		return latexSafetyObservation;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ImplantableDeviceStatusObservation createImplantableDeviceStatusObservation() {
+		ImplantableDeviceStatusObservationImpl implantableDeviceStatusObservation = new ImplantableDeviceStatusObservationImpl();
+		return implantableDeviceStatusObservation;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ExpirationDateObservation createExpirationDateObservation() {
+		ExpirationDateObservationImpl expirationDateObservation = new ExpirationDateObservationImpl();
+		return expirationDateObservation;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public DistinctIdentificationCodeObservation createDistinctIdentificationCodeObservation() {
+		DistinctIdentificationCodeObservationImpl distinctIdentificationCodeObservation = new DistinctIdentificationCodeObservationImpl();
+		return distinctIdentificationCodeObservation;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public DeviceIdentifierObservation createDeviceIdentifierObservation() {
+		DeviceIdentifierObservationImpl deviceIdentifierObservation = new DeviceIdentifierObservationImpl();
+		return deviceIdentifierObservation;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public CompanyNameObservation createCompanyNameObservation() {
+		CompanyNameObservationImpl companyNameObservation = new CompanyNameObservationImpl();
+		return companyNameObservation;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public CatalogNumberObservation createCatalogNumberObservation() {
+		CatalogNumberObservationImpl catalogNumberObservation = new CatalogNumberObservationImpl();
+		return catalogNumberObservation;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public BrandNameObservation createBrandNameObservation() {
+		BrandNameObservationImpl brandNameObservation = new BrandNameObservationImpl();
+		return brandNameObservation;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public UDIOrganizer createUDIOrganizer() {
+		UDIOrganizerImpl udiOrganizer = new UDIOrganizerImpl();
+		return udiOrganizer;
 	}
 
 	/**

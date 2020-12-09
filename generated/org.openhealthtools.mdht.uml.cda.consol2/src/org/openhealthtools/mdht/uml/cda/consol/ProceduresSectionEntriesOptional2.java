@@ -15,6 +15,7 @@ import org.eclipse.mdht.emf.runtime.util.Initializer;
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getProceduresSectionEntriesOptional2()
  * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ProceduresSectionEntriesOptionalTemplateId ProceduresSectionEntriesOptionalCode ProceduresSectionEntriesOptionalCodeP' templateId.root='2.16.840.1.113883.10.20.22.2.7' templateId.extension='2014-06-09' constraints.validation.dependOn.ProceduresSectionEntriesOptionalCode='ProceduresSectionEntriesOptionalCodeP' constraints.validation.info='ProceduresSectionEntriesOptionalProcedureActivityProcedure ProceduresSectionEntriesOptionalProcedureActivityObservation ProceduresSectionEntriesOptionalProcedureActivityAct'"
+ *        annotation="duplicates"
  * @generated
  */
 public interface ProceduresSectionEntriesOptional2 extends ProceduresSectionEntriesOptional {

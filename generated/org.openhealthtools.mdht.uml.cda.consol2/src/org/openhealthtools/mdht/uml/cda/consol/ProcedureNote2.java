@@ -33,6 +33,7 @@ import org.eclipse.mdht.emf.runtime.util.Initializer;
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolProcedureNote2ComponentOfEncompassingEncounterEncounterParticipant typeCode='REF' constraints.validation.error='ProcedureNote2ComponentOfEncompassingEncounterEncounterParticipantTypeCode'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolProcedureNote2ComponentOfEncompassingEncounterLocation constraints.validation.error='ProcedureNote2ComponentOfEncompassingEncounterLocationHealthCareFacility'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolProcedureNote2ComponentOfEncompassingEncounterLocationHealthCareFacility constraints.validation.error='ProcedureNote2ComponentOfEncompassingEncounterLocationHealthCareFacilityId'"
+ *        annotation="duplicates"
  * @generated
  */
 public interface ProcedureNote2 extends USRealmHeader2 {

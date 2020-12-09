@@ -38,6 +38,7 @@ import org.eclipse.mdht.emf.runtime.util.Initializer;
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolCarePlanRelatedDocumentParentDocument constraints.validation.error='CarePlanRelatedDocumentParentDocumentId CarePlanRelatedDocumentParentDocumentSetId CarePlanRelatedDocumentParentDocumentVersionNumber'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolCarePlanComponentOf constraints.validation.error='CarePlanComponentOfEncompassingEncounter'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolCarePlanComponentOfEncompassingEncounter constraints.validation.error='CarePlanComponentOfEncompassingEncounterEffectiveTime'"
+ *        annotation="duplicates"
  * @generated
  */
 public interface CarePlan extends USRealmHeader2 {

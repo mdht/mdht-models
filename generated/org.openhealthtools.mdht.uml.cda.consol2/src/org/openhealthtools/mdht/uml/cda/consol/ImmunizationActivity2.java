@@ -22,6 +22,7 @@ import org.eclipse.mdht.emf.runtime.util.Initializer;
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolImmunizationActivity2Precondition typeCode='PRCN' constraints.validation.error='ImmunizationActivityPreconditionTypeCode ImmunizationActivityPreconditionPreconditionForSubstanceAdministration'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolImmunizationActivity2EntryRelationship typeCode='COMP' constraints.validation.warning='ImmunizationActivity2EntryRelationshipTypeCode ImmunizationActivity2EntryRelationshipInversionInd ImmunizationActivity2EntryRelationshipSubstanceAdministeredAct' inversionInd='true' constraints.validation.info='ImmunizationActivity2EntryRelationshipSequenceNumber'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolImmunizationActivity2CE translation.codeSystem='2.16.840.1.113883.6.96' translation.codeSystemName='SNOMEDCT' constraints.validation.error='ImmunizationActivity2CETranslation' constraints.validation.warning='ImmunizationActivity2CETranslationP' constraints.validation.dependOn.ImmunizationActivity2CETranslation='ImmunizationActivity2CETranslationP'"
+ *        annotation="duplicates"
  * @generated
  */
 public interface ImmunizationActivity2 extends ImmunizationActivity {

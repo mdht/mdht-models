@@ -1828,16 +1828,24 @@ Used to enumerate the relationships between two clinical documents for document 
       <ownedLiteral xmi:id="_2HlFYAdLEeu6cuZQ8fwlvQ" name="LA28866-4"/>
       <ownedLiteral xmi:id="_3ifkMAdLEeu6cuZQ8fwlvQ" name="LA28867-2"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_HJ708AmCEeut3_ZvYAZhww" name="NoteTypes">
-      <ownedLiteral xmi:id="_VTctUAmCEeut3_ZvYAZhww" name="11488-4"/>
-      <ownedLiteral xmi:id="_ZZOP4AmCEeut3_ZvYAZhww" name="11490-0"/>
-      <ownedLiteral xmi:id="_comV8AmCEeut3_ZvYAZhww" name="11492-6"/>
-      <ownedLiteral xmi:id="_ffBwgAmCEeut3_ZvYAZhww" name="11504-8"/>
-      <ownedLiteral xmi:id="_iudg8AmCEeut3_ZvYAZhww" name="11505-5"/>
-      <ownedLiteral xmi:id="_kcUJ4AmCEeut3_ZvYAZhww" name="11506-3"/>
-      <ownedLiteral xmi:id="_nSd3oAmCEeut3_ZvYAZhww" name="11507-1"/>
-    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_HJ708AmCEeut3_ZvYAZhww" name="NoteTypes"/>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_ojangAmVEeut3_ZvYAZhww" name="CareTeamMemberFunction"/>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_zt3DACz9EeuxZ80rBBFFIQ" name="MRISafetyStatus">
+      <ownedLiteral xmi:id="_5fzzgCz9EeuxZ80rBBFFIQ" name="C113844"/>
+      <ownedLiteral xmi:id="_6uZGgCz9EeuxZ80rBBFFIQ" name="C106046"/>
+      <ownedLiteral xmi:id="_71YjwCz9EeuxZ80rBBFFIQ" name="C106045"/>
+      <ownedLiteral xmi:id="_9QlWcCz9EeuxZ80rBBFFIQ" name="C106047"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_wqwhkC0BEeuxZ80rBBFFIQ" name="LatexSafetyStatus">
+      <ownedLiteral xmi:id="_3QdqQC0BEeuxZ80rBBFFIQ" name="C106043"/>
+      <ownedLiteral xmi:id="_5CPJ4C0BEeuxZ80rBBFFIQ" name="C106038"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_0oftAC0CEeuxZ80rBBFFIQ" name="Implantable Device Status">
+      <ownedLiteral xmi:id="_3J-LQC0CEeuxZ80rBBFFIQ" name="C45329"/>
+      <ownedLiteral xmi:id="_45GmkC0CEeuxZ80rBBFFIQ" name="C154407"/>
+      <ownedLiteral xmi:id="_6u1ZIC0CEeuxZ80rBBFFIQ" name="C122711"/>
+      <ownedLiteral xmi:id="_76bCgC0CEeuxZ80rBBFFIQ" name="C160942"/>
+    </packagedElement>
     <profileApplication xmi:id="_2B97WxSVEeGGzu7fmW9pXw">
       <eAnnotations xmi:id="_2B97XBSVEeGGzu7fmW9pXw" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.openhealthtools.org/mdht/schemas/term/1#/"/>
@@ -3436,13 +3444,6 @@ Used to enumerate the relationships between two clinical documents for document 
   <term:ValueSetVersion xmi:id="_HJ8cAAmCEeut3_ZvYAZhww" identifier="2.16.840.1.113883.11.20.9.68" version="20191017" fullName="Note Types" url="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.11.20.9.68/expansion" base_Enumeration="_HJ708AmCEeut3_ZvYAZhww">
     <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
-  <term:ValueSetCode xmi:id="_VTdUYAmCEeut3_ZvYAZhww" conceptName="Consult note" base_EnumerationLiteral="_VTctUAmCEeut3_ZvYAZhww"/>
-  <term:ValueSetCode xmi:id="_ZZOP4QmCEeut3_ZvYAZhww" conceptName="Physician Discharge summary" base_EnumerationLiteral="_ZZOP4AmCEeut3_ZvYAZhww"/>
-  <term:ValueSetCode xmi:id="_comV8QmCEeut3_ZvYAZhww" conceptName="Provider-unspecifed, History and physical note" base_EnumerationLiteral="_comV8AmCEeut3_ZvYAZhww"/>
-  <term:ValueSetCode xmi:id="_ffCXkAmCEeut3_ZvYAZhww" conceptName="Surgical operation note" base_EnumerationLiteral="_ffBwgAmCEeut3_ZvYAZhww"/>
-  <term:ValueSetCode xmi:id="_iueIAAmCEeut3_ZvYAZhww" conceptName="Physician procedure note" base_EnumerationLiteral="_iudg8AmCEeut3_ZvYAZhww"/>
-  <term:ValueSetCode xmi:id="_kcUJ4QmCEeut3_ZvYAZhww" conceptName="Progress note" base_EnumerationLiteral="_kcUJ4AmCEeut3_ZvYAZhww"/>
-  <term:ValueSetCode xmi:id="_nSd3oQmCEeut3_ZvYAZhww" conceptName="Occupational therapy Progress note" base_EnumerationLiteral="_nSd3oAmCEeut3_ZvYAZhww"/>
   <term:ValueSetVersion xmi:id="_ojbOkAmVEeut3_ZvYAZhww" identifier="2.16.840.1.113762.1.4.1099.30" version="20191016." fullName="Care Team Member Function" url="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1099.30/expansion" base_Enumeration="_ojangAmVEeut3_ZvYAZhww">
     <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
@@ -3454,4 +3455,23 @@ Used to enumerate the relationships between two clinical documents for document 
   <term:ValueSetCode xmi:id="_wLoNYA_oEeuzkrfERpFDKQ" base_EnumerationLiteral="_wLnmUA_oEeuzkrfERpFDKQ"/>
   <term:ValueSetCode xmi:id="_xH_H8A_oEeuzkrfERpFDKQ" base_EnumerationLiteral="_xH-g4A_oEeuzkrfERpFDKQ"/>
   <term:ValueSetCode xmi:id="_zT7bEQ_oEeuzkrfERpFDKQ" base_EnumerationLiteral="_zT7bEA_oEeuzkrfERpFDKQ"/>
+  <term:ValueSetVersion xmi:id="_zt4RICz9EeuxZ80rBBFFIQ" identifier="2.16.840.1.113762.1.4.1021.46" base_Enumeration="_zt3DACz9EeuxZ80rBBFFIQ">
+    <codeSystem href="pathmap://TERM_MODEL///CodeSystems.uml#_dWKSsaDqEd-dVeaMP0XXQw"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_5fzzgSz9EeuxZ80rBBFFIQ" conceptName="Labeling does not contain MRI Safety Information" base_EnumerationLiteral="_5fzzgCz9EeuxZ80rBBFFIQ"/>
+  <term:ValueSetCode xmi:id="_6uZGgSz9EeuxZ80rBBFFIQ" conceptName="MR Conditional" base_EnumerationLiteral="_6uZGgCz9EeuxZ80rBBFFIQ"/>
+  <term:ValueSetCode xmi:id="_71ZK0Cz9EeuxZ80rBBFFIQ" conceptName="MR Safe" base_EnumerationLiteral="_71YjwCz9EeuxZ80rBBFFIQ"/>
+  <term:ValueSetCode xmi:id="_9Ql9gCz9EeuxZ80rBBFFIQ" conceptName="MR UnSafe" base_EnumerationLiteral="_9QlWcCz9EeuxZ80rBBFFIQ"/>
+  <term:ValueSetVersion xmi:id="_wqxIoC0BEeuxZ80rBBFFIQ" identifier="2.16.840.1.113762.1.4.1021.47" base_Enumeration="_wqwhkC0BEeuxZ80rBBFFIQ">
+    <codeSystem href="pathmap://TERM_MODEL///CodeSystems.uml#_dWKSsaDqEd-dVeaMP0XXQw"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_3QeRUC0BEeuxZ80rBBFFIQ" conceptName="Natural Rubber Latex" base_EnumerationLiteral="_3QdqQC0BEeuxZ80rBBFFIQ"/>
+  <term:ValueSetCode xmi:id="_5CPJ4S0BEeuxZ80rBBFFIQ" conceptName="Not Made with Natural Rubber Latex" base_EnumerationLiteral="_5CPJ4C0BEeuxZ80rBBFFIQ"/>
+  <term:ValueSetVersion xmi:id="_0oftAS0CEeuxZ80rBBFFIQ" base_Enumeration="_0oftAC0CEeuxZ80rBBFFIQ">
+    <codeSystem href="pathmap://TERM_MODEL///CodeSystems.uml#_dWKSsaDqEd-dVeaMP0XXQw"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_3J-LQS0CEeuxZ80rBBFFIQ" conceptName="Active" base_EnumerationLiteral="_3J-LQC0CEeuxZ80rBBFFIQ"/>
+  <term:ValueSetCode xmi:id="_45GmkS0CEeuxZ80rBBFFIQ" conceptName="Inactive" base_EnumerationLiteral="_45GmkC0CEeuxZ80rBBFFIQ"/>
+  <term:ValueSetCode xmi:id="_6u1ZIS0CEeuxZ80rBBFFIQ" conceptName="Malfunctioning" base_EnumerationLiteral="_6u1ZIC0CEeuxZ80rBBFFIQ"/>
+  <term:ValueSetCode xmi:id="_76bCgS0CEeuxZ80rBBFFIQ" conceptName="Reduced Function" base_EnumerationLiteral="_76bCgC0CEeuxZ80rBBFFIQ"/>
 </xmi:XMI>

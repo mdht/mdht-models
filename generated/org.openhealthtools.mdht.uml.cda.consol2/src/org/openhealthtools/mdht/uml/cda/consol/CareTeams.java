@@ -22,7 +22,7 @@ import org.eclipse.mdht.uml.cda.Section;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getCareTeams()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='CareTeamsTemplateId CareTeamsCode CareTeamsCodeP CareTeamsTitle CareTeamsText' templateId.root='2.16.840.1.113883.10.20.22.2.500' templateId.extension='2019-07-01' code.code='85847-2' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Patient Care team information' constraints.validation.dependOn.CareTeamsCode='CareTeamsCodeP' constraints.validation.warning='CareTeamsCareTeamOrganizer'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='CareTeamsTemplateId CareTeamsCode CareTeamsCodeP CareTeamsTitle CareTeamsText' templateId.root='2.16.840.1.113883.10.20.22.2.500' templateId.extension='2019-07-01' code.code='85847-2' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Patient Care team information' constraints.validation.warning='CareTeamsCareTeamOrganizer'"
  * @generated
  */
 public interface CareTeams extends Section {

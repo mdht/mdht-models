@@ -1747,6 +1747,76 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
+		public Adapter caseSerialNumberObservation(SerialNumberObservation object) {
+			return createSerialNumberObservationAdapter();
+		}
+
+		@Override
+		public Adapter caseMRISafetyObservation(MRISafetyObservation object) {
+			return createMRISafetyObservationAdapter();
+		}
+
+		@Override
+		public Adapter caseModelNumberObservation(ModelNumberObservation object) {
+			return createModelNumberObservationAdapter();
+		}
+
+		@Override
+		public Adapter caseManufacturingDateObservation(ManufacturingDateObservation object) {
+			return createManufacturingDateObservationAdapter();
+		}
+
+		@Override
+		public Adapter caseLotOrBatchNumberObservation(LotOrBatchNumberObservation object) {
+			return createLotOrBatchNumberObservationAdapter();
+		}
+
+		@Override
+		public Adapter caseLatexSafetyObservation(LatexSafetyObservation object) {
+			return createLatexSafetyObservationAdapter();
+		}
+
+		@Override
+		public Adapter caseImplantableDeviceStatusObservation(ImplantableDeviceStatusObservation object) {
+			return createImplantableDeviceStatusObservationAdapter();
+		}
+
+		@Override
+		public Adapter caseExpirationDateObservation(ExpirationDateObservation object) {
+			return createExpirationDateObservationAdapter();
+		}
+
+		@Override
+		public Adapter caseDistinctIdentificationCodeObservation(DistinctIdentificationCodeObservation object) {
+			return createDistinctIdentificationCodeObservationAdapter();
+		}
+
+		@Override
+		public Adapter caseDeviceIdentifierObservation(DeviceIdentifierObservation object) {
+			return createDeviceIdentifierObservationAdapter();
+		}
+
+		@Override
+		public Adapter caseCompanyNameObservation(CompanyNameObservation object) {
+			return createCompanyNameObservationAdapter();
+		}
+
+		@Override
+		public Adapter caseCatalogNumberObservation(CatalogNumberObservation object) {
+			return createCatalogNumberObservationAdapter();
+		}
+
+		@Override
+		public Adapter caseBrandNameObservation(BrandNameObservation object) {
+			return createBrandNameObservationAdapter();
+		}
+
+		@Override
+		public Adapter caseUDIOrganizer(UDIOrganizer object) {
+			return createUDIOrganizerAdapter();
+		}
+
+		@Override
 		public Adapter caseInfrastructureRoot(InfrastructureRoot object) {
 			return createInfrastructureRootAdapter();
 		}
@@ -6632,6 +6702,202 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createProvenanceAuthorParticipationAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.SerialNumberObservation <em>Serial Number Observation</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.SerialNumberObservation
+	 * @generated
+	 */
+	public Adapter createSerialNumberObservationAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.MRISafetyObservation <em>MRI Safety Observation</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.MRISafetyObservation
+	 * @generated
+	 */
+	public Adapter createMRISafetyObservationAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.ModelNumberObservation <em>Model Number Observation</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.ModelNumberObservation
+	 * @generated
+	 */
+	public Adapter createModelNumberObservationAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.ManufacturingDateObservation <em>Manufacturing Date Observation</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.ManufacturingDateObservation
+	 * @generated
+	 */
+	public Adapter createManufacturingDateObservationAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.LotOrBatchNumberObservation <em>Lot Or Batch Number Observation</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.LotOrBatchNumberObservation
+	 * @generated
+	 */
+	public Adapter createLotOrBatchNumberObservationAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.LatexSafetyObservation <em>Latex Safety Observation</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.LatexSafetyObservation
+	 * @generated
+	 */
+	public Adapter createLatexSafetyObservationAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.ImplantableDeviceStatusObservation <em>Implantable Device Status Observation</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.ImplantableDeviceStatusObservation
+	 * @generated
+	 */
+	public Adapter createImplantableDeviceStatusObservationAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.ExpirationDateObservation <em>Expiration Date Observation</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.ExpirationDateObservation
+	 * @generated
+	 */
+	public Adapter createExpirationDateObservationAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.DistinctIdentificationCodeObservation <em>Distinct Identification Code Observation</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.DistinctIdentificationCodeObservation
+	 * @generated
+	 */
+	public Adapter createDistinctIdentificationCodeObservationAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.DeviceIdentifierObservation <em>Device Identifier Observation</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.DeviceIdentifierObservation
+	 * @generated
+	 */
+	public Adapter createDeviceIdentifierObservationAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.CompanyNameObservation <em>Company Name Observation</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.CompanyNameObservation
+	 * @generated
+	 */
+	public Adapter createCompanyNameObservationAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.CatalogNumberObservation <em>Catalog Number Observation</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.CatalogNumberObservation
+	 * @generated
+	 */
+	public Adapter createCatalogNumberObservationAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.BrandNameObservation <em>Brand Name Observation</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.BrandNameObservation
+	 * @generated
+	 */
+	public Adapter createBrandNameObservationAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.UDIOrganizer <em>UDI Organizer</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.UDIOrganizer
+	 * @generated
+	 */
+	public Adapter createUDIOrganizerAdapter() {
 		return null;
 	}
 

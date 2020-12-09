@@ -26,6 +26,7 @@ import org.eclipse.mdht.emf.runtime.util.Initializer;
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolOperativeNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntity code.codeSystem='2.16.840.1.113883.6.101' code.codeSystemName='NUCC Health Care Provider Taxonomy' constraints.validation.error='OperativeNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntityCode' constraints.validation.warning='OperativeNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntityCodeP' constraints.validation.dependOn.OperativeNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntityCode='OperativeNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntityCodeP'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolOperativeNote2Authorization typeCode='AUTH' constraints.validation.error='OperativeNote2AuthorizationTypeCode OperativeNote2AuthorizationConsent'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolOperativeNote2AuthorizationConsent classCode='CONS' constraints.validation.error='OperativeNote2AuthorizationConsentClassCode OperativeNote2AuthorizationConsentMoodCode OperativeNote2AuthorizationConsentStatusCode' moodCode='EVN'"
+ *        annotation="duplicates"
  * @generated
  */
 public interface OperativeNote2 extends USRealmHeader2 {

@@ -7,6 +7,7 @@ import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
+import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
 
@@ -227,8 +228,8 @@ public class CareTeamOrganizerImpl extends OrganizerImpl implements CareTeamOrga
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CareTeamMemberAct getCareTeamMemberAct() {
-		return CareTeamOrganizerOperations.getCareTeamMemberAct(this);
+	public EList<CareTeamMemberAct> getCareTeamMemberActs() {
+		return CareTeamOrganizerOperations.getCareTeamMemberActs(this);
 	}
 
 	/**

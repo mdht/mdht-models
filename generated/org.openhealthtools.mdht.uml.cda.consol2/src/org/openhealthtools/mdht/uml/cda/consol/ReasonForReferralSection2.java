@@ -18,6 +18,7 @@ import org.eclipse.mdht.emf.runtime.util.Initializer;
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getReasonForReferralSection2()
  * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ReasonForReferralSection2TemplateId ReasonForReferralSectionCode ReasonForReferralSectionCodeP' templateId.root='1.3.6.1.4.1.19376.1.5.3.1.3.1' templateId.extension='2014-06-09' constraints.validation.dependOn.ReasonForReferralSectionCode='ReasonForReferralSectionCodeP' constraints.validation.info='ReasonForReferralSection2PatientReferralAct'"
+ *        annotation="duplicates"
  * @generated
  */
 public interface ReasonForReferralSection2 extends ReasonForReferralSection {

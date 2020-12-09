@@ -18,6 +18,7 @@ import org.eclipse.mdht.emf.runtime.util.Initializer;
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getAdvanceDirectivesSectionEntriesOptional2()
  * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='AdvanceDirectivesSectionEntriesOptionalTemplateId AdvanceDirectivesSectionEntriesOptionalCode AdvanceDirectivesSectionEntriesOptionalCodeP' templateId.root='2.16.840.1.113883.10.20.22.2.21' templateId.extension='2015-08-01' constraints.validation.dependOn.AdvanceDirectivesSectionEntriesOptionalCode='AdvanceDirectivesSectionEntriesOptionalCodeP' constraints.validation.info='AdvanceDirectivesSectionEntriesOptional2AdvanceDirectiveOrganizer AdvanceDirectivesSectionEntriesOptionalAdvanceDirectiveObservation'"
+ *        annotation="duplicates"
  * @generated
  */
 public interface AdvanceDirectivesSectionEntriesOptional2 extends AdvanceDirectivesSectionEntriesOptional {
