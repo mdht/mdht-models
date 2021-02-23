@@ -364,7 +364,7 @@ public class DeviceIdentifierObservationOperations extends ClinicalStatementOper
 	 * issue with inlined datatype ocl generation
 	 * @ordered
 	 */
-	protected static final String VALIDATE_DEVICE_IDENTIFIER_OBSERVATION_IIUD_IISSUINGAGENCY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.value->excluding(null)->select(isNullFlavorUndefined())->exists( isNullFlavorDefined() or (  matches('root','\\\\b1.3.160\\\\b') or  matches('root','\\\\b2.16.840.1.113883.6.1\\\\b') or  matches('root','\\\\b2.16.840.1.113883.6.40\\\\b') ) )";
+	protected static final String VALIDATE_DEVICE_IDENTIFIER_OBSERVATION_IIUD_IISSUINGAGENCY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.value->excluding(null)->select(isNullFlavorUndefined())->exists( isNullFlavorDefined() or (  matches('root','\\\\b1.3.160\\\\b') or  matches('root','\\\\b2.16.840.1.113883.6.18\\\\b') or  matches('root','\\\\b2.16.840.1.113883.6.40\\\\b') ) )";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateDeviceIdentifierObservationIIUDIissuingagency(DeviceIdentifierObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Device Identifier Observation IIUD Iissuingagency</em>}' invariant operation.

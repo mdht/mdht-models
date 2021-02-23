@@ -253,7 +253,7 @@ public class DeviceIdentifierObservationTest extends CDAValidationTest {
 					public void updateToPass(DeviceIdentifierObservation target) {
 						target.getValues().clear();
 						II ii = DatatypesFactory.eINSTANCE.createII();
-						ii.setRoot("2.16.840.1.113883.6.1");
+						ii.setRoot("2.16.840.1.113883.6.18");
 						target.getValues().add(ii);
 					}
 				});
