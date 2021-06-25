@@ -40,8 +40,8 @@ import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectivesSection2#validateAdvanceDirectivesSection2HasAdvanceDirectiveObservation2XorAdvanceDirectiveOrganizer(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directives Section2 Has Advance Directive Observation2 Xor Advance Directive Organizer</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectivesSection2#validateAdvanceDirectivesSection2Title(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directives Section2 Title</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectivesSection2#validateAdvanceDirectivesSection2Text(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directives Section2 Text</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectivesSection2#validateAdvanceDirectivesSection2NullFlavor(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directives Section2 Null Flavor</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectivesSection2#validateAdvanceDirectivesSection2Entry(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directives Section2 Entry</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectivesSection2#validateAdvanceDirectivesSection2EntryHasAdvanceDirectiveObservation2XorAdvanceDirectiveOrganizer(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directives Section2 Entry Has Advance Directive Observation2 Xor Advance Directive Organizer</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectivesSection2#validateAdvanceDirectivesSection2EntryAdvanceDirectiveOrganizer(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directives Section2 Entry Advance Directive Organizer</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectivesSection2#validateAdvanceDirectivesSection2EntryAdvanceDirectiveObservation2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directives Section2 Entry Advance Directive Observation2</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectivesSection2#getConsolAdvanceDirectiveOrganizers() <em>Get Consol Advance Directive Organizers</em>}</li>
@@ -81,7 +81,7 @@ public class AdvanceDirectivesSection2Operations extends AdvanceDirectivesSectio
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_ADVANCE_DIRECTIVES_SECTION2_HAS_ADVANCE_DIRECTIVE_OBSERVATION2_XOR_ADVANCE_DIRECTIVE_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.nullFlavor <> vocab::NullFlavor::NI implies self.getObservations()->exists(obs : cda::Observation | obs.oclIsKindOf(consol::AdvanceDirectiveObservation2)) xor self.getOrganizers()->exists(org : cda::Organizer | org.oclIsKindOf(consol::AdvanceDirectiveOrganizer))";
+	protected static final String VALIDATE_ADVANCE_DIRECTIVES_SECTION2_HAS_ADVANCE_DIRECTIVE_OBSERVATION2_XOR_ADVANCE_DIRECTIVE_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.nullFlavor <> vocab::NullFlavor::NI implies self.getObservations()->exists(obs : cda::Observation | obs.oclIsKindOf(consol::AdvanceDirectiveObservation2)) or self.getOrganizers()->exists(org : cda::Organizer | org.oclIsKindOf(consol::AdvanceDirectiveOrganizer))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateAdvanceDirectivesSection2HasAdvanceDirectiveObservation2XorAdvanceDirectiveOrganizer(AdvanceDirectivesSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directives Section2 Has Advance Directive Observation2 Xor Advance Directive Organizer</em>}' invariant operation.
@@ -278,74 +278,6 @@ public class AdvanceDirectivesSection2Operations extends AdvanceDirectivesSectio
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateAdvanceDirectivesSection2NullFlavor(AdvanceDirectivesSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directives Section2 Null Flavor</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateAdvanceDirectivesSection2NullFlavor(AdvanceDirectivesSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_ADVANCE_DIRECTIVES_SECTION2_NULL_FLAVOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "isDefined('nullFlavor')";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateAdvanceDirectivesSection2NullFlavor(AdvanceDirectivesSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directives Section2 Null Flavor</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateAdvanceDirectivesSection2NullFlavor(AdvanceDirectivesSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-
-	protected static ThreadLocal<Constraint> VALIDATE_ADVANCE_DIRECTIVES_SECTION2_NULL_FLAVOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param advanceDirectivesSection2 The receiving '<em><b>Advance Directives Section2</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-
-	public static boolean validateAdvanceDirectivesSection2NullFlavor(
-			AdvanceDirectivesSection2 advanceDirectivesSection2, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
-		DatatypesUtil.increment(context, "AdvanceDirectivesSection2AdvanceDirectivesSection2NullFlavor", "INFO");
-
-		if (VALIDATE_ADVANCE_DIRECTIVES_SECTION2_NULL_FLAVOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-
-			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.ADVANCE_DIRECTIVES_SECTION2);
-			try {
-				VALIDATE_ADVANCE_DIRECTIVES_SECTION2_NULL_FLAVOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
-					helper.createInvariant(
-						VALIDATE_ADVANCE_DIRECTIVES_SECTION2_NULL_FLAVOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-
-		if (!EOCL_ENV.get().createQuery(
-			VALIDATE_ADVANCE_DIRECTIVES_SECTION2_NULL_FLAVOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
-				advanceDirectivesSection2)) {
-			if (diagnostics != null) {
-				diagnostics.add(
-					new BasicDiagnostic(
-						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.ADVANCE_DIRECTIVES_SECTION2__ADVANCE_DIRECTIVES_SECTION2_NULL_FLAVOR,
-						ConsolPlugin.INSTANCE.getString("AdvanceDirectivesSection2AdvanceDirectivesSection2NullFlavor"),
-						new Object[] { advanceDirectivesSection2 }));
-			}
-
-			return false;
-		}
-		return true;
-	}
-
-	/**
 	 * The cached OCL expression body for the '{@link #validateAdvanceDirectivesSection2Entry(AdvanceDirectivesSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directives Section2 Entry</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -407,6 +339,82 @@ public class AdvanceDirectivesSection2Operations extends AdvanceDirectivesSectio
 			}
 
 			return false;
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateAdvanceDirectivesSection2EntryHasAdvanceDirectiveObservation2XorAdvanceDirectiveOrganizer(AdvanceDirectivesSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directives Section2 Entry Has Advance Directive Observation2 Xor Advance Directive Organizer</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateAdvanceDirectivesSection2EntryHasAdvanceDirectiveObservation2XorAdvanceDirectiveOrganizer(AdvanceDirectivesSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated NOT
+	 * @ordered
+	 */
+	protected static final String VALIDATE_ADVANCE_DIRECTIVES_SECTION2_ENTRY_HAS_ADVANCE_DIRECTIVE_OBSERVATION2_XOR_ADVANCE_DIRECTIVE_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->excluding(null)->reject( not observation.oclIsUndefined() and not organizer.oclIsUndefined()  implies ( observation.oclIsKindOf(consol::AdvanceDirectiveObservation2) xor organizer.oclIsKindOf(consol::AdvanceDirectiveOrganizer) ))";
+	/**
+	 * The cached OCL invariant for the '{@link #validateAdvanceDirectivesSection2EntryHasAdvanceDirectiveObservation2XorAdvanceDirectiveOrganizer(AdvanceDirectivesSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directives Section2 Entry Has Advance Directive Observation2 Xor Advance Directive Organizer</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateAdvanceDirectivesSection2EntryHasAdvanceDirectiveObservation2XorAdvanceDirectiveOrganizer(AdvanceDirectivesSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_ADVANCE_DIRECTIVES_SECTION2_ENTRY_HAS_ADVANCE_DIRECTIVE_OBSERVATION2_XOR_ADVANCE_DIRECTIVE_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<Query<?, ?, ?>>();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param advanceDirectivesSection2 The receiving '<em><b>Advance Directives Section2</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	public static boolean validateAdvanceDirectivesSection2EntryHasAdvanceDirectiveObservation2XorAdvanceDirectiveOrganizer(
+			AdvanceDirectivesSection2 advanceDirectivesSection2, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context,
+			"AdvanceDirectivesSection2AdvanceDirectivesSection2EntryHasAdvanceDirectiveObservation2XorAdvanceDirectiveOrganizer",
+			"ERROR");
+
+		if (VALIDATE_ADVANCE_DIRECTIVES_SECTION2_ENTRY_HAS_ADVANCE_DIRECTIVE_OBSERVATION2_XOR_ADVANCE_DIRECTIVE_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.ADVANCE_DIRECTIVES_SECTION2);
+			try {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_ADVANCE_DIRECTIVES_SECTION2_ENTRY_HAS_ADVANCE_DIRECTIVE_OBSERVATION2_XOR_ADVANCE_DIRECTIVE_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ADVANCE_DIRECTIVES_SECTION2_ENTRY_HAS_ADVANCE_DIRECTIVE_OBSERVATION2_XOR_ADVANCE_DIRECTIVE_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(
+					EOCL_ENV.get().createQuery(oclExpression));
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+
+		Object oclResult = VALIDATE_ADVANCE_DIRECTIVES_SECTION2_ENTRY_HAS_ADVANCE_DIRECTIVE_OBSERVATION2_XOR_ADVANCE_DIRECTIVE_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(
+			advanceDirectivesSection2);
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.ADVANCE_DIRECTIVES_SECTION2__ADVANCE_DIRECTIVES_SECTION2_ENTRY_HAS_ADVANCE_DIRECTIVE_OBSERVATION2_XOR_ADVANCE_DIRECTIVE_ORGANIZER,
+							ConsolPlugin.INSTANCE.getString(
+								"AdvanceDirectivesSection2AdvanceDirectivesSection2EntryHasAdvanceDirectiveObservation2XorAdvanceDirectiveOrganizer"),
+							new Object[] { eObject }));
+				}
+
+			}
+			return oclResultSet.isEmpty();
 		}
 		return true;
 	}

@@ -39,8 +39,8 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.AdvanceDirectivesSecti
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectivesSection2#validateAdvanceDirectivesSection2HasAdvanceDirectiveObservation2XorAdvanceDirectiveOrganizer(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directives Section2 Has Advance Directive Observation2 Xor Advance Directive Organizer</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectivesSection2#validateAdvanceDirectivesSection2Title(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directives Section2 Title</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectivesSection2#validateAdvanceDirectivesSection2Text(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directives Section2 Text</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectivesSection2#validateAdvanceDirectivesSection2NullFlavor(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directives Section2 Null Flavor</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectivesSection2#validateAdvanceDirectivesSection2Entry(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directives Section2 Entry</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectivesSection2#validateAdvanceDirectivesSection2EntryHasAdvanceDirectiveObservation2XorAdvanceDirectiveOrganizer(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directives Section2 Entry Has Advance Directive Observation2 Xor Advance Directive Organizer</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectivesSection2#validateAdvanceDirectivesSection2EntryAdvanceDirectiveOrganizer(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directives Section2 Entry Advance Directive Organizer</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectivesSection2#validateAdvanceDirectivesSection2EntryAdvanceDirectiveObservation2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directives Section2 Entry Advance Directive Observation2</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectivesSection2#getConsolAdvanceDirectiveOrganizers() <em>Get Consol Advance Directive Organizers</em>}</li>
@@ -62,8 +62,8 @@ public class AdvanceDirectivesSection2Test extends CDAValidationTest {
 	*
 	* @generated NOT
 	*/
-	@Test
-	public void testValidateAdvanceDirectivesSection2HasAdvanceDirectiveObservation2XorAdvanceDirectiveOrganizer() {
+
+	private void testValidateAdvanceDirectivesSection2HasAdvanceDirectiveObservation2XorAdvanceDirectiveOrganizer() {
 		OperationsTestCase<AdvanceDirectivesSection2> validateAdvanceDirectivesSection2HasAdvanceDirectiveObservation2XorAdvanceDirectiveOrganizerTestCase = new OperationsTestCase<AdvanceDirectivesSection2>(
 			"validateAdvanceDirectivesSection2HasAdvanceDirectiveObservation2XorAdvanceDirectiveOrganizer",
 			operationsForOCL.getOCLValue(
@@ -263,40 +263,6 @@ public class AdvanceDirectivesSection2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
-	*/
-	@Test
-	public void testValidateAdvanceDirectivesSection2NullFlavor() {
-		OperationsTestCase<AdvanceDirectivesSection2> validateAdvanceDirectivesSection2NullFlavorTestCase = new OperationsTestCase<AdvanceDirectivesSection2>(
-			"validateAdvanceDirectivesSection2NullFlavor", operationsForOCL.getOCLValue(
-				"VALIDATE_ADVANCE_DIRECTIVES_SECTION2_NULL_FLAVOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(AdvanceDirectivesSection2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(AdvanceDirectivesSection2 target) {
-				target.init();
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return AdvanceDirectivesSection2Operations.validateAdvanceDirectivesSection2NullFlavor(
-					(AdvanceDirectivesSection2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateAdvanceDirectivesSection2NullFlavorTestCase.doValidationTest();
-	}
-
-	/**
-	*
 	* @generated NOT
 	*/
 	@Test
@@ -343,6 +309,76 @@ public class AdvanceDirectivesSection2Test extends CDAValidationTest {
 		};
 
 		validateAdvanceDirectivesSection2EntryTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateAdvanceDirectivesSection2EntryHasAdvanceDirectiveObservation2XorAdvanceDirectiveOrganizer() {
+		OperationsTestCase<AdvanceDirectivesSection2> validateAdvanceDirectivesSection2EntryHasAdvanceDirectiveObservation2XorAdvanceDirectiveOrganizerTestCase = new OperationsTestCase<AdvanceDirectivesSection2>(
+			"validateAdvanceDirectivesSection2EntryHasAdvanceDirectiveObservation2XorAdvanceDirectiveOrganizer",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_ADVANCE_DIRECTIVES_SECTION2_ENTRY_HAS_ADVANCE_DIRECTIVE_OBSERVATION2_XOR_ADVANCE_DIRECTIVE_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(AdvanceDirectivesSection2 target) {
+
+				target.init();
+
+				target.addObservation(ConsolFactory.eINSTANCE.createAdvanceDirectiveObservation2().init());
+
+				target.getEntries().get(0).setOrganizer(
+					ConsolFactory.eINSTANCE.createAdvanceDirectiveOrganizer().init());
+
+				// target.addOrganizer(ConsolFactory.eINSTANCE.createAdvanceDirectiveOrganizer().init());
+
+			}
+
+			@Override
+			public void addPassTests() {
+
+				// addPassTest(new PassTest() {
+				// @Override
+				// public void updateToPass(AdvanceDirectivesSection2 target) {
+				// target.init();
+				// // Entry entry = CDAFactory.eINSTANCE.createEntry();
+				// // target.getEntries().add(entry);
+				// }
+				// });
+
+				addPassTest(new PassTest() {
+					@Override
+					public void updateToPass(AdvanceDirectivesSection2 target) {
+						target.init();
+						target.addObservation(ConsolFactory.eINSTANCE.createAdvanceDirectiveObservation2().init());
+
+					}
+				});
+
+				addPassTest(new PassTest() {
+					@Override
+					public void updateToPass(AdvanceDirectivesSection2 target) {
+						target.init();
+						target.addOrganizer(ConsolFactory.eINSTANCE.createAdvanceDirectiveOrganizer().init());
+					}
+				});
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return AdvanceDirectivesSection2Operations.validateAdvanceDirectivesSection2EntryHasAdvanceDirectiveObservation2XorAdvanceDirectiveOrganizer(
+					(AdvanceDirectivesSection2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateAdvanceDirectivesSection2EntryHasAdvanceDirectiveObservation2XorAdvanceDirectiveOrganizerTestCase.doValidationTest();
 	}
 
 	/**

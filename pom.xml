@@ -50,16 +50,16 @@
 	</repositories>
 
 	<distributionManagement>
-		<repository>
-			<id>devsoap.sitenv.org</id>
-			<name>MDHT.release</name>
-			<url>http://devsoap.sitenv.org:8081/artifactory/libs-release-local</url>
-		</repository>
-		<snapshotRepository>
-			<id>devsoap.sitenv.org</id>
-			<name>MDHT.snapshot</name>
-			<url>http://devsoap.sitenv.org:8081/artifactory/libs-snapshot-local</url>
-		</snapshotRepository>
+		 <repository>
+                                        <id>mdix</id>
+                                        <name>7ed03140605b-releases</name>
+                                        <url>http://artifactory.mdixinc.net:8082/artifactory/mdmiartifactory/libs-release</url>
+                                </repository>
+                                <snapshotRepository>
+                                        <id>mdix</id>
+                                        <name>7ed03140605b-snapshots</name>
+                                        <url>http://artifactory.mdixinc.net:8081/artifactory/mdmiartifactory/libs-snapshot</url>
+                                </snapshotRepository>	
 	</distributionManagement>
 
 	<build>
@@ -118,8 +118,7 @@
 
 	<modules>
 		<module>generated</module>
-		<module>doc</module>
-		<module>tests</module>
+ <module>tests</module>
 	</modules>
 	<profiles>
 		<profile>
@@ -189,38 +188,7 @@
 			</build>
 		</profile>
 
-		<profile>
-			<id>cdatools</id>
-			<distributionManagement>
-				<repository>
-					<id>cdatools.com</id>
-					<name>cdatools.com-releases</name>
-					<url>http://www.cdatools.com:8081/artifactory/libs-release-local</url>
-				</repository>
-				<snapshotRepository>
-					<id>cdatools.com</id>
-					<name>cdatools.com-snapshots</name>
-					<url>http://www.cdatools.com:8081/artifactory/libs-snapshot-local</url>
-				</snapshotRepository>
-			</distributionManagement>
-		</profile>
-
-		<profile>
-			<id>siteenv</id>
-			<distributionManagement>
-				<repository>
-					<id>devsoap.sitenv.org</id>
-					<name>MDHT.libs-release-local</name>
-					<url>http://devsoap.sitenv.org:8081/artifactory/libs-release-local</url>
-				</repository>
-				<snapshotRepository>
-					<id>devsoap.sitenv.org</id>
-					<name>MDHT.libs-snapshot-local</name>
-					<url>http://devsoap.sitenv.org:8081/artifactory/libs-snapshot-local</url>
-				</snapshotRepository>
-			</distributionManagement>
-		</profile>
-
+	 
 		<profile>
 			<id>javadocs18</id>
 			<activation>
@@ -259,6 +227,26 @@
 				<module>releng</module>
 			</modules>
 		</profile>
+
+
+ <profile>
+ 
+ 
+				
+                        <id>mdmiartifactory</id>
+                        <distributionManagement>
+                                <repository>
+                                        <id>mdix</id>
+                                        <name>7ed03140605b-releases</name>
+                                        <url>http://artifactory.mdixinc.net:8082/artifactory/mdmiartifactory/libs-release</url>
+                                </repository>
+                                <snapshotRepository>
+                                        <id>mdix</id>
+                                        <name>7ed03140605b-snapshots</name>
+                                        <url>http://artifactory.mdixinc.net:8081/artifactory/mdmiartifactory/libs-snapshot</url>
+                                </snapshotRepository>
+                        </distributionManagement>
+                </profile>
 
 
 	</profiles>

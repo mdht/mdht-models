@@ -769,7 +769,7 @@ This section differentiates between &quot;advance directives&quot; and &quot;adv
         <language>Analysis</language>
         <language>OCL</language>
         <body>If section/@nullFlavor is not present, this entry SHALL contain EITHER an Advance Directive Observation (V3) OR an Advance Directive Organizer (V2)</body>
-        <body>self.nullFlavor &lt;> vocab::NullFlavor::NI implies self.getObservations()->exists(obs : cda::Observation | obs.oclIsKindOf(consol::AdvanceDirectiveObservation2)) xor self.getOrganizers()->exists(org : cda::Organizer | org.oclIsKindOf(consol::AdvanceDirectiveOrganizer))</body>
+        <body>self.nullFlavor &lt;> vocab::NullFlavor::NI implies self.getObservations()->exists(obs : cda::Observation | obs.oclIsKindOf(consol::AdvanceDirectiveObservation2)) or self.getOrganizers()->exists(org : cda::Organizer | org.oclIsKindOf(consol::AdvanceDirectiveOrganizer))</body>
       </specification>
     </ownedRule>
     <generalization xmi:id="_ZFc3wAIPEeS-F85KYVlDyA" general="_jsKhYAFXEeSLIY0bHb-fFQ"/>
@@ -793,13 +793,6 @@ This section differentiates between &quot;advance directives&quot; and &quot;adv
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_VBvEggIsEeSr1aKUYorURA" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_VBvEgQIsEeSr1aKUYorURA" value="1"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_IXp24KJDEeSOc57SOMra_g" name="nullFlavor" visibility="private">
-      <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__yyDSUDcEd6xYZuu1VKCVw"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_IXp24aJDEeSOc57SOMra_g"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_IXp24qJDEeSOc57SOMra_g" value="1"/>
-      <defaultValue xmi:type="uml:LiteralString" xmi:id="_ZmdsQKJDEeSOc57SOMra_g" value="NI"/>
-      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_fTE6z0xwEd6h-an5IXo-DA"/>
-    </ownedAttribute>
     <ownedAttribute xmi:id="_q6X8sKJGEeSOc57SOMra_g" name="entry" type="_8RsYYKJHEeSOc57SOMra_g" association="_q6ZK0KJGEeSOc57SOMra_g">
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_tpSaAKJGEeSOc57SOMra_g" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tpRy8KJGEeSOc57SOMra_g" value="*"/>
@@ -808,6 +801,16 @@ This section differentiates between &quot;advance directives&quot; and &quot;adv
       <ownedComment xmi:id="_ZZFQYKJrEeSOc57SOMra_g">
         <body>INLINE</body>
       </ownedComment>
+      <ownedRule xmi:id="_K7uv8L5KEeuYi4cy28mk1A" name="hasAdvanceDirectiveObservation2XorAdvanceDirectiveOrganizer" constrainedElement="_8RsYYKJHEeSOc57SOMra_g">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_K7uv8b5KEeuYi4cy28mk1A">
+          <language>Analysis</language>
+          <language>OCL</language>
+          <body>If more than one entry is present, some may contain an Advance Directive Observation and others may contain an Advance Directive Organizer as long as each entry contains only one or the other (but not both).</body>
+          <body>self.nullFlavor &lt;> vocab::NullFlavor::NI implies (self.observation.oclIsUndefined() and entry.observation.oclIsKindOf(consol::AdvanceDirectiveObservation2) xor self.organizer.oclIsUndefined() and entry.organizer.oclIsKindOf(consol::AdvanceDirectiveOrganizer))</body>
+          <body>If section/@nullFlavor is not present, this entry SHALL contain EITHER an Advance Directive Observation (V3) OR an Advance Directive Organizer (V2)</body>
+          <body>self.nullFlavor &lt;> vocab::NullFlavor::NI implies self.getObservations()->exists(obs : cda::Observation | obs.oclIsKindOf(consol::AdvanceDirectiveObservation2)) xor self.getOrganizers()->exists(org : cda::Organizer | org.oclIsKindOf(consol::AdvanceDirectiveOrganizer))</body>
+        </specification>
+      </ownedRule>
       <generalization xmi:id="_8RsYYaJHEeSOc57SOMra_g">
         <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_r0FX0DxXEd6JwqSGecoePg"/>
       </generalization>
@@ -834,9 +837,6 @@ This section differentiates between &quot;advance directives&quot; and &quot;adv
   <CDA:AssociationValidation xmi:id="_ISqCkKHJEeSCAevDCYfA4w" severity="INFO" base_Association="_BNunQKHJEeSCAevDCYfA4w">
     <ruleId>CONF:1198-7957, CONF:1198-15443</ruleId>
   </CDA:AssociationValidation>
-  <CDA:PropertyValidation xmi:id="_JVTx8KJDEeSOc57SOMra_g" severity="INFO" base_Property="_IXp24KJDEeSOc57SOMra_g">
-    <ruleId>CONF:1198-32800</ruleId>
-  </CDA:PropertyValidation>
   <uml:Association xmi:id="_ZPLGQKJGEeSOc57SOMra_g" memberEnd="_ZPJ4IKJGEeSOc57SOMra_g _ZPLGQaJGEeSOc57SOMra_g">
     <ownedEnd xmi:id="_ZPLGQaJGEeSOc57SOMra_g" type="_ZFbCkAIPEeS-F85KYVlDyA" association="_ZPLGQKJGEeSOc57SOMra_g"/>
   </uml:Association>
@@ -913,4 +913,7 @@ This section differentiates between &quot;advance directives&quot; and &quot;adv
     <ruleId>CONF:1198-8664</ruleId>
     <ruleId>CONF:1198-10486</ruleId>
   </CDA:CDATemplate>
+  <CDA:ConstraintValidation xmi:id="_VBbYIL5LEeuYi4cy28mk1A" base_Constraint="_K7uv8L5KEeuYi4cy28mk1A">
+    <ruleId>CONF:1198-32881</ruleId>
+  </CDA:ConstraintValidation>
 </xmi:XMI>
