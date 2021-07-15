@@ -1263,8 +1263,8 @@
   <CDA:PropertyValidation xmi:id="_OYUrNmeaEeOu4KcTyYBqzA" mandatory="true" base_Property="_OYUrJWeaEeOu4KcTyYBqzA">
     <ruleId>CONF:9134</ruleId>
   </CDA:PropertyValidation>
-  <CDA:ValueSetConstraint xmi:id="_OYUrN2eaEeOu4KcTyYBqzA" base_Property="_OYUrJWeaEeOu4KcTyYBqzA" uri="consentdirective-vocab::HL7 RefrainPolicy">
-    <reference href="../../org.hl7.cbcc.privacy.consentdirective.model/model/consentdirective-vocab.uml#_DypusYxpEeKIvYMIfi9SOQ"/>
+  <CDA:ValueSetConstraint xmi:id="_OYUrN2eaEeOu4KcTyYBqzA" base_Property="_OYUrJWeaEeOu4KcTyYBqzA" uri="contentprofile-vocab::HL7 RefrainPolicy">
+    <reference href="pathmap://CONTENTPROFILE_MODEL///contentprofile-vocab.uml#_3-WtsuovEeKrOYS9kpIZsQ"/>
     <ruleId>CONF:9135</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:CDATemplate xmi:id="_cjNciGeaEeOu4KcTyYBqzA" base_Class="_cjNcgGeaEeOu4KcTyYBqzA" templateId="2.16.840.1.113883.3.445.14" assigningAuthorityName="HL7">

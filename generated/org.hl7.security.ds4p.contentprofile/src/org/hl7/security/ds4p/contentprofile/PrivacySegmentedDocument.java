@@ -97,9 +97,9 @@ public interface PrivacySegmentedDocument extends GeneralHeaderConstraints {
 	public PrivacySegmentedDocument init();
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public PrivacySegmentedDocument init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // PrivacySegmentedDocument

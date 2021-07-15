@@ -2,10 +2,12 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: %pluginName
 Bundle-SymbolicName: org.hl7.security.ds4p.contentprofile.tests;singleton:=true
+Automatic-Module-Name: org.hl7.security.ds4p.contentprofile.tests
 Bundle-Version: 3.0.0.qualifier
 Bundle-ClassPath: .
 Bundle-Vendor: %providerName
 Bundle-Localization: plugin
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
 Export-Package: org.hl7.security.ds4p.contentprofile.tests
 Require-Bundle: org.eclipse.core.runtime,
  org.hl7.security.ds4p.contentprofile;visibility:=reexport,
@@ -18,5 +20,5 @@ Require-Bundle: org.eclipse.core.runtime,
  org.eclipse.mdht.uml.hl7.vocab;visibility:=reexport,
  org.eclipse.emf.ecore.xmi;visibility:=reexport,
  org.eclipse.mdht.uml.cda.test;bundle-version="3.0.0",
- org.junit
+ org.junit;visibility:=reexport
 Bundle-ActivationPolicy: lazy

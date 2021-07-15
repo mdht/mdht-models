@@ -104,7 +104,8 @@ public class PrivacyAnnotationImpl extends OrganizerImpl implements PrivacyAnnot
 	@Override
 	public boolean validatePrivacyAnnotationObligationPolicySecurityObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PrivacyAnnotationOperations.validatePrivacyAnnotationObligationPolicySecurityObservation(this, diagnostics, context);
+		return PrivacyAnnotationOperations.validatePrivacyAnnotationObligationPolicySecurityObservation(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -115,7 +116,8 @@ public class PrivacyAnnotationImpl extends OrganizerImpl implements PrivacyAnnot
 	@Override
 	public boolean validatePrivacyAnnotationRefrainPolicySecurityObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PrivacyAnnotationOperations.validatePrivacyAnnotationRefrainPolicySecurityObservation(this, diagnostics, context);
+		return PrivacyAnnotationOperations.validatePrivacyAnnotationRefrainPolicySecurityObservation(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -126,7 +128,8 @@ public class PrivacyAnnotationImpl extends OrganizerImpl implements PrivacyAnnot
 	@Override
 	public boolean validatePrivacyAnnotationPurposeOfUseSecurityObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PrivacyAnnotationOperations.validatePrivacyAnnotationPurposeOfUseSecurityObservation(this, diagnostics, context);
+		return PrivacyAnnotationOperations.validatePrivacyAnnotationPurposeOfUseSecurityObservation(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -137,7 +140,8 @@ public class PrivacyAnnotationImpl extends OrganizerImpl implements PrivacyAnnot
 	@Override
 	public boolean validatePrivacyAnnotationConfidentialityCodeSecurityObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PrivacyAnnotationOperations.validatePrivacyAnnotationConfidentialityCodeSecurityObservation(this, diagnostics, context);
+		return PrivacyAnnotationOperations.validatePrivacyAnnotationConfidentialityCodeSecurityObservation(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -186,16 +190,16 @@ public class PrivacyAnnotationImpl extends OrganizerImpl implements PrivacyAnnot
 	 * @generated
 	 */
 	public PrivacyAnnotation init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public PrivacyAnnotation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // PrivacyAnnotationImpl

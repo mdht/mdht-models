@@ -48,7 +48,8 @@ public class PurposeOfUseSecurityObservationImpl extends SecurityObservationImpl
 	 */
 	@Override
 	public boolean validateSecurityObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PurposeOfUseSecurityObservationOperations.validateSecurityObservationTemplateId(this, diagnostics, context);
+		return PurposeOfUseSecurityObservationOperations.validateSecurityObservationTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -77,16 +78,6 @@ public class PurposeOfUseSecurityObservationImpl extends SecurityObservationImpl
 	 * @generated
 	 */
 	@Override
-	public boolean validateSecurityObservationValueP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PurposeOfUseSecurityObservationOperations.validateSecurityObservationValueP(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public boolean validateSecurityObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PurposeOfUseSecurityObservationOperations.validateSecurityObservationValue(this, diagnostics, context);
 	}
@@ -98,17 +89,17 @@ public class PurposeOfUseSecurityObservationImpl extends SecurityObservationImpl
 	 */
 	@Override
 	public PurposeOfUseSecurityObservation init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public PurposeOfUseSecurityObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // PurposeOfUseSecurityObservationImpl

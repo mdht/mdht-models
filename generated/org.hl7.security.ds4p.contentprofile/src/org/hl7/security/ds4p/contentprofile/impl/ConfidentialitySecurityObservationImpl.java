@@ -48,7 +48,8 @@ public class ConfidentialitySecurityObservationImpl extends SecurityObservationI
 	 */
 	@Override
 	public boolean validateSecurityObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ConfidentialitySecurityObservationOperations.validateSecurityObservationTemplateId(this, diagnostics, context);
+		return ConfidentialitySecurityObservationOperations.validateSecurityObservationTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -58,7 +59,8 @@ public class ConfidentialitySecurityObservationImpl extends SecurityObservationI
 	 */
 	@Override
 	public boolean validateSecurityObservationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ConfidentialitySecurityObservationOperations.validateSecurityObservationCodeP(this, diagnostics, context);
+		return ConfidentialitySecurityObservationOperations.validateSecurityObservationCodeP(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -78,7 +80,8 @@ public class ConfidentialitySecurityObservationImpl extends SecurityObservationI
 	 */
 	@Override
 	public boolean validateSecurityObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ConfidentialitySecurityObservationOperations.validateSecurityObservationValue(this, diagnostics, context);
+		return ConfidentialitySecurityObservationOperations.validateSecurityObservationValue(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -88,17 +91,17 @@ public class ConfidentialitySecurityObservationImpl extends SecurityObservationI
 	 */
 	@Override
 	public ConfidentialitySecurityObservation init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public ConfidentialitySecurityObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // ConfidentialitySecurityObservationImpl
