@@ -93,9 +93,9 @@ public interface MandatoryDocumentAssignedAuthor extends AssignedAuthor {
 	public MandatoryDocumentAssignedAuthor init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public MandatoryDocumentAssignedAuthor init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // MandatoryDocumentAssignedAuthor

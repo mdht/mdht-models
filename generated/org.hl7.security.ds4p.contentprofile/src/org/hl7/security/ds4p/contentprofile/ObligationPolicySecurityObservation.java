@@ -26,9 +26,9 @@ public interface ObligationPolicySecurityObservation extends SecurityObservation
 	public ObligationPolicySecurityObservation init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public ObligationPolicySecurityObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ObligationPolicySecurityObservation

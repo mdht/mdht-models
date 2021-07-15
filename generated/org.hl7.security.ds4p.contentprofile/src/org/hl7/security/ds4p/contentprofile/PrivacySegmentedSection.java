@@ -79,9 +79,9 @@ public interface PrivacySegmentedSection extends Section {
 	public PrivacySegmentedSection init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public PrivacySegmentedSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // PrivacySegmentedSection

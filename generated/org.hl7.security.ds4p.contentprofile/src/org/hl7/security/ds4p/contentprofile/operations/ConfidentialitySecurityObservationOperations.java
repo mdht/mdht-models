@@ -71,7 +71,7 @@ public class ConfidentialitySecurityObservationOperations extends SecurityObserv
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_SECURITY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<  Constraint> VALIDATE_SECURITY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -87,34 +87,44 @@ public class ConfidentialitySecurityObservationOperations extends SecurityObserv
 	public static boolean validateSecurityObservationTemplateId(
 			ConfidentialitySecurityObservation confidentialitySecurityObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		DatatypesUtil.increment(context, "ConfidentialitySecurityObservationSecurityObservationTemplateId", "ERROR");
-
+	
+	
+	
+  	  
+  	  
+  	  
+  	  
+  	 
+  	 
+  	 
+    DatatypesUtil.increment(context,"ConfidentialitySecurityObservationSecurityObservationTemplateId","ERROR");
+    
+  	  
+  	  
 		if (VALIDATE_SECURITY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-
+		
+	 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(CONTENTPROFILEPackage.Literals.CONFIDENTIALITY_SECURITY_OBSERVATION);
 			try {
-				VALIDATE_SECURITY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
-					helper.createInvariant(VALIDATE_SECURITY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			} catch (ParserException pe) {
+				VALIDATE_SECURITY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_SECURITY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-
-		if (!EOCL_ENV.get().createQuery(
-			VALIDATE_SECURITY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
-				confidentialitySecurityObservation)) {
-			if (diagnostics != null) {
-				diagnostics.add(
-					new BasicDiagnostic(
-						Diagnostic.ERROR, CONTENTPROFILEValidator.DIAGNOSTIC_SOURCE,
-						CONTENTPROFILEValidator.CONFIDENTIALITY_SECURITY_OBSERVATION__SECURITY_OBSERVATION_TEMPLATE_ID,
-						CONTENTPROFILEPlugin.INSTANCE.getString(
-							"ConfidentialitySecurityObservationSecurityObservationTemplateId"),
-						new Object[] { confidentialitySecurityObservation }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_SECURITY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(confidentialitySecurityObservation)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 CONTENTPROFILEValidator.DIAGNOSTIC_SOURCE,
+						 CONTENTPROFILEValidator.CONFIDENTIALITY_SECURITY_OBSERVATION__SECURITY_OBSERVATION_TEMPLATE_ID,
+						 CONTENTPROFILEPlugin.INSTANCE.getString("ConfidentialitySecurityObservationSecurityObservationTemplateId"),
+						 new Object [] { confidentialitySecurityObservation }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -139,7 +149,7 @@ public class ConfidentialitySecurityObservationOperations extends SecurityObserv
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_SECURITY_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<  Constraint> VALIDATE_SECURITY_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -155,39 +165,48 @@ public class ConfidentialitySecurityObservationOperations extends SecurityObserv
 	public static boolean validateSecurityObservationCodeP(
 			ConfidentialitySecurityObservation confidentialitySecurityObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		DatatypesUtil.increment(context, "ConfidentialitySecurityObservationSecurityObservationCodeP", "ERROR");
-
+	
+	
+	
+  	  
+  	  
+  	  
+  	  
+  	 
+  	 
+  	 
+    DatatypesUtil.increment(context,"ConfidentialitySecurityObservationSecurityObservationCodeP","ERROR");
+    
+  	  
+  	  
 		if (VALIDATE_SECURITY_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-
+		
+	 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(CONTENTPROFILEPackage.Literals.CONFIDENTIALITY_SECURITY_OBSERVATION);
 			try {
-				VALIDATE_SECURITY_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
-					helper.createInvariant(VALIDATE_SECURITY_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			} catch (ParserException pe) {
+				VALIDATE_SECURITY_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_SECURITY_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-
-		if (!EOCL_ENV.get().createQuery(
-			VALIDATE_SECURITY_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
-				confidentialitySecurityObservation)) {
-			if (diagnostics != null) {
-				diagnostics.add(
-					new BasicDiagnostic(
-						Diagnostic.ERROR, CONTENTPROFILEValidator.DIAGNOSTIC_SOURCE,
-						CONTENTPROFILEValidator.CONFIDENTIALITY_SECURITY_OBSERVATION__SECURITY_OBSERVATION_CODE_P,
-						CONTENTPROFILEPlugin.INSTANCE.getString(
-							"ConfidentialitySecurityObservationSecurityObservationCodeP"),
-						new Object[] { confidentialitySecurityObservation }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_SECURITY_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(confidentialitySecurityObservation)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 CONTENTPROFILEValidator.DIAGNOSTIC_SOURCE,
+						 CONTENTPROFILEValidator.CONFIDENTIALITY_SECURITY_OBSERVATION__SECURITY_OBSERVATION_CODE_P,
+						 CONTENTPROFILEPlugin.INSTANCE.getString("ConfidentialitySecurityObservationSecurityObservationCodeP"),
+						 new Object [] { confidentialitySecurityObservation }));
+			}
+			
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
-				Collection<Object> passToken = (Collection<Object>) context.get(
-					"org.hl7.security.ds4p.contentprofile.SecurityObservationCodeP");
+				Collection<Object> passToken = (Collection<Object>) context.get("org.hl7.security.ds4p.contentprofile.SecurityObservationCodeP");
 				if (passToken == null) {
 					// anticipate a reasonably healthy model
 					passToken = new java.util.ArrayList<Object>(3);
@@ -195,7 +214,7 @@ public class ConfidentialitySecurityObservationOperations extends SecurityObserv
 				}
 				passToken.add(confidentialitySecurityObservation);
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -209,9 +228,9 @@ public class ConfidentialitySecurityObservationOperations extends SecurityObserv
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_SECURITY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and " +
-			"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in " +
-			"value.code = 'SECCLASSOBS' and value.codeSystem = '2.16.840.1.113883.1.11.20471'";
+	protected static final String VALIDATE_SECURITY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
+"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
+"value.code = 'SECCLASSOBS' and value.codeSystem = '2.16.840.1.113883.1.11.20471'";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateSecurityObservationCode(ConfidentialitySecurityObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Security Observation Code</em>}' invariant operation.
@@ -222,7 +241,7 @@ public class ConfidentialitySecurityObservationOperations extends SecurityObserv
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_SECURITY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<  Constraint> VALIDATE_SECURITY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -238,42 +257,50 @@ public class ConfidentialitySecurityObservationOperations extends SecurityObserv
 	public static boolean validateSecurityObservationCode(
 			ConfidentialitySecurityObservation confidentialitySecurityObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		Object passToken = (context == null)
-				? null
-				: context.get("org.hl7.security.ds4p.contentprofile.SecurityObservationCodeP");
-		if ((passToken instanceof Collection<?>) &&
-				((Collection<?>) passToken).contains(confidentialitySecurityObservation)) {
+	
+	
+	
+  	  
+		Object passToken = (context == null) ? null : context.get("org.hl7.security.ds4p.contentprofile.SecurityObservationCodeP");
+		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(confidentialitySecurityObservation)) {
 			// I have a free pass to short-circuit
 			return true;
 		}
-
-		DatatypesUtil.increment(context, "ConfidentialitySecurityObservationSecurityObservationCode", "ERROR");
-
+  	  
+  	  
+  	  
+  	  
+  	 
+  	 
+  	 
+    DatatypesUtil.increment(context,"ConfidentialitySecurityObservationSecurityObservationCode","ERROR");
+    
+  	  
+  	  
 		if (VALIDATE_SECURITY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-
+		
+	 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(CONTENTPROFILEPackage.Literals.CONFIDENTIALITY_SECURITY_OBSERVATION);
 			try {
-				VALIDATE_SECURITY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
-					helper.createInvariant(VALIDATE_SECURITY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			} catch (ParserException pe) {
+				VALIDATE_SECURITY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_SECURITY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-
-		if (!EOCL_ENV.get().createQuery(VALIDATE_SECURITY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
-			confidentialitySecurityObservation)) {
-			if (diagnostics != null) {
-				diagnostics.add(
-					new BasicDiagnostic(
-						Diagnostic.ERROR, CONTENTPROFILEValidator.DIAGNOSTIC_SOURCE,
-						CONTENTPROFILEValidator.CONFIDENTIALITY_SECURITY_OBSERVATION__SECURITY_OBSERVATION_CODE,
-						CONTENTPROFILEPlugin.INSTANCE.getString(
-							"ConfidentialitySecurityObservationSecurityObservationCode"),
-						new Object[] { confidentialitySecurityObservation }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_SECURITY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(confidentialitySecurityObservation)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 CONTENTPROFILEValidator.DIAGNOSTIC_SOURCE,
+						 CONTENTPROFILEValidator.CONFIDENTIALITY_SECURITY_OBSERVATION__SECURITY_OBSERVATION_CODE,
+						 CONTENTPROFILEPlugin.INSTANCE.getString("ConfidentialitySecurityObservationSecurityObservationCode"),
+						 new Object [] { confidentialitySecurityObservation }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -298,7 +325,7 @@ public class ConfidentialitySecurityObservationOperations extends SecurityObserv
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_SECURITY_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<  Constraint> VALIDATE_SECURITY_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -314,34 +341,44 @@ public class ConfidentialitySecurityObservationOperations extends SecurityObserv
 	public static boolean validateSecurityObservationValue(
 			ConfidentialitySecurityObservation confidentialitySecurityObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		DatatypesUtil.increment(context, "ConfidentialitySecurityObservationSecurityObservationValue", "ERROR");
-
+	
+	
+	
+  	  
+  	  
+  	  
+  	  
+  	 
+  	 
+  	 
+    DatatypesUtil.increment(context,"ConfidentialitySecurityObservationSecurityObservationValue","ERROR");
+    
+  	  
+  	  
 		if (VALIDATE_SECURITY_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-
+		
+	 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(CONTENTPROFILEPackage.Literals.CONFIDENTIALITY_SECURITY_OBSERVATION);
 			try {
-				VALIDATE_SECURITY_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
-					helper.createInvariant(VALIDATE_SECURITY_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			} catch (ParserException pe) {
+				VALIDATE_SECURITY_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_SECURITY_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-
-		if (!EOCL_ENV.get().createQuery(
-			VALIDATE_SECURITY_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
-				confidentialitySecurityObservation)) {
-			if (diagnostics != null) {
-				diagnostics.add(
-					new BasicDiagnostic(
-						Diagnostic.ERROR, CONTENTPROFILEValidator.DIAGNOSTIC_SOURCE,
-						CONTENTPROFILEValidator.CONFIDENTIALITY_SECURITY_OBSERVATION__SECURITY_OBSERVATION_VALUE,
-						CONTENTPROFILEPlugin.INSTANCE.getString(
-							"ConfidentialitySecurityObservationSecurityObservationValue"),
-						new Object[] { confidentialitySecurityObservation }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_SECURITY_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(confidentialitySecurityObservation)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 CONTENTPROFILEValidator.DIAGNOSTIC_SOURCE,
+						 CONTENTPROFILEValidator.CONFIDENTIALITY_SECURITY_OBSERVATION__SECURITY_OBSERVATION_VALUE,
+						 CONTENTPROFILEPlugin.INSTANCE.getString("ConfidentialitySecurityObservationSecurityObservationValue"),
+						 new Object [] { confidentialitySecurityObservation }));
+			}
+			 
 			return false;
 		}
 		return true;

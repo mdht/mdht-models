@@ -26,9 +26,9 @@ public interface RefrainPolicySecurityObservation extends SecurityObservation {
 	public RefrainPolicySecurityObservation init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public RefrainPolicySecurityObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // RefrainPolicySecurityObservation

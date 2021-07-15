@@ -44,4 +44,4 @@ public class contentprofile_EcoreAllTests extends TestSuite {
 		super(name);
 	}
 
-} //contentprofile_EcoreAllTests
+} // contentprofile_EcoreAllTests

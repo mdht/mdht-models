@@ -58,19 +58,19 @@ public class ProtectedProblemImpl extends ProblemObservationImpl implements Prot
 	 */
 	@Override
 	public ProtectedProblem init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public ProtectedProblem init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 
 	/**
 	 * <!-- begin-user-doc -->

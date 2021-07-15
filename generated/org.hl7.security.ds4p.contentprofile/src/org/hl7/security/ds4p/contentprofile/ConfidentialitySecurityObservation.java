@@ -26,9 +26,9 @@ public interface ConfidentialitySecurityObservation extends SecurityObservation 
 	public ConfidentialitySecurityObservation init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public ConfidentialitySecurityObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ConfidentialitySecurityObservation

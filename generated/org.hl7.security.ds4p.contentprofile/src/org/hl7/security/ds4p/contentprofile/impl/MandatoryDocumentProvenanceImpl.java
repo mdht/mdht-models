@@ -49,8 +49,7 @@ public class MandatoryDocumentProvenanceImpl extends AuthorImpl implements Manda
 	@Override
 	public boolean validateMandatoryDocumentProvenanceTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MandatoryDocumentProvenanceOperations.validateMandatoryDocumentProvenanceTemplateId(
-			this, diagnostics, context);
+		return MandatoryDocumentProvenanceOperations.validateMandatoryDocumentProvenanceTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -60,8 +59,7 @@ public class MandatoryDocumentProvenanceImpl extends AuthorImpl implements Manda
 	 */
 	@Override
 	public boolean validateMandatoryDocumentProvenanceTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MandatoryDocumentProvenanceOperations.validateMandatoryDocumentProvenanceTime(
-			this, diagnostics, context);
+		return MandatoryDocumentProvenanceOperations.validateMandatoryDocumentProvenanceTime(this, diagnostics, context);
 	}
 
 	/**
@@ -72,8 +70,7 @@ public class MandatoryDocumentProvenanceImpl extends AuthorImpl implements Manda
 	@Override
 	public boolean validateMandatoryDocumentProvenanceAssignedAuthor(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MandatoryDocumentProvenanceOperations.validateMandatoryDocumentProvenanceAssignedAuthor(
-			this, diagnostics, context);
+		return MandatoryDocumentProvenanceOperations.validateMandatoryDocumentProvenanceAssignedAuthor(this, diagnostics, context);
 	}
 
 	/**
@@ -82,16 +79,16 @@ public class MandatoryDocumentProvenanceImpl extends AuthorImpl implements Manda
 	 * @generated
 	 */
 	public MandatoryDocumentProvenance init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public MandatoryDocumentProvenance init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // MandatoryDocumentProvenanceImpl

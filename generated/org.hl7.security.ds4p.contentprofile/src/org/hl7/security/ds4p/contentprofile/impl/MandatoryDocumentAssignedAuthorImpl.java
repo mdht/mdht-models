@@ -49,8 +49,7 @@ public class MandatoryDocumentAssignedAuthorImpl extends AssignedAuthorImpl impl
 	@Override
 	public boolean validateMandatoryDocumentAssignedAuthorTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MandatoryDocumentAssignedAuthorOperations.validateMandatoryDocumentAssignedAuthorTemplateId(
-			this, diagnostics, context);
+		return MandatoryDocumentAssignedAuthorOperations.validateMandatoryDocumentAssignedAuthorTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -61,8 +60,7 @@ public class MandatoryDocumentAssignedAuthorImpl extends AssignedAuthorImpl impl
 	@Override
 	public boolean validateMandatoryDocumentAssignedAuthorTelecomEmail(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MandatoryDocumentAssignedAuthorOperations.validateMandatoryDocumentAssignedAuthorTelecomEmail(
-			this, diagnostics, context);
+		return MandatoryDocumentAssignedAuthorOperations.validateMandatoryDocumentAssignedAuthorTelecomEmail(this, diagnostics, context);
 	}
 
 	/**
@@ -73,8 +71,7 @@ public class MandatoryDocumentAssignedAuthorImpl extends AssignedAuthorImpl impl
 	@Override
 	public boolean validateMandatoryDocumentAssignedAuthorAssignedAuthoringDevice(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MandatoryDocumentAssignedAuthorOperations.validateMandatoryDocumentAssignedAuthorAssignedAuthoringDevice(
-			this, diagnostics, context);
+		return MandatoryDocumentAssignedAuthorOperations.validateMandatoryDocumentAssignedAuthorAssignedAuthoringDevice(this, diagnostics, context);
 	}
 
 	/**
@@ -85,8 +82,7 @@ public class MandatoryDocumentAssignedAuthorImpl extends AssignedAuthorImpl impl
 	@Override
 	public boolean validateMandatoryDocumentAssignedAuthorAssignedPerson(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MandatoryDocumentAssignedAuthorOperations.validateMandatoryDocumentAssignedAuthorAssignedPerson(
-			this, diagnostics, context);
+		return MandatoryDocumentAssignedAuthorOperations.validateMandatoryDocumentAssignedAuthorAssignedPerson(this, diagnostics, context);
 	}
 
 	/**
@@ -97,8 +93,7 @@ public class MandatoryDocumentAssignedAuthorImpl extends AssignedAuthorImpl impl
 	@Override
 	public boolean validateMandatoryDocumentAssignedAuthorRepresentedOrganization(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MandatoryDocumentAssignedAuthorOperations.validateMandatoryDocumentAssignedAuthorRepresentedOrganization(
-			this, diagnostics, context);
+		return MandatoryDocumentAssignedAuthorOperations.validateMandatoryDocumentAssignedAuthorRepresentedOrganization(this, diagnostics, context);
 	}
 
 	/**
@@ -107,16 +102,16 @@ public class MandatoryDocumentAssignedAuthorImpl extends AssignedAuthorImpl impl
 	 * @generated
 	 */
 	public MandatoryDocumentAssignedAuthor init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public MandatoryDocumentAssignedAuthor init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // MandatoryDocumentAssignedAuthorImpl

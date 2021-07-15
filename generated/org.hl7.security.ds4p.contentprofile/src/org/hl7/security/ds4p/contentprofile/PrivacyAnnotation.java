@@ -178,9 +178,9 @@ public interface PrivacyAnnotation extends Organizer {
 	public PrivacyAnnotation init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public PrivacyAnnotation init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // PrivacyAnnotation

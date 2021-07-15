@@ -40,7 +40,7 @@ public class ConfidentialitySecurityObservationTest extends CDAValidationTest {
 	*
 	* @generated
 	*/
-	@org.junit.Test
+	@Test
 	public void testValidateSecurityObservationTemplateId() {
 		OperationsTestCase<ConfidentialitySecurityObservation> validateSecurityObservationTemplateIdTestCase = new OperationsTestCase<ConfidentialitySecurityObservation>(
 			"validateSecurityObservationTemplateId",
@@ -242,8 +242,7 @@ public class ConfidentialitySecurityObservationTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testConstructor() {
-		@SuppressWarnings("unused")
-		ConstructorTestClass constructorTestClass = new ConstructorTestClass();
+		new ConstructorTestClass();
 	} // testConstructor
 
 	/**

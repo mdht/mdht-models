@@ -26,9 +26,9 @@ public interface PurposeOfUseSecurityObservation extends SecurityObservation {
 	public PurposeOfUseSecurityObservation init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public PurposeOfUseSecurityObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // PurposeOfUseSecurityObservation

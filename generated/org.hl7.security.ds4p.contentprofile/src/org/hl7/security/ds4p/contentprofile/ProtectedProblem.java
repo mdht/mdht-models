@@ -54,9 +54,9 @@ public interface ProtectedProblem extends ProblemObservation {
 	public ProtectedProblem init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public ProtectedProblem init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ProtectedProblem
