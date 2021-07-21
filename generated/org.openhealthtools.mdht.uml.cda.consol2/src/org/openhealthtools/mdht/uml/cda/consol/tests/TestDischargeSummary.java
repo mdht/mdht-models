@@ -18,8 +18,10 @@ import org.eclipse.mdht.uml.cda.AssignedAuthor;
 import org.eclipse.mdht.uml.cda.Author;
 import org.eclipse.mdht.uml.cda.CDAFactory;
 import org.eclipse.mdht.uml.cda.ClinicalDocument;
+import org.eclipse.mdht.uml.cda.Entry;
 import org.eclipse.mdht.uml.cda.Patient;
 import org.eclipse.mdht.uml.cda.PatientRole;
+import org.eclipse.mdht.uml.cda.Section;
 import org.eclipse.mdht.uml.cda.util.CDADiagnostic;
 import org.eclipse.mdht.uml.cda.util.CDAUtil;
 import org.eclipse.mdht.uml.cda.util.ValidationResult;
@@ -34,10 +36,16 @@ import org.openhealthtools.mdht.uml.cda.consol.ContinuityOfCareDocument;
 
 public class TestDischargeSummary {
 	public static void main(String[] args) {
-		System.out.println("=========================");
-		// testDS("EDM_AIS_Test_0_CCDA_CCD_3MB_FixedSchemaErrors");
-		// validateDS("EDM_AIS_Test_0_CCDA_CCD_3MB_FixedSchemaErrors");
-		validateDS("DischargeSummary_2014Edition_sample");
+		// System.out.println("=========================");
+		// // testDS("EDM_AIS_Test_0_CCDA_CCD_3MB_FixedSchemaErrors");
+		// // validateDS("EDM_AIS_Test_0_CCDA_CCD_3MB_FixedSchemaErrors");
+		// validateDS("CDA_sample_calling_ext_URL");
+		// System.out.println("=========================");
+		//
+		// validateDS("CDA_sample_calling_ext_URL_2");
+		// System.out.println("=========================");
+
+		validateDS("advancedissue");
 		// testUSRealmAddressAndPatientName();
 		System.out.println("=========================");
 	}
@@ -66,13 +74,26 @@ public class TestDischargeSummary {
 		ConsolPackage.eINSTANCE.eClass();
 		ValidationResult result = new ValidationResult();
 		try {
-			CDAUtil.load((new FileInputStream(path + fileName + ".xml")), result);
+			ClinicalDocument cd = CDAUtil.load((new FileInputStream(path + fileName + ".xml")), result);
 			for (Diagnostic dq : result.getErrorDiagnostics()) {
 				CDADiagnostic cdaDiagnosticq = new CDADiagnostic(dq);
 				sb.append(
 					"ERROR|" + cdaDiagnosticq.getMessage() + "|" + cdaDiagnosticq.getPath() + "|" +
 							cdaDiagnosticq.getCode() + "|" + cdaDiagnosticq.getSource());
 				sb.append("\n");
+			}
+
+			for (Section section : cd.getAllSections()) {
+				System.out.println(section);
+
+				for (Entry entry : section.getEntries()) {
+					System.out.println(entry);
+
+					System.out.println(entry.getOrganizer());
+
+					System.out.println(entry.getObservation());
+				}
+
 			}
 		} catch (Exception e) {
 			e.printStackTrace();

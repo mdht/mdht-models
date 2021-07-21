@@ -77,16 +77,6 @@ public class PurposeOfUseSecurityObservationImpl extends SecurityObservationImpl
 	 * @generated
 	 */
 	@Override
-	public boolean validateSecurityObservationValueP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PurposeOfUseSecurityObservationOperations.validateSecurityObservationValueP(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public boolean validateSecurityObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PurposeOfUseSecurityObservationOperations.validateSecurityObservationValue(this, diagnostics, context);
 	}

@@ -140,7 +140,7 @@ public class PrivacyMarkingsSectionOperations extends SectionOperations {
 	 */
 	protected static final String VALIDATE_PRIVACY_MARKINGS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "+
 "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "+
-"value.code = '57017-6' and value.codeSystem = '2.16.840.1.113883.6.1')";
+"value.code = '57017-6')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePrivacyMarkingsSectionCode(PrivacyMarkingsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Privacy Markings Section Code</em>}' invariant operation.

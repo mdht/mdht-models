@@ -204,17 +204,139 @@ public class RefrainPolicySecurityObservationTest extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(RefrainPolicySecurityObservation target) {
-
+				CE value = DatatypesFactory.eINSTANCE.createCE("notNORDSLCD", "2.16.840.1.113883.5.1063");
+				target.getValues().add(value);
 			}
 
 			@Override
-			protected void updateToPass(RefrainPolicySecurityObservation target) {
-				target.init();
+			public void addPassTests() {
 
-				CE value = DatatypesFactory.eINSTANCE.createCE("NORDSLCD", "2.16.840.1.113883.5.1063");
-				target.getValues().add(value);
+				addPassTest(new PassTest() {
+					@Override
+					public void updateToPass(RefrainPolicySecurityObservation target) {
+						target.init();
+						CE value = DatatypesFactory.eINSTANCE.createCE("NORDSLCD", "2.16.840.1.113883.5.1063");
+						target.getValues().add(value);
+					}
+				});
+
+				addPassTest(new PassTest() {
+					@Override
+					public void updateToPass(RefrainPolicySecurityObservation target) {
+						target.init();
+						CE value = DatatypesFactory.eINSTANCE.createCE("NOAUTH", "2.16.840.1.113883.5.1063");
+						target.getValues().add(value);
+					}
+				});
+				addPassTest(new PassTest() {
+					@Override
+					public void updateToPass(RefrainPolicySecurityObservation target) {
+						target.init();
+						CE value = DatatypesFactory.eINSTANCE.createCE("NOCOLLECT", "2.16.840.1.113883.5.1063");
+						target.getValues().add(value);
+					}
+				});
+				addPassTest(new PassTest() {
+					@Override
+					public void updateToPass(RefrainPolicySecurityObservation target) {
+						target.init();
+						CE value = DatatypesFactory.eINSTANCE.createCE("NOINTEGRATE", "2.16.840.1.113883.5.1063");
+						target.getValues().add(value);
+					}
+				});
+				addPassTest(new PassTest() {
+					@Override
+					public void updateToPass(RefrainPolicySecurityObservation target) {
+						target.init();
+						CE value = DatatypesFactory.eINSTANCE.createCE("NOLIST", "2.16.840.1.113883.5.1063");
+						target.getValues().add(value);
+					}
+				});
+				addPassTest(new PassTest() {
+					@Override
+					public void updateToPass(RefrainPolicySecurityObservation target) {
+						target.init();
+						CE value = DatatypesFactory.eINSTANCE.createCE("NOMOU", "2.16.840.1.113883.5.1063");
+						target.getValues().add(value);
+					}
+				});
+				addPassTest(new PassTest() {
+					@Override
+					public void updateToPass(RefrainPolicySecurityObservation target) {
+						target.init();
+						CE value = DatatypesFactory.eINSTANCE.createCE("NOORGPOL", "2.16.840.1.113883.5.1063");
+						target.getValues().add(value);
+					}
+				});
+				addPassTest(new PassTest() {
+					@Override
+					public void updateToPass(RefrainPolicySecurityObservation target) {
+						target.init();
+						CE value = DatatypesFactory.eINSTANCE.createCE("NOPERSISTP", "2.16.840.1.113883.5.1063");
+						target.getValues().add(value);
+					}
+				});
+				addPassTest(new PassTest() {
+					@Override
+					public void updateToPass(RefrainPolicySecurityObservation target) {
+						target.init();
+						CE value = DatatypesFactory.eINSTANCE.createCE("NORDSCLW", "2.16.840.1.113883.5.1063");
+						target.getValues().add(value);
+					}
+				});
+				addPassTest(new PassTest() {
+					@Override
+					public void updateToPass(RefrainPolicySecurityObservation target) {
+						target.init();
+						CE value = DatatypesFactory.eINSTANCE.createCE("NORELINK", "2.16.840.1.113883.5.1063");
+						target.getValues().add(value);
+					}
+				});
+				addPassTest(new PassTest() {
+					@Override
+					public void updateToPass(RefrainPolicySecurityObservation target) {
+						target.init();
+						CE value = DatatypesFactory.eINSTANCE.createCE("NOREUSE", "2.16.840.1.113883.5.1063");
+						target.getValues().add(value);
+					}
+				});
+				addPassTest(new PassTest() {
+					@Override
+					public void updateToPass(RefrainPolicySecurityObservation target) {
+						target.init();
+						CE value = DatatypesFactory.eINSTANCE.createCE("NOVIP", "2.16.840.1.113883.5.1063");
+						target.getValues().add(value);
+					}
+				});
+				addPassTest(new PassTest() {
+					@Override
+					public void updateToPass(RefrainPolicySecurityObservation target) {
+						target.init();
+						CE value = DatatypesFactory.eINSTANCE.createCE("ORCON", "2.16.840.1.113883.5.1063");
+						target.getValues().add(value);
+					}
+				});
 
 			}
+
+			/*
+			 * NORDSLCD
+			 */
+			/*
+			 * (non-Javadoc)
+			 *
+			 * @see org.eclipse.mdht.uml.cda.operations.CDAValidationTest.OperationsTestCase#setDependency(java.lang.Object)
+			 */
+			// @Override
+			// protected void updateToPass(RefrainPolicySecurityObservation target) {
+			// target.init();
+			//
+			// target.getValues().clear();
+			//
+			// CE value = DatatypesFactory.eINSTANCE.createCE("NORDSLCD", "2.16.840.1.113883.5.1063");
+			// target.getValues().add(value);
+			//
+			// }
 
 			@Override
 			protected void setDependency(RefrainPolicySecurityObservation target) {
@@ -288,8 +410,7 @@ public class RefrainPolicySecurityObservationTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testConstructor() {
-		@SuppressWarnings("unused")
-		ConstructorTestClass constructorTestClass = new ConstructorTestClass();
+		new ConstructorTestClass();
 	} // testConstructor
 
 	/**

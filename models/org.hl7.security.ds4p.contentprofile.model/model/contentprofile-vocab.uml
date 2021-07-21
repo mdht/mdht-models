@@ -71,6 +71,20 @@
           consent directive).The readers are encouraged to refer to the source value set definitions
           for a comprehensive description and explanation of codes.</body>
       </ownedComment>
+      <ownedLiteral xmi:id="_KDLwEOTmEeuJLIg6tToucA" name="NOAUTH"/>
+      <ownedLiteral xmi:id="_Ru760OTmEeuJLIg6tToucA" name="NOCOLLECT"/>
+      <ownedLiteral xmi:id="_T4HN0OTmEeuJLIg6tToucA" name="NODSCLCD"/>
+      <ownedLiteral xmi:id="_V89acOTmEeuJLIg6tToucA" name="NOINTEGRATE"/>
+      <ownedLiteral xmi:id="_WCLRoOTmEeuJLIg6tToucA" name="NOLIST"/>
+      <ownedLiteral xmi:id="_WH3C4OTmEeuJLIg6tToucA" name="NOMOU"/>
+      <ownedLiteral xmi:id="_WNYcEOTmEeuJLIg6tToucA" name="NOORGPOL"/>
+      <ownedLiteral xmi:id="_WShawOTmEeuJLIg6tToucA" name="NOPERSISTP"/>
+      <ownedLiteral xmi:id="_WXidoOTmEeuJLIg6tToucA" name="NORDSCLW"/>
+      <ownedLiteral xmi:id="_WcJ34OTmEeuJLIg6tToucA" name="NORDSLCD"/>
+      <ownedLiteral xmi:id="_WhlxgOTmEeuJLIg6tToucA" name="NORELINK"/>
+      <ownedLiteral xmi:id="_WrpFYOTmEeuJLIg6tToucA" name="NOREUSE"/>
+      <ownedLiteral xmi:id="_j4aBoOTmEeuJLIg6tToucA" name="NOVIP"/>
+      <ownedLiteral xmi:id="_j-eNYOTmEeuJLIg6tToucA" name="ORCON"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_3-WtpOovEeKrOYS9kpIZsQ" name="SecurityObservationTypeCodeSystem">
       <ownedComment xmi:id="_3-WtpeovEeKrOYS9kpIZsQ">
@@ -117,4 +131,18 @@
   </term:ValueSetVersion>
   <term:CodeSystemVersion xmi:id="_3-WtyuovEeKrOYS9kpIZsQ" identifier="2.16.840.1.113883.1.11.20457" fullName="Security Observation Type Code System" source="HL7" url="http://www.hl7.org/v3ballotarchive/v3ballot/html/infrastructure/vocabulary/vocabulary.html" base_Enumeration="_3-WtpOovEeKrOYS9kpIZsQ"/>
   <term:CodeSystemVersion xmi:id="_3-WtyeovEeKrOYS9kpIZsQ" identifier="2.16.840.1.113883.5.1063" fullName="Security Observation Value Code System" source="HL7" url="http://www.hl7.org/v3ballotarchive/v3ballot/html/infrastructure/vocabulary/vocabulary.html" base_Enumeration="_3-WtouovEeKrOYS9kpIZsQ"/>
+  <term:ValueSetCode xmi:id="_KDMXIOTmEeuJLIg6tToucA" base_EnumerationLiteral="_KDLwEOTmEeuJLIg6tToucA"/>
+  <term:ValueSetCode xmi:id="_Ru8h4OTmEeuJLIg6tToucA" base_EnumerationLiteral="_Ru760OTmEeuJLIg6tToucA"/>
+  <term:ValueSetCode xmi:id="_T4HN0eTmEeuJLIg6tToucA" base_EnumerationLiteral="_T4HN0OTmEeuJLIg6tToucA"/>
+  <term:ValueSetCode xmi:id="_V8-BgOTmEeuJLIg6tToucA" base_EnumerationLiteral="_V89acOTmEeuJLIg6tToucA"/>
+  <term:ValueSetCode xmi:id="_WCLRoeTmEeuJLIg6tToucA" base_EnumerationLiteral="_WCLRoOTmEeuJLIg6tToucA"/>
+  <term:ValueSetCode xmi:id="_WH3C4eTmEeuJLIg6tToucA" base_EnumerationLiteral="_WH3C4OTmEeuJLIg6tToucA"/>
+  <term:ValueSetCode xmi:id="_WNYcEeTmEeuJLIg6tToucA" base_EnumerationLiteral="_WNYcEOTmEeuJLIg6tToucA"/>
+  <term:ValueSetCode xmi:id="_WSiB0OTmEeuJLIg6tToucA" base_EnumerationLiteral="_WShawOTmEeuJLIg6tToucA"/>
+  <term:ValueSetCode xmi:id="_WXjEsOTmEeuJLIg6tToucA" base_EnumerationLiteral="_WXidoOTmEeuJLIg6tToucA"/>
+  <term:ValueSetCode xmi:id="_WcJ34eTmEeuJLIg6tToucA" base_EnumerationLiteral="_WcJ34OTmEeuJLIg6tToucA"/>
+  <term:ValueSetCode xmi:id="_WhmYkOTmEeuJLIg6tToucA" base_EnumerationLiteral="_WhlxgOTmEeuJLIg6tToucA"/>
+  <term:ValueSetCode xmi:id="_WrpFYeTmEeuJLIg6tToucA" base_EnumerationLiteral="_WrpFYOTmEeuJLIg6tToucA"/>
+  <term:ValueSetCode xmi:id="_j4aosOTmEeuJLIg6tToucA" base_EnumerationLiteral="_j4aBoOTmEeuJLIg6tToucA"/>
+  <term:ValueSetCode xmi:id="_j-eNYeTmEeuJLIg6tToucA" base_EnumerationLiteral="_j-eNYOTmEeuJLIg6tToucA"/>
 </xmi:XMI>

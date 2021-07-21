@@ -15,16 +15,11 @@ import java.io.FileInputStream;
 
 import org.apache.commons.lang.StringEscapeUtils;
 import org.eclipse.emf.common.util.Diagnostic;
-import org.eclipse.mdht.uml.cda.CDAFactory;
 import org.eclipse.mdht.uml.cda.ClinicalDocument;
-import org.eclipse.mdht.uml.cda.Patient;
-import org.eclipse.mdht.uml.cda.PatientRole;
-import org.eclipse.mdht.uml.cda.RecordTarget;
 import org.eclipse.mdht.uml.cda.util.CDAUtil;
 import org.eclipse.mdht.uml.cda.util.CDAUtil.ValidationHandler;
-import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
 import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil.ValidationStatistics;
-import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
+import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 
 /**
  * @author seanmuir
@@ -37,26 +32,28 @@ public class TestXML {
 	 * @throws Exception
 	 */
 	public static void main(String[] args) throws Exception {
+		ConsolPackage.eINSTANCE.eClass();
 		/*
-		 * <raceCode code="2106-3" codeS ="Race and Ethnicity &#xA;                  - CDC" displayName="White"/>
-		 *
+		 * // * <raceCode code="2106-3" codeS ="Race and Ethnicity &#xA;                  - CDC" displayName="White"/>
+		 * // *
+		 * //
 		 */
-		ConsolFactory.eINSTANCE.createContinuityOfCareDocument2().init();
-		ClinicalDocument cd = ConsolFactory.eINSTANCE.createContinuityOfCareDocument2().init(); // CDAFactory.eINSTANCE.createClinicalDocument();
-		cd.setCode(
-			DatatypesFactory.eINSTANCE.createCE(
-				"2106-3", "2.16.840.1.113883.6.238", "Race and Ethnicity &#xA;		                  - CDC", "aaa"));
-
-		RecordTarget rt = CDAFactory.eINSTANCE.createRecordTarget();
-		PatientRole pr = CDAFactory.eINSTANCE.createPatientRole();
-		Patient p = CDAFactory.eINSTANCE.createPatient();
-		p.setRaceCode(
-			DatatypesFactory.eINSTANCE.createCE(
-				"2106-3", "2.16.840.1.113883.6.238", "Race and Ethnicity &#xA;		                  - CDC", "aaa"));
-		pr.setPatient(p);
-		rt.setPatientRole(pr);
-		cd.getRecordTargets().add(rt);
-
+		// ConsolFactory.eINSTANCE.createContinuityOfCareDocument2().init();
+		// ClinicalDocument cd = ConsolFactory.eINSTANCE.createContinuityOfCareDocument2().init(); // CDAFactory.eINSTANCE.createClinicalDocument();
+		// cd.setCode(
+		// DatatypesFactory.eINSTANCE.createCE(
+		// "2106-3", "2.16.840.1.113883.6.238", "Race and Ethnicity &#xA; - CDC", "aaa"));
+		//
+		// RecordTarget rt = CDAFactory.eINSTANCE.createRecordTarget();
+		// PatientRole pr = CDAFactory.eINSTANCE.createPatientRole();
+		// Patient p = CDAFactory.eINSTANCE.createPatient();
+		// p.setRaceCode(
+		// DatatypesFactory.eINSTANCE.createCE(
+		// "2106-3", "2.16.840.1.113883.6.238", "Race and Ethnicity &#xA; - CDC", "aaa"));
+		// pr.setPatient(p);
+		// rt.setPatientRole(pr);
+		// cd.getRecordTargets().add(rt);
+		//
 		ValidationHandler handler = new ValidationHandler() {
 
 			@Override
@@ -97,7 +94,9 @@ public class TestXML {
 		};
 		// Race and Ethnicity & CDC
 		// CDAUtil.save(cd, new FileOutputStream("aaaa3.xml"));
-		ClinicalDocument cd2 = CDAUtil.load(new FileInputStream("aaaa3.xml"));
+		ClinicalDocument cd2 = CDAUtil.load(
+			new FileInputStream(
+				"/Users/seanmuir/Workspaces/DS4PUpdate/TestURL/files/CDA_sample_calling_ext_URL_2.xml"));
 		CDAUtil.validate(cd2, handler);
 
 		System.out.println(StringEscapeUtils.escapeXml("Race and Ethnicity & CDC"));

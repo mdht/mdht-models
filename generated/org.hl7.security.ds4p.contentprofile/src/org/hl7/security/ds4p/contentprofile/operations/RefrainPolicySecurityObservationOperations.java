@@ -407,7 +407,7 @@ public class RefrainPolicySecurityObservationOperations extends SecurityObservat
 	 */
 	protected static final String VALIDATE_SECURITY_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CE) and "+
 "let value : datatypes::CE = element.oclAsType(datatypes::CE) in "+
-"value.codeSystem = '2.16.840.1.113883.5.1063' and (value.code = 'NORDSLCD' or value.code = 'NOMOU'))";
+"value.code = 'NOAUTH' or value.code = 'NOCOLLECT' or value.code = 'NODSCLCD' or value.code = 'NOINTEGRATE' or value.code = 'NOLIST' or value.code = 'NOMOU' or value.code = 'NOORGPOL' or value.code = 'NOPERSISTP' or value.code = 'NORDSCLW' or value.code = 'NORDSLCD' or value.code = 'NORELINK' or value.code = 'NOREUSE' or value.code = 'NOVIP' or value.code = 'ORCON')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateSecurityObservationValue(RefrainPolicySecurityObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Security Observation Value</em>}' invariant operation.

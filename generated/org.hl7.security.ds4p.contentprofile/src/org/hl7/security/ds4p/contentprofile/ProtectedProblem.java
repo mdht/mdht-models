@@ -18,6 +18,7 @@ import org.openhealthtools.mdht.uml.cda.consol.ProblemObservation;
  *
  * @see org.hl7.security.ds4p.contentprofile.CONTENTPROFILEPackage#getProtectedProblem()
  * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ProblemObservationTemplateId ProtectedProblemProblemProvenance ProtectedProblemPrivacyAnnotations' templateId.root='2.16.840.1.113883.3.3251.1.8'"
+ *        annotation="duplicates"
  * @generated
  */
 public interface ProtectedProblem extends ProblemObservation {

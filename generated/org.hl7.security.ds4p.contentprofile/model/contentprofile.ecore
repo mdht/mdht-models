@@ -106,8 +106,7 @@
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="PrivacySegmentedSectionTemplateId PrivacySegmentedSectionConfidentialityCode"/>
       <details key="templateId.root" value="2.16.840.1.113883.3.3251.1.10"/>
-      <details key="confidentialityCode.codeSystem" value="2.16.840.1.113883.5.25"/>
-      <details key="confidentialityCode.codeSystemName" value="ConfidentialityCode"/>
+      <details key="confidentialityCode.codeSystemName" value=""/>
       <details key="constraints.validation.warning" value="PrivacySegmentedSectionConfidentialityCodeP PrivacySegmentedSectionAuthor"/>
     </eAnnotations>
     <eOperations name="PrivacySegmentedSectionTemplateId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
@@ -131,7 +130,7 @@
     </eOperations>
     <eOperations name="PrivacySegmentedSectionConfidentialityCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="not self.confidentialityCode.oclIsUndefined() and self.confidentialityCode.oclIsKindOf(datatypes::CE) and &#xA;let value : datatypes::CE = self.confidentialityCode.oclAsType(datatypes::CE) in &#xA;value.codeSystem = '2.16.840.1.113883.5.25' and (value.code = 'N' or value.code = 'R' or value.code = 'V')"/>
+        <details key="body" value="not self.confidentialityCode.oclIsUndefined() and self.confidentialityCode.oclIsKindOf(datatypes::CE) and &#xA;let value : datatypes::CE = self.confidentialityCode.oclAsType(datatypes::CE) in &#xA;value.code = 'N' or value.code = 'R' or value.code = 'V'"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -192,8 +191,7 @@
       <details key="constraints.validation.error" value="PrivacyMarkingsSectionTemplateId PrivacyMarkingsSectionCodeP PrivacyMarkingsSectionText"/>
       <details key="templateId.root" value="2.16.840.1.113883.3.3251.1.5"/>
       <details key="code.code" value="57017-6"/>
-      <details key="code.codeSystem" value="2.16.840.1.113883.6.1"/>
-      <details key="code.codeSystemName" value="LOINC"/>
+      <details key="code.codeSystemName" value=""/>
       <details key="code.displayName" value="Privacy Policy"/>
       <details key="constraints.validation.warning" value="PrivacyMarkingsSectionCode"/>
       <details key="constraints.validation.info" value="PrivacyMarkingsSectionEntry1"/>
@@ -219,7 +217,7 @@
     </eOperations>
     <eOperations name="PrivacyMarkingsSectionCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and &#xA;let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in &#xA;value.code = '57017-6' and value.codeSystem = '2.16.840.1.113883.6.1')"/>
+        <details key="body" value="(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and &#xA;let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in &#xA;value.code = '57017-6')"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -304,8 +302,7 @@
       <details key="code.codeSystemName" value="SecurityObservationTypeCodeSystem"/>
       <details key="code.displayName" value="Security Control"/>
       <details key="constraints.validation.dependOn.SecurityObservationCode" value="SecurityObservationCodeP"/>
-      <details key="value.codeSystem" value="2.16.840.1.113883.5.1063"/>
-      <details key="value.codeSystemName" value="SecurityObservationValueCodeSystem"/>
+      <details key="value.codeSystemName" value=""/>
       <details key="constraints.validation.warning" value="SecurityObservationValue"/>
       <details key="constraints.validation.dependOn.SecurityObservationValue" value="SecurityObservationValueP"/>
     </eAnnotations>
@@ -392,7 +389,7 @@
       </contents>
       <contents xsi:type="ecore:EOperation" name="SecurityObservationValue" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
         <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-          <details key="body" value="self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CE) and &#xA;let value : datatypes::CE = element.oclAsType(datatypes::CE) in &#xA;value.codeSystem = '2.16.840.1.113883.5.1063' and (value.code = 'CPLYCD' or value.code = 'ENCRYPT'))"/>
+          <details key="body" value="self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CE) and &#xA;let value : datatypes::CE = element.oclAsType(datatypes::CE) in &#xA;value.code = 'CPLYCD' or value.code = 'ENCRYPT')"/>
         </eAnnotations>
         <eAnnotations source="redefines" references="#//SecurityObservation/SecurityObservationValue"/>
         <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
@@ -919,8 +916,7 @@
       <details key="code.codeSystemName" value="SecurityObservationTypeCodeSystem"/>
       <details key="code.displayName" value="Security Control Observation Type"/>
       <details key="constraints.validation.dependOn.SecurityObservationCode" value="SecurityObservationCodeP"/>
-      <details key="value.codeSystem" value="2.16.840.1.113883.5.1063"/>
-      <details key="value.codeSystemName" value="SecurityObservationValueCodeSystem"/>
+      <details key="value.codeSystemName" value=""/>
       <details key="constraints.validation.dependOn.SecurityObservationValue" value="SecurityObservationValueP"/>
     </eAnnotations>
     <eAnnotations source="duplicates">
@@ -1006,7 +1002,7 @@
       </contents>
       <contents xsi:type="ecore:EOperation" name="SecurityObservationValue" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
         <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-          <details key="body" value="self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CE) and &#xA;let value : datatypes::CE = element.oclAsType(datatypes::CE) in &#xA;value.codeSystem = '2.16.840.1.113883.5.1063' and (value.code = 'NORDSLCD' or value.code = 'NOMOU'))"/>
+          <details key="body" value="self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CE) and &#xA;let value : datatypes::CE = element.oclAsType(datatypes::CE) in &#xA;value.code = 'NOAUTH' or value.code = 'NOCOLLECT' or value.code = 'NODSCLCD' or value.code = 'NOINTEGRATE' or value.code = 'NOLIST' or value.code = 'NOMOU' or value.code = 'NOORGPOL' or value.code = 'NOPERSISTP' or value.code = 'NORDSCLW' or value.code = 'NORDSLCD' or value.code = 'NORELINK' or value.code = 'NOREUSE' or value.code = 'NOVIP' or value.code = 'ORCON')"/>
         </eAnnotations>
         <eAnnotations source="redefines" references="#//SecurityObservation/SecurityObservationValue"/>
         <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
@@ -1028,16 +1024,13 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="PurposeOfUseSecurityObservation" eSuperTypes="#//SecurityObservation">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="constraints.validation.error" value="SecurityObservationTemplateId SecurityObservationCode SecurityObservationCodeP SecurityObservationValue SecurityObservationValueP"/>
+      <details key="constraints.validation.error" value="SecurityObservationTemplateId SecurityObservationCode SecurityObservationCodeP SecurityObservationValue"/>
       <details key="templateId.root" value="2.16.840.1.113883.3.445.22"/>
       <details key="code.code" value="SECCONOBS"/>
       <details key="code.codeSystem" value="2.16.840.1.113883.1.11.20457"/>
       <details key="code.codeSystemName" value="SecurityObservationTypeCodeSystem"/>
       <details key="code.displayName" value="Security Control"/>
       <details key="constraints.validation.dependOn.SecurityObservationCode" value="SecurityObservationCodeP"/>
-      <details key="value.codeSystem" value="2.16.840.1.113883.5.1063"/>
-      <details key="value.codeSystemName" value="SecurityObservationValueCodeSystem"/>
-      <details key="constraints.validation.dependOn.SecurityObservationValue" value="SecurityObservationValueP"/>
     </eAnnotations>
     <eAnnotations source="duplicates">
       <contents xsi:type="ecore:EOperation" name="SecurityObservationTemplateId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
@@ -1100,29 +1093,9 @@
           </eGenericType>
         </eParameters>
       </contents>
-      <contents xsi:type="ecore:EOperation" name="SecurityObservationValueP" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
-        <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-          <details key="body" value="not self.value->isEmpty()"/>
-        </eAnnotations>
-        <eAnnotations source="redefines" references="#//SecurityObservation/SecurityObservationValueP"/>
-        <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
-          <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-            <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
-          </eAnnotations>
-        </eParameters>
-        <eParameters name="context">
-          <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-            <details key="documentation" value="The cache of context-specific information."/>
-          </eAnnotations>
-          <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
-            <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-            <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-          </eGenericType>
-        </eParameters>
-      </contents>
       <contents xsi:type="ecore:EOperation" name="SecurityObservationValue" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
         <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-          <details key="body" value="self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CE) and &#xA;let value : datatypes::CE = element.oclAsType(datatypes::CE) in &#xA;value.codeSystem = '2.16.840.1.113883.5.1063' and (value.code = 'TREAT' or value.code = 'ETREAT' or value.code = 'HPAYMT' or value.code = 'HRESCH' or value.code = 'CLINTRCH' or value.code = ' CLINTRL'))"/>
+          <details key="body" value="not self.value->isEmpty()"/>
         </eAnnotations>
         <eAnnotations source="redefines" references="#//SecurityObservation/SecurityObservationValue"/>
         <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">

@@ -15,6 +15,7 @@ import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
 import org.hl7.security.ds4p.contentprofile.CONTENTPROFILEFactory;
 import org.hl7.security.ds4p.contentprofile.PurposeOfUseSecurityObservation;
 import org.hl7.security.ds4p.contentprofile.operations.PurposeOfUseSecurityObservationOperations;
+import org.hl7.security.ds4p.contentprofile.operations.SecurityObservationOperations;
 import org.junit.Test;
 
 /**
@@ -28,7 +29,6 @@ import org.junit.Test;
  *   <li>{@link org.hl7.security.ds4p.contentprofile.PurposeOfUseSecurityObservation#validateSecurityObservationTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Security Observation Template Id</em>}</li>
  *   <li>{@link org.hl7.security.ds4p.contentprofile.PurposeOfUseSecurityObservation#validateSecurityObservationCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Security Observation Code P</em>}</li>
  *   <li>{@link org.hl7.security.ds4p.contentprofile.PurposeOfUseSecurityObservation#validateSecurityObservationCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Security Observation Code</em>}</li>
- *   <li>{@link org.hl7.security.ds4p.contentprofile.PurposeOfUseSecurityObservation#validateSecurityObservationValueP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Security Observation Value P</em>}</li>
  *   <li>{@link org.hl7.security.ds4p.contentprofile.PurposeOfUseSecurityObservation#validateSecurityObservationValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Security Observation Value</em>}</li>
  * </ul>
  * </p>
@@ -181,7 +181,7 @@ public class PurposeOfUseSecurityObservationTest extends CDAValidationTest {
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return PurposeOfUseSecurityObservationOperations.validateSecurityObservationValueP(
+				return SecurityObservationOperations.validateSecurityObservationValueP(
 					(PurposeOfUseSecurityObservation) objectToTest, diagnostician, map);
 			}
 
@@ -290,8 +290,7 @@ public class PurposeOfUseSecurityObservationTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testConstructor() {
-		@SuppressWarnings("unused")
-		ConstructorTestClass constructorTestClass = new ConstructorTestClass();
+		new ConstructorTestClass();
 	} // testConstructor
 
 	/**

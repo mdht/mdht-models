@@ -407,7 +407,7 @@ public class ObligationPolicySecurityObservationOperations extends SecurityObser
 	 */
 	protected static final String VALIDATE_SECURITY_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CE) and "+
 "let value : datatypes::CE = element.oclAsType(datatypes::CE) in "+
-"value.codeSystem = '2.16.840.1.113883.5.1063' and (value.code = 'CPLYCD' or value.code = 'ENCRYPT'))";
+"value.code = 'CPLYCD' or value.code = 'ENCRYPT')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateSecurityObservationValue(ObligationPolicySecurityObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Security Observation Value</em>}' invariant operation.

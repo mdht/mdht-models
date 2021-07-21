@@ -12,7 +12,7 @@
 	<packaging>eclipse-plugin</packaging>
 	<artifactId>org.hl7.security.ds4p.contentprofile.tests</artifactId>
 	
-		<build>
+	<build>
 		<plugins>
 
 			<plugin>
@@ -123,6 +123,7 @@
 
 
 	</build>
+
 
 
 

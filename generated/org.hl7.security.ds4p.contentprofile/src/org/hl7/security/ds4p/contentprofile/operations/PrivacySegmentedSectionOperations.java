@@ -139,7 +139,7 @@ public class PrivacySegmentedSectionOperations extends SectionOperations {
 	 */
 	protected static final String VALIDATE_PRIVACY_SEGMENTED_SECTION_CONFIDENTIALITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.confidentialityCode.oclIsUndefined() and self.confidentialityCode.oclIsKindOf(datatypes::CE) and "+
 "let value : datatypes::CE = self.confidentialityCode.oclAsType(datatypes::CE) in "+
-"value.codeSystem = '2.16.840.1.113883.5.25' and (value.code = 'N' or value.code = 'R' or value.code = 'V')";
+"value.code = 'N' or value.code = 'R' or value.code = 'V'";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePrivacySegmentedSectionConfidentialityCode(PrivacySegmentedSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Privacy Segmented Section Confidentiality Code</em>}' invariant operation.

@@ -64,44 +64,32 @@ public class ProtectedProblemOperations extends ProblemObservationOperations {
 
 	public static boolean validateProblemObservationTemplateId(ProtectedProblem protectedProblem,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"ProtectedProblemProblemObservationTemplateId","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "ProtectedProblemProblemObservationTemplateId", "ERROR");
+
 		if (VALIDATE_PROBLEM_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(CONTENTPROFILEPackage.Literals.PROTECTED_PROBLEM);
 			try {
-				VALIDATE_PROBLEM_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PROBLEM_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_PROBLEM_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_PROBLEM_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_PROBLEM_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(protectedProblem)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_PROBLEM_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(protectedProblem)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 CONTENTPROFILEValidator.DIAGNOSTIC_SOURCE,
-						 CONTENTPROFILEValidator.PROTECTED_PROBLEM__PROBLEM_OBSERVATION_TEMPLATE_ID,
-						 CONTENTPROFILEPlugin.INSTANCE.getString("ProtectedProblemProblemObservationTemplateId"),
-						 new Object [] { protectedProblem }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, CONTENTPROFILEValidator.DIAGNOSTIC_SOURCE,
+						CONTENTPROFILEValidator.PROTECTED_PROBLEM__PROBLEM_OBSERVATION_TEMPLATE_ID,
+						CONTENTPROFILEPlugin.INSTANCE.getString("ProtectedProblemProblemObservationTemplateId"),
+						new Object[] { protectedProblem }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -126,7 +114,7 @@ public class ProtectedProblemOperations extends ProblemObservationOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_PROTECTED_PROBLEM_PROBLEM_PROVENANCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_PROTECTED_PROBLEM_PROBLEM_PROVENANCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -141,44 +129,34 @@ public class ProtectedProblemOperations extends ProblemObservationOperations {
 
 	public static boolean validateProtectedProblemProblemProvenance(ProtectedProblem protectedProblem,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"ProtectedProblemProtectedProblemProblemProvenance","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "ProtectedProblemProtectedProblemProblemProvenance", "ERROR");
+
 		if (VALIDATE_PROTECTED_PROBLEM_PROBLEM_PROVENANCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(CONTENTPROFILEPackage.Literals.PROTECTED_PROBLEM);
 			try {
-				VALIDATE_PROTECTED_PROBLEM_PROBLEM_PROVENANCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PROTECTED_PROBLEM_PROBLEM_PROVENANCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_PROTECTED_PROBLEM_PROBLEM_PROVENANCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_PROTECTED_PROBLEM_PROBLEM_PROVENANCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_PROTECTED_PROBLEM_PROBLEM_PROVENANCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(protectedProblem)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_PROTECTED_PROBLEM_PROBLEM_PROVENANCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				protectedProblem)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 CONTENTPROFILEValidator.DIAGNOSTIC_SOURCE,
-						 CONTENTPROFILEValidator.PROTECTED_PROBLEM__PROTECTED_PROBLEM_PROBLEM_PROVENANCE,
-						 CONTENTPROFILEPlugin.INSTANCE.getString("ProtectedProblemProtectedProblemProblemProvenance"),
-						 new Object [] { protectedProblem }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, CONTENTPROFILEValidator.DIAGNOSTIC_SOURCE,
+						CONTENTPROFILEValidator.PROTECTED_PROBLEM__PROTECTED_PROBLEM_PROBLEM_PROVENANCE,
+						CONTENTPROFILEPlugin.INSTANCE.getString("ProtectedProblemProtectedProblemProblemProvenance"),
+						new Object[] { protectedProblem }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -203,7 +181,7 @@ public class ProtectedProblemOperations extends ProblemObservationOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_PROTECTED_PROBLEM_PRIVACY_ANNOTATIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_PROTECTED_PROBLEM_PRIVACY_ANNOTATIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * The cached OCL expression body for the '{@link #validateProblemObservationTemplateId(ProtectedProblem, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Observation Template Id</em>}' operation.
@@ -224,7 +202,7 @@ public class ProtectedProblemOperations extends ProblemObservationOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_PROBLEM_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_PROBLEM_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -239,44 +217,34 @@ public class ProtectedProblemOperations extends ProblemObservationOperations {
 
 	public static boolean validateProtectedProblemPrivacyAnnotations(ProtectedProblem protectedProblem,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"ProtectedProblemProtectedProblemPrivacyAnnotations","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "ProtectedProblemProtectedProblemPrivacyAnnotations", "ERROR");
+
 		if (VALIDATE_PROTECTED_PROBLEM_PRIVACY_ANNOTATIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(CONTENTPROFILEPackage.Literals.PROTECTED_PROBLEM);
 			try {
-				VALIDATE_PROTECTED_PROBLEM_PRIVACY_ANNOTATIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PROTECTED_PROBLEM_PRIVACY_ANNOTATIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_PROTECTED_PROBLEM_PRIVACY_ANNOTATIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_PROTECTED_PROBLEM_PRIVACY_ANNOTATIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_PROTECTED_PROBLEM_PRIVACY_ANNOTATIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(protectedProblem)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_PROTECTED_PROBLEM_PRIVACY_ANNOTATIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				protectedProblem)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 CONTENTPROFILEValidator.DIAGNOSTIC_SOURCE,
-						 CONTENTPROFILEValidator.PROTECTED_PROBLEM__PROTECTED_PROBLEM_PRIVACY_ANNOTATIONS,
-						 CONTENTPROFILEPlugin.INSTANCE.getString("ProtectedProblemProtectedProblemPrivacyAnnotations"),
-						 new Object [] { protectedProblem }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, CONTENTPROFILEValidator.DIAGNOSTIC_SOURCE,
+						CONTENTPROFILEValidator.PROTECTED_PROBLEM__PROTECTED_PROBLEM_PRIVACY_ANNOTATIONS,
+						CONTENTPROFILEPlugin.INSTANCE.getString("ProtectedProblemProtectedProblemPrivacyAnnotations"),
+						new Object[] { protectedProblem }));
 			}
-			 
+
 			return false;
 		}
 		return true;

@@ -1091,8 +1091,7 @@ public class CONTENTPROFILEPackageImpl extends EPackageImpl implements CONTENTPR
            new String[] {
              "constraints.validation.error", "PrivacySegmentedSectionTemplateId PrivacySegmentedSectionConfidentialityCode",
              "templateId.root", "2.16.840.1.113883.3.3251.1.10",
-             "confidentialityCode.codeSystem", "2.16.840.1.113883.5.25",
-             "confidentialityCode.codeSystemName", "ConfidentialityCode",
+             "confidentialityCode.codeSystemName", "",
              "constraints.validation.warning", "PrivacySegmentedSectionConfidentialityCodeP PrivacySegmentedSectionAuthor"
            });                 
         addAnnotation
@@ -1102,8 +1101,7 @@ public class CONTENTPROFILEPackageImpl extends EPackageImpl implements CONTENTPR
              "constraints.validation.error", "PrivacyMarkingsSectionTemplateId PrivacyMarkingsSectionCodeP PrivacyMarkingsSectionText",
              "templateId.root", "2.16.840.1.113883.3.3251.1.5",
              "code.code", "57017-6",
-             "code.codeSystem", "2.16.840.1.113883.6.1",
-             "code.codeSystemName", "LOINC",
+             "code.codeSystemName", "",
              "code.displayName", "Privacy Policy",
              "constraints.validation.warning", "PrivacyMarkingsSectionCode",
              "constraints.validation.info", "PrivacyMarkingsSectionEntry1"
@@ -1119,8 +1117,7 @@ public class CONTENTPROFILEPackageImpl extends EPackageImpl implements CONTENTPR
              "code.codeSystemName", "SecurityObservationTypeCodeSystem",
              "code.displayName", "Security Control",
              "constraints.validation.dependOn.SecurityObservationCode", "SecurityObservationCodeP",
-             "value.codeSystem", "2.16.840.1.113883.5.1063",
-             "value.codeSystemName", "SecurityObservationValueCodeSystem",
+             "value.codeSystemName", "",
              "constraints.validation.warning", "SecurityObservationValue",
              "constraints.validation.dependOn.SecurityObservationValue", "SecurityObservationValueP"
            });      
@@ -1175,24 +1172,20 @@ public class CONTENTPROFILEPackageImpl extends EPackageImpl implements CONTENTPR
              "code.codeSystemName", "SecurityObservationTypeCodeSystem",
              "code.displayName", "Security Control Observation Type",
              "constraints.validation.dependOn.SecurityObservationCode", "SecurityObservationCodeP",
-             "value.codeSystem", "2.16.840.1.113883.5.1063",
-             "value.codeSystemName", "SecurityObservationValueCodeSystem",
+             "value.codeSystemName", "",
              "constraints.validation.dependOn.SecurityObservationValue", "SecurityObservationValueP"
            });      
         addAnnotation
           (purposeOfUseSecurityObservationEClass, 
            source, 
            new String[] {
-             "constraints.validation.error", "SecurityObservationTemplateId SecurityObservationCode SecurityObservationCodeP SecurityObservationValue SecurityObservationValueP",
+             "constraints.validation.error", "SecurityObservationTemplateId SecurityObservationCode SecurityObservationCodeP SecurityObservationValue",
              "templateId.root", "2.16.840.1.113883.3.445.22",
              "code.code", "SECCONOBS",
              "code.codeSystem", "2.16.840.1.113883.1.11.20457",
              "code.codeSystemName", "SecurityObservationTypeCodeSystem",
              "code.displayName", "Security Control",
-             "constraints.validation.dependOn.SecurityObservationCode", "SecurityObservationCodeP",
-             "value.codeSystem", "2.16.840.1.113883.5.1063",
-             "value.codeSystemName", "SecurityObservationValueCodeSystem",
-             "constraints.validation.dependOn.SecurityObservationValue", "SecurityObservationValueP"
+             "constraints.validation.dependOn.SecurityObservationCode", "SecurityObservationCodeP"
            });      
         addAnnotation
           (confidentialitySecurityObservationEClass, 

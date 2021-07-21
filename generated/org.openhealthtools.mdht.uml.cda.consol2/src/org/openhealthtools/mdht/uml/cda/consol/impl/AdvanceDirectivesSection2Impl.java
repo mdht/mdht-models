@@ -82,10 +82,8 @@ public class AdvanceDirectivesSection2Impl extends AdvanceDirectivesSectionEntri
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAdvanceDirectivesSection2NullFlavor(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return AdvanceDirectivesSection2Operations.validateAdvanceDirectivesSection2NullFlavor(
-			this, diagnostics, context);
+	public boolean validateAdvanceDirectivesSection2Entry(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AdvanceDirectivesSection2Operations.validateAdvanceDirectivesSection2Entry(this, diagnostics, context);
 	}
 
 	/**
@@ -93,8 +91,10 @@ public class AdvanceDirectivesSection2Impl extends AdvanceDirectivesSectionEntri
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAdvanceDirectivesSection2Entry(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AdvanceDirectivesSection2Operations.validateAdvanceDirectivesSection2Entry(this, diagnostics, context);
+	public boolean validateAdvanceDirectivesSection2EntryHasAdvanceDirectiveObservation2XorAdvanceDirectiveOrganizer(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AdvanceDirectivesSection2Operations.validateAdvanceDirectivesSection2EntryHasAdvanceDirectiveObservation2XorAdvanceDirectiveOrganizer(
+			this, diagnostics, context);
 	}
 
 	/**
