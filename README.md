@@ -5,8 +5,6 @@ On this site you will find all the MDHT projects supporting the various CDA base
 
 **You can vist the MDHT eclipse page here** <https://projects.eclipse.org/projects/modeling.mdht>
 
-**You can download products and *older* runtime artifacts here** <https://sourceforge.net/projects/oht-modeling/files/>
-
 ---
 
 *Note: This readme is a work in progress. Anyone interested in MDHT: Please feel free to modify, update the TODO fields, or add to any part of it with a PR.*
