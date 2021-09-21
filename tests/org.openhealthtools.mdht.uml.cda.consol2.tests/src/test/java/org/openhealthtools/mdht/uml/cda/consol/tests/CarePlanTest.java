@@ -714,7 +714,7 @@ public class CarePlanTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated not
 	*/
 	@Test
 
@@ -761,7 +761,7 @@ public class CarePlanTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated not
 	*/
 	@Test
 

@@ -430,7 +430,7 @@ public class DrugMonitoringActTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated not
 	*/
 	@Test
 
@@ -477,7 +477,7 @@ public class DrugMonitoringActTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated not
 	*/
 	@Test
 
