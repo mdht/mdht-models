@@ -17,10 +17,10 @@ import org.eclipse.mdht.uml.cda.Act;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getDrugMonitoringAct()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='DrugMonitoringActTemplateId DrugMonitoringActClassCode DrugMonitoringActMoodCode DrugMonitoringActId DrugMonitoringActCode DrugMonitoringActCodeP DrugMonitoringActStatusCode DrugMonitoringActStatusCodeP DrugMonitoringActEffectiveTime DrugMonitoringActParticipant DrugMonitoringActParticipantParticipantRolePlayingEntityClassCode DrugMonitoringActParticipantParticipantRolePlayingEntityName DrugMonitoringActParticipantParticipantRoleClassCode DrugMonitoringActParticipantParticipantRoleId DrugMonitoringActParticipantParticipantRolePlayingEntity DrugMonitoringActParticipantTypeCode DrugMonitoringActParticipantParticipantRole' templateId.root='2.16.840.1.113883.10.20.22.4.123' classCode='ACT' moodCode='INT' code.code='395170001' code.codeSystem='2.16.840.1.113883.6.96' code.codeSystemName='SNOMEDCT' code.displayName='medication monitoring (regime/therapy)' constraints.validation.dependOn.DrugMonitoringActCode='DrugMonitoringActCodeP' constraints.validation.query='DrugMonitoringActParticipantParticipantRolePlayingEntityClassCode DrugMonitoringActParticipantParticipantRolePlayingEntityName DrugMonitoringActParticipantParticipantRoleClassCode DrugMonitoringActParticipantParticipantRoleId DrugMonitoringActParticipantParticipantRolePlayingEntity DrugMonitoringActParticipantTypeCode DrugMonitoringActParticipantParticipantRole'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='DrugMonitoringActTemplateId DrugMonitoringActClassCode DrugMonitoringActMoodCode DrugMonitoringActId DrugMonitoringActCode DrugMonitoringActCodeP DrugMonitoringActStatusCode DrugMonitoringActStatusCodeP DrugMonitoringActEffectiveTime DrugMonitoringActParticipant DrugMonitoringActParticipantParticipantRolePlayingEntityGeneralHeaderConstraintsUSRealmPersonNameUSRealmPersonNameMixedContent DrugMonitoringActParticipantParticipantRolePlayingEntityGeneralHeaderConstraintsUSRealmPersonNameUse DrugMonitoringActParticipantParticipantRolePlayingEntityGeneralHeaderConstraintsUSRealmPersonNameFamily DrugMonitoringActParticipantParticipantRolePlayingEntityGeneralHeaderConstraintsUSRealmPersonNameGiven DrugMonitoringActParticipantParticipantRolePlayingEntityGeneralHeaderConstraintsUSRealmPersonNamePrefix DrugMonitoringActParticipantParticipantRolePlayingEntityGeneralHeaderConstraintsUSRealmPersonNameSuffix DrugMonitoringActParticipantParticipantRolePlayingEntityClassCode DrugMonitoringActParticipantParticipantRolePlayingEntityName DrugMonitoringActParticipantParticipantRoleClassCode DrugMonitoringActParticipantParticipantRoleId DrugMonitoringActParticipantParticipantRolePlayingEntity DrugMonitoringActParticipantTypeCode DrugMonitoringActParticipantParticipantRole' templateId.root='2.16.840.1.113883.10.20.22.4.123' classCode='ACT' moodCode='INT' code.code='395170001' code.codeSystem='2.16.840.1.113883.6.96' code.codeSystemName='SNOMEDCT' code.displayName='medication monitoring (regime/therapy)' constraints.validation.dependOn.DrugMonitoringActCode='DrugMonitoringActCodeP' constraints.validation.query='DrugMonitoringActParticipantParticipantRolePlayingEntityGeneralHeaderConstraintsUSRealmPersonNameUSRealmPersonNameMixedContent DrugMonitoringActParticipantParticipantRolePlayingEntityGeneralHeaderConstraintsUSRealmPersonNameUse DrugMonitoringActParticipantParticipantRolePlayingEntityGeneralHeaderConstraintsUSRealmPersonNameFamily DrugMonitoringActParticipantParticipantRolePlayingEntityGeneralHeaderConstraintsUSRealmPersonNameGiven DrugMonitoringActParticipantParticipantRolePlayingEntityGeneralHeaderConstraintsUSRealmPersonNamePrefix DrugMonitoringActParticipantParticipantRolePlayingEntityGeneralHeaderConstraintsUSRealmPersonNameSuffix DrugMonitoringActParticipantParticipantRolePlayingEntityClassCode DrugMonitoringActParticipantParticipantRolePlayingEntityName DrugMonitoringActParticipantParticipantRoleClassCode DrugMonitoringActParticipantParticipantRoleId DrugMonitoringActParticipantParticipantRolePlayingEntity DrugMonitoringActParticipantTypeCode DrugMonitoringActParticipantParticipantRole'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolDrugMonitoringActParticipant typeCode='RESP' constraints.validation.error='DrugMonitoringActParticipantTypeCode DrugMonitoringActParticipantParticipantRole'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolDrugMonitoringActParticipantParticipantRole classCode='ASSIGNED' constraints.validation.error='DrugMonitoringActParticipantParticipantRoleClassCode DrugMonitoringActParticipantParticipantRoleId DrugMonitoringActParticipantParticipantRolePlayingEntity'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolDrugMonitoringActParticipantParticipantRolePlayingEntity classCode='PSN' constraints.validation.error='DrugMonitoringActParticipantParticipantRolePlayingEntityClassCode DrugMonitoringActParticipantParticipantRolePlayingEntityName'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolDrugMonitoringActParticipantParticipantRolePlayingEntity classCode='PSN' constraints.validation.error='DrugMonitoringActParticipantParticipantRolePlayingEntityClassCode DrugMonitoringActParticipantParticipantRolePlayingEntityName PlayingEntityGeneralHeaderConstraintsUSRealmPersonNameUSRealmPersonNameMixedContent PlayingEntityGeneralHeaderConstraintsUSRealmPersonNameUse PlayingEntityGeneralHeaderConstraintsUSRealmPersonNameFamily PlayingEntityGeneralHeaderConstraintsUSRealmPersonNameGiven PlayingEntityGeneralHeaderConstraintsUSRealmPersonNamePrefix PlayingEntityGeneralHeaderConstraintsUSRealmPersonNameSuffix' constraints.validation.query='PlayingEntityGeneralHeaderConstraintsUSRealmPersonNameUSRealmPersonNameMixedContent PlayingEntityGeneralHeaderConstraintsUSRealmPersonNameUse PlayingEntityGeneralHeaderConstraintsUSRealmPersonNameFamily PlayingEntityGeneralHeaderConstraintsUSRealmPersonNameGiven PlayingEntityGeneralHeaderConstraintsUSRealmPersonNamePrefix PlayingEntityGeneralHeaderConstraintsUSRealmPersonNameSuffix'"
  * @generated
  */
 public interface DrugMonitoringAct extends Act {
@@ -143,6 +143,84 @@ public interface DrugMonitoringAct extends Act {
 	 * @generated
 	 */
 	boolean validateDrugMonitoringActParticipant(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.participant-&gt;excluding(null).participantRole-&gt;excluding(null).playingEntity-&gt;excluding(null).name-&gt;excluding(null)-&gt;select(isNullFlavorUndefined())-&gt;reject(getText(true)&lt;&gt;\'\')'"
+	 * @generated
+	 */
+	boolean validateDrugMonitoringActParticipantParticipantRolePlayingEntityGeneralHeaderConstraintsUSRealmPersonNameUSRealmPersonNameMixedContent(
+			DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.participant-&gt;excluding(null).participantRole-&gt;excluding(null).playingEntity-&gt;excluding(null).name-&gt;excluding(null)-&gt;select(isNullFlavorUndefined())-&gt;reject( ( isNullFlavorUndefined() implies (use-&gt;forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(vocab::EntityNameUse) and \nlet value : vocab::EntityNameUse = element.oclAsType(vocab::EntityNameUse) in \nvalue = vocab::EntityNameUse::A or value = vocab::EntityNameUse::ABC or value = vocab::EntityNameUse::ASGN or value = vocab::EntityNameUse::C or value = vocab::EntityNameUse::I or value = vocab::EntityNameUse::IDE or value = vocab::EntityNameUse::L or value = vocab::EntityNameUse::P or value = vocab::EntityNameUse::PHON or value = vocab::EntityNameUse::R or value = vocab::EntityNameUse::SNDX or value = vocab::EntityNameUse::SRCH or value = vocab::EntityNameUse::SYL) )))'"
+	 * @generated
+	 */
+	boolean validateDrugMonitoringActParticipantParticipantRolePlayingEntityGeneralHeaderConstraintsUSRealmPersonNameUse(
+			DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.participant-&gt;excluding(null).participantRole-&gt;excluding(null).playingEntity-&gt;excluding(null).name-&gt;excluding(null)-&gt;select(isNullFlavorUndefined())-&gt;reject( ( isNullFlavorUndefined() implies (family-&gt;isEmpty() )))'"
+	 * @generated
+	 */
+	boolean validateDrugMonitoringActParticipantParticipantRolePlayingEntityGeneralHeaderConstraintsUSRealmPersonNameFamily(
+			DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.participant-&gt;excluding(null).participantRole-&gt;excluding(null).playingEntity-&gt;excluding(null).name-&gt;excluding(null)-&gt;select(isNullFlavorUndefined())-&gt;reject( ( isNullFlavorUndefined() implies (given-&gt;isEmpty() )))'"
+	 * @generated
+	 */
+	boolean validateDrugMonitoringActParticipantParticipantRolePlayingEntityGeneralHeaderConstraintsUSRealmPersonNameGiven(
+			DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.participant-&gt;excluding(null).participantRole-&gt;excluding(null).playingEntity-&gt;excluding(null).name-&gt;excluding(null)-&gt;select(isNullFlavorUndefined())-&gt;reject( ( isNullFlavorUndefined() implies (prefix-&gt;isEmpty() )))'"
+	 * @generated
+	 */
+	boolean validateDrugMonitoringActParticipantParticipantRolePlayingEntityGeneralHeaderConstraintsUSRealmPersonNamePrefix(
+			DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.participant-&gt;excluding(null).participantRole-&gt;excluding(null).playingEntity-&gt;excluding(null).name-&gt;excluding(null)-&gt;select(isNullFlavorUndefined())-&gt;reject( ( isNullFlavorUndefined() implies (suffix-&gt;isEmpty() )))'"
+	 * @generated
+	 */
+	boolean validateDrugMonitoringActParticipantParticipantRolePlayingEntityGeneralHeaderConstraintsUSRealmPersonNameSuffix(
+			DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

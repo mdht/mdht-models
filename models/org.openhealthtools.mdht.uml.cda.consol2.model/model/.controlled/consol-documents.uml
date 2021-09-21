@@ -332,8 +332,7 @@ value.codeSystem = '2.16.840.1.113883.5.111' and (value.code = 'ADOPT' or value.
               <generalization xmi:id="_Qh844exlEeG7k4bbVdXbXw">
                 <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_Je2yMEcaEd6besF9iFIJkQ"/>
               </generalization>
-              <ownedAttribute xmi:id="_RBsv8OxlEeG7k4bbVdXbXw" name="name" visibility="private" aggregation="composite">
-                <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_3VD9wD5yEd6cla2oXsPtlA"/>
+              <ownedAttribute xmi:id="_RBsv8OxlEeG7k4bbVdXbXw" name="name" visibility="private" type="_KoARoBoeEeyvG_WM4zd-8g" aggregation="composite">
                 <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_V-tcgexlEeG7k4bbVdXbXw" value="1"/>
                 <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_V-tcgOxlEeG7k4bbVdXbXw" value="*"/>
                 <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_L08A0ErgEd6FXKclYGEDCw"/>
@@ -622,8 +621,7 @@ In a CCD the encompassingEncounter may be used when documenting a specific encou
           <generalization xmi:id="_ClARUexvEeG7k4bbVdXbXw">
             <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_Je2yMEcaEd6besF9iFIJkQ"/>
           </generalization>
-          <ownedAttribute xmi:id="_DF0fYOxvEeG7k4bbVdXbXw" name="name" visibility="private" aggregation="composite">
-            <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_3VD9wD5yEd6cla2oXsPtlA"/>
+          <ownedAttribute xmi:id="_DF0fYOxvEeG7k4bbVdXbXw" name="name" visibility="private" type="_KoARoBoeEeyvG_WM4zd-8g" aggregation="composite">
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UTF-cPInEeGu1M-cCXg0Dg" value="1"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UTEwUPInEeGu1M-cCXg0Dg" value="*"/>
             <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_L08A0ErgEd6FXKclYGEDCw"/>
@@ -700,8 +698,7 @@ In a CCD the encompassingEncounter may be used when documenting a specific encou
           <generalization xmi:id="_YHe7UexvEeG7k4bbVdXbXw">
             <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_Je2yMEcaEd6besF9iFIJkQ"/>
           </generalization>
-          <ownedAttribute xmi:id="_YggfUOxvEeG7k4bbVdXbXw" name="name" visibility="private" aggregation="composite">
-            <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_3VD9wD5yEd6cla2oXsPtlA"/>
+          <ownedAttribute xmi:id="_YggfUOxvEeG7k4bbVdXbXw" name="name" visibility="private" type="_KoARoBoeEeyvG_WM4zd-8g" aggregation="composite">
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HgZSkPIoEeGu1M-cCXg0Dg" value="1"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HgYrgPIoEeGu1M-cCXg0Dg" value="*"/>
             <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_L08A0ErgEd6FXKclYGEDCw"/>
@@ -830,8 +827,7 @@ In a CCD the encompassingEncounter may be used when documenting a specific encou
           <generalization xmi:id="_HcPzwCymEeGMXrZ0DiQwGg">
             <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_Je2yMEcaEd6besF9iFIJkQ"/>
           </generalization>
-          <ownedAttribute xmi:id="_IfG-8CymEeGMXrZ0DiQwGg" name="name" visibility="private" aggregation="composite">
-            <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_3VD9wD5yEd6cla2oXsPtlA"/>
+          <ownedAttribute xmi:id="_IfG-8CymEeGMXrZ0DiQwGg" name="name" visibility="private" type="_KoARoBoeEeyvG_WM4zd-8g" aggregation="composite">
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TWvBECysEeGMXrZ0DiQwGg" value="1"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TWuaACysEeGMXrZ0DiQwGg" value="*"/>
             <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_L08A0ErgEd6FXKclYGEDCw"/>
@@ -913,8 +909,7 @@ In a CCD the encompassingEncounter may be used when documenting a specific encou
           <generalization xmi:id="_6xk70exvEeG7k4bbVdXbXw">
             <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_Je2yMEcaEd6besF9iFIJkQ"/>
           </generalization>
-          <ownedAttribute xmi:id="_7LnMcOxvEeG7k4bbVdXbXw" name="name" visibility="private" aggregation="composite">
-            <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_3VD9wD5yEd6cla2oXsPtlA"/>
+          <ownedAttribute xmi:id="_7LnMcOxvEeG7k4bbVdXbXw" name="name" visibility="private" type="_KoARoBoeEeyvG_WM4zd-8g" aggregation="composite">
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_RqwpQPIyEeGu1M-cCXg0Dg" value="1"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Rqu0EPIyEeGu1M-cCXg0Dg" value="*"/>
             <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_L08A0ErgEd6FXKclYGEDCw"/>
@@ -999,8 +994,7 @@ In a CCD the encompassingEncounter may be used when documenting a specific encou
           <generalization xmi:id="_DeGAAOxwEeG7k4bbVdXbXw">
             <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_Je2yMEcaEd6besF9iFIJkQ"/>
           </generalization>
-          <ownedAttribute xmi:id="_Dy1g8OxwEeG7k4bbVdXbXw" name="name" visibility="private" aggregation="composite">
-            <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_3VD9wD5yEd6cla2oXsPtlA"/>
+          <ownedAttribute xmi:id="_Dy1g8OxwEeG7k4bbVdXbXw" name="name" visibility="private" type="_KoARoBoeEeyvG_WM4zd-8g" aggregation="composite">
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ghd-0PIyEeGu1M-cCXg0Dg" value="1"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ghcJoPIyEeGu1M-cCXg0Dg" value="*"/>
             <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_L08A0ErgEd6FXKclYGEDCw"/>
@@ -1086,8 +1080,7 @@ In a CCD the encompassingEncounter may be used when documenting a specific encou
           <generalization xmi:id="_gieKoOxvEeG7k4bbVdXbXw">
             <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_Je2yMEcaEd6besF9iFIJkQ"/>
           </generalization>
-          <ownedAttribute xmi:id="_g5RhEOxvEeG7k4bbVdXbXw" name="name" visibility="private" aggregation="composite">
-            <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_3VD9wD5yEd6cla2oXsPtlA"/>
+          <ownedAttribute xmi:id="_g5RhEOxvEeG7k4bbVdXbXw" name="name" visibility="private" type="_KoARoBoeEeyvG_WM4zd-8g" aggregation="composite">
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3aUxcPIoEeGu1M-cCXg0Dg" value="1"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3aTjUPIoEeGu1M-cCXg0Dg" value="*"/>
             <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_L08A0ErgEd6FXKclYGEDCw"/>
@@ -1521,6 +1514,56 @@ This data type uses the same rules as US Realm Date and Time (DT.US.FIELDED), bu
       <generalization xmi:id="_SdatYJBlEeSSfIVHL_x3Xw">
         <general xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_4ysYYD59Ed6cla2oXsPtlA"/>
       </generalization>
+    </nestedClassifier>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_KoARoBoeEeyvG_WM4zd-8g" name="USRealmPersonName">
+      <ownedComment xmi:id="_KoARoRoeEeyvG_WM4zd-8g">
+        <body>The US Realm Patient Name datatype flavor is a set of reusable constraints that can be used for the patient or any other person. It requires a first (given) and last (family) name. If a patient or person has only one name part (e.g., patient with first name only) place the name part in the field required by the organization. Use the appropriate nullFlavor, &quot;Not Applicable&quot; (NA), in the other field.&#xD;
+Note: If name/@nullFlavor is present, the remaining conformance statements SHALL NOT be enforced.</body>
+      </ownedComment>
+      <ownedRule xmi:id="_KoARohoeEeyvG_WM4zd-8g" name="USRealmPersonNameMixedContent" constrainedElement="_2DNRcBSVEeGGzu7fmW9pXw">
+        <ownedComment xmi:id="_KoARoxoeEeyvG_WM4zd-8g">
+          <body>QUERY</body>
+        </ownedComment>
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_KoARpBoeEeyvG_WM4zd-8g">
+          <language>Analysis</language>
+          <language>OCL</language>
+          <body>US Realm Patient Name SHALL NOT have mixed content except for white space</body>
+          <body>getText(true)&lt;>''</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_KoARpRoeEeyvG_WM4zd-8g">
+        <general xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_3VD9wD5yEd6cla2oXsPtlA"/>
+      </generalization>
+      <ownedAttribute xmi:id="_KoARphoeEeyvG_WM4zd-8g" name="use" visibility="private">
+        <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__yoORUDcEd6xYZuu1VKCVw"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KoARpxoeEeyvG_WM4zd-8g"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KoARqBoeEeyvG_WM4zd-8g" value="1"/>
+        <subsettedProperty href="pathmap://DATATYPES_MODEL/datatypes.uml#_ruuXUD5zEd6cla2oXsPtlA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_KoARqRoeEeyvG_WM4zd-8g" name="family" visibility="private" isOrdered="true" aggregation="composite" isDerived="true">
+        <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_D7EcAD5zEd6cla2oXsPtlA"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_aEt3QRoeEeyvG_WM4zd-8g"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_aEt3QBoeEeyvG_WM4zd-8g"/>
+        <subsettedProperty href="pathmap://DATATYPES_MODEL/datatypes.uml#_9IA_sD92Ed6NdqfHy-LGHg"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_KoARrBoeEeyvG_WM4zd-8g" name="given" visibility="private" isOrdered="true" aggregation="composite" isDerived="true">
+        <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_D7EcAD5zEd6cla2oXsPtlA"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bT180RoeEeyvG_WM4zd-8g"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bT180BoeEeyvG_WM4zd-8g"/>
+        <subsettedProperty href="pathmap://DATATYPES_MODEL/datatypes.uml#_AYLv8D93Ed6NdqfHy-LGHg"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_KoARrxoeEeyvG_WM4zd-8g" name="prefix" visibility="private" isOrdered="true" aggregation="composite" isDerived="true">
+        <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_D7EcAD5zEd6cla2oXsPtlA"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cBgUERoeEeyvG_WM4zd-8g"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cBgUEBoeEeyvG_WM4zd-8g"/>
+        <subsettedProperty href="pathmap://DATATYPES_MODEL/datatypes.uml#_Db1uMD93Ed6NdqfHy-LGHg"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_KoARshoeEeyvG_WM4zd-8g" name="suffix" visibility="private" isOrdered="true" aggregation="composite" isDerived="true">
+        <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_D7EcAD5zEd6cla2oXsPtlA"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_codmYRoeEeyvG_WM4zd-8g"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_codmYBoeEeyvG_WM4zd-8g"/>
+        <subsettedProperty href="pathmap://DATATYPES_MODEL/datatypes.uml#_EtgKYD93Ed6NdqfHy-LGHg"/>
+      </ownedAttribute>
     </nestedClassifier>
   </uml:Class>
   <uml:Association xmi:id="_2D3_0BSVEeGGzu7fmW9pXw" memberEnd="_2D3YwBSVEeGGzu7fmW9pXw _2D3_0RSVEeGGzu7fmW9pXw">
@@ -5522,7 +5565,7 @@ OIDs SHALL be no more than 64 characters in length..</body>
     <ruleId>DSTU:819</ruleId>
   </CDA:ConstraintValidation>
   <CDA:PropertyValidation xmi:id="_pfkSUPIeEeGu1M-cCXg0Dg" severity="INFO" base_Property="_d9iBTPIYEeGu1M-cCXg0Dg"/>
-  <CDA:ValueSetConstraint xmi:id="_q0I4kPIeEeGu1M-cCXg0Dg" base_Property="_d9iBTPIYEeGu1M-cCXg0Dg">
+  <CDA:ValueSetConstraint xmi:id="_q0I4kPIeEeGu1M-cCXg0Dg" base_Property="_d9iBTPIYEeGu1M-cCXg0Dg" uri="consol-vocab::EntityNameUse">
     <reference href="../consol-vocab.uml#_RSgFgW1EEeGCevFpokwODw"/>
     <ruleId>CONF:7154, R2.1=CONF:81-7154</ruleId>
   </CDA:ValueSetConstraint>
@@ -6649,11 +6692,10 @@ Please see Volume 1 of this guide to view a Care Plan Relationship diagram and s
           <generalization xmi:id="_v742UUgTEeSfpbeq3Ftc1g">
             <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_Je2yMEcaEd6besF9iFIJkQ"/>
           </generalization>
-          <ownedAttribute xmi:id="_wzEV8EgTEeSfpbeq3Ftc1g" name="name" visibility="private" aggregation="composite">
+          <ownedAttribute xmi:id="_wzEV8EgTEeSfpbeq3Ftc1g" name="name" visibility="private" type="_KoARoBoeEeyvG_WM4zd-8g" aggregation="composite">
             <ownedComment xmi:id="_4BWhkEgTEeSfpbeq3Ftc1g">
               <body>Note: The name should use US Realm Person Name (PN.US.FIELDED).</body>
             </ownedComment>
-            <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_3VD9wD5yEd6cla2oXsPtlA"/>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_15uGsUgTEeSfpbeq3Ftc1g" value="1"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_15uGsEgTEeSfpbeq3Ftc1g" value="1"/>
             <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_L08A0ErgEd6FXKclYGEDCw"/>
@@ -6905,8 +6947,7 @@ The performer(s) represents the healthcare providers involved in the current or 
               <generalization xmi:id="_aq7icOUJEeS-cp9IWljmeQ">
                 <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_Je2yMEcaEd6besF9iFIJkQ"/>
               </generalization>
-              <ownedAttribute xmi:id="_b2UXgOUJEeS-cp9IWljmeQ" name="name" visibility="private" aggregation="composite">
-                <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_3VD9wD5yEd6cla2oXsPtlA"/>
+              <ownedAttribute xmi:id="_b2UXgOUJEeS-cp9IWljmeQ" name="name" visibility="private" type="_KoARoBoeEeyvG_WM4zd-8g" aggregation="composite">
                 <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fsjpQOUJEeS-cp9IWljmeQ" value="1"/>
                 <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fsjCMOUJEeS-cp9IWljmeQ" value="1"/>
                 <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_L08A0ErgEd6FXKclYGEDCw"/>
@@ -7455,7 +7496,7 @@ The Participants (support) identifies participants who support the patient such 
           <generalization xmi:id="_NeTWcKAPEeOQs7VC4HptuQ">
             <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_Je2yMEcaEd6besF9iFIJkQ"/>
           </generalization>
-          <ownedAttribute xmi:id="_OFEbgKAPEeOQs7VC4HptuQ" name="name" visibility="private" type="_SmlTcJBEEeSSfIVHL_x3Xw" aggregation="composite">
+          <ownedAttribute xmi:id="_OFEbgKAPEeOQs7VC4HptuQ" name="name" visibility="private" type="_KoARoBoeEeyvG_WM4zd-8g" aggregation="composite">
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KAjigO9fEeSE7JpIy9Dpjg" value="1"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KAdb4O9fEeSE7JpIy9Dpjg" value="*"/>
             <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_L08A0ErgEd6FXKclYGEDCw"/>
@@ -14832,14 +14873,14 @@ The nonXMLBody/text element also has a &quot;compression&quot; attribute that ca
     <ruleId>1198-32901</ruleId>
   </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_W-4zcIdqEeeEdPtCCB--vA" base_Property="_Ul7_EIdqEeeEdPtCCB--vA" uri="consol-vocab::Detailed Ethnicity">
-    <reference href="pathmap://CONSOL_MODEL/consol-vocab.uml#_cL0AwIdpEeeAsbPrNOnubg"/>
+    <reference href="../consol-vocab.uml#_cL0AwIdpEeeAsbPrNOnubg"/>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_z8M-4DdUEeiFfJtNAawVHw" base_Property="_vLvgkDdUEeiFfJtNAawVHw">
     <ruleId>CONF:1198-32949</ruleId>
     <ruleId>DSTU:1267</ruleId>
   </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_xsqpUDzzEeiFfJtNAawVHw" base_Property="_WQ858J5xEeOr4eM3k36wAg">
-    <reference href="pathmap://CONSOL_MODEL/consol-vocab.uml#_av2kwDzyEeiFfJtNAawVHw"/>
+    <reference href="../consol-vocab.uml#_av2kwDzyEeiFfJtNAawVHw"/>
     <ruleId>CONF:1198-32959</ruleId>
     <ruleId>DSTU:1048</ruleId>
     <ruleId>DSTU:1260</ruleId>
@@ -14859,4 +14900,19 @@ The nonXMLBody/text element also has a &quot;compression&quot; attribute that ca
   <CDA:ConstraintValidation xmi:id="_hJMRcHPREeiHvud2XbIoDQ" base_Constraint="_gU2qcHPREeiHvud2XbIoDQ">
     <ruleId>CONF:1198-5326</ruleId>
   </CDA:ConstraintValidation>
+  <CDA:PropertyValidation xmi:id="_4Tdt0BoeEeyvG_WM4zd-8g" base_Property="_KoARqRoeEeyvG_WM4zd-8g">
+    <ruleId>CONF:81-9372</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_5Aw4sBoeEeyvG_WM4zd-8g" base_Property="_KoARrBoeEeyvG_WM4zd-8g">
+    <ruleId>CONF:81-9372</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_5rFBABoeEeyvG_WM4zd-8g" base_Property="_KoARrxoeEeyvG_WM4zd-8g">
+    <ruleId>CONF:81-9372</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_6e8G4BoeEeyvG_WM4zd-8g" base_Property="_KoARshoeEeyvG_WM4zd-8g">
+    <ruleId>CONF:81-9372</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:ValueSetConstraint xmi:id="_1UyrgBpFEeydm9dhsA1O-A" base_Property="_KoARphoeEeyvG_WM4zd-8g" uri="consol-vocab::EntityNameUse">
+    <reference href="pathmap://CONSOL_MODEL///consol-vocab.uml#_RSgFgW1EEeGCevFpokwODw"/>
+  </CDA:ValueSetConstraint>
 </xmi:XMI>

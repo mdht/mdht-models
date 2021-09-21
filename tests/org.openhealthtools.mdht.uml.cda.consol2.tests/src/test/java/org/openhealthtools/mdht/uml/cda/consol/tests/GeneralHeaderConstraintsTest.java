@@ -3219,7 +3219,339 @@ public class GeneralHeaderConstraintsTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not  not
+	* @generated not
+	*/
+	@Test
+
+	public void testValidateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianPersonGeneralHeaderConstraintsUSRealmPersonNameUSRealmPersonNameMixedContent() {
+		OperationsTestCase<GeneralHeaderConstraints> validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianPersonGeneralHeaderConstraintsUSRealmPersonNameUSRealmPersonNameMixedContentTestCase = new OperationsTestCase<GeneralHeaderConstraints>(
+			"validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianPersonGeneralHeaderConstraintsUSRealmPersonNameUSRealmPersonNameMixedContent",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_GUARDIAN_PERSON_GENERAL_HEADER_CONSTRAINTS_US_REALM_PERSON_NAME_US_REALM_PERSON_NAME_MIXED_CONTENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(GeneralHeaderConstraints target) {
+				target.init();
+				RecordTarget re = CDAFactory.eINSTANCE.createRecordTarget();
+				PatientRole pr = CDAFactory.eINSTANCE.createPatientRole();
+				Patient patient = CDAFactory.eINSTANCE.createPatient();
+				CDAFactory.eINSTANCE.createBirthplace();
+				Guardian guardian = CDAFactory.eINSTANCE.createGuardian();
+				Person person = CDAFactory.eINSTANCE.createPerson();
+
+				PN pn = DatatypesFactory.eINSTANCE.createPN();
+				pn.addSuffix("family");
+
+				person.getNames().add(pn);
+
+				guardian.setGuardianPerson(person);
+
+				patient.getGuardians().add(guardian);
+				pr.setPatient(patient);
+				re.setPatientRole(pr);
+				target.getRecordTargets().add(re);
+			}
+
+			@Override
+			protected void updateToPass(GeneralHeaderConstraints target) {
+				target.getRecordTargets().get(0).getPatientRole().getPatient().getGuardians().get(
+					0).getGuardianPerson().getNames().get(0).addText("PERSON NAME");
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianPersonGeneralHeaderConstraintsUSRealmPersonNameUSRealmPersonNameMixedContent(
+					(GeneralHeaderConstraints) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianPersonGeneralHeaderConstraintsUSRealmPersonNameUSRealmPersonNameMixedContentTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated not
+	*/
+	@Test
+
+	public void testValidateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianPersonGeneralHeaderConstraintsUSRealmPersonNameUse() {
+		OperationsTestCase<GeneralHeaderConstraints> validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianPersonGeneralHeaderConstraintsUSRealmPersonNameUseTestCase = new OperationsTestCase<GeneralHeaderConstraints>(
+			"validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianPersonGeneralHeaderConstraintsUSRealmPersonNameUse",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_GUARDIAN_PERSON_GENERAL_HEADER_CONSTRAINTS_US_REALM_PERSON_NAME_USE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(GeneralHeaderConstraints target) {
+				target.init();
+				RecordTarget re = CDAFactory.eINSTANCE.createRecordTarget();
+				PatientRole pr = CDAFactory.eINSTANCE.createPatientRole();
+				Patient patient = CDAFactory.eINSTANCE.createPatient();
+				CDAFactory.eINSTANCE.createBirthplace();
+				Guardian guardian = CDAFactory.eINSTANCE.createGuardian();
+				Person person = CDAFactory.eINSTANCE.createPerson();
+
+				PN pn = DatatypesFactory.eINSTANCE.createPN();
+				pn.getUses().add(null);
+				// pn.addSuffix("family");
+
+				person.getNames().add(pn);
+
+				guardian.setGuardianPerson(person);
+
+				patient.getGuardians().add(guardian);
+				pr.setPatient(patient);
+				re.setPatientRole(pr);
+				target.getRecordTargets().add(re);
+			}
+
+			@Override
+			protected void updateToPass(GeneralHeaderConstraints target) {
+				target.getRecordTargets().get(0).getPatientRole().getPatient().getGuardians().get(
+					0).getGuardianPerson().getNames().get(0).getUses().clear();
+
+				target.getRecordTargets().get(0).getPatientRole().getPatient().getGuardians().get(
+					0).getGuardianPerson().getNames().get(0).getUses().add(EntityNameUse.A);
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianPersonGeneralHeaderConstraintsUSRealmPersonNameUse(
+					(GeneralHeaderConstraints) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianPersonGeneralHeaderConstraintsUSRealmPersonNameUseTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated not
+	*/
+	@Test
+
+	public void testValidateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianPersonGeneralHeaderConstraintsUSRealmPersonNameFamily() {
+		OperationsTestCase<GeneralHeaderConstraints> validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianPersonGeneralHeaderConstraintsUSRealmPersonNameFamilyTestCase = new OperationsTestCase<GeneralHeaderConstraints>(
+			"validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianPersonGeneralHeaderConstraintsUSRealmPersonNameFamily",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_GUARDIAN_PERSON_GENERAL_HEADER_CONSTRAINTS_US_REALM_PERSON_NAME_FAMILY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(GeneralHeaderConstraints target) {
+				target.init();
+				RecordTarget re = CDAFactory.eINSTANCE.createRecordTarget();
+				PatientRole pr = CDAFactory.eINSTANCE.createPatientRole();
+				Patient patient = CDAFactory.eINSTANCE.createPatient();
+				CDAFactory.eINSTANCE.createBirthplace();
+				Guardian guardian = CDAFactory.eINSTANCE.createGuardian();
+				Person person = CDAFactory.eINSTANCE.createPerson();
+
+				PN pn = DatatypesFactory.eINSTANCE.createPN();
+				pn.addFamily("FAMILY");
+
+				person.getNames().add(pn);
+
+				guardian.setGuardianPerson(person);
+
+				patient.getGuardians().add(guardian);
+				pr.setPatient(patient);
+				re.setPatientRole(pr);
+				target.getRecordTargets().add(re);
+			}
+
+			@Override
+			protected void updateToPass(GeneralHeaderConstraints target) {
+				target.getRecordTargets().get(0).getPatientRole().getPatient().getGuardians().get(
+					0).getGuardianPerson().getNames().get(0).getFamilies().clear();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianPersonGeneralHeaderConstraintsUSRealmPersonNameFamily(
+					(GeneralHeaderConstraints) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianPersonGeneralHeaderConstraintsUSRealmPersonNameFamilyTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated not
+	*/
+	@Test
+
+	public void testValidateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianPersonGeneralHeaderConstraintsUSRealmPersonNameGiven() {
+		OperationsTestCase<GeneralHeaderConstraints> validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianPersonGeneralHeaderConstraintsUSRealmPersonNameGivenTestCase = new OperationsTestCase<GeneralHeaderConstraints>(
+			"validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianPersonGeneralHeaderConstraintsUSRealmPersonNameGiven",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_GUARDIAN_PERSON_GENERAL_HEADER_CONSTRAINTS_US_REALM_PERSON_NAME_GIVEN__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(GeneralHeaderConstraints target) {
+				target.init();
+				RecordTarget re = CDAFactory.eINSTANCE.createRecordTarget();
+				PatientRole pr = CDAFactory.eINSTANCE.createPatientRole();
+				Patient patient = CDAFactory.eINSTANCE.createPatient();
+				CDAFactory.eINSTANCE.createBirthplace();
+				Guardian guardian = CDAFactory.eINSTANCE.createGuardian();
+				Person person = CDAFactory.eINSTANCE.createPerson();
+
+				PN pn = DatatypesFactory.eINSTANCE.createPN();
+				pn.addGiven("GIVEN");
+
+				person.getNames().add(pn);
+
+				guardian.setGuardianPerson(person);
+
+				patient.getGuardians().add(guardian);
+				pr.setPatient(patient);
+				re.setPatientRole(pr);
+				target.getRecordTargets().add(re);
+			}
+
+			@Override
+			protected void updateToPass(GeneralHeaderConstraints target) {
+				target.getRecordTargets().get(0).getPatientRole().getPatient().getGuardians().get(
+					0).getGuardianPerson().getNames().get(0).getGivens().clear();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianPersonGeneralHeaderConstraintsUSRealmPersonNameGiven(
+					(GeneralHeaderConstraints) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianPersonGeneralHeaderConstraintsUSRealmPersonNameGivenTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated not
+	*/
+	@Test
+
+	public void testValidateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianPersonGeneralHeaderConstraintsUSRealmPersonNamePrefix() {
+		OperationsTestCase<GeneralHeaderConstraints> validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianPersonGeneralHeaderConstraintsUSRealmPersonNamePrefixTestCase = new OperationsTestCase<GeneralHeaderConstraints>(
+			"validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianPersonGeneralHeaderConstraintsUSRealmPersonNamePrefix",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_GUARDIAN_PERSON_GENERAL_HEADER_CONSTRAINTS_US_REALM_PERSON_NAME_PREFIX__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(GeneralHeaderConstraints target) {
+				target.init();
+				RecordTarget re = CDAFactory.eINSTANCE.createRecordTarget();
+				PatientRole pr = CDAFactory.eINSTANCE.createPatientRole();
+				Patient patient = CDAFactory.eINSTANCE.createPatient();
+				CDAFactory.eINSTANCE.createBirthplace();
+				Guardian guardian = CDAFactory.eINSTANCE.createGuardian();
+				Person person = CDAFactory.eINSTANCE.createPerson();
+
+				PN pn = DatatypesFactory.eINSTANCE.createPN();
+				pn.addPrefix("PREFIX");
+
+				person.getNames().add(pn);
+
+				guardian.setGuardianPerson(person);
+
+				patient.getGuardians().add(guardian);
+				pr.setPatient(patient);
+				re.setPatientRole(pr);
+				target.getRecordTargets().add(re);
+			}
+
+			@Override
+			protected void updateToPass(GeneralHeaderConstraints target) {
+				target.getRecordTargets().get(0).getPatientRole().getPatient().getGuardians().get(
+					0).getGuardianPerson().getNames().get(0).getPrefixes().clear();
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianPersonGeneralHeaderConstraintsUSRealmPersonNamePrefix(
+					(GeneralHeaderConstraints) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianPersonGeneralHeaderConstraintsUSRealmPersonNamePrefixTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated not
+	*/
+	@Test
+
+	public void testValidateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianPersonGeneralHeaderConstraintsUSRealmPersonNameSuffix() {
+		OperationsTestCase<GeneralHeaderConstraints> validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianPersonGeneralHeaderConstraintsUSRealmPersonNameSuffixTestCase = new OperationsTestCase<GeneralHeaderConstraints>(
+			"validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianPersonGeneralHeaderConstraintsUSRealmPersonNameSuffix",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_GUARDIAN_PERSON_GENERAL_HEADER_CONSTRAINTS_US_REALM_PERSON_NAME_SUFFIX__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(GeneralHeaderConstraints target) {
+				target.init();
+				RecordTarget re = CDAFactory.eINSTANCE.createRecordTarget();
+				PatientRole pr = CDAFactory.eINSTANCE.createPatientRole();
+				Patient patient = CDAFactory.eINSTANCE.createPatient();
+				CDAFactory.eINSTANCE.createBirthplace();
+				Guardian guardian = CDAFactory.eINSTANCE.createGuardian();
+				Person person = CDAFactory.eINSTANCE.createPerson();
+
+				PN pn = DatatypesFactory.eINSTANCE.createPN();
+				pn.addSuffix("SUFFIX");
+
+				person.getNames().add(pn);
+
+				guardian.setGuardianPerson(person);
+
+				patient.getGuardians().add(guardian);
+				pr.setPatient(patient);
+				re.setPatientRole(pr);
+				target.getRecordTargets().add(re);
+			}
+
+			@Override
+			protected void updateToPass(GeneralHeaderConstraints target) {
+				target.getRecordTargets().get(0).getPatientRole().getPatient().getGuardians().get(
+					0).getGuardianPerson().getNames().get(0).getSuffixes().clear();
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianPersonGeneralHeaderConstraintsUSRealmPersonNameSuffix(
+					(GeneralHeaderConstraints) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianPersonGeneralHeaderConstraintsUSRealmPersonNameSuffixTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated not
 	*/
 	@Test
 	public void testValidateGeneralHeaderConstraintsAuthorAssignedAuthorAuthoringDeviceManufacturerModelName() {
@@ -3333,6 +3665,307 @@ public class GeneralHeaderConstraintsTest extends CDAValidationTest {
 		};
 
 		validateGeneralHeaderConstraintsAuthorAssignedAuthorAuthoringDeviceSoftwareNameTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated not
+	*/
+	@Test
+
+	public void testValidateGeneralHeaderConstraintsAuthorAssignedAuthorPersonGeneralHeaderConstraintsUSRealmPersonNameUSRealmPersonNameMixedContent() {
+		OperationsTestCase<GeneralHeaderConstraints> validateGeneralHeaderConstraintsAuthorAssignedAuthorPersonGeneralHeaderConstraintsUSRealmPersonNameUSRealmPersonNameMixedContentTestCase = new OperationsTestCase<GeneralHeaderConstraints>(
+			"validateGeneralHeaderConstraintsAuthorAssignedAuthorPersonGeneralHeaderConstraintsUSRealmPersonNameUSRealmPersonNameMixedContent",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_GENERAL_HEADER_CONSTRAINTS_AUTHOR_ASSIGNED_AUTHOR_PERSON_GENERAL_HEADER_CONSTRAINTS_US_REALM_PERSON_NAME_US_REALM_PERSON_NAME_MIXED_CONTENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(GeneralHeaderConstraints target) {
+				target.init();
+				Author author = CDAFactory.eINSTANCE.createAuthor();
+
+				AssignedAuthor aa = CDAFactory.eINSTANCE.createAssignedAuthor();
+
+				Person person = CDAFactory.eINSTANCE.createPerson();
+				PN pn = DatatypesFactory.eINSTANCE.createPN();
+				// pn.addGiven("GIVEN");
+				person.getNames().add(pn);
+				aa.setAssignedPerson(person);
+
+				author.setAssignedAuthor(aa);
+
+				target.getAuthors().add(author);
+			}
+
+			@Override
+			protected void updateToPass(GeneralHeaderConstraints target) {
+				target.getAuthors().get(0).getAssignedAuthor().getAssignedPerson().getNames().get(0).addText(
+					"Person Name");
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsAuthorAssignedAuthorPersonGeneralHeaderConstraintsUSRealmPersonNameUSRealmPersonNameMixedContent(
+					(GeneralHeaderConstraints) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateGeneralHeaderConstraintsAuthorAssignedAuthorPersonGeneralHeaderConstraintsUSRealmPersonNameUSRealmPersonNameMixedContentTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated not
+	*/
+	@Test
+
+	public void testValidateGeneralHeaderConstraintsAuthorAssignedAuthorPersonGeneralHeaderConstraintsUSRealmPersonNameUse() {
+		OperationsTestCase<GeneralHeaderConstraints> validateGeneralHeaderConstraintsAuthorAssignedAuthorPersonGeneralHeaderConstraintsUSRealmPersonNameUseTestCase = new OperationsTestCase<GeneralHeaderConstraints>(
+			"validateGeneralHeaderConstraintsAuthorAssignedAuthorPersonGeneralHeaderConstraintsUSRealmPersonNameUse",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_GENERAL_HEADER_CONSTRAINTS_AUTHOR_ASSIGNED_AUTHOR_PERSON_GENERAL_HEADER_CONSTRAINTS_US_REALM_PERSON_NAME_USE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(GeneralHeaderConstraints target) {
+				target.init();
+				Author author = CDAFactory.eINSTANCE.createAuthor();
+
+				AssignedAuthor aa = CDAFactory.eINSTANCE.createAssignedAuthor();
+
+				Person person = CDAFactory.eINSTANCE.createPerson();
+				PN pn = DatatypesFactory.eINSTANCE.createPN();
+				// pn.addGiven("GIVEN");
+				pn.getUses().add(null);
+				person.getNames().add(pn);
+				aa.setAssignedPerson(person);
+
+				author.setAssignedAuthor(aa);
+
+				target.getAuthors().add(author);
+			}
+
+			@Override
+			protected void updateToPass(GeneralHeaderConstraints target) {
+				target.getAuthors().get(0).getAssignedAuthor().getAssignedPerson().getNames().get(0).getUses().clear();
+				target.getAuthors().get(0).getAssignedAuthor().getAssignedPerson().getNames().get(0).getUses().add(
+					EntityNameUse.A);
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsAuthorAssignedAuthorPersonGeneralHeaderConstraintsUSRealmPersonNameUse(
+					(GeneralHeaderConstraints) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateGeneralHeaderConstraintsAuthorAssignedAuthorPersonGeneralHeaderConstraintsUSRealmPersonNameUseTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated not
+	*/
+	@Test
+
+	public void testValidateGeneralHeaderConstraintsAuthorAssignedAuthorPersonGeneralHeaderConstraintsUSRealmPersonNameFamily() {
+		OperationsTestCase<GeneralHeaderConstraints> validateGeneralHeaderConstraintsAuthorAssignedAuthorPersonGeneralHeaderConstraintsUSRealmPersonNameFamilyTestCase = new OperationsTestCase<GeneralHeaderConstraints>(
+			"validateGeneralHeaderConstraintsAuthorAssignedAuthorPersonGeneralHeaderConstraintsUSRealmPersonNameFamily",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_GENERAL_HEADER_CONSTRAINTS_AUTHOR_ASSIGNED_AUTHOR_PERSON_GENERAL_HEADER_CONSTRAINTS_US_REALM_PERSON_NAME_FAMILY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(GeneralHeaderConstraints target) {
+				target.init();
+				Author author = CDAFactory.eINSTANCE.createAuthor();
+
+				AssignedAuthor aa = CDAFactory.eINSTANCE.createAssignedAuthor();
+
+				Person person = CDAFactory.eINSTANCE.createPerson();
+				PN pn = DatatypesFactory.eINSTANCE.createPN();
+				pn.addFamily("FAMILY");
+				person.getNames().add(pn);
+				aa.setAssignedPerson(person);
+
+				author.setAssignedAuthor(aa);
+
+				target.getAuthors().add(author);
+			}
+
+			@Override
+			protected void updateToPass(GeneralHeaderConstraints target) {
+				target.getAuthors().get(0).getAssignedAuthor().getAssignedPerson().getNames().get(
+					0).getFamilies().clear();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsAuthorAssignedAuthorPersonGeneralHeaderConstraintsUSRealmPersonNameFamily(
+					(GeneralHeaderConstraints) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateGeneralHeaderConstraintsAuthorAssignedAuthorPersonGeneralHeaderConstraintsUSRealmPersonNameFamilyTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated not
+	*/
+	@Test
+
+	public void testValidateGeneralHeaderConstraintsAuthorAssignedAuthorPersonGeneralHeaderConstraintsUSRealmPersonNameGiven() {
+		OperationsTestCase<GeneralHeaderConstraints> validateGeneralHeaderConstraintsAuthorAssignedAuthorPersonGeneralHeaderConstraintsUSRealmPersonNameGivenTestCase = new OperationsTestCase<GeneralHeaderConstraints>(
+			"validateGeneralHeaderConstraintsAuthorAssignedAuthorPersonGeneralHeaderConstraintsUSRealmPersonNameGiven",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_GENERAL_HEADER_CONSTRAINTS_AUTHOR_ASSIGNED_AUTHOR_PERSON_GENERAL_HEADER_CONSTRAINTS_US_REALM_PERSON_NAME_GIVEN__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(GeneralHeaderConstraints target) {
+				target.init();
+				Author author = CDAFactory.eINSTANCE.createAuthor();
+
+				AssignedAuthor aa = CDAFactory.eINSTANCE.createAssignedAuthor();
+
+				Person person = CDAFactory.eINSTANCE.createPerson();
+				PN pn = DatatypesFactory.eINSTANCE.createPN();
+				pn.addGiven("GIVEN");
+				person.getNames().add(pn);
+				aa.setAssignedPerson(person);
+
+				author.setAssignedAuthor(aa);
+
+				target.getAuthors().add(author);
+			}
+
+			@Override
+			protected void updateToPass(GeneralHeaderConstraints target) {
+				target.getAuthors().get(0).getAssignedAuthor().getAssignedPerson().getNames().get(
+					0).getGivens().clear();
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsAuthorAssignedAuthorPersonGeneralHeaderConstraintsUSRealmPersonNameGiven(
+					(GeneralHeaderConstraints) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateGeneralHeaderConstraintsAuthorAssignedAuthorPersonGeneralHeaderConstraintsUSRealmPersonNameGivenTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated not
+	*/
+	@Test
+
+	public void testValidateGeneralHeaderConstraintsAuthorAssignedAuthorPersonGeneralHeaderConstraintsUSRealmPersonNamePrefix() {
+		OperationsTestCase<GeneralHeaderConstraints> validateGeneralHeaderConstraintsAuthorAssignedAuthorPersonGeneralHeaderConstraintsUSRealmPersonNamePrefixTestCase = new OperationsTestCase<GeneralHeaderConstraints>(
+			"validateGeneralHeaderConstraintsAuthorAssignedAuthorPersonGeneralHeaderConstraintsUSRealmPersonNamePrefix",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_GENERAL_HEADER_CONSTRAINTS_AUTHOR_ASSIGNED_AUTHOR_PERSON_GENERAL_HEADER_CONSTRAINTS_US_REALM_PERSON_NAME_PREFIX__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(GeneralHeaderConstraints target) {
+				target.init();
+				Author author = CDAFactory.eINSTANCE.createAuthor();
+
+				AssignedAuthor aa = CDAFactory.eINSTANCE.createAssignedAuthor();
+
+				Person person = CDAFactory.eINSTANCE.createPerson();
+				PN pn = DatatypesFactory.eINSTANCE.createPN();
+				pn.addPrefix("PREFIX");
+				person.getNames().add(pn);
+				aa.setAssignedPerson(person);
+
+				author.setAssignedAuthor(aa);
+
+				target.getAuthors().add(author);
+			}
+
+			@Override
+			protected void updateToPass(GeneralHeaderConstraints target) {
+				target.getAuthors().get(0).getAssignedAuthor().getAssignedPerson().getNames().get(
+					0).getPrefixes().clear();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsAuthorAssignedAuthorPersonGeneralHeaderConstraintsUSRealmPersonNamePrefix(
+					(GeneralHeaderConstraints) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateGeneralHeaderConstraintsAuthorAssignedAuthorPersonGeneralHeaderConstraintsUSRealmPersonNamePrefixTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated not
+	*/
+	@Test
+
+	public void testValidateGeneralHeaderConstraintsAuthorAssignedAuthorPersonGeneralHeaderConstraintsUSRealmPersonNameSuffix() {
+		OperationsTestCase<GeneralHeaderConstraints> validateGeneralHeaderConstraintsAuthorAssignedAuthorPersonGeneralHeaderConstraintsUSRealmPersonNameSuffixTestCase = new OperationsTestCase<GeneralHeaderConstraints>(
+			"validateGeneralHeaderConstraintsAuthorAssignedAuthorPersonGeneralHeaderConstraintsUSRealmPersonNameSuffix",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_GENERAL_HEADER_CONSTRAINTS_AUTHOR_ASSIGNED_AUTHOR_PERSON_GENERAL_HEADER_CONSTRAINTS_US_REALM_PERSON_NAME_SUFFIX__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(GeneralHeaderConstraints target) {
+				target.init();
+				Author author = CDAFactory.eINSTANCE.createAuthor();
+
+				AssignedAuthor aa = CDAFactory.eINSTANCE.createAssignedAuthor();
+
+				Person person = CDAFactory.eINSTANCE.createPerson();
+				PN pn = DatatypesFactory.eINSTANCE.createPN();
+				pn.addSuffix("SUFFIX");
+				person.getNames().add(pn);
+				aa.setAssignedPerson(person);
+
+				author.setAssignedAuthor(aa);
+
+				target.getAuthors().add(author);
+			}
+
+			@Override
+			protected void updateToPass(GeneralHeaderConstraints target) {
+				target.getAuthors().get(0).getAssignedAuthor().getAssignedPerson().getNames().get(
+					0).getSuffixes().clear();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsAuthorAssignedAuthorPersonGeneralHeaderConstraintsUSRealmPersonNameSuffix(
+					(GeneralHeaderConstraints) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateGeneralHeaderConstraintsAuthorAssignedAuthorPersonGeneralHeaderConstraintsUSRealmPersonNameSuffixTestCase.doValidationTest();
 	}
 
 	/**
@@ -4847,6 +5480,285 @@ public class GeneralHeaderConstraintsTest extends CDAValidationTest {
 	* @generated not
 	*/
 	@Test
+
+	public void testValidateGeneralHeaderConstraintsDataEntererAssignedEntityPersonGeneralHeaderConstraintsUSRealmPersonNameUSRealmPersonNameMixedContent() {
+		OperationsTestCase<GeneralHeaderConstraints> validateGeneralHeaderConstraintsDataEntererAssignedEntityPersonGeneralHeaderConstraintsUSRealmPersonNameUSRealmPersonNameMixedContentTestCase = new OperationsTestCase<GeneralHeaderConstraints>(
+			"validateGeneralHeaderConstraintsDataEntererAssignedEntityPersonGeneralHeaderConstraintsUSRealmPersonNameUSRealmPersonNameMixedContent",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_GENERAL_HEADER_CONSTRAINTS_DATA_ENTERER_ASSIGNED_ENTITY_PERSON_GENERAL_HEADER_CONSTRAINTS_US_REALM_PERSON_NAME_US_REALM_PERSON_NAME_MIXED_CONTENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(GeneralHeaderConstraints target) {
+
+				target.init();
+				DataEnterer de = CDAFactory.eINSTANCE.createDataEnterer();
+				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
+				Person person = CDAFactory.eINSTANCE.createPerson();
+				PN pn = DatatypesFactory.eINSTANCE.createPN();
+				// pn.addSuffix("family");
+				person.getNames().add(pn);
+				ae.setAssignedPerson(person);
+				de.setAssignedEntity(ae);
+				target.setDataEnterer(de);
+
+			}
+
+			@Override
+			protected void updateToPass(GeneralHeaderConstraints target) {
+				target.getDataEnterer().getAssignedEntity().getAssignedPerson().getNames().get(0).addText(
+					"Person Name");
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsDataEntererAssignedEntityPersonGeneralHeaderConstraintsUSRealmPersonNameUSRealmPersonNameMixedContent(
+					(GeneralHeaderConstraints) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateGeneralHeaderConstraintsDataEntererAssignedEntityPersonGeneralHeaderConstraintsUSRealmPersonNameUSRealmPersonNameMixedContentTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated not
+	*/
+	@Test
+
+	public void testValidateGeneralHeaderConstraintsDataEntererAssignedEntityPersonGeneralHeaderConstraintsUSRealmPersonNameUse() {
+		OperationsTestCase<GeneralHeaderConstraints> validateGeneralHeaderConstraintsDataEntererAssignedEntityPersonGeneralHeaderConstraintsUSRealmPersonNameUseTestCase = new OperationsTestCase<GeneralHeaderConstraints>(
+			"validateGeneralHeaderConstraintsDataEntererAssignedEntityPersonGeneralHeaderConstraintsUSRealmPersonNameUse",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_GENERAL_HEADER_CONSTRAINTS_DATA_ENTERER_ASSIGNED_ENTITY_PERSON_GENERAL_HEADER_CONSTRAINTS_US_REALM_PERSON_NAME_USE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(GeneralHeaderConstraints target) {
+				target.init();
+				DataEnterer de = CDAFactory.eINSTANCE.createDataEnterer();
+				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
+				Person person = CDAFactory.eINSTANCE.createPerson();
+				PN pn = DatatypesFactory.eINSTANCE.createPN();
+				pn.getUses().add(null);
+				person.getNames().add(pn);
+				ae.setAssignedPerson(person);
+				de.setAssignedEntity(ae);
+				target.setDataEnterer(de);
+
+			}
+
+			@Override
+			protected void updateToPass(GeneralHeaderConstraints target) {
+				target.getDataEnterer().getAssignedEntity().getAssignedPerson().getNames().get(0).getUses().clear();
+				target.getDataEnterer().getAssignedEntity().getAssignedPerson().getNames().get(0).getUses().add(
+					EntityNameUse.ABC);
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsDataEntererAssignedEntityPersonGeneralHeaderConstraintsUSRealmPersonNameUse(
+					(GeneralHeaderConstraints) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateGeneralHeaderConstraintsDataEntererAssignedEntityPersonGeneralHeaderConstraintsUSRealmPersonNameUseTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated not
+	*/
+	@Test
+
+	public void testValidateGeneralHeaderConstraintsDataEntererAssignedEntityPersonGeneralHeaderConstraintsUSRealmPersonNameFamily() {
+		OperationsTestCase<GeneralHeaderConstraints> validateGeneralHeaderConstraintsDataEntererAssignedEntityPersonGeneralHeaderConstraintsUSRealmPersonNameFamilyTestCase = new OperationsTestCase<GeneralHeaderConstraints>(
+			"validateGeneralHeaderConstraintsDataEntererAssignedEntityPersonGeneralHeaderConstraintsUSRealmPersonNameFamily",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_GENERAL_HEADER_CONSTRAINTS_DATA_ENTERER_ASSIGNED_ENTITY_PERSON_GENERAL_HEADER_CONSTRAINTS_US_REALM_PERSON_NAME_FAMILY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(GeneralHeaderConstraints target) {
+				target.init();
+				DataEnterer de = CDAFactory.eINSTANCE.createDataEnterer();
+				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
+				Person person = CDAFactory.eINSTANCE.createPerson();
+				PN pn = DatatypesFactory.eINSTANCE.createPN();
+				pn.addFamily("FAMILY");
+				person.getNames().add(pn);
+				ae.setAssignedPerson(person);
+				de.setAssignedEntity(ae);
+				target.setDataEnterer(de);
+
+			}
+
+			@Override
+			protected void updateToPass(GeneralHeaderConstraints target) {
+				target.getDataEnterer().getAssignedEntity().getAssignedPerson().getNames().get(0).getFamilies().clear();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsDataEntererAssignedEntityPersonGeneralHeaderConstraintsUSRealmPersonNameFamily(
+					(GeneralHeaderConstraints) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateGeneralHeaderConstraintsDataEntererAssignedEntityPersonGeneralHeaderConstraintsUSRealmPersonNameFamilyTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated not
+	*/
+	@Test
+
+	public void testValidateGeneralHeaderConstraintsDataEntererAssignedEntityPersonGeneralHeaderConstraintsUSRealmPersonNameGiven() {
+		OperationsTestCase<GeneralHeaderConstraints> validateGeneralHeaderConstraintsDataEntererAssignedEntityPersonGeneralHeaderConstraintsUSRealmPersonNameGivenTestCase = new OperationsTestCase<GeneralHeaderConstraints>(
+			"validateGeneralHeaderConstraintsDataEntererAssignedEntityPersonGeneralHeaderConstraintsUSRealmPersonNameGiven",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_GENERAL_HEADER_CONSTRAINTS_DATA_ENTERER_ASSIGNED_ENTITY_PERSON_GENERAL_HEADER_CONSTRAINTS_US_REALM_PERSON_NAME_GIVEN__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(GeneralHeaderConstraints target) {
+				target.init();
+				DataEnterer de = CDAFactory.eINSTANCE.createDataEnterer();
+				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
+				Person person = CDAFactory.eINSTANCE.createPerson();
+				PN pn = DatatypesFactory.eINSTANCE.createPN();
+				pn.addGiven("GIVEN");
+				person.getNames().add(pn);
+				ae.setAssignedPerson(person);
+				de.setAssignedEntity(ae);
+				target.setDataEnterer(de);
+
+			}
+
+			@Override
+			protected void updateToPass(GeneralHeaderConstraints target) {
+				target.getDataEnterer().getAssignedEntity().getAssignedPerson().getNames().get(0).getGivens().clear();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsDataEntererAssignedEntityPersonGeneralHeaderConstraintsUSRealmPersonNameGiven(
+					(GeneralHeaderConstraints) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateGeneralHeaderConstraintsDataEntererAssignedEntityPersonGeneralHeaderConstraintsUSRealmPersonNameGivenTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated not
+	*/
+	@Test
+
+	public void testValidateGeneralHeaderConstraintsDataEntererAssignedEntityPersonGeneralHeaderConstraintsUSRealmPersonNamePrefix() {
+		OperationsTestCase<GeneralHeaderConstraints> validateGeneralHeaderConstraintsDataEntererAssignedEntityPersonGeneralHeaderConstraintsUSRealmPersonNamePrefixTestCase = new OperationsTestCase<GeneralHeaderConstraints>(
+			"validateGeneralHeaderConstraintsDataEntererAssignedEntityPersonGeneralHeaderConstraintsUSRealmPersonNamePrefix",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_GENERAL_HEADER_CONSTRAINTS_DATA_ENTERER_ASSIGNED_ENTITY_PERSON_GENERAL_HEADER_CONSTRAINTS_US_REALM_PERSON_NAME_PREFIX__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(GeneralHeaderConstraints target) {
+				target.init();
+				DataEnterer de = CDAFactory.eINSTANCE.createDataEnterer();
+				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
+				Person person = CDAFactory.eINSTANCE.createPerson();
+				PN pn = DatatypesFactory.eINSTANCE.createPN();
+				pn.addPrefix("PREFIX");
+				person.getNames().add(pn);
+				ae.setAssignedPerson(person);
+				de.setAssignedEntity(ae);
+				target.setDataEnterer(de);
+
+			}
+
+			@Override
+			protected void updateToPass(GeneralHeaderConstraints target) {
+				target.getDataEnterer().getAssignedEntity().getAssignedPerson().getNames().get(0).getPrefixes().clear();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsDataEntererAssignedEntityPersonGeneralHeaderConstraintsUSRealmPersonNamePrefix(
+					(GeneralHeaderConstraints) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateGeneralHeaderConstraintsDataEntererAssignedEntityPersonGeneralHeaderConstraintsUSRealmPersonNamePrefixTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated not
+	*/
+	@Test
+
+	public void testValidateGeneralHeaderConstraintsDataEntererAssignedEntityPersonGeneralHeaderConstraintsUSRealmPersonNameSuffix() {
+		OperationsTestCase<GeneralHeaderConstraints> validateGeneralHeaderConstraintsDataEntererAssignedEntityPersonGeneralHeaderConstraintsUSRealmPersonNameSuffixTestCase = new OperationsTestCase<GeneralHeaderConstraints>(
+			"validateGeneralHeaderConstraintsDataEntererAssignedEntityPersonGeneralHeaderConstraintsUSRealmPersonNameSuffix",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_GENERAL_HEADER_CONSTRAINTS_DATA_ENTERER_ASSIGNED_ENTITY_PERSON_GENERAL_HEADER_CONSTRAINTS_US_REALM_PERSON_NAME_SUFFIX__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(GeneralHeaderConstraints target) {
+				target.init();
+				DataEnterer de = CDAFactory.eINSTANCE.createDataEnterer();
+				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
+				Person person = CDAFactory.eINSTANCE.createPerson();
+				PN pn = DatatypesFactory.eINSTANCE.createPN();
+				pn.addSuffix("SUFFIX");
+				person.getNames().add(pn);
+				ae.setAssignedPerson(person);
+				de.setAssignedEntity(ae);
+				target.setDataEnterer(de);
+
+			}
+
+			@Override
+			protected void updateToPass(GeneralHeaderConstraints target) {
+				target.getDataEnterer().getAssignedEntity().getAssignedPerson().getNames().get(0).getSuffixes().clear();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsDataEntererAssignedEntityPersonGeneralHeaderConstraintsUSRealmPersonNameSuffix(
+					(GeneralHeaderConstraints) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateGeneralHeaderConstraintsDataEntererAssignedEntityPersonGeneralHeaderConstraintsUSRealmPersonNameSuffixTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated not
+	*/
+	@Test
 	public void testValidateGeneralHeaderConstraintsDataEntererAssignedEntityPersonName() {
 		OperationsTestCase<GeneralHeaderConstraints> validateGeneralHeaderConstraintsDataEntererAssignedEntityPersonNameTestCase = new OperationsTestCase<GeneralHeaderConstraints>(
 			"validateGeneralHeaderConstraintsDataEntererAssignedEntityPersonName",
@@ -6109,6 +7021,296 @@ public class GeneralHeaderConstraintsTest extends CDAValidationTest {
 	* @generated not
 	*/
 	@Test
+
+	public void testValidateGeneralHeaderConstraintsInformationRecipientIntendedRecipientPersonGeneralHeaderConstraintsUSRealmPersonNameUSRealmPersonNameMixedContent() {
+		OperationsTestCase<GeneralHeaderConstraints> validateGeneralHeaderConstraintsInformationRecipientIntendedRecipientPersonGeneralHeaderConstraintsUSRealmPersonNameUSRealmPersonNameMixedContentTestCase = new OperationsTestCase<GeneralHeaderConstraints>(
+			"validateGeneralHeaderConstraintsInformationRecipientIntendedRecipientPersonGeneralHeaderConstraintsUSRealmPersonNameUSRealmPersonNameMixedContent",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_GENERAL_HEADER_CONSTRAINTS_INFORMATION_RECIPIENT_INTENDED_RECIPIENT_PERSON_GENERAL_HEADER_CONSTRAINTS_US_REALM_PERSON_NAME_US_REALM_PERSON_NAME_MIXED_CONTENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(GeneralHeaderConstraints target) {
+				target.init();
+				InformationRecipient ir = CDAFactory.eINSTANCE.createInformationRecipient();
+				IntendedRecipient intended = CDAFactory.eINSTANCE.createIntendedRecipient();
+				// Organization organization = CDAFactory.eINSTANCE.createOrganization();
+				// intended.setReceivedOrganization(organization);
+				Person person = CDAFactory.eINSTANCE.createPerson();
+				PN pn = DatatypesFactory.eINSTANCE.createPN();
+				// pn.addGiven("GIVEN");
+				person.getNames().add(pn);
+				intended.setInformationRecipient(person);
+				ir.setIntendedRecipient(intended);
+
+				target.getInformationRecipients().add(ir);
+			}
+
+			@Override
+			protected void updateToPass(GeneralHeaderConstraints target) {
+				target.getInformationRecipients().get(
+					0).getIntendedRecipient().getInformationRecipient().getNames().get(0).addText("PERSON NAME");
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsInformationRecipientIntendedRecipientPersonGeneralHeaderConstraintsUSRealmPersonNameUSRealmPersonNameMixedContent(
+					(GeneralHeaderConstraints) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateGeneralHeaderConstraintsInformationRecipientIntendedRecipientPersonGeneralHeaderConstraintsUSRealmPersonNameUSRealmPersonNameMixedContentTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated not
+	*/
+	@Test
+
+	public void testValidateGeneralHeaderConstraintsInformationRecipientIntendedRecipientPersonGeneralHeaderConstraintsUSRealmPersonNameUse() {
+		OperationsTestCase<GeneralHeaderConstraints> validateGeneralHeaderConstraintsInformationRecipientIntendedRecipientPersonGeneralHeaderConstraintsUSRealmPersonNameUseTestCase = new OperationsTestCase<GeneralHeaderConstraints>(
+			"validateGeneralHeaderConstraintsInformationRecipientIntendedRecipientPersonGeneralHeaderConstraintsUSRealmPersonNameUse",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_GENERAL_HEADER_CONSTRAINTS_INFORMATION_RECIPIENT_INTENDED_RECIPIENT_PERSON_GENERAL_HEADER_CONSTRAINTS_US_REALM_PERSON_NAME_USE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(GeneralHeaderConstraints target) {
+				target.init();
+				InformationRecipient ir = CDAFactory.eINSTANCE.createInformationRecipient();
+				IntendedRecipient intended = CDAFactory.eINSTANCE.createIntendedRecipient();
+				// intended.setReceivedOrganization(organization);
+				Person person = CDAFactory.eINSTANCE.createPerson();
+				PN pn = DatatypesFactory.eINSTANCE.createPN();
+				pn.getUses().add(null);
+				// pn.addGiven("GIVEN");
+				person.getNames().add(pn);
+				intended.setInformationRecipient(person);
+				ir.setIntendedRecipient(intended);
+
+				target.getInformationRecipients().add(ir);
+			}
+
+			@Override
+			protected void updateToPass(GeneralHeaderConstraints target) {
+				target.getInformationRecipients().get(
+					0).getIntendedRecipient().getInformationRecipient().getNames().get(0).getUses().clear();
+
+				target.getInformationRecipients().get(
+					0).getIntendedRecipient().getInformationRecipient().getNames().get(0).getUses().add(
+						EntityNameUse.A);
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsInformationRecipientIntendedRecipientPersonGeneralHeaderConstraintsUSRealmPersonNameUse(
+					(GeneralHeaderConstraints) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateGeneralHeaderConstraintsInformationRecipientIntendedRecipientPersonGeneralHeaderConstraintsUSRealmPersonNameUseTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated not
+	*/
+	@Test
+
+	public void testValidateGeneralHeaderConstraintsInformationRecipientIntendedRecipientPersonGeneralHeaderConstraintsUSRealmPersonNameFamily() {
+		OperationsTestCase<GeneralHeaderConstraints> validateGeneralHeaderConstraintsInformationRecipientIntendedRecipientPersonGeneralHeaderConstraintsUSRealmPersonNameFamilyTestCase = new OperationsTestCase<GeneralHeaderConstraints>(
+			"validateGeneralHeaderConstraintsInformationRecipientIntendedRecipientPersonGeneralHeaderConstraintsUSRealmPersonNameFamily",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_GENERAL_HEADER_CONSTRAINTS_INFORMATION_RECIPIENT_INTENDED_RECIPIENT_PERSON_GENERAL_HEADER_CONSTRAINTS_US_REALM_PERSON_NAME_FAMILY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(GeneralHeaderConstraints target) {
+				InformationRecipient ir = CDAFactory.eINSTANCE.createInformationRecipient();
+				IntendedRecipient intended = CDAFactory.eINSTANCE.createIntendedRecipient();
+				// intended.setReceivedOrganization(organization);
+				Person person = CDAFactory.eINSTANCE.createPerson();
+				PN pn = DatatypesFactory.eINSTANCE.createPN();
+				pn.addFamily("FAMILY");
+				person.getNames().add(pn);
+				intended.setInformationRecipient(person);
+				ir.setIntendedRecipient(intended);
+
+				target.getInformationRecipients().add(ir);
+			}
+
+			@Override
+			protected void updateToPass(GeneralHeaderConstraints target) {
+				target.getInformationRecipients().get(
+					0).getIntendedRecipient().getInformationRecipient().getNames().get(0).getFamilies().clear();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsInformationRecipientIntendedRecipientPersonGeneralHeaderConstraintsUSRealmPersonNameFamily(
+					(GeneralHeaderConstraints) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateGeneralHeaderConstraintsInformationRecipientIntendedRecipientPersonGeneralHeaderConstraintsUSRealmPersonNameFamilyTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated not
+	*/
+	@Test
+
+	public void testValidateGeneralHeaderConstraintsInformationRecipientIntendedRecipientPersonGeneralHeaderConstraintsUSRealmPersonNameGiven() {
+		OperationsTestCase<GeneralHeaderConstraints> validateGeneralHeaderConstraintsInformationRecipientIntendedRecipientPersonGeneralHeaderConstraintsUSRealmPersonNameGivenTestCase = new OperationsTestCase<GeneralHeaderConstraints>(
+			"validateGeneralHeaderConstraintsInformationRecipientIntendedRecipientPersonGeneralHeaderConstraintsUSRealmPersonNameGiven",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_GENERAL_HEADER_CONSTRAINTS_INFORMATION_RECIPIENT_INTENDED_RECIPIENT_PERSON_GENERAL_HEADER_CONSTRAINTS_US_REALM_PERSON_NAME_GIVEN__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(GeneralHeaderConstraints target) {
+				InformationRecipient ir = CDAFactory.eINSTANCE.createInformationRecipient();
+				IntendedRecipient intended = CDAFactory.eINSTANCE.createIntendedRecipient();
+				// intended.setReceivedOrganization(organization);
+				Person person = CDAFactory.eINSTANCE.createPerson();
+				PN pn = DatatypesFactory.eINSTANCE.createPN();
+				pn.addGiven("GIVEN");
+				person.getNames().add(pn);
+				intended.setInformationRecipient(person);
+				ir.setIntendedRecipient(intended);
+
+				target.getInformationRecipients().add(ir);
+			}
+
+			@Override
+			protected void updateToPass(GeneralHeaderConstraints target) {
+				target.getInformationRecipients().get(
+					0).getIntendedRecipient().getInformationRecipient().getNames().get(0).getGivens().clear();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsInformationRecipientIntendedRecipientPersonGeneralHeaderConstraintsUSRealmPersonNameGiven(
+					(GeneralHeaderConstraints) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateGeneralHeaderConstraintsInformationRecipientIntendedRecipientPersonGeneralHeaderConstraintsUSRealmPersonNameGivenTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated not
+	*/
+	@Test
+
+	public void testValidateGeneralHeaderConstraintsInformationRecipientIntendedRecipientPersonGeneralHeaderConstraintsUSRealmPersonNamePrefix() {
+		OperationsTestCase<GeneralHeaderConstraints> validateGeneralHeaderConstraintsInformationRecipientIntendedRecipientPersonGeneralHeaderConstraintsUSRealmPersonNamePrefixTestCase = new OperationsTestCase<GeneralHeaderConstraints>(
+			"validateGeneralHeaderConstraintsInformationRecipientIntendedRecipientPersonGeneralHeaderConstraintsUSRealmPersonNamePrefix",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_GENERAL_HEADER_CONSTRAINTS_INFORMATION_RECIPIENT_INTENDED_RECIPIENT_PERSON_GENERAL_HEADER_CONSTRAINTS_US_REALM_PERSON_NAME_PREFIX__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(GeneralHeaderConstraints target) {
+				InformationRecipient ir = CDAFactory.eINSTANCE.createInformationRecipient();
+				IntendedRecipient intended = CDAFactory.eINSTANCE.createIntendedRecipient();
+				// intended.setReceivedOrganization(organization);
+				Person person = CDAFactory.eINSTANCE.createPerson();
+				PN pn = DatatypesFactory.eINSTANCE.createPN();
+				pn.addPrefix("PREFIX");
+				person.getNames().add(pn);
+				intended.setInformationRecipient(person);
+				ir.setIntendedRecipient(intended);
+
+				target.getInformationRecipients().add(ir);
+			}
+
+			@Override
+			protected void updateToPass(GeneralHeaderConstraints target) {
+				target.getInformationRecipients().get(
+					0).getIntendedRecipient().getInformationRecipient().getNames().get(0).getPrefixes().clear();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsInformationRecipientIntendedRecipientPersonGeneralHeaderConstraintsUSRealmPersonNamePrefix(
+					(GeneralHeaderConstraints) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateGeneralHeaderConstraintsInformationRecipientIntendedRecipientPersonGeneralHeaderConstraintsUSRealmPersonNamePrefixTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated not
+	*/
+	@Test
+
+	public void testValidateGeneralHeaderConstraintsInformationRecipientIntendedRecipientPersonGeneralHeaderConstraintsUSRealmPersonNameSuffix() {
+		OperationsTestCase<GeneralHeaderConstraints> validateGeneralHeaderConstraintsInformationRecipientIntendedRecipientPersonGeneralHeaderConstraintsUSRealmPersonNameSuffixTestCase = new OperationsTestCase<GeneralHeaderConstraints>(
+			"validateGeneralHeaderConstraintsInformationRecipientIntendedRecipientPersonGeneralHeaderConstraintsUSRealmPersonNameSuffix",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_GENERAL_HEADER_CONSTRAINTS_INFORMATION_RECIPIENT_INTENDED_RECIPIENT_PERSON_GENERAL_HEADER_CONSTRAINTS_US_REALM_PERSON_NAME_SUFFIX__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(GeneralHeaderConstraints target) {
+				InformationRecipient ir = CDAFactory.eINSTANCE.createInformationRecipient();
+				IntendedRecipient intended = CDAFactory.eINSTANCE.createIntendedRecipient();
+				// intended.setReceivedOrganization(organization);
+				Person person = CDAFactory.eINSTANCE.createPerson();
+				PN pn = DatatypesFactory.eINSTANCE.createPN();
+				pn.addSuffix("GIVEN");
+				person.getNames().add(pn);
+				intended.setInformationRecipient(person);
+				ir.setIntendedRecipient(intended);
+
+				target.getInformationRecipients().add(ir);
+			}
+
+			@Override
+			protected void updateToPass(GeneralHeaderConstraints target) {
+				target.getInformationRecipients().get(
+					0).getIntendedRecipient().getInformationRecipient().getNames().get(0).getSuffixes().clear();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsInformationRecipientIntendedRecipientPersonGeneralHeaderConstraintsUSRealmPersonNameSuffix(
+					(GeneralHeaderConstraints) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateGeneralHeaderConstraintsInformationRecipientIntendedRecipientPersonGeneralHeaderConstraintsUSRealmPersonNameSuffixTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated not
+	*/
+	@Test
 	public void testValidateGeneralHeaderConstraintsInformationRecipientIntendedRecipientOrganizationName() {
 		OperationsTestCase<GeneralHeaderConstraints> validateGeneralHeaderConstraintsInformationRecipientIntendedRecipientOrganizationNameTestCase = new OperationsTestCase<GeneralHeaderConstraints>(
 			"validateGeneralHeaderConstraintsInformationRecipientIntendedRecipientOrganizationName",
@@ -6870,6 +8072,286 @@ public class GeneralHeaderConstraintsTest extends CDAValidationTest {
 		};
 
 		validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityTELUseTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated not
+	*/
+	@Test
+
+	public void testValidateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityPersonGeneralHeaderConstraintsUSRealmPersonNameUSRealmPersonNameMixedContent() {
+		OperationsTestCase<GeneralHeaderConstraints> validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityPersonGeneralHeaderConstraintsUSRealmPersonNameUSRealmPersonNameMixedContentTestCase = new OperationsTestCase<GeneralHeaderConstraints>(
+			"validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityPersonGeneralHeaderConstraintsUSRealmPersonNameUSRealmPersonNameMixedContent",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_GENERAL_HEADER_CONSTRAINTS_LEGAL_AUTHENTICATOR_ASSIGNED_ENTITY_PERSON_GENERAL_HEADER_CONSTRAINTS_US_REALM_PERSON_NAME_US_REALM_PERSON_NAME_MIXED_CONTENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(GeneralHeaderConstraints target) {
+				LegalAuthenticator authenticator = CDAFactory.eINSTANCE.createLegalAuthenticator();
+
+				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
+				Person ap = CDAFactory.eINSTANCE.createPerson();
+				PN pn = DatatypesFactory.eINSTANCE.createPN();
+				// pn.addGiven("GIVEN");
+				ap.getNames().add(pn);
+				ae.setAssignedPerson(ap);
+				authenticator.setAssignedEntity(ae);
+				target.setLegalAuthenticator(authenticator);
+
+			}
+
+			@Override
+			protected void updateToPass(GeneralHeaderConstraints target) {
+				target.getLegalAuthenticator().getAssignedEntity().getAssignedPerson().getNames().get(0).addText(
+					"Person Name");
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityPersonGeneralHeaderConstraintsUSRealmPersonNameUSRealmPersonNameMixedContent(
+					(GeneralHeaderConstraints) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityPersonGeneralHeaderConstraintsUSRealmPersonNameUSRealmPersonNameMixedContentTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated not
+	*/
+	@Test
+
+	public void testValidateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityPersonGeneralHeaderConstraintsUSRealmPersonNameUse() {
+		OperationsTestCase<GeneralHeaderConstraints> validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityPersonGeneralHeaderConstraintsUSRealmPersonNameUseTestCase = new OperationsTestCase<GeneralHeaderConstraints>(
+			"validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityPersonGeneralHeaderConstraintsUSRealmPersonNameUse",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_GENERAL_HEADER_CONSTRAINTS_LEGAL_AUTHENTICATOR_ASSIGNED_ENTITY_PERSON_GENERAL_HEADER_CONSTRAINTS_US_REALM_PERSON_NAME_USE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(GeneralHeaderConstraints target) {
+				LegalAuthenticator authenticator = CDAFactory.eINSTANCE.createLegalAuthenticator();
+
+				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
+				Person ap = CDAFactory.eINSTANCE.createPerson();
+				PN pn = DatatypesFactory.eINSTANCE.createPN();
+				// pn.addGiven("GIVEN");
+				pn.getUses().add(null);
+				ap.getNames().add(pn);
+				ae.setAssignedPerson(ap);
+				authenticator.setAssignedEntity(ae);
+				target.setLegalAuthenticator(authenticator);
+			}
+
+			@Override
+			protected void updateToPass(GeneralHeaderConstraints target) {
+				target.getLegalAuthenticator().getAssignedEntity().getAssignedPerson().getNames().get(
+					0).getUses().clear();
+				target.getLegalAuthenticator().getAssignedEntity().getAssignedPerson().getNames().get(0).getUses().add(
+					EntityNameUse.A);
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityPersonGeneralHeaderConstraintsUSRealmPersonNameUse(
+					(GeneralHeaderConstraints) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityPersonGeneralHeaderConstraintsUSRealmPersonNameUseTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated not
+	*/
+	@Test
+
+	public void testValidateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityPersonGeneralHeaderConstraintsUSRealmPersonNameFamily() {
+		OperationsTestCase<GeneralHeaderConstraints> validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityPersonGeneralHeaderConstraintsUSRealmPersonNameFamilyTestCase = new OperationsTestCase<GeneralHeaderConstraints>(
+			"validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityPersonGeneralHeaderConstraintsUSRealmPersonNameFamily",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_GENERAL_HEADER_CONSTRAINTS_LEGAL_AUTHENTICATOR_ASSIGNED_ENTITY_PERSON_GENERAL_HEADER_CONSTRAINTS_US_REALM_PERSON_NAME_FAMILY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(GeneralHeaderConstraints target) {
+				LegalAuthenticator authenticator = CDAFactory.eINSTANCE.createLegalAuthenticator();
+
+				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
+				Person ap = CDAFactory.eINSTANCE.createPerson();
+				PN pn = DatatypesFactory.eINSTANCE.createPN();
+				pn.addFamily("FAMILY");
+				ap.getNames().add(pn);
+				ae.setAssignedPerson(ap);
+				authenticator.setAssignedEntity(ae);
+				target.setLegalAuthenticator(authenticator);
+			}
+
+			@Override
+			protected void updateToPass(GeneralHeaderConstraints target) {
+				target.getLegalAuthenticator().getAssignedEntity().getAssignedPerson().getNames().get(
+					0).getFamilies().clear();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityPersonGeneralHeaderConstraintsUSRealmPersonNameFamily(
+					(GeneralHeaderConstraints) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityPersonGeneralHeaderConstraintsUSRealmPersonNameFamilyTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated not
+	*/
+	@Test
+
+	public void testValidateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityPersonGeneralHeaderConstraintsUSRealmPersonNameGiven() {
+		OperationsTestCase<GeneralHeaderConstraints> validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityPersonGeneralHeaderConstraintsUSRealmPersonNameGivenTestCase = new OperationsTestCase<GeneralHeaderConstraints>(
+			"validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityPersonGeneralHeaderConstraintsUSRealmPersonNameGiven",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_GENERAL_HEADER_CONSTRAINTS_LEGAL_AUTHENTICATOR_ASSIGNED_ENTITY_PERSON_GENERAL_HEADER_CONSTRAINTS_US_REALM_PERSON_NAME_GIVEN__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(GeneralHeaderConstraints target) {
+				LegalAuthenticator authenticator = CDAFactory.eINSTANCE.createLegalAuthenticator();
+
+				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
+				Person ap = CDAFactory.eINSTANCE.createPerson();
+				PN pn = DatatypesFactory.eINSTANCE.createPN();
+				pn.addGiven("GIVEN");
+				ap.getNames().add(pn);
+				ae.setAssignedPerson(ap);
+				authenticator.setAssignedEntity(ae);
+				target.setLegalAuthenticator(authenticator);
+			}
+
+			@Override
+			protected void updateToPass(GeneralHeaderConstraints target) {
+				target.getLegalAuthenticator().getAssignedEntity().getAssignedPerson().getNames().get(
+					0).getGivens().clear();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityPersonGeneralHeaderConstraintsUSRealmPersonNameGiven(
+					(GeneralHeaderConstraints) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityPersonGeneralHeaderConstraintsUSRealmPersonNameGivenTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated not
+	*/
+	@Test
+
+	public void testValidateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityPersonGeneralHeaderConstraintsUSRealmPersonNamePrefix() {
+		OperationsTestCase<GeneralHeaderConstraints> validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityPersonGeneralHeaderConstraintsUSRealmPersonNamePrefixTestCase = new OperationsTestCase<GeneralHeaderConstraints>(
+			"validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityPersonGeneralHeaderConstraintsUSRealmPersonNamePrefix",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_GENERAL_HEADER_CONSTRAINTS_LEGAL_AUTHENTICATOR_ASSIGNED_ENTITY_PERSON_GENERAL_HEADER_CONSTRAINTS_US_REALM_PERSON_NAME_PREFIX__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(GeneralHeaderConstraints target) {
+				LegalAuthenticator authenticator = CDAFactory.eINSTANCE.createLegalAuthenticator();
+
+				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
+				Person ap = CDAFactory.eINSTANCE.createPerson();
+				PN pn = DatatypesFactory.eINSTANCE.createPN();
+				pn.addPrefix("PREFIX");
+				ap.getNames().add(pn);
+				ae.setAssignedPerson(ap);
+				authenticator.setAssignedEntity(ae);
+				target.setLegalAuthenticator(authenticator);
+			}
+
+			@Override
+			protected void updateToPass(GeneralHeaderConstraints target) {
+				target.getLegalAuthenticator().getAssignedEntity().getAssignedPerson().getNames().get(
+					0).getPrefixes().clear();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityPersonGeneralHeaderConstraintsUSRealmPersonNamePrefix(
+					(GeneralHeaderConstraints) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityPersonGeneralHeaderConstraintsUSRealmPersonNamePrefixTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated not
+	*/
+	@Test
+
+	public void testValidateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityPersonGeneralHeaderConstraintsUSRealmPersonNameSuffix() {
+		OperationsTestCase<GeneralHeaderConstraints> validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityPersonGeneralHeaderConstraintsUSRealmPersonNameSuffixTestCase = new OperationsTestCase<GeneralHeaderConstraints>(
+			"validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityPersonGeneralHeaderConstraintsUSRealmPersonNameSuffix",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_GENERAL_HEADER_CONSTRAINTS_LEGAL_AUTHENTICATOR_ASSIGNED_ENTITY_PERSON_GENERAL_HEADER_CONSTRAINTS_US_REALM_PERSON_NAME_SUFFIX__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(GeneralHeaderConstraints target) {
+				LegalAuthenticator authenticator = CDAFactory.eINSTANCE.createLegalAuthenticator();
+
+				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
+				Person ap = CDAFactory.eINSTANCE.createPerson();
+				PN pn = DatatypesFactory.eINSTANCE.createPN();
+				pn.addSuffix("SUFFIX");
+				ap.getNames().add(pn);
+				ae.setAssignedPerson(ap);
+				authenticator.setAssignedEntity(ae);
+				target.setLegalAuthenticator(authenticator);
+			}
+
+			@Override
+			protected void updateToPass(GeneralHeaderConstraints target) {
+				target.getLegalAuthenticator().getAssignedEntity().getAssignedPerson().getNames().get(
+					0).getSuffixes().clear();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityPersonGeneralHeaderConstraintsUSRealmPersonNameSuffix(
+					(GeneralHeaderConstraints) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityPersonGeneralHeaderConstraintsUSRealmPersonNameSuffixTestCase.doValidationTest();
 	}
 
 	/**
@@ -7972,6 +9454,297 @@ public class GeneralHeaderConstraintsTest extends CDAValidationTest {
 	* @generated not
 	*/
 	@Test
+
+	public void testValidateGeneralHeaderConstraintsAuthenticatorAssignedEntityPersonGeneralHeaderConstraintsUSRealmPersonNameUSRealmPersonNameMixedContent() {
+		OperationsTestCase<GeneralHeaderConstraints> validateGeneralHeaderConstraintsAuthenticatorAssignedEntityPersonGeneralHeaderConstraintsUSRealmPersonNameUSRealmPersonNameMixedContentTestCase = new OperationsTestCase<GeneralHeaderConstraints>(
+			"validateGeneralHeaderConstraintsAuthenticatorAssignedEntityPersonGeneralHeaderConstraintsUSRealmPersonNameUSRealmPersonNameMixedContent",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_GENERAL_HEADER_CONSTRAINTS_AUTHENTICATOR_ASSIGNED_ENTITY_PERSON_GENERAL_HEADER_CONSTRAINTS_US_REALM_PERSON_NAME_US_REALM_PERSON_NAME_MIXED_CONTENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(GeneralHeaderConstraints target) {
+				target.init();
+				Authenticator authenticator = CDAFactory.eINSTANCE.createAuthenticator();
+				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
+				Person person = CDAFactory.eINSTANCE.createPerson();
+				PN pn = DatatypesFactory.eINSTANCE.createPN();
+				// pn.addGiven("GIVEN");
+				person.getNames().add(pn);
+
+				ae.setAssignedPerson(person);
+
+				authenticator.setAssignedEntity(ae);
+				target.getAuthenticators().add(authenticator);
+			}
+
+			@Override
+			protected void updateToPass(GeneralHeaderConstraints target) {
+				target.getAuthenticators().get(0).getAssignedEntity().getAssignedPerson().getNames().get(0).addText(
+					"Person Name");
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsAuthenticatorAssignedEntityPersonGeneralHeaderConstraintsUSRealmPersonNameUSRealmPersonNameMixedContent(
+					(GeneralHeaderConstraints) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateGeneralHeaderConstraintsAuthenticatorAssignedEntityPersonGeneralHeaderConstraintsUSRealmPersonNameUSRealmPersonNameMixedContentTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated not
+	*/
+	@Test
+
+	public void testValidateGeneralHeaderConstraintsAuthenticatorAssignedEntityPersonGeneralHeaderConstraintsUSRealmPersonNameUse() {
+		OperationsTestCase<GeneralHeaderConstraints> validateGeneralHeaderConstraintsAuthenticatorAssignedEntityPersonGeneralHeaderConstraintsUSRealmPersonNameUseTestCase = new OperationsTestCase<GeneralHeaderConstraints>(
+			"validateGeneralHeaderConstraintsAuthenticatorAssignedEntityPersonGeneralHeaderConstraintsUSRealmPersonNameUse",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_GENERAL_HEADER_CONSTRAINTS_AUTHENTICATOR_ASSIGNED_ENTITY_PERSON_GENERAL_HEADER_CONSTRAINTS_US_REALM_PERSON_NAME_USE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(GeneralHeaderConstraints target) {
+				target.init();
+				Authenticator authenticator = CDAFactory.eINSTANCE.createAuthenticator();
+				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
+				Person person = CDAFactory.eINSTANCE.createPerson();
+				PN pn = DatatypesFactory.eINSTANCE.createPN();
+				pn.getUses().add(null);
+				// pn.addGiven("GIVEN");
+				person.getNames().add(pn);
+
+				ae.setAssignedPerson(person);
+
+				authenticator.setAssignedEntity(ae);
+				target.getAuthenticators().add(authenticator);
+			}
+
+			@Override
+			protected void updateToPass(GeneralHeaderConstraints target) {
+				target.getAuthenticators().get(0).getAssignedEntity().getAssignedPerson().getNames().get(
+					0).getUses().clear();
+				target.getAuthenticators().get(0).getAssignedEntity().getAssignedPerson().getNames().get(
+					0).getUses().add(EntityNameUse.A);
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsAuthenticatorAssignedEntityPersonGeneralHeaderConstraintsUSRealmPersonNameUse(
+					(GeneralHeaderConstraints) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateGeneralHeaderConstraintsAuthenticatorAssignedEntityPersonGeneralHeaderConstraintsUSRealmPersonNameUseTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated not
+	*/
+	@Test
+
+	public void testValidateGeneralHeaderConstraintsAuthenticatorAssignedEntityPersonGeneralHeaderConstraintsUSRealmPersonNameFamily() {
+		OperationsTestCase<GeneralHeaderConstraints> validateGeneralHeaderConstraintsAuthenticatorAssignedEntityPersonGeneralHeaderConstraintsUSRealmPersonNameFamilyTestCase = new OperationsTestCase<GeneralHeaderConstraints>(
+			"validateGeneralHeaderConstraintsAuthenticatorAssignedEntityPersonGeneralHeaderConstraintsUSRealmPersonNameFamily",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_GENERAL_HEADER_CONSTRAINTS_AUTHENTICATOR_ASSIGNED_ENTITY_PERSON_GENERAL_HEADER_CONSTRAINTS_US_REALM_PERSON_NAME_FAMILY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(GeneralHeaderConstraints target) {
+				target.init();
+				Authenticator authenticator = CDAFactory.eINSTANCE.createAuthenticator();
+				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
+				Person person = CDAFactory.eINSTANCE.createPerson();
+				PN pn = DatatypesFactory.eINSTANCE.createPN();
+				pn.addFamily("FAMILY");
+				person.getNames().add(pn);
+
+				ae.setAssignedPerson(person);
+
+				authenticator.setAssignedEntity(ae);
+				target.getAuthenticators().add(authenticator);
+			}
+
+			@Override
+			protected void updateToPass(GeneralHeaderConstraints target) {
+				target.getAuthenticators().get(0).getAssignedEntity().getAssignedPerson().getNames().get(
+					0).getFamilies().clear();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsAuthenticatorAssignedEntityPersonGeneralHeaderConstraintsUSRealmPersonNameFamily(
+					(GeneralHeaderConstraints) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateGeneralHeaderConstraintsAuthenticatorAssignedEntityPersonGeneralHeaderConstraintsUSRealmPersonNameFamilyTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated not
+	*/
+	@Test
+
+	public void testValidateGeneralHeaderConstraintsAuthenticatorAssignedEntityPersonGeneralHeaderConstraintsUSRealmPersonNameGiven() {
+		OperationsTestCase<GeneralHeaderConstraints> validateGeneralHeaderConstraintsAuthenticatorAssignedEntityPersonGeneralHeaderConstraintsUSRealmPersonNameGivenTestCase = new OperationsTestCase<GeneralHeaderConstraints>(
+			"validateGeneralHeaderConstraintsAuthenticatorAssignedEntityPersonGeneralHeaderConstraintsUSRealmPersonNameGiven",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_GENERAL_HEADER_CONSTRAINTS_AUTHENTICATOR_ASSIGNED_ENTITY_PERSON_GENERAL_HEADER_CONSTRAINTS_US_REALM_PERSON_NAME_GIVEN__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(GeneralHeaderConstraints target) {
+				target.init();
+				Authenticator authenticator = CDAFactory.eINSTANCE.createAuthenticator();
+				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
+				Person person = CDAFactory.eINSTANCE.createPerson();
+				PN pn = DatatypesFactory.eINSTANCE.createPN();
+				pn.addGiven("GIVEN");
+				person.getNames().add(pn);
+
+				ae.setAssignedPerson(person);
+
+				authenticator.setAssignedEntity(ae);
+				target.getAuthenticators().add(authenticator);
+			}
+
+			@Override
+			protected void updateToPass(GeneralHeaderConstraints target) {
+				target.getAuthenticators().get(0).getAssignedEntity().getAssignedPerson().getNames().get(
+					0).getGivens().clear();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsAuthenticatorAssignedEntityPersonGeneralHeaderConstraintsUSRealmPersonNameGiven(
+					(GeneralHeaderConstraints) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateGeneralHeaderConstraintsAuthenticatorAssignedEntityPersonGeneralHeaderConstraintsUSRealmPersonNameGivenTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated not
+	*/
+	@Test
+
+	public void testValidateGeneralHeaderConstraintsAuthenticatorAssignedEntityPersonGeneralHeaderConstraintsUSRealmPersonNamePrefix() {
+		OperationsTestCase<GeneralHeaderConstraints> validateGeneralHeaderConstraintsAuthenticatorAssignedEntityPersonGeneralHeaderConstraintsUSRealmPersonNamePrefixTestCase = new OperationsTestCase<GeneralHeaderConstraints>(
+			"validateGeneralHeaderConstraintsAuthenticatorAssignedEntityPersonGeneralHeaderConstraintsUSRealmPersonNamePrefix",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_GENERAL_HEADER_CONSTRAINTS_AUTHENTICATOR_ASSIGNED_ENTITY_PERSON_GENERAL_HEADER_CONSTRAINTS_US_REALM_PERSON_NAME_PREFIX__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(GeneralHeaderConstraints target) {
+				target.init();
+				Authenticator authenticator = CDAFactory.eINSTANCE.createAuthenticator();
+				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
+				Person person = CDAFactory.eINSTANCE.createPerson();
+				PN pn = DatatypesFactory.eINSTANCE.createPN();
+				pn.addPrefix("Prefix");
+				person.getNames().add(pn);
+
+				ae.setAssignedPerson(person);
+
+				authenticator.setAssignedEntity(ae);
+				target.getAuthenticators().add(authenticator);
+			}
+
+			@Override
+			protected void updateToPass(GeneralHeaderConstraints target) {
+				target.getAuthenticators().get(0).getAssignedEntity().getAssignedPerson().getNames().get(
+					0).getPrefixes().clear();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsAuthenticatorAssignedEntityPersonGeneralHeaderConstraintsUSRealmPersonNamePrefix(
+					(GeneralHeaderConstraints) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateGeneralHeaderConstraintsAuthenticatorAssignedEntityPersonGeneralHeaderConstraintsUSRealmPersonNamePrefixTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated not
+	*/
+	@Test
+
+	public void testValidateGeneralHeaderConstraintsAuthenticatorAssignedEntityPersonGeneralHeaderConstraintsUSRealmPersonNameSuffix() {
+		OperationsTestCase<GeneralHeaderConstraints> validateGeneralHeaderConstraintsAuthenticatorAssignedEntityPersonGeneralHeaderConstraintsUSRealmPersonNameSuffixTestCase = new OperationsTestCase<GeneralHeaderConstraints>(
+			"validateGeneralHeaderConstraintsAuthenticatorAssignedEntityPersonGeneralHeaderConstraintsUSRealmPersonNameSuffix",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_GENERAL_HEADER_CONSTRAINTS_AUTHENTICATOR_ASSIGNED_ENTITY_PERSON_GENERAL_HEADER_CONSTRAINTS_US_REALM_PERSON_NAME_SUFFIX__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(GeneralHeaderConstraints target) {
+				target.init();
+				Authenticator authenticator = CDAFactory.eINSTANCE.createAuthenticator();
+				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
+				Person person = CDAFactory.eINSTANCE.createPerson();
+				PN pn = DatatypesFactory.eINSTANCE.createPN();
+				pn.addSuffix("SUFFIX");
+				person.getNames().add(pn);
+
+				ae.setAssignedPerson(person);
+
+				authenticator.setAssignedEntity(ae);
+				target.getAuthenticators().add(authenticator);
+			}
+
+			@Override
+			protected void updateToPass(GeneralHeaderConstraints target) {
+				target.getAuthenticators().get(0).getAssignedEntity().getAssignedPerson().getNames().get(
+					0).getSuffixes().clear();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsAuthenticatorAssignedEntityPersonGeneralHeaderConstraintsUSRealmPersonNameSuffix(
+					(GeneralHeaderConstraints) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateGeneralHeaderConstraintsAuthenticatorAssignedEntityPersonGeneralHeaderConstraintsUSRealmPersonNameSuffixTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated not
+	*/
+	@Test
 	public void testValidateGeneralHeaderConstraintsAuthenticatorAssignedEntityPersonName() {
 		OperationsTestCase<GeneralHeaderConstraints> validateGeneralHeaderConstraintsAuthenticatorAssignedEntityPersonNameTestCase = new OperationsTestCase<GeneralHeaderConstraints>(
 			"validateGeneralHeaderConstraintsAuthenticatorAssignedEntityPersonName",
@@ -8886,6 +10659,299 @@ public class GeneralHeaderConstraintsTest extends CDAValidationTest {
 		};
 
 		validateGeneralHeaderConstraintsInformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressStreetAddressLineTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated not
+	*/
+	@Test
+
+	public void testValidateGeneralHeaderConstraintsInformantAssignedEntityPersonGeneralHeaderConstraintsUSRealmPersonNameUSRealmPersonNameMixedContent() {
+		OperationsTestCase<GeneralHeaderConstraints> validateGeneralHeaderConstraintsInformantAssignedEntityPersonGeneralHeaderConstraintsUSRealmPersonNameUSRealmPersonNameMixedContentTestCase = new OperationsTestCase<GeneralHeaderConstraints>(
+			"validateGeneralHeaderConstraintsInformantAssignedEntityPersonGeneralHeaderConstraintsUSRealmPersonNameUSRealmPersonNameMixedContent",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_GENERAL_HEADER_CONSTRAINTS_INFORMANT_ASSIGNED_ENTITY_PERSON_GENERAL_HEADER_CONSTRAINTS_US_REALM_PERSON_NAME_US_REALM_PERSON_NAME_MIXED_CONTENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(GeneralHeaderConstraints target) {
+
+				target.init();
+				Informant12 inf = CDAFactory.eINSTANCE.createInformant12();
+				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
+				Person p = CDAFactory.eINSTANCE.createPerson();
+				PN pn = DatatypesFactory.eINSTANCE.createPN();
+				// pn.addGiven("GIVEN");
+				p.getNames().add(pn);
+				ae.setAssignedPerson(p);
+
+				inf.setAssignedEntity(ae);
+
+				target.getInformants().add(inf);
+
+			}
+
+			@Override
+			protected void updateToPass(GeneralHeaderConstraints target) {
+				target.getInformants().get(0).getAssignedEntity().getAssignedPerson().getNames().get(0).addText(
+					"PERSON NAME");
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsInformantAssignedEntityPersonGeneralHeaderConstraintsUSRealmPersonNameUSRealmPersonNameMixedContent(
+					(GeneralHeaderConstraints) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateGeneralHeaderConstraintsInformantAssignedEntityPersonGeneralHeaderConstraintsUSRealmPersonNameUSRealmPersonNameMixedContentTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated not
+	*/
+	@Test
+
+	public void testValidateGeneralHeaderConstraintsInformantAssignedEntityPersonGeneralHeaderConstraintsUSRealmPersonNameUse() {
+		OperationsTestCase<GeneralHeaderConstraints> validateGeneralHeaderConstraintsInformantAssignedEntityPersonGeneralHeaderConstraintsUSRealmPersonNameUseTestCase = new OperationsTestCase<GeneralHeaderConstraints>(
+			"validateGeneralHeaderConstraintsInformantAssignedEntityPersonGeneralHeaderConstraintsUSRealmPersonNameUse",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_GENERAL_HEADER_CONSTRAINTS_INFORMANT_ASSIGNED_ENTITY_PERSON_GENERAL_HEADER_CONSTRAINTS_US_REALM_PERSON_NAME_USE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(GeneralHeaderConstraints target) {
+				target.init();
+				Informant12 inf = CDAFactory.eINSTANCE.createInformant12();
+				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
+				Person p = CDAFactory.eINSTANCE.createPerson();
+				PN pn = DatatypesFactory.eINSTANCE.createPN();
+				pn.getUses().add(null);
+				// pn.addGiven("GIVEN");
+				p.getNames().add(pn);
+				ae.setAssignedPerson(p);
+
+				inf.setAssignedEntity(ae);
+
+				target.getInformants().add(inf);
+			}
+
+			@Override
+			protected void updateToPass(GeneralHeaderConstraints target) {
+				target.getInformants().get(0).getAssignedEntity().getAssignedPerson().getNames().get(
+					0).getUses().clear();
+				target.getInformants().get(0).getAssignedEntity().getAssignedPerson().getNames().get(0).getUses().add(
+					EntityNameUse.A);
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsInformantAssignedEntityPersonGeneralHeaderConstraintsUSRealmPersonNameUse(
+					(GeneralHeaderConstraints) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateGeneralHeaderConstraintsInformantAssignedEntityPersonGeneralHeaderConstraintsUSRealmPersonNameUseTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated not
+	*/
+	@Test
+
+	public void testValidateGeneralHeaderConstraintsInformantAssignedEntityPersonGeneralHeaderConstraintsUSRealmPersonNameFamily() {
+		OperationsTestCase<GeneralHeaderConstraints> validateGeneralHeaderConstraintsInformantAssignedEntityPersonGeneralHeaderConstraintsUSRealmPersonNameFamilyTestCase = new OperationsTestCase<GeneralHeaderConstraints>(
+			"validateGeneralHeaderConstraintsInformantAssignedEntityPersonGeneralHeaderConstraintsUSRealmPersonNameFamily",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_GENERAL_HEADER_CONSTRAINTS_INFORMANT_ASSIGNED_ENTITY_PERSON_GENERAL_HEADER_CONSTRAINTS_US_REALM_PERSON_NAME_FAMILY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(GeneralHeaderConstraints target) {
+				target.init();
+				Informant12 inf = CDAFactory.eINSTANCE.createInformant12();
+				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
+				Person p = CDAFactory.eINSTANCE.createPerson();
+				PN pn = DatatypesFactory.eINSTANCE.createPN();
+				pn.addFamily("FAMILY");
+				p.getNames().add(pn);
+				ae.setAssignedPerson(p);
+
+				inf.setAssignedEntity(ae);
+
+				target.getInformants().add(inf);
+			}
+
+			@Override
+			protected void updateToPass(GeneralHeaderConstraints target) {
+				target.getInformants().get(0).getAssignedEntity().getAssignedPerson().getNames().get(
+					0).getFamilies().clear();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsInformantAssignedEntityPersonGeneralHeaderConstraintsUSRealmPersonNameFamily(
+					(GeneralHeaderConstraints) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateGeneralHeaderConstraintsInformantAssignedEntityPersonGeneralHeaderConstraintsUSRealmPersonNameFamilyTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated not
+	*/
+	@Test
+
+	public void testValidateGeneralHeaderConstraintsInformantAssignedEntityPersonGeneralHeaderConstraintsUSRealmPersonNameGiven() {
+		OperationsTestCase<GeneralHeaderConstraints> validateGeneralHeaderConstraintsInformantAssignedEntityPersonGeneralHeaderConstraintsUSRealmPersonNameGivenTestCase = new OperationsTestCase<GeneralHeaderConstraints>(
+			"validateGeneralHeaderConstraintsInformantAssignedEntityPersonGeneralHeaderConstraintsUSRealmPersonNameGiven",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_GENERAL_HEADER_CONSTRAINTS_INFORMANT_ASSIGNED_ENTITY_PERSON_GENERAL_HEADER_CONSTRAINTS_US_REALM_PERSON_NAME_GIVEN__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(GeneralHeaderConstraints target) {
+				target.init();
+				Informant12 inf = CDAFactory.eINSTANCE.createInformant12();
+				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
+				Person p = CDAFactory.eINSTANCE.createPerson();
+				PN pn = DatatypesFactory.eINSTANCE.createPN();
+				pn.addGiven("GIVEN");
+				p.getNames().add(pn);
+				ae.setAssignedPerson(p);
+
+				inf.setAssignedEntity(ae);
+
+				target.getInformants().add(inf);
+			}
+
+			@Override
+			protected void updateToPass(GeneralHeaderConstraints target) {
+				target.getInformants().get(0).getAssignedEntity().getAssignedPerson().getNames().get(
+					0).getGivens().clear();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsInformantAssignedEntityPersonGeneralHeaderConstraintsUSRealmPersonNameGiven(
+					(GeneralHeaderConstraints) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateGeneralHeaderConstraintsInformantAssignedEntityPersonGeneralHeaderConstraintsUSRealmPersonNameGivenTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated not
+	*/
+	@Test
+
+	public void testValidateGeneralHeaderConstraintsInformantAssignedEntityPersonGeneralHeaderConstraintsUSRealmPersonNamePrefix() {
+		OperationsTestCase<GeneralHeaderConstraints> validateGeneralHeaderConstraintsInformantAssignedEntityPersonGeneralHeaderConstraintsUSRealmPersonNamePrefixTestCase = new OperationsTestCase<GeneralHeaderConstraints>(
+			"validateGeneralHeaderConstraintsInformantAssignedEntityPersonGeneralHeaderConstraintsUSRealmPersonNamePrefix",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_GENERAL_HEADER_CONSTRAINTS_INFORMANT_ASSIGNED_ENTITY_PERSON_GENERAL_HEADER_CONSTRAINTS_US_REALM_PERSON_NAME_PREFIX__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(GeneralHeaderConstraints target) {
+				target.init();
+				Informant12 inf = CDAFactory.eINSTANCE.createInformant12();
+				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
+				Person p = CDAFactory.eINSTANCE.createPerson();
+				PN pn = DatatypesFactory.eINSTANCE.createPN();
+				pn.addPrefix("PREFIX");
+				p.getNames().add(pn);
+				ae.setAssignedPerson(p);
+
+				inf.setAssignedEntity(ae);
+
+				target.getInformants().add(inf);
+			}
+
+			@Override
+			protected void updateToPass(GeneralHeaderConstraints target) {
+				target.getInformants().get(0).getAssignedEntity().getAssignedPerson().getNames().get(
+					0).getPrefixes().clear();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsInformantAssignedEntityPersonGeneralHeaderConstraintsUSRealmPersonNamePrefix(
+					(GeneralHeaderConstraints) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateGeneralHeaderConstraintsInformantAssignedEntityPersonGeneralHeaderConstraintsUSRealmPersonNamePrefixTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated not
+	*/
+	@Test
+
+	public void testValidateGeneralHeaderConstraintsInformantAssignedEntityPersonGeneralHeaderConstraintsUSRealmPersonNameSuffix() {
+		OperationsTestCase<GeneralHeaderConstraints> validateGeneralHeaderConstraintsInformantAssignedEntityPersonGeneralHeaderConstraintsUSRealmPersonNameSuffixTestCase = new OperationsTestCase<GeneralHeaderConstraints>(
+			"validateGeneralHeaderConstraintsInformantAssignedEntityPersonGeneralHeaderConstraintsUSRealmPersonNameSuffix",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_GENERAL_HEADER_CONSTRAINTS_INFORMANT_ASSIGNED_ENTITY_PERSON_GENERAL_HEADER_CONSTRAINTS_US_REALM_PERSON_NAME_SUFFIX__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(GeneralHeaderConstraints target) {
+				target.init();
+				Informant12 inf = CDAFactory.eINSTANCE.createInformant12();
+				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
+				Person p = CDAFactory.eINSTANCE.createPerson();
+				PN pn = DatatypesFactory.eINSTANCE.createPN();
+				pn.addSuffix("SUFFIX");
+				p.getNames().add(pn);
+				ae.setAssignedPerson(p);
+
+				inf.setAssignedEntity(ae);
+
+				target.getInformants().add(inf);
+			}
+
+			@Override
+			protected void updateToPass(GeneralHeaderConstraints target) {
+				target.getInformants().get(0).getAssignedEntity().getAssignedPerson().getNames().get(
+					0).getSuffixes().clear();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsInformantAssignedEntityPersonGeneralHeaderConstraintsUSRealmPersonNameSuffix(
+					(GeneralHeaderConstraints) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateGeneralHeaderConstraintsInformantAssignedEntityPersonGeneralHeaderConstraintsUSRealmPersonNameSuffixTestCase.doValidationTest();
 	}
 
 	/**
@@ -13933,6 +15999,298 @@ public class GeneralHeaderConstraintsTest extends CDAValidationTest {
 		};
 
 		validateGeneralHeaderConstraintsInformantRelatedEntityGeneralHeaderConstraintsUSRealmAddressStreetAddressLineTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated not
+	*/
+	@Test
+
+	public void testValidateGeneralHeaderConstraintsInformantRelatedEntityPersonGeneralHeaderConstraintsUSRealmPersonNameUSRealmPersonNameMixedContent() {
+		OperationsTestCase<GeneralHeaderConstraints> validateGeneralHeaderConstraintsInformantRelatedEntityPersonGeneralHeaderConstraintsUSRealmPersonNameUSRealmPersonNameMixedContentTestCase = new OperationsTestCase<GeneralHeaderConstraints>(
+			"validateGeneralHeaderConstraintsInformantRelatedEntityPersonGeneralHeaderConstraintsUSRealmPersonNameUSRealmPersonNameMixedContent",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_GENERAL_HEADER_CONSTRAINTS_INFORMANT_RELATED_ENTITY_PERSON_GENERAL_HEADER_CONSTRAINTS_US_REALM_PERSON_NAME_US_REALM_PERSON_NAME_MIXED_CONTENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(GeneralHeaderConstraints target) {
+
+				target.getInformants().clear();
+				Informant12 informant = CDAFactory.eINSTANCE.createInformant12();
+				RelatedEntity re = CDAFactory.eINSTANCE.createRelatedEntity();
+				Person person = CDAFactory.eINSTANCE.createPerson();
+
+				PN pn = DatatypesFactory.eINSTANCE.createPN();
+				// pn.addGiven("GIVEN");
+				person.getNames().add(pn);
+				re.setRelatedPerson(person);
+				informant.setRelatedEntity(re);
+
+				target.getInformants().add(informant);
+
+			}
+
+			@Override
+			protected void updateToPass(GeneralHeaderConstraints target) {
+				target.getInformants().get(0).getRelatedEntity().getRelatedPerson().getNames().get(0).addText(
+					"Person Name");
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsInformantRelatedEntityPersonGeneralHeaderConstraintsUSRealmPersonNameUSRealmPersonNameMixedContent(
+					(GeneralHeaderConstraints) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateGeneralHeaderConstraintsInformantRelatedEntityPersonGeneralHeaderConstraintsUSRealmPersonNameUSRealmPersonNameMixedContentTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated not
+	*/
+	@Test
+
+	public void testValidateGeneralHeaderConstraintsInformantRelatedEntityPersonGeneralHeaderConstraintsUSRealmPersonNameUse() {
+		OperationsTestCase<GeneralHeaderConstraints> validateGeneralHeaderConstraintsInformantRelatedEntityPersonGeneralHeaderConstraintsUSRealmPersonNameUseTestCase = new OperationsTestCase<GeneralHeaderConstraints>(
+			"validateGeneralHeaderConstraintsInformantRelatedEntityPersonGeneralHeaderConstraintsUSRealmPersonNameUse",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_GENERAL_HEADER_CONSTRAINTS_INFORMANT_RELATED_ENTITY_PERSON_GENERAL_HEADER_CONSTRAINTS_US_REALM_PERSON_NAME_USE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(GeneralHeaderConstraints target) {
+				target.getInformants().clear();
+				Informant12 informant = CDAFactory.eINSTANCE.createInformant12();
+				RelatedEntity re = CDAFactory.eINSTANCE.createRelatedEntity();
+				Person person = CDAFactory.eINSTANCE.createPerson();
+
+				PN pn = DatatypesFactory.eINSTANCE.createPN();
+				pn.getUses().add(null);
+				// pn.addGiven("GIVEN");
+				person.getNames().add(pn);
+				re.setRelatedPerson(person);
+				informant.setRelatedEntity(re);
+
+				target.getInformants().add(informant);
+			}
+
+			@Override
+			protected void updateToPass(GeneralHeaderConstraints target) {
+				target.getInformants().get(0).getRelatedEntity().getRelatedPerson().getNames().get(0).getUses().clear();
+				target.getInformants().get(0).getRelatedEntity().getRelatedPerson().getNames().get(0).getUses().add(
+					EntityNameUse.A);
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsInformantRelatedEntityPersonGeneralHeaderConstraintsUSRealmPersonNameUse(
+					(GeneralHeaderConstraints) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateGeneralHeaderConstraintsInformantRelatedEntityPersonGeneralHeaderConstraintsUSRealmPersonNameUseTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated not
+	*/
+	@Test
+
+	public void testValidateGeneralHeaderConstraintsInformantRelatedEntityPersonGeneralHeaderConstraintsUSRealmPersonNameFamily() {
+		OperationsTestCase<GeneralHeaderConstraints> validateGeneralHeaderConstraintsInformantRelatedEntityPersonGeneralHeaderConstraintsUSRealmPersonNameFamilyTestCase = new OperationsTestCase<GeneralHeaderConstraints>(
+			"validateGeneralHeaderConstraintsInformantRelatedEntityPersonGeneralHeaderConstraintsUSRealmPersonNameFamily",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_GENERAL_HEADER_CONSTRAINTS_INFORMANT_RELATED_ENTITY_PERSON_GENERAL_HEADER_CONSTRAINTS_US_REALM_PERSON_NAME_FAMILY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(GeneralHeaderConstraints target) {
+				target.getInformants().clear();
+				Informant12 informant = CDAFactory.eINSTANCE.createInformant12();
+				RelatedEntity re = CDAFactory.eINSTANCE.createRelatedEntity();
+				Person person = CDAFactory.eINSTANCE.createPerson();
+
+				PN pn = DatatypesFactory.eINSTANCE.createPN();
+				pn.addFamily("FAMILY");
+				person.getNames().add(pn);
+				re.setRelatedPerson(person);
+				informant.setRelatedEntity(re);
+
+				target.getInformants().add(informant);
+			}
+
+			@Override
+			protected void updateToPass(GeneralHeaderConstraints target) {
+				target.getInformants().get(0).getRelatedEntity().getRelatedPerson().getNames().get(
+					0).getFamilies().clear();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsInformantRelatedEntityPersonGeneralHeaderConstraintsUSRealmPersonNameFamily(
+					(GeneralHeaderConstraints) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateGeneralHeaderConstraintsInformantRelatedEntityPersonGeneralHeaderConstraintsUSRealmPersonNameFamilyTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated not
+	*/
+	@Test
+
+	public void testValidateGeneralHeaderConstraintsInformantRelatedEntityPersonGeneralHeaderConstraintsUSRealmPersonNameGiven() {
+		OperationsTestCase<GeneralHeaderConstraints> validateGeneralHeaderConstraintsInformantRelatedEntityPersonGeneralHeaderConstraintsUSRealmPersonNameGivenTestCase = new OperationsTestCase<GeneralHeaderConstraints>(
+			"validateGeneralHeaderConstraintsInformantRelatedEntityPersonGeneralHeaderConstraintsUSRealmPersonNameGiven",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_GENERAL_HEADER_CONSTRAINTS_INFORMANT_RELATED_ENTITY_PERSON_GENERAL_HEADER_CONSTRAINTS_US_REALM_PERSON_NAME_GIVEN__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(GeneralHeaderConstraints target) {
+				target.getInformants().clear();
+				Informant12 informant = CDAFactory.eINSTANCE.createInformant12();
+				RelatedEntity re = CDAFactory.eINSTANCE.createRelatedEntity();
+				Person person = CDAFactory.eINSTANCE.createPerson();
+
+				PN pn = DatatypesFactory.eINSTANCE.createPN();
+				pn.addGiven("GIVEN");
+				person.getNames().add(pn);
+				re.setRelatedPerson(person);
+				informant.setRelatedEntity(re);
+
+				target.getInformants().add(informant);
+			}
+
+			@Override
+			protected void updateToPass(GeneralHeaderConstraints target) {
+				target.getInformants().get(0).getRelatedEntity().getRelatedPerson().getNames().get(
+					0).getGivens().clear();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsInformantRelatedEntityPersonGeneralHeaderConstraintsUSRealmPersonNameGiven(
+					(GeneralHeaderConstraints) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateGeneralHeaderConstraintsInformantRelatedEntityPersonGeneralHeaderConstraintsUSRealmPersonNameGivenTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated not
+	*/
+	@Test
+
+	public void testValidateGeneralHeaderConstraintsInformantRelatedEntityPersonGeneralHeaderConstraintsUSRealmPersonNamePrefix() {
+		OperationsTestCase<GeneralHeaderConstraints> validateGeneralHeaderConstraintsInformantRelatedEntityPersonGeneralHeaderConstraintsUSRealmPersonNamePrefixTestCase = new OperationsTestCase<GeneralHeaderConstraints>(
+			"validateGeneralHeaderConstraintsInformantRelatedEntityPersonGeneralHeaderConstraintsUSRealmPersonNamePrefix",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_GENERAL_HEADER_CONSTRAINTS_INFORMANT_RELATED_ENTITY_PERSON_GENERAL_HEADER_CONSTRAINTS_US_REALM_PERSON_NAME_PREFIX__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(GeneralHeaderConstraints target) {
+				target.getInformants().clear();
+				Informant12 informant = CDAFactory.eINSTANCE.createInformant12();
+				RelatedEntity re = CDAFactory.eINSTANCE.createRelatedEntity();
+				Person person = CDAFactory.eINSTANCE.createPerson();
+
+				PN pn = DatatypesFactory.eINSTANCE.createPN();
+				pn.addPrefix("PREFIX");
+				person.getNames().add(pn);
+				re.setRelatedPerson(person);
+				informant.setRelatedEntity(re);
+
+				target.getInformants().add(informant);
+			}
+
+			@Override
+			protected void updateToPass(GeneralHeaderConstraints target) {
+				target.getInformants().get(0).getRelatedEntity().getRelatedPerson().getNames().get(
+					0).getPrefixes().clear();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsInformantRelatedEntityPersonGeneralHeaderConstraintsUSRealmPersonNamePrefix(
+					(GeneralHeaderConstraints) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateGeneralHeaderConstraintsInformantRelatedEntityPersonGeneralHeaderConstraintsUSRealmPersonNamePrefixTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated not
+	*/
+	@Test
+
+	public void testValidateGeneralHeaderConstraintsInformantRelatedEntityPersonGeneralHeaderConstraintsUSRealmPersonNameSuffix() {
+		OperationsTestCase<GeneralHeaderConstraints> validateGeneralHeaderConstraintsInformantRelatedEntityPersonGeneralHeaderConstraintsUSRealmPersonNameSuffixTestCase = new OperationsTestCase<GeneralHeaderConstraints>(
+			"validateGeneralHeaderConstraintsInformantRelatedEntityPersonGeneralHeaderConstraintsUSRealmPersonNameSuffix",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_GENERAL_HEADER_CONSTRAINTS_INFORMANT_RELATED_ENTITY_PERSON_GENERAL_HEADER_CONSTRAINTS_US_REALM_PERSON_NAME_SUFFIX__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(GeneralHeaderConstraints target) {
+				target.getInformants().clear();
+				Informant12 informant = CDAFactory.eINSTANCE.createInformant12();
+				RelatedEntity re = CDAFactory.eINSTANCE.createRelatedEntity();
+				Person person = CDAFactory.eINSTANCE.createPerson();
+
+				PN pn = DatatypesFactory.eINSTANCE.createPN();
+				pn.addSuffix("SUFFIX");
+				person.getNames().add(pn);
+				re.setRelatedPerson(person);
+				informant.setRelatedEntity(re);
+
+				target.getInformants().add(informant);
+			}
+
+			@Override
+			protected void updateToPass(GeneralHeaderConstraints target) {
+				target.getInformants().get(0).getRelatedEntity().getRelatedPerson().getNames().get(
+					0).getSuffixes().clear();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsInformantRelatedEntityPersonGeneralHeaderConstraintsUSRealmPersonNameSuffix(
+					(GeneralHeaderConstraints) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateGeneralHeaderConstraintsInformantRelatedEntityPersonGeneralHeaderConstraintsUSRealmPersonNameSuffixTestCase.doValidationTest();
 	}
 
 	/**
