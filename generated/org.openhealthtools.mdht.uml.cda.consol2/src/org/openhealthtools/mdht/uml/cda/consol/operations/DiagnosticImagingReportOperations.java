@@ -2450,7 +2450,7 @@ public class DiagnosticImagingReportOperations extends GeneralHeaderConstraintsO
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.DIAGNOSTIC_IMAGING_REPORT,
-				ConsolPackage.Literals.DIAGNOSTIC_IMAGING_REPORT.getEAllOperations().get(400));
+				ConsolPackage.Literals.DIAGNOSTIC_IMAGING_REPORT.getEAllOperations().get(360));
 			try {
 				GET_FINDINGS_SECTION__EOCL_QRY = helper.createQuery(GET_FINDINGS_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -2496,7 +2496,7 @@ public class DiagnosticImagingReportOperations extends GeneralHeaderConstraintsO
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.DIAGNOSTIC_IMAGING_REPORT,
-				ConsolPackage.Literals.DIAGNOSTIC_IMAGING_REPORT.getEAllOperations().get(401));
+				ConsolPackage.Literals.DIAGNOSTIC_IMAGING_REPORT.getEAllOperations().get(361));
 			try {
 				GET_DICOM_OBJECT_CATALOG_SECTION__EOCL_QRY = helper.createQuery(
 					GET_DICOM_OBJECT_CATALOG_SECTION__EOCL_EXP);

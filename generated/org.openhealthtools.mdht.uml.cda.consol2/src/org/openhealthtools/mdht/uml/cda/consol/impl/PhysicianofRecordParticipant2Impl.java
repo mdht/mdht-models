@@ -72,61 +72,6 @@ public class PhysicianofRecordParticipant2Impl extends PhysicianofRecordParticip
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePhysicianofRecordParticipant2AssignedEntityAssignedPersonGeneralHeaderConstraintsUSRealmPersonNameUse(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PhysicianofRecordParticipant2Operations.validatePhysicianofRecordParticipant2AssignedEntityAssignedPersonGeneralHeaderConstraintsUSRealmPersonNameUse(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validatePhysicianofRecordParticipant2AssignedEntityAssignedPersonGeneralHeaderConstraintsUSRealmPersonNameFamily(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PhysicianofRecordParticipant2Operations.validatePhysicianofRecordParticipant2AssignedEntityAssignedPersonGeneralHeaderConstraintsUSRealmPersonNameFamily(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validatePhysicianofRecordParticipant2AssignedEntityAssignedPersonGeneralHeaderConstraintsUSRealmPersonNameGiven(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PhysicianofRecordParticipant2Operations.validatePhysicianofRecordParticipant2AssignedEntityAssignedPersonGeneralHeaderConstraintsUSRealmPersonNameGiven(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validatePhysicianofRecordParticipant2AssignedEntityAssignedPersonGeneralHeaderConstraintsUSRealmPersonNamePrefix(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PhysicianofRecordParticipant2Operations.validatePhysicianofRecordParticipant2AssignedEntityAssignedPersonGeneralHeaderConstraintsUSRealmPersonNamePrefix(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validatePhysicianofRecordParticipant2AssignedEntityAssignedPersonGeneralHeaderConstraintsUSRealmPersonNameSuffix(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PhysicianofRecordParticipant2Operations.validatePhysicianofRecordParticipant2AssignedEntityAssignedPersonGeneralHeaderConstraintsUSRealmPersonNameSuffix(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public boolean validatePhysicianofRecordParticipant2AssignedEntityRepresentedOrganizationName(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PhysicianofRecordParticipant2Operations.validatePhysicianofRecordParticipant2AssignedEntityRepresentedOrganizationName(

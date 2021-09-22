@@ -1527,43 +1527,13 @@ Note: If name/@nullFlavor is present, the remaining conformance statements SHALL
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_KoARpBoeEeyvG_WM4zd-8g">
           <language>Analysis</language>
           <language>OCL</language>
-          <body>US Realm Patient Name SHALL NOT have mixed content except for white space</body>
-          <body>getText(true)&lt;>''</body>
+          <body>US Realm Person Name shall have either mixed content (name) or family and given name parts</body>
+          <body>(getText(true)&lt;>'' and ( family->isEmpty() and given->isEmpty() and suffix->isEmpty() and prefix->isEmpty()   )   ) xor (getText(true)='' and (not family->isEmpty() and not given->isEmpty()  ))</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_KoARpRoeEeyvG_WM4zd-8g">
         <general xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_3VD9wD5yEd6cla2oXsPtlA"/>
       </generalization>
-      <ownedAttribute xmi:id="_KoARphoeEeyvG_WM4zd-8g" name="use" visibility="private">
-        <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__yoORUDcEd6xYZuu1VKCVw"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KoARpxoeEeyvG_WM4zd-8g"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KoARqBoeEeyvG_WM4zd-8g" value="1"/>
-        <subsettedProperty href="pathmap://DATATYPES_MODEL/datatypes.uml#_ruuXUD5zEd6cla2oXsPtlA"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_KoARqRoeEeyvG_WM4zd-8g" name="family" visibility="private" isOrdered="true" aggregation="composite" isDerived="true">
-        <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_D7EcAD5zEd6cla2oXsPtlA"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_aEt3QRoeEeyvG_WM4zd-8g"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_aEt3QBoeEeyvG_WM4zd-8g"/>
-        <subsettedProperty href="pathmap://DATATYPES_MODEL/datatypes.uml#_9IA_sD92Ed6NdqfHy-LGHg"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_KoARrBoeEeyvG_WM4zd-8g" name="given" visibility="private" isOrdered="true" aggregation="composite" isDerived="true">
-        <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_D7EcAD5zEd6cla2oXsPtlA"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bT180RoeEeyvG_WM4zd-8g"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bT180BoeEeyvG_WM4zd-8g"/>
-        <subsettedProperty href="pathmap://DATATYPES_MODEL/datatypes.uml#_AYLv8D93Ed6NdqfHy-LGHg"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_KoARrxoeEeyvG_WM4zd-8g" name="prefix" visibility="private" isOrdered="true" aggregation="composite" isDerived="true">
-        <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_D7EcAD5zEd6cla2oXsPtlA"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cBgUERoeEeyvG_WM4zd-8g"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cBgUEBoeEeyvG_WM4zd-8g"/>
-        <subsettedProperty href="pathmap://DATATYPES_MODEL/datatypes.uml#_Db1uMD93Ed6NdqfHy-LGHg"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_KoARshoeEeyvG_WM4zd-8g" name="suffix" visibility="private" isOrdered="true" aggregation="composite" isDerived="true">
-        <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_D7EcAD5zEd6cla2oXsPtlA"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_codmYRoeEeyvG_WM4zd-8g"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_codmYBoeEeyvG_WM4zd-8g"/>
-        <subsettedProperty href="pathmap://DATATYPES_MODEL/datatypes.uml#_EtgKYD93Ed6NdqfHy-LGHg"/>
-      </ownedAttribute>
     </nestedClassifier>
   </uml:Class>
   <uml:Association xmi:id="_2D3_0BSVEeGGzu7fmW9pXw" memberEnd="_2D3YwBSVEeGGzu7fmW9pXw _2D3_0RSVEeGGzu7fmW9pXw">
@@ -14900,19 +14870,4 @@ The nonXMLBody/text element also has a &quot;compression&quot; attribute that ca
   <CDA:ConstraintValidation xmi:id="_hJMRcHPREeiHvud2XbIoDQ" base_Constraint="_gU2qcHPREeiHvud2XbIoDQ">
     <ruleId>CONF:1198-5326</ruleId>
   </CDA:ConstraintValidation>
-  <CDA:PropertyValidation xmi:id="_4Tdt0BoeEeyvG_WM4zd-8g" base_Property="_KoARqRoeEeyvG_WM4zd-8g">
-    <ruleId>CONF:81-9372</ruleId>
-  </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_5Aw4sBoeEeyvG_WM4zd-8g" base_Property="_KoARrBoeEeyvG_WM4zd-8g">
-    <ruleId>CONF:81-9372</ruleId>
-  </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_5rFBABoeEeyvG_WM4zd-8g" base_Property="_KoARrxoeEeyvG_WM4zd-8g">
-    <ruleId>CONF:81-9372</ruleId>
-  </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_6e8G4BoeEeyvG_WM4zd-8g" base_Property="_KoARshoeEeyvG_WM4zd-8g">
-    <ruleId>CONF:81-9372</ruleId>
-  </CDA:PropertyValidation>
-  <CDA:ValueSetConstraint xmi:id="_1UyrgBpFEeydm9dhsA1O-A" base_Property="_KoARphoeEeyvG_WM4zd-8g" uri="consol-vocab::EntityNameUse">
-    <reference href="pathmap://CONSOL_MODEL///consol-vocab.uml#_RSgFgW1EEeGCevFpokwODw"/>
-  </CDA:ValueSetConstraint>
 </xmi:XMI>

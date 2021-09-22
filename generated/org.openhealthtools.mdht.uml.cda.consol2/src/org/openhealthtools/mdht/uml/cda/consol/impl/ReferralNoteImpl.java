@@ -435,61 +435,6 @@ public class ReferralNoteImpl extends USRealmHeader2Impl implements ReferralNote
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateReferralNoteParticipantCaregiverAssociatedEntityAssociatedPersonGeneralHeaderConstraintsUSRealmPersonNameUse(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ReferralNoteOperations.validateReferralNoteParticipantCaregiverAssociatedEntityAssociatedPersonGeneralHeaderConstraintsUSRealmPersonNameUse(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateReferralNoteParticipantCaregiverAssociatedEntityAssociatedPersonGeneralHeaderConstraintsUSRealmPersonNameFamily(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ReferralNoteOperations.validateReferralNoteParticipantCaregiverAssociatedEntityAssociatedPersonGeneralHeaderConstraintsUSRealmPersonNameFamily(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateReferralNoteParticipantCaregiverAssociatedEntityAssociatedPersonGeneralHeaderConstraintsUSRealmPersonNameGiven(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ReferralNoteOperations.validateReferralNoteParticipantCaregiverAssociatedEntityAssociatedPersonGeneralHeaderConstraintsUSRealmPersonNameGiven(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateReferralNoteParticipantCaregiverAssociatedEntityAssociatedPersonGeneralHeaderConstraintsUSRealmPersonNamePrefix(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ReferralNoteOperations.validateReferralNoteParticipantCaregiverAssociatedEntityAssociatedPersonGeneralHeaderConstraintsUSRealmPersonNamePrefix(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateReferralNoteParticipantCaregiverAssociatedEntityAssociatedPersonGeneralHeaderConstraintsUSRealmPersonNameSuffix(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ReferralNoteOperations.validateReferralNoteParticipantCaregiverAssociatedEntityAssociatedPersonGeneralHeaderConstraintsUSRealmPersonNameSuffix(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public boolean validateReferralNoteParticipantCaregiverAssociatedEntityAssociatedPersonName(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ReferralNoteOperations.validateReferralNoteParticipantCaregiverAssociatedEntityAssociatedPersonName(
