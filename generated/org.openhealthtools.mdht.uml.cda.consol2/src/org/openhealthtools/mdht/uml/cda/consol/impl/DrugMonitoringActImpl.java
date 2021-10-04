@@ -140,6 +140,17 @@ public class DrugMonitoringActImpl extends ActImpl implements DrugMonitoringAct 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateDrugMonitoringActParticipantParticipantRolePlayingEntityGeneralHeaderConstraintsUSRealmPersonNameUSRealmPersonNameMixedContent(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return DrugMonitoringActOperations.validateDrugMonitoringActParticipantParticipantRolePlayingEntityGeneralHeaderConstraintsUSRealmPersonNameUSRealmPersonNameMixedContent(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateDrugMonitoringActParticipantParticipantRolePlayingEntityClassCode(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DrugMonitoringActOperations.validateDrugMonitoringActParticipantParticipantRolePlayingEntityClassCode(

@@ -642,8 +642,8 @@ The observation/value element contains the detailed patient directive which may 
               <body>The playingEntity/name SHALL be a conformant US Realm Person Name (PN.US.FIELDED) (2.16.840.1.113883.10.20.22.5.1.1) (CONF:28455).</body>
             </ownedComment>
             <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_3VD9wD5yEd6cla2oXsPtlA"/>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DWcLQLFKEeOtlapy2HWYww"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DWbkMLFKEeOtlapy2HWYww" value="*"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0dd0MRpAEeyXhc6W0qvVAg"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0dd0MBpAEeyXhc6W0qvVAg" value="1"/>
             <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_OQPJIErhEd6FXKclYGEDCw"/>
           </ownedAttribute>
         </nestedClassifier>

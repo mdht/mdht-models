@@ -1408,7 +1408,7 @@ In both cases, inFulfillmentOf/order/id is mapped to the DICOM Accession Number 
       <nestedClassifier xmi:type="uml:Class" xmi:id="_yGtn8OaTEeOmzetP5oaH3A" name="AssignedPerson">
         <generalization xmi:id="_yGtn8eaTEeOmzetP5oaH3A" general="_eq8_MEb2EeGp67IkyTw1fg"/>
         <ownedAttribute xmi:id="_y1dkUOaTEeOmzetP5oaH3A" name="name" visibility="private" aggregation="composite" redefinedProperty="_ir_ywEb2EeGp67IkyTw1fg">
-          <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_3VD9wD5yEd6cla2oXsPtlA"/>
+          <type xmi:type="uml:Class" href="consol-documents.uml#_KoARoBoeEeyvG_WM4zd-8g"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Oq_gweaUEeOmzetP5oaH3A" value="1"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Oq_gwOaUEeOmzetP5oaH3A" value="1"/>
         </ownedAttribute>

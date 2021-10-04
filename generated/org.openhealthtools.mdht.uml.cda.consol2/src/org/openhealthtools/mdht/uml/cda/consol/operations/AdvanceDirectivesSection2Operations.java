@@ -352,6 +352,7 @@ public class AdvanceDirectivesSection2Operations extends AdvanceDirectivesSectio
 	 * @ordered
 	 */
 	protected static final String VALIDATE_ADVANCE_DIRECTIVES_SECTION2_ENTRY_HAS_ADVANCE_DIRECTIVE_OBSERVATION2_XOR_ADVANCE_DIRECTIVE_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->excluding(null)->reject( not observation.oclIsUndefined() and not organizer.oclIsUndefined()  implies ( observation.oclIsKindOf(consol::AdvanceDirectiveObservation2) xor organizer.oclIsKindOf(consol::AdvanceDirectiveOrganizer) ))";
+
 	/**
 	 * The cached OCL invariant for the '{@link #validateAdvanceDirectivesSection2EntryHasAdvanceDirectiveObservation2XorAdvanceDirectiveOrganizer(AdvanceDirectivesSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directives Section2 Entry Has Advance Directive Observation2 Xor Advance Directive Organizer</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
