@@ -61,6 +61,17 @@ public class PhysicianofRecordParticipant2Impl extends PhysicianofRecordParticip
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validatePhysicianofRecordParticipant2AssignedEntityAssignedPersonGeneralHeaderConstraintsUSRealmPersonNameUSRealmPersonNameMixedContent(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PhysicianofRecordParticipant2Operations.validatePhysicianofRecordParticipant2AssignedEntityAssignedPersonGeneralHeaderConstraintsUSRealmPersonNameUSRealmPersonNameMixedContent(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validatePhysicianofRecordParticipant2AssignedEntityRepresentedOrganizationName(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PhysicianofRecordParticipant2Operations.validatePhysicianofRecordParticipant2AssignedEntityRepresentedOrganizationName(

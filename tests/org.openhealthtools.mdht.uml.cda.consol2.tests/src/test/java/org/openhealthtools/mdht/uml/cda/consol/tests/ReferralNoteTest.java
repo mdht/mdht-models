@@ -24,7 +24,10 @@ import org.eclipse.mdht.uml.cda.Organization;
 import org.eclipse.mdht.uml.cda.Participant1;
 import org.eclipse.mdht.uml.cda.Person;
 import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+//import org.eclipse.mdht.uml.cda.operations.CDAValidationTest.OperationsTestCase.FailTest;
+//import org.eclipse.mdht.uml.cda.operations.CDAValidationTest.OperationsTestCase.PassTest;
 import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+import org.eclipse.mdht.uml.hl7.datatypes.PN;
 import org.eclipse.mdht.uml.hl7.vocab.ParticipationType;
 import org.eclipse.mdht.uml.hl7.vocab.RoleClassAssociative;
 import org.junit.Test;
@@ -82,6 +85,7 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.ReferralNoteOperations
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ReferralNote#validateReferralNoteInformationRecipientIntendedRecipientTelecom(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Referral Note Information Recipient Intended Recipient Telecom</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ReferralNote#validateReferralNoteInformationRecipientIntendedRecipientInformationRecipient(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Referral Note Information Recipient Intended Recipient Information Recipient</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ReferralNote#validateReferralNoteInformationRecipientIntendedRecipient(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Referral Note Information Recipient Intended Recipient</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ReferralNote#validateReferralNoteParticipantCaregiverAssociatedEntityAssociatedPersonGeneralHeaderConstraintsUSRealmPersonNameUSRealmPersonNameMixedContent(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Referral Note Participant Caregiver Associated Entity Associated Person General Header Constraints US Realm Person Name US Realm Person Name Mixed Content</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ReferralNote#validateReferralNoteParticipantCaregiverAssociatedEntityAssociatedPersonName(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Referral Note Participant Caregiver Associated Entity Associated Person Name</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ReferralNote#validateReferralNoteParticipantCaregiverAssociatedEntityClassCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Referral Note Participant Caregiver Associated Entity Class Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ReferralNote#validateReferralNoteParticipantCaregiverAssociatedEntityClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Referral Note Participant Caregiver Associated Entity Class Code</em>}</li>
@@ -1532,6 +1536,55 @@ public class ReferralNoteTest extends CDAValidationTest {
 		};
 
 		validateReferralNoteInformationRecipientIntendedRecipientTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+
+	public void testValidateReferralNoteParticipantCaregiverAssociatedEntityAssociatedPersonGeneralHeaderConstraintsUSRealmPersonNameUSRealmPersonNameMixedContent() {
+		OperationsTestCase<ReferralNote> validateReferralNoteParticipantCaregiverAssociatedEntityAssociatedPersonGeneralHeaderConstraintsUSRealmPersonNameUSRealmPersonNameMixedContentTestCase = new OperationsTestCase<ReferralNote>(
+			"validateReferralNoteParticipantCaregiverAssociatedEntityAssociatedPersonGeneralHeaderConstraintsUSRealmPersonNameUSRealmPersonNameMixedContent",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_REFERRAL_NOTE_PARTICIPANT_CAREGIVER_ASSOCIATED_ENTITY_ASSOCIATED_PERSON_GENERAL_HEADER_CONSTRAINTS_US_REALM_PERSON_NAME_US_REALM_PERSON_NAME_MIXED_CONTENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(ReferralNote target) {
+
+				target.init();
+				Participant1 par = CDAFactory.eINSTANCE.createParticipant1();
+				par.setTypeCode(ParticipationType.IND);
+				target.getParticipants().add(par);
+				AssociatedEntity ae = CDAFactory.eINSTANCE.createAssociatedEntity();
+				par.setAssociatedEntity(ae);
+				Person aPer = CDAFactory.eINSTANCE.createPerson();
+				ae.setAssociatedPerson(aPer);
+
+				PN pn = DatatypesFactory.eINSTANCE.createPN();
+				aPer.getNames().add(pn);
+			}
+
+			@Override
+			protected void updateToPass(ReferralNote target) {
+				for (Participant1 one : target.getParticipants()) {
+					one.getAssociatedEntity().getAssociatedPerson().getNames().get(0).addText("Person Name Here");
+				}
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return ReferralNoteOperations.validateReferralNoteParticipantCaregiverAssociatedEntityAssociatedPersonGeneralHeaderConstraintsUSRealmPersonNameUSRealmPersonNameMixedContent(
+					(ReferralNote) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateReferralNoteParticipantCaregiverAssociatedEntityAssociatedPersonGeneralHeaderConstraintsUSRealmPersonNameUSRealmPersonNameMixedContentTestCase.doValidationTest();
 	}
 
 	/**

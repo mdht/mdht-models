@@ -199,6 +199,17 @@ public class CarePlanImpl extends USRealmHeader2Impl implements CarePlan {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateCarePlanInformationRecipientIntendedRecipientInformationRecipientGeneralHeaderConstraintsUSRealmPersonNameUSRealmPersonNameMixedContent(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return CarePlanOperations.validateCarePlanInformationRecipientIntendedRecipientInformationRecipientGeneralHeaderConstraintsUSRealmPersonNameUSRealmPersonNameMixedContent(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateCarePlanInformationRecipientIntendedRecipientInformationRecipientName(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CarePlanOperations.validateCarePlanInformationRecipientIntendedRecipientInformationRecipientName(
@@ -557,6 +568,17 @@ public class CarePlanImpl extends USRealmHeader2Impl implements CarePlan {
 	public boolean validateCarePlanDocumentationOfServiceEventIVLTSHigh(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CarePlanOperations.validateCarePlanDocumentationOfServiceEventIVLTSHigh(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateCarePlanDocumentationOfServiceEventPerformerAssignedEntityAssignedPersonGeneralHeaderConstraintsUSRealmPersonNameUSRealmPersonNameMixedContent(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return CarePlanOperations.validateCarePlanDocumentationOfServiceEventPerformerAssignedEntityAssignedPersonGeneralHeaderConstraintsUSRealmPersonNameUSRealmPersonNameMixedContent(
+			this, diagnostics, context);
 	}
 
 	/**

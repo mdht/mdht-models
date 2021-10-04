@@ -1554,7 +1554,7 @@ For example, a cardiologist may prescribe a patient Warfarin. The patient's prim
             <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_SxK9sErhEd6FXKclYGEDCw"/>
           </ownedAttribute>
           <ownedAttribute xmi:id="_nv0DUIzzEeOoMZgUoTghIg" name="name" visibility="private" aggregation="composite">
-            <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_3VD9wD5yEd6cla2oXsPtlA"/>
+            <type xmi:type="uml:Class" href="consol-documents.uml#_KoARoBoeEeyvG_WM4zd-8g"/>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2nj6sIzzEeOoMZgUoTghIg" value="1"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2njToIzzEeOoMZgUoTghIg" value="1"/>
             <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_OQPJIErhEd6FXKclYGEDCw"/>

@@ -65,6 +65,7 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.CarePlanOperations;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateCarePlanGoalsSection(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Goals Section</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateCarePlanHealthStatusEvaluationsOutcomesSection(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Health Status Evaluations Outcomes Section</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateCarePlanInterventionsSection2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Interventions Section2</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateCarePlanInformationRecipientIntendedRecipientInformationRecipientGeneralHeaderConstraintsUSRealmPersonNameUSRealmPersonNameMixedContent(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Information Recipient Intended Recipient Information Recipient General Header Constraints US Realm Person Name US Realm Person Name Mixed Content</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateCarePlanInformationRecipientIntendedRecipientInformationRecipientName(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Information Recipient Intended Recipient Information Recipient Name</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateCarePlanInformationRecipientIntendedRecipientReceivedOrganizationId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Information Recipient Intended Recipient Received Organization Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateCarePlanInformationRecipientIntendedRecipientReceivedOrganizationName(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Information Recipient Intended Recipient Received Organization Name</em>}</li>
@@ -100,6 +101,7 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.CarePlanOperations;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateCarePlanParticipantCaregiverAssociatedEntity(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Participant Caregiver Associated Entity</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateCarePlanDocumentationOfServiceEventIVLTSLow(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Documentation Of Service Event IVLTS Low</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateCarePlanDocumentationOfServiceEventIVLTSHigh(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Documentation Of Service Event IVLTS High</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateCarePlanDocumentationOfServiceEventPerformerAssignedEntityAssignedPersonGeneralHeaderConstraintsUSRealmPersonNameUSRealmPersonNameMixedContent(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Documentation Of Service Event Performer Assigned Entity Assigned Person General Header Constraints US Realm Person Name US Realm Person Name Mixed Content</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateCarePlanDocumentationOfServiceEventPerformerAssignedEntityAssignedPersonName(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Documentation Of Service Event Performer Assigned Entity Assigned Person Name</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateCarePlanDocumentationOfServiceEventPerformerAssignedEntityId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Documentation Of Service Event Performer Assigned Entity Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateCarePlanDocumentationOfServiceEventPerformerAssignedEntityCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Documentation Of Service Event Performer Assigned Entity Code</em>}</li>
@@ -697,6 +699,53 @@ public class CarePlanTest extends CDAValidationTest {
 		};
 
 		validateCarePlanInterventionsSection2TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated not
+	*/
+	@Test
+
+	public void testValidateCarePlanInformationRecipientIntendedRecipientInformationRecipientGeneralHeaderConstraintsUSRealmPersonNameUSRealmPersonNameMixedContent() {
+		OperationsTestCase<CarePlan> validateCarePlanInformationRecipientIntendedRecipientInformationRecipientGeneralHeaderConstraintsUSRealmPersonNameUSRealmPersonNameMixedContentTestCase = new OperationsTestCase<CarePlan>(
+			"validateCarePlanInformationRecipientIntendedRecipientInformationRecipientGeneralHeaderConstraintsUSRealmPersonNameUSRealmPersonNameMixedContent",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CARE_PLAN_INFORMATION_RECIPIENT_INTENDED_RECIPIENT_INFORMATION_RECIPIENT_GENERAL_HEADER_CONSTRAINTS_US_REALM_PERSON_NAME_US_REALM_PERSON_NAME_MIXED_CONTENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(CarePlan target) {
+
+				target.init();
+				InformationRecipient ir = CDAFactory.eINSTANCE.createInformationRecipient();
+				IntendedRecipient ip = CDAFactory.eINSTANCE.createIntendedRecipient();
+				ir.setIntendedRecipient(ip);
+				Person aPer = CDAFactory.eINSTANCE.createPerson();
+				PN pn = DatatypesFactory.eINSTANCE.createPN();
+				// pn.addFamily("family");
+				pn.getUses().add(null);
+				aPer.getNames().add(pn);
+				ip.setInformationRecipient(aPer);
+				target.getInformationRecipients().add(ir);
+			}
+
+			@Override
+			protected void updateToPass(CarePlan target) {
+				target.getInformationRecipients().get(
+					0).getIntendedRecipient().getInformationRecipient().getNames().get(0).addText("PERSON NAME");
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return CarePlanOperations.validateCarePlanInformationRecipientIntendedRecipientInformationRecipientGeneralHeaderConstraintsUSRealmPersonNameUSRealmPersonNameMixedContent(
+					(CarePlan) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateCarePlanInformationRecipientIntendedRecipientInformationRecipientGeneralHeaderConstraintsUSRealmPersonNameUSRealmPersonNameMixedContentTestCase.doValidationTest();
 	}
 
 	/**
@@ -2053,6 +2102,253 @@ public class CarePlanTest extends CDAValidationTest {
 		};
 
 		validateCarePlanDocumentationOfServiceEventIVLTSHighTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated not
+	*/
+	@Test
+
+	public void testValidateCarePlanDocumentationOfServiceEventPerformerAssignedEntityAssignedPersonGeneralHeaderConstraintsUSRealmPersonNameUSRealmPersonNameMixedContent() {
+		OperationsTestCase<CarePlan> validateCarePlanDocumentationOfServiceEventPerformerAssignedEntityAssignedPersonGeneralHeaderConstraintsUSRealmPersonNameUSRealmPersonNameMixedContentTestCase = new OperationsTestCase<CarePlan>(
+			"validateCarePlanDocumentationOfServiceEventPerformerAssignedEntityAssignedPersonGeneralHeaderConstraintsUSRealmPersonNameUSRealmPersonNameMixedContent",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CARE_PLAN_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY_ASSIGNED_PERSON_GENERAL_HEADER_CONSTRAINTS_US_REALM_PERSON_NAME_US_REALM_PERSON_NAME_MIXED_CONTENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			public void addFailTests() {
+
+				addFailTest(new FailTest() {
+
+					@Override
+					public void updateToFail(CarePlan target) {
+						target.init();
+						target.getDocumentationOfs().add(CDAFactory.eINSTANCE.createDocumentationOf());
+						target.getDocumentationOfs().get(0).setServiceEvent(CDAFactory.eINSTANCE.createServiceEvent());
+						target.getDocumentationOfs().get(0).getServiceEvent().getPerformers().add(
+							CDAFactory.eINSTANCE.createPerformer1());
+						target.getDocumentationOfs().get(0).getServiceEvent().getPerformers().get(0).setAssignedEntity(
+							CDAFactory.eINSTANCE.createAssignedEntity());
+						target.getDocumentationOfs().get(0).getServiceEvent().getPerformers().get(
+							0).getAssignedEntity().setAssignedPerson(CDAFactory.eINSTANCE.createPerson());
+
+						PN pn = DatatypesFactory.eINSTANCE.createPN();
+						pn.addFamily("FAMILY");
+						pn.addGiven("GIVEN");
+						pn.addText("PERSONNAME");
+
+						target.getDocumentationOfs().get(0).getServiceEvent().getPerformers().get(
+							0).getAssignedEntity().getAssignedPerson().getNames().add(pn);
+
+					}
+
+				});
+
+				addFailTest(new FailTest() {
+
+					@Override
+					public void updateToFail(CarePlan target) {
+						target.init();
+						target.getDocumentationOfs().add(CDAFactory.eINSTANCE.createDocumentationOf());
+						target.getDocumentationOfs().get(0).setServiceEvent(CDAFactory.eINSTANCE.createServiceEvent());
+						target.getDocumentationOfs().get(0).getServiceEvent().getPerformers().add(
+							CDAFactory.eINSTANCE.createPerformer1());
+						target.getDocumentationOfs().get(0).getServiceEvent().getPerformers().get(0).setAssignedEntity(
+							CDAFactory.eINSTANCE.createAssignedEntity());
+						target.getDocumentationOfs().get(0).getServiceEvent().getPerformers().get(
+							0).getAssignedEntity().setAssignedPerson(CDAFactory.eINSTANCE.createPerson());
+
+						PN pn = DatatypesFactory.eINSTANCE.createPN();
+						// pn.addFamily("FAMILY");
+						pn.addGiven("GIVEN");
+						pn.addText("PERSONNAME");
+
+						target.getDocumentationOfs().get(0).getServiceEvent().getPerformers().get(
+							0).getAssignedEntity().getAssignedPerson().getNames().add(pn);
+
+					}
+
+				});
+
+				addFailTest(new FailTest() {
+
+					@Override
+					public void updateToFail(CarePlan target) {
+						target.init();
+						target.getDocumentationOfs().add(CDAFactory.eINSTANCE.createDocumentationOf());
+						target.getDocumentationOfs().get(0).setServiceEvent(CDAFactory.eINSTANCE.createServiceEvent());
+						target.getDocumentationOfs().get(0).getServiceEvent().getPerformers().add(
+							CDAFactory.eINSTANCE.createPerformer1());
+						target.getDocumentationOfs().get(0).getServiceEvent().getPerformers().get(0).setAssignedEntity(
+							CDAFactory.eINSTANCE.createAssignedEntity());
+						target.getDocumentationOfs().get(0).getServiceEvent().getPerformers().get(
+							0).getAssignedEntity().setAssignedPerson(CDAFactory.eINSTANCE.createPerson());
+
+						PN pn = DatatypesFactory.eINSTANCE.createPN();
+						pn.addFamily("FAMILY");
+						// pn.addGiven("GIVEN");
+						pn.addText("PERSONNAME");
+
+						target.getDocumentationOfs().get(0).getServiceEvent().getPerformers().get(
+							0).getAssignedEntity().getAssignedPerson().getNames().add(pn);
+
+					}
+
+				});
+
+				addFailTest(new FailTest() {
+
+					@Override
+					public void updateToFail(CarePlan target) {
+						target.init();
+						target.getDocumentationOfs().add(CDAFactory.eINSTANCE.createDocumentationOf());
+						target.getDocumentationOfs().get(0).setServiceEvent(CDAFactory.eINSTANCE.createServiceEvent());
+						target.getDocumentationOfs().get(0).getServiceEvent().getPerformers().add(
+							CDAFactory.eINSTANCE.createPerformer1());
+						target.getDocumentationOfs().get(0).getServiceEvent().getPerformers().get(0).setAssignedEntity(
+							CDAFactory.eINSTANCE.createAssignedEntity());
+						target.getDocumentationOfs().get(0).getServiceEvent().getPerformers().get(
+							0).getAssignedEntity().setAssignedPerson(CDAFactory.eINSTANCE.createPerson());
+
+						PN pn = DatatypesFactory.eINSTANCE.createPN();
+						pn.addFamily("FAMILY");
+						// pn.addGiven("GIVEN");
+						pn.addText("PERSONNAME");
+
+						target.getDocumentationOfs().get(0).getServiceEvent().getPerformers().get(
+							0).getAssignedEntity().getAssignedPerson().getNames().add(pn);
+
+					}
+
+				});
+
+			}
+
+			// @Override
+			// protected void updateToFail(CarePlan target) {
+			//
+			// target.init();
+			// target.getDocumentationOfs().add(CDAFactory.eINSTANCE.createDocumentationOf());
+			// target.getDocumentationOfs().get(0).setServiceEvent(CDAFactory.eINSTANCE.createServiceEvent());
+			// target.getDocumentationOfs().get(0).getServiceEvent().getPerformers().add(
+			// CDAFactory.eINSTANCE.createPerformer1());
+			// target.getDocumentationOfs().get(0).getServiceEvent().getPerformers().get(0).setAssignedEntity(
+			// CDAFactory.eINSTANCE.createAssignedEntity());
+			// target.getDocumentationOfs().get(0).getServiceEvent().getPerformers().get(
+			// 0).getAssignedEntity().setAssignedPerson(CDAFactory.eINSTANCE.createPerson());
+			//
+			// PN pn = DatatypesFactory.eINSTANCE.createPN();
+			// pn.addFamily("FAMILY");
+			// pn.addText("PERSONNAME");
+			//
+			// target.getDocumentationOfs().get(0).getServiceEvent().getPerformers().get(
+			// 0).getAssignedEntity().getAssignedPerson().getNames().add(pn);
+			//
+			// }
+
+			// @Override
+			// protected void updateToPass(CarePlan target) {
+			// target.getDocumentationOfs().get(0).getServiceEvent().getPerformers().get(
+			// 0).getAssignedEntity().getAssignedPerson().getNames().get(0).getFamilies().clear();
+			// ;
+			//
+			// }
+
+			@Override
+			public void addPassTests() {
+
+				addPassTest(new PassTest() {
+
+					@Override
+					public void updateToPass(CarePlan target) {
+						target.init();
+						target.getDocumentationOfs().add(CDAFactory.eINSTANCE.createDocumentationOf());
+						target.getDocumentationOfs().get(0).setServiceEvent(CDAFactory.eINSTANCE.createServiceEvent());
+						target.getDocumentationOfs().get(0).getServiceEvent().getPerformers().add(
+							CDAFactory.eINSTANCE.createPerformer1());
+						target.getDocumentationOfs().get(0).getServiceEvent().getPerformers().get(0).setAssignedEntity(
+							CDAFactory.eINSTANCE.createAssignedEntity());
+						target.getDocumentationOfs().get(0).getServiceEvent().getPerformers().get(
+							0).getAssignedEntity().setAssignedPerson(CDAFactory.eINSTANCE.createPerson());
+
+						PN pn = DatatypesFactory.eINSTANCE.createPN();
+						// pn.addFamily("FAMILY");
+						pn.addText("PERSONNAME");
+
+						target.getDocumentationOfs().get(0).getServiceEvent().getPerformers().get(
+							0).getAssignedEntity().getAssignedPerson().getNames().add(pn);
+
+					}
+
+				});
+
+				addPassTest(new PassTest() {
+
+					@Override
+					public void updateToPass(CarePlan target) {
+						target.init();
+						target.getDocumentationOfs().add(CDAFactory.eINSTANCE.createDocumentationOf());
+						target.getDocumentationOfs().get(0).setServiceEvent(CDAFactory.eINSTANCE.createServiceEvent());
+						target.getDocumentationOfs().get(0).getServiceEvent().getPerformers().add(
+							CDAFactory.eINSTANCE.createPerformer1());
+						target.getDocumentationOfs().get(0).getServiceEvent().getPerformers().get(0).setAssignedEntity(
+							CDAFactory.eINSTANCE.createAssignedEntity());
+						target.getDocumentationOfs().get(0).getServiceEvent().getPerformers().get(
+							0).getAssignedEntity().setAssignedPerson(CDAFactory.eINSTANCE.createPerson());
+
+						PN pn = DatatypesFactory.eINSTANCE.createPN();
+						pn.addFamily("FAMILY");
+						pn.addGiven("GIVEN");
+						// pn.addText("PERSONNAME");
+
+						target.getDocumentationOfs().get(0).getServiceEvent().getPerformers().get(
+							0).getAssignedEntity().getAssignedPerson().getNames().add(pn);
+
+					}
+
+				});
+
+				addPassTest(new PassTest() {
+
+					@Override
+					public void updateToPass(CarePlan target) {
+						target.init();
+						target.getDocumentationOfs().add(CDAFactory.eINSTANCE.createDocumentationOf());
+						target.getDocumentationOfs().get(0).setServiceEvent(CDAFactory.eINSTANCE.createServiceEvent());
+						target.getDocumentationOfs().get(0).getServiceEvent().getPerformers().add(
+							CDAFactory.eINSTANCE.createPerformer1());
+						target.getDocumentationOfs().get(0).getServiceEvent().getPerformers().get(0).setAssignedEntity(
+							CDAFactory.eINSTANCE.createAssignedEntity());
+						target.getDocumentationOfs().get(0).getServiceEvent().getPerformers().get(
+							0).getAssignedEntity().setAssignedPerson(CDAFactory.eINSTANCE.createPerson());
+
+						PN pn = DatatypesFactory.eINSTANCE.createPN();
+						// pn.addFamily("FAMILY");
+						// pn.addGiven("GIVEN");
+						// pn.addSuffix("SUFFIX");
+						pn.addText("PERSONNAME");
+
+						target.getDocumentationOfs().get(0).getServiceEvent().getPerformers().get(
+							0).getAssignedEntity().getAssignedPerson().getNames().add(pn);
+
+					}
+
+				});
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return CarePlanOperations.validateCarePlanDocumentationOfServiceEventPerformerAssignedEntityAssignedPersonGeneralHeaderConstraintsUSRealmPersonNameUSRealmPersonNameMixedContent(
+					(CarePlan) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateCarePlanDocumentationOfServiceEventPerformerAssignedEntityAssignedPersonGeneralHeaderConstraintsUSRealmPersonNameUSRealmPersonNameMixedContentTestCase.doValidationTest();
 	}
 
 	/**

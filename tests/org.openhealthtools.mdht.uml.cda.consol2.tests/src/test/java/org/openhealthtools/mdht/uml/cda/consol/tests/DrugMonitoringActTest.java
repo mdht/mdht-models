@@ -52,6 +52,7 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.DrugMonitoringActOpera
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DrugMonitoringAct#validateDrugMonitoringActStatusCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Drug Monitoring Act Status Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DrugMonitoringAct#validateDrugMonitoringActEffectiveTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Drug Monitoring Act Effective Time</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DrugMonitoringAct#validateDrugMonitoringActParticipant(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Drug Monitoring Act Participant</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DrugMonitoringAct#validateDrugMonitoringActParticipantParticipantRolePlayingEntityGeneralHeaderConstraintsUSRealmPersonNameUSRealmPersonNameMixedContent(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Drug Monitoring Act Participant Participant Role Playing Entity General Header Constraints US Realm Person Name US Realm Person Name Mixed Content</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DrugMonitoringAct#validateDrugMonitoringActParticipantParticipantRolePlayingEntityClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Drug Monitoring Act Participant Participant Role Playing Entity Class Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DrugMonitoringAct#validateDrugMonitoringActParticipantParticipantRolePlayingEntityName(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Drug Monitoring Act Participant Participant Role Playing Entity Name</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DrugMonitoringAct#validateDrugMonitoringActParticipantParticipantRoleClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Drug Monitoring Act Participant Participant Role Class Code</em>}</li>
@@ -419,6 +420,53 @@ public class DrugMonitoringActTest extends CDAValidationTest {
 		};
 
 		validateDrugMonitoringActParticipantTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated not
+	*/
+	@Test
+
+	public void testValidateDrugMonitoringActParticipantParticipantRolePlayingEntityGeneralHeaderConstraintsUSRealmPersonNameUSRealmPersonNameMixedContent() {
+		OperationsTestCase<DrugMonitoringAct> validateDrugMonitoringActParticipantParticipantRolePlayingEntityGeneralHeaderConstraintsUSRealmPersonNameUSRealmPersonNameMixedContentTestCase = new OperationsTestCase<DrugMonitoringAct>(
+			"validateDrugMonitoringActParticipantParticipantRolePlayingEntityGeneralHeaderConstraintsUSRealmPersonNameUSRealmPersonNameMixedContent",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DRUG_MONITORING_ACT_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_PERSON_NAME_US_REALM_PERSON_NAME_MIXED_CONTENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(DrugMonitoringAct target) {
+				target.init();
+				Participant2 par = CDAFactory.eINSTANCE.createParticipant2();
+				par.setTypeCode(ParticipationType.IND);
+				ParticipantRole pr = CDAFactory.eINSTANCE.createParticipantRole();
+				PlayingEntity pe = CDAFactory.eINSTANCE.createPlayingEntity();
+				PN pn = DatatypesFactory.eINSTANCE.createPN();
+				// pn.addPrefix("PREFIX");
+				pe.getNames().add(pn);
+				pr.setPlayingEntity(pe);
+				par.setParticipantRole(pr);
+				target.getParticipants().add(par);
+			}
+
+			@Override
+			protected void updateToPass(DrugMonitoringAct target) {
+				target.getParticipants().get(0).getParticipantRole().getPlayingEntity().getNames().get(0).addText(
+					"PERSON NAME");
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return DrugMonitoringActOperations.validateDrugMonitoringActParticipantParticipantRolePlayingEntityGeneralHeaderConstraintsUSRealmPersonNameUSRealmPersonNameMixedContent(
+					(DrugMonitoringAct) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateDrugMonitoringActParticipantParticipantRolePlayingEntityGeneralHeaderConstraintsUSRealmPersonNameUSRealmPersonNameMixedContentTestCase.doValidationTest();
 	}
 
 	/**
