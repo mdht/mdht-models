@@ -120,6 +120,15 @@ public interface ConsolPackage extends EPackage {
 	int GENERAL_HEADER_CONSTRAINTS__TITLE = CDAPackage.CLINICAL_DOCUMENT__TITLE;
 
 	/**
+	 * The feature id for the '<em><b>SDTC Status Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GENERAL_HEADER_CONSTRAINTS__SDTC_STATUS_CODE = CDAPackage.CLINICAL_DOCUMENT__SDTC_STATUS_CODE;
+
+	/**
 	 * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -6054,6 +6063,15 @@ public interface ConsolPackage extends EPackage {
 	 * @ordered
 	 */
 	int CONTINUITY_OF_CARE_DOCUMENT__TITLE = GENERAL_HEADER_CONSTRAINTS__TITLE;
+
+	/**
+	 * The feature id for the '<em><b>SDTC Status Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTINUITY_OF_CARE_DOCUMENT__SDTC_STATUS_CODE = GENERAL_HEADER_CONSTRAINTS__SDTC_STATUS_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
@@ -23883,6 +23901,15 @@ public interface ConsolPackage extends EPackage {
 	int UNSTRUCTURED_DOCUMENT__TITLE = GENERAL_HEADER_CONSTRAINTS__TITLE;
 
 	/**
+	 * The feature id for the '<em><b>SDTC Status Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UNSTRUCTURED_DOCUMENT__SDTC_STATUS_CODE = GENERAL_HEADER_CONSTRAINTS__SDTC_STATUS_CODE;
+
+	/**
 	 * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -24270,6 +24297,15 @@ public interface ConsolPackage extends EPackage {
 	 * @ordered
 	 */
 	int DISCHARGE_SUMMARY__TITLE = GENERAL_HEADER_CONSTRAINTS__TITLE;
+
+	/**
+	 * The feature id for the '<em><b>SDTC Status Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DISCHARGE_SUMMARY__SDTC_STATUS_CODE = GENERAL_HEADER_CONSTRAINTS__SDTC_STATUS_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
@@ -33391,6 +33427,15 @@ public interface ConsolPackage extends EPackage {
 	int CONSULTATION_NOTE__TITLE = GENERAL_HEADER_CONSTRAINTS__TITLE;
 
 	/**
+	 * The feature id for the '<em><b>SDTC Status Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONSULTATION_NOTE__SDTC_STATUS_CODE = GENERAL_HEADER_CONSTRAINTS__SDTC_STATUS_CODE;
+
+	/**
 	 * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -33859,6 +33904,15 @@ public interface ConsolPackage extends EPackage {
 	 * @ordered
 	 */
 	int HISTORY_AND_PHYSICAL_NOTE__TITLE = GENERAL_HEADER_CONSTRAINTS__TITLE;
+
+	/**
+	 * The feature id for the '<em><b>SDTC Status Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HISTORY_AND_PHYSICAL_NOTE__SDTC_STATUS_CODE = GENERAL_HEADER_CONSTRAINTS__SDTC_STATUS_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
@@ -34331,6 +34385,15 @@ public interface ConsolPackage extends EPackage {
 	int OPERATIVE_NOTE__TITLE = GENERAL_HEADER_CONSTRAINTS__TITLE;
 
 	/**
+	 * The feature id for the '<em><b>SDTC Status Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OPERATIVE_NOTE__SDTC_STATUS_CODE = GENERAL_HEADER_CONSTRAINTS__SDTC_STATUS_CODE;
+
+	/**
 	 * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -34618,6 +34681,15 @@ public interface ConsolPackage extends EPackage {
 	 * @ordered
 	 */
 	int PROCEDURE_NOTE__TITLE = GENERAL_HEADER_CONSTRAINTS__TITLE;
+
+	/**
+	 * The feature id for the '<em><b>SDTC Status Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_NOTE__SDTC_STATUS_CODE = GENERAL_HEADER_CONSTRAINTS__SDTC_STATUS_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
@@ -34909,6 +34981,15 @@ public interface ConsolPackage extends EPackage {
 	int PROGRESS_NOTE__TITLE = GENERAL_HEADER_CONSTRAINTS__TITLE;
 
 	/**
+	 * The feature id for the '<em><b>SDTC Status Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROGRESS_NOTE__SDTC_STATUS_CODE = GENERAL_HEADER_CONSTRAINTS__SDTC_STATUS_CODE;
+
+	/**
 	 * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -35196,6 +35277,15 @@ public interface ConsolPackage extends EPackage {
 	 * @ordered
 	 */
 	int DIAGNOSTIC_IMAGING_REPORT__TITLE = GENERAL_HEADER_CONSTRAINTS__TITLE;
+
+	/**
+	 * The feature id for the '<em><b>SDTC Status Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DIAGNOSTIC_IMAGING_REPORT__SDTC_STATUS_CODE = GENERAL_HEADER_CONSTRAINTS__SDTC_STATUS_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
@@ -59782,6 +59872,15 @@ public interface ConsolPackage extends EPackage {
 	int US_REALM_HEADER2__TITLE = GENERAL_HEADER_CONSTRAINTS__TITLE;
 
 	/**
+	 * The feature id for the '<em><b>SDTC Status Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int US_REALM_HEADER2__SDTC_STATUS_CODE = GENERAL_HEADER_CONSTRAINTS__SDTC_STATUS_CODE;
+
+	/**
 	 * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -60059,6 +60158,15 @@ public interface ConsolPackage extends EPackage {
 	 * @ordered
 	 */
 	int CARE_PLAN__TITLE = US_REALM_HEADER2__TITLE;
+
+	/**
+	 * The feature id for the '<em><b>SDTC Status Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CARE_PLAN__SDTC_STATUS_CODE = US_REALM_HEADER2__SDTC_STATUS_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
@@ -60509,6 +60617,15 @@ public interface ConsolPackage extends EPackage {
 	 * @ordered
 	 */
 	int REFERRAL_NOTE__TITLE = US_REALM_HEADER2__TITLE;
+
+	/**
+	 * The feature id for the '<em><b>SDTC Status Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REFERRAL_NOTE__SDTC_STATUS_CODE = US_REALM_HEADER2__SDTC_STATUS_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
@@ -65598,6 +65715,15 @@ public interface ConsolPackage extends EPackage {
 	int TRANSFER_SUMMARY__TITLE = US_REALM_HEADER2__TITLE;
 
 	/**
+	 * The feature id for the '<em><b>SDTC Status Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TRANSFER_SUMMARY__SDTC_STATUS_CODE = US_REALM_HEADER2__SDTC_STATUS_CODE;
+
+	/**
 	 * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -68315,6 +68441,15 @@ public interface ConsolPackage extends EPackage {
 	 * @ordered
 	 */
 	int US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT__TITLE = US_REALM_HEADER2__TITLE;
+
+	/**
+	 * The feature id for the '<em><b>SDTC Status Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT__SDTC_STATUS_CODE = US_REALM_HEADER2__SDTC_STATUS_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
@@ -71334,6 +71469,15 @@ public interface ConsolPackage extends EPackage {
 	int CONSULTATION_NOTE2__TITLE = US_REALM_HEADER2__TITLE;
 
 	/**
+	 * The feature id for the '<em><b>SDTC Status Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONSULTATION_NOTE2__SDTC_STATUS_CODE = US_REALM_HEADER2__SDTC_STATUS_CODE;
+
+	/**
 	 * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -71611,6 +71755,15 @@ public interface ConsolPackage extends EPackage {
 	 * @ordered
 	 */
 	int CONTINUITY_OF_CARE_DOCUMENT2__TITLE = US_REALM_HEADER2__TITLE;
+
+	/**
+	 * The feature id for the '<em><b>SDTC Status Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTINUITY_OF_CARE_DOCUMENT2__SDTC_STATUS_CODE = US_REALM_HEADER2__SDTC_STATUS_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
@@ -71892,6 +72045,15 @@ public interface ConsolPackage extends EPackage {
 	int DIAGNOSTIC_IMAGING_REPORT2__TITLE = US_REALM_HEADER2__TITLE;
 
 	/**
+	 * The feature id for the '<em><b>SDTC Status Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DIAGNOSTIC_IMAGING_REPORT2__SDTC_STATUS_CODE = US_REALM_HEADER2__SDTC_STATUS_CODE;
+
+	/**
 	 * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -72169,6 +72331,15 @@ public interface ConsolPackage extends EPackage {
 	 * @ordered
 	 */
 	int DISCHARGE_SUMMARY2__TITLE = US_REALM_HEADER2__TITLE;
+
+	/**
+	 * The feature id for the '<em><b>SDTC Status Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DISCHARGE_SUMMARY2__SDTC_STATUS_CODE = US_REALM_HEADER2__SDTC_STATUS_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
@@ -72450,6 +72621,15 @@ public interface ConsolPackage extends EPackage {
 	int HISTORY_AND_PHYSICAL_NOTE2__TITLE = US_REALM_HEADER2__TITLE;
 
 	/**
+	 * The feature id for the '<em><b>SDTC Status Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HISTORY_AND_PHYSICAL_NOTE2__SDTC_STATUS_CODE = US_REALM_HEADER2__SDTC_STATUS_CODE;
+
+	/**
 	 * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -72727,6 +72907,15 @@ public interface ConsolPackage extends EPackage {
 	 * @ordered
 	 */
 	int OPERATIVE_NOTE2__TITLE = US_REALM_HEADER2__TITLE;
+
+	/**
+	 * The feature id for the '<em><b>SDTC Status Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OPERATIVE_NOTE2__SDTC_STATUS_CODE = US_REALM_HEADER2__SDTC_STATUS_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
@@ -73008,6 +73197,15 @@ public interface ConsolPackage extends EPackage {
 	int PROCEDURE_NOTE2__TITLE = US_REALM_HEADER2__TITLE;
 
 	/**
+	 * The feature id for the '<em><b>SDTC Status Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCEDURE_NOTE2__SDTC_STATUS_CODE = US_REALM_HEADER2__SDTC_STATUS_CODE;
+
+	/**
 	 * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -73287,6 +73485,15 @@ public interface ConsolPackage extends EPackage {
 	int PROGRESS_NOTE2__TITLE = US_REALM_HEADER2__TITLE;
 
 	/**
+	 * The feature id for the '<em><b>SDTC Status Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROGRESS_NOTE2__SDTC_STATUS_CODE = US_REALM_HEADER2__SDTC_STATUS_CODE;
+
+	/**
 	 * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -73564,6 +73771,15 @@ public interface ConsolPackage extends EPackage {
 	 * @ordered
 	 */
 	int UNSTRUCTURED_DOCUMENT2__TITLE = US_REALM_HEADER2__TITLE;
+
+	/**
+	 * The feature id for the '<em><b>SDTC Status Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UNSTRUCTURED_DOCUMENT2__SDTC_STATUS_CODE = US_REALM_HEADER2__SDTC_STATUS_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Effective Time</b></em>' containment reference.

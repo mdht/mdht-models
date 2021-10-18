@@ -935,7 +935,7 @@ public class NoteActivityOperations extends ClinicalStatementOperations {
 	public static boolean validateNoteActivityCDTranslation1(NoteActivity noteActivity, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
-		DatatypesUtil.increment(context, "NoteActivityNoteActivityCDTranslation1", "ERROR");
+		DatatypesUtil.increment(context, "NoteActivityNoteActivityCDTranslation1", "WARNING");
 
 		if (VALIDATE_NOTE_ACTIVITY_CD_TRANSLATION1__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -969,7 +969,7 @@ public class NoteActivityOperations extends ClinicalStatementOperations {
 				for (EObject eObject : oclResultSet) {
 					diagnostics.add(
 						new BasicDiagnostic(
-							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.NOTE_ACTIVITY__NOTE_ACTIVITY_CD_TRANSLATION1,
 							ConsolPlugin.INSTANCE.getString("NoteActivityNoteActivityCDTranslation1"),
 							new Object[] { eObject }));
