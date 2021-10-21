@@ -96,7 +96,7 @@ public class TestXML {
 		// CDAUtil.save(cd, new FileOutputStream("aaaa3.xml"));
 		ClinicalDocument cd2 = CDAUtil.load(
 			new FileInputStream(
-				"/Users/seanmuir/Workspaces/DS4PUpdate/TestURL/files/CDA_sample_calling_ext_URL_2.xml"));
+				"/Users/seanmuir/git/mdht-models/generated/org.openhealthtools.mdht.uml.cda.consol2/samples/NT_Bad_MedicationSectionCode_r11_v2.xml"));
 		CDAUtil.validate(cd2, handler);
 
 		System.out.println(StringEscapeUtils.escapeXml("Race and Ethnicity & CDC"));

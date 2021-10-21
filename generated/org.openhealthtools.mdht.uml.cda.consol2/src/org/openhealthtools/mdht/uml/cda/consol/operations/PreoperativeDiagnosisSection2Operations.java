@@ -78,7 +78,7 @@ public class PreoperativeDiagnosisSection2Operations extends PreoperativeDiagnos
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_PREOPERATIVE_DIAGNOSIS_SECTION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_PREOPERATIVE_DIAGNOSIS_SECTION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -195,7 +195,7 @@ public class PreoperativeDiagnosisSection2Operations extends PreoperativeDiagnos
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_PREOPERATIVE_DIAGNOSIS_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_PREOPERATIVE_DIAGNOSIS_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -247,7 +247,7 @@ public class PreoperativeDiagnosisSection2Operations extends PreoperativeDiagnos
 					"org.openhealthtools.mdht.uml.cda.consol.PreoperativeDiagnosisSectionCodeP");
 				if (passToken == null) {
 					// anticipate a reasonably healthy model
-					passToken = new java.util.ArrayList<Object>(3);
+					passToken = new java.util.ArrayList<>(3);
 					context.put("org.openhealthtools.mdht.uml.cda.consol.PreoperativeDiagnosisSectionCodeP", passToken);
 				}
 				passToken.add(preoperativeDiagnosisSection2);
@@ -279,7 +279,7 @@ public class PreoperativeDiagnosisSection2Operations extends PreoperativeDiagnos
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_PREOPERATIVE_DIAGNOSIS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_PREOPERATIVE_DIAGNOSIS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -357,7 +357,7 @@ public class PreoperativeDiagnosisSection2Operations extends PreoperativeDiagnos
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_PREOPERATIVE_DIAGNOSIS_SECTION_PREOPERATIVE_DIAGNOSIS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_PREOPERATIVE_DIAGNOSIS_SECTION_PREOPERATIVE_DIAGNOSIS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
