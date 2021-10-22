@@ -80,7 +80,7 @@ public class PostprocedureDiagnosis2Operations extends PostprocedureDiagnosisOpe
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_POSTPROCEDURE_DIAGNOSIS2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_POSTPROCEDURE_DIAGNOSIS2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -175,7 +175,7 @@ public class PostprocedureDiagnosis2Operations extends PostprocedureDiagnosisOpe
 					"org.openhealthtools.mdht.uml.cda.consol.PostprocedureDiagnosisCodeP");
 				if (passToken == null) {
 					// anticipate a reasonably healthy model
-					passToken = new java.util.ArrayList<Object>(3);
+					passToken = new java.util.ArrayList<>(3);
 					context.put("org.openhealthtools.mdht.uml.cda.consol.PostprocedureDiagnosisCodeP", passToken);
 				}
 				passToken.add(postprocedureDiagnosis2);
@@ -213,7 +213,7 @@ public class PostprocedureDiagnosis2Operations extends PostprocedureDiagnosisOpe
 		@SuppressWarnings("unchecked")
 		Collection<ProblemObservation2> result = (Collection<ProblemObservation2>) query.evaluate(
 			postprocedureDiagnosis2);
-		return new BasicEList.UnmodifiableEList<ProblemObservation2>(result.size(), result.toArray());
+		return new BasicEList.UnmodifiableEList<>(result.size(), result.toArray());
 	}
 
 	/**
@@ -235,7 +235,7 @@ public class PostprocedureDiagnosis2Operations extends PostprocedureDiagnosisOpe
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_POSTPROCEDURE_DIAGNOSIS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_POSTPROCEDURE_DIAGNOSIS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * The cached OCL expression body for the '{@link #getConsolProblemObservation2s(PostprocedureDiagnosis2) <em>Get Consol Problem Observation2s</em>}' operation.
@@ -278,7 +278,7 @@ public class PostprocedureDiagnosis2Operations extends PostprocedureDiagnosisOpe
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_POSTPROCEDURE_DIAGNOSIS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_POSTPROCEDURE_DIAGNOSIS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -352,7 +352,7 @@ public class PostprocedureDiagnosis2Operations extends PostprocedureDiagnosisOpe
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_POSTPROCEDURE_DIAGNOSIS_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_POSTPROCEDURE_DIAGNOSIS_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->

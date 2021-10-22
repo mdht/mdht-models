@@ -33,13 +33,13 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.MedicationsSectionOper
  * <p>
  * The following operations are supported:
  * <ul>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationsSection#validateMedicationsSectionCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medications Section Code P</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationsSection#validateMedicationsSectionCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medications Section Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationsSection#validateMedicationsSectionTitle(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medications Section Title</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationsSection#validateMedicationsSectionText(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medications Section Text</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationsSection#validateMedicationsSectionMedication(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medications Section Medication</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationsSection#getMedications() <em>Get Medications</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationsSection#validateMedicationsSectionEntriesOptionalTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medications Section Entries Optional Template Id</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationsSection#validateMedicationsSectionEntriesOptionalCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medications Section Entries Optional Code P</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationsSection#validateMedicationsSectionEntriesOptionalCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medications Section Entries Optional Code</em>}</li>
  * </ul>
  * </p>
  *
@@ -47,82 +47,6 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.MedicationsSectionOper
  */
 
 public class MedicationsSectionTest extends CDAValidationTest {
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
-
-	public void testValidateMedicationsSectionCodeP() {
-		OperationsTestCase<MedicationsSection> validateMedicationsSectionCodePTestCase = new OperationsTestCase<MedicationsSection>(
-			"validateMedicationsSectionCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_MEDICATIONS_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(MedicationsSection target) {
-
-			}
-
-			@Override
-			protected void updateToPass(MedicationsSection target) {
-				target.init();
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return MedicationsSectionOperations.validateMedicationsSectionCodeP(
-					(MedicationsSection) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateMedicationsSectionCodePTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
-	public void testValidateMedicationsSectionCode() {
-		OperationsTestCase<MedicationsSection> validateMedicationsSectionCodeTestCase = new OperationsTestCase<MedicationsSection>(
-			"validateMedicationsSectionCode",
-			operationsForOCL.getOCLValue("VALIDATE_MEDICATIONS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(MedicationsSection target) {
-
-			}
-
-			@Override
-			protected void updateToPass(MedicationsSection target) {
-				target.init();
-
-			}
-
-			@Override
-			protected void setDependency(MedicationsSection target) {
-				Collection<Object> passToken = new java.util.ArrayList<Object>(3);
-				passToken.add(target);
-				map.put("org.openhealthtools.mdht.uml.cda.consol.MedicationsSectionCodeP", passToken);
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return MedicationsSectionOperations.validateMedicationsSectionCode(
-					(MedicationsSection) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateMedicationsSectionCodeTestCase.doValidationTest();
-	}
 
 	/**
 	*
@@ -279,6 +203,84 @@ public class MedicationsSectionTest extends CDAValidationTest {
 		};
 
 		validateMedicationsSectionEntriesOptionalTemplateIdTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateMedicationsSectionEntriesOptionalCodeP() {
+		OperationsTestCase<MedicationsSection> validateMedicationsSectionEntriesOptionalCodePTestCase = new OperationsTestCase<MedicationsSection>(
+			"validateMedicationsSectionEntriesOptionalCodeP",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(MedicationsSection target) {
+
+			}
+
+			@Override
+			protected void updateToPass(MedicationsSection target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return MedicationsSectionOperations.validateMedicationsSectionEntriesOptionalCodeP(
+					(MedicationsSection) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateMedicationsSectionEntriesOptionalCodePTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateMedicationsSectionEntriesOptionalCode() {
+		OperationsTestCase<MedicationsSection> validateMedicationsSectionEntriesOptionalCodeTestCase = new OperationsTestCase<MedicationsSection>(
+			"validateMedicationsSectionEntriesOptionalCode", operationsForOCL.getOCLValue(
+				"VALIDATE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(MedicationsSection target) {
+
+			}
+
+			@Override
+			protected void updateToPass(MedicationsSection target) {
+				target.init();
+
+			}
+
+			@Override
+			protected void setDependency(MedicationsSection target) {
+				Collection<Object> passToken = new java.util.ArrayList<Object>(3);
+				passToken.add(target);
+				map.put("org.openhealthtools.mdht.uml.cda.consol.MedicationsSectionEntriesOptionalCodeP", passToken);
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return MedicationsSectionOperations.validateMedicationsSectionEntriesOptionalCode(
+					(MedicationsSection) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateMedicationsSectionEntriesOptionalCodeTestCase.doValidationTest();
 	}
 
 	/**

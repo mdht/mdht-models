@@ -5267,7 +5267,7 @@ A Risk Concern Act represents a health concern that is a risk. A risk is a clini
   <CDA:PropertyValidation xmi:id="_zN2hAAmBEeut3_ZvYAZhww" base_Property="_p-dZRwmBEeut3_ZvYAZhww">
     <ruleId>3250-16900</ruleId>
   </CDA:PropertyValidation>
-  <CDA:ValueSetConstraint xmi:id="_9VRngAmCEeut3_ZvYAZhww" base_Property="_8H_8EAmCEeut3_ZvYAZhww" uri="consol-vocab::NoteTypes">
+  <CDA:ValueSetConstraint xmi:id="_9VRngAmCEeut3_ZvYAZhww" base_Property="_8H_8EAmCEeut3_ZvYAZhww" uri="consol-vocab::NoteTypes" severity="WARNING">
     <reference href="../consol-vocab.uml#_HJ8cAAmCEeut3_ZvYAZhww"/>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="__QLN8AmCEeut3_ZvYAZhww" severity="WARNING" base_Property="_8H_8EAmCEeut3_ZvYAZhww"/>

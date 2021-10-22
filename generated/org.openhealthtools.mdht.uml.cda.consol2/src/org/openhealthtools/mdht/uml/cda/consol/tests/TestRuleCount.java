@@ -120,7 +120,7 @@ public class TestRuleCount {
 				}
 			}
 		};
-		;
+		
 		Files.list(Paths.get("/Users/seanmuir/mdmi-workspace20200305/regression/src/test/resource/CCDA")).forEach(
 			validate);
 

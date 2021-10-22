@@ -85,8 +85,6 @@ public class RegressionValidationHandler implements ValidationHandler {
 			e.printStackTrace();
 		}
 
-		;
-
 		// TODO Auto-generated method stub
 
 	}

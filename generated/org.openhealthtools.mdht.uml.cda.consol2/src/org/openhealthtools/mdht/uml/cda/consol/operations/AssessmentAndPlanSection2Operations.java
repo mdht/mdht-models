@@ -80,7 +80,7 @@ public class AssessmentAndPlanSection2Operations extends AssessmentAndPlanSectio
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_ASSESSMENT_AND_PLAN_SECTION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_ASSESSMENT_AND_PLAN_SECTION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -173,7 +173,7 @@ public class AssessmentAndPlanSection2Operations extends AssessmentAndPlanSectio
 		OCL.Query query = EOCL_ENV.get().createQuery(GET_CONSOL_PLANNED_ACT2S__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<PlannedAct2> result = (Collection<PlannedAct2>) query.evaluate(assessmentAndPlanSection2);
-		return new BasicEList.UnmodifiableEList<PlannedAct2>(result.size(), result.toArray());
+		return new BasicEList.UnmodifiableEList<>(result.size(), result.toArray());
 	}
 
 	/**
@@ -195,7 +195,7 @@ public class AssessmentAndPlanSection2Operations extends AssessmentAndPlanSectio
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_ASSESSMENT_AND_PLAN_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_ASSESSMENT_AND_PLAN_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -245,7 +245,7 @@ public class AssessmentAndPlanSection2Operations extends AssessmentAndPlanSectio
 					"org.openhealthtools.mdht.uml.cda.consol.AssessmentAndPlanSectionCodeP");
 				if (passToken == null) {
 					// anticipate a reasonably healthy model
-					passToken = new java.util.ArrayList<Object>(3);
+					passToken = new java.util.ArrayList<>(3);
 					context.put("org.openhealthtools.mdht.uml.cda.consol.AssessmentAndPlanSectionCodeP", passToken);
 				}
 				passToken.add(assessmentAndPlanSection2);
@@ -277,7 +277,7 @@ public class AssessmentAndPlanSection2Operations extends AssessmentAndPlanSectio
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_ASSESSMENT_AND_PLAN_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_ASSESSMENT_AND_PLAN_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -351,7 +351,7 @@ public class AssessmentAndPlanSection2Operations extends AssessmentAndPlanSectio
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_ASSESSMENT_AND_PLAN_SECTION_PLAN_OF_CARE_ACTIVITY_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_ASSESSMENT_AND_PLAN_SECTION_PLAN_OF_CARE_ACTIVITY_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->

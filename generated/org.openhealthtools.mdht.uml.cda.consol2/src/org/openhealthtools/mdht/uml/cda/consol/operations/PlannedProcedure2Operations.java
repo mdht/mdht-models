@@ -100,7 +100,7 @@ public class PlannedProcedure2Operations extends PlanOfCareActivityProcedureOper
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_PLANNED_PROCEDURE2_CODE_FROM_LOINC_OR_SNOMED__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_PLANNED_PROCEDURE2_CODE_FROM_LOINC_OR_SNOMED__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -167,7 +167,7 @@ public class PlannedProcedure2Operations extends PlanOfCareActivityProcedureOper
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_PLANNED_PROCEDURE2_CODE_FROM_CPT_OR_ICD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_PLANNED_PROCEDURE2_CODE_FROM_CPT_OR_ICD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -234,7 +234,7 @@ public class PlannedProcedure2Operations extends PlanOfCareActivityProcedureOper
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_PLANNED_PROCEDURE2_INSTRUCTION2_INVERSION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_PLANNED_PROCEDURE2_INSTRUCTION2_INVERSION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -301,7 +301,7 @@ public class PlannedProcedure2Operations extends PlanOfCareActivityProcedureOper
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_PLANNED_PROCEDURE2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_PLANNED_PROCEDURE2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -366,7 +366,7 @@ public class PlannedProcedure2Operations extends PlanOfCareActivityProcedureOper
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_PLANNED_PROCEDURE2_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_PLANNED_PROCEDURE2_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -432,7 +432,7 @@ public class PlannedProcedure2Operations extends PlanOfCareActivityProcedureOper
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_PLANNED_PROCEDURE2_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_PLANNED_PROCEDURE2_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -497,7 +497,7 @@ public class PlannedProcedure2Operations extends PlanOfCareActivityProcedureOper
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_PLANNED_PROCEDURE2_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_PLANNED_PROCEDURE2_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -562,7 +562,7 @@ public class PlannedProcedure2Operations extends PlanOfCareActivityProcedureOper
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_PLANNED_PROCEDURE2_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_PLANNED_PROCEDURE2_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -628,7 +628,7 @@ public class PlannedProcedure2Operations extends PlanOfCareActivityProcedureOper
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_PLANNED_PROCEDURE2_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_PLANNED_PROCEDURE2_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -693,7 +693,7 @@ public class PlannedProcedure2Operations extends PlanOfCareActivityProcedureOper
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_PLANNED_PROCEDURE2_TARGET_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_PLANNED_PROCEDURE2_TARGET_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -743,7 +743,7 @@ public class PlannedProcedure2Operations extends PlanOfCareActivityProcedureOper
 					"org.openhealthtools.mdht.uml.cda.consol.PlannedProcedure2TargetSiteCodeP");
 				if (passToken == null) {
 					// anticipate a reasonably healthy model
-					passToken = new java.util.ArrayList<Object>(3);
+					passToken = new java.util.ArrayList<>(3);
 					context.put("org.openhealthtools.mdht.uml.cda.consol.PlannedProcedure2TargetSiteCodeP", passToken);
 				}
 				passToken.add(plannedProcedure2);
@@ -775,7 +775,7 @@ public class PlannedProcedure2Operations extends PlanOfCareActivityProcedureOper
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_PLANNED_PROCEDURE2_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_PLANNED_PROCEDURE2_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -850,7 +850,7 @@ public class PlannedProcedure2Operations extends PlanOfCareActivityProcedureOper
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_PLANNED_PROCEDURE2_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_PLANNED_PROCEDURE2_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -915,7 +915,7 @@ public class PlannedProcedure2Operations extends PlanOfCareActivityProcedureOper
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_PLANNED_PROCEDURE2_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_PLANNED_PROCEDURE2_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -982,7 +982,7 @@ public class PlannedProcedure2Operations extends PlanOfCareActivityProcedureOper
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_PLANNED_PROCEDURE2_PRIORITY_PREFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_PLANNED_PROCEDURE2_PRIORITY_PREFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1049,7 +1049,7 @@ public class PlannedProcedure2Operations extends PlanOfCareActivityProcedureOper
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_PLANNED_PROCEDURE2_INDICATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_PLANNED_PROCEDURE2_INDICATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1114,7 +1114,7 @@ public class PlannedProcedure2Operations extends PlanOfCareActivityProcedureOper
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_PLANNED_PROCEDURE2_INSTRUCTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_PLANNED_PROCEDURE2_INSTRUCTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1179,7 +1179,7 @@ public class PlannedProcedure2Operations extends PlanOfCareActivityProcedureOper
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_PLANNED_PROCEDURE2_PLANNED_COVERAGE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_PLANNED_PROCEDURE2_PLANNED_COVERAGE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1271,7 +1271,7 @@ public class PlannedProcedure2Operations extends PlanOfCareActivityProcedureOper
 		OCL.Query query = EOCL_ENV.get().createQuery(GET_PRIORITY_PREFERENCES__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<PriorityPreference> result = (Collection<PriorityPreference>) query.evaluate(plannedProcedure2);
-		return new BasicEList.UnmodifiableEList<PriorityPreference>(result.size(), result.toArray());
+		return new BasicEList.UnmodifiableEList<>(result.size(), result.toArray());
 	}
 
 	/**
@@ -1318,7 +1318,7 @@ public class PlannedProcedure2Operations extends PlanOfCareActivityProcedureOper
 		OCL.Query query = EOCL_ENV.get().createQuery(GET_INDICATION2S__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<Indication2> result = (Collection<Indication2>) query.evaluate(plannedProcedure2);
-		return new BasicEList.UnmodifiableEList<Indication2>(result.size(), result.toArray());
+		return new BasicEList.UnmodifiableEList<>(result.size(), result.toArray());
 	}
 
 	/**
@@ -1365,7 +1365,7 @@ public class PlannedProcedure2Operations extends PlanOfCareActivityProcedureOper
 		OCL.Query query = EOCL_ENV.get().createQuery(GET_INSTRUCTION2S__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<Instruction2> result = (Collection<Instruction2>) query.evaluate(plannedProcedure2);
-		return new BasicEList.UnmodifiableEList<Instruction2>(result.size(), result.toArray());
+		return new BasicEList.UnmodifiableEList<>(result.size(), result.toArray());
 	}
 
 	/**
@@ -1412,7 +1412,7 @@ public class PlannedProcedure2Operations extends PlanOfCareActivityProcedureOper
 		OCL.Query query = EOCL_ENV.get().createQuery(GET_PLANNED_COVERAGES__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<PlannedCoverage> result = (Collection<PlannedCoverage>) query.evaluate(plannedProcedure2);
-		return new BasicEList.UnmodifiableEList<PlannedCoverage>(result.size(), result.toArray());
+		return new BasicEList.UnmodifiableEList<>(result.size(), result.toArray());
 	}
 
 	/**
@@ -1436,7 +1436,7 @@ public class PlannedProcedure2Operations extends PlanOfCareActivityProcedureOper
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_PLAN_OF_CARE_ACTIVITY_PROCEDURE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_PLAN_OF_CARE_ACTIVITY_PROCEDURE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
