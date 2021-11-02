@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_id" xml:lang="en-us">
+  <title>Nulls and Negative Action Values</title>
+  <body>
+    <p>This table maps NEMSIS null and negative action values to the appropriate values and
+      structures in the HL7 CDA specification.</p>
+    <p>
+      <table id="table_fys_t2z_sg">
+        <tgroup cols="4">
+          <colspec colnum="1" colname="col2" colwidth="8.65*"/>
+          <colspec colnum="2" colname="col3" colwidth="1.9*"/>
+          <colspec colnum="3" colname="col5" colwidth="4.24*"/>
+          <colspec colnum="4" colname="col6" colwidth="12.71*"/>
+          <tbody>
+            <row>
+              <entry>
+                <b>NEMSIS Negative Action Values</b>
+              </entry>
+              <entry>
+                <b>Type</b>
+              </entry>
+              <entry>
+                <b>Case</b>
+              </entry>
+              <entry>
+                <b>Solution</b>
+              </entry>
+            </row>
+            <row>
+              <entry> Unable to Complete </entry>
+              <entry> null </entry>
+              <entry> observation </entry>
+              <entry> Observation.value = null (NI); obs.text = "unable to complete" </entry>
+            </row>
+            <row>
+              <entry> Unable to Complete </entry>
+              <entry> null </entry>
+              <entry> medication </entry>
+              <entry> SBADM.value = null (NI); SBADM.text = "unable to complete" </entry>
+            </row>
+            <row>
+              <entry> Unable to Complete </entry>
+              <entry> null </entry>
+              <entry> procedure </entry>
+              <entry> PROC.value = null (NI); PROC.text = "unable to complete" </entry>
+            </row>
+            <row>
+              <entry> Refused </entry>
+              <entry> null </entry>
+              <entry> observation (including history)</entry>
+              <entry> Observation.value = null (ASKU) </entry>
+            </row>
+            <row>
+              <entry> Refused </entry>
+              <entry> neg </entry>
+              <entry> medication given </entry>
+              <entry> negate specific medication; put "refused" value in
+                MedicationNotAdministeredReason observation</entry>
+            </row>
+            <row>
+              <entry> Refused </entry>
+              <entry> neg </entry>
+              <entry> procedure performed </entry>
+              <entry> negate specific procedure; put "refused" value in ReasonProcedureNotAttempted
+                observation </entry>
+            </row>
+            <row>
+              <entry> Exam finding not present (measurement) </entry>
+              <entry> null </entry>
+              <entry> observation </entry>
+              <entry> Observation.value = null (NAV) </entry>
+            </row>
+            <row>
+              <entry> Exam finding not present (presence)</entry>
+              <entry> neg</entry>
+              <entry> observation</entry>
+              <entry> negate specific observation value</entry>
+            </row>
+            <row>
+              <entry> No known drug allergies </entry>
+              <entry> none </entry>
+              <entry> observation: negation value </entry>
+              <entry> Use Boolean observation ExistenceOfDrugAllergy </entry>
+            </row>
+            <row>
+              <entry> None reported </entry>
+              <entry> none </entry>
+              <entry> observation: alcohol </entry>
+              <entry> Use Boolean observation ExistenceOfDrugUseIndication </entry>
+            </row>
+            <row>
+              <entry> No anticoagulants or bleeding disorder </entry>
+              <entry> none </entry>
+              <entry> medication </entry>
+              <entry> Use Boolean observation PatientOnAnticoagulants; negate HistoryOfCondition
+                observation for D66, D67, D68 </entry>
+            </row>
+            <row>
+              <entry> Contraindication noted </entry>
+              <entry> neg </entry>
+              <entry> medication, procedure </entry>
+              <entry> negate specific procedure or medication; use related reason observation to
+                record reason</entry>
+            </row>
+            <row>
+              <entry> Denied by order </entry>
+              <entry> neg </entry>
+              <entry> medication, procedure </entry>
+              <entry> negate specific procedure or medication; use related reason observation to
+                record reason </entry>
+            </row>
+            <row>
+              <entry> Medication allergy </entry>
+              <entry> neg </entry>
+              <entry> medication </entry>
+              <entry> negate specific procedure or medication; use related reason observation to
+                record reason </entry>
+            </row>
+            <row>
+              <entry> Medication already taken </entry>
+              <entry> neg </entry>
+              <entry> medication </entry>
+              <entry> negate specific procedure or medication; use related reason observation to
+                record reason </entry>
+            </row>
+            <row>
+              <entry>
+                <b>Null Values</b>
+              </entry>
+              <entry>
+                <b> </b>
+              </entry>
+              <entry>
+                <b> </b>
+              </entry>
+              <entry>
+                <b> </b>
+              </entry>
+            </row>
+            <row>
+              <entry> Not Applicable </entry>
+              <entry> null </entry>
+              <entry>   </entry>
+              <entry> null: NA </entry>
+            </row>
+            <row>
+              <entry> Not Recorded </entry>
+              <entry> null </entry>
+              <entry>   </entry>
+              <entry> null: NI; add detail to obs.text or proc.text </entry>
+            </row>
+            <row>
+              <entry> Not Reporting </entry>
+              <entry> null </entry>
+              <entry>   </entry>
+              <entry> null: NI; add detail to obs.text or proc.text </entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+    </p>
+  </body>
+</topic>
