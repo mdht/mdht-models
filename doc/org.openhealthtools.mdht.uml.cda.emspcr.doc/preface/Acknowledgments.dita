@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN"
+ "topic.dtd">
+<topic id="topicId" xml:lang="en-us">
+	<title>Acknowledgments</title>
+	<body>
+		<p>This implementation guide was developed with the support and sponsorship of the National EMS 
+Information System (NEMSIS), directed by Clay Mann. Additional clinical guidance was provided by Dr. 
+Greg Mears. NEMSIS is supported by the US National Highway Traffic Safety Administration, the Centers 
+for Disease Control, and the Health Resources and Services Administration, as well as dozens of other 
+government agencies, universities, and professional organizations.  The Clinical Interoperability Council 
+working groups sponsored this iteration of the project; Patient Care, Emergency Care, and Structured 
+Documents assisted with previous iterations. Special thanks go to Russ Hamm, Jerry Sable, Rob Hausam, 
+Keith Boone, Dan Leonard, and Dan Vreeman. Sean Muir's assistance was indispensible in making the rich 
+functionality of the Model-Driven Health Tools available. Shakir Consulting was instrumental in the 
+creation of the domain analysis model and constrained model that inform this specification.  The work 
+could not have been completed without the indefatigable assistance of Jaci Phillips and the support of 
+the Regenstrief institute. 
+</p>
+		<p>This document contains information from the following sources:</p>
+
+		<p>&#169;2010 ANSI. This material may be copied without permission from ANSI only if and to the
+			extent that the text is not altered in any fashion and ANSI’s copyright is clearly noted.</p>
+
+		<p>SNOMED CT&#174; is the registered trademark of the International Health Terminology Standard
+			Development Organization (IHTSDO). Implementers will need to acquire a (free) license to use 
+			SNOMED CT by agreeing to the UMLS Metathesaurus license, available from the National Library 
+			of Medicine (nlm.nih.gov).</p>
+			
+		<p>This material contains content from LOINC&#174; (http://loinc.org). The LOINC table, LOINC codes, and
+		LOINC panels and forms file are copyright &#169; 1995-2010, Regenstrief Institute, Inc. and the Logical
+		Observation Identifiers Names and Codes (LOINC) Committee and available at no cost under the
+		license at http://loinc.org/terms-of-use .</p>
+		
+		<p>The length-based body weight classification (67670-0) is based on values defined by General Electric’s
+		Broselow-Luten system. Implementers will require a license to use this field.</p>
+
+		<p>Certain materials contained in this Interoperability Specification
+			are reproduced from Health Level Seven (HL7) HL7 Implementation
+			Guide: CDA Release 2 – Continuity of Care Document (CCD), HL7
+			Implementation Guide for CDA Release 2: History and Physical (H&amp;P)
+			Notes, HL7 Implementation Guide for CDA Release 2: Consult Notes, or
+			HL7 Implementation Guide for CDA Release 2: Operative Notes with
+			permission of Health Level Seven, Inc. No part of the material may be
+			copied or reproduced in any form outside of the Interoperability
+			Specification documents, including an electronic retrieval system, or
+			made available on the Internet without the prior written permission
+			of Health Level Seven, Inc. Copies of standards included in this
+			Interoperability Specification may be purchased from the Health Level
+			Seven, Inc. Material drawn from these standards is credited where used.</p>
+		<p><b>Contributors</b></p>
+ <table>
+      <tgroup cols="2">
+        <tbody>
+          <row>
+            <entry>Co-Editor / Co-Chair</entry>
+            <entry>Anita Walden
+					Duke Translational Medicine Institute
+					Duke University
+					anita.walden@duke.edu</entry>
+          </row>
+          <row>
+            <entry>Co-Editor</entry>
+            <entry>Jay Lyle
+					Ockham Information Services LLC
+					jlyle@ockhamis.com</entry>
+          </row>
+          <row>
+            <entry>Co-Editor</entry>
+            <entry>Sarah Ryan
+					Ockham Information Services LLC
+					sryan@ockhamis.comm</entry>
+          </row>
+          <row>
+            <entry>EMS Subject Matter Expert</entry>
+            <entry>Clay Mann
+					National EMS Information System
+					University of Utah School of Medicine
+					clay.mann@utah.edu</entry>
+          </row>
+          <row>
+            <entry>EMS Subject Matter Expert</entry>
+            <entry>Greg Mears, M.D.
+					Formerly of the Department of Emergency Medicine
+					University of North Carolina, Chapel Hill
+					gdmears@me.com</entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+	</body>
+</topic>

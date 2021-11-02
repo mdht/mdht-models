@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- This document was created with Syntext Serna Free. -->
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd" []>
+<topic id="topicId" xml:lang="en-us">
+	<title>Revision History</title>
+	<body>
+		<table>
+			<tgroup cols="4">
+				<thead>
+					<row>
+						<entry>Rev</entry>
+						<entry>Date</entry>
+						<entry>By Whom</entry>
+						<entry>Changes</entry>
+					</row>
+				</thead>
+				<tbody>
+					<row>
+						<entry>R1 DSTU</entry>
+						<entry>September 2011</entry>
+						<entry>Jay Lyle</entry>
+						<entry>Draft standard</entry>
+					</row>
+					<row>
+						<entry>R1 Normative</entry>
+						<entry>September 2013</entry>
+						<entry>Jay Lyle</entry>
+						<entry>First normative edition</entry>
+					</row>
+					<row>
+						<entry>R2 Normative</entry>
+						<entry>May 2015</entry>
+						<entry>Jay Lyle</entry>
+						<entry>Revised to match NEMSIS 3.4</entry>
+					</row>
+				</tbody>
+			</tgroup>
+		</table>
+	</body>
+</topic>

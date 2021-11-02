@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_id" xml:lang="en-us">
+  <title>NEMSIS Routes Mapped to FDA Routes of Administration</title>
+  <body>
+    <p>This appendix maps NEMSIS routes of administration to FDA routes. It also specifies how information implicit in NEMSIS values but not specific to routes may be modeled in the CDA structure.</p>
+
+        <p>Note that all codes are drawn from code system FDA Route of Administration (2.16.840.1.113883.3.26.1.1.1).
+        <table><tgroup cols="4">
+                    <thead>
+                        <row>
+                            <entry>NEMSIS value</entry>
+                            <entry>Standard Code</entry>
+                            <entry>Standard Text</entry>
+                            <entry>Other Parameters</entry>
+                        </row>
+                    </thead>
+                    <tbody>
+                        <row>
+                            <entry>Auto Injector</entry>
+                            <entry>C38676</entry>
+                            <entry>Percutaneous</entry>
+                            <entry>
+                                <p>SubstanceAdministration/Participant/typeCode="DEV" (device)
+                                    SubstanceAdministration/Participant/ParticipantRole/classCode="MANU"
+                                    (manufactured product)
+                                    SubstanceAdministration/Participant/ParticipantRole/Device/code</p>
+                                <p>@ originalText = "Auto Injector"</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>BVM</entry>
+                            <entry>C38216</entry>
+                            <entry>Respiratory (Inhalation)</entry>
+                            <entry>
+                                <p>SubstanceAdministration/Participant/typeCode="DEV" (device)
+                                    SubstanceAdministration/Participant/ParticipantRole/classCode="MANU"
+                                    (manufactured product)
+                                    SubstanceAdministration/Participant/ParticipantRole/Device/code</p>
+                                <p>@ originalText = "BVM"</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>CPAP</entry>
+                            <entry>C38216</entry>
+                            <entry>Respiratory (Inhalation)</entry>
+                            <entry>
+                                <p>SubstanceAdministration/Participant/typeCode="DEV" (device)
+                                    SubstanceAdministration/Participant/ParticipantRole/classCode="MANU"
+                                    (manufactured product)
+                                    SubstanceAdministration/Participant/ParticipantRole/Device/code</p>
+                                <p>@ originalText = "CPAP"</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Endotracheal tube</entry>
+                            <entry>C38208</entry>
+                            <entry>ENDOTRACHEAL</entry>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>Gastrostomy/ Feeding Tube</entry>
+                            <entry>C38246</entry>
+                            <entry>INTRAGASTRIC</entry>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>Gastrostomy tube</entry>
+                            <entry>C38246</entry>
+                            <entry>INTRAGASTRIC</entry>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>Inhalation</entry>
+                            <entry>C38216</entry>
+                            <entry>RESPIRATORY (INHALATION)</entry>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>Intraarterial</entry>
+                            <entry>C38222</entry>
+                            <entry>INTRA-ARTERIAL</entry>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>Intranasal</entry>
+                            <entry>C38284</entry>
+                            <entry>NASAL</entry>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>Intramuscular</entry>
+                            <entry>C28161</entry>
+                            <entry>INTRAMUSCULAR</entry>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>Intraocular</entry>
+                            <entry>C38255</entry>
+                            <entry>INTRAOCULAR</entry>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>Intraosseous</entry>
+                            <entry>C38253</entry>
+                            <entry>INTRAMEDULLARY</entry>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>Intravenous</entry>
+                            <entry>C38276</entry>
+                            <entry>INTRAVENOUS</entry>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>IV Pump</entry>
+                            <entry>C38276</entry>
+                            <entry>Intravenous</entry>
+                            <entry>
+                                <p>SubstanceAdministration/Participant/typeCode="DEV" (device)
+                                    SubstanceAdministration/Participant/ParticipantRole/classCode="MANU"
+                                    (manufactured product)
+                                    SubstanceAdministration/Participant/ParticipantRole/Device/code</p>
+                                <p>@ originalText = "IV Pump"</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Nasal Cannula</entry>
+                            <entry>C38216</entry>
+                            <entry>RESPIRATORY (INHALATION)</entry>
+                            <entry>SubstanceAdministration/Participant/typeCode=""DEV"" (device)
+                                SubstanceAdministration/Participant/ParticipantRole/classCode=""MANU""
+                                (manufactured product)
+                                SubstanceAdministration/Participant/ParticipantRole/Device/code @
+                                value = ""39849001"" @codeSystem = ""2.16.840.1.113883.6.96""
+                                @displayName=""nasal oxygen cannula""</entry>
+                        </row>
+                        <row>
+                            <entry>Nasal</entry>
+                            <entry>C38284</entry>
+                            <entry>NASAL</entry>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>Nasal prongs</entry>
+                            <entry>C38216</entry>
+                            <entry>RESPIRATORY (INHALATION)</entry>
+                            <entry>Alternate SCT format for above explicitly modeled concept (same
+                                content): 405815000 |procedure device (attribute)| = 39849001 |nasal
+                                oxygen cannula (Type:= physical object)|</entry>
+                        </row>
+                        <row>
+                            <entry>Nasogastric</entry>
+                            <entry>C38285</entry>
+                            <entry>NASOGASTRIC</entry>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>Nasotracheal Tube</entry>
+                            <entry>C38208</entry>
+                            <entry>ENDOTRACHEAL</entry>
+                            <entry>approachSiteCode @value = ""15562006"" @codeSystem =
+                                ""2.16.840.1.113883.6.96"" @displayName=""structure of respiratory
+                                region of nose""</entry>
+                        </row>
+                        <row>
+                            <entry>Nebulizer</entry>
+                            <entry>C38216</entry>
+                            <entry>Respiratory (Inhalation)</entry>
+                            <entry>SubstanceAdministration/Participant/typeCode="DEV" (device)
+                                SubstanceAdministration/Participant/ParticipantRole/classCode="MANU"
+                                (manufactured product)
+                                SubstanceAdministration/Participant/ParticipantRole/Device/code @
+                                value = "334947002" @codeSystem = "2.16.840.1.113883.6.96"
+                                @displayName="Nebulizer"</entry>
+                        </row>
+                        <row>
+                            <entry>Non-Rebreather Mask</entry>
+                            <entry>C38216</entry>
+                            <entry>RESPIRATORY (INHALATION)</entry>
+                            <entry>SubstanceAdministration/Participant/typeCode=""DEV"" (device)
+                                SubstanceAdministration/Participant/ParticipantRole/classCode=""MANU""
+                                (manufactured product)
+                                SubstanceAdministration/Participant/ParticipantRole/Device/code @
+                                value = ""427591007"" @codeSystem = ""2.16.840.1.113883.6.96""
+                                @displayName=""nonrebreather oxygen mask""</entry>
+                        </row>
+                        <row>
+                            <entry>Ophthalmic</entry>
+                            <entry>C38287</entry>
+                            <entry>OPHTHALMIC</entry>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>Oral</entry>
+                            <entry>C38288</entry>
+                            <entry>ORAL</entry>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>Other/ miscellaneous</entry>
+                            <entry>C38290</entry>
+                            <entry>OTHER</entry>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>Otic</entry>
+                            <entry>C38192</entry>
+                            <entry>AURICULAR (OTIC)</entry>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>Re-breather mask</entry>
+                            <entry>C38216</entry>
+                            <entry>RESPIRATORY (INHALATION)</entry>
+                            <entry>SubstanceAdministration/Participant/typeCode=""DEV"" (device)
+                                SubstanceAdministration/Participant/ParticipantRole/classCode=""MANU""
+                                (manufactured product)
+                                SubstanceAdministration/Participant/ParticipantRole/Device/code @
+                                value = ""425926003"" @codeSystem = ""2.16.840.1.113883.6.96""
+                                @displayName=""partial rebreather oxygen mask""</entry>
+                        </row>
+                        <row>
+                            <entry>Rectal</entry>
+                            <entry>C38295</entry>
+                            <entry>RECTAL</entry>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>Subcutaneous</entry>
+                            <entry>C38299</entry>
+                            <entry>SUBCUTANEOUS</entry>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>Sublingual</entry>
+                            <entry>C38300</entry>
+                            <entry>SUBLINGUAL</entry>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>Topical</entry>
+                            <entry>C38304</entry>
+                            <entry>TOPICAL</entry>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>Tracheostomy</entry>
+                            <entry>C38308</entry>
+                            <entry>TRANSTRACHEAL</entry>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>Transdermal</entry>
+                            <entry>C38305</entry>
+                            <entry>TRANSDERMAL</entry>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry/>
+                            <entry/>
+                            <entry/>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>Umbilical Artery Catheter</entry>
+                            <entry>C38222</entry>
+                            <entry>Intra-Arterial</entry>
+                            <entry>
+                                <p>SubstanceAdministration/Participant/typeCode="DEV" (device)
+                                    SubstanceAdministration/Participant/ParticipantRole/classCode="MANU"
+                                    (manufactured product)
+                                    SubstanceAdministration/Participant/ParticipantRole/Device/code
+                                    @ value = "258623008" @codeSystem = "2.16.840.1.113883.6.96"
+                                    @displayName="Vascular catheter"</p>
+                                <p>approachSiteCode @value = "50536004" @codeSystem =
+                                    "2.16.840.1.113883.6.96" @displayName="Structure of umbilical
+                                    artery"</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Umbilical Venous Catheter</entry>
+                            <entry>C38276</entry>
+                            <entry>Intravenous</entry>
+                            <entry>
+                                <p>SubstanceAdministration/Participant/typeCode="DEV" (device)
+                                    SubstanceAdministration/Participant/ParticipantRole/classCode="MANU"
+                                    (manufactured product)
+                                    SubstanceAdministration/Participant/ParticipantRole/Device/code
+                                    @ value = "258623008" @codeSystem = "2.16.840.1.113883.6.96"
+                                    @displayName="Vascular catheter"</p>
+                                <p>approachSiteCode @value = "367567000" @codeSystem =
+                                    "2.16.840.1.113883.6.96" @displayName="Structure of umbilical
+                                    vein"</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Urethral</entry>
+                            <entry>C38271</entry>
+                            <entry>URETHRAL</entry>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>Ventimask</entry>
+                            <entry>C38216</entry>
+                            <entry>RESPIRATORY (INHALATION)</entry>
+                            <entry>SubstanceAdministration/Participant/typeCode=""DEV"" (device)
+                                SubstanceAdministration/Participant/ParticipantRole/classCode=""MANU""
+                                (manufactured product)
+                                SubstanceAdministration/Participant/ParticipantRole/Device/code @
+                                value = ""428285009"" @codeSystem = ""2.16.840.1.113883.6.96""
+                                @displayName=""Venturi mask""</entry>
+                        </row>
+                        <row>
+                            <entry>Wound</entry>
+                            <entry>C38250</entry>
+                            <entry>INTRALESIONAL</entry>
+                            <entry/>
+                        </row>
+                    </tbody>
+                </tgroup>
+        </table>
+    </p>
+  </body>
+</topic>

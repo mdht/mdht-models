@@ -1,0 +1,486 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- This document was created with Syntext Serna Free. -->
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd" []>
+<topic id="topicId" xml:lang="en-us">
+	<title>Revision History</title>
+	<body>
+		<table>
+			<tgroup cols="4">
+				<thead>
+					<row>
+						<entry>Rev</entry>
+						<entry>Date</entry>
+						<entry>By Whom</entry>
+						<entry>Changes</entry>
+					</row>
+				</thead>
+				<tbody>
+					<row>
+						<entry>R1 DSTU</entry>
+						<entry>September 2011</entry>
+						<entry>Jay Lyle</entry>
+						<entry>Draft standard</entry>
+					</row>
+					<row>
+						<entry>R1 Normative</entry>
+						<entry>September 2013</entry>
+						<entry>Jay Lyle</entry>
+						<entry>First normative edition</entry>
+					</row>
+					<row>
+						<entry>R2 Normative</entry>
+						<entry>May 2015</entry>
+						<entry>Jay Lyle</entry>
+						<entry>Revised to match NEMSIS 3.4</entry>
+					</row>
+				</tbody>
+			</tgroup>
+		</table>
+	
+		<table>
+			<tgroup cols="4">
+				<thead>
+					<row>
+						<entry>Rev</entry>
+						<entry>Date</entry>
+						<entry>By Whom</entry>
+						<entry>Changes</entry>
+					</row>
+				</thead>
+				<tbody>
+					<row>
+						<entry> R2</entry>
+						<entry> May 2015</entry>
+						<entry> Jay Lyle</entry>
+						<entry> </entry>
+					</row>
+					<row>
+						<entry> R2</entry>
+						<entry> May 2015</entry>
+						<entry> Jay Lyle</entry>
+						<entry> Relaxed Advance Directive section cardinality to 0:1</entry>
+					</row>
+					<row>
+						<entry> R2</entry>
+						<entry> May 2015</entry>
+						<entry> Jay Lyle</entry>
+						<entry> Relaxed drug allergy cardinality to 0:*</entry>
+					</row>
+					<row>
+						<entry> R2</entry>
+						<entry> May 2015</entry>
+						<entry> Jay Lyle</entry>
+						<entry> Requested LOINC remove "with" from cardiac arrest timing; changed
+							cardinality to 1:1</entry>
+					</row>
+					<row>
+						<entry> R2</entry>
+						<entry> May 2015</entry>
+						<entry> Jay Lyle</entry>
+						<entry> Changed medication performer cardinality to 0:*</entry>
+					</row>
+					<row>
+						<entry> R2</entry>
+						<entry> May 2015</entry>
+						<entry> Jay Lyle</entry>
+						<entry> Changed exam finding observations: site is 0:1; value is 0:*</entry>
+					</row>
+					<row>
+						<entry> R2</entry>
+						<entry> May 2015</entry>
+						<entry> Jay Lyle</entry>
+						<entry> Increased protocol cardinality to 1:*</entry>
+					</row>
+					<row>
+						<entry> R2</entry>
+						<entry> May 2015</entry>
+						<entry> Jay Lyle</entry>
+						<entry> Changed Drug use indicator cardinality from 1:*to 1:1</entry>
+					</row>
+					<row>
+						<entry> R2</entry>
+						<entry> May 2015</entry>
+						<entry> Jay Lyle</entry>
+						<entry> Renamed Times section to EMS Times section</entry>
+					</row>
+					<row>
+						<entry> R2</entry>
+						<entry> May 2015</entry>
+						<entry> Jay Lyle</entry>
+						<entry> Ensured implementers can put times on either vitals sections or
+							vitals entries</entry>
+					</row>
+					<row>
+						<entry> R2</entry>
+						<entry> May 2015</entry>
+						<entry> Jay Lyle</entry>
+						<entry> Kept consolidated vitals pattern but removed constraint requiring
+							consolidated properties</entry>
+					</row>
+					<row>
+						<entry> R2</entry>
+						<entry> May 2015</entry>
+						<entry> Jay Lyle</entry>
+						<entry> Moved additional vitals organizer under consolidated pattern vitals
+							organizer</entry>
+					</row>
+					<row>
+						<entry> R2</entry>
+						<entry> May 2015</entry>
+						<entry> Jay Lyle</entry>
+						<entry> Added SCT code to vital organizer per Consolidated pattern</entry>
+					</row>
+					<row>
+						<entry> R2</entry>
+						<entry> May 2015</entry>
+						<entry> Jay Lyle</entry>
+						<entry> Ensured nationally required vitals have required cardinality</entry>
+					</row>
+					<row>
+						<entry> R2</entry>
+						<entry> May 2015</entry>
+						<entry> Jay Lyle</entry>
+						<entry> Updated role code on cardiac rhythm device to DEV</entry>
+					</row>
+					<row>
+						<entry> R2</entry>
+						<entry> May 2015</entry>
+						<entry> Jay Lyle</entry>
+						<entry> Added template ID to drug allergy organizer</entry>
+					</row>
+					<row>
+						<entry> R2</entry>
+						<entry> May 2015</entry>
+						<entry> Jay Lyle</entry>
+						<entry> Removed "EMS" from drug allergy template</entry>
+					</row>
+					<row>
+						<entry> R2</entry>
+						<entry> May 2015</entry>
+						<entry> Jay Lyle</entry>
+						<entry> Removed extraneous drug allergy organizer template</entry>
+					</row>
+					<row>
+						<entry> R2</entry>
+						<entry> May 2015</entry>
+						<entry> Jay Lyle</entry>
+						<entry> Enabled multiple dispatch and response delay reasons</entry>
+					</row>
+					<row>
+						<entry> R2</entry>
+						<entry> May 2015</entry>
+						<entry> Jay Lyle</entry>
+						<entry> Enabled multiple secondary impressions</entry>
+					</row>
+					<row>
+						<entry> R2</entry>
+						<entry> May 2015</entry>
+						<entry> Jay Lyle</entry>
+						<entry> Increased cardinality of assessment organizers; moved unique values
+							(weight) up to section level</entry>
+					</row>
+					<row>
+						<entry> R2</entry>
+						<entry> May 2015</entry>
+						<entry> Jay Lyle</entry>
+						<entry> Moved other agencies on scene from observation to Encompassing
+							Encounter</entry>
+					</row>
+					<row>
+						<entry> R2</entry>
+						<entry> May 2015</entry>
+						<entry> Jay Lyle</entry>
+						<entry> moved response number from facility to encompassing
+							encounter</entry>
+					</row>
+					<row>
+						<entry> R2</entry>
+						<entry> May 2015</entry>
+						<entry> Jay Lyle</entry>
+						<entry> Corrected transport mode terminology binding</entry>
+					</row>
+					<row>
+						<entry> R2</entry>
+						<entry> May 2015</entry>
+						<entry> Jay Lyle</entry>
+						<entry> Added cardiac arrest outcome observation</entry>
+					</row>
+					<row>
+						<entry> R2</entry>
+						<entry> May 2015</entry>
+						<entry> Jay Lyle</entry>
+						<entry> Added eArrest.18 (End of EMS Cardiac Arrest Event) as
+							observation</entry>
+					</row>
+					<row>
+						<entry> R2</entry>
+						<entry> May 2015</entry>
+						<entry> Jay Lyle</entry>
+						<entry> Added eDisposition.18 (Additional Transport Mode Descriptors) as
+							observation</entry>
+					</row>
+					<row>
+						<entry> R2</entry>
+						<entry> May 2015</entry>
+						<entry> Jay Lyle</entry>
+						<entry> Added eDisposition.22 (Hospital In-Patient Destination) as
+							observation</entry>
+					</row>
+					<row>
+						<entry> R2</entry>
+						<entry> May 2015</entry>
+						<entry> Jay Lyle</entry>
+						<entry> Added eDisposition.23 (Hospital Designation) as observation</entry>
+					</row>
+					<row>
+						<entry> R2</entry>
+						<entry> May 2015</entry>
+						<entry> Jay Lyle</entry>
+						<entry> Added eResponse.13 (EMS Vehicle (Unit) Number) as ID on
+							facility</entry>
+					</row>
+					<row>
+						<entry> R2</entry>
+						<entry> May 2015</entry>
+						<entry> Jay Lyle</entry>
+						<entry> Added eResponse.14 (EMS Unit Call Sign) as ID on facility</entry>
+					</row>
+					<row>
+						<entry> R2</entry>
+						<entry> May 2015</entry>
+						<entry> Jay Lyle</entry>
+						<entry> Added eResponse.15 (Level of Care of This Unit) as
+							observation</entry>
+					</row>
+					<row>
+						<entry> R2</entry>
+						<entry> May 2015</entry>
+						<entry> Jay Lyle</entry>
+						<entry> Added eResponse.24 (Additional Response Mode Descriptors) as
+							observation</entry>
+					</row>
+					<row>
+						<entry> R2</entry>
+						<entry> May 2015</entry>
+						<entry> Jay Lyle</entry>
+						<entry> Added eTimes.12 (Destination Patient Transfer of Care Date/Time) as
+							time on destination role</entry>
+					</row>
+					<row>
+						<entry> R2</entry>
+						<entry> May 2015</entry>
+						<entry> Jay Lyle</entry>
+						<entry> Added eVitals.08 (Method of Blood Pressure Measurement) as method on
+							BP observations</entry>
+					</row>
+					<row>
+						<entry> R2</entry>
+						<entry> May 2015</entry>
+						<entry> Jay Lyle</entry>
+						<entry> Added and removed several values from dynamic value set listings to
+							reflect updated standards (non-normative)</entry>
+					</row>
+					<row>
+						<entry> R2</entry>
+						<entry> May 2015</entry>
+						<entry> Jay Lyle</entry>
+						<entry> Tightened cardinality of cardiac observations to match national
+							requirements</entry>
+					</row>
+					<row>
+						<entry> R2</entry>
+						<entry> May 2015</entry>
+						<entry> Jay Lyle</entry>
+						<entry> corrected cardinality of thrombolytic contraindications</entry>
+					</row>
+					<row>
+						<entry> R2</entry>
+						<entry> May 2015</entry>
+						<entry> Jay Lyle</entry>
+						<entry> corrected cardinality of stroke scale</entry>
+					</row>
+					<row>
+						<entry> R2</entry>
+						<entry> May 2015</entry>
+						<entry> Jay Lyle</entry>
+						<entry> corrected cardinality of reason for choosing destination</entry>
+					</row>
+					<row>
+						<entry> R2</entry>
+						<entry> May 2015</entry>
+						<entry> Jay Lyle</entry>
+						<entry> corrected cardinality of number of patients transported</entry>
+					</row>
+					<row>
+						<entry> R2</entry>
+						<entry> May 2015</entry>
+						<entry> Jay Lyle</entry>
+						<entry> corrected cardinality of injury mechanism, risk factor</entry>
+					</row>
+					<row>
+						<entry> R2</entry>
+						<entry> May 2015</entry>
+						<entry> Jay Lyle</entry>
+						<entry> corrected cardinality of vitals elements</entry>
+					</row>
+					<row>
+						<entry> R2</entry>
+						<entry> May 2015</entry>
+						<entry> Jay Lyle</entry>
+						<entry> corrected cardinality of cardiac rhythm consituents</entry>
+					</row>
+					<row>
+						<entry> R2</entry>
+						<entry> May 2015</entry>
+						<entry> Jay Lyle</entry>
+						<entry> changed glasgow motor oid to
+							2.16.840.1.1133883.17.3.10.1.192</entry>
+					</row>
+					<row>
+						<entry> R2</entry>
+						<entry> May 2015</entry>
+						<entry> Jay Lyle</entry>
+						<entry> relaxed cardinality of billing condition</entry>
+					</row>
+					<row>
+						<entry> R2</entry>
+						<entry> May 2015</entry>
+						<entry> Jay Lyle</entry>
+						<entry> bound device list explicitly to medication administration</entry>
+					</row>
+					<row>
+						<entry> R2</entry>
+						<entry> May 2015</entry>
+						<entry> Jay Lyle</entry>
+						<entry> created an administration site value set and binding</entry>
+					</row>
+					<row>
+						<entry> R2</entry>
+						<entry> May 2015</entry>
+						<entry> Jay Lyle</entry>
+						<entry> renamed "provider role level" value set to "crew role"</entry>
+					</row>
+					<row>
+						<entry> R2</entry>
+						<entry> May 2015</entry>
+						<entry> Jay Lyle</entry>
+						<entry> Changed "ems medication administration device" OID</entry>
+					</row>
+					<row>
+						<entry> R2</entry>
+						<entry> May 2015</entry>
+						<entry> Jay Lyle</entry>
+						<entry> 17.3.11.108 from 100; added constraint</entry>
+					</row>
+					<row>
+						<entry> R2</entry>
+						<entry> May 2015</entry>
+						<entry> Jay Lyle</entry>
+						<entry> changed "resuscitation not performed reason" to "reason
+							resuscitation not performed"</entry>
+					</row>
+					<row>
+						<entry> R2</entry>
+						<entry> May 2015</entry>
+						<entry> Jay Lyle</entry>
+						<entry> Corrected patient response to medication and procedure observation
+							bindings to value set</entry>
+					</row>
+					<row>
+						<entry> R2</entry>
+						<entry> May 2015</entry>
+						<entry> Jay Lyle</entry>
+						<entry> Added multiple updates to dynamically bound terminologies; most
+							pending identifier assignment: see entries labeled "LOINC_TBD"</entry>
+					</row>
+					<row>
+						<entry> R2</entry>
+						<entry> Aug 2015</entry>
+						<entry> Jay Lyle</entry>
+						<entry> Replaced LOINC_TBD terminology values with assigned LOINC
+							values</entry>
+					</row>
+					<row>
+						<entry> R2</entry>
+						<entry> Aug 2015</entry>
+						<entry> Jay Lyle</entry>
+						<entry> Corrected order of attributes for Vitals organizer</entry>
+					</row>
+					<row>
+						<entry> R2</entry>
+						<entry> Aug 2015</entry>
+						<entry> Jay Lyle</entry>
+						<entry> specified case-sensitive UCUM units (in text)</entry>
+					</row>
+					<row>
+						<entry> R2</entry>
+						<entry> Aug 2015</entry>
+						<entry> Jay Lyle</entry>
+						<entry> Relaxed Vitals code constraint to support CCDA change</entry>
+					</row>
+					<row>
+						<entry> R2</entry>
+						<entry> Aug 2015</entry>
+						<entry> Jay Lyle</entry>
+						<entry> Ensured all templates have identifiers</entry>
+					</row>
+					<row>
+						<entry> R2</entry>
+						<entry> Aug 2015</entry>
+						<entry> Jay Lyle</entry>
+						<entry> Ensured all templates have descriptions</entry>
+					</row>
+					<row>
+						<entry> R2</entry>
+						<entry> Aug 2015</entry>
+						<entry> Jay Lyle</entry>
+						<entry> Modified definition of Injury Cause Category to avoid ambiguity with
+							related mechanism observation</entry>
+					</row>
+					<row>
+						<entry> R2</entry>
+						<entry> Aug 2015</entry>
+						<entry> Jay Lyle</entry>
+						<entry> Corrected Arrest Outcome code system</entry>
+					</row>
+					<row>
+						<entry> R2</entry>
+						<entry> Aug 2015</entry>
+						<entry> Jay Lyle</entry>
+						<entry> Added metadata for code systems</entry>
+					</row>
+					<row>
+						<entry> R2</entry>
+						<entry> Aug 2015</entry>
+						<entry> Jay Lyle</entry>
+						<entry> Renamed IV site to 'infusion site'</entry>
+					</row>
+					<row>
+						<entry> R2</entry>
+						<entry> Aug 2015</entry>
+						<entry> Jay Lyle</entry>
+						<entry> Added clockface explanation to Vehicle Impact Area value set</entry>
+					</row>
+					<row>
+						<entry> R2</entry>
+						<entry> Aug 2015</entry>
+						<entry> Jay Lyle</entry>
+						<entry> Removed inherited constraints from IG</entry>
+					</row>
+					<row>
+						<entry> R2</entry>
+						<entry> Aug 2015</entry>
+						<entry> Jay Lyle</entry>
+						<entry> Included java files to support validation</entry>
+					</row>
+					<row>
+						<entry> R2</entry>
+						<entry> Nov 2015</entry>
+						<entry> Jay Lyle</entry>
+						<entry> Included updates to non-normative, dynamically bound vocabulary tables</entry>
+					</row>
+				</tbody>
+			</tgroup>
+		</table>
+	</body>
+</topic>

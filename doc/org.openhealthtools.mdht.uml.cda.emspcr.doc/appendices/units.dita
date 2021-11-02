@@ -1,0 +1,535 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_id" xml:lang="en-us">
+  <title>UCUM Unit Mapping</title>
+  <body>
+    <p>This appendix provides UCUM codes for units provided by NEMSIS specifications. Note that "liters" is always uppercase "L": the  character "1" signifies the numeral "one."</p>
+    <p>
+      <table id="table_yyy_q3z_sg">
+        <tgroup cols="6">
+          <colspec colnum="1" colname="col1" colwidth="2.23*"/>
+          <colspec colnum="2" colname="col2" colwidth="1.52*"/>
+          <colspec colnum="3" colname="col3" colwidth="2.45*"/>
+          <colspec colnum="4" colname="col4" colwidth="1*"/>
+          <colspec colnum="5" colname="col5" colwidth="1.58*"/>
+          <colspec colnum="6" colname="col6" colwidth="6.2*"/>
+          <tbody>
+            <row>
+              <entry><b>NEMSIS Question</b></entry>
+              <entry><b>NEMSIS Code</b></entry>
+              <entry><b>Description</b></entry>
+              <entry><b>PQ QTY</b></entry>
+              <entry><b>PQ Units (UCUM)</b></entry>
+              <entry><b>Supporting values</b></entry>
+            </row>
+            <row>
+              <entry>emedications.06</entry>
+              <entry>3706001</entry>
+              <entry>Grams</entry>
+              <entry>Yes</entry>
+              <entry>g</entry>
+              <entry> </entry>
+            </row>
+            <row>
+              <entry>emedications.06</entry>
+              <entry>3706055</entry>
+              <entry>Milligrams per Hour (mg/hr)</entry>
+              <entry>Yes</entry>
+              <entry>mg/h</entry>
+              <entry> </entry>
+            </row>
+            <row>
+              <entry>emedications.06</entry>
+              <entry>3706049</entry>
+              <entry>Units</entry>
+              <entry>Yes</entry>
+              <entry>{unit}</entry>
+              <entry> </entry>
+            </row>
+            <row>
+              <entry>emedications.06</entry>
+              <entry>3706051</entry>
+              <entry>Units per Kilogram per Hour (units/kg/hr)</entry>
+              <entry>Yes</entry>
+              <entry>/kg/h</entry>
+              <entry> </entry>
+            </row>
+            <row>
+              <entry>emedications.06</entry>
+              <entry>3706031</entry>
+              <entry>Centimeters (cm)</entry>
+              <entry>Yes</entry>
+              <entry>cm</entry>
+              <entry> </entry>
+            </row>
+            <row>
+              <entry>emedications.06</entry>
+              <entry>3706053</entry>
+              <entry>Units per Kilogram (units/kg)</entry>
+              <entry>Yes</entry>
+              <entry>{unit}/kg</entry>
+              <entry> </entry>
+            </row>
+            <row>
+              <entry>emedications.06</entry>
+              <entry>3706047</entry>
+              <entry>Micrograms per Kilogram (mcg/kg)</entry>
+              <entry>Yes</entry>
+              <entry>ug/kg</entry>
+              <entry> </entry>
+            </row>
+            <row>
+              <entry>emedications.06</entry>
+              <entry>3706045</entry>
+              <entry>Units per Hour (units/hr)</entry>
+              <entry>Yes</entry>
+              <entry>{unit}/h</entry>
+              <entry> </entry>
+            </row>
+            <row>
+              <entry>emedications.06</entry>
+              <entry>3706043</entry>
+              <entry>Puffs</entry>
+              <entry>Yes</entry>
+              <entry>1</entry>
+              <entry>substanceAdministration.administrationUnitCode = PUFF; codeSystem
+                =2.16.840.1.113883.1.11.14570</entry>
+            </row>
+            <row>
+              <entry>emedications.06</entry>
+              <entry>3706041</entry>
+              <entry>Milligrams per Minute (mg/min)</entry>
+              <entry>Yes</entry>
+              <entry>mg/min</entry>
+              <entry> </entry>
+            </row>
+            <row>
+              <entry>emedications.06</entry>
+              <entry>3706039</entry>
+              <entry>Milligrams per Kilogram (mg/kg)</entry>
+              <entry>Yes</entry>
+              <entry>mg/kg</entry>
+              <entry> </entry>
+            </row>
+            <row>
+              <entry>emedications.06</entry>
+              <entry>3706037</entry>
+              <entry>Micrograms per Minute (mcg/min)</entry>
+              <entry>Yes</entry>
+              <entry>ug/min</entry>
+              <entry> </entry>
+            </row>
+            <row>
+              <entry>emedications.06</entry>
+              <entry>3114017</entry>
+              <entry>Liters Per Minute (LPM [gas])</entry>
+              <entry>Yes</entry>
+              <entry>L/min</entry>
+              <entry> </entry>
+            </row>
+            <row>
+              <entry>emedications.06</entry>
+              <entry>3114005</entry>
+              <entry>Drops (gtts)</entry>
+              <entry>Yes</entry>
+              <entry>[drp]</entry>
+              <entry> </entry>
+            </row>
+            <row>
+              <entry>emedications.06</entry>
+              <entry>3706003</entry>
+              <entry>Inches</entry>
+              <entry>Yes</entry>
+              <entry>[in_i]</entry>
+              <entry> </entry>
+            </row>
+            <row>
+              <entry>emedications.06</entry>
+              <entry>3706005</entry>
+              <entry>International Units</entry>
+              <entry>Yes</entry>
+              <entry>[iU]</entry>
+              <entry> </entry>
+            </row>
+            <row>
+              <entry>emedications.06</entry>
+              <entry>3706007</entry>
+              <entry>Keep Vein Open (To Keep Open)</entry>
+              <entry>No</entry>
+              <entry> </entry>
+              <entry>substanceAdministration.value.nullFlavor = QS (sufficient quantity); codeSystem
+                = 2.16.840.1.113883.5.1008</entry>
+            </row>
+            <row>
+              <entry>emedications.06</entry>
+              <entry>3706011</entry>
+              <entry>Liters Per Minute</entry>
+              <entry>Yes</entry>
+              <entry>L/min</entry>
+              <entry> </entry>
+            </row>
+            <row>
+              <entry>emedications.06</entry>
+              <entry>3706013</entry>
+              <entry>MDI Puffs</entry>
+              <entry>Yes</entry>
+              <entry>1</entry>
+              <entry>substanceAdministration.administrationUnitCode = PUFF; codeSystem
+                =2.16.840.1.113883.1.11.14570; originalText="MDI Puffs"</entry>
+            </row>
+            <row>
+              <entry>emedications.06</entry>
+              <entry>3706015</entry>
+              <entry>Micrograms</entry>
+              <entry>Yes</entry>
+              <entry>ug</entry>
+              <entry> </entry>
+            </row>
+            <row>
+              <entry>emedications.06</entry>
+              <entry>3706017</entry>
+              <entry>Micrograms per Kilogram per Minute</entry>
+              <entry>Yes</entry>
+              <entry>ug/kg/min</entry>
+              <entry> </entry>
+            </row>
+            <row>
+              <entry>emedications.06</entry>
+              <entry>3706019</entry>
+              <entry>Milliequivalents</entry>
+              <entry>Yes</entry>
+              <entry>meq</entry>
+              <entry> </entry>
+            </row>
+            <row>
+              <entry>emedications.06</entry>
+              <entry>3706021</entry>
+              <entry>Milligrams</entry>
+              <entry>Yes</entry>
+              <entry>mg</entry>
+              <entry> </entry>
+            </row>
+            <row>
+              <entry>emedications.06</entry>
+              <entry>3706023</entry>
+              <entry>Milligrams Per Kilogram Per Minute</entry>
+              <entry>Yes</entry>
+              <entry>mg/kg/min</entry>
+              <entry> </entry>
+            </row>
+            <row>
+              <entry>emedications.06</entry>
+              <entry>3706025</entry>
+              <entry>Milliliters</entry>
+              <entry>Yes</entry>
+              <entry>mL</entry>
+              <entry> </entry>
+            </row>
+            <row>
+              <entry>emedications.06</entry>
+              <entry>3706027</entry>
+              <entry>Milliliters Per Hour</entry>
+              <entry>Yes</entry>
+              <entry>mL/h</entry>
+              <entry> </entry>
+            </row>
+            <row>
+              <entry>emedications.06</entry>
+              <entry>3706029</entry>
+              <entry>Other</entry>
+              <entry>Yes</entry>
+              <entry>1</entry>
+              <entry>substanceAdministration.value.units = OTH; codeSystem =
+                2.16.840.1.113883.5.1008</entry>
+            </row>
+            <row>
+              <entry>ehistory.14</entry>
+              <entry>3114001</entry>
+              <entry>cm</entry>
+              <entry>Yes</entry>
+              <entry>cm</entry>
+              <entry> </entry>
+            </row>
+            <row>
+              <entry>ehistory.14</entry>
+              <entry>3114003</entry>
+              <entry>gms</entry>
+              <entry>Yes</entry>
+              <entry>g</entry>
+              <entry> </entry>
+            </row>
+            <row>
+              <entry>ehistory.14</entry>
+              <entry>3114005</entry>
+              <entry>gtts (drops)</entry>
+              <entry>Yes</entry>
+              <entry>1</entry>
+              <entry>substanceAdministration.administrationUnitCode = DROP; codeSystem =
+                2.16.840.1.113883.1.11.14420</entry>
+            </row>
+            <row>
+              <entry>ehistory.14</entry>
+              <entry>3114007</entry>
+              <entry>inches</entry>
+              <entry>Yes</entry>
+              <entry>[in_i]</entry>
+              <entry> </entry>
+            </row>
+            <row>
+              <entry>ehistory.14</entry>
+              <entry>3114009</entry>
+              <entry>iu</entry>
+              <entry>Yes</entry>
+              <entry>[iU]</entry>
+              <entry> </entry>
+            </row>
+            <row>
+              <entry>ehistory.14</entry>
+              <entry>3114011</entry>
+              <entry>kvo (keep vein open)</entry>
+              <entry>No</entry>
+              <entry> </entry>
+              <entry>substanceAdministration.value.nullFlavor = QS (sufficient quantity); codeSystem
+                = 2.16.840.1.113883.5.1008</entry>
+            </row>
+            <row>
+              <entry>ehistory.14</entry>
+              <entry>3114013</entry>
+              <entry>l/min (fluid administration)</entry>
+              <entry>Yes</entry>
+              <entry>L/min</entry>
+              <entry> </entry>
+            </row>
+            <row>
+              <entry>ehistory.14</entry>
+              <entry>3114015</entry>
+              <entry>liters</entry>
+              <entry>Yes</entry>
+              <entry>L</entry>
+              <entry> </entry>
+            </row>
+            <row>
+              <entry>ehistory.14</entry>
+              <entry>3114017</entry>
+              <entry>LPM (gas administration)</entry>
+              <entry>Yes</entry>
+              <entry>L/min</entry>
+              <entry> </entry>
+            </row>
+            <row>
+              <entry>ehistory.14</entry>
+              <entry>3114019</entry>
+              <entry>mcg</entry>
+              <entry>Yes</entry>
+              <entry>ug</entry>
+              <entry> </entry>
+            </row>
+            <row>
+              <entry>ehistory.14</entry>
+              <entry>3114021</entry>
+              <entry>mcg/kg/min</entry>
+              <entry>Yes</entry>
+              <entry>ug/kg/min</entry>
+              <entry> </entry>
+            </row>
+            <row>
+              <entry>ehistory.14</entry>
+              <entry>3114023</entry>
+              <entry>mcg/min</entry>
+              <entry>Yes</entry>
+              <entry>ug/min</entry>
+              <entry> </entry>
+            </row>
+            <row>
+              <entry>ehistory.14</entry>
+              <entry>3114025</entry>
+              <entry>meq</entry>
+              <entry>Yes</entry>
+              <entry>meq</entry>
+              <entry> </entry>
+            </row>
+            <row>
+              <entry>ehistory.14</entry>
+              <entry>3114027</entry>
+              <entry>metered dose</entry>
+              <entry>Yes</entry>
+              <entry>1</entry>
+              <entry>substanceAdministration.value.units = OTH; codeSystem =
+                2.16.840.1.113883.5.1008</entry>
+            </row>
+            <row>
+              <entry>ehistory.14</entry>
+              <entry>3114029</entry>
+              <entry>mg</entry>
+              <entry>Yes</entry>
+              <entry>mg</entry>
+              <entry> </entry>
+            </row>
+            <row>
+              <entry>ehistory.14</entry>
+              <entry>3114031</entry>
+              <entry>mg/kg</entry>
+              <entry>Yes</entry>
+              <entry>mg/kg</entry>
+              <entry> </entry>
+            </row>
+            <row>
+              <entry>ehistory.14</entry>
+              <entry>3114033</entry>
+              <entry>mg/kg/min</entry>
+              <entry>Yes</entry>
+              <entry>mg/kg/min</entry>
+              <entry> </entry>
+            </row>
+            <row>
+              <entry>ehistory.14</entry>
+              <entry>3114035</entry>
+              <entry>mg/min</entry>
+              <entry>Yes</entry>
+              <entry>mg/min</entry>
+              <entry> </entry>
+            </row>
+            <row>
+              <entry>ehistory.14</entry>
+              <entry>3114037</entry>
+              <entry>ml</entry>
+              <entry>Yes</entry>
+              <entry>mL</entry>
+              <entry> </entry>
+            </row>
+            <row>
+              <entry>ehistory.14</entry>
+              <entry>3114039</entry>
+              <entry>ml/hr</entry>
+              <entry>Yes</entry>
+              <entry>mL/h</entry>
+              <entry> </entry>
+            </row>
+            <row>
+              <entry>ehistory.14</entry>
+              <entry>3114041</entry>
+              <entry>other (Not Listed)</entry>
+              <entry>Yes</entry>
+              <entry>1</entry>
+              <entry>substanceAdministration.value.units = OTH; codeSystem =
+                2.16.840.1.113883.5.1008</entry>
+            </row>
+            <row>
+              <entry>ehistory.14</entry>
+              <entry>3114043</entry>
+              <entry>puffs</entry>
+              <entry>Yes</entry>
+              <entry>1</entry>
+              <entry>substanceAdministration.administrationUnitCode = PUFF; codeSystem
+                =2.16.840.1.113883.1.11.14570</entry>
+            </row>
+            <row>
+              <entry>ehistory.14</entry>
+              <entry>3114045</entry>
+              <entry>units/hr</entry>
+              <entry>Yes</entry>
+              <entry>1/h</entry>
+              <entry> </entry>
+            </row>
+            <row>
+              <entry>epatient.16</entry>
+              <entry>2516001</entry>
+              <entry>Days</entry>
+              <entry>Yes</entry>
+              <entry>d</entry>
+              <entry> </entry>
+            </row>
+            <row>
+              <entry>epatient.16</entry>
+              <entry>2516003</entry>
+              <entry>Hours</entry>
+              <entry>Yes</entry>
+              <entry>h</entry>
+              <entry> </entry>
+            </row>
+            <row>
+              <entry>epatient.16</entry>
+              <entry>2516005</entry>
+              <entry>Minutes</entry>
+              <entry>Yes</entry>
+              <entry>min</entry>
+              <entry> </entry>
+            </row>
+            <row>
+              <entry>epatient.16</entry>
+              <entry>2516007</entry>
+              <entry>Months</entry>
+              <entry>Yes</entry>
+              <entry>mo</entry>
+              <entry> </entry>
+            </row>
+            <row>
+              <entry>epatient.16</entry>
+              <entry>2516009</entry>
+              <entry>Years</entry>
+              <entry>Yes</entry>
+              <entry>a</entry>
+              <entry> </entry>
+            </row>
+            <row>
+              <entry>esituation.06</entry>
+              <entry>2806001</entry>
+              <entry>Seconds</entry>
+              <entry>Yes</entry>
+              <entry>s</entry>
+              <entry> </entry>
+            </row>
+            <row>
+              <entry>esituation.06</entry>
+              <entry>2806003</entry>
+              <entry>Minutes</entry>
+              <entry>Yes</entry>
+              <entry>min</entry>
+              <entry> </entry>
+            </row>
+            <row>
+              <entry>esituation.06</entry>
+              <entry>2806005</entry>
+              <entry>Hours</entry>
+              <entry>Yes</entry>
+              <entry>h</entry>
+              <entry> </entry>
+            </row>
+            <row>
+              <entry>esituation.06</entry>
+              <entry>2806007</entry>
+              <entry>Days</entry>
+              <entry>Yes</entry>
+              <entry>d</entry>
+              <entry> </entry>
+            </row>
+            <row>
+              <entry>esituation.06</entry>
+              <entry>2806009</entry>
+              <entry>Weeks</entry>
+              <entry>Yes</entry>
+              <entry>wk</entry>
+              <entry> </entry>
+            </row>
+            <row>
+              <entry>esituation.06</entry>
+              <entry>2806011</entry>
+              <entry>Months</entry>
+              <entry>Yes</entry>
+              <entry>mo</entry>
+              <entry> </entry>
+            </row>
+            <row>
+              <entry>esituation.06</entry>
+              <entry>2806013</entry>
+              <entry>Years</entry>
+              <entry>Yes</entry>
+              <entry>a</entry>
+              <entry> </entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+    </p>
+  </body>
+</topic>

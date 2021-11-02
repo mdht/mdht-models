@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN"
+ "topic.dtd">
+<topic id="topicId" xml:lang="en-us">
+    
+    
+    <title>Unresolved Ballot Comments</title>
+    <body>
+        <p>The following negative comments were made during the balloting 
+            process. Although the document passed the ballot, the 
+            commenter felt that the comment was not adequately addressed.</p>
+        <ul>
+            <li>Comment: All the templates in this IG appear to be missing inline 
+                XML examples. Examples are the chief means for helping 
+                developers implement a standards. The presence of such 
+                inline examples is one of the Structured Documents CDA IG 
+                Quality Criteria. Please provide incline examples for all 
+                templates</li>
+            <li>Disposition: Examples were not in scope for this ballot. We 
+                will consider adding inline examples in the future. It would be 
+                helpful if SD were to provide guidance to tool developers on 
+                how to parse macro examples into inline examples in order to 
+                avoid duplicative manual maintenance.
+            </li>
+        </ul>
+        
+        
+    </body>
+</topic>
+
+

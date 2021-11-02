@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE bookmap PUBLIC "-//OASIS//DTD DITA BookMap//EN" "bookmap.dtd">
+<bookmap id="cdabook">
+
+	<chapter href="Appendices.dita" navtitle="APPENDICES" type="topic">
+		<topicref href="dmvoids.dita" navtitle="Object Identifiers For State Motor Vehicle Administrators" type="topic"/>
+		<topicref href="nullnegativemap.dita" navtitle="Nulls And Negative Action Values" type="topic"/>
+		<topicref href="units.dita" navtitle="UCUM Unit Mappings" type="topic"/>
+		<topicref href="routes.dita" navtitle="FDA Route Mappings" type="topic"/>
+		<!--  <topicref href="comment.dita" navtitle="Unresolved ballot comments" type="topic"/> -->
+	</chapter>
+	
+</bookmap>
