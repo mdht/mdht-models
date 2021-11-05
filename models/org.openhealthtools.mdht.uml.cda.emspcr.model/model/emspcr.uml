@@ -304,88 +304,94 @@ selected for the NEMSIS question. Further, the CDA model includes a single race 
             <ownedAttribute xmi:id="_ppT5kHtAEeGs2I-Db78R9w" name="administrativeGenderCode" visibility="private" aggregation="composite">
               <ownedComment xmi:id="_ut-GQHtAEeGs2I-Db78R9w">
                 <body>NEMSIS Trace: EPatient.13&#xD;
-&#xD;
-  &lt;title>Gender Code Equivalence&lt;/title>&#xD;
-    &lt;table>&#xD;
-        &lt;tgroup cols=&quot;6&quot;>&#xD;
-            &lt;thead>&#xD;
-                &lt;row>&#xD;
-                    &lt;entry>NEMSIS code&lt;/entry>&#xD;
-                    &lt;entry>NEMSIS term&lt;/entry>&#xD;
-                    &lt;entry>CDA code&lt;/entry>&#xD;
-                    &lt;entry>CDA Term&lt;/entry>&#xD;
-                    &lt;entry>CDA System&lt;/entry>&#xD;
-                    &lt;entry>Other Parameters&lt;/entry>&#xD;
-                &lt;/row>&#xD;
-            &lt;/thead>&#xD;
-            &lt;tbody>&#xD;
-                &lt;row>&#xD;
-                    &lt;entry>&#xD;
-                        9906001 &#xD;
-                    &lt;/entry>&#xD;
-                    &lt;entry>Female&lt;/entry>&#xD;
-                    &lt;entry>F&lt;/entry>&#xD;
-                    &lt;entry>Female&lt;/entry>&#xD;
-                    &lt;entry>2.16.840.1.113883.5.1&lt;/entry>&#xD;
-                    &lt;entry>&lt;/entry>&#xD;
-                &lt;/row>&#xD;
-                &lt;row>&#xD;
-                    &lt;entry>9906003 &lt;/entry>&#xD;
-                    &lt;entry>Male&lt;/entry>&#xD;
-                    &lt;entry>M&lt;/entry>&#xD;
-                    &lt;entry>Male&lt;/entry>&#xD;
-                    &lt;entry>2.16.840.1.113883.5.1&lt;/entry>&#xD;
-                    &lt;entry>&lt;/entry>&#xD;
-                &lt;/row>&#xD;
-                &lt;row>&#xD;
-                    &lt;entry>&#xD;
-                        9906007 &#xD;
-                    &lt;/entry>&#xD;
-                    &lt;entry>&#xD;
-                        Female-to-Male, Transgender Male&#xD;
-                    &lt;/entry>&#xD;
-                    &lt;entry>M&lt;/entry>&#xD;
-                    &lt;entry>Male&lt;/entry>&#xD;
-                    &lt;entry>2.16.840.1.113883.5.1&lt;/entry>&#xD;
-                    &lt;entry>&amp;lt;translation code =&quot;9906007&quot; displayName=&quot;Female-to-Male, Transgender&#xD;
-                        Male&quot; codeSystem=&quot;2.16.840.1.1133883.17.3.12&quot;> &lt;/entry>&#xD;
-                &lt;/row>&#xD;
-                &lt;row>&#xD;
-                    &lt;entry>&#xD;
-                        9906009 &#xD;
-                    &lt;/entry>&#xD;
-                    &lt;entry>&#xD;
-                        Male-to-Female, Transgender Female&#xD;
-                    &lt;/entry>&#xD;
-                    &lt;entry>F&lt;/entry>&#xD;
-                    &lt;entry>Female&lt;/entry>&#xD;
-                    &lt;entry>2.16.840.1.113883.5.1&lt;/entry>&#xD;
-                    &lt;entry>&amp;lt;translation code =&quot;9906007&quot; displayName=&quot;Male-to-Female, Transgender&#xD;
-                        Female&quot; codeSystem=&quot;2.16.840.1.1133883.17.3.12&quot;>&lt;/entry>&#xD;
-                &lt;/row>&#xD;
-                &lt;row>&#xD;
-                    &lt;entry>&#xD;
-                        9906011 &#xD;
-                    &lt;/entry>&#xD;
-                    &lt;entry>&#xD;
-                        Other, neither exclusively male or female&#xD;
-                    &lt;/entry>&#xD;
-                    &lt;entry>&lt;/entry>&#xD;
-                    &lt;entry>&lt;/entry>&#xD;
-                    &lt;entry>&lt;/entry>&#xD;
-                    &lt;entry>NullFlavor=&quot;OTH&quot;&lt;/entry>&#xD;
-                &lt;/row>&#xD;
-                &lt;row>&#xD;
-                    &lt;entry>9906005 &lt;/entry>&#xD;
-                    &lt;entry>Unknown (Unable to Determine)&lt;/entry>&#xD;
-                    &lt;entry>&lt;/entry>&#xD;
-                    &lt;entry>&lt;/entry>&#xD;
-                    &lt;entry>&lt;/entry>&#xD;
-                    &lt;entry>NullFlavor=&quot;UNK&quot;&lt;/entry>&#xD;
-                &lt;/row>&#xD;
-            &lt;/tbody>&#xD;
-        &lt;/tgroup>&#xD;
-    &lt;/table></body>
+
+		&lt;table scale=&quot;60&quot; colsep=&quot;1&quot; rowsep=&quot;1&quot; frame=&quot;all&quot;>
+&lt;tgroup cols=&quot;6&quot;>
+&lt;colspec colname=&quot;COLSPEC0&quot; colwidth=&quot;50*&quot;/>
+&lt;colspec colname=&quot;COLSPEC1&quot; colwidth=&quot;50*&quot;/>
+&lt;colspec colname=&quot;COLSPEC2&quot; colwidth=&quot;50*&quot;/>
+&lt;colspec colname=&quot;COLSPEC3&quot; colwidth=&quot;50*&quot;/>
+&lt;colspec colname=&quot;COLSPEC4&quot; colwidth=&quot;130*&quot;/>
+&lt;colspec colname=&quot;COLSPEC5&quot; colwidth=&quot;80*&quot;/>
+ &lt;thead>
+&lt;row>
+&lt;entry colname=&quot;COLSPEC0&quot; valign=&quot;top&quot;>NEMSIS Code&lt;/entry>
+&lt;entry colname=&quot;COLSPEC1&quot; valign=&quot;top&quot;>NEMSIS Term&lt;/entry>
+&lt;entry colname=&quot;COLSPEC2&quot; valign=&quot;top&quot;>CDA Code&lt;/entry>
+&lt;entry colname=&quot;COLSPEC3&quot; valign=&quot;top&quot;>CDA Term&lt;/entry>
+&lt;entry colname=&quot;COLSPEC4&quot; valign=&quot;top&quot;>CDA System&lt;/entry>
+&lt;entry colname=&quot;COLSPEC5&quot; valign=&quot;top&quot;>Other Parameters&lt;/entry>
+
+&lt;/row>
+&lt;/thead>
+&lt;tbody>
+ 		&lt;row>
+			&lt;entry>
+				9906001 
+			&lt;/entry>
+			&lt;entry>Female&lt;/entry>
+			&lt;entry>F&lt;/entry>
+			&lt;entry>Female&lt;/entry>
+			&lt;entry>2.16.840.1.113883.5.1&lt;/entry>
+			&lt;entry>&lt;/entry>
+		&lt;/row>
+	
+	
+			&lt;row>
+			&lt;entry>9906003 &lt;/entry>
+			&lt;entry>Male&lt;/entry>
+			&lt;entry>M&lt;/entry>
+			&lt;entry>Male&lt;/entry>
+			&lt;entry>2.16.840.1.113883.5.1&lt;/entry>
+			&lt;entry>&lt;/entry>
+		&lt;/row>
+		&lt;row>
+			&lt;entry>
+				&lt;p>9906007 &lt;/p>
+			&lt;/entry>
+			&lt;entry>
+				&lt;p>Female-to-Male, Transgender Male&lt;/p>
+			&lt;/entry>
+			&lt;entry>M&lt;/entry>
+			&lt;entry>Male&lt;/entry>
+			&lt;entry>2.16.840.1.113883.5.1&lt;/entry>
+			&lt;entry>&lt;/entry>
+		&lt;/row>
+		&lt;row>
+			&lt;entry>
+				&lt;p>9906009 &lt;/p>
+			&lt;/entry>
+			&lt;entry>
+				&lt;p>Male-to-Female, Transgender Female&lt;/p>
+			&lt;/entry>
+			&lt;entry>F&lt;/entry>
+			&lt;entry>Female&lt;/entry>
+			&lt;entry>2.16.840.1.113883.5.1&lt;/entry>
+			&lt;entry>&lt;/entry>
+		&lt;/row>
+		&lt;row>
+			&lt;entry>
+				&lt;p>9906011 &lt;/p>
+			&lt;/entry>
+			&lt;entry>
+				&lt;p>Other, neither exclusively male or female&lt;/p>
+			&lt;/entry>
+			&lt;entry>&lt;/entry>
+			&lt;entry>&lt;/entry>
+			&lt;entry>&lt;/entry>
+			&lt;entry>NullFlavor=&amp;quot;OTH&amp;quot;&lt;/entry>
+		&lt;/row>
+		&lt;row>
+			&lt;entry>9906005 &lt;/entry>
+			&lt;entry>Unknown (Unable to Determine)&lt;/entry>
+			&lt;entry>&lt;/entry>
+			&lt;entry>&lt;/entry>
+			&lt;entry>&lt;/entry>
+			&lt;entry>NullFlavor=&amp;quot;UNK&amp;quot;&lt;/entry>
+		&lt;/row>
+&lt;/tbody>
+&lt;/tgroup>
+&lt;/table></body>
               </ownedComment>
               <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
               <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rVDpsXtAEeGs2I-Db78R9w" value="1"/>
