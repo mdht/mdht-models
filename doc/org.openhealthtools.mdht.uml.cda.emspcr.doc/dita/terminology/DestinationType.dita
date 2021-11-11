@@ -8,7 +8,8 @@
 <body>
 <!-- THIS IS GENERATED CONTENT, DO NOT EDIT -->
 <section id="definition">
-<table><tgroup cols="2">
+<table frame="all" rowsep="1" colsep="1">
+<tgroup cols="2">
 <colspec colname="col1" colwidth="1*"/>
 <colspec colname="col2" colwidth="4*"/>
 <tbody>
@@ -16,7 +17,8 @@
 <row><entry>Code System</entry><entry>LOINC - 2.16.840.1.113883.6.1</entry></row>
 <row><entry>Definition</entry><entry>Kind of facility</entry></row>
 </tbody></tgroup></table>
-<table><tgroup cols="3">
+<table frame="all" rowsep="1" colsep="1">
+<tgroup cols="3">
 <colspec colname="col1" colwidth="1*"/>
 <colspec colname="col2" colwidth="1*"/>
 <colspec colname="col3" colwidth="2*"/>
@@ -26,13 +28,23 @@
 <row><entry>LA11504-0</entry><entry>LOINC</entry><entry>Hospital emergency department</entry></row>
 <row><entry>LA14084-0</entry><entry>LOINC</entry><entry>Home</entry></row>
 <row><entry>LA18686-8</entry><entry>LOINC</entry><entry>Hospital non-emergency department bed</entry></row>
-<row><entry>LA18687-6</entry><entry>LOINC</entry><entry>Medical office/clinic</entry></row>
+<row><entry>LA18687-6</entry><entry>LOINC</entry><entry>Clinic</entry></row>
 <row><entry>LA18688-4</entry><entry>LOINC</entry><entry>Morgue/mortuary</entry></row>
-<row><entry>LA18689-2</entry><entry>LOINC</entry><entry>Nursing home/assisted living facility</entry></row>
 <row><entry>LA18690-0</entry><entry>LOINC</entry><entry>Other destination</entry></row>
 <row><entry>LA18691-8</entry><entry>LOINC</entry><entry>Other EMS responder (air)</entry></row>
 <row><entry>LA18692-6</entry><entry>LOINC</entry><entry>Other EMS responder (ground)</entry></row>
 <row><entry>LA18693-4</entry><entry>LOINC</entry><entry>Police/jail</entry></row>
+<row><entry>LA24393-3</entry><entry>LOINC</entry><entry>Freestanding Emergency Department</entry></row>
+<row><entry>LA24392-5</entry><entry>LOINC</entry><entry>Urgent Care</entry></row>
+<row><entry>NewLA-4221031</entry><entry>LOINC</entry><entry>Mental Health Facility</entry></row>
+<row><entry>NewLA-4221027</entry><entry>LOINC</entry><entry>Diagnostic Services</entry></row>
+<row><entry>NewLA-4221029</entry><entry>LOINC</entry><entry>Assisted Living Facility</entry></row>
+<row><entry>NewLA-4221025</entry><entry>LOINC</entry><entry>Dialysis Center</entry></row>
+<row><entry>NewLA-4221039</entry><entry>LOINC</entry><entry>Drug and/or Alcohol Rehabilitation Facility</entry></row>
+<row><entry>NewLA-4221041</entry><entry>LOINC</entry><entry>Skilled Nursing Facility</entry></row>
+<row><entry>NewLA-4221037</entry><entry>LOINC</entry><entry>Physical Rehabilitation Facility</entry></row>
+<row><entry>NewLA-4221035</entry><entry>LOINC</entry><entry>Other Recurring Care Center</entry></row>
+<row><entry>NewLA-4221033</entry><entry>LOINC</entry><entry>Nursing Home</entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

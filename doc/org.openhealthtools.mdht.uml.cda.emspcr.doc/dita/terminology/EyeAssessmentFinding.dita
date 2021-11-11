@@ -8,7 +8,8 @@
 <body>
 <!-- THIS IS GENERATED CONTENT, DO NOT EDIT -->
 <section id="definition">
-<table><tgroup cols="2">
+<table frame="all" rowsep="1" colsep="1">
+<tgroup cols="2">
 <colspec colname="col1" colwidth="1*"/>
 <colspec colname="col2" colwidth="4*"/>
 <tbody>
@@ -16,7 +17,8 @@
 <row><entry>Code System</entry><entry>LOINC - 2.16.840.1.113883.6.1</entry></row>
 <row><entry>Definition</entry><entry>Finding resulting from EMS eye assessment</entry></row>
 </tbody></tgroup></table>
-<table><tgroup cols="3">
+<table frame="all" rowsep="1" colsep="1">
+<tgroup cols="3">
 <colspec colname="col1" colwidth="1*"/>
 <colspec colname="col2" colwidth="1*"/>
 <colspec colname="col3" colwidth="2*"/>
@@ -49,6 +51,13 @@
 <row><entry>LA18257-8</entry><entry>LOINC</entry><entry>Sluggish</entry></row>
 <row><entry>LA18258-6</entry><entry>LOINC</entry><entry>8 mm or ></entry></row>
 <row><entry>LA6630-3</entry><entry>LOINC</entry><entry>Not done</entry></row>
+<row><entry>LA7423-2</entry><entry>LOINC</entry><entry>Contusion</entry></row>
+<row><entry>LA18252-9</entry><entry>LOINC</entry><entry>Glaucoma Present</entry></row>
+<row><entry>LA17283-5</entry><entry>LOINC</entry><entry>Hyphema</entry></row>
+<row><entry>LA17214-0</entry><entry>LOINC</entry><entry>Puncture/Stab Wound</entry></row>
+<row><entry>LA22440-4</entry><entry>LOINC</entry><entry>Swelling</entry></row>
+<row><entry>NewLA-3518061</entry><entry>LOINC</entry><entry>Dilated</entry></row>
+<row><entry>NewLA-3518063</entry><entry>LOINC</entry><entry>Pin Point</entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

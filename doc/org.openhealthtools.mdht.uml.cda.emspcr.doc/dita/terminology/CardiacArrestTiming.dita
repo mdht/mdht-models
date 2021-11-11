@@ -8,23 +8,26 @@
 <body>
 <!-- THIS IS GENERATED CONTENT, DO NOT EDIT -->
 <section id="definition">
-<table><tgroup cols="2">
+<table frame="all" rowsep="1" colsep="1">
+<tgroup cols="2">
 <colspec colname="col1" colwidth="1*"/>
 <colspec colname="col2" colwidth="4*"/>
 <tbody>
 <row><entry>Value Set</entry><entry>CardiacArrestTiming - 2.16.840.1.113883.17.3.11.91</entry></row>
 <row><entry>Code System</entry><entry>LOINC - 2.16.840.1.113883.6.1</entry></row>
+<row><entry>Version</entry><entry>2022</entry></row>
 <row><entry>Definition</entry><entry>Whether cardiac arrest occurred before or after arrival of emergency medical service team</entry></row>
 </tbody></tgroup></table>
-<table><tgroup cols="3">
+<table frame="all" rowsep="1" colsep="1">
+<tgroup cols="3">
 <colspec colname="col1" colwidth="1*"/>
 <colspec colname="col2" colwidth="1*"/>
 <colspec colname="col3" colwidth="2*"/>
 <thead><row>
 <entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
 </row></thead><tbody>
-<row><entry>LA17054-0</entry><entry>LOINC</entry><entry>Prior to EMS arrival</entry></row>
-<row><entry>LA17055-7</entry><entry>LOINC</entry><entry>After EMS arrival</entry></row>
+<row><entry>LA17054-0</entry><entry>LOINC</entry><entry>Yes, Prior to Any EMS Arrival (includes Transport EMS & Medical First Responders)</entry></row>
+<row><entry>LA17055-7</entry><entry>LOINC</entry><entry>Yes, After Any EMS Arrival (includes Transport EMS & Medical First Responders)</entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

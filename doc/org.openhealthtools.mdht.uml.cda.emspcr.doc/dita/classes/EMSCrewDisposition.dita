@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>EMS Crew Disposition</title>
+<shortdesc conref="generated/_EMSCrewDisposition.dita#classId/shortdesc"></shortdesc>
+<prolog conref="generated/_EMSCrewDisposition.dita#classId/prolog"></prolog>
+<body>
+<section conref="generated/_EMSCrewDisposition.dita#classId/knownSubclasses">
+</section>
+<!-- TODO: insert non-model class description markup here -->
+<section conref="generated/_EMSCrewDisposition.dita#classId/description">
+</section>
+<section audience="contextTable" conref="generated/_EMSCrewDisposition.dita#classId/contextTable">
+</section>
+<!-- TODO: insert UML class diagram here -->
+
+<ol audience="standards" conref="generated/_EMSCrewDisposition.dita#classId/conformance">
+<li></li>
+</ol>
+<ol audience="developer" conref="generated/_EMSCrewDisposition.dita#classId/aggregate">
+<li></li>
+</ol>
+<section audience="tableconformance"  conref="generated/_EMSCrewDisposition.dita#classId/tableconformance">
+</section>
+<p> </p>
+<p><b>EMS Crew Disposition example</b></p>
+<!-- TODO: insert custom instance example here -->
+<!-- generated instance example follows -->
+<codeblock conref="generated/_EMSCrewDisposition.dita#classId/example">
+</codeblock>
+</body>
+</topic>

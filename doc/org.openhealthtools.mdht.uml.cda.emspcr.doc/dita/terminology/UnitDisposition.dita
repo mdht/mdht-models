@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Unit Disposition</title>
+<prolog id="prolog">
+<resourceid id="2.16.840.1.113883.17.3.11.112"/>
+</prolog>
+<body>
+<!-- THIS IS GENERATED CONTENT, DO NOT EDIT -->
+<section id="definition">
+<table frame="all" rowsep="1" colsep="1">
+<tgroup cols="2">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="4*"/>
+<tbody>
+<row><entry>Value Set</entry><entry>Unit Disposition - 2.16.840.1.113883.17.3.11.112</entry></row>
+</tbody></tgroup></table>
+<table frame="all" rowsep="1" colsep="1">
+<tgroup cols="3">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="1*"/>
+<colspec colname="col3" colwidth="2*"/>
+<thead><row>
+<entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
+</row></thead><tbody>
+<row><entry>newLA4227003</entry><entry>MISSING</entry><entry>Cancelled on Scene</entry></row>
+<row><entry>newLA4227005</entry><entry>MISSING</entry><entry>Cancelled Prior to Arrival at Scene</entry></row>
+<row><entry>newLA4227007</entry><entry>MISSING</entry><entry>No Patient Contact</entry></row>
+<row><entry>newLA4227009NewCode</entry><entry>MISSING</entry><entry>No Patient Found</entry></row>
+<row><entry>newLA4227011</entry><entry>MISSING</entry><entry>Non-Patient Incident (Not Otherwise Listed)</entry></row>
+<row><entry>newLA4227001</entry><entry>MISSING</entry><entry>Patient Contact Made</entry></row>
+</tbody></tgroup></table>
+</section>
+</body>
+</topic>

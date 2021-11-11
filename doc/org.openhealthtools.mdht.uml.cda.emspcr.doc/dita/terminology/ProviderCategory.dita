@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Provider Category</title>
+<prolog id="prolog">
+<resourceid id="2.16.840.1.113883.17.3.11.110"/>
+</prolog>
+<body>
+<!-- THIS IS GENERATED CONTENT, DO NOT EDIT -->
+<section id="definition">
+<table frame="all" rowsep="1" colsep="1">
+<tgroup cols="2">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="4*"/>
+<tbody>
+<row><entry>Value Set</entry><entry>ProviderCategory - 2.16.840.1.113883.17.3.11.110</entry></row>
+<row><entry>Definition</entry><entry>Classification of person, EMS or otherwise, providing care</entry></row>
+</tbody></tgroup></table>
+<table frame="all" rowsep="1" colsep="1">
+<tgroup cols="3">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="1*"/>
+<colspec colname="col3" colwidth="2*"/>
+<thead><row>
+<entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
+</row></thead><tbody>
+<row><entry>NewLA-3006001</entry><entry></entry><entry>Family Member</entry></row>
+<row><entry>NewLA-3006003</entry><entry></entry><entry>First Responder (Fire, Law, EMS)</entry></row>
+<row><entry>NewLA-3006005</entry><entry></entry><entry>Healthcare Professional (Non-EMS)</entry></row>
+<row><entry>NewLA-3006007</entry><entry></entry><entry>Lay Person (Non-Family)</entry></row>
+<row><entry>NewLA-3006009</entry><entry></entry><entry>Other EMS Professional (not part of dispatched response)</entry></row>
+</tbody></tgroup></table>
+</section>
+</body>
+</topic>

@@ -8,7 +8,8 @@
 <body>
 <!-- THIS IS GENERATED CONTENT, DO NOT EDIT -->
 <section id="definition">
-<table><tgroup cols="2">
+<table frame="all" rowsep="1" colsep="1">
+<tgroup cols="2">
 <colspec colname="col1" colwidth="1*"/>
 <colspec colname="col2" colwidth="4*"/>
 <tbody>
@@ -16,7 +17,8 @@
 <row><entry>Code System</entry><entry>LOINC - 2.16.840.1.113883.6.1</entry></row>
 <row><entry>Definition</entry><entry>Category of service requested of an EMS agency</entry></row>
 </tbody></tgroup></table>
-<table><tgroup cols="3">
+<table frame="all" rowsep="1" colsep="1">
+<tgroup cols="3">
 <colspec colname="col1" colwidth="1*"/>
 <colspec colname="col2" colwidth="1*"/>
 <colspec colname="col3" colwidth="2*"/>
@@ -24,12 +26,24 @@
 <entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
 </row></thead><tbody>
 <row><entry>LA17150-6</entry><entry>LOINC</entry><entry>Standby</entry></row>
-<row><entry>LA18715-5</entry><entry>LOINC</entry><entry>911 response (scene)</entry></row>
-<row><entry>LA18716-3</entry><entry>LOINC</entry><entry>Intercept</entry></row>
-<row><entry>LA18717-1</entry><entry>LOINC</entry><entry>Interfacility transport</entry></row>
-<row><entry>LA18718-9</entry><entry>LOINC</entry><entry>Medical transport</entry></row>
+<row><entry>LA18715-5</entry><entry>LOINC</entry><entry>Emergency Response (Primary Response Area)</entry></row>
+<row><entry>LA18716-3</entry><entry>LOINC</entry><entry>Emergency Response (Intercept)</entry></row>
+<row><entry>LA18717-1</entry><entry>LOINC</entry><entry>Hospital-to-Hospital Transfer</entry></row>
 <row><entry>LA18719-7</entry><entry>LOINC</entry><entry>Mutual aid</entry></row>
-<row><entry>LA18720-5</entry><entry>LOINC</entry><entry>Public assistance/other not listed</entry></row>
+<row><entry>LA18720-5</entry><entry>LOINC</entry><entry>Public assistance</entry></row>
+<row><entry>NewLA-2205021</entry><entry>LOINC</entry><entry>Support Services</entry></row>
+<row><entry>NewLA-2205009</entry><entry>LOINC</entry><entry>Emergency Response (Mutual Aid)</entry></row>
+<row><entry>NewLA-2205015</entry><entry>LOINC</entry><entry>Hospital to Non-Hospital Facility Transfer</entry></row>
+<row><entry>NewLA-2205017</entry><entry>LOINC</entry><entry>Non-Hospital Facility to Non-Hospital Facility Transfer</entry></row>
+<row><entry>NewLA-2205019</entry><entry>LOINC</entry><entry>Non-Hospital Facility to Hospital Transfer</entry></row>
+<row><entry>NewLA-2205007</entry><entry>LOINC</entry><entry>Other Routine Medical Transport</entry></row>
+<row><entry>NewLA-2205023</entry><entry>LOINC</entry><entry>Non-Patient Care Rescue/Extrication</entry></row>
+<row><entry>NewLA-2205025</entry><entry>LOINC</entry><entry>Crew Transport Only</entry></row>
+<row><entry>NewLA-2205027</entry><entry>LOINC</entry><entry>Transport of Organs or Body Parts</entry></row>
+<row><entry>NewLA-2205029</entry><entry>LOINC</entry><entry>Mortuary Services</entry></row>
+<row><entry>NewLA-2205031</entry><entry>LOINC</entry><entry>Mobile Integrated Health Care Encounter</entry></row>
+<row><entry>NewLA-2205033</entry><entry>LOINC</entry><entry>Evaluation for Special Referral/Intake Programs</entry></row>
+<row><entry>NewLA-2205035</entry><entry>LOINC</entry><entry>Administrative Operations</entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

@@ -8,7 +8,8 @@
 <body>
 <!-- THIS IS GENERATED CONTENT, DO NOT EDIT -->
 <section id="definition">
-<table><tgroup cols="2">
+<table frame="all" rowsep="1" colsep="1">
+<tgroup cols="2">
 <colspec colname="col1" colwidth="1*"/>
 <colspec colname="col2" colwidth="4*"/>
 <tbody>
@@ -16,14 +17,15 @@
 <row><entry>Code System</entry><entry>LOINC - 2.16.840.1.113883.6.1</entry></row>
 <row><entry>Definition</entry><entry>Kind of incident resulting in or likely to result in injuries or clinically adverse events</entry></row>
 </tbody></tgroup></table>
-<table><tgroup cols="3">
+<table frame="all" rowsep="1" colsep="1">
+<tgroup cols="3">
 <colspec colname="col1" colwidth="1*"/>
 <colspec colname="col2" colwidth="1*"/>
 <colspec colname="col3" colwidth="2*"/>
 <thead><row>
 <entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
 </row></thead><tbody>
-<row><entry>LA17594-5</entry><entry>LOINC</entry><entry>Weather</entry></row>
+<row><entry>LA17594-5</entry><entry>LOINC</entry><entry>Weather (Other)</entry></row>
 <row><entry>LA18089-5</entry><entry>LOINC</entry><entry>Biologic agent</entry></row>
 <row><entry>LA18090-3</entry><entry>LOINC</entry><entry>Building failure</entry></row>
 <row><entry>LA18091-1</entry><entry>LOINC</entry><entry>Chemical agent</entry></row>
@@ -37,6 +39,12 @@
 <row><entry>LA18099-4</entry><entry>LOINC</entry><entry>Secondary destructive device</entry></row>
 <row><entry>LA18100-0</entry><entry>LOINC</entry><entry>Shooting/sniper</entry></row>
 <row><entry>LA18101-8</entry><entry>LOINC</entry><entry>Vehicular</entry></row>
+<row><entry>NewLA-4507031</entry><entry>LOINC</entry><entry>Flood</entry></row>
+<row><entry>NewLA-4507033</entry><entry>LOINC</entry><entry>Land Slide</entry></row>
+<row><entry>NewLA-4507035</entry><entry>LOINC</entry><entry>Winter Storm</entry></row>
+<row><entry>NewLA-4507037</entry><entry>LOINC</entry><entry>Tornado</entry></row>
+<row><entry>NewLA-4507039</entry><entry>LOINC</entry><entry>Hurricane</entry></row>
+<row><entry>NewLA-4507029</entry><entry>LOINC</entry><entry>Earthquake</entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

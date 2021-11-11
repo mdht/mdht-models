@@ -8,7 +8,8 @@
 <body>
 <!-- THIS IS GENERATED CONTENT, DO NOT EDIT -->
 <section id="definition">
-<table><tgroup cols="2">
+<table frame="all" rowsep="1" colsep="1">
+<tgroup cols="2">
 <colspec colname="col1" colwidth="1*"/>
 <colspec colname="col2" colwidth="4*"/>
 <tbody>
@@ -16,7 +17,8 @@
 <row><entry>Code System</entry><entry>LOINC - 2.16.840.1.113883.6.1</entry></row>
 <row><entry>Definition</entry><entry>Kind of circumstance delaying EMS transport</entry></row>
 </tbody></tgroup></table>
-<table><tgroup cols="3">
+<table frame="all" rowsep="1" colsep="1">
+<tgroup cols="3">
 <colspec colname="col1" colwidth="1*"/>
 <colspec colname="col2" colwidth="1*"/>
 <colspec colname="col3" colwidth="2*"/>
@@ -38,6 +40,7 @@
 <row><entry>LA18270-1</entry><entry>LOINC</entry><entry>Rendezvous transport unavailable</entry></row>
 <row><entry>LA18271-9</entry><entry>LOINC</entry><entry>Route obstruction (e.g., train)</entry></row>
 <row><entry>LA18301-4</entry><entry>LOINC</entry><entry>Diversion</entry></row>
+<row><entry>LA24424-6</entry><entry>LOINC</entry><entry>Patient Condition Change (e.g., Unit Stopped)</entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

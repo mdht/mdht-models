@@ -3,30 +3,33 @@
 <topic id="classId" xml:lang="en-us">
 <title>EMS Medication Administration Device</title>
 <prolog id="prolog">
-<resourceid id="2.16.840.1.113883.17.3.11.100"/>
+<resourceid id="2.16.840.1.113883.17.3.11.108"/>
 </prolog>
 <body>
 <!-- THIS IS GENERATED CONTENT, DO NOT EDIT -->
 <section id="definition">
-<table><tgroup cols="2">
+<table frame="all" rowsep="1" colsep="1">
+<tgroup cols="2">
 <colspec colname="col1" colwidth="1*"/>
 <colspec colname="col2" colwidth="4*"/>
 <tbody>
-<row><entry>Value Set</entry><entry>EMSMedicationAdministrationDevice - 2.16.840.1.113883.17.3.11.100</entry></row>
-<row><entry>Code System</entry><entry>SNOMEDCT - 2.16.840.1.113883.6.96</entry></row>
+<row><entry>Value Set</entry><entry>EMSMedicationAdministrationDevice - 2.16.840.1.113883.17.3.11.108</entry></row>
 <row><entry>Definition</entry><entry>Kind of device used to administer a substance to a patient</entry></row>
 </tbody></tgroup></table>
-<table><tgroup cols="3">
+<table frame="all" rowsep="1" colsep="1">
+<tgroup cols="3">
 <colspec colname="col1" colwidth="1*"/>
 <colspec colname="col2" colwidth="1*"/>
 <colspec colname="col3" colwidth="2*"/>
 <thead><row>
 <entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
 </row></thead><tbody>
-<row><entry>39849001</entry><entry>SNOMEDCT</entry><entry>Nasal Oxygen Cannula</entry></row>
-<row><entry>427591007</entry><entry>SNOMEDCT</entry><entry>Non-Rebreather Oxygen Mask</entry></row>
-<row><entry>425926003</entry><entry>SNOMEDCT</entry><entry>Partial Rebreather Oxygen Mask</entry></row>
-<row><entry>428285009</entry><entry>SNOMEDCT</entry><entry>Venturi Mask</entry></row>
+<row><entry>39849001</entry><entry>MISSING</entry><entry>Nasal Oxygen Cannula</entry></row>
+<row><entry>427591007</entry><entry>MISSING</entry><entry>Non-Rebreather Oxygen Mask</entry></row>
+<row><entry>425926003</entry><entry>MISSING</entry><entry>Partial Rebreather Oxygen Mask</entry></row>
+<row><entry>428285009</entry><entry>MISSING</entry><entry>Venturi Mask</entry></row>
+<row><entry>398013009</entry><entry></entry><entry>Subcutaneous port</entry></row>
+<row><entry>425478008</entry><entry></entry><entry>Blow by oxygen mask</entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

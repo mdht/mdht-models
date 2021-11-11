@@ -11,180 +11,86 @@
 <section id="knownSubclasses">
 </section>
 <section id="description">
-<p><lines><i>Information about patient symptoms and complaints</i></lines></p>
+<p>Information about patient symptoms and complaints</p>
 </section>
 <ol id="conformance">
-<li><b>SHALL</b> contain exactly one [1..1] templateId (  ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>="2.16.840.1.113883.17.3.10.1.9"</li></ol></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10755)<tt><b>/@code</b>="67666-8" </tt><i>EMS situation Narrative NEMSIS</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10756)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>templateId</b></tt> such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>@root</b>="2.16.840.1.113883.17.3.10.1.9"</tt></li></ol></li>
+<li>
+<b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10755)<tt><b>/@code</b>="67666-8" </tt><i>EMS situation Narrative NEMSIS</i> (CodeSystem:<tt> </tt>) (CONF:10756)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> and <b>SHOULD</b> equal "EMS Situation Section" (CONF:10758)
+<li>
+<b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> which <b>SHOULD</b> equal "EMS Situation Section" (CONF:10758)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:10757)
+<li>
+<b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:10757)
 </li>
-<li><b>SHALL</b> contain at least one [1..*] <tt><b>entry</b></tt> (CONF:11039)
-<ol>
-<li>Contains exactly one [1..1] <xref href="../Complaint.dita">Complaint</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.63</tt>)</li></ol></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:11041)
-<ol>
-<li>Contains exactly one [1..1] <xref href="../PossibleInjury.dita">Possible Injury</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.64</tt>)</li></ol></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:11043)
-<ol>
-<li>Contains exactly one [1..1] <xref href="../ProviderPrimaryImpression.dita">Provider Primary Impression</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.65</tt>)</li></ol></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:11045)
-<ol>
-<li>Contains exactly one [1..1] <xref href="../PrimarySymptom.dita">Primary Symptom</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.66</tt>)</li></ol></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:11047)
-<ol>
-<li>Contains exactly one [1..1] <xref href="../OtherSymptoms.dita">Other Symptoms</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.67</tt>)</li></ol></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:11049)
-<ol>
-<li>Contains exactly one [1..1] <xref href="../ProviderSecondaryImpressions.dita">Provider Secondary Impressions</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.68</tt>)</li></ol></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:11051)
-<ol>
-<li>Contains exactly one [1..1] <xref href="../InitialPatientAcuity.dita">Initial Patient Acuity</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.69</tt>)</li></ol></li>
+<li>
+If section/@nullFlavor is not present, <b>SHALL</b> contain  [1..*] <tt><b>entry</b></tt> such that it  (CONF:11039)<ol>
+<li>Conforms to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/Complaint.html">Complaint</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.63</tt>)</li></ol>
+</li>
+<li>
+If section/@nullFlavor is not present, <b>SHALL</b> contain  [1..1] <tt><b>entry</b></tt> such that it  (CONF:11041)<ol>
+<li>Conforms to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/PossibleInjury.html">Possible Injury</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.64</tt>)</li></ol>
+</li>
+<li>
+If section/@nullFlavor is not present, <b>SHALL</b> contain  [1..1] <tt><b>entry</b></tt> such that it  (CONF:11043)<ol>
+<li>Conforms to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ProviderPrimaryImpression.html">Provider Primary Impression</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.65</tt>)</li></ol>
+</li>
+<li>
+If section/@nullFlavor is not present, <b>SHALL</b> contain  [1..1] <tt><b>entry</b></tt> such that it  (CONF:11045)<ol>
+<li>Conforms to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/PrimarySymptom.html">Primary Symptom</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.66</tt>)</li></ol>
+</li>
+<li>
+If section/@nullFlavor is not present, <b>SHALL</b> contain  [1..1] <tt><b>entry</b></tt> such that it  (CONF:11047)<ol>
+<li>Conforms to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/OtherSymptoms.html">Other Symptoms</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.67</tt>)</li></ol>
+</li>
+<li>
+If section/@nullFlavor is not present, <b>SHALL</b> contain  [1..1] <tt><b>entry</b></tt> such that it  (CONF:11049)<ol>
+<li>Conforms to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ProviderSecondaryImpressions.html">Provider Secondary Impressions</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.68</tt>)</li></ol>
+</li>
+<li>
+If section/@nullFlavor is not present, <b>SHALL</b> contain  [1..1] <tt><b>entry</b></tt> such that it  (CONF:11051)<ol>
+<li>Conforms to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/InitialPatientAcuity.html">Initial Patient Acuity</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.69</tt>)</li></ol>
+</li>
 </ol>
 <ol id="aggregate">
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10755)<tt><b>/@code</b>="67666-8" </tt><i>EMS situation Narrative NEMSIS</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10756)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10755)<tt><b>/@code</b>="67666-8" </tt><i>EMS situation Narrative NEMSIS</i> (CodeSystem:<tt> </tt>) (CONF:10756)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> and <b>SHOULD</b> equal "EMS Situation Section" (CONF:10758)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> which <b>SHOULD</b> equal "EMS Situation Section" (CONF:10758)
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:10757)
 </li>
-<li><b>SHALL</b> contain at least one [1..*] <tt><b>entry</b></tt> (CONF:11039)
+<li>If section/@nullFlavor is not present, <b>SHALL</b> contain  [1..*] <tt><b>entry</b></tt> such that it  (CONF:11039)
 <ol>
-<li>Contains exactly one [1..1] <xref href="../Complaint.dita">Complaint</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.63</tt>)</li></ol></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:11041)
+<li>Conforms to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/Complaint.html">Complaint</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.63</tt>)</li></ol></li>
+<li>If section/@nullFlavor is not present, <b>SHALL</b> contain  [1..1] <tt><b>entry</b></tt> such that it  (CONF:11041)
 <ol>
-<li>Contains exactly one [1..1] <xref href="../PossibleInjury.dita">Possible Injury</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.64</tt>)</li></ol></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:11043)
+<li>Conforms to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/PossibleInjury.html">Possible Injury</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.64</tt>)</li></ol></li>
+<li>If section/@nullFlavor is not present, <b>SHALL</b> contain  [1..1] <tt><b>entry</b></tt> such that it  (CONF:11043)
 <ol>
-<li>Contains exactly one [1..1] <xref href="../ProviderPrimaryImpression.dita">Provider Primary Impression</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.65</tt>)</li></ol></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:11045)
+<li>Conforms to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ProviderPrimaryImpression.html">Provider Primary Impression</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.65</tt>)</li></ol></li>
+<li>If section/@nullFlavor is not present, <b>SHALL</b> contain  [1..1] <tt><b>entry</b></tt> such that it  (CONF:11045)
 <ol>
-<li>Contains exactly one [1..1] <xref href="../PrimarySymptom.dita">Primary Symptom</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.66</tt>)</li></ol></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:11047)
+<li>Conforms to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/PrimarySymptom.html">Primary Symptom</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.66</tt>)</li></ol></li>
+<li>If section/@nullFlavor is not present, <b>SHALL</b> contain  [1..1] <tt><b>entry</b></tt> such that it  (CONF:11047)
 <ol>
-<li>Contains exactly one [1..1] <xref href="../OtherSymptoms.dita">Other Symptoms</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.67</tt>)</li></ol></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:11049)
+<li>Conforms to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/OtherSymptoms.html">Other Symptoms</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.67</tt>)</li></ol></li>
+<li>If section/@nullFlavor is not present, <b>SHALL</b> contain  [1..1] <tt><b>entry</b></tt> such that it  (CONF:11049)
 <ol>
-<li>Contains exactly one [1..1] <xref href="../ProviderSecondaryImpressions.dita">Provider Secondary Impressions</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.68</tt>)</li></ol></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:11051)
+<li>Conforms to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ProviderSecondaryImpressions.html">Provider Secondary Impressions</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.68</tt>)</li></ol></li>
+<li>If section/@nullFlavor is not present, <b>SHALL</b> contain  [1..1] <tt><b>entry</b></tt> such that it  (CONF:11051)
 <ol>
-<li>Contains exactly one [1..1] <xref href="../InitialPatientAcuity.dita">Initial Patient Acuity</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.69</tt>)</li></ol></li>
+<li>Conforms to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/InitialPatientAcuity.html">Initial Patient Acuity</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.69</tt>)</li></ol></li>
 </ol>
-<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >emspcr::EMSSituationSection</entry>  </row>  <row><entry namest="col0" nameend="col7" >/cda:ClinicalDocument/cda:component/cda:structuredBody/cda:component/cda:section[cda:templateId/@root = 2.16.840.1.113883.17.3.10.1.9]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CE</entry><entry>CONF:10755</entry><entry>LOINC 2.16.840.1.113883.6.1 67666-8</entry></row> 
-<row><entry>title</entry><entry>title</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>ST</entry><entry>CONF:10758</entry><entry> MISSINGTYPE</entry></row> 
-<row><entry>complaint</entry><entry>cda:entry/cda:observation[cda:templateId/@root = 2.16.840.1.1133883.17.3.10.1.63]</entry><entry>1..*</entry><entry>SHALL</entry><entry>YES</entry><entry>Complaint</entry><entry>CONF:11039</entry><entry> </entry></row> 
-<row><entry>initialPatientAcuity</entry><entry>cda:entry/cda:observation[cda:templateId/@root = 2.16.840.1.1133883.17.3.10.1.69]</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>InitialPatientAcuity</entry><entry>CONF:11051</entry><entry> </entry></row> 
-<row><entry>otherSymptoms</entry><entry>cda:entry/cda:observation[cda:templateId/@root = 2.16.840.1.1133883.17.3.10.1.67]</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>OtherSymptoms</entry><entry>CONF:11047</entry><entry> </entry></row> 
-<row><entry>possibleInjury</entry><entry>cda:entry/cda:observation[cda:templateId/@root = 2.16.840.1.1133883.17.3.10.1.64]</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>PossibleInjury</entry><entry>CONF:11041</entry><entry> </entry></row> 
-<row><entry>primarySymptom</entry><entry>cda:entry/cda:observation[cda:templateId/@root = 2.16.840.1.1133883.17.3.10.1.66]</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>PrimarySymptom</entry><entry>CONF:11045</entry><entry> </entry></row> 
-<row><entry>providerPrimaryImpression</entry><entry>cda:entry/cda:observation[cda:templateId/@root = 2.16.840.1.1133883.17.3.10.1.65]</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>ProviderPrimaryImpression</entry><entry>CONF:11043</entry><entry> </entry></row> 
-<row><entry>providerSecondaryImpressions</entry><entry>cda:entry/cda:observation[cda:templateId/@root = 2.16.840.1.1133883.17.3.10.1.68]</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>ProviderSecondaryImpressions</entry><entry>CONF:11049</entry><entry> </entry></row> 
-<row><entry>SituationSection</entry><entry>SituationSection</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>EMSSituationSection</entry><entry>CONF:10024</entry><entry> </entry></row> 
-<row><entry>text</entry><entry>text</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>StrucDocText</entry><entry>CONF:10757</entry><entry> </entry></row> 
-</tbody></tgroup></table></p></section>
-<codeblock id="example"><![CDATA[<section xmlns="urn:hl7-org:v3">
+<section id="contextTable"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="2" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><thead><row><entry namest="col0" nameend="col0" >Contained By</entry><entry namest="col1" nameend="col1" >Contains</entry></row></thead><tbody><row><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/PatientCareReport.html">Patient Care Report</xref></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/AbandonedProcedureReasonObservation.html">Abandoned Procedure Reason Observation</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/AbdomenAssessment.html">Abdomen Assessment</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/AirwayConfirmationObservation.html">Airway Confirmation Observation</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ArrestRhythm.html">Arrest Rhythm</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/BackAndSpineAssessment.html">Back And Spine Assessment</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/BodyTemperature.html">Body Temperature</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/CardiacArrestCause.html">Cardiac Arrest Cause</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/CardiacArrestOutcome.html">Cardiac Arrest Outcome</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/CardiacArrestTiming.html">Cardiac Arrest Timing</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/Complaint.html">Complaint</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ComplaintDuration.html">Complaint Duration</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ComplaintOrganSystem.html">Complaint Organ System</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ComplaintType.html">Complaint Type</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/DestinationRhythm.html">Destination Rhythm</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/DiastolicBloodPressure.html">Diastolic Blood Pressure</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/DispatchDelay.html">Dispatch Delay</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/DispatchLocationLatitude.html">Dispatch Location Latitude</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/DispatchLocationLongitude.html">Dispatch Location Longitude</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/DispatchLocationName.html">Dispatch Location Name</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ExtremitiesAssessment.html">Extremities Assessment</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/EyeAssessment.html">Eye Assessment</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/FaceAssessment.html">Face Assessment</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/HeadAssessment.html">Head Assessment</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/HeartAssessment.html">Heart Assessment</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/HeartRate.html">Heart Rate</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/InitialPatientAcuity.html">Initial Patient Acuity</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/LengthBasedPatientBodyWeightClass.html">Length Based Patient Body Weight Class</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/MedicationComplicationObservation.html">Medication Complication Observation</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/MedicationManfacturedProduct.html">Medication Manfactured Product</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/MedicationNotAdministeredReasonObservation.html">Medication Not Administered Reason Observation</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/MedicationPriorAdministrationObservation.html">Medication Prior Administration Observation</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/MedicationResponseObservation.html">Medication Response Observation</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/MentalStatusAssessment.html">Mental Status Assessment</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/NeckAssessment.html">Neck Assessment</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/NeurologicalAssessment.html">Neurological Assessment</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/OtherSymptoms.html">Other Symptoms</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/OxygenSaturation.html">Oxygen Saturation</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/PatientBodyWeight.html">Patient Body Weight</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/PelvicAndGenitourinaryAssessment.html">Pelvic And Genitourinary Assessment</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/PossibleInjury.html">Possible Injury</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/PrimarySymptom.html">Primary Symptom</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ProcedureComplicationsObservation.html">Procedure Complications Observation</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ProcedureNumberOfAttemptsObservation.html">Procedure Number Of Attempts Observation</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ProcedurePatientResponseObservation.html">Procedure Patient Response Observation</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ProcedurePriorIndicator.html">Procedure Prior Indicator</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ProcedureSuccessfulObservation.html">Procedure Successful Observation</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ProtocolAgeCategory.html">Protocol Age Category</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ProviderPrimaryImpression.html">Provider Primary Impression</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ProviderSecondaryImpressions.html">Provider Secondary Impressions</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ReasonProcedureNotAttemptedObservation.html">Reason Procedure Not Attempted Observation</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/RespiratoryRate.html">Respiratory Rate</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ResponseBeginningOdometerReading.html">Response Beginning Odometer Reading</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ResponseDelay.html">Response Delay</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ResponseDestinationOdometerReading.html">Response Destination Odometer Reading</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ResponseEndingOdometerReading.html">Response Ending Odometer Reading</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ResponseOnSceneOdometerReading.html">Response On Scene Odometer Reading</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ReturnOfSpontaneousCirculation.html">Return Of Spontaneous Circulation</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/SceneDelay.html">Scene Delay</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/SkinAssessment.html">Skin Assessment</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/SystolicBloodPressure.html">Systolic Blood Pressure</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/TransportDelay.html">Transport Delay</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/TransportModeQualifier.html">Transport Mode Qualifier</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/TurnaroundDelay.html">Turnaround Delay</xref></entry></row></tbody></tgroup></table></p></section>
+<codeblock id="example" outputclass="language-xml"><![CDATA[<section>
   <templateId root="2.16.840.1.113883.17.3.10.1.9"/>
-  <id root="MDHT" extension="1792700811"/>
-  <code code="67666-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="EMS situation Narrative NEMSIS"/>
+  <code code="67666-8" displayName="EMS situation Narrative NEMSIS"/>
   <title>EMS Situation Section</title>
   <text/>
-  <entry>
-    <observation moodCode="EVN">
-      <templateId root="2.16.840.1.1133883.17.3.10.1.63"/>
-      <id root="MDHT" extension="2059510669"/>
-      <code code="10154-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Chief complaint Narrative - Reported"/>
-      <text>Text Value</text>
-      <effectiveTime>
-        <low value="2014"/>
-        <high value="2014"/>
-      </effectiveTime>
-      <targetSiteCode codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
-      <entryRelationship>
-        <observation/>
-      </entryRelationship>
-      <entryRelationship>
-        <observation/>
-      </entryRelationship>
-      <entryRelationship>
-        <observation/>
-      </entryRelationship>
-    </observation>
-  </entry>
-  <entry>
-    <observation moodCode="EVN">
-      <templateId root="2.16.840.1.1133883.17.3.10.1.64"/>
-      <id root="MDHT" extension="95090602"/>
-      <code code="69467-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Possible injury NEMSIS"/>
-      <text>Text Value</text>
-      <effectiveTime>
-        <low value="2014"/>
-        <high value="2014"/>
-      </effectiveTime>
-    </observation>
-  </entry>
-  <entry>
-    <observation moodCode="EVN">
-      <templateId root="2.16.840.1.1133883.17.3.10.1.65"/>
-      <id root="MDHT" extension="2129937265"/>
-      <code code="67492-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Primary problem NEMSIS"/>
-      <text>Text Value</text>
-      <effectiveTime>
-        <low value="2014"/>
-        <high value="2014"/>
-      </effectiveTime>
-    </observation>
-  </entry>
-  <entry>
-    <observation moodCode="EVN">
-      <templateId root="2.16.840.1.1133883.17.3.10.1.66"/>
-      <id root="MDHT" extension="785389161"/>
-      <code code="67774-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Primary sign and symptom NEMSIS"/>
-      <text>Text Value</text>
-      <effectiveTime>
-        <low value="2014"/>
-        <high value="2014"/>
-      </effectiveTime>
-    </observation>
-  </entry>
-  <entry>
-    <observation moodCode="EVN">
-      <templateId root="2.16.840.1.1133883.17.3.10.1.67"/>
-      <id root="MDHT" extension="1684511141"/>
-      <code code="67776-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Other symptoms NEMSIS"/>
-      <text>Text Value</text>
-      <effectiveTime>
-        <low value="2014"/>
-        <high value="2014"/>
-      </effectiveTime>
-    </observation>
-  </entry>
-  <entry>
-    <observation moodCode="EVN">
-      <templateId root="2.16.840.1.1133883.17.3.10.1.68"/>
-      <id root="MDHT" extension="132280136"/>
-      <code code="69542-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Secondary problem NEMSIS"/>
-      <text>Text Value</text>
-      <effectiveTime>
-        <low value="2014"/>
-        <high value="2014"/>
-      </effectiveTime>
-    </observation>
-  </entry>
-  <entry>
-    <observation moodCode="EVN">
-      <templateId root="2.16.840.1.1133883.17.3.10.1.69"/>
-      <id root="MDHT" extension="1585326419"/>
-      <code code="67493-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Initial patient acuity NEMSIS"/>
-      <text>Text Value</text>
-      <effectiveTime>
-        <low value="2014"/>
-        <high value="2014"/>
-      </effectiveTime>
-    </observation>
-  </entry>
-</section>]]></codeblock>
+</section>
+]]></codeblock>
+<!--Error code 1: Pathmap to CDA .ecore files not resolved: pathmap://CDA_MODEL/../../org.eclipse.mdht.uml.hl7.rim/model/rim.ecore#//Act. Will not use any CDA extension!-->
 <section id="changes">
 </section>
 <p><ph id="classformalname">EMS Situation Section</ph></p>

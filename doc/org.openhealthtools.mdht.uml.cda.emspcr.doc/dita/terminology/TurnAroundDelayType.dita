@@ -8,7 +8,8 @@
 <body>
 <!-- THIS IS GENERATED CONTENT, DO NOT EDIT -->
 <section id="definition">
-<table><tgroup cols="2">
+<table frame="all" rowsep="1" colsep="1">
+<tgroup cols="2">
 <colspec colname="col1" colwidth="1*"/>
 <colspec colname="col2" colwidth="4*"/>
 <tbody>
@@ -16,7 +17,8 @@
 <row><entry>Code System</entry><entry>LOINC - 2.16.840.1.113883.6.1</entry></row>
 <row><entry>Definition</entry><entry>Kind of circumstance delaying EMS readiness after an incident</entry></row>
 </tbody></tgroup></table>
-<table><tgroup cols="3">
+<table frame="all" rowsep="1" colsep="1">
+<tgroup cols="3">
 <colspec colname="col1" colwidth="1*"/>
 <colspec colname="col2" colwidth="1*"/>
 <colspec colname="col3" colwidth="2*"/>
@@ -34,11 +36,12 @@
 <row><entry>LA17600-0</entry><entry>LOINC</entry><entry>Documentation</entry></row>
 <row><entry>LA17601-8</entry><entry>LOINC</entry><entry>ED overcrowding/transfer of care</entry></row>
 <row><entry>LA17602-6</entry><entry>LOINC</entry><entry>Equipment/supply replenishment</entry></row>
-<row><entry>LA17603-4</entry><entry>LOINC</entry><entry>Transport unavailable</entry></row>
 <row><entry>LA18081-2</entry><entry>LOINC</entry><entry>None/no delay</entry></row>
 <row><entry>LA18270-1</entry><entry>LOINC</entry><entry>Rendezvous transport unavailable</entry></row>
 <row><entry>LA18271-9</entry><entry>LOINC</entry><entry>Route obstruction (e.g., train)</entry></row>
 <row><entry>LA7497-6</entry><entry>LOINC</entry><entry>Equipment failure</entry></row>
+<row><entry>LA24425-3</entry><entry>LOINC</entry><entry>EMS Crew Accompanies Patient for Facility Procedure</entry></row>
+<row><entry>LA17603-4</entry><entry>LOINC</entry><entry>Transport unavailable</entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

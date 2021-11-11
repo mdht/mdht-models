@@ -8,7 +8,8 @@
 <body>
 <!-- THIS IS GENERATED CONTENT, DO NOT EDIT -->
 <section id="definition">
-<table><tgroup cols="2">
+<table frame="all" rowsep="1" colsep="1">
+<tgroup cols="2">
 <colspec colname="col1" colwidth="1*"/>
 <colspec colname="col2" colwidth="4*"/>
 <tbody>
@@ -16,7 +17,8 @@
 <row><entry>Code System</entry><entry>LOINC - 2.16.840.1.113883.6.1</entry></row>
 <row><entry>Definition</entry><entry>Kind of person who witnessed a cardiac arrest</entry></row>
 </tbody></tgroup></table>
-<table><tgroup cols="3">
+<table frame="all" rowsep="1" colsep="1">
+<tgroup cols="3">
 <colspec colname="col1" colwidth="1*"/>
 <colspec colname="col2" colwidth="1*"/>
 <colspec colname="col3" colwidth="2*"/>
@@ -25,7 +27,7 @@
 </row></thead><tbody>
 <row><entry>LA18020-0</entry><entry>LOINC</entry><entry>Witnessed by family member</entry></row>
 <row><entry>LA18021-8</entry><entry>LOINC</entry><entry>Witnessed by healthcare provider</entry></row>
-<row><entry>LA18022-6</entry><entry>LOINC</entry><entry>Witnessed by lay person</entry></row>
+<row><entry>LA18022-6</entry><entry>LOINC</entry><entry>Witnessed by Bystander</entry></row>
 <row><entry>LA18023-4</entry><entry>LOINC</entry><entry>Not witnessed</entry></row>
 </tbody></tgroup></table>
 </section>

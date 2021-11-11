@@ -8,15 +8,18 @@
 <body>
 <!-- THIS IS GENERATED CONTENT, DO NOT EDIT -->
 <section id="definition">
-<table><tgroup cols="2">
+<table frame="all" rowsep="1" colsep="1">
+<tgroup cols="2">
 <colspec colname="col1" colwidth="1*"/>
 <colspec colname="col2" colwidth="4*"/>
 <tbody>
 <row><entry>Value Set</entry><entry>AirwayDeviceConfirmationMethod - 2.16.840.1.113883.17.3.11.60</entry></row>
 <row><entry>Code System</entry><entry>LOINC - 2.16.840.1.113883.6.1</entry></row>
+<row><entry>Version</entry><entry>2022</entry></row>
 <row><entry>Definition</entry><entry>Procedure for confirming airway device placement</entry></row>
 </tbody></tgroup></table>
-<table><tgroup cols="3">
+<table frame="all" rowsep="1" colsep="1">
+<tgroup cols="3">
 <colspec colname="col1" colwidth="1*"/>
 <colspec colname="col2" colwidth="1*"/>
 <colspec colname="col3" colwidth="2*"/>
@@ -30,9 +33,10 @@
 <row><entry>LA18676-9</entry><entry>LOINC</entry><entry>Digital (numeric) ETCO2</entry></row>
 <row><entry>LA18677-7</entry><entry>LOINC</entry><entry>Direct re-visualization of tube in place</entry></row>
 <row><entry>LA18678-5</entry><entry>LOINC</entry><entry>Endotracheal tube whistle (BAAM, etc)</entry></row>
-<row><entry>LA18679-3</entry><entry>LOINC</entry><entry>Other airway device placement confirmation</entry></row>
 <row><entry>LA18680-1</entry><entry>LOINC</entry><entry>Visualization of vocal cords</entry></row>
 <row><entry>LA18681-9</entry><entry>LOINC</entry><entry>Waveform ETCO2</entry></row>
+<row><entry>LA18679-3</entry><entry>LOINC</entry><entry>Other airway device placement confirmation</entry></row>
+<row><entry>NewLA-4004021</entry><entry>LOINC</entry><entry>Chest rise</entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

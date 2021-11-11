@@ -8,7 +8,8 @@
 <body>
 <!-- THIS IS GENERATED CONTENT, DO NOT EDIT -->
 <section id="definition">
-<table><tgroup cols="2">
+<table frame="all" rowsep="1" colsep="1">
+<tgroup cols="2">
 <colspec colname="col1" colwidth="1*"/>
 <colspec colname="col2" colwidth="4*"/>
 <tbody>
@@ -16,7 +17,8 @@
 <row><entry>Code System</entry><entry>LOINC - 2.16.840.1.113883.6.1</entry></row>
 <row><entry>Definition</entry><entry>Clincal category of formal guideline used to direct care</entry></row>
 </tbody></tgroup></table>
-<table><tgroup cols="3">
+<table frame="all" rowsep="1" colsep="1">
+<tgroup cols="3">
 <colspec colname="col1" colwidth="1*"/>
 <colspec colname="col2" colwidth="1*"/>
 <colspec colname="col3" colwidth="2*"/>
@@ -42,7 +44,7 @@
 <row><entry>LA17507-7</entry><entry>LOINC</entry><entry>Exposure-airway/inhalation irritants</entry></row>
 <row><entry>LA17508-5</entry><entry>LOINC</entry><entry>Exposure-biological/infectious</entry></row>
 <row><entry>LA17509-3</entry><entry>LOINC</entry><entry>Exposure-blistering agents</entry></row>
-<row><entry>LA17510-1</entry><entry>LOINC</entry><entry>Exposure-carbon monoxide/smoke inhalation</entry></row>
+<row><entry>LA24135-8</entry><entry>LOINC</entry><entry>Exposure-carbon monoxide</entry></row>
 <row><entry>LA17511-9</entry><entry>LOINC</entry><entry>Exposure-chemicals to eye</entry></row>
 <row><entry>LA17512-7</entry><entry>LOINC</entry><entry>Exposure-cyanide</entry></row>
 <row><entry>LA17513-5</entry><entry>LOINC</entry><entry>Exposure-explosive/blast injury</entry></row>
@@ -89,9 +91,9 @@
 <row><entry>LA17554-9</entry><entry>LOINC</entry><entry>Medical-influenza-like Illness/ upper respiratory infection</entry></row>
 <row><entry>LA17555-6</entry><entry>LOINC</entry><entry>Medical-nausea/vomiting</entry></row>
 <row><entry>LA17556-4</entry><entry>LOINC</entry><entry>Medical-newborn/ neonatal resuscitation</entry></row>
-<row><entry>LA17557-2</entry><entry>LOINC</entry><entry>Medical-overdose/poisoning/toxic ingestion</entry></row>
+<row><entry>LA23845-3</entry><entry>LOINC</entry><entry>General-overdose/poisoning/toxic ingestion</entry></row>
 <row><entry>LA17558-0</entry><entry>LOINC</entry><entry>Medical-pulmonary edema/CHF</entry></row>
-<row><entry>LA17559-8</entry><entry>LOINC</entry><entry>Medical-respiratory distress/asthma/COPD/croup/reactive airway disease</entry></row>
+<row><entry>LA17559-8</entry><entry>LOINC</entry><entry>Medical-respiratory distress/asthma/COPD/reactive airway disease</entry></row>
 <row><entry>LA17560-6</entry><entry>LOINC</entry><entry>Medical-seizure</entry></row>
 <row><entry>LA17561-4</entry><entry>LOINC</entry><entry>Medical-ST-elevation myocardial infarction (STEMI)</entry></row>
 <row><entry>LA17562-2</entry><entry>LOINC</entry><entry>Medical-stroke/TIA</entry></row>
@@ -106,6 +108,35 @@
 <row><entry>LA18269-3</entry><entry>LOINC</entry><entry>General-cardiac arrest</entry></row>
 <row><entry>LA46-8</entry><entry>LOINC</entry><entry>Other</entry></row>
 <row><entry>LA6630-3</entry><entry>LOINC</entry><entry>Not done</entry></row>
+<row><entry>LA23828-9</entry><entry>LOINC</entry><entry>Injury-Conducted Electrical Weapon (e.g., Taser)</entry></row>
+<row><entry>LA23829-7</entry><entry>LOINC</entry><entry>Injury-Facial Trauma</entry></row>
+<row><entry>LA23830-5</entry><entry>LOINC</entry><entry>Injury-General Trauma Management</entry></row>
+<row><entry>LA23831-3</entry><entry>LOINC</entry><entry>Injury-Lightning/Lightning Strike</entry></row>
+<row><entry>LA23832-1</entry><entry>LOINC</entry><entry>Injury-SCUBA Injury/Accidents</entry></row>
+<row><entry>LA23833-9</entry><entry>LOINC</entry><entry>Injury-Topical Chemical Burn</entry></row>
+<row><entry>LA23834-7</entry><entry>LOINC</entry><entry>Medical-Beta Blocker Poisoning/Overdose</entry></row>
+<row><entry>LA23835-4</entry><entry>LOINC</entry><entry>Medical-Calcium Channel Blocker Poisoning/Overdose</entry></row>
+<row><entry>LA23836-2</entry><entry>LOINC</entry><entry>Medical-Opioid Poisoning/Overdose</entry></row>
+<row><entry>LA23837-0</entry><entry>LOINC</entry><entry>Medical-Respiratory Distress-Bronchiolitis</entry></row>
+<row><entry>LA23838-8</entry><entry>LOINC</entry><entry>Medical-Respiratory Distress-Croup</entry></row>
+<row><entry>LA23839-6</entry><entry>LOINC</entry><entry>Medical-Stimulant Poisoning/Overdose</entry></row>
+<row><entry>LA24136-6</entry><entry>LOINC</entry><entry>Cardiac Arrest-Do Not Resuscitate</entry></row>
+<row><entry>LA24137-4</entry><entry>LOINC</entry><entry>Cardiac Arrest-Special Resuscitate Orders</entry></row>
+<row><entry>LA24139-0</entry><entry>LOINC</entry><entry>General-Community Paramedicine / Mobile Integrated Healthcare</entry></row>
+<row><entry>LA24140-8</entry><entry>LOINC</entry><entry>General-Exception Protocol</entry></row>
+<row><entry>LA24141-6</entry><entry>LOINC</entry><entry>General-Extended Care Guidelines</entry></row>
+<row><entry>LA24142-4</entry><entry>LOINC</entry><entry>General-Interfacility Transfers</entry></row>
+<row><entry>LA24143-2</entry><entry>LOINC</entry><entry>General-Law Enforcement - Blood for Legal Purposes</entry></row>
+<row><entry>LA24144-0</entry><entry>LOINC</entry><entry>General-Law Enforcement - Assist with Law Enforcement Activity</entry></row>
+<row><entry>LA24145-7</entry><entry>LOINC</entry><entry>General-Neglect or Abuse Suspected</entry></row>
+<row><entry>LA24146-5</entry><entry>LOINC</entry><entry>General-Refusal of Care</entry></row>
+<row><entry>LA24147-3</entry><entry>LOINC</entry><entry>Injury-Mass/Multiple Casualties</entry></row>
+<row><entry>LA24148-1</entry><entry>LOINC</entry><entry>Injury-Thoracic</entry></row>
+<row><entry>LA24149-9</entry><entry>LOINC</entry><entry>Medical-Adrenal Insufficiency</entry></row>
+<row><entry>LA24150-7</entry><entry>LOINC</entry><entry>Medical-Apparent Life Threatening Event (ALTE)</entry></row>
+<row><entry>LA24151-5</entry><entry>LOINC</entry><entry>Medical-Tachycardia</entry></row>
+<row><entry>LA23827-1</entry><entry>LOINC</entry><entry>Cardiac Arrest-Determination of Death / Withholding Resuscitative Efforts</entry></row>
+<row><entry>LA24138-2</entry><entry>LOINC</entry><entry>Exposure-Smoke Inhalation</entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

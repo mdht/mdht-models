@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Destination Ward Kind</title>
+<prolog id="prolog">
+<resourceid id="2.16.840.1.113883.17.3.11.103"/>
+</prolog>
+<body>
+<!-- THIS IS GENERATED CONTENT, DO NOT EDIT -->
+<section id="definition">
+<table frame="all" rowsep="1" colsep="1">
+<tgroup cols="2">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="4*"/>
+<tbody>
+<row><entry>Value Set</entry><entry>DestinationWardKind - 2.16.840.1.113883.17.3.11.103</entry></row>
+<row><entry>Definition</entry><entry>The location within the hospital that the patient was taken directly by EMS</entry></row>
+</tbody></tgroup></table>
+<table frame="all" rowsep="1" colsep="1">
+<tgroup cols="3">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="1*"/>
+<colspec colname="col3" colwidth="2*"/>
+<thead><row>
+<entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
+</row></thead><tbody>
+<row><entry>LA22808-2</entry><entry></entry><entry>Hospital-burn</entry></row>
+<row><entry>LA22809-0</entry><entry></entry><entry>Hospital-cath lab</entry></row>
+<row><entry>LA22810-8</entry><entry></entry><entry>Hosptial-CCU</entry></row>
+<row><entry>LA22824-9</entry><entry></entry><entry>Hospital-orthopedic</entry></row>
+<row><entry>LA22811-6</entry><entry></entry><entry>Hospital-endoscopy</entry></row>
+<row><entry>LA22812-4</entry><entry></entry><entry>Hospital-hospice</entry></row>
+<row><entry>LA22813-2</entry><entry></entry><entry>Hospital-hyperbaric oxygen treatment</entry></row>
+<row><entry>LA22814-0</entry><entry></entry><entry>Hospital-ICU</entry></row>
+<row><entry>LA22815-7</entry><entry></entry><entry>Hospital-labor and delivery</entry></row>
+<row><entry>LA22816-5</entry><entry></entry><entry>Hospital-medical/surgery</entry></row>
+<row><entry>LA22817-3</entry><entry></entry><entry>Hospital-mental health</entry></row>
+<row><entry>LA22818-1</entry><entry></entry><entry>Hosptial-MICU</entry></row>
+<row><entry>LA22819-9</entry><entry></entry><entry>Hospital-NICU</entry></row>
+<row><entry>LA22820-7</entry><entry></entry><entry>Hospital-nursery</entry></row>
+<row><entry>LA22821-5</entry><entry></entry><entry>Hospital-peds (general)</entry></row>
+<row><entry>LA22822-3</entry><entry></entry><entry>Hospital-peds ICU</entry></row>
+<row><entry>LA22823-1</entry><entry></entry><entry>Hospital-OR</entry></row>
+<row><entry>LA22825-6</entry><entry></entry><entry>Hospital-other</entry></row>
+<row><entry>LA22826-4</entry><entry></entry><entry>Hospital-outpatient bed</entry></row>
+<row><entry>LA22827-2</entry><entry></entry><entry>Hospital-radiology services - MRI</entry></row>
+<row><entry>LA22828-0</entry><entry></entry><entry>Hospital-radiology services - CT/PET</entry></row>
+<row><entry>LA22829-8</entry><entry></entry><entry>Hospital-radiology services - x-ray</entry></row>
+<row><entry>LA22830-6</entry><entry></entry><entry>Hospital-radiation</entry></row>
+<row><entry>LA22831-4</entry><entry></entry><entry>Hospital-rehabilitation</entry></row>
+<row><entry>LA22832-2</entry><entry></entry><entry>Hospital-SICU</entry></row>
+<row><entry>LA24394-1</entry><entry></entry><entry>Hospital-Oncology</entry></row>
+<row><entry>LA24395-8</entry><entry></entry><entry>Hospital-Outpatient Surgery</entry></row>
+</tbody></tgroup></table>
+</section>
+</body>
+</topic>

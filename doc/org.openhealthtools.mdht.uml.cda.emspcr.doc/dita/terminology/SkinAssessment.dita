@@ -8,7 +8,8 @@
 <body>
 <!-- THIS IS GENERATED CONTENT, DO NOT EDIT -->
 <section id="definition">
-<table><tgroup cols="2">
+<table frame="all" rowsep="1" colsep="1">
+<tgroup cols="2">
 <colspec colname="col1" colwidth="1*"/>
 <colspec colname="col2" colwidth="4*"/>
 <tbody>
@@ -16,7 +17,8 @@
 <row><entry>Code System</entry><entry>LOINC - 2.16.840.1.113883.6.1</entry></row>
 <row><entry>Definition</entry><entry>Finding resulting from EMS skin assessment</entry></row>
 </tbody></tgroup></table>
-<table><tgroup cols="3">
+<table frame="all" rowsep="1" colsep="1">
+<tgroup cols="3">
 <colspec colname="col1" colwidth="1*"/>
 <colspec colname="col2" colwidth="1*"/>
 <colspec colname="col3" colwidth="2*"/>
@@ -40,6 +42,9 @@
 <row><entry>LA18219-8</entry><entry>LOINC</entry><entry>Tenting</entry></row>
 <row><entry>LA6626-1</entry><entry>LOINC</entry><entry>Normal</entry></row>
 <row><entry>LA6630-3</entry><entry>LOINC</entry><entry>Not done</entry></row>
+<row><entry>LA23806-5</entry><entry>LOINC</entry><entry>Capillary Nail Bed Refill less than 2 seconds</entry></row>
+<row><entry>LA23807-3</entry><entry>LOINC</entry><entry>Capillary Nail Bed Refill 2-4 seconds</entry></row>
+<row><entry>LA23808-1</entry><entry>LOINC</entry><entry>Capillary Nail Bed Refill more than 4 seconds</entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

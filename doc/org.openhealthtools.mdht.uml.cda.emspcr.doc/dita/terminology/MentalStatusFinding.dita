@@ -8,7 +8,8 @@
 <body>
 <!-- THIS IS GENERATED CONTENT, DO NOT EDIT -->
 <section id="definition">
-<table><tgroup cols="2">
+<table frame="all" rowsep="1" colsep="1">
+<tgroup cols="2">
 <colspec colname="col1" colwidth="1*"/>
 <colspec colname="col2" colwidth="4*"/>
 <tbody>
@@ -16,7 +17,8 @@
 <row><entry>Code System</entry><entry>LOINC - 2.16.840.1.113883.6.1</entry></row>
 <row><entry>Definition</entry><entry>Finding resulting from EMS mental assessment</entry></row>
 </tbody></tgroup></table>
-<table><tgroup cols="3">
+<table frame="all" rowsep="1" colsep="1">
+<tgroup cols="3">
 <colspec colname="col1" colwidth="1*"/>
 <colspec colname="col2" colwidth="1*"/>
 <colspec colname="col3" colwidth="2*"/>
@@ -29,11 +31,24 @@
 <row><entry>LA17289-2</entry><entry>LOINC</entry><entry>Oriented-place</entry></row>
 <row><entry>LA17290-0</entry><entry>LOINC</entry><entry>Oriented-time</entry></row>
 <row><entry>LA18259-4</entry><entry>LOINC</entry><entry>Oriented-event</entry></row>
-<row><entry>LA18260-2</entry><entry>LOINC</entry><entry>Pharmacologically sedated/paralyzed</entry></row>
 <row><entry>LA6560-2</entry><entry>LOINC</entry><entry>Confused</entry></row>
 <row><entry>LA6630-3</entry><entry>LOINC</entry><entry>Not done</entry></row>
 <row><entry>LA7438-0</entry><entry>LOINC</entry><entry>Hallucinations</entry></row>
 <row><entry>LA9343-0</entry><entry>LOINC</entry><entry>Unresponsive</entry></row>
+<row><entry>LA6150-2</entry><entry>LOINC</entry><entry>Agitation</entry></row>
+<row><entry>LA23818-0</entry><entry>LOINC</entry><entry>Somnolent</entry></row>
+<row><entry>LA17666-1</entry><entry>LOINC</entry><entry>Stupor</entry></row>
+<row><entry>NewLA-3519039</entry><entry>LOINC</entry><entry>Psychologically Impaired</entry></row>
+<row><entry>NewLA-3519037</entry><entry>LOINC</entry><entry>Pharmacologically Sedated</entry></row>
+<row><entry>NewLA-3519043</entry><entry>LOINC</entry><entry>State of emotional shock and stress, unspecified</entry></row>
+<row><entry>NewLA-3519029</entry><entry>LOINC</entry><entry>Altered mental status, unspecified</entry></row>
+<row><entry>NewLA-3519031</entry><entry>LOINC</entry><entry>Developmentally Impaired</entry></row>
+<row><entry>NewLA-3519035</entry><entry>LOINC</entry><entry>Pharmacologically Paralyzed</entry></row>
+<row><entry>NewLA-3519041</entry><entry>LOINC</entry><entry>Slowness and poor responsiveness</entry></row>
+<row><entry>NewLA-3519045</entry><entry>LOINC</entry><entry>Strange and inexplicable behavior</entry></row>
+<row><entry>NewLA-3519047</entry><entry>LOINC</entry><entry>Uncooperative</entry></row>
+<row><entry>NewLA-3519049</entry><entry>LOINC</entry><entry>Unspecified coma</entry></row>
+<row><entry>NewLA-3519033</entry><entry>LOINC</entry><entry>Disorientation, unspecified</entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

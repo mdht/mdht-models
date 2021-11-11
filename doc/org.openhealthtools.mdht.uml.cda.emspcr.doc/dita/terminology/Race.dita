@@ -8,12 +8,15 @@
 <body>
 <!-- THIS IS GENERATED CONTENT, DO NOT EDIT -->
 <section id="definition">
-<table><tgroup cols="2">
+<table frame="all" rowsep="1" colsep="1">
+<tgroup cols="2">
 <colspec colname="col1" colwidth="1*"/>
 <colspec colname="col2" colwidth="4*"/>
 <tbody>
 <row><entry>Value Set</entry><entry>Race - 2.16.840.1.113883.1.11.14914</entry></row>
-<row><entry>Code System</entry><entry>Race and Ethnicity - CDC - 2.16.840.1.113883.6.238</entry></row>
+<row><entry>Version</entry><entry>1</entry></row>
+<row><entry>Definition</entry><entry>A Value Set of codes for Classifying data based upon race.
+Race is always reported at the discretion of the person for whom this attribute is reported, and reporting must be completed according to Federal guidelines for race reporting. Any code descending from the Race concept (1000-9) in that terminology may be used in the exchange.</entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

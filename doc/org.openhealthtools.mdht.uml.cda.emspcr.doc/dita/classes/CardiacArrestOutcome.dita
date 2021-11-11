@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Cardiac Arrest Outcome</title>
+<shortdesc conref="generated/_CardiacArrestOutcome.dita#classId/shortdesc"></shortdesc>
+<prolog conref="generated/_CardiacArrestOutcome.dita#classId/prolog"></prolog>
+<body>
+<section conref="generated/_CardiacArrestOutcome.dita#classId/knownSubclasses">
+</section>
+<!-- TODO: insert non-model class description markup here -->
+<section conref="generated/_CardiacArrestOutcome.dita#classId/description">
+</section>
+<section audience="contextTable" conref="generated/_CardiacArrestOutcome.dita#classId/contextTable">
+</section>
+<!-- TODO: insert UML class diagram here -->
+
+<ol audience="standards" conref="generated/_CardiacArrestOutcome.dita#classId/conformance">
+<li></li>
+</ol>
+<ol audience="developer" conref="generated/_CardiacArrestOutcome.dita#classId/aggregate">
+<li></li>
+</ol>
+<section audience="tableconformance"  conref="generated/_CardiacArrestOutcome.dita#classId/tableconformance">
+</section>
+<p> </p>
+<p><b>Cardiac Arrest Outcome example</b></p>
+<!-- TODO: insert custom instance example here -->
+<!-- generated instance example follows -->
+<codeblock conref="generated/_CardiacArrestOutcome.dita#classId/example">
+</codeblock>
+</body>
+</topic>

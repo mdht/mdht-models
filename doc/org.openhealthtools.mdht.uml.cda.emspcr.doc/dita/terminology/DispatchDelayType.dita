@@ -8,7 +8,8 @@
 <body>
 <!-- THIS IS GENERATED CONTENT, DO NOT EDIT -->
 <section id="definition">
-<table><tgroup cols="2">
+<table frame="all" rowsep="1" colsep="1">
+<tgroup cols="2">
 <colspec colname="col1" colwidth="1*"/>
 <colspec colname="col2" colwidth="4*"/>
 <tbody>
@@ -16,7 +17,8 @@
 <row><entry>Code System</entry><entry>LOINC - 2.16.840.1.113883.6.1</entry></row>
 <row><entry>Definition</entry><entry>Kind of circumstance delaying an EMS dispatch</entry></row>
 </tbody></tgroup></table>
-<table><tgroup cols="3">
+<table frame="all" rowsep="1" colsep="1">
+<tgroup cols="3">
 <colspec colname="col1" colwidth="1*"/>
 <colspec colname="col2" colwidth="1*"/>
 <colspec colname="col3" colwidth="2*"/>
@@ -27,11 +29,14 @@
 <row><entry>LA17183-7</entry><entry>LOINC</entry><entry>Diversion/failure (of previous unit)</entry></row>
 <row><entry>LA17579-6</entry><entry>LOINC</entry><entry>Caller (uncooperative)</entry></row>
 <row><entry>LA17580-4</entry><entry>LOINC</entry><entry>High call volume</entry></row>
-<row><entry>LA17581-2</entry><entry>LOINC</entry><entry>Location (inability to obtain)</entry></row>
+<row><entry>LA17581-2</entry><entry>LOINC</entry><entry>Incomplete Address Information Provided</entry></row>
 <row><entry>LA17582-0</entry><entry>LOINC</entry><entry>No EMS vehicles (units) available</entry></row>
 <row><entry>LA17584-6</entry><entry>LOINC</entry><entry>Technical failure (computer, phone etc.)</entry></row>
 <row><entry>LA18081-2</entry><entry>LOINC</entry><entry>None/no delay</entry></row>
 <row><entry>LA7540-3</entry><entry>LOINC</entry><entry>Language barrier</entry></row>
+<row><entry>NewLA-2208019</entry><entry>LOINC</entry><entry>Communication Specialist-Assignment Error</entry></row>
+<row><entry>NewLA-2208021</entry><entry>LOINC</entry><entry>No Receiving MD, Bed, Hospital</entry></row>
+<row><entry>NewLA-2208023</entry><entry>LOINC</entry><entry>Specialty Team Delay</entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

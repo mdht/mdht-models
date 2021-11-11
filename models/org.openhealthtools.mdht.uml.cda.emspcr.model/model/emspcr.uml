@@ -303,95 +303,7 @@ selected for the NEMSIS question. Further, the CDA model includes a single race 
             </ownedAttribute>
             <ownedAttribute xmi:id="_ppT5kHtAEeGs2I-Db78R9w" name="administrativeGenderCode" visibility="private" aggregation="composite">
               <ownedComment xmi:id="_ut-GQHtAEeGs2I-Db78R9w">
-                <body>NEMSIS Trace: EPatient.13&#xD;
-
-		&lt;table scale=&quot;60&quot; colsep=&quot;1&quot; rowsep=&quot;1&quot; frame=&quot;all&quot;>
-&lt;tgroup cols=&quot;6&quot;>
-&lt;colspec colname=&quot;COLSPEC0&quot; colwidth=&quot;50*&quot;/>
-&lt;colspec colname=&quot;COLSPEC1&quot; colwidth=&quot;50*&quot;/>
-&lt;colspec colname=&quot;COLSPEC2&quot; colwidth=&quot;50*&quot;/>
-&lt;colspec colname=&quot;COLSPEC3&quot; colwidth=&quot;50*&quot;/>
-&lt;colspec colname=&quot;COLSPEC4&quot; colwidth=&quot;130*&quot;/>
-&lt;colspec colname=&quot;COLSPEC5&quot; colwidth=&quot;80*&quot;/>
- &lt;thead>
-&lt;row>
-&lt;entry colname=&quot;COLSPEC0&quot; valign=&quot;top&quot;>NEMSIS Code&lt;/entry>
-&lt;entry colname=&quot;COLSPEC1&quot; valign=&quot;top&quot;>NEMSIS Term&lt;/entry>
-&lt;entry colname=&quot;COLSPEC2&quot; valign=&quot;top&quot;>CDA Code&lt;/entry>
-&lt;entry colname=&quot;COLSPEC3&quot; valign=&quot;top&quot;>CDA Term&lt;/entry>
-&lt;entry colname=&quot;COLSPEC4&quot; valign=&quot;top&quot;>CDA System&lt;/entry>
-&lt;entry colname=&quot;COLSPEC5&quot; valign=&quot;top&quot;>Other Parameters&lt;/entry>
-
-&lt;/row>
-&lt;/thead>
-&lt;tbody>
- 		&lt;row>
-			&lt;entry>
-				9906001 
-			&lt;/entry>
-			&lt;entry>Female&lt;/entry>
-			&lt;entry>F&lt;/entry>
-			&lt;entry>Female&lt;/entry>
-			&lt;entry>2.16.840.1.113883.5.1&lt;/entry>
-			&lt;entry>&lt;/entry>
-		&lt;/row>
-	
-	
-			&lt;row>
-			&lt;entry>9906003 &lt;/entry>
-			&lt;entry>Male&lt;/entry>
-			&lt;entry>M&lt;/entry>
-			&lt;entry>Male&lt;/entry>
-			&lt;entry>2.16.840.1.113883.5.1&lt;/entry>
-			&lt;entry>&lt;/entry>
-		&lt;/row>
-		&lt;row>
-			&lt;entry>
-				&lt;p>9906007 &lt;/p>
-			&lt;/entry>
-			&lt;entry>
-				&lt;p>Female-to-Male, Transgender Male&lt;/p>
-			&lt;/entry>
-			&lt;entry>M&lt;/entry>
-			&lt;entry>Male&lt;/entry>
-			&lt;entry>2.16.840.1.113883.5.1&lt;/entry>
-			&lt;entry>&lt;/entry>
-		&lt;/row>
-		&lt;row>
-			&lt;entry>
-				&lt;p>9906009 &lt;/p>
-			&lt;/entry>
-			&lt;entry>
-				&lt;p>Male-to-Female, Transgender Female&lt;/p>
-			&lt;/entry>
-			&lt;entry>F&lt;/entry>
-			&lt;entry>Female&lt;/entry>
-			&lt;entry>2.16.840.1.113883.5.1&lt;/entry>
-			&lt;entry>&lt;/entry>
-		&lt;/row>
-		&lt;row>
-			&lt;entry>
-				&lt;p>9906011 &lt;/p>
-			&lt;/entry>
-			&lt;entry>
-				&lt;p>Other, neither exclusively male or female&lt;/p>
-			&lt;/entry>
-			&lt;entry>&lt;/entry>
-			&lt;entry>&lt;/entry>
-			&lt;entry>&lt;/entry>
-			&lt;entry>NullFlavor=&amp;quot;OTH&amp;quot;&lt;/entry>
-		&lt;/row>
-		&lt;row>
-			&lt;entry>9906005 &lt;/entry>
-			&lt;entry>Unknown (Unable to Determine)&lt;/entry>
-			&lt;entry>&lt;/entry>
-			&lt;entry>&lt;/entry>
-			&lt;entry>&lt;/entry>
-			&lt;entry>NullFlavor=&amp;quot;UNK&amp;quot;&lt;/entry>
-		&lt;/row>
-&lt;/tbody>
-&lt;/tgroup>
-&lt;/table></body>
+                <body>NEMSIS Trace: EPatient.13</body>
               </ownedComment>
               <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
               <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rVDpsXtAEeGs2I-Db78R9w" value="1"/>
@@ -1803,8 +1715,20 @@ DPersonnel.03 Middle: @ENXP=&quot;GIV&quot;</body>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_A0jzQMxQEeSng9W-IRKXig" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_xAhMoDv0Eeys8b2-Q288fA" name="unitDisposition" type="_uSA4MDKiEeyOwtfRawW6Qw" association="_xAhzsTv0Eeys8b2-Q288fA">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xAhMoTv0Eeys8b2-Q288fA"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xAhzsDv0Eeys8b2-Q288fA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_U4n6sUHPEeyzA5MgFxuJFA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_U4n6sEHPEeyzA5MgFxuJFA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_Q0O4MEHPEeyzA5MgFxuJFA" name="patientEngagement" type="_2BpygDKkEeyOwtfRawW6Qw" association="_Q0O4M0HPEeyzA5MgFxuJFA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_VjD-0EHPEeyzA5MgFxuJFA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_VjDXwEHPEeyzA5MgFxuJFA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_i3H14EHPEeyzA5MgFxuJFA" name="crewDisposition" type="_PFi4UDKmEeyOwtfRawW6Qw" association="_i3Ic8kHPEeyzA5MgFxuJFA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qYv0QEHPEeyzA5MgFxuJFA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qYvNMEHPEeyzA5MgFxuJFA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_wS0mAEHPEeyzA5MgFxuJFA" name="transportDisposition" type="_Kp-OcDKyEeyOwtfRawW6Qw" association="_wS1NEkHPEeyzA5MgFxuJFA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xhXcwEHPEeyzA5MgFxuJFA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xhW1sEHPEeyzA5MgFxuJFA" value="1"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_GGotEJ-kEeGorI3CPDW2ww" name="EMSPersonnelAdverseEventSection">
@@ -4608,6 +4532,14 @@ This nulled notional class is parallel to the explicit question &quot;patient on
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DtYOcMWTEeK3RfDsHamIUQ"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DtXnYMWTEeK3RfDsHamIUQ" value="1"/>
         <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_WtEdwUcLEd6besF9iFIJkQ"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_WXpoAEHQEeyzA5MgFxuJFA" name="lungAssessment" type="_gTzdICVKEeyHwdMImhiDzQ" association="_WXqPEkHQEeyzA5MgFxuJFA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_l3WQMEHQEeyzA5MgFxuJFA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_l3VpIEHQEeyzA5MgFxuJFA" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_7I7-gEHQEeyzA5MgFxuJFA" name="chestAssessment" type="_Y9KOgEHMEeyzA5MgFxuJFA" association="_7I8lkkHQEeyzA5MgFxuJFA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7I8lkEHQEeyzA5MgFxuJFA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7I8lkUHQEeyzA5MgFxuJFA" value="*"/>
       </ownedAttribute>
       <nestedClassifier xmi:type="uml:Class" xmi:id="_ceveAMWNEeK3RfDsHamIUQ" name="BodyWeightComponent">
         <generalization xmi:id="_6AfEoMWNEeK3RfDsHamIUQ">
@@ -7959,12 +7891,6 @@ UCUM units SHOULD be &quot;[mi_i]&quot;</body>
       <generalization xmi:id="_gTzdISVKEeyHwdMImhiDzQ">
         <general xmi:type="uml:Class" href="pathmap://CDA_MODEL///cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
       </generalization>
-      <ownedAttribute xmi:id="_kTm6kCVKEeyHwdMImhiDzQ" name="templateId" visibility="private" aggregation="composite">
-        <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_kTm6kSVKEeyHwdMImhiDzQ"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_kTm6kiVKEeyHwdMImhiDzQ" value="*"/>
-        <subsettedProperty href="pathmap://CDA_MODEL///cda.uml#_e--25kxsEd6h-an5IXo-DA"/>
-      </ownedAttribute>
       <ownedAttribute xmi:id="_kTovwCVKEeyHwdMImhiDzQ" name="code" visibility="private" aggregation="composite">
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
         <redefinedProperty href="pathmap://CDA_MODEL///cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
@@ -8003,7 +7929,7 @@ UCUM units SHOULD be &quot;[mi_i]&quot;</body>
         <ownedComment xmi:id="_aAmaMDKyEeyOwtfRawW6Qw">
           <body>NEMSIS trace: eDisposition.27</body>
         </ownedComment>
-        <type xmi:type="uml:Class" href="pathmap://CONSOL_MODEL/.controlled/consol-advancedirectives.uml#_I-YekExLEeWJ65CktI2ODQ"/>
+        <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_drKlQDKjEeyOwtfRawW6Qw" value="1"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_drJ-MDKjEeyOwtfRawW6Qw" value="1"/>
         <subsettedProperty href="pathmap://CDA_MODEL///cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
@@ -8020,7 +7946,7 @@ UCUM units SHOULD be &quot;[mi_i]&quot;</body>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
         <redefinedProperty href="pathmap://CDA_MODEL///cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_3FYgYTKkEeyOwtfRawW6Qw" name="value1" visibility="private" aggregation="composite">
+      <ownedAttribute xmi:id="_3FYgYTKkEeyOwtfRawW6Qw" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_g4-AMDKyEeyOwtfRawW6Qw">
           <body>NEMSIS Trace: eDisposition.28</body>
         </ownedComment>
@@ -8030,7 +7956,7 @@ UCUM units SHOULD be &quot;[mi_i]&quot;</body>
         <subsettedProperty href="pathmap://CDA_MODEL///cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_PFi4UDKmEeyOwtfRawW6Qw" name="EMSCrewDisposition">
+    <packagedElement xmi:type="uml:Class" xmi:id="_PFi4UDKmEeyOwtfRawW6Qw" name="CrewDisposition">
       <ownedComment xmi:id="_fq_noDKmEeyOwtfRawW6Qw">
         <body>The crew disposition for this EMS event identifying which crew provided primary patient care or whether support services were required.</body>
       </ownedComment>
@@ -8041,7 +7967,7 @@ UCUM units SHOULD be &quot;[mi_i]&quot;</body>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
         <redefinedProperty href="pathmap://CDA_MODEL///cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_QX7tQDKmEeyOwtfRawW6Qw" name="value1" visibility="private" aggregation="composite">
+      <ownedAttribute xmi:id="_QX7tQDKmEeyOwtfRawW6Qw" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_pgTf4DKmEeyOwtfRawW6Qw">
           <body>NEMSIS Trace: eDisposition.29</body>
         </ownedComment>
@@ -8062,7 +7988,7 @@ UCUM units SHOULD be &quot;[mi_i]&quot;</body>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
         <redefinedProperty href="pathmap://CDA_MODEL///cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_L4ny4DKyEeyOwtfRawW6Qw" name="value1" visibility="private" aggregation="composite">
+      <ownedAttribute xmi:id="_L4ny4DKyEeyOwtfRawW6Qw" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_xVutkDKyEeyOwtfRawW6Qw">
           <body>NEMSIS Trace: eDisposition.30</body>
         </ownedComment>
@@ -8074,6 +8000,48 @@ UCUM units SHOULD be &quot;[mi_i]&quot;</body>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_xAhzsTv0Eeys8b2-Q288fA" memberEnd="_xAhMoDv0Eeys8b2-Q288fA _xAhzsjv0Eeys8b2-Q288fA">
       <ownedEnd xmi:id="_xAhzsjv0Eeys8b2-Q288fA" type="_i-lM8J-dEeGorI3CPDW2ww" association="_xAhzsTv0Eeys8b2-Q288fA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_Y9KOgEHMEeyzA5MgFxuJFA" name="ChestAssessment">
+      <ownedComment xmi:id="_dfGIoEHMEeyzA5MgFxuJFA">
+        <body>The assessment findings associated with the patient's chest.</body>
+      </ownedComment>
+      <generalization xmi:id="_Y9KOgUHMEeyzA5MgFxuJFA">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL///cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
+      </generalization>
+      <ownedAttribute xmi:id="_apLrcEHMEeyzA5MgFxuJFA" name="code" visibility="private" aggregation="composite">
+        <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+        <redefinedProperty href="pathmap://CDA_MODEL///cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_apMSgEHMEeyzA5MgFxuJFA" name="value" visibility="private" aggregation="composite">
+        <ownedComment xmi:id="_vk53cEHMEeyzA5MgFxuJFA">
+          <body>NEMSIS Trace: eExam.25</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_apMSgUHMEeyzA5MgFxuJFA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_apMSgkHMEeyzA5MgFxuJFA" value="*"/>
+        <subsettedProperty href="pathmap://CDA_MODEL///cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_apM5kEHMEeyzA5MgFxuJFA" name="targetSiteCode1" visibility="private" aggregation="composite">
+        <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_apM5kUHMEeyzA5MgFxuJFA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_apM5kkHMEeyzA5MgFxuJFA" value="*"/>
+        <subsettedProperty href="pathmap://CDA_MODEL///cda.uml#_339AIEo-Ed6c3qsAxlFHaQ"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Q0O4M0HPEeyzA5MgFxuJFA" memberEnd="_Q0O4MEHPEeyzA5MgFxuJFA _Q0O4NEHPEeyzA5MgFxuJFA">
+      <ownedEnd xmi:id="_Q0O4NEHPEeyzA5MgFxuJFA" type="_i-lM8J-dEeGorI3CPDW2ww" association="_Q0O4M0HPEeyzA5MgFxuJFA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_i3Ic8kHPEeyzA5MgFxuJFA" memberEnd="_i3H14EHPEeyzA5MgFxuJFA _i3Ic80HPEeyzA5MgFxuJFA">
+      <ownedEnd xmi:id="_i3Ic80HPEeyzA5MgFxuJFA" type="_i-lM8J-dEeGorI3CPDW2ww" association="_i3Ic8kHPEeyzA5MgFxuJFA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_wS1NEkHPEeyzA5MgFxuJFA" memberEnd="_wS0mAEHPEeyzA5MgFxuJFA _wS1NE0HPEeyzA5MgFxuJFA">
+      <ownedEnd xmi:id="_wS1NE0HPEeyzA5MgFxuJFA" type="_i-lM8J-dEeGorI3CPDW2ww" association="_wS1NEkHPEeyzA5MgFxuJFA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_WXqPEkHQEeyzA5MgFxuJFA" memberEnd="_WXpoAEHQEeyzA5MgFxuJFA _WXqPE0HQEeyzA5MgFxuJFA">
+      <ownedEnd xmi:id="_WXqPE0HQEeyzA5MgFxuJFA" type="_zbYvIJoiEeG_FLcaRgAa7g" association="_WXqPEkHQEeyzA5MgFxuJFA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_7I8lkkHQEeyzA5MgFxuJFA" memberEnd="_7I7-gEHQEeyzA5MgFxuJFA _7I8lk0HQEeyzA5MgFxuJFA">
+      <ownedEnd xmi:id="_7I8lk0HQEeyzA5MgFxuJFA" type="_zbYvIJoiEeG_FLcaRgAa7g" association="_7I8lkkHQEeyzA5MgFxuJFA"/>
     </packagedElement>
     <profileApplication xmi:id="_xpUkQ2eQEeGtXKebdWh3hg">
       <eAnnotations xmi:id="_xpUkRGeQEeGtXKebdWh3hg" source="http://www.eclipse.org/uml2/2.0.0/UML">
@@ -8562,7 +8530,7 @@ UCUM units SHOULD be &quot;[mi_i]&quot;</body>
     <ruleId>CONF:10628</ruleId>
   </CDA:AssociationValidation>
   <CDA:CodeSystemConstraint xmi:id="_p1eMQJ-dEeGorI3CPDW2ww" code="67661-9" displayName="EMS disposition Narrative NEMSIS" base_Property="_lQkdsJ-dEeGorI3CPDW2ww">
-    <reference href="file:/C:/Users/JayLyle/eclipse-workspace/org.openhealthtools.mdht.uml.cda.emspcr.model/model/emspcr-vocab.uml#_YgJ0wcFTEeGyGv5RKvEgDA"/>
+    <reference href="file:/C:/Users/JayLyle/git/mdht-models/models/org.openhealthtools.mdht.uml.cda.emspcr.model/model/emspcr-vocab.uml#_YgJ0wcFTEeGyGv5RKvEgDA"/>
     <ruleId>CONF:10651</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:CDATemplate xmi:id="_uS5Z0J-dEeGorI3CPDW2ww" base_Class="_i-lM8J-dEeGorI3CPDW2ww" templateId="2.16.840.1.113883.17.3.10.1.4"/>
@@ -11104,42 +11072,42 @@ UCUM units SHOULD be &quot;[mi_i]&quot;</body>
   <CDA:AssociationValidation xmi:id="_IqZVvNICEeKRzPZKi7WbBQ" severity="INFO" base_Association="_ImY_cNICEeKRzPZKi7WbBQ">
     <ruleId>CONF:11003</ruleId>
   </CDA:AssociationValidation>
-  <CDA:Entry xmi:id="_IqZVvdICEeKRzPZKi7WbBQ" severity="INFO" base_Association="_ImY_cNICEeKRzPZKi7WbBQ" typeCode="DRIV">
+  <CDA:Entry xmi:id="_IqZVvdICEeKRzPZKi7WbBQ" severity="INFO" base_Association="_ImY_cNICEeKRzPZKi7WbBQ">
     <ruleId>CONF:11004</ruleId>
   </CDA:Entry>
   <CDA:CDATemplate xmi:id="_IqZVvtICEeKRzPZKi7WbBQ" base_Class="_Dfaa4J-eEeGorI3CPDW2ww" templateId="2.16.840.1.1133883.17.3.10.1.31" assigningAuthorityName="NEMSIS"/>
   <CDA:AssociationValidation xmi:id="_IqZVwtICEeKRzPZKi7WbBQ" base_Association="_ImlMsNICEeKRzPZKi7WbBQ">
     <ruleId>CONF:11007</ruleId>
   </CDA:AssociationValidation>
-  <CDA:Entry xmi:id="_IqZVw9ICEeKRzPZKi7WbBQ" base_Association="_ImlMsNICEeKRzPZKi7WbBQ" typeCode="DRIV">
+  <CDA:Entry xmi:id="_IqZVw9ICEeKRzPZKi7WbBQ" base_Association="_ImlMsNICEeKRzPZKi7WbBQ">
     <ruleId>CONF:11008</ruleId>
   </CDA:Entry>
   <CDA:CDATemplate xmi:id="_IqZVxNICEeKRzPZKi7WbBQ" base_Class="_nv-0gp-fEeGorI3CPDW2ww" templateId="2.16.840.1.1133883.17.3.10.1.33" assigningAuthorityName="NEMSIS"/>
   <CDA:AssociationValidation xmi:id="_IqZVxdICEeKRzPZKi7WbBQ" base_Association="_ImlMt9ICEeKRzPZKi7WbBQ">
     <ruleId>CONF:11009</ruleId>
   </CDA:AssociationValidation>
-  <CDA:Entry xmi:id="_IqZVxtICEeKRzPZKi7WbBQ" base_Association="_ImlMt9ICEeKRzPZKi7WbBQ" typeCode="DRIV">
+  <CDA:Entry xmi:id="_IqZVxtICEeKRzPZKi7WbBQ" base_Association="_ImlMt9ICEeKRzPZKi7WbBQ">
     <ruleId>CONF:11010</ruleId>
   </CDA:Entry>
   <CDA:CDATemplate xmi:id="_IqZVx9ICEeKRzPZKi7WbBQ" base_Class="_EagUtZ-fEeGorI3CPDW2ww" templateId="2.16.840.1.1133883.17.3.10.1.34" assigningAuthorityName="NEMSIS"/>
   <CDA:AssociationValidation xmi:id="_IqZVyNICEeKRzPZKi7WbBQ" base_Association="_ImrTUNICEeKRzPZKi7WbBQ">
     <ruleId>CONF:11011</ruleId>
   </CDA:AssociationValidation>
-  <CDA:Entry xmi:id="_IqZVydICEeKRzPZKi7WbBQ" base_Association="_ImrTUNICEeKRzPZKi7WbBQ" typeCode="DRIV">
+  <CDA:Entry xmi:id="_IqZVydICEeKRzPZKi7WbBQ" base_Association="_ImrTUNICEeKRzPZKi7WbBQ">
     <ruleId>CONF:11012</ruleId>
   </CDA:Entry>
   <CDA:CDATemplate xmi:id="_IqZVytICEeKRzPZKi7WbBQ" base_Class="_cm1D5Z-hEeGorI3CPDW2ww" templateId="2.16.840.1.1133883.17.3.10.1.35" assigningAuthorityName="NEMSIS"/>
   <CDA:AssociationValidation xmi:id="_IqZVy9ICEeKRzPZKi7WbBQ" base_Association="_ImrTV9ICEeKRzPZKi7WbBQ">
     <ruleId>CONF:11013</ruleId>
   </CDA:AssociationValidation>
-  <CDA:Entry xmi:id="_IqZVzNICEeKRzPZKi7WbBQ" base_Association="_ImrTV9ICEeKRzPZKi7WbBQ" typeCode="DRIV">
+  <CDA:Entry xmi:id="_IqZVzNICEeKRzPZKi7WbBQ" base_Association="_ImrTV9ICEeKRzPZKi7WbBQ">
     <ruleId>CONF:11014</ruleId>
   </CDA:Entry>
   <CDA:CDATemplate xmi:id="_IqZVzdICEeKRzPZKi7WbBQ" base_Class="_083apZ-hEeGorI3CPDW2ww" templateId="2.16.840.1.1133883.17.3.10.1.36" assigningAuthorityName="NEMSIS"/>
   <CDA:AssociationValidation xmi:id="_IqZVztICEeKRzPZKi7WbBQ" base_Association="_ImxZ8NICEeKRzPZKi7WbBQ">
     <ruleId>CONF:11015</ruleId>
   </CDA:AssociationValidation>
-  <CDA:Entry xmi:id="_IqZVz9ICEeKRzPZKi7WbBQ" base_Association="_ImxZ8NICEeKRzPZKi7WbBQ" typeCode="DRIV">
+  <CDA:Entry xmi:id="_IqZVz9ICEeKRzPZKi7WbBQ" base_Association="_ImxZ8NICEeKRzPZKi7WbBQ">
     <ruleId>CONF:11016</ruleId>
   </CDA:Entry>
   <CDA:CDATemplate xmi:id="_IqZV0NICEeKRzPZKi7WbBQ" base_Class="_Q4zL9Z-gEeGorI3CPDW2ww" templateId="2.16.840.1.1133883.17.3.10.1.37" assigningAuthorityName="NEMSIS"/>
@@ -12323,13 +12291,13 @@ UCUM units SHOULD be &quot;[mi_i]&quot;</body>
   <CDA:AssociationValidation xmi:id="_Ll1yQFArEeWCacQ3ckaz6g" severity="INFO" base_Association="_pkmdoGlQEeSpn5MdZ_-FPQ"/>
   <CDA:CDATemplate xmi:id="_q0d_gCVKEeyHwdMImhiDzQ" base_Class="_gTzdICVKEeyHwdMImhiDzQ" templateId="2.16.840.1.1133883.17.3.10.1.194"/>
   <CDA:CodeSystemConstraint xmi:id="_1fXb8CVKEeyHwdMImhiDzQ" code="NeweExam.23" displayName="Lung Assessment Finding" base_Property="_kTovwCVKEeyHwdMImhiDzQ">
-    <reference href="file:/C:/Users/JayLyle/eclipse-workspace/org.openhealthtools.mdht.uml.cda.emspcr.model/model/emspcr-vocab.uml#_YgJ0wcFTEeGyGv5RKvEgDA"/>
+    <reference href="file:/C:/Users/JayLyle/git/mdht-models/models/org.openhealthtools.mdht.uml.cda.emspcr.model/model/emspcr-vocab.uml#_YgJ0wcFTEeGyGv5RKvEgDA"/>
   </CDA:CodeSystemConstraint>
-  <CDA:ValueSetConstraint xmi:id="_Y51wgCVLEeyHwdMImhiDzQ" base_Property="_kTpW0CVKEeyHwdMImhiDzQ">
-    <reference href="file:/C:/Users/JayLyle/eclipse-workspace/org.openhealthtools.mdht.uml.cda.emspcr.model/model/emspcr-vocab.uml#_BHorcBoaEeyPvO14mrApVQ"/>
+  <CDA:ValueSetConstraint xmi:id="_Y51wgCVLEeyHwdMImhiDzQ" base_Property="_kTpW0CVKEeyHwdMImhiDzQ" uri="emspcr-vocab::LungFinding">
+    <reference href="file:/C:/Users/JayLyle/git/mdht-models/models/org.openhealthtools.mdht.uml.cda.emspcr.model/model/emspcr-vocab.uml#_BHorcBoaEeyPvO14mrApVQ"/>
   </CDA:ValueSetConstraint>
-  <CDA:ValueSetConstraint xmi:id="_cVnT0CVLEeyHwdMImhiDzQ" base_Property="_kTpW0yVKEeyHwdMImhiDzQ">
-    <reference href="file:/C:/Users/JayLyle/eclipse-workspace/org.openhealthtools.mdht.uml.cda.emspcr.model/model/emspcr-vocab.uml#_VaCGQRodEeyPvO14mrApVQ"/>
+  <CDA:ValueSetConstraint xmi:id="_cVnT0CVLEeyHwdMImhiDzQ" base_Property="_kTpW0yVKEeyHwdMImhiDzQ" uri="emspcr-vocab::LungFindingLocation">
+    <reference href="file:/C:/Users/JayLyle/eclipse-workspace/BackupPCR/model/emspcr-vocab.uml#_VaCGQRodEeyPvO14mrApVQ"/>
   </CDA:ValueSetConstraint>
   <CDA:CodeSystemConstraint xmi:id="_txro0DHSEeyA__laJHreSQ" code="N" base_Property="_2ZtSUEJTEeK3I6jW34aYTg">
     <reference href="file:/C:/Users/JayLyle/eclipse-workspace/org.openhealthtools.mdht.uml.cda.emspcr.model/model/emspcr-vocab.uml#_jnvQAB7cEeyBnPWCl2bgOQ"/>
@@ -12339,34 +12307,33 @@ UCUM units SHOULD be &quot;[mi_i]&quot;</body>
   <CDA:PropertyValidation xmi:id="_Wp2tYDKdEeyOwtfRawW6Qw" severity="WARNING" base_Property="_kTpW0yVKEeyHwdMImhiDzQ"/>
   <CDA:CDATemplate xmi:id="_FcbwYDKjEeyOwtfRawW6Qw" base_Class="_uSA4MDKiEeyOwtfRawW6Qw" templateId="2.16.840.1.1133883.17.3.10.1.196"/>
   <CDA:CodeSystemConstraint xmi:id="_ToMEcDKjEeyOwtfRawW6Qw" code="neweDisposition.27" displayName="Unit Disposition" base_Property="_w9pYADKiEeyOwtfRawW6Qw">
-    <reference href="file:/C:/Users/JayLyle/eclipse-workspace/org.openhealthtools.mdht.uml.cda.emspcr.model/model/emspcr-vocab.uml#_YgJ0wcFTEeGyGv5RKvEgDA"/>
+    <reference href="file:/C:/Users/JayLyle/git/mdht-models/models/org.openhealthtools.mdht.uml.cda.emspcr.model/model/emspcr-vocab.uml#_YgJ0wcFTEeGyGv5RKvEgDA"/>
   </CDA:CodeSystemConstraint>
-  <CDA:ValueSetConstraint xmi:id="_kUhe4DKjEeyOwtfRawW6Qw" base_Property="_w9p_EDKiEeyOwtfRawW6Qw">
-    <reference href="file:/C:/Users/JayLyle/eclipse-workspace/org.openhealthtools.mdht.uml.cda.emspcr.model/model/emspcr-vocab.uml#_lF914BloEeyirYLmelJuXQ"/>
+  <CDA:ValueSetConstraint xmi:id="_kUhe4DKjEeyOwtfRawW6Qw" base_Property="_w9p_EDKiEeyOwtfRawW6Qw" uri="">
+    <reference href="file:/C:/Users/JayLyle/eclipse-workspace/BackupPCR/model/emspcr-vocab.uml#_sBw3YDKjEeyOwtfRawW6Qw"/>
   </CDA:ValueSetConstraint>
   <CDA:CDATemplate xmi:id="_5hkO8DKkEeyOwtfRawW6Qw" base_Class="_2BpygDKkEeyOwtfRawW6Qw" templateId="2.16.840.1.1133883.17.3.10.1.197"/>
   <CDA:CodeSystemConstraint xmi:id="_-0MmMDKkEeyOwtfRawW6Qw" code="neweDisposition.28" displayName="Patient Engagement" base_Property="_3FYgYDKkEeyOwtfRawW6Qw">
-    <reference href="file:/C:/Users/JayLyle/eclipse-workspace/org.openhealthtools.mdht.uml.cda.emspcr.model/model/emspcr-vocab.uml#_YgJ0wcFTEeGyGv5RKvEgDA"/>
+    <reference href="file:/C:/Users/JayLyle/git/mdht-models/models/org.openhealthtools.mdht.uml.cda.emspcr.model/model/emspcr-vocab.uml#_YgJ0wcFTEeGyGv5RKvEgDA"/>
   </CDA:CodeSystemConstraint>
-  <CDA:ValueSetConstraint xmi:id="_aX0TQDKlEeyOwtfRawW6Qw" base_Property="_3FYgYTKkEeyOwtfRawW6Qw">
-    <reference href="file:/C:/Users/JayLyle/eclipse-workspace/org.openhealthtools.mdht.uml.cda.emspcr.model/model/emspcr-vocab.uml#_v7U14BloEeyirYLmelJuXQ"/>
+  <CDA:ValueSetConstraint xmi:id="_aX0TQDKlEeyOwtfRawW6Qw" base_Property="_3FYgYTKkEeyOwtfRawW6Qw" uri="emspcr-vocab::PatientEngagement">
+    <reference href="file:/C:/Users/JayLyle/eclipse-workspace/BackupPCR/model/emspcr-vocab.uml#_v7U14BloEeyirYLmelJuXQ"/>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_qqMVkDKlEeyOwtfRawW6Qw" base_Property="_3FYgYTKkEeyOwtfRawW6Qw"/>
   <CDA:CDATemplate xmi:id="_U5nIsDKmEeyOwtfRawW6Qw" base_Class="_PFi4UDKmEeyOwtfRawW6Qw" templateId="2.16.840.1.1133883.17.3.10.1.198"/>
   <CDA:CodeSystemConstraint xmi:id="_bIGrQDKmEeyOwtfRawW6Qw" code="neweDisposition.29" displayName="Crew Disposition" base_Property="_QX7GMDKmEeyOwtfRawW6Qw">
-    <reference href="file:/C:/Users/JayLyle/eclipse-workspace/org.openhealthtools.mdht.uml.cda.emspcr.model/model/emspcr-vocab.uml#_YgJ0wcFTEeGyGv5RKvEgDA"/>
+    <reference href="file:/C:/Users/JayLyle/git/mdht-models/models/org.openhealthtools.mdht.uml.cda.emspcr.model/model/emspcr-vocab.uml#_YgJ0wcFTEeGyGv5RKvEgDA"/>
   </CDA:CodeSystemConstraint>
-  <CDA:ValueSetConstraint xmi:id="__xil8DKpEeyOwtfRawW6Qw" base_Property="_QX7tQDKmEeyOwtfRawW6Qw">
-    <reference href="file:/C:/Users/JayLyle/eclipse-workspace/org.openhealthtools.mdht.uml.cda.emspcr.model/model/emspcr-vocab.uml#_04PogDKmEeyOwtfRawW6Qw"/>
+  <CDA:ValueSetConstraint xmi:id="__xil8DKpEeyOwtfRawW6Qw" base_Property="_QX7tQDKmEeyOwtfRawW6Qw" uri="emspcr-vocab::CrewDisposition">
+    <reference href="file:/C:/Users/JayLyle/git/mdht-models/models/org.openhealthtools.mdht.uml.cda.emspcr.model/model/emspcr-vocab.uml#_04PogDKmEeyOwtfRawW6Qw"/>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_DXgnEDKqEeyOwtfRawW6Qw" base_Property="_QX7tQDKmEeyOwtfRawW6Qw"/>
   <CDA:CDATemplate xmi:id="_N942QDKyEeyOwtfRawW6Qw" base_Class="_Kp-OcDKyEeyOwtfRawW6Qw" templateId="2.16.840.1.1133883.17.3.10.1.199"/>
-  <CDA:ValueSetConstraint xmi:id="_0H9koDKyEeyOwtfRawW6Qw" base_Property="_L4nL0DKyEeyOwtfRawW6Qw"/>
   <CDA:CodeSystemConstraint xmi:id="_0VRA0DKyEeyOwtfRawW6Qw" code="neweDisposition.30" displayName="Transport Disposition" base_Property="_L4nL0DKyEeyOwtfRawW6Qw">
-    <reference href="file:/C:/Users/JayLyle/eclipse-workspace/org.openhealthtools.mdht.uml.cda.emspcr.model/model/emspcr-vocab.uml#_YgJ0wcFTEeGyGv5RKvEgDA"/>
+    <reference href="file:/C:/Users/JayLyle/git/mdht-models/models/org.openhealthtools.mdht.uml.cda.emspcr.model/model/emspcr-vocab.uml#_YgJ0wcFTEeGyGv5RKvEgDA"/>
   </CDA:CodeSystemConstraint>
-  <CDA:ValueSetConstraint xmi:id="__j5ccDKyEeyOwtfRawW6Qw" base_Property="_L4ny4DKyEeyOwtfRawW6Qw">
-    <reference href="file:/C:/Users/JayLyle/eclipse-workspace/org.openhealthtools.mdht.uml.cda.emspcr.model/model/emspcr-vocab.uml#_Q49DwDKzEeyOwtfRawW6Qw"/>
+  <CDA:ValueSetConstraint xmi:id="__j5ccDKyEeyOwtfRawW6Qw" base_Property="_L4ny4DKyEeyOwtfRawW6Qw" uri="emspcr-vocab::TransportDisposition">
+    <reference href="file:/C:/Users/JayLyle/git/mdht-models/models/org.openhealthtools.mdht.uml.cda.emspcr.model/model/emspcr-vocab.uml#_Q49DwDKzEeyOwtfRawW6Qw"/>
   </CDA:ValueSetConstraint>
   <CDA:CodeSystemConstraint xmi:id="_A-qpkDTdEey7mqGON1i0RQ" base_Property="_YR0LkJuoEeGzXI65shd6Fw">
     <reference href="file:/C:/Users/JayLyle/eclipse-workspace/org.openhealthtools.mdht.uml.cda.emspcr.model/model/emspcr-vocab.uml#_-m7-MB7YEeyBnPWCl2bgOQ"/>
@@ -12378,5 +12345,22 @@ UCUM units SHOULD be &quot;[mi_i]&quot;</body>
   <CDA:ValueSetConstraint xmi:id="_ajS-kDm4EeyZsMlzd1PHVg" base_Property="_083aqZ-hEeGorI3CPDW2ww">
     <reference href="file:/C:/Users/JayLyle/eclipse-workspace/org.openhealthtools.mdht.uml.cda.emspcr.model/model/emspcr-vocab.uml#_92nb8HSTEeGa4IXs2ghZEw"/>
   </CDA:ValueSetConstraint>
-  <CDA:AssociationValidation xmi:id="_yHkUQDv0Eeys8b2-Q288fA" base_Association="_xAhzsTv0Eeys8b2-Q288fA"/>
+  <CDA:PropertyValidation xmi:id="_NPn7QEHKEeyUtcwaTRiR1Q" base_Property="_3FYgYDKkEeyOwtfRawW6Qw"/>
+  <CDA:CodeSystemConstraint xmi:id="_fnsM0EHMEeyzA5MgFxuJFA" code="NeweExam.25" base_Property="_apLrcEHMEeyzA5MgFxuJFA">
+    <reference href="file:/C:/Users/JayLyle/git/mdht-models/models/org.openhealthtools.mdht.uml.cda.emspcr.model/model/emspcr-vocab.uml#_YgJ0wcFTEeGyGv5RKvEgDA"/>
+  </CDA:CodeSystemConstraint>
+  <CDA:ValueSetConstraint xmi:id="_v9yRgEHMEeyzA5MgFxuJFA" base_Property="_apMSgEHMEeyzA5MgFxuJFA">
+    <reference href="file:/C:/Users/JayLyle/eclipse-workspace/BackupPCR/model/emspcr-vocab.uml#_yFiocBodEeyPvO14mrApVQ"/>
+  </CDA:ValueSetConstraint>
+  <CDA:PropertyValidation xmi:id="_NvX1gEHOEeyzA5MgFxuJFA" severity="WARNING" base_Property="_L4ny4DKyEeyOwtfRawW6Qw"/>
+  <CDA:Entry xmi:id="_EZtRMEHPEeyzA5MgFxuJFA" base_Association="_xAhzsTv0Eeys8b2-Q288fA"/>
+  <CDA:Entry xmi:id="_Zauz8EHPEeyzA5MgFxuJFA" base_Association="_Q0O4M0HPEeyzA5MgFxuJFA"/>
+  <CDA:Entry xmi:id="_q8id0EHPEeyzA5MgFxuJFA" base_Association="_i3Ic8kHPEeyzA5MgFxuJFA"/>
+  <CDA:Entry xmi:id="_yBwNAEHPEeyzA5MgFxuJFA" base_Association="_wS1NEkHPEeyzA5MgFxuJFA"/>
+  <CDA:AssociationValidation xmi:id="_ulRpoEHQEeyzA5MgFxuJFA" severity="INFO" base_Association="_WXqPEkHQEeyzA5MgFxuJFA"/>
+  <CDA:AssociationValidation xmi:id="_AS5h8EHREeyzA5MgFxuJFA" severity="INFO" base_Association="_7I8lkkHQEeyzA5MgFxuJFA"/>
+  <CDA:PropertyValidation xmi:id="_AC9-IEMGEeyGfIUWLZt1XA" base_Property="_w9p_EDKiEeyOwtfRawW6Qw"/>
+  <CDA:PropertyValidation xmi:id="_Bva44EMGEeyGfIUWLZt1XA" base_Property="_w9pYADKiEeyOwtfRawW6Qw"/>
+  <CDA:PropertyValidation xmi:id="_LE9E4EMGEeyGfIUWLZt1XA" base_Property="_apMSgEHMEeyzA5MgFxuJFA"/>
+  <CDA:PropertyValidation xmi:id="_MJz0IEMGEeyGfIUWLZt1XA" base_Property="_apLrcEHMEeyzA5MgFxuJFA"/>
 </xmi:XMI>

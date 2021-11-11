@@ -8,30 +8,31 @@
 <body>
 <!-- THIS IS GENERATED CONTENT, DO NOT EDIT -->
 <section id="definition">
-<table><tgroup cols="2">
+<table frame="all" rowsep="1" colsep="1">
+<tgroup cols="2">
 <colspec colname="col1" colwidth="1*"/>
 <colspec colname="col2" colwidth="4*"/>
 <tbody>
 <row><entry>Value Set</entry><entry>EMSLevelOfService - 2.16.840.1.113883.17.3.11.70</entry></row>
-<row><entry>Code System</entry><entry>LOINC - 2.16.840.1.113883.6.1</entry></row>
 <row><entry>Definition</entry><entry>Level of service provided for an encounter (as defined by CMS)</entry></row>
 </tbody></tgroup></table>
-<table><tgroup cols="3">
+<table frame="all" rowsep="1" colsep="1">
+<tgroup cols="3">
 <colspec colname="col1" colwidth="1*"/>
 <colspec colname="col2" colwidth="1*"/>
 <colspec colname="col3" colwidth="2*"/>
 <thead><row>
 <entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
 </row></thead><tbody>
-<row><entry>LA18102-6</entry><entry>LOINC</entry><entry>ALS, level 1</entry></row>
-<row><entry>LA18103-4</entry><entry>LOINC</entry><entry>ALS, level 1 emergency</entry></row>
-<row><entry>LA18104-2</entry><entry>LOINC</entry><entry>ALS, level 2</entry></row>
-<row><entry>LA18105-9</entry><entry>LOINC</entry><entry>BLS</entry></row>
-<row><entry>LA18106-7</entry><entry>LOINC</entry><entry>BLS, emergency</entry></row>
-<row><entry>LA18107-5</entry><entry>LOINC</entry><entry>Fixed wing (airplane)</entry></row>
-<row><entry>LA18108-3</entry><entry>LOINC</entry><entry>Paramedic intercept</entry></row>
-<row><entry>LA18109-1</entry><entry>LOINC</entry><entry>Specialty care transport</entry></row>
-<row><entry>LA18110-9</entry><entry>LOINC</entry><entry>Rotary wing (helicopter)</entry></row>
+<row><entry>LA18102-6</entry><entry></entry><entry>ALS, level 1</entry></row>
+<row><entry>LA18103-4</entry><entry></entry><entry>ALS, level 1 emergency</entry></row>
+<row><entry>LA18104-2</entry><entry></entry><entry>ALS, level 2</entry></row>
+<row><entry>LA18105-9</entry><entry></entry><entry>BLS</entry></row>
+<row><entry>LA18106-7</entry><entry></entry><entry>BLS, emergency</entry></row>
+<row><entry>LA18107-5</entry><entry></entry><entry>Fixed wing (airplane)</entry></row>
+<row><entry>LA18108-3</entry><entry></entry><entry>Paramedic intercept</entry></row>
+<row><entry>LA18109-1</entry><entry></entry><entry>Specialty care transport</entry></row>
+<row><entry>LA18110-9</entry><entry></entry><entry>Rotary wing (helicopter)</entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

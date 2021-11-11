@@ -8,7 +8,8 @@
 <body>
 <!-- THIS IS GENERATED CONTENT, DO NOT EDIT -->
 <section id="definition">
-<table><tgroup cols="2">
+<table frame="all" rowsep="1" colsep="1">
+<tgroup cols="2">
 <colspec colname="col1" colwidth="1*"/>
 <colspec colname="col2" colwidth="4*"/>
 <tbody>
@@ -16,7 +17,8 @@
 <row><entry>Code System</entry><entry>LOINC - 2.16.840.1.113883.6.1</entry></row>
 <row><entry>Definition</entry><entry>Kind of safety equipment</entry></row>
 </tbody></tgroup></table>
-<table><tgroup cols="3">
+<table frame="all" rowsep="1" colsep="1">
+<tgroup cols="3">
 <colspec colname="col1" colwidth="1*"/>
 <colspec colname="col2" colwidth="1*"/>
 <colspec colname="col3" colwidth="2*"/>
@@ -36,6 +38,7 @@
 <row><entry>LA9391-9</entry><entry>LOINC</entry><entry>Eye protection</entry></row>
 <row><entry>LA9392-7</entry><entry>LOINC</entry><entry>Protective clothing</entry></row>
 <row><entry>LA9393-5</entry><entry>LOINC</entry><entry>Personal flotation device</entry></row>
+<row><entry>NewLA-2907033</entry><entry>LOINC</entry><entry>Unable to Determine</entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

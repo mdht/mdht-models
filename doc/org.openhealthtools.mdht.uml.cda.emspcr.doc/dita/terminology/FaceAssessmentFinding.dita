@@ -8,7 +8,8 @@
 <body>
 <!-- THIS IS GENERATED CONTENT, DO NOT EDIT -->
 <section id="definition">
-<table><tgroup cols="2">
+<table frame="all" rowsep="1" colsep="1">
+<tgroup cols="2">
 <colspec colname="col1" colwidth="1*"/>
 <colspec colname="col2" colwidth="4*"/>
 <tbody>
@@ -16,7 +17,8 @@
 <row><entry>Code System</entry><entry>LOINC - 2.16.840.1.113883.6.1</entry></row>
 <row><entry>Definition</entry><entry>Finding resulting from EMS face assessment</entry></row>
 </tbody></tgroup></table>
-<table><tgroup cols="3">
+<table frame="all" rowsep="1" colsep="1">
+<tgroup cols="3">
 <colspec colname="col1" colwidth="1*"/>
 <colspec colname="col2" colwidth="1*"/>
 <colspec colname="col3" colwidth="2*"/>
@@ -25,15 +27,11 @@
 </row></thead><tbody>
 <row><entry>LA17208-2</entry><entry>LOINC</entry><entry>Bleeding controlled</entry></row>
 <row><entry>LA17209-0</entry><entry>LOINC</entry><entry>Bleeding uncontrolled</entry></row>
-<row><entry>LA17210-8</entry><entry>LOINC</entry><entry>Decapitation</entry></row>
 <row><entry>LA17211-6</entry><entry>LOINC</entry><entry>Drainage</entry></row>
 <row><entry>LA17213-2</entry><entry>LOINC</entry><entry>Mass/lesion</entry></row>
 <row><entry>LA17214-0</entry><entry>LOINC</entry><entry>Puncture/stab wound</entry></row>
-<row><entry>LA17215-7</entry><entry>LOINC</entry><entry>Swelling/bruising/contusion with pain</entry></row>
 <row><entry>LA17216-5</entry><entry>LOINC</entry><entry>Asymmetric smile or droop</entry></row>
-<row><entry>LA17220-7</entry><entry>LOINC</entry><entry>Swelling/bruising/contusion without pain</entry></row>
-<row><entry>LA17244-7</entry><entry>LOINC</entry><entry>Gunshot wound-entry</entry></row>
-<row><entry>LA17245-4</entry><entry>LOINC</entry><entry>Gunshot wound-exit</entry></row>
+<row><entry>LA17212-4</entry><entry>LOINC</entry><entry>Gunshot Wound</entry></row>
 <row><entry>LA18220-6</entry><entry>LOINC</entry><entry>Avulsion</entry></row>
 <row><entry>LA18221-4</entry><entry>LOINC</entry><entry>Burn, blistering</entry></row>
 <row><entry>LA18222-2</entry><entry>LOINC</entry><entry>Burn, charring</entry></row>
@@ -46,6 +44,10 @@
 <row><entry>LA7410-9</entry><entry>LOINC</entry><entry>Abrasion</entry></row>
 <row><entry>LA7452-1</entry><entry>LOINC</entry><entry>Laceration</entry></row>
 <row><entry>LA7460-4</entry><entry>LOINC</entry><entry>Pain</entry></row>
+<row><entry>LA7423-2</entry><entry>LOINC</entry><entry>Contusion</entry></row>
+<row><entry>LA17229-8</entry><entry>LOINC</entry><entry>Crush Injury</entry></row>
+<row><entry>LA22440-4</entry><entry>LOINC</entry><entry>Swelling</entry></row>
+<row><entry>LA17709-9</entry><entry>LOINC</entry><entry>Tenderness</entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

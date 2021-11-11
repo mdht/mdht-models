@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Chest Finding Location</title>
+<prolog id="prolog">
+<resourceid id="2.16.840.1.113883.17.3.11.119"/>
+</prolog>
+<body>
+<!-- THIS IS GENERATED CONTENT, DO NOT EDIT -->
+<section id="definition">
+<table frame="all" rowsep="1" colsep="1">
+<tgroup cols="2">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="4*"/>
+<tbody>
+<row><entry>Value Set</entry><entry>ChestFindingLocation - 2.16.840.1.113883.17.3.11.119</entry></row>
+</tbody></tgroup></table>
+<table frame="all" rowsep="1" colsep="1">
+<tgroup cols="3">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="1*"/>
+<colspec colname="col3" colwidth="2*"/>
+<thead><row>
+<entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
+</row></thead><tbody>
+<row><entry>newLA3524011</entry><entry></entry><entry>General - Posterior</entry></row>
+<row><entry>newLA3524001</entry><entry></entry><entry>Left - Anterior</entry></row>
+<row><entry>newLA3524003</entry><entry></entry><entry>Left - Posterior</entry></row>
+<row><entry>newLA3524005</entry><entry></entry><entry>Right - Anterior</entry></row>
+<row><entry>newLA3524009</entry><entry></entry><entry>General - Anterior</entry></row>
+<row><entry>newLA3524013</entry><entry></entry><entry>Left - Side</entry></row>
+<row><entry>newLA3524015</entry><entry></entry><entry>Right - Side</entry></row>
+<row><entry>newLA3524007</entry><entry></entry><entry>Right - Posterior</entry></row>
+</tbody></tgroup></table>
+</section>
+</body>
+</topic>

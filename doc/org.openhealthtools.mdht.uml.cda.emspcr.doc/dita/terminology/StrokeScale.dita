@@ -8,7 +8,8 @@
 <body>
 <!-- THIS IS GENERATED CONTENT, DO NOT EDIT -->
 <section id="definition">
-<table><tgroup cols="2">
+<table frame="all" rowsep="1" colsep="1">
+<tgroup cols="2">
 <colspec colname="col1" colwidth="1*"/>
 <colspec colname="col2" colwidth="4*"/>
 <tbody>
@@ -16,19 +17,26 @@
 <row><entry>Code System</entry><entry>LOINC - 2.16.840.1.113883.6.1</entry></row>
 <row><entry>Definition</entry><entry>Type of instrument used to evaluate for stroke</entry></row>
 </tbody></tgroup></table>
-<table><tgroup cols="3">
+<table frame="all" rowsep="1" colsep="1">
+<tgroup cols="3">
 <colspec colname="col1" colwidth="1*"/>
 <colspec colname="col2" colwidth="1*"/>
 <colspec colname="col3" colwidth="2*"/>
 <thead><row>
 <entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
 </row></thead><tbody>
-<row><entry>LA17110-0</entry><entry>LOINC</entry><entry>Cincinnati</entry></row>
-<row><entry>LA17111-8</entry><entry>LOINC</entry><entry>Los Angeles</entry></row>
-<row><entry>LA17112-6</entry><entry>LOINC</entry><entry>Miami emergency neurologic deficit (MEND)</entry></row>
-<row><entry>LA17113-4</entry><entry>LOINC</entry><entry>NIH</entry></row>
+<row><entry>LA17110-0</entry><entry>LOINC</entry><entry>Cincinnati Prehospital Stroke Scale (CPSS)</entry></row>
+<row><entry>LA17112-6</entry><entry>LOINC</entry><entry>Miami Emergency Neurologic Deficit Exam (MEND)</entry></row>
+<row><entry>LA17113-4</entry><entry>LOINC</entry><entry>NIH Stroke Scale (NIHSS)</entry></row>
 <row><entry>LA18300-6</entry><entry>LOINC</entry><entry>Other stoke scale type</entry></row>
-<row><entry>LA3774-2</entry><entry>LOINC</entry><entry>Massachusetts</entry></row>
+<row><entry>LA3774-2</entry><entry>LOINC</entry><entry>Massachusetts Stroke Scale (MSS)</entry></row>
+<row><entry>LA24430-3</entry><entry>LOINC</entry><entry>FAST-ED</entry></row>
+<row><entry>NewLA-3330023</entry><entry>LOINC</entry><entry>Los Angeles Motor Score (LAMS)</entry></row>
+<row><entry>NewLA-3330021</entry><entry>LOINC</entry><entry>Rapid Arterial oCclusion Evaluation (RACE)</entry></row>
+<row><entry>NewLA-3330019</entry><entry>LOINC</entry><entry>Melbourne Ambulance Stroke Screen (MASS)</entry></row>
+<row><entry>NewLA-3330017</entry><entry>LOINC</entry><entry>Ontario Prehospital Stroke Scale (OPSS)</entry></row>
+<row><entry>NewLA-3330015</entry><entry>LOINC</entry><entry>Boston Stroke Scale (BOSS)</entry></row>
+<row><entry>NewLA-3330004</entry><entry>LOINC</entry><entry>Los Angeles Prehospital Stroke Screen (LAPSS)</entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

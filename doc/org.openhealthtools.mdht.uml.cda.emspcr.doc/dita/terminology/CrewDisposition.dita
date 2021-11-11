@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Crew Disposition</title>
+<prolog id="prolog">
+<resourceid id="2.16.840.1.113883.17.3.11.120"/>
+</prolog>
+<body>
+<!-- THIS IS GENERATED CONTENT, DO NOT EDIT -->
+<section id="definition">
+<table frame="all" rowsep="1" colsep="1">
+<tgroup cols="2">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="4*"/>
+<tbody>
+<row><entry>Value Set</entry><entry>CrewDisposition - 2.16.840.1.113883.17.3.11.120</entry></row>
+</tbody></tgroup></table>
+<table frame="all" rowsep="1" colsep="1">
+<tgroup cols="3">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="1*"/>
+<colspec colname="col3" colwidth="2*"/>
+<thead><row>
+<entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
+</row></thead><tbody>
+<row><entry>newLA4229013</entry><entry></entry><entry>Back in Service, Care/Support Services Refused</entry></row>
+<row><entry>newLA4229011</entry><entry></entry><entry>Back in Service, No Care/Support Services Required</entry></row>
+<row><entry>newLA4229009</entry><entry></entry><entry>Incident Support Services Provided (Including Standby)</entry></row>
+<row><entry>newLA4229007</entry><entry></entry><entry>Assumed Primary Care from Another EMS Crew</entry></row>
+<row><entry>newLA4229005</entry><entry></entry><entry>Provided Care Supporting Primary EMS Crew</entry></row>
+<row><entry>newLA4229003</entry><entry></entry><entry>Initiated Primary Care and Transferred to Another EMS Crew</entry></row>
+<row><entry>newLA4229001</entry><entry></entry><entry>Initiated and Continued Primary Care</entry></row>
+</tbody></tgroup></table>
+</section>
+</body>
+</topic>

@@ -8,12 +8,12 @@
 <body>
 <!-- THIS IS GENERATED CONTENT, DO NOT EDIT -->
 <section id="definition">
-<table><tgroup cols="2">
+<table frame="all" rowsep="1" colsep="1">
+<tgroup cols="2">
 <colspec colname="col1" colwidth="1*"/>
 <colspec colname="col2" colwidth="4*"/>
 <tbody>
 <row><entry>Value Set</entry><entry>Ethnicity - 2.16.840.1.113883.1.11.15836</entry></row>
-<row><entry>Code System</entry><entry>Race and Ethnicity - CDC - 2.16.840.1.113883.6.238</entry></row>
 <row><entry>Definition</entry><entry>Person's ethnic background</entry></row>
 </tbody></tgroup></table>
 </section>

@@ -8,7 +8,8 @@
 <body>
 <!-- THIS IS GENERATED CONTENT, DO NOT EDIT -->
 <section id="definition">
-<table><tgroup cols="2">
+<table frame="all" rowsep="1" colsep="1">
+<tgroup cols="2">
 <colspec colname="col1" colwidth="1*"/>
 <colspec colname="col2" colwidth="4*"/>
 <tbody>
@@ -16,7 +17,8 @@
 <row><entry>Code System</entry><entry>LOINC - 2.16.840.1.113883.6.1</entry></row>
 <row><entry>Definition</entry><entry>Estimation of patient's pregnant status and maturity</entry></row>
 </tbody></tgroup></table>
-<table><tgroup cols="3">
+<table frame="all" rowsep="1" colsep="1">
+<tgroup cols="3">
 <colspec colname="col1" colwidth="1*"/>
 <colspec colname="col2" colwidth="1*"/>
 <colspec colname="col3" colwidth="2*"/>
@@ -28,6 +30,7 @@
 <row><entry>LA17331-2</entry><entry>LOINC</entry><entry>Yes, confirmed greater than 20 weeks</entry></row>
 <row><entry>LA17332-0</entry><entry>LOINC</entry><entry>Possible, unconfirmed</entry></row>
 <row><entry>LA32-8</entry><entry>LOINC</entry><entry>No</entry></row>
+<row><entry>LA24406-3</entry><entry>LOINC</entry><entry>Yes, Weeks Unknown</entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

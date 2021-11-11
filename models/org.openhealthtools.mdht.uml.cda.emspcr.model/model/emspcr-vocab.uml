@@ -1684,7 +1684,7 @@
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_K-niAB7YEeyBnPWCl2bgOQ" name="ActCode"/>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_-m7XIB7YEeyBnPWCl2bgOQ" name="SNOMED CT"/>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_jnuB4B7cEeyBnPWCl2bgOQ" name="ActStatus"/>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_sBvpQDKjEeyOwtfRawW6Qw" name="EMS Unit Disposition">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_sBvpQDKjEeyOwtfRawW6Qw" name="Unit Disposition">
       <ownedLiteral xmi:id="_xalWMDKjEeyOwtfRawW6Qw" name="newLA4227003"/>
       <ownedLiteral xmi:id="_BC69ADKkEeyOwtfRawW6Qw" name="newLA4227005"/>
       <ownedLiteral xmi:id="_FJB2wDKkEeyOwtfRawW6Qw" name="newLA4227007"/>

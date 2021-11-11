@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Blood Pressure Measurement Method</title>
+<prolog id="prolog">
+<resourceid id="2.16.840.1.113883.17.3.11.107"/>
+</prolog>
+<body>
+<!-- THIS IS GENERATED CONTENT, DO NOT EDIT -->
+<section id="definition">
+<table frame="all" rowsep="1" colsep="1">
+<tgroup cols="2">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="4*"/>
+<tbody>
+<row><entry>Value Set</entry><entry>BloodPressureMeasurementMethod - 2.16.840.1.113883.17.3.11.107</entry></row>
+<row><entry>Definition</entry><entry>Technique for measuring blood pressure</entry></row>
+</tbody></tgroup></table>
+<table frame="all" rowsep="1" colsep="1">
+<tgroup cols="3">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="1*"/>
+<colspec colname="col3" colwidth="2*"/>
+<thead><row>
+<entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
+</row></thead><tbody>
+<row><entry>LA24013-7</entry><entry></entry><entry>Cuff-automated</entry></row>
+<row><entry>LA24012-9</entry><entry></entry><entry>Cuff-manual auscultated</entry></row>
+<row><entry>LA25780-0</entry><entry></entry><entry>Arterial Line</entry></row>
+<row><entry>LA25782-6</entry><entry></entry><entry>Cuff-Manual Palpated Only</entry></row>
+<row><entry>LA19771-7</entry><entry></entry><entry>Doppler</entry></row>
+<row><entry>LA25783-4</entry><entry></entry><entry>Venous Line</entry></row>
+</tbody></tgroup></table>
+</section>
+</body>
+</topic>

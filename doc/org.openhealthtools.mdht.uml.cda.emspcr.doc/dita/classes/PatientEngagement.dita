@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Patient Engagement</title>
+<shortdesc conref="generated/_PatientEngagement.dita#classId/shortdesc"></shortdesc>
+<prolog conref="generated/_PatientEngagement.dita#classId/prolog"></prolog>
+<body>
+<section conref="generated/_PatientEngagement.dita#classId/knownSubclasses">
+</section>
+<!-- TODO: insert non-model class description markup here -->
+<section conref="generated/_PatientEngagement.dita#classId/description">
+</section>
+<section audience="contextTable" conref="generated/_PatientEngagement.dita#classId/contextTable">
+</section>
+<!-- TODO: insert UML class diagram here -->
+
+<ol audience="standards" conref="generated/_PatientEngagement.dita#classId/conformance">
+<li></li>
+</ol>
+<ol audience="developer" conref="generated/_PatientEngagement.dita#classId/aggregate">
+<li></li>
+</ol>
+<section audience="tableconformance"  conref="generated/_PatientEngagement.dita#classId/tableconformance">
+</section>
+<p> </p>
+<p><b>Patient Engagement example</b></p>
+<!-- TODO: insert custom instance example here -->
+<!-- generated instance example follows -->
+<codeblock conref="generated/_PatientEngagement.dita#classId/example">
+</codeblock>
+</body>
+</topic>

@@ -3,18 +3,18 @@
 <bookmap id="cdabook">
     <booktitle>
 		<mainbooktitle>Emergency Medical Services Patient Care Report</mainbooktitle>
-		<booktitlealt id="ballot">September 2013</booktitlealt>
+		<booktitlealt id="Publication">Jan 2022</booktitlealt>
 		<booktitlealt id="image"><image href="images/hl7logo.gif"/></booktitlealt>	
     </booktitle>
     <bookmeta>
     	<author>Clinical Interoperative Council</author>
-    	<author>Emergency Care Work Group</author>
+    	<!-- <author>Emergency Care Work Group</author>
     	<author>Patient Care Work Group</author>
-    	<author>Public Health and Emergency Response Work Group</author>
+    	<author>Public Health and Emergency Response Work Group</author>  -->
     	<prodinfo>
-			<prodname>CDAR2L3_IG_EMSRUNRPT</prodname>
+    	    <prodname>CDAR2_IG_EMS_PCR</prodname>  
 			<vrmlist>
-				<vrm release="R1" version="2014FEB" ></vrm>
+			    <vrm release="R3_N1" version="2022JAN" ></vrm>
 			</vrmlist>
 			<brand>HL7 IG for CDA R2</brand>
 			<series>Normative</series>
@@ -32,7 +32,7 @@
                 <year>2009</year>
             </copyrfirst>
             <copyrlast>
-                <year>2013</year>
+                <year>2022</year>
             </copyrlast>
             <bookowner>
                 <organization/>
@@ -53,7 +53,7 @@
     </frontmatter>
     <chapter format="ditamap" href="introduction/introduction.ditamap"/>
   <chapter format="ditamap" href="content/content.ditamap"/>
-<!--     <chapter href="appendices/appendices.ditamap" format="ditamap"/> -->
+  <chapter format="ditamap" href="appendices/appendices.ditamap" /> 
     <backmatter>
         <topicref href="Sample.dita" navtitle="SAMPLE" type="topic"/>
  

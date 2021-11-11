@@ -8,7 +8,8 @@
 <body>
 <!-- THIS IS GENERATED CONTENT, DO NOT EDIT -->
 <section id="definition">
-<table><tgroup cols="2">
+<table frame="all" rowsep="1" colsep="1">
+<tgroup cols="2">
 <colspec colname="col1" colwidth="1*"/>
 <colspec colname="col2" colwidth="4*"/>
 <tbody>
@@ -16,7 +17,8 @@
 <row><entry>Code System</entry><entry>LOINC - 2.16.840.1.113883.6.1</entry></row>
 <row><entry>Definition</entry><entry>Kind of abnormal effect associated with the administration of a medication</entry></row>
 </tbody></tgroup></table>
-<table><tgroup cols="3">
+<table frame="all" rowsep="1" colsep="1">
+<tgroup cols="3">
 <colspec colname="col1" colwidth="1*"/>
 <colspec colname="col2" colwidth="1*"/>
 <colspec colname="col3" colwidth="2*"/>
@@ -32,7 +34,7 @@
 <row><entry>LA17393-2</entry><entry>LOINC</entry><entry>Apnea</entry></row>
 <row><entry>LA17394-0</entry><entry>LOINC</entry><entry>Bradycardia</entry></row>
 <row><entry>LA17396-5</entry><entry>LOINC</entry><entry>Hypoxia</entry></row>
-<row><entry>TMP-LA17397-3a</entry><entry>LOINC</entry><entry>Itching</entry></row>
+<row><entry>LA20641-9</entry><entry>LOINC</entry><entry>Itching</entry></row>
 <row><entry>LA17713-1</entry><entry>LOINC</entry><entry>Injury</entry></row>
 <row><entry>LA17714-9</entry><entry>LOINC</entry><entry>Tachycardia</entry></row>
 <row><entry>LA18266-9</entry><entry>LOINC</entry><entry>Bradypnea</entry></row>
@@ -44,7 +46,7 @@
 <row><entry>LA9540-1</entry><entry>LOINC</entry><entry>Hyperthermia</entry></row>
 <row><entry>LA9541-9</entry><entry>LOINC</entry><entry>Hypothermia</entry></row>
 <row><entry>LA9548-4</entry><entry>LOINC</entry><entry>Respiratory distress</entry></row>
-<row><entry>TMP-LA17397-3b</entry><entry>LOINC</entry><entry>Urticaria</entry></row>
+<row><entry>LA20642-7</entry><entry>LOINC</entry><entry>Urticaria</entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

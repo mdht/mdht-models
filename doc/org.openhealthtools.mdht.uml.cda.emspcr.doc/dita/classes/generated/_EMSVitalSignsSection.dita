@@ -11,233 +11,44 @@
 <section id="knownSubclasses">
 </section>
 <section id="description">
-<p><lines><i>Collection of vital signs and other observations about the patient's status</i></lines></p>
+<p>Collection of vital signs and other observations about the patient's status</p>
 </section>
 <ol id="conformance">
-<li><b>SHALL</b> contain exactly one [1..1] templateId (  ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>="2.16.840.1.113883.17.3.10.1.23"</li></ol></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="8716-3" </tt><i>Vital Signs</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10252)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>templateId</b></tt> such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>@root</b>="2.16.840.1.113883.17.3.10.1.23"</tt></li></ol></li>
+<li>
+<b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="8716-3" </tt><i>Vital Signs</i> (CodeSystem:<tt> </tt>) (CONF:10252)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> and <b>SHOULD</b> equal "EMS Vital Signs" (CONF:10254)
+<li>
+<b>SHALL</b> contain exactly one [1..1] <tt><b>title</b>="EMS Vital Signs" </tt> which <b>SHOULD</b> equal "EMS Vital Signs" (CONF:10254)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:10969)
+<li>
+<b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:10969)
 </li>
-<li><b>SHALL</b> contain at least one [1..*] <tt><b>entry</b></tt> (CONF:10970)
-<ol>
-<li>Contains exactly one [1..1] <xref href="../VitalSignsOrganizer.dita">Vital Signs Organizer</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.28</tt>)</li></ol></li>
-<li><b>SHALL</b> contain at least one [1..*] <tt><b>entry</b></tt> (CONF:10972)
-<ol>
-<li>Contains exactly one [1..1] <xref href="../AdditionalVitalSignsOrganizer.dita">Additional Vital Signs Organizer</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.30</tt>)</li></ol></li>
+<li>
+If section/@nullFlavor is not present, <b>SHALL</b> contain  [1..*] <tt><b>entry</b></tt> such that it  (CONF:10970)<ol>
+<li>Conforms to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/VitalSignsOrganizer.html">Vital Signs Organizer</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.28</tt>)</li></ol>
+</li>
 </ol>
 <ol id="aggregate">
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="8716-3" </tt><i>Vital Signs</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10252)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="8716-3" </tt><i>Vital Signs</i> (CodeSystem:<tt> </tt>) (CONF:10252)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> and <b>SHOULD</b> equal "EMS Vital Signs" (CONF:10254)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b>="EMS Vital Signs" </tt> which <b>SHOULD</b> equal "EMS Vital Signs" (CONF:10254)
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:10969)
 </li>
-<li><b>SHALL</b> contain at least one [1..*] <tt><b>entry</b></tt> (CONF:10970)
+<li>If section/@nullFlavor is not present, <b>SHALL</b> contain  [1..*] <tt><b>entry</b></tt> such that it  (CONF:10970)
 <ol>
-<li>Contains exactly one [1..1] <xref href="../VitalSignsOrganizer.dita">Vital Signs Organizer</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.28</tt>)</li></ol></li>
-<li><b>SHALL</b> contain at least one [1..*] <tt><b>entry</b></tt> (CONF:10972)
-<ol>
-<li>Contains exactly one [1..1] <xref href="../AdditionalVitalSignsOrganizer.dita">Additional Vital Signs Organizer</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.30</tt>)</li></ol></li>
+<li>Conforms to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/VitalSignsOrganizer.html">Vital Signs Organizer</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.28</tt>)</li></ol></li>
 </ol>
-<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >emspcr::EMSVitalSignsSection</entry>  </row>  <row><entry namest="col0" nameend="col7" >/cda:ClinicalDocument/cda:component/cda:structuredBody/cda:component/cda:section[cda:templateId/@root = 2.16.840.1.113883.17.3.10.1.23]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CE</entry><entry>CONF:10252</entry><entry>LOINC 2.16.840.1.113883.6.1 8716-3</entry></row> 
-<row><entry>title</entry><entry>title</entry><entry>1..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>ST</entry><entry>CONF:10253</entry><entry> MISSINGTYPE</entry></row> 
-<row><entry>additionalVitalSignsOrganizer</entry><entry>cda:entry/cda:organizer[cda:templateId/@root = 2.16.840.1.1133883.17.3.10.1.30]</entry><entry>1..*</entry><entry>SHALL</entry><entry>YES</entry><entry>AdditionalVitalSignsOrganizer</entry><entry>CONF:10972</entry><entry> </entry></row> 
-<row><entry>text</entry><entry>text</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>StrucDocText</entry><entry>CONF:10969</entry><entry> </entry></row> 
-<row><entry>vitalSignsOrganizer</entry><entry>cda:entry/cda:organizer[cda:templateId/@root = 2.16.840.1.113883.10.20.22.4.26]</entry><entry>1..*</entry><entry>SHALL</entry><entry>YES</entry><entry>VitalSignsOrganizer</entry><entry>CONF:10970</entry><entry> </entry></row> 
-<row><entry>VitalSignsSection</entry><entry>VitalSignsSection</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>EMSVitalSignsSection</entry><entry>CONF:10026</entry><entry> </entry></row> 
-</tbody></tgroup></table></p></section>
-<codeblock id="example"><![CDATA[<section xmlns="urn:hl7-org:v3">
+<section id="contextTable"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="2" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><thead><row><entry namest="col0" nameend="col0" >Contained By</entry><entry namest="col1" nameend="col1" >Contains</entry></row></thead><tbody><row><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/PatientCareReport.html">Patient Care Report</xref></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/AbandonedProcedureReasonObservation.html">Abandoned Procedure Reason Observation</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/AbdomenAssessment.html">Abdomen Assessment</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/AirwayConfirmationObservation.html">Airway Confirmation Observation</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ArrestRhythm.html">Arrest Rhythm</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/BackAndSpineAssessment.html">Back And Spine Assessment</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/BodyTemperature.html">Body Temperature</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/CardiacArrestCause.html">Cardiac Arrest Cause</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/CardiacArrestOutcome.html">Cardiac Arrest Outcome</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/CardiacArrestTiming.html">Cardiac Arrest Timing</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ComplaintDuration.html">Complaint Duration</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ComplaintOrganSystem.html">Complaint Organ System</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ComplaintType.html">Complaint Type</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/DestinationRhythm.html">Destination Rhythm</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/DiastolicBloodPressure.html">Diastolic Blood Pressure</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/DispatchDelay.html">Dispatch Delay</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/DispatchLocationLatitude.html">Dispatch Location Latitude</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/DispatchLocationLongitude.html">Dispatch Location Longitude</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/DispatchLocationName.html">Dispatch Location Name</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ExtremitiesAssessment.html">Extremities Assessment</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/EyeAssessment.html">Eye Assessment</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/FaceAssessment.html">Face Assessment</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/HeadAssessment.html">Head Assessment</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/HeartAssessment.html">Heart Assessment</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/HeartRate.html">Heart Rate</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/LengthBasedPatientBodyWeightClass.html">Length Based Patient Body Weight Class</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/MedicationComplicationObservation.html">Medication Complication Observation</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/MedicationManfacturedProduct.html">Medication Manfactured Product</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/MedicationNotAdministeredReasonObservation.html">Medication Not Administered Reason Observation</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/MedicationPriorAdministrationObservation.html">Medication Prior Administration Observation</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/MedicationResponseObservation.html">Medication Response Observation</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/MentalStatusAssessment.html">Mental Status Assessment</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/NeckAssessment.html">Neck Assessment</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/NeurologicalAssessment.html">Neurological Assessment</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/OxygenSaturation.html">Oxygen Saturation</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/PatientBodyWeight.html">Patient Body Weight</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/PelvicAndGenitourinaryAssessment.html">Pelvic And Genitourinary Assessment</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ProcedureComplicationsObservation.html">Procedure Complications Observation</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ProcedureNumberOfAttemptsObservation.html">Procedure Number Of Attempts Observation</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ProcedurePatientResponseObservation.html">Procedure Patient Response Observation</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ProcedurePriorIndicator.html">Procedure Prior Indicator</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ProcedureSuccessfulObservation.html">Procedure Successful Observation</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ProtocolAgeCategory.html">Protocol Age Category</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ReasonProcedureNotAttemptedObservation.html">Reason Procedure Not Attempted Observation</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/RespiratoryRate.html">Respiratory Rate</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ResponseBeginningOdometerReading.html">Response Beginning Odometer Reading</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ResponseDelay.html">Response Delay</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ResponseDestinationOdometerReading.html">Response Destination Odometer Reading</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ResponseEndingOdometerReading.html">Response Ending Odometer Reading</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ResponseOnSceneOdometerReading.html">Response On Scene Odometer Reading</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ReturnOfSpontaneousCirculation.html">Return Of Spontaneous Circulation</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/SceneDelay.html">Scene Delay</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/SkinAssessment.html">Skin Assessment</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/SystolicBloodPressure.html">Systolic Blood Pressure</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/TransportDelay.html">Transport Delay</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/TransportModeQualifier.html">Transport Mode Qualifier</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/TurnaroundDelay.html">Turnaround Delay</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/VitalSignsOrganizer.html">Vital Signs Organizer</xref></entry></row></tbody></tgroup></table></p></section>
+<codeblock id="example" outputclass="language-xml"><![CDATA[<section>
   <templateId root="2.16.840.1.113883.17.3.10.1.23"/>
-  <id root="MDHT" extension="452566979"/>
-  <code code="8716-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Vital Signs"/>
+  <code code="8716-3" displayName="Vital Signs"/>
   <title>EMS Vital Signs</title>
   <text/>
-  <entry>
-    <organizer classCode="CLUSTER" moodCode="EVN">
-      <templateId root="2.16.840.1.1133883.17.3.10.1.28"/>
-      <templateId root="2.16.840.1.113883.10.20.22.4.26"/>
-      <id root="MDHT" extension="868152871"/>
-      <code code="46680005" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Vital signs"/>
-      <statusCode code="completed"/>
-      <effectiveTime>
-        <low value="2014"/>
-        <high value="2014"/>
-      </effectiveTime>
-      <component>
-        <observation/>
-      </component>
-      <component>
-        <observation/>
-      </component>
-      <component>
-        <observation/>
-      </component>
-      <component>
-        <observation/>
-      </component>
-      <component>
-        <observation/>
-      </component>
-      <component>
-        <observation/>
-      </component>
-      <component>
-        <observation moodCode="EVN">
-          <templateId root="2.16.840.1.1133883.17.3.10.1.29"/>
-          <id root="MDHT" extension="1573207244"/>
-          <code code="67518-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Obtained prior to units EMS care NEMSIS"/>
-          <text>Text Value</text>
-          <effectiveTime>
-            <low value="2014"/>
-            <high value="2014"/>
-          </effectiveTime>
-        </observation>
-      </component>
-    </organizer>
-  </entry>
-  <entry>
-    <organizer moodCode="EVN">
-      <templateId root="2.16.840.1.1133883.17.3.10.1.30"/>
-      <id root="MDHT" extension="303382136"/>
-      <statusCode code="completed"/>
-      <effectiveTime>
-        <low value="2014"/>
-        <high value="2014"/>
-      </effectiveTime>
-      <component>
-        <observation moodCode="EVN">
-          <templateId root="2.16.840.1.1133883.17.3.10.1.163"/>
-          <id root="MDHT" extension="892598959"/>
-          <code code="67520-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Stroke scale overall interpretation NEMSIS"/>
-          <text>Text Value</text>
-          <effectiveTime>
-            <low value="2014"/>
-            <high value="2014"/>
-          </effectiveTime>
-          <methodCode codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
-        </observation>
-      </component>
-      <component>
-        <observation moodCode="EVN">
-          <templateId root="2.16.840.1.1133883.17.3.10.1.164"/>
-          <id root="MDHT" extension="11800299"/>
-          <code code="56840-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Pain severity verbal numeric scale"/>
-          <text>Text Value</text>
-          <effectiveTime>
-            <low value="2014"/>
-            <high value="2014"/>
-          </effectiveTime>
-        </observation>
-      </component>
-      <component>
-        <observation moodCode="EVN">
-          <templateId root="2.16.840.1.1133883.17.3.10.1.165"/>
-          <id root="MDHT" extension="636527517"/>
-          <code code="67775-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Level of responsiveness NEMSIS"/>
-          <text>Text Value</text>
-          <effectiveTime>
-            <low value="2014"/>
-            <high value="2014"/>
-          </effectiveTime>
-        </observation>
-      </component>
-      <component>
-        <observation moodCode="EVN">
-          <templateId root="2.16.840.1.1133883.17.3.10.1.166"/>
-          <id root="MDHT" extension="1767219676"/>
-          <code code="2339-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Glucose [Mass/?volume] in Blood"/>
-          <text>Text Value</text>
-          <effectiveTime>
-            <low value="2014"/>
-            <high value="2014"/>
-          </effectiveTime>
-        </observation>
-      </component>
-      <component>
-        <observation moodCode="EVN">
-          <templateId root="2.16.840.1.1133883.17.3.10.1.167"/>
-          <id root="MDHT" extension="1197418980"/>
-          <code code="20563-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Carboxyhemoglobin/?Hemoglobin.total in Blood"/>
-          <text>Text Value</text>
-          <effectiveTime>
-            <low value="2014"/>
-            <high value="2014"/>
-          </effectiveTime>
-        </observation>
-      </component>
-      <component>
-        <observation moodCode="EVN">
-          <templateId root="2.16.840.1.1133883.17.3.10.1.168"/>
-          <id root="MDHT" extension="1633214087"/>
-          <code code="19889-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Carbon dioxide/Gas.total.at end expiration in Exhaled gas"/>
-          <text>Text Value</text>
-          <effectiveTime>
-            <low value="2014"/>
-            <high value="2014"/>
-          </effectiveTime>
-        </observation>
-      </component>
-      <component>
-        <observation moodCode="EVN">
-          <templateId root="2.16.840.1.1133883.17.3.10.1.169"/>
-          <id root="MDHT" extension="1351790944"/>
-          <code code="67519-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Cardiac rhythm NEMSIS"/>
-          <text>Text Value</text>
-          <effectiveTime>
-            <low value="2014"/>
-            <high value="2014"/>
-          </effectiveTime>
-          <methodCode codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
-          <participant/>
-        </observation>
-      </component>
-      <component>
-        <organizer>
-          <templateId root="2.16.840.1.1133883.17.3.10.1.170"/>
-          <id root="MDHT" extension="1726315107"/>
-          <statusCode code="completed"/>
-          <effectiveTime>
-            <low value="2014"/>
-            <high value="2014"/>
-          </effectiveTime>
-          <component>
-            <observation moodCode="EVN">
-              <templateId root="2.16.840.1.1133883.17.3.10.1.160"/>
-              <code code="9267-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Glasgow coma score.eye opening"/>
-            </observation>
-          </component>
-          <component>
-            <observation moodCode="EVN">
-              <templateId root="2.16.840.1.1133883.17.3.10.1.176"/>
-              <code code="9268-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Glasgow coma score.motor"/>
-            </observation>
-          </component>
-          <component>
-            <observation moodCode="EVN">
-              <templateId root="2.16.840.1.1133883.17.3.10.1.159"/>
-              <code code="55285-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Glasgow coma score special circumstances"/>
-            </observation>
-          </component>
-          <component>
-            <observation moodCode="EVN">
-              <templateId root="2.16.840.1.1133883.17.3.10.1.158"/>
-              <code code="9269-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Glasgow coma score.total"/>
-            </observation>
-          </component>
-          <component>
-            <observation moodCode="EVN">
-              <templateId root="2.16.840.1.1133883.17.3.10.1.162"/>
-              <code code="9270-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Glasgow coma score.verbal"/>
-            </observation>
-          </component>
-        </organizer>
-      </component>
-    </organizer>
-  </entry>
-</section>]]></codeblock>
+</section>
+]]></codeblock>
+<!--Error code 1: Pathmap to CDA .ecore files not resolved: pathmap://CDA_MODEL/../../org.eclipse.mdht.uml.hl7.rim/model/rim.ecore#//Act. Will not use any CDA extension!-->
 <section id="changes">
 </section>
 <p><ph id="classformalname">EMS Vital Signs Section</ph></p>

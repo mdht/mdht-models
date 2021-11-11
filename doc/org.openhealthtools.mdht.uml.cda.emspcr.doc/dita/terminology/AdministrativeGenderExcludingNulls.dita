@@ -3,26 +3,29 @@
 <topic id="classId" xml:lang="en-us">
 <title>Administrative Gender Excluding Nulls</title>
 <prolog id="prolog">
-<resourceid id="not specified"/>
+<resourceid id="2.16.840.1.113883.3.2074.1.1.5"/>
 </prolog>
 <body>
 <!-- THIS IS GENERATED CONTENT, DO NOT EDIT -->
 <section id="definition">
-<table><tgroup cols="2">
+<table frame="all" rowsep="1" colsep="1">
+<tgroup cols="2">
 <colspec colname="col1" colwidth="1*"/>
 <colspec colname="col2" colwidth="4*"/>
 <tbody>
-<row><entry>Value Set</entry><entry>Administrative Gender Excluding Nulls - (OID not specified)</entry></row>
+<row><entry>Value Set</entry><entry>Administrative Gender Excluding Nulls - 2.16.840.1.113883.3.2074.1.1.5</entry></row>
+<row><entry>Definition</entry><entry>Gender of the patient for administrative purposes, excluding the problematic value UN</entry></row>
 </tbody></tgroup></table>
-<table><tgroup cols="3">
+<table frame="all" rowsep="1" colsep="1">
+<tgroup cols="3">
 <colspec colname="col1" colwidth="1*"/>
 <colspec colname="col2" colwidth="1*"/>
 <colspec colname="col3" colwidth="2*"/>
 <thead><row>
 <entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
 </row></thead><tbody>
-<row><entry>M</entry><entry>AdministrativeGenderCode</entry><entry>Male</entry></row>
-<row><entry>F</entry><entry>AdministrativeGenderCode</entry><entry>Female</entry></row>
+<row><entry>M</entry><entry>MISSING</entry><entry>Male</entry></row>
+<row><entry>F</entry><entry>MISSING</entry><entry>Female</entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Transport Disposition</title>
+<prolog id="prolog">
+<resourceid id="2.16.840.1.113883.17.3.11.115"/>
+</prolog>
+<body>
+<!-- THIS IS GENERATED CONTENT, DO NOT EDIT -->
+<section id="definition">
+<table frame="all" rowsep="1" colsep="1">
+<tgroup cols="2">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="4*"/>
+<tbody>
+<row><entry>Value Set</entry><entry>TransportDisposition - 2.16.840.1.113883.17.3.11.115</entry></row>
+</tbody></tgroup></table>
+<table frame="all" rowsep="1" colsep="1">
+<tgroup cols="3">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="1*"/>
+<colspec colname="col3" colwidth="2*"/>
+<thead><row>
+<entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
+</row></thead><tbody>
+<row><entry>newLA4230013</entry><entry></entry><entry>No Transport</entry></row>
+<row><entry>newLA4230011</entry><entry></entry><entry>Non-Patient Transport (Not Otherwise Listed)</entry></row>
+<row><entry>newLA4230009</entry><entry></entry><entry>Patient Refused Transport</entry></row>
+<row><entry>newLA4230007</entry><entry></entry><entry>Transport by Another EMS Unit, with a Member of This Crew</entry></row>
+<row><entry>newLA4230005</entry><entry></entry><entry>Transport by Another EMS Unit</entry></row>
+<row><entry>newLA4230003</entry><entry></entry><entry>Transport by This EMS Unit, with a Member of Another Crew</entry></row>
+<row><entry>newLA4230001</entry><entry></entry><entry>Transport by This EMS Unit (This Crew Only)</entry></row>
+</tbody></tgroup></table>
+</section>
+</body>
+</topic>

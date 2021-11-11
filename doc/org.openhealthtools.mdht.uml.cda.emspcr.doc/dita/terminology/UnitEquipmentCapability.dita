@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Unit Equipment Capability</title>
+<prolog id="prolog">
+<resourceid id="2.16.840.1.113883.17.3.11.82"/>
+</prolog>
+<body>
+<!-- THIS IS GENERATED CONTENT, DO NOT EDIT -->
+<section id="definition">
+<table frame="all" rowsep="1" colsep="1">
+<tgroup cols="2">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="4*"/>
+<tbody>
+<row><entry>Value Set</entry><entry>UnitEquipmentCapability - 2.16.840.1.113883.17.3.11.82</entry></row>
+<row><entry>Code System</entry><entry>LOINC - 2.16.840.1.113883.6.1</entry></row>
+<row><entry>Definition</entry><entry>Role unit plays in response to an incident</entry></row>
+</tbody></tgroup></table>
+<table frame="all" rowsep="1" colsep="1">
+<tgroup cols="3">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="1*"/>
+<colspec colname="col3" colwidth="2*"/>
+<thead><row>
+<entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
+</row></thead><tbody>
+<row><entry>LA23840-4</entry><entry>LOINC</entry><entry>Air Transport-Helicopter</entry></row>
+<row><entry>LA23841-2</entry><entry>LOINC</entry><entry>Air Transport-Fixed Wing</entry></row>
+<row><entry>NewLA-2207017</entry><entry>LOINC</entry><entry>Ground Transport (BLS Equipped)</entry></row>
+<row><entry>NewLA-2207019</entry><entry>LOINC</entry><entry>Ground Transport (Critical Care Equipped)</entry></row>
+<row><entry>NewLA-2207021</entry><entry>LOINC</entry><entry>Non-Transport-Medical Treatment (ALS Equipped)</entry></row>
+<row><entry>NewLA-2207023</entry><entry>LOINC</entry><entry>Non-Transport-Medical Treatment (BLS Equipped)</entry></row>
+<row><entry>NewLA-2207025</entry><entry>LOINC</entry><entry>Wheel Chair Van/Ambulette</entry></row>
+<row><entry>NewLA-2207027</entry><entry>LOINC</entry><entry>Non-Transport-No Medical Equipment</entry></row>
+<row><entry>NewLA-2207015</entry><entry>LOINC</entry><entry>Ground Transport (ALS Equipped)</entry></row>
+</tbody></tgroup></table>
+</section>
+</body>
+</topic>

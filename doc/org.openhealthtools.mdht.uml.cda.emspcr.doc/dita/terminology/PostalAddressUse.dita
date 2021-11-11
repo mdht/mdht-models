@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Postal Address Use</title>
+<prolog id="prolog">
+<resourceid id="2.16.840.1.113883.1.11.10637"/>
+</prolog>
+<body>
+<!-- THIS IS GENERATED CONTENT, DO NOT EDIT -->
+<section id="definition">
+<table frame="all" rowsep="1" colsep="1">
+<tgroup cols="2">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="4*"/>
+<tbody>
+<row><entry>Value Set</entry><entry>PostalAddressUse - 2.16.840.1.113883.1.11.10637</entry></row>
+</tbody></tgroup></table>
+<table frame="all" rowsep="1" colsep="1">
+<tgroup cols="3">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="1*"/>
+<colspec colname="col3" colwidth="2*"/>
+<thead><row>
+<entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
+</row></thead><tbody>
+<row><entry>BAD</entry><entry></entry><entry>bad address</entry></row>
+<row><entry>DIR</entry><entry></entry><entry>direct</entry></row>
+<row><entry>H</entry><entry></entry><entry>home address</entry></row>
+<row><entry>HP</entry><entry></entry><entry>primary home</entry></row>
+<row><entry>HV</entry><entry></entry><entry>vacation home</entry></row>
+<row><entry>PHYS</entry><entry></entry><entry>physical visit address</entry></row>
+<row><entry>PST</entry><entry></entry><entry>postal address</entry></row>
+<row><entry>PUB</entry><entry></entry><entry>public</entry></row>
+<row><entry>TMP</entry><entry></entry><entry>temporary</entry></row>
+<row><entry>WP</entry><entry></entry><entry>work place</entry></row>
+</tbody></tgroup></table>
+</section>
+</body>
+</topic>

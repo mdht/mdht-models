@@ -11,196 +11,131 @@
 <section id="knownSubclasses">
 </section>
 <section id="description">
-<p><lines><i>Procedure performed by EMS unit</i></lines></p>
+<p>Procedure performed by EMS unit</p>
 </section>
 <ol id="conformance">
-<li><b>SHALL</b> contain exactly one [1..1] templateId (  ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>="2.16.840.1.1133883.17.3.10.1.181"</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>templateId</b></tt> such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>@root</b>="2.16.840.1.1133883.17.3.10.1.181"</tt></li></ol></li>
 <li><b>MAY</b> contain zero or one [0..1] <tt><b>@negationInd</b></tt> (CONF:11212)
-<ul><li><p><lines><i>Required to document a procedure not performed, with required "reason not performed" observation</i></lines></p></li></ul></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10496)
-<ul><li><p><lines><i>NEMSIS Trace: EProcedures.03, for which use ICD10-PCS
-and EArrest.09, for which use Cardiopulmonary Resuscitation type (VS 2.16.840.1.113883.17.3.5.57)
-and EArrest.10 (therapeutic hypothermia); if = true, include here as ICD-10 PCS "6A4"
+<p>Required to document a procedure not performed, with required "reason not performed" observation</p></li>
+<li>
+<b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10496), which <b>SHALL</b> be selected from (CodeSystem:<tt> </tt>)<p>NEMSIS Trace: EProcedures.03, for which use SNOMED CT
+Reference the NEMSIS Suggested Lists at https://nemsis.org/technical-resources/version-3/version-3-resource-repository/
+
+Also EArrest.09, for which use 439569004 |Resuscitation (procedure)|, with a translation of Cardiopulmonary Resuscitation type (VS 2.16.840.1.113883.17.3.11.57)
+and EArrest.10 (therapeutic hypothermia); include here as 308693008 |Induction of hypothermia (procedure)|, using negation indicator if not done
 and EArrest.03:
 3003001	Attempted Defibrillation = ICD10-PCS Defibrillation 5A2204Z
-3003005	Initiated Chest Compressions: use more detailed Cardiopulmonary Resuscitation Type (2.16.840.1.113883.17.3.5.57); reader may infer from this value if necessary
-3003003	Attempted Ventilation: use more detailed Cardiopulmonary Resuscitation Type (2.16.840.1.113883.17.3.5.57); reader may infer from this value if necessary
+3003005	Initiated Chest Compressions: use more detailed Cardiopulmonary Resuscitation Type (2.16.840.1.113883.17.3.11.57); reader may infer from this value if necessary
+3003003	Attempted Ventilation: use more detailed Cardiopulmonary Resuscitation Type (2.16.840.1.113883.17.3.11.57); reader may infer from this value if necessary
 3003007	Not Attempted-Considered Futile = Assistance 5A0; procedure negation = True; ReasonNotAttempted required
 3003009	Not Attempted-DNR Orders = Assistance 5A0; procedure negation = True; ReasonNotAttempted required
-3003011	Not Attempted-Signs of Circulation = Assistance 5A0; procedure negation = True; ReasonNotAttempted required</i></lines></p></li></ul></li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:10498) <ol><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../AbandonedProcedureReasonObservation.dita">Abandoned Procedure Reason Observation</xref> (CONF:10510)<ol>
-<li>Contains exactly one [1..1] <xref href="../AbandonedProcedureReasonObservation.dita">Abandoned Procedure Reason Observation</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.130</tt>)</li></ol></li></ol>
+3003011	Not Attempted-Signs of Circulation = Assistance 5A0; procedure negation = True; ReasonNotAttempted required</p>
 </li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>statusCode</b></tt> (CONF:10499)<tt><b>/@code</b>="Aborted" </tt><i>Aborted</i> (CodeSystem:<tt> 2.16.840.1.113883.5.14 ActStatus</tt>) (CONF:10500)
-<ul><li><p><lines><i>NEMSIS Trace: EArrest.15</i></lines></p></li></ul></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt> (CONF:10497)
-<ul><li><p><lines><i>NEMSIS Trace: EProcedures.01 goes in effectiveTime.low
-If an abandoned time is recorded, EArrest.15 goes in effectiveTime.high</i></lines></p></li></ul></li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>approachSiteCode</b></tt> (CONF:10502), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/IVSite.dita">IVSite</xref> 2.16.840.1.113883.17.3.11.56</tt><b> DYNAMIC</b> (CONF:10501)
-<ul><li><p><lines><i>NEMSIS Trace: EProcedures.13
-Required conditionally if procedure code is intravenous catheterization (E303)</i></lines></p></li></ul></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entryRelationship</b></tt> (CONF:10503) <ol><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../ProcedurePriorIndicator.dita">Procedure Prior Indicator</xref> (CONF:10515)<ol>
-<li>Contains exactly one [1..1] <xref href="../ProcedurePriorIndicator.dita">Procedure Prior Indicator</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.131</tt>)</li></ol></li></ol>
+<li>
+<b>MAY</b> contain zero or one [0..1] <tt><b>statusCode</b></tt> (CONF:10499)<p>NEMSIS Trace: EArrest.15
+Use value "aborted" for discontinued resuscitation (eArrest.15)</p>
 </li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:10504) <p><lines><i>Important for airway insertion</i></lines></p><ol><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../ProcedureNumberOfAttemptsObservation.dita">Procedure Number Of Attempts Observation</xref> (CONF:10519)<p><lines><i>NEMSIS Trace: EProcedures.05</i></lines></p><ol>
-<li>Contains exactly one [1..1] <xref href="../ProcedureNumberOfAttemptsObservation.dita">Procedure Number Of Attempts Observation</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.132</tt>)</li></ol></li></ol>
+<li>
+<b>SHALL</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt> (CONF:10497)<p>NEMSIS Trace: EProcedures.01 goes in effectiveTime.low
+If an abandoned time is recorded, EArrest.15 goes in effectiveTime.high</p>
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entryRelationship</b></tt> (CONF:10505) <ol><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../ProcedureSuccessfulObservation.dita">Procedure Successful Observation</xref> (CONF:10523)<ol>
-<li>Contains exactly one [1..1] <xref href="../ProcedureSuccessfulObservation.dita">Procedure Successful Observation</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.133</tt>)</li></ol></li></ol>
+<li>
+<b>MAY</b> contain zero or one [0..1] <tt><b>approachSiteCode</b></tt> (CONF:10502), which <b>SHALL</b> be selected from ValueSet<tt> Infusion Site 2.16.840.1.113883.17.3.11.56</tt><b> DYNAMIC</b> (CONF:10501)<p>NEMSIS Trace: EProcedures.13
+Required conditionally if procedure code is insertion of an infusion device
+Some NEMSIS values require additional information: see Appendix for details.</p>
 </li>
-<li><b>SHALL</b> contain at least one [1..*] <tt><b>entryRelationship</b></tt> (CONF:10506) <ol><li> Such entryRelationships <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../ProcedureComplicationsObservation.dita">Procedure Complications Observation</xref> (CONF:10527)<ol>
-<li>Contains exactly one [1..1] <xref href="../ProcedureComplicationsObservation.dita">Procedure Complications Observation</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.179</tt>)</li></ol></li></ol>
+<li>
+<b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> such that it  (CONF:10498) <p><lines><i>Required for cardiac resuscitation procedures (eArrest.16)</i></lines></p><ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/AbandonedProcedureReasonObservation.html">Abandoned Procedure Reason Observation</xref> (CONF:10510)</li></ol> 
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entryRelationship</b></tt> (CONF:10507) <ol><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../ProcedurePatientResponseObservation.dita">Procedure Patient Response Observation</xref> (CONF:10531)<ol>
-<li>Contains exactly one [1..1] <xref href="../ProcedurePatientResponseObservation.dita">Procedure Patient Response Observation</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.135</tt>)</li></ol></li></ol>
+<li>
+<b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> such that it  (CONF:10503) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ProcedurePriorIndicator.html">Procedure Prior Indicator</xref> (CONF:10515)</li></ol> 
 </li>
-<li><b>SHALL</b> contain at least one [1..*] <tt><b>performer</b></tt> (CONF:10508) <ol><li> Such performers <b>SHALL</b> contain exactly one [1..1] <tt><b>assignedEntity</b></tt> (CONF:10536) <ol><li> This assignedEntity <b>SHALL</b> contain exactly one [1..1] <tt><b>id</b></tt> (CONF:10539)<p><lines><i>NEMSIS Trace: EProcedures.09, ID equal to the EMS professional's agency ID number</i></lines></p></li><li> This assignedEntity <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10537), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/ProviderRole.dita">ProviderRole</xref> 2.16.840.1.113883.17.3.11.46</tt><b> DYNAMIC</b> (CONF:10538)<p><lines><i>NEMSIS Trace: EProcedures.10</i></lines></p></li></ol> </li></ol>
+<li>
+<b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> such that it  (CONF:10504) <p><lines><i>Important for airway insertion</i></lines></p><ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ProcedureNumberOfAttemptsObservation.html">Procedure Number Of Attempts Observation</xref> (CONF:10519)<p><lines><i>NEMSIS Trace: EProcedures.05</i></lines></p></li></ol> 
 </li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:10509) <p><lines><i>NEMSIS Trace: EAirway.04; required if procedure code is airway placement, i.e., 0CHY7BZ</i></lines></p><ol><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../AirwayConfirmationObservation.dita">Airway Confirmation Observation</xref> (CONF:10540)<ol>
-<li>Contains exactly one [1..1] <xref href="../AirwayConfirmationObservation.dita">Airway Confirmation Observation</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.175</tt>)</li></ol></li></ol>
+<li>
+<b>SHOULD</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> such that it  (CONF:10505) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ProcedureSuccessfulObservation.html">Procedure Successful Observation</xref> (CONF:10523)</li></ol> 
 </li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:11089) <ol><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../ReasonProcedureNotAttemptedObservation.dita">Reason Procedure Not Attempted Observation</xref> (CONF:11088)<ol>
-<li>Contains exactly one [1..1] <xref href="../ReasonProcedureNotAttemptedObservation.dita">Reason Procedure Not Attempted Observation</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.137</tt>)</li></ol></li></ol>
+<li>
+<b>MAY</b> contain zero or more [0..*] <tt><b>entryRelationship</b></tt> such that it  (CONF:10506) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ProcedureComplicationsObservation.html">Procedure Complications Observation</xref> (CONF:10527)</li></ol> 
+</li>
+<li>
+<b>SHOULD</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> such that it  (CONF:10507) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ProcedurePatientResponseObservation.html">Procedure Patient Response Observation</xref> (CONF:10531)</li></ol> 
+</li>
+<li>
+<b>SHOULD</b> contain zero or one [0..1] <tt><b>performer</b></tt> such that it  (CONF:10508) <p><lines><i>For procedures documented in eProcedures section, use the ProviderRole classification for provider.
+For procedures documented in eArrest section (eArrest.20 Who first initiated CPR, eArrest.21 Who first applied AED, eArrest.22 Who first defibrillated?), use the ProviderCategory classification for provider.</i></lines></p><ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>assignedEntity</b></tt> such that it  (CONF:10536) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>id</b></tt> (CONF:10539)<p><lines><i>NEMSIS Trace: EProcedures.09, ID equal to the EMS professional's agency ID number</i></lines></p></li><li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10537), which <b>SHALL</b> be selected from ValueSet<tt> ProviderRole 2.16.840.1.113883.17.3.11.46</tt><b> DYNAMIC</b> (CONF:10538)<p><lines><i>NEMSIS Trace: EProcedures.10</i></lines></p></li></ol></li><li>contain zero or one [0..1] <tt><b>assignedEntity</b></tt>, where its type is CDA Assigned Entity</li></ol> 
+</li>
+<li>
+<b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> such that it  (CONF:10509) <p><lines><i>NEMSIS Trace: EAirway.04; required if procedure code is airway placement, i.e., 0CHY7BZ</i></lines></p><ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/AirwayConfirmationObservation.html">Airway Confirmation Observation</xref> (CONF:10540)</li></ol> 
+</li>
+<li>
+<b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> such that it  (CONF:11089) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ReasonProcedureNotAttemptedObservation.html">Reason Procedure Not Attempted Observation</xref> (CONF:11088)</li></ol> 
+</li>
+<li>
+<b>MAY</b> contain zero or more [0..*] <tt><b>participant</b></tt> such that it  (CONF:11387) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>participantRole</b></tt> such that it  (CONF:10548) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>playingDevice</b></tt> such that it  (CONF:10549) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> AirwayDeviceType 2.16.840.1.113883.17.3.11.61</tt><b> DYNAMIC</b> (CONF:10550)<p><lines><i>NEMSIS Trace: EAirway.03</i></lines></p></li></ol></li></ol></li></ol> 
 </li>
 </ol>
 <ol id="aggregate">
-<li>Contains exactly one [1..1] <tt><b>@classCode</b></tt> with data type ActClass
+<li>contain exactly one [1..1] <tt><b>@classCode</b></tt>
 </li>
-<li>Contains exactly one [1..1] <tt><b>@moodCode</b></tt> with data type x_DocumentProcedureMood
+<li>contain exactly one [1..1] <tt><b>@moodCode</b></tt>
 </li>
 <li><b>MAY</b> contain zero or one [0..1] <tt><b>@negationInd</b></tt> (CONF:11212)
-<ul><li><p><lines><i>Required to document a procedure not performed, with required "reason not performed" observation</i></lines></p></li></ul></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10496)
-<ul><li><p><lines><i>NEMSIS Trace: EProcedures.03, for which use ICD10-PCS
-and EArrest.09, for which use Cardiopulmonary Resuscitation type (VS 2.16.840.1.113883.17.3.5.57)
-and EArrest.10 (therapeutic hypothermia); if = true, include here as ICD-10 PCS "6A4"
+<p>Required to document a procedure not performed, with required "reason not performed" observation</p></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10496), which <b>SHALL</b> be selected from (CodeSystem:<tt> </tt>)
+<p>NEMSIS Trace: EProcedures.03, for which use SNOMED CT
+Reference the NEMSIS Suggested Lists at https://nemsis.org/technical-resources/version-3/version-3-resource-repository/
+
+Also EArrest.09, for which use 439569004 |Resuscitation (procedure)|, with a translation of Cardiopulmonary Resuscitation type (VS 2.16.840.1.113883.17.3.11.57)
+and EArrest.10 (therapeutic hypothermia); include here as 308693008 |Induction of hypothermia (procedure)|, using negation indicator if not done
 and EArrest.03:
 3003001	Attempted Defibrillation = ICD10-PCS Defibrillation 5A2204Z
-3003005	Initiated Chest Compressions: use more detailed Cardiopulmonary Resuscitation Type (2.16.840.1.113883.17.3.5.57); reader may infer from this value if necessary
-3003003	Attempted Ventilation: use more detailed Cardiopulmonary Resuscitation Type (2.16.840.1.113883.17.3.5.57); reader may infer from this value if necessary
+3003005	Initiated Chest Compressions: use more detailed Cardiopulmonary Resuscitation Type (2.16.840.1.113883.17.3.11.57); reader may infer from this value if necessary
+3003003	Attempted Ventilation: use more detailed Cardiopulmonary Resuscitation Type (2.16.840.1.113883.17.3.11.57); reader may infer from this value if necessary
 3003007	Not Attempted-Considered Futile = Assistance 5A0; procedure negation = True; ReasonNotAttempted required
 3003009	Not Attempted-DNR Orders = Assistance 5A0; procedure negation = True; ReasonNotAttempted required
-3003011	Not Attempted-Signs of Circulation = Assistance 5A0; procedure negation = True; ReasonNotAttempted required</i></lines></p></li></ul></li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>statusCode</b></tt> (CONF:10499)<tt><b>/@code</b>="Aborted" </tt><i>Aborted</i> (CodeSystem:<tt> 2.16.840.1.113883.5.14 ActStatus</tt>) (CONF:10500)
-<ul><li><p><lines><i>NEMSIS Trace: EArrest.15</i></lines></p></li></ul></li>
+3003011	Not Attempted-Signs of Circulation = Assistance 5A0; procedure negation = True; ReasonNotAttempted required</p></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>statusCode</b></tt> (CONF:10499)
+<p>NEMSIS Trace: EArrest.15
+Use value "aborted" for discontinued resuscitation (eArrest.15)</p></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt> (CONF:10497)
-<ul><li><p><lines><i>NEMSIS Trace: EProcedures.01 goes in effectiveTime.low
-If an abandoned time is recorded, EArrest.15 goes in effectiveTime.high</i></lines></p></li></ul></li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>approachSiteCode</b></tt> (CONF:10502), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/IVSite.dita">IVSite</xref> 2.16.840.1.113883.17.3.11.56</tt><b> DYNAMIC</b> (CONF:10501)
-<ul><li><p><lines><i>NEMSIS Trace: EProcedures.13
-Required conditionally if procedure code is intravenous catheterization (E303)</i></lines></p></li></ul></li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:10498) <ol><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../AbandonedProcedureReasonObservation.dita">Abandoned Procedure Reason Observation</xref> (CONF:10510)<ol>
-<li>Contains exactly one [1..1] <xref href="../AbandonedProcedureReasonObservation.dita">Abandoned Procedure Reason Observation</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.130</tt>)</li></ol></li></ol>
+<p>NEMSIS Trace: EProcedures.01 goes in effectiveTime.low
+If an abandoned time is recorded, EArrest.15 goes in effectiveTime.high</p></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>approachSiteCode</b></tt> (CONF:10502), which <b>SHALL</b> be selected from ValueSet<tt> Infusion Site 2.16.840.1.113883.17.3.11.56</tt><b> DYNAMIC</b> (CONF:10501)
+<p>NEMSIS Trace: EProcedures.13
+Required conditionally if procedure code is insertion of an infusion device
+Some NEMSIS values require additional information: see Appendix for details.</p></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> such that it  (CONF:10498) <p><lines><i>Required for cardiac resuscitation procedures (eArrest.16)</i></lines></p><ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/AbandonedProcedureReasonObservation.html">Abandoned Procedure Reason Observation</xref> (CONF:10510)</li></ol> 
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entryRelationship</b></tt> (CONF:10503) <ol><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../ProcedurePriorIndicator.dita">Procedure Prior Indicator</xref> (CONF:10515)<ol>
-<li>Contains exactly one [1..1] <xref href="../ProcedurePriorIndicator.dita">Procedure Prior Indicator</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.131</tt>)</li></ol></li></ol>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> such that it  (CONF:10503) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ProcedurePriorIndicator.html">Procedure Prior Indicator</xref> (CONF:10515)</li></ol> 
 </li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:10504) <p><lines><i>Important for airway insertion</i></lines></p><ol><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../ProcedureNumberOfAttemptsObservation.dita">Procedure Number Of Attempts Observation</xref> (CONF:10519)<p><lines><i>NEMSIS Trace: EProcedures.05</i></lines></p><ol>
-<li>Contains exactly one [1..1] <xref href="../ProcedureNumberOfAttemptsObservation.dita">Procedure Number Of Attempts Observation</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.132</tt>)</li></ol></li></ol>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> such that it  (CONF:10504) <p><lines><i>Important for airway insertion</i></lines></p><ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ProcedureNumberOfAttemptsObservation.html">Procedure Number Of Attempts Observation</xref> (CONF:10519)<p><lines><i>NEMSIS Trace: EProcedures.05</i></lines></p></li></ol> 
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entryRelationship</b></tt> (CONF:10505) <ol><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../ProcedureSuccessfulObservation.dita">Procedure Successful Observation</xref> (CONF:10523)<ol>
-<li>Contains exactly one [1..1] <xref href="../ProcedureSuccessfulObservation.dita">Procedure Successful Observation</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.133</tt>)</li></ol></li></ol>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> such that it  (CONF:10505) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ProcedureSuccessfulObservation.html">Procedure Successful Observation</xref> (CONF:10523)</li></ol> 
 </li>
-<li><b>SHALL</b> contain at least one [1..*] <tt><b>entryRelationship</b></tt> (CONF:10506) <ol><li> Such entryRelationships <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../ProcedureComplicationsObservation.dita">Procedure Complications Observation</xref> (CONF:10527)<ol>
-<li>Contains exactly one [1..1] <xref href="../ProcedureComplicationsObservation.dita">Procedure Complications Observation</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.179</tt>)</li></ol></li></ol>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entryRelationship</b></tt> such that it  (CONF:10506) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ProcedureComplicationsObservation.html">Procedure Complications Observation</xref> (CONF:10527)</li></ol> 
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entryRelationship</b></tt> (CONF:10507) <ol><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../ProcedurePatientResponseObservation.dita">Procedure Patient Response Observation</xref> (CONF:10531)<ol>
-<li>Contains exactly one [1..1] <xref href="../ProcedurePatientResponseObservation.dita">Procedure Patient Response Observation</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.135</tt>)</li></ol></li></ol>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> such that it  (CONF:10507) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ProcedurePatientResponseObservation.html">Procedure Patient Response Observation</xref> (CONF:10531)</li></ol> 
 </li>
-<li><b>SHALL</b> contain at least one [1..*] <tt><b>performer</b></tt> (CONF:10508) <ol><li> Such performers <b>SHALL</b> contain exactly one [1..1] <tt><b>assignedEntity</b></tt> (CONF:10536) <ol><li> This assignedEntity <b>SHALL</b> contain exactly one [1..1] <tt><b>id</b></tt> (CONF:10539)<p><lines><i>NEMSIS Trace: EProcedures.09, ID equal to the EMS professional's agency ID number</i></lines></p></li><li> This assignedEntity <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10537), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/ProviderRole.dita">ProviderRole</xref> 2.16.840.1.113883.17.3.11.46</tt><b> DYNAMIC</b> (CONF:10538)<p><lines><i>NEMSIS Trace: EProcedures.10</i></lines></p></li></ol> </li></ol>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>performer</b></tt> such that it  (CONF:10508) <p><lines><i>For procedures documented in eProcedures section, use the ProviderRole classification for provider.
+For procedures documented in eArrest section (eArrest.20 Who first initiated CPR, eArrest.21 Who first applied AED, eArrest.22 Who first defibrillated?), use the ProviderCategory classification for provider.</i></lines></p><ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>assignedEntity</b></tt> such that it  (CONF:10536) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>id</b></tt> (CONF:10539)<p><lines><i>NEMSIS Trace: EProcedures.09, ID equal to the EMS professional's agency ID number</i></lines></p></li><li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10537), which <b>SHALL</b> be selected from ValueSet<tt> ProviderRole 2.16.840.1.113883.17.3.11.46</tt><b> DYNAMIC</b> (CONF:10538)<p><lines><i>NEMSIS Trace: EProcedures.10</i></lines></p></li></ol></li><li>contain zero or one [0..1] <tt><b>assignedEntity</b></tt>, where its type is CDA Assigned Entity</li></ol> 
 </li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:10509) <p><lines><i>NEMSIS Trace: EAirway.04; required if procedure code is airway placement, i.e., 0CHY7BZ</i></lines></p><ol><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../AirwayConfirmationObservation.dita">Airway Confirmation Observation</xref> (CONF:10540)<ol>
-<li>Contains exactly one [1..1] <xref href="../AirwayConfirmationObservation.dita">Airway Confirmation Observation</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.175</tt>)</li></ol></li></ol>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> such that it  (CONF:10509) <p><lines><i>NEMSIS Trace: EAirway.04; required if procedure code is airway placement, i.e., 0CHY7BZ</i></lines></p><ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/AirwayConfirmationObservation.html">Airway Confirmation Observation</xref> (CONF:10540)</li></ol> 
 </li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:11089) <ol><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../ReasonProcedureNotAttemptedObservation.dita">Reason Procedure Not Attempted Observation</xref> (CONF:11088)<ol>
-<li>Contains exactly one [1..1] <xref href="../ReasonProcedureNotAttemptedObservation.dita">Reason Procedure Not Attempted Observation</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.137</tt>)</li></ol></li></ol>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> such that it  (CONF:11089) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ReasonProcedureNotAttemptedObservation.html">Reason Procedure Not Attempted Observation</xref> (CONF:11088)</li></ol> 
+</li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>participant</b></tt> such that it  (CONF:11387) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>participantRole</b></tt> such that it  (CONF:10548) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>playingDevice</b></tt> such that it  (CONF:10549) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> AirwayDeviceType 2.16.840.1.113883.17.3.11.61</tt><b> DYNAMIC</b> (CONF:10550)<p><lines><i>NEMSIS Trace: EAirway.03</i></lines></p></li></ol></li></ol></li></ol> 
 </li>
 </ol>
-<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >emspcr::Procedure</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::procedure[cda:templateId/@root = 2.16.840.1.1133883.17.3.10.1.181]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>negationInd</entry><entry>@negationInd</entry><entry>0..1</entry><entry>MAY</entry><entry>NO</entry><entry>Boolean</entry><entry>CONF:11212</entry><entry> </entry></row> 
-<row><entry>approachSiteCode</entry><entry>approachSiteCode</entry><entry>0..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CD</entry><entry>CONF:10501</entry><entry> null</entry></row> 
-<row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CD</entry><entry>CONF:10496</entry><entry> </entry></row> 
-<row><entry>effectiveTime</entry><entry>effectiveTime</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>IVL_TS</entry><entry>CONF:10497</entry><entry> </entry></row> 
-<row><entry>statusCode</entry><entry>statusCode</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>CS</entry><entry>CONF:10499</entry><entry>ActStatus 2.16.840.1.113883.5.14 Aborted</entry></row> 
-<row><entry>AbandonedProcedureRelationship</entry><entry>AbandonedProcedureRelationship</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>AbandonedProcedureRelationship</entry><entry>CONF:10498</entry><entry> </entry></row> 
-<row><entry>AirwayConfirmationRelationship</entry><entry>AirwayConfirmationRelationship</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>AirwayConfirmationRelationship</entry><entry>CONF:10509</entry><entry> </entry></row> 
-<row><entry>procedureActivityProcedure1</entry><entry>procedureActivityProcedure1</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>Procedure</entry><entry>CONF:6277</entry><entry> </entry></row> 
-<row><entry>ProcedureComplicationsRelationship</entry><entry>ProcedureComplicationsRelationship</entry><entry>1..*</entry><entry>SHALL</entry><entry>YES</entry><entry>ProcedureComplicationsRelationship</entry><entry>CONF:10506</entry><entry> </entry></row> 
-<row><entry>ProcedureNumberOfAttemptsRelationship</entry><entry>ProcedureNumberOfAttemptsRelationship</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>ProcedureNumberOfAttemptsRelationship</entry><entry>CONF:10504</entry><entry> </entry></row> 
-<row><entry>ProcedurePatientResponseRelationship</entry><entry>ProcedurePatientResponseRelationship</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>ProcedurePatientResponseRelationship</entry><entry>CONF:10507</entry><entry> </entry></row> 
-<row><entry>ProcedurePerformer</entry><entry>ProcedurePerformer</entry><entry>1..*</entry><entry>SHALL</entry><entry>YES</entry><entry>ProcedurePerformer</entry><entry>CONF:10508</entry><entry> </entry></row> 
-<row><entry>ProcedurePriorRelationship</entry><entry>ProcedurePriorRelationship</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>ProcedurePriorRelationship</entry><entry>CONF:10503</entry><entry> </entry></row> 
-<row><entry>ProcedureSuccessfulRelationship</entry><entry>ProcedureSuccessfulRelationship</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>ProcedureSuccessfulRelationship</entry><entry>CONF:10505</entry><entry> </entry></row> 
-<row><entry>ReasonProcedureNotAttemptedRelationship</entry><entry>ReasonProcedureNotAttemptedRelationship</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>ReasonProcedureNotAttemptedRelationship</entry><entry>CONF:11089</entry><entry> </entry></row> 
-</tbody></tgroup></table></p></section>
-<codeblock id="example"><![CDATA[<procedure xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3">
+<section id="contextTable"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="2" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><thead><row><entry namest="col0" nameend="col0" >Contained By</entry><entry namest="col1" nameend="col1" >Contains</entry></row></thead><tbody><row><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/EMSProceduresPerformedSection.html">EMS Procedures Performed Section</xref></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/AbandonedProcedureReasonObservation.html">Abandoned Procedure Reason Observation</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/AbdomenAssessment.html">Abdomen Assessment</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/AirwayConfirmationObservation.html">Airway Confirmation Observation</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ArrestRhythm.html">Arrest Rhythm</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/BackAndSpineAssessment.html">Back And Spine Assessment</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/BodyTemperature.html">Body Temperature</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/CardiacArrestCause.html">Cardiac Arrest Cause</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/CardiacArrestOutcome.html">Cardiac Arrest Outcome</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/CardiacArrestTiming.html">Cardiac Arrest Timing</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ComplaintDuration.html">Complaint Duration</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ComplaintOrganSystem.html">Complaint Organ System</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ComplaintType.html">Complaint Type</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/DestinationRhythm.html">Destination Rhythm</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/DiastolicBloodPressure.html">Diastolic Blood Pressure</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/DispatchDelay.html">Dispatch Delay</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/DispatchLocationLatitude.html">Dispatch Location Latitude</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/DispatchLocationLongitude.html">Dispatch Location Longitude</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/DispatchLocationName.html">Dispatch Location Name</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ExtremitiesAssessment.html">Extremities Assessment</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/EyeAssessment.html">Eye Assessment</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/FaceAssessment.html">Face Assessment</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/HeadAssessment.html">Head Assessment</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/HeartAssessment.html">Heart Assessment</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/HeartRate.html">Heart Rate</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/LengthBasedPatientBodyWeightClass.html">Length Based Patient Body Weight Class</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/MedicationComplicationObservation.html">Medication Complication Observation</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/MedicationManfacturedProduct.html">Medication Manfactured Product</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/MedicationNotAdministeredReasonObservation.html">Medication Not Administered Reason Observation</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/MedicationPriorAdministrationObservation.html">Medication Prior Administration Observation</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/MedicationResponseObservation.html">Medication Response Observation</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/MentalStatusAssessment.html">Mental Status Assessment</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/NeckAssessment.html">Neck Assessment</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/NeurologicalAssessment.html">Neurological Assessment</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/OxygenSaturation.html">Oxygen Saturation</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/PatientBodyWeight.html">Patient Body Weight</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/PelvicAndGenitourinaryAssessment.html">Pelvic And Genitourinary Assessment</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ProcedureComplicationsObservation.html">Procedure Complications Observation</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ProcedureNumberOfAttemptsObservation.html">Procedure Number Of Attempts Observation</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ProcedurePatientResponseObservation.html">Procedure Patient Response Observation</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ProcedurePriorIndicator.html">Procedure Prior Indicator</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ProcedureSuccessfulObservation.html">Procedure Successful Observation</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ProtocolAgeCategory.html">Protocol Age Category</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ReasonProcedureNotAttemptedObservation.html">Reason Procedure Not Attempted Observation</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/RespiratoryRate.html">Respiratory Rate</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ResponseBeginningOdometerReading.html">Response Beginning Odometer Reading</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ResponseDelay.html">Response Delay</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ResponseDestinationOdometerReading.html">Response Destination Odometer Reading</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ResponseEndingOdometerReading.html">Response Ending Odometer Reading</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ResponseOnSceneOdometerReading.html">Response On Scene Odometer Reading</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ReturnOfSpontaneousCirculation.html">Return Of Spontaneous Circulation</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/SceneDelay.html">Scene Delay</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/SkinAssessment.html">Skin Assessment</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/SystolicBloodPressure.html">Systolic Blood Pressure</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/TransportDelay.html">Transport Delay</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/TransportModeQualifier.html">Transport Mode Qualifier</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/TurnaroundDelay.html">Turnaround Delay</xref></entry></row></tbody></tgroup></table></p></section>
+<codeblock id="example" outputclass="language-xml"><![CDATA[<procedure classCode="XACT" moodCode="RQO">
   <templateId root="2.16.840.1.1133883.17.3.10.1.181"/>
-  <id root="MDHT" extension="595517820"/>
-  <code code="1485201819"/>
-  <statusCode code="Aborted"/>
-  <effectiveTime>
-    <low value="2014"/>
-    <high value="2014"/>
-  </effectiveTime>
-  <approachSiteCode codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
-  <performer>
-    <assignedEntity>
-      <id root="MDHT" extension="976018575"/>
-      <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
-    </assignedEntity>
-  </performer>
-  <entryRelationship>
-    <observation>
-      <code code="1294523374"/>
-      <value xsi:type="CD" code="9383662"/>
-    </observation>
-  </entryRelationship>
-  <entryRelationship>
-    <observation>
-      <code code="756484848"/>
-      <value xsi:type="BL"/>
-    </observation>
-  </entryRelationship>
-  <entryRelationship>
-    <observation>
-      <code code="535249641"/>
-      <value xsi:type="INT" value="1"/>
-    </observation>
-  </entryRelationship>
-  <entryRelationship>
-    <observation>
-      <code code="1582096749"/>
-      <value xsi:type="BL"/>
-    </observation>
-  </entryRelationship>
-  <entryRelationship>
-    <observation>
-      <code code="832682524"/>
-    </observation>
-  </entryRelationship>
-  <entryRelationship>
-    <observation>
-      <code code="1267421766"/>
-      <value xsi:type="CD" code="411379067"/>
-    </observation>
-  </entryRelationship>
-  <entryRelationship>
-    <observation>
-      <code code="1054317396"/>
-      <effectiveTime>
-        <low value="2014"/>
-        <high value="2014"/>
-      </effectiveTime>
-      <value xsi:type="BL"/>
-      <methodCode code="1647183056"/>
-    </observation>
-  </entryRelationship>
-  <entryRelationship>
-    <observation>
-      <code code="521054185"/>
-      <value xsi:type="CD" code="526765786"/>
-    </observation>
-  </entryRelationship>
-</procedure>]]></codeblock>
+  <code/>
+  <effectiveTime/>
+</procedure>
+]]></codeblock>
+<!--Error code 1: Pathmap to CDA .ecore files not resolved: pathmap://CDA_MODEL/../../org.eclipse.mdht.uml.hl7.rim/model/rim.ecore#//Act. Will not use any CDA extension!-->
 <section id="changes">
 </section>
 <p><ph id="classformalname">Procedure</ph></p>

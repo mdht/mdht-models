@@ -11,188 +11,112 @@
 <section id="knownSubclasses">
 </section>
 <section id="description">
-<p><lines><i>A collection vital signs observations
-For any observation within the organizer, if the NEMSIS value is "Refused," the value SHALL be "NI;" the string "Refused" MAY be recorded in Observation.text.</i></lines></p>
+<p>A collection vital signs observations
+For any observation within the organizer, if the NEMSIS value is "Refused," the value SHALL be "NI;" the string "Refused" MAY be recorded in Observation.text.
+Note that NEMSIS collects times at the vitals cluster level, whereas systems may record them at the observation level. No preference is indicated regarding how close individual observation timestamps must be to allow their inclusion in a cluster or how the cluster effectiveTime is determined. effectiveTime is modeled on the observations to support unanticipated uses and to conform more closely to the Consolidated CDA pattern, though the exclusion of the id property makes it impossible to assert compliance to the Consolidated template in this guide (though it remains possible to do so in an implementation).</p>
 </section>
 <ol id="conformance">
-<li><b>SHALL</b> contain exactly one [1..1] templateId (  ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>="2.16.840.1.1133883.17.3.10.1.28"</li></ol></li>
-<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/VitalSignsOrganizer.html">Consol Vital Signs Organizer</xref> template (templateId: <tt>2.16.840.1.113883.10.20.22.4.26</tt>)</li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt> (CONF:10257)
-<ul><li><p><lines><i>NEMSIS Trace: EVitals.01</i></lines></p></li></ul></li>
-<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>component</b></tt> (CONF:11078) <ol><li> This component <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../SystolicBloodPressure.dita">Systolic Blood Pressure</xref> (CONF:11077)<ol>
-<li>Contains exactly one [1..1] <xref href="../SystolicBloodPressure.dita">Systolic Blood Pressure</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.23.1</tt>)</li></ol></li></ol>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>templateId</b></tt> such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>@root</b>="2.16.840.1.1133883.17.3.10.1.28"</tt></li></ol></li>
+<li>
+<b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:11338)<tt><b>/@code</b>="46680005" </tt><i>Vital signs</i> (CodeSystem:<tt> </tt>) (CONF:11337)<p>May also use LOINC 74728-7 "Vital signs, weight, height, head circumference, oximetry, BMI, and BSA panel - HL7.CCDAr1.1"</p>
 </li>
-<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>component</b></tt> (CONF:11080) <ol><li> This component <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../DiastolicBloodPressure.dita">Diastolic Blood Pressure</xref> (CONF:11079)<ol>
-<li>Contains exactly one [1..1] <xref href="../DiastolicBloodPressure.dita">Diastolic Blood Pressure</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.144</tt>)</li></ol></li></ol>
+<li>
+<b>SHALL</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt> (CONF:10257)<p>NEMSIS Trace: EVitals.01</p>
 </li>
-<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>component</b></tt> (CONF:11082) <ol><li> This component <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../HeartRate.dita">Heart Rate</xref> (CONF:11081)<ol>
-<li>Contains exactly one [1..1] <xref href="../HeartRate.dita">Heart Rate</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.145</tt>)</li></ol></li></ol>
+<li>
+<b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt> such that it  (CONF:11078) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/SystolicBloodPressure.html">Systolic Blood Pressure</xref> (CONF:11077)</li></ol> 
 </li>
-<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>component</b></tt> (CONF:11084) <ol><li> This component <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../RespiratoryRate.dita">Respiratory Rate</xref> (CONF:11083)<ol>
-<li>Contains exactly one [1..1] <xref href="../RespiratoryRate.dita">Respiratory Rate</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.146</tt>)</li></ol></li></ol>
+<li>
+<b>SHOULD</b> contain zero or one [0..1] <tt><b>datatypes:realmCode</b></tt> such that it  (CONF:11080) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>DiastolicBloodPressure</b></tt>, where its type is <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/DiastolicBloodPressure.html">Diastolic Blood Pressure</xref> (CONF:11079)</li></ol> 
 </li>
-<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>component</b></tt> (CONF:11086) <ol><li> This component <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../BodyTemperature.dita">Body Temperature</xref> (CONF:11085)<ol>
-<li>Contains exactly one [1..1] <xref href="../BodyTemperature.dita">Body Temperature</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.176</tt>)</li></ol></li></ol>
+<li>
+<b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt> such that it  (CONF:11082) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/HeartRate.html">Heart Rate</xref> (CONF:11081)</li></ol> 
 </li>
-<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>component</b></tt> (CONF:11090) <ol><li> This component <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../OxygenSaturation.dita">Oxygen Saturation</xref> (CONF:11087)<ol>
-<li>Contains exactly one [1..1] <xref href="../OxygenSaturation.dita">Oxygen Saturation</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.177</tt>)</li></ol></li></ol>
+<li>
+<b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt> such that it  (CONF:11084) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/RespiratoryRate.html">Respiratory Rate</xref> (CONF:11083)</li></ol> 
 </li>
-<li>Contains zero or one [0..1] <tt><b>component</b></tt>
-<ol>
-<li>Contains exactly one [1..1] <xref href="../PriorAidVitals.dita">Prior Aid Vitals</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.29</tt>)</li></ol></li>
+<li>
+<b>SHOULD</b> contain zero or one [0..1] <tt><b>component</b></tt> such that it  (CONF:11086) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/BodyTemperature.html">Body Temperature</xref> (CONF:11085)</li></ol> 
+</li>
+<li>
+<b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt> such that it  (CONF:11090) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/OxygenSaturation.html">Oxygen Saturation</xref> (CONF:11087)</li></ol> 
+</li>
+<li>
+<b>SHALL</b> contain  [1..1] <tt><b>component</b></tt> such that it  (CONF:11335)<ol>
+<li>Conforms to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/PriorAidVitals.html">Prior Aid Vitals</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.29</tt>)</li></ol>
+</li>
+<li>
+<b>SHALL</b> contain  [1..1] <tt><b>component</b></tt> such that it  (CONF:11336)<ol>
+<li>Conforms to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/AdditionalVitalSignsOrganizer.html">Additional Vital Signs Organizer</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.30</tt>)</li></ol>
+</li>
 </ol>
 <ol id="aggregate">
-<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/VitalSignsOrganizer.html">Consol Vital Signs Organizer</xref> template (templateId: <tt>2.16.840.1.113883.10.20.22.4.26</tt>)</li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="CLUSTER" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:7279)
-<ul><li><p><lines><i>The vital signs organizer is a cluster of vital signs observations.</i></lines></p></li></ul></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:7280)
+<li>contain exactly one [1..1] <tt><b>@classCode</b></tt>
 </li>
-<li><b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF:7282)
-<ul><li><p><lines><i>The organizer shall have an &lt;id> element.</i></lines></p></li></ul></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="46680005" </tt><i>Vital signs</i> (CodeSystem:<tt> 2.16.840.1.113883.6.96 SNOMEDCT</tt>) (CONF:7283)
+<li>contain exactly one [1..1] <tt><b>@moodCode</b></tt>
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt><tt><b>/@code</b>="completed" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.14 ActStatus</tt>) (CONF:7284)
-<ul><li><p><lines><i>The observations have all been completed.</i></lines></p></li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:11338)<tt><b>/@code</b>="46680005" </tt><i>Vital signs</i> (CodeSystem:<tt> </tt>) (CONF:11337)
+<p>May also use LOINC 74728-7 "Vital signs, weight, height, head circumference, oximetry, BMI, and BSA panel - HL7.CCDAr1.1"</p></li>
+<li>contain exactly one [1..1] <tt><b>datatypes:statusCode</b></tt>
+</li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt> (CONF:10257)
-<ul><li><p><lines><i>NEMSIS Trace: EVitals.01</i></lines></p></li></ul></li>
-<li><b>SHALL</b> contain at least one [1..*] <tt><b>component</b></tt> (CONF:7285, CONF:7286)
+<p>NEMSIS Trace: EVitals.01</p></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt> such that it  (CONF:11078) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/SystolicBloodPressure.html">Systolic Blood Pressure</xref> (CONF:11077)</li></ol> 
+</li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>datatypes:realmCode</b></tt> such that it  (CONF:11080) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>DiastolicBloodPressure</b></tt>, where its type is <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/DiastolicBloodPressure.html">Diastolic Blood Pressure</xref> (CONF:11079)</li></ol> 
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt> such that it  (CONF:11082) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/HeartRate.html">Heart Rate</xref> (CONF:11081)</li></ol> 
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt> such that it  (CONF:11084) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/RespiratoryRate.html">Respiratory Rate</xref> (CONF:11083)</li></ol> 
+</li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>component</b></tt> such that it  (CONF:11086) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/BodyTemperature.html">Body Temperature</xref> (CONF:11085)</li></ol> 
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt> such that it  (CONF:11090) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/OxygenSaturation.html">Oxygen Saturation</xref> (CONF:11087)</li></ol> 
+</li>
+<li><b>SHALL</b> contain  [1..1] <tt><b>component</b></tt> such that it  (CONF:11335)
 <ol>
-<li>Contains exactly one [1..1] <xref href="../VitalSignObservation.dita">Vital Sign Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.27</tt>)</li></ol></li>
-<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>component</b></tt> (CONF:11078) <ol><li> This component <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../SystolicBloodPressure.dita">Systolic Blood Pressure</xref> (CONF:11077)<ol>
-<li>Contains exactly one [1..1] <xref href="../SystolicBloodPressure.dita">Systolic Blood Pressure</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.23.1</tt>)</li></ol></li></ol>
-</li>
-<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>component</b></tt> (CONF:11080) <ol><li> This component <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../DiastolicBloodPressure.dita">Diastolic Blood Pressure</xref> (CONF:11079)<ol>
-<li>Contains exactly one [1..1] <xref href="../DiastolicBloodPressure.dita">Diastolic Blood Pressure</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.144</tt>)</li></ol></li></ol>
-</li>
-<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>component</b></tt> (CONF:11082) <ol><li> This component <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../HeartRate.dita">Heart Rate</xref> (CONF:11081)<ol>
-<li>Contains exactly one [1..1] <xref href="../HeartRate.dita">Heart Rate</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.145</tt>)</li></ol></li></ol>
-</li>
-<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>component</b></tt> (CONF:11084) <ol><li> This component <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../RespiratoryRate.dita">Respiratory Rate</xref> (CONF:11083)<ol>
-<li>Contains exactly one [1..1] <xref href="../RespiratoryRate.dita">Respiratory Rate</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.146</tt>)</li></ol></li></ol>
-</li>
-<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>component</b></tt> (CONF:11086) <ol><li> This component <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../BodyTemperature.dita">Body Temperature</xref> (CONF:11085)<ol>
-<li>Contains exactly one [1..1] <xref href="../BodyTemperature.dita">Body Temperature</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.176</tt>)</li></ol></li></ol>
-</li>
-<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>component</b></tt> (CONF:11090) <ol><li> This component <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../OxygenSaturation.dita">Oxygen Saturation</xref> (CONF:11087)<ol>
-<li>Contains exactly one [1..1] <xref href="../OxygenSaturation.dita">Oxygen Saturation</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.177</tt>)</li></ol></li></ol>
-</li>
-<li>Contains zero or one [0..1] <tt><b>component</b></tt>
+<li>Conforms to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/PriorAidVitals.html">Prior Aid Vitals</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.29</tt>)</li></ol></li>
+<li><b>SHALL</b> contain  [1..1] <tt><b>component</b></tt> such that it  (CONF:11336)
 <ol>
-<li>Contains exactly one [1..1] <xref href="../PriorAidVitals.dita">Prior Aid Vitals</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.29</tt>)</li></ol></li>
+<li>Conforms to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/AdditionalVitalSignsOrganizer.html">Additional Vital Signs Organizer</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.30</tt>)</li></ol></li>
 </ol>
-<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >emspcr::VitalSignsOrganizer</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::organizer[cda:templateId/@root = 2.16.840.1.113883.10.20.22.4.26]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>effectiveTime</entry><entry>effectiveTime</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>IVL_TS</entry><entry>CONF:10257</entry><entry> </entry></row> 
-<row><entry>BodyTemperatureComponent</entry><entry>BodyTemperatureComponent</entry><entry>0..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>BodyTemperatureComponent</entry><entry>CONF:11086</entry><entry> </entry></row> 
-<row><entry>DiastolicBloodPressureComponent</entry><entry>DiastolicBloodPressureComponent</entry><entry>0..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>DiastolicBloodPressureComponent</entry><entry>CONF:11080</entry><entry> </entry></row> 
-<row><entry>HeartRateComponent</entry><entry>HeartRateComponent</entry><entry>0..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>HeartRateComponent</entry><entry>CONF:11082</entry><entry> </entry></row> 
-<row><entry>OxygenSaturationComponent</entry><entry>OxygenSaturationComponent</entry><entry>0..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>OxygenSaturationComponent</entry><entry>CONF:11090</entry><entry> </entry></row> 
-<row><entry>priorAidVitals</entry><entry>priorAidVitals</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>PriorAidVitals</entry><entry></entry><entry> </entry></row> 
-<row><entry>RespiratoryRateComponent</entry><entry>RespiratoryRateComponent</entry><entry>0..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>RespiratoryRateComponent</entry><entry>CONF:11084</entry><entry> </entry></row> 
-<row><entry>SystolicBloodPressureComponent</entry><entry>SystolicBloodPressureComponent</entry><entry>0..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>SystolicBloodPressureComponent</entry><entry>CONF:11078</entry><entry> </entry></row> 
-<row><entry>vitalSignsOrganizer</entry><entry>vitalSignsOrganizer</entry><entry>1..*</entry><entry>SHALL</entry><entry>YES</entry><entry>VitalSignsOrganizer</entry><entry>CONF:10970</entry><entry> </entry></row> 
-</tbody></tgroup></table></p></section>
-<codeblock id="example"><![CDATA[<organizer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" classCode="CLUSTER" moodCode="EVN">
+<section id="contextTable"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="2" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><thead><row><entry namest="col0" nameend="col0" >Contained By</entry><entry namest="col1" nameend="col1" >Contains</entry></row></thead><tbody><row><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/EMSVitalSignsSection.html">EMS Vital Signs Section</xref></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/AbandonedProcedureReasonObservation.html">Abandoned Procedure Reason Observation</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/AbdomenAssessment.html">Abdomen Assessment</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/AdditionalVitalSignsOrganizer.html">Additional Vital Signs Organizer</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/AirwayConfirmationObservation.html">Airway Confirmation Observation</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ArrestRhythm.html">Arrest Rhythm</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/BackAndSpineAssessment.html">Back And Spine Assessment</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/BodyTemperature.html">Body Temperature</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/CardiacArrestCause.html">Cardiac Arrest Cause</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/CardiacArrestOutcome.html">Cardiac Arrest Outcome</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/CardiacArrestTiming.html">Cardiac Arrest Timing</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ComplaintDuration.html">Complaint Duration</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ComplaintOrganSystem.html">Complaint Organ System</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ComplaintType.html">Complaint Type</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/DestinationRhythm.html">Destination Rhythm</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/DiastolicBloodPressure.html">Diastolic Blood Pressure</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/DispatchDelay.html">Dispatch Delay</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/DispatchLocationLatitude.html">Dispatch Location Latitude</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/DispatchLocationLongitude.html">Dispatch Location Longitude</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/DispatchLocationName.html">Dispatch Location Name</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ExtremitiesAssessment.html">Extremities Assessment</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/EyeAssessment.html">Eye Assessment</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/FaceAssessment.html">Face Assessment</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/HeadAssessment.html">Head Assessment</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/HeartAssessment.html">Heart Assessment</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/HeartRate.html">Heart Rate</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/LengthBasedPatientBodyWeightClass.html">Length Based Patient Body Weight Class</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/MedicationComplicationObservation.html">Medication Complication Observation</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/MedicationManfacturedProduct.html">Medication Manfactured Product</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/MedicationNotAdministeredReasonObservation.html">Medication Not Administered Reason Observation</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/MedicationPriorAdministrationObservation.html">Medication Prior Administration Observation</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/MedicationResponseObservation.html">Medication Response Observation</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/MentalStatusAssessment.html">Mental Status Assessment</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/NeckAssessment.html">Neck Assessment</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/NeurologicalAssessment.html">Neurological Assessment</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/OxygenSaturation.html">Oxygen Saturation</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/PatientBodyWeight.html">Patient Body Weight</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/PelvicAndGenitourinaryAssessment.html">Pelvic And Genitourinary Assessment</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/PriorAidVitals.html">Prior Aid Vitals</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ProcedureComplicationsObservation.html">Procedure Complications Observation</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ProcedureNumberOfAttemptsObservation.html">Procedure Number Of Attempts Observation</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ProcedurePatientResponseObservation.html">Procedure Patient Response Observation</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ProcedurePriorIndicator.html">Procedure Prior Indicator</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ProcedureSuccessfulObservation.html">Procedure Successful Observation</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ProtocolAgeCategory.html">Protocol Age Category</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ReasonProcedureNotAttemptedObservation.html">Reason Procedure Not Attempted Observation</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/RespiratoryRate.html">Respiratory Rate</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ResponseBeginningOdometerReading.html">Response Beginning Odometer Reading</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ResponseDelay.html">Response Delay</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ResponseDestinationOdometerReading.html">Response Destination Odometer Reading</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ResponseEndingOdometerReading.html">Response Ending Odometer Reading</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ResponseOnSceneOdometerReading.html">Response On Scene Odometer Reading</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ReturnOfSpontaneousCirculation.html">Return Of Spontaneous Circulation</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/SceneDelay.html">Scene Delay</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/SkinAssessment.html">Skin Assessment</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/SystolicBloodPressure.html">Systolic Blood Pressure</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/TransportDelay.html">Transport Delay</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/TransportModeQualifier.html">Transport Mode Qualifier</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/TurnaroundDelay.html">Turnaround Delay</xref></entry></row></tbody></tgroup></table></p></section>
+<codeblock id="example" outputclass="language-xml"><![CDATA[<organizer classCode="CLUSTER" moodCode="SLOT">
   <templateId root="2.16.840.1.1133883.17.3.10.1.28"/>
-  <templateId root="2.16.840.1.113883.10.20.22.4.26"/>
-  <id root="MDHT" extension="1794976390"/>
-  <code code="46680005" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Vital signs"/>
-  <statusCode code="completed"/>
-  <effectiveTime>
-    <low value="2014"/>
-    <high value="2014"/>
-  </effectiveTime>
+  <code code="46680005" displayName="Vital signs"/>
+  <statusCode/>
+  <effectiveTime/>
   <component>
-    <observation>
-      <id root="MDHT" extension="127395319"/>
-      <code code="1330633186"/>
-      <text>Text Value</text>
-      <effectiveTime>
-        <low value="2014"/>
-        <high value="2014"/>
-      </effectiveTime>
-      <value xsi:type="PQ"/>
-      <interpretationCode code="1554609206"/>
-      <methodCode code="1843530643"/>
-      <targetSiteCode code="1462111566"/>
-    </observation>
-  </component>
-  <component>
-    <observation>
-      <id root="MDHT" extension="1380169446"/>
-      <code code="1235187685"/>
-      <text>Text Value</text>
-      <effectiveTime>
-        <low value="2014"/>
-        <high value="2014"/>
-      </effectiveTime>
-      <value xsi:type="PQ"/>
-      <interpretationCode code="495117407"/>
-      <methodCode code="1072960200"/>
-      <targetSiteCode code="3287187"/>
-    </observation>
-  </component>
-  <component>
-    <observation>
-      <id root="MDHT" extension="588361509"/>
-      <code code="1434654229"/>
-      <text>Text Value</text>
-      <effectiveTime>
-        <low value="2014"/>
-        <high value="2014"/>
-      </effectiveTime>
-      <value xsi:type="PQ"/>
-      <interpretationCode code="1186967195"/>
-      <methodCode code="1848316460"/>
-      <targetSiteCode code="1462668572"/>
-    </observation>
-  </component>
-  <component>
-    <observation>
-      <id root="MDHT" extension="1689954197"/>
-      <code code="1814234288"/>
-      <text>Text Value</text>
-      <effectiveTime>
-        <low value="2014"/>
-        <high value="2014"/>
-      </effectiveTime>
-      <value xsi:type="PQ"/>
-      <interpretationCode code="939083380"/>
-      <methodCode code="1675744128"/>
-      <targetSiteCode code="1292851947"/>
-    </observation>
-  </component>
-  <component>
-    <observation>
-      <id root="MDHT" extension="1060893622"/>
-      <code code="1940303692"/>
-      <text>Text Value</text>
-      <effectiveTime>
-        <low value="2014"/>
-        <high value="2014"/>
-      </effectiveTime>
-      <value xsi:type="PQ"/>
-      <interpretationCode code="1956443336"/>
-      <methodCode code="145306924"/>
-      <targetSiteCode code="142965750"/>
-    </observation>
-  </component>
-  <component>
-    <observation>
-      <code code="1974575373"/>
+    <observation classCode="SPCOBS" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.17.3.10.1.23.1"/>
+      <code code="8480-6" displayName="Systolic blood pressure"/>
       <value xsi:type="PQ"/>
     </observation>
   </component>
   <component>
-    <observation moodCode="EVN">
-      <templateId root="2.16.840.1.1133883.17.3.10.1.29"/>
-      <id root="MDHT" extension="1348607702"/>
-      <code code="67518-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Obtained prior to units EMS care NEMSIS"/>
-      <effectiveTime>
-        <low value="2014"/>
-        <high value="2014"/>
-      </effectiveTime>
+    <observation classCode="SPCOBS" moodCode="EVN">
+      <templateId root="2.16.840.1.1133883.17.3.10.1.145"/>
+      <code code="8867-4" displayName="Heart rate"/>
+      <value xsi:type="PQ"/>
     </observation>
   </component>
-</organizer>]]></codeblock>
+  <component>
+    <observation classCode="SPCOBS" moodCode="EVN">
+      <templateId root="2.16.840.1.1133883.17.3.10.1.146"/>
+      <code code="9279-1" displayName="Respiratory rate"/>
+      <value xsi:type="PQ"/>
+    </observation>
+  </component>
+  <component>
+    <observation classCode="SPCOBS" moodCode="EVN">
+      <templateId root="2.16.840.1.1133883.17.3.10.1.177"/>
+      <code code="2708-6" displayName="Oxygen saturation in Arterial blood"/>
+      <value xsi:type="PQ"/>
+    </observation>
+  </component>
+</organizer>
+]]></codeblock>
+<!--Error code 1: Pathmap to CDA .ecore files not resolved: pathmap://CDA_MODEL/../../org.eclipse.mdht.uml.hl7.rim/model/rim.ecore#//Act. Will not use any CDA extension!-->
 <section id="changes">
 </section>
 <p><ph id="classformalname">Vital Signs Organizer</ph></p>

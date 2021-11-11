@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Initial Patient Condition</title>
+<prolog id="prolog">
+<resourceid id="2.16.840.1.113883.17.3.11.59"/>
+</prolog>
+<body>
+<!-- THIS IS GENERATED CONTENT, DO NOT EDIT -->
+<section id="definition">
+<table frame="all" rowsep="1" colsep="1">
+<tgroup cols="2">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="4*"/>
+<tbody>
+<row><entry>Value Set</entry><entry>InitialPatientCondition - 2.16.840.1.113883.17.3.11.59</entry></row>
+<row><entry>Code System</entry><entry>LOINC - 2.16.840.1.113883.6.1</entry></row>
+<row><entry>Definition</entry><entry>Change in acuity of patient condition</entry></row>
+</tbody></tgroup></table>
+<table frame="all" rowsep="1" colsep="1">
+<tgroup cols="3">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="1*"/>
+<colspec colname="col3" colwidth="2*"/>
+<thead><row>
+<entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
+</row></thead><tbody>
+<row><entry>LA17696-8</entry><entry>LOINC</entry><entry>Critical (Red)</entry></row>
+<row><entry>LA17695-0</entry><entry>LOINC</entry><entry>Emergent (Yellow)</entry></row>
+<row><entry>LA17694-3</entry><entry>LOINC</entry><entry>Lower Acuity (Green)</entry></row>
+<row><entry>LA17697-6</entry><entry>LOINC</entry><entry>Dead without Resuscitation Efforts (Black)</entry></row>
+<row><entry>NewLA-4219011</entry><entry>LOINC</entry><entry>Non-Acute/Routine</entry></row>
+<row><entry>NewLA-2813009</entry><entry>LOINC</entry><entry>Non-Acute/Routine</entry></row>
+</tbody></tgroup></table>
+</section>
+</body>
+</topic>
