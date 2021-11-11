@@ -8051,7 +8051,9 @@ UCUM units SHOULD be &quot;[mi_i]&quot;</body>
     </profileApplication>
   </uml:Package>
   <CDA:CodegenSupport xmi:id="_xs1LQGeQEeGtXKebdWh3hg" basePackage="org.openhealthtools.mdht.uml.cda" nsPrefix="emspcr" nsURI="http://www.openhealthtools.org/mdht/uml/cda/emspcr" packageName="emspcr" prefix="emspcr" base_Namespace="_xpUkQGeQEeGtXKebdWh3hg"/>
-  <CDA:CDATemplate xmi:id="_xs3ngGeQEeGtXKebdWh3hg" base_Class="_xs1LQWeQEeGtXKebdWh3hg" templateId="2.16.840.1.113883.17.3.10.2" assigningAuthorityName=""/>
+  <CDA:CDATemplate xmi:id="_xs3ngGeQEeGtXKebdWh3hg" base_Class="_xs1LQWeQEeGtXKebdWh3hg" templateId="2.16.840.1.113883.17.3.10.2" assigningAuthorityName="">
+    <ruleId>CONF:11388</ruleId>
+  </CDA:CDATemplate>
   <CDA:PropertyValidation xmi:id="_bFc5QGeREeGtXKebdWh3hg" base_Property="_ZTnIMGeREeGtXKebdWh3hg">
     <ruleId>CONF:10000</ruleId>
   </CDA:PropertyValidation>
@@ -8110,7 +8112,9 @@ UCUM units SHOULD be &quot;[mi_i]&quot;</body>
   <CDA:AssociationValidation xmi:id="_QfqDsGlcEeG4boS-IbG8Zw">
     <ruleId>CONF:10079</ruleId>
   </CDA:AssociationValidation>
-  <CDA:CDATemplate xmi:id="_WJI_QGldEeG4boS-IbG8Zw" base_Class="_S-YTcGldEeG4boS-IbG8Zw" templateId="2.16.840.1.113883.17.3.10.1.5"/>
+  <CDA:CDATemplate xmi:id="_WJI_QGldEeG4boS-IbG8Zw" base_Class="_S-YTcGldEeG4boS-IbG8Zw" templateId="2.16.840.1.113883.17.3.10.1.5">
+    <ruleId>CONF:11392</ruleId>
+  </CDA:CDATemplate>
   <CDA:CodeSystemConstraint xmi:id="_YZClUGldEeG4boS-IbG8Zw" code="67659-3" displayName="EMS billing Narrative NEMSIS" base_Property="_XeAgcGldEeG4boS-IbG8Zw">
     <reference href="file:/C:/Users/JayLyle/eclipse-workspace/org.openhealthtools.mdht.uml.cda.emspcr.model/model/emspcr-vocab.uml#_YgJ0wcFTEeGyGv5RKvEgDA"/>
     <ruleId>CONF:10080</ruleId>
@@ -8120,7 +8124,9 @@ UCUM units SHOULD be &quot;[mi_i]&quot;</body>
     <reference href="file:/C:/Users/JayLyle/eclipse-workspace/org.openhealthtools.mdht.uml.cda.emspcr.model/model/emspcr-vocab.uml#_YgJ0wcFTEeGyGv5RKvEgDA"/>
     <ruleId>CONF:10094</ruleId>
   </CDA:CodeSystemConstraint>
-  <CDA:CDATemplate xmi:id="_EFDesHSVEeGa4IXs2ghZEw" base_Class="_3dRe0HSUEeGa4IXs2ghZEw" templateId="2.16.840.1.113883.17.3.10.1.17"/>
+  <CDA:CDATemplate xmi:id="_EFDesHSVEeGa4IXs2ghZEw" base_Class="_3dRe0HSUEeGa4IXs2ghZEw" templateId="2.16.840.1.113883.17.3.10.1.17">
+    <ruleId>CONF:11393</ruleId>
+  </CDA:CDATemplate>
   <CDA:PropertyValidation xmi:id="_HWUjwHs7EeGs2I-Db78R9w" severity="INFO" base_Property="_HWSHgHs7EeGs2I-Db78R9w">
     <ruleId>CONF:5264</ruleId>
   </CDA:PropertyValidation>
@@ -8162,7 +8168,9 @@ UCUM units SHOULD be &quot;[mi_i]&quot;</body>
     <reference href="emspcr-vocab.uml#_a5UBAHSSEeGa4IXs2ghZEw"/>
     <ruleId>CONF:10056</ruleId>
   </CDA:ValueSetConstraint>
-  <CDA:CDATemplate xmi:id="_uyNtAHwEEeGW3cDolvqrTA" base_Class="_pIikMHwDEeGW3cDolvqrTA" templateId="2.16.840.1.113883.17.3.10.1.14"/>
+  <CDA:CDATemplate xmi:id="_uyNtAHwEEeGW3cDolvqrTA" base_Class="_pIikMHwDEeGW3cDolvqrTA" templateId="2.16.840.1.113883.17.3.10.1.14">
+    <ruleId>CONF:11394</ruleId>
+  </CDA:CDATemplate>
   <CDA:CodeSystemConstraint xmi:id="_2JdAUHwEEeGW3cDolvqrTA" code="67799-7" displayName="EMS cardiac arrest event Narrative NEMSIS" base_Property="_qG3YMHwEEeGW3cDolvqrTA">
     <reference href="file:/C:/Users/JayLyle/eclipse-workspace/org.openhealthtools.mdht.uml.cda.emspcr.model/model/emspcr-vocab.uml#_YgJ0wcFTEeGyGv5RKvEgDA"/>
     <ruleId>CONF:10134</ruleId>
@@ -8170,12 +8178,16 @@ UCUM units SHOULD be &quot;[mi_i]&quot;</body>
   <CDA:TextValue xmi:id="_A8RCoHwFEeGW3cDolvqrTA" severity="WARNING" base_Property="_qG4mUHwEEeGW3cDolvqrTA" value="EMS Cardiac Arrest Event">
     <ruleId>CONF:10135</ruleId>
   </CDA:TextValue>
-  <CDA:CDATemplate xmi:id="_19lEcH9aEeGht55Sz1eBOw" base_Class="_i4C-AH9aEeGht55Sz1eBOw" templateId="2.16.840.1.113883.17.3.10.1.12"/>
+  <CDA:CDATemplate xmi:id="_19lEcH9aEeGht55Sz1eBOw" base_Class="_i4C-AH9aEeGht55Sz1eBOw" templateId="2.16.840.1.113883.17.3.10.1.12">
+    <ruleId>CONF:11395</ruleId>
+  </CDA:CDATemplate>
   <CDA:CodeSystemConstraint xmi:id="_7LSfcH9aEeGht55Sz1eBOw" code="67840-9" displayName="EMS advance directives Narrative NEMSIS" base_Property="_567q0H9aEeGht55Sz1eBOw">
     <reference href="file:/C:/Users/JayLyle/eclipse-workspace/org.openhealthtools.mdht.uml.cda.emspcr.model/model/emspcr-vocab.uml#_YgJ0wcFTEeGyGv5RKvEgDA"/>
     <ruleId>CONF:10191</ruleId>
   </CDA:CodeSystemConstraint>
-  <CDA:CDATemplate xmi:id="_vwwq8H9cEeGht55Sz1eBOw" base_Class="_nSjIgH9cEeGht55Sz1eBOw" templateId="2.16.840.1.113883.17.3.10.1.13"/>
+  <CDA:CDATemplate xmi:id="_vwwq8H9cEeGht55Sz1eBOw" base_Class="_nSjIgH9cEeGht55Sz1eBOw" templateId="2.16.840.1.113883.17.3.10.1.13">
+    <ruleId>CONF:11396</ruleId>
+  </CDA:CDATemplate>
   <CDA:PropertyValidation xmi:id="_AQcmcIfiEeGgT-SDukOzlw" base_Property="_iJRQUHSBEeGa4IXs2ghZEw">
     <ruleId>CONF:10031</ruleId>
   </CDA:PropertyValidation>
@@ -8214,8 +8226,12 @@ UCUM units SHOULD be &quot;[mi_i]&quot;</body>
   <CDA:PropertyValidation xmi:id="_slANMIzcEeGnhceUMXltng" base_Property="_YG_Q4IzcEeGnhceUMXltng">
     <ruleId>CONF:10059</ruleId>
   </CDA:PropertyValidation>
-  <CDA:CDATemplate xmi:id="_1HUMgIzcEeGnhceUMXltng" base_Class="_VtMvAIzcEeGnhceUMXltng" templateId="2.16.840.1.113883.17.3.10.1.19"/>
-  <CDA:CDATemplate xmi:id="_9vjNoIzcEeGnhceUMXltng" base_Class="_aDO5AIcnEeGqF6qfYwLiQw" templateId="2.16.840.1.113883.17.3.10.1.15"/>
+  <CDA:CDATemplate xmi:id="_1HUMgIzcEeGnhceUMXltng" base_Class="_VtMvAIzcEeGnhceUMXltng" templateId="2.16.840.1.113883.17.3.10.1.19">
+    <ruleId>CONF:11391</ruleId>
+  </CDA:CDATemplate>
+  <CDA:CDATemplate xmi:id="_9vjNoIzcEeGnhceUMXltng" base_Class="_aDO5AIcnEeGqF6qfYwLiQw" templateId="2.16.840.1.113883.17.3.10.1.15">
+    <ruleId>CONF:11397</ruleId>
+  </CDA:CDATemplate>
   <CDA:PropertyValidation xmi:id="_NvfxQIzfEeGnhceUMXltng" base_Property="_YG_Q44zcEeGnhceUMXltng">
     <ruleId>CONF:10060</ruleId>
   </CDA:PropertyValidation>
@@ -8225,7 +8241,9 @@ UCUM units SHOULD be &quot;[mi_i]&quot;</body>
   <CDA:AssociationValidation xmi:id="_qesZQIziEeGnhceUMXltng" base_Association="_pLtucIziEeGnhceUMXltng">
     <ruleId>CONF:10012</ruleId>
   </CDA:AssociationValidation>
-  <CDA:CDATemplate xmi:id="_4-4sQIziEeGnhceUMXltng" base_Class="_1XH7YIziEeGnhceUMXltng" templateId="2.16.840.1.113883.17.3.10.1.22"/>
+  <CDA:CDATemplate xmi:id="_4-4sQIziEeGnhceUMXltng" base_Class="_1XH7YIziEeGnhceUMXltng" templateId="2.16.840.1.113883.17.3.10.1.22">
+    <ruleId>CONF:11398</ruleId>
+  </CDA:CDATemplate>
   <CDA:CodeSystemConstraint xmi:id="_64VhMIziEeGnhceUMXltng" code="67843-3" displayName="EMS social history Narrative NEMSIS" base_Property="_2r1rkIziEeGnhceUMXltng">
     <reference href="file:/C:/Users/JayLyle/eclipse-workspace/org.openhealthtools.mdht.uml.cda.emspcr.model/model/emspcr-vocab.uml#_YgJ0wcFTEeGyGv5RKvEgDA"/>
     <ruleId>CONF:10240</ruleId>
@@ -8270,7 +8288,9 @@ UCUM units SHOULD be &quot;[mi_i]&quot;</body>
   <CDA:AssociationValidation xmi:id="_3cXEYJkpEeGXp8PvMoofsw" base_Association="__QeXsWlXEeG4boS-IbG8Zw">
     <ruleId>CONF:10004</ruleId>
   </CDA:AssociationValidation>
-  <CDA:CDATemplate xmi:id="_LBR30JoiEeG_FLcaRgAa7g" base_Class="_6223oJohEeG_FLcaRgAa7g" templateId="2.16.840.1.113883.17.3.10.1.20"/>
+  <CDA:CDATemplate xmi:id="_LBR30JoiEeG_FLcaRgAa7g" base_Class="_6223oJohEeG_FLcaRgAa7g" templateId="2.16.840.1.113883.17.3.10.1.20">
+    <ruleId>CONF:11400</ruleId>
+  </CDA:CDATemplate>
   <CDA:CodeSystemConstraint xmi:id="_Vnir4JoiEeG_FLcaRgAa7g" code="29545-1" displayName="Physical findings Narrative" base_Property="_QRNgYJoiEeG_FLcaRgAa7g">
     <reference href="file:/C:/Users/JayLyle/eclipse-workspace/org.openhealthtools.mdht.uml.cda.emspcr.model/model/emspcr-vocab.uml#_YgJ0wcFTEeGyGv5RKvEgDA"/>
     <ruleId>CONF:10336</ruleId>
@@ -8290,7 +8310,9 @@ UCUM units SHOULD be &quot;[mi_i]&quot;</body>
   <CDA:PropertyValidation xmi:id="_h0670JovEeG_FLcaRgAa7g" base_Property="_fj3fMJovEeG_FLcaRgAa7g">
     <ruleId>CONF:10439</ruleId>
   </CDA:PropertyValidation>
-  <CDA:CDATemplate xmi:id="_pLL-wJovEeG_FLcaRgAa7g" base_Class="_c7crcJovEeG_FLcaRgAa7g" templateId="2.16.840.1.113883.17.3.10.1.18"/>
+  <CDA:CDATemplate xmi:id="_pLL-wJovEeG_FLcaRgAa7g" base_Class="_c7crcJovEeG_FLcaRgAa7g" templateId="2.16.840.1.113883.17.3.10.1.18">
+    <ruleId>CONF:11403</ruleId>
+  </CDA:CDATemplate>
   <CDA:PropertyValidation xmi:id="_ukC50JovEeG_FLcaRgAa7g" base_Property="_fj3fM5ovEeG_FLcaRgAa7g">
     <ruleId>CONF:10441</ruleId>
   </CDA:PropertyValidation>
@@ -8361,7 +8383,9 @@ UCUM units SHOULD be &quot;[mi_i]&quot;</body>
   <CDA:TextValue xmi:id="_b-ypEJunEeGzXI65shd6Fw" severity="WARNING" base_Property="_6hNfAJumEeGzXI65shd6Fw" value="EMS Procedures Performed">
     <ruleId>CONF:10493</ruleId>
   </CDA:TextValue>
-  <CDA:CDATemplate xmi:id="_i8pMAJunEeGzXI65shd6Fw" base_Class="_4QFw8JumEeGzXI65shd6Fw" templateId="2.16.840.1.113883.17.3.10.1.21"/>
+  <CDA:CDATemplate xmi:id="_i8pMAJunEeGzXI65shd6Fw" base_Class="_4QFw8JumEeGzXI65shd6Fw" templateId="2.16.840.1.113883.17.3.10.1.21">
+    <ruleId>CONF:11404</ruleId>
+  </CDA:CDATemplate>
   <CDA:AssociationValidation xmi:id="_ofZtIJurEeGzXI65shd6Fw" base_Association="_mapnIZurEeGzXI65shd6Fw">
     <ruleId>CONF:10510</ruleId>
   </CDA:AssociationValidation>
@@ -8439,7 +8463,9 @@ UCUM units SHOULD be &quot;[mi_i]&quot;</body>
     <reference href="file:/C:/Users/JayLyle/eclipse-workspace/org.openhealthtools.mdht.uml.cda.emspcr.model/model/emspcr-vocab.uml#_YgJ0wcFTEeGyGv5RKvEgDA"/>
     <ruleId>CONF:10556</ruleId>
   </CDA:CodeSystemConstraint>
-  <CDA:CDATemplate xmi:id="_bIdNwJ9nEeGw9ZRnaFfEZQ" base_Class="_OV4TIJ9nEeGw9ZRnaFfEZQ" templateId="2.16.840.1.113883.17.3.10.1.2"/>
+  <CDA:CDATemplate xmi:id="_bIdNwJ9nEeGw9ZRnaFfEZQ" base_Class="_OV4TIJ9nEeGw9ZRnaFfEZQ" templateId="2.16.840.1.113883.17.3.10.1.2">
+    <ruleId>CONF:11406</ruleId>
+  </CDA:CDATemplate>
   <CDA:PropertyValidation xmi:id="_mbPJkJ9nEeGw9ZRnaFfEZQ" base_Property="_Q22bFp9nEeGw9ZRnaFfEZQ">
     <ruleId>CONF:10558</ruleId>
   </CDA:PropertyValidation>
@@ -8456,7 +8482,9 @@ UCUM units SHOULD be &quot;[mi_i]&quot;</body>
   <CDA:PropertyValidation xmi:id="_VuFNwJ99EeGw9ZRnaFfEZQ" base_Property="_OYybMJ99EeGw9ZRnaFfEZQ">
     <ruleId>CONF:10573</ruleId>
   </CDA:PropertyValidation>
-  <CDA:CDATemplate xmi:id="_YpfO8J99EeGw9ZRnaFfEZQ" base_Class="_LI7M8J99EeGw9ZRnaFfEZQ" templateId="2.16.840.1.113883.17.3.10.1.3"/>
+  <CDA:CDATemplate xmi:id="_YpfO8J99EeGw9ZRnaFfEZQ" base_Class="_LI7M8J99EeGw9ZRnaFfEZQ" templateId="2.16.840.1.113883.17.3.10.1.3">
+    <ruleId>CONF:11407</ruleId>
+  </CDA:CDATemplate>
   <CDA:PropertyValidation xmi:id="_a7d4oJ99EeGw9ZRnaFfEZQ" base_Property="_OYybM599EeGw9ZRnaFfEZQ">
     <ruleId>CONF:10574</ruleId>
   </CDA:PropertyValidation>
@@ -8533,7 +8561,9 @@ UCUM units SHOULD be &quot;[mi_i]&quot;</body>
     <reference href="file:/C:/Users/JayLyle/git/mdht-models/models/org.openhealthtools.mdht.uml.cda.emspcr.model/model/emspcr-vocab.uml#_YgJ0wcFTEeGyGv5RKvEgDA"/>
     <ruleId>CONF:10651</ruleId>
   </CDA:CodeSystemConstraint>
-  <CDA:CDATemplate xmi:id="_uS5Z0J-dEeGorI3CPDW2ww" base_Class="_i-lM8J-dEeGorI3CPDW2ww" templateId="2.16.840.1.113883.17.3.10.1.4"/>
+  <CDA:CDATemplate xmi:id="_uS5Z0J-dEeGorI3CPDW2ww" base_Class="_i-lM8J-dEeGorI3CPDW2ww" templateId="2.16.840.1.113883.17.3.10.1.4">
+    <ruleId>CONF:11408</ruleId>
+  </CDA:CDATemplate>
   <CDA:PropertyValidation xmi:id="_x6AqcJ-dEeGorI3CPDW2ww" base_Property="_lQkdsJ-dEeGorI3CPDW2ww">
     <ruleId>CONF:10652</ruleId>
   </CDA:PropertyValidation>
@@ -8546,13 +8576,19 @@ UCUM units SHOULD be &quot;[mi_i]&quot;</body>
   <CDA:TextValue xmi:id="_3O2BIJ-dEeGorI3CPDW2ww" severity="WARNING" base_Property="_lQkdtp-dEeGorI3CPDW2ww" value="EMS Disposition">
     <ruleId>CONF:10655</ruleId>
   </CDA:TextValue>
-  <CDA:CDATemplate xmi:id="_7_pEYJ-iEeGorI3CPDW2ww" base_Class="_iDmQYJ9mEeGw9ZRnaFfEZQ" templateId="2.16.840.1.113883.17.3.10.1.1"/>
-  <CDA:CDATemplate xmi:id="_BeU6oJ-jEeGorI3CPDW2ww" base_Class="_jCzkkIzkEeGnhceUMXltng" templateId="2.16.840.1.113883.17.3.10.1.23"/>
+  <CDA:CDATemplate xmi:id="_7_pEYJ-iEeGorI3CPDW2ww" base_Class="_iDmQYJ9mEeGw9ZRnaFfEZQ" templateId="2.16.840.1.113883.17.3.10.1.1">
+    <ruleId>CONF:11405</ruleId>
+  </CDA:CDATemplate>
+  <CDA:CDATemplate xmi:id="_BeU6oJ-jEeGorI3CPDW2ww" base_Class="_jCzkkIzkEeGnhceUMXltng" templateId="2.16.840.1.113883.17.3.10.1.23">
+    <ruleId>CONF:11399</ruleId>
+  </CDA:CDATemplate>
   <CDA:CodeSystemConstraint xmi:id="_LPL7QJ-kEeGorI3CPDW2ww" code="67658-5" displayName="EMS exposures or injuries of EMS personnel Provider Narrative NEMSIS" base_Property="_IuJh4J-kEeGorI3CPDW2ww">
     <reference href="file:/C:/Users/JayLyle/eclipse-workspace/org.openhealthtools.mdht.uml.cda.emspcr.model/model/emspcr-vocab.uml#_YgJ0wcFTEeGyGv5RKvEgDA"/>
     <ruleId>CONF:10697</ruleId>
   </CDA:CodeSystemConstraint>
-  <CDA:CDATemplate xmi:id="_UM3A4J-kEeGorI3CPDW2ww" base_Class="_GGotEJ-kEeGorI3CPDW2ww" templateId="2.16.840.1.113883.17.3.10.1.6"/>
+  <CDA:CDATemplate xmi:id="_UM3A4J-kEeGorI3CPDW2ww" base_Class="_GGotEJ-kEeGorI3CPDW2ww" templateId="2.16.840.1.113883.17.3.10.1.6">
+    <ruleId>CONF:11413</ruleId>
+  </CDA:CDATemplate>
   <CDA:PropertyValidation xmi:id="_WzlLgJ-kEeGorI3CPDW2ww" base_Property="_IuJh4J-kEeGorI3CPDW2ww">
     <ruleId>CONF:10698</ruleId>
   </CDA:PropertyValidation>
@@ -8565,12 +8601,16 @@ UCUM units SHOULD be &quot;[mi_i]&quot;</body>
   <CDA:TextValue xmi:id="_egJOkJ-kEeGorI3CPDW2ww" severity="WARNING" base_Property="_IuL-IJ-kEeGorI3CPDW2ww" value="Exposures or Injuries of EMS Personnel">
     <ruleId>CONF:10701</ruleId>
   </CDA:TextValue>
-  <CDA:CDATemplate xmi:id="_eW46AJ-mEeGorI3CPDW2ww" base_Class="_aK7P4J-mEeGorI3CPDW2ww" templateId="2.16.840.1.113883.17.3.10.1.7"/>
+  <CDA:CDATemplate xmi:id="_eW46AJ-mEeGorI3CPDW2ww" base_Class="_aK7P4J-mEeGorI3CPDW2ww" templateId="2.16.840.1.113883.17.3.10.1.7">
+    <ruleId>CONF:11414</ruleId>
+  </CDA:CDATemplate>
   <CDA:CodeSystemConstraint xmi:id="_gi9wAJ-mEeGorI3CPDW2ww" code="67663-5" displayName="EMS protocol Narrative NEMSIS" base_Property="_cHId4J-mEeGorI3CPDW2ww">
     <reference href="file:/C:/Users/JayLyle/eclipse-workspace/org.openhealthtools.mdht.uml.cda.emspcr.model/model/emspcr-vocab.uml#_YgJ0wcFTEeGyGv5RKvEgDA"/>
     <ruleId>CONF:10713</ruleId>
   </CDA:CodeSystemConstraint>
-  <CDA:CDATemplate xmi:id="_oGeIAKK3EeGOxth0BgV-QA" base_Class="_h3A8IKK3EeGOxth0BgV-QA" templateId="2.16.840.1.113883.17.3.10.1.8"/>
+  <CDA:CDATemplate xmi:id="_oGeIAKK3EeGOxth0BgV-QA" base_Class="_h3A8IKK3EeGOxth0BgV-QA" templateId="2.16.840.1.113883.17.3.10.1.8">
+    <ruleId>CONF:11415</ruleId>
+  </CDA:CDATemplate>
   <CDA:CodeSystemConstraint xmi:id="_0ilqcKK3EeGOxth0BgV-QA" code="67665-0" displayName="EMS scene Narrative NEMSIS" base_Property="_z1eFwKK3EeGOxth0BgV-QA">
     <reference href="file:/C:/Users/JayLyle/eclipse-workspace/org.openhealthtools.mdht.uml.cda.emspcr.model/model/emspcr-vocab.uml#_YgJ0wcFTEeGyGv5RKvEgDA"/>
     <ruleId>CONF:10732</ruleId>
@@ -8600,7 +8640,9 @@ UCUM units SHOULD be &quot;[mi_i]&quot;</body>
     <reference href="file:/C:/Users/JayLyle/eclipse-workspace/org.openhealthtools.mdht.uml.cda.emspcr.model/model/emspcr-vocab.uml#_YgJ0wcFTEeGyGv5RKvEgDA"/>
     <ruleId>CONF:10756</ruleId>
   </CDA:CodeSystemConstraint>
-  <CDA:CDATemplate xmi:id="_34FNUKK8EeGOxth0BgV-QA" base_Class="_olqMIKK8EeGOxth0BgV-QA" templateId="2.16.840.1.113883.17.3.10.1.9"/>
+  <CDA:CDATemplate xmi:id="_34FNUKK8EeGOxth0BgV-QA" base_Class="_olqMIKK8EeGOxth0BgV-QA" templateId="2.16.840.1.113883.17.3.10.1.9">
+    <ruleId>CONF:11416</ruleId>
+  </CDA:CDATemplate>
   <CDA:AssociationValidation xmi:id="_6AEs8KhAEeG79fAvHk6H4g" severity="INFO" base_Association="_4zMDEKhAEeG79fAvHk6H4g">
     <ruleId>CONF:10772</ruleId>
   </CDA:AssociationValidation>
@@ -8614,7 +8656,9 @@ UCUM units SHOULD be &quot;[mi_i]&quot;</body>
   <CDA:AssociationValidation xmi:id="_muJo8KhDEeG79fAvHk6H4g" severity="WARNING" base_Association="_l7mKoKhDEeG79fAvHk6H4g">
     <ruleId>CONF:10775</ruleId>
   </CDA:AssociationValidation>
-  <CDA:CDATemplate xmi:id="_HtwEIKxCEeGLnrdLmr5TaQ" base_Class="_ClVY0KxCEeGLnrdLmr5TaQ" templateId="2.16.840.1.113883.17.3.10.1.10"/>
+  <CDA:CDATemplate xmi:id="_HtwEIKxCEeGLnrdLmr5TaQ" base_Class="_ClVY0KxCEeGLnrdLmr5TaQ" templateId="2.16.840.1.113883.17.3.10.1.10">
+    <ruleId>CONF:11417</ruleId>
+  </CDA:CDATemplate>
   <CDA:CodeSystemConstraint xmi:id="_kx_PYKxCEeGLnrdLmr5TaQ" code="67667-6" displayName="EMS times Narrative NEMSIS" base_Property="_Eh5MIKxCEeGLnrdLmr5TaQ">
     <reference href="file:/C:/Users/JayLyle/eclipse-workspace/org.openhealthtools.mdht.uml.cda.emspcr.model/model/emspcr-vocab.uml#_YgJ0wcFTEeGyGv5RKvEgDA"/>
     <ruleId>CONF:10820</ruleId>
@@ -9207,7 +9251,7 @@ UCUM units SHOULD be &quot;[mi_i]&quot;</body>
     <ruleId>CONF:10464</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:CodeSystemConstraint xmi:id="_Mf590JsmEeGzXI65shd6Fw" base_Property="_yvkMQJslEeGzXI65shd6Fw">
-    <reference href="file:/C:/Users/JayLyle/eclipse-workspace/org.openhealthtools.mdht.uml.cda.emspcr.model/model/emspcr-vocab.uml#_vP74cFg6EeK-i8RB1gvLUA"/>
+    <reference href="file:/C:/Users/JayLyle/eclipse-workspace/BackupPCR/model/emspcr-vocab.uml#_vP74cFg6EeK-i8RB1gvLUA"/>
     <ruleId>CONF:10467</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_oOzt0JsmEeGzXI65shd6Fw" base_Property="_lZnCUJsmEeGzXI65shd6Fw">
@@ -9372,7 +9416,9 @@ UCUM units SHOULD be &quot;[mi_i]&quot;</body>
   <CDA:PropertyValidation xmi:id="_e7MWMJ-AEeGw9ZRnaFfEZQ" base_Property="_e7LIGZ-AEeGw9ZRnaFfEZQ">
     <ruleId>CONF:10612</ruleId>
   </CDA:PropertyValidation>
-  <CDA:CDATemplate xmi:id="_dRik4J-NEeGorI3CPDW2ww" base_Class="_hwaaYJ-BEeGw9ZRnaFfEZQ"/>
+  <CDA:CDATemplate xmi:id="_dRik4J-NEeGorI3CPDW2ww" base_Class="_hwaaYJ-BEeGw9ZRnaFfEZQ">
+    <ruleId>CONF:11491</ruleId>
+  </CDA:CDATemplate>
   <CDA:CodeSystemConstraint xmi:id="_pMApQJ-BEeGw9ZRnaFfEZQ" code="69466-1" displayName="Vehicle location Vehicle NEMSIS --at dispatch" base_Property="_mwgQIJ-BEeGw9ZRnaFfEZQ">
     <reference href="file:/C:/Users/JayLyle/eclipse-workspace/org.openhealthtools.mdht.uml.cda.emspcr.model/model/emspcr-vocab.uml#_YgJ0wcFTEeGyGv5RKvEgDA"/>
     <ruleId>CONF:10617</ruleId>
@@ -9380,7 +9426,9 @@ UCUM units SHOULD be &quot;[mi_i]&quot;</body>
   <CDA:PropertyValidation xmi:id="_t49gkJ-BEeGw9ZRnaFfEZQ" base_Property="_mwgQIZ-BEeGw9ZRnaFfEZQ">
     <ruleId>CONF:10618</ruleId>
   </CDA:PropertyValidation>
-  <CDA:CDATemplate xmi:id="_sPM3AJ-NEeGorI3CPDW2ww" base_Class="_sPMP8J-NEeGorI3CPDW2ww"/>
+  <CDA:CDATemplate xmi:id="_sPM3AJ-NEeGorI3CPDW2ww" base_Class="_sPMP8J-NEeGorI3CPDW2ww">
+    <ruleId>CONF:11492</ruleId>
+  </CDA:CDATemplate>
   <CDA:CodeSystemConstraint xmi:id="_sPM3AZ-NEeGorI3CPDW2ww" code="52002-3" displayName="Ambulance transport, Destination site latitude coordinate" base_Property="_sPMP-Z-NEeGorI3CPDW2ww">
     <reference href="file:/C:/Users/JayLyle/eclipse-workspace/org.openhealthtools.mdht.uml.cda.emspcr.model/model/emspcr-vocab.uml#_YgJ0wcFTEeGyGv5RKvEgDA"/>
     <ruleId>CONF:10620</ruleId>
@@ -9388,7 +9436,9 @@ UCUM units SHOULD be &quot;[mi_i]&quot;</body>
   <CDA:PropertyValidation xmi:id="_sPM3Ap-NEeGorI3CPDW2ww" base_Property="_sPMP-p-NEeGorI3CPDW2ww">
     <ruleId>CONF:10621</ruleId>
   </CDA:PropertyValidation>
-  <CDA:CDATemplate xmi:id="_UGLzIJ-OEeGorI3CPDW2ww" base_Class="_UGLMEJ-OEeGorI3CPDW2ww"/>
+  <CDA:CDATemplate xmi:id="_UGLzIJ-OEeGorI3CPDW2ww" base_Class="_UGLMEJ-OEeGorI3CPDW2ww">
+    <ruleId>CONF:11493</ruleId>
+  </CDA:CDATemplate>
   <CDA:CodeSystemConstraint xmi:id="_UGLzIZ-OEeGorI3CPDW2ww" code="52003-1" displayName="Ambulance transport, Destination site longitude coordinate" base_Property="_UGLMGJ-OEeGorI3CPDW2ww">
     <reference href="file:/C:/Users/JayLyle/eclipse-workspace/org.openhealthtools.mdht.uml.cda.emspcr.model/model/emspcr-vocab.uml#_YgJ0wcFTEeGyGv5RKvEgDA"/>
     <ruleId>CONF:10623</ruleId>
@@ -9975,7 +10025,9 @@ UCUM units SHOULD be &quot;[mi_i]&quot;</body>
   <CDA:PropertyValidation xmi:id="_qVlRgCWpEeKkGpwdHZh8HA" base_Property="_ULxOYHtKEeGs2I-Db78R9w">
     <ruleId>CONF:10900</ruleId>
   </CDA:PropertyValidation>
-  <CDA:CDATemplate xmi:id="_HAbYwClBEeKLlLf58wNPLQ" base_Class="_xCcE0Iy7EeGnhceUMXltng" templateId="2.16.840.1.1133883.17.3.10.1.98"/>
+  <CDA:CDATemplate xmi:id="_HAbYwClBEeKLlLf58wNPLQ" base_Class="_xCcE0Iy7EeGnhceUMXltng" templateId="2.16.840.1.1133883.17.3.10.1.98">
+    <ruleId>CONF:11439</ruleId>
+  </CDA:CDATemplate>
   <CDA:AssociationValidation xmi:id="_JU580ClBEeKLlLf58wNPLQ"/>
   <CDA:AssociationValidation xmi:id="_lY3r8ClDEeKLlLf58wNPLQ" base_Association="_Ipb68HwLEeGW3cDolvqrTA">
     <ruleId>CONF:10941</ruleId>
@@ -10174,7 +10226,9 @@ UCUM units SHOULD be &quot;[mi_i]&quot;</body>
   <CDA:AssociationValidation xmi:id="_bbiWgETWEeKEm6ZghGGtvw" base_Association="_bAWPUUTWEeKEm6ZghGGtvw">
     <ruleId>CONF:11087</ruleId>
   </CDA:AssociationValidation>
-  <CDA:CDATemplate xmi:id="_v3VFQETWEeKEm6ZghGGtvw" base_Class="_Orea4IzrEeGnhceUMXltng" templateId="2.16.840.1.113883.17.3.10.1.23.1"/>
+  <CDA:CDATemplate xmi:id="_v3VFQETWEeKEm6ZghGGtvw" base_Class="_Orea4IzrEeGnhceUMXltng" templateId="2.16.840.1.113883.17.3.10.1.23.1">
+    <ruleId>CONF:11419</ruleId>
+  </CDA:CDATemplate>
   <CDA:CodeSystemConstraint xmi:id="_l0j-AJorEeG_FLcaRgAa7g" code="67536-3" displayName="Neurological assessment Nervous system NEMSIS" base_Property="_hNivkJorEeG_FLcaRgAa7g">
     <reference href="file:/C:/Users/JayLyle/eclipse-workspace/org.openhealthtools.mdht.uml.cda.emspcr.model/model/emspcr-vocab.uml#_YgJ0wcFTEeGyGv5RKvEgDA"/>
     <ruleId>CONF:10413</ruleId>
@@ -10247,7 +10301,9 @@ UCUM units SHOULD be &quot;[mi_i]&quot;</body>
   <CDA:PropertyValidation xmi:id="_81aSoIjtEeKx3P4dlW9OSw" severity="INFO" base_Property="_y88YsIjtEeKx3P4dlW9OSw">
     <ruleId>CONF:11277</ruleId>
   </CDA:PropertyValidation>
-  <CDA:CDATemplate xmi:id="_Au9-IIjuEeKx3P4dlW9OSw" base_Class="_koRz8IzsEeGnhceUMXltng" templateId="2.16.840.1.1133883.17.3.10.1.176"/>
+  <CDA:CDATemplate xmi:id="_Au9-IIjuEeKx3P4dlW9OSw" base_Class="_koRz8IzsEeGnhceUMXltng" templateId="2.16.840.1.1133883.17.3.10.1.176">
+    <ruleId>CONF:11537</ruleId>
+  </CDA:CDATemplate>
   <CDA:PropertyValidation xmi:id="_EWQ_gIjvEeKx3P4dlW9OSw" severity="INFO" base_Property="__ctsEIjtEeKx3P4dlW9OSw">
     <ruleId>CONF:11279</ruleId>
   </CDA:PropertyValidation>
@@ -10255,7 +10311,9 @@ UCUM units SHOULD be &quot;[mi_i]&quot;</body>
     <reference href="file:/C:/Users/JayLyle/eclipse-workspace/org.openhealthtools.mdht.uml.cda.emspcr.model/model/emspcr-vocab.uml#_YgJ0wcFTEeGyGv5RKvEgDA"/>
     <ruleId>CONF:11201</ruleId>
   </CDA:CodeSystemConstraint>
-  <CDA:CDATemplate xmi:id="_DkbvYIjuEeKx3P4dlW9OSw" base_Class="_01XGkIzsEeGnhceUMXltng" templateId="2.16.840.1.1133883.17.3.10.1.177"/>
+  <CDA:CDATemplate xmi:id="_DkbvYIjuEeKx3P4dlW9OSw" base_Class="_01XGkIzsEeGnhceUMXltng" templateId="2.16.840.1.1133883.17.3.10.1.177">
+    <ruleId>CONF:11538</ruleId>
+  </CDA:CDATemplate>
   <CDA:ConformsTo xmi:id="_Hwu7QIjvEeKx3P4dlW9OSw" severity="INFO" base_Generalization="_1HuB4IzsEeGnhceUMXltng">
     <ruleId>CONF:11280</ruleId>
   </CDA:ConformsTo>
@@ -10719,7 +10777,9 @@ UCUM units SHOULD be &quot;[mi_i]&quot;</body>
   <CDA:AssociationValidation xmi:id="_RgqxcMWOEeK3RfDsHamIUQ" base_Association="_7TYP4MWNEeK3RfDsHamIUQ">
     <ruleId>CONF:11099</ruleId>
   </CDA:AssociationValidation>
-  <CDA:CDATemplate xmi:id="_glO-wETXEeKEm6ZghGGtvw" base_Class="_GGe8UJojEeG_FLcaRgAa7g" templateId="2.16.840.1.1133883.17.3.10.1.178"/>
+  <CDA:CDATemplate xmi:id="_glO-wETXEeKEm6ZghGGtvw" base_Class="_GGe8UJojEeG_FLcaRgAa7g" templateId="2.16.840.1.1133883.17.3.10.1.178">
+    <ruleId>CONF:11505</ruleId>
+  </CDA:CDATemplate>
   <CDA:CodeSystemConstraint xmi:id="_KE4rkJojEeG_FLcaRgAa7g" code="8335-2" displayName="Body weight Estimated" base_Property="_IKvTEJojEeG_FLcaRgAa7g">
     <reference href="file:/C:/Users/JayLyle/eclipse-workspace/org.openhealthtools.mdht.uml.cda.emspcr.model/model/emspcr-vocab.uml#_YgJ0wcFTEeGyGv5RKvEgDA"/>
     <ruleId>CONF:10363</ruleId>
@@ -10753,7 +10813,9 @@ UCUM units SHOULD be &quot;[mi_i]&quot;</body>
   <CDA:AssociationValidation xmi:id="_C8YMIMWPEeK3RfDsHamIUQ" severity="INFO" base_Association="_-kvdgMWOEeK3RfDsHamIUQ">
     <ruleId>CONF:11103</ruleId>
   </CDA:AssociationValidation>
-  <CDA:CDATemplate xmi:id="_I_K1AMWPEeK3RfDsHamIUQ" severity="INFO" base_Class="_G04HsMWPEeK3RfDsHamIUQ"/>
+  <CDA:CDATemplate xmi:id="_I_K1AMWPEeK3RfDsHamIUQ" severity="INFO" base_Class="_G04HsMWPEeK3RfDsHamIUQ">
+    <ruleId>CONF:11473</ruleId>
+  </CDA:CDATemplate>
   <CDA:AssociationValidation xmi:id="_M5mDMMWPEeK3RfDsHamIUQ" base_Association="_IYl9MMWPEeK3RfDsHamIUQ">
     <ruleId>CONF:11104</ruleId>
   </CDA:AssociationValidation>
@@ -11060,120 +11122,156 @@ UCUM units SHOULD be &quot;[mi_i]&quot;</body>
   <CDA:Entry xmi:id="_IqZVsdICEeKRzPZKi7WbBQ" base_Association="_Igw41NICEeKRzPZKi7WbBQ" typeCode="DRIV">
     <ruleId>CONF:10940</ruleId>
   </CDA:Entry>
-  <CDA:CDATemplate xmi:id="_IqZVstICEeKRzPZKi7WbBQ" base_Class="_Qlqj8HwGEeGW3cDolvqrTA" templateId="2.16.840.1.1133883.17.3.10.1.27" assigningAuthorityName="NEMSIS"/>
+  <CDA:CDATemplate xmi:id="_IqZVstICEeKRzPZKi7WbBQ" base_Class="_Qlqj8HwGEeGW3cDolvqrTA" templateId="2.16.840.1.1133883.17.3.10.1.27" assigningAuthorityName="NEMSIS">
+    <ruleId>CONF:11420</ruleId>
+  </CDA:CDATemplate>
   <CDA:AssociationValidation xmi:id="_IqZVs9ICEeKRzPZKi7WbBQ" base_Association="_Ij6TMNICEeKRzPZKi7WbBQ">
     <ruleId>CONF:10970</ruleId>
   </CDA:AssociationValidation>
   <CDA:Entry xmi:id="_IqZVtNICEeKRzPZKi7WbBQ" base_Association="_Ij6TMNICEeKRzPZKi7WbBQ" typeCode="DRIV">
     <ruleId>CONF:10971</ruleId>
   </CDA:Entry>
-  <CDA:CDATemplate xmi:id="_IqZVtdICEeKRzPZKi7WbBQ" base_Class="_JnfD8IzoEeGnhceUMXltng" templateId="2.16.840.1.1133883.17.3.10.1.28" assigningAuthorityName="NEMSIS"/>
-  <CDA:CDATemplate xmi:id="_IqZVuNICEeKRzPZKi7WbBQ" base_Class="_Dq57UIzpEeGnhceUMXltng" templateId="2.16.840.1.1133883.17.3.10.1.29" assigningAuthorityName="NEMSIS"/>
+  <CDA:CDATemplate xmi:id="_IqZVtdICEeKRzPZKi7WbBQ" base_Class="_JnfD8IzoEeGnhceUMXltng" templateId="2.16.840.1.1133883.17.3.10.1.28" assigningAuthorityName="NEMSIS">
+    <ruleId>CONF:11421</ruleId>
+  </CDA:CDATemplate>
+  <CDA:CDATemplate xmi:id="_IqZVuNICEeKRzPZKi7WbBQ" base_Class="_Dq57UIzpEeGnhceUMXltng" templateId="2.16.840.1.1133883.17.3.10.1.29" assigningAuthorityName="NEMSIS">
+    <ruleId>CONF:11422</ruleId>
+  </CDA:CDATemplate>
   <CDA:AssociationValidation xmi:id="_IqZVvNICEeKRzPZKi7WbBQ" severity="INFO" base_Association="_ImY_cNICEeKRzPZKi7WbBQ">
     <ruleId>CONF:11003</ruleId>
   </CDA:AssociationValidation>
   <CDA:Entry xmi:id="_IqZVvdICEeKRzPZKi7WbBQ" severity="INFO" base_Association="_ImY_cNICEeKRzPZKi7WbBQ">
     <ruleId>CONF:11004</ruleId>
   </CDA:Entry>
-  <CDA:CDATemplate xmi:id="_IqZVvtICEeKRzPZKi7WbBQ" base_Class="_Dfaa4J-eEeGorI3CPDW2ww" templateId="2.16.840.1.1133883.17.3.10.1.31" assigningAuthorityName="NEMSIS"/>
+  <CDA:CDATemplate xmi:id="_IqZVvtICEeKRzPZKi7WbBQ" base_Class="_Dfaa4J-eEeGorI3CPDW2ww" templateId="2.16.840.1.1133883.17.3.10.1.31" assigningAuthorityName="NEMSIS">
+    <ruleId>CONF:11423</ruleId>
+  </CDA:CDATemplate>
   <CDA:AssociationValidation xmi:id="_IqZVwtICEeKRzPZKi7WbBQ" base_Association="_ImlMsNICEeKRzPZKi7WbBQ">
     <ruleId>CONF:11007</ruleId>
   </CDA:AssociationValidation>
   <CDA:Entry xmi:id="_IqZVw9ICEeKRzPZKi7WbBQ" base_Association="_ImlMsNICEeKRzPZKi7WbBQ">
     <ruleId>CONF:11008</ruleId>
   </CDA:Entry>
-  <CDA:CDATemplate xmi:id="_IqZVxNICEeKRzPZKi7WbBQ" base_Class="_nv-0gp-fEeGorI3CPDW2ww" templateId="2.16.840.1.1133883.17.3.10.1.33" assigningAuthorityName="NEMSIS"/>
+  <CDA:CDATemplate xmi:id="_IqZVxNICEeKRzPZKi7WbBQ" base_Class="_nv-0gp-fEeGorI3CPDW2ww" templateId="2.16.840.1.1133883.17.3.10.1.33" assigningAuthorityName="NEMSIS">
+    <ruleId>CONF:11424</ruleId>
+  </CDA:CDATemplate>
   <CDA:AssociationValidation xmi:id="_IqZVxdICEeKRzPZKi7WbBQ" base_Association="_ImlMt9ICEeKRzPZKi7WbBQ">
     <ruleId>CONF:11009</ruleId>
   </CDA:AssociationValidation>
   <CDA:Entry xmi:id="_IqZVxtICEeKRzPZKi7WbBQ" base_Association="_ImlMt9ICEeKRzPZKi7WbBQ">
     <ruleId>CONF:11010</ruleId>
   </CDA:Entry>
-  <CDA:CDATemplate xmi:id="_IqZVx9ICEeKRzPZKi7WbBQ" base_Class="_EagUtZ-fEeGorI3CPDW2ww" templateId="2.16.840.1.1133883.17.3.10.1.34" assigningAuthorityName="NEMSIS"/>
+  <CDA:CDATemplate xmi:id="_IqZVx9ICEeKRzPZKi7WbBQ" base_Class="_EagUtZ-fEeGorI3CPDW2ww" templateId="2.16.840.1.1133883.17.3.10.1.34" assigningAuthorityName="NEMSIS">
+    <ruleId>CONF:11425</ruleId>
+  </CDA:CDATemplate>
   <CDA:AssociationValidation xmi:id="_IqZVyNICEeKRzPZKi7WbBQ" base_Association="_ImrTUNICEeKRzPZKi7WbBQ">
     <ruleId>CONF:11011</ruleId>
   </CDA:AssociationValidation>
   <CDA:Entry xmi:id="_IqZVydICEeKRzPZKi7WbBQ" base_Association="_ImrTUNICEeKRzPZKi7WbBQ">
     <ruleId>CONF:11012</ruleId>
   </CDA:Entry>
-  <CDA:CDATemplate xmi:id="_IqZVytICEeKRzPZKi7WbBQ" base_Class="_cm1D5Z-hEeGorI3CPDW2ww" templateId="2.16.840.1.1133883.17.3.10.1.35" assigningAuthorityName="NEMSIS"/>
+  <CDA:CDATemplate xmi:id="_IqZVytICEeKRzPZKi7WbBQ" base_Class="_cm1D5Z-hEeGorI3CPDW2ww" templateId="2.16.840.1.1133883.17.3.10.1.35" assigningAuthorityName="NEMSIS">
+    <ruleId>CONF:11426</ruleId>
+  </CDA:CDATemplate>
   <CDA:AssociationValidation xmi:id="_IqZVy9ICEeKRzPZKi7WbBQ" base_Association="_ImrTV9ICEeKRzPZKi7WbBQ">
     <ruleId>CONF:11013</ruleId>
   </CDA:AssociationValidation>
   <CDA:Entry xmi:id="_IqZVzNICEeKRzPZKi7WbBQ" base_Association="_ImrTV9ICEeKRzPZKi7WbBQ">
     <ruleId>CONF:11014</ruleId>
   </CDA:Entry>
-  <CDA:CDATemplate xmi:id="_IqZVzdICEeKRzPZKi7WbBQ" base_Class="_083apZ-hEeGorI3CPDW2ww" templateId="2.16.840.1.1133883.17.3.10.1.36" assigningAuthorityName="NEMSIS"/>
+  <CDA:CDATemplate xmi:id="_IqZVzdICEeKRzPZKi7WbBQ" base_Class="_083apZ-hEeGorI3CPDW2ww" templateId="2.16.840.1.1133883.17.3.10.1.36" assigningAuthorityName="NEMSIS">
+    <ruleId>CONF:11427</ruleId>
+  </CDA:CDATemplate>
   <CDA:AssociationValidation xmi:id="_IqZVztICEeKRzPZKi7WbBQ" base_Association="_ImxZ8NICEeKRzPZKi7WbBQ">
     <ruleId>CONF:11015</ruleId>
   </CDA:AssociationValidation>
   <CDA:Entry xmi:id="_IqZVz9ICEeKRzPZKi7WbBQ" base_Association="_ImxZ8NICEeKRzPZKi7WbBQ">
     <ruleId>CONF:11016</ruleId>
   </CDA:Entry>
-  <CDA:CDATemplate xmi:id="_IqZV0NICEeKRzPZKi7WbBQ" base_Class="_Q4zL9Z-gEeGorI3CPDW2ww" templateId="2.16.840.1.1133883.17.3.10.1.37" assigningAuthorityName="NEMSIS"/>
+  <CDA:CDATemplate xmi:id="_IqZV0NICEeKRzPZKi7WbBQ" base_Class="_Q4zL9Z-gEeGorI3CPDW2ww" templateId="2.16.840.1.1133883.17.3.10.1.37" assigningAuthorityName="NEMSIS">
+    <ruleId>CONF:11429</ruleId>
+  </CDA:CDATemplate>
   <CDA:AssociationValidation xmi:id="_IqZV0dICEeKRzPZKi7WbBQ" base_Association="_Im3gkNICEeKRzPZKi7WbBQ">
     <ruleId>CONF:11053</ruleId>
   </CDA:AssociationValidation>
   <CDA:Entry xmi:id="_IqZV0tICEeKRzPZKi7WbBQ" base_Association="_Im3gkNICEeKRzPZKi7WbBQ" typeCode="DRIV">
     <ruleId>CONF:11054</ruleId>
   </CDA:Entry>
-  <CDA:CDATemplate xmi:id="_IqZV09ICEeKRzPZKi7WbBQ" base_Class="_1u74sKxCEeGLnrdLmr5TaQ" templateId="2.16.840.1.1133883.17.3.10.1.38" assigningAuthorityName="NEMSIS"/>
+  <CDA:CDATemplate xmi:id="_IqZV09ICEeKRzPZKi7WbBQ" base_Class="_1u74sKxCEeGLnrdLmr5TaQ" templateId="2.16.840.1.1133883.17.3.10.1.38" assigningAuthorityName="NEMSIS">
+    <ruleId>CONF:11430</ruleId>
+  </CDA:CDATemplate>
   <CDA:AssociationValidation xmi:id="_IqZV1NICEeKRzPZKi7WbBQ" base_Association="_Im3gl9ICEeKRzPZKi7WbBQ">
     <ruleId>CONF:11055</ruleId>
   </CDA:AssociationValidation>
   <CDA:Entry xmi:id="_IqZV1dICEeKRzPZKi7WbBQ" base_Association="_Im3gl9ICEeKRzPZKi7WbBQ" typeCode="DRIV">
     <ruleId>CONF:11056</ruleId>
   </CDA:Entry>
-  <CDA:CDATemplate xmi:id="_IqZV1tICEeKRzPZKi7WbBQ" base_Class="_JKerYKxDEeGLnrdLmr5TaQ" templateId="2.16.840.1.1133883.17.3.10.1.39" assigningAuthorityName="NEMSIS"/>
+  <CDA:CDATemplate xmi:id="_IqZV1tICEeKRzPZKi7WbBQ" base_Class="_JKerYKxDEeGLnrdLmr5TaQ" templateId="2.16.840.1.1133883.17.3.10.1.39" assigningAuthorityName="NEMSIS">
+    <ruleId>CONF:11431</ruleId>
+  </CDA:CDATemplate>
   <CDA:AssociationValidation xmi:id="_IqZV19ICEeKRzPZKi7WbBQ" base_Association="_Im3gntICEeKRzPZKi7WbBQ">
     <ruleId>CONF:11057</ruleId>
   </CDA:AssociationValidation>
   <CDA:Entry xmi:id="_IqZV2NICEeKRzPZKi7WbBQ" base_Association="_Im3gntICEeKRzPZKi7WbBQ" typeCode="DRIV">
     <ruleId>CONF:11058</ruleId>
   </CDA:Entry>
-  <CDA:CDATemplate xmi:id="_IqZV2dICEeKRzPZKi7WbBQ" base_Class="_UyaX0KxDEeGLnrdLmr5TaQ" templateId="2.16.840.1.1133883.17.3.10.1.40" assigningAuthorityName="NEMSIS"/>
+  <CDA:CDATemplate xmi:id="_IqZV2dICEeKRzPZKi7WbBQ" base_Class="_UyaX0KxDEeGLnrdLmr5TaQ" templateId="2.16.840.1.1133883.17.3.10.1.40" assigningAuthorityName="NEMSIS">
+    <ruleId>CONF:11432</ruleId>
+  </CDA:CDATemplate>
   <CDA:AssociationValidation xmi:id="_IqZV2tICEeKRzPZKi7WbBQ" base_Association="_Im9nMNICEeKRzPZKi7WbBQ">
     <ruleId>CONF:11059</ruleId>
   </CDA:AssociationValidation>
   <CDA:Entry xmi:id="_IqZV29ICEeKRzPZKi7WbBQ" base_Association="_Im9nMNICEeKRzPZKi7WbBQ" typeCode="DRIV">
     <ruleId>CONF:11060</ruleId>
   </CDA:Entry>
-  <CDA:CDATemplate xmi:id="_IqZV3NICEeKRzPZKi7WbBQ" base_Class="_iGh5QKxDEeGLnrdLmr5TaQ" templateId="2.16.840.1.1133883.17.3.10.1.41" assigningAuthorityName="NEMSIS"/>
+  <CDA:CDATemplate xmi:id="_IqZV3NICEeKRzPZKi7WbBQ" base_Class="_iGh5QKxDEeGLnrdLmr5TaQ" templateId="2.16.840.1.1133883.17.3.10.1.41" assigningAuthorityName="NEMSIS">
+    <ruleId>CONF:11433</ruleId>
+  </CDA:CDATemplate>
   <CDA:AssociationValidation xmi:id="_IqZV3dICEeKRzPZKi7WbBQ" base_Association="_Im9nN9ICEeKRzPZKi7WbBQ">
     <ruleId>CONF:11061</ruleId>
   </CDA:AssociationValidation>
   <CDA:Entry xmi:id="_IqZV3tICEeKRzPZKi7WbBQ" base_Association="_Im9nN9ICEeKRzPZKi7WbBQ" typeCode="DRIV">
     <ruleId>CONF:11062</ruleId>
   </CDA:Entry>
-  <CDA:CDATemplate xmi:id="_IqZV39ICEeKRzPZKi7WbBQ" base_Class="_yt7JUKxDEeGLnrdLmr5TaQ" templateId="2.16.840.1.1133883.17.3.10.1.42" assigningAuthorityName="NEMSIS"/>
+  <CDA:CDATemplate xmi:id="_IqZV39ICEeKRzPZKi7WbBQ" base_Class="_yt7JUKxDEeGLnrdLmr5TaQ" templateId="2.16.840.1.1133883.17.3.10.1.42" assigningAuthorityName="NEMSIS">
+    <ruleId>CONF:11434</ruleId>
+  </CDA:CDATemplate>
   <CDA:AssociationValidation xmi:id="_IqZV4NICEeKRzPZKi7WbBQ" base_Association="_Im9nPtICEeKRzPZKi7WbBQ">
     <ruleId>CONF:11063</ruleId>
   </CDA:AssociationValidation>
   <CDA:Entry xmi:id="_IqZV4dICEeKRzPZKi7WbBQ" base_Association="_Im9nPtICEeKRzPZKi7WbBQ" typeCode="DRIV">
     <ruleId>CONF:11064</ruleId>
   </CDA:Entry>
-  <CDA:CDATemplate xmi:id="_IqZV4tICEeKRzPZKi7WbBQ" base_Class="_6w124KxDEeGLnrdLmr5TaQ" templateId="2.16.840.1.1133883.17.3.10.1.43" assigningAuthorityName="NEMSIS"/>
+  <CDA:CDATemplate xmi:id="_IqZV4tICEeKRzPZKi7WbBQ" base_Class="_6w124KxDEeGLnrdLmr5TaQ" templateId="2.16.840.1.1133883.17.3.10.1.43" assigningAuthorityName="NEMSIS">
+    <ruleId>CONF:11435</ruleId>
+  </CDA:CDATemplate>
   <CDA:AssociationValidation xmi:id="_IqZV49ICEeKRzPZKi7WbBQ" base_Association="_Im9nRdICEeKRzPZKi7WbBQ">
     <ruleId>CONF:11065</ruleId>
   </CDA:AssociationValidation>
   <CDA:Entry xmi:id="_IqZV5NICEeKRzPZKi7WbBQ" base_Association="_Im9nRdICEeKRzPZKi7WbBQ" typeCode="DRIV">
     <ruleId>CONF:11066</ruleId>
   </CDA:Entry>
-  <CDA:CDATemplate xmi:id="_IqZV5dICEeKRzPZKi7WbBQ" base_Class="_DaIA4KxEEeGLnrdLmr5TaQ" templateId="2.16.840.1.1133883.17.3.10.1.44" assigningAuthorityName="NEMSIS"/>
+  <CDA:CDATemplate xmi:id="_IqZV5dICEeKRzPZKi7WbBQ" base_Class="_DaIA4KxEEeGLnrdLmr5TaQ" templateId="2.16.840.1.1133883.17.3.10.1.44" assigningAuthorityName="NEMSIS">
+    <ruleId>CONF:11436</ruleId>
+  </CDA:CDATemplate>
   <CDA:AssociationValidation xmi:id="_IqZV5tICEeKRzPZKi7WbBQ" base_Association="_Im9nTNICEeKRzPZKi7WbBQ">
     <ruleId>CONF:11067</ruleId>
   </CDA:AssociationValidation>
   <CDA:Entry xmi:id="_IqZV59ICEeKRzPZKi7WbBQ" base_Association="_Im9nTNICEeKRzPZKi7WbBQ" typeCode="DRIV">
     <ruleId>CONF:11068</ruleId>
   </CDA:Entry>
-  <CDA:CDATemplate xmi:id="_IqZV6NICEeKRzPZKi7WbBQ" base_Class="_KrhK4KxEEeGLnrdLmr5TaQ" templateId="2.16.840.1.1133883.17.3.10.1.45" assigningAuthorityName="NEMSIS"/>
+  <CDA:CDATemplate xmi:id="_IqZV6NICEeKRzPZKi7WbBQ" base_Class="_KrhK4KxEEeGLnrdLmr5TaQ" templateId="2.16.840.1.1133883.17.3.10.1.45" assigningAuthorityName="NEMSIS">
+    <ruleId>CONF:11437</ruleId>
+  </CDA:CDATemplate>
   <CDA:AssociationValidation xmi:id="_IqZV6dICEeKRzPZKi7WbBQ" severity="INFO" base_Association="_InDt1tICEeKRzPZKi7WbBQ">
     <ruleId>CONF:11069</ruleId>
   </CDA:AssociationValidation>
   <CDA:Entry xmi:id="_IqZV6tICEeKRzPZKi7WbBQ" severity="INFO" base_Association="_InDt1tICEeKRzPZKi7WbBQ" typeCode="DRIV">
     <ruleId>CONF:11070</ruleId>
   </CDA:Entry>
-  <CDA:CDATemplate xmi:id="_IqZV69ICEeKRzPZKi7WbBQ" base_Class="_UFgZEKxEEeGLnrdLmr5TaQ" templateId="2.16.840.1.1133883.17.3.10.1.46" assigningAuthorityName="NEMSIS"/>
+  <CDA:CDATemplate xmi:id="_IqZV69ICEeKRzPZKi7WbBQ" base_Class="_UFgZEKxEEeGLnrdLmr5TaQ" templateId="2.16.840.1.1133883.17.3.10.1.46" assigningAuthorityName="NEMSIS">
+    <ruleId>CONF:11438</ruleId>
+  </CDA:CDATemplate>
   <CDA:AssociationValidation xmi:id="_IqZV7NICEeKRzPZKi7WbBQ" base_Association="_InP7ENICEeKRzPZKi7WbBQ">
     <ruleId>CONF:10946</ruleId>
   </CDA:AssociationValidation>
@@ -11181,336 +11279,432 @@ UCUM units SHOULD be &quot;[mi_i]&quot;</body>
     <ruleId>CONF:10947</ruleId>
   </CDA:Entry>
   <CDA:CDATemplate xmi:id="_IqZV7tICEeKRzPZKi7WbBQ" base_Class="_xCcE0Iy7EeGnhceUMXltng" templateId="2.16.840.1.1133883.17.3.10.1.47" assigningAuthorityName="NEMSIS"/>
-  <CDA:CDATemplate xmi:id="_IqZV8dICEeKRzPZKi7WbBQ" base_Class="_3C3WwMWqEeK3RfDsHamIUQ" templateId="2.16.840.1.1133883.17.3.10.1.48" assigningAuthorityName="NEMSIS"/>
+  <CDA:CDATemplate xmi:id="_IqZV8dICEeKRzPZKi7WbBQ" base_Class="_3C3WwMWqEeK3RfDsHamIUQ" templateId="2.16.840.1.1133883.17.3.10.1.48" assigningAuthorityName="NEMSIS">
+    <ruleId>CONF:11440</ruleId>
+  </CDA:CDATemplate>
   <CDA:AssociationValidation xmi:id="_IqZV8tICEeKRzPZKi7WbBQ" base_Association="_InWBsNICEeKRzPZKi7WbBQ">
     <ruleId>CONF:10953</ruleId>
   </CDA:AssociationValidation>
   <CDA:Entry xmi:id="_IqZV89ICEeKRzPZKi7WbBQ" base_Association="_InWBsNICEeKRzPZKi7WbBQ" typeCode="DRIV">
     <ruleId>CONF:10954</ruleId>
   </CDA:Entry>
-  <CDA:CDATemplate xmi:id="_IqZV9NICEeKRzPZKi7WbBQ" base_Class="_CFApcIzGEeGnhceUMXltng" templateId="2.16.840.1.1133883.17.3.10.1.49" assigningAuthorityName="NEMSIS"/>
+  <CDA:CDATemplate xmi:id="_IqZV9NICEeKRzPZKi7WbBQ" base_Class="_CFApcIzGEeGnhceUMXltng" templateId="2.16.840.1.1133883.17.3.10.1.49" assigningAuthorityName="NEMSIS">
+    <ruleId>CONF:11441</ruleId>
+  </CDA:CDATemplate>
   <CDA:AssociationValidation xmi:id="_IqZV9dICEeKRzPZKi7WbBQ" base_Association="_IncIUNICEeKRzPZKi7WbBQ">
     <ruleId>CONF:10917</ruleId>
   </CDA:AssociationValidation>
   <CDA:Entry xmi:id="_IqZV9tICEeKRzPZKi7WbBQ" base_Association="_IncIUNICEeKRzPZKi7WbBQ" typeCode="DRIV">
     <ruleId>CONF:10918</ruleId>
   </CDA:Entry>
-  <CDA:CDATemplate xmi:id="_IqZV99ICEeKRzPZKi7WbBQ" base_Class="_KEFo8HSVEeGa4IXs2ghZEw" templateId="2.16.840.1.1133883.17.3.10.1.50" assigningAuthorityName="NEMSIS"/>
+  <CDA:CDATemplate xmi:id="_IqZV99ICEeKRzPZKi7WbBQ" base_Class="_KEFo8HSVEeGa4IXs2ghZEw" templateId="2.16.840.1.1133883.17.3.10.1.50" assigningAuthorityName="NEMSIS">
+    <ruleId>CONF:11442</ruleId>
+  </CDA:CDATemplate>
   <CDA:AssociationValidation xmi:id="_IqZV-NICEeKRzPZKi7WbBQ" severity="WARNING" base_Association="_IncIV9ICEeKRzPZKi7WbBQ">
     <ruleId>CONF:10919</ruleId>
   </CDA:AssociationValidation>
   <CDA:Entry xmi:id="_IqZV-dICEeKRzPZKi7WbBQ" severity="WARNING" base_Association="_IncIV9ICEeKRzPZKi7WbBQ" typeCode="DRIV">
     <ruleId>CONF:10920</ruleId>
   </CDA:Entry>
-  <CDA:CDATemplate xmi:id="_IqZV-tICEeKRzPZKi7WbBQ" base_Class="_aS16EHSWEeGa4IXs2ghZEw" templateId="2.16.840.1.1133883.17.3.10.1.51" assigningAuthorityName="NEMSIS"/>
+  <CDA:CDATemplate xmi:id="_IqZV-tICEeKRzPZKi7WbBQ" base_Class="_aS16EHSWEeGa4IXs2ghZEw" templateId="2.16.840.1.1133883.17.3.10.1.51" assigningAuthorityName="NEMSIS">
+    <ruleId>CONF:11443</ruleId>
+  </CDA:CDATemplate>
   <CDA:AssociationValidation xmi:id="_IqZV-9ICEeKRzPZKi7WbBQ" base_Association="_IniO8NICEeKRzPZKi7WbBQ">
     <ruleId>CONF:10921</ruleId>
   </CDA:AssociationValidation>
   <CDA:Entry xmi:id="_IqZV_NICEeKRzPZKi7WbBQ" base_Association="_IniO8NICEeKRzPZKi7WbBQ" typeCode="DRIV">
     <ruleId>CONF:10922</ruleId>
   </CDA:Entry>
-  <CDA:CDATemplate xmi:id="_IqZV_dICEeKRzPZKi7WbBQ" base_Class="_lTHsIIcXEeGqF6qfYwLiQw" templateId="2.16.840.1.1133883.17.3.10.1.52" assigningAuthorityName="NEMSIS"/>
+  <CDA:CDATemplate xmi:id="_IqZV_dICEeKRzPZKi7WbBQ" base_Class="_lTHsIIcXEeGqF6qfYwLiQw" templateId="2.16.840.1.1133883.17.3.10.1.52" assigningAuthorityName="NEMSIS">
+    <ruleId>CONF:11444</ruleId>
+  </CDA:CDATemplate>
   <CDA:AssociationValidation xmi:id="_IqZV_tICEeKRzPZKi7WbBQ" base_Association="_InoVkNICEeKRzPZKi7WbBQ">
     <ruleId>CONF:10923</ruleId>
   </CDA:AssociationValidation>
   <CDA:Entry xmi:id="_IqZV_9ICEeKRzPZKi7WbBQ" severity="INFO" base_Association="_InoVkNICEeKRzPZKi7WbBQ" typeCode="DRIV">
     <ruleId>CONF:10924</ruleId>
   </CDA:Entry>
-  <CDA:CDATemplate xmi:id="_IqZWANICEeKRzPZKi7WbBQ" base_Class="_vuraIIcZEeGqF6qfYwLiQw" templateId="2.16.840.1.1133883.17.3.10.1.53" assigningAuthorityName="NEMSIS"/>
+  <CDA:CDATemplate xmi:id="_IqZWANICEeKRzPZKi7WbBQ" base_Class="_vuraIIcZEeGqF6qfYwLiQw" templateId="2.16.840.1.1133883.17.3.10.1.53" assigningAuthorityName="NEMSIS">
+    <ruleId>CONF:11445</ruleId>
+  </CDA:CDATemplate>
   <CDA:AssociationValidation xmi:id="_IqZWAdICEeKRzPZKi7WbBQ" severity="INFO" base_Association="_InoVl9ICEeKRzPZKi7WbBQ">
     <ruleId>CONF:10925</ruleId>
   </CDA:AssociationValidation>
   <CDA:Entry xmi:id="_IqZWAtICEeKRzPZKi7WbBQ" severity="INFO" base_Association="_InoVl9ICEeKRzPZKi7WbBQ" typeCode="DRIV">
     <ruleId>CONF:10926</ruleId>
   </CDA:Entry>
-  <CDA:CDATemplate xmi:id="_IqZWA9ICEeKRzPZKi7WbBQ" base_Class="_nvhVwIcaEeGqF6qfYwLiQw" templateId="2.16.840.1.1133883.17.3.10.1.54" assigningAuthorityName="NEMSIS"/>
+  <CDA:CDATemplate xmi:id="_IqZWA9ICEeKRzPZKi7WbBQ" base_Class="_nvhVwIcaEeGqF6qfYwLiQw" templateId="2.16.840.1.1133883.17.3.10.1.54" assigningAuthorityName="NEMSIS">
+    <ruleId>CONF:11446</ruleId>
+  </CDA:CDATemplate>
   <CDA:AssociationValidation xmi:id="_IqZWBNICEeKRzPZKi7WbBQ" severity="INFO" base_Association="_InucMNICEeKRzPZKi7WbBQ">
     <ruleId>CONF:10927</ruleId>
   </CDA:AssociationValidation>
   <CDA:Entry xmi:id="_IqZWBdICEeKRzPZKi7WbBQ" severity="INFO" base_Association="_InucMNICEeKRzPZKi7WbBQ" typeCode="DRIV">
     <ruleId>CONF:10928</ruleId>
   </CDA:Entry>
-  <CDA:CDATemplate xmi:id="_IqZWBtICEeKRzPZKi7WbBQ" base_Class="_zMwjMIccEeGqF6qfYwLiQw" templateId="2.16.840.1.1133883.17.3.10.1.55" assigningAuthorityName="NEMSIS"/>
+  <CDA:CDATemplate xmi:id="_IqZWBtICEeKRzPZKi7WbBQ" base_Class="_zMwjMIccEeGqF6qfYwLiQw" templateId="2.16.840.1.1133883.17.3.10.1.55" assigningAuthorityName="NEMSIS">
+    <ruleId>CONF:11447</ruleId>
+  </CDA:CDATemplate>
   <CDA:AssociationValidation xmi:id="_IqZWB9ICEeKRzPZKi7WbBQ" severity="INFO" base_Association="_In0i0NICEeKRzPZKi7WbBQ">
     <ruleId>CONF:10929</ruleId>
   </CDA:AssociationValidation>
   <CDA:Entry xmi:id="_IqZWCNICEeKRzPZKi7WbBQ" severity="INFO" base_Association="_In0i0NICEeKRzPZKi7WbBQ" typeCode="DRIV">
     <ruleId>CONF:10930</ruleId>
   </CDA:Entry>
-  <CDA:CDATemplate xmi:id="_IqZWCdICEeKRzPZKi7WbBQ" base_Class="_bsVJUIcdEeGqF6qfYwLiQw" templateId="2.16.840.1.1133883.17.3.10.1.56" assigningAuthorityName="NEMSIS"/>
+  <CDA:CDATemplate xmi:id="_IqZWCdICEeKRzPZKi7WbBQ" base_Class="_bsVJUIcdEeGqF6qfYwLiQw" templateId="2.16.840.1.1133883.17.3.10.1.56" assigningAuthorityName="NEMSIS">
+    <ruleId>CONF:11448</ruleId>
+  </CDA:CDATemplate>
   <CDA:AssociationValidation xmi:id="_IqZWCtICEeKRzPZKi7WbBQ" severity="INFO" base_Association="_In0i19ICEeKRzPZKi7WbBQ">
     <ruleId>CONF:10931</ruleId>
   </CDA:AssociationValidation>
   <CDA:Entry xmi:id="_IqZWC9ICEeKRzPZKi7WbBQ" severity="INFO" base_Association="_In0i19ICEeKRzPZKi7WbBQ" typeCode="DRIV">
     <ruleId>CONF:10932</ruleId>
   </CDA:Entry>
-  <CDA:CDATemplate xmi:id="_IqZWDNICEeKRzPZKi7WbBQ" base_Class="_2lRhsIcdEeGqF6qfYwLiQw" templateId="2.16.840.1.1133883.17.3.10.1.57" assigningAuthorityName="NEMSIS"/>
+  <CDA:CDATemplate xmi:id="_IqZWDNICEeKRzPZKi7WbBQ" base_Class="_2lRhsIcdEeGqF6qfYwLiQw" templateId="2.16.840.1.1133883.17.3.10.1.57" assigningAuthorityName="NEMSIS">
+    <ruleId>CONF:11449</ruleId>
+  </CDA:CDATemplate>
   <CDA:AssociationValidation xmi:id="_IqZWDdICEeKRzPZKi7WbBQ" severity="INFO" base_Association="_In6pcNICEeKRzPZKi7WbBQ">
     <ruleId>CONF:10933</ruleId>
   </CDA:AssociationValidation>
   <CDA:Entry xmi:id="_IqZWDtICEeKRzPZKi7WbBQ" severity="INFO" base_Association="_In6pcNICEeKRzPZKi7WbBQ" typeCode="DRIV">
     <ruleId>CONF:10934</ruleId>
   </CDA:Entry>
-  <CDA:CDATemplate xmi:id="_IqZWD9ICEeKRzPZKi7WbBQ" base_Class="_auKbcIceEeGqF6qfYwLiQw" templateId="2.16.840.1.1133883.17.3.10.1.58" assigningAuthorityName="NEMSIS"/>
+  <CDA:CDATemplate xmi:id="_IqZWD9ICEeKRzPZKi7WbBQ" base_Class="_auKbcIceEeGqF6qfYwLiQw" templateId="2.16.840.1.1133883.17.3.10.1.58" assigningAuthorityName="NEMSIS">
+    <ruleId>CONF:11450</ruleId>
+  </CDA:CDATemplate>
   <CDA:AssociationValidation xmi:id="_IqZWENICEeKRzPZKi7WbBQ" severity="INFO" base_Association="_IoAwENICEeKRzPZKi7WbBQ">
     <ruleId>CONF:10935</ruleId>
   </CDA:AssociationValidation>
   <CDA:Entry xmi:id="_IqZWEdICEeKRzPZKi7WbBQ" severity="INFO" base_Association="_IoAwENICEeKRzPZKi7WbBQ" typeCode="DRIV">
     <ruleId>CONF:10936</ruleId>
   </CDA:Entry>
-  <CDA:CDATemplate xmi:id="_IqZWEtICEeKRzPZKi7WbBQ" base_Class="_wKL4IIceEeGqF6qfYwLiQw" templateId="2.16.840.1.1133883.17.3.10.1.59" assigningAuthorityName="NEMSIS"/>
+  <CDA:CDATemplate xmi:id="_IqZWEtICEeKRzPZKi7WbBQ" base_Class="_wKL4IIceEeGqF6qfYwLiQw" templateId="2.16.840.1.1133883.17.3.10.1.59" assigningAuthorityName="NEMSIS">
+    <ruleId>CONF:11451</ruleId>
+  </CDA:CDATemplate>
   <CDA:AssociationValidation xmi:id="_IqZWE9ICEeKRzPZKi7WbBQ" base_Association="_IoAwF9ICEeKRzPZKi7WbBQ">
     <ruleId>CONF:10903</ruleId>
   </CDA:AssociationValidation>
   <CDA:Entry xmi:id="_IqZWFNICEeKRzPZKi7WbBQ" base_Association="_IoAwF9ICEeKRzPZKi7WbBQ" typeCode="DRIV">
     <ruleId>CONF:10904</ruleId>
   </CDA:Entry>
-  <CDA:CDATemplate xmi:id="_IqZWFdICEeKRzPZKi7WbBQ" base_Class="_W_uRYIzdEeGnhceUMXltng" templateId="2.16.840.1.1133883.17.3.10.1.60" assigningAuthorityName="NEMSIS"/>
+  <CDA:CDATemplate xmi:id="_IqZWFdICEeKRzPZKi7WbBQ" base_Class="_W_uRYIzdEeGnhceUMXltng" templateId="2.16.840.1.1133883.17.3.10.1.60" assigningAuthorityName="NEMSIS">
+    <ruleId>CONF:11452</ruleId>
+  </CDA:CDATemplate>
   <CDA:AssociationValidation xmi:id="_IqZWFtICEeKRzPZKi7WbBQ" severity="INFO" base_Association="_IoG2sNICEeKRzPZKi7WbBQ">
     <ruleId>CONF:10905</ruleId>
   </CDA:AssociationValidation>
   <CDA:Entry xmi:id="_IqZWF9ICEeKRzPZKi7WbBQ" severity="INFO" base_Association="_IoG2sNICEeKRzPZKi7WbBQ" typeCode="DRIV">
     <ruleId>CONF:10906</ruleId>
   </CDA:Entry>
-  <CDA:CDATemplate xmi:id="_IqZWGNICEeKRzPZKi7WbBQ" base_Class="_5XgZ4IzdEeGnhceUMXltng" templateId="2.16.840.1.1133883.17.3.10.1.61" assigningAuthorityName="NEMSIS"/>
+  <CDA:CDATemplate xmi:id="_IqZWGNICEeKRzPZKi7WbBQ" base_Class="_5XgZ4IzdEeGnhceUMXltng" templateId="2.16.840.1.1133883.17.3.10.1.61" assigningAuthorityName="NEMSIS">
+    <ruleId>CONF:11453</ruleId>
+  </CDA:CDATemplate>
   <CDA:AssociationValidation xmi:id="_IqZWHNICEeKRzPZKi7WbBQ" base_Association="_IoM9UNICEeKRzPZKi7WbBQ">
     <ruleId>CONF:11039</ruleId>
   </CDA:AssociationValidation>
   <CDA:Entry xmi:id="_IqZWHdICEeKRzPZKi7WbBQ" base_Association="_IoM9UNICEeKRzPZKi7WbBQ" typeCode="DRIV">
     <ruleId>CONF:11040</ruleId>
   </CDA:Entry>
-  <CDA:CDATemplate xmi:id="_IqZWHtICEeKRzPZKi7WbBQ" base_Class="_KEZzkKg-EeG79fAvHk6H4g" templateId="2.16.840.1.1133883.17.3.10.1.63" assigningAuthorityName="NEMSIS"/>
+  <CDA:CDATemplate xmi:id="_IqZWHtICEeKRzPZKi7WbBQ" base_Class="_KEZzkKg-EeG79fAvHk6H4g" templateId="2.16.840.1.1133883.17.3.10.1.63" assigningAuthorityName="NEMSIS">
+    <ruleId>CONF:11456</ruleId>
+  </CDA:CDATemplate>
   <CDA:AssociationValidation xmi:id="_IqZWH9ICEeKRzPZKi7WbBQ" base_Association="_IoTD8NICEeKRzPZKi7WbBQ">
     <ruleId>CONF:11041</ruleId>
   </CDA:AssociationValidation>
   <CDA:Entry xmi:id="_IqZWINICEeKRzPZKi7WbBQ" base_Association="_IoTD8NICEeKRzPZKi7WbBQ" typeCode="DRIV">
     <ruleId>CONF:11042</ruleId>
   </CDA:Entry>
-  <CDA:CDATemplate xmi:id="_IqZWIdICEeKRzPZKi7WbBQ" base_Class="_7nP0MKhCEeG79fAvHk6H4g" templateId="2.16.840.1.1133883.17.3.10.1.64" assigningAuthorityName="NEMSIS"/>
+  <CDA:CDATemplate xmi:id="_IqZWIdICEeKRzPZKi7WbBQ" base_Class="_7nP0MKhCEeG79fAvHk6H4g" templateId="2.16.840.1.1133883.17.3.10.1.64" assigningAuthorityName="NEMSIS">
+    <ruleId>CONF:11457</ruleId>
+  </CDA:CDATemplate>
   <CDA:AssociationValidation xmi:id="_IqZWItICEeKRzPZKi7WbBQ" base_Association="_IoZKkNICEeKRzPZKi7WbBQ">
     <ruleId>CONF:11043</ruleId>
   </CDA:AssociationValidation>
   <CDA:Entry xmi:id="_IqZWI9ICEeKRzPZKi7WbBQ" base_Association="_IoZKkNICEeKRzPZKi7WbBQ" typeCode="DRIV">
     <ruleId>CONF:11044</ruleId>
   </CDA:Entry>
-  <CDA:CDATemplate xmi:id="_IqZWJNICEeKRzPZKi7WbBQ" base_Class="_0C-8EKhDEeG79fAvHk6H4g" templateId="2.16.840.1.1133883.17.3.10.1.65" assigningAuthorityName="NEMSIS"/>
+  <CDA:CDATemplate xmi:id="_IqZWJNICEeKRzPZKi7WbBQ" base_Class="_0C-8EKhDEeG79fAvHk6H4g" templateId="2.16.840.1.1133883.17.3.10.1.65" assigningAuthorityName="NEMSIS">
+    <ruleId>CONF:11458</ruleId>
+  </CDA:CDATemplate>
   <CDA:AssociationValidation xmi:id="_IqZWJdICEeKRzPZKi7WbBQ" base_Association="_IoZKl9ICEeKRzPZKi7WbBQ">
     <ruleId>CONF:11045</ruleId>
   </CDA:AssociationValidation>
   <CDA:Entry xmi:id="_IqZWJtICEeKRzPZKi7WbBQ" base_Association="_IoZKl9ICEeKRzPZKi7WbBQ" typeCode="DRIV">
     <ruleId>CONF:11046</ruleId>
   </CDA:Entry>
-  <CDA:CDATemplate xmi:id="_IqZWJ9ICEeKRzPZKi7WbBQ" base_Class="_KOxo0KhEEeG79fAvHk6H4g" templateId="2.16.840.1.1133883.17.3.10.1.66" assigningAuthorityName="NEMSIS"/>
+  <CDA:CDATemplate xmi:id="_IqZWJ9ICEeKRzPZKi7WbBQ" base_Class="_KOxo0KhEEeG79fAvHk6H4g" templateId="2.16.840.1.1133883.17.3.10.1.66" assigningAuthorityName="NEMSIS">
+    <ruleId>CONF:11459</ruleId>
+  </CDA:CDATemplate>
   <CDA:AssociationValidation xmi:id="_IqZWKNICEeKRzPZKi7WbBQ" base_Association="_IofRMdICEeKRzPZKi7WbBQ">
     <ruleId>CONF:11047</ruleId>
   </CDA:AssociationValidation>
   <CDA:Entry xmi:id="_IqZWKdICEeKRzPZKi7WbBQ" base_Association="_IofRMdICEeKRzPZKi7WbBQ" typeCode="DRIV">
     <ruleId>CONF:11048</ruleId>
   </CDA:Entry>
-  <CDA:CDATemplate xmi:id="_IqZWKtICEeKRzPZKi7WbBQ" base_Class="_g5iJgKhEEeG79fAvHk6H4g" templateId="2.16.840.1.1133883.17.3.10.1.67" assigningAuthorityName="NEMSIS"/>
+  <CDA:CDATemplate xmi:id="_IqZWKtICEeKRzPZKi7WbBQ" base_Class="_g5iJgKhEEeG79fAvHk6H4g" templateId="2.16.840.1.1133883.17.3.10.1.67" assigningAuthorityName="NEMSIS">
+    <ruleId>CONF:11460</ruleId>
+  </CDA:CDATemplate>
   <CDA:AssociationValidation xmi:id="_IqZWK9ICEeKRzPZKi7WbBQ" base_Association="_IolX0NICEeKRzPZKi7WbBQ">
     <ruleId>CONF:11049</ruleId>
   </CDA:AssociationValidation>
   <CDA:Entry xmi:id="_IqZWLNICEeKRzPZKi7WbBQ" base_Association="_IolX0NICEeKRzPZKi7WbBQ" typeCode="DRIV">
     <ruleId>CONF:11050</ruleId>
   </CDA:Entry>
-  <CDA:CDATemplate xmi:id="_IqZWLdICEeKRzPZKi7WbBQ" base_Class="_0mPksKhEEeG79fAvHk6H4g" templateId="2.16.840.1.1133883.17.3.10.1.68" assigningAuthorityName="NEMSIS"/>
+  <CDA:CDATemplate xmi:id="_IqZWLdICEeKRzPZKi7WbBQ" base_Class="_0mPksKhEEeG79fAvHk6H4g" templateId="2.16.840.1.1133883.17.3.10.1.68" assigningAuthorityName="NEMSIS">
+    <ruleId>CONF:11461</ruleId>
+  </CDA:CDATemplate>
   <CDA:AssociationValidation xmi:id="_IqZWLtICEeKRzPZKi7WbBQ" base_Association="_IolX19ICEeKRzPZKi7WbBQ">
     <ruleId>CONF:11051</ruleId>
   </CDA:AssociationValidation>
   <CDA:Entry xmi:id="_IqZWL9ICEeKRzPZKi7WbBQ" base_Association="_IolX19ICEeKRzPZKi7WbBQ" typeCode="DRIV">
     <ruleId>CONF:11052</ruleId>
   </CDA:Entry>
-  <CDA:CDATemplate xmi:id="_IqZWMNICEeKRzPZKi7WbBQ" base_Class="_NZgqAKhFEeG79fAvHk6H4g" templateId="2.16.840.1.1133883.17.3.10.1.69" assigningAuthorityName="NEMSIS"/>
+  <CDA:CDATemplate xmi:id="_IqZWMNICEeKRzPZKi7WbBQ" base_Class="_NZgqAKhFEeG79fAvHk6H4g" templateId="2.16.840.1.1133883.17.3.10.1.69" assigningAuthorityName="NEMSIS">
+    <ruleId>CONF:11462</ruleId>
+  </CDA:CDATemplate>
   <CDA:AssociationValidation xmi:id="_IqZWMdICEeKRzPZKi7WbBQ" base_Association="_IorecNICEeKRzPZKi7WbBQ">
     <ruleId>CONF:10965</ruleId>
   </CDA:AssociationValidation>
   <CDA:Entry xmi:id="_IqZWMtICEeKRzPZKi7WbBQ" base_Association="_IorecNICEeKRzPZKi7WbBQ" typeCode="DRIV">
     <ruleId>CONF:10966</ruleId>
   </CDA:Entry>
-  <CDA:CDATemplate xmi:id="_IqZWM9ICEeKRzPZKi7WbBQ" base_Class="_Mr964IzjEeGnhceUMXltng" templateId="2.16.840.1.1133883.17.3.10.1.70" assigningAuthorityName="NEMSIS"/>
+  <CDA:CDATemplate xmi:id="_IqZWM9ICEeKRzPZKi7WbBQ" base_Class="_Mr964IzjEeGnhceUMXltng" templateId="2.16.840.1.1133883.17.3.10.1.70" assigningAuthorityName="NEMSIS">
+    <ruleId>CONF:11463</ruleId>
+  </CDA:CDATemplate>
   <CDA:AssociationValidation xmi:id="_IqZWNNICEeKRzPZKi7WbBQ" severity="INFO" base_Association="_Iored9ICEeKRzPZKi7WbBQ">
     <ruleId>CONF:10967</ruleId>
   </CDA:AssociationValidation>
   <CDA:Entry xmi:id="_IqZWNdICEeKRzPZKi7WbBQ" severity="INFO" base_Association="_Iored9ICEeKRzPZKi7WbBQ" typeCode="DRIV">
     <ruleId>CONF:10968</ruleId>
   </CDA:Entry>
-  <CDA:CDATemplate xmi:id="_IqZWNtICEeKRzPZKi7WbBQ" base_Class="_oJHzkIzjEeGnhceUMXltng" templateId="2.16.840.1.1133883.17.3.10.1.71" assigningAuthorityName="NEMSIS"/>
+  <CDA:CDATemplate xmi:id="_IqZWNtICEeKRzPZKi7WbBQ" base_Class="_oJHzkIzjEeGnhceUMXltng" templateId="2.16.840.1.1133883.17.3.10.1.71" assigningAuthorityName="NEMSIS">
+    <ruleId>CONF:11464</ruleId>
+  </CDA:CDATemplate>
   <CDA:AssociationValidation xmi:id="_IqZWN9ICEeKRzPZKi7WbBQ" severity="INFO" base_Association="_IoxlENICEeKRzPZKi7WbBQ">
     <ruleId>CONF:10989</ruleId>
   </CDA:AssociationValidation>
   <CDA:Entry xmi:id="_IqZWONICEeKRzPZKi7WbBQ" severity="INFO" base_Association="_IoxlENICEeKRzPZKi7WbBQ" typeCode="DRIV">
     <ruleId>CONF:10990</ruleId>
   </CDA:Entry>
-  <CDA:CDATemplate xmi:id="_IqZWOdICEeKRzPZKi7WbBQ" base_Class="_5JQlAJovEeG_FLcaRgAa7g" templateId="2.16.840.1.1133883.17.3.10.1.72" assigningAuthorityName="NEMSIS"/>
+  <CDA:CDATemplate xmi:id="_IqZWOdICEeKRzPZKi7WbBQ" base_Class="_5JQlAJovEeG_FLcaRgAa7g" templateId="2.16.840.1.1133883.17.3.10.1.72" assigningAuthorityName="NEMSIS">
+    <ruleId>CONF:11465</ruleId>
+  </CDA:CDATemplate>
   <CDA:AssociationValidation xmi:id="_IqZWOtICEeKRzPZKi7WbBQ" base_Association="_Io3rsNICEeKRzPZKi7WbBQ">
     <ruleId>CONF:10991</ruleId>
   </CDA:AssociationValidation>
   <CDA:Entry xmi:id="_IqZWO9ICEeKRzPZKi7WbBQ" base_Association="_Io3rsNICEeKRzPZKi7WbBQ" typeCode="DRIV">
     <ruleId>CONF:10992</ruleId>
   </CDA:Entry>
-  <CDA:CDATemplate xmi:id="_IqZWPNICEeKRzPZKi7WbBQ" base_Class="_46UUAJ9nEeGw9ZRnaFfEZQ" templateId="2.16.840.1.1133883.17.3.10.1.73" assigningAuthorityName="NEMSIS"/>
+  <CDA:CDATemplate xmi:id="_IqZWPNICEeKRzPZKi7WbBQ" base_Class="_46UUAJ9nEeGw9ZRnaFfEZQ" templateId="2.16.840.1.1133883.17.3.10.1.73" assigningAuthorityName="NEMSIS">
+    <ruleId>CONF:11466</ruleId>
+  </CDA:CDATemplate>
   <CDA:AssociationValidation xmi:id="_IqZWPdICEeKRzPZKi7WbBQ" base_Association="_Io3rt9ICEeKRzPZKi7WbBQ">
     <ruleId>CONF:10993</ruleId>
   </CDA:AssociationValidation>
   <CDA:Entry xmi:id="_IqZWPtICEeKRzPZKi7WbBQ" base_Association="_Io3rt9ICEeKRzPZKi7WbBQ" typeCode="DRIV">
     <ruleId>CONF:10994</ruleId>
   </CDA:Entry>
-  <CDA:CDATemplate xmi:id="_IqZWP9ICEeKRzPZKi7WbBQ" base_Class="__LltsJ97EeGw9ZRnaFfEZQ" templateId="2.16.840.1.1133883.17.3.10.1.74" assigningAuthorityName="NEMSIS"/>
+  <CDA:CDATemplate xmi:id="_IqZWP9ICEeKRzPZKi7WbBQ" base_Class="__LltsJ97EeGw9ZRnaFfEZQ" templateId="2.16.840.1.1133883.17.3.10.1.74" assigningAuthorityName="NEMSIS">
+    <ruleId>CONF:11467</ruleId>
+  </CDA:CDATemplate>
   <CDA:AssociationValidation xmi:id="_IqZWQNICEeKRzPZKi7WbBQ" base_Association="_Io9yUNICEeKRzPZKi7WbBQ">
     <ruleId>CONF:10958</ruleId>
   </CDA:AssociationValidation>
   <CDA:Entry xmi:id="_IqZWQdICEeKRzPZKi7WbBQ" base_Association="_Io9yUNICEeKRzPZKi7WbBQ" typeCode="DRIV">
     <ruleId>CONF:10959</ruleId>
   </CDA:Entry>
-  <CDA:CDATemplate xmi:id="_IqZWQtICEeKRzPZKi7WbBQ" base_Class="_sUm-oIcnEeGqF6qfYwLiQw" templateId="2.16.840.1.1133883.17.3.10.1.75" assigningAuthorityName="NEMSIS"/>
+  <CDA:CDATemplate xmi:id="_IqZWQtICEeKRzPZKi7WbBQ" base_Class="_sUm-oIcnEeGqF6qfYwLiQw" templateId="2.16.840.1.1133883.17.3.10.1.75" assigningAuthorityName="NEMSIS">
+    <ruleId>CONF:11468</ruleId>
+  </CDA:CDATemplate>
   <CDA:AssociationValidation xmi:id="_IqZWRtICEeKRzPZKi7WbBQ" severity="INFO" base_Association="_IpD48NICEeKRzPZKi7WbBQ">
     <ruleId>CONF:10962</ruleId>
   </CDA:AssociationValidation>
   <CDA:Entry xmi:id="_IqZWR9ICEeKRzPZKi7WbBQ" severity="INFO" base_Association="_IpD48NICEeKRzPZKi7WbBQ" typeCode="DRIV">
     <ruleId>CONF:10963</ruleId>
   </CDA:Entry>
-  <CDA:CDATemplate xmi:id="_IqZWSNICEeKRzPZKi7WbBQ" base_Class="_mwn8MIcoEeGqF6qfYwLiQw" templateId="2.16.840.1.1133883.17.3.10.1.77" assigningAuthorityName="NEMSIS"/>
+  <CDA:CDATemplate xmi:id="_IqZWSNICEeKRzPZKi7WbBQ" base_Class="_mwn8MIcoEeGqF6qfYwLiQw" templateId="2.16.840.1.1133883.17.3.10.1.77" assigningAuthorityName="NEMSIS">
+    <ruleId>CONF:11469</ruleId>
+  </CDA:CDATemplate>
   <CDA:AssociationValidation xmi:id="_IqZWSdICEeKRzPZKi7WbBQ" severity="WARNING" base_Association="_IpJ_kNICEeKRzPZKi7WbBQ">
     <ruleId>CONF:10975</ruleId>
   </CDA:AssociationValidation>
   <CDA:Entry xmi:id="_IqZWStICEeKRzPZKi7WbBQ" severity="WARNING" base_Association="_IpJ_kNICEeKRzPZKi7WbBQ" typeCode="DRIV">
     <ruleId>CONF:10976</ruleId>
   </CDA:Entry>
-  <CDA:CDATemplate xmi:id="_IqZWS9ICEeKRzPZKi7WbBQ" base_Class="_zbYvIJoiEeG_FLcaRgAa7g" templateId="2.16.840.1.1133883.17.3.10.1.78" assigningAuthorityName="NEMSIS"/>
+  <CDA:CDATemplate xmi:id="_IqZWS9ICEeKRzPZKi7WbBQ" base_Class="_zbYvIJoiEeG_FLcaRgAa7g" templateId="2.16.840.1.1133883.17.3.10.1.78" assigningAuthorityName="NEMSIS">
+    <ruleId>CONF:11470</ruleId>
+  </CDA:CDATemplate>
   <CDA:AssociationValidation xmi:id="_IqZWTNICEeKRzPZKi7WbBQ" severity="INFO" base_Association="_IpQGMNICEeKRzPZKi7WbBQ">
     <ruleId>CONF:10977</ruleId>
   </CDA:AssociationValidation>
   <CDA:Entry xmi:id="_IqZWTdICEeKRzPZKi7WbBQ" message="" severity="INFO" base_Association="_IpQGMNICEeKRzPZKi7WbBQ" typeCode="DRIV">
     <ruleId>CONF:10978</ruleId>
   </CDA:Entry>
-  <CDA:CDATemplate xmi:id="_IqZWTtICEeKRzPZKi7WbBQ" base_Class="_sW8QcJosEeG_FLcaRgAa7g" templateId="2.16.840.1.1133883.17.3.10.1.79" assigningAuthorityName="NEMSIS"/>
+  <CDA:CDATemplate xmi:id="_IqZWTtICEeKRzPZKi7WbBQ" base_Class="_sW8QcJosEeG_FLcaRgAa7g" templateId="2.16.840.1.1133883.17.3.10.1.79" assigningAuthorityName="NEMSIS">
+    <ruleId>CONF:11474</ruleId>
+  </CDA:CDATemplate>
   <CDA:AssociationValidation xmi:id="_IqZWT9ICEeKRzPZKi7WbBQ" severity="INFO" base_Association="_IpWM0NICEeKRzPZKi7WbBQ">
     <ruleId>CONF:10979</ruleId>
   </CDA:AssociationValidation>
   <CDA:Entry xmi:id="_IqZWUNICEeKRzPZKi7WbBQ" severity="INFO" base_Association="_IpWM0NICEeKRzPZKi7WbBQ" typeCode="DRIV">
     <ruleId>CONF:10980</ruleId>
   </CDA:Entry>
-  <CDA:CDATemplate xmi:id="_IqZWUdICEeKRzPZKi7WbBQ" base_Class="_S1I0sJotEeG_FLcaRgAa7g" templateId="2.16.840.1.1133883.17.3.10.1.80" assigningAuthorityName="NEMSIS"/>
+  <CDA:CDATemplate xmi:id="_IqZWUdICEeKRzPZKi7WbBQ" base_Class="_S1I0sJotEeG_FLcaRgAa7g" templateId="2.16.840.1.1133883.17.3.10.1.80" assigningAuthorityName="NEMSIS">
+    <ruleId>CONF:11475</ruleId>
+  </CDA:CDATemplate>
   <CDA:AssociationValidation xmi:id="_IqZWUtICEeKRzPZKi7WbBQ" base_Association="_IpWM19ICEeKRzPZKi7WbBQ">
     <ruleId>CONF:10981</ruleId>
   </CDA:AssociationValidation>
   <CDA:Entry xmi:id="_IqZWU9ICEeKRzPZKi7WbBQ" base_Association="_IpWM19ICEeKRzPZKi7WbBQ" typeCode="DRIV">
     <ruleId>CONF:10982</ruleId>
   </CDA:Entry>
-  <CDA:CDATemplate xmi:id="_IqZWVNICEeKRzPZKi7WbBQ" base_Class="_rhjrIJotEeG_FLcaRgAa7g" templateId="2.16.840.1.1133883.17.3.10.1.81" assigningAuthorityName="NEMSIS"/>
+  <CDA:CDATemplate xmi:id="_IqZWVNICEeKRzPZKi7WbBQ" base_Class="_rhjrIJotEeG_FLcaRgAa7g" templateId="2.16.840.1.1133883.17.3.10.1.81" assigningAuthorityName="NEMSIS">
+    <ruleId>CONF:11476</ruleId>
+  </CDA:CDATemplate>
   <CDA:AssociationValidation xmi:id="_IqZWVdICEeKRzPZKi7WbBQ" base_Association="_IpcTcNICEeKRzPZKi7WbBQ">
     <ruleId>CONF:10983</ruleId>
   </CDA:AssociationValidation>
   <CDA:Entry xmi:id="_IqZWVtICEeKRzPZKi7WbBQ" base_Association="_IpcTcNICEeKRzPZKi7WbBQ" typeCode="DRIV">
     <ruleId>CONF:10984</ruleId>
   </CDA:Entry>
-  <CDA:CDATemplate xmi:id="_IqZWV9ICEeKRzPZKi7WbBQ" base_Class="_HuCH8JouEeG_FLcaRgAa7g" templateId="2.16.840.1.1133883.17.3.10.1.82" assigningAuthorityName="NEMSIS"/>
+  <CDA:CDATemplate xmi:id="_IqZWV9ICEeKRzPZKi7WbBQ" base_Class="_HuCH8JouEeG_FLcaRgAa7g" templateId="2.16.840.1.1133883.17.3.10.1.82" assigningAuthorityName="NEMSIS">
+    <ruleId>CONF:11477</ruleId>
+  </CDA:CDATemplate>
   <CDA:AssociationValidation xmi:id="_IqZWWNICEeKRzPZKi7WbBQ" base_Association="_IpcTd9ICEeKRzPZKi7WbBQ">
     <ruleId>CONF:10985</ruleId>
   </CDA:AssociationValidation>
   <CDA:Entry xmi:id="_IqZWWdICEeKRzPZKi7WbBQ" base_Association="_IpcTd9ICEeKRzPZKi7WbBQ" typeCode="DRIV">
     <ruleId>CONF:10986</ruleId>
   </CDA:Entry>
-  <CDA:CDATemplate xmi:id="_IqZWWtICEeKRzPZKi7WbBQ" base_Class="_qlUP4JouEeG_FLcaRgAa7g" templateId="2.16.840.1.1133883.17.3.10.1.83" assigningAuthorityName="NEMSIS"/>
+  <CDA:CDATemplate xmi:id="_IqZWWtICEeKRzPZKi7WbBQ" base_Class="_qlUP4JouEeG_FLcaRgAa7g" templateId="2.16.840.1.1133883.17.3.10.1.83" assigningAuthorityName="NEMSIS">
+    <ruleId>CONF:11478</ruleId>
+  </CDA:CDATemplate>
   <CDA:AssociationValidation xmi:id="_IqZWW9ICEeKRzPZKi7WbBQ" base_Association="_IpiaENICEeKRzPZKi7WbBQ">
     <ruleId>CONF:11028</ruleId>
   </CDA:AssociationValidation>
   <CDA:Entry xmi:id="_IqZWXNICEeKRzPZKi7WbBQ" base_Association="_IpiaENICEeKRzPZKi7WbBQ" typeCode="DRIV">
     <ruleId>CONF:11029</ruleId>
   </CDA:Entry>
-  <CDA:CDATemplate xmi:id="_IqZWXdICEeKRzPZKi7WbBQ" base_Class="_Ox86UKK4EeGOxth0BgV-QA" templateId="2.16.840.1.1133883.17.3.10.1.84" assigningAuthorityName="NEMSIS"/>
+  <CDA:CDATemplate xmi:id="_IqZWXdICEeKRzPZKi7WbBQ" base_Class="_Ox86UKK4EeGOxth0BgV-QA" templateId="2.16.840.1.1133883.17.3.10.1.84" assigningAuthorityName="NEMSIS">
+    <ruleId>CONF:11479</ruleId>
+  </CDA:CDATemplate>
   <CDA:AssociationValidation xmi:id="_IqZWYdICEeKRzPZKi7WbBQ" base_Association="_IpogsNICEeKRzPZKi7WbBQ">
     <ruleId>CONF:11032</ruleId>
   </CDA:AssociationValidation>
   <CDA:Entry xmi:id="_IqZWYtICEeKRzPZKi7WbBQ" base_Association="_IpogsNICEeKRzPZKi7WbBQ" typeCode="DRIV">
     <ruleId>CONF:11033</ruleId>
   </CDA:Entry>
-  <CDA:CDATemplate xmi:id="_IqZWY9ICEeKRzPZKi7WbBQ" base_Class="_wPLCkKK5EeGOxth0BgV-QA" templateId="2.16.840.1.1133883.17.3.10.1.86" assigningAuthorityName="NEMSIS"/>
+  <CDA:CDATemplate xmi:id="_IqZWY9ICEeKRzPZKi7WbBQ" base_Class="_wPLCkKK5EeGOxth0BgV-QA" templateId="2.16.840.1.1133883.17.3.10.1.86" assigningAuthorityName="NEMSIS">
+    <ruleId>CONF:11480</ruleId>
+  </CDA:CDATemplate>
   <CDA:AssociationValidation xmi:id="_IqZWZNICEeKRzPZKi7WbBQ" base_Association="_Ipogt9ICEeKRzPZKi7WbBQ">
     <ruleId>CONF:11034</ruleId>
   </CDA:AssociationValidation>
   <CDA:Entry xmi:id="_IqZWZdICEeKRzPZKi7WbBQ" base_Association="_Ipogt9ICEeKRzPZKi7WbBQ" typeCode="DRIV">
     <ruleId>CONF:11035</ruleId>
   </CDA:Entry>
-  <CDA:CDATemplate xmi:id="_IqZWZtICEeKRzPZKi7WbBQ" base_Class="_E-SEAKK8EeGOxth0BgV-QA" templateId="2.16.840.1.1133883.17.3.10.1.87" assigningAuthorityName="NEMSIS"/>
+  <CDA:CDATemplate xmi:id="_IqZWZtICEeKRzPZKi7WbBQ" base_Class="_E-SEAKK8EeGOxth0BgV-QA" templateId="2.16.840.1.1133883.17.3.10.1.87" assigningAuthorityName="NEMSIS">
+    <ruleId>CONF:11481</ruleId>
+  </CDA:CDATemplate>
   <CDA:AssociationValidation xmi:id="_IqZWZ9ICEeKRzPZKi7WbBQ" base_Association="_IpunUNICEeKRzPZKi7WbBQ">
     <ruleId>CONF:11036</ruleId>
   </CDA:AssociationValidation>
   <CDA:Entry xmi:id="_IqZWaNICEeKRzPZKi7WbBQ" base_Association="_IpunUNICEeKRzPZKi7WbBQ" typeCode="DRIV">
     <ruleId>CONF:11037</ruleId>
   </CDA:Entry>
-  <CDA:CDATemplate xmi:id="_IqZWadICEeKRzPZKi7WbBQ" base_Class="_ayUKMMk3EeK2gbjCtOEivw" templateId="2.16.840.1.1133883.17.3.10.1.88" assigningAuthorityName="NEMSIS"/>
+  <CDA:CDATemplate xmi:id="_IqZWadICEeKRzPZKi7WbBQ" base_Class="_ayUKMMk3EeK2gbjCtOEivw" templateId="2.16.840.1.1133883.17.3.10.1.88" assigningAuthorityName="NEMSIS">
+    <ruleId>CONF:11482</ruleId>
+  </CDA:CDATemplate>
   <CDA:AssociationValidation xmi:id="_IqZWatICEeKRzPZKi7WbBQ" base_Association="_IpunV9ICEeKRzPZKi7WbBQ">
     <ruleId>CONF:11017</ruleId>
   </CDA:AssociationValidation>
   <CDA:Entry xmi:id="_IqZWa9ICEeKRzPZKi7WbBQ" base_Association="_IpunV9ICEeKRzPZKi7WbBQ" typeCode="DRIV">
     <ruleId>CONF:11018</ruleId>
   </CDA:Entry>
-  <CDA:CDATemplate xmi:id="_IqZWbNICEeKRzPZKi7WbBQ" base_Class="_p4XEAJ-kEeGorI3CPDW2ww" templateId="2.16.840.1.1133883.17.3.10.1.89" assigningAuthorityName="NEMSIS"/>
+  <CDA:CDATemplate xmi:id="_IqZWbNICEeKRzPZKi7WbBQ" base_Class="_p4XEAJ-kEeGorI3CPDW2ww" templateId="2.16.840.1.1133883.17.3.10.1.89" assigningAuthorityName="NEMSIS">
+    <ruleId>CONF:11483</ruleId>
+  </CDA:CDATemplate>
   <CDA:AssociationValidation xmi:id="_IqZWbdICEeKRzPZKi7WbBQ" severity="INFO" base_Association="_Ip0t8NICEeKRzPZKi7WbBQ">
     <ruleId>CONF:11019</ruleId>
   </CDA:AssociationValidation>
   <CDA:Entry xmi:id="_IqZWbtICEeKRzPZKi7WbBQ" severity="INFO" base_Association="_Ip0t8NICEeKRzPZKi7WbBQ" typeCode="DRIV">
     <ruleId>CONF:11020</ruleId>
   </CDA:Entry>
-  <CDA:CDATemplate xmi:id="_IqZWb9ICEeKRzPZKi7WbBQ" base_Class="_gU4tMJ-lEeGorI3CPDW2ww" templateId="2.16.840.1.1133883.17.3.10.1.90" assigningAuthorityName="NEMSIS"/>
+  <CDA:CDATemplate xmi:id="_IqZWb9ICEeKRzPZKi7WbBQ" base_Class="_gU4tMJ-lEeGorI3CPDW2ww" templateId="2.16.840.1.1133883.17.3.10.1.90" assigningAuthorityName="NEMSIS">
+    <ruleId>CONF:11484</ruleId>
+  </CDA:CDATemplate>
   <CDA:AssociationValidation xmi:id="_IqZWcNICEeKRzPZKi7WbBQ" severity="WARNING" base_Association="_Ip0t99ICEeKRzPZKi7WbBQ">
     <ruleId>CONF:10910</ruleId>
   </CDA:AssociationValidation>
   <CDA:Entry xmi:id="_IqZWcdICEeKRzPZKi7WbBQ" severity="WARNING" base_Association="_Ip0t99ICEeKRzPZKi7WbBQ" typeCode="DRIV">
     <ruleId>CONF:10911</ruleId>
   </CDA:Entry>
-  <CDA:CDATemplate xmi:id="_IqZWctICEeKRzPZKi7WbBQ" base_Class="_rNkl4GleEeG4boS-IbG8Zw" templateId="2.16.840.1.1133883.17.3.10.1.91" assigningAuthorityName="NEMSIS"/>
+  <CDA:CDATemplate xmi:id="_IqZWctICEeKRzPZKi7WbBQ" base_Class="_rNkl4GleEeG4boS-IbG8Zw" templateId="2.16.840.1.1133883.17.3.10.1.91" assigningAuthorityName="NEMSIS">
+    <ruleId>CONF:11485</ruleId>
+  </CDA:CDATemplate>
   <CDA:AssociationValidation xmi:id="_IqZWc9ICEeKRzPZKi7WbBQ" base_Association="_Ip60kNICEeKRzPZKi7WbBQ">
     <ruleId>CONF:10912</ruleId>
   </CDA:AssociationValidation>
   <CDA:Entry xmi:id="_IqZWdNICEeKRzPZKi7WbBQ" base_Association="_Ip60kNICEeKRzPZKi7WbBQ" typeCode="DRIV">
     <ruleId>CONF:10913</ruleId>
   </CDA:Entry>
-  <CDA:CDATemplate xmi:id="_IqZWddICEeKRzPZKi7WbBQ" base_Class="_To2-YGleEeG4boS-IbG8Zw" templateId="2.16.840.1.1133883.17.3.10.1.92" assigningAuthorityName="NEMSIS"/>
+  <CDA:CDATemplate xmi:id="_IqZWddICEeKRzPZKi7WbBQ" base_Class="_To2-YGleEeG4boS-IbG8Zw" templateId="2.16.840.1.1133883.17.3.10.1.92" assigningAuthorityName="NEMSIS">
+    <ruleId>CONF:11486</ruleId>
+  </CDA:CDATemplate>
   <CDA:AssociationValidation xmi:id="_IqZWdtICEeKRzPZKi7WbBQ" base_Association="_Ip60l9ICEeKRzPZKi7WbBQ">
     <ruleId>CONF:11024</ruleId>
   </CDA:AssociationValidation>
   <CDA:Entry xmi:id="_IqZWd9ICEeKRzPZKi7WbBQ" base_Association="_Ip60l9ICEeKRzPZKi7WbBQ" typeCode="DRIV">
     <ruleId>CONF:11025</ruleId>
   </CDA:Entry>
-  <CDA:CDATemplate xmi:id="_IqZWeNICEeKRzPZKi7WbBQ" base_Class="_rDpggp-mEeGorI3CPDW2ww" templateId="2.16.840.1.1133883.17.3.10.1.93" assigningAuthorityName="NEMSIS"/>
+  <CDA:CDATemplate xmi:id="_IqZWeNICEeKRzPZKi7WbBQ" base_Class="_rDpggp-mEeGorI3CPDW2ww" templateId="2.16.840.1.1133883.17.3.10.1.93" assigningAuthorityName="NEMSIS">
+    <ruleId>CONF:11487</ruleId>
+  </CDA:CDATemplate>
   <CDA:AssociationValidation xmi:id="_IqZWedICEeKRzPZKi7WbBQ" severity="INFO" base_Association="_IqA7MdICEeKRzPZKi7WbBQ">
     <ruleId>CONF:11026</ruleId>
   </CDA:AssociationValidation>
   <CDA:Entry xmi:id="_IqZWetICEeKRzPZKi7WbBQ" severity="INFO" base_Association="_IqA7MdICEeKRzPZKi7WbBQ" typeCode="DRIV">
     <ruleId>CONF:11027</ruleId>
   </CDA:Entry>
-  <CDA:CDATemplate xmi:id="_IqZWe9ICEeKRzPZKi7WbBQ" base_Class="_n-zaBZ-nEeGorI3CPDW2ww" templateId="2.16.840.1.1133883.17.3.10.1.94" assigningAuthorityName="NEMSIS"/>
+  <CDA:CDATemplate xmi:id="_IqZWe9ICEeKRzPZKi7WbBQ" base_Class="_n-zaBZ-nEeGorI3CPDW2ww" templateId="2.16.840.1.1133883.17.3.10.1.94" assigningAuthorityName="NEMSIS">
+    <ruleId>CONF:11488</ruleId>
+  </CDA:CDATemplate>
   <CDA:AssociationValidation xmi:id="_IqZWfNICEeKRzPZKi7WbBQ" base_Association="_IqHB0NICEeKRzPZKi7WbBQ">
     <ruleId>CONF:10995</ruleId>
   </CDA:AssociationValidation>
   <CDA:Entry xmi:id="_IqZWfdICEeKRzPZKi7WbBQ" base_Association="_IqHB0NICEeKRzPZKi7WbBQ" typeCode="DRIV">
     <ruleId>CONF:10996</ruleId>
   </CDA:Entry>
-  <CDA:CDATemplate xmi:id="_IqZWftICEeKRzPZKi7WbBQ" base_Class="_0padgJ99EeGw9ZRnaFfEZQ" templateId="2.16.840.1.1133883.17.3.10.1.95" assigningAuthorityName="NEMSIS"/>
+  <CDA:CDATemplate xmi:id="_IqZWftICEeKRzPZKi7WbBQ" base_Class="_0padgJ99EeGw9ZRnaFfEZQ" templateId="2.16.840.1.1133883.17.3.10.1.95" assigningAuthorityName="NEMSIS">
+    <ruleId>CONF:11489</ruleId>
+  </CDA:CDATemplate>
   <CDA:AssociationValidation xmi:id="_IqZWf9ICEeKRzPZKi7WbBQ" base_Association="_IqHB19ICEeKRzPZKi7WbBQ">
     <ruleId>CONF:10997</ruleId>
   </CDA:AssociationValidation>
   <CDA:Entry xmi:id="_IqZWgNICEeKRzPZKi7WbBQ" base_Association="_IqHB19ICEeKRzPZKi7WbBQ" typeCode="DRIV">
     <ruleId>CONF:10998</ruleId>
   </CDA:Entry>
-  <CDA:CDATemplate xmi:id="_IqZWgdICEeKRzPZKi7WbBQ" base_Class="_MiN-UJ-BEeGw9ZRnaFfEZQ" templateId="2.16.840.1.1133883.17.3.10.1.96" assigningAuthorityName="NEMSIS"/>
+  <CDA:CDATemplate xmi:id="_IqZWgdICEeKRzPZKi7WbBQ" base_Class="_MiN-UJ-BEeGw9ZRnaFfEZQ" templateId="2.16.840.1.1133883.17.3.10.1.96" assigningAuthorityName="NEMSIS">
+    <ruleId>CONF:11490</ruleId>
+  </CDA:CDATemplate>
   <CDA:AssociationValidation xmi:id="_IqZWgtICEeKRzPZKi7WbBQ" base_Association="_IqNIcNICEeKRzPZKi7WbBQ">
     <ruleId>CONF:10999</ruleId>
   </CDA:AssociationValidation>
   <CDA:Entry xmi:id="_IqZWg9ICEeKRzPZKi7WbBQ" base_Association="_IqNIcNICEeKRzPZKi7WbBQ" typeCode="DRIV">
     <ruleId>CONF:11000</ruleId>
   </CDA:Entry>
-  <CDA:CDATemplate xmi:id="_IqZWhNICEeKRzPZKi7WbBQ" base_Class="_yVviAJ-OEeGorI3CPDW2ww" templateId="2.16.840.1.1133883.17.3.10.1.97" assigningAuthorityName="NEMSIS"/>
+  <CDA:CDATemplate xmi:id="_IqZWhNICEeKRzPZKi7WbBQ" base_Class="_yVviAJ-OEeGorI3CPDW2ww" templateId="2.16.840.1.1133883.17.3.10.1.97" assigningAuthorityName="NEMSIS">
+    <ruleId>CONF:11494</ruleId>
+  </CDA:CDATemplate>
   <CDA:AssociationValidation xmi:id="_IqZWhdICEeKRzPZKi7WbBQ" base_Association="_IqTPENICEeKRzPZKi7WbBQ">
     <ruleId>CONF:11001</ruleId>
   </CDA:AssociationValidation>
   <CDA:Entry xmi:id="_IqZWhtICEeKRzPZKi7WbBQ" base_Association="_IqTPENICEeKRzPZKi7WbBQ" typeCode="DRIV">
     <ruleId>CONF:11002</ruleId>
   </CDA:Entry>
-  <CDA:CDATemplate xmi:id="_IqZWh9ICEeKRzPZKi7WbBQ" base_Class="_l_V6IJ-bEeGorI3CPDW2ww" templateId="2.16.840.1.1133883.17.3.10.1.182" assigningAuthorityName="NEMSIS"/>
+  <CDA:CDATemplate xmi:id="_IqZWh9ICEeKRzPZKi7WbBQ" base_Class="_l_V6IJ-bEeGorI3CPDW2ww" templateId="2.16.840.1.1133883.17.3.10.1.182" assigningAuthorityName="NEMSIS">
+    <ruleId>CONF:11495</ruleId>
+  </CDA:CDATemplate>
   <CDA:AssociationValidation xmi:id="_yi4e8MHkEeGspaMtPNX3NA">
     <ruleId>CONF:10081</ruleId>
   </CDA:AssociationValidation>
@@ -11677,7 +11871,9 @@ UCUM units SHOULD be &quot;[mi_i]&quot;</body>
     <ruleId>CONF:10661</ruleId>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_gBvvkMlPEeK2gbjCtOEivw"/>
-  <CDA:CDATemplate xmi:id="_X2C4wJusEeGzXI65shd6Fw" base_Class="_K8JK8JuoEeGzXI65shd6Fw" templateId="2.16.840.1.1133883.17.3.10.1.181"/>
+  <CDA:CDATemplate xmi:id="_X2C4wJusEeGzXI65shd6Fw" base_Class="_K8JK8JuoEeGzXI65shd6Fw" templateId="2.16.840.1.1133883.17.3.10.1.181">
+    <ruleId>CONF:11496</ruleId>
+  </CDA:CDATemplate>
   <CDA:PropertyValidation xmi:id="_Kt76YJupEeGzXI65shd6Fw" base_Property="_YR0LkJuoEeGzXI65shd6Fw">
     <ruleId>CONF:10496</ruleId>
   </CDA:PropertyValidation>
@@ -11753,7 +11949,9 @@ UCUM units SHOULD be &quot;[mi_i]&quot;</body>
   <CDA:PropertyValidation xmi:id="_GE89YMOxEeKN86BM1f2PZA" base_Property="_GEDljMOxEeKN86BM1f2PZA">
     <ruleId>CONF:11258</ruleId>
   </CDA:PropertyValidation>
-  <CDA:CDATemplate xmi:id="_tffVAJ0uEeGmCMENP40rhA" base_Class="_lVl1sJ0uEeGmCMENP40rhA" templateId="2.16.840.1.1133883.17.3.10.1.179"/>
+  <CDA:CDATemplate xmi:id="_tffVAJ0uEeGmCMENP40rhA" base_Class="_lVl1sJ0uEeGmCMENP40rhA" templateId="2.16.840.1.1133883.17.3.10.1.179">
+    <ruleId>CONF:11526</ruleId>
+  </CDA:CDATemplate>
   <CDA:PropertyValidation xmi:id="_27D3kJ0uEeGmCMENP40rhA" base_Property="_nBv1gJ0uEeGmCMENP40rhA">
     <ruleId>CONF:10528</ruleId>
   </CDA:PropertyValidation>
@@ -11795,7 +11993,9 @@ UCUM units SHOULD be &quot;[mi_i]&quot;</body>
   <CDA:PropertyValidation xmi:id="_lL3nEJ0wEeGmCMENP40rhA" base_Property="_jXPAsJ0wEeGmCMENP40rhA">
     <ruleId>CONF:10539</ruleId>
   </CDA:PropertyValidation>
-  <CDA:CDATemplate xmi:id="_t4AbcJ4aEeGzbp5zEFWdWg" base_Class="_KR_lQJ4aEeGzbp5zEFWdWg" templateId="2.16.840.1.1133883.17.3.10.1.175"/>
+  <CDA:CDATemplate xmi:id="_t4AbcJ4aEeGzbp5zEFWdWg" base_Class="_KR_lQJ4aEeGzbp5zEFWdWg" templateId="2.16.840.1.1133883.17.3.10.1.175">
+    <ruleId>CONF:11528</ruleId>
+  </CDA:CDATemplate>
   <CDA:CodeSystemConstraint xmi:id="_R9hGgJ4aEeGzbp5zEFWdWg" code="71576-3" displayName="Airway device placement confirmation NEMSIS" base_Property="_MZjHoJ4aEeGzbp5zEFWdWg">
     <reference href="file:/C:/Users/JayLyle/eclipse-workspace/org.openhealthtools.mdht.uml.cda.emspcr.model/model/emspcr-vocab.uml#_YgJ0wcFTEeGyGv5RKvEgDA"/>
     <ruleId>CONF:10541</ruleId>
@@ -11879,7 +12079,9 @@ UCUM units SHOULD be &quot;[mi_i]&quot;</body>
   <CDA:PropertyValidation xmi:id="_GE89O8OxEeKN86BM1f2PZA" base_Property="_GEDlQsOxEeKN86BM1f2PZA">
     <ruleId>CONF:11294</ruleId>
   </CDA:PropertyValidation>
-  <CDA:CDATemplate xmi:id="_5wW8wIzzEeGnhceUMXltng" base_Class="_eKfCYIzyEeGnhceUMXltng" templateId="2.16.840.1.1133883.17.3.10.1.192"/>
+  <CDA:CDATemplate xmi:id="_5wW8wIzzEeGnhceUMXltng" base_Class="_eKfCYIzyEeGnhceUMXltng" templateId="2.16.840.1.1133883.17.3.10.1.192">
+    <ruleId>CONF:11551</ruleId>
+  </CDA:CDATemplate>
   <CDA:PropertyValidation xmi:id="_66Ou4IzzEeGnhceUMXltng" base_Property="_fIlpYIzyEeGnhceUMXltng">
     <ruleId>CONF:10328</ruleId>
   </CDA:PropertyValidation>
@@ -11909,74 +12111,196 @@ UCUM units SHOULD be &quot;[mi_i]&quot;</body>
   <CDA:AssociationValidation xmi:id="_Z5yOUNIMEeKJfJPtALxQTw" severity="INFO" base_Association="_ZDnbU9IMEeKJfJPtALxQTw">
     <ruleId>CONF:11135</ruleId>
   </CDA:AssociationValidation>
-  <CDA:CDATemplate xmi:id="_sP30sNOUEeKU4pFWxuU9dw" base_Class="_iWVVYIy-EeGnhceUMXltng" templateId="2.16.840.1.1133883.17.3.10.1.102" assigningAuthorityName="NEMSIS"/>
-  <CDA:CDATemplate xmi:id="_sP30sdOUEeKU4pFWxuU9dw" base_Class="_t_nG0IzYEeGnhceUMXltng" templateId="2.16.840.1.1133883.17.3.10.1.103" assigningAuthorityName="NEMSIS"/>
-  <CDA:CDATemplate xmi:id="_sP30stOUEeKU4pFWxuU9dw" base_Class="_UleZUIzZEeGnhceUMXltng" templateId="2.16.840.1.1133883.17.3.10.1.104" assigningAuthorityName="NEMSIS"/>
-  <CDA:CDATemplate xmi:id="_sP30s9OUEeKU4pFWxuU9dw" base_Class="_E9ekgJoxEeG_FLcaRgAa7g" templateId="2.16.840.1.1133883.17.3.10.1.105" assigningAuthorityName="NEMSIS"/>
-  <CDA:CDATemplate xmi:id="_sP30tNOUEeKU4pFWxuU9dw" base_Class="_j9MusJsmEeGzXI65shd6Fw" templateId="2.16.840.1.1133883.17.3.10.1.106" assigningAuthorityName="NEMSIS"/>
-  <CDA:CDATemplate xmi:id="_sP30tdOUEeKU4pFWxuU9dw" base_Class="_Qzy_cJsnEeGzXI65shd6Fw" templateId="2.16.840.1.1133883.17.3.10.1.107" assigningAuthorityName="NEMSIS"/>
-  <CDA:CDATemplate xmi:id="_sP30ttOUEeKU4pFWxuU9dw" base_Class="_pVW0QJsoEeGzXI65shd6Fw" templateId="2.16.840.1.1133883.17.3.10.1.108" assigningAuthorityName="NEMSIS"/>
+  <CDA:CDATemplate xmi:id="_sP30sNOUEeKU4pFWxuU9dw" base_Class="_iWVVYIy-EeGnhceUMXltng" templateId="2.16.840.1.1133883.17.3.10.1.102" assigningAuthorityName="NEMSIS">
+    <ruleId>CONF:11498</ruleId>
+  </CDA:CDATemplate>
+  <CDA:CDATemplate xmi:id="_sP30sdOUEeKU4pFWxuU9dw" base_Class="_t_nG0IzYEeGnhceUMXltng" templateId="2.16.840.1.1133883.17.3.10.1.103" assigningAuthorityName="NEMSIS">
+    <ruleId>CONF:11499</ruleId>
+  </CDA:CDATemplate>
+  <CDA:CDATemplate xmi:id="_sP30stOUEeKU4pFWxuU9dw" base_Class="_UleZUIzZEeGnhceUMXltng" templateId="2.16.840.1.1133883.17.3.10.1.104" assigningAuthorityName="NEMSIS">
+    <ruleId>CONF:11500</ruleId>
+  </CDA:CDATemplate>
+  <CDA:CDATemplate xmi:id="_sP30s9OUEeKU4pFWxuU9dw" base_Class="_E9ekgJoxEeG_FLcaRgAa7g" templateId="2.16.840.1.1133883.17.3.10.1.105" assigningAuthorityName="NEMSIS">
+    <ruleId>CONF:11501</ruleId>
+  </CDA:CDATemplate>
+  <CDA:CDATemplate xmi:id="_sP30tNOUEeKU4pFWxuU9dw" base_Class="_j9MusJsmEeGzXI65shd6Fw" templateId="2.16.840.1.1133883.17.3.10.1.106" assigningAuthorityName="NEMSIS">
+    <ruleId>CONF:11502</ruleId>
+  </CDA:CDATemplate>
+  <CDA:CDATemplate xmi:id="_sP30tdOUEeKU4pFWxuU9dw" base_Class="_Qzy_cJsnEeGzXI65shd6Fw" templateId="2.16.840.1.1133883.17.3.10.1.107" assigningAuthorityName="NEMSIS">
+    <ruleId>CONF:11503</ruleId>
+  </CDA:CDATemplate>
+  <CDA:CDATemplate xmi:id="_sP30ttOUEeKU4pFWxuU9dw" base_Class="_pVW0QJsoEeGzXI65shd6Fw" templateId="2.16.840.1.1133883.17.3.10.1.108" assigningAuthorityName="NEMSIS">
+    <ruleId>CONF:11504</ruleId>
+  </CDA:CDATemplate>
   <CDA:CDATemplate xmi:id="_sP30t9OUEeKU4pFWxuU9dw" base_Class="_GGe8UJojEeG_FLcaRgAa7g" templateId="2.16.840.1.1133883.17.3.10.1.109" assigningAuthorityName="NEMSIS"/>
-  <CDA:CDATemplate xmi:id="_sP30uNOUEeKU4pFWxuU9dw" base_Class="_whTHIJojEeG_FLcaRgAa7g" templateId="2.16.840.1.1133883.17.3.10.1.110" assigningAuthorityName="NEMSIS"/>
-  <CDA:CDATemplate xmi:id="_sP30utOUEeKU4pFWxuU9dw" base_Class="_QU_s0JolEeG_FLcaRgAa7g" templateId="2.16.840.1.1133883.17.3.10.1.112" assigningAuthorityName="NEMSIS"/>
-  <CDA:CDATemplate xmi:id="_sP30u9OUEeKU4pFWxuU9dw" base_Class="_6VcsUJokEeG_FLcaRgAa7g" templateId="2.16.840.1.1133883.17.3.10.1.113" assigningAuthorityName="NEMSIS"/>
-  <CDA:CDATemplate xmi:id="_sP30vNOUEeKU4pFWxuU9dw" base_Class="_oE3bcJolEeG_FLcaRgAa7g" templateId="2.16.840.1.1133883.17.3.10.1.114" assigningAuthorityName="NEMSIS"/>
-  <CDA:CDATemplate xmi:id="_sP30vtOUEeKU4pFWxuU9dw" base_Class="_Zjp_UJomEeG_FLcaRgAa7g" templateId="2.16.840.1.1133883.17.3.10.1.116" assigningAuthorityName="NEMSIS"/>
-  <CDA:CDATemplate xmi:id="_sP30v9OUEeKU4pFWxuU9dw" base_Class="_WMI_AJooEeG_FLcaRgAa7g" templateId="2.16.840.1.1133883.17.3.10.1.117" assigningAuthorityName="NEMSIS"/>
-  <CDA:CDATemplate xmi:id="_sP30wNOUEeKU4pFWxuU9dw" base_Class="_O7rMoJopEeG_FLcaRgAa7g" templateId="2.16.840.1.1133883.17.3.10.1.118" assigningAuthorityName="NEMSIS"/>
-  <CDA:CDATemplate xmi:id="_sP30wdOUEeKU4pFWxuU9dw" base_Class="_pgmc0JopEeG_FLcaRgAa7g" templateId="2.16.840.1.1133883.17.3.10.1.119" assigningAuthorityName="NEMSIS"/>
-  <CDA:CDATemplate xmi:id="_sP30wtOUEeKU4pFWxuU9dw" base_Class="_NK7yUJoqEeG_FLcaRgAa7g" templateId="2.16.840.1.1133883.17.3.10.1.120" assigningAuthorityName="NEMSIS"/>
-  <CDA:CDATemplate xmi:id="_sP30w9OUEeKU4pFWxuU9dw" base_Class="_rsLuIJoqEeG_FLcaRgAa7g" templateId="2.16.840.1.1133883.17.3.10.1.121" assigningAuthorityName="NEMSIS"/>
-  <CDA:CDATemplate xmi:id="_sP30xNOUEeKU4pFWxuU9dw" base_Class="_EyfEMJorEeG_FLcaRgAa7g" templateId="2.16.840.1.1133883.17.3.10.1.122" assigningAuthorityName="NEMSIS"/>
-  <CDA:CDATemplate xmi:id="_sP30xdOUEeKU4pFWxuU9dw" base_Class="_A65pUHwIEeGW3cDolvqrTA" templateId="2.16.840.1.1133883.17.3.10.1.123" assigningAuthorityName="NEMSIS"/>
-  <CDA:CDATemplate xmi:id="_sP30xtOUEeKU4pFWxuU9dw" base_Class="_tcPw4HwKEeGW3cDolvqrTA" templateId="2.16.840.1.1133883.17.3.10.1.124" assigningAuthorityName="NEMSIS"/>
-  <CDA:CDATemplate xmi:id="_sP30ydOUEeKU4pFWxuU9dw" base_Class="_Ia0ocHwREeGW3cDolvqrTA" templateId="2.16.840.1.1133883.17.3.10.1.127" assigningAuthorityName="NEMSIS"/>
-  <CDA:CDATemplate xmi:id="_sP30ytOUEeKU4pFWxuU9dw" base_Class="_gnLCQHwSEeGW3cDolvqrTA" templateId="2.16.840.1.1133883.17.3.10.1.128" assigningAuthorityName="NEMSIS"/>
-  <CDA:CDATemplate xmi:id="_sP30y9OUEeKU4pFWxuU9dw" base_Class="_khXxgHwTEeGW3cDolvqrTA" templateId="2.16.840.1.1133883.17.3.10.1.129" assigningAuthorityName="NEMSIS"/>
-  <CDA:CDATemplate xmi:id="_sP30zNOUEeKU4pFWxuU9dw" base_Class="_edpw0JuqEeGzXI65shd6Fw" templateId="2.16.840.1.1133883.17.3.10.1.130" assigningAuthorityName="NEMSIS"/>
-  <CDA:CDATemplate xmi:id="_sP30zdOUEeKU4pFWxuU9dw" base_Class="_0IBaIJ0sEeGmCMENP40rhA" templateId="2.16.840.1.1133883.17.3.10.1.131" assigningAuthorityName="NEMSIS"/>
-  <CDA:CDATemplate xmi:id="_sP30ztOUEeKU4pFWxuU9dw" base_Class="_iZg7kJ0tEeGmCMENP40rhA" templateId="2.16.840.1.1133883.17.3.10.1.132" assigningAuthorityName="NEMSIS"/>
-  <CDA:CDATemplate xmi:id="_sP30z9OUEeKU4pFWxuU9dw" base_Class="_D32TkJ0uEeGmCMENP40rhA" templateId="2.16.840.1.1133883.17.3.10.1.133" assigningAuthorityName="NEMSIS"/>
+  <CDA:CDATemplate xmi:id="_sP30uNOUEeKU4pFWxuU9dw" base_Class="_whTHIJojEeG_FLcaRgAa7g" templateId="2.16.840.1.1133883.17.3.10.1.110" assigningAuthorityName="NEMSIS">
+    <ruleId>CONF:11506</ruleId>
+  </CDA:CDATemplate>
+  <CDA:CDATemplate xmi:id="_sP30utOUEeKU4pFWxuU9dw" base_Class="_QU_s0JolEeG_FLcaRgAa7g" templateId="2.16.840.1.1133883.17.3.10.1.112" assigningAuthorityName="NEMSIS">
+    <ruleId>CONF:11507</ruleId>
+  </CDA:CDATemplate>
+  <CDA:CDATemplate xmi:id="_sP30u9OUEeKU4pFWxuU9dw" base_Class="_6VcsUJokEeG_FLcaRgAa7g" templateId="2.16.840.1.1133883.17.3.10.1.113" assigningAuthorityName="NEMSIS">
+    <ruleId>CONF:11508</ruleId>
+  </CDA:CDATemplate>
+  <CDA:CDATemplate xmi:id="_sP30vNOUEeKU4pFWxuU9dw" base_Class="_oE3bcJolEeG_FLcaRgAa7g" templateId="2.16.840.1.1133883.17.3.10.1.114" assigningAuthorityName="NEMSIS">
+    <ruleId>CONF:11509</ruleId>
+  </CDA:CDATemplate>
+  <CDA:CDATemplate xmi:id="_sP30vtOUEeKU4pFWxuU9dw" base_Class="_Zjp_UJomEeG_FLcaRgAa7g" templateId="2.16.840.1.1133883.17.3.10.1.116" assigningAuthorityName="NEMSIS">
+    <ruleId>CONF:11510</ruleId>
+  </CDA:CDATemplate>
+  <CDA:CDATemplate xmi:id="_sP30v9OUEeKU4pFWxuU9dw" base_Class="_WMI_AJooEeG_FLcaRgAa7g" templateId="2.16.840.1.1133883.17.3.10.1.117" assigningAuthorityName="NEMSIS">
+    <ruleId>CONF:11511</ruleId>
+  </CDA:CDATemplate>
+  <CDA:CDATemplate xmi:id="_sP30wNOUEeKU4pFWxuU9dw" base_Class="_O7rMoJopEeG_FLcaRgAa7g" templateId="2.16.840.1.1133883.17.3.10.1.118" assigningAuthorityName="NEMSIS">
+    <ruleId>CONF:11512</ruleId>
+  </CDA:CDATemplate>
+  <CDA:CDATemplate xmi:id="_sP30wdOUEeKU4pFWxuU9dw" base_Class="_pgmc0JopEeG_FLcaRgAa7g" templateId="2.16.840.1.1133883.17.3.10.1.119" assigningAuthorityName="NEMSIS">
+    <ruleId>CONF:11513</ruleId>
+  </CDA:CDATemplate>
+  <CDA:CDATemplate xmi:id="_sP30wtOUEeKU4pFWxuU9dw" base_Class="_NK7yUJoqEeG_FLcaRgAa7g" templateId="2.16.840.1.1133883.17.3.10.1.120" assigningAuthorityName="NEMSIS">
+    <ruleId>CONF:11514</ruleId>
+  </CDA:CDATemplate>
+  <CDA:CDATemplate xmi:id="_sP30w9OUEeKU4pFWxuU9dw" base_Class="_rsLuIJoqEeG_FLcaRgAa7g" templateId="2.16.840.1.1133883.17.3.10.1.121" assigningAuthorityName="NEMSIS">
+    <ruleId>CONF:11515</ruleId>
+  </CDA:CDATemplate>
+  <CDA:CDATemplate xmi:id="_sP30xNOUEeKU4pFWxuU9dw" base_Class="_EyfEMJorEeG_FLcaRgAa7g" templateId="2.16.840.1.1133883.17.3.10.1.122" assigningAuthorityName="NEMSIS">
+    <ruleId>CONF:11516</ruleId>
+  </CDA:CDATemplate>
+  <CDA:CDATemplate xmi:id="_sP30xdOUEeKU4pFWxuU9dw" base_Class="_A65pUHwIEeGW3cDolvqrTA" templateId="2.16.840.1.1133883.17.3.10.1.123" assigningAuthorityName="NEMSIS">
+    <ruleId>CONF:11517</ruleId>
+  </CDA:CDATemplate>
+  <CDA:CDATemplate xmi:id="_sP30xtOUEeKU4pFWxuU9dw" base_Class="_tcPw4HwKEeGW3cDolvqrTA" templateId="2.16.840.1.1133883.17.3.10.1.124" assigningAuthorityName="NEMSIS">
+    <ruleId>CONF:11518</ruleId>
+  </CDA:CDATemplate>
+  <CDA:CDATemplate xmi:id="_sP30ydOUEeKU4pFWxuU9dw" base_Class="_Ia0ocHwREeGW3cDolvqrTA" templateId="2.16.840.1.1133883.17.3.10.1.127" assigningAuthorityName="NEMSIS">
+    <ruleId>CONF:11519</ruleId>
+  </CDA:CDATemplate>
+  <CDA:CDATemplate xmi:id="_sP30ytOUEeKU4pFWxuU9dw" base_Class="_gnLCQHwSEeGW3cDolvqrTA" templateId="2.16.840.1.1133883.17.3.10.1.128" assigningAuthorityName="NEMSIS">
+    <ruleId>CONF:11520</ruleId>
+  </CDA:CDATemplate>
+  <CDA:CDATemplate xmi:id="_sP30y9OUEeKU4pFWxuU9dw" base_Class="_khXxgHwTEeGW3cDolvqrTA" templateId="2.16.840.1.1133883.17.3.10.1.129" assigningAuthorityName="NEMSIS">
+    <ruleId>CONF:11521</ruleId>
+  </CDA:CDATemplate>
+  <CDA:CDATemplate xmi:id="_sP30zNOUEeKU4pFWxuU9dw" base_Class="_edpw0JuqEeGzXI65shd6Fw" templateId="2.16.840.1.1133883.17.3.10.1.130" assigningAuthorityName="NEMSIS">
+    <ruleId>CONF:11522</ruleId>
+  </CDA:CDATemplate>
+  <CDA:CDATemplate xmi:id="_sP30zdOUEeKU4pFWxuU9dw" base_Class="_0IBaIJ0sEeGmCMENP40rhA" templateId="2.16.840.1.1133883.17.3.10.1.131" assigningAuthorityName="NEMSIS">
+    <ruleId>CONF:11523</ruleId>
+  </CDA:CDATemplate>
+  <CDA:CDATemplate xmi:id="_sP30ztOUEeKU4pFWxuU9dw" base_Class="_iZg7kJ0tEeGmCMENP40rhA" templateId="2.16.840.1.1133883.17.3.10.1.132" assigningAuthorityName="NEMSIS">
+    <ruleId>CONF:11524</ruleId>
+  </CDA:CDATemplate>
+  <CDA:CDATemplate xmi:id="_sP30z9OUEeKU4pFWxuU9dw" base_Class="_D32TkJ0uEeGmCMENP40rhA" templateId="2.16.840.1.1133883.17.3.10.1.133" assigningAuthorityName="NEMSIS">
+    <ruleId>CONF:11525</ruleId>
+  </CDA:CDATemplate>
   <CDA:CDATemplate xmi:id="_sP300NOUEeKU4pFWxuU9dw" base_Class="_lVl1sJ0uEeGmCMENP40rhA" templateId="2.16.840.1.1133883.17.3.10.1.134" assigningAuthorityName="NEMSIS"/>
-  <CDA:CDATemplate xmi:id="_sP300dOUEeKU4pFWxuU9dw" base_Class="_Z3nhEJ0vEeGmCMENP40rhA" templateId="2.16.840.1.1133883.17.3.10.1.135" assigningAuthorityName="NEMSIS"/>
+  <CDA:CDATemplate xmi:id="_sP300dOUEeKU4pFWxuU9dw" base_Class="_Z3nhEJ0vEeGmCMENP40rhA" templateId="2.16.840.1.1133883.17.3.10.1.135" assigningAuthorityName="NEMSIS">
+    <ruleId>CONF:11527</ruleId>
+  </CDA:CDATemplate>
   <CDA:CDATemplate xmi:id="_sP300tOUEeKU4pFWxuU9dw" base_Class="_KR_lQJ4aEeGzbp5zEFWdWg" templateId="2.16.840.1.1133883.17.3.10.1.136" assigningAuthorityName="NEMSIS"/>
-  <CDA:CDATemplate xmi:id="_sP3009OUEeKU4pFWxuU9dw" base_Class="_N8t6kFhWEeK-i8RB1gvLUA" templateId="2.16.840.1.1133883.17.3.10.1.137" assigningAuthorityName="NEMSIS"/>
-  <CDA:CDATemplate xmi:id="_sP301NOUEeKU4pFWxuU9dw" base_Class="_4ZsacKg_EeG79fAvHk6H4g" templateId="2.16.840.1.1133883.17.3.10.1.138" assigningAuthorityName="NEMSIS"/>
-  <CDA:CDATemplate xmi:id="_sP301dOUEeKU4pFWxuU9dw" base_Class="_g93MsKhAEeG79fAvHk6H4g" templateId="2.16.840.1.1133883.17.3.10.1.139" assigningAuthorityName="NEMSIS"/>
-  <CDA:CDATemplate xmi:id="_sP301tOUEeKU4pFWxuU9dw" base_Class="_YMy4UKhDEeG79fAvHk6H4g" templateId="2.16.840.1.1133883.17.3.10.1.140" assigningAuthorityName="NEMSIS"/>
-  <CDA:CDATemplate xmi:id="_sP3019OUEeKU4pFWxuU9dw" base_Class="_gBOGYJorEeG_FLcaRgAa7g" templateId="2.16.840.1.1133883.17.3.10.1.141" assigningAuthorityName="NEMSIS"/>
+  <CDA:CDATemplate xmi:id="_sP3009OUEeKU4pFWxuU9dw" base_Class="_N8t6kFhWEeK-i8RB1gvLUA" templateId="2.16.840.1.1133883.17.3.10.1.137" assigningAuthorityName="NEMSIS">
+    <ruleId>CONF:11529</ruleId>
+  </CDA:CDATemplate>
+  <CDA:CDATemplate xmi:id="_sP301NOUEeKU4pFWxuU9dw" base_Class="_4ZsacKg_EeG79fAvHk6H4g" templateId="2.16.840.1.1133883.17.3.10.1.138" assigningAuthorityName="NEMSIS">
+    <ruleId>CONF:11530</ruleId>
+  </CDA:CDATemplate>
+  <CDA:CDATemplate xmi:id="_sP301dOUEeKU4pFWxuU9dw" base_Class="_g93MsKhAEeG79fAvHk6H4g" templateId="2.16.840.1.1133883.17.3.10.1.139" assigningAuthorityName="NEMSIS">
+    <ruleId>CONF:11531</ruleId>
+  </CDA:CDATemplate>
+  <CDA:CDATemplate xmi:id="_sP301tOUEeKU4pFWxuU9dw" base_Class="_YMy4UKhDEeG79fAvHk6H4g" templateId="2.16.840.1.1133883.17.3.10.1.140" assigningAuthorityName="NEMSIS">
+    <ruleId>CONF:11532</ruleId>
+  </CDA:CDATemplate>
+  <CDA:CDATemplate xmi:id="_sP3019OUEeKU4pFWxuU9dw" base_Class="_gBOGYJorEeG_FLcaRgAa7g" templateId="2.16.840.1.1133883.17.3.10.1.141" assigningAuthorityName="NEMSIS">
+    <ruleId>CONF:11533</ruleId>
+  </CDA:CDATemplate>
   <CDA:CDATemplate xmi:id="_sP302dOUEeKU4pFWxuU9dw" base_Class="_Orea4IzrEeGnhceUMXltng" templateId="2.16.840.1.1133883.17.3.10.1.143" assigningAuthorityName="NEMSIS"/>
-  <CDA:CDATemplate xmi:id="_sP302tOUEeKU4pFWxuU9dw" base_Class="_l4xA4IzrEeGnhceUMXltng" templateId="2.16.840.1.1133883.17.3.10.1.144" assigningAuthorityName="NEMSIS"/>
-  <CDA:CDATemplate xmi:id="_sP3029OUEeKU4pFWxuU9dw" base_Class="__qJ7UIzrEeGnhceUMXltng" templateId="2.16.840.1.1133883.17.3.10.1.145" assigningAuthorityName="NEMSIS"/>
-  <CDA:CDATemplate xmi:id="_sP303NOUEeKU4pFWxuU9dw" base_Class="_Q7VIMIzsEeGnhceUMXltng" templateId="2.16.840.1.1133883.17.3.10.1.146" assigningAuthorityName="NEMSIS"/>
+  <CDA:CDATemplate xmi:id="_sP302tOUEeKU4pFWxuU9dw" base_Class="_l4xA4IzrEeGnhceUMXltng" templateId="2.16.840.1.1133883.17.3.10.1.144" assigningAuthorityName="NEMSIS">
+    <ruleId>CONF:11534</ruleId>
+  </CDA:CDATemplate>
+  <CDA:CDATemplate xmi:id="_sP3029OUEeKU4pFWxuU9dw" base_Class="__qJ7UIzrEeGnhceUMXltng" templateId="2.16.840.1.1133883.17.3.10.1.145" assigningAuthorityName="NEMSIS">
+    <ruleId>CONF:11535</ruleId>
+  </CDA:CDATemplate>
+  <CDA:CDATemplate xmi:id="_sP303NOUEeKU4pFWxuU9dw" base_Class="_Q7VIMIzsEeGnhceUMXltng" templateId="2.16.840.1.1133883.17.3.10.1.146" assigningAuthorityName="NEMSIS">
+    <ruleId>CONF:11536</ruleId>
+  </CDA:CDATemplate>
   <CDA:CDATemplate xmi:id="_sP303dOUEeKU4pFWxuU9dw" base_Class="_koRz8IzsEeGnhceUMXltng" templateId="2.16.840.1.1133883.17.3.10.1.147" assigningAuthorityName="NEMSIS"/>
   <CDA:CDATemplate xmi:id="_sP303tOUEeKU4pFWxuU9dw" base_Class="_01XGkIzsEeGnhceUMXltng" templateId="2.16.840.1.1133883.17.3.10.1.148" assigningAuthorityName="NEMSIS"/>
-  <CDA:CDATemplate xmi:id="_sP3039OUEeKU4pFWxuU9dw" base_Class="_MjD2kJ-nEeGorI3CPDW2ww" templateId="2.16.840.1.1133883.17.3.10.1.149" assigningAuthorityName="NEMSIS"/>
-  <CDA:CDATemplate xmi:id="_sP304NOUEeKU4pFWxuU9dw" base_Class="_lC10cJ-BEeGw9ZRnaFfEZQ" templateId="2.16.840.1.1133883.17.3.10.1.150" assigningAuthorityName="NEMSIS"/>
-  <CDA:CDATemplate xmi:id="_sP304dOUEeKU4pFWxuU9dw" base_Class="_sPMP9p-NEeGorI3CPDW2ww" templateId="2.16.840.1.1133883.17.3.10.1.151" assigningAuthorityName="NEMSIS"/>
-  <CDA:CDATemplate xmi:id="_sP304tOUEeKU4pFWxuU9dw" base_Class="_UGLMFZ-OEeGorI3CPDW2ww" templateId="2.16.840.1.1133883.17.3.10.1.152" assigningAuthorityName="NEMSIS"/>
-  <CDA:CDATemplate xmi:id="_sP3049OUEeKU4pFWxuU9dw" base_Class="_9i0HIJ99EeGw9ZRnaFfEZQ" templateId="2.16.840.1.1133883.17.3.10.1.153" assigningAuthorityName="NEMSIS"/>
-  <CDA:CDATemplate xmi:id="_sP305NOUEeKU4pFWxuU9dw" base_Class="_pCK4JZ9-EeGw9ZRnaFfEZQ" templateId="2.16.840.1.1133883.17.3.10.1.154" assigningAuthorityName="NEMSIS"/>
-  <CDA:CDATemplate xmi:id="_sP305dOUEeKU4pFWxuU9dw" base_Class="_Vo79JZ9_EeGw9ZRnaFfEZQ" templateId="2.16.840.1.1133883.17.3.10.1.155" assigningAuthorityName="NEMSIS"/>
-  <CDA:CDATemplate xmi:id="_sP305tOUEeKU4pFWxuU9dw" base_Class="_4qwhJZ9_EeGw9ZRnaFfEZQ" templateId="2.16.840.1.1133883.17.3.10.1.156" assigningAuthorityName="NEMSIS"/>
-  <CDA:CDATemplate xmi:id="_sP3059OUEeKU4pFWxuU9dw" base_Class="_e7LIFZ-AEeGw9ZRnaFfEZQ" templateId="2.16.840.1.1133883.17.3.10.1.157" assigningAuthorityName="NEMSIS"/>
-  <CDA:CDATemplate xmi:id="_sP306NOUEeKU4pFWxuU9dw" base_Class="_WduLAIzyEeGnhceUMXltng" templateId="2.16.840.1.1133883.17.3.10.1.158" assigningAuthorityName="NEMSIS"/>
-  <CDA:CDATemplate xmi:id="_sP306dOUEeKU4pFWxuU9dw" base_Class="_ZLqX8IzyEeGnhceUMXltng" templateId="2.16.840.1.1133883.17.3.10.1.159" assigningAuthorityName="NEMSIS"/>
-  <CDA:CDATemplate xmi:id="_sP306tOUEeKU4pFWxuU9dw" base_Class="_bxS9cIzyEeGnhceUMXltng" templateId="2.16.840.1.1133883.17.3.10.1.160" assigningAuthorityName="NEMSIS"/>
+  <CDA:CDATemplate xmi:id="_sP3039OUEeKU4pFWxuU9dw" base_Class="_MjD2kJ-nEeGorI3CPDW2ww" templateId="2.16.840.1.1133883.17.3.10.1.149" assigningAuthorityName="NEMSIS">
+    <ruleId>CONF:11539</ruleId>
+  </CDA:CDATemplate>
+  <CDA:CDATemplate xmi:id="_sP304NOUEeKU4pFWxuU9dw" base_Class="_lC10cJ-BEeGw9ZRnaFfEZQ" templateId="2.16.840.1.1133883.17.3.10.1.150" assigningAuthorityName="NEMSIS">
+    <ruleId>CONF:11540</ruleId>
+  </CDA:CDATemplate>
+  <CDA:CDATemplate xmi:id="_sP304dOUEeKU4pFWxuU9dw" base_Class="_sPMP9p-NEeGorI3CPDW2ww" templateId="2.16.840.1.1133883.17.3.10.1.151" assigningAuthorityName="NEMSIS">
+    <ruleId>CONF:11541</ruleId>
+  </CDA:CDATemplate>
+  <CDA:CDATemplate xmi:id="_sP304tOUEeKU4pFWxuU9dw" base_Class="_UGLMFZ-OEeGorI3CPDW2ww" templateId="2.16.840.1.1133883.17.3.10.1.152" assigningAuthorityName="NEMSIS">
+    <ruleId>CONF:11542</ruleId>
+  </CDA:CDATemplate>
+  <CDA:CDATemplate xmi:id="_sP3049OUEeKU4pFWxuU9dw" base_Class="_9i0HIJ99EeGw9ZRnaFfEZQ" templateId="2.16.840.1.1133883.17.3.10.1.153" assigningAuthorityName="NEMSIS">
+    <ruleId>CONF:11543</ruleId>
+  </CDA:CDATemplate>
+  <CDA:CDATemplate xmi:id="_sP305NOUEeKU4pFWxuU9dw" base_Class="_pCK4JZ9-EeGw9ZRnaFfEZQ" templateId="2.16.840.1.1133883.17.3.10.1.154" assigningAuthorityName="NEMSIS">
+    <ruleId>CONF:11544</ruleId>
+  </CDA:CDATemplate>
+  <CDA:CDATemplate xmi:id="_sP305dOUEeKU4pFWxuU9dw" base_Class="_Vo79JZ9_EeGw9ZRnaFfEZQ" templateId="2.16.840.1.1133883.17.3.10.1.155" assigningAuthorityName="NEMSIS">
+    <ruleId>CONF:11545</ruleId>
+  </CDA:CDATemplate>
+  <CDA:CDATemplate xmi:id="_sP305tOUEeKU4pFWxuU9dw" base_Class="_4qwhJZ9_EeGw9ZRnaFfEZQ" templateId="2.16.840.1.1133883.17.3.10.1.156" assigningAuthorityName="NEMSIS">
+    <ruleId>CONF:11546</ruleId>
+  </CDA:CDATemplate>
+  <CDA:CDATemplate xmi:id="_sP3059OUEeKU4pFWxuU9dw" base_Class="_e7LIFZ-AEeGw9ZRnaFfEZQ" templateId="2.16.840.1.1133883.17.3.10.1.157" assigningAuthorityName="NEMSIS">
+    <ruleId>CONF:11547</ruleId>
+  </CDA:CDATemplate>
+  <CDA:CDATemplate xmi:id="_sP306NOUEeKU4pFWxuU9dw" base_Class="_WduLAIzyEeGnhceUMXltng" templateId="2.16.840.1.1133883.17.3.10.1.158" assigningAuthorityName="NEMSIS">
+    <ruleId>CONF:11548</ruleId>
+  </CDA:CDATemplate>
+  <CDA:CDATemplate xmi:id="_sP306dOUEeKU4pFWxuU9dw" base_Class="_ZLqX8IzyEeGnhceUMXltng" templateId="2.16.840.1.1133883.17.3.10.1.159" assigningAuthorityName="NEMSIS">
+    <ruleId>CONF:11549</ruleId>
+  </CDA:CDATemplate>
+  <CDA:CDATemplate xmi:id="_sP306tOUEeKU4pFWxuU9dw" base_Class="_bxS9cIzyEeGnhceUMXltng" templateId="2.16.840.1.1133883.17.3.10.1.160" assigningAuthorityName="NEMSIS">
+    <ruleId>CONF:11550</ruleId>
+  </CDA:CDATemplate>
   <CDA:CDATemplate xmi:id="_sP3069OUEeKU4pFWxuU9dw" base_Class="_eKfCYIzyEeGnhceUMXltng" templateId="2.16.840.1.1133883.17.3.10.1.161" assigningAuthorityName="NEMSIS"/>
-  <CDA:CDATemplate xmi:id="_sP307NOUEeKU4pFWxuU9dw" base_Class="_hLJ-EIzyEeGnhceUMXltng" templateId="2.16.840.1.1133883.17.3.10.1.162" assigningAuthorityName="NEMSIS"/>
-  <CDA:CDATemplate xmi:id="_sP307dOUEeKU4pFWxuU9dw" base_Class="_9koR4IzuEeGnhceUMXltng" templateId="2.16.840.1.1133883.17.3.10.1.163" assigningAuthorityName="NEMSIS"/>
-  <CDA:CDATemplate xmi:id="_sP307tOUEeKU4pFWxuU9dw" base_Class="_lnVLQIzuEeGnhceUMXltng" templateId="2.16.840.1.1133883.17.3.10.1.164" assigningAuthorityName="NEMSIS"/>
-  <CDA:CDATemplate xmi:id="_sP3079OUEeKU4pFWxuU9dw" base_Class="_xgaHgIztEeGnhceUMXltng" templateId="2.16.840.1.1133883.17.3.10.1.165" assigningAuthorityName="NEMSIS"/>
-  <CDA:CDATemplate xmi:id="_sP308NOUEeKU4pFWxuU9dw" base_Class="_jmDsgIztEeGnhceUMXltng" templateId="2.16.840.1.1133883.17.3.10.1.166" assigningAuthorityName="NEMSIS"/>
-  <CDA:CDATemplate xmi:id="_sP308dOUEeKU4pFWxuU9dw" base_Class="_WFit0IztEeGnhceUMXltng" templateId="2.16.840.1.1133883.17.3.10.1.167" assigningAuthorityName="NEMSIS"/>
-  <CDA:CDATemplate xmi:id="_sP308tOUEeKU4pFWxuU9dw" base_Class="_IU2lIIztEeGnhceUMXltng" templateId="2.16.840.1.1133883.17.3.10.1.168" assigningAuthorityName="NEMSIS"/>
-  <CDA:CDATemplate xmi:id="_sP3089OUEeKU4pFWxuU9dw" base_Class="_uMxJUIzpEeGnhceUMXltng" templateId="2.16.840.1.1133883.17.3.10.1.169" assigningAuthorityName="NEMSIS"/>
-  <CDA:CDATemplate xmi:id="_sP309NOUEeKU4pFWxuU9dw" base_Class="_RNfAcIzyEeGnhceUMXltng" templateId="2.16.840.1.1133883.17.3.10.1.170" assigningAuthorityName="NEMSIS"/>
-  <CDA:CDATemplate xmi:id="_sP309dOUEeKU4pFWxuU9dw" base_Class="_k-cIsJ-ZEeGorI3CPDW2ww" templateId="2.16.840.1.1133883.17.3.10.1.171" assigningAuthorityName="NEMSIS"/>
-  <CDA:CDATemplate xmi:id="_sP309tOUEeKU4pFWxuU9dw" base_Class="_ib1zpZ-aEeGorI3CPDW2ww" templateId="2.16.840.1.1133883.17.3.10.1.172" assigningAuthorityName="NEMSIS"/>
-  <CDA:CDATemplate xmi:id="_sP3099OUEeKU4pFWxuU9dw" base_Class="_7kghNZ-aEeGorI3CPDW2ww" templateId="2.16.840.1.1133883.17.3.10.1.173" assigningAuthorityName="NEMSIS"/>
-  <CDA:CDATemplate xmi:id="_sP30-NOUEeKU4pFWxuU9dw" base_Class="_TCM6tZ-bEeGorI3CPDW2ww" templateId="2.16.840.1.1133883.17.3.10.1.174" assigningAuthorityName="NEMSIS"/>
+  <CDA:CDATemplate xmi:id="_sP307NOUEeKU4pFWxuU9dw" base_Class="_hLJ-EIzyEeGnhceUMXltng" templateId="2.16.840.1.1133883.17.3.10.1.162" assigningAuthorityName="NEMSIS">
+    <ruleId>CONF:11552</ruleId>
+  </CDA:CDATemplate>
+  <CDA:CDATemplate xmi:id="_sP307dOUEeKU4pFWxuU9dw" base_Class="_9koR4IzuEeGnhceUMXltng" templateId="2.16.840.1.1133883.17.3.10.1.163" assigningAuthorityName="NEMSIS">
+    <ruleId>CONF:11553</ruleId>
+  </CDA:CDATemplate>
+  <CDA:CDATemplate xmi:id="_sP307tOUEeKU4pFWxuU9dw" base_Class="_lnVLQIzuEeGnhceUMXltng" templateId="2.16.840.1.1133883.17.3.10.1.164" assigningAuthorityName="NEMSIS">
+    <ruleId>CONF:11554</ruleId>
+  </CDA:CDATemplate>
+  <CDA:CDATemplate xmi:id="_sP3079OUEeKU4pFWxuU9dw" base_Class="_xgaHgIztEeGnhceUMXltng" templateId="2.16.840.1.1133883.17.3.10.1.165" assigningAuthorityName="NEMSIS">
+    <ruleId>CONF:11555</ruleId>
+  </CDA:CDATemplate>
+  <CDA:CDATemplate xmi:id="_sP308NOUEeKU4pFWxuU9dw" base_Class="_jmDsgIztEeGnhceUMXltng" templateId="2.16.840.1.1133883.17.3.10.1.166" assigningAuthorityName="NEMSIS">
+    <ruleId>CONF:11556</ruleId>
+  </CDA:CDATemplate>
+  <CDA:CDATemplate xmi:id="_sP308dOUEeKU4pFWxuU9dw" base_Class="_WFit0IztEeGnhceUMXltng" templateId="2.16.840.1.1133883.17.3.10.1.167" assigningAuthorityName="NEMSIS">
+    <ruleId>CONF:11557</ruleId>
+  </CDA:CDATemplate>
+  <CDA:CDATemplate xmi:id="_sP308tOUEeKU4pFWxuU9dw" base_Class="_IU2lIIztEeGnhceUMXltng" templateId="2.16.840.1.1133883.17.3.10.1.168" assigningAuthorityName="NEMSIS">
+    <ruleId>CONF:11558</ruleId>
+  </CDA:CDATemplate>
+  <CDA:CDATemplate xmi:id="_sP3089OUEeKU4pFWxuU9dw" base_Class="_uMxJUIzpEeGnhceUMXltng" templateId="2.16.840.1.1133883.17.3.10.1.169" assigningAuthorityName="NEMSIS">
+    <ruleId>CONF:11559</ruleId>
+  </CDA:CDATemplate>
+  <CDA:CDATemplate xmi:id="_sP309NOUEeKU4pFWxuU9dw" base_Class="_RNfAcIzyEeGnhceUMXltng" templateId="2.16.840.1.1133883.17.3.10.1.170" assigningAuthorityName="NEMSIS">
+    <ruleId>CONF:11560</ruleId>
+  </CDA:CDATemplate>
+  <CDA:CDATemplate xmi:id="_sP309dOUEeKU4pFWxuU9dw" base_Class="_k-cIsJ-ZEeGorI3CPDW2ww" templateId="2.16.840.1.1133883.17.3.10.1.171" assigningAuthorityName="NEMSIS">
+    <ruleId>CONF:11561</ruleId>
+  </CDA:CDATemplate>
+  <CDA:CDATemplate xmi:id="_sP309tOUEeKU4pFWxuU9dw" base_Class="_ib1zpZ-aEeGorI3CPDW2ww" templateId="2.16.840.1.1133883.17.3.10.1.172" assigningAuthorityName="NEMSIS">
+    <ruleId>CONF:11562</ruleId>
+  </CDA:CDATemplate>
+  <CDA:CDATemplate xmi:id="_sP3099OUEeKU4pFWxuU9dw" base_Class="_7kghNZ-aEeGorI3CPDW2ww" templateId="2.16.840.1.1133883.17.3.10.1.173" assigningAuthorityName="NEMSIS">
+    <ruleId>CONF:11563</ruleId>
+  </CDA:CDATemplate>
+  <CDA:CDATemplate xmi:id="_sP30-NOUEeKU4pFWxuU9dw" base_Class="_TCM6tZ-bEeGorI3CPDW2ww" templateId="2.16.840.1.1133883.17.3.10.1.174" assigningAuthorityName="NEMSIS">
+    <ruleId>CONF:11418</ruleId>
+  </CDA:CDATemplate>
   <CDA:AssociationValidation xmi:id="_JXg5QNOVEeKU4pFWxuU9dw" base_Association="_HOIx8NOVEeKU4pFWxuU9dw">
     <ruleId>CONF:10869</ruleId>
   </CDA:AssociationValidation>
@@ -12049,7 +12373,9 @@ UCUM units SHOULD be &quot;[mi_i]&quot;</body>
   <CDA:AssociationValidation xmi:id="_TCWI4GLSEeStSYssZBT7lA" severity="INFO" base_Association="_N7CQ0GLSEeStSYssZBT7lA">
     <ruleId>CONF:11342</ruleId>
   </CDA:AssociationValidation>
-  <CDA:CDATemplate xmi:id="_Nfqs4GlIEeSkJq3_ArwgUw" base_Class="_JHDCEK9UEeO6uquZyO0R2Q" templateId="2.16.840.1.1133883.17.3.10.1.183" assigningAuthorityName="NEMSIS"/>
+  <CDA:CDATemplate xmi:id="_Nfqs4GlIEeSkJq3_ArwgUw" base_Class="_JHDCEK9UEeO6uquZyO0R2Q" templateId="2.16.840.1.1133883.17.3.10.1.183" assigningAuthorityName="NEMSIS">
+    <ruleId>CONF:11564</ruleId>
+  </CDA:CDATemplate>
   <CDA:CodeSystemConstraint xmi:id="_KUxzUGlKEeSkJq3_ArwgUw" identifier="2.16.840.1.113883.5.4" name="ActCode" code="ASSERTION" displayName="ASSERTION" base_Property="_Ab9UEGlKEeSkJq3_ArwgUw">
     <ruleId>CONF:11340</ruleId>
   </CDA:CodeSystemConstraint>
@@ -12080,7 +12406,9 @@ UCUM units SHOULD be &quot;[mi_i]&quot;</body>
     <reference href="file:/C:/Users/JayLyle/eclipse-workspace/org.openhealthtools.mdht.uml.cda.emspcr.model/model/emspcr-vocab.uml#_YgJ0wcFTEeGyGv5RKvEgDA"/>
     <ruleId>CONF:11351</ruleId>
   </CDA:CodeSystemConstraint>
-  <CDA:CDATemplate xmi:id="_Jv0bwMtYEeSbT7e8VE5niQ" base_Class="_iIDnYMtXEeSbT7e8VE5niQ" templateId="2.16.840.1.1133883.17.3.10.1.184" assigningAuthorityName="NEMSIS"/>
+  <CDA:CDATemplate xmi:id="_Jv0bwMtYEeSbT7e8VE5niQ" base_Class="_iIDnYMtXEeSbT7e8VE5niQ" templateId="2.16.840.1.1133883.17.3.10.1.184" assigningAuthorityName="NEMSIS">
+    <ruleId>CONF:11565</ruleId>
+  </CDA:CDATemplate>
   <CDA:ValueSetConstraint xmi:id="_jezF8MtZEeSbT7e8VE5niQ" base_Property="_n5NGo8tXEeSbT7e8VE5niQ">
     <reference href="emspcr-vocab.uml#_T7wrUMtYEeSbT7e8VE5niQ"/>
     <ruleId>CONF:11352</ruleId>
@@ -12127,7 +12455,9 @@ UCUM units SHOULD be &quot;[mi_i]&quot;</body>
   <CDA:PropertyValidation xmi:id="_kfzQEMxCEeSOI6Ao2VuoSQ" base_Property="_HEYT4MxCEeSOI6Ao2VuoSQ">
     <ruleId>CONF:11361</ruleId>
   </CDA:PropertyValidation>
-  <CDA:CDATemplate xmi:id="_mUC04MxCEeSOI6Ao2VuoSQ" base_Class="_Eb5OsMxCEeSOI6Ao2VuoSQ" templateId="2.16.840.1.1133883.17.3.10.1.104" assigningAuthorityName="NEMSIS"/>
+  <CDA:CDATemplate xmi:id="_mUC04MxCEeSOI6Ao2VuoSQ" base_Class="_Eb5OsMxCEeSOI6Ao2VuoSQ" templateId="2.16.840.1.1133883.17.3.10.1.104" assigningAuthorityName="NEMSIS">
+    <ruleId>CONF:11567</ruleId>
+  </CDA:CDATemplate>
   <CDA:ValueSetConstraint xmi:id="_XQHQwMxEEeSOI6Ao2VuoSQ" base_Property="_HEYT4MxCEeSOI6Ao2VuoSQ">
     <reference href="emspcr-vocab.uml#_1wsJEMxCEeSOI6Ao2VuoSQ"/>
     <ruleId>CONF:11362</ruleId>
@@ -12135,7 +12465,9 @@ UCUM units SHOULD be &quot;[mi_i]&quot;</body>
   <CDA:Entry xmi:id="_EjQTkMxFEeSOI6Ao2VuoSQ" base_Association="_3zdnMMxEEeSOI6Ao2VuoSQ">
     <ruleId>CONF:11330</ruleId>
   </CDA:Entry>
-  <CDA:CDATemplate xmi:id="_tx_s0MxFEeSOI6Ao2VuoSQ" base_Class="_oKeDoMxFEeSOI6Ao2VuoSQ" templateId="2.16.840.1.1133883.17.3.10.1.186" assigningAuthorityName="NEMSIS"/>
+  <CDA:CDATemplate xmi:id="_tx_s0MxFEeSOI6Ao2VuoSQ" base_Class="_oKeDoMxFEeSOI6Ao2VuoSQ" templateId="2.16.840.1.1133883.17.3.10.1.186" assigningAuthorityName="NEMSIS">
+    <ruleId>CONF:11568</ruleId>
+  </CDA:CDATemplate>
   <CDA:PropertyValidation xmi:id="_xiyd4MxFEeSOI6Ao2VuoSQ" base_Property="_qaY30MxFEeSOI6Ao2VuoSQ">
     <ruleId>CONF:11363</ruleId>
   </CDA:PropertyValidation>
@@ -12170,7 +12502,9 @@ UCUM units SHOULD be &quot;[mi_i]&quot;</body>
   <CDA:PropertyValidation xmi:id="_MRVGkM0WEeSJm6m0rTs9zw" base_Property="_942lIM0VEeSJm6m0rTs9zw">
     <ruleId>CONF:11374</ruleId>
   </CDA:PropertyValidation>
-  <CDA:CDATemplate xmi:id="_EamI8M0YEeSJm6m0rTs9zw" base_Class="_7PIw4M0VEeSJm6m0rTs9zw" templateId="2.16.840.1.1133883.17.3.10.1.191" assigningAuthorityName="NEMSIS"/>
+  <CDA:CDATemplate xmi:id="_EamI8M0YEeSJm6m0rTs9zw" base_Class="_7PIw4M0VEeSJm6m0rTs9zw" templateId="2.16.840.1.1133883.17.3.10.1.191" assigningAuthorityName="NEMSIS">
+    <ruleId>CONF:11569</ruleId>
+  </CDA:CDATemplate>
   <CDA:AssociationValidation xmi:id="_4on6QM0YEeSJm6m0rTs9zw" base_Association="_z5Dz0M0YEeSJm6m0rTs9zw">
     <ruleId>CONF:11343</ruleId>
   </CDA:AssociationValidation>
@@ -12248,11 +12582,15 @@ UCUM units SHOULD be &quot;[mi_i]&quot;</body>
   <CDA:PropertyValidation xmi:id="_Xn_j4BLSEeWNDqETRUui8w" severity="INFO" base_Property="_Vb7U8BLSEeWNDqETRUui8w">
     <ruleId>CONF:7517</ruleId>
   </CDA:PropertyValidation>
-  <CDA:CDATemplate xmi:id="_7C1yQBLaEeWNDqETRUui8w" base_Class="_8rap8MtaEeSbT7e8VE5niQ" templateId="2.16.840.1.1133883.17.3.10.1.193" assigningAuthorityName="NEMSIS"/>
+  <CDA:CDATemplate xmi:id="_7C1yQBLaEeWNDqETRUui8w" base_Class="_8rap8MtaEeSbT7e8VE5niQ" templateId="2.16.840.1.1133883.17.3.10.1.193" assigningAuthorityName="NEMSIS">
+    <ruleId>CONF:11566</ruleId>
+  </CDA:CDATemplate>
   <CDA:PropertyValidation xmi:id="_MSqnwC4YEeWuwoPHpwTUeg" base_Property="_dvSRock3EeK2gbjCtOEivw">
     <ruleId>CONF:11387</ruleId>
   </CDA:PropertyValidation>
-  <CDA:CDATemplate xmi:id="_pTz4cETXEeKEm6ZghGGtvw" base_Class="_bFfQYJokEeG_FLcaRgAa7g" templateId="2.16.840.1.1133883.17.3.10.1.180"/>
+  <CDA:CDATemplate xmi:id="_pTz4cETXEeKEm6ZghGGtvw" base_Class="_bFfQYJokEeG_FLcaRgAa7g" templateId="2.16.840.1.1133883.17.3.10.1.180">
+    <ruleId>CONF:11570</ruleId>
+  </CDA:CDATemplate>
   <CDA:CDATemplate xmi:id="_sP30udOUEeKU4pFWxuU9dw" base_Class="_bFfQYJokEeG_FLcaRgAa7g" templateId="2.16.840.1.1133883.17.3.10.1.111" assigningAuthorityName="NEMSIS"/>
   <CDA:PropertyValidation xmi:id="_GE89SMOxEeKN86BM1f2PZA" base_Property="_GEDlXMOxEeKN86BM1f2PZA">
     <ruleId>CONF:11223</ruleId>
@@ -12280,87 +12618,161 @@ UCUM units SHOULD be &quot;[mi_i]&quot;</body>
   <CDA:AssociationValidation xmi:id="_UcsbwDXgEeWpTYI46fwViQ" severity="INFO" base_Association="_N_nqoDXgEeWpTYI46fwViQ">
     <ruleId>CONF:11387</ruleId>
   </CDA:AssociationValidation>
-  <CDA:CDATemplate xmi:id="_IqZVu9ICEeKRzPZKi7WbBQ" base_Class="_F-GKoLMNEeKNbt70lHd2Eg" templateId="2.16.840.1.1133883.17.3.10.1.30" assigningAuthorityName="NEMSIS"/>
+  <CDA:CDATemplate xmi:id="_IqZVu9ICEeKRzPZKi7WbBQ" base_Class="_F-GKoLMNEeKNbt70lHd2Eg" templateId="2.16.840.1.1133883.17.3.10.1.30" assigningAuthorityName="NEMSIS">
+    <ruleId>CONF:11571</ruleId>
+  </CDA:CDATemplate>
   <CDA:PropertyValidation xmi:id="_QDbUgLMQEeKNbt70lHd2Eg" base_Property="_Q_e0cLMNEeKNbt70lHd2Eg">
     <ruleId>CONF:11133</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_Tr3a0LMQEeKNbt70lHd2Eg" severity="INFO" base_Property="_Q_eNYLMNEeKNbt70lHd2Eg">
     <ruleId>CONF:11134</ruleId>
   </CDA:PropertyValidation>
-  <CDA:AssociationValidation xmi:id="_KrH2cFArEeWCacQ3ckaz6g" severity="INFO" base_Association="_X0PaYGlQEeSpn5MdZ_-FPQ"/>
-  <CDA:AssociationValidation xmi:id="_Ll1yQFArEeWCacQ3ckaz6g" severity="INFO" base_Association="_pkmdoGlQEeSpn5MdZ_-FPQ"/>
-  <CDA:CDATemplate xmi:id="_q0d_gCVKEeyHwdMImhiDzQ" base_Class="_gTzdICVKEeyHwdMImhiDzQ" templateId="2.16.840.1.1133883.17.3.10.1.194"/>
+  <CDA:AssociationValidation xmi:id="_KrH2cFArEeWCacQ3ckaz6g" severity="INFO" base_Association="_X0PaYGlQEeSpn5MdZ_-FPQ">
+    <ruleId>CONF:11401</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:AssociationValidation xmi:id="_Ll1yQFArEeWCacQ3ckaz6g" severity="INFO" base_Association="_pkmdoGlQEeSpn5MdZ_-FPQ">
+    <ruleId>CONF:11402</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:CDATemplate xmi:id="_q0d_gCVKEeyHwdMImhiDzQ" base_Class="_gTzdICVKEeyHwdMImhiDzQ" templateId="2.16.840.1.1133883.17.3.10.1.194">
+    <ruleId>CONF:11572</ruleId>
+  </CDA:CDATemplate>
   <CDA:CodeSystemConstraint xmi:id="_1fXb8CVKEeyHwdMImhiDzQ" code="NeweExam.23" displayName="Lung Assessment Finding" base_Property="_kTovwCVKEeyHwdMImhiDzQ">
     <reference href="file:/C:/Users/JayLyle/git/mdht-models/models/org.openhealthtools.mdht.uml.cda.emspcr.model/model/emspcr-vocab.uml#_YgJ0wcFTEeGyGv5RKvEgDA"/>
+    <ruleId>CONF:11573</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:ValueSetConstraint xmi:id="_Y51wgCVLEeyHwdMImhiDzQ" base_Property="_kTpW0CVKEeyHwdMImhiDzQ" uri="emspcr-vocab::LungFinding">
     <reference href="file:/C:/Users/JayLyle/git/mdht-models/models/org.openhealthtools.mdht.uml.cda.emspcr.model/model/emspcr-vocab.uml#_BHorcBoaEeyPvO14mrApVQ"/>
+    <ruleId>CONF:11574</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:ValueSetConstraint xmi:id="_cVnT0CVLEeyHwdMImhiDzQ" base_Property="_kTpW0yVKEeyHwdMImhiDzQ" uri="emspcr-vocab::LungFindingLocation">
     <reference href="file:/C:/Users/JayLyle/eclipse-workspace/BackupPCR/model/emspcr-vocab.uml#_VaCGQRodEeyPvO14mrApVQ"/>
+    <ruleId>CONF:11576</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:CodeSystemConstraint xmi:id="_txro0DHSEeyA__laJHreSQ" code="N" base_Property="_2ZtSUEJTEeK3I6jW34aYTg">
     <reference href="file:/C:/Users/JayLyle/eclipse-workspace/org.openhealthtools.mdht.uml.cda.emspcr.model/model/emspcr-vocab.uml#_jnvQAB7cEeyBnPWCl2bgOQ"/>
+    <ruleId>CONF:11390</ruleId>
   </CDA:CodeSystemConstraint>
-  <CDA:PropertyValidation xmi:id="_xv4m4DKaEeyOwtfRawW6Qw" base_Property="_djmMUHs9EeGs2I-Db78R9w"/>
-  <CDA:PropertyValidation xmi:id="_SX_2oDKdEeyOwtfRawW6Qw" base_Property="_kTpW0CVKEeyHwdMImhiDzQ"/>
-  <CDA:PropertyValidation xmi:id="_Wp2tYDKdEeyOwtfRawW6Qw" severity="WARNING" base_Property="_kTpW0yVKEeyHwdMImhiDzQ"/>
-  <CDA:CDATemplate xmi:id="_FcbwYDKjEeyOwtfRawW6Qw" base_Class="_uSA4MDKiEeyOwtfRawW6Qw" templateId="2.16.840.1.1133883.17.3.10.1.196"/>
+  <CDA:PropertyValidation xmi:id="_xv4m4DKaEeyOwtfRawW6Qw" base_Property="_djmMUHs9EeGs2I-Db78R9w">
+    <ruleId>CONF:11389</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_SX_2oDKdEeyOwtfRawW6Qw" base_Property="_kTpW0CVKEeyHwdMImhiDzQ">
+    <ruleId>CONF:11575</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_Wp2tYDKdEeyOwtfRawW6Qw" severity="WARNING" base_Property="_kTpW0yVKEeyHwdMImhiDzQ">
+    <ruleId>CONF:11577</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:CDATemplate xmi:id="_FcbwYDKjEeyOwtfRawW6Qw" base_Class="_uSA4MDKiEeyOwtfRawW6Qw" templateId="2.16.840.1.1133883.17.3.10.1.196">
+    <ruleId>CONF:11578</ruleId>
+  </CDA:CDATemplate>
   <CDA:CodeSystemConstraint xmi:id="_ToMEcDKjEeyOwtfRawW6Qw" code="neweDisposition.27" displayName="Unit Disposition" base_Property="_w9pYADKiEeyOwtfRawW6Qw">
     <reference href="file:/C:/Users/JayLyle/git/mdht-models/models/org.openhealthtools.mdht.uml.cda.emspcr.model/model/emspcr-vocab.uml#_YgJ0wcFTEeGyGv5RKvEgDA"/>
+    <ruleId>CONF:11579</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:ValueSetConstraint xmi:id="_kUhe4DKjEeyOwtfRawW6Qw" base_Property="_w9p_EDKiEeyOwtfRawW6Qw" uri="">
     <reference href="file:/C:/Users/JayLyle/eclipse-workspace/BackupPCR/model/emspcr-vocab.uml#_sBw3YDKjEeyOwtfRawW6Qw"/>
+    <ruleId>CONF:11581</ruleId>
   </CDA:ValueSetConstraint>
-  <CDA:CDATemplate xmi:id="_5hkO8DKkEeyOwtfRawW6Qw" base_Class="_2BpygDKkEeyOwtfRawW6Qw" templateId="2.16.840.1.1133883.17.3.10.1.197"/>
+  <CDA:CDATemplate xmi:id="_5hkO8DKkEeyOwtfRawW6Qw" base_Class="_2BpygDKkEeyOwtfRawW6Qw" templateId="2.16.840.1.1133883.17.3.10.1.197">
+    <ruleId>CONF:11583</ruleId>
+  </CDA:CDATemplate>
   <CDA:CodeSystemConstraint xmi:id="_-0MmMDKkEeyOwtfRawW6Qw" code="neweDisposition.28" displayName="Patient Engagement" base_Property="_3FYgYDKkEeyOwtfRawW6Qw">
     <reference href="file:/C:/Users/JayLyle/git/mdht-models/models/org.openhealthtools.mdht.uml.cda.emspcr.model/model/emspcr-vocab.uml#_YgJ0wcFTEeGyGv5RKvEgDA"/>
+    <ruleId>CONF:11584</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:ValueSetConstraint xmi:id="_aX0TQDKlEeyOwtfRawW6Qw" base_Property="_3FYgYTKkEeyOwtfRawW6Qw" uri="emspcr-vocab::PatientEngagement">
     <reference href="file:/C:/Users/JayLyle/eclipse-workspace/BackupPCR/model/emspcr-vocab.uml#_v7U14BloEeyirYLmelJuXQ"/>
+    <ruleId>CONF:11586</ruleId>
   </CDA:ValueSetConstraint>
-  <CDA:PropertyValidation xmi:id="_qqMVkDKlEeyOwtfRawW6Qw" base_Property="_3FYgYTKkEeyOwtfRawW6Qw"/>
-  <CDA:CDATemplate xmi:id="_U5nIsDKmEeyOwtfRawW6Qw" base_Class="_PFi4UDKmEeyOwtfRawW6Qw" templateId="2.16.840.1.1133883.17.3.10.1.198"/>
+  <CDA:PropertyValidation xmi:id="_qqMVkDKlEeyOwtfRawW6Qw" base_Property="_3FYgYTKkEeyOwtfRawW6Qw">
+    <ruleId>CONF:11587</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:CDATemplate xmi:id="_U5nIsDKmEeyOwtfRawW6Qw" base_Class="_PFi4UDKmEeyOwtfRawW6Qw" templateId="2.16.840.1.1133883.17.3.10.1.198">
+    <ruleId>CONF:11588</ruleId>
+  </CDA:CDATemplate>
   <CDA:CodeSystemConstraint xmi:id="_bIGrQDKmEeyOwtfRawW6Qw" code="neweDisposition.29" displayName="Crew Disposition" base_Property="_QX7GMDKmEeyOwtfRawW6Qw">
     <reference href="file:/C:/Users/JayLyle/git/mdht-models/models/org.openhealthtools.mdht.uml.cda.emspcr.model/model/emspcr-vocab.uml#_YgJ0wcFTEeGyGv5RKvEgDA"/>
+    <ruleId>CONF:11589</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:ValueSetConstraint xmi:id="__xil8DKpEeyOwtfRawW6Qw" base_Property="_QX7tQDKmEeyOwtfRawW6Qw" uri="emspcr-vocab::CrewDisposition">
     <reference href="file:/C:/Users/JayLyle/git/mdht-models/models/org.openhealthtools.mdht.uml.cda.emspcr.model/model/emspcr-vocab.uml#_04PogDKmEeyOwtfRawW6Qw"/>
+    <ruleId>CONF:11590</ruleId>
   </CDA:ValueSetConstraint>
-  <CDA:PropertyValidation xmi:id="_DXgnEDKqEeyOwtfRawW6Qw" base_Property="_QX7tQDKmEeyOwtfRawW6Qw"/>
-  <CDA:CDATemplate xmi:id="_N942QDKyEeyOwtfRawW6Qw" base_Class="_Kp-OcDKyEeyOwtfRawW6Qw" templateId="2.16.840.1.1133883.17.3.10.1.199"/>
+  <CDA:PropertyValidation xmi:id="_DXgnEDKqEeyOwtfRawW6Qw" base_Property="_QX7tQDKmEeyOwtfRawW6Qw">
+    <ruleId>CONF:11591</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:CDATemplate xmi:id="_N942QDKyEeyOwtfRawW6Qw" base_Class="_Kp-OcDKyEeyOwtfRawW6Qw" templateId="2.16.840.1.1133883.17.3.10.1.199">
+    <ruleId>CONF:11592</ruleId>
+  </CDA:CDATemplate>
   <CDA:CodeSystemConstraint xmi:id="_0VRA0DKyEeyOwtfRawW6Qw" code="neweDisposition.30" displayName="Transport Disposition" base_Property="_L4nL0DKyEeyOwtfRawW6Qw">
     <reference href="file:/C:/Users/JayLyle/git/mdht-models/models/org.openhealthtools.mdht.uml.cda.emspcr.model/model/emspcr-vocab.uml#_YgJ0wcFTEeGyGv5RKvEgDA"/>
+    <ruleId>CONF:11593</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:ValueSetConstraint xmi:id="__j5ccDKyEeyOwtfRawW6Qw" base_Property="_L4ny4DKyEeyOwtfRawW6Qw" uri="emspcr-vocab::TransportDisposition">
     <reference href="file:/C:/Users/JayLyle/git/mdht-models/models/org.openhealthtools.mdht.uml.cda.emspcr.model/model/emspcr-vocab.uml#_Q49DwDKzEeyOwtfRawW6Qw"/>
+    <ruleId>CONF:11594</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:CodeSystemConstraint xmi:id="_A-qpkDTdEey7mqGON1i0RQ" base_Property="_YR0LkJuoEeGzXI65shd6Fw">
-    <reference href="file:/C:/Users/JayLyle/eclipse-workspace/org.openhealthtools.mdht.uml.cda.emspcr.model/model/emspcr-vocab.uml#_-m7-MB7YEeyBnPWCl2bgOQ"/>
+    <reference href="file:/C:/Users/JayLyle/eclipse-workspace/BackupPCR/model/emspcr-vocab.uml#_-m7-MB7YEeyBnPWCl2bgOQ"/>
+    <ruleId>CONF:11497</ruleId>
   </CDA:CodeSystemConstraint>
-  <CDA:ValueSetConstraint xmi:id="_IdCssDX7EeyDmf_o8i-KfQ" base_Property="_6eFncIzdEeGnhceUMXltng">
-    <reference href="file:/C:/Users/JayLyle/eclipse-workspace/org.openhealthtools.mdht.uml.cda.emspcr.model/model/emspcr-vocab.uml#_vk5j4DX5EeyDmf_o8i-KfQ"/>
+  <CDA:ValueSetConstraint xmi:id="_IdCssDX7EeyDmf_o8i-KfQ" base_Property="_6eFncIzdEeGnhceUMXltng" uri="emspcr-vocab::ICD-10 CM &amp; PCS">
+    <reference href="file:/C:/Users/JayLyle/git/mdht-models/models/org.openhealthtools.mdht.uml.cda.emspcr.model/model/emspcr-vocab.uml#_vk5j4DX5EeyDmf_o8i-KfQ"/>
+    <ruleId>CONF:11454</ruleId>
   </CDA:ValueSetConstraint>
-  <CDA:PropertyValidation xmi:id="_ow6csDX7EeyDmf_o8i-KfQ" severity="INFO" base_Property="_nUTUwDX7EeyDmf_o8i-KfQ"/>
-  <CDA:ValueSetConstraint xmi:id="_ajS-kDm4EeyZsMlzd1PHVg" base_Property="_083aqZ-hEeGorI3CPDW2ww">
-    <reference href="file:/C:/Users/JayLyle/eclipse-workspace/org.openhealthtools.mdht.uml.cda.emspcr.model/model/emspcr-vocab.uml#_92nb8HSTEeGa4IXs2ghZEw"/>
+  <CDA:PropertyValidation xmi:id="_ow6csDX7EeyDmf_o8i-KfQ" severity="INFO" base_Property="_nUTUwDX7EeyDmf_o8i-KfQ">
+    <ruleId>CONF:11455</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:ValueSetConstraint xmi:id="_ajS-kDm4EeyZsMlzd1PHVg" base_Property="_083aqZ-hEeGorI3CPDW2ww" uri="emspcr-vocab::DestinationPrearrivalActivation">
+    <reference href="file:/C:/Users/JayLyle/git/mdht-models/models/org.openhealthtools.mdht.uml.cda.emspcr.model/model/emspcr-vocab.uml#_92nb8HSTEeGa4IXs2ghZEw"/>
+    <ruleId>CONF:11428</ruleId>
   </CDA:ValueSetConstraint>
-  <CDA:PropertyValidation xmi:id="_NPn7QEHKEeyUtcwaTRiR1Q" base_Property="_3FYgYDKkEeyOwtfRawW6Qw"/>
+  <CDA:PropertyValidation xmi:id="_NPn7QEHKEeyUtcwaTRiR1Q" base_Property="_3FYgYDKkEeyOwtfRawW6Qw">
+    <ruleId>CONF:11585</ruleId>
+  </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_fnsM0EHMEeyzA5MgFxuJFA" code="NeweExam.25" base_Property="_apLrcEHMEeyzA5MgFxuJFA">
     <reference href="file:/C:/Users/JayLyle/git/mdht-models/models/org.openhealthtools.mdht.uml.cda.emspcr.model/model/emspcr-vocab.uml#_YgJ0wcFTEeGyGv5RKvEgDA"/>
+    <ruleId>CONF:11596</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:ValueSetConstraint xmi:id="_v9yRgEHMEeyzA5MgFxuJFA" base_Property="_apMSgEHMEeyzA5MgFxuJFA">
+    <reference href="file:/C:/Users/JayLyle/eclipse-workspace/BackupPCR/model/emspcr-vocab.uml#_sQPB8BodEeyPvO14mrApVQ"/>
+    <ruleId>CONF:11598</ruleId>
+  </CDA:ValueSetConstraint>
+  <CDA:PropertyValidation xmi:id="_NvX1gEHOEeyzA5MgFxuJFA" severity="WARNING" base_Property="_L4ny4DKyEeyOwtfRawW6Qw">
+    <ruleId>CONF:11595</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:Entry xmi:id="_EZtRMEHPEeyzA5MgFxuJFA" base_Association="_xAhzsTv0Eeys8b2-Q288fA">
+    <ruleId>CONF:11409</ruleId>
+  </CDA:Entry>
+  <CDA:Entry xmi:id="_Zauz8EHPEeyzA5MgFxuJFA" base_Association="_Q0O4M0HPEeyzA5MgFxuJFA">
+    <ruleId>CONF:11410</ruleId>
+  </CDA:Entry>
+  <CDA:Entry xmi:id="_q8id0EHPEeyzA5MgFxuJFA" base_Association="_i3Ic8kHPEeyzA5MgFxuJFA">
+    <ruleId>CONF:11411</ruleId>
+  </CDA:Entry>
+  <CDA:Entry xmi:id="_yBwNAEHPEeyzA5MgFxuJFA" base_Association="_wS1NEkHPEeyzA5MgFxuJFA">
+    <ruleId>CONF:11412</ruleId>
+  </CDA:Entry>
+  <CDA:AssociationValidation xmi:id="_ulRpoEHQEeyzA5MgFxuJFA" severity="INFO" base_Association="_WXqPEkHQEeyzA5MgFxuJFA">
+    <ruleId>CONF:11471</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:AssociationValidation xmi:id="_AS5h8EHREeyzA5MgFxuJFA" severity="INFO" base_Association="_7I8lkkHQEeyzA5MgFxuJFA">
+    <ruleId>CONF:11472</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:PropertyValidation xmi:id="_AC9-IEMGEeyGfIUWLZt1XA" base_Property="_w9p_EDKiEeyOwtfRawW6Qw">
+    <ruleId>CONF:11582</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_Bva44EMGEeyGfIUWLZt1XA" base_Property="_w9pYADKiEeyOwtfRawW6Qw">
+    <ruleId>CONF:11580</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_LE9E4EMGEeyGfIUWLZt1XA" severity="INFO" base_Property="_apMSgEHMEeyzA5MgFxuJFA">
+    <ruleId>CONF:11599</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_MJz0IEMGEeyGfIUWLZt1XA" base_Property="_apLrcEHMEeyzA5MgFxuJFA">
+    <ruleId>CONF:11597</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_EA9EYEMLEeyGfIUWLZt1XA" base_Property="_yvkMQJslEeGzXI65shd6Fw"/>
+  <CDA:PropertyValidation xmi:id="_fRlHgEMMEeyGfIUWLZt1XA" severity="WARNING" base_Property="_apM5kEHMEeyzA5MgFxuJFA"/>
+  <CDA:ValueSetConstraint xmi:id="_f36HsEMMEeyGfIUWLZt1XA" base_Property="_apM5kEHMEeyzA5MgFxuJFA">
     <reference href="file:/C:/Users/JayLyle/eclipse-workspace/BackupPCR/model/emspcr-vocab.uml#_yFiocBodEeyPvO14mrApVQ"/>
   </CDA:ValueSetConstraint>
-  <CDA:PropertyValidation xmi:id="_NvX1gEHOEeyzA5MgFxuJFA" severity="WARNING" base_Property="_L4ny4DKyEeyOwtfRawW6Qw"/>
-  <CDA:Entry xmi:id="_EZtRMEHPEeyzA5MgFxuJFA" base_Association="_xAhzsTv0Eeys8b2-Q288fA"/>
-  <CDA:Entry xmi:id="_Zauz8EHPEeyzA5MgFxuJFA" base_Association="_Q0O4M0HPEeyzA5MgFxuJFA"/>
-  <CDA:Entry xmi:id="_q8id0EHPEeyzA5MgFxuJFA" base_Association="_i3Ic8kHPEeyzA5MgFxuJFA"/>
-  <CDA:Entry xmi:id="_yBwNAEHPEeyzA5MgFxuJFA" base_Association="_wS1NEkHPEeyzA5MgFxuJFA"/>
-  <CDA:AssociationValidation xmi:id="_ulRpoEHQEeyzA5MgFxuJFA" severity="INFO" base_Association="_WXqPEkHQEeyzA5MgFxuJFA"/>
-  <CDA:AssociationValidation xmi:id="_AS5h8EHREeyzA5MgFxuJFA" severity="INFO" base_Association="_7I8lkkHQEeyzA5MgFxuJFA"/>
-  <CDA:PropertyValidation xmi:id="_AC9-IEMGEeyGfIUWLZt1XA" base_Property="_w9p_EDKiEeyOwtfRawW6Qw"/>
-  <CDA:PropertyValidation xmi:id="_Bva44EMGEeyGfIUWLZt1XA" base_Property="_w9pYADKiEeyOwtfRawW6Qw"/>
-  <CDA:PropertyValidation xmi:id="_LE9E4EMGEeyGfIUWLZt1XA" base_Property="_apMSgEHMEeyzA5MgFxuJFA"/>
-  <CDA:PropertyValidation xmi:id="_MJz0IEMGEeyGfIUWLZt1XA" base_Property="_apLrcEHMEeyzA5MgFxuJFA"/>
 </xmi:XMI>
