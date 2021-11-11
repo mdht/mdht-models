@@ -28,7 +28,112 @@
               <entry>Grams</entry>
               <entry>Yes</entry>
               <entry>g</entry>
-              <entry/>
+              <entry> </entry>
+            </row>
+            <row>
+              <entry>emedications.06</entry>
+              <entry>3706055</entry>
+              <entry>Milligrams per Hour (mg/hr)</entry>
+              <entry>Yes</entry>
+              <entry>mg/h</entry>
+              <entry> </entry>
+            </row>
+            <row>
+              <entry>emedications.06</entry>
+              <entry>3706049</entry>
+              <entry>Units</entry>
+              <entry>Yes</entry>
+              <entry>{unit}</entry>
+              <entry> </entry>
+            </row>
+            <row>
+              <entry>emedications.06</entry>
+              <entry>3706051</entry>
+              <entry>Units per Kilogram per Hour (units/kg/hr)</entry>
+              <entry>Yes</entry>
+              <entry>/kg/h</entry>
+              <entry> </entry>
+            </row>
+            <row>
+              <entry>emedications.06</entry>
+              <entry>3706031</entry>
+              <entry>Centimeters (cm)</entry>
+              <entry>Yes</entry>
+              <entry>cm</entry>
+              <entry> </entry>
+            </row>
+            <row>
+              <entry>emedications.06</entry>
+              <entry>3706053</entry>
+              <entry>Units per Kilogram (units/kg)</entry>
+              <entry>Yes</entry>
+              <entry>{unit}/kg</entry>
+              <entry> </entry>
+            </row>
+            <row>
+              <entry>emedications.06</entry>
+              <entry>3706047</entry>
+              <entry>Micrograms per Kilogram (mcg/kg)</entry>
+              <entry>Yes</entry>
+              <entry>ug/kg</entry>
+              <entry> </entry>
+            </row>
+            <row>
+              <entry>emedications.06</entry>
+              <entry>3706045</entry>
+              <entry>Units per Hour (units/hr)</entry>
+              <entry>Yes</entry>
+              <entry>{unit}/h</entry>
+              <entry> </entry>
+            </row>
+            <row>
+              <entry>emedications.06</entry>
+              <entry>3706043</entry>
+              <entry>Puffs</entry>
+              <entry>Yes</entry>
+              <entry>1</entry>
+              <entry>substanceAdministration.administrationUnitCode = PUFF; codeSystem
+                =2.16.840.1.113883.1.11.14570</entry>
+            </row>
+            <row>
+              <entry>emedications.06</entry>
+              <entry>3706041</entry>
+              <entry>Milligrams per Minute (mg/min)</entry>
+              <entry>Yes</entry>
+              <entry>mg/min</entry>
+              <entry> </entry>
+            </row>
+            <row>
+              <entry>emedications.06</entry>
+              <entry>3706039</entry>
+              <entry>Milligrams per Kilogram (mg/kg)</entry>
+              <entry>Yes</entry>
+              <entry>mg/kg</entry>
+              <entry> </entry>
+            </row>
+            <row>
+              <entry>emedications.06</entry>
+              <entry>3706037</entry>
+              <entry>Micrograms per Minute (mcg/min)</entry>
+              <entry>Yes</entry>
+              <entry>ug/min</entry>
+              <entry> </entry>
+            </row>
+            <row>
+              <entry>emedications.06</entry>
+              <entry>3114017</entry>
+              <entry>Liters Per Minute (LPM [gas])</entry>
+              <entry>Yes</entry>
+              <entry>L/min</entry>
+              <entry> </entry>
+            </row>
+            <row>
+              <entry>emedications.06</entry>
+              <entry>3114005</entry>
+              <entry>Drops (gtts)</entry>
+              <entry>Yes</entry>
+              <entry>[drp]</entry>
+              <entry> </entry>
             </row>
             <row>
               <entry>emedications.06</entry>
@@ -36,7 +141,7 @@
               <entry>Inches</entry>
               <entry>Yes</entry>
               <entry>[in_i]</entry>
-              <entry/>
+              <entry> </entry>
             </row>
             <row>
               <entry>emedications.06</entry>
@@ -44,24 +149,16 @@
               <entry>International Units</entry>
               <entry>Yes</entry>
               <entry>[iU]</entry>
-              <entry/>
+              <entry> </entry>
             </row>
             <row>
               <entry>emedications.06</entry>
               <entry>3706007</entry>
               <entry>Keep Vein Open (To Keep Open)</entry>
               <entry>No</entry>
-              <entry/>
+              <entry> </entry>
               <entry>substanceAdministration.value.nullFlavor = QS (sufficient quantity); codeSystem
                 = 2.16.840.1.113883.5.1008</entry>
-            </row>
-            <row>
-              <entry>emedications.06</entry>
-              <entry>3706009</entry>
-              <entry>Liters</entry>
-              <entry>Yes</entry>
-              <entry>L</entry>
-              <entry/>
             </row>
             <row>
               <entry>emedications.06</entry>
@@ -69,7 +166,7 @@
               <entry>Liters Per Minute</entry>
               <entry>Yes</entry>
               <entry>L/min</entry>
-              <entry/>
+              <entry> </entry>
             </row>
             <row>
               <entry>emedications.06</entry>
@@ -78,7 +175,7 @@
               <entry>Yes</entry>
               <entry>1</entry>
               <entry>substanceAdministration.administrationUnitCode = PUFF; codeSystem
-                =2.16.840.1.113883.1.11.14570</entry>
+                =2.16.840.1.113883.1.11.14570; originalText="MDI Puffs"</entry>
             </row>
             <row>
               <entry>emedications.06</entry>
@@ -86,7 +183,7 @@
               <entry>Micrograms</entry>
               <entry>Yes</entry>
               <entry>ug</entry>
-              <entry/>
+              <entry> </entry>
             </row>
             <row>
               <entry>emedications.06</entry>
@@ -94,7 +191,7 @@
               <entry>Micrograms per Kilogram per Minute</entry>
               <entry>Yes</entry>
               <entry>ug/kg/min</entry>
-              <entry/>
+              <entry> </entry>
             </row>
             <row>
               <entry>emedications.06</entry>
@@ -102,7 +199,7 @@
               <entry>Milliequivalents</entry>
               <entry>Yes</entry>
               <entry>meq</entry>
-              <entry/>
+              <entry> </entry>
             </row>
             <row>
               <entry>emedications.06</entry>
@@ -110,7 +207,7 @@
               <entry>Milligrams</entry>
               <entry>Yes</entry>
               <entry>mg</entry>
-              <entry/>
+              <entry> </entry>
             </row>
             <row>
               <entry>emedications.06</entry>
@@ -118,7 +215,7 @@
               <entry>Milligrams Per Kilogram Per Minute</entry>
               <entry>Yes</entry>
               <entry>mg/kg/min</entry>
-              <entry/>
+              <entry> </entry>
             </row>
             <row>
               <entry>emedications.06</entry>
@@ -126,7 +223,7 @@
               <entry>Milliliters</entry>
               <entry>Yes</entry>
               <entry>mL</entry>
-              <entry/>
+              <entry> </entry>
             </row>
             <row>
               <entry>emedications.06</entry>
@@ -134,7 +231,7 @@
               <entry>Milliliters Per Hour</entry>
               <entry>Yes</entry>
               <entry>mL/h</entry>
-              <entry/>
+              <entry> </entry>
             </row>
             <row>
               <entry>emedications.06</entry>
@@ -151,7 +248,7 @@
               <entry>cm</entry>
               <entry>Yes</entry>
               <entry>cm</entry>
-              <entry/>
+              <entry> </entry>
             </row>
             <row>
               <entry>ehistory.14</entry>
@@ -159,7 +256,7 @@
               <entry>gms</entry>
               <entry>Yes</entry>
               <entry>g</entry>
-              <entry/>
+              <entry> </entry>
             </row>
             <row>
               <entry>ehistory.14</entry>
@@ -176,7 +273,7 @@
               <entry>inches</entry>
               <entry>Yes</entry>
               <entry>[in_i]</entry>
-              <entry/>
+              <entry> </entry>
             </row>
             <row>
               <entry>ehistory.14</entry>
@@ -184,14 +281,14 @@
               <entry>iu</entry>
               <entry>Yes</entry>
               <entry>[iU]</entry>
-              <entry/>
+              <entry> </entry>
             </row>
             <row>
               <entry>ehistory.14</entry>
               <entry>3114011</entry>
               <entry>kvo (keep vein open)</entry>
               <entry>No</entry>
-              <entry/>
+              <entry> </entry>
               <entry>substanceAdministration.value.nullFlavor = QS (sufficient quantity); codeSystem
                 = 2.16.840.1.113883.5.1008</entry>
             </row>
@@ -201,7 +298,7 @@
               <entry>l/min (fluid administration)</entry>
               <entry>Yes</entry>
               <entry>L/min</entry>
-              <entry/>
+              <entry> </entry>
             </row>
             <row>
               <entry>ehistory.14</entry>
@@ -209,7 +306,7 @@
               <entry>liters</entry>
               <entry>Yes</entry>
               <entry>L</entry>
-              <entry/>
+              <entry> </entry>
             </row>
             <row>
               <entry>ehistory.14</entry>
@@ -217,7 +314,7 @@
               <entry>LPM (gas administration)</entry>
               <entry>Yes</entry>
               <entry>L/min</entry>
-              <entry/>
+              <entry> </entry>
             </row>
             <row>
               <entry>ehistory.14</entry>
@@ -225,7 +322,7 @@
               <entry>mcg</entry>
               <entry>Yes</entry>
               <entry>ug</entry>
-              <entry/>
+              <entry> </entry>
             </row>
             <row>
               <entry>ehistory.14</entry>
@@ -233,7 +330,7 @@
               <entry>mcg/kg/min</entry>
               <entry>Yes</entry>
               <entry>ug/kg/min</entry>
-              <entry/>
+              <entry> </entry>
             </row>
             <row>
               <entry>ehistory.14</entry>
@@ -241,7 +338,7 @@
               <entry>mcg/min</entry>
               <entry>Yes</entry>
               <entry>ug/min</entry>
-              <entry/>
+              <entry> </entry>
             </row>
             <row>
               <entry>ehistory.14</entry>
@@ -249,7 +346,7 @@
               <entry>meq</entry>
               <entry>Yes</entry>
               <entry>meq</entry>
-              <entry/>
+              <entry> </entry>
             </row>
             <row>
               <entry>ehistory.14</entry>
@@ -266,7 +363,7 @@
               <entry>mg</entry>
               <entry>Yes</entry>
               <entry>mg</entry>
-              <entry/>
+              <entry> </entry>
             </row>
             <row>
               <entry>ehistory.14</entry>
@@ -274,7 +371,7 @@
               <entry>mg/kg</entry>
               <entry>Yes</entry>
               <entry>mg/kg</entry>
-              <entry/>
+              <entry> </entry>
             </row>
             <row>
               <entry>ehistory.14</entry>
@@ -282,7 +379,7 @@
               <entry>mg/kg/min</entry>
               <entry>Yes</entry>
               <entry>mg/kg/min</entry>
-              <entry/>
+              <entry> </entry>
             </row>
             <row>
               <entry>ehistory.14</entry>
@@ -290,7 +387,7 @@
               <entry>mg/min</entry>
               <entry>Yes</entry>
               <entry>mg/min</entry>
-              <entry/>
+              <entry> </entry>
             </row>
             <row>
               <entry>ehistory.14</entry>
@@ -298,7 +395,7 @@
               <entry>ml</entry>
               <entry>Yes</entry>
               <entry>mL</entry>
-              <entry/>
+              <entry> </entry>
             </row>
             <row>
               <entry>ehistory.14</entry>
@@ -306,7 +403,7 @@
               <entry>ml/hr</entry>
               <entry>Yes</entry>
               <entry>mL/h</entry>
-              <entry/>
+              <entry> </entry>
             </row>
             <row>
               <entry>ehistory.14</entry>
@@ -332,7 +429,7 @@
               <entry>units/hr</entry>
               <entry>Yes</entry>
               <entry>1/h</entry>
-              <entry/>
+              <entry> </entry>
             </row>
             <row>
               <entry>epatient.16</entry>
@@ -340,7 +437,7 @@
               <entry>Days</entry>
               <entry>Yes</entry>
               <entry>d</entry>
-              <entry/>
+              <entry> </entry>
             </row>
             <row>
               <entry>epatient.16</entry>
@@ -348,7 +445,7 @@
               <entry>Hours</entry>
               <entry>Yes</entry>
               <entry>h</entry>
-              <entry/>
+              <entry> </entry>
             </row>
             <row>
               <entry>epatient.16</entry>
@@ -356,7 +453,7 @@
               <entry>Minutes</entry>
               <entry>Yes</entry>
               <entry>min</entry>
-              <entry/>
+              <entry> </entry>
             </row>
             <row>
               <entry>epatient.16</entry>
@@ -364,7 +461,7 @@
               <entry>Months</entry>
               <entry>Yes</entry>
               <entry>mo</entry>
-              <entry/>
+              <entry> </entry>
             </row>
             <row>
               <entry>epatient.16</entry>
@@ -372,7 +469,7 @@
               <entry>Years</entry>
               <entry>Yes</entry>
               <entry>a</entry>
-              <entry/>
+              <entry> </entry>
             </row>
             <row>
               <entry>esituation.06</entry>
@@ -380,7 +477,7 @@
               <entry>Seconds</entry>
               <entry>Yes</entry>
               <entry>s</entry>
-              <entry/>
+              <entry> </entry>
             </row>
             <row>
               <entry>esituation.06</entry>
@@ -388,7 +485,7 @@
               <entry>Minutes</entry>
               <entry>Yes</entry>
               <entry>min</entry>
-              <entry/>
+              <entry> </entry>
             </row>
             <row>
               <entry>esituation.06</entry>
@@ -396,7 +493,7 @@
               <entry>Hours</entry>
               <entry>Yes</entry>
               <entry>h</entry>
-              <entry/>
+              <entry> </entry>
             </row>
             <row>
               <entry>esituation.06</entry>
@@ -404,7 +501,7 @@
               <entry>Days</entry>
               <entry>Yes</entry>
               <entry>d</entry>
-              <entry/>
+              <entry> </entry>
             </row>
             <row>
               <entry>esituation.06</entry>
@@ -412,7 +509,7 @@
               <entry>Weeks</entry>
               <entry>Yes</entry>
               <entry>wk</entry>
-              <entry/>
+              <entry> </entry>
             </row>
             <row>
               <entry>esituation.06</entry>
@@ -420,7 +517,7 @@
               <entry>Months</entry>
               <entry>Yes</entry>
               <entry>mo</entry>
-              <entry/>
+              <entry> </entry>
             </row>
             <row>
               <entry>esituation.06</entry>
@@ -428,7 +525,7 @@
               <entry>Years</entry>
               <entry>Yes</entry>
               <entry>a</entry>
-              <entry/>
+              <entry> </entry>
             </row>
           </tbody>
         </tgroup>

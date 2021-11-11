@@ -303,7 +303,9 @@ selected for the NEMSIS question. Further, the CDA model includes a single race 
             </ownedAttribute>
             <ownedAttribute xmi:id="_ppT5kHtAEeGs2I-Db78R9w" name="administrativeGenderCode" visibility="private" aggregation="composite">
               <ownedComment xmi:id="_ut-GQHtAEeGs2I-Db78R9w">
-                <body>NEMSIS Trace: EPatient.13</body>
+                <body>NEMSIS Trace: EPatient.13&#xD;
+&#xD;
+See terminology map in Appendix.</body>
               </ownedComment>
               <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
               <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rVDpsXtAEeGs2I-Db78R9w" value="1"/>
