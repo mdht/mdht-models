@@ -14,7 +14,7 @@
 <p>A report from the EMS crew to the emergency department summarizing the patient's condition and any remedial actions taken</p>
 </section>
 <ol id="conformance">
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>templateId</b></tt> such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>@root</b>="2.16.840.1.113883.17.3.10.2"</tt></li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>templateId</b></tt> ( CONF:11388 ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>@root</b>="2.16.840.1.113883.17.3.10.2"</tt></li></ol></li>
 <li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/GeneralHeaderConstraints.html">Consol General Header Constraints</xref> template (templateId: <tt>2.16.840.1.113883.10.20.22.1.1</tt>)</li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="DOCCLIN" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:10000)
 </li>
@@ -28,10 +28,10 @@
 <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:5253)<tt><b>/@code</b>="67796-3" </tt><i>EMS patient care report - version 3.1 Document NEMSIS</i> (CodeSystem:<tt> </tt>) (CONF:10002)
 </li>
 <li>
-<b>SHALL</b> contain exactly one [1..1] <tt><b>title</b>="EMS Patient Care Report" </tt> which <b>SHALL</b> equal "EMS Patient Care Report"
+<b>SHALL</b> contain exactly one [1..1] <tt><b>title</b>="EMS Patient Care Report" </tt> which <b>SHALL</b> equal "EMS Patient Care Report" (CONF:11389)
 </li>
 <li>
-<b>SHALL</b> contain exactly one [1..1] <tt><b>confidentialityCode</b>="N" </tt><tt><b>/@code</b>="N" </tt> (CodeSystem:<tt> </tt>)<p>Default value is "N" (normal)</p>
+<b>SHALL</b> contain exactly one [1..1] <tt><b>confidentialityCode</b>="N" </tt><tt><b>/@code</b>="N" </tt> (CodeSystem:<tt> </tt>) (CONF:11390)<p>Default value is "N" (normal)</p>
 </li>
 <li>
 <b>MAY</b> contain zero or one [0..1] <tt><b>versionNumber</b></tt> (CONF:5264)<p>May be null, and in most cases will not be used. In circumstances where updates are likely,  the first instance should be denoted by a versionId of "1."</p>
@@ -202,11 +202,11 @@ DPersonnel.03 Middle: @ENXP="GIV"</i></lines></p></li></ol></li></ol></li></ol><
 /@root should be the OID for the Agency; @extension the internally assigned ID</p></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:5253)<tt><b>/@code</b>="67796-3" </tt><i>EMS patient care report - version 3.1 Document NEMSIS</i> (CodeSystem:<tt> </tt>) (CONF:10002)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b>="EMS Patient Care Report" </tt> which <b>SHALL</b> equal "EMS Patient Care Report"
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b>="EMS Patient Care Report" </tt> which <b>SHALL</b> equal "EMS Patient Care Report" (CONF:11389)
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt> (CONF:5256, R2.1=CONF:1198-5256) <p><lines><i>Signifies the document creation time, when the document first came into being. Where the CDA document is a transform from an original document in some other format, the ClinicalDocument.effectiveTime is the time the original document is created. The time when the transform occurred is not currently represented in CDA</i></lines></p>
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>confidentialityCode</b>="N" </tt><tt><b>/@code</b>="N" </tt> (CodeSystem:<tt> </tt>)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>confidentialityCode</b>="N" </tt><tt><b>/@code</b>="N" </tt> (CodeSystem:<tt> </tt>) (CONF:11390)
 <p>Default value is "N" (normal)</p></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>languageCode</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> Language 2.16.840.1.113883.1.11.11526</tt><b> DYNAMIC</b> (CONF:5372, R2.1=CONF:1198-5372, DSTU:806)
 </li>

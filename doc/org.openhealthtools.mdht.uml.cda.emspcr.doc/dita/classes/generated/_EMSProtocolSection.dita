@@ -14,7 +14,7 @@
 <p>Information about the protocol used by EMS personnel to direct the clinical care of the patient</p>
 </section>
 <ol id="conformance">
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>templateId</b></tt> such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>@root</b>="2.16.840.1.113883.17.3.10.1.7"</tt></li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>templateId</b></tt> ( CONF:11414 ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>@root</b>="2.16.840.1.113883.17.3.10.1.7"</tt></li></ol></li>
 <li>
 <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="67663-5" </tt><i>EMS protocol Narrative NEMSIS</i> (CodeSystem:<tt> </tt>) (CONF:10713)
 </li>

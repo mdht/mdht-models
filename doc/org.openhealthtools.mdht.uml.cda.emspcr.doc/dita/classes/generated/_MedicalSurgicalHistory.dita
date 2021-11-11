@@ -14,16 +14,16 @@
 <p>Medical conditions the patient has or has had</p>
 </section>
 <ol id="conformance">
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>templateId</b></tt> such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>@root</b>="2.16.840.1.1133883.17.3.10.1.61"</tt></li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>templateId</b></tt> ( CONF:11453 ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>@root</b>="2.16.840.1.1133883.17.3.10.1.61"</tt></li></ol></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:11168)
 </li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>@negationInd</b></tt>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>@negationInd</b></tt> (CONF:11455)
 <p>For a categorical "none reported," use the Existence Of History Of Condition or Surgery. For pertinent negatives for specfic conditions, use this negation indicator with the relevant value.</p></li>
 <li>
 <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10070)<tt><b>/@code</b>="68487-8" </tt><i>Medical - surgical history - ICD-9 and 10 codes</i> (CodeSystem:<tt> </tt>) (CONF:10069)
 </li>
 <li>
-<b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with <tt><b>@xsi:type</b>="CD"</tt> (CONF:10072), which <b>SHALL</b> be selected from ValueSet<tt> </tt><b> STATIC</b><p>NEMSIS Trace: EHistory. 08
+<b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with <tt><b>@xsi:type</b>="CD"</tt> (CONF:10072), which <b>SHALL</b> be selected from ValueSet<tt> ICD-10 CM & PCS 2.16.840.1.113883.17.3.11.121</tt><b> STATIC</b> (CONF:11454)<p>NEMSIS Trace: EHistory. 08
 If NEMSIS EHistory.08 is "No bleeding disorder," the value should be the appropriate
 ICD-10 code (D66, D67, D68) and negationIndicator should be TRUE.</p>
 </li>
@@ -33,11 +33,11 @@ ICD-10 code (D66, D67, D68) and negationIndicator should be TRUE.</p>
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:11168)
 </li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>@negationInd</b></tt>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>@negationInd</b></tt> (CONF:11455)
 <p>For a categorical "none reported," use the Existence Of History Of Condition or Surgery. For pertinent negatives for specfic conditions, use this negation indicator with the relevant value.</p></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10070)<tt><b>/@code</b>="68487-8" </tt><i>Medical - surgical history - ICD-9 and 10 codes</i> (CodeSystem:<tt> </tt>) (CONF:10069)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with <tt><b>@xsi:type</b>="CD"</tt> (CONF:10072), which <b>SHALL</b> be selected from ValueSet<tt> </tt><b> STATIC</b>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with <tt><b>@xsi:type</b>="CD"</tt> (CONF:10072), which <b>SHALL</b> be selected from ValueSet<tt> ICD-10 CM & PCS 2.16.840.1.113883.17.3.11.121</tt><b> STATIC</b> (CONF:11454)
 <p>NEMSIS Trace: EHistory. 08
 If NEMSIS EHistory.08 is "No bleeding disorder," the value should be the appropriate
 ICD-10 code (D66, D67, D68) and negationIndicator should be TRUE.</p></li>

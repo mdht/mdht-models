@@ -14,7 +14,7 @@
 <p>A medication a patient is currently taking</p>
 </section>
 <ol id="conformance">
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>templateId</b></tt> such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>@root</b>="2.16.840.1.1133883.17.3.10.1.77"</tt></li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>templateId</b></tt> ( CONF:11469 ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>@root</b>="2.16.840.1.1133883.17.3.10.1.77"</tt></li></ol></li>
 <li><b>MAY</b> contain zero or one [0..1] <tt><b>@negationInd</b></tt> (CONF:10233)
 <p>If EHistory.12 has the value "None Reported," the value is "True"
 This negation of a notional class is parallel to the explicit question "patient on medication"</p></li>

@@ -14,7 +14,7 @@
 <p>Information regarding adverse events affecting EMS personnel</p>
 </section>
 <ol id="conformance">
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>templateId</b></tt> such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>@root</b>="2.16.840.1.113883.17.3.10.1.6"</tt></li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>templateId</b></tt> ( CONF:11413 ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>@root</b>="2.16.840.1.113883.17.3.10.1.6"</tt></li></ol></li>
 <li>
 <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10698)<tt><b>/@code</b>="67658-5" </tt><i>EMS exposures or injuries of EMS personnel Provider Narrative NEMSIS</i> (CodeSystem:<tt> </tt>) (CONF:10697)
 </li>

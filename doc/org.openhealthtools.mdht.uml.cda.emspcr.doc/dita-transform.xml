@@ -7,7 +7,7 @@
 	<property name="modelPath.uml" value = "${modelProject}/model/${modelName}.uml" />
 	<property name="vocabPath.uml" value = "${modelProject}/model/${modelName}-vocab.uml" />
 	
-	<property name="baseURL" value = "http://www.cdatools.org/infocenter" />
+	<property name="baseURL" value = "http://www.hl7.org/ccdasearch/templates" />
 	
 	<property name="ditaFilePath" value = "${basedir}/dita" />
 	

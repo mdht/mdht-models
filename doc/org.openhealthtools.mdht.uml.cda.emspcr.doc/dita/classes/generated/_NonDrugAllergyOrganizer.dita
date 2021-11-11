@@ -14,7 +14,7 @@
 <p>Information regarding patient allergies and sensitivities to materials other than drugs</p>
 </section>
 <ol id="conformance">
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>templateId</b></tt> such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>@root</b>="2.16.840.1.1133883.17.3.10.1.49"</tt></li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>templateId</b></tt> ( CONF:11441 ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>@root</b>="2.16.840.1.1133883.17.3.10.1.49"</tt></li></ol></li>
 <li>
 <b>SHALL</b> contain  [1..1] <tt><b>component</b></tt> such that it  (CONF:10212)<ol>
 <li>Conforms to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ExistenceOfNonDrugAllergy.html">Existence Of Non Drug Allergy</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.103</tt>)</li></ol>

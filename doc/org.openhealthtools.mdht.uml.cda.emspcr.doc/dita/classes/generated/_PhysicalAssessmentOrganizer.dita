@@ -14,7 +14,7 @@
 <p>A collection of qualitative assessments of the patient's physical condition</p>
 </section>
 <ol id="conformance">
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>templateId</b></tt> such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>@root</b>="2.16.840.1.1133883.17.3.10.1.78"</tt></li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>templateId</b></tt> ( CONF:11470 ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>@root</b>="2.16.840.1.1133883.17.3.10.1.78"</tt></li></ol></li>
 <li>
 <b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> such that it  (CONF:11103) <ol><li>contains zero or more [0..*] <tt><b>observation</b></tt>, where its type is <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/SkinAssessment.html">Skin Assessment</xref></li></ol> 
 </li>
@@ -52,11 +52,11 @@
 <b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> such that it  (CONF:11125) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/MentalStatusAssessment.html">Mental Status Assessment</xref> (CONF:11124)</li></ol> 
 </li>
 <li>
-<b>MAY</b> contain  [0..*] <tt><b>component</b></tt> such that it <ol>
+<b>MAY</b> contain  [0..*] <tt><b>component</b></tt> such that it  (CONF:11471)<ol>
 <li>Conforms to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/LungAssessment.html">Lung Assessment</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.194</tt>)</li></ol>
 </li>
 <li>
-<b>MAY</b> contain  [0..*] <tt><b>component</b></tt> such that it <ol>
+<b>MAY</b> contain  [0..*] <tt><b>component</b></tt> such that it  (CONF:11472)<ol>
 <li>Conforms to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ChestAssessment.html">Chest Assessment</xref></li></ol>
 </li>
 </ol>
@@ -91,10 +91,10 @@
 </li>
 <li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> such that it  (CONF:11125) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/MentalStatusAssessment.html">Mental Status Assessment</xref> (CONF:11124)</li></ol> 
 </li>
-<li><b>MAY</b> contain  [0..*] <tt><b>component</b></tt> such that it 
+<li><b>MAY</b> contain  [0..*] <tt><b>component</b></tt> such that it  (CONF:11471)
 <ol>
 <li>Conforms to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/LungAssessment.html">Lung Assessment</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.194</tt>)</li></ol></li>
-<li><b>MAY</b> contain  [0..*] <tt><b>component</b></tt> such that it 
+<li><b>MAY</b> contain  [0..*] <tt><b>component</b></tt> such that it  (CONF:11472)
 <ol>
 <li>Conforms to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ChestAssessment.html">Chest Assessment</xref></li></ol></li>
 </ol>

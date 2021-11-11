@@ -16,7 +16,7 @@ For any observation within the organizer, if the NEMSIS value is "Refused," the 
 Note that NEMSIS collects times at the vitals cluster level, whereas systems may record them at the observation level. No preference is indicated regarding how close individual observation timestamps must be to allow their inclusion in a cluster or how the cluster effectiveTime is determined. effectiveTime is modeled on the observations to support unanticipated uses and to conform more closely to the Consolidated CDA pattern, though the exclusion of the id property makes it impossible to assert compliance to the Consolidated template in this guide (though it remains possible to do so in an implementation).</p>
 </section>
 <ol id="conformance">
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>templateId</b></tt> such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>@root</b>="2.16.840.1.1133883.17.3.10.1.28"</tt></li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>templateId</b></tt> ( CONF:11421 ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>@root</b>="2.16.840.1.1133883.17.3.10.1.28"</tt></li></ol></li>
 <li>
 <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:11338)<tt><b>/@code</b>="46680005" </tt><i>Vital signs</i> (CodeSystem:<tt> </tt>) (CONF:11337)<p>May also use LOINC 74728-7 "Vital signs, weight, height, head circumference, oximetry, BMI, and BSA panel - HL7.CCDAr1.1"</p>
 </li>

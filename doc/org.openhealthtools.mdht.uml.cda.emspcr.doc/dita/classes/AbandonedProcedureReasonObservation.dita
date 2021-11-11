@@ -22,7 +22,11 @@
 <p audience="examples"><b>Abandoned Procedure Reason Observation example</b></p>
 <!-- TODO: insert custom instance example here -->
 <!-- generated instance example follows -->
-<codeblock audience="examples" conref="generated/_AbandonedProcedureReasonObservation.dita#classId/example">
-</codeblock>
+<codeblock id="example" outputclass="language-xml"><![CDATA[<observation classCode="SPCOBS" moodCode="EVN">
+  <templateId root="2.16.840.1.1133883.17.3.10.1.130"/>
+  <code code="ASSERTION" displayName="Assertion"/>
+  <value xsi:type="CD"/>
+</observation>
+]]></codeblock>
 </body>
 </topic>
