@@ -1710,11 +1710,12 @@
       <ownedLiteral xmi:id="_wMh0YDKzEeyOwtfRawW6Qw" name="newLA4230003"/>
       <ownedLiteral xmi:id="_yZmv8DKzEeyOwtfRawW6Qw" name="newLA4230001"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_vk1ScDX5EeyDmf_o8i-KfQ" name="ICD-10 CM &amp; PCS">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_vk1ScDX5EeyDmf_o8i-KfQ" name="ICD-10 CM AND PCS">
       <ownedComment xmi:id="_FQeDADX7EeyDmf_o8i-KfQ">
         <body>ICD-10-CM diagnosis and ICD-10-PCS procedure values, for use in medical/surgical history.</body>
       </ownedComment>
     </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_kpXWQEVWEey3rIXjdfUhUg" name="NEMSIS"/>
     <profileApplication xmi:id="_xpzscWeQEeGtXKebdWh3hg">
       <eAnnotations xmi:id="_xp0TgGeQEeGtXKebdWh3hg" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.openhealthtools.org/mdht/schemas/term/1#/"/>
@@ -3366,4 +3367,5 @@
   <term:ValueSetCode xmi:id="_wMh0YTKzEeyOwtfRawW6Qw" conceptName="Transport by This EMS Unit, with a Member of Another Crew" base_EnumerationLiteral="_wMh0YDKzEeyOwtfRawW6Qw"/>
   <term:ValueSetCode xmi:id="_yZnXADKzEeyOwtfRawW6Qw" conceptName="Transport by This EMS Unit (This Crew Only)" base_EnumerationLiteral="_yZmv8DKzEeyOwtfRawW6Qw"/>
   <term:ValueSetVersion xmi:id="_vk5j4DX5EeyDmf_o8i-KfQ" identifier="2.16.840.1.113883.17.3.11.121" base_Enumeration="_vk1ScDX5EeyDmf_o8i-KfQ"/>
+  <term:CodeSystemVersion xmi:id="_kpZLcEVWEey3rIXjdfUhUg" base_Enumeration="_kpXWQEVWEey3rIXjdfUhUg"/>
 </xmi:XMI>
