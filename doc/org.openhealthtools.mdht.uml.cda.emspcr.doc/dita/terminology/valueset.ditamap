@@ -86,7 +86,6 @@
 <topicref href="MedicationAdministrationRoute.dita" type="topic" />
 <topicref href="MedicationAdministrationSite.dita" type="topic" />
 <topicref href="MedicationAuthorizationType.dita" type="topic" />
-<topicref href="MedicationClinicalDrugNameValueSet.dita" type="topic" />
 <topicref href="MedicationComplication.dita" type="topic" />
 <topicref href="MedicationNotGivenReason.dita" type="topic" />
 <topicref href="MentalStatusFinding.dita" type="topic" />
