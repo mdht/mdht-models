@@ -4,40 +4,21 @@
 <topic id="topicId" xml:lang="en-us">
 	<title>Approach</title>
 	<body>
-		<p>We first transformed the NEMSIS specification into the Emergency Medical Services Domain 
-		Analysis Model (EMS DAM), 
-		initially balloted through HL7 in May of 2010 and finalized for the release in May 2011. 
-		The static part of the analysis model was then constrained to the HL7 Reference Information Model (RIM) 
-		in a Domain Information Model (DIM), balloted in January, 2011, and reballoted 
-		in September, 2011. After a DSTU period, this guide was balloted to Normative status in the
-		autumn of 2013.</p>
-		<p>This guide is the first implementable specification developed based on the EMS DIM.</p>
-		<p>An initial iteration, balloted in May 2011, supports what is commonly termed “level one” 
-		CDA compliance, i.e., a document with structured header information containing an 
-		unstructured document of some form (whether pdf, image, or other recognized format). In  
-		addition, this iteration supported “level two” compliance, in which human-readable text 
-		information is provided for sections identified in XML. A sender of a document, however, 
-		must choose whether to send the “level one” encapsulated document or the “level two” set 
-		of XML sections: a document containing both is not acceptable.</p>
-		<p>The September, 2011 iteration modeled the sections to “level three,” in which the 
-		sections also include detailed, structured information representing the section text. 
-		This structured information follows standard patterns in such a way that receiving 
-		applications will be able to process specific semantically identified elements for storage 
-		in medical records, application of business rules, or other computable services. This 
-		iteration also includes changes to the level two template assignments, so the
-		May 2011 informative version is no longer valid.</p>
-		<p>Harmonization has been approached semantically rather than syntactically. There are clear
-			parallels, but few exact matches, with the CDA Consolidation project--an effort by the
-			Office of the National Coordinator's Standards &amp; Interoperability initiative in
-			collaboration with HL7 to bring together several similar extant CDA specifications. We
-			expect that LOINC codes will offer the ability to identify consistent information
-			elements, even when the structures they inhabit (templates) may be subject to differing
-			requirements. These requirements include elements required in the Consolidated guide but 
-			not always available in an EMS setting, elements needed in an EMS setting but not 
-			represented in the Consolidated templates, and elements where a code is specific to a
-			clinical setting and an EMS-specific code is needed. Similarly, harmonization with the 
-			Emergency Department specification<i>Data Elements for Emergency Department Systems</i>
-			(DEEDS) depends on the use of extant or related LOINC codes for shared elements. </p>
+		<p>We first transformed the NEMSIS specification into the Emergency Medical Services Domain
+			Analysis Model (EMS DAM), initially balloted through HL7 in May of 2010 and finalized
+			for the release in May 2011. The static part of the analysis model was then constrained
+			to the HL7 Reference Information Model (RIM) in a Domain Information Model (DIM),
+			balloted in January 2011, and reballoted in September 2011. After a DSTU period, this
+			guide was balloted to Normative status in the autumn of 2013. This "level one"
+			(attachment only, no structured data in body) was superseded by a "level three"
+			(structured clinical statements) guide in 2016. In the last five years, NEMSIS has
+			collected feedback from implementers and providers and revised their specification; the
+			current guide brings the CDA specification up to date with the NEMSIS 3.5 data set.</p>
+		<p>The guide aligns with the Consilidated CDA work by leveraging the Consolidated header.
+			Consolidated constraints on the header are inherited but not repeated in this guide.
+			Standard codes provided by LOINC can identify other alignments, both with the
+			Consolidated project and with Emergency Department specification <i>Data Elements for
+				Emergency Department Systems</i> (DEEDS). </p>
 		<p>This release is generated from UML models developed in the Open Health Tools (OHT)
 			Model-Driven Health Tools (MDHT) project. The data specifications have been formalized
 			into computational models expressed in UML. These models are used by automated tooling

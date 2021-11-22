@@ -35,15 +35,17 @@
             </row>
             <row>
               <entry> Unable to Complete </entry>
-              <entry> null </entry>
+              <entry> neg</entry>
               <entry> medication </entry>
-              <entry> SBADM.value = null (NI); SBADM.text = "unable to complete" </entry>
+              <entry>Negate specific medication; put "unable to complete" value in Medication Not
+                Administered Reason Observation </entry>
             </row>
             <row>
               <entry> Unable to Complete </entry>
-              <entry> null </entry>
+              <entry> neg </entry>
               <entry> procedure </entry>
-              <entry> PROC.value = null (NI); PROC.text = "unable to complete" </entry>
+              <entry>Negate specific procedure; put "Physically unable to perform" value in
+                Abandoned Procedure Reason Observation</entry>
             </row>
             <row>
               <entry> Refused </entry>
@@ -79,22 +81,15 @@
             </row>
             <row>
               <entry> No known drug allergies </entry>
-              <entry> none </entry>
+              <entry> neg </entry>
               <entry> observation: negation value </entry>
               <entry> Use Boolean observation ExistenceOfDrugAllergy </entry>
             </row>
             <row>
               <entry> None reported </entry>
-              <entry> none </entry>
+              <entry> neg </entry>
               <entry> observation: alcohol </entry>
               <entry> Use Boolean observation ExistenceOfDrugUseIndication </entry>
-            </row>
-            <row>
-              <entry> No anticoagulants or bleeding disorder </entry>
-              <entry> none </entry>
-              <entry> medication </entry>
-              <entry> Use Boolean observation PatientOnAnticoagulants; negate HistoryOfCondition
-                observation for D66, D67, D68 </entry>
             </row>
             <row>
               <entry> Contraindication noted </entry>

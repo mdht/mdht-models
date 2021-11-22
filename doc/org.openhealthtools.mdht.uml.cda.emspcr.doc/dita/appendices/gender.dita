@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN"
+ "topic.dtd">
+<topic id="gender" xml:lang="en-us">		
+		<title>Gender</title>
+		<body>
+			<p>NEMSIS gender codes can be represented as follows.</p>
+			<table>
+				<tgroup cols="6">
+					<thead>
+						<row>
+							<entry>NEMSIS code</entry>
+							<entry>NEMSIS term</entry>
+							<entry>CDA code</entry>
+							<entry>CDA Term</entry>
+							<entry>CDA System</entry>
+							<entry>Other Parameters</entry>
+						</row>
+					</thead>
+					<tbody>
+						<row>
+							<entry>
+								9906001 
+							</entry>
+							<entry>Female</entry>
+							<entry>F</entry>
+							<entry>Female</entry>
+							<entry>2.16.840.1.113883.5.1</entry>
+							<entry></entry>
+						</row>
+						<row>
+							<entry>9906003 </entry>
+							<entry>Male</entry>
+							<entry>M</entry>
+							<entry>Male</entry>
+							<entry>2.16.840.1.113883.5.1</entry>
+							<entry></entry>
+						</row>
+						<row>
+							<entry>
+								9906007 
+							</entry>
+							<entry>
+								Female-to-Male, Transgender Male
+							</entry>
+							<entry>M</entry>
+							<entry>Male</entry>
+							<entry>2.16.840.1.113883.5.1</entry>
+							<entry>&lt;translation code ="9906007" displayName="Female-to-Male, Transgender
+								Male" codeSystem="2.16.840.1.1133883.17.3.12"> </entry>
+						</row>
+						<row>
+							<entry>
+								9906009 
+							</entry>
+							<entry>
+								Male-to-Female, Transgender Female
+							</entry>
+							<entry>F</entry>
+							<entry>Female</entry>
+							<entry>2.16.840.1.113883.5.1</entry>
+							<entry>&lt;translation code ="9906007" displayName="Male-to-Female, Transgender
+								Female" codeSystem="2.16.840.1.1133883.17.3.12"></entry>
+						</row>
+						<row>
+							<entry>
+								9906011 
+							</entry>
+							<entry>
+								Other, neither exclusively male or female
+							</entry>
+							<entry></entry>
+							<entry></entry>
+							<entry></entry>
+							<entry>NullFlavor="OTH"</entry>
+						</row>
+						<row>
+							<entry>9906005 </entry>
+							<entry>Unknown (Unable to Determine)</entry>
+							<entry></entry>
+							<entry></entry>
+							<entry></entry>
+							<entry>NullFlavor="UNK"</entry>
+						</row>
+					</tbody>
+				</tgroup>
+			</table>
+		</body>
+	</topic>
+	

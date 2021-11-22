@@ -6,11 +6,10 @@
 	<body>
 		<p>
 			The requirements as laid out in the body of this document are subject
-			to change per the policy on implementation guides (see section 13.02"
-			Draft Standard for Trial Use Documents" within the HL7 Governance and
+			to change per the policy on implementation guides (see the HL7 Governance and
 			Operations Manual,
 			<xref format="pdf"
-				href="http://www.hl7.org/documentcenter/public/membership/HL7_Governance_and_Operations_Manual.pdf">http://www.hl7.org/documentcenter/public/membership/HL7_Governance_and_Operations_Manual.pdf
+				href="http://www.hl7.org/documentcenter/public/membership/HL7_Governance_and_Operations_Manual.pdf" scope="external">http://www.hl7.org/documentcenter/public/membership/HL7_Governance_and_Operations_Manual.pdf
 			</xref>
 			).
 		</p>
@@ -28,22 +27,17 @@
 	<topic id="vocabulary">
 		<title>Vocabulary and Value Sets</title>
 		<body>
-			<p>Vocabularies specified in this guide are derived from standard
-				vocabularies where possible; most questions, however, are fairly
-				specific to the EMS domain. These questions have been encoded in
-				clinical LOINC, and the answer sets have been encoded there as
-				well, and they are included in this document. These values can 
-				also be obtained from LOINC.org. We anticipate publishing these 
-				value sets in a standard provisioning system, but are on hold 
-				pending the current work being done to align LOINC and SNOMED CT. </p>
+			<p>Vocabularies specified in this guide are derived from standard vocabularies where possible;
+				most questions, however, are fairly specific to the EMS domain. These questions have
+				been encoded in clinical LOINC, and the answer sets have been encoded there as well,
+				and they are included in this document. These values can also be obtained from <xref
+					href="http://loinc.org" format="html" scope="external">LOINC.org</xref>. </p>
 				
-			<p>For properties bound to large value systems (e.g., 
-				ICD-10 PCS), NEMSIS provides suggested subsets at NEMSIS.org, 
-				under "V3 resources." These are not to be used to validate values 
-				(all values in the system are valid), but as suggested aids to
-				providing a manageable user interface. All RxNorm drugs are valid,
-				for instance, but you might wish to provide a selection of drugs
-				commonly found on EMS vehicles for easy selection.</p>
+			<p>For properties bound to large value systems (e.g., ICD-10 PCS), NEMSIS provides suggested
+				subsets at NEMSIS.org. These are not to be used to validate values (all values in
+				the system are valid), but as suggested aids to providing a manageable user
+				interface. All RxNorm drugs are valid, for instance, but you might wish to provide a
+				selection of drugs commonly found on EMS vehicles for easy selection.</p>
 			
 		</body>
 	</topic>

@@ -4,24 +4,17 @@
 <topic id="topicId" xml:lang="en-us">
 	<title>SAMPLE</title>
 	<body>
-		<p>
-In this example, the agency is represented with the root OID "2.16.840.1.113883.19.1." This OID represents a node (".1") under the HL7 Example domain ("2.16.840.1.113883.19"). This hypothetical organization has assigned identifiers under six nodes: 
-
-1. documents
-2. patients
-3. events
-4. document artifacts (sections, organizers, statements)
-5. facilities
-6. devices (including the software that generated the report)
-
-These OIDs are used in the Instance Identifier data type in the "root" attribute.
-
-Providers are identified using a National Provider Identifier (root = "2.16.840.1.113883.4.6"), but the NPI has no 
-
-"example" namespace for fictitious providers. Actual NPI identifiers are numbers; we have used strings that do not fit the NPI pattern to avoid inadvertently identifying an actual provider.
-
-This example report does not demonstrate every statement specified in the guide, but it does cover every pattern required to construct a valid document.
-		</p>
+		<p> In this example, the agency is represented with the root OID "2.16.840.1.113883.19.1." This
+      OID represents a node (".1") under the HL7 Example domain ("2.16.840.1.113883.19"). This
+      hypothetical organization has assigned identifiers under six nodes: 1 for documents, 2 for
+      patients, 3 for events, 4 for document artifacts (sections, organizers, statements), 5 for
+      facilities, and 6 for devices (including the software that generated the report). These OIDs
+      are used in the Instance Identifier data type in the "root" attribute. Providers are
+      identified using a National Provider Identifier (root = "2.16.840.1.113883.4.6"), but the NPI
+      has no "example" namespace for fictitious providers. Actual NPI identifiers are numbers; we
+      have used strings that do not fit the NPI pattern to avoid inadvertently identifying an actual
+      provider. This example report does not demonstrate every statement specified in the guide, but
+      it does cover every pattern required to construct a valid document. </p>
 		
 		<p>
 <codeblock id="example" scale="50" frame="none" expanse="spread"><![CDATA[
@@ -38,7 +31,7 @@ This example report does not demonstrate every statement specified in the guide,
   <realmCode code="US"/>
   <typeId extension="POCD_HD000040" root="2.16.840.1.113883.1.3"/>
   <templateId root="2.16.840.1.113883.17.3.10.2"/>                     <!-- The EMS PCR specification template identifier -->
-  <templateId root="2.16.840.1.113883.10.20.22.1.1"/>                  <!-- We inherit constratints from the Consolidated General Header -->
+  <templateId root="2.16.840.1.113883.10.20.22.1.1"/>                  <!-- We inherit constraints from the Consolidated General Header -->
   <id root="2.16.840.1.113883.19.1" extension="2086823449"/>           <!-- See notes for OID descriptions.  2.16.840.1.113883.19 is the example domain. -->
   <code code="67796-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="EMS Patient Care Report"/>
   <title>EMS Patient Care Report</title>
