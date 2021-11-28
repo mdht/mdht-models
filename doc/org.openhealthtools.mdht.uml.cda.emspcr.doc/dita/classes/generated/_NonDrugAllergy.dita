@@ -18,7 +18,7 @@
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:11215)
 </li>
 <li>
-<b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="79151-7" </tt><i>Known allergies to food or environmental agents Narrative NEMSIS</i> (CodeSystem:<tt> </tt>) (CONF:10216)<p>Required if Existence is True</p>
+<b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="79151-7" </tt><i>Known allergies to food or environmental agents Narrative NEMSIS</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10216)<p>Required if Existence is True</p>
 </li>
 <li>
 <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with <tt><b>@xsi:type</b>="CD"</tt> (CONF:11612), which <b>SHALL</b> be selected from ValueSet<tt> NonDrugAllergyType 2.16.840.1.113883.17.3.11.83</tt><b> DYNAMIC</b> (CONF:10217)<p>NEMSIS Trace: eHistory.07 - Environmental/Food Allergies</p>
@@ -29,7 +29,7 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:11215)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="79151-7" </tt><i>Known allergies to food or environmental agents Narrative NEMSIS</i> (CodeSystem:<tt> </tt>) (CONF:10216)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="79151-7" </tt><i>Known allergies to food or environmental agents Narrative NEMSIS</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10216)
 <p>Required if Existence is True</p></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with <tt><b>@xsi:type</b>="CD"</tt> (CONF:11612), which <b>SHALL</b> be selected from ValueSet<tt> NonDrugAllergyType 2.16.840.1.113883.17.3.11.83</tt><b> DYNAMIC</b> (CONF:10217)
 <p>NEMSIS Trace: eHistory.07 - Environmental/Food Allergies</p></li>
@@ -37,7 +37,7 @@
 <section id="contextTable"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="2" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><thead><row><entry namest="col0" nameend="col0" >Contained By</entry><entry namest="col1" nameend="col1" >Contains</entry></row></thead><tbody><row><entry><xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/NonDrugAllergyOrganizer.html">Non Drug Allergy Organizer</xref></entry><entry></entry></row></tbody></tgroup></table></p></section>
 <codeblock id="example" outputclass="language-xml"><![CDATA[<observation classCode="SPCOBS" moodCode="EVN">
   <templateId root="2.16.840.1.113883.17.3.10.1.104"/>
-  <code code="79151-7" displayName="Known allergies to food or environmental agents Narrative NEMSIS"/>
+  <code code="79151-7" codeSystem="2.16.840.1.113883.6.1" displayName="Known allergies to food or environmental agents Narrative NEMSIS"/>
   <value xsi:type="CD"/>
 </observation>
 ]]></codeblock>

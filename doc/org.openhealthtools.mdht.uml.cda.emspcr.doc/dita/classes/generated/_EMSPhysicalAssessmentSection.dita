@@ -16,7 +16,7 @@
 <ol id="conformance">
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>templateId</b></tt> ( CONF:11400 ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>@root</b>="2.16.840.1.113883.17.3.10.1.20"</tt></li></ol></li>
 <li>
-<b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10337)<tt><b>/@code</b>="29545-1" </tt><i>Physical findings Narrative</i> (CodeSystem:<tt> </tt>) (CONF:10336)
+<b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10337)<tt><b>/@code</b>="29545-1" </tt><i>Physical findings Narrative</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10336)
 </li>
 <li>
 <b>SHALL</b> contain exactly one [1..1] <tt><b>title</b>="EMS Physical Assessment Section" </tt> which <b>SHOULD</b> equal "EMS Physical Assessment Section" (CONF:10339)
@@ -56,7 +56,7 @@ If section/@nullFlavor is not present, <b>SHALL</b> contain  [1..1] <tt><b>entry
 </li>
 </ol>
 <ol id="aggregate">
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10337)<tt><b>/@code</b>="29545-1" </tt><i>Physical findings Narrative</i> (CodeSystem:<tt> </tt>) (CONF:10336)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10337)<tt><b>/@code</b>="29545-1" </tt><i>Physical findings Narrative</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10336)
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b>="EMS Physical Assessment Section" </tt> which <b>SHOULD</b> equal "EMS Physical Assessment Section" (CONF:10339)
 </li>
@@ -88,7 +88,7 @@ If section/@nullFlavor is not present, <b>SHALL</b> contain  [1..1] <tt><b>entry
 <section id="contextTable"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="2" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><thead><row><entry namest="col0" nameend="col0" >Contained By</entry><entry namest="col1" nameend="col1" >Contains</entry></row></thead><tbody><row><entry><xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/PatientCareReport.html">Patient Care Report</xref></entry><entry><xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/BarriersToPatientCare.html">Barriers To Patient Care</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/LastOralIntake.html">Last Oral Intake</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/PatientAge.html">Patient Age</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/PatientPregnancy.html">Patient Pregnancy</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/PhysicalAssessmentOrganizer.html">Physical Assessment Organizer</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ThrombolyticContraindications.html">Thrombolytic Contraindications</xref></entry></row></tbody></tgroup></table></p></section>
 <codeblock id="example" outputclass="language-xml"><![CDATA[<section>
   <templateId root="2.16.840.1.113883.17.3.10.1.20"/>
-  <code code="29545-1" displayName="Physical findings Narrative"/>
+  <code code="29545-1" codeSystem="2.16.840.1.113883.6.1" displayName="Physical findings Narrative"/>
   <title>EMS Physical Assessment Section</title>
   <text/>
 </section>

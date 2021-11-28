@@ -16,7 +16,7 @@
 <row><entry>Value Set</entry><entry>NonDrugAllergyType - 2.16.840.1.113883.17.3.11.83</entry></row>
 <row><entry>Code System</entry><entry>LOINC - 2.16.840.1.113883.6.1</entry></row>
 <row><entry>Definition</entry><entry>Kinds of environmental allergens</entry></row>
-<row><entry>Description</entry><entry>Valid values are SNOMED CT descendants of 419199007 Allergy to Substance or 258155009 photosensitization due to sun.  Reference the NEMSIS Suggested Lists at: http://nemsis.org/v3/resources.html
+<row><entry>Description</entry><entry>Valid values are SNOMED CT descendants of 419199007 Allergy to Substance or 258155009 photosensitization due to sun.  Reference the NEMSIS Suggested Lists at http://nemsis.org/.
 </entry></row>
 </tbody></tgroup></table>
 </section>

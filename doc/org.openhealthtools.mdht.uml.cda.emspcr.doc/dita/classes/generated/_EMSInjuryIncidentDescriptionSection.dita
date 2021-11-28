@@ -16,7 +16,7 @@
 <ol id="conformance">
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>templateId</b></tt> ( CONF:11393 ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>@root</b>="2.16.840.1.113883.17.3.10.1.17"</tt></li></ol></li>
 <li>
-<b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="67800-3" </tt><i>EMS injury incident description Narrative NEMSIS</i> (CodeSystem:<tt> </tt>) (CONF:10094)
+<b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="67800-3" </tt><i>EMS Injury Incident Description Narrative NEMSIS</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10094)
 </li>
 <li>
 <b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> which <b>SHOULD</b> equal "Injury Incident Description Section" (CONF:10914)
@@ -34,11 +34,11 @@ If section/@nullFlavor is not present, <b>SHOULD</b> contain  [0..1] <tt><b>entr
 </li>
 <li>
 If section/@nullFlavor is not present, <b>SHALL</b> contain  [1..1] <tt><b>entry</b></tt> such that it  (CONF:10921)<ol>
-<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/TraumaCenterCriteria.html">Trauma Center Criteria</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.52</tt>)</li></ol>
+<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/TraumaTriageCriteriaSteps1and2.html">Trauma Triage Criteria Steps1and2</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.52</tt>)</li></ol>
 </li>
 <li>
 If section/@nullFlavor is not present, <b>SHALL</b> contain  [1..*] <tt><b>entry</b></tt> such that it  (CONF:10923)<ol>
-<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/InjuryRiskFactor.html">Injury Risk Factor</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.53</tt>)</li></ol>
+<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/TraumaTriageCriteriaSteps3and4.html">Trauma Triage Criteria Steps3and4</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.53</tt>)</li></ol>
 </li>
 <li>
 If section/@nullFlavor is not present, <b>MAY</b> contain  [0..1] <tt><b>entry</b></tt> such that it  (CONF:10925)<ol>
@@ -66,7 +66,7 @@ If section/@nullFlavor is not present, <b>MAY</b> contain  [0..1] <tt><b>entry</
 </li>
 </ol>
 <ol id="aggregate">
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="67800-3" </tt><i>EMS injury incident description Narrative NEMSIS</i> (CodeSystem:<tt> </tt>) (CONF:10094)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="67800-3" </tt><i>EMS Injury Incident Description Narrative NEMSIS</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10094)
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> which <b>SHOULD</b> equal "Injury Incident Description Section" (CONF:10914)
 </li>
@@ -80,10 +80,10 @@ If section/@nullFlavor is not present, <b>MAY</b> contain  [0..1] <tt><b>entry</
 <li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/InjuryMechanism.html">Injury Mechanism</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.51</tt>)</li></ol></li>
 <li>If section/@nullFlavor is not present, <b>SHALL</b> contain  [1..1] <tt><b>entry</b></tt> such that it  (CONF:10921)
 <ol>
-<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/TraumaCenterCriteria.html">Trauma Center Criteria</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.52</tt>)</li></ol></li>
+<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/TraumaTriageCriteriaSteps1and2.html">Trauma Triage Criteria Steps1and2</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.52</tt>)</li></ol></li>
 <li>If section/@nullFlavor is not present, <b>SHALL</b> contain  [1..*] <tt><b>entry</b></tt> such that it  (CONF:10923)
 <ol>
-<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/InjuryRiskFactor.html">Injury Risk Factor</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.53</tt>)</li></ol></li>
+<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/TraumaTriageCriteriaSteps3and4.html">Trauma Triage Criteria Steps3and4</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.53</tt>)</li></ol></li>
 <li>If section/@nullFlavor is not present, <b>MAY</b> contain  [0..1] <tt><b>entry</b></tt> such that it  (CONF:10925)
 <ol>
 <li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/VehicleImpactArea.html">Vehicle Impact Area</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.54</tt>)</li></ol></li>
@@ -103,10 +103,10 @@ If section/@nullFlavor is not present, <b>MAY</b> contain  [0..1] <tt><b>entry</
 <ol>
 <li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/DisasterType.html">Disaster Type</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.59</tt>)</li></ol></li>
 </ol>
-<section id="contextTable"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="2" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><thead><row><entry namest="col0" nameend="col0" >Contained By</entry><entry namest="col1" nameend="col1" >Contains</entry></row></thead><tbody><row><entry><xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/PatientCareReport.html">Patient Care Report</xref></entry><entry><xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/AirbagDeploymentStatus.html">Airbag Deployment Status</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/DisasterType.html">Disaster Type</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/HeightOfFall.html">Height Of Fall</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/InjuryCauseCategory.html">Injury Cause Category</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/InjuryMechanism.html">Injury Mechanism</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/InjuryRiskFactor.html">Injury Risk Factor</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/PatientLocationInVehicle.html">Patient Location In Vehicle</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/TraumaCenterCriteria.html">Trauma Center Criteria</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/VehicleImpactArea.html">Vehicle Impact Area</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/VehicleOccupantSafetyEquipment.html">Vehicle Occupant Safety Equipment</xref></entry></row></tbody></tgroup></table></p></section>
+<section id="contextTable"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="2" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><thead><row><entry namest="col0" nameend="col0" >Contained By</entry><entry namest="col1" nameend="col1" >Contains</entry></row></thead><tbody><row><entry><xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/PatientCareReport.html">Patient Care Report</xref></entry><entry><xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/AirbagDeploymentStatus.html">Airbag Deployment Status</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/DisasterType.html">Disaster Type</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/HeightOfFall.html">Height Of Fall</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/InjuryCauseCategory.html">Injury Cause Category</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/InjuryMechanism.html">Injury Mechanism</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/PatientLocationInVehicle.html">Patient Location In Vehicle</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/TraumaTriageCriteriaSteps1and2.html">Trauma Triage Criteria (Steps 1 and 2)</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/TraumaTriageCriteriaSteps3and4.html">Trauma Triage Criteria (Steps 3 and 4)</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/VehicleImpactArea.html">Vehicle Impact Area</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/VehicleOccupantSafetyEquipment.html">Vehicle Occupant Safety Equipment</xref></entry></row></tbody></tgroup></table></p></section>
 <codeblock id="example" outputclass="language-xml"><![CDATA[<section>
   <templateId root="2.16.840.1.113883.17.3.10.1.17"/>
-  <code code="67800-3" displayName="EMS injury incident description Narrative NEMSIS"/>
+  <code code="67800-3" codeSystem="2.16.840.1.113883.6.1" displayName="EMS Injury Incident Description Narrative NEMSIS"/>
   <title>Injury Incident Description Section</title>
   <text/>
 </section>

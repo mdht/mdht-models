@@ -20,13 +20,13 @@
 <li><b>SHOULD</b> contain zero or one [0..1] <tt><b>@negationInd</b></tt> (CONF:10141)
 <p>Populate as true if NEMSIS EArrest.01 = "No"</p></li>
 <li>
-<b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="ASSERTION" </tt><i>ASSERTION</i> (CodeSystem:<tt> </tt>) (CONF:10138)
+<b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="ASSERTION" </tt><i>ASSERTION</i> (CodeSystem:<tt> 2.16.840.1.113883.5.4 ActCode</tt>) (CONF:10138)
 </li>
 <li>
 <b>SHALL</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt> (CONF:10139)<p>NEMSIS Trace: EArrest.14</p>
 </li>
 <li>
-<b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with <tt><b>@xsi:type</b>="CD"</tt><tt><b>/@code</b>="410429000" </tt><i>cardiac arrest</i> (CodeSystem:<tt> </tt>) (CONF:10140)<p>NEMSIS Trace: EArrest.01</p>
+<b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with <tt><b>@xsi:type</b>="CD"</tt><tt><b>/@code</b>="410429000" </tt><i>cardiac arrest</i> (CodeSystem:<tt> 2.16.840.1.113883.6.96 SNOMED CT</tt>) (CONF:10140)<p>NEMSIS Trace: EArrest.01</p>
 </li>
 <li>
 <b>SHALL</b> contain exactly one [1..1] <tt><b>entryRelationship</b></tt> such that it  (CONF:10142) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="SUBJ" </tt> (CONF:10155)</li><li><b>SHALL</b> contain exactly one [1..1] <tt><b>@inversionInd</b>="TRUE" </tt> (CONF:10154)</li><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/CardiacArrestCause.html">Cardiac Arrest Cause</xref> (CONF:10941)</li></ol> 
@@ -35,16 +35,10 @@
 <b>SHALL</b> contain at least one [1..*] <tt><b>informant</b></tt> such that it  (CONF:10144) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="INF" </tt> (CONF:10158)</li><li><b>SHALL</b> contain exactly one [1..1] <tt><b>relatedEntity</b></tt> such that it  (CONF:11071) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="AGNT" </tt> (CONF:10159)</li><li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> CardiacArrestWitnessRole 2.16.840.1.113883.17.3.11.11</tt><b> DYNAMIC</b> (CONF:10160)<p><lines><i>NEMSIS Trace: EArrest.04</i></lines></p></li></ol></li></ol> 
 </li>
 <li>
-<b>SHALL</b> contain exactly one [1..1] <tt><b>entryRelationship</b></tt> such that it  (CONF:10145) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="SUBJ" </tt> (CONF:10162)</li><li><b>SHALL</b> contain exactly one [1..1] <tt><b>@inversionInd</b>="TRUE" </tt> (CONF:10161)</li></ol> 
+<b>SHALL</b> contain exactly one [1..1] <tt><b>entryRelationship</b></tt> such that it  (CONF:10147) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="SUBJ" </tt> (CONF:10182)</li><li><b>SHALL</b> contain exactly one [1..1] <tt><b>@inversionInd</b>="TRUE" </tt> (CONF:10181)</li><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ReturnOfSpontaneousCirculation.html">Return Of Spontaneous Circulation</xref> (CONF:10183)</li></ol> 
 </li>
 <li>
-<b>SHALL</b> contain exactly one [1..1] <tt><b>entryRelationship</b></tt> such that it  (CONF:10146) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="SUBJ" </tt> (CONF:10169)</li><li><b>SHALL</b> contain exactly one [1..1] <tt><b>@inversionInd</b>="TRUE" </tt> (CONF:10168)</li></ol> 
-</li>
-<li>
-<b>SHALL</b> contain at least one [1..*] <tt><b>entryRelationship</b></tt> such that it  (CONF:10147) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="SUBJ" </tt> (CONF:10182)</li><li><b>SHALL</b> contain exactly one [1..1] <tt><b>@inversionInd</b>="TRUE" </tt> (CONF:10181)</li><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ReturnOfSpontaneousCirculation.html">Return Of Spontaneous Circulation</xref> (CONF:10183)</li></ol> 
-</li>
-<li>
-<b>SHALL</b> contain at least one [1..*] <tt><b>entryRelationship</b></tt> such that it  (CONF:10148) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="SUBJ" </tt> (CONF:10187)</li><li><b>SHALL</b> contain exactly one [1..1] <tt><b>@inversionInd</b>="TRUE" </tt> (CONF:10186)</li><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/DestinationRhythm.html">Destination Rhythm</xref> (CONF:10188)</li></ol> 
+<b>SHALL</b> contain exactly one [1..1] <tt><b>entryRelationship</b></tt> such that it  (CONF:10148) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="SUBJ" </tt> (CONF:10187)</li><li><b>SHALL</b> contain exactly one [1..1] <tt><b>@inversionInd</b>="TRUE" </tt> (CONF:10186)</li><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/DestinationRhythm.html">Destination Rhythm</xref> (CONF:10188)</li></ol> 
 </li>
 <li>
 <b>SHALL</b> contain exactly one [1..1] <tt><b>entryRelationship</b></tt> such that it  (CONF:11072) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="SUBJ" </tt> (CONF:10177)</li><li><b>SHALL</b> contain exactly one [1..1] <tt><b>@inversionInd</b>="TRUE" </tt> (CONF:10176)</li><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ArrestRhythm.html">Arrest Rhythm</xref> (CONF:10178)</li></ol> 
@@ -63,23 +57,19 @@
 </li>
 <li><b>SHOULD</b> contain zero or one [0..1] <tt><b>@negationInd</b></tt> (CONF:10141)
 <p>Populate as true if NEMSIS EArrest.01 = "No"</p></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="ASSERTION" </tt><i>ASSERTION</i> (CodeSystem:<tt> </tt>) (CONF:10138)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="ASSERTION" </tt><i>ASSERTION</i> (CodeSystem:<tt> 2.16.840.1.113883.5.4 ActCode</tt>) (CONF:10138)
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt> (CONF:10139)
 <p>NEMSIS Trace: EArrest.14</p></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with <tt><b>@xsi:type</b>="CD"</tt><tt><b>/@code</b>="410429000" </tt><i>cardiac arrest</i> (CodeSystem:<tt> </tt>) (CONF:10140)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with <tt><b>@xsi:type</b>="CD"</tt><tt><b>/@code</b>="410429000" </tt><i>cardiac arrest</i> (CodeSystem:<tt> 2.16.840.1.113883.6.96 SNOMED CT</tt>) (CONF:10140)
 <p>NEMSIS Trace: EArrest.01</p></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>entryRelationship</b></tt> such that it  (CONF:10142) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="SUBJ" </tt> (CONF:10155)</li><li><b>SHALL</b> contain exactly one [1..1] <tt><b>@inversionInd</b>="TRUE" </tt> (CONF:10154)</li><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/CardiacArrestCause.html">Cardiac Arrest Cause</xref> (CONF:10941)</li></ol> 
 </li>
 <li><b>SHALL</b> contain at least one [1..*] <tt><b>informant</b></tt> such that it  (CONF:10144) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="INF" </tt> (CONF:10158)</li><li><b>SHALL</b> contain exactly one [1..1] <tt><b>relatedEntity</b></tt> such that it  (CONF:11071) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="AGNT" </tt> (CONF:10159)</li><li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> CardiacArrestWitnessRole 2.16.840.1.113883.17.3.11.11</tt><b> DYNAMIC</b> (CONF:10160)<p><lines><i>NEMSIS Trace: EArrest.04</i></lines></p></li></ol></li></ol> 
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entryRelationship</b></tt> such that it  (CONF:10145) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="SUBJ" </tt> (CONF:10162)</li><li><b>SHALL</b> contain exactly one [1..1] <tt><b>@inversionInd</b>="TRUE" </tt> (CONF:10161)</li></ol> 
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entryRelationship</b></tt> such that it  (CONF:10147) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="SUBJ" </tt> (CONF:10182)</li><li><b>SHALL</b> contain exactly one [1..1] <tt><b>@inversionInd</b>="TRUE" </tt> (CONF:10181)</li><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ReturnOfSpontaneousCirculation.html">Return Of Spontaneous Circulation</xref> (CONF:10183)</li></ol> 
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entryRelationship</b></tt> such that it  (CONF:10146) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="SUBJ" </tt> (CONF:10169)</li><li><b>SHALL</b> contain exactly one [1..1] <tt><b>@inversionInd</b>="TRUE" </tt> (CONF:10168)</li></ol> 
-</li>
-<li><b>SHALL</b> contain at least one [1..*] <tt><b>entryRelationship</b></tt> such that it  (CONF:10147) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="SUBJ" </tt> (CONF:10182)</li><li><b>SHALL</b> contain exactly one [1..1] <tt><b>@inversionInd</b>="TRUE" </tt> (CONF:10181)</li><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ReturnOfSpontaneousCirculation.html">Return Of Spontaneous Circulation</xref> (CONF:10183)</li></ol> 
-</li>
-<li><b>SHALL</b> contain at least one [1..*] <tt><b>entryRelationship</b></tt> such that it  (CONF:10148) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="SUBJ" </tt> (CONF:10187)</li><li><b>SHALL</b> contain exactly one [1..1] <tt><b>@inversionInd</b>="TRUE" </tt> (CONF:10186)</li><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/DestinationRhythm.html">Destination Rhythm</xref> (CONF:10188)</li></ol> 
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entryRelationship</b></tt> such that it  (CONF:10148) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="SUBJ" </tt> (CONF:10187)</li><li><b>SHALL</b> contain exactly one [1..1] <tt><b>@inversionInd</b>="TRUE" </tt> (CONF:10186)</li><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/DestinationRhythm.html">Destination Rhythm</xref> (CONF:10188)</li></ol> 
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>entryRelationship</b></tt> such that it  (CONF:11072) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="SUBJ" </tt> (CONF:10177)</li><li><b>SHALL</b> contain exactly one [1..1] <tt><b>@inversionInd</b>="TRUE" </tt> (CONF:10176)</li><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ArrestRhythm.html">Arrest Rhythm</xref> (CONF:10178)</li></ol> 
 </li>
@@ -91,9 +81,9 @@
 <section id="contextTable"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="2" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><thead><row><entry namest="col0" nameend="col0" >Contained By</entry><entry namest="col1" nameend="col1" >Contains</entry></row></thead><tbody><row><entry><xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/EMSCardiacArrestEventSection.html">EMS Cardiac Arrest Event Section</xref></entry><entry></entry></row></tbody></tgroup></table></p></section>
 <codeblock id="example" outputclass="language-xml"><![CDATA[<observation classCode="SPCOBS" moodCode="EVN">
   <templateId root="2.16.840.1.113883.17.3.10.1.27"/>
-  <code code="ASSERTION" displayName="ASSERTION"/>
+  <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" displayName="ASSERTION"/>
   <effectiveTime/>
-  <value xsi:type="CD" code="410429000" displayName="cardiac arrest"/>
+  <value xsi:type="CD" code="410429000" codeSystem="2.16.840.1.113883.6.96" displayName="cardiac arrest"/>
   <informant typeCode="INF">
     <relatedEntity classCode="AGNT">
       <code/>
@@ -102,30 +92,28 @@
   <entryRelationship typeCode="SUBJ" inversionInd="true">
     <observation classCode="SPCOBS" moodCode="EVN">
       <templateId root="2.16.840.1.113883.17.3.10.1.124"/>
-      <code code="67503-3" displayName="Cardiac arrest cause NEMSIS"/>
+      <code code="67503-3" codeSystem="2.16.840.1.113883.6.1" displayName="Cardiac arrest cause NEMSIS"/>
       <value xsi:type="CD"/>
     </observation>
   </entryRelationship>
-  <entryRelationship typeCode="SUBJ" inversionInd="true"/>
-  <entryRelationship typeCode="SUBJ" inversionInd="true"/>
   <entryRelationship typeCode="SUBJ" inversionInd="true">
     <observation classCode="SPCOBS" moodCode="EVN">
       <templateId root="2.16.840.1.113883.17.3.10.1.128"/>
-      <code code="67513-2" displayName="Return of spontaneous circulation NEMSIS"/>
+      <code code="88670-5" codeSystem="2.16.840.1.113883.6.1" displayName="Return of spontaneous circulation"/>
       <value xsi:type="CD"/>
     </observation>
   </entryRelationship>
   <entryRelationship typeCode="SUBJ" inversionInd="true">
     <observation classCode="SPCOBS" moodCode="EVN">
       <templateId root="2.16.840.1.113883.17.3.10.1.129"/>
-      <code code="67519-9" displayName="Cardiac rhythm NEMSIS"/>
+      <code code="67519-9" codeSystem="2.16.840.1.113883.6.1" displayName="Cardiac rhythm NEMSIS"/>
       <value xsi:type="CD"/>
     </observation>
   </entryRelationship>
   <entryRelationship typeCode="SUBJ" inversionInd="true">
     <observation classCode="SPCOBS" moodCode="EVN">
       <templateId root="2.16.840.1.113883.17.3.10.1.127"/>
-      <code code="67512-4" displayName="First monitored rhythm NEMSIS"/>
+      <code code="67512-4" codeSystem="2.16.840.1.113883.6.1" displayName="First monitored rhythm NEMSIS"/>
       <value xsi:type="CD"/>
     </observation>
   </entryRelationship>
@@ -133,7 +121,7 @@
   <entryRelationship typeCode="COMP">
     <observation classCode="SPCOBS" moodCode="EVN">
       <templateId root="2.16.840.1.113883.17.3.10.1.184"/>
-      <code code="77152-7" displayName="Cardiac arrest event outcome"/>
+      <code code="77152-7" codeSystem="2.16.840.1.113883.6.1" displayName="Cardiac arrest event outcome"/>
       <value xsi:type="CD"/>
     </observation>
   </entryRelationship>

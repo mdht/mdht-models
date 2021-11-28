@@ -690,8 +690,8 @@ id/@extension is the unit number assigned by the Agency, where the id/@root SHOU
                 <body>NEMSIS Trace: ECrew.03</body>
               </ownedComment>
               <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
-              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YVK2gEgkEeOM2r8ydSJbxw" value="1"/>
-              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YVKPcEgkEeOM2r8ydSJbxw" value="1"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0DwdYUwJEeyaFf-ZdVTpIw"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0DwdYEwJEeyaFf-ZdVTpIw" value="1"/>
               <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_xEWTMErfEd6FXKclYGEDCw"/>
             </ownedAttribute>
             <ownedAttribute xmi:id="_Iv4tQCWpEeKkGpwdHZh8HA" name="PerformerRole" type="_oOJCcHtIEeGs2I-Db78R9w" association="_Iv6icCWpEeKkGpwdHZh8HA">
@@ -707,8 +707,8 @@ id/@extension is the unit number assigned by the Agency, where the id/@root SHOU
                   <body>NEMSIS Trace: ECrew.02</body>
                 </ownedComment>
                 <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
-                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1DBqMHtIEeGs2I-Db78R9w" value="1"/>
-                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1DBDIHtIEeGs2I-Db78R9w" value="1"/>
+                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1ArYoUwJEeyaFf-ZdVTpIw"/>
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1ArYoEwJEeyaFf-ZdVTpIw" value="1"/>
                 <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_CDS1wEoeEd6c3qsAxlFHaQ"/>
               </ownedAttribute>
               <ownedAttribute xmi:id="_yVE2MHtIEeGs2I-Db78R9w" name="id" visibility="private" aggregation="composite">
@@ -830,8 +830,8 @@ eDisposition.07. . . / AssignedAuthor/addr/postalCode&#xD;
 eDisposition.08. . . / AssignedAuthor/addr/country</body>
             </ownedComment>
             <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_v0zRUD5yEd6cla2oXsPtlA"/>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Zw1y8McZEeGjDJAyT0XW9Q"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZwyvoMcZEeGjDJAyT0XW9Q" value="1"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4XPPUUwKEeyaFf-ZdVTpIw" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4XPPUEwKEeyaFf-ZdVTpIw" value="1"/>
             <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_-czawEoeEd6c3qsAxlFHaQ"/>
           </ownedAttribute>
           <ownedAttribute xmi:id="_X-jPwHuHEeGs2I-Db78R9w" name="code" visibility="private" aggregation="composite">
@@ -1714,8 +1714,8 @@ eDisposition.08. . . / AssignedAuthor/addr/country</body>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ImrTU9ICEeKRzPZKi7WbBQ" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_ImrTWNICEeKRzPZKi7WbBQ" name="prearrivalActivationObservation" type="_083apZ-hEeGorI3CPDW2ww" aggregation="composite" association="_ImrTV9ICEeKRzPZKi7WbBQ">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ImrTWdICEeKRzPZKi7WbBQ" value="1"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ImrTWtICEeKRzPZKi7WbBQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-iKOkUwMEeyaFf-ZdVTpIw" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-iKOkEwMEeyaFf-ZdVTpIw" value="*"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_ImxZ8dICEeKRzPZKi7WbBQ" name="patientConditionChangeAtDestinationObservation" type="_Q4zL9Z-gEeGorI3CPDW2ww" aggregation="composite" association="_ImxZ8NICEeKRzPZKi7WbBQ">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ImxZ8tICEeKRzPZKi7WbBQ" value="1"/>
@@ -2344,12 +2344,12 @@ UCUM units SHOULD be &quot;mm[Hg]&quot;.</body>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YdBOAM3fEeSDodsZ26-KBg" value="*"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_YL1_QHwTEeGW3cDolvqrTA" name="spontaneousCirculationRelationship" type="_ZKw7EHwSEeGW3cDolvqrTA" association="_YL2mUXwTEeGW3cDolvqrTA">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wwLP4c3fEeSDodsZ26-KBg" value="1"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wwLP4M3fEeSDodsZ26-KBg" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HSoNYEwHEeyaFf-ZdVTpIw" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HSnmUEwHEeyaFf-ZdVTpIw" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_tbBdUHwUEeGW3cDolvqrTA" name="destinationRhythmRelationship" type="_egsBcHwTEeGW3cDolvqrTA" association="_tbCEYHwUEeGW3cDolvqrTA">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1ENQ4c3fEeSDodsZ26-KBg" value="1"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1ENQ4M3fEeSDodsZ26-KBg" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_eY-d4EwHEeyaFf-ZdVTpIw" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_eY920EwHEeyaFf-ZdVTpIw" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_fj8qgClEEeKLlLf58wNPLQ" name="arrestRhythmRelationship" type="_9cLJkHwQEeGW3cDolvqrTA" association="_fj9RkSlEEeKLlLf58wNPLQ">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__wVR0M3eEeSDodsZ26-KBg" value="1"/>
@@ -4492,8 +4492,8 @@ This nulled notional class is parallel to the explicit question &quot;patient on
         <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_WtEdwUcLEd6besF9iFIJkQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_kj3_0MWSEeK3RfDsHamIUQ" name="component12" visibility="private" type="_do7m8MWSEeK3RfDsHamIUQ" aggregation="composite" association="_kj7qMMWSEeK3RfDsHamIUQ">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_uJyFsWLREeStSYssZBT7lA"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_uJyFsGLREeStSYssZBT7lA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_sHvrkU-XEey-foHPjB_9iA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_sHvrkE-XEey-foHPjB_9iA" value="*"/>
         <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_WtEdwUcLEd6besF9iFIJkQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_0Ags8MWSEeK3RfDsHamIUQ" name="component13" visibility="private" type="_uT-A4MWSEeK3RfDsHamIUQ" aggregation="composite" association="_0AkXUMWSEeK3RfDsHamIUQ">
@@ -4539,8 +4539,8 @@ This nulled notional class is parallel to the explicit question &quot;patient on
           <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_cEUTcEcEEd6besF9iFIJkQ"/>
         </generalization>
         <ownedAttribute xmi:id="_Z-ABQDVpEeWqqoY-9eh2xA" name="skinAssessment" type="_bFfQYJokEeG_FLcaRgAa7g" association="_Z-BPYDVpEeWqqoY-9eh2xA">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Z-AoUDVpEeWqqoY-9eh2xA"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Z-AoUTVpEeWqqoY-9eh2xA" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Myj78E-YEey-foHPjB_9iA" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MyjU4E-YEey-foHPjB_9iA" value="1"/>
         </ownedAttribute>
       </nestedClassifier>
       <nestedClassifier xmi:type="uml:Class" xmi:id="_G04HsMWPEeK3RfDsHamIUQ" name="HeadAssessmentComponent">
@@ -5389,8 +5389,8 @@ Use value &quot;aborted&quot; for discontinued resuscitation (eArrest.15)</body>
 If an abandoned time is recorded, EArrest.15 goes in effectiveTime.high</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cntQ8JusEeGzXI65shd6Fw" value="1"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cnsp4JusEeGzXI65shd6Fw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7m9F4UwFEeyaFf-ZdVTpIw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7m9F4EwFEeyaFf-ZdVTpIw" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_WwatcJusEeGzXI65shd6Fw" name="approachSiteCode" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_iStE4JusEeGzXI65shd6Fw">
@@ -5403,6 +5403,9 @@ Some NEMSIS values require additional information: see Appendix for details.</bo
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_eH0_4JusEeGzXI65shd6Fw" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_UsWA8J0tEeGmCMENP40rhA" name="ProcedurePriorRelationship" type="_wKzWoJ0sEeGmCMENP40rhA" association="_UsWA8p0tEeGmCMENP40rhA">
+        <ownedComment xmi:id="_qEXRgEwIEeyaFf-ZdVTpIw">
+          <body>For eArrest.07, may be used twice, for AED and for defibrillation.</body>
+        </ownedComment>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_z7Rl0TbLEeyuPqD7-Xp0hA"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_z7Rl0DbLEeyuPqD7-Xp0hA" value="1"/>
       </ownedAttribute>
@@ -6034,16 +6037,16 @@ Note: a license is required to implement the Broselow-Luten measure.</body>
           <body>NEMSIS Trace: EExam.14</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bCvgoDHWEeyA__laJHreSQ" value="1"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bCu5kDHWEeyA__laJHreSQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_uoL7ME7rEey-foHPjB_9iA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_uoLUIE7rEey-foHPjB_9iA" value="*"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_sZ0ssZopEeG_FLcaRgAa7g" name="targetSiteCode" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_66W2UENAEeKBoM5tGvrHVQ">
           <body>NEMSIS Trace: EExam.13</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rAk2UDHWEeyA__laJHreSQ" value="1"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rAkPQDHWEeyA__laJHreSQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vR1VIU7rEey-foHPjB_9iA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vR1VIE7rEey-foHPjB_9iA" value="1"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_NK7yUJoqEeG_FLcaRgAa7g" name="ExtremitiesAssessment">
@@ -6151,8 +6154,8 @@ Note: a license is required to implement the Broselow-Luten measure.</body>
           <body>NEMSIS Trace: EExam.19</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0lB0AEgPEeyD0_D2SJuFgA"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0lBM8EgPEeyD0_D2SJuFgA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7VBuEE-XEey-foHPjB_9iA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7VBHAE-XEey-foHPjB_9iA" value="*"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_A65pUHwIEeGW3cDolvqrTA" name="CardiacArrestTiming">
@@ -6250,8 +6253,8 @@ Note: a license is required to implement the Broselow-Luten measure.</body>
           <body>NEMSIS Trace: EArrest.12</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cnB7IUdREeyArY5urXDDvQ" value="1"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cnB7IEdREeyArY5urXDDvQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__1V8cUwGEeyaFf-ZdVTpIw" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__1V8cEwGEeyaFf-ZdVTpIw" value="*"/>
         <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
       </ownedAttribute>
     </packagedElement>
@@ -6275,8 +6278,8 @@ Note: a license is required to implement the Broselow-Luten measure.</body>
           <body>NEMSIS Trace: EArrest.17 Cardiac Rhythm on Arrival at Destination</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ct4KkXwUEeGW3cDolvqrTA" value="1"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ct4KkHwUEeGW3cDolvqrTA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_aMoZQUwHEeyaFf-ZdVTpIw" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_aMoZQEwHEeyaFf-ZdVTpIw" value="*"/>
         <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
       </ownedAttribute>
     </packagedElement>
@@ -9771,7 +9774,7 @@ UCUM units SHOULD be &quot;[mi_i]&quot;</body>
   <CDA:PropertyValidation xmi:id="_S46R0McZEeGjDJAyT0XW9Q" base_Property="_USaxsHuGEeGs2I-Db78R9w">
     <ruleId>CONF:10054</ruleId>
   </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_cC3f8McZEeGjDJAyT0XW9Q" severity="WARNING" base_Property="_X-iosHuHEeGs2I-Db78R9w">
+  <CDA:PropertyValidation xmi:id="_cC3f8McZEeGjDJAyT0XW9Q" base_Property="_X-iosHuHEeGs2I-Db78R9w">
     <ruleId>CONF:10055</ruleId>
   </CDA:PropertyValidation>
   <CDA:AssociationValidation xmi:id="_DyEZEMcaEeGjDJAyT0XW9Q" base_Association="__xvXMMcZEeGjDJAyT0XW9Q">
@@ -10314,7 +10317,7 @@ UCUM units SHOULD be &quot;[mi_i]&quot;</body>
   <CDA:PropertyValidation xmi:id="_02LVwIjuEeKx3P4dlW9OSw" severity="INFO" base_Property="_zdpckIjuEeKx3P4dlW9OSw">
     <ruleId>CONF:11302</ruleId>
   </CDA:PropertyValidation>
-  <CDA:CodeSystemConstraint xmi:id="_nx-6YIztEeGnhceUMXltng" code="2339-0" displayName="Glucose [Mass/​volume] in Blood" base_Property="_kqTXwIztEeGnhceUMXltng">
+  <CDA:CodeSystemConstraint xmi:id="_nx-6YIztEeGnhceUMXltng" code="2339-0" displayName="Glucose [Mass/volume] in Blood" base_Property="_kqTXwIztEeGnhceUMXltng">
     <reference href="file:/C:/Users/JayLyle/eclipse-workspace/BackupPCR/model/emspcr-vocab.uml#_YgJ0wcFTEeGyGv5RKvEgDA"/>
     <ruleId>CONF:10299</ruleId>
   </CDA:CodeSystemConstraint>

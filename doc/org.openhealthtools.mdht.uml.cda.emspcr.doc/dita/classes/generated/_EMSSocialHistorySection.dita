@@ -16,7 +16,7 @@
 <ol id="conformance">
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>templateId</b></tt> ( CONF:11398 ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>@root</b>="2.16.840.1.113883.17.3.10.1.22"</tt></li></ol></li>
 <li>
-<b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10241)<tt><b>/@code</b>="67843-3" </tt><i>EMS social history Narrative NEMSIS</i> (CodeSystem:<tt> </tt>) (CONF:10240)
+<b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10241)<tt><b>/@code</b>="67843-3" </tt><i>EMS Social History Narrative NEMSIS</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10240)
 </li>
 <li>
 <b>SHALL</b> contain exactly one [1..1] <tt><b>title</b>="EMS Social History" </tt> which <b>SHOULD</b> equal "EMS Social History" (CONF:10243)
@@ -34,7 +34,7 @@ If section/@nullFlavor is not present, <b>MAY</b> contain  [0..*] <tt><b>entry</
 </li>
 </ol>
 <ol id="aggregate">
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10241)<tt><b>/@code</b>="67843-3" </tt><i>EMS social history Narrative NEMSIS</i> (CodeSystem:<tt> </tt>) (CONF:10240)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10241)<tt><b>/@code</b>="67843-3" </tt><i>EMS Social History Narrative NEMSIS</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10240)
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b>="EMS Social History" </tt> which <b>SHOULD</b> equal "EMS Social History" (CONF:10243)
 </li>
@@ -50,7 +50,7 @@ If section/@nullFlavor is not present, <b>MAY</b> contain  [0..*] <tt><b>entry</
 <section id="contextTable"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="2" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><thead><row><entry namest="col0" nameend="col0" >Contained By</entry><entry namest="col1" nameend="col1" >Contains</entry></row></thead><tbody><row><entry><xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/PatientCareReport.html">Patient Care Report</xref></entry><entry><xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/DrugUseIndication.html">Drug Use Indication</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ExistenceOfDrugUseIndication.html">Existence Of Drug Use Indication</xref></entry></row></tbody></tgroup></table></p></section>
 <codeblock id="example" outputclass="language-xml"><![CDATA[<section>
   <templateId root="2.16.840.1.113883.17.3.10.1.22"/>
-  <code code="67843-3" displayName="EMS social history Narrative NEMSIS"/>
+  <code code="67843-3" codeSystem="2.16.840.1.113883.6.1" displayName="EMS Social History Narrative NEMSIS"/>
   <title>EMS Social History</title>
   <text/>
 </section>

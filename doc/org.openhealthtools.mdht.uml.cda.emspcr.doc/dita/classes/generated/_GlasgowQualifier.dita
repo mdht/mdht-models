@@ -18,7 +18,7 @@
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:11292)
 </li>
 <li>
-<b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10322)<tt><b>/@code</b>="55285-1" </tt><i>Glasgow coma score special circumstances</i> (CodeSystem:<tt> </tt>) (CONF:10321)
+<b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10322)<tt><b>/@code</b>="55285-1" </tt><i>Glasgow coma score special circumstances</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10321)
 </li>
 <li>
 <b>MAY</b> contain zero or more [0..*] <tt><b>value</b></tt> with <tt><b>@xsi:type</b>="CD"</tt> (CONF:10323), which <b>SHALL</b> be selected from ValueSet<tt> GlasgowComaScoreSpecialCircumstances 2.16.840.1.113883.17.3.11.89</tt><b> DYNAMIC</b> (CONF:11293)<p>NEMSIS Trace: EVitals.22</p>
@@ -29,7 +29,7 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:11292)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10322)<tt><b>/@code</b>="55285-1" </tt><i>Glasgow coma score special circumstances</i> (CodeSystem:<tt> </tt>) (CONF:10321)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10322)<tt><b>/@code</b>="55285-1" </tt><i>Glasgow coma score special circumstances</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10321)
 </li>
 <li><b>MAY</b> contain zero or more [0..*] <tt><b>value</b></tt> with <tt><b>@xsi:type</b>="CD"</tt> (CONF:10323), which <b>SHALL</b> be selected from ValueSet<tt> GlasgowComaScoreSpecialCircumstances 2.16.840.1.113883.17.3.11.89</tt><b> DYNAMIC</b> (CONF:11293)
 <p>NEMSIS Trace: EVitals.22</p></li>
@@ -37,7 +37,7 @@
 <section id="contextTable"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="2" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><thead><row><entry namest="col0" nameend="col0" >Contained By</entry><entry namest="col1" nameend="col1" >Contains</entry></row></thead><tbody><row><entry><xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/GlasgowComaScoreOrganizer.html">Glasgow Coma Score Organizer</xref></entry><entry></entry></row></tbody></tgroup></table></p></section>
 <codeblock id="example" outputclass="language-xml"><![CDATA[<observation classCode="SPCOBS" moodCode="EVN">
   <templateId root="2.16.840.1.113883.17.3.10.1.159"/>
-  <code code="55285-1" displayName="Glasgow coma score special circumstances"/>
+  <code code="55285-1" codeSystem="2.16.840.1.113883.6.1" displayName="Glasgow coma score special circumstances"/>
 </observation>
 ]]></codeblock>
 <!--Error code 1: Pathmap to CDA .ecore files not resolved: pathmap://CDA_MODEL/../../org.eclipse.mdht.uml.hl7.rim/model/rim.ecore#//Act. Will not use any CDA extension!-->

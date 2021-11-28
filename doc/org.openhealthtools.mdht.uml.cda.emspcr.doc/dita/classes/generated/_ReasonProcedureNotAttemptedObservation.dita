@@ -18,7 +18,7 @@
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:11262)
 </li>
 <li>
-<b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="67504-1" </tt><i>Reason resuscitation not attempted NEMSIS</i> (CodeSystem:<tt> </tt>) (CONF:11263)
+<b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="72112-6" </tt><i>Reason resuscitation not attempted NEMSIS</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:11263)
 </li>
 <li>
 <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with <tt><b>@xsi:type</b>="CD"</tt> (CONF:11264), which <b>SHALL</b> be selected from ValueSet<tt> Reason Procedure not Performed Superset 2.16.840.1.113883.17.3.11.100</tt><b> DYNAMIC</b> (CONF:11265)<p>NEMSIS Trace: EProcedures.03 pertinent negatives, EArrest.03 negative values
@@ -31,7 +31,7 @@ Note: CPR procedures have appropriate values "Not Attempted-Considered Futile," 
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:11262)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="67504-1" </tt><i>Reason resuscitation not attempted NEMSIS</i> (CodeSystem:<tt> </tt>) (CONF:11263)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="72112-6" </tt><i>Reason resuscitation not attempted NEMSIS</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:11263)
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with <tt><b>@xsi:type</b>="CD"</tt> (CONF:11264), which <b>SHALL</b> be selected from ValueSet<tt> Reason Procedure not Performed Superset 2.16.840.1.113883.17.3.11.100</tt><b> DYNAMIC</b> (CONF:11265)
 <p>NEMSIS Trace: EProcedures.03 pertinent negatives, EArrest.03 negative values
@@ -41,7 +41,7 @@ Note: CPR procedures have appropriate values "Not Attempted-Considered Futile," 
 <section id="contextTable"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="2" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><thead><row><entry namest="col0" nameend="col0" >Contained By</entry><entry namest="col1" nameend="col1" >Contains</entry></row></thead><tbody><row><entry> </entry><entry> </entry></row></tbody></tgroup></table></p></section>
 <codeblock id="example" outputclass="language-xml"><![CDATA[<observation classCode="SPCOBS" moodCode="EVN">
   <templateId root="2.16.840.1.113883.17.3.10.1.137"/>
-  <code code="67504-1" displayName="Reason resuscitation not attempted NEMSIS"/>
+  <code code="72112-6" codeSystem="2.16.840.1.113883.6.1" displayName="Reason resuscitation not attempted NEMSIS"/>
   <value xsi:type="CD"/>
 </observation>
 ]]></codeblock>

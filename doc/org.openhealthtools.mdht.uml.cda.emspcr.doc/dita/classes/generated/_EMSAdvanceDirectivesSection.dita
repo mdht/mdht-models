@@ -16,7 +16,7 @@
 <ol id="conformance">
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>templateId</b></tt> ( CONF:11395 ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>@root</b>="2.16.840.1.113883.17.3.10.1.12"</tt></li></ol></li>
 <li>
-<b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="67840-9" </tt><i>EMS advance directives Narrative NEMSIS</i> (CodeSystem:<tt> </tt>) (CONF:10191)
+<b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="67840-9" </tt><i>EMS Advance Directives Narrative NEMSIS</i> (CodeSystem:<tt> </tt>) (CONF:10191)
 </li>
 <li>
 <b>SHALL</b> contain exactly one [1..1] <tt><b>title</b>="EMS Advance Directive Section" </tt> which <b>SHOULD</b> equal "EMS advance directives Narrative NEMSIS" (CONF:10944)
@@ -30,7 +30,7 @@ If section/@nullFlavor is not present, <b>SHALL</b> contain  [1..*] <tt><b>entry
 </li>
 </ol>
 <ol id="aggregate">
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="67840-9" </tt><i>EMS advance directives Narrative NEMSIS</i> (CodeSystem:<tt> </tt>) (CONF:10191)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="67840-9" </tt><i>EMS Advance Directives Narrative NEMSIS</i> (CodeSystem:<tt> </tt>) (CONF:10191)
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b>="EMS Advance Directive Section" </tt> which <b>SHOULD</b> equal "EMS advance directives Narrative NEMSIS" (CONF:10944)
 </li>
@@ -43,7 +43,7 @@ If section/@nullFlavor is not present, <b>SHALL</b> contain  [1..*] <tt><b>entry
 <section id="contextTable"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="2" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><thead><row><entry namest="col0" nameend="col0" >Contained By</entry><entry namest="col1" nameend="col1" >Contains</entry></row></thead><tbody><row><entry><xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/PatientCareReport.html">Patient Care Report</xref></entry><entry><xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/AdvanceDirectiveObservation.html">Advance Directive Observation</xref></entry></row></tbody></tgroup></table></p></section>
 <codeblock id="example" outputclass="language-xml"><![CDATA[<section>
   <templateId root="2.16.840.1.113883.17.3.10.1.12"/>
-  <code code="67840-9" displayName="EMS advance directives Narrative NEMSIS"/>
+  <code code="67840-9" displayName="EMS Advance Directives Narrative NEMSIS"/>
   <title>EMS advance directives Narrative NEMSIS</title>
   <text/>
 </section>

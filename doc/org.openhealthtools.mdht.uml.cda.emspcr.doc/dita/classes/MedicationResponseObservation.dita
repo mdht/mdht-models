@@ -22,7 +22,10 @@
 <p audience="examples"><b>Medication Response Observation example</b></p>
 <!-- TODO: insert custom instance example here -->
 <!-- generated instance example follows -->
-<codeblock audience="examples" conref="generated/_MedicationResponseObservation.dita#classId/example">
-</codeblock>
+<codeblock id="example" outputclass="language-xml">
+<observation classCode="OBS"  moodCode="EVN">
+	<code code="67540-5" displayName="Response to medication" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+    <value xsi:type="CD" code="LA17181-1" displayName="Unchanged" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+</observation>
 </body>
 </topic>

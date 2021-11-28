@@ -29,10 +29,10 @@
 <row><entry>LA17750-3</entry><entry>LOINC</entry><entry>Compressions-external band type device</entry></row>
 <row><entry>LA17751-1</entry><entry>LOINC</entry><entry>Compressions-external plunger type device</entry></row>
 <row><entry>LA17752-9</entry><entry>LOINC</entry><entry>Compressions-external thumper type device</entry></row>
-<row><entry>LA17753-7</entry><entry>LOINC</entry><entry>Compressions-intermittant with ventilation</entry></row>
+<row><entry>LA17753-7</entry><entry>LOINC</entry><entry>Compressions-intermittent with ventilation</entry></row>
 <row><entry>LA17754-5</entry><entry>LOINC</entry><entry>Compressions-other device</entry></row>
 <row><entry>LA17755-2</entry><entry>LOINC</entry><entry>Ventilation-bag valve mask</entry></row>
-<row><entry>LA17756-0</entry><entry>LOINC</entry><entry>Ventilation-impedence threshold device</entry></row>
+<row><entry>LA17756-0</entry><entry>LOINC</entry><entry>Ventilation-impedance threshold device</entry></row>
 <row><entry>LA17757-8</entry><entry>LOINC</entry><entry>Ventilation-mouth to mouth</entry></row>
 <row><entry>LA17758-6</entry><entry>LOINC</entry><entry>Ventilation-pocket mask</entry></row>
 <row><entry>NewLA-3009023</entry><entry>LOINC</entry><entry>Ventilation-with OPA/NPA</entry></row>

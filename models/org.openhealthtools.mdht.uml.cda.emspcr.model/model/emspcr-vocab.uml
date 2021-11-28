@@ -139,7 +139,6 @@
       <ownedLiteral xmi:id="_cXujQMFTEeGyGv5RKvEgDA" name="LA18218-0"/>
       <ownedLiteral xmi:id="_cX1Q8MFTEeGyGv5RKvEgDA" name="LA18219-8"/>
       <ownedLiteral xmi:id="_cX7XkMFTEeGyGv5RKvEgDA" name="LA6626-1"/>
-      <ownedLiteral xmi:id="_cYBeMMFTEeGyGv5RKvEgDA" name="LA6630-3"/>
       <ownedLiteral xmi:id="_0MqBwNNZEeSysKjHSGZfJQ" name="LA23806-5"/>
       <ownedLiteral xmi:id="_3uUxsNNZEeSysKjHSGZfJQ" name="LA23807-3"/>
       <ownedLiteral xmi:id="_6GbRgNNZEeSysKjHSGZfJQ" name="LA23808-1"/>
@@ -160,7 +159,6 @@
       <ownedLiteral xmi:id="_cZk9YMFTEeGyGv5RKvEgDA" name="LA18225-5"/>
       <ownedLiteral xmi:id="_cZrEAMFTEeGyGv5RKvEgDA" name="LA18226-3"/>
       <ownedLiteral xmi:id="_cZxKoMFTEeGyGv5RKvEgDA" name="LA6626-1"/>
-      <ownedLiteral xmi:id="_cZ3RQMFTEeGyGv5RKvEgDA" name="LA6630-3"/>
       <ownedLiteral xmi:id="_cZ9X4MFTEeGyGv5RKvEgDA" name="LA7410-9"/>
       <ownedLiteral xmi:id="_caEFkMFTEeGyGv5RKvEgDA" name="LA7452-1"/>
       <ownedLiteral xmi:id="_caKMMMFTEeGyGv5RKvEgDA" name="LA7460-4"/>
@@ -185,7 +183,6 @@
       <ownedLiteral xmi:id="_cbzyAMFTEeGyGv5RKvEgDA" name="LA18225-5"/>
       <ownedLiteral xmi:id="_cb54oMFTEeGyGv5RKvEgDA" name="LA18226-3"/>
       <ownedLiteral xmi:id="_ccAmUMFTEeGyGv5RKvEgDA" name="LA6626-1"/>
-      <ownedLiteral xmi:id="_ccGs8MFTEeGyGv5RKvEgDA" name="LA6630-3"/>
       <ownedLiteral xmi:id="_ccMzkMFTEeGyGv5RKvEgDA" name="LA7410-9"/>
       <ownedLiteral xmi:id="_ccS6MMFTEeGyGv5RKvEgDA" name="LA7452-1"/>
       <ownedLiteral xmi:id="_ccZA0MFTEeGyGv5RKvEgDA" name="LA7460-4"/>
@@ -212,7 +209,6 @@
       <ownedLiteral xmi:id="_ceWvsMFTEeGyGv5RKvEgDA" name="LA18227-1"/>
       <ownedLiteral xmi:id="_ceddYMFTEeGyGv5RKvEgDA" name="LA18228-9"/>
       <ownedLiteral xmi:id="_cejkAMFTEeGyGv5RKvEgDA" name="LA6626-1"/>
-      <ownedLiteral xmi:id="_ceqRsMFTEeGyGv5RKvEgDA" name="LA6630-3"/>
       <ownedLiteral xmi:id="_cewYUMFTEeGyGv5RKvEgDA" name="LA7410-9"/>
       <ownedLiteral xmi:id="_ce2e8MFTEeGyGv5RKvEgDA" name="LA7452-1"/>
       <ownedLiteral xmi:id="_ce9MoMFTEeGyGv5RKvEgDA" name="LA7460-4"/>
@@ -246,7 +242,6 @@
       <ownedLiteral xmi:id="_clrfsMFTEeGyGv5RKvEgDA" name="LA18245-3"/>
       <ownedLiteral xmi:id="_clxmUMFTEeGyGv5RKvEgDA" name="LA18246-1"/>
       <ownedLiteral xmi:id="_cl3s8MFTEeGyGv5RKvEgDA" name="LA6626-1"/>
-      <ownedLiteral xmi:id="_cl9zkMFTEeGyGv5RKvEgDA" name="LA6630-3"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_l0VL0HSMEeGa4IXs2ghZEw" name="AbdomenAssessmentFinding">
       <ownedLiteral xmi:id="_cmEhQMFTEeGyGv5RKvEgDA" name="LA17208-2"/>
@@ -268,7 +263,6 @@
       <ownedLiteral xmi:id="_cn7icMFTEeGyGv5RKvEgDA" name="LA18247-9"/>
       <ownedLiteral xmi:id="_coBpEMFTEeGyGv5RKvEgDA" name="LA18248-7"/>
       <ownedLiteral xmi:id="_coI90MFTEeGyGv5RKvEgDA" name="LA6626-1"/>
-      <ownedLiteral xmi:id="_coPEcMFTEeGyGv5RKvEgDA" name="LA6630-3"/>
       <ownedLiteral xmi:id="_coVyIMFTEeGyGv5RKvEgDA" name="LA7410-9"/>
       <ownedLiteral xmi:id="_cob4wMFTEeGyGv5RKvEgDA" name="LA7452-1"/>
       <ownedLiteral xmi:id="_coimcMFTEeGyGv5RKvEgDA" name="LA7460-4"/>
@@ -311,7 +305,6 @@
       <ownedLiteral xmi:id="_crga4MFTEeGyGv5RKvEgDA" name="LA18225-5"/>
       <ownedLiteral xmi:id="_crmhgMFTEeGyGv5RKvEgDA" name="LA18226-3"/>
       <ownedLiteral xmi:id="_crsoIMFTEeGyGv5RKvEgDA" name="LA6626-1"/>
-      <ownedLiteral xmi:id="_crzV0MFTEeGyGv5RKvEgDA" name="LA6630-3"/>
       <ownedLiteral xmi:id="_cr5ccMFTEeGyGv5RKvEgDA" name="LA7410-9"/>
       <ownedLiteral xmi:id="_cr_jEMFTEeGyGv5RKvEgDA" name="LA7452-1"/>
       <ownedLiteral xmi:id="_csGQwMFTEeGyGv5RKvEgDA" name="LA7460-4"/>
@@ -336,7 +329,6 @@
       <ownedLiteral xmi:id="_ctxrwMFTEeGyGv5RKvEgDA" name="LA18225-5"/>
       <ownedLiteral xmi:id="_ct4ZcMFTEeGyGv5RKvEgDA" name="LA18226-3"/>
       <ownedLiteral xmi:id="_cuOXsMFTEeGyGv5RKvEgDA" name="LA6626-1"/>
-      <ownedLiteral xmi:id="_cuUeUMFTEeGyGv5RKvEgDA" name="LA6630-3"/>
       <ownedLiteral xmi:id="_cubMAMFTEeGyGv5RKvEgDA" name="LA7410-9"/>
       <ownedLiteral xmi:id="_cuh5sMFTEeGyGv5RKvEgDA" name="LA7452-1"/>
       <ownedLiteral xmi:id="_cuonYMFTEeGyGv5RKvEgDA" name="LA7460-4"/>
@@ -391,7 +383,6 @@
       <ownedLiteral xmi:id="_czFCgMFTEeGyGv5RKvEgDA" name="LA18226-3"/>
       <ownedLiteral xmi:id="_czLJIMFTEeGyGv5RKvEgDA" name="LA18249-5"/>
       <ownedLiteral xmi:id="_czR20MFTEeGyGv5RKvEgDA" name="LA6626-1"/>
-      <ownedLiteral xmi:id="_czX9cMFTEeGyGv5RKvEgDA" name="LA6630-3"/>
       <ownedLiteral xmi:id="_czerIMFTEeGyGv5RKvEgDA" name="LA7410-9"/>
       <ownedLiteral xmi:id="_czkxwMFTEeGyGv5RKvEgDA" name="LA7452-1"/>
       <ownedLiteral xmi:id="_czrfcMFTEeGyGv5RKvEgDA" name="LA7460-4"/>
@@ -496,7 +487,6 @@
       <ownedLiteral xmi:id="_c-LfQMFTEeGyGv5RKvEgDA" name="LA18263-6"/>
       <ownedLiteral xmi:id="_c-Rl4MFTEeGyGv5RKvEgDA" name="LA18264-4"/>
       <ownedLiteral xmi:id="_c-YTkMFTEeGyGv5RKvEgDA" name="LA18265-1"/>
-      <ownedLiteral xmi:id="_c-qncMFTEeGyGv5RKvEgDA" name="LA6630-3"/>
       <ownedLiteral xmi:id="_u3uH8NNaEeSysKjHSGZfJQ" name="LA23822-2"/>
       <ownedLiteral xmi:id="_yH-XwNNaEeSysKjHSGZfJQ" name="LA23823-0"/>
       <ownedLiteral xmi:id="_2hZz8BoWEeyPvO14mrApVQ" name="NewLA-3520026"/>
@@ -702,7 +692,6 @@
       <ownedLiteral xmi:id="_c6xl8MFTEeGyGv5RKvEgDA" name="LA18256-0"/>
       <ownedLiteral xmi:id="_c64ToMFTEeGyGv5RKvEgDA" name="LA18257-8"/>
       <ownedLiteral xmi:id="_c6-aQMFTEeGyGv5RKvEgDA" name="LA18258-6"/>
-      <ownedLiteral xmi:id="_c7FH8MFTEeGyGv5RKvEgDA" name="LA6630-3"/>
       <ownedLiteral xmi:id="_07zYkL4uEeWsSvGfUKC7GA" name="LA7423-2"/>
       <ownedLiteral xmi:id="_7NnU4L4uEeWsSvGfUKC7GA" name="LA18252-9"/>
       <ownedLiteral xmi:id="_A_0kEL4vEeWsSvGfUKC7GA" name="LA17283-5"/>
@@ -1117,7 +1106,6 @@
       <ownedLiteral xmi:id="_du-qEMFTEeGyGv5RKvEgDA" name="LA17570-5"/>
       <ownedLiteral xmi:id="_dvEwsMFTEeGyGv5RKvEgDA" name="LA18269-3"/>
       <ownedLiteral xmi:id="_dvLeYMFTEeGyGv5RKvEgDA" name="LA46-8"/>
-      <ownedLiteral xmi:id="_dvSMEMFTEeGyGv5RKvEgDA" name="LA6630-3"/>
       <ownedLiteral xmi:id="_97e-4NNWEeSysKjHSGZfJQ" name="LA23828-9"/>
       <ownedLiteral xmi:id="_DOnFYNNXEeSysKjHSGZfJQ" name="LA23829-7"/>
       <ownedLiteral xmi:id="_IDphsNNXEeSysKjHSGZfJQ" name="LA23830-5"/>
@@ -1269,7 +1257,6 @@
       <ownedLiteral xmi:id="_d5Av0MFTEeGyGv5RKvEgDA" name="LA17290-0"/>
       <ownedLiteral xmi:id="_d5G2cMFTEeGyGv5RKvEgDA" name="LA18259-4"/>
       <ownedLiteral xmi:id="_d5UR0MFTEeGyGv5RKvEgDA" name="LA6560-2"/>
-      <ownedLiteral xmi:id="_d5a_gMFTEeGyGv5RKvEgDA" name="LA6630-3"/>
       <ownedLiteral xmi:id="_d5htMMFTEeGyGv5RKvEgDA" name="LA7438-0"/>
       <ownedLiteral xmi:id="_d5nz0MFTEeGyGv5RKvEgDA" name="LA9343-0"/>
       <ownedLiteral xmi:id="_dvifANNaEeSysKjHSGZfJQ" name="LA6150-2"/>
@@ -1624,7 +1611,6 @@
       <ownedLiteral xmi:id="_nWZaoBocEeyPvO14mrApVQ" name="newLA3523019"/>
       <ownedLiteral xmi:id="_n_pzABocEeyPvO14mrApVQ" name="newLA3523021"/>
       <ownedLiteral xmi:id="_olpcABocEeyPvO14mrApVQ" name="newLA3523023"/>
-      <ownedLiteral xmi:id="_pPRn0BocEeyPvO14mrApVQ" name="newLA3523015"/>
       <ownedLiteral xmi:id="_qz-UwBocEeyPvO14mrApVQ" name="newLA3523027"/>
       <ownedLiteral xmi:id="_r1ifcBocEeyPvO14mrApVQ" name="newLA3523029"/>
       <ownedLiteral xmi:id="_svjQoBocEeyPvO14mrApVQ" name="newLA3523025"/>
@@ -1648,7 +1634,6 @@
       <ownedLiteral xmi:id="_eqRQoBofEeyPvO14mrApVQ" name="newLA3525013"/>
       <ownedLiteral xmi:id="_gbbsQBofEeyPvO14mrApVQ" name="newLA3525023"/>
       <ownedLiteral xmi:id="_hMnRkBofEeyPvO14mrApVQ" name="newLA3525009"/>
-      <ownedLiteral xmi:id="_j1rlkBofEeyPvO14mrApVQ" name="newLA3525031"/>
       <ownedLiteral xmi:id="_kVFeYBofEeyPvO14mrApVQ" name="newLA3525005"/>
       <ownedLiteral xmi:id="_k29cYBofEeyPvO14mrApVQ" name="newLA3525003"/>
       <ownedLiteral xmi:id="_lVRJABofEeyPvO14mrApVQ" name="newLA3525001"/>
@@ -1912,7 +1897,6 @@
   <term:ValueSetCode xmi:id="_cXvKUMFTEeGyGv5RKvEgDA" conceptName="Poor turgor" base_EnumerationLiteral="_cXujQMFTEeGyGv5RKvEgDA" xxxxx="LA18218-0"/>
   <term:ValueSetCode xmi:id="_cX1Q8cFTEeGyGv5RKvEgDA" conceptName="Tenting" base_EnumerationLiteral="_cX1Q8MFTEeGyGv5RKvEgDA" xxxxx="LA18219-8"/>
   <term:ValueSetCode xmi:id="_cX7XkcFTEeGyGv5RKvEgDA" conceptName="Normal" base_EnumerationLiteral="_cX7XkMFTEeGyGv5RKvEgDA" xxxxx="LA6626-1"/>
-  <term:ValueSetCode xmi:id="_cYBeMcFTEeGyGv5RKvEgDA" conceptName="Not done" base_EnumerationLiteral="_cYBeMMFTEeGyGv5RKvEgDA" xxxxx="LA6630-3"/>
   <term:ValueSetCode xmi:id="_cYHk0cFTEeGyGv5RKvEgDA" conceptName="Bleeding controlled" base_EnumerationLiteral="_cYHk0MFTEeGyGv5RKvEgDA" xxxxx="LA17208-2"/>
   <term:ValueSetCode xmi:id="_cYNrccFTEeGyGv5RKvEgDA" conceptName="Bleeding uncontrolled" base_EnumerationLiteral="_cYNrcMFTEeGyGv5RKvEgDA" xxxxx="LA17209-0"/>
   <term:ValueSetCode xmi:id="_cYUZIMFTEeGyGv5RKvEgDA" conceptName="Decapitation" base_EnumerationLiteral="_cYTyEMFTEeGyGv5RKvEgDA" xxxxx="LA17210-8"/>
@@ -1928,7 +1912,6 @@
   <term:ValueSetCode xmi:id="_cZk9YcFTEeGyGv5RKvEgDA" conceptName="Deformity" base_EnumerationLiteral="_cZk9YMFTEeGyGv5RKvEgDA" xxxxx="LA18225-5"/>
   <term:ValueSetCode xmi:id="_cZrEAcFTEeGyGv5RKvEgDA" conceptName="Foreign body" base_EnumerationLiteral="_cZrEAMFTEeGyGv5RKvEgDA" xxxxx="LA18226-3"/>
   <term:ValueSetCode xmi:id="_cZxKocFTEeGyGv5RKvEgDA" conceptName="Normal" base_EnumerationLiteral="_cZxKoMFTEeGyGv5RKvEgDA" xxxxx="LA6626-1"/>
-  <term:ValueSetCode xmi:id="_cZ34UMFTEeGyGv5RKvEgDA" conceptName="Not done" base_EnumerationLiteral="_cZ3RQMFTEeGyGv5RKvEgDA" xxxxx="LA6630-3"/>
   <term:ValueSetCode xmi:id="_cZ9-8MFTEeGyGv5RKvEgDA" conceptName="Abrasion" base_EnumerationLiteral="_cZ9X4MFTEeGyGv5RKvEgDA" xxxxx="LA7410-9"/>
   <term:ValueSetCode xmi:id="_caEFkcFTEeGyGv5RKvEgDA" conceptName="Laceration" base_EnumerationLiteral="_caEFkMFTEeGyGv5RKvEgDA" xxxxx="LA7452-1"/>
   <term:ValueSetCode xmi:id="_caKMMcFTEeGyGv5RKvEgDA" conceptName="Pain" base_EnumerationLiteral="_caKMMMFTEeGyGv5RKvEgDA" xxxxx="LA7460-4"/>
@@ -1947,7 +1930,6 @@
   <term:ValueSetCode xmi:id="_cbzyAcFTEeGyGv5RKvEgDA" conceptName="Deformity" base_EnumerationLiteral="_cbzyAMFTEeGyGv5RKvEgDA" xxxxx="LA18225-5"/>
   <term:ValueSetCode xmi:id="_cb6fsMFTEeGyGv5RKvEgDA" conceptName="Foreign body" base_EnumerationLiteral="_cb54oMFTEeGyGv5RKvEgDA" xxxxx="LA18226-3"/>
   <term:ValueSetCode xmi:id="_ccAmUcFTEeGyGv5RKvEgDA" conceptName="Normal" base_EnumerationLiteral="_ccAmUMFTEeGyGv5RKvEgDA" xxxxx="LA6626-1"/>
-  <term:ValueSetCode xmi:id="_ccGs8cFTEeGyGv5RKvEgDA" conceptName="Not done" base_EnumerationLiteral="_ccGs8MFTEeGyGv5RKvEgDA" xxxxx="LA6630-3"/>
   <term:ValueSetCode xmi:id="_ccMzkcFTEeGyGv5RKvEgDA" conceptName="Abrasion" base_EnumerationLiteral="_ccMzkMFTEeGyGv5RKvEgDA" xxxxx="LA7410-9"/>
   <term:ValueSetCode xmi:id="_ccS6McFTEeGyGv5RKvEgDA" conceptName="Laceration" base_EnumerationLiteral="_ccS6MMFTEeGyGv5RKvEgDA" xxxxx="LA7452-1"/>
   <term:ValueSetCode xmi:id="_ccZn4MFTEeGyGv5RKvEgDA" conceptName="Pain" base_EnumerationLiteral="_ccZA0MFTEeGyGv5RKvEgDA" xxxxx="LA7460-4"/>
@@ -1968,7 +1950,6 @@
   <term:ValueSetCode xmi:id="_ceXWwMFTEeGyGv5RKvEgDA" conceptName="Tracheal deviation-right" base_EnumerationLiteral="_ceWvsMFTEeGyGv5RKvEgDA" xxxxx="LA18227-1"/>
   <term:ValueSetCode xmi:id="_ceddYcFTEeGyGv5RKvEgDA" conceptName="Tracheal deviation-left" base_EnumerationLiteral="_ceddYMFTEeGyGv5RKvEgDA" xxxxx="LA18228-9"/>
   <term:ValueSetCode xmi:id="_cekLEMFTEeGyGv5RKvEgDA" conceptName="Normal" base_EnumerationLiteral="_cejkAMFTEeGyGv5RKvEgDA" xxxxx="LA6626-1"/>
-  <term:ValueSetCode xmi:id="_ceqRscFTEeGyGv5RKvEgDA" conceptName="Not done" base_EnumerationLiteral="_ceqRsMFTEeGyGv5RKvEgDA" xxxxx="LA6630-3"/>
   <term:ValueSetCode xmi:id="_cewYUcFTEeGyGv5RKvEgDA" conceptName="Abrasion" base_EnumerationLiteral="_cewYUMFTEeGyGv5RKvEgDA" xxxxx="LA7410-9"/>
   <term:ValueSetCode xmi:id="_ce3GAMFTEeGyGv5RKvEgDA" conceptName="Laceration" base_EnumerationLiteral="_ce2e8MFTEeGyGv5RKvEgDA" xxxxx="LA7452-1"/>
   <term:ValueSetCode xmi:id="_ce9MocFTEeGyGv5RKvEgDA" conceptName="Pain" base_EnumerationLiteral="_ce9MoMFTEeGyGv5RKvEgDA" xxxxx="LA7460-4"/>
@@ -1993,7 +1974,6 @@
   <term:ValueSetCode xmi:id="_clrfscFTEeGyGv5RKvEgDA" conceptName="S4" base_EnumerationLiteral="_clrfsMFTEeGyGv5RKvEgDA" xxxxx="LA18245-3"/>
   <term:ValueSetCode xmi:id="_clxmUcFTEeGyGv5RKvEgDA" conceptName="Rubs" base_EnumerationLiteral="_clxmUMFTEeGyGv5RKvEgDA" xxxxx="LA18246-1"/>
   <term:ValueSetCode xmi:id="_cl3s8cFTEeGyGv5RKvEgDA" conceptName="Normal" base_EnumerationLiteral="_cl3s8MFTEeGyGv5RKvEgDA" xxxxx="LA6626-1"/>
-  <term:ValueSetCode xmi:id="_cl-aoMFTEeGyGv5RKvEgDA" conceptName="Not done" base_EnumerationLiteral="_cl9zkMFTEeGyGv5RKvEgDA" xxxxx="LA6630-3"/>
   <term:ValueSetCode xmi:id="_cmEhQcFTEeGyGv5RKvEgDA" conceptName="Bleeding controlled" base_EnumerationLiteral="_cmEhQMFTEeGyGv5RKvEgDA" xxxxx="LA17208-2"/>
   <term:ValueSetCode xmi:id="_cmKn4cFTEeGyGv5RKvEgDA" conceptName="Bleeding uncontrolled" base_EnumerationLiteral="_cmKn4MFTEeGyGv5RKvEgDA" xxxxx="LA17209-0"/>
   <term:ValueSetCode xmi:id="_cmQugcFTEeGyGv5RKvEgDA" conceptName="Mass/lesion" base_EnumerationLiteral="_cmQugMFTEeGyGv5RKvEgDA" xxxxx="LA17213-2"/>
@@ -2013,7 +1993,6 @@
   <term:ValueSetCode xmi:id="_cn7iccFTEeGyGv5RKvEgDA" conceptName="Bowel sounds-absent" base_EnumerationLiteral="_cn7icMFTEeGyGv5RKvEgDA" xxxxx="LA18247-9"/>
   <term:ValueSetCode xmi:id="_coCQIMFTEeGyGv5RKvEgDA" conceptName="Bowel sounds-present" base_EnumerationLiteral="_coBpEMFTEeGyGv5RKvEgDA" xxxxx="LA18248-7"/>
   <term:ValueSetCode xmi:id="_coI90cFTEeGyGv5RKvEgDA" conceptName="Normal" base_EnumerationLiteral="_coI90MFTEeGyGv5RKvEgDA" xxxxx="LA6626-1"/>
-  <term:ValueSetCode xmi:id="_coPrgMFTEeGyGv5RKvEgDA" conceptName="Not done" base_EnumerationLiteral="_coPEcMFTEeGyGv5RKvEgDA" xxxxx="LA6630-3"/>
   <term:ValueSetCode xmi:id="_coVyIcFTEeGyGv5RKvEgDA" conceptName="Abrasion" base_EnumerationLiteral="_coVyIMFTEeGyGv5RKvEgDA" xxxxx="LA7410-9"/>
   <term:ValueSetCode xmi:id="_cob4wcFTEeGyGv5RKvEgDA" conceptName="Laceration" base_EnumerationLiteral="_cob4wMFTEeGyGv5RKvEgDA" xxxxx="LA7452-1"/>
   <term:ValueSetCode xmi:id="_coimccFTEeGyGv5RKvEgDA" conceptName="Pain" base_EnumerationLiteral="_coimcMFTEeGyGv5RKvEgDA" xxxxx="LA7460-4"/>
@@ -2045,7 +2024,6 @@
   <term:ValueSetCode xmi:id="_crga4cFTEeGyGv5RKvEgDA" conceptName="Deformity" base_EnumerationLiteral="_crga4MFTEeGyGv5RKvEgDA" xxxxx="LA18225-5"/>
   <term:ValueSetCode xmi:id="_crmhgcFTEeGyGv5RKvEgDA" conceptName="Foreign body" base_EnumerationLiteral="_crmhgMFTEeGyGv5RKvEgDA" xxxxx="LA18226-3"/>
   <term:ValueSetCode xmi:id="_crsoIcFTEeGyGv5RKvEgDA" conceptName="Normal" base_EnumerationLiteral="_crsoIMFTEeGyGv5RKvEgDA" xxxxx="LA6626-1"/>
-  <term:ValueSetCode xmi:id="_crzV0cFTEeGyGv5RKvEgDA" conceptName="Not done" base_EnumerationLiteral="_crzV0MFTEeGyGv5RKvEgDA" xxxxx="LA6630-3"/>
   <term:ValueSetCode xmi:id="_cr5cccFTEeGyGv5RKvEgDA" conceptName="Abrasion" base_EnumerationLiteral="_cr5ccMFTEeGyGv5RKvEgDA" xxxxx="LA7410-9"/>
   <term:ValueSetCode xmi:id="_csAKIMFTEeGyGv5RKvEgDA" conceptName="Laceration" base_EnumerationLiteral="_cr_jEMFTEeGyGv5RKvEgDA" xxxxx="LA7452-1"/>
   <term:ValueSetCode xmi:id="_csGQwcFTEeGyGv5RKvEgDA" conceptName="Pain" base_EnumerationLiteral="_csGQwMFTEeGyGv5RKvEgDA" xxxxx="LA7460-4"/>
@@ -2065,7 +2043,6 @@
   <term:ValueSetCode xmi:id="_ctyS0MFTEeGyGv5RKvEgDA" conceptName="Deformity" base_EnumerationLiteral="_ctxrwMFTEeGyGv5RKvEgDA" xxxxx="LA18225-5"/>
   <term:ValueSetCode xmi:id="_ct4ZccFTEeGyGv5RKvEgDA" conceptName="Foreign body" base_EnumerationLiteral="_ct4ZcMFTEeGyGv5RKvEgDA" xxxxx="LA18226-3"/>
   <term:ValueSetCode xmi:id="_cuOXscFTEeGyGv5RKvEgDA" conceptName="Normal" base_EnumerationLiteral="_cuOXsMFTEeGyGv5RKvEgDA" xxxxx="LA6626-1"/>
-  <term:ValueSetCode xmi:id="_cuVFYMFTEeGyGv5RKvEgDA" conceptName="Not done" base_EnumerationLiteral="_cuUeUMFTEeGyGv5RKvEgDA" xxxxx="LA6630-3"/>
   <term:ValueSetCode xmi:id="_cubMAcFTEeGyGv5RKvEgDA" conceptName="Abrasion" base_EnumerationLiteral="_cubMAMFTEeGyGv5RKvEgDA" xxxxx="LA7410-9"/>
   <term:ValueSetCode xmi:id="_cuh5scFTEeGyGv5RKvEgDA" conceptName="Laceration" base_EnumerationLiteral="_cuh5sMFTEeGyGv5RKvEgDA" xxxxx="LA7452-1"/>
   <term:ValueSetCode xmi:id="_cuonYcFTEeGyGv5RKvEgDA" conceptName="Pain" base_EnumerationLiteral="_cuonYMFTEeGyGv5RKvEgDA" xxxxx="LA7460-4"/>
@@ -2111,7 +2088,6 @@
   <term:ValueSetCode xmi:id="_czFCgcFTEeGyGv5RKvEgDA" conceptName="Foreign body" base_EnumerationLiteral="_czFCgMFTEeGyGv5RKvEgDA" xxxxx="LA18226-3"/>
   <term:ValueSetCode xmi:id="_czLJIcFTEeGyGv5RKvEgDA" conceptName="Clubbing of fingers" base_EnumerationLiteral="_czLJIMFTEeGyGv5RKvEgDA" xxxxx="LA18249-5"/>
   <term:ValueSetCode xmi:id="_czR20cFTEeGyGv5RKvEgDA" conceptName="Normal" base_EnumerationLiteral="_czR20MFTEeGyGv5RKvEgDA" xxxxx="LA6626-1"/>
-  <term:ValueSetCode xmi:id="_czX9ccFTEeGyGv5RKvEgDA" conceptName="Not done" base_EnumerationLiteral="_czX9cMFTEeGyGv5RKvEgDA" xxxxx="LA6630-3"/>
   <term:ValueSetCode xmi:id="_czerIcFTEeGyGv5RKvEgDA" conceptName="Abrasion" base_EnumerationLiteral="_czerIMFTEeGyGv5RKvEgDA" xxxxx="LA7410-9"/>
   <term:ValueSetCode xmi:id="_czkxwcFTEeGyGv5RKvEgDA" conceptName="Laceration" base_EnumerationLiteral="_czkxwMFTEeGyGv5RKvEgDA" xxxxx="LA7452-1"/>
   <term:ValueSetCode xmi:id="_czrfccFTEeGyGv5RKvEgDA" conceptName="Pain" base_EnumerationLiteral="_czrfcMFTEeGyGv5RKvEgDA" xxxxx="LA7460-4"/>
@@ -2188,7 +2164,6 @@
   <term:ValueSetCode xmi:id="_c6xl8cFTEeGyGv5RKvEgDA" conceptName="PERRL" base_EnumerationLiteral="_c6xl8MFTEeGyGv5RKvEgDA" xxxxx="LA18256-0"/>
   <term:ValueSetCode xmi:id="_c64TocFTEeGyGv5RKvEgDA" conceptName="Sluggish" base_EnumerationLiteral="_c64ToMFTEeGyGv5RKvEgDA" xxxxx="LA18257-8"/>
   <term:ValueSetCode xmi:id="_c6-aQcFTEeGyGv5RKvEgDA" conceptName="8 mm or >" base_EnumerationLiteral="_c6-aQMFTEeGyGv5RKvEgDA" xxxxx="LA18258-6"/>
-  <term:ValueSetCode xmi:id="_c7FH8cFTEeGyGv5RKvEgDA" conceptName="Not done" base_EnumerationLiteral="_c7FH8MFTEeGyGv5RKvEgDA" xxxxx="LA6630-3"/>
   <term:ValueSetCode xmi:id="_c7LOkcFTEeGyGv5RKvEgDA" conceptName="Eyes-bilateral" base_EnumerationLiteral="_c7LOkMFTEeGyGv5RKvEgDA" xxxxx="LA18787-4"/>
   <term:ValueSetCode xmi:id="_c7R8QcFTEeGyGv5RKvEgDA" conceptName="Eye-left" base_EnumerationLiteral="_c7R8QMFTEeGyGv5RKvEgDA" xxxxx="LA18788-2"/>
   <term:ValueSetCode xmi:id="_c7YC4cFTEeGyGv5RKvEgDA" conceptName="Eye-right" base_EnumerationLiteral="_c7YC4MFTEeGyGv5RKvEgDA" xxxxx="LA18789-0"/>
@@ -2221,7 +2196,6 @@
   <term:ValueSetCode xmi:id="_c-LfQcFTEeGyGv5RKvEgDA" conceptName="Decerebrate posturing" base_EnumerationLiteral="_c-LfQMFTEeGyGv5RKvEgDA" xxxxx="LA18263-6"/>
   <term:ValueSetCode xmi:id="_c-Rl4cFTEeGyGv5RKvEgDA" conceptName="Decorticate posturing" base_EnumerationLiteral="_c-Rl4MFTEeGyGv5RKvEgDA" xxxxx="LA18264-4"/>
   <term:ValueSetCode xmi:id="_c-YTkcFTEeGyGv5RKvEgDA" conceptName="Strength-asymmetric" base_EnumerationLiteral="_c-YTkMFTEeGyGv5RKvEgDA" xxxxx="LA18265-1"/>
-  <term:ValueSetCode xmi:id="_c-qnccFTEeGyGv5RKvEgDA" conceptName="Not done" base_EnumerationLiteral="_c-qncMFTEeGyGv5RKvEgDA" xxxxx="LA6630-3"/>
   <term:ValueSetCode xmi:id="_c-wuEcFTEeGyGv5RKvEgDA" conceptName="Definite contraindications to thrombolytic use" base_EnumerationLiteral="_c-wuEMFTEeGyGv5RKvEgDA" xxxxx="LA17114-2"/>
   <term:ValueSetCode xmi:id="_c-3bwcFTEeGyGv5RKvEgDA" conceptName="Possible contraindications to thrombolytic Use" base_EnumerationLiteral="_c-3bwMFTEeGyGv5RKvEgDA" xxxxx="LA17115-9"/>
   <term:ValueSetCode xmi:id="_c--JcMFTEeGyGv5RKvEgDA" conceptName="No contraindications to thrombolytic Use" base_EnumerationLiteral="_c-9iYMFTEeGyGv5RKvEgDA" xxxxx="LA17116-7"/>
@@ -2654,7 +2628,6 @@
   <term:ValueSetCode xmi:id="_du-qEcFTEeGyGv5RKvEgDA" conceptName="OB/GYN-post-partum hemorrhage" base_EnumerationLiteral="_du-qEMFTEeGyGv5RKvEgDA" xxxxx="LA17570-5"/>
   <term:ValueSetCode xmi:id="_dvEwscFTEeGyGv5RKvEgDA" conceptName="General-cardiac arrest" base_EnumerationLiteral="_dvEwsMFTEeGyGv5RKvEgDA" xxxxx="LA18269-3"/>
   <term:ValueSetCode xmi:id="_dvLeYcFTEeGyGv5RKvEgDA" conceptName="Other" base_EnumerationLiteral="_dvLeYMFTEeGyGv5RKvEgDA" xxxxx="LA46-8"/>
-  <term:ValueSetCode xmi:id="_dvSMEcFTEeGyGv5RKvEgDA" conceptName="Not done" base_EnumerationLiteral="_dvSMEMFTEeGyGv5RKvEgDA" xxxxx="LA6630-3"/>
   <term:ValueSetCode xmi:id="_dvY5wcFTEeGyGv5RKvEgDA" conceptName="Drowning" base_EnumerationLiteral="_dvY5wMFTEeGyGv5RKvEgDA" xxxxx="LA17057-3"/>
   <term:ValueSetCode xmi:id="_dvfAYcFTEeGyGv5RKvEgDA" conceptName="Trauma" base_EnumerationLiteral="_dvfAYMFTEeGyGv5RKvEgDA" xxxxx="LA17058-1"/>
   <term:ValueSetCode xmi:id="_dvluEcFTEeGyGv5RKvEgDA" conceptName="Other (not listed)" base_EnumerationLiteral="_dvluEMFTEeGyGv5RKvEgDA" xxxxx="LA17059-9"/>
@@ -2722,7 +2695,6 @@
   <term:ValueSetCode xmi:id="_d5Av0cFTEeGyGv5RKvEgDA" conceptName="Oriented-time" base_EnumerationLiteral="_d5Av0MFTEeGyGv5RKvEgDA" xxxxx="LA17290-0"/>
   <term:ValueSetCode xmi:id="_d5HdgMFTEeGyGv5RKvEgDA" conceptName="Oriented-event" base_EnumerationLiteral="_d5G2cMFTEeGyGv5RKvEgDA" xxxxx="LA18259-4"/>
   <term:ValueSetCode xmi:id="_d5UR0cFTEeGyGv5RKvEgDA" conceptName="Confused" base_EnumerationLiteral="_d5UR0MFTEeGyGv5RKvEgDA" xxxxx="LA6560-2"/>
-  <term:ValueSetCode xmi:id="_d5a_gcFTEeGyGv5RKvEgDA" conceptName="Not done" base_EnumerationLiteral="_d5a_gMFTEeGyGv5RKvEgDA" xxxxx="LA6630-3"/>
   <term:ValueSetCode xmi:id="_d5htMcFTEeGyGv5RKvEgDA" conceptName="Hallucinations" base_EnumerationLiteral="_d5htMMFTEeGyGv5RKvEgDA" xxxxx="LA7438-0"/>
   <term:ValueSetCode xmi:id="_d5oa4MFTEeGyGv5RKvEgDA" conceptName="Unresponsive" base_EnumerationLiteral="_d5nz0MFTEeGyGv5RKvEgDA" xxxxx="LA9343-0"/>
   <term:ValueSetCode xmi:id="_d5uhgcFTEeGyGv5RKvEgDA" conceptName="Cultural, custom, religious" base_EnumerationLiteral="_d5uhgMFTEeGyGv5RKvEgDA" xxxxx="LA17306-4"/>
@@ -3209,7 +3181,6 @@
   <term:ValueSetCode xmi:id="_nWaowBocEeyPvO14mrApVQ" conceptName="Pain with Inspiraton/Expiration" base_EnumerationLiteral="_nWZaoBocEeyPvO14mrApVQ"/>
   <term:ValueSetCode xmi:id="_n_qaEBocEeyPvO14mrApVQ" conceptName="Rales" base_EnumerationLiteral="_n_pzABocEeyPvO14mrApVQ"/>
   <term:ValueSetCode xmi:id="_olqqIBocEeyPvO14mrApVQ" conceptName="Rhonchi" base_EnumerationLiteral="_olpcABocEeyPvO14mrApVQ"/>
-  <term:ValueSetCode xmi:id="_pPSO4BocEeyPvO14mrApVQ" conceptName="Not Done" base_EnumerationLiteral="_pPRn0BocEeyPvO14mrApVQ"/>
   <term:ValueSetCode xmi:id="_qz-70BocEeyPvO14mrApVQ" conceptName="Stridor" base_EnumerationLiteral="_qz-UwBocEeyPvO14mrApVQ"/>
   <term:ValueSetCode xmi:id="_r1jGgBocEeyPvO14mrApVQ" conceptName="Wheezing-Expiratory" base_EnumerationLiteral="_r1ifcBocEeyPvO14mrApVQ"/>
   <term:ValueSetCode xmi:id="_svj3sBocEeyPvO14mrApVQ" conceptName="Rhonchi/Wheezing" base_EnumerationLiteral="_svjQoBocEeyPvO14mrApVQ"/>
@@ -3246,7 +3217,6 @@
   <term:ValueSetCode xmi:id="_eqSewBofEeyPvO14mrApVQ" conceptName="Burn-Charring" base_EnumerationLiteral="_eqRQoBofEeyPvO14mrApVQ"/>
   <term:ValueSetCode xmi:id="_gbc6YBofEeyPvO14mrApVQ" conceptName="Flail Segment" base_EnumerationLiteral="_gbbsQBofEeyPvO14mrApVQ"/>
   <term:ValueSetCode xmi:id="_hMpGwBofEeyPvO14mrApVQ" conceptName="Bleeding Uncontrolled" base_EnumerationLiteral="_hMnRkBofEeyPvO14mrApVQ"/>
-  <term:ValueSetCode xmi:id="_j1sMoBofEeyPvO14mrApVQ" conceptName="Not Done" base_EnumerationLiteral="_j1rlkBofEeyPvO14mrApVQ"/>
   <term:ValueSetCode xmi:id="_kVGFcBofEeyPvO14mrApVQ" conceptName="Accessory Muscles Used with Breathing" base_EnumerationLiteral="_kVFeYBofEeyPvO14mrApVQ"/>
   <term:ValueSetCode xmi:id="_k2-qgBofEeyPvO14mrApVQ" conceptName="Avulsion" base_EnumerationLiteral="_k29cYBofEeyPvO14mrApVQ"/>
   <term:ValueSetCode xmi:id="_lVSXIBofEeyPvO14mrApVQ" conceptName="Abrasion" base_EnumerationLiteral="_lVRJABofEeyPvO14mrApVQ"/>

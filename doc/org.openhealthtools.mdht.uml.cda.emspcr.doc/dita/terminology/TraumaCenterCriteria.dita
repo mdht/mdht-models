@@ -25,7 +25,7 @@
 <thead><row>
 <entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
 </row></thead><tbody>
-<row><entry>LA17337-9</entry><entry>LOINC</entry><entry>Glasgow Coma Score less than or equal to 13</entry></row>
+<row><entry>LA23844-6</entry><entry>LOINC</entry><entry>Glasgow Coma Score less than or equal to 13</entry></row>
 <row><entry>LA17338-7</entry><entry>LOINC</entry><entry>Respiratory rate &lt; 10 or &gt;29 or (&lt;20 in infant &lt; one year)</entry></row>
 <row><entry>LA17339-5</entry><entry>LOINC</entry><entry>Systolic blood pressure less than 90</entry></row>
 <row><entry>LA17340-3</entry><entry>LOINC</entry><entry>Amputation proximal to wrist and ankle</entry></row>

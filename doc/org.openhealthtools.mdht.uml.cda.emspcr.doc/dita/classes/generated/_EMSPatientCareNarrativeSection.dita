@@ -16,7 +16,7 @@
 <ol id="conformance">
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>templateId</b></tt> ( CONF:11405 ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>@root</b>="2.16.840.1.113883.17.3.10.1.1"</tt></li></ol></li>
 <li>
-<b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10551)<tt><b>/@code</b>="67781-5" </tt><i>Summarization of encounter note Narrative</i> (CodeSystem:<tt> </tt>) (CONF:10552)
+<b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10551)<tt><b>/@code</b>="67781-5" </tt><i>Summarization of Encounter Note Narrative</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10552)
 </li>
 <li>
 <b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> which <b>SHOULD</b> equal "EMS Patient Care Report Narrative" (CONF:10554)
@@ -26,7 +26,7 @@
 </li>
 </ol>
 <ol id="aggregate">
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10551)<tt><b>/@code</b>="67781-5" </tt><i>Summarization of encounter note Narrative</i> (CodeSystem:<tt> </tt>) (CONF:10552)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10551)<tt><b>/@code</b>="67781-5" </tt><i>Summarization of Encounter Note Narrative</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10552)
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> which <b>SHOULD</b> equal "EMS Patient Care Report Narrative" (CONF:10554)
 </li>
@@ -36,7 +36,7 @@
 <section id="contextTable"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="2" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><thead><row><entry namest="col0" nameend="col0" >Contained By</entry><entry namest="col1" nameend="col1" >Contains</entry></row></thead><tbody><row><entry><xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/PatientCareReport.html">Patient Care Report</xref></entry><entry></entry></row></tbody></tgroup></table></p></section>
 <codeblock id="example" outputclass="language-xml"><![CDATA[<section>
   <templateId root="2.16.840.1.113883.17.3.10.1.1"/>
-  <code code="67781-5" displayName="Summarization of encounter note Narrative"/>
+  <code code="67781-5" codeSystem="2.16.840.1.113883.6.1" displayName="Summarization of Encounter Note Narrative"/>
   <title>EMS Patient Care Report Narrative</title>
   <text/>
 </section>

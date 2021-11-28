@@ -50,6 +50,7 @@
 <row><entry>C38238</entry><entry>FDA Route of Administration</entry><entry>Intradermal</entry></row>
 <row><entry>C64987</entry><entry>FDA Route of Administration</entry><entry>Intraosseous</entry></row>
 <row><entry>C38250</entry><entry>FDA Route of Administration</entry><entry>Intralesional</entry></row>
+<row><entry>C38676</entry><entry>FDA Route of Administration</entry><entry>Percutaneous</entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

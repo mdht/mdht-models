@@ -14,6 +14,7 @@
 <colspec colname="col2" colwidth="4*"/>
 <tbody>
 <row><entry>Value Set</entry><entry>TransportModeQualifier - 2.16.840.1.113883.17.3.11.102</entry></row>
+<row><entry>Code System</entry><entry>LOINC - 2.16.840.1.113883.6.1</entry></row>
 <row><entry>Definition</entry><entry>Techniques for managing transport speed</entry></row>
 </tbody></tgroup></table>
 <table frame="all" rowsep="1" colsep="1">
@@ -24,16 +25,16 @@
 <thead><row>
 <entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
 </row></thead><tbody>
-<row><entry>LA22798-5</entry><entry></entry><entry>Intersection Navigation-Against Normal Light Patterns</entry></row>
-<row><entry>LA22799-3</entry><entry></entry><entry>Intersection Navigation-With Automated Light Changing Technology</entry></row>
-<row><entry>LA22800-9</entry><entry></entry><entry>Intersection Navigation-With Normal Light Patterns</entry></row>
-<row><entry>LA22801-7</entry><entry></entry><entry>Speed-Enhanced per Local Policy</entry></row>
-<row><entry>LA22802-5</entry><entry></entry><entry>Speed-Normal Traffic</entry></row>
-<row><entry>LA22803-3</entry><entry></entry><entry>Lights and Sirens</entry></row>
-<row><entry>LA22804-1</entry><entry></entry><entry>Lights and No Sirens</entry></row>
-<row><entry>LA22805-8</entry><entry></entry><entry>No Lights or Sirens</entry></row>
-<row><entry>LA22807-4</entry><entry></entry><entry>Initial Lights and Sirens, Downgraded to No Lights or Sirens</entry></row>
-<row><entry>LA22806-6</entry><entry></entry><entry>Initial No Lights or Sirens, Upgraded to Lights and Sirens</entry></row>
+<row><entry>LA22798-5</entry><entry>LOINC</entry><entry>Intersection Navigation-Against Normal Light Patterns</entry></row>
+<row><entry>LA22799-3</entry><entry>LOINC</entry><entry>Intersection Navigation-With Automated Light Changing Technology</entry></row>
+<row><entry>LA22800-9</entry><entry>LOINC</entry><entry>Intersection Navigation-With Normal Light Patterns</entry></row>
+<row><entry>LA22801-7</entry><entry>LOINC</entry><entry>Speed-Enhanced per Local Policy</entry></row>
+<row><entry>LA22802-5</entry><entry>LOINC</entry><entry>Speed-Normal Traffic</entry></row>
+<row><entry>LA22803-3</entry><entry>LOINC</entry><entry>Lights and Sirens</entry></row>
+<row><entry>LA22804-1</entry><entry>LOINC</entry><entry>Lights and No Sirens</entry></row>
+<row><entry>LA22805-8</entry><entry>LOINC</entry><entry>No Lights or Sirens</entry></row>
+<row><entry>LA22807-4</entry><entry>LOINC</entry><entry>Initial Lights and Sirens, Downgraded to No Lights or Sirens</entry></row>
+<row><entry>LA22806-6</entry><entry>LOINC</entry><entry>Initial No Lights or Sirens, Upgraded to Lights and Sirens</entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

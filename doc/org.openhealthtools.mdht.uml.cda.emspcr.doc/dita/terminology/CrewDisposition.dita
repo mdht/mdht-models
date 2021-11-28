@@ -14,6 +14,7 @@
 <colspec colname="col2" colwidth="4*"/>
 <tbody>
 <row><entry>Value Set</entry><entry>CrewDisposition - 2.16.840.1.113883.17.3.11.120</entry></row>
+<row><entry>Code System</entry><entry>LOINC - 2.16.840.1.113883.6.1</entry></row>
 </tbody></tgroup></table>
 <table frame="all" rowsep="1" colsep="1">
 <tgroup cols="3">
@@ -23,13 +24,13 @@
 <thead><row>
 <entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
 </row></thead><tbody>
-<row><entry>newLA4229013</entry><entry></entry><entry>Back in Service, Care/Support Services Refused</entry></row>
-<row><entry>newLA4229011</entry><entry></entry><entry>Back in Service, No Care/Support Services Required</entry></row>
-<row><entry>newLA4229009</entry><entry></entry><entry>Incident Support Services Provided (Including Standby)</entry></row>
-<row><entry>newLA4229007</entry><entry></entry><entry>Assumed Primary Care from Another EMS Crew</entry></row>
-<row><entry>newLA4229005</entry><entry></entry><entry>Provided Care Supporting Primary EMS Crew</entry></row>
-<row><entry>newLA4229003</entry><entry></entry><entry>Initiated Primary Care and Transferred to Another EMS Crew</entry></row>
-<row><entry>newLA4229001</entry><entry></entry><entry>Initiated and Continued Primary Care</entry></row>
+<row><entry>newLA4229013</entry><entry>LOINC</entry><entry>Back in Service, Care/Support Services Refused</entry></row>
+<row><entry>newLA4229011</entry><entry>LOINC</entry><entry>Back in Service, No Care/Support Services Required</entry></row>
+<row><entry>newLA4229009</entry><entry>LOINC</entry><entry>Incident Support Services Provided (Including Standby)</entry></row>
+<row><entry>newLA4229007</entry><entry>LOINC</entry><entry>Assumed Primary Care from Another EMS Crew</entry></row>
+<row><entry>newLA4229005</entry><entry>LOINC</entry><entry>Provided Care Supporting Primary EMS Crew</entry></row>
+<row><entry>newLA4229003</entry><entry>LOINC</entry><entry>Initiated Primary Care and Transferred to Another EMS Crew</entry></row>
+<row><entry>newLA4229001</entry><entry>LOINC</entry><entry>Initiated and Continued Primary Care</entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

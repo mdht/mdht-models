@@ -16,7 +16,7 @@
 <ol id="conformance">
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>templateId</b></tt> ( CONF:11404 ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>@root</b>="2.16.840.1.113883.17.3.10.1.21"</tt></li></ol></li>
 <li>
-<b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10490)<tt><b>/@code</b>="29554-3" </tt><i>Procedure Narrative</i> (CodeSystem:<tt> </tt>) (CONF:10489)
+<b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10490)<tt><b>/@code</b>="29554-3" </tt><i>Procedure Narrative</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10489)
 </li>
 <li>
 <b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> which <b>SHOULD</b> equal "EMS Procedures Performed" (CONF:10492)
@@ -30,7 +30,7 @@ If section/@nullFlavor is not present, <b>MAY</b> contain  [0..*] <tt><b>entry</
 </li>
 </ol>
 <ol id="aggregate">
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10490)<tt><b>/@code</b>="29554-3" </tt><i>Procedure Narrative</i> (CodeSystem:<tt> </tt>) (CONF:10489)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10490)<tt><b>/@code</b>="29554-3" </tt><i>Procedure Narrative</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10489)
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> which <b>SHOULD</b> equal "EMS Procedures Performed" (CONF:10492)
 </li>
@@ -43,7 +43,7 @@ If section/@nullFlavor is not present, <b>MAY</b> contain  [0..*] <tt><b>entry</
 <section id="contextTable"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="2" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><thead><row><entry namest="col0" nameend="col0" >Contained By</entry><entry namest="col1" nameend="col1" >Contains</entry></row></thead><tbody><row><entry><xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/PatientCareReport.html">Patient Care Report</xref></entry><entry><xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/Procedure.html">Procedure</xref></entry></row></tbody></tgroup></table></p></section>
 <codeblock id="example" outputclass="language-xml"><![CDATA[<section>
   <templateId root="2.16.840.1.113883.17.3.10.1.21"/>
-  <code code="29554-3" displayName="Procedure Narrative"/>
+  <code code="29554-3" codeSystem="2.16.840.1.113883.6.1" displayName="Procedure Narrative"/>
   <title>EMS Procedures Performed</title>
   <text/>
 </section>

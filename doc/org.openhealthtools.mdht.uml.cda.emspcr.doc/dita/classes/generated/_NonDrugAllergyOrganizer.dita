@@ -17,7 +17,7 @@
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>templateId</b></tt> ( CONF:11441 ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>@root</b>="2.16.840.1.113883.17.3.10.1.49"</tt></li></ol></li>
 <li>
 <b>SHALL</b> contain  [1..1] <tt><b>component</b></tt> such that it  (CONF:10212)<ol>
-<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ExistenceOfNonDrugAllergy.html">Existence Of Non Drug Allergy</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.103</tt>)</li></ol>
+<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ExistenceOfKnownNonDrugAllergy.html">Existence Of Known Non Drug Allergy</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.103</tt>)</li></ol>
 </li>
 <li>
 <b>MAY</b> contain  [0..*] <tt><b>component</b></tt> such that it  (CONF:10213)<ol>
@@ -33,12 +33,12 @@
 </li>
 <li><b>SHALL</b> contain  [1..1] <tt><b>component</b></tt> such that it  (CONF:10212)
 <ol>
-<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ExistenceOfNonDrugAllergy.html">Existence Of Non Drug Allergy</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.103</tt>)</li></ol></li>
+<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ExistenceOfKnownNonDrugAllergy.html">Existence Of Known Non Drug Allergy</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.103</tt>)</li></ol></li>
 <li><b>MAY</b> contain  [0..*] <tt><b>component</b></tt> such that it  (CONF:10213)
 <ol>
 <li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/NonDrugAllergy.html">Non Drug Allergy</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.104</tt>)</li></ol></li>
 </ol>
-<section id="contextTable"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="2" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><thead><row><entry namest="col0" nameend="col0" >Contained By</entry><entry namest="col1" nameend="col1" >Contains</entry></row></thead><tbody><row><entry><xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/EMSAllergiesAndAdverseReactionsSection.html">EMS Allergies And Adverse Reactions Section</xref></entry><entry><xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ExistenceOfNonDrugAllergy.html">Existence Of Non Drug Allergy</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/NonDrugAllergy.html">Non Drug Allergy</xref></entry></row></tbody></tgroup></table></p></section>
+<section id="contextTable"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="2" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><thead><row><entry namest="col0" nameend="col0" >Contained By</entry><entry namest="col1" nameend="col1" >Contains</entry></row></thead><tbody><row><entry><xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/EMSAllergiesAndAdverseReactionsSection.html">EMS Allergies And Adverse Reactions Section</xref></entry><entry><xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ExistenceOfKnownNonDrugAllergy.html">Existence Of Known Non Drug Allergy</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/NonDrugAllergy.html">Non Drug Allergy</xref></entry></row></tbody></tgroup></table></p></section>
 <codeblock id="example" outputclass="language-xml"><![CDATA[<organizer classCode="CLUSTER" moodCode="SLOT">
   <templateId root="2.16.840.1.113883.17.3.10.1.49"/>
   <statusCode/>

@@ -18,7 +18,7 @@
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:11284)
 </li>
 <li>
-<b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="52002-3" </tt><i>Ambulance transport, Destination site latitude coordinate</i> (CodeSystem:<tt> </tt>) (CONF:10620)
+<b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="69750-8" </tt><i>EMS unit GPS latitude Vehicle --at dispatch</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10620)
 </li>
 <li>
 <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with <tt><b>@xsi:type</b>="PQ"</tt> (CONF:10621)<p>NEMSIS Trace: EResponse.17
@@ -30,7 +30,7 @@ UCUM units SHOULD be "deg". This may require conversion from a parsed "degree + 
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:11284)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="52002-3" </tt><i>Ambulance transport, Destination site latitude coordinate</i> (CodeSystem:<tt> </tt>) (CONF:10620)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="69750-8" </tt><i>EMS unit GPS latitude Vehicle --at dispatch</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10620)
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with <tt><b>@xsi:type</b>="PQ"</tt> (CONF:10621)
 <p>NEMSIS Trace: EResponse.17
@@ -39,7 +39,7 @@ UCUM units SHOULD be "deg". This may require conversion from a parsed "degree + 
 <section id="contextTable"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="2" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><thead><row><entry namest="col0" nameend="col0" >Contained By</entry><entry namest="col1" nameend="col1" >Contains</entry></row></thead><tbody><row><entry> </entry><entry> </entry></row></tbody></tgroup></table></p></section>
 <codeblock id="example" outputclass="language-xml"><![CDATA[<observation classCode="SPCOBS" moodCode="EVN">
   <templateId root="2.16.840.1.113883.17.3.10.1.151"/>
-  <code code="52002-3" displayName="Ambulance transport, Destination site latitude coordinate"/>
+  <code code="69750-8" codeSystem="2.16.840.1.113883.6.1" displayName="EMS unit GPS latitude Vehicle --at dispatch"/>
   <value xsi:type="PQ"/>
 </observation>
 ]]></codeblock>

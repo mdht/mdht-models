@@ -14,6 +14,7 @@
 <colspec colname="col2" colwidth="4*"/>
 <tbody>
 <row><entry>Value Set</entry><entry>RaceCategory - 2.16.840.1.114222.4.11.836</entry></row>
+<row><entry>Code System</entry><entry>Race and Ethnicity - CDC - 2.16.840.1.113883.6.238</entry></row>
 <row><entry>Source URL</entry><entry>https://phinvads.cdc.gov/vads/ViewValueSet.action?id=67D34BBC-617F-DD11-B38D-00188B398520</entry></row>
 </tbody></tgroup></table>
 <table frame="all" rowsep="1" colsep="1">

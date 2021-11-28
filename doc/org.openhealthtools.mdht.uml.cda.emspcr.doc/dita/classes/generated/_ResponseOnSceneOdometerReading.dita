@@ -18,7 +18,7 @@
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:11315)
 </li>
 <li>
-<b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10635)<tt><b>/@code</b>="67485-3" </tt><i>Counter or odometer reading NEMSIS --patient arrival</i> (CodeSystem:<tt> </tt>) (CONF:10636)
+<b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10635)<tt><b>/@code</b>="67485-3" </tt><i>Counter or odometer reading NEMSIS --patient arrival</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10636)
 </li>
 <li>
 <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with <tt><b>@xsi:type</b>="PQ"</tt> (CONF:10637)<p>NEMSIS Trace: EResponse.20
@@ -30,7 +30,7 @@ UCUM units SHOULD be "[mi_i]"</p>
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:11315)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10635)<tt><b>/@code</b>="67485-3" </tt><i>Counter or odometer reading NEMSIS --patient arrival</i> (CodeSystem:<tt> </tt>) (CONF:10636)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10635)<tt><b>/@code</b>="67485-3" </tt><i>Counter or odometer reading NEMSIS --patient arrival</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10636)
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with <tt><b>@xsi:type</b>="PQ"</tt> (CONF:10637)
 <p>NEMSIS Trace: EResponse.20
@@ -39,7 +39,7 @@ UCUM units SHOULD be "[mi_i]"</p></li>
 <section id="contextTable"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="2" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><thead><row><entry namest="col0" nameend="col0" >Contained By</entry><entry namest="col1" nameend="col1" >Contains</entry></row></thead><tbody><row><entry> </entry><entry> </entry></row></tbody></tgroup></table></p></section>
 <codeblock id="example" outputclass="language-xml"><![CDATA[<observation classCode="SPCOBS" moodCode="EVN">
   <templateId root="2.16.840.1.113883.17.3.10.1.172"/>
-  <code code="67485-3" displayName="Counter or odometer reading NEMSIS --patient arrival"/>
+  <code code="67485-3" codeSystem="2.16.840.1.113883.6.1" displayName="Counter or odometer reading NEMSIS --patient arrival"/>
   <value xsi:type="PQ"/>
 </observation>
 ]]></codeblock>

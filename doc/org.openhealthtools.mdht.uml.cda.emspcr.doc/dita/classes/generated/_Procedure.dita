@@ -18,13 +18,13 @@
 <li><b>MAY</b> contain zero or one [0..1] <tt><b>@negationInd</b></tt> (CONF:11212)
 <p>Required to document a procedure not performed, with required "reason not performed" observation</p></li>
 <li>
-<b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10496), which <b>SHALL</b> be selected from (CodeSystem:<tt> 2.16.840.1.113883.6.96 SNOMED CT</tt>) (CONF:11497)<p>NEMSIS Trace: EProcedures.03, for which use SNOMED CT
+<b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10496), which <b>SHALL</b> be selected from (CodeSystem:<tt> 2.16.840.1.113883.6.96 SNOMED CT</tt>) (CONF:11497)<p>NEMSIS Trace: eProcedures.03, for which use SNOMED CT. 
 
-See the NEMSIS Suggested Lists at https://nemsis.org/technical-resources/version-3/version-3-resource-repository/
+See the NEMSIS Suggested Lists at https://nemsis.org/.
 
-Also EArrest.09, for which use 439569004 |Resuscitation (procedure)|, with a translation of Cardiopulmonary Resuscitation type (VS 2.16.840.1.113883.17.3.11.57)
-and EArrest.10 (therapeutic hypothermia); include here as 308693008 |Induction of hypothermia (procedure)|, using negation indicator if not done
-and EArrest.03:
+NEMSIS Trace:  eArrest.09, for which use 439569004 |Resuscitation (procedure)|, with a translation of Cardiopulmonary Resuscitation type (VS 2.16.840.1.113883.17.3.11.57).
+NEMSIS Trace:  eArrest.10 (therapeutic hypothermia); include here as 308693008 |Induction of hypothermia (procedure)|, using negation indicator if not done
+NEMSIS Trace:  eArrest.03
 3003001	Attempted Defibrillation = ICD10-PCS Defibrillation 5A2204Z
 3003005	Initiated Chest Compressions: use more detailed Cardiopulmonary Resuscitation Type (2.16.840.1.113883.17.3.11.57); reader may infer from this value if necessary
 3003003	Attempted Ventilation: use more detailed Cardiopulmonary Resuscitation Type (2.16.840.1.113883.17.3.11.57); reader may infer from this value if necessary
@@ -37,7 +37,7 @@ and EArrest.03:
 Use value "aborted" for discontinued resuscitation (eArrest.15)</p>
 </li>
 <li>
-<b>SHALL</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt> (CONF:10497)<p>NEMSIS Trace: EProcedures.01 goes in effectiveTime.low
+<b>SHALL</b> contain zero or one [0..1] <tt><b>effectiveTime</b></tt> (CONF:10497)<p>NEMSIS Trace: EProcedures.01 goes in effectiveTime.low
 If an abandoned time is recorded, EArrest.15 goes in effectiveTime.high</p>
 </li>
 <li>
@@ -49,10 +49,10 @@ Some NEMSIS values require additional information: see Appendix for details.</p>
 <b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> such that it  (CONF:10498) <p><lines><i>Required for cardiac resuscitation procedures (eArrest.16)</i></lines></p><ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/AbandonedProcedureReasonObservation.html">Abandoned Procedure Reason Observation</xref> (CONF:10510)</li></ol> 
 </li>
 <li>
-<b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> such that it  (CONF:10503) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ProcedurePriorIndicator.html">Procedure Prior Indicator</xref> (CONF:10515)</li></ol> 
+<b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> such that it  (CONF:10503) <p><lines><i>For eArrest.07, may be used twice, for AED and for defibrillation.</i></lines></p><ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ProcedurePriorIndicator.html">Procedure Prior Indicator</xref> (CONF:10515)</li></ol> 
 </li>
 <li>
-<b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> such that it  (CONF:10504) <p><lines><i>Important for airway insertion</i></lines></p><ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ProcedureNumberOfAttemptsObservation.html">Procedure Number Of Attempts Observation</xref> (CONF:10519)<p><lines><i>NEMSIS Trace: EProcedures.05</i></lines></p></li></ol> 
+<b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> such that it  (CONF:10504) <p><lines><i>Important for airway insertion</i></lines></p><ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ProcedureNumberOfAttemptsObservation.html">Procedure Number Of Attempts Observation</xref> (CONF:10519)</li></ol> 
 </li>
 <li>
 <b>SHOULD</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> such that it  (CONF:10505) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ProcedureSuccessfulObservation.html">Procedure Successful Observation</xref> (CONF:10523)</li></ol> 
@@ -85,13 +85,13 @@ For procedures documented in eArrest section (eArrest.20 Who first initiated CPR
 <li><b>MAY</b> contain zero or one [0..1] <tt><b>@negationInd</b></tt> (CONF:11212)
 <p>Required to document a procedure not performed, with required "reason not performed" observation</p></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10496), which <b>SHALL</b> be selected from (CodeSystem:<tt> 2.16.840.1.113883.6.96 SNOMED CT</tt>) (CONF:11497)
-<p>NEMSIS Trace: EProcedures.03, for which use SNOMED CT
+<p>NEMSIS Trace: eProcedures.03, for which use SNOMED CT. 
 
-See the NEMSIS Suggested Lists at https://nemsis.org/technical-resources/version-3/version-3-resource-repository/
+See the NEMSIS Suggested Lists at https://nemsis.org/.
 
-Also EArrest.09, for which use 439569004 |Resuscitation (procedure)|, with a translation of Cardiopulmonary Resuscitation type (VS 2.16.840.1.113883.17.3.11.57)
-and EArrest.10 (therapeutic hypothermia); include here as 308693008 |Induction of hypothermia (procedure)|, using negation indicator if not done
-and EArrest.03:
+NEMSIS Trace:  eArrest.09, for which use 439569004 |Resuscitation (procedure)|, with a translation of Cardiopulmonary Resuscitation type (VS 2.16.840.1.113883.17.3.11.57).
+NEMSIS Trace:  eArrest.10 (therapeutic hypothermia); include here as 308693008 |Induction of hypothermia (procedure)|, using negation indicator if not done
+NEMSIS Trace:  eArrest.03
 3003001	Attempted Defibrillation = ICD10-PCS Defibrillation 5A2204Z
 3003005	Initiated Chest Compressions: use more detailed Cardiopulmonary Resuscitation Type (2.16.840.1.113883.17.3.11.57); reader may infer from this value if necessary
 3003003	Attempted Ventilation: use more detailed Cardiopulmonary Resuscitation Type (2.16.840.1.113883.17.3.11.57); reader may infer from this value if necessary
@@ -101,7 +101,7 @@ and EArrest.03:
 <li><b>MAY</b> contain zero or one [0..1] <tt><b>statusCode</b></tt> (CONF:10499)
 <p>NEMSIS Trace: EArrest.15
 Use value "aborted" for discontinued resuscitation (eArrest.15)</p></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt> (CONF:10497)
+<li><b>SHALL</b> contain zero or one [0..1] <tt><b>effectiveTime</b></tt> (CONF:10497)
 <p>NEMSIS Trace: EProcedures.01 goes in effectiveTime.low
 If an abandoned time is recorded, EArrest.15 goes in effectiveTime.high</p></li>
 <li><b>MAY</b> contain zero or one [0..1] <tt><b>approachSiteCode</b></tt> (CONF:10502), which <b>SHALL</b> be selected from ValueSet<tt> Infusion Site 2.16.840.1.113883.17.3.11.56</tt><b> DYNAMIC</b> (CONF:10501)
@@ -110,9 +110,9 @@ Required conditionally if procedure code is insertion of an infusion device
 Some NEMSIS values require additional information: see Appendix for details.</p></li>
 <li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> such that it  (CONF:10498) <p><lines><i>Required for cardiac resuscitation procedures (eArrest.16)</i></lines></p><ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/AbandonedProcedureReasonObservation.html">Abandoned Procedure Reason Observation</xref> (CONF:10510)</li></ol> 
 </li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> such that it  (CONF:10503) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ProcedurePriorIndicator.html">Procedure Prior Indicator</xref> (CONF:10515)</li></ol> 
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> such that it  (CONF:10503) <p><lines><i>For eArrest.07, may be used twice, for AED and for defibrillation.</i></lines></p><ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ProcedurePriorIndicator.html">Procedure Prior Indicator</xref> (CONF:10515)</li></ol> 
 </li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> such that it  (CONF:10504) <p><lines><i>Important for airway insertion</i></lines></p><ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ProcedureNumberOfAttemptsObservation.html">Procedure Number Of Attempts Observation</xref> (CONF:10519)<p><lines><i>NEMSIS Trace: EProcedures.05</i></lines></p></li></ol> 
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> such that it  (CONF:10504) <p><lines><i>Important for airway insertion</i></lines></p><ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ProcedureNumberOfAttemptsObservation.html">Procedure Number Of Attempts Observation</xref> (CONF:10519)</li></ol> 
 </li>
 <li><b>SHOULD</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> such that it  (CONF:10505) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ProcedureSuccessfulObservation.html">Procedure Successful Observation</xref> (CONF:10523)</li></ol> 
 </li>
@@ -134,7 +134,6 @@ For procedures documented in eArrest section (eArrest.20 Who first initiated CPR
 <codeblock id="example" outputclass="language-xml"><![CDATA[<procedure classCode="XACT" moodCode="RQO">
   <templateId root="2.16.840.1.113883.17.3.10.1.181"/>
   <code codeSystem="2.16.840.1.113883.6.96"/>
-  <effectiveTime/>
 </procedure>
 ]]></codeblock>
 <!--Error code 1: Pathmap to CDA .ecore files not resolved: pathmap://CDA_MODEL/../../org.eclipse.mdht.uml.hl7.rim/model/rim.ecore#//Act. Will not use any CDA extension!-->

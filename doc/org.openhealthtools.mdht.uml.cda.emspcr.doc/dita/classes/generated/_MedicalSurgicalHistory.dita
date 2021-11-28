@@ -18,14 +18,12 @@
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:11168)
 </li>
 <li><b>MAY</b> contain zero or one [0..1] <tt><b>@negationInd</b></tt> (CONF:11455)
-<p>For a categorical "none reported," use the Existence Of History Of Condition or Surgery. For pertinent negatives for specfic conditions, use this negation indicator with the relevant value.</p></li>
+<p>For a categorical "none reported," use the Existence Of History Of Condition or Surgery.</p></li>
 <li>
-<b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10070)<tt><b>/@code</b>="68487-8" </tt><i>Medical - surgical history - ICD-9 and 10 codes</i> (CodeSystem:<tt> </tt>) (CONF:10069)
+<b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10070)<tt><b>/@code</b>="68487-8" </tt><i>Medical - surgical history - ICD-9 and 10 codes</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10069)
 </li>
 <li>
-<b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with <tt><b>@xsi:type</b>="CD"</tt> (CONF:10072), which <b>SHALL</b> be selected from ValueSet<tt> ICD-10 CM AND PCS 2.16.840.1.113883.17.3.11.121</tt><b> STATIC</b> (CONF:11454)<p>NEMSIS Trace: EHistory. 08
-If NEMSIS EHistory.08 is "No bleeding disorder," the value should be the appropriate
-ICD-10 code (D66, D67, D68) and negationIndicator should be TRUE.</p>
+<b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with <tt><b>@xsi:type</b>="CD"</tt> (CONF:10072), which <b>SHALL</b> be selected from ValueSet<tt> ICD-10 CM AND PCS 2.16.840.1.113883.17.3.11.121</tt><b> STATIC</b> (CONF:11454)<p>NEMSIS Trace: eHistory. 08</p>
 </li>
 </ol>
 <ol id="aggregate">
@@ -34,18 +32,16 @@ ICD-10 code (D66, D67, D68) and negationIndicator should be TRUE.</p>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:11168)
 </li>
 <li><b>MAY</b> contain zero or one [0..1] <tt><b>@negationInd</b></tt> (CONF:11455)
-<p>For a categorical "none reported," use the Existence Of History Of Condition or Surgery. For pertinent negatives for specfic conditions, use this negation indicator with the relevant value.</p></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10070)<tt><b>/@code</b>="68487-8" </tt><i>Medical - surgical history - ICD-9 and 10 codes</i> (CodeSystem:<tt> </tt>) (CONF:10069)
+<p>For a categorical "none reported," use the Existence Of History Of Condition or Surgery.</p></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10070)<tt><b>/@code</b>="68487-8" </tt><i>Medical - surgical history - ICD-9 and 10 codes</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10069)
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with <tt><b>@xsi:type</b>="CD"</tt> (CONF:10072), which <b>SHALL</b> be selected from ValueSet<tt> ICD-10 CM AND PCS 2.16.840.1.113883.17.3.11.121</tt><b> STATIC</b> (CONF:11454)
-<p>NEMSIS Trace: EHistory. 08
-If NEMSIS EHistory.08 is "No bleeding disorder," the value should be the appropriate
-ICD-10 code (D66, D67, D68) and negationIndicator should be TRUE.</p></li>
+<p>NEMSIS Trace: eHistory. 08</p></li>
 </ol>
 <section id="contextTable"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="2" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><thead><row><entry namest="col0" nameend="col0" >Contained By</entry><entry namest="col1" nameend="col1" >Contains</entry></row></thead><tbody><row><entry><xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/EMSPastMedicalHistorySection.html">EMS Past Medical History Section</xref></entry><entry></entry></row></tbody></tgroup></table></p></section>
 <codeblock id="example" outputclass="language-xml"><![CDATA[<observation classCode="SPCOBS" moodCode="EVN">
   <templateId root="2.16.840.1.113883.17.3.10.1.61"/>
-  <code code="68487-8" displayName="Medical - surgical history - ICD-9 and 10 codes"/>
+  <code code="68487-8" codeSystem="2.16.840.1.113883.6.1" displayName="Medical - surgical history - ICD-9 and 10 codes"/>
   <value xsi:type="CD"/>
 </observation>
 ]]></codeblock>

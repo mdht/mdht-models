@@ -31,8 +31,8 @@
 <row><entry>LA18791-6</entry><entry>LOINC</entry><entry>Antecubital-right</entry></row>
 <row><entry>LA18792-4</entry><entry>LOINC</entry><entry>External jugular-left</entry></row>
 <row><entry>LA18793-2</entry><entry>LOINC</entry><entry>External jugular-right</entry></row>
-<row><entry>LA18794-0</entry><entry>LOINC</entry><entry>Femoral-left</entry></row>
-<row><entry>LA18795-7</entry><entry>LOINC</entry><entry>Femoral-right</entry></row>
+<row><entry>LA18794-0</entry><entry>LOINC</entry><entry>Femoral vein-left</entry></row>
+<row><entry>LA18795-7</entry><entry>LOINC</entry><entry>Femoral vein-right</entry></row>
 <row><entry>LA18796-5</entry><entry>LOINC</entry><entry>Foot-left</entry></row>
 <row><entry>LA18797-3</entry><entry>LOINC</entry><entry>Foot-right</entry></row>
 <row><entry>LA18798-1</entry><entry>LOINC</entry><entry>Hand-right</entry></row>
@@ -50,7 +50,7 @@
 <row><entry>LA18810-4</entry><entry>LOINC</entry><entry>IO-tibia-right distal</entry></row>
 <row><entry>LA18811-2</entry><entry>LOINC</entry><entry>IO-tibia-left proximal</entry></row>
 <row><entry>LA18812-0</entry><entry>LOINC</entry><entry>IO-tibia-right proximal</entry></row>
-<row><entry>LA18813-8</entry><entry>LOINC</entry><entry>Other central access (PICC, portacath)</entry></row>
+<row><entry>LA18813-8</entry><entry>LOINC</entry><entry>Other central access (PICC, portacath, etc.)</entry></row>
 <row><entry>LA18814-6</entry><entry>LOINC</entry><entry>Other peripheral access</entry></row>
 <row><entry>LA18815-3</entry><entry>LOINC</entry><entry>Scalp</entry></row>
 <row><entry>LA18816-1</entry><entry>LOINC</entry><entry>Subclavian-left</entry></row>

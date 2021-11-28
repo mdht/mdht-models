@@ -18,7 +18,7 @@
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:11291)
 </li>
 <li>
-<b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10319)<tt><b>/@code</b>="9269-2" </tt><i>Glasgow coma score.total</i> (CodeSystem:<tt> </tt>) (CONF:10318)
+<b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10319)<tt><b>/@code</b>="9269-2" </tt><i>Glasgow coma score.total</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10318)
 </li>
 <li>
 <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with <tt><b>@xsi:type</b>="INT"</tt> (CONF:10320)<p>NEMSIS Trace: EVitals.23
@@ -30,7 +30,7 @@ Integer value equal to the sum of verbal, motor, and eye</p>
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:11291)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10319)<tt><b>/@code</b>="9269-2" </tt><i>Glasgow coma score.total</i> (CodeSystem:<tt> </tt>) (CONF:10318)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10319)<tt><b>/@code</b>="9269-2" </tt><i>Glasgow coma score.total</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10318)
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with <tt><b>@xsi:type</b>="INT"</tt> (CONF:10320)
 <p>NEMSIS Trace: EVitals.23
@@ -39,7 +39,7 @@ Integer value equal to the sum of verbal, motor, and eye</p></li>
 <section id="contextTable"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="2" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><thead><row><entry namest="col0" nameend="col0" >Contained By</entry><entry namest="col1" nameend="col1" >Contains</entry></row></thead><tbody><row><entry><xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/GlasgowComaScoreOrganizer.html">Glasgow Coma Score Organizer</xref></entry><entry></entry></row></tbody></tgroup></table></p></section>
 <codeblock id="example" outputclass="language-xml"><![CDATA[<observation classCode="SPCOBS" moodCode="EVN">
   <templateId root="2.16.840.1.113883.17.3.10.1.158"/>
-  <code code="9269-2" displayName="Glasgow coma score.total"/>
+  <code code="9269-2" codeSystem="2.16.840.1.113883.6.1" displayName="Glasgow coma score.total"/>
   <value xsi:type="INT"/>
 </observation>
 ]]></codeblock>

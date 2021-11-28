@@ -18,7 +18,7 @@
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:11167)
 </li>
 <li>
-<b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="67793-0" </tt><i>Has the patient had any significant medical conditions NEMSIS</i> (CodeSystem:<tt> </tt>) (CONF:10067)
+<b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="67793-0" </tt><i>Has the patient had any significant medical conditions NEMSIS</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10067)
 </li>
 <li>
 <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with <tt><b>@xsi:type</b>="BL"</tt> (CONF:10068)<p>If NEMSIS EHistory. 08 is "Refused " or "Unable to Complete," the value should be "NI"; the original value may be recorded in Observation.text.
@@ -31,7 +31,7 @@ If NEMSIS EHistory. 08 has proper values, the value should be TRUE.</p>
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:11167)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="67793-0" </tt><i>Has the patient had any significant medical conditions NEMSIS</i> (CodeSystem:<tt> </tt>) (CONF:10067)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="67793-0" </tt><i>Has the patient had any significant medical conditions NEMSIS</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10067)
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with <tt><b>@xsi:type</b>="BL"</tt> (CONF:10068)
 <p>If NEMSIS EHistory. 08 is "Refused " or "Unable to Complete," the value should be "NI"; the original value may be recorded in Observation.text.
@@ -41,7 +41,7 @@ If NEMSIS EHistory. 08 has proper values, the value should be TRUE.</p></li>
 <section id="contextTable"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="2" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><thead><row><entry namest="col0" nameend="col0" >Contained By</entry><entry namest="col1" nameend="col1" >Contains</entry></row></thead><tbody><row><entry><xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/EMSPastMedicalHistorySection.html">EMS Past Medical History Section</xref></entry><entry></entry></row></tbody></tgroup></table></p></section>
 <codeblock id="example" outputclass="language-xml"><![CDATA[<observation classCode="SPCOBS" moodCode="EVN">
   <templateId root="2.16.840.1.113883.17.3.10.1.60"/>
-  <code code="67793-0" displayName="Has the patient had any significant medical conditions NEMSIS"/>
+  <code code="67793-0" codeSystem="2.16.840.1.113883.6.1" displayName="Has the patient had any significant medical conditions NEMSIS"/>
   <value xsi:type="BL"/>
 </observation>
 ]]></codeblock>

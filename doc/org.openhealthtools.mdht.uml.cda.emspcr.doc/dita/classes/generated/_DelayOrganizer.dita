@@ -16,7 +16,7 @@
 <ol id="conformance">
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>templateId</b></tt> ( CONF:11489 ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>@root</b>="2.16.840.1.113883.17.3.10.1.95"</tt></li></ol></li>
 <li>
-<b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt> such that it  (CONF:10583) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/DispatchDelay.html">Dispatch Delay</xref> (CONF:10588)<p><lines><i>NEMSIS Trace: EResponse.08</i></lines></p></li></ol> 
+<b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt> such that it  (CONF:10583) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/DispatchDelay.html">Dispatch Delay</xref> (CONF:10588)</li></ol> 
 </li>
 <li>
 <b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt> such that it  (CONF:10584) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ResponseDelay.html">Response Delay</xref> (CONF:10593)</li></ol> 
@@ -38,7 +38,7 @@
 </li>
 <li>contain exactly one [1..1] <tt><b>datatypes:statusCode</b></tt>
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt> such that it  (CONF:10583) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/DispatchDelay.html">Dispatch Delay</xref> (CONF:10588)<p><lines><i>NEMSIS Trace: EResponse.08</i></lines></p></li></ol> 
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt> such that it  (CONF:10583) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/DispatchDelay.html">Dispatch Delay</xref> (CONF:10588)</li></ol> 
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt> such that it  (CONF:10584) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ResponseDelay.html">Response Delay</xref> (CONF:10593)</li></ol> 
 </li>
@@ -56,35 +56,35 @@
   <component>
     <observation classCode="SPCOBS" moodCode="EVN">
       <templateId root="2.16.840.1.113883.17.3.10.1.153"/>
-      <code code="67480-4" displayName="Dispatch delay NEMSIS"/>
+      <code code="67480-4" codeSystem="2.16.840.1.113883.6.1" displayName="Dispatch delay NEMSIS"/>
       <value xsi:type="CD"/>
     </observation>
   </component>
   <component>
     <observation classCode="SPCOBS" moodCode="EVN">
       <templateId root="2.16.840.1.113883.17.3.10.1.154"/>
-      <code code="67557-9" displayName="Response delay NEMSIS"/>
+      <code code="67557-9" codeSystem="2.16.840.1.113883.6.1" displayName="Response delay NEMSIS"/>
       <value xsi:type="CD"/>
     </observation>
   </component>
   <component>
     <observation classCode="SPCOBS" moodCode="EVN">
       <templateId root="2.16.840.1.113883.17.3.10.1.155"/>
-      <code code="67558-7" displayName="Scene delay NEMSIS"/>
+      <code code="67558-7" codeSystem="2.16.840.1.113883.6.1" displayName="Scene delay NEMSIS"/>
       <value xsi:type="CD"/>
     </observation>
   </component>
   <component>
     <observation classCode="SPCOBS" moodCode="EVN">
       <templateId root="2.16.840.1.113883.17.3.10.1.156"/>
-      <code code="67559-5" displayName="Transport delay NEMSIS"/>
+      <code code="67559-5" codeSystem="2.16.840.1.113883.6.1" displayName="Transport delay NEMSIS"/>
       <value xsi:type="CD"/>
     </observation>
   </component>
   <component>
     <observation classCode="SPCOBS" moodCode="EVN">
       <templateId root="2.16.840.1.113883.17.3.10.1.157"/>
-      <code code="67560-3" displayName="Turn-around delay NEMSIS"/>
+      <code code="67560-3" codeSystem="2.16.840.1.113883.6.1" displayName="Turn-around delay NEMSIS"/>
       <value xsi:type="CD"/>
     </observation>
   </component>

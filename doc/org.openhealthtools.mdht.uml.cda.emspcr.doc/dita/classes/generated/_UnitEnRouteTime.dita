@@ -18,7 +18,7 @@
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:11145)
 </li>
 <li>
-<b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10843)<tt><b>/@code</b>="69472-9" </tt><i>Unit responded [Date and time] Vehicle NEMSIS</i> (CodeSystem:<tt> </tt>) (CONF:10842)
+<b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10843)<tt><b>/@code</b>="69472-9" </tt><i>Unit responded [Date and time] Vehicle NEMSIS</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10842)
 </li>
 <li>
 <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with <tt><b>@xsi:type</b>="TS"</tt> (CONF:10844)<p>NEMSIS Trace: ETimes.05</p>
@@ -29,7 +29,7 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:11145)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10843)<tt><b>/@code</b>="69472-9" </tt><i>Unit responded [Date and time] Vehicle NEMSIS</i> (CodeSystem:<tt> </tt>) (CONF:10842)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10843)<tt><b>/@code</b>="69472-9" </tt><i>Unit responded [Date and time] Vehicle NEMSIS</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10842)
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with <tt><b>@xsi:type</b>="TS"</tt> (CONF:10844)
 <p>NEMSIS Trace: ETimes.05</p></li>
@@ -37,7 +37,7 @@
 <section id="contextTable"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="2" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><thead><row><entry namest="col0" nameend="col0" >Contained By</entry><entry namest="col1" nameend="col1" >Contains</entry></row></thead><tbody><row><entry><xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/EMSTimesSection.html">EMS Times Section</xref></entry><entry></entry></row></tbody></tgroup></table></p></section>
 <codeblock id="example" outputclass="language-xml"><![CDATA[<observation classCode="SPCOBS" moodCode="EVN">
   <templateId root="2.16.840.1.113883.17.3.10.1.40"/>
-  <code code="69472-9" displayName="Unit responded [Date and time] Vehicle NEMSIS"/>
+  <code code="69472-9" codeSystem="2.16.840.1.113883.6.1" displayName="Unit responded [Date and time] Vehicle NEMSIS"/>
   <value xsi:type="TS"/>
 </observation>
 ]]></codeblock>

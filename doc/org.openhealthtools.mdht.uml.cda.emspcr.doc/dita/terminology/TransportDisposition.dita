@@ -14,6 +14,7 @@
 <colspec colname="col2" colwidth="4*"/>
 <tbody>
 <row><entry>Value Set</entry><entry>TransportDisposition - 2.16.840.1.113883.17.3.11.115</entry></row>
+<row><entry>Code System</entry><entry>LOINC - 2.16.840.1.113883.6.1</entry></row>
 </tbody></tgroup></table>
 <table frame="all" rowsep="1" colsep="1">
 <tgroup cols="3">
@@ -23,13 +24,13 @@
 <thead><row>
 <entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
 </row></thead><tbody>
-<row><entry>newLA4230013</entry><entry></entry><entry>No Transport</entry></row>
-<row><entry>newLA4230011</entry><entry></entry><entry>Non-Patient Transport (Not Otherwise Listed)</entry></row>
-<row><entry>newLA4230009</entry><entry></entry><entry>Patient Refused Transport</entry></row>
-<row><entry>newLA4230007</entry><entry></entry><entry>Transport by Another EMS Unit, with a Member of This Crew</entry></row>
-<row><entry>newLA4230005</entry><entry></entry><entry>Transport by Another EMS Unit</entry></row>
-<row><entry>newLA4230003</entry><entry></entry><entry>Transport by This EMS Unit, with a Member of Another Crew</entry></row>
-<row><entry>newLA4230001</entry><entry></entry><entry>Transport by This EMS Unit (This Crew Only)</entry></row>
+<row><entry>newLA4230013</entry><entry>LOINC</entry><entry>No Transport</entry></row>
+<row><entry>newLA4230011</entry><entry>LOINC</entry><entry>Non-Patient Transport (Not Otherwise Listed)</entry></row>
+<row><entry>newLA4230009</entry><entry>LOINC</entry><entry>Patient Refused Transport</entry></row>
+<row><entry>newLA4230007</entry><entry>LOINC</entry><entry>Transport by Another EMS Unit, with a Member of This Crew</entry></row>
+<row><entry>newLA4230005</entry><entry>LOINC</entry><entry>Transport by Another EMS Unit</entry></row>
+<row><entry>newLA4230003</entry><entry>LOINC</entry><entry>Transport by This EMS Unit, with a Member of Another Crew</entry></row>
+<row><entry>newLA4230001</entry><entry>LOINC</entry><entry>Transport by This EMS Unit (This Crew Only)</entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

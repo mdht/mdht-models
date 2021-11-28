@@ -16,7 +16,7 @@
 <ol id="conformance">
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>templateId</b></tt> ( CONF:11403 ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>@root</b>="2.16.840.1.113883.17.3.10.1.18"</tt></li></ol></li>
 <li>
-<b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10439)<tt><b>/@code</b>="67849-0" </tt><i>EMS medications administered Narrative NEMSIS</i> (CodeSystem:<tt> </tt>) (CONF:10987)
+<b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10439)<tt><b>/@code</b>="67849-0" </tt><i>EMS Medications Administered Narrative NEMSIS</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10987)
 </li>
 <li>
 <b>SHALL</b> contain exactly one [1..1] <tt><b>title</b>="Medications Administered" </tt> which <b>SHOULD</b> equal "Medications Administered Section" (CONF:10442)
@@ -30,7 +30,7 @@ If section/@nullFlavor is not present, <b>MAY</b> contain  [0..*] <tt><b>entry</
 </li>
 </ol>
 <ol id="aggregate">
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10439)<tt><b>/@code</b>="67849-0" </tt><i>EMS medications administered Narrative NEMSIS</i> (CodeSystem:<tt> </tt>) (CONF:10987)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10439)<tt><b>/@code</b>="67849-0" </tt><i>EMS Medications Administered Narrative NEMSIS</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10987)
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b>="Medications Administered" </tt> which <b>SHOULD</b> equal "Medications Administered Section" (CONF:10442)
 </li>
@@ -43,7 +43,7 @@ If section/@nullFlavor is not present, <b>MAY</b> contain  [0..*] <tt><b>entry</
 <section id="contextTable"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="2" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><thead><row><entry namest="col0" nameend="col0" >Contained By</entry><entry namest="col1" nameend="col1" >Contains</entry></row></thead><tbody><row><entry><xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/PatientCareReport.html">Patient Care Report</xref></entry><entry><xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/MedicationAdministered.html">Medication Administered</xref></entry></row></tbody></tgroup></table></p></section>
 <codeblock id="example" outputclass="language-xml"><![CDATA[<section>
   <templateId root="2.16.840.1.113883.17.3.10.1.18"/>
-  <code code="67849-0" displayName="EMS medications administered Narrative NEMSIS"/>
+  <code code="67849-0" codeSystem="2.16.840.1.113883.6.1" displayName="EMS Medications Administered Narrative NEMSIS"/>
   <title>Medications Administered Section</title>
   <text/>
 </section>
