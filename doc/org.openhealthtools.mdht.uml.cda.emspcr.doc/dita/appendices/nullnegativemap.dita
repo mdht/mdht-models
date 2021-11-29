@@ -151,6 +151,20 @@
               <entry>   </entry>
               <entry> null: NI; add detail to obs.text or proc.text </entry>
             </row>
+            <row>
+              <entry>
+                <b>Proper Values</b>
+              </entry>
+              <entry/>
+              <entry/>
+              <entry/>
+            </row>
+            <row>
+              <entry>Not done</entry>
+              <entry>null</entry>
+              <entry>observation</entry>
+              <entry>Observation.value = null (NASK) </entry>
+            </row>
           </tbody>
         </tgroup>
       </table>

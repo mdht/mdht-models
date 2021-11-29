@@ -32,7 +32,6 @@
 <row><entry>LA17290-0</entry><entry>LOINC</entry><entry>Oriented-time</entry></row>
 <row><entry>LA18259-4</entry><entry>LOINC</entry><entry>Oriented-event</entry></row>
 <row><entry>LA6560-2</entry><entry>LOINC</entry><entry>Confused</entry></row>
-<row><entry>LA6630-3</entry><entry>LOINC</entry><entry>Not done</entry></row>
 <row><entry>LA7438-0</entry><entry>LOINC</entry><entry>Hallucinations</entry></row>
 <row><entry>LA9343-0</entry><entry>LOINC</entry><entry>Unresponsive</entry></row>
 <row><entry>LA6150-2</entry><entry>LOINC</entry><entry>Agitation</entry></row>

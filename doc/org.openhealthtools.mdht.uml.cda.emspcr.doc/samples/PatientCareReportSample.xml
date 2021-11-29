@@ -1063,14 +1063,6 @@
           </entry>
           <entry>
             <observation classCode="OBS" moodCode="EVN">            
-              <templateId root="2.16.840.1.1133883.17.3.10.1.32"/>
-              <id root="2.16.840.1.113883.19.4" extension="1899014973"/>
-              <code code="67548-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="EMS incident disposition"/>
-              <value xsi:type="CD" code="LA17154-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Patient treated, transported by EMS"/>
-            </observation>
-          </entry>
-          <entry>
-            <observation classCode="OBS" moodCode="EVN">            
               <templateId root="2.16.840.1.1133883.17.3.10.1.33"/>
               <id root="2.16.840.1.113883.19.4" extension="580930350"/>
               <code code="67550-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="EMS transport mode"/>
@@ -1110,6 +1102,39 @@
               <value xsi:type="CD" code="LA65-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Improved"/>
             </observation>
           </entry>
+          <entry>
+            <observation classCode="OBS" moodCode="EVN">            	
+              <templateId root="2.16.840.1.1133883.17.3.10.1.196"/>
+              <id root="2.16.840.1.113883.19.4" extension="1899017001"/>
+              <code code="neweDisposition.27" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Unit disposition"/>
+              <value xsi:type="CD" code="newLA4227001" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Patient Contact Made"/>
+            </observation>
+          </entry>
+          <entry>
+            <observation classCode="OBS" moodCode="EVN">            
+              <templateId root="2.16.840.1.1133883.17.3.10.1.197"/>
+              <id root="2.16.840.1.113883.19.4" extension="1899017002"/>
+              <code code="neweDisposition.28" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Unit disposition"/>
+              <value xsi:type="CD" code="newLA4228009" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Patient Support Services Provided"/>
+            </observation>
+          </entry>
+          <entry>
+            <observation classCode="OBS" moodCode="EVN">            
+              <templateId root="2.16.840.1.1133883.17.3.10.1.198"/>
+              <id root="2.16.840.1.113883.19.4" extension="1899017003"/>
+              <code code="neweDisposition.29" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Crew disposition"/>
+              <value xsi:type="CD" code="newLA4229001" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Initiated and Continued Primary Care"/>
+            </observation>
+          </entry>
+          <entry>
+            <observation classCode="OBS" moodCode="EVN">            
+              <templateId root="2.16.840.1.1133883.17.3.10.1.199"/>
+              <id root="2.16.840.1.113883.19.4" extension="1899017004"/>
+              <code code="neweDisposition.30" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Transport disposition"/>
+              <value xsi:type="CD" code="newLA4230001" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Transport by This EMS Unit (This Crew Only)"/>
+            </observation>
+          </entry>
+          
         </section>
       </component>
       <component>

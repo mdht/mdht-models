@@ -7,6 +7,12 @@
 			<p>NEMSIS gender codes can be represented as follows.</p>
 			<table>
 				<tgroup cols="6">
+					<colspec colnum="1" colname="c1" colwidth="2*"/>
+					<colspec colnum="2" colname="c2" colwidth="3*"/>
+					<colspec colnum="3" colname="c3" colwidth="1*"/>
+					<colspec colnum="4" colname="c4" colwidth="2*"/>
+					<colspec colnum="5" colname="c5" colwidth="4*"/>
+					<colspec colnum="6" colname="c6" colwidth="10*"/>
 					<thead>
 						<row>
 							<entry>NEMSIS code</entry>
@@ -46,8 +52,8 @@
 							<entry>M</entry>
 							<entry>Male</entry>
 							<entry>2.16.840.1.113883.5.1</entry>
-							<entry>&lt;translation code ="9906007" displayName="Female-to-Male, Transgender
-								Male" codeSystem="2.16.840.1.1133883.17.3.12"> </entry>
+							<entry>       &lt;translation code ="9906007" displayName="Female-to-Male, Transgender Male"
+							codeSystem="2.16.840.1.1133883.17.3.12"> </entry>
 						</row>
 						<row>
 							<entry>
@@ -59,8 +65,8 @@
 							<entry>F</entry>
 							<entry>Female</entry>
 							<entry>2.16.840.1.113883.5.1</entry>
-							<entry>&lt;translation code ="9906007" displayName="Male-to-Female, Transgender
-								Female" codeSystem="2.16.840.1.1133883.17.3.12"></entry>
+							<entry>       &lt;translation code ="9906007" displayName="Male-to-Female, Transgender
+							Female" codeSystem="2.16.840.1.1133883.17.3.12"></entry>
 						</row>
 						<row>
 							<entry>
