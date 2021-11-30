@@ -1246,7 +1246,7 @@
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_yL1P0HSTEeGa4IXs2ghZEw" name="NonDrugAllergyType">
       <ownedComment xmi:id="_LyrcgDXhEeWpTYI46fwViQ">
-        <body>Valid values are SNOMED CT descendants of 419199007 Allergy to Substance or 258155009 photosensitization due to sun.  Reference the NEMSIS Suggested Lists at http://nemsis.org/.</body>
+        <body>Valid values are SNOMED CT descendants of 419199007 Allergy to Substance or 258155009 photosensitization due to sun.  Reference the NEMSIS Suggested Lists at https://nemsis.org/technical-resources/version-3/version-3-resources/.</body>
       </ownedComment>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_1rU1gHSTEeGa4IXs2ghZEw" name="MentalStatusFinding">

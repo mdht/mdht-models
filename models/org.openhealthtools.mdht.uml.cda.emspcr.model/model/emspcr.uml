@@ -4103,7 +4103,7 @@ Note: rate values should be recorded in rateQuantity, not doseQuantity</body>
             <ownedAttribute xmi:id="_yvkMQJslEeGzXI65shd6Fw" name="code" visibility="private" aggregation="composite">
               <ownedComment xmi:id="_SRQRYJsmEeGzXI65shd6Fw">
                 <body>NEMSIS Trace: eMedications.03&#xD;
-Note: all of RxNorm is valid in this field, but NEMSIS provides a selected list at http://www.nemsis.org/.&#xD;
+Note: all of RxNorm is valid in this field, but NEMSIS provides a selected list at https://nemsis.org/technical-resources/version-3/version-3-resources/.&#xD;
 &#xD;
 For blood products, the following SNOMED CT codes may be used:&#xD;
 116762002 Administration of blood product&#xD;
@@ -4907,7 +4907,7 @@ UCUM units SHOULD be 'min' 'h' 'd' 'wk' 'mo' or 'a'</body>
       <ownedAttribute xmi:id="_dvSRock3EeK2gbjCtOEivw" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_lub5gMk3EeK2gbjCtOEivw">
           <body>NEMSIS trace: eScene.09 (Incident location type)&#xD;
-See NEMSIS recommended subset at http://nemsis.org/. ICD-10 CM contains &quot;place of occurrence of external cause&quot; under code Y92.</body>
+See NEMSIS recommended subset at https://nemsis.org/technical-resources/version-3/version-3-resources/. ICD-10 CM contains &quot;place of occurrence of external cause&quot; under code Y92.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hTuBsMk3EeK2gbjCtOEivw" value="1"/>

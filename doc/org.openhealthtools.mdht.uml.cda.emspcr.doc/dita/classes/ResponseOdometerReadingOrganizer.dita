@@ -22,7 +22,17 @@
 <p audience="examples"><b>Response Odometer Reading Organizer example</b></p>
 <!-- TODO: insert custom instance example here -->
 <!-- generated instance example follows -->
-<codeblock audience="examples" conref="generated/_ResponseOdometerReadingOrganizer.dita#classId/example">
-</codeblock>
+    <codeblock id="example" outputclass="language-xml"><![CDATA[
+            <organizer classCode="CLUSTER" moodCode="EVN">            
+              <templateId root="2.16.840.1.113883.17.3.10.1.97"/>
+              <id root="2.16.840.1.113883.19.4" extension="243446586"/>
+              <statusCode code="completed"/>
+              <effectiveTime value="201201011602+0600"/>
+              <component>
+                . . . 
+              </component>
+            </organizer>
+]]></codeblock>
+    
 </body>
 </topic>

@@ -20,7 +20,7 @@
 </li>
 <li>
 <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with <tt><b>@xsi:type</b>="CD"</tt> (CONF:11387), which <b>SHALL</b> be selected from (CodeSystem:<tt> 2.16.840.1.113883.6.90 ICD-10 CM</tt>) (CONF:11203)<p>NEMSIS trace: eScene.09 (Incident location type)
-See NEMSIS recommended subset at http://nemsis.org/. ICD-10 CM contains "place of occurrence of external cause" under code Y92.</p>
+See NEMSIS recommended subset at https://nemsis.org/technical-resources/version-3/version-3-resources/. ICD-10 CM contains "place of occurrence of external cause" under code Y92.</p>
 </li>
 </ol>
 <ol id="aggregate">
@@ -32,7 +32,7 @@ See NEMSIS recommended subset at http://nemsis.org/. ICD-10 CM contains "place o
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with <tt><b>@xsi:type</b>="CD"</tt> (CONF:11387), which <b>SHALL</b> be selected from (CodeSystem:<tt> 2.16.840.1.113883.6.90 ICD-10 CM</tt>) (CONF:11203)
 <p>NEMSIS trace: eScene.09 (Incident location type)
-See NEMSIS recommended subset at http://nemsis.org/. ICD-10 CM contains "place of occurrence of external cause" under code Y92.</p></li>
+See NEMSIS recommended subset at https://nemsis.org/technical-resources/version-3/version-3-resources/. ICD-10 CM contains "place of occurrence of external cause" under code Y92.</p></li>
 </ol>
 <section id="contextTable"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="2" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><thead><row><entry namest="col0" nameend="col0" >Contained By</entry><entry namest="col1" nameend="col1" >Contains</entry></row></thead><tbody><row><entry><xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/EMSSceneSection.html">EMS Scene Section</xref></entry><entry></entry></row></tbody></tgroup></table></p></section>
 <codeblock id="example" outputclass="language-xml"><![CDATA[<observation classCode="SPCOBS" moodCode="RQO">
