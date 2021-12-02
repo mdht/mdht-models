@@ -37,7 +37,7 @@ If section/@nullFlavor is not present, <b>SHALL</b> contain  [1..1] <tt><b>entry
 <li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/TraumaTriageCriteriaSteps1and2.html">Trauma Triage Criteria Steps1and2</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.52</tt>)</li></ol>
 </li>
 <li>
-If section/@nullFlavor is not present, <b>SHALL</b> contain  [1..*] <tt><b>entry</b></tt> such that it  (CONF:10923)<ol>
+If section/@nullFlavor is not present, <b>SHALL</b> contain  [1..1] <tt><b>entry</b></tt> such that it  (CONF:10923)<ol>
 <li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/TraumaTriageCriteriaSteps3and4.html">Trauma Triage Criteria Steps3and4</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.53</tt>)</li></ol>
 </li>
 <li>
@@ -81,7 +81,7 @@ If section/@nullFlavor is not present, <b>MAY</b> contain  [0..1] <tt><b>entry</
 <li>If section/@nullFlavor is not present, <b>SHALL</b> contain  [1..1] <tt><b>entry</b></tt> such that it  (CONF:10921)
 <ol>
 <li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/TraumaTriageCriteriaSteps1and2.html">Trauma Triage Criteria Steps1and2</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.52</tt>)</li></ol></li>
-<li>If section/@nullFlavor is not present, <b>SHALL</b> contain  [1..*] <tt><b>entry</b></tt> such that it  (CONF:10923)
+<li>If section/@nullFlavor is not present, <b>SHALL</b> contain  [1..1] <tt><b>entry</b></tt> such that it  (CONF:10923)
 <ol>
 <li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/TraumaTriageCriteriaSteps3and4.html">Trauma Triage Criteria Steps3and4</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.53</tt>)</li></ol></li>
 <li>If section/@nullFlavor is not present, <b>MAY</b> contain  [0..1] <tt><b>entry</b></tt> such that it  (CONF:10925)

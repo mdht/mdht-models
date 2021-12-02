@@ -19,10 +19,10 @@
 <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:11597)<tt><b>/@code</b>="NeweExam.25" </tt> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:11596)
 </li>
 <li>
-<b>MAY</b> contain zero or more [0..*] <tt><b>value</b></tt> with <tt><b>@xsi:type</b>="CD"</tt> (CONF:11599), which <b>SHALL</b> be selected from ValueSet<tt> ChestFinding 2.16.840.1.113883.17.3.11.118</tt><b> STATIC</b> (CONF:11598)<p>NEMSIS Trace: eExam.25</p>
+<b>SHALL</b> contain at least one [1..*] <tt><b>value</b></tt> with <tt><b>@xsi:type</b>="CD"</tt> (CONF:11599), which <b>SHALL</b> be selected from ValueSet<tt> ChestFinding 2.16.840.1.113883.17.3.11.118</tt><b> STATIC</b> (CONF:11598)<p>NEMSIS Trace: eExam.25</p>
 </li>
 <li>
-<b>SHOULD</b> contain zero or more [0..*] <tt><b>targetSiteCode</b></tt> (CONF:11610), which <b>SHALL</b> be selected from ValueSet<tt> ChestFindingLocation 2.16.840.1.113883.17.3.11.119</tt><b> STATIC</b> (CONF:11611)<p>NEMSIS Trace: eExam.24</p>
+<b>SHOULD</b> contain zero or one [0..1] <tt><b>targetSiteCode</b></tt> (CONF:11610), which <b>SHALL</b> be selected from ValueSet<tt> ChestFindingLocation 2.16.840.1.113883.17.3.11.119</tt><b> STATIC</b> (CONF:11611)<p>NEMSIS Trace: eExam.24</p>
 </li>
 </ol>
 <ol id="aggregate">
@@ -32,15 +32,16 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:11597)<tt><b>/@code</b>="NeweExam.25" </tt> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:11596)
 </li>
-<li><b>MAY</b> contain zero or more [0..*] <tt><b>value</b></tt> with <tt><b>@xsi:type</b>="CD"</tt> (CONF:11599), which <b>SHALL</b> be selected from ValueSet<tt> ChestFinding 2.16.840.1.113883.17.3.11.118</tt><b> STATIC</b> (CONF:11598)
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>value</b></tt> with <tt><b>@xsi:type</b>="CD"</tt> (CONF:11599), which <b>SHALL</b> be selected from ValueSet<tt> ChestFinding 2.16.840.1.113883.17.3.11.118</tt><b> STATIC</b> (CONF:11598)
 <p>NEMSIS Trace: eExam.25</p></li>
-<li><b>SHOULD</b> contain zero or more [0..*] <tt><b>targetSiteCode</b></tt> (CONF:11610), which <b>SHALL</b> be selected from ValueSet<tt> ChestFindingLocation 2.16.840.1.113883.17.3.11.119</tt><b> STATIC</b> (CONF:11611)
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>targetSiteCode</b></tt> (CONF:11610), which <b>SHALL</b> be selected from ValueSet<tt> ChestFindingLocation 2.16.840.1.113883.17.3.11.119</tt><b> STATIC</b> (CONF:11611)
 <p>NEMSIS Trace: eExam.24</p></li>
 </ol>
 <section id="contextTable"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="2" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><thead><row><entry namest="col0" nameend="col0" >Contained By</entry><entry namest="col1" nameend="col1" >Contains</entry></row></thead><tbody><row><entry><xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/PhysicalAssessmentOrganizer.html">Physical Assessment Organizer</xref></entry><entry></entry></row></tbody></tgroup></table></p></section>
 <codeblock id="example" outputclass="language-xml"><![CDATA[<observation classCode="SPCOBS" moodCode="RQO">
   <templateId root="2.16.840.1.1133883.17.3.10.1.195"/>
   <code code="NeweExam.25" codeSystem="2.16.840.1.113883.6.1"/>
+  <value xsi:type="CD"/>
 </observation>
 ]]></codeblock>
 <!--Error code 1: Pathmap to CDA .ecore files not resolved: pathmap://CDA_MODEL/../../org.eclipse.mdht.uml.hl7.rim/model/rim.ecore#//Act. Will not use any CDA extension!-->

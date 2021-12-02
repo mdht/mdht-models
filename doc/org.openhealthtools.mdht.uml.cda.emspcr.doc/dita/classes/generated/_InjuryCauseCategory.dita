@@ -21,7 +21,7 @@
 <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="69543-7" </tt><i>Cause of injury NEMSIS</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10106)
 </li>
 <li>
-<b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with <tt><b>@xsi:type</b>="CD"</tt> (CONF:11614), which <b>SHALL</b> be selected from (CodeSystem:<tt> 2.16.840.1.113883.6.90 ICD-10 CM</tt>) (CONF:10108)<p>NEMSIS Trace: EInjury.01
+<b>SHALL</b> contain at least one [1..*] <tt><b>value</b></tt> with <tt><b>@xsi:type</b>="CD"</tt> (CONF:11614), which <b>SHALL</b> be selected from (CodeSystem:<tt> 2.16.840.1.113883.6.90 ICD-10 CM</tt>) (CONF:10108)<p>NEMSIS Trace: EInjury.01
 Causes are in ICD-10 chapter XX and parts of XIX.</p>
 </li>
 </ol>
@@ -32,7 +32,7 @@ Causes are in ICD-10 chapter XX and parts of XIX.</p>
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="69543-7" </tt><i>Cause of injury NEMSIS</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10106)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with <tt><b>@xsi:type</b>="CD"</tt> (CONF:11614), which <b>SHALL</b> be selected from (CodeSystem:<tt> 2.16.840.1.113883.6.90 ICD-10 CM</tt>) (CONF:10108)
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>value</b></tt> with <tt><b>@xsi:type</b>="CD"</tt> (CONF:11614), which <b>SHALL</b> be selected from (CodeSystem:<tt> 2.16.840.1.113883.6.90 ICD-10 CM</tt>) (CONF:10108)
 <p>NEMSIS Trace: EInjury.01
 Causes are in ICD-10 chapter XX and parts of XIX.</p></li>
 </ol>

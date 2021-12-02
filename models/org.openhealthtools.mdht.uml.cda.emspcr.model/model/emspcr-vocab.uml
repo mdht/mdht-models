@@ -1481,7 +1481,7 @@
       <ownedLiteral xmi:id="_e6QcYMtcEeSbT7e8VE5niQ" name="LA22807-4"/>
       <ownedLiteral xmi:id="_bVA0AMtcEeSbT7e8VE5niQ" name="LA22806-6"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_1wps0MxCEeSOI6Ao2VuoSQ" name="PrimaryHospitalCapability">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_1wps0MxCEeSOI6Ao2VuoSQ" name="HospitalCapability">
       <ownedLiteral xmi:id="_7w-QgMxCEeSOI6Ao2VuoSQ" name="LA22833-0"/>
       <ownedLiteral xmi:id="_DL80UMxDEeSOI6Ao2VuoSQ" name="LA22834-8"/>
       <ownedLiteral xmi:id="_Fvr8YMxDEeSOI6Ao2VuoSQ" name="LA22835-5"/>
@@ -2852,7 +2852,7 @@
   <term:ValueSetCode xmi:id="_71vW4PsTEeKCRNC-sxBJsQ" conceptName="Female" base_EnumerationLiteral="_71uv0PsTEeKCRNC-sxBJsQ">
     <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_VXEOQCF_Ed-M3adQxwHq4g"/>
   </term:ValueSetCode>
-  <term:ValueSetVersion xmi:id="_T7wrUMtYEeSbT7e8VE5niQ" identifier="2.16.840.1.113883.17.3.11.101" definition="Outcome of an EMS cardiac arrest event" base_Enumeration="_T7u2IMtYEeSbT7e8VE5niQ">
+  <term:ValueSetVersion xmi:id="_T7wrUMtYEeSbT7e8VE5niQ" identifier="2.16.840.1.113883.17.3.11.101" definition="Outcome of an EMS cardiac arrest event" binding="Dynamic" base_Enumeration="_T7u2IMtYEeSbT7e8VE5niQ">
     <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
   <term:ValueSetCode xmi:id="_XPlMgMtYEeSbT7e8VE5niQ" conceptName="Expired in ED" base_EnumerationLiteral="_XPj-YMtYEeSbT7e8VE5niQ">
@@ -3190,7 +3190,7 @@
   <term:ValueSetCode xmi:id="_aGP9wBodEeyPvO14mrApVQ" conceptName="Right" base_EnumerationLiteral="_aGPWsBodEeyPvO14mrApVQ"/>
   <term:ValueSetCode xmi:id="_alVtgBodEeyPvO14mrApVQ" conceptName="Left" base_EnumerationLiteral="_alUfYBodEeyPvO14mrApVQ"/>
   <term:ValueSetCode xmi:id="_bDJq4BodEeyPvO14mrApVQ" conceptName="Bilateral" base_EnumerationLiteral="_bDIcwBodEeyPvO14mrApVQ"/>
-  <term:ValueSetVersion xmi:id="_sQPB8BodEeyPvO14mrApVQ" identifier="2.16.840.1.113883.17.3.11.118" base_Enumeration="_sQNMwBodEeyPvO14mrApVQ">
+  <term:ValueSetVersion xmi:id="_sQPB8BodEeyPvO14mrApVQ" identifier="2.16.840.1.113883.17.3.11.118" binding="Dynamic" base_Enumeration="_sQNMwBodEeyPvO14mrApVQ">
     <codeSystem href="file:/C:/Users/JayLyle/eclipse-workspace/org.openhealthtools.mdht.uml.cda.emspcr.model/model/emspcr-vocab.uml#_YgJ0wcFTEeGyGv5RKvEgDA"/>
   </term:ValueSetVersion>
   <term:ValueSetVersion xmi:id="_yFiocBodEeyPvO14mrApVQ" identifier="2.16.840.1.113883.17.3.11.119" base_Enumeration="_yFhaUBodEeyPvO14mrApVQ">
@@ -3300,7 +3300,7 @@
   <term:ValueSetCode xmi:id="_QUY78DKkEeyOwtfRawW6Qw" conceptName="Patient Contact Made" base_EnumerationLiteral="_QUYU4DKkEeyOwtfRawW6Qw">
     <codeSystem href="file:/C:/Users/JayLyle/eclipse-workspace/org.openhealthtools.mdht.uml.cda.emspcr.model/model/emspcr-vocab.uml#_YgJ0wcFTEeGyGv5RKvEgDA"/>
   </term:ValueSetCode>
-  <term:ValueSetVersion xmi:id="_04PogDKmEeyOwtfRawW6Qw" identifier="2.16.840.1.113883.17.3.11.120" base_Enumeration="_04PBcDKmEeyOwtfRawW6Qw">
+  <term:ValueSetVersion xmi:id="_04PogDKmEeyOwtfRawW6Qw" identifier="2.16.840.1.113883.17.3.11.120" binding="Dynamic" base_Enumeration="_04PBcDKmEeyOwtfRawW6Qw">
     <codeSystem href="file:/C:/Users/JayLyle/eclipse-workspace/BackupPCR/model/emspcr-vocab.uml#_YgJ0wcFTEeGyGv5RKvEgDA"/>
   </term:ValueSetVersion>
   <term:ValueSetCode xmi:id="_rzRyoDKnEeyOwtfRawW6Qw" conceptName="Back in Service, Care/Support Services Refused" base_EnumerationLiteral="_rzQkgDKnEeyOwtfRawW6Qw"/>
