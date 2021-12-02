@@ -2876,7 +2876,7 @@
   <term:ValueSetCode xmi:id="_XVKTQctcEeSbT7e8VE5niQ" conceptName="No Lights or Sirens" base_EnumerationLiteral="_XVKTQMtcEeSbT7e8VE5niQ"/>
   <term:ValueSetCode xmi:id="_bVBbEMtcEeSbT7e8VE5niQ" conceptName="Initial No Lights or Sirens, Upgraded to Lights and Sirens" base_EnumerationLiteral="_bVA0AMtcEeSbT7e8VE5niQ"/>
   <term:ValueSetCode xmi:id="_e6RDcMtcEeSbT7e8VE5niQ" conceptName="Initial Lights and Sirens, Downgraded to No Lights or Sirens" base_EnumerationLiteral="_e6QcYMtcEeSbT7e8VE5niQ"/>
-  <term:ValueSetVersion xmi:id="_1wsJEMxCEeSOI6Ao2VuoSQ" identifier="2.16.840.1.113883.17.3.11.104" definition="Characteristic hospital capabilities that might be germane to an EMS destination selection" base_Enumeration="_1wps0MxCEeSOI6Ao2VuoSQ">
+  <term:ValueSetVersion xmi:id="_1wsJEMxCEeSOI6Ao2VuoSQ" identifier="2.16.840.1.113883.17.3.11.104" definition="Characteristic hospital capabilities that might be germane to an EMS destination selection" binding="Dynamic" base_Enumeration="_1wps0MxCEeSOI6Ao2VuoSQ">
     <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
   <term:ValueSetCode xmi:id="_7w-3kMxCEeSOI6Ao2VuoSQ" conceptName="Behavioral health" base_EnumerationLiteral="_7w-QgMxCEeSOI6Ao2VuoSQ"/>
