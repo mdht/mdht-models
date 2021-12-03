@@ -2818,9 +2818,7 @@
   <term:ValueSetCode xmi:id="_JcBl4LMUEeKNbt70lHd2Eg" conceptName="Considered futile" base_EnumerationLiteral="_JcA-0LMUEeKNbt70lHd2Eg"/>
   <term:ValueSetCode xmi:id="_LAykQbMUEeKNbt70lHd2Eg" conceptName="DNR orders" base_EnumerationLiteral="_LAykQLMUEeKNbt70lHd2Eg"/>
   <term:ValueSetCode xmi:id="_MAcDYLMUEeKNbt70lHd2Eg" conceptName="Signs of circulation" base_EnumerationLiteral="_MAbcULMUEeKNbt70lHd2Eg"/>
-  <term:ValueSetVersion xmi:id="_7DvPsLMpEeKNbt70lHd2Eg" identifier="2.16.840.1.114222.4.11.836" fullName="General race category reported by the patient" url="https://phinvads.cdc.gov/vads/ViewValueSet.action?id=67D34BBC-617F-DD11-B38D-00188B398520" binding="Dynamic" base_Enumeration="_7DuooLMpEeKNbt70lHd2Eg">
-    <codeSystem href="file:/C:/Users/JayLyle/eclipse-workspace/BackupPCR/model/emspcr-vocab.uml#_vgktgLM0EeKq7sXu8zXehQ"/>
-  </term:ValueSetVersion>
+  <term:ValueSetVersion xmi:id="_7DvPsLMpEeKNbt70lHd2Eg" identifier="2.16.840.1.114222.4.11.836" fullName="General race category reported by the patient" url="https://phinvads.cdc.gov/vads/ViewValueSet.action?id=67D34BBC-617F-DD11-B38D-00188B398520" binding="Dynamic" codeSystem="_vgktgLM0EeKq7sXu8zXehQ" base_Enumeration="_7DuooLMpEeKNbt70lHd2Eg"/>
   <term:ValueSetCode xmi:id="_BAds0LMqEeKNbt70lHd2Eg" conceptName="American Indian or Alaska Native" base_EnumerationLiteral="_BAdFwLMqEeKNbt70lHd2Eg">
     <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_dfdYoKDqEd-dVeaMP0XXQw"/>
   </term:ValueSetCode>
@@ -2864,7 +2862,7 @@
   <term:ValueSetCode xmi:id="_LiCK0MtZEeSbT7e8VE5niQ" conceptName="Return of spontaneous circulation in the ED" base_EnumerationLiteral="_LiA8sMtZEeSbT7e8VE5niQ"/>
   <term:ValueSetCode xmi:id="_OhUmcMtZEeSbT7e8VE5niQ" conceptName="Ongoing resuscitation by other EMS crew" base_EnumerationLiteral="_OhT_YMtZEeSbT7e8VE5niQ"/>
   <term:ValueSetVersion xmi:id="_TLXBwMtbEeSbT7e8VE5niQ" identifier="2.16.840.1.113883.17.3.11.102" definition="Techniques for managing transport speed" binding="Dynamic" base_Enumeration="_TLVzoMtbEeSbT7e8VE5niQ">
-    <codeSystem href="file:/C:/Users/JayLyle/eclipse-workspace/BackupPCR/model/emspcr-vocab.uml#_YgJ0wcFTEeGyGv5RKvEgDA"/>
+    <codeSystem href="#_YgJ0wcFTEeGyGv5RKvEgDA"/>
   </term:ValueSetVersion>
   <term:ValueSetCode xmi:id="_3A798MtbEeSbT7e8VE5niQ" conceptName="Intersection Navigation-Against Normal Light Patterns" base_EnumerationLiteral="_3A7W4MtbEeSbT7e8VE5niQ"/>
   <term:ValueSetCode xmi:id="_AB1WsMtcEeSbT7e8VE5niQ" conceptName="Intersection Navigation-With Automated Light Changing Technology" base_EnumerationLiteral="_AB0IkMtcEeSbT7e8VE5niQ"/>
@@ -2893,7 +2891,7 @@
   <term:ValueSetCode xmi:id="_rvKkUMxDEeSOI6Ao2VuoSQ" conceptName="Trauma center level 5" base_EnumerationLiteral="_rvJ9QMxDEeSOI6Ao2VuoSQ"/>
   <term:ValueSetCode xmi:id="_vFxTwMxDEeSOI6Ao2VuoSQ" conceptName="Cardiac-STEMI/PCI Capable" base_EnumerationLiteral="_vFwssMxDEeSOI6Ao2VuoSQ"/>
   <term:ValueSetCode xmi:id="_yrk80MxDEeSOI6Ao2VuoSQ" conceptName="Cardiac-STEMI/PCI Capable (24/7)" base_EnumerationLiteral="_yrkVwMxDEeSOI6Ao2VuoSQ"/>
-  <term:ValueSetVersion xmi:id="_PLJC0MxGEeSOI6Ao2VuoSQ" identifier="2.16.840.1.113883.17.3.11.103" definition="The location within the hospital that the patient was taken directly by EMS" base_Enumeration="_PLHNoMxGEeSOI6Ao2VuoSQ">
+  <term:ValueSetVersion xmi:id="_PLJC0MxGEeSOI6Ao2VuoSQ" identifier="2.16.840.1.113883.17.3.11.103" definition="The location within the hospital that the patient was taken directly by EMS" binding="Dynamic" base_Enumeration="_PLHNoMxGEeSOI6Ao2VuoSQ">
     <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
   <term:ValueSetCode xmi:id="_bdpWQMxGEeSOI6Ao2VuoSQ" conceptName="Hospital-burn" base_EnumerationLiteral="_bdovMMxGEeSOI6Ao2VuoSQ"/>
@@ -2934,7 +2932,7 @@
   <term:ValueSetCode xmi:id="_Ldp8Bs0YEeSJm6m0rTs9zw" conceptName="No Lights or Sirens" base_EnumerationLiteral="_Ldot6M0YEeSJm6m0rTs9zw"/>
   <term:ValueSetCode xmi:id="_Ldp8B80YEeSJm6m0rTs9zw" conceptName="Initial No Lights or Sirens, Upgraded to Lights and Sirens" base_EnumerationLiteral="_Ldot6c0YEeSJm6m0rTs9zw"/>
   <term:ValueSetCode xmi:id="_Ldp8CM0YEeSJm6m0rTs9zw" conceptName="Initial Lights and Sirens, Downgraded to No Lights or Sirens" base_EnumerationLiteral="_Ldot6s0YEeSJm6m0rTs9zw"/>
-  <term:ValueSetVersion xmi:id="_wrf2MM0ZEeSJm6m0rTs9zw" identifier="2.16.840.1.113883.17.3.11.107" definition="Technique for measuring blood pressure" base_Enumeration="_wrfPIM0ZEeSJm6m0rTs9zw">
+  <term:ValueSetVersion xmi:id="_wrf2MM0ZEeSJm6m0rTs9zw" identifier="2.16.840.1.113883.17.3.11.107" definition="Technique for measuring blood pressure" binding="Dynamic" base_Enumeration="_wrfPIM0ZEeSJm6m0rTs9zw">
     <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
   <term:ValueSetCode xmi:id="__SEeAM0ZEeSJm6m0rTs9zw" conceptName="Cuff-automated" base_EnumerationLiteral="__SD28M0ZEeSJm6m0rTs9zw"/>
@@ -3007,7 +3005,7 @@
   <term:ValueSetCode xmi:id="_uhC-oNYeEeSOzuJFX8ssTQ" conceptName="Cardiac Arrest-Determination of Death / Withholding Resuscitative Efforts" base_EnumerationLiteral="_uhCXkNYeEeSOzuJFX8ssTQ"/>
   <term:ValueSetCode xmi:id="_A4FjMNYmEeSOzuJFX8ssTQ" conceptName="Subcutaneous port" base_EnumerationLiteral="_A4E8INYmEeSOzuJFX8ssTQ"/>
   <term:ValueSetCode xmi:id="_D93oYdYmEeSOzuJFX8ssTQ" conceptName="Blow by oxygen mask" base_EnumerationLiteral="_D93oYNYmEeSOzuJFX8ssTQ"/>
-  <term:ValueSetVersion xmi:id="_2NLqQNYmEeSOzuJFX8ssTQ" identifier="2.16.840.1.113883.17.3.11.109" definition="Specifications for site of substance administration when Route is insufficiently specific" base_Enumeration="_2NLDMNYmEeSOzuJFX8ssTQ">
+  <term:ValueSetVersion xmi:id="_2NLqQNYmEeSOzuJFX8ssTQ" identifier="2.16.840.1.113883.17.3.11.109" definition="Specifications for site of substance administration when Route is insufficiently specific" binding="Dynamic" base_Enumeration="_2NLDMNYmEeSOzuJFX8ssTQ">
     <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
   <term:ValueSetCode xmi:id="_5Rd6odYmEeSOzuJFX8ssTQ" conceptName="Tracheostomy stoma" base_EnumerationLiteral="_5Rd6oNYmEeSOzuJFX8ssTQ"/>
@@ -3081,9 +3079,7 @@
   <term:ValueSetCode xmi:id="_O6aagA0DEey1-dRmTUcPqg" conceptName="Compressions-Hands Only CPR" base_EnumerationLiteral="_O6ZMYA0DEey1-dRmTUcPqg"/>
   <term:ValueSetCode xmi:id="_uWkC4A0EEey1-dRmTUcPqg" conceptName="Non-STEMI Septal Ischemia" base_EnumerationLiteral="_uWjb0A0EEey1-dRmTUcPqg"/>
   <term:ValueSetCode xmi:id="_xWUYkA0EEey1-dRmTUcPqg" conceptName="STEMI Septal Ischemia" base_EnumerationLiteral="_xWTKcA0EEey1-dRmTUcPqg"/>
-  <term:ValueSetVersion xmi:id="_wCIwsA9xEey1-dRmTUcPqg" identifier="2.16.840.1.113883.17.3.11.110" definition="Classification of person, EMS or otherwise, providing care" base_Enumeration="_wCFtYA9xEey1-dRmTUcPqg">
-    <codeSystem href="file:/C:/Users/JayLyle/eclipse-workspace/org.openhealthtools.mdht.uml.cda.emspcr.model/model/emspcr-vocab.uml#_YgJ0wcFTEeGyGv5RKvEgDA"/>
-  </term:ValueSetVersion>
+  <term:ValueSetVersion xmi:id="_wCIwsA9xEey1-dRmTUcPqg" identifier="2.16.840.1.113883.17.3.11.110" definition="Classification of person, EMS or otherwise, providing care" binding="Dynamic" codeSystem="_YgJ0wcFTEeGyGv5RKvEgDA" base_Enumeration="_wCFtYA9xEey1-dRmTUcPqg"/>
   <term:ValueSetCode xmi:id="_8Yl6kA9yEey1-dRmTUcPqg" conceptName="Family Member" base_EnumerationLiteral="_8YkscA9yEey1-dRmTUcPqg"/>
   <term:ValueSetCode xmi:id="_DSBQgA9zEey1-dRmTUcPqg" conceptName="First Responder (Fire, Law, EMS)" base_EnumerationLiteral="_DSACYA9zEey1-dRmTUcPqg"/>
   <term:ValueSetCode xmi:id="_Ij7PAA9zEey1-dRmTUcPqg" conceptName="Healthcare Professional (Non-EMS)" base_EnumerationLiteral="_Ij6n8A9zEey1-dRmTUcPqg"/>
@@ -3095,7 +3091,7 @@
   <term:ValueSetCode xmi:id="_Q6cQMA-CEey1-dRmTUcPqg" conceptName="Nausea" base_EnumerationLiteral="_Q6bpIA-CEey1-dRmTUcPqg"/>
   <term:ValueSetCode xmi:id="_UiGTYA-CEey1-dRmTUcPqg" conceptName="Vomiting" base_EnumerationLiteral="_UiFsUA-CEey1-dRmTUcPqg"/>
   <term:ValueSetCode xmi:id="_6FkLYBlfEeyirYLmelJuXQ" conceptName="Non-Acute/Routine" base_EnumerationLiteral="_6D9B0BlfEeyirYLmelJuXQ"/>
-  <term:ValueSetVersion xmi:id="_8seGwBlgEeyirYLmelJuXQ" identifier="2.16.840.1.113883.17.3.11.111" base_Enumeration="_BwnLgBlgEeyirYLmelJuXQ"/>
+  <term:ValueSetVersion xmi:id="_8seGwBlgEeyirYLmelJuXQ" identifier="2.16.840.1.113883.17.3.11.111" binding="Dynamic" base_Enumeration="_BwnLgBlgEeyirYLmelJuXQ"/>
   <term:ValueSetCode xmi:id="_DVozIBlhEeyirYLmelJuXQ" conceptName="Critical (Red)" base_EnumerationLiteral="_BwnLgRlgEeyirYLmelJuXQ"/>
   <term:ValueSetCode xmi:id="_FB3EYBlhEeyirYLmelJuXQ" conceptName="Emergent (Yellow)" base_EnumerationLiteral="_BwnLghlgEeyirYLmelJuXQ"/>
   <term:ValueSetCode xmi:id="_GgYQ0BlhEeyirYLmelJuXQ" conceptName="Lower Acuity (Green)" base_EnumerationLiteral="_BwnLgxlgEeyirYLmelJuXQ"/>
@@ -3118,13 +3114,9 @@
   <term:ValueSetCode xmi:id="_HpoloBlmEeyirYLmelJuXQ" conceptName="Cancer Center" base_EnumerationLiteral="_HpnXgBlmEeyirYLmelJuXQ"/>
   <term:ValueSetCode xmi:id="_IslQYBlmEeyirYLmelJuXQ" conceptName="Labor and Delivery" base_EnumerationLiteral="_IskpUBlmEeyirYLmelJuXQ"/>
   <term:ValueSetCode xmi:id="_43Zq8BlmEeyirYLmelJuXQ" conceptName="Yes-Sepsis" base_EnumerationLiteral="_43X1wBlmEeyirYLmelJuXQ"/>
-  <term:ValueSetVersion xmi:id="_lF914BloEeyirYLmelJuXQ" identifier="2.16.840.1.113883.17.3.11.112" base_Enumeration="_lF8AsBloEeyirYLmelJuXQ">
-    <codeSystem href="file:/C:/Users/JayLyle/eclipse-workspace/org.openhealthtools.mdht.uml.cda.emspcr.model/model/emspcr-vocab.uml#_YgJ0wcFTEeGyGv5RKvEgDA"/>
-  </term:ValueSetVersion>
-  <term:ValueSetVersion xmi:id="_v7U14BloEeyirYLmelJuXQ" identifier="2.16.840.1.113883.17.3.11.113" base_Enumeration="_v7TnwBloEeyirYLmelJuXQ">
-    <codeSystem href="file:/C:/Users/JayLyle/eclipse-workspace/BackupPCR/model/emspcr-vocab.uml#_YgJ0wcFTEeGyGv5RKvEgDA"/>
-  </term:ValueSetVersion>
-  <term:ValueSetVersion xmi:id="_4Wr4oBloEeyirYLmelJuXQ" identifier="2.16.840.1.113883.17.3.11.115" base_Enumeration="_4WrRkBloEeyirYLmelJuXQ"/>
+  <term:ValueSetVersion xmi:id="_lF914BloEeyirYLmelJuXQ" identifier="2.16.840.1.113883.17.3.11.112" binding="Dynamic" codeSystem="_YgJ0wcFTEeGyGv5RKvEgDA" base_Enumeration="_lF8AsBloEeyirYLmelJuXQ"/>
+  <term:ValueSetVersion xmi:id="_v7U14BloEeyirYLmelJuXQ" identifier="2.16.840.1.113883.17.3.11.113" binding="Dynamic" codeSystem="_YgJ0wcFTEeGyGv5RKvEgDA" base_Enumeration="_v7TnwBloEeyirYLmelJuXQ"/>
+  <term:ValueSetVersion xmi:id="_4Wr4oBloEeyirYLmelJuXQ" identifier="2.16.840.1.113883.17.3.11.115" binding="Dynamic" base_Enumeration="_4WrRkBloEeyirYLmelJuXQ"/>
   <term:ValueSetCode xmi:id="_8Qs3IBloEeyirYLmelJuXQ" conceptName="Cancelled on Scene" base_EnumerationLiteral="_8QsQEBloEeyirYLmelJuXQ"/>
   <term:ValueSetCode xmi:id="_BSTv0BlpEeyirYLmelJuXQ" conceptName="Cancelled Prior to Arrival at Scene" base_EnumerationLiteral="_BSR6oBlpEeyirYLmelJuXQ"/>
   <term:ValueSetCode xmi:id="_ESAbIBlpEeyirYLmelJuXQ" conceptName="No Patient Contact" base_EnumerationLiteral="_ER_NABlpEeyirYLmelJuXQ"/>
@@ -3166,9 +3158,7 @@
   <term:ValueSetCode xmi:id="_IKzJARoWEeyPvO14mrApVQ" conceptName="Disorientation, unspecified" base_EnumerationLiteral="_IKzJABoWEeyPvO14mrApVQ"/>
   <term:ValueSetCode xmi:id="_2hbCEBoWEeyPvO14mrApVQ" conceptName="Status Seizure" base_EnumerationLiteral="_2hZz8BoWEeyPvO14mrApVQ"/>
   <term:ValueSetCode xmi:id="_3dtrMRoWEeyPvO14mrApVQ" conceptName="Other Seizures" base_EnumerationLiteral="_3dtrMBoWEeyPvO14mrApVQ"/>
-  <term:ValueSetVersion xmi:id="_BHorcBoaEeyPvO14mrApVQ" identifier="2.16.840.1.113883.17.3.11.116" base_Enumeration="_BHmPMBoaEeyPvO14mrApVQ">
-    <codeSystem href="file:/C:/Users/JayLyle/eclipse-workspace/BackupPCR/model/emspcr-vocab.uml#_YgJ0wcFTEeGyGv5RKvEgDA"/>
-  </term:ValueSetVersion>
+  <term:ValueSetVersion xmi:id="_BHorcBoaEeyPvO14mrApVQ" identifier="2.16.840.1.113883.17.3.11.116" binding="Dynamic" codeSystem="_YgJ0wcFTEeGyGv5RKvEgDA" base_Enumeration="_BHmPMBoaEeyPvO14mrApVQ"/>
   <term:ValueSetCode xmi:id="_g3IRIBocEeyPvO14mrApVQ" conceptName="Breath Sounds-Absent" base_EnumerationLiteral="_g3HDABocEeyPvO14mrApVQ"/>
   <term:ValueSetCode xmi:id="_iHH5YBocEeyPvO14mrApVQ" conceptName="Breath Sounds-Decreased" base_EnumerationLiteral="_iHGrQBocEeyPvO14mrApVQ"/>
   <term:ValueSetCode xmi:id="_i3JBEBocEeyPvO14mrApVQ" conceptName="Normal" base_EnumerationLiteral="_i3IaABocEeyPvO14mrApVQ"/>
@@ -3184,18 +3174,12 @@
   <term:ValueSetCode xmi:id="_qz-70BocEeyPvO14mrApVQ" conceptName="Stridor" base_EnumerationLiteral="_qz-UwBocEeyPvO14mrApVQ"/>
   <term:ValueSetCode xmi:id="_r1jGgBocEeyPvO14mrApVQ" conceptName="Wheezing-Expiratory" base_EnumerationLiteral="_r1ifcBocEeyPvO14mrApVQ"/>
   <term:ValueSetCode xmi:id="_svj3sBocEeyPvO14mrApVQ" conceptName="Rhonchi/Wheezing" base_EnumerationLiteral="_svjQoBocEeyPvO14mrApVQ"/>
-  <term:ValueSetVersion xmi:id="_VaCGQRodEeyPvO14mrApVQ" identifier="2.16.840.1.113883.17.3.11.117" base_Enumeration="_VaCGQBodEeyPvO14mrApVQ">
-    <codeSystem href="file:/C:/Users/JayLyle/eclipse-workspace/BackupPCR/model/emspcr-vocab.uml#_YgJ0wcFTEeGyGv5RKvEgDA"/>
-  </term:ValueSetVersion>
+  <term:ValueSetVersion xmi:id="_VaCGQRodEeyPvO14mrApVQ" identifier="2.16.840.1.113883.17.3.11.117" binding="Dynamic" codeSystem="_YgJ0wcFTEeGyGv5RKvEgDA" base_Enumeration="_VaCGQBodEeyPvO14mrApVQ"/>
   <term:ValueSetCode xmi:id="_aGP9wBodEeyPvO14mrApVQ" conceptName="Right" base_EnumerationLiteral="_aGPWsBodEeyPvO14mrApVQ"/>
   <term:ValueSetCode xmi:id="_alVtgBodEeyPvO14mrApVQ" conceptName="Left" base_EnumerationLiteral="_alUfYBodEeyPvO14mrApVQ"/>
   <term:ValueSetCode xmi:id="_bDJq4BodEeyPvO14mrApVQ" conceptName="Bilateral" base_EnumerationLiteral="_bDIcwBodEeyPvO14mrApVQ"/>
-  <term:ValueSetVersion xmi:id="_sQPB8BodEeyPvO14mrApVQ" identifier="2.16.840.1.113883.17.3.11.118" binding="Dynamic" base_Enumeration="_sQNMwBodEeyPvO14mrApVQ">
-    <codeSystem href="file:/C:/Users/JayLyle/eclipse-workspace/org.openhealthtools.mdht.uml.cda.emspcr.model/model/emspcr-vocab.uml#_YgJ0wcFTEeGyGv5RKvEgDA"/>
-  </term:ValueSetVersion>
-  <term:ValueSetVersion xmi:id="_yFiocBodEeyPvO14mrApVQ" identifier="2.16.840.1.113883.17.3.11.119" base_Enumeration="_yFhaUBodEeyPvO14mrApVQ">
-    <codeSystem href="file:/C:/Users/JayLyle/eclipse-workspace/org.openhealthtools.mdht.uml.cda.emspcr.model/model/emspcr-vocab.uml#_YgJ0wcFTEeGyGv5RKvEgDA"/>
-  </term:ValueSetVersion>
+  <term:ValueSetVersion xmi:id="_sQPB8BodEeyPvO14mrApVQ" identifier="2.16.840.1.113883.17.3.11.118" binding="Dynamic" codeSystem="_YgJ0wcFTEeGyGv5RKvEgDA" base_Enumeration="_sQNMwBodEeyPvO14mrApVQ"/>
+  <term:ValueSetVersion xmi:id="_yFiocBodEeyPvO14mrApVQ" identifier="2.16.840.1.113883.17.3.11.119" binding="Dynamic" codeSystem="_YgJ0wcFTEeGyGv5RKvEgDA" base_Enumeration="_yFhaUBodEeyPvO14mrApVQ"/>
   <term:ValueSetCode xmi:id="_zeCP8BoeEeyPvO14mrApVQ" conceptName="General - Posterior" base_EnumerationLiteral="_zeBo4BoeEeyPvO14mrApVQ"/>
   <term:ValueSetCode xmi:id="_0TgfYBoeEeyPvO14mrApVQ" conceptName="Left - Anterior" base_EnumerationLiteral="_0TeqMBoeEeyPvO14mrApVQ"/>
   <term:ValueSetCode xmi:id="_0zxT0BoeEeyPvO14mrApVQ" conceptName="Left - Posterior" base_EnumerationLiteral="_0zveoBoeEeyPvO14mrApVQ"/>
@@ -3279,30 +3263,26 @@
   <term:CodeSystemVersion xmi:id="_K-wE4B7YEeyBnPWCl2bgOQ" identifier="2.16.840.1.113883.5.4" base_Enumeration="_K-niAB7YEeyBnPWCl2bgOQ"/>
   <term:CodeSystemVersion xmi:id="_-m7-MB7YEeyBnPWCl2bgOQ" identifier="2.16.840.1.113883.6.96" base_Enumeration="_-m7XIB7YEeyBnPWCl2bgOQ"/>
   <term:CodeSystemVersion xmi:id="_jnvQAB7cEeyBnPWCl2bgOQ" identifier="2.16.840.1.113883.5.14" base_Enumeration="_jnuB4B7cEeyBnPWCl2bgOQ"/>
-  <term:ValueSetVersion xmi:id="_sBw3YDKjEeyOwtfRawW6Qw" identifier="2.16.840.1.113883.17.3.11.112" base_Enumeration="_sBvpQDKjEeyOwtfRawW6Qw">
-    <codeSystem href="file:/C:/Users/JayLyle/eclipse-workspace/BackupPCR/model/emspcr-vocab.uml#_YgJ0wcFTEeGyGv5RKvEgDA"/>
-  </term:ValueSetVersion>
+  <term:ValueSetVersion xmi:id="_sBw3YDKjEeyOwtfRawW6Qw" identifier="2.16.840.1.113883.17.3.11.112" binding="Dynamic" codeSystem="_YgJ0wcFTEeGyGv5RKvEgDA" base_Enumeration="_sBvpQDKjEeyOwtfRawW6Qw"/>
   <term:ValueSetCode xmi:id="_xal9QDKjEeyOwtfRawW6Qw" conceptName="Cancelled on Scene" base_EnumerationLiteral="_xalWMDKjEeyOwtfRawW6Qw">
-    <codeSystem href="file:/C:/Users/JayLyle/eclipse-workspace/org.openhealthtools.mdht.uml.cda.emspcr.model/model/emspcr-vocab.uml#_YgJ0wcFTEeGyGv5RKvEgDA"/>
+    <codeSystem href="#_YgJ0wcFTEeGyGv5RKvEgDA"/>
   </term:ValueSetCode>
   <term:ValueSetCode xmi:id="_BC7kEDKkEeyOwtfRawW6Qw" conceptName="Cancelled Prior to Arrival at Scene" base_EnumerationLiteral="_BC69ADKkEeyOwtfRawW6Qw">
-    <codeSystem href="file:/C:/Users/JayLyle/eclipse-workspace/org.openhealthtools.mdht.uml.cda.emspcr.model/model/emspcr-vocab.uml#_YgJ0wcFTEeGyGv5RKvEgDA"/>
+    <codeSystem href="#_YgJ0wcFTEeGyGv5RKvEgDA"/>
   </term:ValueSetCode>
   <term:ValueSetCode xmi:id="_FJB2wTKkEeyOwtfRawW6Qw" conceptName="No Patient Contact" base_EnumerationLiteral="_FJB2wDKkEeyOwtfRawW6Qw">
-    <codeSystem href="file:/C:/Users/JayLyle/eclipse-workspace/org.openhealthtools.mdht.uml.cda.emspcr.model/model/emspcr-vocab.uml#_YgJ0wcFTEeGyGv5RKvEgDA"/>
+    <codeSystem href="#_YgJ0wcFTEeGyGv5RKvEgDA"/>
   </term:ValueSetCode>
   <term:ValueSetCode xmi:id="_JtoDUDKkEeyOwtfRawW6Qw" conceptName="No Patient Found" base_EnumerationLiteral="_JtncQDKkEeyOwtfRawW6Qw">
-    <codeSystem href="file:/C:/Users/JayLyle/eclipse-workspace/org.openhealthtools.mdht.uml.cda.emspcr.model/model/emspcr-vocab.uml#_YgJ0wcFTEeGyGv5RKvEgDA"/>
+    <codeSystem href="#_YgJ0wcFTEeGyGv5RKvEgDA"/>
   </term:ValueSetCode>
   <term:ValueSetCode xmi:id="_N3ajMDKkEeyOwtfRawW6Qw" conceptName="Non-Patient Incident (Not Otherwise Listed)" base_EnumerationLiteral="_N3Z8IDKkEeyOwtfRawW6Qw">
-    <codeSystem href="file:/C:/Users/JayLyle/eclipse-workspace/org.openhealthtools.mdht.uml.cda.emspcr.model/model/emspcr-vocab.uml#_YgJ0wcFTEeGyGv5RKvEgDA"/>
+    <codeSystem href="#_YgJ0wcFTEeGyGv5RKvEgDA"/>
   </term:ValueSetCode>
   <term:ValueSetCode xmi:id="_QUY78DKkEeyOwtfRawW6Qw" conceptName="Patient Contact Made" base_EnumerationLiteral="_QUYU4DKkEeyOwtfRawW6Qw">
-    <codeSystem href="file:/C:/Users/JayLyle/eclipse-workspace/org.openhealthtools.mdht.uml.cda.emspcr.model/model/emspcr-vocab.uml#_YgJ0wcFTEeGyGv5RKvEgDA"/>
+    <codeSystem href="#_YgJ0wcFTEeGyGv5RKvEgDA"/>
   </term:ValueSetCode>
-  <term:ValueSetVersion xmi:id="_04PogDKmEeyOwtfRawW6Qw" identifier="2.16.840.1.113883.17.3.11.120" binding="Dynamic" base_Enumeration="_04PBcDKmEeyOwtfRawW6Qw">
-    <codeSystem href="file:/C:/Users/JayLyle/eclipse-workspace/BackupPCR/model/emspcr-vocab.uml#_YgJ0wcFTEeGyGv5RKvEgDA"/>
-  </term:ValueSetVersion>
+  <term:ValueSetVersion xmi:id="_04PogDKmEeyOwtfRawW6Qw" identifier="2.16.840.1.113883.17.3.11.120" binding="Dynamic" codeSystem="_YgJ0wcFTEeGyGv5RKvEgDA" base_Enumeration="_04PBcDKmEeyOwtfRawW6Qw"/>
   <term:ValueSetCode xmi:id="_rzRyoDKnEeyOwtfRawW6Qw" conceptName="Back in Service, Care/Support Services Refused" base_EnumerationLiteral="_rzQkgDKnEeyOwtfRawW6Qw"/>
   <term:ValueSetCode xmi:id="_w8qHQDKnEeyOwtfRawW6Qw" conceptName="Back in Service, No Care/Support Services Required" base_EnumerationLiteral="_w8o5IDKnEeyOwtfRawW6Qw"/>
   <term:ValueSetCode xmi:id="_zwPCIDKnEeyOwtfRawW6Qw" conceptName="Incident Support Services Provided (Including Standby)" base_EnumerationLiteral="_zwObEDKnEeyOwtfRawW6Qw"/>
@@ -3310,9 +3290,7 @@
   <term:ValueSetCode xmi:id="_5g6AQDKnEeyOwtfRawW6Qw" conceptName="Provided Care Supporting Primary EMS Crew" base_EnumerationLiteral="_5g5ZMDKnEeyOwtfRawW6Qw"/>
   <term:ValueSetCode xmi:id="_72f-oTKnEeyOwtfRawW6Qw" conceptName="Initiated Primary Care and Transferred to Another EMS Crew" base_EnumerationLiteral="_72f-oDKnEeyOwtfRawW6Qw"/>
   <term:ValueSetCode xmi:id="_-BDxsDKnEeyOwtfRawW6Qw" conceptName="Initiated and Continued Primary Care" base_EnumerationLiteral="_-BDKoDKnEeyOwtfRawW6Qw"/>
-  <term:ValueSetVersion xmi:id="_Q49DwDKzEeyOwtfRawW6Qw" identifier="2.16.840.1.113883.17.3.11.115" base_Enumeration="_Q48csDKzEeyOwtfRawW6Qw">
-    <codeSystem href="file:/C:/Users/JayLyle/eclipse-workspace/BackupPCR/model/emspcr-vocab.uml#_YgJ0wcFTEeGyGv5RKvEgDA"/>
-  </term:ValueSetVersion>
+  <term:ValueSetVersion xmi:id="_Q49DwDKzEeyOwtfRawW6Qw" identifier="2.16.840.1.113883.17.3.11.115" binding="Dynamic" codeSystem="_YgJ0wcFTEeGyGv5RKvEgDA" base_Enumeration="_Q48csDKzEeyOwtfRawW6Qw"/>
   <term:ValueSetCode xmi:id="_b9PQkDKzEeyOwtfRawW6Qw" conceptName="No Transport" base_EnumerationLiteral="_b9OpgDKzEeyOwtfRawW6Qw"/>
   <term:ValueSetCode xmi:id="_fwW84DKzEeyOwtfRawW6Qw" conceptName="Non-Patient Transport (Not Otherwise Listed)" base_EnumerationLiteral="_fwWV0DKzEeyOwtfRawW6Qw"/>
   <term:ValueSetCode xmi:id="_oz29sDKzEeyOwtfRawW6Qw" conceptName="Patient Refused Transport" base_EnumerationLiteral="_oz1vkDKzEeyOwtfRawW6Qw"/>
@@ -3320,7 +3298,7 @@
   <term:ValueSetCode xmi:id="_uVbI0TKzEeyOwtfRawW6Qw" conceptName="Transport by Another EMS Unit" base_EnumerationLiteral="_uVbI0DKzEeyOwtfRawW6Qw"/>
   <term:ValueSetCode xmi:id="_wMh0YTKzEeyOwtfRawW6Qw" conceptName="Transport by This EMS Unit, with a Member of Another Crew" base_EnumerationLiteral="_wMh0YDKzEeyOwtfRawW6Qw"/>
   <term:ValueSetCode xmi:id="_yZnXADKzEeyOwtfRawW6Qw" conceptName="Transport by This EMS Unit (This Crew Only)" base_EnumerationLiteral="_yZmv8DKzEeyOwtfRawW6Qw"/>
-  <term:ValueSetVersion xmi:id="_vk5j4DX5EeyDmf_o8i-KfQ" identifier="2.16.840.1.113883.17.3.11.121" base_Enumeration="_vk1ScDX5EeyDmf_o8i-KfQ"/>
+  <term:ValueSetVersion xmi:id="_vk5j4DX5EeyDmf_o8i-KfQ" identifier="2.16.840.1.113883.17.3.11.121" binding="Dynamic" base_Enumeration="_vk1ScDX5EeyDmf_o8i-KfQ"/>
   <term:CodeSystemVersion xmi:id="_kpZLcEVWEey3rIXjdfUhUg" base_Enumeration="_kpXWQEVWEey3rIXjdfUhUg"/>
   <term:ValueSetCode xmi:id="_PeeF8EshEey1xMReq27Q3g" conceptName="Percutaneous" usageNote="For use with auto-injector value" base_EnumerationLiteral="_PeZNcEshEey1xMReq27Q3g"/>
 </xmi:XMI>
