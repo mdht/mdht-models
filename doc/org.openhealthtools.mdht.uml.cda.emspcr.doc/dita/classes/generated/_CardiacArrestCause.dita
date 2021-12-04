@@ -14,14 +14,14 @@
 <p>Kind of event or condition causing cardiac arrest</p>
 </section>
 <ol id="conformance">
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>templateId</b></tt> ( CONF:11518 ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>@root</b>="2.16.840.1.113883.17.3.10.1.124"</tt></li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>templateId</b></tt> ( CONF:11518 ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>@root</b>="2.16.840.1.113883.17.3.10.1.124"</tt></li> <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@extension</b>="2022-01-01"</tt></li></ol></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:11246)
 </li>
 <li>
 <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="67503-3" </tt><i>Cardiac arrest cause NEMSIS</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10156)
 </li>
 <li>
-<b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with <tt><b>@xsi:type</b>="CD"</tt>, which <b>SHALL</b> be selected from ValueSet<tt> CardiacArrestCause 2.16.840.1.113883.17.3.11.10</tt><b> DYNAMIC</b> (CONF:10157)<p>NEMSIS Trace: EArrest.02</p>
+<b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with <tt><b>@xsi:type</b>="CD"</tt> (CONF:11671), which <b>SHALL</b> be selected from ValueSet<tt> CardiacArrestCause 2.16.840.1.113883.17.3.11.10</tt><b> DYNAMIC</b> (CONF:10157)<p>NEMSIS Trace: EArrest.02</p>
 </li>
 </ol>
 <ol id="aggregate">
@@ -31,12 +31,12 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="67503-3" </tt><i>Cardiac arrest cause NEMSIS</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10156)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with <tt><b>@xsi:type</b>="CD"</tt>, which <b>SHALL</b> be selected from ValueSet<tt> CardiacArrestCause 2.16.840.1.113883.17.3.11.10</tt><b> DYNAMIC</b> (CONF:10157)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with <tt><b>@xsi:type</b>="CD"</tt> (CONF:11671), which <b>SHALL</b> be selected from ValueSet<tt> CardiacArrestCause 2.16.840.1.113883.17.3.11.10</tt><b> DYNAMIC</b> (CONF:10157)
 <p>NEMSIS Trace: EArrest.02</p></li>
 </ol>
 <section id="contextTable"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="2" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><thead><row><entry namest="col0" nameend="col0" >Contained By</entry><entry namest="col1" nameend="col1" >Contains</entry></row></thead><tbody><row><entry> </entry><entry> </entry></row></tbody></tgroup></table></p></section>
 <codeblock id="example" outputclass="language-xml"><![CDATA[<observation classCode="SPCOBS" moodCode="EVN">
-  <templateId root="2.16.840.1.113883.17.3.10.1.124"/>
+  <templateId root="2.16.840.1.113883.17.3.10.1.124" extension="2022-01-01"/>
   <code code="67503-3" codeSystem="2.16.840.1.113883.6.1" displayName="Cardiac arrest cause NEMSIS"/>
   <value xsi:type="CD"/>
 </observation>

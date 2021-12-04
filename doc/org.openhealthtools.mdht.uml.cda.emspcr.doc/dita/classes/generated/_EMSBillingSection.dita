@@ -14,44 +14,44 @@
 <p>Information pertinent to billing processes</p>
 </section>
 <ol id="conformance">
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>templateId</b></tt> ( CONF:11392 ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>@root</b>="2.16.840.1.113883.17.3.10.1.5"</tt></li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>templateId</b></tt> ( CONF:11392 ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>@root</b>="2.16.840.1.113883.17.3.10.1.5"</tt></li> <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@extension</b>="2022-01-01"</tt></li></ol></li>
 <li>
-<b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="67659-3" </tt><i>EMS Billing Narrative NEMSIS</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10080)
+<b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:11631)<tt><b>/@code</b>="67659-3" </tt><i>EMS Billing Narrative NEMSIS</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10080)
 </li>
 <li>
-<b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> which <b>SHOULD</b> equal "EMS Billing Section" (CONF:10907)
+<b>SHALL</b> contain exactly one [1..1] <tt><b>title</b>="EMS Billing Section" </tt> (CONF:10907)
 </li>
 <li>
 <b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:10909)
 </li>
 <li>
 If section/@nullFlavor is not present, <b>SHOULD</b> contain  [0..1] <tt><b>entry</b></tt> such that it  (CONF:10910)<ol>
-<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/BillingCondition.html">Billing Condition</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.91</tt>)</li></ol>
+<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/BillingCondition.html">Billing Condition</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.91:2022-01-01</tt>)</li></ol>
 </li>
 <li>
 If section/@nullFlavor is not present, <b>SHALL</b> contain  [1..1] <tt><b>entry</b></tt> such that it  (CONF:10912)<ol>
-<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/LevelOfServiceObservation.html">Level Of Service Observation</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.92</tt>)</li></ol>
+<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/LevelOfServiceObservation.html">Level Of Service Observation</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.92:2022-01-01</tt>)</li></ol>
 </li>
 </ol>
 <ol id="aggregate">
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="67659-3" </tt><i>EMS Billing Narrative NEMSIS</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10080)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:11631)<tt><b>/@code</b>="67659-3" </tt><i>EMS Billing Narrative NEMSIS</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10080)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> which <b>SHOULD</b> equal "EMS Billing Section" (CONF:10907)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b>="EMS Billing Section" </tt> (CONF:10907)
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:10909)
 </li>
 <li>If section/@nullFlavor is not present, <b>SHOULD</b> contain  [0..1] <tt><b>entry</b></tt> such that it  (CONF:10910)
 <ol>
-<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/BillingCondition.html">Billing Condition</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.91</tt>)</li></ol></li>
+<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/BillingCondition.html">Billing Condition</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.91:2022-01-01</tt>)</li></ol></li>
 <li>If section/@nullFlavor is not present, <b>SHALL</b> contain  [1..1] <tt><b>entry</b></tt> such that it  (CONF:10912)
 <ol>
-<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/LevelOfServiceObservation.html">Level Of Service Observation</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.92</tt>)</li></ol></li>
+<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/LevelOfServiceObservation.html">Level Of Service Observation</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.92:2022-01-01</tt>)</li></ol></li>
 </ol>
 <section id="contextTable"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="2" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><thead><row><entry namest="col0" nameend="col0" >Contained By</entry><entry namest="col1" nameend="col1" >Contains</entry></row></thead><tbody><row><entry><xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/PatientCareReport.html">Patient Care Report</xref></entry><entry><xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/BillingCondition.html">Billing Condition</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/LevelOfServiceObservation.html">Level Of Service Observation</xref></entry></row></tbody></tgroup></table></p></section>
 <codeblock id="example" outputclass="language-xml"><![CDATA[<section>
-  <templateId root="2.16.840.1.113883.17.3.10.1.5"/>
+  <templateId root="2.16.840.1.113883.17.3.10.1.5" extension="2022-01-01"/>
   <code code="67659-3" codeSystem="2.16.840.1.113883.6.1" displayName="EMS Billing Narrative NEMSIS"/>
-  <title>EMS Billing Section</title>
+  <title/>
   <text/>
 </section>
 ]]></codeblock>

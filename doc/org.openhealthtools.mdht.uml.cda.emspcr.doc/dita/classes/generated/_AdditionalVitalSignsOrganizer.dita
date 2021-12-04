@@ -14,43 +14,35 @@
 <p>Common observations regarding the state of the patient that are not typically included in strict definitions of vital signs.</p>
 </section>
 <ol id="conformance">
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>templateId</b></tt> ( CONF:11571 ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>@root</b>="2.16.840.1.113883.17.3.10.1.30"</tt></li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>templateId</b></tt> ( CONF:11571 ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>@root</b>="2.16.840.1.113883.17.3.10.1.30"</tt></li> <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@extension</b>="2022-01-01"</tt></li></ol></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:11133)
 </li>
 <li>
 <b>MAY</b> contain zero or one [0..1] <tt><b>effectiveTime</b></tt> (CONF:11134)<p>NEMSIS Trace: EVitals.01</p>
 </li>
 <li>
-<b>MAY</b> contain  [0..1] <tt><b>component</b></tt> such that it  (CONF:11091)<ol>
-<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/StrokeScore.html">Stroke Score</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.163</tt>)</li></ol>
+<b>SHOULD</b> contain zero or more [0..*] <tt><b>component</b></tt> such that it  (CONF:11689) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/StrokeScore.html">Stroke Score</xref> (CONF:11695)</li></ol> 
 </li>
 <li>
-<b>MAY</b> contain  [0..1] <tt><b>component</b></tt> such that it  (CONF:11092)<ol>
-<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/PainScore.html">Pain Score</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.164</tt>)</li></ol>
+<b>SHOULD</b> contain zero or more [0..*] <tt><b>component</b></tt> such that it  (CONF:11690) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/PainScore.html">Pain Score</xref> (CONF:11696)</li></ol> 
 </li>
 <li>
-<b>MAY</b> contain  [0..1] <tt><b>component</b></tt> such that it  (CONF:11093)<ol>
-<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/LevelOfResponsiveness.html">Level Of Responsiveness</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.165</tt>)</li></ol>
+<b>SHOULD</b> contain zero or more [0..*] <tt><b>component</b></tt> such that it  (CONF:11703) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/LevelOfResponsiveness.html">Level Of Responsiveness</xref> (CONF:11697)</li></ol> 
 </li>
 <li>
-<b>MAY</b> contain  [0..1] <tt><b>component</b></tt> such that it  (CONF:11094)<ol>
-<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/BloodGlucose.html">Blood Glucose</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.166</tt>)</li></ol>
+<b>SHOULD</b> contain zero or more [0..*] <tt><b>component</b></tt> such that it  (CONF:11691) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/BloodGlucose.html">Blood Glucose</xref> (CONF:11698)</li></ol> 
 </li>
 <li>
-<b>MAY</b> contain  [0..1] <tt><b>component</b></tt> such that it  (CONF:11095)<ol>
-<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/CarbonMonoxide.html">Carbon Monoxide</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.167</tt>)</li></ol>
+<b>SHOULD</b> contain zero or more [0..*] <tt><b>component</b></tt> such that it  (CONF:11692) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/CarbonMonoxide.html">Carbon Monoxide</xref> (CONF:11699)</li></ol> 
 </li>
 <li>
-<b>MAY</b> contain  [0..1] <tt><b>component</b></tt> such that it  (CONF:11096)<ol>
-<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/CarbonDioxide.html">Carbon Dioxide</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.168</tt>)</li></ol>
+<b>SHOULD</b> contain zero or more [0..*] <tt><b>component</b></tt> such that it  (CONF:11693) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/CarbonDioxide.html">Carbon Dioxide</xref> (CONF:11700)</li></ol> 
 </li>
 <li>
-<b>MAY</b> contain  [0..1] <tt><b>component</b></tt> such that it  (CONF:11097)<ol>
-<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/CardiacRhythm.html">Cardiac Rhythm</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.169</tt>)</li></ol>
+<b>SHOULD</b> contain zero or more [0..*] <tt><b>component</b></tt> such that it  (CONF:11694) <ol><li>contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/CardiacRhythm.html">Cardiac Rhythm</xref></li></ol> 
 </li>
 <li>
-<b>MAY</b> contain  [0..1] <tt><b>component</b></tt> such that it  (CONF:11135)<ol>
-<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/GlasgowComaScoreOrganizer.html">Glasgow Coma Score Organizer</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.170</tt>)</li></ol>
+<b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> such that it  (CONF:11708) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>organizer</b></tt>, where its type is <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/GlasgowComaScoreOrganizer.html">Glasgow Coma Score Organizer</xref> (CONF:11709)</li></ol> 
 </li>
 </ol>
 <ol id="aggregate">
@@ -62,34 +54,26 @@
 </li>
 <li><b>MAY</b> contain zero or one [0..1] <tt><b>effectiveTime</b></tt> (CONF:11134)
 <p>NEMSIS Trace: EVitals.01</p></li>
-<li><b>MAY</b> contain  [0..1] <tt><b>component</b></tt> such that it  (CONF:11091)
-<ol>
-<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/StrokeScore.html">Stroke Score</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.163</tt>)</li></ol></li>
-<li><b>MAY</b> contain  [0..1] <tt><b>component</b></tt> such that it  (CONF:11092)
-<ol>
-<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/PainScore.html">Pain Score</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.164</tt>)</li></ol></li>
-<li><b>MAY</b> contain  [0..1] <tt><b>component</b></tt> such that it  (CONF:11093)
-<ol>
-<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/LevelOfResponsiveness.html">Level Of Responsiveness</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.165</tt>)</li></ol></li>
-<li><b>MAY</b> contain  [0..1] <tt><b>component</b></tt> such that it  (CONF:11094)
-<ol>
-<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/BloodGlucose.html">Blood Glucose</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.166</tt>)</li></ol></li>
-<li><b>MAY</b> contain  [0..1] <tt><b>component</b></tt> such that it  (CONF:11095)
-<ol>
-<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/CarbonMonoxide.html">Carbon Monoxide</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.167</tt>)</li></ol></li>
-<li><b>MAY</b> contain  [0..1] <tt><b>component</b></tt> such that it  (CONF:11096)
-<ol>
-<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/CarbonDioxide.html">Carbon Dioxide</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.168</tt>)</li></ol></li>
-<li><b>MAY</b> contain  [0..1] <tt><b>component</b></tt> such that it  (CONF:11097)
-<ol>
-<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/CardiacRhythm.html">Cardiac Rhythm</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.169</tt>)</li></ol></li>
-<li><b>MAY</b> contain  [0..1] <tt><b>component</b></tt> such that it  (CONF:11135)
-<ol>
-<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/GlasgowComaScoreOrganizer.html">Glasgow Coma Score Organizer</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.170</tt>)</li></ol></li>
+<li><b>SHOULD</b> contain zero or more [0..*] <tt><b>component</b></tt> such that it  (CONF:11689) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/StrokeScore.html">Stroke Score</xref> (CONF:11695)</li></ol> 
+</li>
+<li><b>SHOULD</b> contain zero or more [0..*] <tt><b>component</b></tt> such that it  (CONF:11690) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/PainScore.html">Pain Score</xref> (CONF:11696)</li></ol> 
+</li>
+<li><b>SHOULD</b> contain zero or more [0..*] <tt><b>component</b></tt> such that it  (CONF:11703) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/LevelOfResponsiveness.html">Level Of Responsiveness</xref> (CONF:11697)</li></ol> 
+</li>
+<li><b>SHOULD</b> contain zero or more [0..*] <tt><b>component</b></tt> such that it  (CONF:11691) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/BloodGlucose.html">Blood Glucose</xref> (CONF:11698)</li></ol> 
+</li>
+<li><b>SHOULD</b> contain zero or more [0..*] <tt><b>component</b></tt> such that it  (CONF:11692) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/CarbonMonoxide.html">Carbon Monoxide</xref> (CONF:11699)</li></ol> 
+</li>
+<li><b>SHOULD</b> contain zero or more [0..*] <tt><b>component</b></tt> such that it  (CONF:11693) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/CarbonDioxide.html">Carbon Dioxide</xref> (CONF:11700)</li></ol> 
+</li>
+<li><b>SHOULD</b> contain zero or more [0..*] <tt><b>component</b></tt> such that it  (CONF:11694) <ol><li>contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/CardiacRhythm.html">Cardiac Rhythm</xref></li></ol> 
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> such that it  (CONF:11708) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>organizer</b></tt>, where its type is <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/GlasgowComaScoreOrganizer.html">Glasgow Coma Score Organizer</xref> (CONF:11709)</li></ol> 
+</li>
 </ol>
-<section id="contextTable"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="2" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><thead><row><entry namest="col0" nameend="col0" >Contained By</entry><entry namest="col1" nameend="col1" >Contains</entry></row></thead><tbody><row><entry><xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/VitalSignsOrganizer.html">Vital Signs Organizer</xref></entry><entry><xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/BloodGlucose.html">Blood Glucose</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/CarbonDioxide.html">Carbon Dioxide</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/CarbonMonoxide.html">Carbon Monoxide</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/CardiacRhythm.html">Cardiac Rhythm</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/GlasgowComaScoreOrganizer.html">Glasgow Coma Score Organizer</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/LevelOfResponsiveness.html">Level Of Responsiveness</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/PainScore.html">Pain Score</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/StrokeScore.html">Stroke Score</xref></entry></row></tbody></tgroup></table></p></section>
+<section id="contextTable"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="2" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><thead><row><entry namest="col0" nameend="col0" >Contained By</entry><entry namest="col1" nameend="col1" >Contains</entry></row></thead><tbody><row><entry> </entry><entry> </entry></row></tbody></tgroup></table></p></section>
 <codeblock id="example" outputclass="language-xml"><![CDATA[<organizer classCode="CLUSTER" moodCode="EVN">
-  <templateId root="2.16.840.1.113883.17.3.10.1.30"/>
+  <templateId root="2.16.840.1.113883.17.3.10.1.30" extension="2022-01-01"/>
   <statusCode/>
 </organizer>
 ]]></codeblock>

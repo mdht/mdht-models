@@ -14,11 +14,11 @@
 <p>The category of the reported/suspected external cause of the injury</p>
 </section>
 <ol id="conformance">
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>templateId</b></tt> ( CONF:11442 ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>@root</b>="2.16.840.1.113883.17.3.10.1.50"</tt></li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>templateId</b></tt> ( CONF:11442 ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>@root</b>="2.16.840.1.113883.17.3.10.1.50"</tt></li> <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@extension</b>="2022-01-01"</tt></li></ol></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:11155)
 </li>
 <li>
-<b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="69543-7" </tt><i>Cause of injury NEMSIS</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10106)
+<b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:11649)<tt><b>/@code</b>="69543-7" </tt><i>Cause of injury NEMSIS</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10106)
 </li>
 <li>
 <b>SHALL</b> contain at least one [1..*] <tt><b>value</b></tt> with <tt><b>@xsi:type</b>="CD"</tt> (CONF:11614), which <b>SHALL</b> be selected from (CodeSystem:<tt> 2.16.840.1.113883.6.90 ICD-10 CM</tt>) (CONF:10108)<p>NEMSIS Trace: EInjury.01
@@ -30,7 +30,7 @@ Causes are in ICD-10 chapter XX and parts of XIX.</p>
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:11155)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="69543-7" </tt><i>Cause of injury NEMSIS</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10106)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:11649)<tt><b>/@code</b>="69543-7" </tt><i>Cause of injury NEMSIS</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10106)
 </li>
 <li><b>SHALL</b> contain at least one [1..*] <tt><b>value</b></tt> with <tt><b>@xsi:type</b>="CD"</tt> (CONF:11614), which <b>SHALL</b> be selected from (CodeSystem:<tt> 2.16.840.1.113883.6.90 ICD-10 CM</tt>) (CONF:10108)
 <p>NEMSIS Trace: EInjury.01
@@ -38,7 +38,7 @@ Causes are in ICD-10 chapter XX and parts of XIX.</p></li>
 </ol>
 <section id="contextTable"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="2" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><thead><row><entry namest="col0" nameend="col0" >Contained By</entry><entry namest="col1" nameend="col1" >Contains</entry></row></thead><tbody><row><entry><xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/EMSInjuryIncidentDescriptionSection.html">EMS Injury Incident Description Section</xref></entry><entry></entry></row></tbody></tgroup></table></p></section>
 <codeblock id="example" outputclass="language-xml"><![CDATA[<observation classCode="SPCOBS" moodCode="EVN">
-  <templateId root="2.16.840.1.113883.17.3.10.1.50"/>
+  <templateId root="2.16.840.1.113883.17.3.10.1.50" extension="2022-01-01"/>
   <code code="69543-7" codeSystem="2.16.840.1.113883.6.1" displayName="Cause of injury NEMSIS"/>
   <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.90"/>
 </observation>

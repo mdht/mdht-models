@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="CDA.xsl"?>
 <ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="DOCCLIN" moodCode="EVN">
-  <!--This example is based on ALS test case #1 from the Minnesota EMS Regulatory Board, available at http://www.emsrb.state.mn.us. Example and guide 
+  <!--X This example is based on ALS test case #1 from the Minnesota EMS Regulatory Board, available at http://www.emsrb.state.mn.us. Example and guide 
     developed by the National EMS Information System and Ockham Information Sevices LLC under the auspices of Health Level 7, with support from the US 
     National Highway Traffic Safety Administration, the Centers for Disease Control, and the Health Resources and Services Administration, as well as 
     dozens of other government agencies, universities, and professional organizations. Example prepared for 2014 publication of normative implementation 

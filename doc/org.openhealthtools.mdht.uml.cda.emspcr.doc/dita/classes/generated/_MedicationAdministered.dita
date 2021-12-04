@@ -14,7 +14,7 @@
 <p>Medications administered in response to the emergency--usually by the EMS crew.</p>
 </section>
 <ol id="conformance">
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>templateId</b></tt> ( CONF:11465 ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>@root</b>="2.16.840.1.113883.17.3.10.1.72"</tt></li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>templateId</b></tt> ( CONF:11465 ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>@root</b>="2.16.840.1.113883.17.3.10.1.72"</tt></li> <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@extension</b>="2022-01-01"</tt></li></ol></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="SBADM" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:10445)
 </li>
 <li><b>MAY</b> contain zero or one [0..1] <tt><b>@negationInd</b></tt> (CONF:10448)
@@ -38,7 +38,7 @@ Note: rate values should be recorded in rateQuantity, dose in doseQuantity.</p>
 Note: rate values should be recorded in rateQuantity, dose in doseQuantity.</p>
 </li>
 <li>
-<b>SHALL</b> contain zero or more [0..*] <tt><b>approachSiteCode</b></tt> (CONF:11630), which <b>SHALL</b> be selected from ValueSet<tt> MedicationAdministrationSite 2.16.840.1.113883.17.3.11.109</tt><b> STATIC</b> (CONF:11629)<p>Two NEMSIS route (eMedications.04) values imply sites in addition to routes: "nasotracheal tube" and "tracheostomy"</p>
+<b>SHALL</b> contain zero or more [0..*] <tt><b>approachSiteCode</b></tt> (CONF:11630), which <b>SHALL</b> be selected from ValueSet<tt> MedicationAdministrationSite 2.16.840.1.113883.17.3.11.109</tt><b> DYNAMIC</b> (CONF:11629)<p>Two NEMSIS route (eMedications.04) values imply sites in addition to routes: "nasotracheal tube" and "tracheostomy"</p>
 </li>
 <li>
 <b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> such that it  (CONF:10451) <p><lines><i>This observation is required if negationInd = True.</i></lines></p><ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>@inversionInd</b>="TRUE" </tt> (CONF:10458)</li><li><b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b></tt> (CONF:10460)<tt><b>/@code</b>="RSON" </tt><i>Reason</i> (CodeSystem:<tt> </tt>) (CONF:10459)</li><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/MedicationNotAdministeredReasonObservation.html">Medication Not Administered Reason Observation</xref> (CONF:10461)</li></ol> 
@@ -90,7 +90,7 @@ Null Flavor for pertinent negative cases = NA</p></li>
 <p>NEMSIS Trace: EMedications.04
 
 See appendix for mapping NEMSIS values to FDA values and for postcoordination of device information.</p></li>
-<li><b>SHALL</b> contain zero or more [0..*] <tt><b>approachSiteCode</b></tt> (CONF:11630), which <b>SHALL</b> be selected from ValueSet<tt> MedicationAdministrationSite 2.16.840.1.113883.17.3.11.109</tt><b> STATIC</b> (CONF:11629)
+<li><b>SHALL</b> contain zero or more [0..*] <tt><b>approachSiteCode</b></tt> (CONF:11630), which <b>SHALL</b> be selected from ValueSet<tt> MedicationAdministrationSite 2.16.840.1.113883.17.3.11.109</tt><b> DYNAMIC</b> (CONF:11629)
 <p>Two NEMSIS route (eMedications.04) values imply sites in addition to routes: "nasotracheal tube" and "tracheostomy"</p></li>
 <li><b>MAY</b> contain zero or one [0..1] <tt><b>doseQuantity</b></tt> (CONF:10446)
 <p>NEMSIS Trace: EMedications.05, EMedications.06
@@ -127,20 +127,20 @@ For blood products, the following SNOMED CT codes may be used:
 </ol>
 <section id="contextTable"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="2" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><thead><row><entry namest="col0" nameend="col0" >Contained By</entry><entry namest="col1" nameend="col1" >Contains</entry></row></thead><tbody><row><entry><xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/EMSMedicationsAdministeredSection.html">EMS Medications Administered Section</xref></entry><entry></entry></row></tbody></tgroup></table></p></section>
 <codeblock id="example" outputclass="language-xml"><![CDATA[<substanceAdministration classCode="SBADM" moodCode="RQO">
-  <templateId root="2.16.840.1.113883.17.3.10.1.72"/>
+  <templateId root="2.16.840.1.113883.17.3.10.1.72" extension="2022-01-01"/>
   <consumable>
     <manufacturedProduct/>
   </consumable>
   <entryRelationship typeCode="XCRPT">
     <observation classCode="SPCOBS" moodCode="EVN">
-      <templateId root="2.16.840.1.113883.17.3.10.1.106"/>
+      <templateId root="2.16.840.1.113883.17.3.10.1.106" extension="2022-01-01"/>
       <code code="67540-5" codeSystem="2.16.840.1.113883.6.1" displayName="Response to medication NEMSIS"/>
       <value xsi:type="CD"/>
     </observation>
   </entryRelationship>
   <entryRelationship typeCode="XCRPT">
     <observation classCode="SPCOBS" moodCode="EVN">
-      <templateId root="2.16.840.1.113883.17.3.10.1.108"/>
+      <templateId root="2.16.840.1.113883.17.3.10.1.108" extension="2022-01-01"/>
       <code code="67539-7" codeSystem="2.16.840.1.113883.6.1" displayName="Medication administered prior to this unit's EMS care NEMSIS"/>
       <value xsi:type="BL"/>
     </observation>

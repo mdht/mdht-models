@@ -24,12 +24,12 @@
 <thead><row>
 <entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
 </row></thead><tbody>
-<row><entry>newLA4227003</entry><entry>MISSING</entry><entry>Cancelled on Scene</entry></row>
-<row><entry>newLA4227005</entry><entry>MISSING</entry><entry>Cancelled Prior to Arrival at Scene</entry></row>
-<row><entry>newLA4227007</entry><entry>MISSING</entry><entry>No Patient Contact</entry></row>
-<row><entry>newLA4227009NewCode</entry><entry>MISSING</entry><entry>No Patient Found</entry></row>
-<row><entry>newLA4227011</entry><entry>MISSING</entry><entry>Non-Patient Incident (Not Otherwise Listed)</entry></row>
-<row><entry>newLA4227001</entry><entry>MISSING</entry><entry>Patient Contact Made</entry></row>
+<row><entry>newLA4227003</entry><entry>LOINC</entry><entry>Cancelled on Scene</entry></row>
+<row><entry>newLA4227005</entry><entry>LOINC</entry><entry>Cancelled Prior to Arrival at Scene</entry></row>
+<row><entry>newLA4227007</entry><entry>LOINC</entry><entry>No Patient Contact</entry></row>
+<row><entry>newLA4227009NewCode</entry><entry>LOINC</entry><entry>No Patient Found</entry></row>
+<row><entry>newLA4227011</entry><entry>LOINC</entry><entry>Non-Patient Incident (Not Otherwise Listed)</entry></row>
+<row><entry>newLA4227001</entry><entry>LOINC</entry><entry>Patient Contact Made</entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

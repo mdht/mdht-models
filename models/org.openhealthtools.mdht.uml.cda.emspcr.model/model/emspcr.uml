@@ -12523,7 +12523,7 @@ UCUM units SHOULD be &quot;[mi_i]&quot;</body>
     <ruleId>CONF:7304</ruleId>
   </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_6IOWIPfnEeK_n7ZHGRzt1Q" base_Property="_ppT5kHtAEeGs2I-Db78R9w">
-    <reference href="emspcr-vocab.uml#_mK-6oPsTEeKCRNC-sxBJsQ"/>
+    <reference href="pathmap://CONSOL_MODEL///consol-vocab.uml#_LGTEUDVREeGIw7CntkyPQw"/>
     <ruleId>CONF:10878</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:CodeSystemConstraint xmi:id="_G6mNQDCPEeOtiorCW5MLkg" code="67844-1" displayName="EMS current Medications Narrative NEMSIS" base_Property="_iI1HIIcnEeGqF6qfYwLiQw">

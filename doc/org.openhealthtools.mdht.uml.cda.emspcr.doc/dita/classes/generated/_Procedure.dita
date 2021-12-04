@@ -14,7 +14,7 @@
 <p>Procedure performed by EMS unit</p>
 </section>
 <ol id="conformance">
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>templateId</b></tt> ( CONF:11496 ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>@root</b>="2.16.840.1.113883.17.3.10.1.181"</tt></li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>templateId</b></tt> ( CONF:11496 ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>@root</b>="2.16.840.1.113883.17.3.10.1.181"</tt></li> <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@extension</b>="2022-01-01"</tt></li></ol></li>
 <li><b>MAY</b> contain zero or one [0..1] <tt><b>@negationInd</b></tt> (CONF:11212)
 <p>Required to document a procedure not performed, with required "reason not performed" observation</p></li>
 <li>
@@ -132,7 +132,7 @@ For procedures documented in eArrest section (eArrest.20 Who first initiated CPR
 </ol>
 <section id="contextTable"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="2" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><thead><row><entry namest="col0" nameend="col0" >Contained By</entry><entry namest="col1" nameend="col1" >Contains</entry></row></thead><tbody><row><entry><xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/EMSProceduresPerformedSection.html">EMS Procedures Performed Section</xref></entry><entry></entry></row></tbody></tgroup></table></p></section>
 <codeblock id="example" outputclass="language-xml"><![CDATA[<procedure classCode="XACT" moodCode="RQO">
-  <templateId root="2.16.840.1.113883.17.3.10.1.181"/>
+  <templateId root="2.16.840.1.113883.17.3.10.1.181" extension="2022-01-01"/>
   <code codeSystem="2.16.840.1.113883.6.96"/>
 </procedure>
 ]]></codeblock>

@@ -13,15 +13,15 @@
 <section id="description">
 </section>
 <ol id="conformance">
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>templateId</b></tt> ( CONF:11572 ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>@root</b>="2.16.840.1.113883.17.3.10.1.194"</tt></li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>templateId</b></tt> ( CONF:11572 ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>@root</b>="2.16.840.1.113883.17.3.10.1.194"</tt></li> <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@extension</b>="2022-01-01"</tt></li></ol></li>
 <li>
-<b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="NeweExam.23" </tt><i>Lung Assessment Finding</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:11573)
+<b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:11701)<tt><b>/@code</b>="NeweExam.23" </tt><i>Lung Assessment Finding</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:11573)
 </li>
 <li>
-<b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with <tt><b>@xsi:type</b>="CD"</tt> (CONF:11575), which <b>SHALL</b> be selected from ValueSet<tt> LungFinding 2.16.840.1.113883.17.3.11.116</tt><b> STATIC</b> (CONF:11574)<p>NEMSIS Trace: eExam.23</p>
+<b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with <tt><b>@xsi:type</b>="CD"</tt> (CONF:11575), which <b>SHALL</b> be selected from ValueSet<tt> LungFinding 2.16.840.1.113883.17.3.11.116</tt><b> DYNAMIC</b> (CONF:11574)<p>NEMSIS Trace: eExam.23</p>
 </li>
 <li>
-<b>SHOULD</b> contain zero or more [0..*] <tt><b>targetSiteCode</b></tt> (CONF:11577), which <b>SHALL</b> be selected from ValueSet<tt> LungFindingLocation 2.16.840.1.113883.17.3.11.117</tt><b> STATIC</b> (CONF:11576)<p>NEMSIS Trace: eExam.22</p>
+<b>SHOULD</b> contain zero or more [0..*] <tt><b>targetSiteCode</b></tt> (CONF:11577), which <b>SHALL</b> be selected from ValueSet<tt> LungFindingLocation 2.16.840.1.113883.17.3.11.117</tt><b> DYNAMIC</b> (CONF:11576)<p>NEMSIS Trace: eExam.22</p>
 </li>
 </ol>
 <ol id="aggregate">
@@ -29,16 +29,16 @@
 </li>
 <li>contain exactly one [1..1] <tt><b>@moodCode</b></tt>
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="NeweExam.23" </tt><i>Lung Assessment Finding</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:11573)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:11701)<tt><b>/@code</b>="NeweExam.23" </tt><i>Lung Assessment Finding</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:11573)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with <tt><b>@xsi:type</b>="CD"</tt> (CONF:11575), which <b>SHALL</b> be selected from ValueSet<tt> LungFinding 2.16.840.1.113883.17.3.11.116</tt><b> STATIC</b> (CONF:11574)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with <tt><b>@xsi:type</b>="CD"</tt> (CONF:11575), which <b>SHALL</b> be selected from ValueSet<tt> LungFinding 2.16.840.1.113883.17.3.11.116</tt><b> DYNAMIC</b> (CONF:11574)
 <p>NEMSIS Trace: eExam.23</p></li>
-<li><b>SHOULD</b> contain zero or more [0..*] <tt><b>targetSiteCode</b></tt> (CONF:11577), which <b>SHALL</b> be selected from ValueSet<tt> LungFindingLocation 2.16.840.1.113883.17.3.11.117</tt><b> STATIC</b> (CONF:11576)
+<li><b>SHOULD</b> contain zero or more [0..*] <tt><b>targetSiteCode</b></tt> (CONF:11577), which <b>SHALL</b> be selected from ValueSet<tt> LungFindingLocation 2.16.840.1.113883.17.3.11.117</tt><b> DYNAMIC</b> (CONF:11576)
 <p>NEMSIS Trace: eExam.22</p></li>
 </ol>
-<section id="contextTable"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="2" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><thead><row><entry namest="col0" nameend="col0" >Contained By</entry><entry namest="col1" nameend="col1" >Contains</entry></row></thead><tbody><row><entry><xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/PhysicalAssessmentOrganizer.html">Physical Assessment Organizer</xref></entry><entry></entry></row></tbody></tgroup></table></p></section>
+<section id="contextTable"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="2" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><thead><row><entry namest="col0" nameend="col0" >Contained By</entry><entry namest="col1" nameend="col1" >Contains</entry></row></thead><tbody><row><entry> </entry><entry> </entry></row></tbody></tgroup></table></p></section>
 <codeblock id="example" outputclass="language-xml"><![CDATA[<observation classCode="SPCOBS" moodCode="RQO">
-  <templateId root="2.16.840.1.113883.17.3.10.1.194"/>
+  <templateId root="2.16.840.1.113883.17.3.10.1.194" extension="2022-01-01"/>
   <code code="NeweExam.23" codeSystem="2.16.840.1.113883.6.1" displayName="Lung Assessment Finding"/>
   <value xsi:type="CD"/>
 </observation>

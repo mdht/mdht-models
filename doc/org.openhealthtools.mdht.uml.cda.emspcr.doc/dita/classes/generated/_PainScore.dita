@@ -14,11 +14,11 @@
 <p>Assessment of the patient's level of pain</p>
 </section>
 <ol id="conformance">
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>templateId</b></tt> ( CONF:11554 ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>@root</b>="2.16.840.1.113883.17.3.10.1.164"</tt></li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>templateId</b></tt> ( CONF:11554 ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>@root</b>="2.16.840.1.113883.17.3.10.1.164"</tt></li> <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@extension</b>="2022-01-01"</tt></li></ol></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:11299)
 </li>
 <li>
-<b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="56840-2" </tt><i>Pain severity verbal numeric scale</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10306)
+<b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:11676)<tt><b>/@code</b>="56840-2" </tt><i>Pain severity verbal numeric scale</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10306)
 </li>
 <li>
 <b>MAY</b> contain zero or one [0..1] <tt><b>effectiveTime</b></tt> (CONF:11300)<p>NEMSIS Trace: EVitals.01</p>
@@ -33,7 +33,7 @@ An ordinal value between 0 and 10, inclusive. There are three scales, but the va
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:11299)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="56840-2" </tt><i>Pain severity verbal numeric scale</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10306)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:11676)<tt><b>/@code</b>="56840-2" </tt><i>Pain severity verbal numeric scale</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10306)
 </li>
 <li><b>MAY</b> contain zero or one [0..1] <tt><b>effectiveTime</b></tt> (CONF:11300)
 <p>NEMSIS Trace: EVitals.01</p></li>
@@ -41,9 +41,9 @@ An ordinal value between 0 and 10, inclusive. There are three scales, but the va
 <p>NEMSIS Trace: EVitals.27
 An ordinal value between 0 and 10, inclusive. There are three scales, but the values are equivalent.</p></li>
 </ol>
-<section id="contextTable"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="2" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><thead><row><entry namest="col0" nameend="col0" >Contained By</entry><entry namest="col1" nameend="col1" >Contains</entry></row></thead><tbody><row><entry><xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/AdditionalVitalSignsOrganizer.html">Additional Vital Signs Organizer</xref></entry><entry></entry></row></tbody></tgroup></table></p></section>
+<section id="contextTable"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="2" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><thead><row><entry namest="col0" nameend="col0" >Contained By</entry><entry namest="col1" nameend="col1" >Contains</entry></row></thead><tbody><row><entry> </entry><entry> </entry></row></tbody></tgroup></table></p></section>
 <codeblock id="example" outputclass="language-xml"><![CDATA[<observation classCode="SPCOBS" moodCode="EVN">
-  <templateId root="2.16.840.1.113883.17.3.10.1.164"/>
+  <templateId root="2.16.840.1.113883.17.3.10.1.164" extension="2022-01-01"/>
   <code code="56840-2" codeSystem="2.16.840.1.113883.6.1" displayName="Pain severity verbal numeric scale"/>
   <value xsi:type="INT"/>
 </observation>

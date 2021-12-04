@@ -14,39 +14,39 @@
 <p>A collection of qualitative assessments of the patient's physical condition and other facts</p>
 </section>
 <ol id="conformance">
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>templateId</b></tt> ( CONF:11400 ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>@root</b>="2.16.840.1.113883.17.3.10.1.20"</tt></li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>templateId</b></tt> ( CONF:11400 ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>@root</b>="2.16.840.1.113883.17.3.10.1.20"</tt></li> <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@extension</b>="2022-01-01"</tt></li></ol></li>
 <li>
 <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10337)<tt><b>/@code</b>="29545-1" </tt><i>Physical findings Narrative</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10336)
 </li>
 <li>
-<b>SHALL</b> contain exactly one [1..1] <tt><b>title</b>="EMS Physical Assessment Section" </tt> which <b>SHOULD</b> equal "EMS Physical Assessment Section" (CONF:10339)
+<b>SHALL</b> contain exactly one [1..1] <tt><b>title</b>="EMS Physical Assessment Section" </tt> (CONF:10339)
 </li>
 <li>
 <b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:10338)
 </li>
 <li>
 If section/@nullFlavor is not present, <b>SHOULD</b> contain  [0..*] <tt><b>entry</b></tt> such that it  (CONF:10975)<ol>
-<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/PhysicalAssessmentOrganizer.html">Physical Assessment Organizer</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.78</tt>)</li></ol>
+<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/PhysicalAssessmentOrganizer.html">Physical Assessment Organizer</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.78:2022-01-01</tt>)</li></ol>
 </li>
 <li>
 If section/@nullFlavor is not present, <b>MAY</b> contain  [0..1] <tt><b>entry</b></tt> such that it  (CONF:10977)<ol>
-<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/PatientPregnancy.html">Patient Pregnancy</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.79</tt>)</li></ol>
+<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/PatientPregnancy.html">Patient Pregnancy</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.79:2022-01-01</tt>)</li></ol>
 </li>
 <li>
 If section/@nullFlavor is not present, <b>MAY</b> contain  [0..1] <tt><b>entry</b></tt> such that it  (CONF:10979)<ol>
-<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/LastOralIntake.html">Last Oral Intake</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.80</tt>)</li></ol>
+<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/LastOralIntake.html">Last Oral Intake</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.80:2022-01-01</tt>)</li></ol>
 </li>
 <li>
 If section/@nullFlavor is not present, <b>SHALL</b> contain  [1..1] <tt><b>entry</b></tt> such that it  (CONF:10981)<ol>
-<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/PatientAge.html">Patient Age</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.81</tt>)</li></ol>
+<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/PatientAge.html">Patient Age</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.81:2022-01-01</tt>)</li></ol>
 </li>
 <li>
 If section/@nullFlavor is not present, <b>SHALL</b> contain  [1..1] <tt><b>entry</b></tt> such that it  (CONF:10983)<ol>
-<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ThrombolyticContraindications.html">Thrombolytic Contraindications</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.82</tt>)</li></ol>
+<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ThrombolyticContraindications.html">Thrombolytic Contraindications</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.82:2022-01-01</tt>)</li></ol>
 </li>
 <li>
 If section/@nullFlavor is not present, <b>SHALL</b> contain  [1..1] <tt><b>entry</b></tt> such that it  (CONF:10985)<ol>
-<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/BarriersToPatientCare.html">Barriers To Patient Care</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.83</tt>)</li></ol>
+<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/BarriersToPatientCare.html">Barriers To Patient Care</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.83:2022-01-01</tt>)</li></ol>
 </li>
 <li>
 <b>MAY</b> contain zero or one [0..1] <tt><b>entry</b></tt> such that it  (CONF:11401) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/PatientBodyWeight.html">Patient Body Weight</xref> (CONF:11099)</li></ol> 
@@ -58,28 +58,28 @@ If section/@nullFlavor is not present, <b>SHALL</b> contain  [1..1] <tt><b>entry
 <ol id="aggregate">
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10337)<tt><b>/@code</b>="29545-1" </tt><i>Physical findings Narrative</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10336)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b>="EMS Physical Assessment Section" </tt> which <b>SHOULD</b> equal "EMS Physical Assessment Section" (CONF:10339)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b>="EMS Physical Assessment Section" </tt> (CONF:10339)
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:10338)
 </li>
 <li>If section/@nullFlavor is not present, <b>SHOULD</b> contain  [0..*] <tt><b>entry</b></tt> such that it  (CONF:10975)
 <ol>
-<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/PhysicalAssessmentOrganizer.html">Physical Assessment Organizer</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.78</tt>)</li></ol></li>
+<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/PhysicalAssessmentOrganizer.html">Physical Assessment Organizer</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.78:2022-01-01</tt>)</li></ol></li>
 <li>If section/@nullFlavor is not present, <b>MAY</b> contain  [0..1] <tt><b>entry</b></tt> such that it  (CONF:10977)
 <ol>
-<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/PatientPregnancy.html">Patient Pregnancy</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.79</tt>)</li></ol></li>
+<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/PatientPregnancy.html">Patient Pregnancy</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.79:2022-01-01</tt>)</li></ol></li>
 <li>If section/@nullFlavor is not present, <b>MAY</b> contain  [0..1] <tt><b>entry</b></tt> such that it  (CONF:10979)
 <ol>
-<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/LastOralIntake.html">Last Oral Intake</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.80</tt>)</li></ol></li>
+<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/LastOralIntake.html">Last Oral Intake</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.80:2022-01-01</tt>)</li></ol></li>
 <li>If section/@nullFlavor is not present, <b>SHALL</b> contain  [1..1] <tt><b>entry</b></tt> such that it  (CONF:10981)
 <ol>
-<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/PatientAge.html">Patient Age</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.81</tt>)</li></ol></li>
+<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/PatientAge.html">Patient Age</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.81:2022-01-01</tt>)</li></ol></li>
 <li>If section/@nullFlavor is not present, <b>SHALL</b> contain  [1..1] <tt><b>entry</b></tt> such that it  (CONF:10983)
 <ol>
-<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ThrombolyticContraindications.html">Thrombolytic Contraindications</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.82</tt>)</li></ol></li>
+<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ThrombolyticContraindications.html">Thrombolytic Contraindications</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.82:2022-01-01</tt>)</li></ol></li>
 <li>If section/@nullFlavor is not present, <b>SHALL</b> contain  [1..1] <tt><b>entry</b></tt> such that it  (CONF:10985)
 <ol>
-<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/BarriersToPatientCare.html">Barriers To Patient Care</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.83</tt>)</li></ol></li>
+<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/BarriersToPatientCare.html">Barriers To Patient Care</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.83:2022-01-01</tt>)</li></ol></li>
 <li><b>MAY</b> contain zero or one [0..1] <tt><b>entry</b></tt> such that it  (CONF:11401) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/PatientBodyWeight.html">Patient Body Weight</xref> (CONF:11099)</li></ol> 
 </li>
 <li><b>MAY</b> contain zero or one [0..1] <tt><b>entry</b></tt> such that it  (CONF:11402) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/LengthBasedPatientBodyWeightClass.html">Length Based Patient Body Weight Class</xref> (CONF:11100)</li></ol> 
@@ -87,9 +87,9 @@ If section/@nullFlavor is not present, <b>SHALL</b> contain  [1..1] <tt><b>entry
 </ol>
 <section id="contextTable"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="2" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><thead><row><entry namest="col0" nameend="col0" >Contained By</entry><entry namest="col1" nameend="col1" >Contains</entry></row></thead><tbody><row><entry><xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/PatientCareReport.html">Patient Care Report</xref></entry><entry><xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/BarriersToPatientCare.html">Barriers To Patient Care</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/LastOralIntake.html">Last Oral Intake</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/PatientAge.html">Patient Age</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/PatientPregnancy.html">Patient Pregnancy</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/PhysicalAssessmentOrganizer.html">Physical Assessment Organizer</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ThrombolyticContraindications.html">Thrombolytic Contraindications</xref></entry></row></tbody></tgroup></table></p></section>
 <codeblock id="example" outputclass="language-xml"><![CDATA[<section>
-  <templateId root="2.16.840.1.113883.17.3.10.1.20"/>
+  <templateId root="2.16.840.1.113883.17.3.10.1.20" extension="2022-01-01"/>
   <code code="29545-1" codeSystem="2.16.840.1.113883.6.1" displayName="Physical findings Narrative"/>
-  <title>EMS Physical Assessment Section</title>
+  <title/>
   <text/>
 </section>
 ]]></codeblock>

@@ -14,6 +14,7 @@
 <colspec colname="col2" colwidth="4*"/>
 <tbody>
 <row><entry>Value Set</entry><entry>ChestFinding - 2.16.840.1.113883.17.3.11.118</entry></row>
+<row><entry>Code System</entry><entry>LOINC - 2.16.840.1.113883.6.1</entry></row>
 </tbody></tgroup></table>
 <table frame="all" rowsep="1" colsep="1">
 <tgroup cols="3">
@@ -23,31 +24,30 @@
 <thead><row>
 <entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
 </row></thead><tbody>
-<row><entry>newLA3525007</entry><entry></entry><entry>Bleeding Controlled</entry></row>
-<row><entry>newLA3525025</entry><entry></entry><entry>Implanted Device</entry></row>
-<row><entry>newLA3525027</entry><entry></entry><entry>Laceration</entry></row>
-<row><entry>newLA3525029</entry><entry></entry><entry>Normal</entry></row>
-<row><entry>newLA3525047</entry><entry></entry><entry>Contusion</entry></row>
-<row><entry>newLA3525021</entry><entry></entry><entry>Deformity</entry></row>
-<row><entry>newLA3525049</entry><entry></entry><entry>Tenderness-General</entry></row>
-<row><entry>newLA3525019</entry><entry></entry><entry>Crush Injury</entry></row>
-<row><entry>newLA3525017</entry><entry></entry><entry>Burn-White/Waxy</entry></row>
-<row><entry>newLA3525015</entry><entry></entry><entry>Burn-Redness</entry></row>
-<row><entry>newLA3525013</entry><entry></entry><entry>Burn-Charring</entry></row>
-<row><entry>newLA3525023</entry><entry></entry><entry>Flail Segment</entry></row>
-<row><entry>newLA3525009</entry><entry></entry><entry>Bleeding Uncontrolled</entry></row>
-<row><entry>newLA3525031</entry><entry></entry><entry>Not Done</entry></row>
-<row><entry>newLA3525005</entry><entry></entry><entry>Accessory Muscles Used with Breathing</entry></row>
-<row><entry>newLA3525003</entry><entry></entry><entry>Avulsion</entry></row>
-<row><entry>newLA3525001</entry><entry></entry><entry>Abrasion</entry></row>
-<row><entry>newLA3525033</entry><entry></entry><entry>Pain</entry></row>
-<row><entry>newLA3525035</entry><entry></entry><entry>Pain with Inspiration/Expiration</entry></row>
-<row><entry>newLA3525037</entry><entry></entry><entry>Puncture/Stab Wound</entry></row>
-<row><entry>newLA3525039</entry><entry></entry><entry>Retraction</entry></row>
-<row><entry>newLA3525041</entry><entry></entry><entry>Tenderness</entry></row>
-<row><entry>newLA3525043</entry><entry></entry><entry>Gunshot Wound</entry></row>
-<row><entry>newLA3525045</entry><entry></entry><entry>Swelling</entry></row>
-<row><entry>newLA3525011</entry><entry></entry><entry>Burn-Blistering</entry></row>
+<row><entry>newLA3525007</entry><entry>LOINC</entry><entry>Bleeding Controlled</entry></row>
+<row><entry>newLA3525025</entry><entry>LOINC</entry><entry>Implanted Device</entry></row>
+<row><entry>newLA3525027</entry><entry>LOINC</entry><entry>Laceration</entry></row>
+<row><entry>newLA3525029</entry><entry>LOINC</entry><entry>Normal</entry></row>
+<row><entry>newLA3525047</entry><entry>LOINC</entry><entry>Contusion</entry></row>
+<row><entry>newLA3525021</entry><entry>LOINC</entry><entry>Deformity</entry></row>
+<row><entry>newLA3525049</entry><entry>LOINC</entry><entry>Tenderness-General</entry></row>
+<row><entry>newLA3525019</entry><entry>LOINC</entry><entry>Crush Injury</entry></row>
+<row><entry>newLA3525017</entry><entry>LOINC</entry><entry>Burn-White/Waxy</entry></row>
+<row><entry>newLA3525015</entry><entry>LOINC</entry><entry>Burn-Redness</entry></row>
+<row><entry>newLA3525013</entry><entry>LOINC</entry><entry>Burn-Charring</entry></row>
+<row><entry>newLA3525023</entry><entry>LOINC</entry><entry>Flail Segment</entry></row>
+<row><entry>newLA3525009</entry><entry>LOINC</entry><entry>Bleeding Uncontrolled</entry></row>
+<row><entry>newLA3525005</entry><entry>LOINC</entry><entry>Accessory Muscles Used with Breathing</entry></row>
+<row><entry>newLA3525003</entry><entry>LOINC</entry><entry>Avulsion</entry></row>
+<row><entry>newLA3525001</entry><entry>LOINC</entry><entry>Abrasion</entry></row>
+<row><entry>newLA3525033</entry><entry>LOINC</entry><entry>Pain</entry></row>
+<row><entry>newLA3525035</entry><entry>LOINC</entry><entry>Pain with Inspiration/Expiration</entry></row>
+<row><entry>newLA3525037</entry><entry>LOINC</entry><entry>Puncture/Stab Wound</entry></row>
+<row><entry>newLA3525039</entry><entry>LOINC</entry><entry>Retraction</entry></row>
+<row><entry>newLA3525041</entry><entry>LOINC</entry><entry>Tenderness</entry></row>
+<row><entry>newLA3525043</entry><entry>LOINC</entry><entry>Gunshot Wound</entry></row>
+<row><entry>newLA3525045</entry><entry>LOINC</entry><entry>Swelling</entry></row>
+<row><entry>newLA3525011</entry><entry>LOINC</entry><entry>Burn-Blistering</entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

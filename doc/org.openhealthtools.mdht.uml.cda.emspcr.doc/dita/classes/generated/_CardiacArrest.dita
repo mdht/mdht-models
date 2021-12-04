@@ -14,7 +14,7 @@
 <p>Characteristics of a patient's cardiac arrest</p>
 </section>
 <ol id="conformance">
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>templateId</b></tt> ( CONF:11420 ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>@root</b>="2.16.840.1.113883.17.3.10.1.27"</tt></li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>templateId</b></tt> ( CONF:11420 ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>@root</b>="2.16.840.1.113883.17.3.10.1.27"</tt></li> <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@extension</b>="2022-01-01"</tt></li></ol></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:11130)
 </li>
 <li><b>SHOULD</b> contain zero or one [0..1] <tt><b>@negationInd</b></tt> (CONF:10141)
@@ -80,7 +80,7 @@
 </ol>
 <section id="contextTable"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="2" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><thead><row><entry namest="col0" nameend="col0" >Contained By</entry><entry namest="col1" nameend="col1" >Contains</entry></row></thead><tbody><row><entry><xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/EMSCardiacArrestEventSection.html">EMS Cardiac Arrest Event Section</xref></entry><entry></entry></row></tbody></tgroup></table></p></section>
 <codeblock id="example" outputclass="language-xml"><![CDATA[<observation classCode="SPCOBS" moodCode="EVN">
-  <templateId root="2.16.840.1.113883.17.3.10.1.27"/>
+  <templateId root="2.16.840.1.113883.17.3.10.1.27" extension="2022-01-01"/>
   <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" displayName="ASSERTION"/>
   <effectiveTime/>
   <value xsi:type="CD" code="410429000" codeSystem="2.16.840.1.113883.6.96" displayName="cardiac arrest"/>
@@ -91,28 +91,28 @@
   </informant>
   <entryRelationship typeCode="SUBJ" inversionInd="true">
     <observation classCode="SPCOBS" moodCode="EVN">
-      <templateId root="2.16.840.1.113883.17.3.10.1.124"/>
+      <templateId root="2.16.840.1.113883.17.3.10.1.124" extension="2022-01-01"/>
       <code code="67503-3" codeSystem="2.16.840.1.113883.6.1" displayName="Cardiac arrest cause NEMSIS"/>
       <value xsi:type="CD"/>
     </observation>
   </entryRelationship>
   <entryRelationship typeCode="SUBJ" inversionInd="true">
     <observation classCode="SPCOBS" moodCode="EVN">
-      <templateId root="2.16.840.1.113883.17.3.10.1.128"/>
+      <templateId root="2.16.840.1.113883.17.3.10.1.128" extension="2022-01-01"/>
       <code code="88670-5" codeSystem="2.16.840.1.113883.6.1" displayName="Return of spontaneous circulation"/>
       <value xsi:type="CD"/>
     </observation>
   </entryRelationship>
   <entryRelationship typeCode="SUBJ" inversionInd="true">
     <observation classCode="SPCOBS" moodCode="EVN">
-      <templateId root="2.16.840.1.113883.17.3.10.1.129"/>
+      <templateId root="2.16.840.1.113883.17.3.10.1.129" extension="2022-01-01"/>
       <code code="67519-9" codeSystem="2.16.840.1.113883.6.1" displayName="Cardiac rhythm NEMSIS"/>
       <value xsi:type="CD"/>
     </observation>
   </entryRelationship>
   <entryRelationship typeCode="SUBJ" inversionInd="true">
     <observation classCode="SPCOBS" moodCode="EVN">
-      <templateId root="2.16.840.1.113883.17.3.10.1.127"/>
+      <templateId root="2.16.840.1.113883.17.3.10.1.127" extension="2022-01-01"/>
       <code code="67512-4" codeSystem="2.16.840.1.113883.6.1" displayName="First monitored rhythm NEMSIS"/>
       <value xsi:type="CD"/>
     </observation>
@@ -120,7 +120,7 @@
   <entryRelationship typeCode="SUBJ" inversionInd="true"/>
   <entryRelationship typeCode="COMP">
     <observation classCode="SPCOBS" moodCode="EVN">
-      <templateId root="2.16.840.1.113883.17.3.10.1.184"/>
+      <templateId root="2.16.840.1.113883.17.3.10.1.184" extension="2022-01-01"/>
       <code code="77152-7" codeSystem="2.16.840.1.113883.6.1" displayName="Cardiac arrest event outcome"/>
       <value xsi:type="CD"/>
     </observation>

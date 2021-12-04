@@ -14,11 +14,11 @@
 <p>Qualitative assessment of condition of patient's neck</p>
 </section>
 <ol id="conformance">
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>templateId</b></tt> ( CONF:11509 ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>@root</b>="2.16.840.1.113883.17.3.10.1.114"</tt></li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>templateId</b></tt> ( CONF:11509 ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>@root</b>="2.16.840.1.113883.17.3.10.1.114"</tt></li> <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@extension</b>="2022-01-01"</tt></li></ol></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:11228)
 </li>
 <li>
-<b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="67527-2" </tt><i>Physical findings of Neck NEMSIS</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10379)
+<b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:11668)<tt><b>/@code</b>="67527-2" </tt><i>Physical findings of Neck NEMSIS</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10379)
 </li>
 <li>
 <b>SHOULD</b> contain zero or one [0..1] <tt><b>effectiveTime</b></tt> (CONF:11229)<p>NEMSIS Trace: EExam.03</p>
@@ -32,7 +32,7 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:11228)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="67527-2" </tt><i>Physical findings of Neck NEMSIS</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10379)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:11668)<tt><b>/@code</b>="67527-2" </tt><i>Physical findings of Neck NEMSIS</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10379)
 </li>
 <li><b>SHOULD</b> contain zero or one [0..1] <tt><b>effectiveTime</b></tt> (CONF:11229)
 <p>NEMSIS Trace: EExam.03</p></li>
@@ -41,7 +41,7 @@
 </ol>
 <section id="contextTable"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="2" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><thead><row><entry namest="col0" nameend="col0" >Contained By</entry><entry namest="col1" nameend="col1" >Contains</entry></row></thead><tbody><row><entry> </entry><entry> </entry></row></tbody></tgroup></table></p></section>
 <codeblock id="example" outputclass="language-xml"><![CDATA[<observation classCode="SPCOBS" moodCode="EVN">
-  <templateId root="2.16.840.1.113883.17.3.10.1.114"/>
+  <templateId root="2.16.840.1.113883.17.3.10.1.114" extension="2022-01-01"/>
   <code code="67527-2" codeSystem="2.16.840.1.113883.6.1" displayName="Physical findings of Neck NEMSIS"/>
   <value xsi:type="CD"/>
 </observation>

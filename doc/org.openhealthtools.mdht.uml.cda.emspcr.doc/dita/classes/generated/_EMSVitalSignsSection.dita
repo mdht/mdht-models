@@ -14,37 +14,37 @@
 <p>Collection of vital signs and other observations about the patient's status</p>
 </section>
 <ol id="conformance">
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>templateId</b></tt> ( CONF:11399 ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>@root</b>="2.16.840.1.113883.17.3.10.1.23"</tt></li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>templateId</b></tt> ( CONF:11399 ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>@root</b>="2.16.840.1.113883.17.3.10.1.23"</tt></li> <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@extension</b>="2022-01-01"</tt></li></ol></li>
 <li>
-<b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="8716-3" </tt><i>Vital Signs</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10252)
+<b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:11637)<tt><b>/@code</b>="8716-3" </tt><i>Vital Signs</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10252)
 </li>
 <li>
-<b>SHALL</b> contain exactly one [1..1] <tt><b>title</b>="EMS Vital Signs" </tt> which <b>SHOULD</b> equal "EMS Vital Signs" (CONF:10254)
+<b>SHALL</b> contain exactly one [1..1] <tt><b>title</b>="EMS Vital Signs Section" </tt> (CONF:10254)
 </li>
 <li>
 <b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:10969)
 </li>
 <li>
 If section/@nullFlavor is not present, <b>SHALL</b> contain  [1..*] <tt><b>entry</b></tt> such that it  (CONF:10970)<ol>
-<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/VitalSignsOrganizer.html">Vital Signs Organizer</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.28</tt>)</li></ol>
+<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/VitalSignsOrganizer.html">Vital Signs Organizer</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.28:2022-01-01</tt>)</li></ol>
 </li>
 </ol>
 <ol id="aggregate">
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="8716-3" </tt><i>Vital Signs</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10252)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:11637)<tt><b>/@code</b>="8716-3" </tt><i>Vital Signs</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10252)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b>="EMS Vital Signs" </tt> which <b>SHOULD</b> equal "EMS Vital Signs" (CONF:10254)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b>="EMS Vital Signs Section" </tt> (CONF:10254)
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:10969)
 </li>
 <li>If section/@nullFlavor is not present, <b>SHALL</b> contain  [1..*] <tt><b>entry</b></tt> such that it  (CONF:10970)
 <ol>
-<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/VitalSignsOrganizer.html">Vital Signs Organizer</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.28</tt>)</li></ol></li>
+<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/VitalSignsOrganizer.html">Vital Signs Organizer</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.28:2022-01-01</tt>)</li></ol></li>
 </ol>
 <section id="contextTable"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="2" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><thead><row><entry namest="col0" nameend="col0" >Contained By</entry><entry namest="col1" nameend="col1" >Contains</entry></row></thead><tbody><row><entry><xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/PatientCareReport.html">Patient Care Report</xref></entry><entry><xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/VitalSignsOrganizer.html">Vital Signs Organizer</xref></entry></row></tbody></tgroup></table></p></section>
 <codeblock id="example" outputclass="language-xml"><![CDATA[<section>
-  <templateId root="2.16.840.1.113883.17.3.10.1.23"/>
+  <templateId root="2.16.840.1.113883.17.3.10.1.23" extension="2022-01-01"/>
   <code code="8716-3" codeSystem="2.16.840.1.113883.6.1" displayName="Vital Signs"/>
-  <title>EMS Vital Signs</title>
+  <title/>
   <text/>
 </section>
 ]]></codeblock>

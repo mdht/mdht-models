@@ -14,6 +14,7 @@
 <colspec colname="col2" colwidth="4*"/>
 <tbody>
 <row><entry>Value Set</entry><entry>PatientEngagement - 2.16.840.1.113883.17.3.11.113</entry></row>
+<row><entry>Code System</entry><entry>LOINC - 2.16.840.1.113883.6.1</entry></row>
 </tbody></tgroup></table>
 <table frame="all" rowsep="1" colsep="1">
 <tgroup cols="3">
@@ -23,11 +24,11 @@
 <thead><row>
 <entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
 </row></thead><tbody>
-<row><entry>newLA4228005</entry><entry></entry><entry>Patient Evaluated, No Care Required</entry></row>
-<row><entry>newLA4228007</entry><entry></entry><entry>Patient Refused Evaluation/Care</entry></row>
-<row><entry>newLA4228003</entry><entry></entry><entry>Patient Evaluated and Refused Care</entry></row>
-<row><entry>newLA4228001</entry><entry></entry><entry>Patient Evaluated and Care Provided</entry></row>
-<row><entry>newLA4228009</entry><entry></entry><entry>Patient Support Services Provided</entry></row>
+<row><entry>newLA4228005</entry><entry>LOINC</entry><entry>Patient Evaluated, No Care Required</entry></row>
+<row><entry>newLA4228007</entry><entry>LOINC</entry><entry>Patient Refused Evaluation/Care</entry></row>
+<row><entry>newLA4228003</entry><entry>LOINC</entry><entry>Patient Evaluated and Refused Care</entry></row>
+<row><entry>newLA4228001</entry><entry>LOINC</entry><entry>Patient Evaluated and Care Provided</entry></row>
+<row><entry>newLA4228009</entry><entry>LOINC</entry><entry>Patient Support Services Provided</entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

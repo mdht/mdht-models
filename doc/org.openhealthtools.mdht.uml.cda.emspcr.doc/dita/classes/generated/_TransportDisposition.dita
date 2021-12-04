@@ -14,12 +14,12 @@
 <p>The transport disposition for an EMS event identifying whether a transport occurred and by which unit.</p>
 </section>
 <ol id="conformance">
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>templateId</b></tt> ( CONF:11592 ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>@root</b>="2.16.840.1.113883.17.3.10.1.199"</tt></li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>templateId</b></tt> ( CONF:11592 ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>@root</b>="2.16.840.1.113883.17.3.10.1.199"</tt></li> <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@extension</b>="2022-01-01"</tt></li></ol></li>
 <li>
-<b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="neweDisposition.30" </tt><i>Transport Disposition</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:11593)
+<b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:11702)<tt><b>/@code</b>="neweDisposition.30" </tt><i>Transport Disposition</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:11593)
 </li>
 <li>
-<b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with <tt><b>@xsi:type</b>="CD"</tt> (CONF:11595), which <b>SHALL</b> be selected from ValueSet<tt> TransportDisposition 2.16.840.1.113883.17.3.11.115</tt><b> STATIC</b> (CONF:11594)<p>NEMSIS Trace: eDisposition.30</p>
+<b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with <tt><b>@xsi:type</b>="CD"</tt> (CONF:11595), which <b>SHALL</b> be selected from ValueSet<tt> TransportDisposition 2.16.840.1.113883.17.3.11.115</tt><b> DYNAMIC</b> (CONF:11594)<p>NEMSIS Trace: eDisposition.30</p>
 </li>
 </ol>
 <ol id="aggregate">
@@ -27,14 +27,14 @@
 </li>
 <li>contain exactly one [1..1] <tt><b>@moodCode</b></tt>
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="neweDisposition.30" </tt><i>Transport Disposition</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:11593)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:11702)<tt><b>/@code</b>="neweDisposition.30" </tt><i>Transport Disposition</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:11593)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with <tt><b>@xsi:type</b>="CD"</tt> (CONF:11595), which <b>SHALL</b> be selected from ValueSet<tt> TransportDisposition 2.16.840.1.113883.17.3.11.115</tt><b> STATIC</b> (CONF:11594)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with <tt><b>@xsi:type</b>="CD"</tt> (CONF:11595), which <b>SHALL</b> be selected from ValueSet<tt> TransportDisposition 2.16.840.1.113883.17.3.11.115</tt><b> DYNAMIC</b> (CONF:11594)
 <p>NEMSIS Trace: eDisposition.30</p></li>
 </ol>
 <section id="contextTable"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="2" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><thead><row><entry namest="col0" nameend="col0" >Contained By</entry><entry namest="col1" nameend="col1" >Contains</entry></row></thead><tbody><row><entry><xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/EMSDispositionSection.html">EMS Disposition Section</xref></entry><entry></entry></row></tbody></tgroup></table></p></section>
 <codeblock id="example" outputclass="language-xml"><![CDATA[<observation classCode="SPCOBS" moodCode="RQO">
-  <templateId root="2.16.840.1.113883.17.3.10.1.199"/>
+  <templateId root="2.16.840.1.113883.17.3.10.1.199" extension="2022-01-01"/>
   <code code="neweDisposition.30" codeSystem="2.16.840.1.113883.6.1" displayName="Transport Disposition"/>
   <value xsi:type="CD"/>
 </observation>

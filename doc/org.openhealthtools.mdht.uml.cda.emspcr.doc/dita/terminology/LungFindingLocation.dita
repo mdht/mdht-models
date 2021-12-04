@@ -14,6 +14,7 @@
 <colspec colname="col2" colwidth="4*"/>
 <tbody>
 <row><entry>Value Set</entry><entry>LungFindingLocation - 2.16.840.1.113883.17.3.11.117</entry></row>
+<row><entry>Code System</entry><entry>LOINC - 2.16.840.1.113883.6.1</entry></row>
 </tbody></tgroup></table>
 <table frame="all" rowsep="1" colsep="1">
 <tgroup cols="3">
@@ -23,9 +24,9 @@
 <thead><row>
 <entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
 </row></thead><tbody>
-<row><entry>newLA3522003</entry><entry></entry><entry>Right</entry></row>
-<row><entry>newLA3522001</entry><entry></entry><entry>Left</entry></row>
-<row><entry>newLA3522005</entry><entry></entry><entry>Bilateral</entry></row>
+<row><entry>newLA3522003</entry><entry>LOINC</entry><entry>Right</entry></row>
+<row><entry>newLA3522001</entry><entry>LOINC</entry><entry>Left</entry></row>
+<row><entry>newLA3522005</entry><entry>LOINC</entry><entry>Bilateral</entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

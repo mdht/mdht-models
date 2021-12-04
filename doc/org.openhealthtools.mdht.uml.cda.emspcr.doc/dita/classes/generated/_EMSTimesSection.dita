@@ -14,93 +14,93 @@
 <p>Set of times for defined events in the EMS trip</p>
 </section>
 <ol id="conformance">
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>templateId</b></tt> ( CONF:11417 ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>@root</b>="2.16.840.1.113883.17.3.10.1.10"</tt></li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>templateId</b></tt> ( CONF:11417 ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>@root</b>="2.16.840.1.113883.17.3.10.1.10"</tt></li> <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@extension</b>="2022-01-01"</tt></li></ol></li>
 <li>
-<b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="67667-6" </tt><i>EMS Times Narrative NEMSIS</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10820)
+<b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:11641)<tt><b>/@code</b>="67667-6" </tt><i>EMS Times Narrative NEMSIS</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10820)
 </li>
 <li>
-<b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> which <b>SHOULD</b> equal "EMS Times" (CONF:10822)
+<b>SHALL</b> contain exactly one [1..1] <tt><b>title</b>="EMS Times Section" </tt> (CONF:10822)
 </li>
 <li>
 <b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:10821)
 </li>
 <li>
 If section/@nullFlavor is not present, <b>SHALL</b> contain  [1..1] <tt><b>entry</b></tt> such that it  (CONF:11053)<ol>
-<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/CallTime.html">Call Time</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.38</tt>)</li></ol>
+<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/CallTime.html">Call Time</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.38:2022-01-01</tt>)</li></ol>
 </li>
 <li>
 If section/@nullFlavor is not present, <b>SHALL</b> contain  [1..1] <tt><b>entry</b></tt> such that it  (CONF:11055)<ol>
-<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/UnitNotifiedTime.html">Unit Notified Time</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.39</tt>)</li></ol>
+<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/UnitNotifiedTime.html">Unit Notified Time</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.39:2022-01-01</tt>)</li></ol>
 </li>
 <li>
 If section/@nullFlavor is not present, <b>SHALL</b> contain  [1..1] <tt><b>entry</b></tt> such that it  (CONF:11057)<ol>
-<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/UnitEnRouteTime.html">Unit En Route Time</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.40</tt>)</li></ol>
+<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/UnitEnRouteTime.html">Unit En Route Time</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.40:2022-01-01</tt>)</li></ol>
 </li>
 <li>
 If section/@nullFlavor is not present, <b>SHALL</b> contain  [1..1] <tt><b>entry</b></tt> such that it  (CONF:11059)<ol>
-<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/UnitOnSceneTime.html">Unit On Scene Time</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.41</tt>)</li></ol>
+<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/UnitOnSceneTime.html">Unit On Scene Time</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.41:2022-01-01</tt>)</li></ol>
 </li>
 <li>
 If section/@nullFlavor is not present, <b>SHALL</b> contain  [1..1] <tt><b>entry</b></tt> such that it  (CONF:11061)<ol>
-<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/UnitAtPatientTime.html">Unit At Patient Time</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.42</tt>)</li></ol>
+<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/UnitAtPatientTime.html">Unit At Patient Time</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.42:2022-01-01</tt>)</li></ol>
 </li>
 <li>
 If section/@nullFlavor is not present, <b>SHALL</b> contain  [1..1] <tt><b>entry</b></tt> such that it  (CONF:11063)<ol>
-<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/UnitLeftSceneTime.html">Unit Left Scene Time</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.43</tt>)</li></ol>
+<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/UnitLeftSceneTime.html">Unit Left Scene Time</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.43:2022-01-01</tt>)</li></ol>
 </li>
 <li>
 If section/@nullFlavor is not present, <b>SHALL</b> contain  [1..1] <tt><b>entry</b></tt> such that it  (CONF:11065)<ol>
-<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/PatientArrivedAtDestinationTime.html">Patient Arrived At Destination Time</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.44</tt>)</li></ol>
+<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/PatientArrivedAtDestinationTime.html">Patient Arrived At Destination Time</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.44:2022-01-01</tt>)</li></ol>
 </li>
 <li>
 If section/@nullFlavor is not present, <b>SHALL</b> contain  [1..1] <tt><b>entry</b></tt> such that it  (CONF:11067)<ol>
-<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/UnitBackInServiceTime.html">Unit Back In Service Time</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.45</tt>)</li></ol>
+<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/UnitBackInServiceTime.html">Unit Back In Service Time</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.45:2022-01-01</tt>)</li></ol>
 </li>
 <li>
 If section/@nullFlavor is not present, <b>MAY</b> contain  [0..1] <tt><b>entry</b></tt> such that it  (CONF:11069)<ol>
-<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/DispatchNotifiedTime.html">Dispatch Notified Time</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.46</tt>)</li></ol>
+<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/DispatchNotifiedTime.html">Dispatch Notified Time</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.46:2022-01-01</tt>)</li></ol>
 </li>
 </ol>
 <ol id="aggregate">
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="67667-6" </tt><i>EMS Times Narrative NEMSIS</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10820)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:11641)<tt><b>/@code</b>="67667-6" </tt><i>EMS Times Narrative NEMSIS</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10820)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> which <b>SHOULD</b> equal "EMS Times" (CONF:10822)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b>="EMS Times Section" </tt> (CONF:10822)
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:10821)
 </li>
 <li>If section/@nullFlavor is not present, <b>SHALL</b> contain  [1..1] <tt><b>entry</b></tt> such that it  (CONF:11053)
 <ol>
-<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/CallTime.html">Call Time</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.38</tt>)</li></ol></li>
+<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/CallTime.html">Call Time</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.38:2022-01-01</tt>)</li></ol></li>
 <li>If section/@nullFlavor is not present, <b>SHALL</b> contain  [1..1] <tt><b>entry</b></tt> such that it  (CONF:11055)
 <ol>
-<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/UnitNotifiedTime.html">Unit Notified Time</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.39</tt>)</li></ol></li>
+<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/UnitNotifiedTime.html">Unit Notified Time</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.39:2022-01-01</tt>)</li></ol></li>
 <li>If section/@nullFlavor is not present, <b>SHALL</b> contain  [1..1] <tt><b>entry</b></tt> such that it  (CONF:11057)
 <ol>
-<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/UnitEnRouteTime.html">Unit En Route Time</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.40</tt>)</li></ol></li>
+<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/UnitEnRouteTime.html">Unit En Route Time</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.40:2022-01-01</tt>)</li></ol></li>
 <li>If section/@nullFlavor is not present, <b>SHALL</b> contain  [1..1] <tt><b>entry</b></tt> such that it  (CONF:11059)
 <ol>
-<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/UnitOnSceneTime.html">Unit On Scene Time</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.41</tt>)</li></ol></li>
+<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/UnitOnSceneTime.html">Unit On Scene Time</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.41:2022-01-01</tt>)</li></ol></li>
 <li>If section/@nullFlavor is not present, <b>SHALL</b> contain  [1..1] <tt><b>entry</b></tt> such that it  (CONF:11061)
 <ol>
-<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/UnitAtPatientTime.html">Unit At Patient Time</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.42</tt>)</li></ol></li>
+<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/UnitAtPatientTime.html">Unit At Patient Time</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.42:2022-01-01</tt>)</li></ol></li>
 <li>If section/@nullFlavor is not present, <b>SHALL</b> contain  [1..1] <tt><b>entry</b></tt> such that it  (CONF:11063)
 <ol>
-<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/UnitLeftSceneTime.html">Unit Left Scene Time</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.43</tt>)</li></ol></li>
+<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/UnitLeftSceneTime.html">Unit Left Scene Time</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.43:2022-01-01</tt>)</li></ol></li>
 <li>If section/@nullFlavor is not present, <b>SHALL</b> contain  [1..1] <tt><b>entry</b></tt> such that it  (CONF:11065)
 <ol>
-<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/PatientArrivedAtDestinationTime.html">Patient Arrived At Destination Time</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.44</tt>)</li></ol></li>
+<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/PatientArrivedAtDestinationTime.html">Patient Arrived At Destination Time</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.44:2022-01-01</tt>)</li></ol></li>
 <li>If section/@nullFlavor is not present, <b>SHALL</b> contain  [1..1] <tt><b>entry</b></tt> such that it  (CONF:11067)
 <ol>
-<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/UnitBackInServiceTime.html">Unit Back In Service Time</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.45</tt>)</li></ol></li>
+<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/UnitBackInServiceTime.html">Unit Back In Service Time</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.45:2022-01-01</tt>)</li></ol></li>
 <li>If section/@nullFlavor is not present, <b>MAY</b> contain  [0..1] <tt><b>entry</b></tt> such that it  (CONF:11069)
 <ol>
-<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/DispatchNotifiedTime.html">Dispatch Notified Time</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.46</tt>)</li></ol></li>
+<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/DispatchNotifiedTime.html">Dispatch Notified Time</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.46:2022-01-01</tt>)</li></ol></li>
 </ol>
 <section id="contextTable"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="2" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><thead><row><entry namest="col0" nameend="col0" >Contained By</entry><entry namest="col1" nameend="col1" >Contains</entry></row></thead><tbody><row><entry><xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/PatientCareReport.html">Patient Care Report</xref></entry><entry><xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/CallTime.html">Call Time</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/DispatchNotifiedTime.html">Dispatch Notified Time</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/PatientArrivedAtDestinationTime.html">Patient Arrived At Destination Time</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/UnitAtPatientTime.html">Unit At Patient Time</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/UnitBackInServiceTime.html">Unit Back In Service Time</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/UnitEnRouteTime.html">Unit En Route Time</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/UnitLeftSceneTime.html">Unit Left Scene Time</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/UnitNotifiedTime.html">Unit Notified Time</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/UnitOnSceneTime.html">Unit On Scene Time</xref></entry></row></tbody></tgroup></table></p></section>
 <codeblock id="example" outputclass="language-xml"><![CDATA[<section>
-  <templateId root="2.16.840.1.113883.17.3.10.1.10"/>
+  <templateId root="2.16.840.1.113883.17.3.10.1.10" extension="2022-01-01"/>
   <code code="67667-6" codeSystem="2.16.840.1.113883.6.1" displayName="EMS Times Narrative NEMSIS"/>
-  <title>EMS Times</title>
+  <title/>
   <text/>
 </section>
 ]]></codeblock>

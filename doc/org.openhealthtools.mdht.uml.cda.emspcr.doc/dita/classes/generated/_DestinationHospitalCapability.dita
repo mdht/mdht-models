@@ -14,7 +14,7 @@
 <p>The primary hospital capability associated with the patient's condition for this transport</p>
 </section>
 <ol id="conformance">
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>templateId</b></tt> ( CONF:11567 ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>@root</b>="2.16.840.1.113883.17.3.10.1.104"</tt></li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>templateId</b></tt> ( CONF:11567 ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>@root</b>="2.16.840.1.113883.17.3.10.1.104"</tt></li> <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@extension</b>="2022-01-01"</tt></li></ol></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:11357)
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b></tt> (CONF:11360)
@@ -23,7 +23,7 @@
 <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:11358)<tt><b>/@code</b>="77155-0" </tt><i>Hospital designation capability</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:11359)
 </li>
 <li>
-<b>SHALL</b> contain at least one [1..*] <tt><b>value</b></tt> with <tt><b>@xsi:type</b>="CD"</tt> (CONF:11361), which <b>SHALL</b> be selected from ValueSet<tt> HospitalCapability 2.16.840.1.113883.17.3.11.104</tt><b> STATIC</b> (CONF:11362)<p>NEMSIS trace: eDisposition.23 (Hospital Capability)</p>
+<b>SHALL</b> contain at least one [1..*] <tt><b>value</b></tt> with <tt><b>@xsi:type</b>="CD"</tt> (CONF:11361), which <b>SHALL</b> be selected from ValueSet<tt> HospitalCapability 2.16.840.1.113883.17.3.11.104</tt><b> DYNAMIC</b> (CONF:11362)<p>NEMSIS trace: eDisposition.23 (Hospital Capability)</p>
 </li>
 </ol>
 <ol id="aggregate">
@@ -33,12 +33,12 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:11358)<tt><b>/@code</b>="77155-0" </tt><i>Hospital designation capability</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:11359)
 </li>
-<li><b>SHALL</b> contain at least one [1..*] <tt><b>value</b></tt> with <tt><b>@xsi:type</b>="CD"</tt> (CONF:11361), which <b>SHALL</b> be selected from ValueSet<tt> HospitalCapability 2.16.840.1.113883.17.3.11.104</tt><b> STATIC</b> (CONF:11362)
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>value</b></tt> with <tt><b>@xsi:type</b>="CD"</tt> (CONF:11361), which <b>SHALL</b> be selected from ValueSet<tt> HospitalCapability 2.16.840.1.113883.17.3.11.104</tt><b> DYNAMIC</b> (CONF:11362)
 <p>NEMSIS trace: eDisposition.23 (Hospital Capability)</p></li>
 </ol>
 <section id="contextTable"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="2" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><thead><row><entry namest="col0" nameend="col0" >Contained By</entry><entry namest="col1" nameend="col1" >Contains</entry></row></thead><tbody><row><entry><xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/EMSDispositionSection.html">EMS Disposition Section</xref></entry><entry></entry></row></tbody></tgroup></table></p></section>
 <codeblock id="example" outputclass="language-xml"><![CDATA[<observation classCode="OBS" moodCode="RQO">
-  <templateId root="2.16.840.1.113883.17.3.10.1.104"/>
+  <templateId root="2.16.840.1.113883.17.3.10.1.104" extension="2022-01-01"/>
   <code code="77155-0" codeSystem="2.16.840.1.113883.6.1" displayName="Hospital designation capability"/>
   <value xsi:type="CD"/>
 </observation>

@@ -4,7 +4,7 @@
 <topic id="topicId" xml:lang="en-us">
 	<title>SAMPLE</title>
 	<body>
-		<p> In this example, the agency is represented with the root OID "2.16.840.1.113883.19.1." This
+		<p>In this example, the agency is represented with the root OID "2.16.840.1.113883.19.1." This
       OID represents a node (".1") under the HL7 Example domain ("2.16.840.1.113883.19"). This
       hypothetical organization has assigned identifiers under six nodes: 1 for documents, 2 for
       patients, 3 for events, 4 for document artifacts (sections, organizers, statements), 5 for
@@ -452,12 +452,6 @@
               </component>
               <component>
                 <templateId root="2.16.840.1.1133883.17.3.10.1.115"/>
-                <observation classCode="OBS"  moodCode="EVN">
-                  <templateId root="2.16.840.1.113883.17.3.10.1.115"/>
-                  <code code="67528-0" displayName="ChestAndLungsAssessmentFinding" codeSystem="2.16.840.1.113883.6.1"/>
-                  <value xsi:type="CD" code="LA17208-2" displayName="Bleeding controlled" codeSystem="2.16.840.1.113883.6.1"/>
-                  <value xsi:type="CD" code="LA17244-7" displayName="Gunshot wound entry" codeSystem="2.16.840.1.113883.6.1"/>
-                </observation>
               </component>
               <component>
                 <observation classCode="OBS"  moodCode="EVN">
@@ -498,7 +492,22 @@
                   <value xsi:type="CD" code="LA6626-1" displayName="Normal" codeSystem="2.16.840.1.113883.6.1"/>
                 </observation>
               </component>
-            </organizer>
+                <observation classCode="OBS"  moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.17.3.10.1.194"/>
+                  <code code="neweExam.23" displayName="Lung assessment" codeSystem="2.16.840.1.113883.6.1"/>
+                    <value xsi:type="CD" code="LA6626-1" displayName="Normal" codeSystem="2.16.840.1.113883.6.1"/>
+                </observation>
+              </component>
+              <component>
+                <observation classCode="OBS"  moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.17.3.10.1.195"/>
+                  <code code="67533-0" displayName="Chest assessment" codeSystem="2.16.840.1.113883.6.1"/>
+                  <value xsi:type="CD" code="LA17208-2" displayName="Bleeding controlled" codeSystem="2.16.840.1.113883.6.1"/>
+				          <value xsi:type="CD" code="LA17244-7" displayName="Gunshot wound entry" codeSystem="2.16.840.1.113883.6.1"/>
+				          <targetSiteCode code="newLA3524013" displayName="Left side" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                </observation>
+              </component>
+         </organizer>
           </entry>
           <entry>
             <observation classCode="OBS" moodCode="EVN">
@@ -1067,11 +1076,35 @@
             </observation>
           </entry>
           <entry>
+            <observation classCode="OBS" moodCode="EVN">            	
+              <templateId root="2.16.840.1.1133883.17.3.10.1.196"/>
+              <id root="2.16.840.1.113883.19.4" extension="1899017001"/>
+              <code code="neweDisposition.27" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Unit disposition"/>
+              <value xsi:type="CD" code="newLA4227001" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Patient Contact Made"/>
+            </observation>
+          </entry>
+          <entry>
             <observation classCode="OBS" moodCode="EVN">            
-              <templateId root="2.16.840.1.1133883.17.3.10.1.32"/>
-              <id root="2.16.840.1.113883.19.4" extension="1899014973"/>
-              <code code="67548-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="EMS incident disposition"/>
-              <value xsi:type="CD" code="LA17154-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Patient treated, transported by EMS"/>
+              <templateId root="2.16.840.1.1133883.17.3.10.1.197"/>
+              <id root="2.16.840.1.113883.19.4" extension="1899017002"/>
+              <code code="neweDisposition.28" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Unit disposition"/>
+              <value xsi:type="CD" code="newLA4228009" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Patient Support Services Provided"/>
+            </observation>
+          </entry>
+          <entry>
+            <observation classCode="OBS" moodCode="EVN">            
+              <templateId root="2.16.840.1.1133883.17.3.10.1.198"/>
+              <id root="2.16.840.1.113883.19.4" extension="1899017003"/>
+              <code code="neweDisposition.29" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Crew disposition"/>
+              <value xsi:type="CD" code="newLA4229001" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Initiated and Continued Primary Care"/>
+            </observation>
+          </entry>
+          <entry>
+            <observation classCode="OBS" moodCode="EVN">            
+              <templateId root="2.16.840.1.1133883.17.3.10.1.199"/>
+              <id root="2.16.840.1.113883.19.4" extension="1899017004"/>
+              <code code="neweDisposition.30" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Transport disposition"/>
+              <value xsi:type="CD" code="newLA4230001" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Transport by This EMS Unit (This Crew Only)"/>
             </observation>
           </entry>
           <entry>

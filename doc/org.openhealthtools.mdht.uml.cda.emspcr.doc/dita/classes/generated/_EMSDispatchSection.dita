@@ -14,44 +14,44 @@
 <p>Information regarding the dispatch process</p>
 </section>
 <ol id="conformance">
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>templateId</b></tt> ( CONF:11406 ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>@root</b>="2.16.840.1.113883.17.3.10.1.2"</tt></li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>templateId</b></tt> ( CONF:11406 ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>@root</b>="2.16.840.1.113883.17.3.10.1.2"</tt></li> <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@extension</b>="2022-01-01"</tt></li></ol></li>
 <li>
-<b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="67660-1" </tt><i>EMS Dispatch Narrative NEMSIS</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10556)
+<b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:11638)<tt><b>/@code</b>="67660-1" </tt><i>EMS Dispatch Narrative NEMSIS</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10556)
 </li>
 <li>
-<b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> which <b>SHOULD</b> equal "EMS Dispatch" (CONF:10558)
+<b>SHALL</b> contain exactly one [1..1] <tt><b>title</b>="EMS Dispatch Section" </tt> (CONF:10558)
 </li>
 <li>
 <b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:10557)
 </li>
 <li>
 If section/@nullFlavor is not present, <b>SHALL</b> contain  [1..1] <tt><b>entry</b></tt> such that it  (CONF:10991)<ol>
-<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/EmergencyMedicalDispatchObservation.html">Emergency Medical Dispatch Observation</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.73</tt>)</li></ol>
+<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/EmergencyMedicalDispatchObservation.html">Emergency Medical Dispatch Observation</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.73:2022-01-01</tt>)</li></ol>
 </li>
 <li>
 If section/@nullFlavor is not present, <b>SHALL</b> contain  [1..1] <tt><b>entry</b></tt> such that it  (CONF:10993)<ol>
-<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/DispatchReason.html">Dispatch Reason</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.74</tt>)</li></ol>
+<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/DispatchReason.html">Dispatch Reason</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.74:2022-01-01</tt>)</li></ol>
 </li>
 </ol>
 <ol id="aggregate">
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="67660-1" </tt><i>EMS Dispatch Narrative NEMSIS</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10556)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:11638)<tt><b>/@code</b>="67660-1" </tt><i>EMS Dispatch Narrative NEMSIS</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10556)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> which <b>SHOULD</b> equal "EMS Dispatch" (CONF:10558)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b>="EMS Dispatch Section" </tt> (CONF:10558)
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:10557)
 </li>
 <li>If section/@nullFlavor is not present, <b>SHALL</b> contain  [1..1] <tt><b>entry</b></tt> such that it  (CONF:10991)
 <ol>
-<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/EmergencyMedicalDispatchObservation.html">Emergency Medical Dispatch Observation</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.73</tt>)</li></ol></li>
+<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/EmergencyMedicalDispatchObservation.html">Emergency Medical Dispatch Observation</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.73:2022-01-01</tt>)</li></ol></li>
 <li>If section/@nullFlavor is not present, <b>SHALL</b> contain  [1..1] <tt><b>entry</b></tt> such that it  (CONF:10993)
 <ol>
-<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/DispatchReason.html">Dispatch Reason</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.74</tt>)</li></ol></li>
+<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/DispatchReason.html">Dispatch Reason</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.74:2022-01-01</tt>)</li></ol></li>
 </ol>
 <section id="contextTable"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="2" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><thead><row><entry namest="col0" nameend="col0" >Contained By</entry><entry namest="col1" nameend="col1" >Contains</entry></row></thead><tbody><row><entry><xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/PatientCareReport.html">Patient Care Report</xref></entry><entry><xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/DispatchReason.html">Dispatch Reason</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/EmergencyMedicalDispatchObservation.html">Emergency Medical Dispatch Observation</xref></entry></row></tbody></tgroup></table></p></section>
 <codeblock id="example" outputclass="language-xml"><![CDATA[<section>
-  <templateId root="2.16.840.1.113883.17.3.10.1.2"/>
+  <templateId root="2.16.840.1.113883.17.3.10.1.2" extension="2022-01-01"/>
   <code code="67660-1" codeSystem="2.16.840.1.113883.6.1" displayName="EMS Dispatch Narrative NEMSIS"/>
-  <title>EMS Dispatch</title>
+  <title/>
   <text/>
 </section>
 ]]></codeblock>

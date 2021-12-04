@@ -14,6 +14,7 @@
 <colspec colname="col2" colwidth="4*"/>
 <tbody>
 <row><entry>Value Set</entry><entry>ChestFindingLocation - 2.16.840.1.113883.17.3.11.119</entry></row>
+<row><entry>Code System</entry><entry>LOINC - 2.16.840.1.113883.6.1</entry></row>
 </tbody></tgroup></table>
 <table frame="all" rowsep="1" colsep="1">
 <tgroup cols="3">
@@ -23,14 +24,14 @@
 <thead><row>
 <entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
 </row></thead><tbody>
-<row><entry>newLA3524011</entry><entry></entry><entry>General - Posterior</entry></row>
-<row><entry>newLA3524001</entry><entry></entry><entry>Left - Anterior</entry></row>
-<row><entry>newLA3524003</entry><entry></entry><entry>Left - Posterior</entry></row>
-<row><entry>newLA3524005</entry><entry></entry><entry>Right - Anterior</entry></row>
-<row><entry>newLA3524009</entry><entry></entry><entry>General - Anterior</entry></row>
-<row><entry>newLA3524013</entry><entry></entry><entry>Left - Side</entry></row>
-<row><entry>newLA3524015</entry><entry></entry><entry>Right - Side</entry></row>
-<row><entry>newLA3524007</entry><entry></entry><entry>Right - Posterior</entry></row>
+<row><entry>newLA3524011</entry><entry>LOINC</entry><entry>General - Posterior</entry></row>
+<row><entry>newLA3524001</entry><entry>LOINC</entry><entry>Left - Anterior</entry></row>
+<row><entry>newLA3524003</entry><entry>LOINC</entry><entry>Left - Posterior</entry></row>
+<row><entry>newLA3524005</entry><entry>LOINC</entry><entry>Right - Anterior</entry></row>
+<row><entry>newLA3524009</entry><entry>LOINC</entry><entry>General - Anterior</entry></row>
+<row><entry>newLA3524013</entry><entry>LOINC</entry><entry>Left - Side</entry></row>
+<row><entry>newLA3524015</entry><entry>LOINC</entry><entry>Right - Side</entry></row>
+<row><entry>newLA3524007</entry><entry>LOINC</entry><entry>Right - Posterior</entry></row>
 </tbody></tgroup></table>
 </section>
 </body>
