@@ -812,7 +812,7 @@ DPersonnel.03 Middle: @ENXP=&quot;GIV&quot;</body>
           <ownedComment xmi:id="_hQh9AM0ZEeSJm6m0rTs9zw">
             <body>NEMSIS Trace: eTimes.12 (Destination patient transfer of care date/time)</body>
           </ownedComment>
-          <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_4ysYYD59Ed6cla2oXsPtlA"/>
+          <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Y0UlsM0ZEeSJm6m0rTs9zw" value="1"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Y0TXkM0ZEeSJm6m0rTs9zw" value="1"/>
           <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_VDhXoErdEd6FXKclYGEDCw"/>

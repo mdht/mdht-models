@@ -3298,7 +3298,9 @@
   <term:ValueSetCode xmi:id="_uVbI0TKzEeyOwtfRawW6Qw" conceptName="Transport by Another EMS Unit" base_EnumerationLiteral="_uVbI0DKzEeyOwtfRawW6Qw"/>
   <term:ValueSetCode xmi:id="_wMh0YTKzEeyOwtfRawW6Qw" conceptName="Transport by This EMS Unit, with a Member of Another Crew" base_EnumerationLiteral="_wMh0YDKzEeyOwtfRawW6Qw"/>
   <term:ValueSetCode xmi:id="_yZnXADKzEeyOwtfRawW6Qw" conceptName="Transport by This EMS Unit (This Crew Only)" base_EnumerationLiteral="_yZmv8DKzEeyOwtfRawW6Qw"/>
-  <term:ValueSetVersion xmi:id="_vk5j4DX5EeyDmf_o8i-KfQ" identifier="2.16.840.1.113883.17.3.11.121" binding="Dynamic" base_Enumeration="_vk1ScDX5EeyDmf_o8i-KfQ"/>
+  <term:ValueSetVersion xmi:id="_vk5j4DX5EeyDmf_o8i-KfQ" identifier="2.16.840.1.113883.17.3.11.121" binding="Dynamic" base_Enumeration="_vk1ScDX5EeyDmf_o8i-KfQ">
+    <codeSystem href="file:/C:/Users/JayLyle/eclipse-workspace/BackupPCR/model/emspcr-vocab.uml#_M5tLoMcdEeGjDJAyT0XW9Q"/>
+  </term:ValueSetVersion>
   <term:CodeSystemVersion xmi:id="_kpZLcEVWEey3rIXjdfUhUg" base_Enumeration="_kpXWQEVWEey3rIXjdfUhUg"/>
   <term:ValueSetCode xmi:id="_PeeF8EshEey1xMReq27Q3g" conceptName="Percutaneous" usageNote="For use with auto-injector value" base_EnumerationLiteral="_PeZNcEshEey1xMReq27Q3g"/>
 </xmi:XMI>
