@@ -2,10 +2,10 @@
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <topic id="classId" xml:lang="en-us">
 <title>Non Drug Allergy Organizer - conformance rules</title>
-<shortdesc id="shortdesc">[Organizer: templateId <tt>2.16.840.1.113883.17.3.10.1.49</tt>]</shortdesc>
+<shortdesc id="shortdesc">[Organizer: templateId <tt>2.16.840.1.1133883.17.3.10.1.49</tt>]</shortdesc>
 <prolog id="prolog">
 <metadata><category>Organizer</category></metadata>
-<resourceid id="2.16.840.1.113883.17.3.10.1.49"/>
+<resourceid id="2.16.840.1.1133883.17.3.10.1.49"/>
 </prolog>
 <body>
 <section id="knownSubclasses">
@@ -14,14 +14,14 @@
 <p>Information regarding patient allergies and sensitivities to materials other than drugs</p>
 </section>
 <ol id="conformance">
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>templateId</b></tt> ( CONF:11441 ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>@root</b>="2.16.840.1.113883.17.3.10.1.49"</tt></li> <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@extension</b>="2022-01-01"</tt></li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>templateId</b></tt> ( CONF:11441 ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>@root</b>="2.16.840.1.1133883.17.3.10.1.49"</tt></li> <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@extension</b>="2022-01-01"</tt></li></ol></li>
 <li>
 <b>SHALL</b> contain  [1..1] <tt><b>component</b></tt> such that it  (CONF:10212)<ol>
-<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ExistenceOfKnownNonDrugAllergy.html">Existence Of Known Non Drug Allergy</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.103:2022-01-01</tt>)</li></ol>
+<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ExistenceOfKnownNonDrugAllergy.html">Existence Of Known Non Drug Allergy</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.103:2022-01-01</tt>)</li></ol>
 </li>
 <li>
 <b>MAY</b> contain  [0..*] <tt><b>component</b></tt> such that it  (CONF:10213)<ol>
-<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/NonDrugAllergy.html">Non Drug Allergy</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.104:2022-01-01</tt>)</li></ol>
+<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/NonDrugAllergy.html">Non Drug Allergy</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.104:2022-01-01</tt>)</li></ol>
 </li>
 <li>
 <b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt> such that it  (CONF:11647) <ol><li>contain zero or one [0..1] <tt><b>observation</b></tt>, where its type is <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ExistenceOfKnownNonDrugAllergy.html">Existence Of Known Non Drug Allergy</xref></li></ol> 
@@ -39,10 +39,10 @@
 </li>
 <li><b>SHALL</b> contain  [1..1] <tt><b>component</b></tt> such that it  (CONF:10212)
 <ol>
-<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ExistenceOfKnownNonDrugAllergy.html">Existence Of Known Non Drug Allergy</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.103:2022-01-01</tt>)</li></ol></li>
+<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ExistenceOfKnownNonDrugAllergy.html">Existence Of Known Non Drug Allergy</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.103:2022-01-01</tt>)</li></ol></li>
 <li><b>MAY</b> contain  [0..*] <tt><b>component</b></tt> such that it  (CONF:10213)
 <ol>
-<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/NonDrugAllergy.html">Non Drug Allergy</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.104:2022-01-01</tt>)</li></ol></li>
+<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/NonDrugAllergy.html">Non Drug Allergy</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.104:2022-01-01</tt>)</li></ol></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt> such that it  (CONF:11647) <ol><li>contain zero or one [0..1] <tt><b>observation</b></tt>, where its type is <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ExistenceOfKnownNonDrugAllergy.html">Existence Of Known Non Drug Allergy</xref></li></ol> 
 </li>
 <li><b>SHOULD</b> contain zero or one [0..1] <tt><b>component</b></tt> such that it  (CONF:11648) <ol><li>contain zero or one [0..1] <tt><b>observation</b></tt>, where its type is <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/NonDrugAllergy.html">Non Drug Allergy</xref></li></ol> 
@@ -50,7 +50,7 @@
 </ol>
 <section id="contextTable"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="2" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><thead><row><entry namest="col0" nameend="col0" >Contained By</entry><entry namest="col1" nameend="col1" >Contains</entry></row></thead><tbody><row><entry><xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/EMSAllergiesAndAdverseReactionsSection.html">EMS Allergies And Adverse Reactions Section</xref></entry><entry><xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ExistenceOfKnownNonDrugAllergy.html">Existence Of Known Non Drug Allergy</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/NonDrugAllergy.html">Non Drug Allergy</xref></entry></row></tbody></tgroup></table></p></section>
 <codeblock id="example" outputclass="language-xml"><![CDATA[<organizer classCode="CLUSTER" moodCode="SLOT">
-  <templateId root="2.16.840.1.113883.17.3.10.1.49" extension="2022-01-01"/>
+  <templateId root="2.16.840.1.1133883.17.3.10.1.49" extension="2022-01-01"/>
   <statusCode/>
   <component/>
 </organizer>
@@ -59,6 +59,6 @@
 <section id="changes">
 </section>
 <p><ph id="classformalname">Non Drug Allergy Organizer</ph></p>
-<p id="shortdesc">[Organizer: templateId <tt>2.16.840.1.113883.17.3.10.1.49</tt>]</p>
+<p id="shortdesc">[Organizer: templateId <tt>2.16.840.1.1133883.17.3.10.1.49</tt>]</p>
 </body>
 </topic>

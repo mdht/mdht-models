@@ -1,0 +1,1685 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN"
+ "topic.dtd">
+<topic id="topicId" xml:lang="en-us">
+	<title>Crosswalk</title>
+	<body>
+		<p>This table indicates where in the document to find a given NEMSIS element, and what element is
+			represented by the templates in the guide.</p>
+		<table id="table_klk_ctq_5rb">
+			<tgroup cols="5">
+				<colspec colnum="1" colname="col1"/>
+				<colspec colnum="2" colname="col2"/>
+				<colspec colnum="3" colname="col3"/>
+				<colspec colnum="4" colname="col4"/>
+				<colspec colnum="5" colname="col5"/>
+				<thead>
+					<row>
+						<entry><b>NEMSIS ID</b></entry>
+						<entry><b>NEMSIS name</b></entry>
+						<entry><b>Model approach</b></entry>
+						<entry><b>Template</b></entry>
+						<entry><b>LOINC</b></entry>
+					</row>
+				</thead>
+				<tbody>
+					<row>
+						<entry>eAirway.02</entry>
+						<entry>Airway Confirmation Observation</entry>
+						<entry>Observation time</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.175</entry>
+						<entry>71576-3</entry>
+					</row>
+					<row>
+						<entry>eAirway.03</entry>
+						<entry>Device</entry>
+						<entry>Procedure device</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.181</entry>
+						<entry>71574-8</entry>
+					</row>
+					<row>
+						<entry>eAirway.04</entry>
+						<entry>Confirmation method</entry>
+						<entry>Observation method</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.175</entry>
+						<entry> </entry>
+					</row>
+					<row>
+						<entry>eArrest.01</entry>
+						<entry>Cardiac Arrest</entry>
+						<entry>Observation negation</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.27</entry>
+						<entry> </entry>
+					</row>
+					<row>
+						<entry>eArrest.01</entry>
+						<entry>Cardiac Arrest</entry>
+						<entry>Observation value</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.123</entry>
+						<entry>67502-5</entry>
+					</row>
+					<row>
+						<entry>eArrest.02</entry>
+						<entry>Cardiac Arrest Etiology</entry>
+						<entry>Observation value</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.124</entry>
+						<entry>67503-3</entry>
+					</row>
+					<row>
+						<entry>eArrest.03</entry>
+						<entry>Resuscitation Attempted By EMS</entry>
+						<entry>Procedure</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.181</entry>
+						<entry>72115-9</entry>
+					</row>
+					<row>
+						<entry>eArrest.03</entry>
+						<entry>Resuscitation Attempted By EMS</entry>
+						<entry>Observation value for negatives</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.137</entry>
+						<entry>67504-1</entry>
+					</row>
+					<row>
+						<entry>eArrest.04</entry>
+						<entry>Arrest Witnessed by</entry>
+						<entry>Informant</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.27</entry>
+						<entry>67505-8</entry>
+					</row>
+					<row>
+						<entry>eArrest.07</entry>
+						<entry>AED Use Prior to EMS Arrival</entry>
+						<entry>Observation value</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.131</entry>
+						<entry>67508-2</entry>
+					</row>
+					<row>
+						<entry>eArrest.09</entry>
+						<entry>Type of CPR Provided</entry>
+						<entry>Procedure</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.181</entry>
+						<entry>67510-8</entry>
+					</row>
+					<row>
+						<entry>eArrest.10</entry>
+						<entry>Therapeutic Hypothermia by EMS</entry>
+						<entry>Procedure</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.181</entry>
+						<entry>67511-6</entry>
+					</row>
+					<row>
+						<entry>eArrest.11</entry>
+						<entry>First Monitored Arrest Rhythm of the Patient</entry>
+						<entry>Observation value</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.127</entry>
+						<entry>67512-4</entry>
+					</row>
+					<row>
+						<entry>eArrest.12</entry>
+						<entry>Any Return of Spontaneous Circulation</entry>
+						<entry>Observation value</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.128</entry>
+						<entry>88670-5 </entry>
+					</row>
+					<row>
+						<entry>eArrest.14</entry>
+						<entry>Time of Cardiac Arrest</entry>
+						<entry>Observation time</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.27</entry>
+						<entry> </entry>
+					</row>
+					<row>
+						<entry>eArrest.15</entry>
+						<entry>Date/Time Resuscitation Discontinued</entry>
+						<entry>Procedure status, time</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.181</entry>
+						<entry>none</entry>
+					</row>
+					<row>
+						<entry>eArrest.16</entry>
+						<entry>Reason CPR/Resuscitation Discontinued</entry>
+						<entry>Observation value</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.130</entry>
+						<entry>67574-4</entry>
+					</row>
+					<row>
+						<entry>eArrest.17</entry>
+						<entry>Cardiac Rhythm on Arrival at Destination</entry>
+						<entry>Observation value</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.129</entry>
+						<entry>67519-9</entry>
+					</row>
+					<row>
+						<entry>eArrest.18</entry>
+						<entry>End of EMS Cardiac Arrest Event</entry>
+						<entry>Observation value</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.184</entry>
+						<entry>77152-7</entry>
+					</row>
+					<row>
+						<entry>eArrest.20 </entry>
+						<entry>Who First Initiated CPR </entry>
+						<entry>Procedure performer</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.181</entry>
+						<entry>neweArrest.20</entry>
+					</row>
+					<row>
+						<entry>eArrest.21</entry>
+						<entry>Who First Applied the AED</entry>
+						<entry>Procedure performer</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.181</entry>
+						<entry>neweArrest.21</entry>
+					</row>
+					<row>
+						<entry>eArrest.22</entry>
+						<entry>Who First Defibrillated the Patient</entry>
+						<entry>Procedure performer</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.181</entry>
+						<entry>neweArrest.22</entry>
+					</row>
+					<row>
+						<entry>eCrew.01</entry>
+						<entry>Crew Member ID</entry>
+						<entry>Service event perfomer</entry>
+						<entry>2.16.840.1.1133883.17.3.10.2</entry>
+						<entry> </entry>
+					</row>
+					<row>
+						<entry>eCrew.02</entry>
+						<entry>Crew Member Level</entry>
+						<entry>Service event perfomer</entry>
+						<entry>2.16.840.1.1133883.17.3.10.2</entry>
+						<entry>71580-5</entry>
+					</row>
+					<row>
+						<entry>eCrew.03</entry>
+						<entry>Crew Member Response Role</entry>
+						<entry>Service event perfomer</entry>
+						<entry>2.16.840.1.1133883.17.3.10.2</entry>
+						<entry>71581-3</entry>
+					</row>
+					<row>
+						<entry>eDispatch.01</entry>
+						<entry>Complaint Reported by Dispatch</entry>
+						<entry>Observation value</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.74</entry>
+						<entry>67570-2</entry>
+					</row>
+					<row>
+						<entry>eDispatch.02</entry>
+						<entry>EMD Performed</entry>
+						<entry>Observation value</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.73</entry>
+						<entry>67488-7</entry>
+					</row>
+					<row>
+						<entry>eDisposition.02</entry>
+						<entry>Destination/Transferred To, Code</entry>
+						<entry>Header participation</entry>
+						<entry>2.16.840.1.1133883.17.3.10.2</entry>
+						<entry>71578-9</entry>
+					</row>
+					<row>
+						<entry>eDisposition.03</entry>
+						<entry>Destination Street Address</entry>
+						<entry>Header participation</entry>
+						<entry>2.16.840.1.1133883.17.3.10.2</entry>
+						<entry> </entry>
+					</row>
+					<row>
+						<entry>eDisposition.04</entry>
+						<entry>Destination City</entry>
+						<entry>Header participation</entry>
+						<entry>2.16.840.1.1133883.17.3.10.2</entry>
+						<entry> </entry>
+					</row>
+					<row>
+						<entry>eDisposition.05</entry>
+						<entry>Destination State</entry>
+						<entry>Header participation</entry>
+						<entry>2.16.840.1.1133883.17.3.10.2</entry>
+						<entry> </entry>
+					</row>
+					<row>
+						<entry>eDisposition.06</entry>
+						<entry>Destination County</entry>
+						<entry>Header participation</entry>
+						<entry>2.16.840.1.1133883.17.3.10.2</entry>
+						<entry> </entry>
+					</row>
+					<row>
+						<entry>eDisposition.07</entry>
+						<entry>Destination Zip Code</entry>
+						<entry>Header participation</entry>
+						<entry>2.16.840.1.1133883.17.3.10.2</entry>
+						<entry> </entry>
+					</row>
+					<row>
+						<entry>eDisposition.11</entry>
+						<entry>Number of Patients Transported in this EMS Unit</entry>
+						<entry>Observation value</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.31</entry>
+						<entry>67547-0</entry>
+					</row>
+					<row>
+						<entry>eDisposition.16</entry>
+						<entry>EMS Transport Method</entry>
+						<entry>Observation value</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.34</entry>
+						<entry>67549-6</entry>
+					</row>
+					<row>
+						<entry>eDisposition.17</entry>
+						<entry>Transport Mode from Scene</entry>
+						<entry>Observation value</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.33</entry>
+						<entry>67550-4</entry>
+					</row>
+					<row>
+						<entry>eDisposition.18</entry>
+						<entry>Additional Transport Mode Descriptors</entry>
+						<entry>Observation value</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.193</entry>
+						<entry>77153-5</entry>
+					</row>
+					<row>
+						<entry>eDisposition.19</entry>
+						<entry>Final patient acuity</entry>
+						<entry>Observation value</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.37</entry>
+						<entry>77941-3</entry>
+					</row>
+					<row>
+						<entry>eDisposition.20</entry>
+						<entry>Reason for Choosing Destination</entry>
+						<entry>Observation value</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.35</entry>
+						<entry>67552-0</entry>
+					</row>
+					<row>
+						<entry>eDisposition.21</entry>
+						<entry>Type of Destination</entry>
+						<entry>Header participation</entry>
+						<entry>2.16.840.1.1133883.17.3.10.2</entry>
+						<entry>71578-9</entry>
+					</row>
+					<row>
+						<entry>eDisposition.22</entry>
+						<entry>Hospital In-Patient Destination</entry>
+						<entry>Observation value</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.186</entry>
+						<entry>77154-3</entry>
+					</row>
+					<row>
+						<entry>eDisposition.23</entry>
+						<entry>Hospital Capability</entry>
+						<entry>Observation value</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.104</entry>
+						<entry>77155-0</entry>
+					</row>
+					<row>
+						<entry>eDisposition.24</entry>
+						<entry>Destination Prearrival Activation</entry>
+						<entry>Observation value</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.36</entry>
+						<entry>69462-0</entry>
+					</row>
+					<row>
+						<entry>eDisposition.25</entry>
+						<entry>Destination Prearrival Activation Date/Time</entry>
+						<entry>Observation time</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.36</entry>
+						<entry>69462-0</entry>
+					</row>
+					<row>
+						<entry>eDisposition.27</entry>
+						<entry>Unit Disposition</entry>
+						<entry>Observation value</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.196</entry>
+						<entry>neweDisposition.27</entry>
+					</row>
+					<row>
+						<entry>eDisposition.28</entry>
+						<entry>Patient Evaluation/Care</entry>
+						<entry>Observation value</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.197</entry>
+						<entry>neweDisposition.28</entry>
+					</row>
+					<row>
+						<entry>eDisposition.29</entry>
+						<entry>Crew Disposition</entry>
+						<entry>Observation value</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.198</entry>
+						<entry>neweDisposition.29</entry>
+					</row>
+					<row>
+						<entry>eDisposition.30</entry>
+						<entry>Transport Disposition</entry>
+						<entry>Observation value</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.199</entry>
+						<entry>neweDisposition.30</entry>
+					</row>
+					<row>
+						<entry>eExam.01</entry>
+						<entry>Estimated Body Weight in Kilograms</entry>
+						<entry>Observation value</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.178</entry>
+						<entry>8335-2</entry>
+					</row>
+					<row>
+						<entry>eExam.02</entry>
+						<entry>Length Based Tape Measure</entry>
+						<entry>Observation value</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.110</entry>
+						<entry>67670-0</entry>
+					</row>
+					<row>
+						<entry>eExam.03</entry>
+						<entry>Date/Time of Assessment</entry>
+						<entry>Observation time</entry>
+						<entry>many</entry>
+						<entry> </entry>
+					</row>
+					<row>
+						<entry>eExam.04</entry>
+						<entry>Skin Assessment</entry>
+						<entry>Observation value</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.180</entry>
+						<entry>67524-9</entry>
+					</row>
+					<row>
+						<entry>eExam.05</entry>
+						<entry>Head Assessment</entry>
+						<entry>Observation value</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.113</entry>
+						<entry>67525-6</entry>
+					</row>
+					<row>
+						<entry>eExam.06</entry>
+						<entry>Face Assessment</entry>
+						<entry>Observation value</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.112</entry>
+						<entry>67526-4</entry>
+					</row>
+					<row>
+						<entry>eExam.07</entry>
+						<entry>Neck Assessment</entry>
+						<entry>Observation value</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.114</entry>
+						<entry>67527-2</entry>
+					</row>
+					<row>
+						<entry>eExam.09</entry>
+						<entry>Heart Assessment</entry>
+						<entry>Observation value</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.116</entry>
+						<entry>67529-8</entry>
+					</row>
+					<row>
+						<entry>eExam.10</entry>
+						<entry>Abdominal Exam Finding Location</entry>
+						<entry>Observation site</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.117</entry>
+						<entry>71584-7</entry>
+					</row>
+					<row>
+						<entry>eExam.11</entry>
+						<entry>Abdomen Assessment</entry>
+						<entry>Observation value</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.117</entry>
+						<entry>67530-6</entry>
+					</row>
+					<row>
+						<entry>eExam.12</entry>
+						<entry>Pelvis/Genitourinary Assessment</entry>
+						<entry>Observation value</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.118</entry>
+						<entry>67531-4</entry>
+					</row>
+					<row>
+						<entry>eExam.13</entry>
+						<entry>Back and Spine Assessment Finding Location</entry>
+						<entry>Observation site</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.119</entry>
+						<entry>71589-6</entry>
+					</row>
+					<row>
+						<entry>eExam.14</entry>
+						<entry>Back and Spine Assessment</entry>
+						<entry>Observation value</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.119</entry>
+						<entry>67532-2</entry>
+					</row>
+					<row>
+						<entry>eExam.15</entry>
+						<entry>Extremity Assessment Finding Location</entry>
+						<entry>Observation site</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.120</entry>
+						<entry>71585-4</entry>
+					</row>
+					<row>
+						<entry>eExam.16</entry>
+						<entry>Extremities Assessment</entry>
+						<entry>Observation value</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.120</entry>
+						<entry>67533-0</entry>
+					</row>
+					<row>
+						<entry>eExam.17</entry>
+						<entry>Eye Assessment Finding Location</entry>
+						<entry>Observation site</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.121</entry>
+						<entry>71586-2</entry>
+					</row>
+					<row>
+						<entry>eExam.18</entry>
+						<entry>Eye Assessment</entry>
+						<entry>Observation value</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.121</entry>
+						<entry>67534-8</entry>
+					</row>
+					<row>
+						<entry>eExam.19</entry>
+						<entry>Mental Status Assessment</entry>
+						<entry>Observation value</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.122</entry>
+						<entry>67535-5</entry>
+					</row>
+					<row>
+						<entry>eExam.20</entry>
+						<entry>Neurological Assessment</entry>
+						<entry>Observation value</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.141</entry>
+						<entry>67536-3</entry>
+					</row>
+					<row>
+						<entry>eExam.22</entry>
+						<entry>Lung Assessment Finding Location </entry>
+						<entry>Observation site</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.194</entry>
+						<entry>neweExam.22</entry>
+					</row>
+					<row>
+						<entry>eExam.23</entry>
+						<entry>Lung Assessment </entry>
+						<entry>Observation value</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.194</entry>
+						<entry>neweExam.23</entry>
+					</row>
+					<row>
+						<entry>eExam.24</entry>
+						<entry>Chest Assessment Finding Location </entry>
+						<entry>Observation site</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.195</entry>
+						<entry>neweExam.24</entry>
+					</row>
+					<row>
+						<entry>eExam.25</entry>
+						<entry>Chest Assessment</entry>
+						<entry>Observation value</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.195</entry>
+						<entry>neweExam.25</entry>
+					</row>
+					<row>
+						<entry>eHistory.01</entry>
+						<entry>Barriers to Patient Care</entry>
+						<entry>Observation value</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.83</entry>
+						<entry>67515-7</entry>
+					</row>
+					<row>
+						<entry>eHistory.05</entry>
+						<entry>Advance Directives</entry>
+						<entry>Observation value</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.98</entry>
+						<entry>67516-5</entry>
+					</row>
+					<row>
+						<entry>eHistory.06</entry>
+						<entry>Medication allergies</entry>
+						<entry>Observation value</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.48, 102</entry>
+						<entry>67794-8</entry>
+					</row>
+					<row>
+						<entry>eHistory.07</entry>
+						<entry>Environmental allergies</entry>
+						<entry>Observation value</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.104</entry>
+						<entry>79151-7</entry>
+					</row>
+					<row>
+						<entry>eHistory.07</entry>
+						<entry>Environmental allergies</entry>
+						<entry>Observation value</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.103</entry>
+						<entry>69747-4</entry>
+					</row>
+					<row>
+						<entry>eHistory.08</entry>
+						<entry>Medical/surgical history</entry>
+						<entry>Observation value</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.61</entry>
+						<entry>68487-8</entry>
+					</row>
+					<row>
+						<entry>eHistory.08</entry>
+						<entry>Medical/surgical history</entry>
+						<entry>Observation value</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.60, 61</entry>
+						<entry>67793-0</entry>
+					</row>
+					<row>
+						<entry>eHistory.12</entry>
+						<entry>Current Medications</entry>
+						<entry>Substance admin present</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.75</entry>
+						<entry>67791-4 </entry>
+					</row>
+					<row>
+						<entry>eHistory.12</entry>
+						<entry>Current Medications</entry>
+						<entry>Substance admin substance</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.77</entry>
+						<entry> </entry>
+					</row>
+					<row>
+						<entry>eHistory.12</entry>
+						<entry>Current Medications</entry>
+						<entry>Substance admin null flavor</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.77</entry>
+						<entry> </entry>
+					</row>
+					<row>
+						<entry>eHistory.12</entry>
+						<entry>Current Medications</entry>
+						<entry>Substance admin negation</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.77</entry>
+						<entry> </entry>
+					</row>
+					<row>
+						<entry>eHistory.13</entry>
+						<entry>Current Medication Dose</entry>
+						<entry>Substance admin dose</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.77</entry>
+						<entry> </entry>
+					</row>
+					<row>
+						<entry>eHistory.14</entry>
+						<entry>Current Medication Dosage Unit</entry>
+						<entry>Substance admin dose unit</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.77</entry>
+						<entry> </entry>
+					</row>
+					<row>
+						<entry>eHistory.15</entry>
+						<entry>Current Medication Administration Route</entry>
+						<entry>Substance admin route</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.77</entry>
+						<entry> </entry>
+					</row>
+					<row>
+						<entry>eHistory.17</entry>
+						<entry>Alcohol/Drug Use Indicators</entry>
+						<entry>Observation value</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.71</entry>
+						<entry>67669-2</entry>
+					</row>
+					<row>
+						<entry>eHistory.17</entry>
+						<entry>Alcohol/Drug Use Indicators</entry>
+						<entry>Observation value</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.70</entry>
+						<entry>69757-3</entry>
+					</row>
+					<row>
+						<entry>eHistory.18</entry>
+						<entry>Pregnancy</entry>
+						<entry>Observation value</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.79</entry>
+						<entry>67471-3</entry>
+					</row>
+					<row>
+						<entry>eHistory.19</entry>
+						<entry>Last oral intake</entry>
+						<entry>Observation value</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.80</entry>
+						<entry>67517-3</entry>
+					</row>
+					<row>
+						<entry>eInjury.01</entry>
+						<entry>Cause of Injury</entry>
+						<entry>Observation value</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.50</entry>
+						<entry>69543-7</entry>
+					</row>
+					<row>
+						<entry>eInjury.02</entry>
+						<entry>Mechanism of Injury</entry>
+						<entry>Observation value</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.51</entry>
+						<entry>67494-5</entry>
+					</row>
+					<row>
+						<entry>eInjury.03</entry>
+						<entry>Trauma Triage Criteria (Steps 1 and 2)</entry>
+						<entry>Observation value</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.52</entry>
+						<entry>67495-2</entry>
+					</row>
+					<row>
+						<entry>eInjury.04</entry>
+						<entry>Trauma Triage Criteria (Steps 3 and 4)</entry>
+						<entry>Observation value</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.53</entry>
+						<entry>67496-0</entry>
+					</row>
+					<row>
+						<entry>eInjury.05</entry>
+						<entry>The primary area or location of impact on the vehicle</entry>
+						<entry>Observation value</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.54</entry>
+						<entry>67497-8</entry>
+					</row>
+					<row>
+						<entry>eInjury.06</entry>
+						<entry>Location of Patient in Vehicle</entry>
+						<entry>Observation value</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.55</entry>
+						<entry>67498-6</entry>
+					</row>
+					<row>
+						<entry>eInjury.07</entry>
+						<entry>Use of Occupant Safety Equipment</entry>
+						<entry>Observation value</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.56</entry>
+						<entry>67499-4</entry>
+					</row>
+					<row>
+						<entry>eInjury.08</entry>
+						<entry>Airbag Deployment</entry>
+						<entry>Observation value</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.57</entry>
+						<entry>67500-9</entry>
+					</row>
+					<row>
+						<entry>eInjury.09</entry>
+						<entry>Height of Fall (feet)</entry>
+						<entry>Observation value</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.58</entry>
+						<entry>67501-7</entry>
+					</row>
+					<row>
+						<entry>eMedications.01</entry>
+						<entry>Date/Time Medication Administered</entry>
+						<entry>Substance admin time</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.72</entry>
+						<entry> </entry>
+					</row>
+					<row>
+						<entry>eMedications.02</entry>
+						<entry>Medication Administered Prior to this Units EMS Care</entry>
+						<entry>Observation value</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.108</entry>
+						<entry>67539-7</entry>
+					</row>
+					<row>
+						<entry>eMedications.03</entry>
+						<entry>Medication Given</entry>
+						<entry>Observation value</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.105</entry>
+						<entry>72113-4</entry>
+					</row>
+					<row>
+						<entry>eMedications.03</entry>
+						<entry>Medication Given</entry>
+						<entry>Substance admin negation</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.72</entry>
+						<entry> </entry>
+					</row>
+					<row>
+						<entry>eMedications.03</entry>
+						<entry>Medication Given</entry>
+						<entry>Substance admin substance</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.72</entry>
+						<entry>67797-1 </entry>
+					</row>
+					<row>
+						<entry>eMedications.04</entry>
+						<entry>Medication Administration Route</entry>
+						<entry>Substance admin route</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.72</entry>
+						<entry> </entry>
+					</row>
+					<row>
+						<entry>eMedications.05</entry>
+						<entry>Medication Dosage</entry>
+						<entry>Substance admin rate </entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.72</entry>
+						<entry> </entry>
+					</row>
+					<row>
+						<entry>eMedications.05</entry>
+						<entry>Medication Dosage</entry>
+						<entry>Substance admin dose </entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.72</entry>
+						<entry> </entry>
+					</row>
+					<row>
+						<entry>eMedications.06</entry>
+						<entry>Medication Dosage Unit</entry>
+						<entry>Substance admin dose unit</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.72</entry>
+						<entry> </entry>
+					</row>
+					<row>
+						<entry>eMedications.06</entry>
+						<entry>Medication Dosage Unit</entry>
+						<entry>Substance admin rate unit</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.72</entry>
+						<entry> </entry>
+					</row>
+					<row>
+						<entry>eMedications.07</entry>
+						<entry>Response to Medication</entry>
+						<entry>Observation value</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.106</entry>
+						<entry>67540-5</entry>
+					</row>
+					<row>
+						<entry>eMedications.08</entry>
+						<entry>Medication Complication</entry>
+						<entry>Observation value</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.107</entry>
+						<entry>67541-3</entry>
+					</row>
+					<row>
+						<entry>eMedications.09</entry>
+						<entry>Medication Crew (Healthcare Professionals) ID</entry>
+						<entry>Substance admin performer</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.72</entry>
+						<entry> </entry>
+					</row>
+					<row>
+						<entry>eMedications.10</entry>
+						<entry>EMS or Healthcare Professional Type Administering Medication</entry>
+						<entry>Substance admin performer</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.72</entry>
+						<entry> </entry>
+					</row>
+					<row>
+						<entry>eMedications.11</entry>
+						<entry>Medication Authorization</entry>
+						<entry>Act relationship</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.72</entry>
+						<entry>71573-0</entry>
+					</row>
+					<row>
+						<entry>eNarrative.01</entry>
+						<entry>Patient Care Report Narrative</entry>
+						<entry>Section text</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.1</entry>
+						<entry>67781-5</entry>
+					</row>
+					<row>
+						<entry>eOther.02</entry>
+						<entry>Potential System of Care/Specialty/Registry Patient</entry>
+						<entry>Observation value</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.94</entry>
+						<entry>67553-8</entry>
+					</row>
+					<row>
+						<entry>eOther.05</entry>
+						<entry>Suspected EMS Work Related Exposure, Injury, or Death</entry>
+						<entry>Observation value</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.89</entry>
+						<entry>67554-6</entry>
+					</row>
+					<row>
+						<entry>eOther.06</entry>
+						<entry>Type of Suspected EMS Blood/Body Fluid Exposure, Injury, or
+							Death</entry>
+						<entry>Observation value</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.90</entry>
+						<entry>67555-3</entry>
+					</row>
+					<row>
+						<entry>eOther.07</entry>
+						<entry>Suspected Intentional, or Unintentional Disaster</entry>
+						<entry>Observation value</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.59</entry>
+						<entry>69463-8</entry>
+					</row>
+					<row>
+						<entry>eOther.08</entry>
+						<entry>Who Generated this Report?</entry>
+						<entry>Assigned Author</entry>
+						<entry>2.16.840.1.1133883.17.3.10.2</entry>
+						<entry> </entry>
+					</row>
+					<row>
+						<entry>epatient.01</entry>
+						<entry>id</entry>
+						<entry>Record Target</entry>
+						<entry>2.16.840.1.1133883.17.3.10.2</entry>
+						<entry> </entry>
+					</row>
+					<row>
+						<entry>ePatient.02</entry>
+						<entry>Last Name</entry>
+						<entry>Record Target</entry>
+						<entry>2.16.840.1.1133883.17.3.10.2</entry>
+						<entry> </entry>
+					</row>
+					<row>
+						<entry>ePatient.03</entry>
+						<entry>First Name</entry>
+						<entry>Record Target</entry>
+						<entry>2.16.840.1.1133883.17.3.10.2</entry>
+						<entry> </entry>
+					</row>
+					<row>
+						<entry>ePatient.04</entry>
+						<entry>Middle Initial/Name</entry>
+						<entry>Record Target</entry>
+						<entry>2.16.840.1.1133883.17.3.10.2</entry>
+						<entry> </entry>
+					</row>
+					<row>
+						<entry>ePatient.05</entry>
+						<entry>Patient's Home Address</entry>
+						<entry>Record Target</entry>
+						<entry>2.16.840.1.1133883.17.3.10.2</entry>
+						<entry> </entry>
+					</row>
+					<row>
+						<entry>ePatient.06</entry>
+						<entry>Patient's Home City</entry>
+						<entry>Record Target</entry>
+						<entry>2.16.840.1.1133883.17.3.10.2</entry>
+						<entry> </entry>
+					</row>
+					<row>
+						<entry>ePatient.07</entry>
+						<entry>Patient's Home County</entry>
+						<entry>Record Target</entry>
+						<entry>2.16.840.1.1133883.17.3.10.2</entry>
+						<entry> </entry>
+					</row>
+					<row>
+						<entry>ePatient.08</entry>
+						<entry>Patient's Home State</entry>
+						<entry>Record Target</entry>
+						<entry>2.16.840.1.1133883.17.3.10.2</entry>
+						<entry> </entry>
+					</row>
+					<row>
+						<entry>ePatient.09</entry>
+						<entry>Patient's Home Zip Code</entry>
+						<entry>Record Target</entry>
+						<entry>2.16.840.1.1133883.17.3.10.2</entry>
+						<entry> </entry>
+					</row>
+					<row>
+						<entry>ePatient.10</entry>
+						<entry>Patient's Home Country</entry>
+						<entry>Record Target</entry>
+						<entry>2.16.840.1.1133883.17.3.10.2</entry>
+						<entry> </entry>
+					</row>
+					<row>
+						<entry>ePatient.12</entry>
+						<entry>Social Security Number</entry>
+						<entry>Record Target</entry>
+						<entry>2.16.840.1.1133883.17.3.10.2</entry>
+						<entry> </entry>
+					</row>
+					<row>
+						<entry>ePatient.13</entry>
+						<entry>Gender</entry>
+						<entry>Record Target</entry>
+						<entry>2.16.840.1.1133883.17.3.10.2</entry>
+						<entry> </entry>
+					</row>
+					<row>
+						<entry>ePatient.14</entry>
+						<entry>Race</entry>
+						<entry>Record Target</entry>
+						<entry>2.16.840.1.1133883.17.3.10.2</entry>
+						<entry> </entry>
+					</row>
+					<row>
+						<entry>ePatient.14</entry>
+						<entry>Race</entry>
+						<entry>Record Target</entry>
+						<entry>2.16.840.1.1133883.17.3.10.2</entry>
+						<entry> </entry>
+					</row>
+					<row>
+						<entry>ePatient.15</entry>
+						<entry>Age</entry>
+						<entry>Observation value</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.81</entry>
+						<entry> </entry>
+					</row>
+					<row>
+						<entry>ePatient.16</entry>
+						<entry>Age Units</entry>
+						<entry>Observation value</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.81</entry>
+						<entry> </entry>
+					</row>
+					<row>
+						<entry>ePatient.17</entry>
+						<entry>Date of Birth</entry>
+						<entry>Record Target</entry>
+						<entry>2.16.840.1.1133883.17.3.10.2</entry>
+						<entry> </entry>
+					</row>
+					<row>
+						<entry>ePatient.18</entry>
+						<entry>Primary or Home Telephone Number</entry>
+						<entry>Record Target</entry>
+						<entry>2.16.840.1.1133883.17.3.10.2</entry>
+						<entry> </entry>
+					</row>
+					<row>
+						<entry>ePayment.50</entry>
+						<entry>CMS Service Level</entry>
+						<entry>Observation value</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.92</entry>
+						<entry>69464-6</entry>
+					</row>
+					<row>
+						<entry>ePayment.51</entry>
+						<entry>EMS Condition Code</entry>
+						<entry>Observation value</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.91</entry>
+						<entry>67556-1</entry>
+					</row>
+					<row>
+						<entry>eProcedures.01</entry>
+						<entry>Date/Time Procedure Performed</entry>
+						<entry>Procedure time</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.181</entry>
+						<entry> </entry>
+					</row>
+					<row>
+						<entry>eProcedures.02</entry>
+						<entry>Procedure Performed Prior to this Units EMS Care</entry>
+						<entry>Observation value</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.131</entry>
+						<entry>67542-1</entry>
+					</row>
+					<row>
+						<entry>eProcedures.03</entry>
+						<entry>Procedure</entry>
+						<entry>Observation value</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.137</entry>
+						<entry>72112-6</entry>
+					</row>
+					<row>
+						<entry>eProcedures.03</entry>
+						<entry>Procedure</entry>
+						<entry>Procedure code</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.181</entry>
+						<entry>67798-9</entry>
+					</row>
+					<row>
+						<entry>eProcedures.05</entry>
+						<entry>Number of Procedure Attempts</entry>
+						<entry>Observation value</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.132</entry>
+						<entry>67543-9</entry>
+					</row>
+					<row>
+						<entry>eProcedures.06</entry>
+						<entry>Procedure Successful</entry>
+						<entry>Observation value</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.133</entry>
+						<entry>67544-7</entry>
+					</row>
+					<row>
+						<entry>eProcedures.07</entry>
+						<entry>Procedure Complication</entry>
+						<entry>Observation value</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.179</entry>
+						<entry>67545-4</entry>
+					</row>
+					<row>
+						<entry>eProcedures.08</entry>
+						<entry>Response to Procedure</entry>
+						<entry>Observation value</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.135</entry>
+						<entry>67546-2</entry>
+					</row>
+					<row>
+						<entry>eProcedures.09</entry>
+						<entry>Procedure Crew Members ID</entry>
+						<entry>Performer</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.181</entry>
+						<entry> </entry>
+					</row>
+					<row>
+						<entry>eProcedures.10</entry>
+						<entry>EMS or Healthcare Professional Type Performing the Procedure</entry>
+						<entry>Performer</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.181</entry>
+						<entry>71582-1 </entry>
+					</row>
+					<row>
+						<entry>eProcedures.13</entry>
+						<entry>IV Site Location</entry>
+						<entry>Procedure approachSiteCode</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.181</entry>
+						<entry>71587-0</entry>
+					</row>
+					<row>
+						<entry>eProtocols.01</entry>
+						<entry>Protocols Used</entry>
+						<entry>Observation value</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.93</entry>
+						<entry>67537-1</entry>
+					</row>
+					<row>
+						<entry>eProtocols.02</entry>
+						<entry>Protocol Age Category</entry>
+						<entry>Observation value</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.149</entry>
+						<entry>67538-9</entry>
+					</row>
+					<row>
+						<entry>eRecord.01</entry>
+						<entry>Patient Care Report Number</entry>
+						<entry>Document id</entry>
+						<entry>2.16.840.1.1133883.17.3.10.2</entry>
+						<entry> </entry>
+					</row>
+					<row>
+						<entry>eRecord.02</entry>
+						<entry>Software Creator</entry>
+						<entry>Assigned Author</entry>
+						<entry>2.16.840.1.1133883.17.3.10.2</entry>
+						<entry> </entry>
+					</row>
+					<row>
+						<entry>eRecord.03</entry>
+						<entry>Software Name</entry>
+						<entry>Assigned Author</entry>
+						<entry>2.16.840.1.1133883.17.3.10.2</entry>
+						<entry> </entry>
+					</row>
+					<row>
+						<entry>eRecord.04</entry>
+						<entry>Software Version</entry>
+						<entry>Assigned Author</entry>
+						<entry>2.16.840.1.1133883.17.3.10.2</entry>
+						<entry> </entry>
+					</row>
+					<row>
+						<entry>eResponse.01</entry>
+						<entry>EMS Agency Number</entry>
+						<entry>Assigned Author</entry>
+						<entry>2.16.840.1.1133883.17.3.10.2</entry>
+						<entry> </entry>
+					</row>
+					<row>
+						<entry>eResponse.03</entry>
+						<entry>Incident Number</entry>
+						<entry>Service event</entry>
+						<entry>2.16.840.1.1133883.17.3.10.2</entry>
+						<entry> </entry>
+					</row>
+					<row>
+						<entry>eResponse.04</entry>
+						<entry>EMS Vehicle (Unit) Response Number</entry>
+						<entry>Service event</entry>
+						<entry>2.16.840.1.1133883.17.3.10.2</entry>
+						<entry> </entry>
+					</row>
+					<row>
+						<entry>eResponse.05</entry>
+						<entry>Type of Service Requested</entry>
+						<entry>Service event</entry>
+						<entry>2.16.840.1.1133883.17.3.10.2</entry>
+						<entry>71583-9</entry>
+					</row>
+					<row>
+						<entry>eResponse.07</entry>
+						<entry>Primary Role of the Unit</entry>
+						<entry>HealthCare Facility</entry>
+						<entry>2.16.840.1.1133883.17.3.10.2</entry>
+						<entry>71579-7</entry>
+					</row>
+					<row>
+						<entry>eResponse.08</entry>
+						<entry>Type of Dispatch Delay</entry>
+						<entry>Observation value</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.153</entry>
+						<entry>67480-4</entry>
+					</row>
+					<row>
+						<entry>eResponse.09</entry>
+						<entry>Type of Response Delay</entry>
+						<entry>Observation value</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.154</entry>
+						<entry>67557-9</entry>
+					</row>
+					<row>
+						<entry>eResponse.10</entry>
+						<entry>Type of Scene Delay</entry>
+						<entry>Observation value</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.155</entry>
+						<entry>67558-7</entry>
+					</row>
+					<row>
+						<entry>eResponse.11</entry>
+						<entry>Type of Transport Delay</entry>
+						<entry>Observation value</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.156</entry>
+						<entry>67559-5</entry>
+					</row>
+					<row>
+						<entry>eResponse.12</entry>
+						<entry>Type of Turn-Around Delay</entry>
+						<entry>Observation value</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.157</entry>
+						<entry>67560-3</entry>
+					</row>
+					<row>
+						<entry>eResponse.13</entry>
+						<entry>EMS Vehicle (Unit) Number</entry>
+						<entry>HealthCare Facility</entry>
+						<entry>2.16.840.1.1133883.17.3.10.2</entry>
+						<entry> </entry>
+					</row>
+					<row>
+						<entry>eResponse.14</entry>
+						<entry>EMS Unit Call Sign</entry>
+						<entry>HealthCare Facility</entry>
+						<entry>2.16.840.1.1133883.17.3.10.2</entry>
+						<entry> </entry>
+					</row>
+					<row>
+						<entry>eResponse.16</entry>
+						<entry>Vehicle Dispatch Location</entry>
+						<entry>Observation value</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.150</entry>
+						<entry>69466-1</entry>
+					</row>
+					<row>
+						<entry>eResponse.17</entry>
+						<entry>Vehicle Dispatch GPS Location</entry>
+						<entry>Observation value</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.151</entry>
+						<entry>69465-3</entry>
+					</row>
+					<row>
+						<entry>eResponse.17</entry>
+						<entry>Vehicle Dispatch GPS Location</entry>
+						<entry>Observation value</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.152</entry>
+						<entry>69465-3</entry>
+					</row>
+					<row>
+						<entry>eResponse.19</entry>
+						<entry>Beginning Odometer Reading of Responding Vehicle</entry>
+						<entry>Observation value</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.171</entry>
+						<entry>67484-6</entry>
+					</row>
+					<row>
+						<entry>eResponse.20</entry>
+						<entry>On-Scene Odometer Reading of Responding Vehicle</entry>
+						<entry>Observation value</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.172</entry>
+						<entry>67485-3</entry>
+					</row>
+					<row>
+						<entry>eResponse.21</entry>
+						<entry>Patient Destination Odometer Reading of Responding Vehicle</entry>
+						<entry>Observation value</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.173</entry>
+						<entry>67486-1</entry>
+					</row>
+					<row>
+						<entry>eResponse.22</entry>
+						<entry>Ending Odometer Reading of Responding Vehicle</entry>
+						<entry>Observation value</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.174</entry>
+						<entry>67487-9</entry>
+					</row>
+					<row>
+						<entry>eResponse.23</entry>
+						<entry>Response Mode to Scene</entry>
+						<entry>Observation value</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.182</entry>
+						<entry>67482-0</entry>
+					</row>
+					<row>
+						<entry>eResponse.24</entry>
+						<entry>Additional Response Mode Descriptors</entry>
+						<entry>Observation value</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.191</entry>
+						<entry>77157-6</entry>
+					</row>
+					<row>
+						<entry>eScene.01</entry>
+						<entry>First EMS Unit on Scene</entry>
+						<entry>Observation value</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.84</entry>
+						<entry>67481-2</entry>
+					</row>
+					<row>
+						<entry>eScene.02</entry>
+						<entry>Other EMS or Public Safety Agencies at Scene</entry>
+						<entry>Encounter Participant</entry>
+						<entry>2.16.840.1.1133883.17.3.10.2</entry>
+						<entry> </entry>
+					</row>
+					<row>
+						<entry>eScene.06</entry>
+						<entry>Number of Patients at Scene</entry>
+						<entry>Observation value</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.86</entry>
+						<entry>67489-5</entry>
+					</row>
+					<row>
+						<entry>eScene.07</entry>
+						<entry>Mass Casualty Incident</entry>
+						<entry>Observation value</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.87</entry>
+						<entry>67490-3</entry>
+					</row>
+					<row>
+						<entry>eScene.09</entry>
+						<entry>Incident Location Type</entry>
+						<entry>Observation value</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.88</entry>
+						<entry>74496-1</entry>
+					</row>
+					<row>
+						<entry>eScene.15</entry>
+						<entry>Incident Address</entry>
+						<entry>HealthCare Facility</entry>
+						<entry>2.16.840.1.1133883.17.3.10.2</entry>
+						<entry> </entry>
+					</row>
+					<row>
+						<entry>eScene.17</entry>
+						<entry>Incident City</entry>
+						<entry>HealthCare Facility</entry>
+						<entry>2.16.840.1.1133883.17.3.10.2</entry>
+						<entry> </entry>
+					</row>
+					<row>
+						<entry>eScene.18</entry>
+						<entry>Incident State</entry>
+						<entry>HealthCare Facility</entry>
+						<entry>2.16.840.1.1133883.17.3.10.2</entry>
+						<entry> </entry>
+					</row>
+					<row>
+						<entry>eScene.19</entry>
+						<entry>Incident Zip Code</entry>
+						<entry>HealthCare Facility</entry>
+						<entry>2.16.840.1.1133883.17.3.10.2</entry>
+						<entry> </entry>
+					</row>
+					<row>
+						<entry>eScene.21</entry>
+						<entry>Incident County</entry>
+						<entry>HealthCare Facility</entry>
+						<entry>2.16.840.1.1133883.17.3.10.2</entry>
+						<entry> </entry>
+					</row>
+					<row>
+						<entry>eSituation.01</entry>
+						<entry>Date/Time of Symptom Onset/Last Normal</entry>
+						<entry>Observation value</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.63</entry>
+						<entry> </entry>
+					</row>
+					<row>
+						<entry>eSituation.02</entry>
+						<entry>Possible Injury</entry>
+						<entry>Observation value</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.64</entry>
+						<entry>69467-9</entry>
+					</row>
+					<row>
+						<entry>eSituation.03</entry>
+						<entry>Complaint Type</entry>
+						<entry>Observation value</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.138</entry>
+						<entry>72114-2</entry>
+					</row>
+					<row>
+						<entry>eSituation.04</entry>
+						<entry>Chief Complaint</entry>
+						<entry>Observation value</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.63</entry>
+						<entry>10154-3 </entry>
+					</row>
+					<row>
+						<entry>eSituation.05</entry>
+						<entry>Complaint duration</entry>
+						<entry>Observation value</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.139</entry>
+						<entry>67491-1</entry>
+					</row>
+					<row>
+						<entry>eSituation.06</entry>
+						<entry>Time Units of Duration of Complaint</entry>
+						<entry>Observation value units</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.139</entry>
+						<entry> </entry>
+					</row>
+					<row>
+						<entry>eSituation.07</entry>
+						<entry>Chief Complaint Anatomic Location</entry>
+						<entry>Observation targetsitecode</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.63</entry>
+						<entry>71588-8</entry>
+					</row>
+					<row>
+						<entry>eSituation.08</entry>
+						<entry>Chief Complaint Organ System</entry>
+						<entry>Observation value</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.140</entry>
+						<entry>69468-7</entry>
+					</row>
+					<row>
+						<entry>eSituation.09</entry>
+						<entry>Primary Symptom</entry>
+						<entry>Observation value</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.66</entry>
+						<entry>67774-0</entry>
+					</row>
+					<row>
+						<entry>eSituation.10</entry>
+						<entry>Other Associated Symptoms</entry>
+						<entry>Observation value</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.67</entry>
+						<entry>67776-5</entry>
+					</row>
+					<row>
+						<entry>eSituation.11</entry>
+						<entry>Provider's Primary Impression</entry>
+						<entry>Observation value</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.65</entry>
+						<entry>67492-9</entry>
+					</row>
+					<row>
+						<entry>eSituation.12</entry>
+						<entry>Provider's Secondary Impression</entry>
+						<entry>Observation value</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.68</entry>
+						<entry>69542-9</entry>
+					</row>
+					<row>
+						<entry>eSituation.13</entry>
+						<entry>Patient's Initial Condition at Scene</entry>
+						<entry>Observation value</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.69</entry>
+						<entry>67493-7</entry>
+					</row>
+					<row>
+						<entry>eTimes.01</entry>
+						<entry>PSAP Call Date/Time</entry>
+						<entry>Observation value</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.38</entry>
+						<entry>69469-5</entry>
+					</row>
+					<row>
+						<entry>eTimes.02</entry>
+						<entry>Dispatch Notified Date/Time</entry>
+						<entry>Observation value</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.46</entry>
+						<entry>69470-3</entry>
+					</row>
+					<row>
+						<entry>eTimes.03</entry>
+						<entry>Unit Notified by Dispatch Date/Time</entry>
+						<entry>Observation value</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.39</entry>
+						<entry>69471-1</entry>
+					</row>
+					<row>
+						<entry>eTimes.05</entry>
+						<entry>Unit Enroute Date/Time</entry>
+						<entry>Observation value</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.40</entry>
+						<entry>69472-9</entry>
+					</row>
+					<row>
+						<entry>eTimes.06</entry>
+						<entry>Unit Arrived on Scene Date/Time</entry>
+						<entry>Observation value</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.41</entry>
+						<entry>69473-7</entry>
+					</row>
+					<row>
+						<entry>eTimes.07</entry>
+						<entry>Arrived at Patient Date/Time</entry>
+						<entry>Observation value</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.42</entry>
+						<entry>69474-5</entry>
+					</row>
+					<row>
+						<entry>eTimes.09</entry>
+						<entry>Unit Left Scene Date/Time</entry>
+						<entry>Observation value</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.43</entry>
+						<entry>69475-2</entry>
+					</row>
+					<row>
+						<entry>eTimes.11</entry>
+						<entry>Patient Arrived at Destination Date/Time</entry>
+						<entry>Observation value</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.44</entry>
+						<entry>69476-0</entry>
+					</row>
+					<row>
+						<entry>eTimes.12</entry>
+						<entry>Destination Patient Transfer of Care Date/Time</entry>
+						<entry>Destination participation</entry>
+						<entry>2.16.840.1.1133883.17.3.10.2</entry>
+						<entry> </entry>
+					</row>
+					<row>
+						<entry>eTimes.13</entry>
+						<entry>Unit Back in Service Date/Time</entry>
+						<entry>Observation value</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.45</entry>
+						<entry>69477-8</entry>
+					</row>
+					<row>
+						<entry>eVitals.01</entry>
+						<entry>Date/Time Vital Signs Taken</entry>
+						<entry>Observation time</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.30</entry>
+						<entry> </entry>
+					</row>
+					<row>
+						<entry>eVitals.02</entry>
+						<entry>Obtained Prior to this Units EMS Care</entry>
+						<entry>Observation value</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.29</entry>
+						<entry>67518-1</entry>
+					</row>
+					<row>
+						<entry>eVitals.03</entry>
+						<entry>Cardiac Rhythm and Electrocardiography</entry>
+						<entry>Observation value</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.169</entry>
+						<entry>67519-9</entry>
+					</row>
+					<row>
+						<entry>eVitals.04</entry>
+						<entry>ECG Type</entry>
+						<entry>Observation device</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.169</entry>
+						<entry>71575-5</entry>
+					</row>
+					<row>
+						<entry>eVitals.05</entry>
+						<entry>The method of ECG interpretation</entry>
+						<entry>Observation method</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.169</entry>
+						<entry>71577-1</entry>
+					</row>
+					<row>
+						<entry>eVitals.06</entry>
+						<entry>SBP (Systolic Blood Pressure)</entry>
+						<entry>Observation value</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.23.1</entry>
+						<entry>8480-6</entry>
+					</row>
+					<row>
+						<entry>eVitals.07</entry>
+						<entry>DBP (Diastolic Blood Pressure)</entry>
+						<entry>Observation value</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.144</entry>
+						<entry>8462-4</entry>
+					</row>
+					<row>
+						<entry>eVitals.08</entry>
+						<entry>Method of Blood Pressure Measurement</entry>
+						<entry>Observation method</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.144, 23.1</entry>
+						<entry> </entry>
+					</row>
+					<row>
+						<entry>eVitals.08</entry>
+						<entry>Method of Blood Pressure Measurement</entry>
+						<entry>Observation method</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.144, 23.1</entry>
+						<entry> </entry>
+					</row>
+					<row>
+						<entry>eVitals.10</entry>
+						<entry>Heart Rate</entry>
+						<entry>Observation value</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.145</entry>
+						<entry>8867-4</entry>
+					</row>
+					<row>
+						<entry>eVitals.12</entry>
+						<entry>Pulse Oximetry</entry>
+						<entry>Observation value</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.177</entry>
+						<entry>2708-6</entry>
+					</row>
+					<row>
+						<entry>eVitals.14</entry>
+						<entry>Respiratory Rate</entry>
+						<entry>Observation value</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.146</entry>
+						<entry>9279-1</entry>
+					</row>
+					<row>
+						<entry>eVitals.16</entry>
+						<entry>Carbon Dioxide (CO2)</entry>
+						<entry>Observation value</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.168</entry>
+						<entry>19889-5 </entry>
+					</row>
+					<row>
+						<entry>eVitals.17</entry>
+						<entry>Carbon Monoxide</entry>
+						<entry>Observation value</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.167</entry>
+						<entry>19911-7 </entry>
+					</row>
+					<row>
+						<entry>eVitals.18</entry>
+						<entry>Blood Glucose Level</entry>
+						<entry>Observation value</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.166</entry>
+						<entry>2339-0</entry>
+					</row>
+					<row>
+						<entry>eVitals.19</entry>
+						<entry>Glasgow Coma Score: Eye</entry>
+						<entry>Observation value</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.160</entry>
+						<entry>9267-6</entry>
+					</row>
+					<row>
+						<entry>eVitals.20</entry>
+						<entry>Glasgow Coma Score: Verbal</entry>
+						<entry>Observation value</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.162</entry>
+						<entry>9270-0</entry>
+					</row>
+					<row>
+						<entry>eVitals.21</entry>
+						<entry>Glasgow Coma Score-Motor</entry>
+						<entry>Observation value</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.192</entry>
+						<entry>9268-4</entry>
+					</row>
+					<row>
+						<entry>eVitals.22</entry>
+						<entry>Glasgow Coma Score-Qualifier</entry>
+						<entry>Observation value</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.159</entry>
+						<entry>55285-1</entry>
+					</row>
+					<row>
+						<entry>eVitals.23</entry>
+						<entry>Total Glasgow Coma Score</entry>
+						<entry>Observation value</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.158</entry>
+						<entry>9269-2</entry>
+					</row>
+					<row>
+						<entry>eVitals.24</entry>
+						<entry>Temperature</entry>
+						<entry>Observation value</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.176</entry>
+						<entry>8310-5</entry>
+					</row>
+					<row>
+						<entry>eVitals.26</entry>
+						<entry>Level of Responsiveness (APVU)</entry>
+						<entry>Observation value</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.165</entry>
+						<entry>67775-7</entry>
+					</row>
+					<row>
+						<entry>eVitals.27</entry>
+						<entry>Pain Score</entry>
+						<entry>Observation value</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.164</entry>
+						<entry>56840-2 </entry>
+					</row>
+					<row>
+						<entry>eVitals.29</entry>
+						<entry>Stroke Scale Score</entry>
+						<entry>Observation value</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.163</entry>
+						<entry>67520-7</entry>
+					</row>
+					<row>
+						<entry>eVitals.30</entry>
+						<entry>Stroke Scale Type</entry>
+						<entry>Observation method</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.163</entry>
+						<entry>67521-5</entry>
+					</row>
+					<row>
+						<entry>eVitals.31</entry>
+						<entry>Reperfusion Checklist</entry>
+						<entry>Observation value</entry>
+						<entry>2.16.840.1.1133883.17.3.10.1.82</entry>
+						<entry>67523-1</entry>
+					</row>
+				</tbody>
+			</tgroup>
+		</table>
+	</body>
+</topic>
+	
+		

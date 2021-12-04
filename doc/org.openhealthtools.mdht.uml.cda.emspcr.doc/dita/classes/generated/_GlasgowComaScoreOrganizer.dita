@@ -2,10 +2,10 @@
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <topic id="classId" xml:lang="en-us">
 <title>Glasgow Coma Score Organizer - conformance rules</title>
-<shortdesc id="shortdesc">[Organizer: templateId <tt>2.16.840.1.113883.17.3.10.1.170</tt>]</shortdesc>
+<shortdesc id="shortdesc">[Organizer: templateId <tt>2.16.840.1.1133883.17.3.10.1.170</tt>]</shortdesc>
 <prolog id="prolog">
 <metadata><category>Organizer</category></metadata>
-<resourceid id="2.16.840.1.113883.17.3.10.1.170"/>
+<resourceid id="2.16.840.1.1133883.17.3.10.1.170"/>
 </prolog>
 <body>
 <section id="knownSubclasses">
@@ -14,24 +14,24 @@
 <p>Collection of Glasgow Coma Score observations</p>
 </section>
 <ol id="conformance">
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>templateId</b></tt> ( CONF:11560 ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>@root</b>="2.16.840.1.113883.17.3.10.1.170"</tt></li> <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@extension</b>="2022-01-01"</tt></li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>templateId</b></tt> ( CONF:11560 ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>@root</b>="2.16.840.1.1133883.17.3.10.1.170"</tt></li> <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@extension</b>="2022-01-01"</tt></li></ol></li>
 <li>
 <b>MAY</b> contain zero or one [0..1] <tt><b>effectiveTime</b></tt> (CONF:11313)<p>NEMSIS Trace: EVitals.01</p>
 </li>
 <li>
-<b>SHOULD</b> contain zero or one [0..1] <tt><b>component</b></tt> such that it  (CONF:11677) <ol><li><b>SHALL</b> contain zero or one [0..1] <tt><b>observation</b></tt>, where its type is <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/GlasgowEye.html">Glasgow Eye</xref> (CONF:11682)</li></ol> 
+<b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt> such that it  (CONF:11677) <ol><li><b>SHALL</b> contain zero or one [0..1] <tt><b>observation</b></tt>, where its type is <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/GlasgowEye.html">Glasgow Eye</xref> (CONF:11682)</li></ol> 
 </li>
 <li>
-<b>SHOULD</b> contain zero or one [0..1] <tt><b>component</b></tt> such that it  (CONF:11678) <ol><li><b>SHALL</b> contain zero or one [0..1] <tt><b>observation</b></tt>, where its type is <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/GlasgowMotor.html">Glasgow Motor</xref> (CONF:11683)</li></ol> 
+<b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt> such that it  (CONF:11678) <ol><li><b>SHALL</b> contain zero or one [0..1] <tt><b>observation</b></tt>, where its type is <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/GlasgowMotor.html">Glasgow Motor</xref> (CONF:11683)</li></ol> 
 </li>
 <li>
-<b>SHOULD</b> contain zero or one [0..1] <tt><b>component</b></tt> such that it  (CONF:11679) <ol><li><b>SHALL</b> contain zero or one [0..1] <tt><b>observation</b></tt>, where its type is <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/GlasgowQualifier.html">Glasgow Qualifier</xref> (CONF:11684)</li></ol> 
+<b>MAY</b> contain zero or more [0..*] <tt><b>component</b></tt> such that it  (CONF:11679) <ol><li><b>SHALL</b> contain zero or one [0..1] <tt><b>observation</b></tt>, where its type is <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/GlasgowQualifier.html">Glasgow Qualifier</xref> (CONF:11684)</li></ol> 
 </li>
 <li>
 <b>SHOULD</b> contain zero or one [0..1] <tt><b>component</b></tt> such that it  (CONF:11680) <ol><li><b>SHALL</b> contain zero or one [0..1] <tt><b>observation</b></tt>, where its type is <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/GlasgowTotal.html">Glasgow Total</xref> (CONF:11685)</li></ol> 
 </li>
 <li>
-<b>SHOULD</b> contain zero or one [0..1] <tt><b>component</b></tt> such that it  (CONF:11681) <ol><li><b>SHALL</b> contain zero or one [0..1] <tt><b>observation</b></tt>, where its type is <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/GlasgowVerbal.html">Glasgow Verbal</xref> (CONF:11686)</li></ol> 
+<b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt> such that it  (CONF:11681) <ol><li><b>SHALL</b> contain zero or one [0..1] <tt><b>observation</b></tt>, where its type is <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/GlasgowVerbal.html">Glasgow Verbal</xref> (CONF:11686)</li></ol> 
 </li>
 </ol>
 <ol id="aggregate">
@@ -43,27 +43,28 @@
 </li>
 <li><b>MAY</b> contain zero or one [0..1] <tt><b>effectiveTime</b></tt> (CONF:11313)
 <p>NEMSIS Trace: EVitals.01</p></li>
-<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>component</b></tt> such that it  (CONF:11677) <ol><li><b>SHALL</b> contain zero or one [0..1] <tt><b>observation</b></tt>, where its type is <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/GlasgowEye.html">Glasgow Eye</xref> (CONF:11682)</li></ol> 
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt> such that it  (CONF:11677) <ol><li><b>SHALL</b> contain zero or one [0..1] <tt><b>observation</b></tt>, where its type is <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/GlasgowEye.html">Glasgow Eye</xref> (CONF:11682)</li></ol> 
 </li>
-<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>component</b></tt> such that it  (CONF:11678) <ol><li><b>SHALL</b> contain zero or one [0..1] <tt><b>observation</b></tt>, where its type is <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/GlasgowMotor.html">Glasgow Motor</xref> (CONF:11683)</li></ol> 
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt> such that it  (CONF:11678) <ol><li><b>SHALL</b> contain zero or one [0..1] <tt><b>observation</b></tt>, where its type is <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/GlasgowMotor.html">Glasgow Motor</xref> (CONF:11683)</li></ol> 
 </li>
-<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>component</b></tt> such that it  (CONF:11679) <ol><li><b>SHALL</b> contain zero or one [0..1] <tt><b>observation</b></tt>, where its type is <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/GlasgowQualifier.html">Glasgow Qualifier</xref> (CONF:11684)</li></ol> 
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>component</b></tt> such that it  (CONF:11679) <ol><li><b>SHALL</b> contain zero or one [0..1] <tt><b>observation</b></tt>, where its type is <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/GlasgowQualifier.html">Glasgow Qualifier</xref> (CONF:11684)</li></ol> 
 </li>
 <li><b>SHOULD</b> contain zero or one [0..1] <tt><b>component</b></tt> such that it  (CONF:11680) <ol><li><b>SHALL</b> contain zero or one [0..1] <tt><b>observation</b></tt>, where its type is <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/GlasgowTotal.html">Glasgow Total</xref> (CONF:11685)</li></ol> 
 </li>
-<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>component</b></tt> such that it  (CONF:11681) <ol><li><b>SHALL</b> contain zero or one [0..1] <tt><b>observation</b></tt>, where its type is <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/GlasgowVerbal.html">Glasgow Verbal</xref> (CONF:11686)</li></ol> 
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt> such that it  (CONF:11681) <ol><li><b>SHALL</b> contain zero or one [0..1] <tt><b>observation</b></tt>, where its type is <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/GlasgowVerbal.html">Glasgow Verbal</xref> (CONF:11686)</li></ol> 
 </li>
 </ol>
 <section id="contextTable"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="2" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><thead><row><entry namest="col0" nameend="col0" >Contained By</entry><entry namest="col1" nameend="col1" >Contains</entry></row></thead><tbody><row><entry> </entry><entry> </entry></row></tbody></tgroup></table></p></section>
 <codeblock id="example" outputclass="language-xml"><![CDATA[<organizer classCode="CLUSTER" moodCode="SLOT">
-  <templateId root="2.16.840.1.113883.17.3.10.1.170" extension="2022-01-01"/>
+  <templateId root="2.16.840.1.1133883.17.3.10.1.170" extension="2022-01-01"/>
   <statusCode/>
+  <component/>
 </organizer>
 ]]></codeblock>
 <!--Error code 1: Pathmap to CDA .ecore files not resolved: pathmap://CDA_MODEL/../../org.eclipse.mdht.uml.hl7.rim/model/rim.ecore#//Act. Will not use any CDA extension!-->
 <section id="changes">
 </section>
 <p><ph id="classformalname">Glasgow Coma Score Organizer</ph></p>
-<p id="shortdesc">[Organizer: templateId <tt>2.16.840.1.113883.17.3.10.1.170</tt>]</p>
+<p id="shortdesc">[Organizer: templateId <tt>2.16.840.1.1133883.17.3.10.1.170</tt>]</p>
 </body>
 </topic>

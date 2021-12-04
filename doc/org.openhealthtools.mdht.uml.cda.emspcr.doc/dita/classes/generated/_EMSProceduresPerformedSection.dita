@@ -2,10 +2,10 @@
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <topic id="classId" xml:lang="en-us">
 <title>EMS Procedures Performed Section - conformance rules</title>
-<shortdesc id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.17.3.10.1.21</tt>]</shortdesc>
+<shortdesc id="shortdesc">[Section: templateId <tt>2.16.840.1.1133883.17.3.10.1.21</tt>]</shortdesc>
 <prolog id="prolog">
 <metadata><category>Section</category></metadata>
-<resourceid id="2.16.840.1.113883.17.3.10.1.21"/>
+<resourceid id="2.16.840.1.1133883.17.3.10.1.21"/>
 </prolog>
 <body>
 <section id="knownSubclasses">
@@ -14,7 +14,7 @@
 <p>Information regarding procedures performed by the EMS personnel or by others prior to EMS unit arrival</p>
 </section>
 <ol id="conformance">
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>templateId</b></tt> ( CONF:11404 ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>@root</b>="2.16.840.1.113883.17.3.10.1.21"</tt></li> <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@extension</b>="2022-01-01"</tt></li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>templateId</b></tt> ( CONF:11404 ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>@root</b>="2.16.840.1.1133883.17.3.10.1.21"</tt></li> <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@extension</b>="2022-01-01"</tt></li></ol></li>
 <li>
 <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10490)<tt><b>/@code</b>="29554-3" </tt><i>Procedure Narrative</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10489)
 </li>
@@ -26,7 +26,7 @@
 </li>
 <li>
 If section/@nullFlavor is not present, <b>MAY</b> contain  [0..*] <tt><b>entry</b></tt> such that it  (CONF:6277)<ol>
-<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/Procedure.html">Procedure</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.181:2022-01-01</tt>)</li></ol>
+<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/Procedure.html">Procedure</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.181:2022-01-01</tt>)</li></ol>
 </li>
 </ol>
 <ol id="aggregate">
@@ -38,11 +38,11 @@ If section/@nullFlavor is not present, <b>MAY</b> contain  [0..*] <tt><b>entry</
 </li>
 <li>If section/@nullFlavor is not present, <b>MAY</b> contain  [0..*] <tt><b>entry</b></tt> such that it  (CONF:6277)
 <ol>
-<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/Procedure.html">Procedure</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.181:2022-01-01</tt>)</li></ol></li>
+<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/Procedure.html">Procedure</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.181:2022-01-01</tt>)</li></ol></li>
 </ol>
 <section id="contextTable"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="2" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><thead><row><entry namest="col0" nameend="col0" >Contained By</entry><entry namest="col1" nameend="col1" >Contains</entry></row></thead><tbody><row><entry><xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/PatientCareReport.html">Patient Care Report</xref></entry><entry><xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/Procedure.html">Procedure</xref></entry></row></tbody></tgroup></table></p></section>
 <codeblock id="example" outputclass="language-xml"><![CDATA[<section>
-  <templateId root="2.16.840.1.113883.17.3.10.1.21" extension="2022-01-01"/>
+  <templateId root="2.16.840.1.1133883.17.3.10.1.21" extension="2022-01-01"/>
   <code code="29554-3" codeSystem="2.16.840.1.113883.6.1" displayName="Procedure Narrative"/>
   <title/>
   <text/>
@@ -52,6 +52,6 @@ If section/@nullFlavor is not present, <b>MAY</b> contain  [0..*] <tt><b>entry</
 <section id="changes">
 </section>
 <p><ph id="classformalname">EMS Procedures Performed Section</ph></p>
-<p id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.17.3.10.1.21</tt>]</p>
+<p id="shortdesc">[Section: templateId <tt>2.16.840.1.1133883.17.3.10.1.21</tt>]</p>
 </body>
 </topic>

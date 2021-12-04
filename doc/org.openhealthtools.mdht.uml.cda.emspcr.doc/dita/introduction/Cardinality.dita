@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN"
+ "topic.dtd">
+<topic id="topicId" xml:lang="en-us">
+	<title>Cardinality</title>
+	<body>
+		<p>CDA provides several patterns for supporting cardinality. If a report is allowed to have
+			many values for an element, that can be represented in CDA by the cardinality of the
+			Observation.value, the Component.Observation, the Organizer.Component, the
+			Section.Organizer, or the StructuredBody.section. We have chosen to support cardinality
+			at the lowest level appropriate. I.e., unconstrained multiplicity will be supported at
+			the Observation.value level. If the value is specific, e.g., to a body site, then we
+			also support multiple Observations in the component. In this case the Component may have
+			multiple Observations for different sites, each Observation having potentially multiple
+			values. If there are groups of different Observations taken at different times, this
+			would be supported with multiple Components.</p>
+		<p>Components and Observations should not be instantiated without content. I.e., a Component
+			will always contain at least one Observation or other clinical statement, and an
+			Observation will always contain a value (unless there is a reason for an explanatory
+			null flavor value).</p>
+		<p><b>Examples</b></p>
+		<p>A simple multiple valued element in an organizer or section (e.g., Skin Assessment)</p>
+		<ul id="ul_zn3_xmq_5rb">
+			<li>[Organizer] MAY contain zero or one [0..1] component such that it</li>
+			<li>SHALL contain exactly one [1..1] observation such that it</li>
+			<li>SHALL contain at least one [1..*] value</li>
+		</ul>
+		<p>A site-specific multiple Observation (e.g., Chest Assessment)</p>
+		<ul id="ul_hmq_xmq_5rb">
+			<li>[Organizer] MAY contain zero or one [0..1] component such that it</li>
+			<li>SHALL contain at least one [1..*] observation such that it</li>
+			<li>SHALL contain at least one [1..*] value</li>
+		</ul>
+		<p>A time-specific group (e.g., Vitals)</p>
+		<ul id="ul_z5w_xmq_5rb">
+			<li>[Organizer] MAY contain one or more [0..*] component such that it</li>
+			<li>SHALL contain (1..1 or 1..*, as appopriate) observation such that it</li>
+			<li>SHALL contain at least one [1..*] value</li>
+		</ul>
+	</body>
+</topic>
+	
+		

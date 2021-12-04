@@ -3,29 +3,27 @@
  "topic.dtd">
 
 			<topic id="nullandnegativevalues" xml:lang="en-us" >
-		<title>Null and Negative Values</title>
+		<title>Pertinent Negatives</title>
 		<body>
-			<p>We use RIM attributes for observations that may require explicit negation or null values. A
-			provider who has checked for signs of drug use can assert that a particular sign was
-			found (with a proper value), that whether there were signs is unknown (with a null) or
-			that there were no signs (with negation).</p>
-
-			<p>However, in collections of acts other than observations, epistemological attributes may have
-			uncertain semantics. If a procedure is negated, it may not be clear whether the provider
-			is asserting that the procedure has never been performed on the patient or was not performed 
-			in a particular context. Similarly, one may document a history of specific
-			disorders, but including a single, general but negated disorder implies assumptions
-			about the scope of the negated disorder that are not explicitly modeled.</p>
-
-			<p>As a result, we manage negation and uncertainty for procedures with explicit Boolean observations. Using an
-			observation allows the clinician to assert a history of zero disorders, or a lack of knowledge about
-			disorders, without tying that assertion to a notional disorder that may imply unanticipated facts or
-			questions. </p>
+		<p>For some items in this guide, negated entries have clear boundaries. A negated procedure
+			in the Procedures Performed section clearly refers to the scope of the encounter,
+			whereas a similar negation in the History section implies it's never been done. In other
+			cases it can be difficult to distinguish a record that suggests absence by not recording
+			presence from a null value.</p>
+			<p>We follow CDA guidance in using RIM attributes for observations of absence, but we also record
+			explicit observations of presence or absence in four cases where this confusion seems
+			likely: </p>
+		<ul id="ul_qlw_5lq_5rb">
+			<li>Existence Of Drug Use Indication</li>
+			<li>Existence Of History Of Condition Or Surgery</li>
+			<li>Existence Of Known Drug Allergy </li>
+			<li>Existence Of Known Non Drug Allergy</li>
+			<li>Currently On Medication</li>
+		</ul>
+		<p>Several items also include reason observations for negatives, especially for interventions. A
+			map of NEMSIS pertinent negatives to CDA designs can be found in the appendix <i>Nulls
+				and Negative Action Values</i>.</p>
 			
-			<p>In the interest of conformance with other guides, we also represent these null and negative
-			acts with null and negated acts, in line with Consolidation Project recommendations.
-			These notional classes should be annotated to ensure that it is clear that they restate the
-			explicit observations, and are not distinct facts.</p>
 		</body>
 	
 	

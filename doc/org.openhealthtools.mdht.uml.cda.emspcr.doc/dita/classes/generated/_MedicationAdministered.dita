@@ -2,10 +2,10 @@
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <topic id="classId" xml:lang="en-us">
 <title>Medication Administered - conformance rules</title>
-<shortdesc id="shortdesc">[SubstanceAdministration: templateId <tt>2.16.840.1.113883.17.3.10.1.72</tt>]</shortdesc>
+<shortdesc id="shortdesc">[SubstanceAdministration: templateId <tt>2.16.840.1.1133883.17.3.10.1.72</tt>]</shortdesc>
 <prolog id="prolog">
 <metadata><category>SubstanceAdministration</category></metadata>
-<resourceid id="2.16.840.1.113883.17.3.10.1.72"/>
+<resourceid id="2.16.840.1.1133883.17.3.10.1.72"/>
 </prolog>
 <body>
 <section id="knownSubclasses">
@@ -14,12 +14,12 @@
 <p>Medications administered in response to the emergency--usually by the EMS crew.</p>
 </section>
 <ol id="conformance">
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>templateId</b></tt> ( CONF:11465 ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>@root</b>="2.16.840.1.113883.17.3.10.1.72"</tt></li> <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@extension</b>="2022-01-01"</tt></li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>templateId</b></tt> ( CONF:11465 ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>@root</b>="2.16.840.1.1133883.17.3.10.1.72"</tt></li> <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@extension</b>="2022-01-01"</tt></li></ol></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="SBADM" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:10445)
 </li>
 <li><b>MAY</b> contain zero or one [0..1] <tt><b>@negationInd</b></tt> (CONF:10448)
 <p>NEMSIS Trace: EMedications.03 negative action values
-If a substance is recorded as not given, it shall be recorded with a negationInd =True, and with a MedicationNotAdministeredReasonObservation (2.16.840.1.113883.17.3.10.1.105)</p></li>
+If a substance is recorded as not given, it shall be recorded with a negationInd =True, and with a MedicationNotAdministeredReasonObservation (2.16.840.1.1133883.17.3.10.1.105)</p></li>
 <li>
 <b>SHALL</b> contain zero or one [0..1] <tt><b>effectiveTime</b></tt> (CONF:10447)<p>NEMSIS Trace: EMedications.01
 Null Flavor for pertinent negative cases = NA</p>
@@ -82,7 +82,7 @@ For blood products, the following SNOMED CT codes may be used:
 </li>
 <li><b>MAY</b> contain zero or one [0..1] <tt><b>@negationInd</b></tt> (CONF:10448)
 <p>NEMSIS Trace: EMedications.03 negative action values
-If a substance is recorded as not given, it shall be recorded with a negationInd =True, and with a MedicationNotAdministeredReasonObservation (2.16.840.1.113883.17.3.10.1.105)</p></li>
+If a substance is recorded as not given, it shall be recorded with a negationInd =True, and with a MedicationNotAdministeredReasonObservation (2.16.840.1.1133883.17.3.10.1.105)</p></li>
 <li><b>SHALL</b> contain zero or one [0..1] <tt><b>effectiveTime</b></tt> (CONF:10447)
 <p>NEMSIS Trace: EMedications.01
 Null Flavor for pertinent negative cases = NA</p></li>
@@ -127,20 +127,20 @@ For blood products, the following SNOMED CT codes may be used:
 </ol>
 <section id="contextTable"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="2" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><thead><row><entry namest="col0" nameend="col0" >Contained By</entry><entry namest="col1" nameend="col1" >Contains</entry></row></thead><tbody><row><entry><xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/EMSMedicationsAdministeredSection.html">EMS Medications Administered Section</xref></entry><entry></entry></row></tbody></tgroup></table></p></section>
 <codeblock id="example" outputclass="language-xml"><![CDATA[<substanceAdministration classCode="SBADM" moodCode="RQO">
-  <templateId root="2.16.840.1.113883.17.3.10.1.72" extension="2022-01-01"/>
+  <templateId root="2.16.840.1.1133883.17.3.10.1.72" extension="2022-01-01"/>
   <consumable>
     <manufacturedProduct/>
   </consumable>
   <entryRelationship typeCode="XCRPT">
     <observation classCode="SPCOBS" moodCode="EVN">
-      <templateId root="2.16.840.1.113883.17.3.10.1.106" extension="2022-01-01"/>
+      <templateId root="2.16.840.1.1133883.17.3.10.1.106" extension="2022-01-01"/>
       <code code="67540-5" codeSystem="2.16.840.1.113883.6.1" displayName="Response to medication NEMSIS"/>
       <value xsi:type="CD"/>
     </observation>
   </entryRelationship>
   <entryRelationship typeCode="XCRPT">
     <observation classCode="SPCOBS" moodCode="EVN">
-      <templateId root="2.16.840.1.113883.17.3.10.1.108" extension="2022-01-01"/>
+      <templateId root="2.16.840.1.1133883.17.3.10.1.108" extension="2022-01-01"/>
       <code code="67539-7" codeSystem="2.16.840.1.113883.6.1" displayName="Medication administered prior to this unit's EMS care NEMSIS"/>
       <value xsi:type="BL"/>
     </observation>
@@ -151,6 +151,6 @@ For blood products, the following SNOMED CT codes may be used:
 <section id="changes">
 </section>
 <p><ph id="classformalname">Medication Administered</ph></p>
-<p id="shortdesc">[SubstanceAdministration: templateId <tt>2.16.840.1.113883.17.3.10.1.72</tt>]</p>
+<p id="shortdesc">[SubstanceAdministration: templateId <tt>2.16.840.1.1133883.17.3.10.1.72</tt>]</p>
 </body>
 </topic>

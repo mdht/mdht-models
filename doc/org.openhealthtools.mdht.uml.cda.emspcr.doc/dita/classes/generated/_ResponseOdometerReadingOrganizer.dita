@@ -2,10 +2,10 @@
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <topic id="classId" xml:lang="en-us">
 <title>Response Odometer Reading Organizer - conformance rules</title>
-<shortdesc id="shortdesc">[Organizer: templateId <tt>2.16.840.1.113883.17.3.10.1.97</tt>]</shortdesc>
+<shortdesc id="shortdesc">[Organizer: templateId <tt>2.16.840.1.1133883.17.3.10.1.97</tt>]</shortdesc>
 <prolog id="prolog">
 <metadata><category>Organizer</category></metadata>
-<resourceid id="2.16.840.1.113883.17.3.10.1.97"/>
+<resourceid id="2.16.840.1.1133883.17.3.10.1.97"/>
 </prolog>
 <body>
 <section id="knownSubclasses">
@@ -14,7 +14,7 @@
 <p>Collection of odometer readings at various points in an EMS crew's trip</p>
 </section>
 <ol id="conformance">
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>templateId</b></tt> ( CONF:11494 ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>@root</b>="2.16.840.1.113883.17.3.10.1.97"</tt></li> <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@extension</b>="2022-01-01"</tt></li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>templateId</b></tt> ( CONF:11494 ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>@root</b>="2.16.840.1.1133883.17.3.10.1.97"</tt></li> <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@extension</b>="2022-01-01"</tt></li></ol></li>
 <li>
 <b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> such that it  (CONF:10626) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ResponseBeginningOdometerReading.html">Response Beginning Odometer Reading</xref> (CONF:10630)</li></ol> 
 </li>
@@ -46,7 +46,7 @@
 </ol>
 <section id="contextTable"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="2" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><thead><row><entry namest="col0" nameend="col0" >Contained By</entry><entry namest="col1" nameend="col1" >Contains</entry></row></thead><tbody><row><entry><xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/EMSResponseSection.html">EMS Response Section</xref></entry><entry></entry></row></tbody></tgroup></table></p></section>
 <codeblock id="example" outputclass="language-xml"><![CDATA[<organizer classCode="CLUSTER" moodCode="SLOT">
-  <templateId root="2.16.840.1.113883.17.3.10.1.97" extension="2022-01-01"/>
+  <templateId root="2.16.840.1.1133883.17.3.10.1.97" extension="2022-01-01"/>
   <statusCode/>
 </organizer>
 ]]></codeblock>
@@ -54,6 +54,6 @@
 <section id="changes">
 </section>
 <p><ph id="classformalname">Response Odometer Reading Organizer</ph></p>
-<p id="shortdesc">[Organizer: templateId <tt>2.16.840.1.113883.17.3.10.1.97</tt>]</p>
+<p id="shortdesc">[Organizer: templateId <tt>2.16.840.1.1133883.17.3.10.1.97</tt>]</p>
 </body>
 </topic>

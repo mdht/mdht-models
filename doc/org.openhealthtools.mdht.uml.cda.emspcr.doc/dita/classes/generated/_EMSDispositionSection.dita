@@ -2,10 +2,10 @@
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <topic id="classId" xml:lang="en-us">
 <title>EMS Disposition Section - conformance rules</title>
-<shortdesc id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.17.3.10.1.4</tt>]</shortdesc>
+<shortdesc id="shortdesc">[Section: templateId <tt>2.16.840.1.1133883.17.3.10.1.4</tt>]</shortdesc>
 <prolog id="prolog">
 <metadata><category>Section</category></metadata>
-<resourceid id="2.16.840.1.113883.17.3.10.1.4"/>
+<resourceid id="2.16.840.1.1133883.17.3.10.1.4"/>
 </prolog>
 <body>
 <section id="knownSubclasses">
@@ -14,7 +14,7 @@
 <p>Information regarding the disposition of the patient</p>
 </section>
 <ol id="conformance">
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>templateId</b></tt> ( CONF:11408 ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>@root</b>="2.16.840.1.113883.17.3.10.1.4"</tt></li> <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@extension</b>="2022-01-01"</tt></li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>templateId</b></tt> ( CONF:11408 ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>@root</b>="2.16.840.1.1133883.17.3.10.1.4"</tt></li> <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@extension</b>="2022-01-01"</tt></li></ol></li>
 <li>
 <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10652)<tt><b>/@code</b>="67661-9" </tt><i>EMS Disposition Narrative NEMSIS</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10651)
 </li>
@@ -26,51 +26,51 @@
 </li>
 <li>
 If section/@nullFlavor is not present, <b>MAY</b> contain  [0..1] <tt><b>entry</b></tt> such that it  (CONF:11003)<ol>
-<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/NumberOfPatientsTransportedObservation.html">Number Of Patients Transported Observation</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.31:2022-01-01</tt>)</li></ol>
+<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/NumberOfPatientsTransportedObservation.html">Number Of Patients Transported Observation</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.31:2022-01-01</tt>)</li></ol>
 </li>
 <li>
 If section/@nullFlavor is not present, <b>SHALL</b> contain  [1..1] <tt><b>entry</b></tt> such that it  (CONF:11007)<ol>
-<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/TransportModeObservation.html">Transport Mode Observation</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.33:2022-01-01</tt>)</li></ol>
+<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/TransportModeObservation.html">Transport Mode Observation</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.33:2022-01-01</tt>)</li></ol>
 </li>
 <li>
 If section/@nullFlavor is not present, <b>SHALL</b> contain  [1..1] <tt><b>entry</b></tt> such that it  (CONF:11009)<ol>
-<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/TransportMethodObservation.html">Transport Method Observation</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.34:2022-01-01</tt>)</li></ol>
+<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/TransportMethodObservation.html">Transport Method Observation</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.34:2022-01-01</tt>)</li></ol>
 </li>
 <li>
 If section/@nullFlavor is not present, <b>SHALL</b> contain  [1..1] <tt><b>entry</b></tt> such that it  (CONF:11011)<ol>
-<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ReasonForChoosingDestinationObservation.html">Reason For Choosing Destination Observation</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.35:2022-01-01</tt>)</li></ol>
+<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ReasonForChoosingDestinationObservation.html">Reason For Choosing Destination Observation</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.35:2022-01-01</tt>)</li></ol>
 </li>
 <li>
 If section/@nullFlavor is not present, <b>SHALL</b> contain  [1..*] <tt><b>entry</b></tt> such that it  (CONF:11013)<ol>
-<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/PrearrivalActivationObservation.html">Prearrival Activation Observation</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.36:2022-01-01</tt>)</li></ol>
+<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/PrearrivalActivationObservation.html">Prearrival Activation Observation</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.36:2022-01-01</tt>)</li></ol>
 </li>
 <li>
 If section/@nullFlavor is not present, <b>SHALL</b> contain  [1..1] <tt><b>entry</b></tt> such that it  (CONF:11015)<ol>
-<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/PatientConditionAtDestinationObservation.html">Patient Condition At Destination Observation</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.37:2022-01-01</tt>)</li></ol>
+<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/PatientConditionAtDestinationObservation.html">Patient Condition At Destination Observation</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.37:2022-01-01</tt>)</li></ol>
 </li>
 <li>
 If section/@nullFlavor is not present, <b>SHALL</b> contain  [1..1] <tt><b>entry</b></tt> such that it  (CONF:11330)<ol>
-<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/DestinationHospitalCapability.html">Destination Hospital Capability</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.104:2022-01-01</tt>)</li></ol>
+<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/DestinationHospitalCapability.html">Destination Hospital Capability</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.104:2022-01-01</tt>)</li></ol>
 </li>
 <li>
 If section/@nullFlavor is not present, <b>SHALL</b> contain  [1..1] <tt><b>entry</b></tt> such that it  (CONF:11331)<ol>
-<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/DestinationWard.html">Destination Ward</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.186:2022-01-01</tt>)</li></ol>
+<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/DestinationWard.html">Destination Ward</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.186:2022-01-01</tt>)</li></ol>
 </li>
 <li>
 If section/@nullFlavor is not present, <b>SHALL</b> contain  [1..1] <tt><b>entry</b></tt> such that it  (CONF:11409)<ol>
-<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/UnitDisposition.html">Unit Disposition</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.196:2022-01-01</tt>)</li></ol>
+<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/UnitDisposition.html">Unit Disposition</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.196:2022-01-01</tt>)</li></ol>
 </li>
 <li>
 If section/@nullFlavor is not present, <b>SHALL</b> contain  [1..1] <tt><b>entry</b></tt> such that it  (CONF:11410)<ol>
-<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/PatientEngagement.html">Patient Engagement</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.197:2022-01-01</tt>)</li></ol>
+<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/PatientEngagement.html">Patient Engagement</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.197:2022-01-01</tt>)</li></ol>
 </li>
 <li>
 If section/@nullFlavor is not present, <b>SHALL</b> contain  [1..1] <tt><b>entry</b></tt> such that it  (CONF:11411)<ol>
-<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/CrewDisposition.html">Crew Disposition</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.198:2022-01-01</tt>)</li></ol>
+<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/CrewDisposition.html">Crew Disposition</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.198:2022-01-01</tt>)</li></ol>
 </li>
 <li>
 If section/@nullFlavor is not present, <b>SHALL</b> contain  [1..1] <tt><b>entry</b></tt> such that it  (CONF:11412)<ol>
-<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/TransportDisposition.html">Transport Disposition</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.199:2022-01-01</tt>)</li></ol>
+<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/TransportDisposition.html">Transport Disposition</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.199:2022-01-01</tt>)</li></ol>
 </li>
 </ol>
 <ol id="aggregate">
@@ -82,44 +82,44 @@ If section/@nullFlavor is not present, <b>SHALL</b> contain  [1..1] <tt><b>entry
 </li>
 <li>If section/@nullFlavor is not present, <b>MAY</b> contain  [0..1] <tt><b>entry</b></tt> such that it  (CONF:11003)
 <ol>
-<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/NumberOfPatientsTransportedObservation.html">Number Of Patients Transported Observation</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.31:2022-01-01</tt>)</li></ol></li>
+<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/NumberOfPatientsTransportedObservation.html">Number Of Patients Transported Observation</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.31:2022-01-01</tt>)</li></ol></li>
 <li>If section/@nullFlavor is not present, <b>SHALL</b> contain  [1..1] <tt><b>entry</b></tt> such that it  (CONF:11007)
 <ol>
-<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/TransportModeObservation.html">Transport Mode Observation</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.33:2022-01-01</tt>)</li></ol></li>
+<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/TransportModeObservation.html">Transport Mode Observation</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.33:2022-01-01</tt>)</li></ol></li>
 <li>If section/@nullFlavor is not present, <b>SHALL</b> contain  [1..1] <tt><b>entry</b></tt> such that it  (CONF:11009)
 <ol>
-<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/TransportMethodObservation.html">Transport Method Observation</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.34:2022-01-01</tt>)</li></ol></li>
+<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/TransportMethodObservation.html">Transport Method Observation</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.34:2022-01-01</tt>)</li></ol></li>
 <li>If section/@nullFlavor is not present, <b>SHALL</b> contain  [1..1] <tt><b>entry</b></tt> such that it  (CONF:11011)
 <ol>
-<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ReasonForChoosingDestinationObservation.html">Reason For Choosing Destination Observation</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.35:2022-01-01</tt>)</li></ol></li>
+<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ReasonForChoosingDestinationObservation.html">Reason For Choosing Destination Observation</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.35:2022-01-01</tt>)</li></ol></li>
 <li>If section/@nullFlavor is not present, <b>SHALL</b> contain  [1..*] <tt><b>entry</b></tt> such that it  (CONF:11013)
 <ol>
-<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/PrearrivalActivationObservation.html">Prearrival Activation Observation</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.36:2022-01-01</tt>)</li></ol></li>
+<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/PrearrivalActivationObservation.html">Prearrival Activation Observation</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.36:2022-01-01</tt>)</li></ol></li>
 <li>If section/@nullFlavor is not present, <b>SHALL</b> contain  [1..1] <tt><b>entry</b></tt> such that it  (CONF:11015)
 <ol>
-<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/PatientConditionAtDestinationObservation.html">Patient Condition At Destination Observation</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.37:2022-01-01</tt>)</li></ol></li>
+<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/PatientConditionAtDestinationObservation.html">Patient Condition At Destination Observation</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.37:2022-01-01</tt>)</li></ol></li>
 <li>If section/@nullFlavor is not present, <b>SHALL</b> contain  [1..1] <tt><b>entry</b></tt> such that it  (CONF:11330)
 <ol>
-<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/DestinationHospitalCapability.html">Destination Hospital Capability</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.104:2022-01-01</tt>)</li></ol></li>
+<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/DestinationHospitalCapability.html">Destination Hospital Capability</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.104:2022-01-01</tt>)</li></ol></li>
 <li>If section/@nullFlavor is not present, <b>SHALL</b> contain  [1..1] <tt><b>entry</b></tt> such that it  (CONF:11331)
 <ol>
-<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/DestinationWard.html">Destination Ward</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.186:2022-01-01</tt>)</li></ol></li>
+<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/DestinationWard.html">Destination Ward</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.186:2022-01-01</tt>)</li></ol></li>
 <li>If section/@nullFlavor is not present, <b>SHALL</b> contain  [1..1] <tt><b>entry</b></tt> such that it  (CONF:11409)
 <ol>
-<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/UnitDisposition.html">Unit Disposition</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.196:2022-01-01</tt>)</li></ol></li>
+<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/UnitDisposition.html">Unit Disposition</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.196:2022-01-01</tt>)</li></ol></li>
 <li>If section/@nullFlavor is not present, <b>SHALL</b> contain  [1..1] <tt><b>entry</b></tt> such that it  (CONF:11410)
 <ol>
-<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/PatientEngagement.html">Patient Engagement</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.197:2022-01-01</tt>)</li></ol></li>
+<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/PatientEngagement.html">Patient Engagement</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.197:2022-01-01</tt>)</li></ol></li>
 <li>If section/@nullFlavor is not present, <b>SHALL</b> contain  [1..1] <tt><b>entry</b></tt> such that it  (CONF:11411)
 <ol>
-<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/CrewDisposition.html">Crew Disposition</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.198:2022-01-01</tt>)</li></ol></li>
+<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/CrewDisposition.html">Crew Disposition</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.198:2022-01-01</tt>)</li></ol></li>
 <li>If section/@nullFlavor is not present, <b>SHALL</b> contain  [1..1] <tt><b>entry</b></tt> such that it  (CONF:11412)
 <ol>
-<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/TransportDisposition.html">Transport Disposition</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.199:2022-01-01</tt>)</li></ol></li>
+<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/TransportDisposition.html">Transport Disposition</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.199:2022-01-01</tt>)</li></ol></li>
 </ol>
 <section id="contextTable"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="2" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><thead><row><entry namest="col0" nameend="col0" >Contained By</entry><entry namest="col1" nameend="col1" >Contains</entry></row></thead><tbody><row><entry><xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/PatientCareReport.html">Patient Care Report</xref></entry><entry><xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/CrewDisposition.html">Crew Disposition</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/DestinationHospitalCapability.html">Destination Hospital Capability</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/DestinationWard.html">Destination Ward</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/NumberOfPatientsTransportedObservation.html">Number Of Patients Transported Observation</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/PatientConditionAtDestinationObservation.html">Patient Condition At Destination Observation</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/PatientEngagement.html">Patient Engagement</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/PrearrivalActivationObservation.html">Prearrival Activation Observation</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ReasonForChoosingDestinationObservation.html">Reason For Choosing Destination Observation</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/TransportDisposition.html">Transport Disposition</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/TransportMethodObservation.html">Transport Method Observation</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/TransportModeObservation.html">Transport Mode Observation</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/UnitDisposition.html">Unit Disposition</xref></entry></row></tbody></tgroup></table></p></section>
 <codeblock id="example" outputclass="language-xml"><![CDATA[<section>
-  <templateId root="2.16.840.1.113883.17.3.10.1.4" extension="2022-01-01"/>
+  <templateId root="2.16.840.1.1133883.17.3.10.1.4" extension="2022-01-01"/>
   <code code="67661-9" codeSystem="2.16.840.1.113883.6.1" displayName="EMS Disposition Narrative NEMSIS"/>
   <title>EMS Disposition</title>
   <text/>
@@ -129,6 +129,6 @@ If section/@nullFlavor is not present, <b>SHALL</b> contain  [1..1] <tt><b>entry
 <section id="changes">
 </section>
 <p><ph id="classformalname">EMS Disposition Section</ph></p>
-<p id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.17.3.10.1.4</tt>]</p>
+<p id="shortdesc">[Section: templateId <tt>2.16.840.1.1133883.17.3.10.1.4</tt>]</p>
 </body>
 </topic>

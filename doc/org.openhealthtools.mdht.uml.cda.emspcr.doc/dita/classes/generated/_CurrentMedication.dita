@@ -2,10 +2,10 @@
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <topic id="classId" xml:lang="en-us">
 <title>Current Medication - conformance rules</title>
-<shortdesc id="shortdesc">[SubstanceAdministration: templateId <tt>2.16.840.1.113883.17.3.10.1.77</tt>]</shortdesc>
+<shortdesc id="shortdesc">[SubstanceAdministration: templateId <tt>2.16.840.1.1133883.17.3.10.1.77</tt>]</shortdesc>
 <prolog id="prolog">
 <metadata><category>SubstanceAdministration</category></metadata>
-<resourceid id="2.16.840.1.113883.17.3.10.1.77"/>
+<resourceid id="2.16.840.1.1133883.17.3.10.1.77"/>
 </prolog>
 <body>
 <section id="knownSubclasses">
@@ -14,7 +14,7 @@
 <p>A medication a patient is currently taking</p>
 </section>
 <ol id="conformance">
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>templateId</b></tt> ( CONF:11469 ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>@root</b>="2.16.840.1.113883.17.3.10.1.77"</tt></li> <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@extension</b>="2022-01-01"</tt></li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>templateId</b></tt> ( CONF:11469 ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>@root</b>="2.16.840.1.1133883.17.3.10.1.77"</tt></li> <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@extension</b>="2022-01-01"</tt></li></ol></li>
 <li><b>MAY</b> contain zero or one [0..1] <tt><b>@negationInd</b></tt> (CONF:10233)
 <p>If EHistory.12 has the value "None Reported," the value is "True"
 This negation of a notional class is parallel to the explicit question "patient on medication"</p></li>
@@ -53,7 +53,7 @@ This nulled notional class is parallel to the explicit question "patient on medi
 </ol>
 <section id="contextTable"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="2" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><thead><row><entry namest="col0" nameend="col0" >Contained By</entry><entry namest="col1" nameend="col1" >Contains</entry></row></thead><tbody><row><entry><xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/EMSCurrentMedicationSection.html">EMS Current Medication Section</xref></entry><entry></entry></row></tbody></tgroup></table></p></section>
 <codeblock id="example" outputclass="language-xml"><![CDATA[<substanceAdministration classCode="SBADM" moodCode="RQO">
-  <templateId root="2.16.840.1.113883.17.3.10.1.77" extension="2022-01-01"/>
+  <templateId root="2.16.840.1.1133883.17.3.10.1.77" extension="2022-01-01"/>
   <consumable>
     <manufacturedProduct/>
   </consumable>
@@ -63,6 +63,6 @@ This nulled notional class is parallel to the explicit question "patient on medi
 <section id="changes">
 </section>
 <p><ph id="classformalname">Current Medication</ph></p>
-<p id="shortdesc">[SubstanceAdministration: templateId <tt>2.16.840.1.113883.17.3.10.1.77</tt>]</p>
+<p id="shortdesc">[SubstanceAdministration: templateId <tt>2.16.840.1.1133883.17.3.10.1.77</tt>]</p>
 </body>
 </topic>

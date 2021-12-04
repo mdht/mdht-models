@@ -2,10 +2,10 @@
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <topic id="classId" xml:lang="en-us">
 <title>EMS Protocol Section - conformance rules</title>
-<shortdesc id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.17.3.10.1.7</tt>]</shortdesc>
+<shortdesc id="shortdesc">[Section: templateId <tt>2.16.840.1.1133883.17.3.10.1.7</tt>]</shortdesc>
 <prolog id="prolog">
 <metadata><category>Section</category></metadata>
-<resourceid id="2.16.840.1.113883.17.3.10.1.7"/>
+<resourceid id="2.16.840.1.1133883.17.3.10.1.7"/>
 </prolog>
 <body>
 <section id="knownSubclasses">
@@ -14,7 +14,7 @@
 <p>Information about the protocol used by EMS personnel to direct the clinical care of the patient</p>
 </section>
 <ol id="conformance">
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>templateId</b></tt> ( CONF:11414 ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>@root</b>="2.16.840.1.113883.17.3.10.1.7"</tt></li> <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@extension</b>="2022-01-01"</tt></li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>templateId</b></tt> ( CONF:11414 ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>@root</b>="2.16.840.1.1133883.17.3.10.1.7"</tt></li> <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@extension</b>="2022-01-01"</tt></li></ol></li>
 <li>
 <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:11639)<tt><b>/@code</b>="67663-5" </tt><i>EMS Protocol Narrative NEMSIS</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10713)
 </li>
@@ -26,11 +26,11 @@
 </li>
 <li>
 If section/@nullFlavor is not present, <b>SHALL</b> contain  [1..*] <tt><b>entry</b></tt> such that it  (CONF:11024)<ol>
-<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ProtocolObservation.html">Protocol Observation</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.93:2022-01-01</tt>)</li></ol>
+<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ProtocolObservation.html">Protocol Observation</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.93:2022-01-01</tt>)</li></ol>
 </li>
 <li>
 If section/@nullFlavor is not present, <b>MAY</b> contain  [0..1] <tt><b>entry</b></tt> such that it  (CONF:11026)<ol>
-<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/CandidatePatientRegistryType.html">Candidate Patient Registry Type</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.94:2022-01-01</tt>)</li></ol>
+<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/CandidatePatientRegistryType.html">Candidate Patient Registry Type</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.94:2022-01-01</tt>)</li></ol>
 </li>
 </ol>
 <ol id="aggregate">
@@ -42,14 +42,14 @@ If section/@nullFlavor is not present, <b>MAY</b> contain  [0..1] <tt><b>entry</
 </li>
 <li>If section/@nullFlavor is not present, <b>SHALL</b> contain  [1..*] <tt><b>entry</b></tt> such that it  (CONF:11024)
 <ol>
-<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ProtocolObservation.html">Protocol Observation</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.93:2022-01-01</tt>)</li></ol></li>
+<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ProtocolObservation.html">Protocol Observation</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.93:2022-01-01</tt>)</li></ol></li>
 <li>If section/@nullFlavor is not present, <b>MAY</b> contain  [0..1] <tt><b>entry</b></tt> such that it  (CONF:11026)
 <ol>
-<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/CandidatePatientRegistryType.html">Candidate Patient Registry Type</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.94:2022-01-01</tt>)</li></ol></li>
+<li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/CandidatePatientRegistryType.html">Candidate Patient Registry Type</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.94:2022-01-01</tt>)</li></ol></li>
 </ol>
 <section id="contextTable"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="2" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><thead><row><entry namest="col0" nameend="col0" >Contained By</entry><entry namest="col1" nameend="col1" >Contains</entry></row></thead><tbody><row><entry><xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/PatientCareReport.html">Patient Care Report</xref></entry><entry><xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/CandidatePatientRegistryType.html">Candidate Patient Registry Type</xref></entry></row><row><entry></entry><entry><xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ProtocolObservation.html">Protocol Observation</xref></entry></row></tbody></tgroup></table></p></section>
 <codeblock id="example" outputclass="language-xml"><![CDATA[<section>
-  <templateId root="2.16.840.1.113883.17.3.10.1.7" extension="2022-01-01"/>
+  <templateId root="2.16.840.1.1133883.17.3.10.1.7" extension="2022-01-01"/>
   <code code="67663-5" codeSystem="2.16.840.1.113883.6.1" displayName="EMS Protocol Narrative NEMSIS"/>
   <title/>
   <text/>
@@ -59,6 +59,6 @@ If section/@nullFlavor is not present, <b>MAY</b> contain  [0..1] <tt><b>entry</
 <section id="changes">
 </section>
 <p><ph id="classformalname">EMS Protocol Section</ph></p>
-<p id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.17.3.10.1.7</tt>]</p>
+<p id="shortdesc">[Section: templateId <tt>2.16.840.1.1133883.17.3.10.1.7</tt>]</p>
 </body>
 </topic>

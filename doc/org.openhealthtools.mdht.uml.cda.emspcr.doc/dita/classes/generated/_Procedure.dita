@@ -2,10 +2,10 @@
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <topic id="classId" xml:lang="en-us">
 <title>Procedure - conformance rules</title>
-<shortdesc id="shortdesc">[Procedure: templateId <tt>2.16.840.1.113883.17.3.10.1.181</tt>]</shortdesc>
+<shortdesc id="shortdesc">[Procedure: templateId <tt>2.16.840.1.1133883.17.3.10.1.181</tt>]</shortdesc>
 <prolog id="prolog">
 <metadata><category>Procedure</category></metadata>
-<resourceid id="2.16.840.1.113883.17.3.10.1.181"/>
+<resourceid id="2.16.840.1.1133883.17.3.10.1.181"/>
 </prolog>
 <body>
 <section id="knownSubclasses">
@@ -14,7 +14,7 @@
 <p>Procedure performed by EMS unit</p>
 </section>
 <ol id="conformance">
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>templateId</b></tt> ( CONF:11496 ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>@root</b>="2.16.840.1.113883.17.3.10.1.181"</tt></li> <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@extension</b>="2022-01-01"</tt></li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>templateId</b></tt> ( CONF:11496 ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>@root</b>="2.16.840.1.1133883.17.3.10.1.181"</tt></li> <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@extension</b>="2022-01-01"</tt></li></ol></li>
 <li><b>MAY</b> contain zero or one [0..1] <tt><b>@negationInd</b></tt> (CONF:11212)
 <p>Required to document a procedure not performed, with required "reason not performed" observation</p></li>
 <li>
@@ -22,12 +22,12 @@
 
 See the NEMSIS Suggested Lists at https://nemsis.org/.
 
-NEMSIS Trace:  eArrest.09, for which use 439569004 |Resuscitation (procedure)|, with a translation of Cardiopulmonary Resuscitation type (VS 2.16.840.1.113883.17.3.11.57).
+NEMSIS Trace:  eArrest.09, for which use 439569004 |Resuscitation (procedure)|, with a translation of Cardiopulmonary Resuscitation type (VS 2.16.840.1.1133883.17.3.11.57).
 NEMSIS Trace:  eArrest.10 (therapeutic hypothermia); include here as 308693008 |Induction of hypothermia (procedure)|, using negation indicator if not done
 NEMSIS Trace:  eArrest.03
 3003001	Attempted Defibrillation = ICD10-PCS Defibrillation 5A2204Z
-3003005	Initiated Chest Compressions: use more detailed Cardiopulmonary Resuscitation Type (2.16.840.1.113883.17.3.11.57); reader may infer from this value if necessary
-3003003	Attempted Ventilation: use more detailed Cardiopulmonary Resuscitation Type (2.16.840.1.113883.17.3.11.57); reader may infer from this value if necessary
+3003005	Initiated Chest Compressions: use more detailed Cardiopulmonary Resuscitation Type (2.16.840.1.1133883.17.3.11.57); reader may infer from this value if necessary
+3003003	Attempted Ventilation: use more detailed Cardiopulmonary Resuscitation Type (2.16.840.1.1133883.17.3.11.57); reader may infer from this value if necessary
 3003007	Not Attempted-Considered Futile = Assistance 5A0; procedure negation = True; ReasonNotAttempted required
 3003009	Not Attempted-DNR Orders = Assistance 5A0; procedure negation = True; ReasonNotAttempted required
 3003011	Not Attempted-Signs of Circulation = Assistance 5A0; procedure negation = True; ReasonNotAttempted required</p>
@@ -89,12 +89,12 @@ For procedures documented in eArrest section (eArrest.20 Who first initiated CPR
 
 See the NEMSIS Suggested Lists at https://nemsis.org/.
 
-NEMSIS Trace:  eArrest.09, for which use 439569004 |Resuscitation (procedure)|, with a translation of Cardiopulmonary Resuscitation type (VS 2.16.840.1.113883.17.3.11.57).
+NEMSIS Trace:  eArrest.09, for which use 439569004 |Resuscitation (procedure)|, with a translation of Cardiopulmonary Resuscitation type (VS 2.16.840.1.1133883.17.3.11.57).
 NEMSIS Trace:  eArrest.10 (therapeutic hypothermia); include here as 308693008 |Induction of hypothermia (procedure)|, using negation indicator if not done
 NEMSIS Trace:  eArrest.03
 3003001	Attempted Defibrillation = ICD10-PCS Defibrillation 5A2204Z
-3003005	Initiated Chest Compressions: use more detailed Cardiopulmonary Resuscitation Type (2.16.840.1.113883.17.3.11.57); reader may infer from this value if necessary
-3003003	Attempted Ventilation: use more detailed Cardiopulmonary Resuscitation Type (2.16.840.1.113883.17.3.11.57); reader may infer from this value if necessary
+3003005	Initiated Chest Compressions: use more detailed Cardiopulmonary Resuscitation Type (2.16.840.1.1133883.17.3.11.57); reader may infer from this value if necessary
+3003003	Attempted Ventilation: use more detailed Cardiopulmonary Resuscitation Type (2.16.840.1.1133883.17.3.11.57); reader may infer from this value if necessary
 3003007	Not Attempted-Considered Futile = Assistance 5A0; procedure negation = True; ReasonNotAttempted required
 3003009	Not Attempted-DNR Orders = Assistance 5A0; procedure negation = True; ReasonNotAttempted required
 3003011	Not Attempted-Signs of Circulation = Assistance 5A0; procedure negation = True; ReasonNotAttempted required</p></li>
@@ -132,7 +132,7 @@ For procedures documented in eArrest section (eArrest.20 Who first initiated CPR
 </ol>
 <section id="contextTable"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="2" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><thead><row><entry namest="col0" nameend="col0" >Contained By</entry><entry namest="col1" nameend="col1" >Contains</entry></row></thead><tbody><row><entry><xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/EMSProceduresPerformedSection.html">EMS Procedures Performed Section</xref></entry><entry></entry></row></tbody></tgroup></table></p></section>
 <codeblock id="example" outputclass="language-xml"><![CDATA[<procedure classCode="XACT" moodCode="RQO">
-  <templateId root="2.16.840.1.113883.17.3.10.1.181" extension="2022-01-01"/>
+  <templateId root="2.16.840.1.1133883.17.3.10.1.181" extension="2022-01-01"/>
   <code codeSystem="2.16.840.1.113883.6.96"/>
 </procedure>
 ]]></codeblock>
@@ -140,6 +140,6 @@ For procedures documented in eArrest section (eArrest.20 Who first initiated CPR
 <section id="changes">
 </section>
 <p><ph id="classformalname">Procedure</ph></p>
-<p id="shortdesc">[Procedure: templateId <tt>2.16.840.1.113883.17.3.10.1.181</tt>]</p>
+<p id="shortdesc">[Procedure: templateId <tt>2.16.840.1.1133883.17.3.10.1.181</tt>]</p>
 </body>
 </topic>

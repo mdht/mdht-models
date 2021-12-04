@@ -10,9 +10,10 @@
 			"Not recorded" and "Not reporting" must be represented as the general concept "No information".
 			These NEMSIS values may also be copied into Observation.text.</p>
 			
-			<p>NEMSIS also contains "pertinent negatives", most of which are addressed with negation and special
-			cases in this document. Some of the negative action values, however, are actually null values, and are
-			recorded as "NI", no information. A mapping of negative action values is provided in the appendix.</p>
+			<p>NEMSIS also contains "pertinent negatives", most of which are addressed with negation and
+			special cases in this document. Some of the negative action values, however, are
+			actually null values, and are recorded as "NI", no information. A mapping of negative
+			action values is provided in the appendix <i>Nulls and Negative Action Values</i>.</p>
 
 
 		</body>
