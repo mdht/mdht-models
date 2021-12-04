@@ -23,7 +23,7 @@
 <!-- TODO: insert custom instance example here -->
 <!-- generated instance example follows -->
 <codeblock id="example" outputclass="language-xml"><![CDATA[<observation classCode="OBS" moodCode="EVN">
-  <templateId root="2.16.840.1.1133883.17.3.10.1.130"/>
+  <templateId root="2.16.840.1.1133883.17.3.10.1.130" extension="2022-01-01"/>
   <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4"/>
   <value xsi:type="CD" code="LA18204-0" displayName="Physically unable to perform" 
     codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC">

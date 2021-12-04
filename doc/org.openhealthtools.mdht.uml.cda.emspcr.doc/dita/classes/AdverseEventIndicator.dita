@@ -24,7 +24,7 @@
 <!-- generated instance example follows -->
     <codeblock id="example" outputclass="language-xml"><![CDATA[
             <observation classCode="OBS" moodCode="EVN">            
-              <templateId root="2.16.840.1.1133883.17.3.10.1.89"/>
+              <templateId root="2.16.840.1.1133883.17.3.10.1.89" extension="2022-01-01"/>
               <id root="2.16.840.1.113883.19.4" extension="1500491815"/>
               <code code="67554-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="EMS personnel exposed or injured"/>
               <value xsi:type="BL" value="false"/>

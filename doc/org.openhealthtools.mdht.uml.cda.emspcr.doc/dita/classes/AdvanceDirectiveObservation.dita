@@ -24,7 +24,7 @@
 <!-- generated instance example follows -->
     <codeblock id="example" outputclass="language-xml"><![CDATA[
             <observation classCode="OBS" moodCode="EVN">
-              <templateId root="2.16.840.1.1133883.17.3.10.1.98"/>
+              <templateId root="2.16.840.1.1133883.17.3.10.1.98" extension="2022-01-01"/>
               <id root="2.16.840.1.113883.19.4" extension="477988662"/>
               <code code="67516-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Advance directive NEMSIS"/>
               <value xsi:type="CD" code="LA137-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="None"/>

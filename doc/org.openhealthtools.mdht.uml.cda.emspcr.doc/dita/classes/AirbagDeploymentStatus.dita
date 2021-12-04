@@ -22,7 +22,14 @@
 <p audience="examples"><b>Airbag Deployment Status example</b></p>
 <!-- TODO: insert custom instance example here -->
 <!-- generated instance example follows -->
-<codeblock audience="examples" conref="generated/_AirbagDeploymentStatus.dita#classId/example">
-</codeblock>
+<codeblock id="example" outputclass="language-xml"><![CDATA[
+<observation classCode="OBS" moodCode="EVN">            
+	<templateId root="2.16.840.1.1133883.17.3.10.1.57" extension="2022-01-01"/>
+	<id root="2.16.840.1.113883.19.4" extension="236102004"/>
+	<code code="67500-9" codeSystem="2.16.840.1.113883.6.1" displayName="Airbag deployment NEMSIS"/>
+	<value xsi:type="CD" code="LA17387-4" displayName="No airbag deployed" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+</observation>
+]]></codeblock>
+
 </body>
 </topic>

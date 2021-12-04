@@ -7,8 +7,8 @@
 			<p>Physical quantities use the HL7 PQ data type, in which units are expressed in the Unified Code
 			for Units of Measure (UCUM; 2.16.840.1.113883.6.8), available at <xref
 				href="http://ucum.org" format="html" scope="external">ucum.org</xref>. Interface
-			values that are not actual physical units are handled differently: see appendices for
-			mappings.</p>
+			values that are not actual physical units are handled differently: see appendix <i>UCUM
+				Unit Mapping</i>.</p>
 		</body>
 	</topic>
 	

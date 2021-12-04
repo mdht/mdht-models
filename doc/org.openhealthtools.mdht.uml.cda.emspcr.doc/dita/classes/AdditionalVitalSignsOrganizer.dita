@@ -22,8 +22,9 @@
 <p audience="examples"><b>Additional Vital Signs Organizer example</b></p>
 <!-- TODO: insert custom instance example here -->
 <!-- generated instance example follows -->
-    <codeblock id="example" outputclass="language-xml"><![CDATA[        <organizer classCode="CLUSTER" moodCode="EVN">            
-            <templateId root="2.16.840.1.113883.17.3.10.1.30"/>
+    <codeblock id="example" outputclass="language-xml"><![CDATA[        
+        <organizer classCode="CLUSTER" moodCode="EVN">            
+            <templateId root="2.16.840.1.113883.17.3.10.1.30"  extension="2022-01-01"/>
             <id root="2.16.840.1.113883.19.4" extension="243346586"/>
             <statusCode code="completed"/>
             <effectiveTime value="201201011602+0600"/>
