@@ -19,7 +19,7 @@
 <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:11662)<tt><b>/@code</b>="74496-1" </tt><i>Injury location ICD code</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:11202)
 </li>
 <li>
-<b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with <tt><b>@xsi:type</b>="CD"</tt> (CONF:11387), which <b>SHALL</b> be selected from (CodeSystem:<tt> 2.16.840.1.113883.6.90 ICD-10 CM</tt>) (CONF:11203)<p>NEMSIS trace: eScene.09 (Incident location type)
+<b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with <tt><b>@xsi:type</b>="CD"</tt> (CONF:11717), which <b>SHALL</b> be selected from (CodeSystem:<tt> 2.16.840.1.113883.6.90 ICD-10 CM</tt>) (CONF:11203)<p>NEMSIS trace: eScene.09 (Incident location type)
 See NEMSIS recommended subset at https://nemsis.org/technical-resources/version-3/version-3-resources/. ICD-10 CM contains "place of occurrence of external cause" under code Y92.</p>
 </li>
 </ol>
@@ -30,7 +30,7 @@ See NEMSIS recommended subset at https://nemsis.org/technical-resources/version-
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:11662)<tt><b>/@code</b>="74496-1" </tt><i>Injury location ICD code</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:11202)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with <tt><b>@xsi:type</b>="CD"</tt> (CONF:11387), which <b>SHALL</b> be selected from (CodeSystem:<tt> 2.16.840.1.113883.6.90 ICD-10 CM</tt>) (CONF:11203)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with <tt><b>@xsi:type</b>="CD"</tt> (CONF:11717), which <b>SHALL</b> be selected from (CodeSystem:<tt> 2.16.840.1.113883.6.90 ICD-10 CM</tt>) (CONF:11203)
 <p>NEMSIS trace: eScene.09 (Incident location type)
 See NEMSIS recommended subset at https://nemsis.org/technical-resources/version-3/version-3-resources/. ICD-10 CM contains "place of occurrence of external cause" under code Y92.</p></li>
 </ol>

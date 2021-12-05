@@ -25,7 +25,7 @@
 <b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:10945)
 </li>
 <li>
-If section/@nullFlavor is not present, <b>SHALL</b> contain  [1..*] <tt><b>entry</b></tt> such that it  (CONF:10946)<ol>
+If section/@nullFlavor is not present, <b>SHALL</b> contain  [1..1] <tt><b>entry</b></tt> such that it  (CONF:10946)<ol>
 <li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/AdvanceDirectiveObservation.html">Advance Directive Observation</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.98:2022-01-01</tt>)</li></ol>
 </li>
 </ol>
@@ -36,7 +36,7 @@ If section/@nullFlavor is not present, <b>SHALL</b> contain  [1..*] <tt><b>entry
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:10945)
 </li>
-<li>If section/@nullFlavor is not present, <b>SHALL</b> contain  [1..*] <tt><b>entry</b></tt> such that it  (CONF:10946)
+<li>If section/@nullFlavor is not present, <b>SHALL</b> contain  [1..1] <tt><b>entry</b></tt> such that it  (CONF:10946)
 <ol>
 <li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/AdvanceDirectiveObservation.html">Advance Directive Observation</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.98:2022-01-01</tt>)</li></ol></li>
 </ol>

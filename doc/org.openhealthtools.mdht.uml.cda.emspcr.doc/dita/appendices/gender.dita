@@ -11,8 +11,8 @@
 					<colspec colnum="2" colname="c2" colwidth="3*"/>
 					<colspec colnum="3" colname="c3" colwidth="1*"/>
 					<colspec colnum="4" colname="c4" colwidth="2*"/>
-					<colspec colnum="5" colname="c5" colwidth="4*"/>
-					<colspec colnum="6" colname="c6" colwidth="10*"/>
+					<colspec colnum="5" colname="c5" colwidth="5*"/>
+					<colspec colnum="6" colname="c6" colwidth="9*"/>
 					<thead>
 						<row>
 							<entry>NEMSIS code</entry>

@@ -19,7 +19,7 @@
 <b>SHALL</b> contain zero or more [0..*] <tt><b>component</b></tt> such that it  (CONF:11687) <ol><li>contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/DrugAllergy.html">Drug Allergy</xref></li></ol> 
 </li>
 <li>
-<b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt> such that it  (CONF:11688) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ExistenceOfKnownDrugAllergyObservation.html">Existence Of Known Drug Allergy Observation</xref></li></ol> 
+<b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt> such that it  (CONF:11688) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ExistenceOfKnownDrugAllergyObservation.html">Existence Of Known Drug Allergy Observation</xref> (CONF:11713)</li></ol> 
 </li>
 </ol>
 <ol id="aggregate">
@@ -31,7 +31,7 @@
 </li>
 <li><b>SHALL</b> contain zero or more [0..*] <tt><b>component</b></tt> such that it  (CONF:11687) <ol><li>contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/DrugAllergy.html">Drug Allergy</xref></li></ol> 
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt> such that it  (CONF:11688) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ExistenceOfKnownDrugAllergyObservation.html">Existence Of Known Drug Allergy Observation</xref></li></ol> 
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt> such that it  (CONF:11688) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/ExistenceOfKnownDrugAllergyObservation.html">Existence Of Known Drug Allergy Observation</xref> (CONF:11713)</li></ol> 
 </li>
 </ol>
 <section id="contextTable"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="2" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><thead><row><entry namest="col0" nameend="col0" >Contained By</entry><entry namest="col1" nameend="col1" >Contains</entry></row></thead><tbody><row><entry><xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/EMSAllergiesAndAdverseReactionsSection.html">EMS Allergies And Adverse Reactions Section</xref></entry><entry></entry></row></tbody></tgroup></table></p></section>

@@ -39,7 +39,7 @@
 <b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt> such that it  (CONF:11693) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/CarbonDioxide.html">Carbon Dioxide</xref> (CONF:11700)</li></ol> 
 </li>
 <li>
-<b>SHOULD</b> contain zero or one [0..1] <tt><b>component</b></tt> such that it  (CONF:11694) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/CardiacRhythm.html">Cardiac Rhythm</xref></li></ol> 
+<b>SHOULD</b> contain zero or one [0..1] <tt><b>component</b></tt> such that it  (CONF:11694) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/CardiacRhythm.html">Cardiac Rhythm</xref> (CONF:11714)</li></ol> 
 </li>
 <li>
 <b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt> such that it  (CONF:11708) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>organizer</b></tt>, where its type is <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/GlasgowComaScoreOrganizer.html">Glasgow Coma Score Organizer</xref> (CONF:11709)</li></ol> 
@@ -66,7 +66,7 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt> such that it  (CONF:11693) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/CarbonDioxide.html">Carbon Dioxide</xref> (CONF:11700)</li></ol> 
 </li>
-<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>component</b></tt> such that it  (CONF:11694) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/CardiacRhythm.html">Cardiac Rhythm</xref></li></ol> 
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>component</b></tt> such that it  (CONF:11694) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/CardiacRhythm.html">Cardiac Rhythm</xref> (CONF:11714)</li></ol> 
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt> such that it  (CONF:11708) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>organizer</b></tt>, where its type is <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/GlasgowComaScoreOrganizer.html">Glasgow Coma Score Organizer</xref> (CONF:11709)</li></ol> 
 </li>
@@ -79,7 +79,13 @@
     <organizer classCode="CLUSTER" moodCode="SLOT">
       <templateId root="2.16.840.1.1133883.17.3.10.1.170" extension="2022-01-01"/>
       <statusCode/>
-      <component/>
+      <component>
+        <observation classCode="SPCOBS" moodCode="EVN">
+          <templateId root="2.16.840.1.1133883.17.3.10.1.160" extension="2022-01-01"/>
+          <code code="9267-6" codeSystem="2.16.840.1.113883.6.1" displayName="Glasgow coma score.eye opening"/>
+          <value xsi:type="INT"/>
+        </observation>
+      </component>
     </organizer>
   </component>
 </organizer>

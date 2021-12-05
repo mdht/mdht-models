@@ -29,7 +29,7 @@ If section/@nullFlavor is not present, <b>SHALL</b> contain  [1..1] <tt><b>entry
 <li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/AdverseEventIndicator.html">Adverse Event Indicator</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.89:2022-01-01</tt>)</li></ol>
 </li>
 <li>
-If section/@nullFlavor is not present, <b>MAY</b> contain  [0..*] <tt><b>entry</b></tt> such that it  (CONF:11019)<ol>
+If section/@nullFlavor is not present, <b>MAY</b> contain  [0..1] <tt><b>entry</b></tt> such that it  (CONF:11019)<ol>
 <li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/AdverseEventTypeObservation.html">Adverse Event Type Observation</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.90:2022-01-01</tt>)</li></ol>
 </li>
 </ol>
@@ -43,7 +43,7 @@ If section/@nullFlavor is not present, <b>MAY</b> contain  [0..*] <tt><b>entry</
 <li>If section/@nullFlavor is not present, <b>SHALL</b> contain  [1..1] <tt><b>entry</b></tt> such that it  (CONF:11017)
 <ol>
 <li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/AdverseEventIndicator.html">Adverse Event Indicator</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.89:2022-01-01</tt>)</li></ol></li>
-<li>If section/@nullFlavor is not present, <b>MAY</b> contain  [0..*] <tt><b>entry</b></tt> such that it  (CONF:11019)
+<li>If section/@nullFlavor is not present, <b>MAY</b> contain  [0..1] <tt><b>entry</b></tt> such that it  (CONF:11019)
 <ol>
 <li>Conforms to <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/AdverseEventTypeObservation.html">Adverse Event Type Observation</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.90:2022-01-01</tt>)</li></ol></li>
 </ol>

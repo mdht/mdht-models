@@ -18,7 +18,7 @@
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:11271)
 </li>
 <li>
-<b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:11630)<tt><b>/@code</b>="8480-6" </tt><i>Systolic blood pressure</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10280)
+<b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:11724)<tt><b>/@code</b>="8480-6" </tt><i>Systolic blood pressure</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10280)
 </li>
 <li>
 <b>MAY</b> contain zero or one [0..1] <tt><b>effectiveTime</b></tt> (CONF:7304)<p>NEMSIS Trace: EVitals.01</p>
@@ -36,7 +36,7 @@ UCUM units SHOULD be "mm[Hg]".</p>
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:11271)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:11630)<tt><b>/@code</b>="8480-6" </tt><i>Systolic blood pressure</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10280)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:11724)<tt><b>/@code</b>="8480-6" </tt><i>Systolic blood pressure</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10280)
 </li>
 <li><b>MAY</b> contain zero or one [0..1] <tt><b>effectiveTime</b></tt> (CONF:7304)
 <p>NEMSIS Trace: EVitals.01</p></li>

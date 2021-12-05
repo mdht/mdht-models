@@ -19,7 +19,7 @@
 <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:11597)<tt><b>/@code</b>="NeweExam.25" </tt> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:11596)
 </li>
 <li>
-<b>SHALL</b> contain at least one [1..*] <tt><b>value</b></tt> with <tt><b>@xsi:type</b>="CD"</tt> (CONF:11599), which <b>SHALL</b> be selected from ValueSet<tt> ChestFinding 2.16.840.1.113883.17.3.11.118</tt><b> DYNAMIC</b> (CONF:11598)<p>NEMSIS Trace: eExam.25</p>
+<b>SHALL</b> contain at least one [1..*] <tt><b>value</b></tt> with <tt><b>@xsi:type</b>="CD"</tt> (CONF:11718), which <b>SHALL</b> be selected from ValueSet<tt> ChestFinding 2.16.840.1.113883.17.3.11.118</tt><b> DYNAMIC</b> (CONF:11598)<p>NEMSIS Trace: eExam.25</p>
 </li>
 <li>
 <b>SHOULD</b> contain zero or one [0..1] <tt><b>targetSiteCode</b></tt> (CONF:11610), which <b>SHALL</b> be selected from ValueSet<tt> ChestFindingLocation 2.16.840.1.113883.17.3.11.119</tt><b> DYNAMIC</b> (CONF:11611)<p>NEMSIS Trace: eExam.24</p>
@@ -32,7 +32,7 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:11597)<tt><b>/@code</b>="NeweExam.25" </tt> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:11596)
 </li>
-<li><b>SHALL</b> contain at least one [1..*] <tt><b>value</b></tt> with <tt><b>@xsi:type</b>="CD"</tt> (CONF:11599), which <b>SHALL</b> be selected from ValueSet<tt> ChestFinding 2.16.840.1.113883.17.3.11.118</tt><b> DYNAMIC</b> (CONF:11598)
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>value</b></tt> with <tt><b>@xsi:type</b>="CD"</tt> (CONF:11718), which <b>SHALL</b> be selected from ValueSet<tt> ChestFinding 2.16.840.1.113883.17.3.11.118</tt><b> DYNAMIC</b> (CONF:11598)
 <p>NEMSIS Trace: eExam.25</p></li>
 <li><b>SHOULD</b> contain zero or one [0..1] <tt><b>targetSiteCode</b></tt> (CONF:11610), which <b>SHALL</b> be selected from ValueSet<tt> ChestFindingLocation 2.16.840.1.113883.17.3.11.119</tt><b> DYNAMIC</b> (CONF:11611)
 <p>NEMSIS Trace: eExam.24</p></li>

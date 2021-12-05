@@ -36,13 +36,13 @@ Note that NEMSIS collects times at the vitals cluster level, whereas systems may
 <b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt> such that it  (CONF:11090) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/OxygenSaturation.html">Oxygen Saturation</xref> (CONF:11087)</li></ol> 
 </li>
 <li>
-<b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> such that it  (CONF:11704) <ol><li><b>SHALL</b> contain zero or one [0..1] <tt><b>observation</b></tt>, where its type is <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/DiastolicBloodPressure.html">Diastolic Blood Pressure</xref> (CONF:11642)</li></ol> 
+<b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> such that it  (CONF:11704) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/DiastolicBloodPressure.html">Diastolic Blood Pressure</xref> (CONF:11642)</li></ol> 
 </li>
 <li>
-<b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt> such that it  (CONF:11705) <ol><li><b>SHALL</b> contain zero or one [0..1] <tt><b>observation</b></tt>, where its type is <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/PriorAidVitals.html">Prior Aid Vitals</xref> (CONF:11643)</li></ol> 
+<b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt> such that it  (CONF:11705) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/PriorAidVitals.html">Prior Aid Vitals</xref> (CONF:11643)</li></ol> 
 </li>
 <li>
-<b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> such that it  (CONF:11706) <ol><li><b>SHALL</b> contain zero or one [0..1] <tt><b>organizer</b></tt>, where its type is <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/AdditionalVitalSignsOrganizer.html">Additional Vital Signs Organizer</xref> (CONF:11707)</li></ol> 
+<b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> such that it  (CONF:11706) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>organizer</b></tt>, where its type is <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/AdditionalVitalSignsOrganizer.html">Additional Vital Signs Organizer</xref> (CONF:11707)</li></ol> 
 </li>
 </ol>
 <ol id="aggregate">
@@ -64,11 +64,11 @@ Note that NEMSIS collects times at the vitals cluster level, whereas systems may
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt> such that it  (CONF:11090) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/OxygenSaturation.html">Oxygen Saturation</xref> (CONF:11087)</li></ol> 
 </li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> such that it  (CONF:11704) <ol><li><b>SHALL</b> contain zero or one [0..1] <tt><b>observation</b></tt>, where its type is <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/DiastolicBloodPressure.html">Diastolic Blood Pressure</xref> (CONF:11642)</li></ol> 
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> such that it  (CONF:11704) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/DiastolicBloodPressure.html">Diastolic Blood Pressure</xref> (CONF:11642)</li></ol> 
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt> such that it  (CONF:11705) <ol><li><b>SHALL</b> contain zero or one [0..1] <tt><b>observation</b></tt>, where its type is <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/PriorAidVitals.html">Prior Aid Vitals</xref> (CONF:11643)</li></ol> 
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt> such that it  (CONF:11705) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/PriorAidVitals.html">Prior Aid Vitals</xref> (CONF:11643)</li></ol> 
 </li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> such that it  (CONF:11706) <ol><li><b>SHALL</b> contain zero or one [0..1] <tt><b>organizer</b></tt>, where its type is <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/AdditionalVitalSignsOrganizer.html">Additional Vital Signs Organizer</xref> (CONF:11707)</li></ol> 
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> such that it  (CONF:11706) <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>organizer</b></tt>, where its type is <xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/AdditionalVitalSignsOrganizer.html">Additional Vital Signs Organizer</xref> (CONF:11707)</li></ol> 
 </li>
 </ol>
 <section id="contextTable"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="2" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><thead><row><entry namest="col0" nameend="col0" >Contained By</entry><entry namest="col1" nameend="col1" >Contains</entry></row></thead><tbody><row><entry><xref format="html" href="http://www.hl7.org/ccdasearch/templates/topic/org.openhealthtools.mdht.uml.cda.emspcr.doc/classes/EMSVitalSignsSection.html">EMS Vital Signs Section</xref></entry><entry></entry></row></tbody></tgroup></table></p></section>
@@ -98,7 +98,13 @@ Note that NEMSIS collects times at the vitals cluster level, whereas systems may
       <value xsi:type="PQ"/>
     </observation>
   </component>
-  <component/>
+  <component>
+    <observation classCode="SPCOBS" moodCode="EVN">
+      <templateId root="2.16.840.1.1133883.17.3.10.1.29" extension="2022-01-01"/>
+      <code code="67518-1" codeSystem="2.16.840.1.113883.6.1" displayName="Obtained prior to units EMS care NEMSIS"/>
+      <value xsi:type="BL"/>
+    </observation>
+  </component>
 </organizer>
 ]]></codeblock>
 <!--Error code 1: Pathmap to CDA .ecore files not resolved: pathmap://CDA_MODEL/../../org.eclipse.mdht.uml.hl7.rim/model/rim.ecore#//Act. Will not use any CDA extension!-->

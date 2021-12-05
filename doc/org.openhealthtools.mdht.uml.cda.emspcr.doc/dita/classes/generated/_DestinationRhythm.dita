@@ -21,7 +21,7 @@
 <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="67519-9" </tt><i>Cardiac rhythm NEMSIS</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10189)
 </li>
 <li>
-<b>SHALL</b> contain at least one [1..*] <tt><b>value</b></tt> with <tt><b>@xsi:type</b>="CD"</tt> (CONF:11599), which <b>SHALL</b> be selected from ValueSet<tt> CardiacRhythmReading 2.16.840.1.113883.17.3.11.16</tt><b> DYNAMIC</b> (CONF:10190)<p>NEMSIS Trace: EArrest.17 Cardiac Rhythm on Arrival at Destination</p>
+<b>SHALL</b> contain at least one [1..*] <tt><b>value</b></tt> with <tt><b>@xsi:type</b>="CD"</tt> (CONF:11719), which <b>SHALL</b> be selected from ValueSet<tt> CardiacRhythmReading 2.16.840.1.113883.17.3.11.16</tt><b> DYNAMIC</b> (CONF:10190)<p>NEMSIS Trace: EArrest.17 Cardiac Rhythm on Arrival at Destination</p>
 </li>
 </ol>
 <ol id="aggregate">
@@ -31,7 +31,7 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="67519-9" </tt><i>Cardiac rhythm NEMSIS</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10189)
 </li>
-<li><b>SHALL</b> contain at least one [1..*] <tt><b>value</b></tt> with <tt><b>@xsi:type</b>="CD"</tt> (CONF:11599), which <b>SHALL</b> be selected from ValueSet<tt> CardiacRhythmReading 2.16.840.1.113883.17.3.11.16</tt><b> DYNAMIC</b> (CONF:10190)
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>value</b></tt> with <tt><b>@xsi:type</b>="CD"</tt> (CONF:11719), which <b>SHALL</b> be selected from ValueSet<tt> CardiacRhythmReading 2.16.840.1.113883.17.3.11.16</tt><b> DYNAMIC</b> (CONF:10190)
 <p>NEMSIS Trace: EArrest.17 Cardiac Rhythm on Arrival at Destination</p></li>
 </ol>
 <section id="contextTable"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="2" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><thead><row><entry namest="col0" nameend="col0" >Contained By</entry><entry namest="col1" nameend="col1" >Contains</entry></row></thead><tbody><row><entry> </entry><entry> </entry></row></tbody></tgroup></table></p></section>
