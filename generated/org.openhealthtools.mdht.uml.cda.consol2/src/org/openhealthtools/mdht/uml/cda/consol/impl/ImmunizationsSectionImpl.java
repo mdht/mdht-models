@@ -55,24 +55,6 @@ public class ImmunizationsSectionImpl extends ImmunizationsSectionEntriesOptiona
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateImmunizationsSectionCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ImmunizationsSectionOperations.validateImmunizationsSectionCodeP(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateImmunizationsSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ImmunizationsSectionOperations.validateImmunizationsSectionCode(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public boolean validateImmunizationsSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ImmunizationsSectionOperations.validateImmunizationsSectionTitle(this, diagnostics, context);
 	}
@@ -113,6 +95,30 @@ public class ImmunizationsSectionImpl extends ImmunizationsSectionEntriesOptiona
 	public boolean validateImmunizationsSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ImmunizationsSectionOperations.validateImmunizationsSectionEntriesOptionalTemplateId(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateImmunizationsSectionEntriesOptionalCodeP(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ImmunizationsSectionOperations.validateImmunizationsSectionEntriesOptionalCodeP(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateImmunizationsSectionEntriesOptionalCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ImmunizationsSectionOperations.validateImmunizationsSectionEntriesOptionalCode(
 			this, diagnostics, context);
 	}
 

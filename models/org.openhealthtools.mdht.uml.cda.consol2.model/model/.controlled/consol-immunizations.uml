@@ -432,7 +432,7 @@
         <body>couple</body>
       </ownedComment>
     </generalization>
-    <ownedAttribute xmi:id="_2L9k0BSVEeGGzu7fmW9pXw" name="code" visibility="private">
+    <ownedAttribute xmi:id="_2L9k0BSVEeGGzu7fmW9pXw" name="code" visibility="private" redefinedProperty="_EuPlsRVeEeGQCvUGzi1kDQ">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2L-y8BSVEeGGzu7fmW9pXw" name="title" visibility="private">
@@ -483,6 +483,7 @@
     </generalization>
     <ownedAttribute xmi:id="_EuPlsRVeEeGQCvUGzi1kDQ" name="code" visibility="private">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_9lgCcErmEd6FXKclYGEDCw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_EuPlshVeEeGQCvUGzi1kDQ" name="title" visibility="private">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
