@@ -9,7 +9,7 @@
         <body>couple</body>
       </ownedComment>
     </generalization>
-    <ownedAttribute xmi:id="_2LN98BSVEeGGzu7fmW9pXw" name="code" visibility="private">
+    <ownedAttribute xmi:id="_2LN98BSVEeGGzu7fmW9pXw" name="code" visibility="private" redefinedProperty="_bGzYihVdEeGQCvUGzi1kDQ">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2LPMEBSVEeGGzu7fmW9pXw" name="title" visibility="private">

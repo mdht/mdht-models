@@ -55,24 +55,6 @@ public class AllergiesSectionImpl extends AllergiesSectionEntriesOptionalImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAllergiesSectionCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AllergiesSectionOperations.validateAllergiesSectionCodeP(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateAllergiesSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AllergiesSectionOperations.validateAllergiesSectionCode(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public boolean validateAllergiesSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AllergiesSectionOperations.validateAllergiesSectionTitle(this, diagnostics, context);
 	}
@@ -113,6 +95,28 @@ public class AllergiesSectionImpl extends AllergiesSectionEntriesOptionalImpl im
 	public boolean validateAllergiesSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return AllergiesSectionOperations.validateAllergiesSectionEntriesOptionalTemplateId(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateAllergiesSectionEntriesOptionalCodeP(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return AllergiesSectionOperations.validateAllergiesSectionEntriesOptionalCodeP(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateAllergiesSectionEntriesOptionalCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return AllergiesSectionOperations.validateAllergiesSectionEntriesOptionalCode(this, diagnostics, context);
 	}
 
 	/**
