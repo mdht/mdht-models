@@ -95,7 +95,7 @@ public class PlannedCoverageOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_PLANNED_COVERAGE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_PLANNED_COVERAGE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -160,7 +160,7 @@ public class PlannedCoverageOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_PLANNED_COVERAGE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_PLANNED_COVERAGE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -225,7 +225,7 @@ public class PlannedCoverageOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_PLANNED_COVERAGE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_PLANNED_COVERAGE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -290,7 +290,7 @@ public class PlannedCoverageOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_PLANNED_COVERAGE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_PLANNED_COVERAGE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -355,7 +355,7 @@ public class PlannedCoverageOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_PLANNED_COVERAGE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_PLANNED_COVERAGE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -403,7 +403,7 @@ public class PlannedCoverageOperations extends ClinicalStatementOperations {
 					"org.openhealthtools.mdht.uml.cda.consol.PlannedCoverageCodeP");
 				if (passToken == null) {
 					// anticipate a reasonably healthy model
-					passToken = new java.util.ArrayList<>(3);
+					passToken = new java.util.ArrayList<Object>(3);
 					context.put("org.openhealthtools.mdht.uml.cda.consol.PlannedCoverageCodeP", passToken);
 				}
 				passToken.add(plannedCoverage);
@@ -435,7 +435,7 @@ public class PlannedCoverageOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_PLANNED_COVERAGE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_PLANNED_COVERAGE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -509,7 +509,7 @@ public class PlannedCoverageOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_PLANNED_COVERAGE_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_PLANNED_COVERAGE_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -574,7 +574,7 @@ public class PlannedCoverageOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_PLANNED_COVERAGE_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_PLANNED_COVERAGE_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -639,7 +639,7 @@ public class PlannedCoverageOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_PLANNED_COVERAGE_ENTRY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_PLANNED_COVERAGE_ENTRY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -706,7 +706,7 @@ public class PlannedCoverageOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_PLANNED_COVERAGE_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_PLANNED_COVERAGE_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -773,7 +773,7 @@ public class PlannedCoverageOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_PLANNED_COVERAGE_ENTRY_RELATIONSHIP_ACT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<>();
+	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_PLANNED_COVERAGE_ENTRY_RELATIONSHIP_ACT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<Query<?, ?, ?>>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -846,7 +846,7 @@ public class PlannedCoverageOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_PLANNED_COVERAGE_ENTRY_RELATIONSHIP_ACT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<>();
+	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_PLANNED_COVERAGE_ENTRY_RELATIONSHIP_ACT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<Query<?, ?, ?>>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -919,7 +919,7 @@ public class PlannedCoverageOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_PLANNED_COVERAGE_ENTRY_RELATIONSHIP_ACT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<>();
+	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_PLANNED_COVERAGE_ENTRY_RELATIONSHIP_ACT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<Query<?, ?, ?>>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -991,7 +991,7 @@ public class PlannedCoverageOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_PLANNED_COVERAGE_ENTRY_RELATIONSHIP_ACT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<>();
+	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_PLANNED_COVERAGE_ENTRY_RELATIONSHIP_ACT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<Query<?, ?, ?>>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1044,7 +1044,7 @@ public class PlannedCoverageOperations extends ClinicalStatementOperations {
 						"org.openhealthtools.mdht.uml.cda.consol.PlannedCoverageEntryRelationshipActCodeP");
 					if (passToken == null) {
 						// anticipate a reasonably healthy model
-						passToken = new java.util.ArrayList<>(3);
+						passToken = new java.util.ArrayList<Object>(3);
 						context.put(
 							"org.openhealthtools.mdht.uml.cda.consol.PlannedCoverageEntryRelationshipActCodeP",
 							passToken);
@@ -1079,7 +1079,7 @@ public class PlannedCoverageOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_PLANNED_COVERAGE_ENTRY_RELATIONSHIP_ACT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<>();
+	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_PLANNED_COVERAGE_ENTRY_RELATIONSHIP_ACT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<Query<?, ?, ?>>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1161,7 +1161,7 @@ public class PlannedCoverageOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_PLANNED_COVERAGE_ENTRY_RELATIONSHIP_ACT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<>();
+	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_PLANNED_COVERAGE_ENTRY_RELATIONSHIP_ACT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<Query<?, ?, ?>>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1234,7 +1234,7 @@ public class PlannedCoverageOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_PLANNED_COVERAGE_ENTRY_RELATIONSHIP_ACT_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<>();
+	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_PLANNED_COVERAGE_ENTRY_RELATIONSHIP_ACT_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<Query<?, ?, ?>>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1307,7 +1307,7 @@ public class PlannedCoverageOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_PLANNED_COVERAGE_ENTRY_RELATIONSHIP_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<>();
+	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_PLANNED_COVERAGE_ENTRY_RELATIONSHIP_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<Query<?, ?, ?>>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1379,7 +1379,7 @@ public class PlannedCoverageOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_PLANNED_COVERAGE_ENTRY_RELATIONSHIP_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<>();
+	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_PLANNED_COVERAGE_ENTRY_RELATIONSHIP_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<Query<?, ?, ?>>();
 
 	/**
 	 * <!-- begin-user-doc -->

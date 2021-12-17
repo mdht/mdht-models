@@ -78,7 +78,7 @@ public class DischargeDiagnosisSection2Operations extends HospitalDischargeDiagn
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_DISCHARGE_DIAGNOSIS_SECTION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_DISCHARGE_DIAGNOSIS_SECTION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -149,7 +149,7 @@ public class DischargeDiagnosisSection2Operations extends HospitalDischargeDiagn
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_DISCHARGE_DIAGNOSIS_SECTION2_CE_TRANSLATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<>();
+	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_DISCHARGE_DIAGNOSIS_SECTION2_CE_TRANSLATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<Query<?, ?, ?>>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -223,7 +223,7 @@ public class DischargeDiagnosisSection2Operations extends HospitalDischargeDiagn
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_DISCHARGE_DIAGNOSIS_SECTION2_CE_TRANSLATION_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<>();
+	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_DISCHARGE_DIAGNOSIS_SECTION2_CE_TRANSLATION_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<Query<?, ?, ?>>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -344,7 +344,7 @@ public class DischargeDiagnosisSection2Operations extends HospitalDischargeDiagn
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -396,7 +396,7 @@ public class DischargeDiagnosisSection2Operations extends HospitalDischargeDiagn
 					"org.openhealthtools.mdht.uml.cda.consol.HospitalDischargeDiagnosisSectionCodeP");
 				if (passToken == null) {
 					// anticipate a reasonably healthy model
-					passToken = new java.util.ArrayList<>(3);
+					passToken = new java.util.ArrayList<Object>(3);
 					context.put(
 						"org.openhealthtools.mdht.uml.cda.consol.HospitalDischargeDiagnosisSectionCodeP", passToken);
 				}
@@ -429,7 +429,7 @@ public class DischargeDiagnosisSection2Operations extends HospitalDischargeDiagn
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -506,7 +506,7 @@ public class DischargeDiagnosisSection2Operations extends HospitalDischargeDiagn
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION_HOSPITAL_DISCHARGE_DIAGNOSIS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION_HOSPITAL_DISCHARGE_DIAGNOSIS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->

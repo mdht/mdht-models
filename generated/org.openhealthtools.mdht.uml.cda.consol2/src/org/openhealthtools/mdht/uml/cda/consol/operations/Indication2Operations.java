@@ -79,7 +79,7 @@ public class Indication2Operations extends IndicationOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_INDICATION_PROBLEM_INDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_INDICATION_PROBLEM_INDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -144,7 +144,7 @@ public class Indication2Operations extends IndicationOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_INDICATION_CODE_NULL_FLAVOR_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_INDICATION_CODE_NULL_FLAVOR_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -209,7 +209,7 @@ public class Indication2Operations extends IndicationOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_INDICATION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_INDICATION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -274,7 +274,7 @@ public class Indication2Operations extends IndicationOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_INDICATION_CODE_NULL_FLAVOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_INDICATION_CODE_NULL_FLAVOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -365,7 +365,7 @@ public class Indication2Operations extends IndicationOperations {
 					"org.openhealthtools.mdht.uml.cda.consol.IndicationCodeP");
 				if (passToken == null) {
 					// anticipate a reasonably healthy model
-					passToken = new java.util.ArrayList<>(3);
+					passToken = new java.util.ArrayList<Object>(3);
 					context.put("org.openhealthtools.mdht.uml.cda.consol.IndicationCodeP", passToken);
 				}
 				passToken.add(indication2);
@@ -446,7 +446,7 @@ public class Indication2Operations extends IndicationOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_INDICATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_INDICATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * The cached OCL expression body for the '{@link #validateIndicationCodeP(Indication2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Indication Code P</em>}' operation.
@@ -467,7 +467,7 @@ public class Indication2Operations extends IndicationOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_INDICATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_INDICATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * The cached OCL expression body for the '{@link #validateIndicationCode(Indication2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Indication Code</em>}' operation.
@@ -490,7 +490,7 @@ public class Indication2Operations extends IndicationOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_INDICATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_INDICATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -553,7 +553,7 @@ public class Indication2Operations extends IndicationOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_INDICATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_INDICATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -600,7 +600,7 @@ public class Indication2Operations extends IndicationOperations {
 					"org.openhealthtools.mdht.uml.cda.consol.IndicationValueP");
 				if (passToken == null) {
 					// anticipate a reasonably healthy model
-					passToken = new java.util.ArrayList<>(3);
+					passToken = new java.util.ArrayList<Object>(3);
 					context.put("org.openhealthtools.mdht.uml.cda.consol.IndicationValueP", passToken);
 				}
 				passToken.add(indication2);
@@ -632,7 +632,7 @@ public class Indication2Operations extends IndicationOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_INDICATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_INDICATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->

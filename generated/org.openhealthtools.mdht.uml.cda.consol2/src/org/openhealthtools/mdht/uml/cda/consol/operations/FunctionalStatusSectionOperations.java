@@ -119,7 +119,7 @@ public class FunctionalStatusSectionOperations extends SectionOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_FUNCTIONAL_STATUS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_FUNCTIONAL_STATUS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -188,7 +188,7 @@ public class FunctionalStatusSectionOperations extends SectionOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_FUNCTIONAL_STATUS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_FUNCTIONAL_STATUS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -254,7 +254,7 @@ public class FunctionalStatusSectionOperations extends SectionOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_FUNCTIONAL_STATUS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_FUNCTIONAL_STATUS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -320,7 +320,7 @@ public class FunctionalStatusSectionOperations extends SectionOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_FUNCTIONAL_STATUS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_FUNCTIONAL_STATUS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -386,7 +386,7 @@ public class FunctionalStatusSectionOperations extends SectionOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_FUNCTIONAL_STATUS_SECTION_FUNCTIONAL_STATUS_RESULT_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_FUNCTIONAL_STATUS_SECTION_FUNCTIONAL_STATUS_RESULT_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -455,7 +455,7 @@ public class FunctionalStatusSectionOperations extends SectionOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_FUNCTIONAL_STATUS_SECTION_COGNITIVE_STATUS_RESULT_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_FUNCTIONAL_STATUS_SECTION_COGNITIVE_STATUS_RESULT_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -524,7 +524,7 @@ public class FunctionalStatusSectionOperations extends SectionOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_FUNCTIONAL_STATUS_SECTION_FUNCTIONAL_STATUS_RESULT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_FUNCTIONAL_STATUS_SECTION_FUNCTIONAL_STATUS_RESULT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -593,7 +593,7 @@ public class FunctionalStatusSectionOperations extends SectionOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_FUNCTIONAL_STATUS_SECTION_COGNITIVE_STATUS_RESULT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_FUNCTIONAL_STATUS_SECTION_COGNITIVE_STATUS_RESULT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -662,7 +662,7 @@ public class FunctionalStatusSectionOperations extends SectionOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_FUNCTIONAL_STATUS_SECTION_FUNCTIONAL_STATUS_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_FUNCTIONAL_STATUS_SECTION_FUNCTIONAL_STATUS_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -731,7 +731,7 @@ public class FunctionalStatusSectionOperations extends SectionOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_FUNCTIONAL_STATUS_SECTION_COGNITIVE_STATUS_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_FUNCTIONAL_STATUS_SECTION_COGNITIVE_STATUS_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -800,7 +800,7 @@ public class FunctionalStatusSectionOperations extends SectionOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_FUNCTIONAL_STATUS_SECTION_CAREGIVER_CHARACTERISTICS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_FUNCTIONAL_STATUS_SECTION_CAREGIVER_CHARACTERISTICS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -869,7 +869,7 @@ public class FunctionalStatusSectionOperations extends SectionOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_FUNCTIONAL_STATUS_SECTION_ASSESSMENT_SCALE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_FUNCTIONAL_STATUS_SECTION_ASSESSMENT_SCALE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -938,7 +938,7 @@ public class FunctionalStatusSectionOperations extends SectionOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_FUNCTIONAL_STATUS_SECTION_NON_MEDICINAL_SUPPLY_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_FUNCTIONAL_STATUS_SECTION_NON_MEDICINAL_SUPPLY_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1007,7 +1007,7 @@ public class FunctionalStatusSectionOperations extends SectionOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_FUNCTIONAL_STATUS_SECTION_PRESSURE_ULCER_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_FUNCTIONAL_STATUS_SECTION_PRESSURE_ULCER_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1076,7 +1076,7 @@ public class FunctionalStatusSectionOperations extends SectionOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_FUNCTIONAL_STATUS_SECTION_NUMBER_OF_PRESSURE_ULCERS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_FUNCTIONAL_STATUS_SECTION_NUMBER_OF_PRESSURE_ULCERS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1145,7 +1145,7 @@ public class FunctionalStatusSectionOperations extends SectionOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_FUNCTIONAL_STATUS_SECTION_HIGHEST_PRESSURE_ULCER_STAGE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_FUNCTIONAL_STATUS_SECTION_HIGHEST_PRESSURE_ULCER_STAGE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1242,7 +1242,7 @@ public class FunctionalStatusSectionOperations extends SectionOperations {
 		@SuppressWarnings("unchecked")
 		Collection<FunctionalStatusResultOrganizer> result = (Collection<FunctionalStatusResultOrganizer>) query.evaluate(
 			functionalStatusSection);
-		return new BasicEList.UnmodifiableEList<>(result.size(), result.toArray());
+		return new BasicEList.UnmodifiableEList<FunctionalStatusResultOrganizer>(result.size(), result.toArray());
 	}
 
 	/**
@@ -1292,7 +1292,7 @@ public class FunctionalStatusSectionOperations extends SectionOperations {
 		@SuppressWarnings("unchecked")
 		Collection<CognitiveStatusResultOrganizer> result = (Collection<CognitiveStatusResultOrganizer>) query.evaluate(
 			functionalStatusSection);
-		return new BasicEList.UnmodifiableEList<>(result.size(), result.toArray());
+		return new BasicEList.UnmodifiableEList<CognitiveStatusResultOrganizer>(result.size(), result.toArray());
 	}
 
 	/**
@@ -1342,7 +1342,7 @@ public class FunctionalStatusSectionOperations extends SectionOperations {
 		@SuppressWarnings("unchecked")
 		Collection<FunctionalStatusResultObservation> result = (Collection<FunctionalStatusResultObservation>) query.evaluate(
 			functionalStatusSection);
-		return new BasicEList.UnmodifiableEList<>(result.size(), result.toArray());
+		return new BasicEList.UnmodifiableEList<FunctionalStatusResultObservation>(result.size(), result.toArray());
 	}
 
 	/**
@@ -1392,7 +1392,7 @@ public class FunctionalStatusSectionOperations extends SectionOperations {
 		@SuppressWarnings("unchecked")
 		Collection<CognitiveStatusResultObservation> result = (Collection<CognitiveStatusResultObservation>) query.evaluate(
 			functionalStatusSection);
-		return new BasicEList.UnmodifiableEList<>(result.size(), result.toArray());
+		return new BasicEList.UnmodifiableEList<CognitiveStatusResultObservation>(result.size(), result.toArray());
 	}
 
 	/**
@@ -1442,7 +1442,7 @@ public class FunctionalStatusSectionOperations extends SectionOperations {
 		@SuppressWarnings("unchecked")
 		Collection<FunctionalStatusProblemObservation> result = (Collection<FunctionalStatusProblemObservation>) query.evaluate(
 			functionalStatusSection);
-		return new BasicEList.UnmodifiableEList<>(result.size(), result.toArray());
+		return new BasicEList.UnmodifiableEList<FunctionalStatusProblemObservation>(result.size(), result.toArray());
 	}
 
 	/**
@@ -1492,7 +1492,7 @@ public class FunctionalStatusSectionOperations extends SectionOperations {
 		@SuppressWarnings("unchecked")
 		Collection<CognitiveStatusProblemObservation> result = (Collection<CognitiveStatusProblemObservation>) query.evaluate(
 			functionalStatusSection);
-		return new BasicEList.UnmodifiableEList<>(result.size(), result.toArray());
+		return new BasicEList.UnmodifiableEList<CognitiveStatusProblemObservation>(result.size(), result.toArray());
 	}
 
 	/**
@@ -1541,7 +1541,7 @@ public class FunctionalStatusSectionOperations extends SectionOperations {
 		@SuppressWarnings("unchecked")
 		Collection<CaregiverCharacteristics> result = (Collection<CaregiverCharacteristics>) query.evaluate(
 			functionalStatusSection);
-		return new BasicEList.UnmodifiableEList<>(result.size(), result.toArray());
+		return new BasicEList.UnmodifiableEList<CaregiverCharacteristics>(result.size(), result.toArray());
 	}
 
 	/**
@@ -1591,7 +1591,7 @@ public class FunctionalStatusSectionOperations extends SectionOperations {
 		@SuppressWarnings("unchecked")
 		Collection<AssessmentScaleObservation> result = (Collection<AssessmentScaleObservation>) query.evaluate(
 			functionalStatusSection);
-		return new BasicEList.UnmodifiableEList<>(result.size(), result.toArray());
+		return new BasicEList.UnmodifiableEList<AssessmentScaleObservation>(result.size(), result.toArray());
 	}
 
 	/**
@@ -1641,7 +1641,7 @@ public class FunctionalStatusSectionOperations extends SectionOperations {
 		@SuppressWarnings("unchecked")
 		Collection<NonMedicinalSupplyActivity> result = (Collection<NonMedicinalSupplyActivity>) query.evaluate(
 			functionalStatusSection);
-		return new BasicEList.UnmodifiableEList<>(result.size(), result.toArray());
+		return new BasicEList.UnmodifiableEList<NonMedicinalSupplyActivity>(result.size(), result.toArray());
 	}
 
 	/**
@@ -1691,7 +1691,7 @@ public class FunctionalStatusSectionOperations extends SectionOperations {
 		@SuppressWarnings("unchecked")
 		Collection<PressureUlcerObservation> result = (Collection<PressureUlcerObservation>) query.evaluate(
 			functionalStatusSection);
-		return new BasicEList.UnmodifiableEList<>(result.size(), result.toArray());
+		return new BasicEList.UnmodifiableEList<PressureUlcerObservation>(result.size(), result.toArray());
 	}
 
 	/**
@@ -1741,7 +1741,7 @@ public class FunctionalStatusSectionOperations extends SectionOperations {
 		@SuppressWarnings("unchecked")
 		Collection<NumberOfPressureUlcersObservation> result = (Collection<NumberOfPressureUlcersObservation>) query.evaluate(
 			functionalStatusSection);
-		return new BasicEList.UnmodifiableEList<>(result.size(), result.toArray());
+		return new BasicEList.UnmodifiableEList<NumberOfPressureUlcersObservation>(result.size(), result.toArray());
 	}
 
 	/**
@@ -1791,7 +1791,7 @@ public class FunctionalStatusSectionOperations extends SectionOperations {
 		@SuppressWarnings("unchecked")
 		Collection<HighestPressureUlcerStage> result = (Collection<HighestPressureUlcerStage>) query.evaluate(
 			functionalStatusSection);
-		return new BasicEList.UnmodifiableEList<>(result.size(), result.toArray());
+		return new BasicEList.UnmodifiableEList<HighestPressureUlcerStage>(result.size(), result.toArray());
 	}
 
 } // FunctionalStatusSectionOperations

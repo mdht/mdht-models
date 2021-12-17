@@ -80,7 +80,7 @@ public class HospitalDischargeDiagnosis2Operations extends HospitalDischargeDiag
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_HOSPITAL_DISCHARGE_DIAGNOSIS2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_HOSPITAL_DISCHARGE_DIAGNOSIS2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -179,7 +179,7 @@ public class HospitalDischargeDiagnosis2Operations extends HospitalDischargeDiag
 					"org.openhealthtools.mdht.uml.cda.consol.HospitalDischargeDiagnosisCodeP");
 				if (passToken == null) {
 					// anticipate a reasonably healthy model
-					passToken = new java.util.ArrayList<>(3);
+					passToken = new java.util.ArrayList<Object>(3);
 					context.put("org.openhealthtools.mdht.uml.cda.consol.HospitalDischargeDiagnosisCodeP", passToken);
 				}
 				passToken.add(hospitalDischargeDiagnosis2);
@@ -217,7 +217,7 @@ public class HospitalDischargeDiagnosis2Operations extends HospitalDischargeDiag
 		@SuppressWarnings("unchecked")
 		Collection<ProblemObservation2> result = (Collection<ProblemObservation2>) query.evaluate(
 			hospitalDischargeDiagnosis2);
-		return new BasicEList.UnmodifiableEList<>(result.size(), result.toArray());
+		return new BasicEList.UnmodifiableEList<ProblemObservation2>(result.size(), result.toArray());
 	}
 
 	/**
@@ -239,7 +239,7 @@ public class HospitalDischargeDiagnosis2Operations extends HospitalDischargeDiag
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_HOSPITAL_DISCHARGE_DIAGNOSIS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_HOSPITAL_DISCHARGE_DIAGNOSIS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * The cached OCL expression body for the '{@link #getConsolProblemObservation2s(HospitalDischargeDiagnosis2) <em>Get Consol Problem Observation2s</em>}' operation.
@@ -282,7 +282,7 @@ public class HospitalDischargeDiagnosis2Operations extends HospitalDischargeDiag
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_HOSPITAL_DISCHARGE_DIAGNOSIS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_HOSPITAL_DISCHARGE_DIAGNOSIS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -357,7 +357,7 @@ public class HospitalDischargeDiagnosis2Operations extends HospitalDischargeDiag
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_HOSPITAL_DISCHARGE_DIAGNOSIS_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_HOSPITAL_DISCHARGE_DIAGNOSIS_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->

@@ -114,7 +114,7 @@ public class ProceduresSectionEntriesOptional2Operations extends ProceduresSecti
 		@SuppressWarnings("unchecked")
 		Collection<ProcedureActivityProcedure2> result = (Collection<ProcedureActivityProcedure2>) query.evaluate(
 			proceduresSectionEntriesOptional2);
-		return new BasicEList.UnmodifiableEList<>(result.size(), result.toArray());
+		return new BasicEList.UnmodifiableEList<ProcedureActivityProcedure2>(result.size(), result.toArray());
 	}
 
 	/**
@@ -164,7 +164,7 @@ public class ProceduresSectionEntriesOptional2Operations extends ProceduresSecti
 		@SuppressWarnings("unchecked")
 		Collection<ProcedureActivityObservation2> result = (Collection<ProcedureActivityObservation2>) query.evaluate(
 			proceduresSectionEntriesOptional2);
-		return new BasicEList.UnmodifiableEList<>(result.size(), result.toArray());
+		return new BasicEList.UnmodifiableEList<ProcedureActivityObservation2>(result.size(), result.toArray());
 	}
 
 	/**
@@ -214,7 +214,7 @@ public class ProceduresSectionEntriesOptional2Operations extends ProceduresSecti
 		@SuppressWarnings("unchecked")
 		Collection<ProcedureActivityAct2> result = (Collection<ProcedureActivityAct2>) query.evaluate(
 			proceduresSectionEntriesOptional2);
-		return new BasicEList.UnmodifiableEList<>(result.size(), result.toArray());
+		return new BasicEList.UnmodifiableEList<ProcedureActivityAct2>(result.size(), result.toArray());
 	}
 
 	/**
@@ -236,7 +236,7 @@ public class ProceduresSectionEntriesOptional2Operations extends ProceduresSecti
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_PROCEDURES_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_PROCEDURES_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -306,7 +306,7 @@ public class ProceduresSectionEntriesOptional2Operations extends ProceduresSecti
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_PROCEDURES_SECTION_ENTRIES_OPTIONAL_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_PROCEDURES_SECTION_ENTRIES_OPTIONAL_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -359,7 +359,7 @@ public class ProceduresSectionEntriesOptional2Operations extends ProceduresSecti
 					"org.openhealthtools.mdht.uml.cda.consol.ProceduresSectionEntriesOptionalCodeP");
 				if (passToken == null) {
 					// anticipate a reasonably healthy model
-					passToken = new java.util.ArrayList<>(3);
+					passToken = new java.util.ArrayList<Object>(3);
 					context.put(
 						"org.openhealthtools.mdht.uml.cda.consol.ProceduresSectionEntriesOptionalCodeP", passToken);
 				}
@@ -392,7 +392,7 @@ public class ProceduresSectionEntriesOptional2Operations extends ProceduresSecti
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_PROCEDURES_SECTION_ENTRIES_OPTIONAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_PROCEDURES_SECTION_ENTRIES_OPTIONAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -471,7 +471,7 @@ public class ProceduresSectionEntriesOptional2Operations extends ProceduresSecti
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_PROCEDURES_SECTION_ENTRIES_OPTIONAL_PROCEDURE_ACTIVITY_PROCEDURE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_PROCEDURES_SECTION_ENTRIES_OPTIONAL_PROCEDURE_ACTIVITY_PROCEDURE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -542,7 +542,7 @@ public class ProceduresSectionEntriesOptional2Operations extends ProceduresSecti
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_PROCEDURES_SECTION_ENTRIES_OPTIONAL_PROCEDURE_ACTIVITY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_PROCEDURES_SECTION_ENTRIES_OPTIONAL_PROCEDURE_ACTIVITY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -613,7 +613,7 @@ public class ProceduresSectionEntriesOptional2Operations extends ProceduresSecti
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_PROCEDURES_SECTION_ENTRIES_OPTIONAL_PROCEDURE_ACTIVITY_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_PROCEDURES_SECTION_ENTRIES_OPTIONAL_PROCEDURE_ACTIVITY_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->

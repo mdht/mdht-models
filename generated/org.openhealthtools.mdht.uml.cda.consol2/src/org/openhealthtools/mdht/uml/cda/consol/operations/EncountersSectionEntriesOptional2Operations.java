@@ -108,7 +108,7 @@ public class EncountersSectionEntriesOptional2Operations extends EncountersSecti
 		@SuppressWarnings("unchecked")
 		Collection<EncounterActivity2> result = (Collection<EncounterActivity2>) query.evaluate(
 			encountersSectionEntriesOptional2);
-		return new BasicEList.UnmodifiableEList<>(result.size(), result.toArray());
+		return new BasicEList.UnmodifiableEList<EncounterActivity2>(result.size(), result.toArray());
 	}
 
 	/**
@@ -130,7 +130,7 @@ public class EncountersSectionEntriesOptional2Operations extends EncountersSecti
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_ENCOUNTERS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_ENCOUNTERS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -200,7 +200,7 @@ public class EncountersSectionEntriesOptional2Operations extends EncountersSecti
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_ENCOUNTERS_SECTION_ENTRIES_OPTIONAL_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_ENCOUNTERS_SECTION_ENTRIES_OPTIONAL_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -253,7 +253,7 @@ public class EncountersSectionEntriesOptional2Operations extends EncountersSecti
 					"org.openhealthtools.mdht.uml.cda.consol.EncountersSectionEntriesOptionalCodeP");
 				if (passToken == null) {
 					// anticipate a reasonably healthy model
-					passToken = new java.util.ArrayList<>(3);
+					passToken = new java.util.ArrayList<Object>(3);
 					context.put(
 						"org.openhealthtools.mdht.uml.cda.consol.EncountersSectionEntriesOptionalCodeP", passToken);
 				}
@@ -286,7 +286,7 @@ public class EncountersSectionEntriesOptional2Operations extends EncountersSecti
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_ENCOUNTERS_SECTION_ENTRIES_OPTIONAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_ENCOUNTERS_SECTION_ENTRIES_OPTIONAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -365,7 +365,7 @@ public class EncountersSectionEntriesOptional2Operations extends EncountersSecti
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_ENCOUNTERS_SECTION_ENTRIES_OPTIONAL_ENCOUNTER_ACTIVITIES__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_ENCOUNTERS_SECTION_ENTRIES_OPTIONAL_ENCOUNTER_ACTIVITIES__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->

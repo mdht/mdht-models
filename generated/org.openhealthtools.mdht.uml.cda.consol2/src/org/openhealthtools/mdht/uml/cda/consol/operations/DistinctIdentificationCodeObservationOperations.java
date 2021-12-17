@@ -81,7 +81,7 @@ public class DistinctIdentificationCodeObservationOperations extends ClinicalSta
 	 * @generated
 	 * @ordered
 	 */
-	protected static ThreadLocal<Constraint> VALIDATE_DISTINCT_IDENTIFICATION_CODE_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_DISTINCT_IDENTIFICATION_CODE_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -149,7 +149,7 @@ public class DistinctIdentificationCodeObservationOperations extends ClinicalSta
 	 * @generated
 	 * @ordered
 	 */
-	protected static ThreadLocal<Constraint> VALIDATE_DISTINCT_IDENTIFICATION_CODE_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_DISTINCT_IDENTIFICATION_CODE_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -201,7 +201,7 @@ public class DistinctIdentificationCodeObservationOperations extends ClinicalSta
 					"org.openhealthtools.mdht.uml.cda.consol.DistinctIdentificationCodeObservationCodeP");
 				if (passToken == null) {
 					// anticipate a reasonably healthy model
-					passToken = new java.util.ArrayList<>(3);
+					passToken = new java.util.ArrayList<Object>(3);
 					context.put(
 						"org.openhealthtools.mdht.uml.cda.consol.DistinctIdentificationCodeObservationCodeP",
 						passToken);
@@ -234,7 +234,7 @@ public class DistinctIdentificationCodeObservationOperations extends ClinicalSta
 	 * @generated
 	 * @ordered
 	 */
-	protected static ThreadLocal<Constraint> VALIDATE_DISTINCT_IDENTIFICATION_CODE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_DISTINCT_IDENTIFICATION_CODE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -311,7 +311,7 @@ public class DistinctIdentificationCodeObservationOperations extends ClinicalSta
 	 * @generated
 	 * @ordered
 	 */
-	protected static ThreadLocal<Constraint> VALIDATE_DISTINCT_IDENTIFICATION_CODE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_DISTINCT_IDENTIFICATION_CODE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->

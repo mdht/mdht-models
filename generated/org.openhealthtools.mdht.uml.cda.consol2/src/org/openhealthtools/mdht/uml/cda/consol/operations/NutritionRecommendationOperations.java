@@ -98,7 +98,7 @@ public class NutritionRecommendationOperations extends ClinicalStatementOperatio
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_NUTRITION_RECOMMENDATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_NUTRITION_RECOMMENDATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -165,7 +165,7 @@ public class NutritionRecommendationOperations extends ClinicalStatementOperatio
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_NUTRITION_RECOMMENDATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_NUTRITION_RECOMMENDATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -232,7 +232,7 @@ public class NutritionRecommendationOperations extends ClinicalStatementOperatio
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_NUTRITION_RECOMMENDATION_MOOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_NUTRITION_RECOMMENDATION_MOOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -282,7 +282,7 @@ public class NutritionRecommendationOperations extends ClinicalStatementOperatio
 					"org.openhealthtools.mdht.uml.cda.consol.NutritionRecommendationMoodCodeP");
 				if (passToken == null) {
 					// anticipate a reasonably healthy model
-					passToken = new java.util.ArrayList<>(3);
+					passToken = new java.util.ArrayList<Object>(3);
 					context.put("org.openhealthtools.mdht.uml.cda.consol.NutritionRecommendationMoodCodeP", passToken);
 				}
 				passToken.add(nutritionRecommendation);
@@ -314,7 +314,7 @@ public class NutritionRecommendationOperations extends ClinicalStatementOperatio
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_NUTRITION_RECOMMENDATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_NUTRITION_RECOMMENDATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -389,7 +389,7 @@ public class NutritionRecommendationOperations extends ClinicalStatementOperatio
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_NUTRITION_RECOMMENDATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_NUTRITION_RECOMMENDATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -438,7 +438,7 @@ public class NutritionRecommendationOperations extends ClinicalStatementOperatio
 					"org.openhealthtools.mdht.uml.cda.consol.NutritionRecommendationCodeP");
 				if (passToken == null) {
 					// anticipate a reasonably healthy model
-					passToken = new java.util.ArrayList<>(3);
+					passToken = new java.util.ArrayList<Object>(3);
 					context.put("org.openhealthtools.mdht.uml.cda.consol.NutritionRecommendationCodeP", passToken);
 				}
 				passToken.add(nutritionRecommendation);
@@ -470,7 +470,7 @@ public class NutritionRecommendationOperations extends ClinicalStatementOperatio
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_NUTRITION_RECOMMENDATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_NUTRITION_RECOMMENDATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -545,7 +545,7 @@ public class NutritionRecommendationOperations extends ClinicalStatementOperatio
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_NUTRITION_RECOMMENDATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_NUTRITION_RECOMMENDATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -612,7 +612,7 @@ public class NutritionRecommendationOperations extends ClinicalStatementOperatio
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_NUTRITION_RECOMMENDATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_NUTRITION_RECOMMENDATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -679,7 +679,7 @@ public class NutritionRecommendationOperations extends ClinicalStatementOperatio
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_NUTRITION_RECOMMENDATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_NUTRITION_RECOMMENDATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -746,7 +746,7 @@ public class NutritionRecommendationOperations extends ClinicalStatementOperatio
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_NUTRITION_RECOMMENDATION_PLANNED_ENCOUNTER2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_NUTRITION_RECOMMENDATION_PLANNED_ENCOUNTER2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -814,7 +814,7 @@ public class NutritionRecommendationOperations extends ClinicalStatementOperatio
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_NUTRITION_RECOMMENDATION_PLANNED_MEDICATION_ACTIVITY2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_NUTRITION_RECOMMENDATION_PLANNED_MEDICATION_ACTIVITY2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -883,7 +883,7 @@ public class NutritionRecommendationOperations extends ClinicalStatementOperatio
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_NUTRITION_RECOMMENDATION_PLANNED_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_NUTRITION_RECOMMENDATION_PLANNED_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -951,7 +951,7 @@ public class NutritionRecommendationOperations extends ClinicalStatementOperatio
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_NUTRITION_RECOMMENDATION_PLANNED_PROCEDURE2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_NUTRITION_RECOMMENDATION_PLANNED_PROCEDURE2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1019,7 +1019,7 @@ public class NutritionRecommendationOperations extends ClinicalStatementOperatio
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_NUTRITION_RECOMMENDATION_PLANNED_SUPPLY2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_NUTRITION_RECOMMENDATION_PLANNED_SUPPLY2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1086,7 +1086,7 @@ public class NutritionRecommendationOperations extends ClinicalStatementOperatio
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_NUTRITION_RECOMMENDATION_PLANNED_ACT2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_NUTRITION_RECOMMENDATION_PLANNED_ACT2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1178,7 +1178,7 @@ public class NutritionRecommendationOperations extends ClinicalStatementOperatio
 		OCL.Query query = EOCL_ENV.get().createQuery(GET_PLANNED_ENCOUNTER2S__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<PlannedEncounter2> result = (Collection<PlannedEncounter2>) query.evaluate(nutritionRecommendation);
-		return new BasicEList.UnmodifiableEList<>(result.size(), result.toArray());
+		return new BasicEList.UnmodifiableEList<PlannedEncounter2>(result.size(), result.toArray());
 	}
 
 	/**
@@ -1228,7 +1228,7 @@ public class NutritionRecommendationOperations extends ClinicalStatementOperatio
 		@SuppressWarnings("unchecked")
 		Collection<PlannedMedicationActivity2> result = (Collection<PlannedMedicationActivity2>) query.evaluate(
 			nutritionRecommendation);
-		return new BasicEList.UnmodifiableEList<>(result.size(), result.toArray());
+		return new BasicEList.UnmodifiableEList<PlannedMedicationActivity2>(result.size(), result.toArray());
 	}
 
 	/**
@@ -1276,7 +1276,7 @@ public class NutritionRecommendationOperations extends ClinicalStatementOperatio
 		@SuppressWarnings("unchecked")
 		Collection<PlannedObservation2> result = (Collection<PlannedObservation2>) query.evaluate(
 			nutritionRecommendation);
-		return new BasicEList.UnmodifiableEList<>(result.size(), result.toArray());
+		return new BasicEList.UnmodifiableEList<PlannedObservation2>(result.size(), result.toArray());
 	}
 
 	/**
@@ -1323,7 +1323,7 @@ public class NutritionRecommendationOperations extends ClinicalStatementOperatio
 		OCL.Query query = EOCL_ENV.get().createQuery(GET_PLANNED_PROCEDURE2S__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<PlannedProcedure2> result = (Collection<PlannedProcedure2>) query.evaluate(nutritionRecommendation);
-		return new BasicEList.UnmodifiableEList<>(result.size(), result.toArray());
+		return new BasicEList.UnmodifiableEList<PlannedProcedure2>(result.size(), result.toArray());
 	}
 
 	/**
@@ -1370,7 +1370,7 @@ public class NutritionRecommendationOperations extends ClinicalStatementOperatio
 		OCL.Query query = EOCL_ENV.get().createQuery(GET_PLANNED_SUPPLY2S__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<PlannedSupply2> result = (Collection<PlannedSupply2>) query.evaluate(nutritionRecommendation);
-		return new BasicEList.UnmodifiableEList<>(result.size(), result.toArray());
+		return new BasicEList.UnmodifiableEList<PlannedSupply2>(result.size(), result.toArray());
 	}
 
 	/**
@@ -1417,7 +1417,7 @@ public class NutritionRecommendationOperations extends ClinicalStatementOperatio
 		OCL.Query query = EOCL_ENV.get().createQuery(GET_PLANNED_ACT2S__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<PlannedAct2> result = (Collection<PlannedAct2>) query.evaluate(nutritionRecommendation);
-		return new BasicEList.UnmodifiableEList<>(result.size(), result.toArray());
+		return new BasicEList.UnmodifiableEList<PlannedAct2>(result.size(), result.toArray());
 	}
 
 } // NutritionRecommendationOperations

@@ -82,7 +82,7 @@ public class NonMedicinalSupplyActivity2Operations extends NonMedicinalSupplyAct
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY2_INSTRUCTION2_INVERSION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY2_INSTRUCTION2_INVERSION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -152,7 +152,7 @@ public class NonMedicinalSupplyActivity2Operations extends NonMedicinalSupplyAct
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -221,7 +221,7 @@ public class NonMedicinalSupplyActivity2Operations extends NonMedicinalSupplyAct
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -273,7 +273,7 @@ public class NonMedicinalSupplyActivity2Operations extends NonMedicinalSupplyAct
 					"org.openhealthtools.mdht.uml.cda.consol.NonMedicinalSupplyActivityStatusCodeP");
 				if (passToken == null) {
 					// anticipate a reasonably healthy model
-					passToken = new java.util.ArrayList<>(3);
+					passToken = new java.util.ArrayList<Object>(3);
 					context.put(
 						"org.openhealthtools.mdht.uml.cda.consol.NonMedicinalSupplyActivityStatusCodeP", passToken);
 				}
@@ -304,7 +304,7 @@ public class NonMedicinalSupplyActivity2Operations extends NonMedicinalSupplyAct
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY2_INSTRUCTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY2_INSTRUCTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -465,7 +465,7 @@ public class NonMedicinalSupplyActivity2Operations extends NonMedicinalSupplyAct
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -542,7 +542,7 @@ public class NonMedicinalSupplyActivity2Operations extends NonMedicinalSupplyAct
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY_PRODUCT_INSTANCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY_PRODUCT_INSTANCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->

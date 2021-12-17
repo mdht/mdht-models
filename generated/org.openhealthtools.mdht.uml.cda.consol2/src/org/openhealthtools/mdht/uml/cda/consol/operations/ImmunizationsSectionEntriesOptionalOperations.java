@@ -87,7 +87,7 @@ public class ImmunizationsSectionEntriesOptionalOperations extends SectionOperat
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -159,7 +159,7 @@ public class ImmunizationsSectionEntriesOptionalOperations extends SectionOperat
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -229,7 +229,7 @@ public class ImmunizationsSectionEntriesOptionalOperations extends SectionOperat
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -299,7 +299,7 @@ public class ImmunizationsSectionEntriesOptionalOperations extends SectionOperat
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -369,7 +369,7 @@ public class ImmunizationsSectionEntriesOptionalOperations extends SectionOperat
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -439,7 +439,7 @@ public class ImmunizationsSectionEntriesOptionalOperations extends SectionOperat
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL_IMMUNIZATION_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL_IMMUNIZATION_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -537,7 +537,7 @@ public class ImmunizationsSectionEntriesOptionalOperations extends SectionOperat
 		@SuppressWarnings("unchecked")
 		Collection<ImmunizationActivity> result = (Collection<ImmunizationActivity>) query.evaluate(
 			immunizationsSectionEntriesOptional);
-		return new BasicEList.UnmodifiableEList<>(result.size(), result.toArray());
+		return new BasicEList.UnmodifiableEList<ImmunizationActivity>(result.size(), result.toArray());
 	}
 
 } // ImmunizationsSectionEntriesOptionalOperations

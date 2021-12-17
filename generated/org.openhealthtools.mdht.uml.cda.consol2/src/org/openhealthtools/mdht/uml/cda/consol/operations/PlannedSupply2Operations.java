@@ -105,7 +105,7 @@ public class PlannedSupply2Operations extends PlanOfCareActivitySupplyOperations
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_PLANNED_SUPPLY2_MED_INFO_XOR_IMMUN_XOR_PRODUCT_INSTANCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_PLANNED_SUPPLY2_MED_INFO_XOR_IMMUN_XOR_PRODUCT_INSTANCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -173,7 +173,7 @@ public class PlannedSupply2Operations extends PlanOfCareActivitySupplyOperations
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_PLANNED_SUPPLY2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_PLANNED_SUPPLY2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -239,7 +239,7 @@ public class PlannedSupply2Operations extends PlanOfCareActivitySupplyOperations
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_PLANNED_SUPPLY2_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_PLANNED_SUPPLY2_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -304,7 +304,7 @@ public class PlannedSupply2Operations extends PlanOfCareActivitySupplyOperations
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_PLANNED_SUPPLY2_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_PLANNED_SUPPLY2_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -369,7 +369,7 @@ public class PlannedSupply2Operations extends PlanOfCareActivitySupplyOperations
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_PLANNED_SUPPLY2_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_PLANNED_SUPPLY2_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -434,7 +434,7 @@ public class PlannedSupply2Operations extends PlanOfCareActivitySupplyOperations
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_PLANNED_SUPPLY2_REPEAT_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_PLANNED_SUPPLY2_REPEAT_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -499,7 +499,7 @@ public class PlannedSupply2Operations extends PlanOfCareActivitySupplyOperations
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_PLANNED_SUPPLY2_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_PLANNED_SUPPLY2_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -564,7 +564,7 @@ public class PlannedSupply2Operations extends PlanOfCareActivitySupplyOperations
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_PLANNED_SUPPLY2_PRODUCT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_PLANNED_SUPPLY2_PRODUCT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -629,7 +629,7 @@ public class PlannedSupply2Operations extends PlanOfCareActivitySupplyOperations
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_PLANNED_SUPPLY2_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_PLANNED_SUPPLY2_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -694,7 +694,7 @@ public class PlannedSupply2Operations extends PlanOfCareActivitySupplyOperations
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_PLANNED_SUPPLY2_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_PLANNED_SUPPLY2_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -761,7 +761,7 @@ public class PlannedSupply2Operations extends PlanOfCareActivitySupplyOperations
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_PLANNED_SUPPLY2_PRODUCT_INSTANCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_PLANNED_SUPPLY2_PRODUCT_INSTANCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -826,7 +826,7 @@ public class PlannedSupply2Operations extends PlanOfCareActivitySupplyOperations
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_PLANNED_SUPPLY2_PRIORITY_PREFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_PLANNED_SUPPLY2_PRIORITY_PREFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -892,7 +892,7 @@ public class PlannedSupply2Operations extends PlanOfCareActivitySupplyOperations
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_PLANNED_SUPPLY2_INDICATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_PLANNED_SUPPLY2_INDICATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -957,7 +957,7 @@ public class PlannedSupply2Operations extends PlanOfCareActivitySupplyOperations
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_PLANNED_SUPPLY2_INSTRUCTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_PLANNED_SUPPLY2_INSTRUCTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1022,7 +1022,7 @@ public class PlannedSupply2Operations extends PlanOfCareActivitySupplyOperations
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_PLANNED_SUPPLY2_PLANNED_COVERAGE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_PLANNED_SUPPLY2_PLANNED_COVERAGE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1087,7 +1087,7 @@ public class PlannedSupply2Operations extends PlanOfCareActivitySupplyOperations
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_PLANNED_SUPPLY2_PRODUCT_RECOMMENDED__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_PLANNED_SUPPLY2_PRODUCT_RECOMMENDED__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1153,7 +1153,7 @@ public class PlannedSupply2Operations extends PlanOfCareActivitySupplyOperations
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_PLANNED_SUPPLY2_PRODUCT_MANUFACTURED_PRODUCT_MED_INFO2_XOR_IMMUN_MED_INFO2__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<>();
+	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_PLANNED_SUPPLY2_PRODUCT_MANUFACTURED_PRODUCT_MED_INFO2_XOR_IMMUN_MED_INFO2__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<Query<?, ?, ?>>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1227,7 +1227,7 @@ public class PlannedSupply2Operations extends PlanOfCareActivitySupplyOperations
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_PLANNED_SUPPLY2_PRODUCT_MANUFACTURED_PRODUCT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<>();
+	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_PLANNED_SUPPLY2_PRODUCT_MANUFACTURED_PRODUCT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<Query<?, ?, ?>>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1369,7 +1369,7 @@ public class PlannedSupply2Operations extends PlanOfCareActivitySupplyOperations
 		OCL.Query query = EOCL_ENV.get().createQuery(GET_PRIORITY_PREFERENCES__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<PriorityPreference> result = (Collection<PriorityPreference>) query.evaluate(plannedSupply2);
-		return new BasicEList.UnmodifiableEList<>(result.size(), result.toArray());
+		return new BasicEList.UnmodifiableEList<PriorityPreference>(result.size(), result.toArray());
 	}
 
 	/**
@@ -1416,7 +1416,7 @@ public class PlannedSupply2Operations extends PlanOfCareActivitySupplyOperations
 		OCL.Query query = EOCL_ENV.get().createQuery(GET_INDICATION2S__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<Indication2> result = (Collection<Indication2>) query.evaluate(plannedSupply2);
-		return new BasicEList.UnmodifiableEList<>(result.size(), result.toArray());
+		return new BasicEList.UnmodifiableEList<Indication2>(result.size(), result.toArray());
 	}
 
 	/**
@@ -1463,7 +1463,7 @@ public class PlannedSupply2Operations extends PlanOfCareActivitySupplyOperations
 		OCL.Query query = EOCL_ENV.get().createQuery(GET_INSTRUCTION2S__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<Instruction2> result = (Collection<Instruction2>) query.evaluate(plannedSupply2);
-		return new BasicEList.UnmodifiableEList<>(result.size(), result.toArray());
+		return new BasicEList.UnmodifiableEList<Instruction2>(result.size(), result.toArray());
 	}
 
 	/**
@@ -1510,7 +1510,7 @@ public class PlannedSupply2Operations extends PlanOfCareActivitySupplyOperations
 		OCL.Query query = EOCL_ENV.get().createQuery(GET_PLANNED_COVERAGES__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<PlannedCoverage> result = (Collection<PlannedCoverage>) query.evaluate(plannedSupply2);
-		return new BasicEList.UnmodifiableEList<>(result.size(), result.toArray());
+		return new BasicEList.UnmodifiableEList<PlannedCoverage>(result.size(), result.toArray());
 	}
 
 	/**
@@ -1534,7 +1534,7 @@ public class PlannedSupply2Operations extends PlanOfCareActivitySupplyOperations
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_PLAN_OF_CARE_ACTIVITY_SUPPLY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_PLAN_OF_CARE_ACTIVITY_SUPPLY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->

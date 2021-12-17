@@ -90,7 +90,7 @@ public class HandoffCommunicationParticipantsOperations extends ClinicalStatemen
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -160,7 +160,7 @@ public class HandoffCommunicationParticipantsOperations extends ClinicalStatemen
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -230,7 +230,7 @@ public class HandoffCommunicationParticipantsOperations extends ClinicalStatemen
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -300,7 +300,7 @@ public class HandoffCommunicationParticipantsOperations extends ClinicalStatemen
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -353,7 +353,7 @@ public class HandoffCommunicationParticipantsOperations extends ClinicalStatemen
 					"org.openhealthtools.mdht.uml.cda.consol.HandoffCommunicationParticipantsCodeP");
 				if (passToken == null) {
 					// anticipate a reasonably healthy model
-					passToken = new java.util.ArrayList<>(3);
+					passToken = new java.util.ArrayList<Object>(3);
 					context.put(
 						"org.openhealthtools.mdht.uml.cda.consol.HandoffCommunicationParticipantsCodeP", passToken);
 				}
@@ -386,7 +386,7 @@ public class HandoffCommunicationParticipantsOperations extends ClinicalStatemen
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -466,7 +466,7 @@ public class HandoffCommunicationParticipantsOperations extends ClinicalStatemen
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -536,7 +536,7 @@ public class HandoffCommunicationParticipantsOperations extends ClinicalStatemen
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -606,7 +606,7 @@ public class HandoffCommunicationParticipantsOperations extends ClinicalStatemen
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -676,7 +676,7 @@ public class HandoffCommunicationParticipantsOperations extends ClinicalStatemen
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -746,7 +746,7 @@ public class HandoffCommunicationParticipantsOperations extends ClinicalStatemen
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -816,7 +816,7 @@ public class HandoffCommunicationParticipantsOperations extends ClinicalStatemen
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<>();
+	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<Query<?, ?, ?>>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -893,7 +893,7 @@ public class HandoffCommunicationParticipantsOperations extends ClinicalStatemen
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT_PARTICIPANT_ROLE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<>();
+	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT_PARTICIPANT_ROLE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<Query<?, ?, ?>>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -969,7 +969,7 @@ public class HandoffCommunicationParticipantsOperations extends ClinicalStatemen
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT_PARTICIPANT_ROLE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<>();
+	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT_PARTICIPANT_ROLE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<Query<?, ?, ?>>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1026,7 +1026,7 @@ public class HandoffCommunicationParticipantsOperations extends ClinicalStatemen
 						"org.openhealthtools.mdht.uml.cda.consol.HandoffCommunicationParticipantsParticipantParticipantRoleCodeP");
 					if (passToken == null) {
 						// anticipate a reasonably healthy model
-						passToken = new java.util.ArrayList<>(3);
+						passToken = new java.util.ArrayList<Object>(3);
 						context.put(
 							"org.openhealthtools.mdht.uml.cda.consol.HandoffCommunicationParticipantsParticipantParticipantRoleCodeP",
 							passToken);
@@ -1061,7 +1061,7 @@ public class HandoffCommunicationParticipantsOperations extends ClinicalStatemen
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT_PARTICIPANT_ROLE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<>();
+	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT_PARTICIPANT_ROLE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<Query<?, ?, ?>>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1147,7 +1147,7 @@ public class HandoffCommunicationParticipantsOperations extends ClinicalStatemen
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT_PARTICIPANT_ROLE_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<>();
+	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT_PARTICIPANT_ROLE_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<Query<?, ?, ?>>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1223,7 +1223,7 @@ public class HandoffCommunicationParticipantsOperations extends ClinicalStatemen
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<>();
+	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<Query<?, ?, ?>>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1300,7 +1300,7 @@ public class HandoffCommunicationParticipantsOperations extends ClinicalStatemen
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<>();
+	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<Query<?, ?, ?>>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1375,7 +1375,7 @@ public class HandoffCommunicationParticipantsOperations extends ClinicalStatemen
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT_PARTICIPANT_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<>();
+	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT_PARTICIPANT_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<Query<?, ?, ?>>();
 
 	/**
 	 * <!-- begin-user-doc -->

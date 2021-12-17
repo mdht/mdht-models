@@ -86,7 +86,7 @@ public class AdvanceDirectivesSectionOperations extends AdvanceDirectivesSection
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_ADVANCE_DIRECTIVES_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_ADVANCE_DIRECTIVES_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -135,7 +135,7 @@ public class AdvanceDirectivesSectionOperations extends AdvanceDirectivesSection
 					"org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectivesSectionCodeP");
 				if (passToken == null) {
 					// anticipate a reasonably healthy model
-					passToken = new java.util.ArrayList<>(3);
+					passToken = new java.util.ArrayList<Object>(3);
 					context.put("org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectivesSectionCodeP", passToken);
 				}
 				passToken.add(advanceDirectivesSection);
@@ -167,7 +167,7 @@ public class AdvanceDirectivesSectionOperations extends AdvanceDirectivesSection
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_ADVANCE_DIRECTIVES_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_ADVANCE_DIRECTIVES_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -241,7 +241,7 @@ public class AdvanceDirectivesSectionOperations extends AdvanceDirectivesSection
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_ADVANCE_DIRECTIVES_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_ADVANCE_DIRECTIVES_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -307,7 +307,7 @@ public class AdvanceDirectivesSectionOperations extends AdvanceDirectivesSection
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_ADVANCE_DIRECTIVES_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_ADVANCE_DIRECTIVES_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -373,7 +373,7 @@ public class AdvanceDirectivesSectionOperations extends AdvanceDirectivesSection
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_ADVANCE_DIRECTIVES_SECTION_ADVANCE_DIRECTIVE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_ADVANCE_DIRECTIVES_SECTION_ADVANCE_DIRECTIVE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -471,7 +471,7 @@ public class AdvanceDirectivesSectionOperations extends AdvanceDirectivesSection
 		@SuppressWarnings("unchecked")
 		Collection<AdvanceDirectiveObservation> result = (Collection<AdvanceDirectiveObservation>) query.evaluate(
 			advanceDirectivesSection);
-		return new BasicEList.UnmodifiableEList<>(result.size(), result.toArray());
+		return new BasicEList.UnmodifiableEList<AdvanceDirectiveObservation>(result.size(), result.toArray());
 	}
 
 	/**
@@ -493,7 +493,7 @@ public class AdvanceDirectivesSectionOperations extends AdvanceDirectivesSection
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->

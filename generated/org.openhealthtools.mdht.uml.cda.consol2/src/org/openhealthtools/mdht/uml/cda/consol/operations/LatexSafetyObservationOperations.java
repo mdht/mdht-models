@@ -82,7 +82,7 @@ public class LatexSafetyObservationOperations extends ClinicalStatementOperation
 	 * @generated
 	 * @ordered
 	 */
-	protected static ThreadLocal<Constraint> VALIDATE_LATEX_SAFETY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_LATEX_SAFETY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -147,7 +147,7 @@ public class LatexSafetyObservationOperations extends ClinicalStatementOperation
 	 * @generated
 	 * @ordered
 	 */
-	protected static ThreadLocal<Constraint> VALIDATE_LATEX_SAFETY_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_LATEX_SAFETY_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -195,7 +195,7 @@ public class LatexSafetyObservationOperations extends ClinicalStatementOperation
 					"org.openhealthtools.mdht.uml.cda.consol.LatexSafetyObservationCodeP");
 				if (passToken == null) {
 					// anticipate a reasonably healthy model
-					passToken = new java.util.ArrayList<>(3);
+					passToken = new java.util.ArrayList<Object>(3);
 					context.put("org.openhealthtools.mdht.uml.cda.consol.LatexSafetyObservationCodeP", passToken);
 				}
 				passToken.add(latexSafetyObservation);
@@ -226,7 +226,7 @@ public class LatexSafetyObservationOperations extends ClinicalStatementOperation
 	 * @generated
 	 * @ordered
 	 */
-	protected static ThreadLocal<Constraint> VALIDATE_LATEX_SAFETY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_LATEX_SAFETY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -300,7 +300,7 @@ public class LatexSafetyObservationOperations extends ClinicalStatementOperation
 	 * @generated
 	 * @ordered
 	 */
-	protected static ThreadLocal<Constraint> VALIDATE_LATEX_SAFETY_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_LATEX_SAFETY_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -364,7 +364,7 @@ public class LatexSafetyObservationOperations extends ClinicalStatementOperation
 	 * @generated
 	 * @ordered
 	 */
-	protected static ThreadLocal<Constraint> VALIDATE_LATEX_SAFETY_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_LATEX_SAFETY_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->

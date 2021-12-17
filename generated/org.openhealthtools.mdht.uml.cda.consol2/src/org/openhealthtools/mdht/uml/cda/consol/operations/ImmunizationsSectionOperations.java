@@ -86,7 +86,7 @@ public class ImmunizationsSectionOperations extends ImmunizationsSectionEntriesO
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_IMMUNIZATIONS_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_IMMUNIZATIONS_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -134,7 +134,7 @@ public class ImmunizationsSectionOperations extends ImmunizationsSectionEntriesO
 					"org.openhealthtools.mdht.uml.cda.consol.ImmunizationsSectionCodeP");
 				if (passToken == null) {
 					// anticipate a reasonably healthy model
-					passToken = new java.util.ArrayList<>(3);
+					passToken = new java.util.ArrayList<Object>(3);
 					context.put("org.openhealthtools.mdht.uml.cda.consol.ImmunizationsSectionCodeP", passToken);
 				}
 				passToken.add(immunizationsSection);
@@ -166,7 +166,7 @@ public class ImmunizationsSectionOperations extends ImmunizationsSectionEntriesO
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_IMMUNIZATIONS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_IMMUNIZATIONS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -239,7 +239,7 @@ public class ImmunizationsSectionOperations extends ImmunizationsSectionEntriesO
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_IMMUNIZATIONS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_IMMUNIZATIONS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -304,7 +304,7 @@ public class ImmunizationsSectionOperations extends ImmunizationsSectionEntriesO
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_IMMUNIZATIONS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_IMMUNIZATIONS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -369,7 +369,7 @@ public class ImmunizationsSectionOperations extends ImmunizationsSectionEntriesO
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_IMMUNIZATIONS_SECTION_IMMUNIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_IMMUNIZATIONS_SECTION_IMMUNIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -462,7 +462,7 @@ public class ImmunizationsSectionOperations extends ImmunizationsSectionEntriesO
 		@SuppressWarnings("unchecked")
 		Collection<ImmunizationActivity> result = (Collection<ImmunizationActivity>) query.evaluate(
 			immunizationsSection);
-		return new BasicEList.UnmodifiableEList<>(result.size(), result.toArray());
+		return new BasicEList.UnmodifiableEList<ImmunizationActivity>(result.size(), result.toArray());
 	}
 
 	/**
@@ -484,7 +484,7 @@ public class ImmunizationsSectionOperations extends ImmunizationsSectionEntriesO
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
