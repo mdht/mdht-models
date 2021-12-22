@@ -6,7 +6,7 @@
         <body>couple</body>
       </ownedComment>
     </generalization>
-    <ownedAttribute xmi:id="_2OfUexSVEeGGzu7fmW9pXw" name="code" visibility="private">
+    <ownedAttribute xmi:id="_2OfUexSVEeGGzu7fmW9pXw" name="code" visibility="private" redefinedProperty="_bRH8uxVeEeGQCvUGzi1kDQ">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2OlbAhSVEeGGzu7fmW9pXw" name="text" visibility="private" aggregation="composite">

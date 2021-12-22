@@ -10766,6 +10766,39 @@ public class GeneralHeaderConstraintsTest extends CDAValidationTest {
 
 				);
 
+				addPassTest(new PassTest() {
+
+					@Override
+					public void updateToPass(GeneralHeaderConstraints target) {
+						target.getRecordTargets().clear();
+						RecordTarget re = CDAFactory.eINSTANCE.createRecordTarget();
+						PatientRole pr = CDAFactory.eINSTANCE.createPatientRole();
+						Patient patient = CDAFactory.eINSTANCE.createPatient();
+						patient.setMaritalStatusCode(DatatypesFactory.eINSTANCE.createCE("U", "2.16.840.1.113883.5.2"));
+						pr.setPatient(patient);
+						re.setPatientRole(pr);
+						target.getRecordTargets().add(re);
+					}
+				}
+
+				);
+
+				addPassTest(new PassTest() {
+
+					@Override
+					public void updateToPass(GeneralHeaderConstraints target) {
+						target.getRecordTargets().clear();
+						RecordTarget re = CDAFactory.eINSTANCE.createRecordTarget();
+						PatientRole pr = CDAFactory.eINSTANCE.createPatientRole();
+						Patient patient = CDAFactory.eINSTANCE.createPatient();
+						patient.setMaritalStatusCode(DatatypesFactory.eINSTANCE.createCE("C", "2.16.840.1.113883.5.2"));
+						pr.setPatient(patient);
+						re.setPatientRole(pr);
+						target.getRecordTargets().add(re);
+					}
+				}
+
+				);
 			}
 
 			// =======

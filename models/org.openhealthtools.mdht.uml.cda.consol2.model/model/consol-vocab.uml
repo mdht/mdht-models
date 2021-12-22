@@ -388,6 +388,8 @@ http://www.fda.gov/ForIndustry/DataStandards/StructuredProductLabeling/ucm162523
       <ownedLiteral xmi:id="_RD4IQPweEeGXDIdcQJhgtg" name="S"/>
       <ownedLiteral xmi:id="_SIQ9cPweEeGXDIdcQJhgtg" name="T"/>
       <ownedLiteral xmi:id="_TjXpgPweEeGXDIdcQJhgtg" name="W"/>
+      <ownedLiteral xmi:id="_YxH4oF9PEey5t-mahoHmrg" name="C"/>
+      <ownedLiteral xmi:id="_a8lqoF9PEey5t-mahoHmrg" name="U"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_dfTnoKDqEd-dVeaMP0XXQw" name="Race"/>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_ywcy0Gg7Ed-ilOLYnIx0jA" name="INDRoleclassCodes">
@@ -3474,4 +3476,6 @@ Used to enumerate the relationships between two clinical documents for document 
   <term:ValueSetCode xmi:id="_45GmkS0CEeuxZ80rBBFFIQ" conceptName="Inactive" base_EnumerationLiteral="_45GmkC0CEeuxZ80rBBFFIQ"/>
   <term:ValueSetCode xmi:id="_6u1ZIS0CEeuxZ80rBBFFIQ" conceptName="Malfunctioning" base_EnumerationLiteral="_6u1ZIC0CEeuxZ80rBBFFIQ"/>
   <term:ValueSetCode xmi:id="_76bCgS0CEeuxZ80rBBFFIQ" conceptName="Reduced Function" base_EnumerationLiteral="_76bCgC0CEeuxZ80rBBFFIQ"/>
+  <term:ValueSetCode xmi:id="_YxIfsF9PEey5t-mahoHmrg" conceptName="Common Law" base_EnumerationLiteral="_YxH4oF9PEey5t-mahoHmrg"/>
+  <term:ValueSetCode xmi:id="_a8lqoV9PEey5t-mahoHmrg" conceptName="UnMarried" usageNote="UnMarried" base_EnumerationLiteral="_a8lqoF9PEey5t-mahoHmrg"/>
 </xmi:XMI>

@@ -33,13 +33,13 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.AllergiesSectionOperat
  * <p>
  * The following operations are supported:
  * <ul>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergiesSection#validateAllergiesSectionCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergies Section Code P</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergiesSection#validateAllergiesSectionCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergies Section Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergiesSection#validateAllergiesSectionTitle(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergies Section Title</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergiesSection#validateAllergiesSectionText(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergies Section Text</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergiesSection#validateAllergiesSectionAllergyProblemAct(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergies Section Allergy Problem Act</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergiesSection#getConsolAllergyProblemActs() <em>Get Consol Allergy Problem Acts</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergiesSection#validateAllergiesSectionEntriesOptionalTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergies Section Entries Optional Template Id</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergiesSection#validateAllergiesSectionEntriesOptionalCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergies Section Entries Optional Code P</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergiesSection#validateAllergiesSectionEntriesOptionalCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergies Section Entries Optional Code</em>}</li>
  * </ul>
  * </p>
  *
@@ -47,81 +47,6 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.AllergiesSectionOperat
  */
 
 public class AllergiesSectionTest extends CDAValidationTest {
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
-	public void testValidateAllergiesSectionCodeP() {
-		OperationsTestCase<AllergiesSection> validateAllergiesSectionCodePTestCase = new OperationsTestCase<AllergiesSection>(
-			"validateAllergiesSectionCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_ALLERGIES_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(AllergiesSection target) {
-
-			}
-
-			@Override
-			protected void updateToPass(AllergiesSection target) {
-				target.init();
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return AllergiesSectionOperations.validateAllergiesSectionCodeP(
-					(AllergiesSection) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateAllergiesSectionCodePTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
-	public void testValidateAllergiesSectionCode() {
-		OperationsTestCase<AllergiesSection> validateAllergiesSectionCodeTestCase = new OperationsTestCase<AllergiesSection>(
-			"validateAllergiesSectionCode",
-			operationsForOCL.getOCLValue("VALIDATE_ALLERGIES_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(AllergiesSection target) {
-
-			}
-
-			@Override
-			protected void updateToPass(AllergiesSection target) {
-				target.init();
-
-			}
-
-			@Override
-			protected void setDependency(AllergiesSection target) {
-				Collection<Object> passToken = new java.util.ArrayList<Object>(3);
-				passToken.add(target);
-				map.put("org.openhealthtools.mdht.uml.cda.consol.AllergiesSectionCodeP", passToken);
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return AllergiesSectionOperations.validateAllergiesSectionCode(
-					(AllergiesSection) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateAllergiesSectionCodeTestCase.doValidationTest();
-	}
 
 	/**
 	*
@@ -277,6 +202,83 @@ public class AllergiesSectionTest extends CDAValidationTest {
 		};
 
 		validateAllergiesSectionEntriesOptionalTemplateIdTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateAllergiesSectionEntriesOptionalCodeP() {
+		OperationsTestCase<AllergiesSection> validateAllergiesSectionEntriesOptionalCodePTestCase = new OperationsTestCase<AllergiesSection>(
+			"validateAllergiesSectionEntriesOptionalCodeP", operationsForOCL.getOCLValue(
+				"VALIDATE_ALLERGIES_SECTION_ENTRIES_OPTIONAL_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(AllergiesSection target) {
+
+			}
+
+			@Override
+			protected void updateToPass(AllergiesSection target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return AllergiesSectionOperations.validateAllergiesSectionEntriesOptionalCodeP(
+					(AllergiesSection) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateAllergiesSectionEntriesOptionalCodePTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateAllergiesSectionEntriesOptionalCode() {
+		OperationsTestCase<AllergiesSection> validateAllergiesSectionEntriesOptionalCodeTestCase = new OperationsTestCase<AllergiesSection>(
+			"validateAllergiesSectionEntriesOptionalCode", operationsForOCL.getOCLValue(
+				"VALIDATE_ALLERGIES_SECTION_ENTRIES_OPTIONAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(AllergiesSection target) {
+
+			}
+
+			@Override
+			protected void updateToPass(AllergiesSection target) {
+				target.init();
+
+			}
+
+			@Override
+			protected void setDependency(AllergiesSection target) {
+				Collection<Object> passToken = new java.util.ArrayList<Object>(3);
+				passToken.add(target);
+				map.put("org.openhealthtools.mdht.uml.cda.consol.AllergiesSectionEntriesOptionalCodeP", passToken);
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return AllergiesSectionOperations.validateAllergiesSectionEntriesOptionalCode(
+					(AllergiesSection) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateAllergiesSectionEntriesOptionalCodeTestCase.doValidationTest();
 	}
 
 	/**

@@ -10,6 +10,7 @@ The Assessment and Plan section represents both the clinician's conclusions and 
     </generalization>
     <ownedAttribute xmi:id="_2Rwq7hSVEeGGzu7fmW9pXw" name="code" visibility="private">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_9lgCcErmEd6FXKclYGEDCw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_h-PV0CzUEeGanY0p4MnU2w" name="text" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_0jvq8E8AEd6ohP_YEXs4Wg"/>

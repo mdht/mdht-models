@@ -21,6 +21,8 @@ import org.eclipse.mdht.uml.hl7.datatypes.CD;
 import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
 import org.eclipse.mdht.uml.hl7.datatypes.ED;
 import org.eclipse.mdht.uml.hl7.datatypes.IVL_TS;
+import org.eclipse.mdht.uml.hl7.datatypes.PQ;
+import org.eclipse.mdht.uml.hl7.datatypes.ST;
 import org.junit.Ignore;
 import org.junit.Test;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
@@ -354,7 +356,7 @@ public class VitalSignObservation2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 	public void testValidateVitalSignObservationValue() {
@@ -364,15 +366,39 @@ public class VitalSignObservation2Test extends CDAValidationTest {
 			objectFactory) {
 
 			@Override
-			protected void updateToFail(VitalSignObservation2 target) {
+			public void addFailTests() {
 
+				addFailTest(new FailTest() {
+					@Override
+					public void updateToFail(VitalSignObservation2 target) {
+						target.init();
+						CD value = DatatypesFactory.eINSTANCE.createCD();
+						target.getValues().add(value);
+					}
+				});
+
+				addFailTest(new FailTest() {
+					@Override
+					public void updateToFail(VitalSignObservation2 target) {
+						target.init();
+						ST value = DatatypesFactory.eINSTANCE.createST();
+						target.getValues().add(value);
+					}
+				});
+
+				addFailTest(new FailTest() {
+					@Override
+					public void updateToFail(VitalSignObservation2 target) {
+						target.init();
+					}
+				});
 			}
 
 			@Override
 			protected void updateToPass(VitalSignObservation2 target) {
 				target.init();
 
-				CD value = DatatypesFactory.eINSTANCE.createCD();
+				PQ value = DatatypesFactory.eINSTANCE.createPQ();
 				target.getValues().add(value);
 
 			}
