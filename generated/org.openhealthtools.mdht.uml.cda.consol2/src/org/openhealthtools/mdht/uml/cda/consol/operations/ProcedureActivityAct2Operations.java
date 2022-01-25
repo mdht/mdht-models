@@ -99,7 +99,7 @@ public class ProcedureActivityAct2Operations extends ProcedureActivityActOperati
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_PROCEDURE_ACTIVITY_ACT2_CODE_SUGGESTED_CODE_SYSTEMS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_PROCEDURE_ACTIVITY_ACT2_CODE_SUGGESTED_CODE_SYSTEMS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -167,7 +167,7 @@ public class ProcedureActivityAct2Operations extends ProcedureActivityActOperati
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_PROCEDURE_ACTIVITY_ACT2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_PROCEDURE_ACTIVITY_ACT2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -263,7 +263,7 @@ public class ProcedureActivityAct2Operations extends ProcedureActivityActOperati
 					"org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityActStatusCodeP");
 				if (passToken == null) {
 					// anticipate a reasonably healthy model
-					passToken = new java.util.ArrayList<Object>(3);
+					passToken = new java.util.ArrayList<>(3);
 					context.put("org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityActStatusCodeP", passToken);
 				}
 				passToken.add(procedureActivityAct2);
@@ -370,7 +370,7 @@ public class ProcedureActivityAct2Operations extends ProcedureActivityActOperati
 		OCL.Query query = EOCL_ENV.get().createQuery(GET_CONSOL_INDICATION2S__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<Indication2> result = (Collection<Indication2>) query.evaluate(procedureActivityAct2);
-		return new BasicEList.UnmodifiableEList<Indication2>(result.size(), result.toArray());
+		return new BasicEList.UnmodifiableEList<>(result.size(), result.toArray());
 	}
 
 	/**
@@ -400,7 +400,7 @@ public class ProcedureActivityAct2Operations extends ProcedureActivityActOperati
 		@SuppressWarnings("unchecked")
 		Collection<MedicationActivity2> result = (Collection<MedicationActivity2>) query.evaluate(
 			procedureActivityAct2);
-		return new BasicEList.UnmodifiableEList<MedicationActivity2>(result.size(), result.toArray());
+		return new BasicEList.UnmodifiableEList<>(result.size(), result.toArray());
 	}
 
 	/**
@@ -514,7 +514,7 @@ public class ProcedureActivityAct2Operations extends ProcedureActivityActOperati
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_PROCEDURE_ACTIVITY_ACT_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_PROCEDURE_ACTIVITY_ACT_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * The cached OCL expression body for the '{@link #validateProcedureActivityAct2AuthorParticipation(ProcedureActivityAct2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Act2 Author Participation</em>}' operation.
@@ -535,7 +535,7 @@ public class ProcedureActivityAct2Operations extends ProcedureActivityActOperati
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_PROCEDURE_ACTIVITY_ACT2_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_PROCEDURE_ACTIVITY_ACT2_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * The cached OCL expression body for the '{@link #getConsolInstruction2(ProcedureActivityAct2) <em>Get Consol Instruction2</em>}' operation.
@@ -616,7 +616,7 @@ public class ProcedureActivityAct2Operations extends ProcedureActivityActOperati
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_PROCEDURE_ACTIVITY_ACT_INSTRUCTIONS_INVERSION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_PROCEDURE_ACTIVITY_ACT_INSTRUCTIONS_INVERSION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * The cached OCL expression body for the '{@link #validateProcedureActivityActMoodCode(ProcedureActivityAct2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Act Mood Code</em>}' operation.
@@ -637,7 +637,7 @@ public class ProcedureActivityAct2Operations extends ProcedureActivityActOperati
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_PROCEDURE_ACTIVITY_ACT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_PROCEDURE_ACTIVITY_ACT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * The cached OCL expression body for the '{@link #validateProcedureActivityActStatusCode(ProcedureActivityAct2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Act Status Code</em>}' operation.
@@ -660,7 +660,7 @@ public class ProcedureActivityAct2Operations extends ProcedureActivityActOperati
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_PROCEDURE_ACTIVITY_ACT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_PROCEDURE_ACTIVITY_ACT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -735,7 +735,7 @@ public class ProcedureActivityAct2Operations extends ProcedureActivityActOperati
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_PROCEDURE_ACTIVITY_ACT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_PROCEDURE_ACTIVITY_ACT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -802,7 +802,7 @@ public class ProcedureActivityAct2Operations extends ProcedureActivityActOperati
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_PROCEDURE_ACTIVITY_ACT_INSTRUCTIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_PROCEDURE_ACTIVITY_ACT_INSTRUCTIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -869,7 +869,7 @@ public class ProcedureActivityAct2Operations extends ProcedureActivityActOperati
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_PROCEDURE_ACTIVITY_ACT_INDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_PROCEDURE_ACTIVITY_ACT_INDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -935,7 +935,7 @@ public class ProcedureActivityAct2Operations extends ProcedureActivityActOperati
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_PROCEDURE_ACTIVITY_ACT_MEDICATION_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_PROCEDURE_ACTIVITY_ACT_MEDICATION_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1002,7 +1002,7 @@ public class ProcedureActivityAct2Operations extends ProcedureActivityActOperati
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_PROCEDURE_ACTIVITY_ACT_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_PROCEDURE_ACTIVITY_ACT_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1068,7 +1068,7 @@ public class ProcedureActivityAct2Operations extends ProcedureActivityActOperati
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_PROCEDURE_ACT_ASSIGNED_ENTITY_PROCEDURE_ACT_REPRESENTED_ORGANIZATION_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<Query<?, ?, ?>>();
+	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_PROCEDURE_ACT_ASSIGNED_ENTITY_PROCEDURE_ACT_REPRESENTED_ORGANIZATION_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1144,7 +1144,7 @@ public class ProcedureActivityAct2Operations extends ProcedureActivityActOperati
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_PROCEDURE_ACT_ASSIGNED_ENTITY_PROCEDURE_ACT_REPRESENTED_ORGANIZATION_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<Query<?, ?, ?>>();
+	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_PROCEDURE_ACT_ASSIGNED_ENTITY_PROCEDURE_ACT_REPRESENTED_ORGANIZATION_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1220,7 +1220,7 @@ public class ProcedureActivityAct2Operations extends ProcedureActivityActOperati
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_PROCEDURE_ACT_ASSIGNED_ENTITY_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<Query<?, ?, ?>>();
+	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_PROCEDURE_ACT_ASSIGNED_ENTITY_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1295,7 +1295,7 @@ public class ProcedureActivityAct2Operations extends ProcedureActivityActOperati
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_PROCEDURE_ACT_ASSIGNED_ENTITY_REPRESENTED_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<Query<?, ?, ?>>();
+	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_PROCEDURE_ACT_ASSIGNED_ENTITY_REPRESENTED_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1371,7 +1371,7 @@ public class ProcedureActivityAct2Operations extends ProcedureActivityActOperati
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<Query<?, ?, ?>>();
+	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->

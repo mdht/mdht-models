@@ -81,7 +81,7 @@ public class FamilyHistoryDeathObservationOperations extends ClinicalStatementOp
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_FAMILY_HISTORY_DEATH_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_FAMILY_HISTORY_DEATH_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -151,7 +151,7 @@ public class FamilyHistoryDeathObservationOperations extends ClinicalStatementOp
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_FAMILY_HISTORY_DEATH_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_FAMILY_HISTORY_DEATH_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -221,7 +221,7 @@ public class FamilyHistoryDeathObservationOperations extends ClinicalStatementOp
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_FAMILY_HISTORY_DEATH_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_FAMILY_HISTORY_DEATH_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -292,7 +292,7 @@ public class FamilyHistoryDeathObservationOperations extends ClinicalStatementOp
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_FAMILY_HISTORY_DEATH_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_FAMILY_HISTORY_DEATH_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -362,7 +362,7 @@ public class FamilyHistoryDeathObservationOperations extends ClinicalStatementOp
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_FAMILY_HISTORY_DEATH_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_FAMILY_HISTORY_DEATH_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -434,7 +434,7 @@ public class FamilyHistoryDeathObservationOperations extends ClinicalStatementOp
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_FAMILY_HISTORY_DEATH_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_FAMILY_HISTORY_DEATH_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -503,7 +503,7 @@ public class FamilyHistoryDeathObservationOperations extends ClinicalStatementOp
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_FAMILY_HISTORY_DEATH_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_FAMILY_HISTORY_DEATH_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->

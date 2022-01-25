@@ -107,7 +107,7 @@ public class ResultsSectionEntriesOptional2Operations extends ResultsSectionEntr
 		@SuppressWarnings("unchecked")
 		Collection<ResultOrganizer2> result = (Collection<ResultOrganizer2>) query.evaluate(
 			resultsSectionEntriesOptional2);
-		return new BasicEList.UnmodifiableEList<ResultOrganizer2>(result.size(), result.toArray());
+		return new BasicEList.UnmodifiableEList<>(result.size(), result.toArray());
 	}
 
 	/**
@@ -129,7 +129,7 @@ public class ResultsSectionEntriesOptional2Operations extends ResultsSectionEntr
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_RESULTS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_RESULTS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -199,7 +199,7 @@ public class ResultsSectionEntriesOptional2Operations extends ResultsSectionEntr
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_RESULTS_SECTION_ENTRIES_OPTIONAL_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_RESULTS_SECTION_ENTRIES_OPTIONAL_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -251,7 +251,7 @@ public class ResultsSectionEntriesOptional2Operations extends ResultsSectionEntr
 					"org.openhealthtools.mdht.uml.cda.consol.ResultsSectionEntriesOptionalCodeP");
 				if (passToken == null) {
 					// anticipate a reasonably healthy model
-					passToken = new java.util.ArrayList<Object>(3);
+					passToken = new java.util.ArrayList<>(3);
 					context.put(
 						"org.openhealthtools.mdht.uml.cda.consol.ResultsSectionEntriesOptionalCodeP", passToken);
 				}
@@ -284,7 +284,7 @@ public class ResultsSectionEntriesOptional2Operations extends ResultsSectionEntr
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_RESULTS_SECTION_ENTRIES_OPTIONAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_RESULTS_SECTION_ENTRIES_OPTIONAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -362,7 +362,7 @@ public class ResultsSectionEntriesOptional2Operations extends ResultsSectionEntr
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_RESULTS_SECTION_ENTRIES_OPTIONAL_RESULT_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_RESULTS_SECTION_ENTRIES_OPTIONAL_RESULT_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->

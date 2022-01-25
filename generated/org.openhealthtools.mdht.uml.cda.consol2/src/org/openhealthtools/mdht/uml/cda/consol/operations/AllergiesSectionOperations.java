@@ -86,7 +86,7 @@ public class AllergiesSectionOperations extends AllergiesSectionEntriesOptionalO
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_ALLERGIES_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_ALLERGIES_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -151,7 +151,7 @@ public class AllergiesSectionOperations extends AllergiesSectionEntriesOptionalO
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_ALLERGIES_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_ALLERGIES_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -216,7 +216,7 @@ public class AllergiesSectionOperations extends AllergiesSectionEntriesOptionalO
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_ALLERGIES_SECTION_ALLERGY_PROBLEM_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_ALLERGIES_SECTION_ALLERGY_PROBLEM_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -309,7 +309,7 @@ public class AllergiesSectionOperations extends AllergiesSectionEntriesOptionalO
 		OCL.Query query = EOCL_ENV.get().createQuery(GET_CONSOL_ALLERGY_PROBLEM_ACTS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<AllergyProblemAct> result = (Collection<AllergyProblemAct>) query.evaluate(allergiesSection);
-		return new BasicEList.UnmodifiableEList<AllergyProblemAct>(result.size(), result.toArray());
+		return new BasicEList.UnmodifiableEList<>(result.size(), result.toArray());
 	}
 
 	/**
@@ -331,7 +331,7 @@ public class AllergiesSectionOperations extends AllergiesSectionEntriesOptionalO
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_ALLERGIES_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_ALLERGIES_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -398,7 +398,7 @@ public class AllergiesSectionOperations extends AllergiesSectionEntriesOptionalO
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_ALLERGIES_SECTION_ENTRIES_OPTIONAL_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_ALLERGIES_SECTION_ENTRIES_OPTIONAL_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -448,7 +448,7 @@ public class AllergiesSectionOperations extends AllergiesSectionEntriesOptionalO
 					"org.openhealthtools.mdht.uml.cda.consol.AllergiesSectionEntriesOptionalCodeP");
 				if (passToken == null) {
 					// anticipate a reasonably healthy model
-					passToken = new java.util.ArrayList<Object>(3);
+					passToken = new java.util.ArrayList<>(3);
 					context.put(
 						"org.openhealthtools.mdht.uml.cda.consol.AllergiesSectionEntriesOptionalCodeP", passToken);
 				}
@@ -481,7 +481,7 @@ public class AllergiesSectionOperations extends AllergiesSectionEntriesOptionalO
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_ALLERGIES_SECTION_ENTRIES_OPTIONAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_ALLERGIES_SECTION_ENTRIES_OPTIONAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->

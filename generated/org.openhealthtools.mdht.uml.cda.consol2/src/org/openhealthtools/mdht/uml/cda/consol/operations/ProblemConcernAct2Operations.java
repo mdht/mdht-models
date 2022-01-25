@@ -89,7 +89,7 @@ public class ProblemConcernAct2Operations extends ProblemConcernActOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_PROBLEM_CONCERN_ACT2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_PROBLEM_CONCERN_ACT2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -183,7 +183,7 @@ public class ProblemConcernAct2Operations extends ProblemConcernActOperations {
 					"org.openhealthtools.mdht.uml.cda.consol.ProblemConcernActStatusCodeP");
 				if (passToken == null) {
 					// anticipate a reasonably healthy model
-					passToken = new java.util.ArrayList<Object>(3);
+					passToken = new java.util.ArrayList<>(3);
 					context.put("org.openhealthtools.mdht.uml.cda.consol.ProblemConcernActStatusCodeP", passToken);
 				}
 				passToken.add(problemConcernAct2);
@@ -310,7 +310,7 @@ public class ProblemConcernAct2Operations extends ProblemConcernActOperations {
 		OCL.Query query = EOCL_ENV.get().createQuery(GET_PRIORITY_PREFERENCES__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<PriorityPreference> result = (Collection<PriorityPreference>) query.evaluate(problemConcernAct2);
-		return new BasicEList.UnmodifiableEList<PriorityPreference>(result.size(), result.toArray());
+		return new BasicEList.UnmodifiableEList<>(result.size(), result.toArray());
 	}
 
 	/**
@@ -338,7 +338,7 @@ public class ProblemConcernAct2Operations extends ProblemConcernActOperations {
 		OCL.Query query = EOCL_ENV.get().createQuery(GET_CONSOL_PROBLEM_OBSERVATION2S__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<ProblemObservation2> result = (Collection<ProblemObservation2>) query.evaluate(problemConcernAct2);
-		return new BasicEList.UnmodifiableEList<ProblemObservation2>(result.size(), result.toArray());
+		return new BasicEList.UnmodifiableEList<>(result.size(), result.toArray());
 	}
 
 	/**
@@ -452,7 +452,7 @@ public class ProblemConcernAct2Operations extends ProblemConcernActOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_PROBLEM_CONCERN_ACT_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_PROBLEM_CONCERN_ACT_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * The cached OCL expression body for the '{@link #validateProblemConcernAct2AuthorParticipation(ProblemConcernAct2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Concern Act2 Author Participation</em>}' operation.
@@ -473,7 +473,7 @@ public class ProblemConcernAct2Operations extends ProblemConcernActOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_PROBLEM_CONCERN_ACT2_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_PROBLEM_CONCERN_ACT2_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * The cached OCL expression body for the '{@link #validateProblemConcernAct2PriorityPreference(ProblemConcernAct2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Concern Act2 Priority Preference</em>}' operation.
@@ -494,7 +494,7 @@ public class ProblemConcernAct2Operations extends ProblemConcernActOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_PROBLEM_CONCERN_ACT2_PRIORITY_PREFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_PROBLEM_CONCERN_ACT2_PRIORITY_PREFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * The cached OCL expression body for the '{@link #getPriorityPreferences(ProblemConcernAct2) <em>Get Priority Preferences</em>}' operation.
@@ -555,7 +555,7 @@ public class ProblemConcernAct2Operations extends ProblemConcernActOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_PROBLEM_CONCERN_ACT_EFFECTIVE_TIME_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_PROBLEM_CONCERN_ACT_EFFECTIVE_TIME_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * The cached OCL expression body for the '{@link #validateProblemConcernActEffectiveTimeHigh(ProblemConcernAct2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Concern Act Effective Time High</em>}' operation.
@@ -576,7 +576,7 @@ public class ProblemConcernAct2Operations extends ProblemConcernActOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_PROBLEM_CONCERN_ACT_EFFECTIVE_TIME_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_PROBLEM_CONCERN_ACT_EFFECTIVE_TIME_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * The cached OCL expression body for the '{@link #validateProblemConcernActStatusCode(ProblemConcernAct2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Concern Act Status Code</em>}' operation.
@@ -599,7 +599,7 @@ public class ProblemConcernAct2Operations extends ProblemConcernActOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_PROBLEM_CONCERN_ACT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_PROBLEM_CONCERN_ACT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -672,7 +672,7 @@ public class ProblemConcernAct2Operations extends ProblemConcernActOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_PROBLEM_CONCERN_ACT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_PROBLEM_CONCERN_ACT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -739,7 +739,7 @@ public class ProblemConcernAct2Operations extends ProblemConcernActOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_PROBLEM_CONCERN_ACT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_PROBLEM_CONCERN_ACT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -787,7 +787,7 @@ public class ProblemConcernAct2Operations extends ProblemConcernActOperations {
 					"org.openhealthtools.mdht.uml.cda.consol.ProblemConcernActCodeP");
 				if (passToken == null) {
 					// anticipate a reasonably healthy model
-					passToken = new java.util.ArrayList<Object>(3);
+					passToken = new java.util.ArrayList<>(3);
 					context.put("org.openhealthtools.mdht.uml.cda.consol.ProblemConcernActCodeP", passToken);
 				}
 				passToken.add(problemConcernAct2);
@@ -819,7 +819,7 @@ public class ProblemConcernAct2Operations extends ProblemConcernActOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_PROBLEM_CONCERN_ACT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_PROBLEM_CONCERN_ACT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -892,7 +892,7 @@ public class ProblemConcernAct2Operations extends ProblemConcernActOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_PROBLEM_CONCERN_ACT_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_PROBLEM_CONCERN_ACT_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->

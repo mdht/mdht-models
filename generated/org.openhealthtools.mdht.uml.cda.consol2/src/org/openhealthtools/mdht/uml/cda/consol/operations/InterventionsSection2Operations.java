@@ -86,7 +86,7 @@ public class InterventionsSection2Operations extends InterventionsSectionOperati
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_INTERVENTIONS_SECTION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_INTERVENTIONS_SECTION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -153,7 +153,7 @@ public class InterventionsSection2Operations extends InterventionsSectionOperati
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_INTERVENTIONS_SECTION2_INTERVENTION_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_INTERVENTIONS_SECTION2_INTERVENTION_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -220,7 +220,7 @@ public class InterventionsSection2Operations extends InterventionsSectionOperati
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_INTERVENTIONS_SECTION2_HANDOFF_COMMUNICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_INTERVENTIONS_SECTION2_HANDOFF_COMMUNICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -288,7 +288,7 @@ public class InterventionsSection2Operations extends InterventionsSectionOperati
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_INTERVENTIONS_SECTION2_PLANNED_INTERVENTION_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_INTERVENTIONS_SECTION2_PLANNED_INTERVENTION_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -381,7 +381,7 @@ public class InterventionsSection2Operations extends InterventionsSectionOperati
 		OCL.Query query = EOCL_ENV.get().createQuery(GET_INTERVENTION_ACTS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<InterventionAct> result = (Collection<InterventionAct>) query.evaluate(interventionsSection2);
-		return new BasicEList.UnmodifiableEList<InterventionAct>(result.size(), result.toArray());
+		return new BasicEList.UnmodifiableEList<>(result.size(), result.toArray());
 	}
 
 	/**
@@ -430,7 +430,7 @@ public class InterventionsSection2Operations extends InterventionsSectionOperati
 		@SuppressWarnings("unchecked")
 		Collection<HandoffCommunicationParticipants> result = (Collection<HandoffCommunicationParticipants>) query.evaluate(
 			interventionsSection2);
-		return new BasicEList.UnmodifiableEList<HandoffCommunicationParticipants>(result.size(), result.toArray());
+		return new BasicEList.UnmodifiableEList<>(result.size(), result.toArray());
 	}
 
 	/**
@@ -479,7 +479,7 @@ public class InterventionsSection2Operations extends InterventionsSectionOperati
 		@SuppressWarnings("unchecked")
 		Collection<PlannedInterventionAct> result = (Collection<PlannedInterventionAct>) query.evaluate(
 			interventionsSection2);
-		return new BasicEList.UnmodifiableEList<PlannedInterventionAct>(result.size(), result.toArray());
+		return new BasicEList.UnmodifiableEList<>(result.size(), result.toArray());
 	}
 
 	/**
@@ -501,7 +501,7 @@ public class InterventionsSection2Operations extends InterventionsSectionOperati
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_INTERVENTIONS_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_INTERVENTIONS_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -549,7 +549,7 @@ public class InterventionsSection2Operations extends InterventionsSectionOperati
 					"org.openhealthtools.mdht.uml.cda.consol.InterventionsSectionCodeP");
 				if (passToken == null) {
 					// anticipate a reasonably healthy model
-					passToken = new java.util.ArrayList<Object>(3);
+					passToken = new java.util.ArrayList<>(3);
 					context.put("org.openhealthtools.mdht.uml.cda.consol.InterventionsSectionCodeP", passToken);
 				}
 				passToken.add(interventionsSection2);
@@ -581,7 +581,7 @@ public class InterventionsSection2Operations extends InterventionsSectionOperati
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_INTERVENTIONS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_INTERVENTIONS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->

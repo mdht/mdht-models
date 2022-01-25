@@ -87,7 +87,7 @@ public class HistoryOfPastIllnessSectionOperations extends SectionOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_HISTORY_OF_PAST_ILLNESS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_HISTORY_OF_PAST_ILLNESS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -158,7 +158,7 @@ public class HistoryOfPastIllnessSectionOperations extends SectionOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_HISTORY_OF_PAST_ILLNESS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_HISTORY_OF_PAST_ILLNESS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -226,7 +226,7 @@ public class HistoryOfPastIllnessSectionOperations extends SectionOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_HISTORY_OF_PAST_ILLNESS_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_HISTORY_OF_PAST_ILLNESS_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -294,7 +294,7 @@ public class HistoryOfPastIllnessSectionOperations extends SectionOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_HISTORY_OF_PAST_ILLNESS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_HISTORY_OF_PAST_ILLNESS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -362,7 +362,7 @@ public class HistoryOfPastIllnessSectionOperations extends SectionOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_HISTORY_OF_PAST_ILLNESS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_HISTORY_OF_PAST_ILLNESS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -430,7 +430,7 @@ public class HistoryOfPastIllnessSectionOperations extends SectionOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_HISTORY_OF_PAST_ILLNESS_SECTION_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_HISTORY_OF_PAST_ILLNESS_SECTION_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -527,7 +527,7 @@ public class HistoryOfPastIllnessSectionOperations extends SectionOperations {
 		@SuppressWarnings("unchecked")
 		Collection<ProblemObservation> result = (Collection<ProblemObservation>) query.evaluate(
 			historyOfPastIllnessSection);
-		return new BasicEList.UnmodifiableEList<ProblemObservation>(result.size(), result.toArray());
+		return new BasicEList.UnmodifiableEList<>(result.size(), result.toArray());
 	}
 
 } // HistoryOfPastIllnessSectionOperations

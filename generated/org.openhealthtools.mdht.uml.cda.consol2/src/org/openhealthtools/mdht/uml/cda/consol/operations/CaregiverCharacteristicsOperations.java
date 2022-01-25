@@ -91,7 +91,7 @@ public class CaregiverCharacteristicsOperations extends ClinicalStatementOperati
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_CAREGIVER_CHARACTERISTICS_VALUE_CODE_SYSTEM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_CAREGIVER_CHARACTERISTICS_VALUE_CODE_SYSTEM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -160,7 +160,7 @@ public class CaregiverCharacteristicsOperations extends ClinicalStatementOperati
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_CAREGIVER_CHARACTERISTICS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_CAREGIVER_CHARACTERISTICS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -227,7 +227,7 @@ public class CaregiverCharacteristicsOperations extends ClinicalStatementOperati
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_CAREGIVER_CHARACTERISTICS_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_CAREGIVER_CHARACTERISTICS_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -294,7 +294,7 @@ public class CaregiverCharacteristicsOperations extends ClinicalStatementOperati
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_CAREGIVER_CHARACTERISTICS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_CAREGIVER_CHARACTERISTICS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -361,7 +361,7 @@ public class CaregiverCharacteristicsOperations extends ClinicalStatementOperati
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_CAREGIVER_CHARACTERISTICS_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_CAREGIVER_CHARACTERISTICS_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -427,7 +427,7 @@ public class CaregiverCharacteristicsOperations extends ClinicalStatementOperati
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_CAREGIVER_CHARACTERISTICS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_CAREGIVER_CHARACTERISTICS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -494,7 +494,7 @@ public class CaregiverCharacteristicsOperations extends ClinicalStatementOperati
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_CAREGIVER_CHARACTERISTICS_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_CAREGIVER_CHARACTERISTICS_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -561,7 +561,7 @@ public class CaregiverCharacteristicsOperations extends ClinicalStatementOperati
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_CAREGIVER_CHARACTERISTICS_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_CAREGIVER_CHARACTERISTICS_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -628,7 +628,7 @@ public class CaregiverCharacteristicsOperations extends ClinicalStatementOperati
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_CAREGIVER_CHARACTERISTICS_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_CAREGIVER_CHARACTERISTICS_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -694,7 +694,7 @@ public class CaregiverCharacteristicsOperations extends ClinicalStatementOperati
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_CAREGIVER_CHARACTERISTICS_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_CAREGIVER_CHARACTERISTICS_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -761,7 +761,7 @@ public class CaregiverCharacteristicsOperations extends ClinicalStatementOperati
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_CAREGIVER_CHARACTERISTICS_PARTICIPANT_PARTICIPANT_ROLE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<Query<?, ?, ?>>();
+	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_CAREGIVER_CHARACTERISTICS_PARTICIPANT_PARTICIPANT_ROLE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -836,7 +836,7 @@ public class CaregiverCharacteristicsOperations extends ClinicalStatementOperati
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_CAREGIVER_CHARACTERISTICS_PARTICIPANT_TIME_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<Query<?, ?, ?>>();
+	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_CAREGIVER_CHARACTERISTICS_PARTICIPANT_TIME_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -910,7 +910,7 @@ public class CaregiverCharacteristicsOperations extends ClinicalStatementOperati
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_CAREGIVER_CHARACTERISTICS_PARTICIPANT_TIME_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<Query<?, ?, ?>>();
+	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_CAREGIVER_CHARACTERISTICS_PARTICIPANT_TIME_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -984,7 +984,7 @@ public class CaregiverCharacteristicsOperations extends ClinicalStatementOperati
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_CAREGIVER_CHARACTERISTICS_PARTICIPANT_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<Query<?, ?, ?>>();
+	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_CAREGIVER_CHARACTERISTICS_PARTICIPANT_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1059,7 +1059,7 @@ public class CaregiverCharacteristicsOperations extends ClinicalStatementOperati
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_CAREGIVER_CHARACTERISTICS_PARTICIPANT_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<Query<?, ?, ?>>();
+	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_CAREGIVER_CHARACTERISTICS_PARTICIPANT_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1133,7 +1133,7 @@ public class CaregiverCharacteristicsOperations extends ClinicalStatementOperati
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_CAREGIVER_CHARACTERISTICS_PARTICIPANT_PARTICIPANT_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<Query<?, ?, ?>>();
+	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_CAREGIVER_CHARACTERISTICS_PARTICIPANT_PARTICIPANT_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->

@@ -98,7 +98,7 @@ public class CareTeamMemberActOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_CARE_TEAM_MEMBER_ACT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_CARE_TEAM_MEMBER_ACT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -163,7 +163,7 @@ public class CareTeamMemberActOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_CARE_TEAM_MEMBER_ACT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_CARE_TEAM_MEMBER_ACT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -276,7 +276,7 @@ public class CareTeamMemberActOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_CARE_TEAM_MEMBER_ACT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_CARE_TEAM_MEMBER_ACT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * The cached OCL expression body for the '{@link #validateCareTeamMemberActStatusCodeP(CareTeamMemberAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Team Member Act Status Code P</em>}' operation.
@@ -297,7 +297,7 @@ public class CareTeamMemberActOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_CARE_TEAM_MEMBER_ACT_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_CARE_TEAM_MEMBER_ACT_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -362,7 +362,7 @@ public class CareTeamMemberActOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_CARE_TEAM_MEMBER_ACT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_CARE_TEAM_MEMBER_ACT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -429,7 +429,7 @@ public class CareTeamMemberActOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_CARE_TEAM_MEMBER_ACT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_CARE_TEAM_MEMBER_ACT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -494,7 +494,7 @@ public class CareTeamMemberActOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_CARE_TEAM_MEMBER_ACT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_CARE_TEAM_MEMBER_ACT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -559,7 +559,7 @@ public class CareTeamMemberActOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_CARE_TEAM_MEMBER_ACT_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_CARE_TEAM_MEMBER_ACT_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -624,7 +624,7 @@ public class CareTeamMemberActOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_CARE_TEAM_MEMBER_ACT_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_CARE_TEAM_MEMBER_ACT_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -689,7 +689,7 @@ public class CareTeamMemberActOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_CARE_TEAM_MEMBER_ACT_CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_CARE_TEAM_MEMBER_ACT_CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -757,7 +757,7 @@ public class CareTeamMemberActOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_CARE_TEAM_MEMBER_ACT_NOTE_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_CARE_TEAM_MEMBER_ACT_NOTE_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -824,7 +824,7 @@ public class CareTeamMemberActOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_CARE_TEAM_MEMBER_ACT_PARTICIPANT2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_CARE_TEAM_MEMBER_ACT_PARTICIPANT2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -890,7 +890,7 @@ public class CareTeamMemberActOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_CARE_TEAM_MEMBER_ACT_IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<Query<?, ?, ?>>();
+	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_CARE_TEAM_MEMBER_ACT_IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -963,7 +963,7 @@ public class CareTeamMemberActOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_CARE_TEAM_MEMBER_ACT_IVLTS_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<Query<?, ?, ?>>();
+	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_CARE_TEAM_MEMBER_ACT_IVLTS_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->

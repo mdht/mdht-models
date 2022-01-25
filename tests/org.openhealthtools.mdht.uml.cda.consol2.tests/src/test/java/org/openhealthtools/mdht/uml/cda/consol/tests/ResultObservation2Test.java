@@ -262,7 +262,7 @@ public class ResultObservation2Test extends CDAValidationTest {
 			@Override
 			protected void updateToPass(ResultObservation2 target) {
 				target.getReferenceRanges().get(0).getObservationRange().setValue(
-					DatatypesFactory.eINSTANCE.createCD());
+					DatatypesFactory.eINSTANCE.createIVL_REAL());
 			}
 
 			@Override

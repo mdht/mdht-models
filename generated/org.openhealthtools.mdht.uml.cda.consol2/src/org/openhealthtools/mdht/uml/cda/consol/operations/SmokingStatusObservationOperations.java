@@ -102,7 +102,7 @@ public class SmokingStatusObservationOperations extends ClinicalStatementOperati
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_SMOKING_STATUS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_SMOKING_STATUS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -169,7 +169,7 @@ public class SmokingStatusObservationOperations extends ClinicalStatementOperati
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_SMOKING_STATUS_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_SMOKING_STATUS_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -236,7 +236,7 @@ public class SmokingStatusObservationOperations extends ClinicalStatementOperati
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_SMOKING_STATUS_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_SMOKING_STATUS_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -303,7 +303,7 @@ public class SmokingStatusObservationOperations extends ClinicalStatementOperati
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_SMOKING_STATUS_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_SMOKING_STATUS_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -464,7 +464,7 @@ public class SmokingStatusObservationOperations extends ClinicalStatementOperati
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_SMOKING_STATUS_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_SMOKING_STATUS_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * The cached OCL expression body for the '{@link #validateSmokingStatusObservationStatusCodeP(SmokingStatusObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Smoking Status Observation Status Code P</em>}' operation.
@@ -485,7 +485,7 @@ public class SmokingStatusObservationOperations extends ClinicalStatementOperati
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_SMOKING_STATUS_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_SMOKING_STATUS_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * The cached OCL expression body for the '{@link #validateSmokingStatusObservationEffectiveTime(SmokingStatusObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Smoking Status Observation Effective Time</em>}' operation.
@@ -506,7 +506,7 @@ public class SmokingStatusObservationOperations extends ClinicalStatementOperati
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_SMOKING_STATUS_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_SMOKING_STATUS_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -986,7 +986,7 @@ public class SmokingStatusObservationOperations extends ClinicalStatementOperati
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_SMOKING_STATUS_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_SMOKING_STATUS_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * The cached OCL expression body for the '{@link #validateSmokingStatusObservationValueP(SmokingStatusObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Smoking Status Observation Value P</em>}' operation.
@@ -1007,7 +1007,7 @@ public class SmokingStatusObservationOperations extends ClinicalStatementOperati
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_SMOKING_STATUS_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_SMOKING_STATUS_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * The cached OCL expression body for the '{@link #validateSmokingStatusObservationCDCodeTermAssertionOrLoinc(SmokingStatusObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Smoking Status Observation CD Code Term Assertion Or Loinc</em>}' operation.
@@ -1028,7 +1028,7 @@ public class SmokingStatusObservationOperations extends ClinicalStatementOperati
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_SMOKING_STATUS_OBSERVATION_CD_CODE_TERM_ASSERTION_OR_LOINC__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<Query<?, ?, ?>>();
+	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_SMOKING_STATUS_OBSERVATION_CD_CODE_TERM_ASSERTION_OR_LOINC__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<>();
 
 	/**
 	 * The cached OCL expression body for the '{@link #validateSmokingStatusObservationCDCode(SmokingStatusObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Smoking Status Observation CD Code</em>}' operation.
@@ -1049,7 +1049,7 @@ public class SmokingStatusObservationOperations extends ClinicalStatementOperati
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_SMOKING_STATUS_OBSERVATION_CD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<Query<?, ?, ?>>();
+	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_SMOKING_STATUS_OBSERVATION_CD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<>();
 
 	/**
 	 * The cached OCL expression body for the '{@link #validateSmokingStatusObservationCDCodeSystem(SmokingStatusObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Smoking Status Observation CD Code System</em>}' operation.
@@ -1070,7 +1070,7 @@ public class SmokingStatusObservationOperations extends ClinicalStatementOperati
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_SMOKING_STATUS_OBSERVATION_CD_CODE_SYSTEM__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<Query<?, ?, ?>>();
+	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_SMOKING_STATUS_OBSERVATION_CD_CODE_SYSTEM__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<>();
 
 	/**
 	 * The cached OCL expression body for the '{@link #validateSmokingStatusObservationIVLTSCenter(SmokingStatusObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Smoking Status Observation IVLTS Center</em>}' operation.
@@ -1091,7 +1091,7 @@ public class SmokingStatusObservationOperations extends ClinicalStatementOperati
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_SMOKING_STATUS_OBSERVATION_IVLTS_CENTER__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<Query<?, ?, ?>>();
+	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_SMOKING_STATUS_OBSERVATION_IVLTS_CENTER__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<>();
 
 	/**
 	 * The cached OCL expression body for the '{@link #validateSmokingStatusObservationIVLTSHigh(SmokingStatusObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Smoking Status Observation IVLTS High</em>}' operation.
@@ -1117,7 +1117,7 @@ public class SmokingStatusObservationOperations extends ClinicalStatementOperati
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_SMOKING_STATUS_OBSERVATION_IVLTS_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<Query<?, ?, ?>>();
+	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_SMOKING_STATUS_OBSERVATION_IVLTS_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<>();
 
 	/**
 	 * The cached OCL expression body for the '{@link #validateSmokingStatusObservationIVLTSLow(SmokingStatusObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Smoking Status Observation IVLTS Low</em>}' operation.
@@ -1138,7 +1138,7 @@ public class SmokingStatusObservationOperations extends ClinicalStatementOperati
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_SMOKING_STATUS_OBSERVATION_IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<Query<?, ?, ?>>();
+	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_SMOKING_STATUS_OBSERVATION_IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<>();
 
 	/**
 	 * The cached OCL expression body for the '{@link #validateSmokingStatusObservationIVLTSWidth(SmokingStatusObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Smoking Status Observation IVLTS Width</em>}' operation.
@@ -1159,7 +1159,7 @@ public class SmokingStatusObservationOperations extends ClinicalStatementOperati
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_SMOKING_STATUS_OBSERVATION_IVLTS_WIDTH__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<Query<?, ?, ?>>();
+	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_SMOKING_STATUS_OBSERVATION_IVLTS_WIDTH__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->

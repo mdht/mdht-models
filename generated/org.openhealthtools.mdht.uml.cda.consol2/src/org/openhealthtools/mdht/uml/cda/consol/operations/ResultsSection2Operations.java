@@ -83,7 +83,7 @@ public class ResultsSection2Operations extends ResultsSectionEntriesOptional2Ope
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_RESULTS_SECTION2_NULL_FLAVOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_RESULTS_SECTION2_NULL_FLAVOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -148,7 +148,7 @@ public class ResultsSection2Operations extends ResultsSectionEntriesOptional2Ope
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_RESULTS_SECTION2_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_RESULTS_SECTION2_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -213,7 +213,7 @@ public class ResultsSection2Operations extends ResultsSectionEntriesOptional2Ope
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_RESULTS_SECTION2_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_RESULTS_SECTION2_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -278,7 +278,7 @@ public class ResultsSection2Operations extends ResultsSectionEntriesOptional2Ope
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_RESULTS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_RESULTS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -345,7 +345,7 @@ public class ResultsSection2Operations extends ResultsSectionEntriesOptional2Ope
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_RESULTS_SECTION_ENTRIES_OPTIONAL_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_RESULTS_SECTION_ENTRIES_OPTIONAL_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -395,7 +395,7 @@ public class ResultsSection2Operations extends ResultsSectionEntriesOptional2Ope
 					"org.openhealthtools.mdht.uml.cda.consol.ResultsSectionEntriesOptionalCodeP");
 				if (passToken == null) {
 					// anticipate a reasonably healthy model
-					passToken = new java.util.ArrayList<Object>(3);
+					passToken = new java.util.ArrayList<>(3);
 					context.put(
 						"org.openhealthtools.mdht.uml.cda.consol.ResultsSectionEntriesOptionalCodeP", passToken);
 				}
@@ -428,7 +428,7 @@ public class ResultsSection2Operations extends ResultsSectionEntriesOptional2Ope
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_RESULTS_SECTION_ENTRIES_OPTIONAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_RESULTS_SECTION_ENTRIES_OPTIONAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -503,7 +503,7 @@ public class ResultsSection2Operations extends ResultsSectionEntriesOptional2Ope
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_RESULTS_SECTION_ENTRIES_OPTIONAL_RESULT_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_RESULTS_SECTION_ENTRIES_OPTIONAL_RESULT_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -595,7 +595,7 @@ public class ResultsSection2Operations extends ResultsSectionEntriesOptional2Ope
 		OCL.Query query = EOCL_ENV.get().createQuery(GET_CONSOL_RESULT_ORGANIZER2S__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<ResultOrganizer2> result = (Collection<ResultOrganizer2>) query.evaluate(resultsSection2);
-		return new BasicEList.UnmodifiableEList<ResultOrganizer2>(result.size(), result.toArray());
+		return new BasicEList.UnmodifiableEList<>(result.size(), result.toArray());
 	}
 
 } // ResultsSection2Operations

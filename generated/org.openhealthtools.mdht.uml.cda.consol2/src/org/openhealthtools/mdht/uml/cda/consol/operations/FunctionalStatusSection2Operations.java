@@ -104,7 +104,7 @@ public class FunctionalStatusSection2Operations extends FunctionalStatusSectionO
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_FUNCTIONAL_STATUS_SECTION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_FUNCTIONAL_STATUS_SECTION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -199,7 +199,7 @@ public class FunctionalStatusSection2Operations extends FunctionalStatusSectionO
 					"org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusSectionCodeP");
 				if (passToken == null) {
 					// anticipate a reasonably healthy model
-					passToken = new java.util.ArrayList<Object>(3);
+					passToken = new java.util.ArrayList<>(3);
 					context.put("org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusSectionCodeP", passToken);
 				}
 				passToken.add(functionalStatusSection2);
@@ -334,7 +334,7 @@ public class FunctionalStatusSection2Operations extends FunctionalStatusSectionO
 		@SuppressWarnings("unchecked")
 		Collection<FunctionalStatusOrganizer2> result = (Collection<FunctionalStatusOrganizer2>) query.evaluate(
 			functionalStatusSection2);
-		return new BasicEList.UnmodifiableEList<FunctionalStatusOrganizer2>(result.size(), result.toArray());
+		return new BasicEList.UnmodifiableEList<>(result.size(), result.toArray());
 	}
 
 	/**
@@ -364,7 +364,7 @@ public class FunctionalStatusSection2Operations extends FunctionalStatusSectionO
 		@SuppressWarnings("unchecked")
 		Collection<FunctionalStatusObservation2> result = (Collection<FunctionalStatusObservation2>) query.evaluate(
 			functionalStatusSection2);
-		return new BasicEList.UnmodifiableEList<FunctionalStatusObservation2>(result.size(), result.toArray());
+		return new BasicEList.UnmodifiableEList<>(result.size(), result.toArray());
 	}
 
 	/**
@@ -394,7 +394,7 @@ public class FunctionalStatusSection2Operations extends FunctionalStatusSectionO
 		@SuppressWarnings("unchecked")
 		Collection<CognitiveStatusResultOrganizer> result = (Collection<CognitiveStatusResultOrganizer>) query.evaluate(
 			functionalStatusSection2);
-		return new BasicEList.UnmodifiableEList<CognitiveStatusResultOrganizer>(result.size(), result.toArray());
+		return new BasicEList.UnmodifiableEList<>(result.size(), result.toArray());
 	}
 
 	/**
@@ -424,7 +424,7 @@ public class FunctionalStatusSection2Operations extends FunctionalStatusSectionO
 		@SuppressWarnings("unchecked")
 		Collection<CognitiveStatusResultObservation> result = (Collection<CognitiveStatusResultObservation>) query.evaluate(
 			functionalStatusSection2);
-		return new BasicEList.UnmodifiableEList<CognitiveStatusResultObservation>(result.size(), result.toArray());
+		return new BasicEList.UnmodifiableEList<>(result.size(), result.toArray());
 	}
 
 	/**
@@ -454,7 +454,7 @@ public class FunctionalStatusSection2Operations extends FunctionalStatusSectionO
 		@SuppressWarnings("unchecked")
 		Collection<NonMedicinalSupplyActivity2> result = (Collection<NonMedicinalSupplyActivity2>) query.evaluate(
 			functionalStatusSection2);
-		return new BasicEList.UnmodifiableEList<NonMedicinalSupplyActivity2>(result.size(), result.toArray());
+		return new BasicEList.UnmodifiableEList<>(result.size(), result.toArray());
 	}
 
 	/**
@@ -484,7 +484,7 @@ public class FunctionalStatusSection2Operations extends FunctionalStatusSectionO
 		@SuppressWarnings("unchecked")
 		Collection<NumberOfPressureUlcersObservation> result = (Collection<NumberOfPressureUlcersObservation>) query.evaluate(
 			functionalStatusSection2);
-		return new BasicEList.UnmodifiableEList<NumberOfPressureUlcersObservation>(result.size(), result.toArray());
+		return new BasicEList.UnmodifiableEList<>(result.size(), result.toArray());
 	}
 
 	/**
@@ -514,7 +514,7 @@ public class FunctionalStatusSection2Operations extends FunctionalStatusSectionO
 		@SuppressWarnings("unchecked")
 		Collection<HighestPressureUlcerStage> result = (Collection<HighestPressureUlcerStage>) query.evaluate(
 			functionalStatusSection2);
-		return new BasicEList.UnmodifiableEList<HighestPressureUlcerStage>(result.size(), result.toArray());
+		return new BasicEList.UnmodifiableEList<>(result.size(), result.toArray());
 	}
 
 	/**
@@ -542,7 +542,7 @@ public class FunctionalStatusSection2Operations extends FunctionalStatusSectionO
 		@SuppressWarnings("unchecked")
 		Collection<SelfCareActivities> result = (Collection<SelfCareActivities>) query.evaluate(
 			functionalStatusSection2);
-		return new BasicEList.UnmodifiableEList<SelfCareActivities>(result.size(), result.toArray());
+		return new BasicEList.UnmodifiableEList<>(result.size(), result.toArray());
 	}
 
 	/**
@@ -569,7 +569,7 @@ public class FunctionalStatusSection2Operations extends FunctionalStatusSectionO
 		OCL.Query query = EOCL_ENV.get().createQuery(GET_SENSORY_AND_SPEECH_STATUSS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<SensoryStatus> result = (Collection<SensoryStatus>) query.evaluate(functionalStatusSection2);
-		return new BasicEList.UnmodifiableEList<SensoryStatus>(result.size(), result.toArray());
+		return new BasicEList.UnmodifiableEList<>(result.size(), result.toArray());
 	}
 
 	/**
@@ -591,7 +591,7 @@ public class FunctionalStatusSection2Operations extends FunctionalStatusSectionO
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_FUNCTIONAL_STATUS_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_FUNCTIONAL_STATUS_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * The cached OCL expression body for the '{@link #validateFunctionalStatusSection2SelfCareActivities(FunctionalStatusSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Functional Status Section2 Self Care Activities</em>}' operation.
@@ -612,7 +612,7 @@ public class FunctionalStatusSection2Operations extends FunctionalStatusSectionO
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_FUNCTIONAL_STATUS_SECTION2_SELF_CARE_ACTIVITIES__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_FUNCTIONAL_STATUS_SECTION2_SELF_CARE_ACTIVITIES__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * The cached OCL expression body for the '{@link #validateFunctionalStatusSection2SensoryAndSpeechStatus(FunctionalStatusSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Functional Status Section2 Sensory And Speech Status</em>}' operation.
@@ -633,7 +633,7 @@ public class FunctionalStatusSection2Operations extends FunctionalStatusSectionO
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_FUNCTIONAL_STATUS_SECTION2_SENSORY_AND_SPEECH_STATUS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_FUNCTIONAL_STATUS_SECTION2_SENSORY_AND_SPEECH_STATUS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * The cached OCL expression body for the '{@link #getConsolFunctionalStatusOrganizer2s(FunctionalStatusSection2) <em>Get Consol Functional Status Organizer2s</em>}' operation.
@@ -836,7 +836,7 @@ public class FunctionalStatusSection2Operations extends FunctionalStatusSectionO
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_FUNCTIONAL_STATUS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_FUNCTIONAL_STATUS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -910,7 +910,7 @@ public class FunctionalStatusSection2Operations extends FunctionalStatusSectionO
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_FUNCTIONAL_STATUS_SECTION_FUNCTIONAL_STATUS_RESULT_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_FUNCTIONAL_STATUS_SECTION_FUNCTIONAL_STATUS_RESULT_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -980,7 +980,7 @@ public class FunctionalStatusSection2Operations extends FunctionalStatusSectionO
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_FUNCTIONAL_STATUS_SECTION_FUNCTIONAL_STATUS_RESULT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_FUNCTIONAL_STATUS_SECTION_FUNCTIONAL_STATUS_RESULT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1050,7 +1050,7 @@ public class FunctionalStatusSection2Operations extends FunctionalStatusSectionO
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_FUNCTIONAL_STATUS_SECTION_COGNITIVE_STATUS_RESULT_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_FUNCTIONAL_STATUS_SECTION_COGNITIVE_STATUS_RESULT_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1120,7 +1120,7 @@ public class FunctionalStatusSection2Operations extends FunctionalStatusSectionO
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_FUNCTIONAL_STATUS_SECTION_COGNITIVE_STATUS_RESULT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_FUNCTIONAL_STATUS_SECTION_COGNITIVE_STATUS_RESULT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1190,7 +1190,7 @@ public class FunctionalStatusSection2Operations extends FunctionalStatusSectionO
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_FUNCTIONAL_STATUS_SECTION_NON_MEDICINAL_SUPPLY_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_FUNCTIONAL_STATUS_SECTION_NON_MEDICINAL_SUPPLY_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1260,7 +1260,7 @@ public class FunctionalStatusSection2Operations extends FunctionalStatusSectionO
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_FUNCTIONAL_STATUS_SECTION_NUMBER_OF_PRESSURE_ULCERS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_FUNCTIONAL_STATUS_SECTION_NUMBER_OF_PRESSURE_ULCERS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1330,7 +1330,7 @@ public class FunctionalStatusSection2Operations extends FunctionalStatusSectionO
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_FUNCTIONAL_STATUS_SECTION_HIGHEST_PRESSURE_ULCER_STAGE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_FUNCTIONAL_STATUS_SECTION_HIGHEST_PRESSURE_ULCER_STAGE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->

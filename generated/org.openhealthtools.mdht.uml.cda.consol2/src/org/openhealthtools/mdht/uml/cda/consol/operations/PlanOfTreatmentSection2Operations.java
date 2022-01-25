@@ -110,7 +110,7 @@ public class PlanOfTreatmentSection2Operations extends PlanOfCareSectionOperatio
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_PLAN_OF_TREATMENT_SECTION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_PLAN_OF_TREATMENT_SECTION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -177,7 +177,7 @@ public class PlanOfTreatmentSection2Operations extends PlanOfCareSectionOperatio
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_PLAN_OF_TREATMENT_SECTION2_HANDOFF_COMMUNICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_PLAN_OF_TREATMENT_SECTION2_HANDOFF_COMMUNICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -245,7 +245,7 @@ public class PlanOfTreatmentSection2Operations extends PlanOfCareSectionOperatio
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_PLAN_OF_TREATMENT_SECTION2_NUTRITION_RECOMMENDATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_PLAN_OF_TREATMENT_SECTION2_NUTRITION_RECOMMENDATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -314,7 +314,7 @@ public class PlanOfTreatmentSection2Operations extends PlanOfCareSectionOperatio
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_PLAN_OF_TREATMENT_SECTION2_PLANNED_IMMUNIZATION_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_PLAN_OF_TREATMENT_SECTION2_PLANNED_IMMUNIZATION_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -383,7 +383,7 @@ public class PlanOfTreatmentSection2Operations extends PlanOfCareSectionOperatio
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_PLAN_OF_TREATMENT_SECTION2_GOAL_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_PLAN_OF_TREATMENT_SECTION2_GOAL_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -479,7 +479,7 @@ public class PlanOfTreatmentSection2Operations extends PlanOfCareSectionOperatio
 		@SuppressWarnings("unchecked")
 		Collection<PlannedObservation2> result = (Collection<PlannedObservation2>) query.evaluate(
 			planOfTreatmentSection2);
-		return new BasicEList.UnmodifiableEList<PlannedObservation2>(result.size(), result.toArray());
+		return new BasicEList.UnmodifiableEList<>(result.size(), result.toArray());
 	}
 
 	/**
@@ -527,7 +527,7 @@ public class PlanOfTreatmentSection2Operations extends PlanOfCareSectionOperatio
 		OCL.Query query = EOCL_ENV.get().createQuery(GET_CONSOL_PLANNED_ENCOUNTER2S__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<PlannedEncounter2> result = (Collection<PlannedEncounter2>) query.evaluate(planOfTreatmentSection2);
-		return new BasicEList.UnmodifiableEList<PlannedEncounter2>(result.size(), result.toArray());
+		return new BasicEList.UnmodifiableEList<>(result.size(), result.toArray());
 	}
 
 	/**
@@ -574,7 +574,7 @@ public class PlanOfTreatmentSection2Operations extends PlanOfCareSectionOperatio
 		OCL.Query query = EOCL_ENV.get().createQuery(GET_CONSOL_PLANNED_ACT2S__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<PlannedAct2> result = (Collection<PlannedAct2>) query.evaluate(planOfTreatmentSection2);
-		return new BasicEList.UnmodifiableEList<PlannedAct2>(result.size(), result.toArray());
+		return new BasicEList.UnmodifiableEList<>(result.size(), result.toArray());
 	}
 
 	/**
@@ -622,7 +622,7 @@ public class PlanOfTreatmentSection2Operations extends PlanOfCareSectionOperatio
 		OCL.Query query = EOCL_ENV.get().createQuery(GET_CONSOL_PLANNED_PROCEDURE2S__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<PlannedProcedure2> result = (Collection<PlannedProcedure2>) query.evaluate(planOfTreatmentSection2);
-		return new BasicEList.UnmodifiableEList<PlannedProcedure2>(result.size(), result.toArray());
+		return new BasicEList.UnmodifiableEList<>(result.size(), result.toArray());
 	}
 
 	/**
@@ -672,7 +672,7 @@ public class PlanOfTreatmentSection2Operations extends PlanOfCareSectionOperatio
 		@SuppressWarnings("unchecked")
 		Collection<PlannedMedicationActivity2> result = (Collection<PlannedMedicationActivity2>) query.evaluate(
 			planOfTreatmentSection2);
-		return new BasicEList.UnmodifiableEList<PlannedMedicationActivity2>(result.size(), result.toArray());
+		return new BasicEList.UnmodifiableEList<>(result.size(), result.toArray());
 	}
 
 	/**
@@ -719,7 +719,7 @@ public class PlanOfTreatmentSection2Operations extends PlanOfCareSectionOperatio
 		OCL.Query query = EOCL_ENV.get().createQuery(GET_CONSOL_PLANNED_SUPPLY2S__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<PlannedSupply2> result = (Collection<PlannedSupply2>) query.evaluate(planOfTreatmentSection2);
-		return new BasicEList.UnmodifiableEList<PlannedSupply2>(result.size(), result.toArray());
+		return new BasicEList.UnmodifiableEList<>(result.size(), result.toArray());
 	}
 
 	/**
@@ -766,7 +766,7 @@ public class PlanOfTreatmentSection2Operations extends PlanOfCareSectionOperatio
 		OCL.Query query = EOCL_ENV.get().createQuery(GET_CONSOL_INSTRUCTION2S__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<Instruction2> result = (Collection<Instruction2>) query.evaluate(planOfTreatmentSection2);
-		return new BasicEList.UnmodifiableEList<Instruction2>(result.size(), result.toArray());
+		return new BasicEList.UnmodifiableEList<>(result.size(), result.toArray());
 	}
 
 	/**
@@ -815,7 +815,7 @@ public class PlanOfTreatmentSection2Operations extends PlanOfCareSectionOperatio
 		@SuppressWarnings("unchecked")
 		Collection<HandoffCommunicationParticipants> result = (Collection<HandoffCommunicationParticipants>) query.evaluate(
 			planOfTreatmentSection2);
-		return new BasicEList.UnmodifiableEList<HandoffCommunicationParticipants>(result.size(), result.toArray());
+		return new BasicEList.UnmodifiableEList<>(result.size(), result.toArray());
 	}
 
 	/**
@@ -864,7 +864,7 @@ public class PlanOfTreatmentSection2Operations extends PlanOfCareSectionOperatio
 		@SuppressWarnings("unchecked")
 		Collection<NutritionRecommendation> result = (Collection<NutritionRecommendation>) query.evaluate(
 			planOfTreatmentSection2);
-		return new BasicEList.UnmodifiableEList<NutritionRecommendation>(result.size(), result.toArray());
+		return new BasicEList.UnmodifiableEList<>(result.size(), result.toArray());
 	}
 
 	/**
@@ -914,7 +914,7 @@ public class PlanOfTreatmentSection2Operations extends PlanOfCareSectionOperatio
 		@SuppressWarnings("unchecked")
 		Collection<PlannedImmunizationActivity> result = (Collection<PlannedImmunizationActivity>) query.evaluate(
 			planOfTreatmentSection2);
-		return new BasicEList.UnmodifiableEList<PlannedImmunizationActivity>(result.size(), result.toArray());
+		return new BasicEList.UnmodifiableEList<>(result.size(), result.toArray());
 	}
 
 	/**
@@ -961,7 +961,7 @@ public class PlanOfTreatmentSection2Operations extends PlanOfCareSectionOperatio
 		OCL.Query query = EOCL_ENV.get().createQuery(GET_GOAL_OBSERVATIONS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<GoalObservation> result = (Collection<GoalObservation>) query.evaluate(planOfTreatmentSection2);
-		return new BasicEList.UnmodifiableEList<GoalObservation>(result.size(), result.toArray());
+		return new BasicEList.UnmodifiableEList<>(result.size(), result.toArray());
 	}
 
 	/**
@@ -983,7 +983,7 @@ public class PlanOfTreatmentSection2Operations extends PlanOfCareSectionOperatio
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_PLAN_OF_CARE_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_PLAN_OF_CARE_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1032,7 +1032,7 @@ public class PlanOfTreatmentSection2Operations extends PlanOfCareSectionOperatio
 					"org.openhealthtools.mdht.uml.cda.consol.PlanOfCareSectionCodeP");
 				if (passToken == null) {
 					// anticipate a reasonably healthy model
-					passToken = new java.util.ArrayList<Object>(3);
+					passToken = new java.util.ArrayList<>(3);
 					context.put("org.openhealthtools.mdht.uml.cda.consol.PlanOfCareSectionCodeP", passToken);
 				}
 				passToken.add(planOfTreatmentSection2);
@@ -1064,7 +1064,7 @@ public class PlanOfTreatmentSection2Operations extends PlanOfCareSectionOperatio
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_PLAN_OF_CARE_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_PLAN_OF_CARE_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1137,7 +1137,7 @@ public class PlanOfTreatmentSection2Operations extends PlanOfCareSectionOperatio
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_PLAN_OF_CARE_SECTION_PLAN_OF_CARE_ACTIVITY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_PLAN_OF_CARE_SECTION_PLAN_OF_CARE_ACTIVITY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1206,7 +1206,7 @@ public class PlanOfTreatmentSection2Operations extends PlanOfCareSectionOperatio
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_PLAN_OF_CARE_SECTION_PLAN_OF_CARE_ACTIVITY_ENCOUNTER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_PLAN_OF_CARE_SECTION_PLAN_OF_CARE_ACTIVITY_ENCOUNTER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1274,7 +1274,7 @@ public class PlanOfTreatmentSection2Operations extends PlanOfCareSectionOperatio
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_PLAN_OF_CARE_SECTION_PLAN_OF_CARE_ACTIVITY_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_PLAN_OF_CARE_SECTION_PLAN_OF_CARE_ACTIVITY_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1342,7 +1342,7 @@ public class PlanOfTreatmentSection2Operations extends PlanOfCareSectionOperatio
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_PLAN_OF_CARE_SECTION_PLAN_OF_CARE_ACTIVITY_PROCEDURE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_PLAN_OF_CARE_SECTION_PLAN_OF_CARE_ACTIVITY_PROCEDURE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1410,7 +1410,7 @@ public class PlanOfTreatmentSection2Operations extends PlanOfCareSectionOperatio
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_PLAN_OF_CARE_SECTION_PLAN_OF_CARE_ACTIVITY_SUBSTANCE_ADMINISTRATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_PLAN_OF_CARE_SECTION_PLAN_OF_CARE_ACTIVITY_SUBSTANCE_ADMINISTRATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1479,7 +1479,7 @@ public class PlanOfTreatmentSection2Operations extends PlanOfCareSectionOperatio
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_PLAN_OF_CARE_SECTION_PLAN_OF_CARE_ACTIVITY_SUPPLY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_PLAN_OF_CARE_SECTION_PLAN_OF_CARE_ACTIVITY_SUPPLY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1547,7 +1547,7 @@ public class PlanOfTreatmentSection2Operations extends PlanOfCareSectionOperatio
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_PLAN_OF_CARE_SECTION_INSTRUCTIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_PLAN_OF_CARE_SECTION_INSTRUCTIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->

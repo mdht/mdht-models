@@ -8697,6 +8697,15 @@ public interface ConsolPackage extends EPackage {
 	int RESULT_ORGANIZER__CODE = CDAPackage.ORGANIZER__CODE;
 
 	/**
+	 * The feature id for the '<em><b>STDC Text</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_ORGANIZER__STDC_TEXT = CDAPackage.ORGANIZER__STDC_TEXT;
+
+	/**
 	 * The feature id for the '<em><b>Status Code</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -10849,6 +10858,15 @@ public interface ConsolPackage extends EPackage {
 	int FAMILY_HISTORY_ORGANIZER__CODE = CDAPackage.ORGANIZER__CODE;
 
 	/**
+	 * The feature id for the '<em><b>STDC Text</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FAMILY_HISTORY_ORGANIZER__STDC_TEXT = CDAPackage.ORGANIZER__STDC_TEXT;
+
+	/**
 	 * The feature id for the '<em><b>Status Code</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -11814,6 +11832,15 @@ public interface ConsolPackage extends EPackage {
 	 * @ordered
 	 */
 	int FUNCTIONAL_STATUS_RESULT_ORGANIZER__CODE = RESULT_ORGANIZER__CODE;
+
+	/**
+	 * The feature id for the '<em><b>STDC Text</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FUNCTIONAL_STATUS_RESULT_ORGANIZER__STDC_TEXT = RESULT_ORGANIZER__STDC_TEXT;
 
 	/**
 	 * The feature id for the '<em><b>Status Code</b></em>' containment reference.
@@ -13196,6 +13223,15 @@ public interface ConsolPackage extends EPackage {
 	 * @ordered
 	 */
 	int COGNITIVE_STATUS_RESULT_ORGANIZER__CODE = RESULT_ORGANIZER__CODE;
+
+	/**
+	 * The feature id for the '<em><b>STDC Text</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int COGNITIVE_STATUS_RESULT_ORGANIZER__STDC_TEXT = RESULT_ORGANIZER__STDC_TEXT;
 
 	/**
 	 * The feature id for the '<em><b>Status Code</b></em>' containment reference.
@@ -20398,6 +20434,15 @@ public interface ConsolPackage extends EPackage {
 	 * @ordered
 	 */
 	int VITAL_SIGNS_ORGANIZER__CODE = CDAPackage.ORGANIZER__CODE;
+
+	/**
+	 * The feature id for the '<em><b>STDC Text</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VITAL_SIGNS_ORGANIZER__STDC_TEXT = CDAPackage.ORGANIZER__STDC_TEXT;
 
 	/**
 	 * The feature id for the '<em><b>Status Code</b></em>' containment reference.
@@ -37910,6 +37955,15 @@ public interface ConsolPackage extends EPackage {
 	int ADVANCE_DIRECTIVE_ORGANIZER__CODE = CDAPackage.ORGANIZER__CODE;
 
 	/**
+	 * The feature id for the '<em><b>STDC Text</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADVANCE_DIRECTIVE_ORGANIZER__STDC_TEXT = CDAPackage.ORGANIZER__STDC_TEXT;
+
+	/**
 	 * The feature id for the '<em><b>Status Code</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -39760,6 +39814,15 @@ public interface ConsolPackage extends EPackage {
 	 * @ordered
 	 */
 	int MEDICAL_EQUIPMENT_ORGANIZER__CODE = CDAPackage.ORGANIZER__CODE;
+
+	/**
+	 * The feature id for the '<em><b>STDC Text</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MEDICAL_EQUIPMENT_ORGANIZER__STDC_TEXT = CDAPackage.ORGANIZER__STDC_TEXT;
 
 	/**
 	 * The feature id for the '<em><b>Status Code</b></em>' containment reference.
@@ -47565,6 +47628,15 @@ public interface ConsolPackage extends EPackage {
 	 * @ordered
 	 */
 	int FAMILY_HISTORY_ORGANIZER2__CODE = FAMILY_HISTORY_ORGANIZER__CODE;
+
+	/**
+	 * The feature id for the '<em><b>STDC Text</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FAMILY_HISTORY_ORGANIZER2__STDC_TEXT = FAMILY_HISTORY_ORGANIZER__STDC_TEXT;
 
 	/**
 	 * The feature id for the '<em><b>Status Code</b></em>' containment reference.
@@ -55876,6 +55948,15 @@ public interface ConsolPackage extends EPackage {
 	int RESULT_ORGANIZER2__CODE = RESULT_ORGANIZER__CODE;
 
 	/**
+	 * The feature id for the '<em><b>STDC Text</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESULT_ORGANIZER2__STDC_TEXT = RESULT_ORGANIZER__STDC_TEXT;
+
+	/**
 	 * The feature id for the '<em><b>Status Code</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -59339,6 +59420,15 @@ public interface ConsolPackage extends EPackage {
 	 * @ordered
 	 */
 	int MENTAL_STATUS_ORGANIZER2__CODE = COGNITIVE_STATUS_RESULT_ORGANIZER__CODE;
+
+	/**
+	 * The feature id for the '<em><b>STDC Text</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MENTAL_STATUS_ORGANIZER2__STDC_TEXT = COGNITIVE_STATUS_RESULT_ORGANIZER__STDC_TEXT;
 
 	/**
 	 * The feature id for the '<em><b>Status Code</b></em>' containment reference.
@@ -63240,6 +63330,15 @@ public interface ConsolPackage extends EPackage {
 	int VITAL_SIGNS_ORGANIZER2__CODE = VITAL_SIGNS_ORGANIZER__CODE;
 
 	/**
+	 * The feature id for the '<em><b>STDC Text</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VITAL_SIGNS_ORGANIZER2__STDC_TEXT = VITAL_SIGNS_ORGANIZER__STDC_TEXT;
+
+	/**
 	 * The feature id for the '<em><b>Status Code</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -63589,6 +63688,15 @@ public interface ConsolPackage extends EPackage {
 	 * @ordered
 	 */
 	int FUNCTIONAL_STATUS_ORGANIZER2__CODE = FUNCTIONAL_STATUS_RESULT_ORGANIZER__CODE;
+
+	/**
+	 * The feature id for the '<em><b>STDC Text</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FUNCTIONAL_STATUS_ORGANIZER2__STDC_TEXT = FUNCTIONAL_STATUS_RESULT_ORGANIZER__STDC_TEXT;
 
 	/**
 	 * The feature id for the '<em><b>Status Code</b></em>' containment reference.
@@ -74415,6 +74523,15 @@ public interface ConsolPackage extends EPackage {
 	int CARE_TEAM_ORGANIZER__CODE = CDAPackage.ORGANIZER__CODE;
 
 	/**
+	 * The feature id for the '<em><b>STDC Text</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CARE_TEAM_ORGANIZER__STDC_TEXT = CDAPackage.ORGANIZER__STDC_TEXT;
+
+	/**
 	 * The feature id for the '<em><b>Status Code</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -79643,6 +79760,15 @@ public interface ConsolPackage extends EPackage {
 	 * @ordered
 	 */
 	int UDI_ORGANIZER__CODE = CDAPackage.ORGANIZER__CODE;
+
+	/**
+	 * The feature id for the '<em><b>STDC Text</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UDI_ORGANIZER__STDC_TEXT = CDAPackage.ORGANIZER__STDC_TEXT;
 
 	/**
 	 * The feature id for the '<em><b>Status Code</b></em>' containment reference.

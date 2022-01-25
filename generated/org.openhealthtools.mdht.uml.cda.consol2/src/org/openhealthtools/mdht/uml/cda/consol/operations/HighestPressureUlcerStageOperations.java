@@ -78,7 +78,7 @@ public class HighestPressureUlcerStageOperations extends ClinicalStatementOperat
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_HIGHEST_PRESSURE_ULCER_STAGE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_HIGHEST_PRESSURE_ULCER_STAGE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -146,7 +146,7 @@ public class HighestPressureUlcerStageOperations extends ClinicalStatementOperat
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_HIGHEST_PRESSURE_ULCER_STAGE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_HIGHEST_PRESSURE_ULCER_STAGE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -214,7 +214,7 @@ public class HighestPressureUlcerStageOperations extends ClinicalStatementOperat
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_HIGHEST_PRESSURE_ULCER_STAGE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_HIGHEST_PRESSURE_ULCER_STAGE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -281,7 +281,7 @@ public class HighestPressureUlcerStageOperations extends ClinicalStatementOperat
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_HIGHEST_PRESSURE_ULCER_STAGE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_HIGHEST_PRESSURE_ULCER_STAGE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -347,7 +347,7 @@ public class HighestPressureUlcerStageOperations extends ClinicalStatementOperat
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_HIGHEST_PRESSURE_ULCER_STAGE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_HIGHEST_PRESSURE_ULCER_STAGE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -397,7 +397,7 @@ public class HighestPressureUlcerStageOperations extends ClinicalStatementOperat
 					"org.openhealthtools.mdht.uml.cda.consol.HighestPressureUlcerStageCodeP");
 				if (passToken == null) {
 					// anticipate a reasonably healthy model
-					passToken = new java.util.ArrayList<Object>(3);
+					passToken = new java.util.ArrayList<>(3);
 					context.put("org.openhealthtools.mdht.uml.cda.consol.HighestPressureUlcerStageCodeP", passToken);
 				}
 				passToken.add(highestPressureUlcerStage);
@@ -429,7 +429,7 @@ public class HighestPressureUlcerStageOperations extends ClinicalStatementOperat
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_HIGHEST_PRESSURE_ULCER_STAGE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_HIGHEST_PRESSURE_ULCER_STAGE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -503,7 +503,7 @@ public class HighestPressureUlcerStageOperations extends ClinicalStatementOperat
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_HIGHEST_PRESSURE_ULCER_STAGE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_HIGHEST_PRESSURE_ULCER_STAGE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->

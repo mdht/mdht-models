@@ -87,7 +87,7 @@ public class MedicationsAdministeredSectionOperations extends SectionOperations 
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_MEDICATIONS_ADMINISTERED_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_MEDICATIONS_ADMINISTERED_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -159,7 +159,7 @@ public class MedicationsAdministeredSectionOperations extends SectionOperations 
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_MEDICATIONS_ADMINISTERED_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_MEDICATIONS_ADMINISTERED_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -228,7 +228,7 @@ public class MedicationsAdministeredSectionOperations extends SectionOperations 
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_MEDICATIONS_ADMINISTERED_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_MEDICATIONS_ADMINISTERED_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -345,7 +345,7 @@ public class MedicationsAdministeredSectionOperations extends SectionOperations 
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_MEDICATIONS_ADMINISTERED_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_MEDICATIONS_ADMINISTERED_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * The cached OCL expression body for the '{@link #validateMedicationsAdministeredSectionText(MedicationsAdministeredSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medications Administered Section Text</em>}' operation.
@@ -366,7 +366,7 @@ public class MedicationsAdministeredSectionOperations extends SectionOperations 
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_MEDICATIONS_ADMINISTERED_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_MEDICATIONS_ADMINISTERED_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -435,7 +435,7 @@ public class MedicationsAdministeredSectionOperations extends SectionOperations 
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_MEDICATIONS_ADMINISTERED_SECTION_MEDICATION_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_MEDICATIONS_ADMINISTERED_SECTION_MEDICATION_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -532,7 +532,7 @@ public class MedicationsAdministeredSectionOperations extends SectionOperations 
 		@SuppressWarnings("unchecked")
 		Collection<MedicationActivity> result = (Collection<MedicationActivity>) query.evaluate(
 			medicationsAdministeredSection);
-		return new BasicEList.UnmodifiableEList<MedicationActivity>(result.size(), result.toArray());
+		return new BasicEList.UnmodifiableEList<>(result.size(), result.toArray());
 	}
 
 } // MedicationsAdministeredSectionOperations

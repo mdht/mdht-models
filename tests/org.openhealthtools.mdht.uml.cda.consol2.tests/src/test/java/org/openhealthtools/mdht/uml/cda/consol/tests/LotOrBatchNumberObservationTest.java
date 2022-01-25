@@ -172,7 +172,7 @@ public class LotOrBatchNumberObservationTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(LotOrBatchNumberObservation target) {
 				target.init();
-				target.getValues().add(DatatypesFactory.eINSTANCE.createST("LOTNUMBER"));
+				target.getValues().add(DatatypesFactory.eINSTANCE.createED("LOTNUMBER"));
 
 			}
 

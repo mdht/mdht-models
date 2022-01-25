@@ -190,7 +190,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_RISK_CONCERN_ACT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_RISK_CONCERN_ACT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -255,7 +255,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_RISK_CONCERN_ACT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_RISK_CONCERN_ACT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -320,7 +320,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_RISK_CONCERN_ACT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_RISK_CONCERN_ACT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -385,7 +385,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_RISK_CONCERN_ACT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_RISK_CONCERN_ACT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -450,7 +450,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_RISK_CONCERN_ACT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_RISK_CONCERN_ACT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -498,7 +498,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 					"org.openhealthtools.mdht.uml.cda.consol.RiskConcernActCodeP");
 				if (passToken == null) {
 					// anticipate a reasonably healthy model
-					passToken = new java.util.ArrayList<Object>(3);
+					passToken = new java.util.ArrayList<>(3);
 					context.put("org.openhealthtools.mdht.uml.cda.consol.RiskConcernActCodeP", passToken);
 				}
 				passToken.add(riskConcernAct);
@@ -530,7 +530,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_RISK_CONCERN_ACT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_RISK_CONCERN_ACT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -605,7 +605,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_RISK_CONCERN_ACT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_RISK_CONCERN_ACT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -670,7 +670,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_RISK_CONCERN_ACT_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_RISK_CONCERN_ACT_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -735,7 +735,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_RISK_CONCERN_ACT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_RISK_CONCERN_ACT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -800,7 +800,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_RISK_CONCERN_ACT_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_RISK_CONCERN_ACT_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -867,7 +867,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_RISK_CONCERN_ACT_PROBLEM_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_RISK_CONCERN_ACT_PROBLEM_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -934,7 +934,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_RISK_CONCERN_ACT_ALLERGY_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_RISK_CONCERN_ACT_ALLERGY_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1001,7 +1001,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_RISK_CONCERN_ACT_ENTRY_REFERENCE_RELATES_TO__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_RISK_CONCERN_ACT_ENTRY_REFERENCE_RELATES_TO__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1068,7 +1068,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_RISK_CONCERN_ACT_ENTRY_REFERENCE_HAS_COMPONENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_RISK_CONCERN_ACT_ENTRY_REFERENCE_HAS_COMPONENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1135,7 +1135,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_RISK_CONCERN_ACT_ASSESSMENT_SCALE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_RISK_CONCERN_ACT_ASSESSMENT_SCALE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1202,7 +1202,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_RISK_CONCERN_ACT_MENTAL_STATUS_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_RISK_CONCERN_ACT_MENTAL_STATUS_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1269,7 +1269,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_RISK_CONCERN_ACT_SELF_CARE_ACTIVITIES__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_RISK_CONCERN_ACT_SELF_CARE_ACTIVITIES__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1336,7 +1336,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_RISK_CONCERN_ACT_MENTAL_STATUS_OBSERVATION2_B__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_RISK_CONCERN_ACT_MENTAL_STATUS_OBSERVATION2_B__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1403,7 +1403,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_RISK_CONCERN_ACT_SMOKING_STATUS_MEANINGFUL_USE2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_RISK_CONCERN_ACT_SMOKING_STATUS_MEANINGFUL_USE2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1470,7 +1470,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_RISK_CONCERN_ACT_ENCOUNTER_DIAGNOSIS2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_RISK_CONCERN_ACT_ENCOUNTER_DIAGNOSIS2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1537,7 +1537,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_RISK_CONCERN_ACT_FAMILY_HISTORY_ORGANIZER2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_RISK_CONCERN_ACT_FAMILY_HISTORY_ORGANIZER2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1604,7 +1604,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_RISK_CONCERN_ACT_FUNCTIONAL_STATUS_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_RISK_CONCERN_ACT_FUNCTIONAL_STATUS_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1671,7 +1671,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_RISK_CONCERN_ACT_HOSPITAL_ADMISSION_DIAGNOSIS2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_RISK_CONCERN_ACT_HOSPITAL_ADMISSION_DIAGNOSIS2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1738,7 +1738,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_RISK_CONCERN_ACT_MENTAL_STATUS_OBSERVATION2_C__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_RISK_CONCERN_ACT_MENTAL_STATUS_OBSERVATION2_C__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1805,7 +1805,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_RISK_CONCERN_ACT_NUTRITION_ASSESSMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_RISK_CONCERN_ACT_NUTRITION_ASSESSMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1872,7 +1872,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_RISK_CONCERN_ACT_NUTRITION_ASSESSMENT_B__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_RISK_CONCERN_ACT_NUTRITION_ASSESSMENT_B__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1939,7 +1939,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_RISK_CONCERN_ACT_POSTPROCEDURE_DIAGNOSIS2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_RISK_CONCERN_ACT_POSTPROCEDURE_DIAGNOSIS2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -2006,7 +2006,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_RISK_CONCERN_ACT_PREGNANCY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_RISK_CONCERN_ACT_PREGNANCY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -2073,7 +2073,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_RISK_CONCERN_ACT_PREOPERATIVE_DIAGNOSIS2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_RISK_CONCERN_ACT_PREOPERATIVE_DIAGNOSIS2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -2140,7 +2140,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_RISK_CONCERN_ACT_REACTION_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_RISK_CONCERN_ACT_REACTION_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -2207,7 +2207,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_RISK_CONCERN_ACT_RESULT_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_RISK_CONCERN_ACT_RESULT_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -2274,7 +2274,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_RISK_CONCERN_ACT_SENSORY_STATUS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_RISK_CONCERN_ACT_SENSORY_STATUS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -2339,7 +2339,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_RISK_CONCERN_ACT_SOCIAL_HISTORY_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_RISK_CONCERN_ACT_SOCIAL_HISTORY_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -2406,7 +2406,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_RISK_CONCERN_ACT_SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_RISK_CONCERN_ACT_SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -2474,7 +2474,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_RISK_CONCERN_ACT_TOBACCO_USE2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_RISK_CONCERN_ACT_TOBACCO_USE2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -2539,7 +2539,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_RISK_CONCERN_ACT_VITAL_SIGN_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_RISK_CONCERN_ACT_VITAL_SIGN_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -2606,7 +2606,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_RISK_CONCERN_ACT_WOUND_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_RISK_CONCERN_ACT_WOUND_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -2672,7 +2672,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_RISK_CONCERN_ACT_PROBLEM_OBSERVATION2_HAS_SUPPORT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_RISK_CONCERN_ACT_PROBLEM_OBSERVATION2_HAS_SUPPORT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -2739,7 +2739,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_RISK_CONCERN_ACT_CAREGIVER_CHARACTERISTICS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_RISK_CONCERN_ACT_CAREGIVER_CHARACTERISTICS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -2806,7 +2806,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_RISK_CONCERN_ACT_CULTURAL_AND_RELIGIOUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_RISK_CONCERN_ACT_CULTURAL_AND_RELIGIOUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -2873,7 +2873,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_RISK_CONCERN_ACT_CHARACTERISTICS_OF_HOME_ENVIRONMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_RISK_CONCERN_ACT_CHARACTERISTICS_OF_HOME_ENVIRONMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -2940,7 +2940,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_RISK_CONCERN_ACT_NUTRITIONAL_STATUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_RISK_CONCERN_ACT_NUTRITIONAL_STATUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -3007,7 +3007,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_RISK_CONCERN_ACT_RESULT_ORGANIZER2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_RISK_CONCERN_ACT_RESULT_ORGANIZER2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -3073,7 +3073,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_RISK_CONCERN_ACT_PRIORITY_PREFERENCE_PATIENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_RISK_CONCERN_ACT_PRIORITY_PREFERENCE_PATIENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -3140,7 +3140,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_RISK_CONCERN_ACT_PRIORITY_PREFERENCE_PROVIDER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_RISK_CONCERN_ACT_PRIORITY_PREFERENCE_PROVIDER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -3207,7 +3207,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_RISK_CONCERN_ACT_PROBLEM_CONCERN_ACT2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_RISK_CONCERN_ACT_PROBLEM_CONCERN_ACT2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -3274,7 +3274,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_RISK_CONCERN_ACT_ENTRY_REFERENCE_HEALTH_CONCERN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_RISK_CONCERN_ACT_ENTRY_REFERENCE_HEALTH_CONCERN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -3341,7 +3341,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_RISK_CONCERN_ACT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_RISK_CONCERN_ACT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -3406,7 +3406,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_RISK_CONCERN_ACT_REFERENCE_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<Query<?, ?, ?>>();
+	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_RISK_CONCERN_ACT_REFERENCE_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -3478,7 +3478,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_RISK_CONCERN_ACT_REFERENCE_EXTERNAL_DOCUMENT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<Query<?, ?, ?>>();
+	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_RISK_CONCERN_ACT_REFERENCE_EXTERNAL_DOCUMENT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -3576,7 +3576,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 		OCL.Query query = EOCL_ENV.get().createQuery(GET_PROBLEM_OBSERVATION2S__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<ProblemObservation2> result = (Collection<ProblemObservation2>) query.evaluate(riskConcernAct);
-		return new BasicEList.UnmodifiableEList<ProblemObservation2>(result.size(), result.toArray());
+		return new BasicEList.UnmodifiableEList<>(result.size(), result.toArray());
 	}
 
 	/**
@@ -3623,7 +3623,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 		OCL.Query query = EOCL_ENV.get().createQuery(GET_ALLERGY_OBSERVATION2S__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<AllergyObservation2> result = (Collection<AllergyObservation2>) query.evaluate(riskConcernAct);
-		return new BasicEList.UnmodifiableEList<AllergyObservation2>(result.size(), result.toArray());
+		return new BasicEList.UnmodifiableEList<>(result.size(), result.toArray());
 	}
 
 	/**
@@ -3671,7 +3671,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 		OCL.Query query = EOCL_ENV.get().createQuery(GET_ENTRY_REFERENCE_RELATES_TOS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<EntryReference> result = (Collection<EntryReference>) query.evaluate(riskConcernAct);
-		return new BasicEList.UnmodifiableEList<EntryReference>(result.size(), result.toArray());
+		return new BasicEList.UnmodifiableEList<>(result.size(), result.toArray());
 	}
 
 	/**
@@ -3719,7 +3719,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 		OCL.Query query = EOCL_ENV.get().createQuery(GET_ENTRY_REFERENCE_HAS_COMPONENTS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<EntryReference> result = (Collection<EntryReference>) query.evaluate(riskConcernAct);
-		return new BasicEList.UnmodifiableEList<EntryReference>(result.size(), result.toArray());
+		return new BasicEList.UnmodifiableEList<>(result.size(), result.toArray());
 	}
 
 	/**
@@ -3768,7 +3768,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 		@SuppressWarnings("unchecked")
 		Collection<AssessmentScaleObservation> result = (Collection<AssessmentScaleObservation>) query.evaluate(
 			riskConcernAct);
-		return new BasicEList.UnmodifiableEList<AssessmentScaleObservation>(result.size(), result.toArray());
+		return new BasicEList.UnmodifiableEList<>(result.size(), result.toArray());
 	}
 
 	/**
@@ -3817,7 +3817,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 		@SuppressWarnings("unchecked")
 		Collection<MentalStatusObservation2> result = (Collection<MentalStatusObservation2>) query.evaluate(
 			riskConcernAct);
-		return new BasicEList.UnmodifiableEList<MentalStatusObservation2>(result.size(), result.toArray());
+		return new BasicEList.UnmodifiableEList<>(result.size(), result.toArray());
 	}
 
 	/**
@@ -3864,7 +3864,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 		OCL.Query query = EOCL_ENV.get().createQuery(GET_SELF_CARE_ACTIVITIESS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<SelfCareActivities> result = (Collection<SelfCareActivities>) query.evaluate(riskConcernAct);
-		return new BasicEList.UnmodifiableEList<SelfCareActivities>(result.size(), result.toArray());
+		return new BasicEList.UnmodifiableEList<>(result.size(), result.toArray());
 	}
 
 	/**
@@ -3913,7 +3913,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 		@SuppressWarnings("unchecked")
 		Collection<MentalStatusObservation2> result = (Collection<MentalStatusObservation2>) query.evaluate(
 			riskConcernAct);
-		return new BasicEList.UnmodifiableEList<MentalStatusObservation2>(result.size(), result.toArray());
+		return new BasicEList.UnmodifiableEList<>(result.size(), result.toArray());
 	}
 
 	/**
@@ -3962,7 +3962,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 		@SuppressWarnings("unchecked")
 		Collection<SmokingStatusMeaningfulUse2> result = (Collection<SmokingStatusMeaningfulUse2>) query.evaluate(
 			riskConcernAct);
-		return new BasicEList.UnmodifiableEList<SmokingStatusMeaningfulUse2>(result.size(), result.toArray());
+		return new BasicEList.UnmodifiableEList<>(result.size(), result.toArray());
 	}
 
 	/**
@@ -4009,7 +4009,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 		OCL.Query query = EOCL_ENV.get().createQuery(GET_ENCOUNTER_DIAGNOSIS2S__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<EncounterDiagnosis2> result = (Collection<EncounterDiagnosis2>) query.evaluate(riskConcernAct);
-		return new BasicEList.UnmodifiableEList<EncounterDiagnosis2>(result.size(), result.toArray());
+		return new BasicEList.UnmodifiableEList<>(result.size(), result.toArray());
 	}
 
 	/**
@@ -4057,7 +4057,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 		@SuppressWarnings("unchecked")
 		Collection<FamilyHistoryOrganizer2> result = (Collection<FamilyHistoryOrganizer2>) query.evaluate(
 			riskConcernAct);
-		return new BasicEList.UnmodifiableEList<FamilyHistoryOrganizer2>(result.size(), result.toArray());
+		return new BasicEList.UnmodifiableEList<>(result.size(), result.toArray());
 	}
 
 	/**
@@ -4106,7 +4106,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 		@SuppressWarnings("unchecked")
 		Collection<FunctionalStatusObservation2> result = (Collection<FunctionalStatusObservation2>) query.evaluate(
 			riskConcernAct);
-		return new BasicEList.UnmodifiableEList<FunctionalStatusObservation2>(result.size(), result.toArray());
+		return new BasicEList.UnmodifiableEList<>(result.size(), result.toArray());
 	}
 
 	/**
@@ -4155,7 +4155,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 		@SuppressWarnings("unchecked")
 		Collection<HospitalAdmissionDiagnosis2> result = (Collection<HospitalAdmissionDiagnosis2>) query.evaluate(
 			riskConcernAct);
-		return new BasicEList.UnmodifiableEList<HospitalAdmissionDiagnosis2>(result.size(), result.toArray());
+		return new BasicEList.UnmodifiableEList<>(result.size(), result.toArray());
 	}
 
 	/**
@@ -4204,7 +4204,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 		@SuppressWarnings("unchecked")
 		Collection<MentalStatusObservation2> result = (Collection<MentalStatusObservation2>) query.evaluate(
 			riskConcernAct);
-		return new BasicEList.UnmodifiableEList<MentalStatusObservation2>(result.size(), result.toArray());
+		return new BasicEList.UnmodifiableEList<>(result.size(), result.toArray());
 	}
 
 	/**
@@ -4251,7 +4251,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 		OCL.Query query = EOCL_ENV.get().createQuery(GET_NUTRITION_ASSESSMENTS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<NutritionAssessment> result = (Collection<NutritionAssessment>) query.evaluate(riskConcernAct);
-		return new BasicEList.UnmodifiableEList<NutritionAssessment>(result.size(), result.toArray());
+		return new BasicEList.UnmodifiableEList<>(result.size(), result.toArray());
 	}
 
 	/**
@@ -4298,7 +4298,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 		OCL.Query query = EOCL_ENV.get().createQuery(GET_NUTRITION_ASSESSMENT_BS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<NutritionAssessment> result = (Collection<NutritionAssessment>) query.evaluate(riskConcernAct);
-		return new BasicEList.UnmodifiableEList<NutritionAssessment>(result.size(), result.toArray());
+		return new BasicEList.UnmodifiableEList<>(result.size(), result.toArray());
 	}
 
 	/**
@@ -4346,7 +4346,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 		@SuppressWarnings("unchecked")
 		Collection<PostprocedureDiagnosis2> result = (Collection<PostprocedureDiagnosis2>) query.evaluate(
 			riskConcernAct);
-		return new BasicEList.UnmodifiableEList<PostprocedureDiagnosis2>(result.size(), result.toArray());
+		return new BasicEList.UnmodifiableEList<>(result.size(), result.toArray());
 	}
 
 	/**
@@ -4393,7 +4393,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 		OCL.Query query = EOCL_ENV.get().createQuery(GET_PREGNANCY_OBSERVATIONS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<PregnancyObservation> result = (Collection<PregnancyObservation>) query.evaluate(riskConcernAct);
-		return new BasicEList.UnmodifiableEList<PregnancyObservation>(result.size(), result.toArray());
+		return new BasicEList.UnmodifiableEList<>(result.size(), result.toArray());
 	}
 
 	/**
@@ -4440,7 +4440,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 		OCL.Query query = EOCL_ENV.get().createQuery(GET_PREOPERATIVE_DIAGNOSIS2S__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<PreoperativeDiagnosis2> result = (Collection<PreoperativeDiagnosis2>) query.evaluate(riskConcernAct);
-		return new BasicEList.UnmodifiableEList<PreoperativeDiagnosis2>(result.size(), result.toArray());
+		return new BasicEList.UnmodifiableEList<>(result.size(), result.toArray());
 	}
 
 	/**
@@ -4487,7 +4487,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 		OCL.Query query = EOCL_ENV.get().createQuery(GET_REACTION_OBSERVATION2S__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<ReactionObservation2> result = (Collection<ReactionObservation2>) query.evaluate(riskConcernAct);
-		return new BasicEList.UnmodifiableEList<ReactionObservation2>(result.size(), result.toArray());
+		return new BasicEList.UnmodifiableEList<>(result.size(), result.toArray());
 	}
 
 	/**
@@ -4534,7 +4534,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 		OCL.Query query = EOCL_ENV.get().createQuery(GET_RESULT_OBSERVATION2S__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<ResultObservation2> result = (Collection<ResultObservation2>) query.evaluate(riskConcernAct);
-		return new BasicEList.UnmodifiableEList<ResultObservation2>(result.size(), result.toArray());
+		return new BasicEList.UnmodifiableEList<>(result.size(), result.toArray());
 	}
 
 	/**
@@ -4581,7 +4581,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 		OCL.Query query = EOCL_ENV.get().createQuery(GET_SENSORY_STATUSS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<SensoryStatus> result = (Collection<SensoryStatus>) query.evaluate(riskConcernAct);
-		return new BasicEList.UnmodifiableEList<SensoryStatus>(result.size(), result.toArray());
+		return new BasicEList.UnmodifiableEList<>(result.size(), result.toArray());
 	}
 
 	/**
@@ -4630,7 +4630,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 		@SuppressWarnings("unchecked")
 		Collection<SocialHistoryObservation2> result = (Collection<SocialHistoryObservation2>) query.evaluate(
 			riskConcernAct);
-		return new BasicEList.UnmodifiableEList<SocialHistoryObservation2>(result.size(), result.toArray());
+		return new BasicEList.UnmodifiableEList<>(result.size(), result.toArray());
 	}
 
 	/**
@@ -4680,7 +4680,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 		@SuppressWarnings("unchecked")
 		Collection<SubstanceOrDeviceAllergyObservation2> result = (Collection<SubstanceOrDeviceAllergyObservation2>) query.evaluate(
 			riskConcernAct);
-		return new BasicEList.UnmodifiableEList<SubstanceOrDeviceAllergyObservation2>(result.size(), result.toArray());
+		return new BasicEList.UnmodifiableEList<>(result.size(), result.toArray());
 	}
 
 	/**
@@ -4727,7 +4727,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 		OCL.Query query = EOCL_ENV.get().createQuery(GET_TOBACCO_USE2S__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<TobaccoUse2> result = (Collection<TobaccoUse2>) query.evaluate(riskConcernAct);
-		return new BasicEList.UnmodifiableEList<TobaccoUse2>(result.size(), result.toArray());
+		return new BasicEList.UnmodifiableEList<>(result.size(), result.toArray());
 	}
 
 	/**
@@ -4774,7 +4774,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 		OCL.Query query = EOCL_ENV.get().createQuery(GET_VITAL_SIGN_OBSERVATION2S__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<VitalSignObservation2> result = (Collection<VitalSignObservation2>) query.evaluate(riskConcernAct);
-		return new BasicEList.UnmodifiableEList<VitalSignObservation2>(result.size(), result.toArray());
+		return new BasicEList.UnmodifiableEList<>(result.size(), result.toArray());
 	}
 
 	/**
@@ -4822,7 +4822,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 		@SuppressWarnings("unchecked")
 		Collection<LongitudinalCareWoundObservation> result = (Collection<LongitudinalCareWoundObservation>) query.evaluate(
 			riskConcernAct);
-		return new BasicEList.UnmodifiableEList<LongitudinalCareWoundObservation>(result.size(), result.toArray());
+		return new BasicEList.UnmodifiableEList<>(result.size(), result.toArray());
 	}
 
 	/**
@@ -4870,7 +4870,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 		OCL.Query query = EOCL_ENV.get().createQuery(GET_PROBLEM_OBSERVATION2_HAS_SUPPORTS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<ProblemObservation2> result = (Collection<ProblemObservation2>) query.evaluate(riskConcernAct);
-		return new BasicEList.UnmodifiableEList<ProblemObservation2>(result.size(), result.toArray());
+		return new BasicEList.UnmodifiableEList<>(result.size(), result.toArray());
 	}
 
 	/**
@@ -4918,7 +4918,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 		@SuppressWarnings("unchecked")
 		Collection<CaregiverCharacteristics> result = (Collection<CaregiverCharacteristics>) query.evaluate(
 			riskConcernAct);
-		return new BasicEList.UnmodifiableEList<CaregiverCharacteristics>(result.size(), result.toArray());
+		return new BasicEList.UnmodifiableEList<>(result.size(), result.toArray());
 	}
 
 	/**
@@ -4968,7 +4968,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 		@SuppressWarnings("unchecked")
 		Collection<CulturalAndReligiousObservation> result = (Collection<CulturalAndReligiousObservation>) query.evaluate(
 			riskConcernAct);
-		return new BasicEList.UnmodifiableEList<CulturalAndReligiousObservation>(result.size(), result.toArray());
+		return new BasicEList.UnmodifiableEList<>(result.size(), result.toArray());
 	}
 
 	/**
@@ -5018,7 +5018,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 		@SuppressWarnings("unchecked")
 		Collection<CharacteristicsOfHomeEnvironment> result = (Collection<CharacteristicsOfHomeEnvironment>) query.evaluate(
 			riskConcernAct);
-		return new BasicEList.UnmodifiableEList<CharacteristicsOfHomeEnvironment>(result.size(), result.toArray());
+		return new BasicEList.UnmodifiableEList<>(result.size(), result.toArray());
 	}
 
 	/**
@@ -5067,7 +5067,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 		@SuppressWarnings("unchecked")
 		Collection<NutritionalStatusObservation> result = (Collection<NutritionalStatusObservation>) query.evaluate(
 			riskConcernAct);
-		return new BasicEList.UnmodifiableEList<NutritionalStatusObservation>(result.size(), result.toArray());
+		return new BasicEList.UnmodifiableEList<>(result.size(), result.toArray());
 	}
 
 	/**
@@ -5114,7 +5114,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 		OCL.Query query = EOCL_ENV.get().createQuery(GET_RESULT_ORGANIZER2S__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<ResultOrganizer2> result = (Collection<ResultOrganizer2>) query.evaluate(riskConcernAct);
-		return new BasicEList.UnmodifiableEList<ResultOrganizer2>(result.size(), result.toArray());
+		return new BasicEList.UnmodifiableEList<>(result.size(), result.toArray());
 	}
 
 	/**
@@ -5162,7 +5162,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 		OCL.Query query = EOCL_ENV.get().createQuery(GET_PRIORITY_PREFERENCE_PATIENTS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<PriorityPreference> result = (Collection<PriorityPreference>) query.evaluate(riskConcernAct);
-		return new BasicEList.UnmodifiableEList<PriorityPreference>(result.size(), result.toArray());
+		return new BasicEList.UnmodifiableEList<>(result.size(), result.toArray());
 	}
 
 	/**
@@ -5210,7 +5210,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 		OCL.Query query = EOCL_ENV.get().createQuery(GET_PRIORITY_PREFERENCE_PROVIDERS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<PriorityPreference> result = (Collection<PriorityPreference>) query.evaluate(riskConcernAct);
-		return new BasicEList.UnmodifiableEList<PriorityPreference>(result.size(), result.toArray());
+		return new BasicEList.UnmodifiableEList<>(result.size(), result.toArray());
 	}
 
 	/**
@@ -5257,7 +5257,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 		OCL.Query query = EOCL_ENV.get().createQuery(GET_PROBLEM_CONCERN_ACT2S__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<ProblemConcernAct2> result = (Collection<ProblemConcernAct2>) query.evaluate(riskConcernAct);
-		return new BasicEList.UnmodifiableEList<ProblemConcernAct2>(result.size(), result.toArray());
+		return new BasicEList.UnmodifiableEList<>(result.size(), result.toArray());
 	}
 
 	/**
@@ -5305,7 +5305,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 		OCL.Query query = EOCL_ENV.get().createQuery(GET_ENTRY_REFERENCE_HEALTH_CONCERNS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<EntryReference> result = (Collection<EntryReference>) query.evaluate(riskConcernAct);
-		return new BasicEList.UnmodifiableEList<EntryReference>(result.size(), result.toArray());
+		return new BasicEList.UnmodifiableEList<>(result.size(), result.toArray());
 	}
 
 } // RiskConcernActOperations

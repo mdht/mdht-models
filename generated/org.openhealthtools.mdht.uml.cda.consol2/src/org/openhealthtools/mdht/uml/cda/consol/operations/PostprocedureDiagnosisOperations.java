@@ -86,7 +86,7 @@ public class PostprocedureDiagnosisOperations extends ClinicalStatementOperation
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_POSTPROCEDURE_DIAGNOSIS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_POSTPROCEDURE_DIAGNOSIS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -153,7 +153,7 @@ public class PostprocedureDiagnosisOperations extends ClinicalStatementOperation
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_POSTPROCEDURE_DIAGNOSIS_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_POSTPROCEDURE_DIAGNOSIS_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -220,7 +220,7 @@ public class PostprocedureDiagnosisOperations extends ClinicalStatementOperation
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_POSTPROCEDURE_DIAGNOSIS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_POSTPROCEDURE_DIAGNOSIS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -288,7 +288,7 @@ public class PostprocedureDiagnosisOperations extends ClinicalStatementOperation
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_POSTPROCEDURE_DIAGNOSIS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_POSTPROCEDURE_DIAGNOSIS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -354,7 +354,7 @@ public class PostprocedureDiagnosisOperations extends ClinicalStatementOperation
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_POSTPROCEDURE_DIAGNOSIS_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_POSTPROCEDURE_DIAGNOSIS_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -447,7 +447,7 @@ public class PostprocedureDiagnosisOperations extends ClinicalStatementOperation
 		OCL.Query query = EOCL_ENV.get().createQuery(GET_PROBLEM_OBSERVATIONS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<ProblemObservation> result = (Collection<ProblemObservation>) query.evaluate(postprocedureDiagnosis);
-		return new BasicEList.UnmodifiableEList<ProblemObservation>(result.size(), result.toArray());
+		return new BasicEList.UnmodifiableEList<>(result.size(), result.toArray());
 	}
 
 } // PostprocedureDiagnosisOperations

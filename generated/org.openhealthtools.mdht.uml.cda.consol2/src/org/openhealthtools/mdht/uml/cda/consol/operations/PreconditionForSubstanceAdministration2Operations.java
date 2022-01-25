@@ -72,7 +72,7 @@ public class PreconditionForSubstanceAdministration2Operations
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -143,7 +143,7 @@ public class PreconditionForSubstanceAdministration2Operations
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -213,7 +213,7 @@ public class PreconditionForSubstanceAdministration2Operations
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -285,7 +285,7 @@ public class PreconditionForSubstanceAdministration2Operations
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -355,7 +355,7 @@ public class PreconditionForSubstanceAdministration2Operations
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -427,7 +427,7 @@ public class PreconditionForSubstanceAdministration2Operations
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->

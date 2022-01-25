@@ -81,7 +81,7 @@ public class CharacteristicsOfHomeEnvironmentOperations extends ClinicalStatemen
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_CHARACTERISTICS_OF_HOME_ENVIRONMENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_CHARACTERISTICS_OF_HOME_ENVIRONMENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -151,7 +151,7 @@ public class CharacteristicsOfHomeEnvironmentOperations extends ClinicalStatemen
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_CHARACTERISTICS_OF_HOME_ENVIRONMENT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_CHARACTERISTICS_OF_HOME_ENVIRONMENT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -221,7 +221,7 @@ public class CharacteristicsOfHomeEnvironmentOperations extends ClinicalStatemen
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_CHARACTERISTICS_OF_HOME_ENVIRONMENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_CHARACTERISTICS_OF_HOME_ENVIRONMENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -291,7 +291,7 @@ public class CharacteristicsOfHomeEnvironmentOperations extends ClinicalStatemen
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_CHARACTERISTICS_OF_HOME_ENVIRONMENT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_CHARACTERISTICS_OF_HOME_ENVIRONMENT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -360,7 +360,7 @@ public class CharacteristicsOfHomeEnvironmentOperations extends ClinicalStatemen
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_CHARACTERISTICS_OF_HOME_ENVIRONMENT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_CHARACTERISTICS_OF_HOME_ENVIRONMENT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -413,7 +413,7 @@ public class CharacteristicsOfHomeEnvironmentOperations extends ClinicalStatemen
 					"org.openhealthtools.mdht.uml.cda.consol.CharacteristicsOfHomeEnvironmentCodeP");
 				if (passToken == null) {
 					// anticipate a reasonably healthy model
-					passToken = new java.util.ArrayList<Object>(3);
+					passToken = new java.util.ArrayList<>(3);
 					context.put(
 						"org.openhealthtools.mdht.uml.cda.consol.CharacteristicsOfHomeEnvironmentCodeP", passToken);
 				}
@@ -446,7 +446,7 @@ public class CharacteristicsOfHomeEnvironmentOperations extends ClinicalStatemen
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_CHARACTERISTICS_OF_HOME_ENVIRONMENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_CHARACTERISTICS_OF_HOME_ENVIRONMENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -526,7 +526,7 @@ public class CharacteristicsOfHomeEnvironmentOperations extends ClinicalStatemen
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_CHARACTERISTICS_OF_HOME_ENVIRONMENT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_CHARACTERISTICS_OF_HOME_ENVIRONMENT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -596,7 +596,7 @@ public class CharacteristicsOfHomeEnvironmentOperations extends ClinicalStatemen
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_CHARACTERISTICS_OF_HOME_ENVIRONMENT_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_CHARACTERISTICS_OF_HOME_ENVIRONMENT_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -668,7 +668,7 @@ public class CharacteristicsOfHomeEnvironmentOperations extends ClinicalStatemen
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_CHARACTERISTICS_OF_HOME_ENVIRONMENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_CHARACTERISTICS_OF_HOME_ENVIRONMENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -738,7 +738,7 @@ public class CharacteristicsOfHomeEnvironmentOperations extends ClinicalStatemen
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_CHARACTERISTICS_OF_HOME_ENVIRONMENT_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_CHARACTERISTICS_OF_HOME_ENVIRONMENT_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->

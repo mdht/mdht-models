@@ -83,7 +83,7 @@ public class DischargeMedicationsSection2Operations extends DischargeMedications
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_DISCHARGE_MEDICATIONS_SECTION2_NULL_FLAVOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_DISCHARGE_MEDICATIONS_SECTION2_NULL_FLAVOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -152,7 +152,7 @@ public class DischargeMedicationsSection2Operations extends DischargeMedications
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_DISCHARGE_MEDICATIONS_SECTION2_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_DISCHARGE_MEDICATIONS_SECTION2_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -204,7 +204,7 @@ public class DischargeMedicationsSection2Operations extends DischargeMedications
 					"org.openhealthtools.mdht.uml.cda.consol.DischargeMedicationsSection2CodeP");
 				if (passToken == null) {
 					// anticipate a reasonably healthy model
-					passToken = new java.util.ArrayList<Object>(3);
+					passToken = new java.util.ArrayList<>(3);
 					context.put("org.openhealthtools.mdht.uml.cda.consol.DischargeMedicationsSection2CodeP", passToken);
 				}
 				passToken.add(dischargeMedicationsSection2);
@@ -236,7 +236,7 @@ public class DischargeMedicationsSection2Operations extends DischargeMedications
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_DISCHARGE_MEDICATIONS_SECTION2_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_DISCHARGE_MEDICATIONS_SECTION2_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -313,7 +313,7 @@ public class DischargeMedicationsSection2Operations extends DischargeMedications
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_DISCHARGE_MEDICATIONS_SECTION2_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_DISCHARGE_MEDICATIONS_SECTION2_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -382,7 +382,7 @@ public class DischargeMedicationsSection2Operations extends DischargeMedications
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_DISCHARGE_MEDICATIONS_SECTION2_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_DISCHARGE_MEDICATIONS_SECTION2_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -452,7 +452,7 @@ public class DischargeMedicationsSection2Operations extends DischargeMedications
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_DISCHARGE_MEDICATIONS_SECTION2_CE_TRANSLATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<Query<?, ?, ?>>();
+	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_DISCHARGE_MEDICATIONS_SECTION2_CE_TRANSLATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -527,7 +527,7 @@ public class DischargeMedicationsSection2Operations extends DischargeMedications
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_DISCHARGE_MEDICATIONS_SECTION2_CE_TRANSLATION_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<Query<?, ?, ?>>();
+	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_DISCHARGE_MEDICATIONS_SECTION2_CE_TRANSLATION_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -602,7 +602,7 @@ public class DischargeMedicationsSection2Operations extends DischargeMedications
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -673,7 +673,7 @@ public class DischargeMedicationsSection2Operations extends DischargeMedications
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_DISCHARGE_MEDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_DISCHARGE_MEDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -773,7 +773,7 @@ public class DischargeMedicationsSection2Operations extends DischargeMedications
 		@SuppressWarnings("unchecked")
 		Collection<DischargeMedication2> result = (Collection<DischargeMedication2>) query.evaluate(
 			dischargeMedicationsSection2);
-		return new BasicEList.UnmodifiableEList<DischargeMedication2>(result.size(), result.toArray());
+		return new BasicEList.UnmodifiableEList<>(result.size(), result.toArray());
 	}
 
 } // DischargeMedicationsSection2Operations

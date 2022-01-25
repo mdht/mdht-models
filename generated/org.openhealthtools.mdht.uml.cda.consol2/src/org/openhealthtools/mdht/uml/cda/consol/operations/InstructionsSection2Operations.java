@@ -81,7 +81,7 @@ public class InstructionsSection2Operations extends InstructionsSectionOperation
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_INSTRUCTIONS_SECTION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_INSTRUCTIONS_SECTION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -147,7 +147,7 @@ public class InstructionsSection2Operations extends InstructionsSectionOperation
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_INSTRUCTIONS_SECTION2_NULL_FLAVOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_INSTRUCTIONS_SECTION2_NULL_FLAVOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -238,7 +238,7 @@ public class InstructionsSection2Operations extends InstructionsSectionOperation
 		OCL.Query query = EOCL_ENV.get().createQuery(GET_CONSOL_INSTRUCTION2S__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<Instruction2> result = (Collection<Instruction2>) query.evaluate(instructionsSection2);
-		return new BasicEList.UnmodifiableEList<Instruction2>(result.size(), result.toArray());
+		return new BasicEList.UnmodifiableEList<>(result.size(), result.toArray());
 	}
 
 	/**
@@ -260,7 +260,7 @@ public class InstructionsSection2Operations extends InstructionsSectionOperation
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_INSTRUCTIONS_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_INSTRUCTIONS_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -308,7 +308,7 @@ public class InstructionsSection2Operations extends InstructionsSectionOperation
 					"org.openhealthtools.mdht.uml.cda.consol.InstructionsSectionCodeP");
 				if (passToken == null) {
 					// anticipate a reasonably healthy model
-					passToken = new java.util.ArrayList<Object>(3);
+					passToken = new java.util.ArrayList<>(3);
 					context.put("org.openhealthtools.mdht.uml.cda.consol.InstructionsSectionCodeP", passToken);
 				}
 				passToken.add(instructionsSection2);
@@ -340,7 +340,7 @@ public class InstructionsSection2Operations extends InstructionsSectionOperation
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_INSTRUCTIONS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_INSTRUCTIONS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -413,7 +413,7 @@ public class InstructionsSection2Operations extends InstructionsSectionOperation
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_INSTRUCTIONS_SECTION_INSTRUCTIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_INSTRUCTIONS_SECTION_INSTRUCTIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
