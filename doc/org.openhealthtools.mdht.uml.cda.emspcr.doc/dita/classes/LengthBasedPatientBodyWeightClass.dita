@@ -22,7 +22,13 @@
 <p audience="examples"><b>Length Based Patient Body Weight Class example</b></p>
 <!-- TODO: insert custom instance example here -->
 <!-- generated instance example follows -->
-<codeblock audience="examples" conref="generated/_LengthBasedPatientBodyWeightClass.dita#classId/example">
-</codeblock>
+    <codeblock id="example" outputclass="language-xml"><![CDATA[
+<observation classCode="OBS" moodCode="EVN">
+    <templateId root="2.16.840.1.1133883.17.3.10.1.110" extension="2022-01-01" />
+    <id root="2.16.840.1.113883.19.4" extension="477978662" />
+    <code code="67670-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Length-based tape measure category NEMSIS" />
+    <value xsi:type="CD" code="LA15553-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Blue" />
+</observation>
+]]></codeblock>
 </body>
 </topic>

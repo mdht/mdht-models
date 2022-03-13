@@ -22,7 +22,16 @@
 <p audience="examples"><b>Cardiac Arrest example</b></p>
 <!-- TODO: insert custom instance example here -->
 <!-- generated instance example follows -->
-<codeblock audience="examples" conref="generated/_CardiacArrest.dita#classId/example">
-</codeblock>
+    <codeblock id="example" outputclass="language-xml"><![CDATA[
+<observation classCode="OBS" moodCode="EVN">
+<templateId root="2.16.840.1.1133883.17.3.10.1.27" extension="2022-01-01" />
+<id root="2.16.840.1.113883.19.4" extension="477978662" />
+<code code="ASSERTION" codeSystem="(CodeSystem: 2.16.840.1.113883.5.4" CodeSystemName="ActCode" />
+<value xsi:type="CD" code="410429000" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="cardiac arrest" />
+<entryRelationship>
+ . . . 
+</entryRelationship>
+</observation>
+]]></codeblock>
 </body>
 </topic>

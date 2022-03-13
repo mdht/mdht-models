@@ -27,7 +27,6 @@
             <templateId root="2.16.840.1.113883.17.3.10.1.95"/>
             <id root="2.16.840.1.113883.19.4" extension="243446586"/>
             <statusCode code="completed"/>
-            <effectiveTime value="201201011602+0600"/>
             <component>
                 . . . 
             </component>

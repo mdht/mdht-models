@@ -22,7 +22,13 @@
 <p audience="examples"><b>Scene Delay example</b></p>
 <!-- TODO: insert custom instance example here -->
 <!-- generated instance example follows -->
-<codeblock audience="examples" conref="generated/_SceneDelay.dita#classId/example">
-</codeblock>
+    <codeblock id="example" outputclass="language-xml"><![CDATA[
+<observation classCode="OBS" moodCode="EVN">
+    <templateId root="2.16.840.1.1133883.17.3.10.1.155" extension="2022-01-01" />
+    <id root="2.16.840.1.113883.19.4" extension="477978662" />
+    <code code="67558-7" displayName="Scene delay NEMSIS" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+    <value xsi:type="CD" code="LA17591-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Traffic" />
+   <value xsi:type="CD" code="LA17596-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Safety-crew/staging" />
+]]></codeblock>
 </body>
 </topic>

@@ -26,7 +26,12 @@
 <p><b>Transport Disposition example</b></p>
 <!-- TODO: insert custom instance example here -->
 <!-- generated instance example follows -->
-<codeblock conref="generated/_TransportDisposition.dita#classId/example">
-</codeblock>
+    <codeblock id="example" outputclass="language-xml"><![CDATA[
+<observation classCode="OBS" moodCode="EVN">
+    <templateId root="2.16.840.1.1133883.17.3.10.1.199" extension="2022-01-01" />
+    <id root="2.16.840.1.113883.19.4" extension="477978662" />
+    <code code="neweDisposition.30" displayName="Transport Disposition" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+    <value xsi:type="CD" code="newLA4230009" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Patient Refused Transport" />
+]]></codeblock>
 </body>
 </topic>

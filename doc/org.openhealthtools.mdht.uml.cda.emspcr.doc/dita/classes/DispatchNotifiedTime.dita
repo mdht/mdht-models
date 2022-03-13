@@ -22,7 +22,13 @@
 <p audience="examples"><b>Dispatch Notified Time example</b></p>
 <!-- TODO: insert custom instance example here -->
 <!-- generated instance example follows -->
-<codeblock audience="examples" conref="generated/_DispatchNotifiedTime.dita#classId/example">
-</codeblock>
+    <codeblock id="example" outputclass="language-xml"><![CDATA[
+<observation classCode="OBS" moodCode="EVN">
+<templateId root="2.16.840.1.1133883.17.3.10.1.46" extension="2022-01-01" />
+<id root="2.16.840.1.113883.19.4" extension="477978662" />
+<code code="69470-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Dispatch was notified by the 911 call taker [Date and time] Facility NEMSIS" />
+<value xsi:type="TS" value="201201011545+0600" />
+</observation>
+]]></codeblock>
 </body>
 </topic>

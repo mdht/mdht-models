@@ -22,7 +22,13 @@
 <p audience="examples"><b>Response Ending Odometer Reading example</b></p>
 <!-- TODO: insert custom instance example here -->
 <!-- generated instance example follows -->
-<codeblock audience="examples" conref="generated/_ResponseEndingOdometerReading.dita#classId/example">
-</codeblock>
+    <codeblock id="example" outputclass="language-xml"><![CDATA[
+<observation classCode="OBS" moodCode="EVN">
+    <templateId root="2.16.840.1.1133883.17.3.10.1.174" extension="2022-01-01" />
+    <id root="2.16.840.1.113883.19.4" extension="477978662" />
+    <code code="67487-9" displayName="Counter or odometer reading NEMSIS --end of call" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+    <value xsi:type="PQ" value="12055" unit="mi_i" />
+</observation>
+]]></codeblock>
 </body>
 </topic>

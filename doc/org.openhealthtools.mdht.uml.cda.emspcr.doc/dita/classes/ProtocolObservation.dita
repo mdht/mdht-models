@@ -22,7 +22,13 @@
 <p audience="examples"><b>Protocol Observation example</b></p>
 <!-- TODO: insert custom instance example here -->
 <!-- generated instance example follows -->
-<codeblock audience="examples" conref="generated/_ProtocolObservation.dita#classId/example">
-</codeblock>
+    <codeblock id="example" outputclass="language-xml"><![CDATA[
+<observation classCode="OBS" moodCode="EVN">
+    <templateId root="2.16.840.1.1133883.17.3.10.1.93" extension="2022-01-01" />
+    <id root="2.16.840.1.113883.19.4" extension="477978662" />
+    <code code="67537-1" displayName="Protocol used NEMSIS" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+    <value xsi:type="CD" code="LA17500-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Cardiac arrest-post resuscitation care" />  
+</observation>
+]]></codeblock>
 </body>
 </topic>

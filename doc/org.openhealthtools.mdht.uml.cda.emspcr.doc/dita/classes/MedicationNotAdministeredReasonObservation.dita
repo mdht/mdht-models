@@ -22,7 +22,13 @@
 <p audience="examples"><b>Medication Not Administered Reason Observation example</b></p>
 <!-- TODO: insert custom instance example here -->
 <!-- generated instance example follows -->
-<codeblock audience="examples" conref="generated/_MedicationNotAdministeredReasonObservation.dita#classId/example">
-</codeblock>
+    <codeblock id="example" outputclass="language-xml"><![CDATA[
+<observation classCode="OBS" moodCode="EVN">
+    <templateId root="2.16.840.1.1133883.17.3.10.1.105" extension="2022-01-01" />
+    <id root="2.16.840.1.113883.19.4" extension="477978662" />
+    <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode" displayName="Assertion" />
+    <value xsi:type="CD" code="LA18921-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Medication already taken" />
+</observation>
+]]></codeblock>
 </body>
 </topic>

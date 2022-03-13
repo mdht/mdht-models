@@ -22,7 +22,13 @@
 <p audience="examples"><b>Billing Section example</b></p>
 <!-- TODO: insert custom instance example here -->
 <!-- generated instance example follows -->
-<codeblock audience="examples" conref="generated/_BillingSection.dita#classId/example">
-</codeblock>
+    <codeblock id="example" outputclass="language-xml"><![CDATA[
+<section>
+<templateId root="2.16.840.1.1133883.17.3.10.1.5" extension="2022-01-01" /><code code="67659-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="EMS Billing Narrative NEMSIS" />
+<title>EMS Billing Narrative</title>
+<text> . . . </text>
+<entry> . . . </entry>
+</section>	
+]]></codeblock>
 </body>
 </topic>

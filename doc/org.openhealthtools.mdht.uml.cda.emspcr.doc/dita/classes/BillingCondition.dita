@@ -22,7 +22,13 @@
 <p audience="examples"><b>Billing Condition example</b></p>
 <!-- TODO: insert custom instance example here -->
 <!-- generated instance example follows -->
-<codeblock audience="examples" conref="generated/_BillingCondition.dita#classId/example">
-</codeblock>
+    <codeblock id="example" outputclass="language-xml"><![CDATA[
+<observation classCode="OBS" moodCode="EVN">
+<templateId root="2.16.840.1.1133883.17.3.10.1.91" extension="2022-01-01" />
+<id root="2.16.840.1.113883.19.4" extension="477978662" />
+<code code="67556-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Billing condition" />
+<value xsi:type="CD" code="S21.342" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD-10 CM" displayName="Puncture wound with foreign body of left front wall of thorax with penetration intothoracic cavity" />
+</observation>
+]]></codeblock>
 </body>
 </topic>

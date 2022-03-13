@@ -26,7 +26,14 @@
 <p><b>Response Mode Qualifier example</b></p>
 <!-- TODO: insert custom instance example here -->
 <!-- generated instance example follows -->
-<codeblock conref="generated/_ResponseModeQualifier.dita#classId/example">
-</codeblock>
+    <codeblock id="example" outputclass="language-xml"><![CDATA[
+<observation classCode="OBS" moodCode="EVN">
+    <templateId root="2.16.840.1.1133883.17.3.10.1.191" extension="2022-01-01" />
+    <id root="2.16.840.1.113883.19.4" extension="477978662" />
+    <code code="77157-6" displayName="Response mode descriptors" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+    <value xsi:type="CD" code="LA22801-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Speed-Enhanced per Local Policy" 
+    <value xsi:type="CD" code="LA22803-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Lights and Sirens" />
+</observation>
+]]></codeblock>
 </body>
 </topic>

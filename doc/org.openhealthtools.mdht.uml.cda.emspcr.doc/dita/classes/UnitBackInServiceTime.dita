@@ -22,7 +22,12 @@
 <p audience="examples"><b>Unit Back In Service Time example</b></p>
 <!-- TODO: insert custom instance example here -->
 <!-- generated instance example follows -->
-<codeblock audience="examples" conref="generated/_UnitBackInServiceTime.dita#classId/example">
-</codeblock>
+    <codeblock id="example" outputclass="language-xml"><![CDATA[
+<observation classCode="OBS" moodCode="EVN">
+    <templateId root="2.16.840.1.1133883.17.3.10.1.45" extension="2022-01-01" />
+    <id root="2.16.840.1.113883.19.4" extension="477978662" />
+    <code code="69477-8" displayName="Unit was back in service and available for response [Date and time] Vehicle NEMSIS" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+    <value xsi:type="TS" value="201201011450+0600" />
+]]></codeblock>
 </body>
 </topic>

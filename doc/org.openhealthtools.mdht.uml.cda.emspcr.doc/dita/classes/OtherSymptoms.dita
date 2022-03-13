@@ -22,7 +22,13 @@
 <p audience="examples"><b>Other Symptoms example</b></p>
 <!-- TODO: insert custom instance example here -->
 <!-- generated instance example follows -->
-<codeblock audience="examples" conref="generated/_OtherSymptoms.dita#classId/example">
-</codeblock>
+    <codeblock id="example" outputclass="language-xml"><![CDATA[
+<observation classCode="OBS" moodCode="EVN">
+    <templateId root="2.16.840.1.1133883.17.3.10.1.67" extension="2022-01-01" />
+    <id root="2.16.840.1.113883.19.4" extension="477978662" />
+    <code code="67776-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Other symptoms NEMSIS" />
+    <value xsi:type="CD" code=" R11.0" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD-10" displayName="Nausea" /> 
+</observation>
+]]></codeblock>
 </body>
 </topic>

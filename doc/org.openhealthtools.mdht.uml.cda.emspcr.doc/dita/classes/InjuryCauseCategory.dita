@@ -22,7 +22,13 @@
 <p audience="examples"><b>Injury Cause Category example</b></p>
 <!-- TODO: insert custom instance example here -->
 <!-- generated instance example follows -->
-<codeblock audience="examples" conref="generated/_InjuryCauseCategory.dita#classId/example">
-</codeblock>
+    <codeblock id="example" outputclass="language-xml"><![CDATA[
+<observation classCode="OBS" moodCode="EVN">
+    <templateId root="2.16.840.1.1133883.17.3.10.1.50" extension="2022-01-01" />
+    <id root="2.16.840.1.113883.19.4" extension="477978662" />
+    <code code="69543-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Cause of injury NEMSIS" />
+    <value xsi:type="CD" code="V49.6" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD-10 CM" displayName="Collision with unspecified motor vehicles, NOS" />
+</observation>
+]]></codeblock>
 </body>
 </topic>

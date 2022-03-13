@@ -22,7 +22,19 @@
 <p audience="examples"><b>Current Medication example</b></p>
 <!-- TODO: insert custom instance example here -->
 <!-- generated instance example follows -->
-<codeblock audience="examples" conref="generated/_CurrentMedication.dita#classId/example">
-</codeblock>
+    <codeblock id="example" outputclass="language-xml"><![CDATA[
+<substanceAdministration classCode="SBADM"  moodCode="EVN">            
+<templateId root="2.16.840.1.1133883.17.3.10.1.77" extension="2022-01-01" />
+<templateId root="2.16.840.1.113883.10.20.22.4.16" />
+<effectiveTime value="201201011604+0600" />
+<consumable>
+<manufacturedProduct classCode="MANU">
+<templateId root="2.16.840.1.113883.10.20.22.4.23" />
+<manufacturedMaterial>
+<code code="6809" displayName="metformin" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm" />
+</manufacturedMaterial>
+</manufacturedProduct>
+</consumable>
+]]></codeblock>
 </body>
 </topic>

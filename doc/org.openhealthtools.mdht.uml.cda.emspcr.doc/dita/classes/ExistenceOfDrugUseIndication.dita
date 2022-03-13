@@ -22,7 +22,14 @@
 <p audience="examples"><b>Existence Of Drug Use Indication example</b></p>
 <!-- TODO: insert custom instance example here -->
 <!-- generated instance example follows -->
-<codeblock audience="examples" conref="generated/_ExistenceOfDrugUseIndication.dita#classId/example">
-</codeblock>
+    <codeblock id="example" outputclass="language-xml"><![CDATA[
+<observation classCode="OBS" moodCode="EVN">
+    <templateId root="2.16.840.1.1133883.17.3.10.1.70" extension="2022-01-01" />
+    <id root="2.16.840.1.113883.19.4" extension="477978662" />
+    <code code="69757-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Indications of drug or alcohol
+use by the patient NEMSIS" />
+    <value xsi:type="BL" value="false"  />
+</observation>
+]]></codeblock>
 </body>
 </topic>

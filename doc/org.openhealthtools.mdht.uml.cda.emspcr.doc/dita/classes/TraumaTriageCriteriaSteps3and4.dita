@@ -26,7 +26,12 @@
 <p><b>Trauma Triage Criteria (Steps 3 and 4) example</b></p>
 <!-- TODO: insert custom instance example here -->
 <!-- generated instance example follows -->
-<codeblock conref="generated/_TraumaTriageCriteriaSteps3and4.dita#classId/example">
-</codeblock>
+    <codeblock id="example" outputclass="language-xml"><![CDATA[
+<observation classCode="OBS" moodCode="EVN">
+    <templateId root="2.16.840.1.1133883.17.3.10.1.53" extension="2022-01-01" />
+    <id root="2.16.840.1.113883.19.4" extension="477978662" />
+    <code code="67496-0" displayName="Other injury risk factors NEMSIS" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+    <value xsi:type="CD" code="LA17350-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Motorcycle crash > 20 mph" />
+]]></codeblock>
 </body>
 </topic>

@@ -22,7 +22,12 @@
 <p audience="examples"><b>Candidate Patient Registry Type example</b></p>
 <!-- TODO: insert custom instance example here -->
 <!-- generated instance example follows -->
-<codeblock audience="examples" conref="generated/_CandidatePatientRegistryType.dita#classId/example">
-</codeblock>
+    <codeblock id="example" outputclass="language-xml"><![CDATA[
+<observation classCode="OBS" moodCode="EVN">
+<templateId root="2.16.840.1.1133883.17.3.10.1.94" extension="2022-01-01" />
+<id root="2.16.840.1.113883.19.4" extension="477978662" />
+<code code="67553-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="EMS candidate patient registry" />
+<value xsi:type="CD" nullFlavor="NA" displayName="Not Applicable" /></observation>
+]]></codeblock>
 </body>
 </topic>

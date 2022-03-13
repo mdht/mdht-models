@@ -22,7 +22,21 @@
 <p audience="examples"><b>Procedure example</b></p>
 <!-- TODO: insert custom instance example here -->
 <!-- generated instance example follows -->
-<codeblock audience="examples" conref="generated/_Procedure.dita#classId/example">
-</codeblock>
+    <codeblock id="example" outputclass="language-xml"><![CDATA[
+<procedure classCode="PROC"  moodCode="EVN">            
+    <templateId root="2.16.840.1.1133883.17.3.10.1.181" extension="2022-01-01" />
+    <templateId root="2.16.840.1.113883.10.20.22.4.14" />
+    <code code="09HN7BZ" displayName="Medical and Surgical/ Ear, Nose, and Sinus/ Insertion/ Nasopharynx/ Via natural or artificial opening/ Airway/ No qualifier" codeSystem="2.16.840.1.113883.6.4" codeSystemName="ICD-10 PCS" />
+    <effectiveTime value="201201011602+0600" />
+    <performer>
+        <assignedEntity>
+                . . .
+        </assignedEntity>
+    </performer>
+    <entryRelationship>
+                . . . 
+    </entryRelationship>
+</procedure>
+]]></codeblock>
 </body>
 </topic>

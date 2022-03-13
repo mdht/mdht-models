@@ -26,7 +26,13 @@
 <p><b>Existence Of History Of Condition Or Surgery example</b></p>
 <!-- TODO: insert custom instance example here -->
 <!-- generated instance example follows -->
-<codeblock conref="generated/_ExistenceOfHistoryOfConditionOrSurgery.dita#classId/example">
-</codeblock>
+    <codeblock id="example" outputclass="language-xml"><![CDATA[
+<observation classCode="OBS" moodCode="EVN">
+    <templateId root="2.16.840.1.1133883.17.3.10.1.60" extension="2022-01-01" />
+    <id root="2.16.840.1.113883.19.4" extension="477978662" />
+    <code code="67793-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Has the patient had any significant medical conditions NEMSIS" />
+    <value xsi:type="BL" value="false"  />
+</observation>
+]]></codeblock>
 </body>
 </topic>

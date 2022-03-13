@@ -22,7 +22,13 @@
 <p audience="examples"><b>Procedure Number Of Attempts Observation example</b></p>
 <!-- TODO: insert custom instance example here -->
 <!-- generated instance example follows -->
-<codeblock audience="examples" conref="generated/_ProcedureNumberOfAttemptsObservation.dita#classId/example">
-</codeblock>
+    <codeblock id="example" outputclass="language-xml"><![CDATA[
+<observation classCode="OBS" moodCode="EVN">
+    <templateId root="2.16.840.1.1133883.17.3.10.1.132" extension="2022-01-01" />
+    <id root="2.16.840.1.113883.19.4" extension="477978662" />
+    <code code="67543-9" displayName="Procedure attempts [#] NEMSIS" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+    <value xsi:type="INT" value="1"  />
+</observation>
+]]></codeblock>
 </body>
 </topic>

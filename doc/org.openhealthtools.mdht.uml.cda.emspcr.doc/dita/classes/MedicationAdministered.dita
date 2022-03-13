@@ -22,7 +22,48 @@
 <p audience="examples"><b>Medication Administered example</b></p>
 <!-- TODO: insert custom instance example here -->
 <!-- generated instance example follows -->
-<codeblock audience="examples" conref="generated/_MedicationAdministered.dita#classId/example">
-</codeblock>
+    <codeblock id="example" outputclass="language-xml"><![CDATA[
+    <substanceAdministration classCode="SBADM"  moodCode="EVN">            
+        <templateId root="2.16.840.1.1133883.17.3.10.1.72" extension="2022-01-01" />
+        <templateId root="2.16.840.1.113883.10.20.22.4.16" />
+        <effectiveTime value="201201011604+0600" />
+        <routeCode code="C38216" displayName="Respiratory" codeSystem="2.16.840.1.113883.3.26.1.1.1" codeSystemName="FDA Route of Administration" />              
+        <approachSiteCode code="15562006" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="structure of respiratory region of nose" />
+        <doseQuantity value="15" unit="L/min" />
+        <consumable>
+            <manufacturedProduct classCode="MANU">
+                <templateId root="2.16.840.1.113883.10.20.22.4.23" />
+                <manufacturedMaterial>
+                    <code code="7806" displayName="Oxygen" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm" />
+                </manufacturedMaterial>
+            </manufacturedProduct>
+        </consumable>
+        <performer>
+            <assignedEntity>
+                <id root="2.16.840.1.113883.19.4" extension="908786906" />
+                <code code="LA18703-1" displayName="EMT-paramedic" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+            </assignedEntity>
+        </performer>
+        <participant typeCode="DEV">
+            <participantRole classCode="MANU">
+                <playingDevice>
+                    <code code = "425926003" codeSystem="2.16.840.1.113883.6.5" displayName="partial rebreather oxygen mask" codeSystemName="SNOMED CT" />
+                </playingDevice>
+            </participantRole>
+        </participant>
+        <entryRelationship typeCode="COMP">
+            <observation classCode="OBS"  moodCode="EVN">
+                <code code="67540-5" displayName="Response to medication" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+                <value xsi:type="CD" code="LA17181-1" displayName="Unchanged" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+            </observation>
+        </entryRelationship>
+        <entryRelationship typeCode="COMP">
+            <observation classCode="OBS"  moodCode="EVN">
+                <code code="67539-7" displayName="Prioradministration" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+                <value xsi:type="BL" value="false" />
+            </observation>
+        </entryRelationship>
+    </substanceAdministration>
+]]></codeblock>
 </body>
 </topic>

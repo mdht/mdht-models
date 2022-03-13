@@ -22,7 +22,20 @@
 <p audience="examples"><b>Drug Allergy example</b></p>
 <!-- TODO: insert custom instance example here -->
 <!-- generated instance example follows -->
-<codeblock audience="examples" conref="generated/_DrugAllergy.dita#classId/example">
-</codeblock>
+    <codeblock id="example" outputclass="language-xml"><![CDATA[
+<observation classCode="OBS" moodCode="EVN">
+<templateId root="2.16.840.1.1133883.17.3.10.1.48" extension="2022-01-01" />
+<id root="2.16.840.1.113883.19.4" extension="477978662" />
+<code code="code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode" />
+<value xsi:type="CD" code=""416098002" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Drug allergy" />
+<participant>
+<participantRole>
+<playingEntity>
+<code code="83367" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNORM" displayName="atorvastatin" />
+</playingEntity>
+</participantRole>
+</participant>
+</observation>
+]]></codeblock>
 </body>
 </topic>

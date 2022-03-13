@@ -22,7 +22,11 @@
 <p audience="examples"><b>Back And Spine Assessment example</b></p>
 <!-- TODO: insert custom instance example here -->
 <!-- generated instance example follows -->
-<codeblock audience="examples" conref="generated/_BackAndSpineAssessment.dita#classId/example">
-</codeblock>
+    <codeblock id="example" outputclass="language-xml"><![CDATA[<observation classCode="OBS" moodCode="EVN">
+  <templateId root="2.16.840.1.1133883.17.3.10.1.119" extension="2022-01-01"/>
+  <code code="67532-2" displayName="Physical findings of Back+Spine NEMSIS"/>
+<value xsi:type="CD" code="LA17256-1" displayName="Pain with range of motion" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+</observation>
+]]></codeblock>
 </body>
 </topic>
