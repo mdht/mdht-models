@@ -2300,6 +2300,13 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	private EClass provenanceAssemblerParticipationV2EClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	private EClass criticalityObservationEClass = null;
 
 	/**
@@ -2484,7 +2491,7 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 
 	/**
 	 * Creates, registers, and initializes the <b>Package</b> for this model, and for any others upon which it depends.
-	 *
+	 * 
 	 * <p>This method is used to initialize {@link ConsolPackage#eINSTANCE} when that field is accessed.
 	 * Clients should not invoke it directly. Instead, they should simply access that field to obtain the package.
 	 * <!-- begin-user-doc -->
@@ -6976,6 +6983,19 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 				ConsolPackage.eNS_URI).getEClassifiers().get(343);
 		}
 		return udiOrganizerEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getProvenanceAssemblerParticipationV2() {
+		if (provenanceAssemblerParticipationV2EClass == null) {
+			provenanceAssemblerParticipationV2EClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				ConsolPackage.eNS_URI).getEClassifiers().get(344);
+		}
+		return provenanceAssemblerParticipationV2EClass;
 	}
 
 	/**

@@ -370,7 +370,7 @@ public class FunctionalStatusResultOrganizerTest extends CDAValidationTest {
 
 			@Override
 			protected void setDependency(FunctionalStatusResultOrganizer target) {
-				Collection<Object> passToken = new java.util.ArrayList<Object>(3);
+				Collection<Object> passToken = new java.util.ArrayList<>(3);
 				passToken.add(target);
 				map.put("org.openhealthtools.mdht.uml.cda.consol.ResultOrganizerStatusCodeP", passToken);
 			}
@@ -433,7 +433,7 @@ public class FunctionalStatusResultOrganizerTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ConstructorTestClass extends FunctionalStatusResultOrganizerOperations {
-	};
+	}
 
 	/**
 	* Tests Operations Constructor for 100% coverage

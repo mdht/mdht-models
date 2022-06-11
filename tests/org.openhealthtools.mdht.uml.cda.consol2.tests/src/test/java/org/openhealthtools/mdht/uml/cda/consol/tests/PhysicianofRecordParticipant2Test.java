@@ -436,7 +436,7 @@ public class PhysicianofRecordParticipant2Test extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ConstructorTestClass extends PhysicianofRecordParticipant2Operations {
-	};
+	}
 
 	/**
 	* Tests Operations Constructor for 100% coverage

@@ -4,7 +4,7 @@
     modelPluginID="org.openhealthtools.mdht.uml.cda.consol2" templateDirectory="/org.eclipse.mdht.uml.cda/templates"
     dynamicTemplates="true" redirection="" modelName="Consol" modelPluginClass="ConsolPlugin"
     testsDirectory="/org.openhealthtools.mdht.uml.cda.consol2.tests/src/test/java"
-    importerID="org.eclipse.uml2.uml.ecore.importer" complianceLevel="5.0" copyrightFields="false"
+    importerID="org.eclipse.uml2.uml.ecore.importer" complianceLevel="8.0" copyrightFields="false"
     runtimeVersion="2.5" usedGenPackages="../../org.eclipse.mdht.uml.cda/model/cda.genmodel#//cda ../../org.eclipse.mdht.uml.hl7.datatypes/model/datatypes.genmodel#//datatypes platform:/plugin/org.eclipse.emf.ecore/model/Ecore.genmodel#//ecore ../../org.eclipse.mdht.uml.hl7.rim/model/rim.genmodel#//rim platform:/plugin/org.eclipse.uml2.types/model/Types.genmodel#//types ../../org.eclipse.mdht.uml.hl7.vocab/model/vocab.genmodel#//vocab"
     invariantPrefix="validate">
   <genAnnotations source="http://www.eclipse.org/emf/2002/GenModel/importer/org.eclipse.uml2.uml.ecore.importer">
@@ -18021,6 +18021,96 @@
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//UDIOrganizer/getLatexSafetyObservation"/>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//UDIOrganizer/getMRISafetyObservation"/>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//UDIOrganizer/getImplantableDeviceStatusObservation"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="consol.ecore#//ProvenanceAssemblerParticipationV2">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ProvenanceAssemblerParticipationV2/ProvenanceAssemblerParticipationV2TemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProvenanceAssemblerParticipationV2/ProvenanceAssemblerParticipationV2TemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProvenanceAssemblerParticipationV2/ProvenanceAssemblerParticipationV2TemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ProvenanceAssemblerParticipationV2/ProvenanceAssemblerParticipationV2FunctionCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProvenanceAssemblerParticipationV2/ProvenanceAssemblerParticipationV2FunctionCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProvenanceAssemblerParticipationV2/ProvenanceAssemblerParticipationV2FunctionCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ProvenanceAssemblerParticipationV2/ProvenanceAssemblerParticipationV2FunctionCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProvenanceAssemblerParticipationV2/ProvenanceAssemblerParticipationV2FunctionCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProvenanceAssemblerParticipationV2/ProvenanceAssemblerParticipationV2FunctionCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ProvenanceAssemblerParticipationV2/ProvenanceAssemblerParticipationV2Time">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProvenanceAssemblerParticipationV2/ProvenanceAssemblerParticipationV2Time/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProvenanceAssemblerParticipationV2/ProvenanceAssemblerParticipationV2Time/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ProvenanceAssemblerParticipationV2/ProvenanceAssemblerParticipationV2TypeCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProvenanceAssemblerParticipationV2/ProvenanceAssemblerParticipationV2TypeCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProvenanceAssemblerParticipationV2/ProvenanceAssemblerParticipationV2TypeCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ProvenanceAssemblerParticipationV2/ProvenanceAssemblerParticipationV2AssociatedEntity">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProvenanceAssemblerParticipationV2/ProvenanceAssemblerParticipationV2AssociatedEntity/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProvenanceAssemblerParticipationV2/ProvenanceAssemblerParticipationV2AssociatedEntity/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ProvenanceAssemblerParticipationV2/ProvenanceAssemblerParticipationV2AssociatedEntityOrganizationGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProvenanceAssemblerParticipationV2/ProvenanceAssemblerParticipationV2AssociatedEntityOrganizationGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProvenanceAssemblerParticipationV2/ProvenanceAssemblerParticipationV2AssociatedEntityOrganizationGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ProvenanceAssemblerParticipationV2/ProvenanceAssemblerParticipationV2AssociatedEntityOrganizationGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequireStateElement">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProvenanceAssemblerParticipationV2/ProvenanceAssemblerParticipationV2AssociatedEntityOrganizationGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequireStateElement/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProvenanceAssemblerParticipationV2/ProvenanceAssemblerParticipationV2AssociatedEntityOrganizationGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequireStateElement/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ProvenanceAssemblerParticipationV2/ProvenanceAssemblerParticipationV2AssociatedEntityOrganizationGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequirePostalCodeElement">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProvenanceAssemblerParticipationV2/ProvenanceAssemblerParticipationV2AssociatedEntityOrganizationGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequirePostalCodeElement/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProvenanceAssemblerParticipationV2/ProvenanceAssemblerParticipationV2AssociatedEntityOrganizationGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequirePostalCodeElement/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ProvenanceAssemblerParticipationV2/ProvenanceAssemblerParticipationV2AssociatedEntityOrganizationGeneralHeaderConstraintsUSRealmAddressUse">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProvenanceAssemblerParticipationV2/ProvenanceAssemblerParticipationV2AssociatedEntityOrganizationGeneralHeaderConstraintsUSRealmAddressUse/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProvenanceAssemblerParticipationV2/ProvenanceAssemblerParticipationV2AssociatedEntityOrganizationGeneralHeaderConstraintsUSRealmAddressUse/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ProvenanceAssemblerParticipationV2/ProvenanceAssemblerParticipationV2AssociatedEntityOrganizationGeneralHeaderConstraintsUSRealmAddressUseP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProvenanceAssemblerParticipationV2/ProvenanceAssemblerParticipationV2AssociatedEntityOrganizationGeneralHeaderConstraintsUSRealmAddressUseP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProvenanceAssemblerParticipationV2/ProvenanceAssemblerParticipationV2AssociatedEntityOrganizationGeneralHeaderConstraintsUSRealmAddressUseP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ProvenanceAssemblerParticipationV2/ProvenanceAssemblerParticipationV2AssociatedEntityOrganizationGeneralHeaderConstraintsUSRealmAddressCountry">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProvenanceAssemblerParticipationV2/ProvenanceAssemblerParticipationV2AssociatedEntityOrganizationGeneralHeaderConstraintsUSRealmAddressCountry/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProvenanceAssemblerParticipationV2/ProvenanceAssemblerParticipationV2AssociatedEntityOrganizationGeneralHeaderConstraintsUSRealmAddressCountry/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ProvenanceAssemblerParticipationV2/ProvenanceAssemblerParticipationV2AssociatedEntityOrganizationGeneralHeaderConstraintsUSRealmAddressState">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProvenanceAssemblerParticipationV2/ProvenanceAssemblerParticipationV2AssociatedEntityOrganizationGeneralHeaderConstraintsUSRealmAddressState/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProvenanceAssemblerParticipationV2/ProvenanceAssemblerParticipationV2AssociatedEntityOrganizationGeneralHeaderConstraintsUSRealmAddressState/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ProvenanceAssemblerParticipationV2/ProvenanceAssemblerParticipationV2AssociatedEntityOrganizationGeneralHeaderConstraintsUSRealmAddressCity">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProvenanceAssemblerParticipationV2/ProvenanceAssemblerParticipationV2AssociatedEntityOrganizationGeneralHeaderConstraintsUSRealmAddressCity/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProvenanceAssemblerParticipationV2/ProvenanceAssemblerParticipationV2AssociatedEntityOrganizationGeneralHeaderConstraintsUSRealmAddressCity/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ProvenanceAssemblerParticipationV2/ProvenanceAssemblerParticipationV2AssociatedEntityOrganizationGeneralHeaderConstraintsUSRealmAddressPostalCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProvenanceAssemblerParticipationV2/ProvenanceAssemblerParticipationV2AssociatedEntityOrganizationGeneralHeaderConstraintsUSRealmAddressPostalCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProvenanceAssemblerParticipationV2/ProvenanceAssemblerParticipationV2AssociatedEntityOrganizationGeneralHeaderConstraintsUSRealmAddressPostalCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ProvenanceAssemblerParticipationV2/ProvenanceAssemblerParticipationV2AssociatedEntityOrganizationGeneralHeaderConstraintsUSRealmAddressStreetAddressLine">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProvenanceAssemblerParticipationV2/ProvenanceAssemblerParticipationV2AssociatedEntityOrganizationGeneralHeaderConstraintsUSRealmAddressStreetAddressLine/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProvenanceAssemblerParticipationV2/ProvenanceAssemblerParticipationV2AssociatedEntityOrganizationGeneralHeaderConstraintsUSRealmAddressStreetAddressLine/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ProvenanceAssemblerParticipationV2/ProvenanceAssemblerParticipationV2AssociatedEntityOrganizationId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProvenanceAssemblerParticipationV2/ProvenanceAssemblerParticipationV2AssociatedEntityOrganizationId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProvenanceAssemblerParticipationV2/ProvenanceAssemblerParticipationV2AssociatedEntityOrganizationId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ProvenanceAssemblerParticipationV2/ProvenanceAssemblerParticipationV2AssociatedEntityOrganizationName">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProvenanceAssemblerParticipationV2/ProvenanceAssemblerParticipationV2AssociatedEntityOrganizationName/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProvenanceAssemblerParticipationV2/ProvenanceAssemblerParticipationV2AssociatedEntityOrganizationName/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ProvenanceAssemblerParticipationV2/ProvenanceAssemblerParticipationV2AssociatedEntityOrganizationTelecom">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProvenanceAssemblerParticipationV2/ProvenanceAssemblerParticipationV2AssociatedEntityOrganizationTelecom/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProvenanceAssemblerParticipationV2/ProvenanceAssemblerParticipationV2AssociatedEntityOrganizationTelecom/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ProvenanceAssemblerParticipationV2/ProvenanceAssemblerParticipationV2AssociatedEntityOrganizationAddr">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProvenanceAssemblerParticipationV2/ProvenanceAssemblerParticipationV2AssociatedEntityOrganizationAddr/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProvenanceAssemblerParticipationV2/ProvenanceAssemblerParticipationV2AssociatedEntityOrganizationAddr/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ProvenanceAssemblerParticipationV2/ProvenanceAssemblerParticipationV2AssociatedEntityClassCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProvenanceAssemblerParticipationV2/ProvenanceAssemblerParticipationV2AssociatedEntityClassCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProvenanceAssemblerParticipationV2/ProvenanceAssemblerParticipationV2AssociatedEntityClassCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ProvenanceAssemblerParticipationV2/ProvenanceAssemblerParticipationV2AssociatedEntityScopingOrganization">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProvenanceAssemblerParticipationV2/ProvenanceAssemblerParticipationV2AssociatedEntityScopingOrganization/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProvenanceAssemblerParticipationV2/ProvenanceAssemblerParticipationV2AssociatedEntityScopingOrganization/context"/>
+      </genOperations>
     </genClasses>
   </genPackages>
 </genmodel:GenModel>

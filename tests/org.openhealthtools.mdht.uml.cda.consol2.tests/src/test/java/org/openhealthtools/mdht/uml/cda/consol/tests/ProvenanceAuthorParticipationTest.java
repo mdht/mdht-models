@@ -645,7 +645,7 @@ public class ProvenanceAuthorParticipationTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ConstructorTestClass extends ProvenanceAuthorParticipationOperations {
-	};
+	}
 
 	/**
 	* Tests Operations Constructor for 100% coverage

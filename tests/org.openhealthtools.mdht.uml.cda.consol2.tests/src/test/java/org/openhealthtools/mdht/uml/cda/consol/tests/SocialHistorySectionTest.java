@@ -528,7 +528,7 @@ public class SocialHistorySectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ConstructorTestClass extends SocialHistorySectionOperations {
-	};
+	}
 
 	/**
 	* Tests Operations Constructor for 100% coverage

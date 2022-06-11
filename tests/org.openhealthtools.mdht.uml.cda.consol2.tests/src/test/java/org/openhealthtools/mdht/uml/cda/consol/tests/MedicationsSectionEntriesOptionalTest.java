@@ -321,7 +321,7 @@ public class MedicationsSectionEntriesOptionalTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ConstructorTestClass extends MedicationsSectionEntriesOptionalOperations {
-	};
+	}
 
 	/**
 	* Tests Operations Constructor for 100% coverage

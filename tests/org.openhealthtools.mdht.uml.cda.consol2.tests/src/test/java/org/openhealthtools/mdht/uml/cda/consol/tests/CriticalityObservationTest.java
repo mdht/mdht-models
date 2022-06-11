@@ -250,7 +250,7 @@ public class CriticalityObservationTest extends CDAValidationTest {
 
 			@Override
 			protected void setDependency(CriticalityObservation target) {
-				Collection<Object> passToken = new java.util.ArrayList<Object>(3);
+				Collection<Object> passToken = new java.util.ArrayList<>(3);
 				passToken.add(target);
 				map.put("org.openhealthtools.mdht.uml.cda.consol.CriticalityObservationCodeP", passToken);
 			}
@@ -351,7 +351,7 @@ public class CriticalityObservationTest extends CDAValidationTest {
 
 			private static final String OBSERVATION_VALUE_CS = "2.16.840.1.113883.5.1063";
 
-			private final List<String> CRITICALITY_OBSERVATION_CODES = new ArrayList<String>(
+			private final List<String> CRITICALITY_OBSERVATION_CODES = new ArrayList<>(
 				Arrays.asList("CRITL", "CRITH", "CRITU"));
 
 			@Override
@@ -505,7 +505,7 @@ public class CriticalityObservationTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ConstructorTestClass extends CriticalityObservationOperations {
-	};
+	}
 
 	/**
 	* Tests Operations Constructor for 100% coverage

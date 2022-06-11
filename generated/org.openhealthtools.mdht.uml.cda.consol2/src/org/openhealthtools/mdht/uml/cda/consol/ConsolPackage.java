@@ -79906,6 +79906,106 @@ public interface ConsolPackage extends EPackage {
 	int UDI_ORGANIZER_FEATURE_COUNT = CDAPackage.ORGANIZER_FEATURE_COUNT + 0;
 
 	/**
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.ProvenanceAssemblerParticipationV2Impl <em>Provenance Assembler Participation V2</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ProvenanceAssemblerParticipationV2Impl
+	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getProvenanceAssemblerParticipationV2()
+	 * @generated
+	 */
+	int PROVENANCE_ASSEMBLER_PARTICIPATION_V2 = 344;
+
+	/**
+	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROVENANCE_ASSEMBLER_PARTICIPATION_V2__REALM_CODE = CDAPackage.PARTICIPANT1__REALM_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROVENANCE_ASSEMBLER_PARTICIPATION_V2__TYPE_ID = CDAPackage.PARTICIPANT1__TYPE_ID;
+
+	/**
+	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROVENANCE_ASSEMBLER_PARTICIPATION_V2__TEMPLATE_ID = CDAPackage.PARTICIPANT1__TEMPLATE_ID;
+
+	/**
+	 * The feature id for the '<em><b>Function Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROVENANCE_ASSEMBLER_PARTICIPATION_V2__FUNCTION_CODE = CDAPackage.PARTICIPANT1__FUNCTION_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Time</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROVENANCE_ASSEMBLER_PARTICIPATION_V2__TIME = CDAPackage.PARTICIPANT1__TIME;
+
+	/**
+	 * The feature id for the '<em><b>Associated Entity</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROVENANCE_ASSEMBLER_PARTICIPATION_V2__ASSOCIATED_ENTITY = CDAPackage.PARTICIPANT1__ASSOCIATED_ENTITY;
+
+	/**
+	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROVENANCE_ASSEMBLER_PARTICIPATION_V2__NULL_FLAVOR = CDAPackage.PARTICIPANT1__NULL_FLAVOR;
+
+	/**
+	 * The feature id for the '<em><b>Type Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROVENANCE_ASSEMBLER_PARTICIPATION_V2__TYPE_CODE = CDAPackage.PARTICIPANT1__TYPE_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Context Control Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROVENANCE_ASSEMBLER_PARTICIPATION_V2__CONTEXT_CONTROL_CODE = CDAPackage.PARTICIPANT1__CONTEXT_CONTROL_CODE;
+
+	/**
+	 * The number of structural features of the '<em>Provenance Assembler Participation V2</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROVENANCE_ASSEMBLER_PARTICIPATION_V2_FEATURE_COUNT = CDAPackage.PARTICIPANT1_FEATURE_COUNT + 0;
+
+	/**
 	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.consol.GeneralHeaderConstraints <em>General Header Constraints</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -83324,6 +83424,16 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getUDIOrganizer();
+
+	/**
+	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.consol.ProvenanceAssemblerParticipationV2 <em>Provenance Assembler Participation V2</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Provenance Assembler Participation V2</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.ProvenanceAssemblerParticipationV2
+	 * @generated
+	 */
+	EClass getProvenanceAssemblerParticipationV2();
 
 	/**
 	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.consol.CriticalityObservation <em>Criticality Observation</em>}'.
@@ -86786,6 +86896,16 @@ public interface ConsolPackage extends EPackage {
 		 * @generated
 		 */
 		EClass UDI_ORGANIZER = eINSTANCE.getUDIOrganizer();
+
+		/**
+		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.ProvenanceAssemblerParticipationV2Impl <em>Provenance Assembler Participation V2</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ProvenanceAssemblerParticipationV2Impl
+		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getProvenanceAssemblerParticipationV2()
+		 * @generated
+		 */
+		EClass PROVENANCE_ASSEMBLER_PARTICIPATION_V2 = eINSTANCE.getProvenanceAssemblerParticipationV2();
 
 		/**
 		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.CriticalityObservationImpl <em>Criticality Observation</em>}' class.

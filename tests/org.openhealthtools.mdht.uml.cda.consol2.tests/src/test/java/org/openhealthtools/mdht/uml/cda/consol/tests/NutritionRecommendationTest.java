@@ -199,7 +199,7 @@ public class NutritionRecommendationTest extends CDAValidationTest {
 
 			@Override
 			protected void setDependency(NutritionRecommendation target) {
-				Collection<Object> passToken = new java.util.ArrayList<Object>(3);
+				Collection<Object> passToken = new java.util.ArrayList<>(3);
 				passToken.add(target);
 				map.put("org.openhealthtools.mdht.uml.cda.consol.NutritionRecommendationMoodCodeP", passToken);
 			}
@@ -277,7 +277,7 @@ public class NutritionRecommendationTest extends CDAValidationTest {
 
 			@Override
 			protected void setDependency(NutritionRecommendation target) {
-				Collection<Object> passToken = new java.util.ArrayList<Object>(3);
+				Collection<Object> passToken = new java.util.ArrayList<>(3);
 				passToken.add(target);
 				map.put("org.openhealthtools.mdht.uml.cda.consol.NutritionRecommendationCodeP", passToken);
 			}
@@ -741,7 +741,7 @@ public class NutritionRecommendationTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ConstructorTestClass extends NutritionRecommendationOperations {
-	};
+	}
 
 	/**
 	* Tests Operations Constructor for 100% coverage

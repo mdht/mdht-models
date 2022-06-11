@@ -155,7 +155,7 @@ public class HospitalDischargeMedicationsSectionTest extends CDAValidationTest {
 
 			@Override
 			protected void setDependency(HospitalDischargeMedicationsSection target) {
-				Collection<Object> passToken = new java.util.ArrayList<Object>(3);
+				Collection<Object> passToken = new java.util.ArrayList<>(3);
 				passToken.add(target);
 				map.put(
 					"org.openhealthtools.mdht.uml.cda.consol.HospitalDischargeMedicationsSectionEntriesOptionalCodeP",
@@ -331,7 +331,7 @@ public class HospitalDischargeMedicationsSectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ConstructorTestClass extends HospitalDischargeMedicationsSectionOperations {
-	};
+	}
 
 	/**
 	* Tests Operations Constructor for 100% coverage

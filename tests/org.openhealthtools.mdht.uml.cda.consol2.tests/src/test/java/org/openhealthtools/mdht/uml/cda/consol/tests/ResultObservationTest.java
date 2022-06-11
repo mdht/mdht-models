@@ -840,7 +840,7 @@ public class ResultObservationTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ConstructorTestClass extends ResultObservationOperations {
-	};
+	}
 
 	/**
 	* Tests Operations Constructor for 100% coverage

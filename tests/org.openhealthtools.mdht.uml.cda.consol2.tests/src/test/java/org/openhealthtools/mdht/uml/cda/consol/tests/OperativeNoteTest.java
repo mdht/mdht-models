@@ -1978,7 +1978,7 @@ public class OperativeNoteTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ConstructorTestClass extends OperativeNoteOperations {
-	};
+	}
 
 	/**
 	* Tests Operations Constructor for 100% coverage

@@ -268,7 +268,7 @@ public class ProcedureSpecimensTakenSectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ConstructorTestClass extends ProcedureSpecimensTakenSectionOperations {
-	};
+	}
 
 	/**
 	* Tests Operations Constructor for 100% coverage

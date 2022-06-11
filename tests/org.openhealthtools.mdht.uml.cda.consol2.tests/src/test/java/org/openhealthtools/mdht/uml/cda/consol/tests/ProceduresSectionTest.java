@@ -443,7 +443,7 @@ public class ProceduresSectionTest extends CDAValidationTest {
 
 			@Override
 			protected void setDependency(ProceduresSection target) {
-				Collection<Object> passToken = new java.util.ArrayList<Object>(3);
+				Collection<Object> passToken = new java.util.ArrayList<>(3);
 				passToken.add(target);
 				map.put("org.openhealthtools.mdht.uml.cda.consol.ProceduresSectionEntriesOptionalCodeP", passToken);
 			}
@@ -543,7 +543,7 @@ public class ProceduresSectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ConstructorTestClass extends ProceduresSectionOperations {
-	};
+	}
 
 	/**
 	* Tests Operations Constructor for 100% coverage

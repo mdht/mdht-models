@@ -491,7 +491,7 @@ public class IndicationTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ConstructorTestClass extends IndicationOperations {
-	};
+	}
 
 	/**
 	* Tests Operations Constructor for 100% coverage

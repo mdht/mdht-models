@@ -253,7 +253,7 @@ public class ProgressTowardGoalObservationTest extends CDAValidationTest {
 
 			@Override
 			protected void setDependency(ProgressTowardGoalObservation target) {
-				Collection<Object> passToken = new java.util.ArrayList<Object>(3);
+				Collection<Object> passToken = new java.util.ArrayList<>(3);
 				passToken.add(target);
 				map.put("org.openhealthtools.mdht.uml.cda.consol.ProgressTowardGoalObservationCodeP", passToken);
 			}
@@ -460,7 +460,7 @@ public class ProgressTowardGoalObservationTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ConstructorTestClass extends ProgressTowardGoalObservationOperations {
-	};
+	}
 
 	/**
 	* Tests Operations Constructor for 100% coverage

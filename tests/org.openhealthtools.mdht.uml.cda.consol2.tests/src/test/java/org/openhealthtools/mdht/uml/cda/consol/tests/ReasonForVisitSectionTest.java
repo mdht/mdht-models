@@ -267,7 +267,7 @@ public class ReasonForVisitSectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ConstructorTestClass extends ReasonForVisitSectionOperations {
-	};
+	}
 
 	/**
 	* Tests Operations Constructor for 100% coverage

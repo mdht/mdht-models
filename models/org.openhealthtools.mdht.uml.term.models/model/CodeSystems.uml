@@ -119,6 +119,7 @@
       </ownedComment>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_T_bIULD4EeafNo3UpQoAYw" name="ObservationValue"/>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_9zeVYOmFEeyDzOkHqzU3zg" name="ProvenanceParticipantType"/>
     <profileApplication xmi:id="_H1PoACF_Ed-M3adQxwHq4g">
       <eAnnotations xmi:id="_H1Q2ICF_Ed-M3adQxwHq4g" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.openhealthtools.org/mdht/schemas/term/1#/"/>
@@ -196,4 +197,5 @@
   <term:CodeSystemVersion xmi:id="_8GxMoG4FEea346h_ImlQww" identifier="2.16.840.1.113883.3.26.1.1" fullName="FDA RouteOfAdministration" base_Enumeration="_8Gm0kG4FEea346h_ImlQww"/>
   <term:CodeSystemVersion xmi:id="_IXptEKEXEea9R7VeOazsfg" identifier="2.16.840.1.113883.5.1" fullName="v3 Code System AdministrativeGender" source="HL7 FHIR" url="http://hl7.org/fhir/ValueSet/v3-AdministrativeGender" base_Enumeration="_IXZOYKEXEea9R7VeOazsfg"/>
   <term:CodeSystemVersion xmi:id="_T_bIUbD4EeafNo3UpQoAYw" identifier="2.16.840.1.113883.5.1063" fullName="ObservationValue" base_Enumeration="_T_bIULD4EeafNo3UpQoAYw"/>
+  <term:CodeSystemVersion xmi:id="_9ze8cOmFEeyDzOkHqzU3zg" identifier="2.16.840.1.113883.4.642.4.1131" fullName="Provenance Participant Type" source="HL7" base_Enumeration="_9zeVYOmFEeyDzOkHqzU3zg"/>
 </xmi:XMI>

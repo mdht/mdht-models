@@ -577,7 +577,7 @@ public class DeceasedObservationTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ConstructorTestClass extends DeceasedObservationOperations {
-	};
+	}
 
 	/**
 	* Tests Operations Constructor for 100% coverage

@@ -315,7 +315,7 @@ public class PayersSectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ConstructorTestClass extends PayersSectionOperations {
-	};
+	}
 
 	/**
 	* Tests Operations Constructor for 100% coverage

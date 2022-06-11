@@ -310,7 +310,7 @@ public class AllergiesSectionEntriesOptionalTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ConstructorTestClass extends AllergiesSectionEntriesOptionalOperations {
-	};
+	}
 
 	/**
 	* Tests Operations Constructor for 100% coverage

@@ -267,7 +267,7 @@ public class DischargeDietSectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ConstructorTestClass extends DischargeDietSectionOperations {
-	};
+	}
 
 	/**
 	* Tests Operations Constructor for 100% coverage

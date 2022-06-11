@@ -199,7 +199,7 @@ public class LongitudinalCareWoundObservationTest extends CDAValidationTest {
 
 			@Override
 			protected void setDependency(LongitudinalCareWoundObservation target) {
-				Collection<Object> passToken = new java.util.ArrayList<Object>(3);
+				Collection<Object> passToken = new java.util.ArrayList<>(3);
 				passToken.add(target);
 				map.put("org.openhealthtools.mdht.uml.cda.consol.LongitudinalCareWoundObservationCodeP", passToken);
 			}
@@ -278,7 +278,7 @@ public class LongitudinalCareWoundObservationTest extends CDAValidationTest {
 
 			@Override
 			protected void setDependency(LongitudinalCareWoundObservation target) {
-				Collection<Object> passToken = new java.util.ArrayList<Object>(3);
+				Collection<Object> passToken = new java.util.ArrayList<>(3);
 				passToken.add(target);
 				map.put("org.openhealthtools.mdht.uml.cda.consol.LongitudinalCareWoundObservationValueP", passToken);
 			}
@@ -355,7 +355,7 @@ public class LongitudinalCareWoundObservationTest extends CDAValidationTest {
 
 			@Override
 			protected void setDependency(LongitudinalCareWoundObservation target) {
-				Collection<Object> passToken = new java.util.ArrayList<Object>(3);
+				Collection<Object> passToken = new java.util.ArrayList<>(3);
 				passToken.add(target);
 				map.put(
 					"org.openhealthtools.mdht.uml.cda.consol.LongitudinalCareWoundObservationTargetSiteCodeP",
@@ -924,7 +924,7 @@ public class LongitudinalCareWoundObservationTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ConstructorTestClass extends LongitudinalCareWoundObservationOperations {
-	};
+	}
 
 	/**
 	* Tests Operations Constructor for 100% coverage

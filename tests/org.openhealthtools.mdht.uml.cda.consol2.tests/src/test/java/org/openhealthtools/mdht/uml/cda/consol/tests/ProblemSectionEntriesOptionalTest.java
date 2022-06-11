@@ -317,7 +317,7 @@ public class ProblemSectionEntriesOptionalTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ConstructorTestClass extends ProblemSectionEntriesOptionalOperations {
-	};
+	}
 
 	/**
 	* Tests Operations Constructor for 100% coverage

@@ -268,7 +268,7 @@ public class HistoryOfPresentIllnessSectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ConstructorTestClass extends HistoryOfPresentIllnessSectionOperations {
-	};
+	}
 
 	/**
 	* Tests Operations Constructor for 100% coverage

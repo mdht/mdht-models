@@ -581,7 +581,7 @@ public class TextObservationTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ConstructorTestClass extends TextObservationOperations {
-	};
+	}
 
 	/**
 	* Tests Operations Constructor for 100% coverage

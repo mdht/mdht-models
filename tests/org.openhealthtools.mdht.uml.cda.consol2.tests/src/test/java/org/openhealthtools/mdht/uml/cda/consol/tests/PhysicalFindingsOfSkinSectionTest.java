@@ -317,7 +317,7 @@ public class PhysicalFindingsOfSkinSectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ConstructorTestClass extends PhysicalFindingsOfSkinSectionOperations {
-	};
+	}
 
 	/**
 	* Tests Operations Constructor for 100% coverage

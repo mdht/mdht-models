@@ -318,7 +318,7 @@ public class HospitalAdmissionDiagnosisSectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ConstructorTestClass extends HospitalAdmissionDiagnosisSectionOperations {
-	};
+	}
 
 	/**
 	* Tests Operations Constructor for 100% coverage

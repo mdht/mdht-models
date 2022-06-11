@@ -307,7 +307,7 @@ public class CareTeamsTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ConstructorTestClass extends CareTeamsOperations {
-	};
+	}
 
 	/**
 	* Tests Operations Constructor for 100% coverage

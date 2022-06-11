@@ -24,6 +24,7 @@ import org.eclipse.mdht.uml.cda.ExternalDocument;
 import org.eclipse.mdht.uml.cda.ManufacturedProduct;
 import org.eclipse.mdht.uml.cda.Observation;
 import org.eclipse.mdht.uml.cda.Organizer;
+import org.eclipse.mdht.uml.cda.Participant1;
 import org.eclipse.mdht.uml.cda.ParticipantRole;
 import org.eclipse.mdht.uml.cda.Performer1;
 import org.eclipse.mdht.uml.cda.Procedure;
@@ -7015,6 +7016,23 @@ public class ConsolSwitch<T> {
 				}
 				return result;
 			}
+			case ConsolPackage.PROVENANCE_ASSEMBLER_PARTICIPATION_V2: {
+				ProvenanceAssemblerParticipationV2 provenanceAssemblerParticipationV2 = (ProvenanceAssemblerParticipationV2) theEObject;
+				T result = caseProvenanceAssemblerParticipationV2(provenanceAssemblerParticipationV2);
+				if (result == null) {
+					result = caseParticipant1(provenanceAssemblerParticipationV2);
+				}
+				if (result == null) {
+					result = caseParticipation(provenanceAssemblerParticipationV2);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(provenanceAssemblerParticipationV2);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
 			default:
 				return defaultCase(theEObject);
 		}
@@ -12108,6 +12126,21 @@ public class ConsolSwitch<T> {
 	}
 
 	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Provenance Assembler Participation V2</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Provenance Assembler Participation V2</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseProvenanceAssemblerParticipationV2(ProvenanceAssemblerParticipationV2 object) {
+		return null;
+	}
+
+	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Criticality Observation</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -12464,6 +12497,21 @@ public class ConsolSwitch<T> {
 	 * @generated
 	 */
 	public T caseExternalDocument(ExternalDocument object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Participant1</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Participant1</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseParticipant1(Participant1 object) {
 		return null;
 	}
 

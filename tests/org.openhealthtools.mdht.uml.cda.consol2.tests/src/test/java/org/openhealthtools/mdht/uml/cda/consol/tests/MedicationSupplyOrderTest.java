@@ -625,7 +625,7 @@ public class MedicationSupplyOrderTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ConstructorTestClass extends MedicationSupplyOrderOperations {
-	};
+	}
 
 	/**
 	* Tests Operations Constructor for 100% coverage

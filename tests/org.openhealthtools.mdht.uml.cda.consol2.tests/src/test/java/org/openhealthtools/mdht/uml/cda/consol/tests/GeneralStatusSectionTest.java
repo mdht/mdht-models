@@ -267,7 +267,7 @@ public class GeneralStatusSectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ConstructorTestClass extends GeneralStatusSectionOperations {
-	};
+	}
 
 	/**
 	* Tests Operations Constructor for 100% coverage

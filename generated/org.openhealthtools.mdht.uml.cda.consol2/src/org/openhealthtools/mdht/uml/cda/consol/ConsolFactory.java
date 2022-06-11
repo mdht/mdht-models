@@ -3100,6 +3100,15 @@ public interface ConsolFactory extends EFactory {
 	UDIOrganizer createUDIOrganizer();
 
 	/**
+	 * Returns a new object of class '<em>Provenance Assembler Participation V2</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Provenance Assembler Participation V2</em>'.
+	 * @generated
+	 */
+	ProvenanceAssemblerParticipationV2 createProvenanceAssemblerParticipationV2();
+
+	/**
 	 * Returns a new object of class '<em>Criticality Observation</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

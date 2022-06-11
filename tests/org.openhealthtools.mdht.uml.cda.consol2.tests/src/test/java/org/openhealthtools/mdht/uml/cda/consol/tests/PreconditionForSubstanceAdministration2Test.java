@@ -310,7 +310,7 @@ public class PreconditionForSubstanceAdministration2Test extends CDAValidationTe
 	* @generated
 	*/
 	private static class ConstructorTestClass extends PreconditionForSubstanceAdministration2Operations {
-	};
+	}
 
 	/**
 	* Tests Operations Constructor for 100% coverage

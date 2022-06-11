@@ -231,7 +231,7 @@ public class VitalSignsSectionTest extends CDAValidationTest {
 
 			@Override
 			protected void setDependency(VitalSignsSection target) {
-				Collection<Object> passToken = new java.util.ArrayList<Object>(3);
+				Collection<Object> passToken = new java.util.ArrayList<>(3);
 				passToken.add(target);
 				map.put("org.openhealthtools.mdht.uml.cda.consol.VitalSignsSectionEntriesOptionalCodeP", passToken);
 			}
@@ -331,7 +331,7 @@ public class VitalSignsSectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ConstructorTestClass extends VitalSignsSectionOperations {
-	};
+	}
 
 	/**
 	* Tests Operations Constructor for 100% coverage

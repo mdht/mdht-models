@@ -304,7 +304,7 @@ public class OutcomeObservationTest extends CDAValidationTest {
 
 			@Override
 			protected void setDependency(OutcomeObservation target) {
-				Collection<Object> passToken = new java.util.ArrayList<Object>(3);
+				Collection<Object> passToken = new java.util.ArrayList<>(3);
 				passToken.add(target);
 				map.put("org.openhealthtools.mdht.uml.cda.consol.OutcomeObservationCodeP", passToken);
 			}
@@ -731,7 +731,7 @@ public class OutcomeObservationTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ConstructorTestClass extends OutcomeObservationOperations {
-	};
+	}
 
 	/**
 	* Tests Operations Constructor for 100% coverage

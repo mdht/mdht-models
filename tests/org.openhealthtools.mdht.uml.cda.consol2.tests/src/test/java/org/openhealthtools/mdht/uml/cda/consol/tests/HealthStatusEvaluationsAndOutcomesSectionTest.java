@@ -360,7 +360,7 @@ public class HealthStatusEvaluationsAndOutcomesSectionTest extends CDAValidation
 	* @generated
 	*/
 	private static class ConstructorTestClass extends HealthStatusEvaluationsAndOutcomesSectionOperations {
-	};
+	}
 
 	/**
 	* Tests Operations Constructor for 100% coverage

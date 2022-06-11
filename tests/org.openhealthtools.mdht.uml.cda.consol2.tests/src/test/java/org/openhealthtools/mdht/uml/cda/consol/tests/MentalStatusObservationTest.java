@@ -260,7 +260,7 @@ public class MentalStatusObservationTest extends CDAValidationTest {
 
 			@Override
 			protected void setDependency(MentalStatusObservation target) {
-				Collection<Object> passToken = new java.util.ArrayList<Object>(3);
+				Collection<Object> passToken = new java.util.ArrayList<>(3);
 				passToken.add(target);
 				map.put("org.openhealthtools.mdht.uml.cda.consol.MentalStatusObservationCodeP", passToken);
 			}
@@ -586,7 +586,7 @@ public class MentalStatusObservationTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ConstructorTestClass extends MentalStatusObservationOperations {
-	};
+	}
 
 	/**
 	* Tests Operations Constructor for 100% coverage

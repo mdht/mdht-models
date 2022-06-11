@@ -151,7 +151,7 @@ public class AdmissionMedication2Test extends CDAValidationTest {
 
 			@Override
 			protected void setDependency(AdmissionMedication2 target) {
-				Collection<Object> passToken = new java.util.ArrayList<Object>(3);
+				Collection<Object> passToken = new java.util.ArrayList<>(3);
 				passToken.add(target);
 				map.put("org.openhealthtools.mdht.uml.cda.consol.AdmissionMedicationCodeP", passToken);
 			}
@@ -251,7 +251,7 @@ public class AdmissionMedication2Test extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ConstructorTestClass extends AdmissionMedication2Operations {
-	};
+	}
 
 	/**
 	* Tests Operations Constructor for 100% coverage

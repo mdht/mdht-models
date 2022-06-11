@@ -199,7 +199,7 @@ public class AdvanceDirectivesSectionEntriesOptional2Test extends CDAValidationT
 
 			@Override
 			protected void setDependency(AdvanceDirectivesSectionEntriesOptional2 target) {
-				Collection<Object> passToken = new java.util.ArrayList<Object>(3);
+				Collection<Object> passToken = new java.util.ArrayList<>(3);
 				passToken.add(target);
 				map.put(
 					"org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectivesSectionEntriesOptionalCodeP", passToken);
@@ -297,7 +297,7 @@ public class AdvanceDirectivesSectionEntriesOptional2Test extends CDAValidationT
 	* @generated
 	*/
 	private static class ConstructorTestClass extends AdvanceDirectivesSectionEntriesOptional2Operations {
-	};
+	}
 
 	/**
 	* Tests Operations Constructor for 100% coverage

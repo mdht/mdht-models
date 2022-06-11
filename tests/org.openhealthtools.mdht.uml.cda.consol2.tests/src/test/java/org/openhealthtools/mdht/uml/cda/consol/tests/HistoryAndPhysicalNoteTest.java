@@ -1513,7 +1513,6 @@ public class HistoryAndPhysicalNoteTest extends CDAValidationTest {
 
 				target.getComponentOf().getEncompassingEncounter().getResponsibleParty().getAssignedEntity().setAssignedPerson(
 					person);
-				;
 
 			}
 
@@ -2479,7 +2478,7 @@ public class HistoryAndPhysicalNoteTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ConstructorTestClass extends HistoryAndPhysicalNoteOperations {
-	};
+	}
 
 	/**
 	* Tests Operations Constructor for 100% coverage

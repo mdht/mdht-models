@@ -415,7 +415,7 @@ public class ProceduresSectionEntriesOptionalTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ConstructorTestClass extends ProceduresSectionEntriesOptionalOperations {
-	};
+	}
 
 	/**
 	* Tests Operations Constructor for 100% coverage

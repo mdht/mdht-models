@@ -1799,7 +1799,7 @@ public class ProcedureActivityActTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ConstructorTestClass extends ProcedureActivityActOperations {
-	};
+	}
 
 	/**
 	* Tests Operations Constructor for 100% coverage

@@ -494,7 +494,7 @@ public class MedicationInformation2Test extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ConstructorTestClass extends MedicationInformation2Operations {
-	};
+	}
 
 	/**
 	* Tests Operations Constructor for 100% coverage

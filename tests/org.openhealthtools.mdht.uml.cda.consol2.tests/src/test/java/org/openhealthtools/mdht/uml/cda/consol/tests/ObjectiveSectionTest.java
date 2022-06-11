@@ -267,7 +267,7 @@ public class ObjectiveSectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ConstructorTestClass extends ObjectiveSectionOperations {
-	};
+	}
 
 	/**
 	* Tests Operations Constructor for 100% coverage

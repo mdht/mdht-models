@@ -317,7 +317,7 @@ public class VitalSignsSectionEntriesOptionalTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ConstructorTestClass extends VitalSignsSectionEntriesOptionalOperations {
-	};
+	}
 
 	/**
 	* Tests Operations Constructor for 100% coverage

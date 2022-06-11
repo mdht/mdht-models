@@ -892,7 +892,7 @@ public class AllergyObservation2Test extends CDAValidationTest {
 
 			@Override
 			protected void setDependency(AllergyObservation2 target) {
-				Collection<Object> passToken = new java.util.ArrayList<Object>(3);
+				Collection<Object> passToken = new java.util.ArrayList<>(3);
 				passToken.add(target);
 				map.put("org.openhealthtools.mdht.uml.cda.consol.AllergyObservationCodeP", passToken);
 			}
@@ -935,7 +935,7 @@ public class AllergyObservation2Test extends CDAValidationTest {
 
 			@Override
 			protected void setDependency(AllergyObservation2 target) {
-				Collection<Object> passToken = new java.util.ArrayList<Object>(3);
+				Collection<Object> passToken = new java.util.ArrayList<>(3);
 				passToken.add(target);
 				map.put("org.openhealthtools.mdht.uml.cda.consol.AllergyObservationValueP", passToken);
 			}
@@ -979,7 +979,7 @@ public class AllergyObservation2Test extends CDAValidationTest {
 
 			@Override
 			protected void setDependency(AllergyObservation2 target) {
-				Collection<Object> passToken = new java.util.ArrayList<Object>(3);
+				Collection<Object> passToken = new java.util.ArrayList<>(3);
 				passToken.add(target);
 				map.put("org.openhealthtools.mdht.uml.cda.consol.AllergyObservationStatusCodeP", passToken);
 			}
@@ -1559,7 +1559,7 @@ public class AllergyObservation2Test extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ConstructorTestClass extends AllergyObservation2Operations {
-	};
+	}
 
 	/**
 	* Tests Operations Constructor for 100% coverage

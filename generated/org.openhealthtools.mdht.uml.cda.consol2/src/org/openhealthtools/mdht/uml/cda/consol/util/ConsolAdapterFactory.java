@@ -24,6 +24,7 @@ import org.eclipse.mdht.uml.cda.ExternalDocument;
 import org.eclipse.mdht.uml.cda.ManufacturedProduct;
 import org.eclipse.mdht.uml.cda.Observation;
 import org.eclipse.mdht.uml.cda.Organizer;
+import org.eclipse.mdht.uml.cda.Participant1;
 import org.eclipse.mdht.uml.cda.ParticipantRole;
 import org.eclipse.mdht.uml.cda.Performer1;
 import org.eclipse.mdht.uml.cda.Procedure;
@@ -1817,6 +1818,11 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
+		public Adapter caseProvenanceAssemblerParticipationV2(ProvenanceAssemblerParticipationV2 object) {
+			return createProvenanceAssemblerParticipationV2Adapter();
+		}
+
+		@Override
 		public Adapter caseInfrastructureRoot(InfrastructureRoot object) {
 			return createInfrastructureRootAdapter();
 		}
@@ -1924,6 +1930,11 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 		@Override
 		public Adapter caseExternalDocument(ExternalDocument object) {
 			return createExternalDocumentAdapter();
+		}
+
+		@Override
+		public Adapter caseParticipant1(Participant1 object) {
+			return createParticipant1Adapter();
 		}
 
 		@Override
@@ -6902,6 +6913,20 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.ProvenanceAssemblerParticipationV2 <em>Provenance Assembler Participation V2</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.ProvenanceAssemblerParticipationV2
+	 * @generated
+	 */
+	public Adapter createProvenanceAssemblerParticipationV2Adapter() {
+		return null;
+	}
+
+	/**
 	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.CriticalityObservation <em>Criticality Observation</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -7066,6 +7091,20 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createExternalDocumentAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.eclipse.mdht.uml.cda.Participant1 <em>Participant1</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.eclipse.mdht.uml.cda.Participant1
+	 * @generated
+	 */
+	public Adapter createParticipant1Adapter() {
 		return null;
 	}
 

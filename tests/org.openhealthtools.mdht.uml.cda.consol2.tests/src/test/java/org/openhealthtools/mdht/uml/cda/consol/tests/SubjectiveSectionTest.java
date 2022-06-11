@@ -267,7 +267,7 @@ public class SubjectiveSectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ConstructorTestClass extends SubjectiveSectionOperations {
-	};
+	}
 
 	/**
 	* Tests Operations Constructor for 100% coverage

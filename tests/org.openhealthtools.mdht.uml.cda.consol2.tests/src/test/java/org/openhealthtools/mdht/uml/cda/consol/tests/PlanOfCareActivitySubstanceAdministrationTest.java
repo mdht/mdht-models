@@ -244,7 +244,7 @@ public class PlanOfCareActivitySubstanceAdministrationTest extends CDAValidation
 	* @generated
 	*/
 	private static class ConstructorTestClass extends PlanOfCareActivitySubstanceAdministrationOperations {
-	};
+	}
 
 	/**
 	* Tests Operations Constructor for 100% coverage

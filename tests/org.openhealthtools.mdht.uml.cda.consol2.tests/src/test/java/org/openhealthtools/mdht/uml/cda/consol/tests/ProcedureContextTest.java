@@ -298,7 +298,7 @@ public class ProcedureContextTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ConstructorTestClass extends ProcedureContextOperations {
-	};
+	}
 
 	/**
 	* Tests Operations Constructor for 100% coverage

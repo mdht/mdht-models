@@ -322,7 +322,7 @@ public class AdvanceDirectivesSectionEntriesOptionalTest extends CDAValidationTe
 	* @generated
 	*/
 	private static class ConstructorTestClass extends AdvanceDirectivesSectionEntriesOptionalOperations {
-	};
+	}
 
 	/**
 	* Tests Operations Constructor for 100% coverage

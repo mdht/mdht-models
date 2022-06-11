@@ -1500,7 +1500,7 @@ public class ProgressNoteTest extends CDAValidationTest {
 			protected void updateToPass(ProgressNote target) {
 				target.getComponentOf().getEncompassingEncounter().getLocation().getHealthCareFacility().getIds().add(
 					DatatypesFactory.eINSTANCE.createII());
-				;
+
 			}
 
 			@Override
@@ -2181,7 +2181,7 @@ public class ProgressNoteTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ConstructorTestClass extends ProgressNoteOperations {
-	};
+	}
 
 	/**
 	* Tests Operations Constructor for 100% coverage
