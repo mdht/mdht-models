@@ -193,7 +193,7 @@ public class AssessmentScaleObservationV2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 
@@ -232,7 +232,7 @@ public class AssessmentScaleObservationV2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 
@@ -271,7 +271,7 @@ public class AssessmentScaleObservationV2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 
@@ -312,7 +312,7 @@ public class AssessmentScaleObservationV2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 

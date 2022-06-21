@@ -118,7 +118,7 @@ public class ProcedureActivityProcedureV3Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 
@@ -276,7 +276,7 @@ public class ProcedureActivityProcedureV3Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 
@@ -313,7 +313,7 @@ public class ProcedureActivityProcedureV3Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 

@@ -28,9 +28,9 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.AssessmentScaleSupport
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AssessmentScaleSupportingObservationV2#validateAssessmentScaleSupportingObservationV2TemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Assessment Scale Supporting Observation V2 Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AssessmentScaleSupportingObservationV2#validateAssessmentScaleSupportingObservationV2Id(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Assessment Scale Supporting Observation V2 Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AssessmentScaleSupportingObservationV2#validateAssessmentScaleSupportingObservationV2StatusCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Assessment Scale Supporting Observation V2 Status Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AssessmentScaleSupportingObservationV2#validateAssessmentScaleSupportingObservationV2Value(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Assessment Scale Supporting Observation V2 Value</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AssessmentScaleSupportingObservationV2#validateAssessmentScaleSupportingObservationV2ClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Assessment Scale Supporting Observation V2 Class Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AssessmentScaleSupportingObservationV2#validateAssessmentScaleSupportingObservationV2MoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Assessment Scale Supporting Observation V2 Mood Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AssessmentScaleSupportingObservationV2#validateAssessmentScaleSupportingObservationV2Value(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Assessment Scale Supporting Observation V2 Value</em>}</li>
  * </ul>
  * </p>
  *

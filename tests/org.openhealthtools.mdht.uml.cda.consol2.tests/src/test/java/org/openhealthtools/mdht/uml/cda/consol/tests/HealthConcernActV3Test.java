@@ -77,7 +77,7 @@ public class HealthConcernActV3Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 
@@ -113,7 +113,7 @@ public class HealthConcernActV3Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 
