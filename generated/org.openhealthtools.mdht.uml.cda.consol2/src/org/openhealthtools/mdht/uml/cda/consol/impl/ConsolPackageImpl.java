@@ -2307,6 +2307,104 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	private EClass careTeamOrganizerV2EClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass careTeamMemberActV2EClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass careTeamMemberScheduleObservationV2EClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass careTeamsV2EClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass assessmentScaleObservationV2EClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass assessmentScaleSupportingObservationV2EClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass dateOfDiagnosisActEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass genderIdentityObservationV3EClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass goalObsevationV2EClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass healthConcernActV3EClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass plannedProcedureV3EClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass problemObservationV4EClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass procedureActivityProcedureV3EClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass sectionTimeRangeObservationEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	private EClass criticalityObservationEClass = null;
 
 	/**
@@ -6996,6 +7094,188 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 				ConsolPackage.eNS_URI).getEClassifiers().get(344);
 		}
 		return provenanceAssemblerParticipationV2EClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getCareTeamOrganizerV2() {
+		if (careTeamOrganizerV2EClass == null) {
+			careTeamOrganizerV2EClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				ConsolPackage.eNS_URI).getEClassifiers().get(345);
+		}
+		return careTeamOrganizerV2EClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getCareTeamMemberActV2() {
+		if (careTeamMemberActV2EClass == null) {
+			careTeamMemberActV2EClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				ConsolPackage.eNS_URI).getEClassifiers().get(346);
+		}
+		return careTeamMemberActV2EClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getCareTeamMemberScheduleObservationV2() {
+		if (careTeamMemberScheduleObservationV2EClass == null) {
+			careTeamMemberScheduleObservationV2EClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				ConsolPackage.eNS_URI).getEClassifiers().get(347);
+		}
+		return careTeamMemberScheduleObservationV2EClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getCareTeamsV2() {
+		if (careTeamsV2EClass == null) {
+			careTeamsV2EClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				ConsolPackage.eNS_URI).getEClassifiers().get(348);
+		}
+		return careTeamsV2EClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getAssessmentScaleObservationV2() {
+		if (assessmentScaleObservationV2EClass == null) {
+			assessmentScaleObservationV2EClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				ConsolPackage.eNS_URI).getEClassifiers().get(349);
+		}
+		return assessmentScaleObservationV2EClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getAssessmentScaleSupportingObservationV2() {
+		if (assessmentScaleSupportingObservationV2EClass == null) {
+			assessmentScaleSupportingObservationV2EClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				ConsolPackage.eNS_URI).getEClassifiers().get(350);
+		}
+		return assessmentScaleSupportingObservationV2EClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getDateOfDiagnosisAct() {
+		if (dateOfDiagnosisActEClass == null) {
+			dateOfDiagnosisActEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				ConsolPackage.eNS_URI).getEClassifiers().get(351);
+		}
+		return dateOfDiagnosisActEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getGenderIdentityObservationV3() {
+		if (genderIdentityObservationV3EClass == null) {
+			genderIdentityObservationV3EClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				ConsolPackage.eNS_URI).getEClassifiers().get(352);
+		}
+		return genderIdentityObservationV3EClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getGoalObsevationV2() {
+		if (goalObsevationV2EClass == null) {
+			goalObsevationV2EClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				ConsolPackage.eNS_URI).getEClassifiers().get(353);
+		}
+		return goalObsevationV2EClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getHealthConcernActV3() {
+		if (healthConcernActV3EClass == null) {
+			healthConcernActV3EClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				ConsolPackage.eNS_URI).getEClassifiers().get(354);
+		}
+		return healthConcernActV3EClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getPlannedProcedureV3() {
+		if (plannedProcedureV3EClass == null) {
+			plannedProcedureV3EClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				ConsolPackage.eNS_URI).getEClassifiers().get(355);
+		}
+		return plannedProcedureV3EClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getProblemObservationV4() {
+		if (problemObservationV4EClass == null) {
+			problemObservationV4EClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				ConsolPackage.eNS_URI).getEClassifiers().get(356);
+		}
+		return problemObservationV4EClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getProcedureActivityProcedureV3() {
+		if (procedureActivityProcedureV3EClass == null) {
+			procedureActivityProcedureV3EClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				ConsolPackage.eNS_URI).getEClassifiers().get(357);
+		}
+		return procedureActivityProcedureV3EClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getSectionTimeRangeObservation() {
+		if (sectionTimeRangeObservationEClass == null) {
+			sectionTimeRangeObservationEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				ConsolPackage.eNS_URI).getEClassifiers().get(358);
+		}
+		return sectionTimeRangeObservationEClass;
 	}
 
 	/**

@@ -751,6 +751,34 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createUDIOrganizer();
 			case ConsolPackage.PROVENANCE_ASSEMBLER_PARTICIPATION_V2:
 				return createProvenanceAssemblerParticipationV2();
+			case ConsolPackage.CARE_TEAM_ORGANIZER_V2:
+				return createCareTeamOrganizerV2();
+			case ConsolPackage.CARE_TEAM_MEMBER_ACT_V2:
+				return createCareTeamMemberActV2();
+			case ConsolPackage.CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION_V2:
+				return createCareTeamMemberScheduleObservationV2();
+			case ConsolPackage.CARE_TEAMS_V2:
+				return createCareTeamsV2();
+			case ConsolPackage.ASSESSMENT_SCALE_OBSERVATION_V2:
+				return createAssessmentScaleObservationV2();
+			case ConsolPackage.ASSESSMENT_SCALE_SUPPORTING_OBSERVATION_V2:
+				return createAssessmentScaleSupportingObservationV2();
+			case ConsolPackage.DATE_OF_DIAGNOSIS_ACT:
+				return createDateOfDiagnosisAct();
+			case ConsolPackage.GENDER_IDENTITY_OBSERVATION_V3:
+				return createGenderIdentityObservationV3();
+			case ConsolPackage.GOAL_OBSEVATION_V2:
+				return createGoalObsevationV2();
+			case ConsolPackage.HEALTH_CONCERN_ACT_V3:
+				return createHealthConcernActV3();
+			case ConsolPackage.PLANNED_PROCEDURE_V3:
+				return createPlannedProcedureV3();
+			case ConsolPackage.PROBLEM_OBSERVATION_V4:
+				return createProblemObservationV4();
+			case ConsolPackage.PROCEDURE_ACTIVITY_PROCEDURE_V3:
+				return createProcedureActivityProcedureV3();
+			case ConsolPackage.SECTION_TIME_RANGE_OBSERVATION:
+				return createSectionTimeRangeObservation();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -4296,6 +4324,160 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	public ProvenanceAssemblerParticipationV2 createProvenanceAssemblerParticipationV2() {
 		ProvenanceAssemblerParticipationV2Impl provenanceAssemblerParticipationV2 = new ProvenanceAssemblerParticipationV2Impl();
 		return provenanceAssemblerParticipationV2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public CareTeamOrganizerV2 createCareTeamOrganizerV2() {
+		CareTeamOrganizerV2Impl careTeamOrganizerV2 = new CareTeamOrganizerV2Impl();
+		return careTeamOrganizerV2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public CareTeamMemberActV2 createCareTeamMemberActV2() {
+		CareTeamMemberActV2Impl careTeamMemberActV2 = new CareTeamMemberActV2Impl();
+		return careTeamMemberActV2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public CareTeamMemberScheduleObservationV2 createCareTeamMemberScheduleObservationV2() {
+		CareTeamMemberScheduleObservationV2Impl careTeamMemberScheduleObservationV2 = new CareTeamMemberScheduleObservationV2Impl();
+		return careTeamMemberScheduleObservationV2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public CareTeamsV2 createCareTeamsV2() {
+		CareTeamsV2Impl careTeamsV2 = new CareTeamsV2Impl();
+		return careTeamsV2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public AssessmentScaleObservationV2 createAssessmentScaleObservationV2() {
+		AssessmentScaleObservationV2Impl assessmentScaleObservationV2 = new AssessmentScaleObservationV2Impl();
+		return assessmentScaleObservationV2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public AssessmentScaleSupportingObservationV2 createAssessmentScaleSupportingObservationV2() {
+		AssessmentScaleSupportingObservationV2Impl assessmentScaleSupportingObservationV2 = new AssessmentScaleSupportingObservationV2Impl();
+		return assessmentScaleSupportingObservationV2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public DateOfDiagnosisAct createDateOfDiagnosisAct() {
+		DateOfDiagnosisActImpl dateOfDiagnosisAct = new DateOfDiagnosisActImpl();
+		return dateOfDiagnosisAct;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public GenderIdentityObservationV3 createGenderIdentityObservationV3() {
+		GenderIdentityObservationV3Impl genderIdentityObservationV3 = new GenderIdentityObservationV3Impl();
+		return genderIdentityObservationV3;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public GoalObsevationV2 createGoalObsevationV2() {
+		GoalObsevationV2Impl goalObsevationV2 = new GoalObsevationV2Impl();
+		return goalObsevationV2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public HealthConcernActV3 createHealthConcernActV3() {
+		HealthConcernActV3Impl healthConcernActV3 = new HealthConcernActV3Impl();
+		return healthConcernActV3;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public PlannedProcedureV3 createPlannedProcedureV3() {
+		PlannedProcedureV3Impl plannedProcedureV3 = new PlannedProcedureV3Impl();
+		return plannedProcedureV3;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ProblemObservationV4 createProblemObservationV4() {
+		ProblemObservationV4Impl problemObservationV4 = new ProblemObservationV4Impl();
+		return problemObservationV4;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ProcedureActivityProcedureV3 createProcedureActivityProcedureV3() {
+		ProcedureActivityProcedureV3Impl procedureActivityProcedureV3 = new ProcedureActivityProcedureV3Impl();
+		return procedureActivityProcedureV3;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public SectionTimeRangeObservation createSectionTimeRangeObservation() {
+		SectionTimeRangeObservationImpl sectionTimeRangeObservation = new SectionTimeRangeObservationImpl();
+		return sectionTimeRangeObservation;
 	}
 
 	/**

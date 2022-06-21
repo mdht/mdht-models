@@ -3109,6 +3109,132 @@ public interface ConsolFactory extends EFactory {
 	ProvenanceAssemblerParticipationV2 createProvenanceAssemblerParticipationV2();
 
 	/**
+	 * Returns a new object of class '<em>Care Team Organizer V2</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Care Team Organizer V2</em>'.
+	 * @generated
+	 */
+	CareTeamOrganizerV2 createCareTeamOrganizerV2();
+
+	/**
+	 * Returns a new object of class '<em>Care Team Member Act V2</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Care Team Member Act V2</em>'.
+	 * @generated
+	 */
+	CareTeamMemberActV2 createCareTeamMemberActV2();
+
+	/**
+	 * Returns a new object of class '<em>Care Team Member Schedule Observation V2</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Care Team Member Schedule Observation V2</em>'.
+	 * @generated
+	 */
+	CareTeamMemberScheduleObservationV2 createCareTeamMemberScheduleObservationV2();
+
+	/**
+	 * Returns a new object of class '<em>Care Teams V2</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Care Teams V2</em>'.
+	 * @generated
+	 */
+	CareTeamsV2 createCareTeamsV2();
+
+	/**
+	 * Returns a new object of class '<em>Assessment Scale Observation V2</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Assessment Scale Observation V2</em>'.
+	 * @generated
+	 */
+	AssessmentScaleObservationV2 createAssessmentScaleObservationV2();
+
+	/**
+	 * Returns a new object of class '<em>Assessment Scale Supporting Observation V2</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Assessment Scale Supporting Observation V2</em>'.
+	 * @generated
+	 */
+	AssessmentScaleSupportingObservationV2 createAssessmentScaleSupportingObservationV2();
+
+	/**
+	 * Returns a new object of class '<em>Date Of Diagnosis Act</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Date Of Diagnosis Act</em>'.
+	 * @generated
+	 */
+	DateOfDiagnosisAct createDateOfDiagnosisAct();
+
+	/**
+	 * Returns a new object of class '<em>Gender Identity Observation V3</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Gender Identity Observation V3</em>'.
+	 * @generated
+	 */
+	GenderIdentityObservationV3 createGenderIdentityObservationV3();
+
+	/**
+	 * Returns a new object of class '<em>Goal Obsevation V2</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Goal Obsevation V2</em>'.
+	 * @generated
+	 */
+	GoalObsevationV2 createGoalObsevationV2();
+
+	/**
+	 * Returns a new object of class '<em>Health Concern Act V3</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Health Concern Act V3</em>'.
+	 * @generated
+	 */
+	HealthConcernActV3 createHealthConcernActV3();
+
+	/**
+	 * Returns a new object of class '<em>Planned Procedure V3</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Planned Procedure V3</em>'.
+	 * @generated
+	 */
+	PlannedProcedureV3 createPlannedProcedureV3();
+
+	/**
+	 * Returns a new object of class '<em>Problem Observation V4</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Problem Observation V4</em>'.
+	 * @generated
+	 */
+	ProblemObservationV4 createProblemObservationV4();
+
+	/**
+	 * Returns a new object of class '<em>Procedure Activity Procedure V3</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Procedure Activity Procedure V3</em>'.
+	 * @generated
+	 */
+	ProcedureActivityProcedureV3 createProcedureActivityProcedureV3();
+
+	/**
+	 * Returns a new object of class '<em>Section Time Range Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Section Time Range Observation</em>'.
+	 * @generated
+	 */
+	SectionTimeRangeObservation createSectionTimeRangeObservation();
+
+	/**
 	 * Returns a new object of class '<em>Criticality Observation</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

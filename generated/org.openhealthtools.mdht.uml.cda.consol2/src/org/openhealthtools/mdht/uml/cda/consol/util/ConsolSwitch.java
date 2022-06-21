@@ -7033,6 +7033,289 @@ public class ConsolSwitch<T> {
 				}
 				return result;
 			}
+			case ConsolPackage.CARE_TEAM_ORGANIZER_V2: {
+				CareTeamOrganizerV2 careTeamOrganizerV2 = (CareTeamOrganizerV2) theEObject;
+				T result = caseCareTeamOrganizerV2(careTeamOrganizerV2);
+				if (result == null) {
+					result = caseOrganizer(careTeamOrganizerV2);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(careTeamOrganizerV2);
+				}
+				if (result == null) {
+					result = caseAct(careTeamOrganizerV2);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(careTeamOrganizerV2);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.CARE_TEAM_MEMBER_ACT_V2: {
+				CareTeamMemberActV2 careTeamMemberActV2 = (CareTeamMemberActV2) theEObject;
+				T result = caseCareTeamMemberActV2(careTeamMemberActV2);
+				if (result == null) {
+					result = caseCDA_Act(careTeamMemberActV2);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(careTeamMemberActV2);
+				}
+				if (result == null) {
+					result = caseAct(careTeamMemberActV2);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(careTeamMemberActV2);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION_V2: {
+				CareTeamMemberScheduleObservationV2 careTeamMemberScheduleObservationV2 = (CareTeamMemberScheduleObservationV2) theEObject;
+				T result = caseCareTeamMemberScheduleObservationV2(careTeamMemberScheduleObservationV2);
+				if (result == null) {
+					result = caseObservation(careTeamMemberScheduleObservationV2);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(careTeamMemberScheduleObservationV2);
+				}
+				if (result == null) {
+					result = caseAct(careTeamMemberScheduleObservationV2);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(careTeamMemberScheduleObservationV2);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.CARE_TEAMS_V2: {
+				CareTeamsV2 careTeamsV2 = (CareTeamsV2) theEObject;
+				T result = caseCareTeamsV2(careTeamsV2);
+				if (result == null) {
+					result = caseSection(careTeamsV2);
+				}
+				if (result == null) {
+					result = caseAct(careTeamsV2);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(careTeamsV2);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.ASSESSMENT_SCALE_OBSERVATION_V2: {
+				AssessmentScaleObservationV2 assessmentScaleObservationV2 = (AssessmentScaleObservationV2) theEObject;
+				T result = caseAssessmentScaleObservationV2(assessmentScaleObservationV2);
+				if (result == null) {
+					result = caseObservation(assessmentScaleObservationV2);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(assessmentScaleObservationV2);
+				}
+				if (result == null) {
+					result = caseAct(assessmentScaleObservationV2);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(assessmentScaleObservationV2);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.ASSESSMENT_SCALE_SUPPORTING_OBSERVATION_V2: {
+				AssessmentScaleSupportingObservationV2 assessmentScaleSupportingObservationV2 = (AssessmentScaleSupportingObservationV2) theEObject;
+				T result = caseAssessmentScaleSupportingObservationV2(assessmentScaleSupportingObservationV2);
+				if (result == null) {
+					result = caseObservation(assessmentScaleSupportingObservationV2);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(assessmentScaleSupportingObservationV2);
+				}
+				if (result == null) {
+					result = caseAct(assessmentScaleSupportingObservationV2);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(assessmentScaleSupportingObservationV2);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.DATE_OF_DIAGNOSIS_ACT: {
+				DateOfDiagnosisAct dateOfDiagnosisAct = (DateOfDiagnosisAct) theEObject;
+				T result = caseDateOfDiagnosisAct(dateOfDiagnosisAct);
+				if (result == null) {
+					result = caseCDA_Act(dateOfDiagnosisAct);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(dateOfDiagnosisAct);
+				}
+				if (result == null) {
+					result = caseAct(dateOfDiagnosisAct);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(dateOfDiagnosisAct);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.GENDER_IDENTITY_OBSERVATION_V3: {
+				GenderIdentityObservationV3 genderIdentityObservationV3 = (GenderIdentityObservationV3) theEObject;
+				T result = caseGenderIdentityObservationV3(genderIdentityObservationV3);
+				if (result == null) {
+					result = caseObservation(genderIdentityObservationV3);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(genderIdentityObservationV3);
+				}
+				if (result == null) {
+					result = caseAct(genderIdentityObservationV3);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(genderIdentityObservationV3);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.GOAL_OBSEVATION_V2: {
+				GoalObsevationV2 goalObsevationV2 = (GoalObsevationV2) theEObject;
+				T result = caseGoalObsevationV2(goalObsevationV2);
+				if (result == null) {
+					result = caseObservation(goalObsevationV2);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(goalObsevationV2);
+				}
+				if (result == null) {
+					result = caseAct(goalObsevationV2);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(goalObsevationV2);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.HEALTH_CONCERN_ACT_V3: {
+				HealthConcernActV3 healthConcernActV3 = (HealthConcernActV3) theEObject;
+				T result = caseHealthConcernActV3(healthConcernActV3);
+				if (result == null) {
+					result = caseCDA_Act(healthConcernActV3);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(healthConcernActV3);
+				}
+				if (result == null) {
+					result = caseAct(healthConcernActV3);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(healthConcernActV3);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.PLANNED_PROCEDURE_V3: {
+				PlannedProcedureV3 plannedProcedureV3 = (PlannedProcedureV3) theEObject;
+				T result = casePlannedProcedureV3(plannedProcedureV3);
+				if (result == null) {
+					result = caseProcedure(plannedProcedureV3);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(plannedProcedureV3);
+				}
+				if (result == null) {
+					result = caseAct(plannedProcedureV3);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(plannedProcedureV3);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.PROBLEM_OBSERVATION_V4: {
+				ProblemObservationV4 problemObservationV4 = (ProblemObservationV4) theEObject;
+				T result = caseProblemObservationV4(problemObservationV4);
+				if (result == null) {
+					result = caseProblemObservation2(problemObservationV4);
+				}
+				if (result == null) {
+					result = caseProblemObservation(problemObservationV4);
+				}
+				if (result == null) {
+					result = caseObservation(problemObservationV4);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(problemObservationV4);
+				}
+				if (result == null) {
+					result = caseAct(problemObservationV4);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(problemObservationV4);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.PROCEDURE_ACTIVITY_PROCEDURE_V3: {
+				ProcedureActivityProcedureV3 procedureActivityProcedureV3 = (ProcedureActivityProcedureV3) theEObject;
+				T result = caseProcedureActivityProcedureV3(procedureActivityProcedureV3);
+				if (result == null) {
+					result = caseProcedure(procedureActivityProcedureV3);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(procedureActivityProcedureV3);
+				}
+				if (result == null) {
+					result = caseAct(procedureActivityProcedureV3);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(procedureActivityProcedureV3);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.SECTION_TIME_RANGE_OBSERVATION: {
+				SectionTimeRangeObservation sectionTimeRangeObservation = (SectionTimeRangeObservation) theEObject;
+				T result = caseSectionTimeRangeObservation(sectionTimeRangeObservation);
+				if (result == null) {
+					result = caseObservation(sectionTimeRangeObservation);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(sectionTimeRangeObservation);
+				}
+				if (result == null) {
+					result = caseAct(sectionTimeRangeObservation);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(sectionTimeRangeObservation);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
 			default:
 				return defaultCase(theEObject);
 		}
@@ -12137,6 +12420,216 @@ public class ConsolSwitch<T> {
 	 * @generated
 	 */
 	public T caseProvenanceAssemblerParticipationV2(ProvenanceAssemblerParticipationV2 object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Care Team Organizer V2</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Care Team Organizer V2</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseCareTeamOrganizerV2(CareTeamOrganizerV2 object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Care Team Member Act V2</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Care Team Member Act V2</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseCareTeamMemberActV2(CareTeamMemberActV2 object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Care Team Member Schedule Observation V2</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Care Team Member Schedule Observation V2</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseCareTeamMemberScheduleObservationV2(CareTeamMemberScheduleObservationV2 object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Care Teams V2</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Care Teams V2</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseCareTeamsV2(CareTeamsV2 object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Assessment Scale Observation V2</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Assessment Scale Observation V2</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseAssessmentScaleObservationV2(AssessmentScaleObservationV2 object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Assessment Scale Supporting Observation V2</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Assessment Scale Supporting Observation V2</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseAssessmentScaleSupportingObservationV2(AssessmentScaleSupportingObservationV2 object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Date Of Diagnosis Act</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Date Of Diagnosis Act</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseDateOfDiagnosisAct(DateOfDiagnosisAct object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Gender Identity Observation V3</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Gender Identity Observation V3</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseGenderIdentityObservationV3(GenderIdentityObservationV3 object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Goal Obsevation V2</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Goal Obsevation V2</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseGoalObsevationV2(GoalObsevationV2 object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Health Concern Act V3</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Health Concern Act V3</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseHealthConcernActV3(HealthConcernActV3 object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Planned Procedure V3</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Planned Procedure V3</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T casePlannedProcedureV3(PlannedProcedureV3 object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Problem Observation V4</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Problem Observation V4</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseProblemObservationV4(ProblemObservationV4 object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Procedure Activity Procedure V3</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Procedure Activity Procedure V3</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseProcedureActivityProcedureV3(ProcedureActivityProcedureV3 object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Section Time Range Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Section Time Range Observation</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseSectionTimeRangeObservation(SectionTimeRangeObservation object) {
 		return null;
 	}
 
