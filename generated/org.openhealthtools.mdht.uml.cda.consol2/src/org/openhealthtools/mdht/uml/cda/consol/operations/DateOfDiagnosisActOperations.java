@@ -140,7 +140,7 @@ public class DateOfDiagnosisActOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_DATE_OF_DIAGNOSIS_ACT_EFFECTIVE_TIMEHIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.effectiveTime.oclIsUndefined() implies self.effectiveTime.low->size() = 1";
+	protected static final String VALIDATE_DATE_OF_DIAGNOSIS_ACT_EFFECTIVE_TIMEHIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.effectiveTime.oclIsUndefined() implies self.effectiveTime.high->size() = 1";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateDateOfDiagnosisActEffectiveTimehigh(DateOfDiagnosisAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Date Of Diagnosis Act Effective Timehigh</em>}' invariant operation.

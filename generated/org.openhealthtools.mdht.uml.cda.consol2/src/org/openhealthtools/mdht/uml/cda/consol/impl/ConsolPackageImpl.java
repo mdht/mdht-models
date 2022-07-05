@@ -2405,6 +2405,13 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	private EClass deviceIdentifierObservationV2EClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	private EClass criticalityObservationEClass = null;
 
 	/**
@@ -7276,6 +7283,19 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 				ConsolPackage.eNS_URI).getEClassifiers().get(358);
 		}
 		return sectionTimeRangeObservationEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getDeviceIdentifierObservationV2() {
+		if (deviceIdentifierObservationV2EClass == null) {
+			deviceIdentifierObservationV2EClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				ConsolPackage.eNS_URI).getEClassifiers().get(359);
+		}
+		return deviceIdentifierObservationV2EClass;
 	}
 
 	/**

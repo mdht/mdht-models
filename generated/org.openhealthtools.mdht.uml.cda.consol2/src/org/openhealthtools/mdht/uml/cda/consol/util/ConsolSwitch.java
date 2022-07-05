@@ -7316,6 +7316,26 @@ public class ConsolSwitch<T> {
 				}
 				return result;
 			}
+			case ConsolPackage.DEVICE_IDENTIFIER_OBSERVATION_V2: {
+				DeviceIdentifierObservationV2 deviceIdentifierObservationV2 = (DeviceIdentifierObservationV2) theEObject;
+				T result = caseDeviceIdentifierObservationV2(deviceIdentifierObservationV2);
+				if (result == null) {
+					result = caseObservation(deviceIdentifierObservationV2);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(deviceIdentifierObservationV2);
+				}
+				if (result == null) {
+					result = caseAct(deviceIdentifierObservationV2);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(deviceIdentifierObservationV2);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
 			default:
 				return defaultCase(theEObject);
 		}
@@ -12630,6 +12650,21 @@ public class ConsolSwitch<T> {
 	 * @generated
 	 */
 	public T caseSectionTimeRangeObservation(SectionTimeRangeObservation object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Device Identifier Observation V2</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Device Identifier Observation V2</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseDeviceIdentifierObservationV2(DeviceIdentifierObservationV2 object) {
 		return null;
 	}
 

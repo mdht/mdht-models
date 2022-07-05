@@ -1893,6 +1893,11 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
+		public Adapter caseDeviceIdentifierObservationV2(DeviceIdentifierObservationV2 object) {
+			return createDeviceIdentifierObservationV2Adapter();
+		}
+
+		@Override
 		public Adapter caseInfrastructureRoot(InfrastructureRoot object) {
 			return createInfrastructureRootAdapter();
 		}
@@ -7189,6 +7194,20 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createSectionTimeRangeObservationAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.DeviceIdentifierObservationV2 <em>Device Identifier Observation V2</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.DeviceIdentifierObservationV2
+	 * @generated
+	 */
+	public Adapter createDeviceIdentifierObservationV2Adapter() {
 		return null;
 	}
 

@@ -779,6 +779,8 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createProcedureActivityProcedureV3();
 			case ConsolPackage.SECTION_TIME_RANGE_OBSERVATION:
 				return createSectionTimeRangeObservation();
+			case ConsolPackage.DEVICE_IDENTIFIER_OBSERVATION_V2:
+				return createDeviceIdentifierObservationV2();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -4478,6 +4480,17 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	public SectionTimeRangeObservation createSectionTimeRangeObservation() {
 		SectionTimeRangeObservationImpl sectionTimeRangeObservation = new SectionTimeRangeObservationImpl();
 		return sectionTimeRangeObservation;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public DeviceIdentifierObservationV2 createDeviceIdentifierObservationV2() {
+		DeviceIdentifierObservationV2Impl deviceIdentifierObservationV2 = new DeviceIdentifierObservationV2Impl();
+		return deviceIdentifierObservationV2;
 	}
 
 	/**

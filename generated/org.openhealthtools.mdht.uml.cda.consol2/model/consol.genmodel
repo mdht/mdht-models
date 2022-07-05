@@ -18655,5 +18655,39 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//SectionTimeRangeObservation/SectionTimeRangeObservationIVLTSHigh/context"/>
       </genOperations>
     </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="consol.ecore#//DeviceIdentifierObservationV2">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//DeviceIdentifierObservationV2/DeviceIdentifierObservationV2TemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//DeviceIdentifierObservationV2/DeviceIdentifierObservationV2TemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//DeviceIdentifierObservationV2/DeviceIdentifierObservationV2TemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//DeviceIdentifierObservationV2/DeviceIdentifierObservationV2CodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//DeviceIdentifierObservationV2/DeviceIdentifierObservationV2CodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//DeviceIdentifierObservationV2/DeviceIdentifierObservationV2CodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//DeviceIdentifierObservationV2/DeviceIdentifierObservationV2Code">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//DeviceIdentifierObservationV2/DeviceIdentifierObservationV2Code/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//DeviceIdentifierObservationV2/DeviceIdentifierObservationV2Code/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//DeviceIdentifierObservationV2/DeviceIdentifierObservationV2Value">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//DeviceIdentifierObservationV2/DeviceIdentifierObservationV2Value/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//DeviceIdentifierObservationV2/DeviceIdentifierObservationV2Value/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//DeviceIdentifierObservationV2/DeviceIdentifierObservationV2IIUDIissuingagency">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//DeviceIdentifierObservationV2/DeviceIdentifierObservationV2IIUDIissuingagency/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//DeviceIdentifierObservationV2/DeviceIdentifierObservationV2IIUDIissuingagency/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//DeviceIdentifierObservationV2/DeviceIdentifierObservationV2IIRoot">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//DeviceIdentifierObservationV2/DeviceIdentifierObservationV2IIRoot/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//DeviceIdentifierObservationV2/DeviceIdentifierObservationV2IIRoot/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//DeviceIdentifierObservationV2/DeviceIdentifierObservationV2IIExtension">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//DeviceIdentifierObservationV2/DeviceIdentifierObservationV2IIExtension/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//DeviceIdentifierObservationV2/DeviceIdentifierObservationV2IIExtension/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//DeviceIdentifierObservationV2/DeviceIdentifierObservationV2IIDisplayable">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//DeviceIdentifierObservationV2/DeviceIdentifierObservationV2IIDisplayable/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//DeviceIdentifierObservationV2/DeviceIdentifierObservationV2IIDisplayable/context"/>
+      </genOperations>
+    </genClasses>
   </genPackages>
 </genmodel:GenModel>

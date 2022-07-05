@@ -3235,6 +3235,15 @@ public interface ConsolFactory extends EFactory {
 	SectionTimeRangeObservation createSectionTimeRangeObservation();
 
 	/**
+	 * Returns a new object of class '<em>Device Identifier Observation V2</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Device Identifier Observation V2</em>'.
+	 * @generated
+	 */
+	DeviceIdentifierObservationV2 createDeviceIdentifierObservationV2();
+
+	/**
 	 * Returns a new object of class '<em>Criticality Observation</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

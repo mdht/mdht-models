@@ -25,6 +25,7 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.GoalObsevationV2Operat
  * <p>
  * The following operations are supported:
  * <ul>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GoalObsevationV2#validateGoalObsevationV2TemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Goal Obsevation V2 Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GoalObsevationV2#validateGoalObsevationV2Id(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Goal Obsevation V2 Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GoalObsevationV2#validateGoalObsevationV2Code(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Goal Obsevation V2 Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GoalObsevationV2#validateGoalObsevationV2StatusCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Goal Obsevation V2 Status Code</em>}</li>
@@ -39,6 +40,41 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.GoalObsevationV2Operat
  */
 
 public class GoalObsevationV2Test extends CDAValidationTest {
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateGoalObsevationV2TemplateId() {
+		OperationsTestCase<GoalObsevationV2> validateGoalObsevationV2TemplateIdTestCase = new OperationsTestCase<GoalObsevationV2>(
+			"validateGoalObsevationV2TemplateId",
+			operationsForOCL.getOCLValue("VALIDATE_GOAL_OBSEVATION_V2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(GoalObsevationV2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(GoalObsevationV2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return GoalObsevationV2Operations.validateGoalObsevationV2TemplateId(
+					(GoalObsevationV2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateGoalObsevationV2TemplateIdTestCase.doValidationTest();
+	}
 
 	/**
 	*

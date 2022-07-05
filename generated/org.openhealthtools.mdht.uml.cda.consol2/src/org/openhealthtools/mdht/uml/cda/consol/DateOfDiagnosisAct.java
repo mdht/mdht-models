@@ -42,7 +42,7 @@ public interface DateOfDiagnosisAct extends Act {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.effectiveTime.oclIsUndefined() implies self.effectiveTime.low-&gt;size() = 1'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.effectiveTime.oclIsUndefined() implies self.effectiveTime.high-&gt;size() = 1'"
 	 * @generated
 	 */
 	boolean validateDateOfDiagnosisActEffectiveTimehigh(DiagnosticChain diagnostics, Map<Object, Object> context);
