@@ -165,9 +165,9 @@ public interface SectionTimeRangeObservation extends Observation {
 	public SectionTimeRangeObservation init();
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public SectionTimeRangeObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // SectionTimeRangeObservation

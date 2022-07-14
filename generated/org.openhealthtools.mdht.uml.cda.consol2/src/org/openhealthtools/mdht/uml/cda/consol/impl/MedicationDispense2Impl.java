@@ -52,7 +52,8 @@ public class MedicationDispense2Impl extends MedicationDispenseImpl implements M
 	 */
 	public boolean validateMedicationDispense2ContainsMedicationInformation2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationDispense2Operations.validateMedicationDispense2ContainsMedicationInformation2(this, diagnostics, context);
+		return MedicationDispense2Operations.validateMedicationDispense2ContainsMedicationInformation2(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -62,7 +63,8 @@ public class MedicationDispense2Impl extends MedicationDispenseImpl implements M
 	 */
 	public boolean validateMedicationDispense2ContainsImmunizationMedicationInformation2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationDispense2Operations.validateMedicationDispense2ContainsImmunizationMedicationInformation2(this, diagnostics, context);
+		return MedicationDispense2Operations.validateMedicationDispense2ContainsImmunizationMedicationInformation2(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -100,7 +102,8 @@ public class MedicationDispense2Impl extends MedicationDispenseImpl implements M
 	@Override
 	public boolean validateMedicationDispenseContainsMedicationOrImmunization(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationDispense2Operations.validateMedicationDispenseContainsMedicationOrImmunization(this, diagnostics, context);
+		return MedicationDispense2Operations.validateMedicationDispenseContainsMedicationOrImmunization(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -131,7 +134,8 @@ public class MedicationDispense2Impl extends MedicationDispenseImpl implements M
 	@Override
 	public boolean validateMedicationDispenseMedicationSupplyOrder(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationDispense2Operations.validateMedicationDispenseMedicationSupplyOrder(this, diagnostics, context);
+		return MedicationDispense2Operations.validateMedicationDispenseMedicationSupplyOrder(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -141,17 +145,17 @@ public class MedicationDispense2Impl extends MedicationDispenseImpl implements M
 	 */
 	@Override
 	public MedicationDispense2 init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public MedicationDispense2 init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // MedicationDispense2Impl

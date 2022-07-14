@@ -711,9 +711,9 @@ public interface OperativeNote2 extends USRealmHeader2 {
 	public OperativeNote2 init();
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public OperativeNote2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // OperativeNote2

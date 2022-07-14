@@ -188,9 +188,9 @@ public interface UnstructuredDocument2 extends USRealmHeader2 {
 	public UnstructuredDocument2 init();
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public UnstructuredDocument2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // UnstructuredDocument2

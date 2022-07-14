@@ -318,9 +318,9 @@ public interface ProvenanceAssemblerParticipationV2 extends Participant1 {
 	public ProvenanceAssemblerParticipationV2 init();
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public ProvenanceAssemblerParticipationV2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ProvenanceAssemblerParticipationV2

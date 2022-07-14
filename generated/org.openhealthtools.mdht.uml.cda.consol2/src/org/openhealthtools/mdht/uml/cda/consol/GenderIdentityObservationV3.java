@@ -10,8 +10,6 @@ import org.eclipse.emf.ecore.EObject;
 
 import org.eclipse.mdht.emf.runtime.util.Initializer;
 
-import org.eclipse.mdht.uml.cda.Observation;
-
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Gender Identity Observation V3</b></em>'.
@@ -19,7 +17,7 @@ import org.eclipse.mdht.uml.cda.Observation;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getGenderIdentityObservationV3()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.code='76691-5' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Gender identity' constraints.validation.error='SocialHistoryObservationCode SocialHistoryObservationCodeP SocialHistoryObservationStatusCode SocialHistoryObservationStatusCodeP GenderIdentityObservationV3EffectiveTime GenderIdentityObservationV3Value GenderIdentityObservationV3ValueP GenderIdentityObservationV3ClassCode GenderIdentityObservationV3MoodCode GenderIdentityObservationV3IVLTSLow' constraints.validation.dependOn.SocialHistoryObservationCode='SocialHistoryObservationCodeP' constraints.validation.dependOn.SocialHistoryObservationStatusCode='SocialHistoryObservationStatusCodeP' value.codeSystem='2.16.840.1.113883.6.96' value.codeSystemName='SNOMEDCT' classCode='OBS' moodCode='EVN' constraints.validation.query='GenderIdentityObservationV3IVLTSLow GenderIdentityObservationV3IVLTSHigh' constraints.validation.info='GenderIdentityObservationV3IVLTSHigh'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='SocialHistoryObservation2TemplateId SocialHistoryObservationCode SocialHistoryObservationCodeP SocialHistoryObservationStatusCode SocialHistoryObservationStatusCodeP GenderIdentityObservationV3EffectiveTime GenderIdentityObservationV3Value GenderIdentityObservationV3ValueP GenderIdentityObservationV3ClassCode GenderIdentityObservationV3MoodCode GenderIdentityObservationV3IVLTSLow' templateId.root='2.16.840.1.113883.10.20.34.3.45' templateId.extension='2022-06-01' code.code='76691-5' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Gender identity' constraints.validation.dependOn.SocialHistoryObservationCode='SocialHistoryObservationCodeP' constraints.validation.dependOn.SocialHistoryObservationStatusCode='SocialHistoryObservationStatusCodeP' value.codeSystem='2.16.840.1.113883.6.96' value.codeSystemName='SNOMEDCT' classCode='OBS' moodCode='EVN' constraints.validation.query='GenderIdentityObservationV3IVLTSLow GenderIdentityObservationV3IVLTSHigh' constraints.validation.info='GenderIdentityObservationV3IVLTSHigh'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolGenderIdentityObservationV3IVLTS constraints.validation.error='GenderIdentityObservationV3IVLTSLow' constraints.validation.info='GenderIdentityObservationV3IVLTSHigh'"
  *        annotation="duplicates"
  * @generated
@@ -117,9 +115,9 @@ public interface GenderIdentityObservationV3 extends SocialHistoryObservation2 {
 	public GenderIdentityObservationV3 init();
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public GenderIdentityObservationV3 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // GenderIdentityObservationV3

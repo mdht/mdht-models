@@ -83,7 +83,7 @@ public class DischargeMedicationsSection2Operations extends DischargeMedications
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_DISCHARGE_MEDICATIONS_SECTION2_NULL_FLAVOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_DISCHARGE_MEDICATIONS_SECTION2_NULL_FLAVOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -99,44 +99,35 @@ public class DischargeMedicationsSection2Operations extends DischargeMedications
 	public static boolean validateDischargeMedicationsSection2NullFlavor(
 			DischargeMedicationsSection2 dischargeMedicationsSection2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"DischargeMedicationsSection2DischargeMedicationsSection2NullFlavor","INFO");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "DischargeMedicationsSection2DischargeMedicationsSection2NullFlavor", "INFO");
+
 		if (VALIDATE_DISCHARGE_MEDICATIONS_SECTION2_NULL_FLAVOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DISCHARGE_MEDICATIONS_SECTION2);
 			try {
-				VALIDATE_DISCHARGE_MEDICATIONS_SECTION2_NULL_FLAVOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_DISCHARGE_MEDICATIONS_SECTION2_NULL_FLAVOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_DISCHARGE_MEDICATIONS_SECTION2_NULL_FLAVOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_DISCHARGE_MEDICATIONS_SECTION2_NULL_FLAVOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_DISCHARGE_MEDICATIONS_SECTION2_NULL_FLAVOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(dischargeMedicationsSection2)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_DISCHARGE_MEDICATIONS_SECTION2_NULL_FLAVOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				dischargeMedicationsSection2)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.DISCHARGE_MEDICATIONS_SECTION2__DISCHARGE_MEDICATIONS_SECTION2_NULL_FLAVOR,
-						 ConsolPlugin.INSTANCE.getString("DischargeMedicationsSection2DischargeMedicationsSection2NullFlavor"),
-						 new Object [] { dischargeMedicationsSection2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.DISCHARGE_MEDICATIONS_SECTION2__DISCHARGE_MEDICATIONS_SECTION2_NULL_FLAVOR,
+						ConsolPlugin.INSTANCE.getString(
+							"DischargeMedicationsSection2DischargeMedicationsSection2NullFlavor"),
+						new Object[] { dischargeMedicationsSection2 }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -161,7 +152,7 @@ public class DischargeMedicationsSection2Operations extends DischargeMedications
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_DISCHARGE_MEDICATIONS_SECTION2_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_DISCHARGE_MEDICATIONS_SECTION2_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -177,56 +168,48 @@ public class DischargeMedicationsSection2Operations extends DischargeMedications
 	public static boolean validateDischargeMedicationsSection2CodeP(
 			DischargeMedicationsSection2 dischargeMedicationsSection2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"DischargeMedicationsSection2DischargeMedicationsSection2CodeP","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "DischargeMedicationsSection2DischargeMedicationsSection2CodeP", "ERROR");
+
 		if (VALIDATE_DISCHARGE_MEDICATIONS_SECTION2_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DISCHARGE_MEDICATIONS_SECTION2);
 			try {
-				VALIDATE_DISCHARGE_MEDICATIONS_SECTION2_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_DISCHARGE_MEDICATIONS_SECTION2_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_DISCHARGE_MEDICATIONS_SECTION2_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_DISCHARGE_MEDICATIONS_SECTION2_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_DISCHARGE_MEDICATIONS_SECTION2_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(dischargeMedicationsSection2)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_DISCHARGE_MEDICATIONS_SECTION2_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				dischargeMedicationsSection2)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.DISCHARGE_MEDICATIONS_SECTION2__DISCHARGE_MEDICATIONS_SECTION2_CODE_P,
-						 ConsolPlugin.INSTANCE.getString("DischargeMedicationsSection2DischargeMedicationsSection2CodeP"),
-						 new Object [] { dischargeMedicationsSection2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.DISCHARGE_MEDICATIONS_SECTION2__DISCHARGE_MEDICATIONS_SECTION2_CODE_P,
+						ConsolPlugin.INSTANCE.getString(
+							"DischargeMedicationsSection2DischargeMedicationsSection2CodeP"),
+						new Object[] { dischargeMedicationsSection2 }));
 			}
-			
+
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
-				Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.consol.DischargeMedicationsSection2CodeP");
+				Collection<Object> passToken = (Collection<Object>) context.get(
+					"org.openhealthtools.mdht.uml.cda.consol.DischargeMedicationsSection2CodeP");
 				if (passToken == null) {
 					// anticipate a reasonably healthy model
-					passToken = new java.util.ArrayList<Object>(3);
+					passToken = new java.util.ArrayList<>(3);
 					context.put("org.openhealthtools.mdht.uml.cda.consol.DischargeMedicationsSection2CodeP", passToken);
 				}
 				passToken.add(dischargeMedicationsSection2);
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -240,9 +223,9 @@ public class DischargeMedicationsSection2Operations extends DischargeMedications
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_DISCHARGE_MEDICATIONS_SECTION2_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "+
-"let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "+
-"value.code = '10183-2' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_DISCHARGE_MEDICATIONS_SECTION2_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and " +
+			"let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in " +
+			"value.code = '10183-2' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateDischargeMedicationsSection2Code(DischargeMedicationsSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Medications Section2 Code</em>}' invariant operation.
@@ -253,7 +236,7 @@ public class DischargeMedicationsSection2Operations extends DischargeMedications
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_DISCHARGE_MEDICATIONS_SECTION2_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_DISCHARGE_MEDICATIONS_SECTION2_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -269,50 +252,43 @@ public class DischargeMedicationsSection2Operations extends DischargeMedications
 	public static boolean validateDischargeMedicationsSection2Code(
 			DischargeMedicationsSection2 dischargeMedicationsSection2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-	
-	
-	
-  	  
-		Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.consol.DischargeMedicationsSection2CodeP");
-		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(dischargeMedicationsSection2)) {
+
+		Object passToken = (context == null)
+				? null
+				: context.get("org.openhealthtools.mdht.uml.cda.consol.DischargeMedicationsSection2CodeP");
+		if ((passToken instanceof Collection<?>) &&
+				((Collection<?>) passToken).contains(dischargeMedicationsSection2)) {
 			// I have a free pass to short-circuit
 			return true;
 		}
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"DischargeMedicationsSection2DischargeMedicationsSection2Code","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "DischargeMedicationsSection2DischargeMedicationsSection2Code", "ERROR");
+
 		if (VALIDATE_DISCHARGE_MEDICATIONS_SECTION2_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DISCHARGE_MEDICATIONS_SECTION2);
 			try {
-				VALIDATE_DISCHARGE_MEDICATIONS_SECTION2_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_DISCHARGE_MEDICATIONS_SECTION2_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_DISCHARGE_MEDICATIONS_SECTION2_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_DISCHARGE_MEDICATIONS_SECTION2_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_DISCHARGE_MEDICATIONS_SECTION2_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(dischargeMedicationsSection2)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_DISCHARGE_MEDICATIONS_SECTION2_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				dischargeMedicationsSection2)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.DISCHARGE_MEDICATIONS_SECTION2__DISCHARGE_MEDICATIONS_SECTION2_CODE,
-						 ConsolPlugin.INSTANCE.getString("DischargeMedicationsSection2DischargeMedicationsSection2Code"),
-						 new Object [] { dischargeMedicationsSection2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.DISCHARGE_MEDICATIONS_SECTION2__DISCHARGE_MEDICATIONS_SECTION2_CODE,
+						ConsolPlugin.INSTANCE.getString("DischargeMedicationsSection2DischargeMedicationsSection2Code"),
+						new Object[] { dischargeMedicationsSection2 }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -337,7 +313,7 @@ public class DischargeMedicationsSection2Operations extends DischargeMedications
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_DISCHARGE_MEDICATIONS_SECTION2_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_DISCHARGE_MEDICATIONS_SECTION2_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -353,44 +329,35 @@ public class DischargeMedicationsSection2Operations extends DischargeMedications
 	public static boolean validateDischargeMedicationsSection2Title(
 			DischargeMedicationsSection2 dischargeMedicationsSection2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"DischargeMedicationsSection2DischargeMedicationsSection2Title","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "DischargeMedicationsSection2DischargeMedicationsSection2Title", "ERROR");
+
 		if (VALIDATE_DISCHARGE_MEDICATIONS_SECTION2_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DISCHARGE_MEDICATIONS_SECTION2);
 			try {
-				VALIDATE_DISCHARGE_MEDICATIONS_SECTION2_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_DISCHARGE_MEDICATIONS_SECTION2_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_DISCHARGE_MEDICATIONS_SECTION2_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_DISCHARGE_MEDICATIONS_SECTION2_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_DISCHARGE_MEDICATIONS_SECTION2_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(dischargeMedicationsSection2)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_DISCHARGE_MEDICATIONS_SECTION2_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				dischargeMedicationsSection2)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.DISCHARGE_MEDICATIONS_SECTION2__DISCHARGE_MEDICATIONS_SECTION2_TITLE,
-						 ConsolPlugin.INSTANCE.getString("DischargeMedicationsSection2DischargeMedicationsSection2Title"),
-						 new Object [] { dischargeMedicationsSection2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.DISCHARGE_MEDICATIONS_SECTION2__DISCHARGE_MEDICATIONS_SECTION2_TITLE,
+						ConsolPlugin.INSTANCE.getString(
+							"DischargeMedicationsSection2DischargeMedicationsSection2Title"),
+						new Object[] { dischargeMedicationsSection2 }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -415,7 +382,7 @@ public class DischargeMedicationsSection2Operations extends DischargeMedications
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_DISCHARGE_MEDICATIONS_SECTION2_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_DISCHARGE_MEDICATIONS_SECTION2_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -431,44 +398,34 @@ public class DischargeMedicationsSection2Operations extends DischargeMedications
 	public static boolean validateDischargeMedicationsSection2Text(
 			DischargeMedicationsSection2 dischargeMedicationsSection2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"DischargeMedicationsSection2DischargeMedicationsSection2Text","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "DischargeMedicationsSection2DischargeMedicationsSection2Text", "ERROR");
+
 		if (VALIDATE_DISCHARGE_MEDICATIONS_SECTION2_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DISCHARGE_MEDICATIONS_SECTION2);
 			try {
-				VALIDATE_DISCHARGE_MEDICATIONS_SECTION2_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_DISCHARGE_MEDICATIONS_SECTION2_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_DISCHARGE_MEDICATIONS_SECTION2_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_DISCHARGE_MEDICATIONS_SECTION2_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_DISCHARGE_MEDICATIONS_SECTION2_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(dischargeMedicationsSection2)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_DISCHARGE_MEDICATIONS_SECTION2_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				dischargeMedicationsSection2)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.DISCHARGE_MEDICATIONS_SECTION2__DISCHARGE_MEDICATIONS_SECTION2_TEXT,
-						 ConsolPlugin.INSTANCE.getString("DischargeMedicationsSection2DischargeMedicationsSection2Text"),
-						 new Object [] { dischargeMedicationsSection2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.DISCHARGE_MEDICATIONS_SECTION2__DISCHARGE_MEDICATIONS_SECTION2_TEXT,
+						ConsolPlugin.INSTANCE.getString("DischargeMedicationsSection2DischargeMedicationsSection2Text"),
+						new Object[] { dischargeMedicationsSection2 }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -482,9 +439,9 @@ public class DischargeMedicationsSection2Operations extends DischargeMedications
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_DISCHARGE_MEDICATIONS_SECTION2_CE_TRANSLATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.code->excluding(null)->select(isNullFlavorUndefined())->reject( ( isNullFlavorUndefined() implies ((translation->isEmpty() or translation->exists(element | element.isNullFlavorUndefined())) implies (translation->size() = 1 and translation->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "+
-"let value : datatypes::CD = element.oclAsType(datatypes::CD) in "+
-"value.code = '75311-1' and value.codeSystem = '2.16.840.1.113883.6.1')) )))";
+	protected static final String VALIDATE_DISCHARGE_MEDICATIONS_SECTION2_CE_TRANSLATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.code->excluding(null)->select(isNullFlavorUndefined())->reject( ( isNullFlavorUndefined() implies ((translation->isEmpty() or translation->exists(element | element.isNullFlavorUndefined())) implies (translation->size() = 1 and translation->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and " +
+			"let value : datatypes::CD = element.oclAsType(datatypes::CD) in " +
+			"value.code = '75311-1' and value.codeSystem = '2.16.840.1.113883.6.1')) )))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateDischargeMedicationsSection2CETranslation(DischargeMedicationsSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Medications Section2 CE Translation</em>}' invariant operation.
@@ -495,7 +452,7 @@ public class DischargeMedicationsSection2Operations extends DischargeMedications
 	 * @ordered
 	 */
 
-	protected static ThreadLocal< Query<?, ?, ?> > VALIDATE_DISCHARGE_MEDICATIONS_SECTION2_CE_TRANSLATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal< Query<?, ?, ?> >();
+	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_DISCHARGE_MEDICATIONS_SECTION2_CE_TRANSLATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -511,49 +468,40 @@ public class DischargeMedicationsSection2Operations extends DischargeMedications
 	public static boolean validateDischargeMedicationsSection2CETranslation(
 			DischargeMedicationsSection2 dischargeMedicationsSection2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"DischargeMedicationsSection2DischargeMedicationsSection2CETranslation","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(
+			context, "DischargeMedicationsSection2DischargeMedicationsSection2CETranslation", "ERROR");
+
 		if (VALIDATE_DISCHARGE_MEDICATIONS_SECTION2_CE_TRANSLATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DISCHARGE_MEDICATIONS_SECTION2);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_DISCHARGE_MEDICATIONS_SECTION2_CE_TRANSLATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_DISCHARGE_MEDICATIONS_SECTION2_CE_TRANSLATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(EOCL_ENV.get().createQuery(oclExpression));
-			}
-			catch (ParserException pe) {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_DISCHARGE_MEDICATIONS_SECTION2_CE_TRANSLATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DISCHARGE_MEDICATIONS_SECTION2_CE_TRANSLATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(
+					EOCL_ENV.get().createQuery(oclExpression));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		Object oclResult = VALIDATE_DISCHARGE_MEDICATIONS_SECTION2_CE_TRANSLATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(dischargeMedicationsSection2);		
+		}
+
+		Object oclResult = VALIDATE_DISCHARGE_MEDICATIONS_SECTION2_CE_TRANSLATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(
+			dischargeMedicationsSection2);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-  			
+
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.DISCHARGE_MEDICATIONS_SECTION2__DISCHARGE_MEDICATIONS_SECTION2_CE_TRANSLATION,
-						 ConsolPlugin.INSTANCE.getString("DischargeMedicationsSection2DischargeMedicationsSection2CETranslation"),
-						 new Object [] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.DISCHARGE_MEDICATIONS_SECTION2__DISCHARGE_MEDICATIONS_SECTION2_CE_TRANSLATION,
+							ConsolPlugin.INSTANCE.getString(
+								"DischargeMedicationsSection2DischargeMedicationsSection2CETranslation"),
+							new Object[] { eObject }));
 				}
-				 
+
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -579,7 +527,7 @@ public class DischargeMedicationsSection2Operations extends DischargeMedications
 	 * @ordered
 	 */
 
-	protected static ThreadLocal< Query<?, ?, ?> > VALIDATE_DISCHARGE_MEDICATIONS_SECTION2_CE_TRANSLATION_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal< Query<?, ?, ?> >();
+	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_DISCHARGE_MEDICATIONS_SECTION2_CE_TRANSLATION_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -595,49 +543,40 @@ public class DischargeMedicationsSection2Operations extends DischargeMedications
 	public static boolean validateDischargeMedicationsSection2CETranslationP(
 			DischargeMedicationsSection2 dischargeMedicationsSection2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"DischargeMedicationsSection2DischargeMedicationsSection2CETranslationP","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(
+			context, "DischargeMedicationsSection2DischargeMedicationsSection2CETranslationP", "ERROR");
+
 		if (VALIDATE_DISCHARGE_MEDICATIONS_SECTION2_CE_TRANSLATION_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DISCHARGE_MEDICATIONS_SECTION2);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_DISCHARGE_MEDICATIONS_SECTION2_CE_TRANSLATION_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_DISCHARGE_MEDICATIONS_SECTION2_CE_TRANSLATION_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(EOCL_ENV.get().createQuery(oclExpression));
-			}
-			catch (ParserException pe) {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_DISCHARGE_MEDICATIONS_SECTION2_CE_TRANSLATION_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DISCHARGE_MEDICATIONS_SECTION2_CE_TRANSLATION_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(
+					EOCL_ENV.get().createQuery(oclExpression));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		Object oclResult = VALIDATE_DISCHARGE_MEDICATIONS_SECTION2_CE_TRANSLATION_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(dischargeMedicationsSection2);		
+		}
+
+		Object oclResult = VALIDATE_DISCHARGE_MEDICATIONS_SECTION2_CE_TRANSLATION_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(
+			dischargeMedicationsSection2);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-  			
+
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.DISCHARGE_MEDICATIONS_SECTION2__DISCHARGE_MEDICATIONS_SECTION2_CE_TRANSLATION_P,
-						 ConsolPlugin.INSTANCE.getString("DischargeMedicationsSection2DischargeMedicationsSection2CETranslationP"),
-						 new Object [] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.DISCHARGE_MEDICATIONS_SECTION2__DISCHARGE_MEDICATIONS_SECTION2_CE_TRANSLATION_P,
+							ConsolPlugin.INSTANCE.getString(
+								"DischargeMedicationsSection2DischargeMedicationsSection2CETranslationP"),
+							new Object[] { eObject }));
 				}
-				 
+
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -663,7 +602,7 @@ public class DischargeMedicationsSection2Operations extends DischargeMedications
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -679,44 +618,37 @@ public class DischargeMedicationsSection2Operations extends DischargeMedications
 	public static boolean validateHospitalDischargeMedicationsSectionEntriesOptionalTemplateId(
 			DischargeMedicationsSection2 dischargeMedicationsSection2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"DischargeMedicationsSection2HospitalDischargeMedicationsSectionEntriesOptionalTemplateId","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(
+			context, "DischargeMedicationsSection2HospitalDischargeMedicationsSectionEntriesOptionalTemplateId",
+			"ERROR");
+
 		if (VALIDATE_HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DISCHARGE_MEDICATIONS_SECTION2);
 			try {
-				VALIDATE_HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(dischargeMedicationsSection2)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				dischargeMedicationsSection2)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.DISCHARGE_MEDICATIONS_SECTION2__HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID,
-						 ConsolPlugin.INSTANCE.getString("DischargeMedicationsSection2HospitalDischargeMedicationsSectionEntriesOptionalTemplateId"),
-						 new Object [] { dischargeMedicationsSection2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.DISCHARGE_MEDICATIONS_SECTION2__HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID,
+						ConsolPlugin.INSTANCE.getString(
+							"DischargeMedicationsSection2HospitalDischargeMedicationsSectionEntriesOptionalTemplateId"),
+						new Object[] { dischargeMedicationsSection2 }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -741,7 +673,7 @@ public class DischargeMedicationsSection2Operations extends DischargeMedications
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_DISCHARGE_MEDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_DISCHARGE_MEDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -757,44 +689,38 @@ public class DischargeMedicationsSection2Operations extends DischargeMedications
 	public static boolean validateHospitalDischargeMedicationsSectionEntriesOptionalDischargeMedication(
 			DischargeMedicationsSection2 dischargeMedicationsSection2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"DischargeMedicationsSection2HospitalDischargeMedicationsSectionEntriesOptionalDischargeMedication","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(
+			context,
+			"DischargeMedicationsSection2HospitalDischargeMedicationsSectionEntriesOptionalDischargeMedication",
+			"ERROR");
+
 		if (VALIDATE_HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_DISCHARGE_MEDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DISCHARGE_MEDICATIONS_SECTION2);
 			try {
-				VALIDATE_HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_DISCHARGE_MEDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_DISCHARGE_MEDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_DISCHARGE_MEDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_DISCHARGE_MEDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_DISCHARGE_MEDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(dischargeMedicationsSection2)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_DISCHARGE_MEDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				dischargeMedicationsSection2)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.DISCHARGE_MEDICATIONS_SECTION2__HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_DISCHARGE_MEDICATION,
-						 ConsolPlugin.INSTANCE.getString("DischargeMedicationsSection2HospitalDischargeMedicationsSectionEntriesOptionalDischargeMedication"),
-						 new Object [] { dischargeMedicationsSection2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.DISCHARGE_MEDICATIONS_SECTION2__HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_DISCHARGE_MEDICATION,
+						ConsolPlugin.INSTANCE.getString(
+							"DischargeMedicationsSection2HospitalDischargeMedicationsSectionEntriesOptionalDischargeMedication"),
+						new Object[] { dischargeMedicationsSection2 }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -828,26 +754,26 @@ public class DischargeMedicationsSection2Operations extends DischargeMedications
 
 	public static EList<DischargeMedication2> getConsolDischargeMedication2s(
 			DischargeMedicationsSection2 dischargeMedicationsSection2) {
-	
-	
-	
+
 		if (GET_CONSOL_DISCHARGE_MEDICATION2S__EOCL_QRY == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.DISCHARGE_MEDICATIONS_SECTION2, ConsolPackage.Literals.DISCHARGE_MEDICATIONS_SECTION2.getEAllOperations().get(64));
+			helper.setOperationContext(
+				ConsolPackage.Literals.DISCHARGE_MEDICATIONS_SECTION2,
+				ConsolPackage.Literals.DISCHARGE_MEDICATIONS_SECTION2.getEAllOperations().get(64));
 			try {
-				GET_CONSOL_DISCHARGE_MEDICATION2S__EOCL_QRY = helper.createQuery(GET_CONSOL_DISCHARGE_MEDICATION2S__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+				GET_CONSOL_DISCHARGE_MEDICATION2S__EOCL_QRY = helper.createQuery(
+					GET_CONSOL_DISCHARGE_MEDICATION2S__EOCL_EXP);
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
+		}
+
 		OCL.Query query = EOCL_ENV.get().createQuery(GET_CONSOL_DISCHARGE_MEDICATION2S__EOCL_QRY);
 		@SuppressWarnings("unchecked")
-		Collection<DischargeMedication2> result = (Collection<DischargeMedication2>) query.evaluate(dischargeMedicationsSection2);
-		return new BasicEList.UnmodifiableEList<DischargeMedication2>(result.size(), result.toArray());
+		Collection<DischargeMedication2> result = (Collection<DischargeMedication2>) query.evaluate(
+			dischargeMedicationsSection2);
+		return new BasicEList.UnmodifiableEList<>(result.size(), result.toArray());
 	}
 
 } // DischargeMedicationsSection2Operations

@@ -146,7 +146,7 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_OPERATIVE_NOTE2_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_OPERATIVE_NOTE2_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -161,56 +161,45 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 
 	public static boolean validateOperativeNote2CodeP(OperativeNote2 operativeNote2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"OperativeNote2OperativeNote2CodeP","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "OperativeNote2OperativeNote2CodeP", "ERROR");
+
 		if (VALIDATE_OPERATIVE_NOTE2_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.OPERATIVE_NOTE2);
 			try {
-				VALIDATE_OPERATIVE_NOTE2_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_OPERATIVE_NOTE2_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_OPERATIVE_NOTE2_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_OPERATIVE_NOTE2_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_OPERATIVE_NOTE2_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(operativeNote2)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(VALIDATE_OPERATIVE_NOTE2_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+			operativeNote2)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.OPERATIVE_NOTE2__OPERATIVE_NOTE2_CODE_P,
-						 ConsolPlugin.INSTANCE.getString("OperativeNote2OperativeNote2CodeP"),
-						 new Object [] { operativeNote2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.OPERATIVE_NOTE2__OPERATIVE_NOTE2_CODE_P,
+						ConsolPlugin.INSTANCE.getString("OperativeNote2OperativeNote2CodeP"),
+						new Object[] { operativeNote2 }));
 			}
-			
+
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
-				Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.consol.OperativeNote2CodeP");
+				Collection<Object> passToken = (Collection<Object>) context.get(
+					"org.openhealthtools.mdht.uml.cda.consol.OperativeNote2CodeP");
 				if (passToken == null) {
 					// anticipate a reasonably healthy model
-					passToken = new java.util.ArrayList<Object>(3);
+					passToken = new java.util.ArrayList<>(3);
 					context.put("org.openhealthtools.mdht.uml.cda.consol.OperativeNote2CodeP", passToken);
 				}
 				passToken.add(operativeNote2);
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -224,9 +213,9 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_OPERATIVE_NOTE2_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "+
-"let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "+
-"value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = '11504-8' or value.code = '34137-0' or value.code = '28583-3' or value.code = '28624-5' or value.code = '28573-4' or value.code = '34877-1' or value.code = '34874-8' or value.code = '34870-6' or value.code = '34868-0' or value.code = '34818-5'))";
+	protected static final String VALIDATE_OPERATIVE_NOTE2_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and " +
+			"let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in " +
+			"value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = '11504-8' or value.code = '34137-0' or value.code = '28583-3' or value.code = '28624-5' or value.code = '28573-4' or value.code = '34877-1' or value.code = '34874-8' or value.code = '34870-6' or value.code = '34868-0' or value.code = '34818-5'))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateOperativeNote2Code(OperativeNote2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note2 Code</em>}' invariant operation.
@@ -237,7 +226,7 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_OPERATIVE_NOTE2_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_OPERATIVE_NOTE2_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -252,50 +241,40 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 
 	public static boolean validateOperativeNote2Code(OperativeNote2 operativeNote2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-	
-	
-	
-  	  
-		Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.consol.OperativeNote2CodeP");
+
+		Object passToken = (context == null)
+				? null
+				: context.get("org.openhealthtools.mdht.uml.cda.consol.OperativeNote2CodeP");
 		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(operativeNote2)) {
 			// I have a free pass to short-circuit
 			return true;
 		}
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"OperativeNote2OperativeNote2Code","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "OperativeNote2OperativeNote2Code", "ERROR");
+
 		if (VALIDATE_OPERATIVE_NOTE2_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.OPERATIVE_NOTE2);
 			try {
-				VALIDATE_OPERATIVE_NOTE2_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_OPERATIVE_NOTE2_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_OPERATIVE_NOTE2_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_OPERATIVE_NOTE2_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_OPERATIVE_NOTE2_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(operativeNote2)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(VALIDATE_OPERATIVE_NOTE2_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+			operativeNote2)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.OPERATIVE_NOTE2__OPERATIVE_NOTE2_CODE,
-						 ConsolPlugin.INSTANCE.getString("OperativeNote2OperativeNote2Code"),
-						 new Object [] { operativeNote2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.OPERATIVE_NOTE2__OPERATIVE_NOTE2_CODE,
+						ConsolPlugin.INSTANCE.getString("OperativeNote2OperativeNote2Code"),
+						new Object[] { operativeNote2 }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -320,7 +299,7 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -335,44 +314,32 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 
 	public static boolean validateOperativeNote2DocumentationOf(OperativeNote2 operativeNote2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"OperativeNote2OperativeNote2DocumentationOf","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "OperativeNote2OperativeNote2DocumentationOf", "ERROR");
+
 		if (VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.OPERATIVE_NOTE2);
 			try {
-				VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(operativeNote2)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(operativeNote2)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.OPERATIVE_NOTE2__OPERATIVE_NOTE2_DOCUMENTATION_OF,
-						 ConsolPlugin.INSTANCE.getString("OperativeNote2OperativeNote2DocumentationOf"),
-						 new Object [] { operativeNote2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.OPERATIVE_NOTE2__OPERATIVE_NOTE2_DOCUMENTATION_OF,
+						ConsolPlugin.INSTANCE.getString("OperativeNote2OperativeNote2DocumentationOf"),
+						new Object[] { operativeNote2 }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -397,7 +364,7 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_OPERATIVE_NOTE2_AUTHORIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_OPERATIVE_NOTE2_AUTHORIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -412,44 +379,32 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 
 	public static boolean validateOperativeNote2Authorization(OperativeNote2 operativeNote2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"OperativeNote2OperativeNote2Authorization","INFO");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "OperativeNote2OperativeNote2Authorization", "INFO");
+
 		if (VALIDATE_OPERATIVE_NOTE2_AUTHORIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.OPERATIVE_NOTE2);
 			try {
-				VALIDATE_OPERATIVE_NOTE2_AUTHORIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_OPERATIVE_NOTE2_AUTHORIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_OPERATIVE_NOTE2_AUTHORIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_OPERATIVE_NOTE2_AUTHORIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_OPERATIVE_NOTE2_AUTHORIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(operativeNote2)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_OPERATIVE_NOTE2_AUTHORIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(operativeNote2)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.OPERATIVE_NOTE2__OPERATIVE_NOTE2_AUTHORIZATION,
-						 ConsolPlugin.INSTANCE.getString("OperativeNote2OperativeNote2Authorization"),
-						 new Object [] { operativeNote2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.OPERATIVE_NOTE2__OPERATIVE_NOTE2_AUTHORIZATION,
+						ConsolPlugin.INSTANCE.getString("OperativeNote2OperativeNote2Authorization"),
+						new Object[] { operativeNote2 }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -474,7 +429,7 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_OPERATIVE_NOTE2_ANESTHESIA_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_OPERATIVE_NOTE2_ANESTHESIA_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -489,44 +444,33 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 
 	public static boolean validateOperativeNote2AnesthesiaSection2(OperativeNote2 operativeNote2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"OperativeNote2OperativeNote2AnesthesiaSection2","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "OperativeNote2OperativeNote2AnesthesiaSection2", "ERROR");
+
 		if (VALIDATE_OPERATIVE_NOTE2_ANESTHESIA_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.OPERATIVE_NOTE2);
 			try {
-				VALIDATE_OPERATIVE_NOTE2_ANESTHESIA_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_OPERATIVE_NOTE2_ANESTHESIA_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_OPERATIVE_NOTE2_ANESTHESIA_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_OPERATIVE_NOTE2_ANESTHESIA_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_OPERATIVE_NOTE2_ANESTHESIA_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(operativeNote2)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_OPERATIVE_NOTE2_ANESTHESIA_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(operativeNote2)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.OPERATIVE_NOTE2__OPERATIVE_NOTE2_ANESTHESIA_SECTION2,
-						 ConsolPlugin.INSTANCE.getString("OperativeNote2OperativeNote2AnesthesiaSection2"),
-						 new Object [] { operativeNote2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.OPERATIVE_NOTE2__OPERATIVE_NOTE2_ANESTHESIA_SECTION2,
+						ConsolPlugin.INSTANCE.getString("OperativeNote2OperativeNote2AnesthesiaSection2"),
+						new Object[] { operativeNote2 }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -551,7 +495,7 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_OPERATIVE_NOTE2_COMPLICATIONS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_OPERATIVE_NOTE2_COMPLICATIONS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -566,44 +510,34 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 
 	public static boolean validateOperativeNote2ComplicationsSection2(OperativeNote2 operativeNote2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"OperativeNote2OperativeNote2ComplicationsSection2","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "OperativeNote2OperativeNote2ComplicationsSection2", "ERROR");
+
 		if (VALIDATE_OPERATIVE_NOTE2_COMPLICATIONS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.OPERATIVE_NOTE2);
 			try {
-				VALIDATE_OPERATIVE_NOTE2_COMPLICATIONS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_OPERATIVE_NOTE2_COMPLICATIONS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_OPERATIVE_NOTE2_COMPLICATIONS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_OPERATIVE_NOTE2_COMPLICATIONS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_OPERATIVE_NOTE2_COMPLICATIONS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(operativeNote2)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_OPERATIVE_NOTE2_COMPLICATIONS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				operativeNote2)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.OPERATIVE_NOTE2__OPERATIVE_NOTE2_COMPLICATIONS_SECTION2,
-						 ConsolPlugin.INSTANCE.getString("OperativeNote2OperativeNote2ComplicationsSection2"),
-						 new Object [] { operativeNote2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.OPERATIVE_NOTE2__OPERATIVE_NOTE2_COMPLICATIONS_SECTION2,
+						ConsolPlugin.INSTANCE.getString("OperativeNote2OperativeNote2ComplicationsSection2"),
+						new Object[] { operativeNote2 }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -628,7 +562,7 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_OPERATIVE_NOTE2_PREOPERATIVE_DIAGNOSIS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_OPERATIVE_NOTE2_PREOPERATIVE_DIAGNOSIS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -643,44 +577,34 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 
 	public static boolean validateOperativeNote2PreoperativeDiagnosisSection2(OperativeNote2 operativeNote2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"OperativeNote2OperativeNote2PreoperativeDiagnosisSection2","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "OperativeNote2OperativeNote2PreoperativeDiagnosisSection2", "ERROR");
+
 		if (VALIDATE_OPERATIVE_NOTE2_PREOPERATIVE_DIAGNOSIS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.OPERATIVE_NOTE2);
 			try {
-				VALIDATE_OPERATIVE_NOTE2_PREOPERATIVE_DIAGNOSIS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_OPERATIVE_NOTE2_PREOPERATIVE_DIAGNOSIS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_OPERATIVE_NOTE2_PREOPERATIVE_DIAGNOSIS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_OPERATIVE_NOTE2_PREOPERATIVE_DIAGNOSIS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_OPERATIVE_NOTE2_PREOPERATIVE_DIAGNOSIS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(operativeNote2)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_OPERATIVE_NOTE2_PREOPERATIVE_DIAGNOSIS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				operativeNote2)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.OPERATIVE_NOTE2__OPERATIVE_NOTE2_PREOPERATIVE_DIAGNOSIS_SECTION2,
-						 ConsolPlugin.INSTANCE.getString("OperativeNote2OperativeNote2PreoperativeDiagnosisSection2"),
-						 new Object [] { operativeNote2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.OPERATIVE_NOTE2__OPERATIVE_NOTE2_PREOPERATIVE_DIAGNOSIS_SECTION2,
+						ConsolPlugin.INSTANCE.getString("OperativeNote2OperativeNote2PreoperativeDiagnosisSection2"),
+						new Object[] { operativeNote2 }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -705,7 +629,7 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_OPERATIVE_NOTE2_PROCEDURE_ESTIMATED_BLOOD_LOSS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_OPERATIVE_NOTE2_PROCEDURE_ESTIMATED_BLOOD_LOSS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -720,44 +644,35 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 
 	public static boolean validateOperativeNote2ProcedureEstimatedBloodLossSection(OperativeNote2 operativeNote2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"OperativeNote2OperativeNote2ProcedureEstimatedBloodLossSection","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "OperativeNote2OperativeNote2ProcedureEstimatedBloodLossSection", "ERROR");
+
 		if (VALIDATE_OPERATIVE_NOTE2_PROCEDURE_ESTIMATED_BLOOD_LOSS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.OPERATIVE_NOTE2);
 			try {
-				VALIDATE_OPERATIVE_NOTE2_PROCEDURE_ESTIMATED_BLOOD_LOSS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_OPERATIVE_NOTE2_PROCEDURE_ESTIMATED_BLOOD_LOSS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_OPERATIVE_NOTE2_PROCEDURE_ESTIMATED_BLOOD_LOSS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_OPERATIVE_NOTE2_PROCEDURE_ESTIMATED_BLOOD_LOSS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_OPERATIVE_NOTE2_PROCEDURE_ESTIMATED_BLOOD_LOSS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(operativeNote2)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_OPERATIVE_NOTE2_PROCEDURE_ESTIMATED_BLOOD_LOSS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				operativeNote2)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.OPERATIVE_NOTE2__OPERATIVE_NOTE2_PROCEDURE_ESTIMATED_BLOOD_LOSS_SECTION,
-						 ConsolPlugin.INSTANCE.getString("OperativeNote2OperativeNote2ProcedureEstimatedBloodLossSection"),
-						 new Object [] { operativeNote2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.OPERATIVE_NOTE2__OPERATIVE_NOTE2_PROCEDURE_ESTIMATED_BLOOD_LOSS_SECTION,
+						ConsolPlugin.INSTANCE.getString(
+							"OperativeNote2OperativeNote2ProcedureEstimatedBloodLossSection"),
+						new Object[] { operativeNote2 }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -782,7 +697,7 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_OPERATIVE_NOTE2_PROCEDURE_FINDINGS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_OPERATIVE_NOTE2_PROCEDURE_FINDINGS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -797,44 +712,34 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 
 	public static boolean validateOperativeNote2ProcedureFindingsSection2(OperativeNote2 operativeNote2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"OperativeNote2OperativeNote2ProcedureFindingsSection2","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "OperativeNote2OperativeNote2ProcedureFindingsSection2", "ERROR");
+
 		if (VALIDATE_OPERATIVE_NOTE2_PROCEDURE_FINDINGS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.OPERATIVE_NOTE2);
 			try {
-				VALIDATE_OPERATIVE_NOTE2_PROCEDURE_FINDINGS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_OPERATIVE_NOTE2_PROCEDURE_FINDINGS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_OPERATIVE_NOTE2_PROCEDURE_FINDINGS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_OPERATIVE_NOTE2_PROCEDURE_FINDINGS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_OPERATIVE_NOTE2_PROCEDURE_FINDINGS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(operativeNote2)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_OPERATIVE_NOTE2_PROCEDURE_FINDINGS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				operativeNote2)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.OPERATIVE_NOTE2__OPERATIVE_NOTE2_PROCEDURE_FINDINGS_SECTION2,
-						 ConsolPlugin.INSTANCE.getString("OperativeNote2OperativeNote2ProcedureFindingsSection2"),
-						 new Object [] { operativeNote2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.OPERATIVE_NOTE2__OPERATIVE_NOTE2_PROCEDURE_FINDINGS_SECTION2,
+						ConsolPlugin.INSTANCE.getString("OperativeNote2OperativeNote2ProcedureFindingsSection2"),
+						new Object[] { operativeNote2 }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -859,7 +764,7 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_OPERATIVE_NOTE2_PROCEDURE_SPECIMENS_TAKEN_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_OPERATIVE_NOTE2_PROCEDURE_SPECIMENS_TAKEN_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -874,44 +779,34 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 
 	public static boolean validateOperativeNote2ProcedureSpecimensTakenSection(OperativeNote2 operativeNote2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"OperativeNote2OperativeNote2ProcedureSpecimensTakenSection","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "OperativeNote2OperativeNote2ProcedureSpecimensTakenSection", "ERROR");
+
 		if (VALIDATE_OPERATIVE_NOTE2_PROCEDURE_SPECIMENS_TAKEN_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.OPERATIVE_NOTE2);
 			try {
-				VALIDATE_OPERATIVE_NOTE2_PROCEDURE_SPECIMENS_TAKEN_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_OPERATIVE_NOTE2_PROCEDURE_SPECIMENS_TAKEN_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_OPERATIVE_NOTE2_PROCEDURE_SPECIMENS_TAKEN_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_OPERATIVE_NOTE2_PROCEDURE_SPECIMENS_TAKEN_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_OPERATIVE_NOTE2_PROCEDURE_SPECIMENS_TAKEN_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(operativeNote2)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_OPERATIVE_NOTE2_PROCEDURE_SPECIMENS_TAKEN_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				operativeNote2)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.OPERATIVE_NOTE2__OPERATIVE_NOTE2_PROCEDURE_SPECIMENS_TAKEN_SECTION,
-						 ConsolPlugin.INSTANCE.getString("OperativeNote2OperativeNote2ProcedureSpecimensTakenSection"),
-						 new Object [] { operativeNote2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.OPERATIVE_NOTE2__OPERATIVE_NOTE2_PROCEDURE_SPECIMENS_TAKEN_SECTION,
+						ConsolPlugin.INSTANCE.getString("OperativeNote2OperativeNote2ProcedureSpecimensTakenSection"),
+						new Object[] { operativeNote2 }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -936,7 +831,7 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_OPERATIVE_NOTE2_PROCEDURE_DESCRIPTION_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_OPERATIVE_NOTE2_PROCEDURE_DESCRIPTION_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -951,44 +846,34 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 
 	public static boolean validateOperativeNote2ProcedureDescriptionSection(OperativeNote2 operativeNote2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"OperativeNote2OperativeNote2ProcedureDescriptionSection","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "OperativeNote2OperativeNote2ProcedureDescriptionSection", "ERROR");
+
 		if (VALIDATE_OPERATIVE_NOTE2_PROCEDURE_DESCRIPTION_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.OPERATIVE_NOTE2);
 			try {
-				VALIDATE_OPERATIVE_NOTE2_PROCEDURE_DESCRIPTION_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_OPERATIVE_NOTE2_PROCEDURE_DESCRIPTION_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_OPERATIVE_NOTE2_PROCEDURE_DESCRIPTION_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_OPERATIVE_NOTE2_PROCEDURE_DESCRIPTION_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_OPERATIVE_NOTE2_PROCEDURE_DESCRIPTION_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(operativeNote2)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_OPERATIVE_NOTE2_PROCEDURE_DESCRIPTION_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				operativeNote2)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.OPERATIVE_NOTE2__OPERATIVE_NOTE2_PROCEDURE_DESCRIPTION_SECTION,
-						 ConsolPlugin.INSTANCE.getString("OperativeNote2OperativeNote2ProcedureDescriptionSection"),
-						 new Object [] { operativeNote2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.OPERATIVE_NOTE2__OPERATIVE_NOTE2_PROCEDURE_DESCRIPTION_SECTION,
+						ConsolPlugin.INSTANCE.getString("OperativeNote2OperativeNote2ProcedureDescriptionSection"),
+						new Object[] { operativeNote2 }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -1013,7 +898,7 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_OPERATIVE_NOTE2_POSTOPERATIVE_DIAGNOSIS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_OPERATIVE_NOTE2_POSTOPERATIVE_DIAGNOSIS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1028,44 +913,34 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 
 	public static boolean validateOperativeNote2PostoperativeDiagnosisSection(OperativeNote2 operativeNote2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"OperativeNote2OperativeNote2PostoperativeDiagnosisSection","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "OperativeNote2OperativeNote2PostoperativeDiagnosisSection", "ERROR");
+
 		if (VALIDATE_OPERATIVE_NOTE2_POSTOPERATIVE_DIAGNOSIS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.OPERATIVE_NOTE2);
 			try {
-				VALIDATE_OPERATIVE_NOTE2_POSTOPERATIVE_DIAGNOSIS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_OPERATIVE_NOTE2_POSTOPERATIVE_DIAGNOSIS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_OPERATIVE_NOTE2_POSTOPERATIVE_DIAGNOSIS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_OPERATIVE_NOTE2_POSTOPERATIVE_DIAGNOSIS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_OPERATIVE_NOTE2_POSTOPERATIVE_DIAGNOSIS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(operativeNote2)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_OPERATIVE_NOTE2_POSTOPERATIVE_DIAGNOSIS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				operativeNote2)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.OPERATIVE_NOTE2__OPERATIVE_NOTE2_POSTOPERATIVE_DIAGNOSIS_SECTION,
-						 ConsolPlugin.INSTANCE.getString("OperativeNote2OperativeNote2PostoperativeDiagnosisSection"),
-						 new Object [] { operativeNote2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.OPERATIVE_NOTE2__OPERATIVE_NOTE2_POSTOPERATIVE_DIAGNOSIS_SECTION,
+						ConsolPlugin.INSTANCE.getString("OperativeNote2OperativeNote2PostoperativeDiagnosisSection"),
+						new Object[] { operativeNote2 }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -1090,7 +965,7 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_OPERATIVE_NOTE2_PROCEDURE_IMPLANTS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_OPERATIVE_NOTE2_PROCEDURE_IMPLANTS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1105,44 +980,34 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 
 	public static boolean validateOperativeNote2ProcedureImplantsSection(OperativeNote2 operativeNote2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"OperativeNote2OperativeNote2ProcedureImplantsSection","INFO");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "OperativeNote2OperativeNote2ProcedureImplantsSection", "INFO");
+
 		if (VALIDATE_OPERATIVE_NOTE2_PROCEDURE_IMPLANTS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.OPERATIVE_NOTE2);
 			try {
-				VALIDATE_OPERATIVE_NOTE2_PROCEDURE_IMPLANTS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_OPERATIVE_NOTE2_PROCEDURE_IMPLANTS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_OPERATIVE_NOTE2_PROCEDURE_IMPLANTS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_OPERATIVE_NOTE2_PROCEDURE_IMPLANTS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_OPERATIVE_NOTE2_PROCEDURE_IMPLANTS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(operativeNote2)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_OPERATIVE_NOTE2_PROCEDURE_IMPLANTS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				operativeNote2)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.OPERATIVE_NOTE2__OPERATIVE_NOTE2_PROCEDURE_IMPLANTS_SECTION,
-						 ConsolPlugin.INSTANCE.getString("OperativeNote2OperativeNote2ProcedureImplantsSection"),
-						 new Object [] { operativeNote2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.OPERATIVE_NOTE2__OPERATIVE_NOTE2_PROCEDURE_IMPLANTS_SECTION,
+						ConsolPlugin.INSTANCE.getString("OperativeNote2OperativeNote2ProcedureImplantsSection"),
+						new Object[] { operativeNote2 }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -1167,7 +1032,7 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_OPERATIVE_NOTE2_OPERATIVE_NOTE_FLUID_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_OPERATIVE_NOTE2_OPERATIVE_NOTE_FLUID_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1182,44 +1047,34 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 
 	public static boolean validateOperativeNote2OperativeNoteFluidSection(OperativeNote2 operativeNote2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"OperativeNote2OperativeNote2OperativeNoteFluidSection","INFO");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "OperativeNote2OperativeNote2OperativeNoteFluidSection", "INFO");
+
 		if (VALIDATE_OPERATIVE_NOTE2_OPERATIVE_NOTE_FLUID_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.OPERATIVE_NOTE2);
 			try {
-				VALIDATE_OPERATIVE_NOTE2_OPERATIVE_NOTE_FLUID_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_OPERATIVE_NOTE2_OPERATIVE_NOTE_FLUID_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_OPERATIVE_NOTE2_OPERATIVE_NOTE_FLUID_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_OPERATIVE_NOTE2_OPERATIVE_NOTE_FLUID_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_OPERATIVE_NOTE2_OPERATIVE_NOTE_FLUID_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(operativeNote2)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_OPERATIVE_NOTE2_OPERATIVE_NOTE_FLUID_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				operativeNote2)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.OPERATIVE_NOTE2__OPERATIVE_NOTE2_OPERATIVE_NOTE_FLUID_SECTION,
-						 ConsolPlugin.INSTANCE.getString("OperativeNote2OperativeNote2OperativeNoteFluidSection"),
-						 new Object [] { operativeNote2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.OPERATIVE_NOTE2__OPERATIVE_NOTE2_OPERATIVE_NOTE_FLUID_SECTION,
+						ConsolPlugin.INSTANCE.getString("OperativeNote2OperativeNote2OperativeNoteFluidSection"),
+						new Object[] { operativeNote2 }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -1244,7 +1099,7 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_OPERATIVE_NOTE2_OPERATIVE_NOTE_SURGICAL_PROCEDURE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_OPERATIVE_NOTE2_OPERATIVE_NOTE_SURGICAL_PROCEDURE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1259,44 +1114,35 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 
 	public static boolean validateOperativeNote2OperativeNoteSurgicalProcedureSection(OperativeNote2 operativeNote2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"OperativeNote2OperativeNote2OperativeNoteSurgicalProcedureSection","INFO");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "OperativeNote2OperativeNote2OperativeNoteSurgicalProcedureSection", "INFO");
+
 		if (VALIDATE_OPERATIVE_NOTE2_OPERATIVE_NOTE_SURGICAL_PROCEDURE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.OPERATIVE_NOTE2);
 			try {
-				VALIDATE_OPERATIVE_NOTE2_OPERATIVE_NOTE_SURGICAL_PROCEDURE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_OPERATIVE_NOTE2_OPERATIVE_NOTE_SURGICAL_PROCEDURE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_OPERATIVE_NOTE2_OPERATIVE_NOTE_SURGICAL_PROCEDURE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_OPERATIVE_NOTE2_OPERATIVE_NOTE_SURGICAL_PROCEDURE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_OPERATIVE_NOTE2_OPERATIVE_NOTE_SURGICAL_PROCEDURE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(operativeNote2)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_OPERATIVE_NOTE2_OPERATIVE_NOTE_SURGICAL_PROCEDURE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				operativeNote2)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.OPERATIVE_NOTE2__OPERATIVE_NOTE2_OPERATIVE_NOTE_SURGICAL_PROCEDURE_SECTION,
-						 ConsolPlugin.INSTANCE.getString("OperativeNote2OperativeNote2OperativeNoteSurgicalProcedureSection"),
-						 new Object [] { operativeNote2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.OPERATIVE_NOTE2__OPERATIVE_NOTE2_OPERATIVE_NOTE_SURGICAL_PROCEDURE_SECTION,
+						ConsolPlugin.INSTANCE.getString(
+							"OperativeNote2OperativeNote2OperativeNoteSurgicalProcedureSection"),
+						new Object[] { operativeNote2 }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -1321,7 +1167,7 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_OPERATIVE_NOTE2_PLAN_OF_TREATMENT_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_OPERATIVE_NOTE2_PLAN_OF_TREATMENT_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1336,44 +1182,34 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 
 	public static boolean validateOperativeNote2PlanOfTreatmentSection2(OperativeNote2 operativeNote2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"OperativeNote2OperativeNote2PlanOfTreatmentSection2","INFO");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "OperativeNote2OperativeNote2PlanOfTreatmentSection2", "INFO");
+
 		if (VALIDATE_OPERATIVE_NOTE2_PLAN_OF_TREATMENT_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.OPERATIVE_NOTE2);
 			try {
-				VALIDATE_OPERATIVE_NOTE2_PLAN_OF_TREATMENT_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_OPERATIVE_NOTE2_PLAN_OF_TREATMENT_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_OPERATIVE_NOTE2_PLAN_OF_TREATMENT_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_OPERATIVE_NOTE2_PLAN_OF_TREATMENT_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_OPERATIVE_NOTE2_PLAN_OF_TREATMENT_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(operativeNote2)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_OPERATIVE_NOTE2_PLAN_OF_TREATMENT_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				operativeNote2)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.OPERATIVE_NOTE2__OPERATIVE_NOTE2_PLAN_OF_TREATMENT_SECTION2,
-						 ConsolPlugin.INSTANCE.getString("OperativeNote2OperativeNote2PlanOfTreatmentSection2"),
-						 new Object [] { operativeNote2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.OPERATIVE_NOTE2__OPERATIVE_NOTE2_PLAN_OF_TREATMENT_SECTION2,
+						ConsolPlugin.INSTANCE.getString("OperativeNote2OperativeNote2PlanOfTreatmentSection2"),
+						new Object[] { operativeNote2 }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -1398,7 +1234,7 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_OPERATIVE_NOTE2_PLANNED_PROCEDURE_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_OPERATIVE_NOTE2_PLANNED_PROCEDURE_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1413,44 +1249,34 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 
 	public static boolean validateOperativeNote2PlannedProcedureSection2(OperativeNote2 operativeNote2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"OperativeNote2OperativeNote2PlannedProcedureSection2","INFO");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "OperativeNote2OperativeNote2PlannedProcedureSection2", "INFO");
+
 		if (VALIDATE_OPERATIVE_NOTE2_PLANNED_PROCEDURE_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.OPERATIVE_NOTE2);
 			try {
-				VALIDATE_OPERATIVE_NOTE2_PLANNED_PROCEDURE_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_OPERATIVE_NOTE2_PLANNED_PROCEDURE_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_OPERATIVE_NOTE2_PLANNED_PROCEDURE_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_OPERATIVE_NOTE2_PLANNED_PROCEDURE_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_OPERATIVE_NOTE2_PLANNED_PROCEDURE_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(operativeNote2)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_OPERATIVE_NOTE2_PLANNED_PROCEDURE_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				operativeNote2)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.OPERATIVE_NOTE2__OPERATIVE_NOTE2_PLANNED_PROCEDURE_SECTION2,
-						 ConsolPlugin.INSTANCE.getString("OperativeNote2OperativeNote2PlannedProcedureSection2"),
-						 new Object [] { operativeNote2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.OPERATIVE_NOTE2__OPERATIVE_NOTE2_PLANNED_PROCEDURE_SECTION2,
+						ConsolPlugin.INSTANCE.getString("OperativeNote2OperativeNote2PlannedProcedureSection2"),
+						new Object[] { operativeNote2 }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -1475,7 +1301,7 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_OPERATIVE_NOTE2_PROCEDURE_DISPOSITION_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_OPERATIVE_NOTE2_PROCEDURE_DISPOSITION_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1490,44 +1316,34 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 
 	public static boolean validateOperativeNote2ProcedureDispositionSection(OperativeNote2 operativeNote2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"OperativeNote2OperativeNote2ProcedureDispositionSection","INFO");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "OperativeNote2OperativeNote2ProcedureDispositionSection", "INFO");
+
 		if (VALIDATE_OPERATIVE_NOTE2_PROCEDURE_DISPOSITION_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.OPERATIVE_NOTE2);
 			try {
-				VALIDATE_OPERATIVE_NOTE2_PROCEDURE_DISPOSITION_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_OPERATIVE_NOTE2_PROCEDURE_DISPOSITION_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_OPERATIVE_NOTE2_PROCEDURE_DISPOSITION_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_OPERATIVE_NOTE2_PROCEDURE_DISPOSITION_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_OPERATIVE_NOTE2_PROCEDURE_DISPOSITION_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(operativeNote2)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_OPERATIVE_NOTE2_PROCEDURE_DISPOSITION_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				operativeNote2)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.OPERATIVE_NOTE2__OPERATIVE_NOTE2_PROCEDURE_DISPOSITION_SECTION,
-						 ConsolPlugin.INSTANCE.getString("OperativeNote2OperativeNote2ProcedureDispositionSection"),
-						 new Object [] { operativeNote2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.OPERATIVE_NOTE2__OPERATIVE_NOTE2_PROCEDURE_DISPOSITION_SECTION,
+						ConsolPlugin.INSTANCE.getString("OperativeNote2OperativeNote2ProcedureDispositionSection"),
+						new Object[] { operativeNote2 }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -1552,7 +1368,7 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_OPERATIVE_NOTE2_PROCEDURE_INDICATIONS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_OPERATIVE_NOTE2_PROCEDURE_INDICATIONS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1567,44 +1383,34 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 
 	public static boolean validateOperativeNote2ProcedureIndicationsSection2(OperativeNote2 operativeNote2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"OperativeNote2OperativeNote2ProcedureIndicationsSection2","INFO");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "OperativeNote2OperativeNote2ProcedureIndicationsSection2", "INFO");
+
 		if (VALIDATE_OPERATIVE_NOTE2_PROCEDURE_INDICATIONS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.OPERATIVE_NOTE2);
 			try {
-				VALIDATE_OPERATIVE_NOTE2_PROCEDURE_INDICATIONS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_OPERATIVE_NOTE2_PROCEDURE_INDICATIONS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_OPERATIVE_NOTE2_PROCEDURE_INDICATIONS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_OPERATIVE_NOTE2_PROCEDURE_INDICATIONS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_OPERATIVE_NOTE2_PROCEDURE_INDICATIONS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(operativeNote2)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_OPERATIVE_NOTE2_PROCEDURE_INDICATIONS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				operativeNote2)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.OPERATIVE_NOTE2__OPERATIVE_NOTE2_PROCEDURE_INDICATIONS_SECTION2,
-						 ConsolPlugin.INSTANCE.getString("OperativeNote2OperativeNote2ProcedureIndicationsSection2"),
-						 new Object [] { operativeNote2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.OPERATIVE_NOTE2__OPERATIVE_NOTE2_PROCEDURE_INDICATIONS_SECTION2,
+						ConsolPlugin.INSTANCE.getString("OperativeNote2OperativeNote2ProcedureIndicationsSection2"),
+						new Object[] { operativeNote2 }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -1629,7 +1435,7 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_OPERATIVE_NOTE2_SURGICAL_DRAINS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_OPERATIVE_NOTE2_SURGICAL_DRAINS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1644,44 +1450,34 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 
 	public static boolean validateOperativeNote2SurgicalDrainsSection(OperativeNote2 operativeNote2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"OperativeNote2OperativeNote2SurgicalDrainsSection","INFO");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "OperativeNote2OperativeNote2SurgicalDrainsSection", "INFO");
+
 		if (VALIDATE_OPERATIVE_NOTE2_SURGICAL_DRAINS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.OPERATIVE_NOTE2);
 			try {
-				VALIDATE_OPERATIVE_NOTE2_SURGICAL_DRAINS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_OPERATIVE_NOTE2_SURGICAL_DRAINS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_OPERATIVE_NOTE2_SURGICAL_DRAINS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_OPERATIVE_NOTE2_SURGICAL_DRAINS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_OPERATIVE_NOTE2_SURGICAL_DRAINS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(operativeNote2)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_OPERATIVE_NOTE2_SURGICAL_DRAINS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				operativeNote2)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.OPERATIVE_NOTE2__OPERATIVE_NOTE2_SURGICAL_DRAINS_SECTION,
-						 ConsolPlugin.INSTANCE.getString("OperativeNote2OperativeNote2SurgicalDrainsSection"),
-						 new Object [] { operativeNote2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.OPERATIVE_NOTE2__OPERATIVE_NOTE2_SURGICAL_DRAINS_SECTION,
+						ConsolPlugin.INSTANCE.getString("OperativeNote2OperativeNote2SurgicalDrainsSection"),
+						new Object[] { operativeNote2 }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -1706,7 +1502,7 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal< Query<?, ?, ?> > VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_US_REALM_DATE_AND_TIME_DT_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal< Query<?, ?, ?> >();
+	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_US_REALM_DATE_AND_TIME_DT_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1721,49 +1517,40 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateOperativeNote2DocumentationOfServiceEventUSRealmDateAndTimeDTLow(
 			OperativeNote2 operativeNote2, DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"OperativeNote2OperativeNote2DocumentationOfServiceEventUSRealmDateAndTimeDTLow","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(
+			context, "OperativeNote2OperativeNote2DocumentationOfServiceEventUSRealmDateAndTimeDTLow", "ERROR");
+
 		if (VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_US_REALM_DATE_AND_TIME_DT_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.OPERATIVE_NOTE2);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_US_REALM_DATE_AND_TIME_DT_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_US_REALM_DATE_AND_TIME_DT_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(EOCL_ENV.get().createQuery(oclExpression));
-			}
-			catch (ParserException pe) {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_US_REALM_DATE_AND_TIME_DT_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_US_REALM_DATE_AND_TIME_DT_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(
+					EOCL_ENV.get().createQuery(oclExpression));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		Object oclResult = VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_US_REALM_DATE_AND_TIME_DT_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(operativeNote2);		
+		}
+
+		Object oclResult = VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_US_REALM_DATE_AND_TIME_DT_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(
+			operativeNote2);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-  			
+
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.OPERATIVE_NOTE2__OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_US_REALM_DATE_AND_TIME_DT_LOW,
-						 ConsolPlugin.INSTANCE.getString("OperativeNote2OperativeNote2DocumentationOfServiceEventUSRealmDateAndTimeDTLow"),
-						 new Object [] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.OPERATIVE_NOTE2__OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_US_REALM_DATE_AND_TIME_DT_LOW,
+							ConsolPlugin.INSTANCE.getString(
+								"OperativeNote2OperativeNote2DocumentationOfServiceEventUSRealmDateAndTimeDTLow"),
+							new Object[] { eObject }));
 				}
-				 
+
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -1783,56 +1570,50 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateOperativeNote2DocumentationOfServiceEventPerformerAssignedEntityCode(
 			OperativeNote2 operativeNote2, DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"OperativeNote2OperativeNote2DocumentationOfServiceEventPerformerAssignedEntityCode","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(
+			context, "OperativeNote2OperativeNote2DocumentationOfServiceEventPerformerAssignedEntityCode", "ERROR");
+
 		if (VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.OPERATIVE_NOTE2);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(EOCL_ENV.get().createQuery(oclExpression));
-			}
-			catch (ParserException pe) {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(
+					EOCL_ENV.get().createQuery(oclExpression));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		Object oclResult = VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(operativeNote2);		
+		}
+
+		Object oclResult = VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(
+			operativeNote2);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-  			
-			Object passFilter = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.consol.OperativeNote2DocumentationOfServiceEventPerformerAssignedEntityCodeP");
+
+			Object passFilter = (context == null)
+					? null
+					: context.get(
+						"org.openhealthtools.mdht.uml.cda.consol.OperativeNote2DocumentationOfServiceEventPerformerAssignedEntityCodeP");
 			if (passFilter instanceof Collection<?>) {
 				// filter my query results
 				oclResultSet = new ArrayList<EObject>(oclResultSet);
 				oclResultSet.removeAll((Collection<?>) passFilter);
 			}
-	  		
+
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.OPERATIVE_NOTE2__OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY_CODE,
-						 ConsolPlugin.INSTANCE.getString("OperativeNote2OperativeNote2DocumentationOfServiceEventPerformerAssignedEntityCode"),
-						 new Object [] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.OPERATIVE_NOTE2__OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY_CODE,
+							ConsolPlugin.INSTANCE.getString(
+								"OperativeNote2OperativeNote2DocumentationOfServiceEventPerformerAssignedEntityCode"),
+							new Object[] { eObject }));
 				}
-				 
+
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -1858,7 +1639,7 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal< Query<?, ?, ?> > VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal< Query<?, ?, ?> >();
+	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<>();
 
 	/**
 	 * The cached OCL expression body for the '{@link #validateOperativeNote2DocumentationOfServiceEventPerformerAssignedEntityCode(OperativeNote2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note2 Documentation Of Service Event Performer Assigned Entity Code</em>}' operation.
@@ -1868,9 +1649,9 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.documentationOf->excluding(null).serviceEvent->excluding(null).performer->excluding(null)->select(typeCode = vocab::x_ServiceEventPerformer::PPRF).assignedEntity->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined() and code.oclIsKindOf(datatypes::CE) and "+
-"let value : datatypes::CE = code.oclAsType(datatypes::CE) in "+
-"value.codeSystem = '2.16.840.1.113883.6.101' and not value.code.oclIsUndefined()))";
+	protected static final String VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.documentationOf->excluding(null).serviceEvent->excluding(null).performer->excluding(null)->select(typeCode = vocab::x_ServiceEventPerformer::PPRF).assignedEntity->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined() and code.oclIsKindOf(datatypes::CE) and " +
+			"let value : datatypes::CE = code.oclAsType(datatypes::CE) in " +
+			"value.codeSystem = '2.16.840.1.113883.6.101' and not value.code.oclIsUndefined()))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateOperativeNote2DocumentationOfServiceEventPerformerAssignedEntityCode(OperativeNote2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note2 Documentation Of Service Event Performer Assigned Entity Code</em>}' invariant operation.
@@ -1881,7 +1662,7 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal< Query<?, ?, ?> > VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal< Query<?, ?, ?> >();
+	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1896,60 +1677,54 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateOperativeNote2DocumentationOfServiceEventPerformerAssignedEntityCodeP(
 			OperativeNote2 operativeNote2, DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"OperativeNote2OperativeNote2DocumentationOfServiceEventPerformerAssignedEntityCodeP","WARNING");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(
+			context, "OperativeNote2OperativeNote2DocumentationOfServiceEventPerformerAssignedEntityCodeP", "WARNING");
+
 		if (VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.OPERATIVE_NOTE2);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(EOCL_ENV.get().createQuery(oclExpression));
-			}
-			catch (ParserException pe) {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(
+					EOCL_ENV.get().createQuery(oclExpression));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		Object oclResult = VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(operativeNote2);		
+		}
+
+		Object oclResult = VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(
+			operativeNote2);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-  			
+
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.WARNING,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.OPERATIVE_NOTE2__OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY_CODE_P,
-						 ConsolPlugin.INSTANCE.getString("OperativeNote2OperativeNote2DocumentationOfServiceEventPerformerAssignedEntityCodeP"),
-						 new Object [] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.OPERATIVE_NOTE2__OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY_CODE_P,
+							ConsolPlugin.INSTANCE.getString(
+								"OperativeNote2OperativeNote2DocumentationOfServiceEventPerformerAssignedEntityCodeP"),
+							new Object[] { eObject }));
 				}
-				
+
 				if (context != null) {
 					// generate a pass token for my dependent constraints to short-circuit or filter results
-					Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.consol.OperativeNote2DocumentationOfServiceEventPerformerAssignedEntityCodeP");
+					Collection<Object> passToken = (Collection<Object>) context.get(
+						"org.openhealthtools.mdht.uml.cda.consol.OperativeNote2DocumentationOfServiceEventPerformerAssignedEntityCodeP");
 					if (passToken == null) {
 						// anticipate a reasonably healthy model
-						passToken = new java.util.ArrayList<Object>(3);
-						context.put("org.openhealthtools.mdht.uml.cda.consol.OperativeNote2DocumentationOfServiceEventPerformerAssignedEntityCodeP", passToken);
+						passToken = new java.util.ArrayList<>(3);
+						context.put(
+							"org.openhealthtools.mdht.uml.cda.consol.OperativeNote2DocumentationOfServiceEventPerformerAssignedEntityCodeP",
+							passToken);
 					}
 					passToken.addAll(oclResultSet);
 				}
-				 
+
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -1975,7 +1750,7 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal< Query<?, ?, ?> > VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal< Query<?, ?, ?> >();
+	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1990,49 +1765,40 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateOperativeNote2DocumentationOfServiceEventPerformerTypeCode(
 			OperativeNote2 operativeNote2, DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"OperativeNote2OperativeNote2DocumentationOfServiceEventPerformerTypeCode","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(
+			context, "OperativeNote2OperativeNote2DocumentationOfServiceEventPerformerTypeCode", "ERROR");
+
 		if (VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.OPERATIVE_NOTE2);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(EOCL_ENV.get().createQuery(oclExpression));
-			}
-			catch (ParserException pe) {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(
+					EOCL_ENV.get().createQuery(oclExpression));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		Object oclResult = VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(operativeNote2);		
+		}
+
+		Object oclResult = VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(
+			operativeNote2);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-  			
+
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.OPERATIVE_NOTE2__OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_TYPE_CODE,
-						 ConsolPlugin.INSTANCE.getString("OperativeNote2OperativeNote2DocumentationOfServiceEventPerformerTypeCode"),
-						 new Object [] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.OPERATIVE_NOTE2__OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_TYPE_CODE,
+							ConsolPlugin.INSTANCE.getString(
+								"OperativeNote2OperativeNote2DocumentationOfServiceEventPerformerTypeCode"),
+							new Object[] { eObject }));
 				}
-				 
+
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -2058,7 +1824,7 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal< Query<?, ?, ?> > VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal< Query<?, ?, ?> >();
+	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -2073,49 +1839,40 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateOperativeNote2DocumentationOfServiceEventPerformerAssignedEntity(
 			OperativeNote2 operativeNote2, DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"OperativeNote2OperativeNote2DocumentationOfServiceEventPerformerAssignedEntity","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(
+			context, "OperativeNote2OperativeNote2DocumentationOfServiceEventPerformerAssignedEntity", "ERROR");
+
 		if (VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.OPERATIVE_NOTE2);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(EOCL_ENV.get().createQuery(oclExpression));
-			}
-			catch (ParserException pe) {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(
+					EOCL_ENV.get().createQuery(oclExpression));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		Object oclResult = VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(operativeNote2);		
+		}
+
+		Object oclResult = VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(
+			operativeNote2);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-  			
+
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.OPERATIVE_NOTE2__OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY,
-						 ConsolPlugin.INSTANCE.getString("OperativeNote2OperativeNote2DocumentationOfServiceEventPerformerAssignedEntity"),
-						 new Object [] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.OPERATIVE_NOTE2__OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY,
+							ConsolPlugin.INSTANCE.getString(
+								"OperativeNote2OperativeNote2DocumentationOfServiceEventPerformerAssignedEntity"),
+							new Object[] { eObject }));
 				}
-				 
+
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -2135,56 +1892,51 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateOperativeNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntityCode(
 			OperativeNote2 operativeNote2, DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"OperativeNote2OperativeNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntityCode","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(
+			context, "OperativeNote2OperativeNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntityCode",
+			"ERROR");
+
 		if (VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSISTANTS_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.OPERATIVE_NOTE2);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSISTANTS_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSISTANTS_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(EOCL_ENV.get().createQuery(oclExpression));
-			}
-			catch (ParserException pe) {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSISTANTS_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSISTANTS_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(
+					EOCL_ENV.get().createQuery(oclExpression));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		Object oclResult = VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSISTANTS_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(operativeNote2);		
+		}
+
+		Object oclResult = VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSISTANTS_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(
+			operativeNote2);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-  			
-			Object passFilter = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.consol.OperativeNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntityCodeP");
+
+			Object passFilter = (context == null)
+					? null
+					: context.get(
+						"org.openhealthtools.mdht.uml.cda.consol.OperativeNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntityCodeP");
 			if (passFilter instanceof Collection<?>) {
 				// filter my query results
 				oclResultSet = new ArrayList<EObject>(oclResultSet);
 				oclResultSet.removeAll((Collection<?>) passFilter);
 			}
-	  		
+
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.OPERATIVE_NOTE2__OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSISTANTS_ASSIGNED_ENTITY_CODE,
-						 ConsolPlugin.INSTANCE.getString("OperativeNote2OperativeNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntityCode"),
-						 new Object [] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.OPERATIVE_NOTE2__OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSISTANTS_ASSIGNED_ENTITY_CODE,
+							ConsolPlugin.INSTANCE.getString(
+								"OperativeNote2OperativeNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntityCode"),
+							new Object[] { eObject }));
 				}
-				 
+
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -2210,7 +1962,7 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal< Query<?, ?, ?> > VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSISTANTS_ASSIGNED_ENTITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal< Query<?, ?, ?> >();
+	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSISTANTS_ASSIGNED_ENTITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<>();
 
 	/**
 	 * The cached OCL expression body for the '{@link #validateOperativeNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntityCode(OperativeNote2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note2 Documentation Of Service Event Performer Assistants Assigned Entity Code</em>}' operation.
@@ -2220,9 +1972,9 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSISTANTS_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.documentationOf->excluding(null).serviceEvent->excluding(null).performer->excluding(null)->select(typeCode = vocab::x_ServiceEventPerformer::SPRF).assignedEntity->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined() and code.oclIsKindOf(datatypes::CE) and "+
-"let value : datatypes::CE = code.oclAsType(datatypes::CE) in "+
-"value.codeSystem = '2.16.840.1.113883.6.101' and not value.code.oclIsUndefined()))";
+	protected static final String VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSISTANTS_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.documentationOf->excluding(null).serviceEvent->excluding(null).performer->excluding(null)->select(typeCode = vocab::x_ServiceEventPerformer::SPRF).assignedEntity->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined() and code.oclIsKindOf(datatypes::CE) and " +
+			"let value : datatypes::CE = code.oclAsType(datatypes::CE) in " +
+			"value.codeSystem = '2.16.840.1.113883.6.101' and not value.code.oclIsUndefined()))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateOperativeNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntityCode(OperativeNote2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note2 Documentation Of Service Event Performer Assistants Assigned Entity Code</em>}' invariant operation.
@@ -2233,7 +1985,7 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal< Query<?, ?, ?> > VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSISTANTS_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal< Query<?, ?, ?> >();
+	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSISTANTS_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -2248,60 +2000,55 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateOperativeNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntityCodeP(
 			OperativeNote2 operativeNote2, DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"OperativeNote2OperativeNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntityCodeP","WARNING");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(
+			context, "OperativeNote2OperativeNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntityCodeP",
+			"WARNING");
+
 		if (VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSISTANTS_ASSIGNED_ENTITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.OPERATIVE_NOTE2);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSISTANTS_ASSIGNED_ENTITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSISTANTS_ASSIGNED_ENTITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(EOCL_ENV.get().createQuery(oclExpression));
-			}
-			catch (ParserException pe) {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSISTANTS_ASSIGNED_ENTITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSISTANTS_ASSIGNED_ENTITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(
+					EOCL_ENV.get().createQuery(oclExpression));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		Object oclResult = VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSISTANTS_ASSIGNED_ENTITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(operativeNote2);		
+		}
+
+		Object oclResult = VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSISTANTS_ASSIGNED_ENTITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(
+			operativeNote2);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-  			
+
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.WARNING,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.OPERATIVE_NOTE2__OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSISTANTS_ASSIGNED_ENTITY_CODE_P,
-						 ConsolPlugin.INSTANCE.getString("OperativeNote2OperativeNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntityCodeP"),
-						 new Object [] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.OPERATIVE_NOTE2__OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSISTANTS_ASSIGNED_ENTITY_CODE_P,
+							ConsolPlugin.INSTANCE.getString(
+								"OperativeNote2OperativeNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntityCodeP"),
+							new Object[] { eObject }));
 				}
-				
+
 				if (context != null) {
 					// generate a pass token for my dependent constraints to short-circuit or filter results
-					Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.consol.OperativeNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntityCodeP");
+					Collection<Object> passToken = (Collection<Object>) context.get(
+						"org.openhealthtools.mdht.uml.cda.consol.OperativeNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntityCodeP");
 					if (passToken == null) {
 						// anticipate a reasonably healthy model
-						passToken = new java.util.ArrayList<Object>(3);
-						context.put("org.openhealthtools.mdht.uml.cda.consol.OperativeNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntityCodeP", passToken);
+						passToken = new java.util.ArrayList<>(3);
+						context.put(
+							"org.openhealthtools.mdht.uml.cda.consol.OperativeNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntityCodeP",
+							passToken);
 					}
 					passToken.addAll(oclResultSet);
 				}
-				 
+
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -2327,7 +2074,7 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal< Query<?, ?, ?> > VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSISTANTS_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal< Query<?, ?, ?> >();
+	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSISTANTS_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -2342,49 +2089,40 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateOperativeNote2DocumentationOfServiceEventPerformerAssistantsTypeCode(
 			OperativeNote2 operativeNote2, DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"OperativeNote2OperativeNote2DocumentationOfServiceEventPerformerAssistantsTypeCode","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(
+			context, "OperativeNote2OperativeNote2DocumentationOfServiceEventPerformerAssistantsTypeCode", "ERROR");
+
 		if (VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSISTANTS_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.OPERATIVE_NOTE2);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSISTANTS_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSISTANTS_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(EOCL_ENV.get().createQuery(oclExpression));
-			}
-			catch (ParserException pe) {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSISTANTS_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSISTANTS_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(
+					EOCL_ENV.get().createQuery(oclExpression));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		Object oclResult = VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSISTANTS_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(operativeNote2);		
+		}
+
+		Object oclResult = VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSISTANTS_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(
+			operativeNote2);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-  			
+
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.OPERATIVE_NOTE2__OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSISTANTS_TYPE_CODE,
-						 ConsolPlugin.INSTANCE.getString("OperativeNote2OperativeNote2DocumentationOfServiceEventPerformerAssistantsTypeCode"),
-						 new Object [] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.OPERATIVE_NOTE2__OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSISTANTS_TYPE_CODE,
+							ConsolPlugin.INSTANCE.getString(
+								"OperativeNote2OperativeNote2DocumentationOfServiceEventPerformerAssistantsTypeCode"),
+							new Object[] { eObject }));
 				}
-				 
+
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -2410,7 +2148,7 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal< Query<?, ?, ?> > VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSISTANTS_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal< Query<?, ?, ?> >();
+	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSISTANTS_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -2425,49 +2163,41 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateOperativeNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntity(
 			OperativeNote2 operativeNote2, DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"OperativeNote2OperativeNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntity","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(
+			context, "OperativeNote2OperativeNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntity",
+			"ERROR");
+
 		if (VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSISTANTS_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.OPERATIVE_NOTE2);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSISTANTS_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSISTANTS_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(EOCL_ENV.get().createQuery(oclExpression));
-			}
-			catch (ParserException pe) {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSISTANTS_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSISTANTS_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(
+					EOCL_ENV.get().createQuery(oclExpression));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		Object oclResult = VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSISTANTS_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(operativeNote2);		
+		}
+
+		Object oclResult = VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSISTANTS_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(
+			operativeNote2);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-  			
+
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.OPERATIVE_NOTE2__OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSISTANTS_ASSIGNED_ENTITY,
-						 ConsolPlugin.INSTANCE.getString("OperativeNote2OperativeNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntity"),
-						 new Object [] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.OPERATIVE_NOTE2__OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSISTANTS_ASSIGNED_ENTITY,
+							ConsolPlugin.INSTANCE.getString(
+								"OperativeNote2OperativeNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntity"),
+							new Object[] { eObject }));
 				}
-				 
+
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -2493,7 +2223,7 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal< Query<?, ?, ?> > VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME_HAS_HIGH_WHEN_NO_WIDTH__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal< Query<?, ?, ?> >();
+	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME_HAS_HIGH_WHEN_NO_WIDTH__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -2508,49 +2238,40 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateOperativeNote2DocumentationOfServiceEventEffectiveTimeHasHighWhenNoWidth(
 			OperativeNote2 operativeNote2, DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"OperativeNote2OperativeNote2DocumentationOfServiceEventEffectiveTimeHasHighWhenNoWidth","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(
+			context, "OperativeNote2OperativeNote2DocumentationOfServiceEventEffectiveTimeHasHighWhenNoWidth", "ERROR");
+
 		if (VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME_HAS_HIGH_WHEN_NO_WIDTH__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.OPERATIVE_NOTE2);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME_HAS_HIGH_WHEN_NO_WIDTH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME_HAS_HIGH_WHEN_NO_WIDTH__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(EOCL_ENV.get().createQuery(oclExpression));
-			}
-			catch (ParserException pe) {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME_HAS_HIGH_WHEN_NO_WIDTH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME_HAS_HIGH_WHEN_NO_WIDTH__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(
+					EOCL_ENV.get().createQuery(oclExpression));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		Object oclResult = VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME_HAS_HIGH_WHEN_NO_WIDTH__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(operativeNote2);		
+		}
+
+		Object oclResult = VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME_HAS_HIGH_WHEN_NO_WIDTH__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(
+			operativeNote2);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-  			
+
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.OPERATIVE_NOTE2__OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME_HAS_HIGH_WHEN_NO_WIDTH,
-						 ConsolPlugin.INSTANCE.getString("OperativeNote2OperativeNote2DocumentationOfServiceEventEffectiveTimeHasHighWhenNoWidth"),
-						 new Object [] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.OPERATIVE_NOTE2__OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME_HAS_HIGH_WHEN_NO_WIDTH,
+							ConsolPlugin.INSTANCE.getString(
+								"OperativeNote2OperativeNote2DocumentationOfServiceEventEffectiveTimeHasHighWhenNoWidth"),
+							new Object[] { eObject }));
 				}
-				 
+
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -2576,7 +2297,7 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal< Query<?, ?, ?> > VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME_NO_HIGH_IF_WIDTH__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal< Query<?, ?, ?> >();
+	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME_NO_HIGH_IF_WIDTH__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -2591,49 +2312,40 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateOperativeNote2DocumentationOfServiceEventEffectiveTimeNoHighIfWidth(
 			OperativeNote2 operativeNote2, DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"OperativeNote2OperativeNote2DocumentationOfServiceEventEffectiveTimeNoHighIfWidth","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(
+			context, "OperativeNote2OperativeNote2DocumentationOfServiceEventEffectiveTimeNoHighIfWidth", "ERROR");
+
 		if (VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME_NO_HIGH_IF_WIDTH__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.OPERATIVE_NOTE2);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME_NO_HIGH_IF_WIDTH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME_NO_HIGH_IF_WIDTH__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(EOCL_ENV.get().createQuery(oclExpression));
-			}
-			catch (ParserException pe) {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME_NO_HIGH_IF_WIDTH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME_NO_HIGH_IF_WIDTH__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(
+					EOCL_ENV.get().createQuery(oclExpression));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		Object oclResult = VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME_NO_HIGH_IF_WIDTH__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(operativeNote2);		
+		}
+
+		Object oclResult = VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME_NO_HIGH_IF_WIDTH__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(
+			operativeNote2);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-  			
+
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.OPERATIVE_NOTE2__OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME_NO_HIGH_IF_WIDTH,
-						 ConsolPlugin.INSTANCE.getString("OperativeNote2OperativeNote2DocumentationOfServiceEventEffectiveTimeNoHighIfWidth"),
-						 new Object [] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.OPERATIVE_NOTE2__OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME_NO_HIGH_IF_WIDTH,
+							ConsolPlugin.INSTANCE.getString(
+								"OperativeNote2OperativeNote2DocumentationOfServiceEventEffectiveTimeNoHighIfWidth"),
+							new Object[] { eObject }));
 				}
-				 
+
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -2659,7 +2371,7 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal< Query<?, ?, ?> > VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PROCEDURE_CODES__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal< Query<?, ?, ?> >();
+	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PROCEDURE_CODES__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -2674,49 +2386,40 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateOperativeNote2DocumentationOfServiceEventProcedureCodes(OperativeNote2 operativeNote2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"OperativeNote2OperativeNote2DocumentationOfServiceEventProcedureCodes","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(
+			context, "OperativeNote2OperativeNote2DocumentationOfServiceEventProcedureCodes", "ERROR");
+
 		if (VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PROCEDURE_CODES__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.OPERATIVE_NOTE2);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PROCEDURE_CODES__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PROCEDURE_CODES__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(EOCL_ENV.get().createQuery(oclExpression));
-			}
-			catch (ParserException pe) {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PROCEDURE_CODES__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PROCEDURE_CODES__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(
+					EOCL_ENV.get().createQuery(oclExpression));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		Object oclResult = VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PROCEDURE_CODES__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(operativeNote2);		
+		}
+
+		Object oclResult = VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PROCEDURE_CODES__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(
+			operativeNote2);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-  			
+
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.OPERATIVE_NOTE2__OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PROCEDURE_CODES,
-						 ConsolPlugin.INSTANCE.getString("OperativeNote2OperativeNote2DocumentationOfServiceEventProcedureCodes"),
-						 new Object [] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.OPERATIVE_NOTE2__OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PROCEDURE_CODES,
+							ConsolPlugin.INSTANCE.getString(
+								"OperativeNote2OperativeNote2DocumentationOfServiceEventProcedureCodes"),
+							new Object[] { eObject }));
 				}
-				 
+
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -2742,7 +2445,7 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal< Query<?, ?, ?> > VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal< Query<?, ?, ?> >();
+	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -2757,49 +2460,40 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateOperativeNote2DocumentationOfServiceEventEffectiveTime(OperativeNote2 operativeNote2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"OperativeNote2OperativeNote2DocumentationOfServiceEventEffectiveTime","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(
+			context, "OperativeNote2OperativeNote2DocumentationOfServiceEventEffectiveTime", "ERROR");
+
 		if (VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.OPERATIVE_NOTE2);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(EOCL_ENV.get().createQuery(oclExpression));
-			}
-			catch (ParserException pe) {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(
+					EOCL_ENV.get().createQuery(oclExpression));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		Object oclResult = VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(operativeNote2);		
+		}
+
+		Object oclResult = VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(
+			operativeNote2);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-  			
+
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.OPERATIVE_NOTE2__OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME,
-						 ConsolPlugin.INSTANCE.getString("OperativeNote2OperativeNote2DocumentationOfServiceEventEffectiveTime"),
-						 new Object [] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.OPERATIVE_NOTE2__OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME,
+							ConsolPlugin.INSTANCE.getString(
+								"OperativeNote2OperativeNote2DocumentationOfServiceEventEffectiveTime"),
+							new Object[] { eObject }));
 				}
-				 
+
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -2825,7 +2519,7 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal< Query<?, ?, ?> > VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal< Query<?, ?, ?> >();
+	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -2840,49 +2534,39 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateOperativeNote2DocumentationOfServiceEventCode(OperativeNote2 operativeNote2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"OperativeNote2OperativeNote2DocumentationOfServiceEventCode","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "OperativeNote2OperativeNote2DocumentationOfServiceEventCode", "ERROR");
+
 		if (VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.OPERATIVE_NOTE2);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(EOCL_ENV.get().createQuery(oclExpression));
-			}
-			catch (ParserException pe) {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(
+					EOCL_ENV.get().createQuery(oclExpression));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		Object oclResult = VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(operativeNote2);		
+		}
+
+		Object oclResult = VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(
+			operativeNote2);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-  			
+
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.OPERATIVE_NOTE2__OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_CODE,
-						 ConsolPlugin.INSTANCE.getString("OperativeNote2OperativeNote2DocumentationOfServiceEventCode"),
-						 new Object [] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.OPERATIVE_NOTE2__OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_CODE,
+							ConsolPlugin.INSTANCE.getString(
+								"OperativeNote2OperativeNote2DocumentationOfServiceEventCode"),
+							new Object[] { eObject }));
 				}
-				 
+
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -2908,7 +2592,7 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal< Query<?, ?, ?> > VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal< Query<?, ?, ?> >();
+	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -2923,49 +2607,39 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateOperativeNote2DocumentationOfServiceEventPerformer(OperativeNote2 operativeNote2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"OperativeNote2OperativeNote2DocumentationOfServiceEventPerformer","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "OperativeNote2OperativeNote2DocumentationOfServiceEventPerformer", "ERROR");
+
 		if (VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.OPERATIVE_NOTE2);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(EOCL_ENV.get().createQuery(oclExpression));
-			}
-			catch (ParserException pe) {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(
+					EOCL_ENV.get().createQuery(oclExpression));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		Object oclResult = VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(operativeNote2);		
+		}
+
+		Object oclResult = VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(
+			operativeNote2);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-  			
+
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.OPERATIVE_NOTE2__OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER,
-						 ConsolPlugin.INSTANCE.getString("OperativeNote2OperativeNote2DocumentationOfServiceEventPerformer"),
-						 new Object [] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.OPERATIVE_NOTE2__OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER,
+							ConsolPlugin.INSTANCE.getString(
+								"OperativeNote2OperativeNote2DocumentationOfServiceEventPerformer"),
+							new Object[] { eObject }));
 				}
-				 
+
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -2991,7 +2665,7 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal< Query<?, ?, ?> > VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSISTANTS__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal< Query<?, ?, ?> >();
+	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSISTANTS__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -3006,49 +2680,40 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateOperativeNote2DocumentationOfServiceEventPerformerAssistants(
 			OperativeNote2 operativeNote2, DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"OperativeNote2OperativeNote2DocumentationOfServiceEventPerformerAssistants","INFO");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(
+			context, "OperativeNote2OperativeNote2DocumentationOfServiceEventPerformerAssistants", "INFO");
+
 		if (VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSISTANTS__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.OPERATIVE_NOTE2);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSISTANTS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSISTANTS__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(EOCL_ENV.get().createQuery(oclExpression));
-			}
-			catch (ParserException pe) {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSISTANTS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSISTANTS__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(
+					EOCL_ENV.get().createQuery(oclExpression));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		Object oclResult = VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSISTANTS__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(operativeNote2);		
+		}
+
+		Object oclResult = VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSISTANTS__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(
+			operativeNote2);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-  			
+
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.OPERATIVE_NOTE2__OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSISTANTS,
-						 ConsolPlugin.INSTANCE.getString("OperativeNote2OperativeNote2DocumentationOfServiceEventPerformerAssistants"),
-						 new Object [] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.OPERATIVE_NOTE2__OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSISTANTS,
+							ConsolPlugin.INSTANCE.getString(
+								"OperativeNote2OperativeNote2DocumentationOfServiceEventPerformerAssistants"),
+							new Object[] { eObject }));
 				}
-				 
+
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -3074,7 +2739,7 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal< Query<?, ?, ?> > VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal< Query<?, ?, ?> >();
+	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -3089,49 +2754,38 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateOperativeNote2DocumentationOfServiceEvent(OperativeNote2 operativeNote2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"OperativeNote2OperativeNote2DocumentationOfServiceEvent","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "OperativeNote2OperativeNote2DocumentationOfServiceEvent", "ERROR");
+
 		if (VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.OPERATIVE_NOTE2);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(EOCL_ENV.get().createQuery(oclExpression));
-			}
-			catch (ParserException pe) {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(
+					EOCL_ENV.get().createQuery(oclExpression));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		Object oclResult = VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(operativeNote2);		
+		}
+
+		Object oclResult = VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(
+			operativeNote2);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-  			
+
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.OPERATIVE_NOTE2__OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT,
-						 ConsolPlugin.INSTANCE.getString("OperativeNote2OperativeNote2DocumentationOfServiceEvent"),
-						 new Object [] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.OPERATIVE_NOTE2__OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT,
+							ConsolPlugin.INSTANCE.getString("OperativeNote2OperativeNote2DocumentationOfServiceEvent"),
+							new Object[] { eObject }));
 				}
-				 
+
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -3157,7 +2811,7 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal< Query<?, ?, ?> > VALIDATE_OPERATIVE_NOTE2_AUTHORIZATION_CONSENT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal< Query<?, ?, ?> >();
+	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_OPERATIVE_NOTE2_AUTHORIZATION_CONSENT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -3172,49 +2826,39 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateOperativeNote2AuthorizationConsentClassCode(OperativeNote2 operativeNote2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"OperativeNote2OperativeNote2AuthorizationConsentClassCode","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "OperativeNote2OperativeNote2AuthorizationConsentClassCode", "ERROR");
+
 		if (VALIDATE_OPERATIVE_NOTE2_AUTHORIZATION_CONSENT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.OPERATIVE_NOTE2);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_OPERATIVE_NOTE2_AUTHORIZATION_CONSENT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_OPERATIVE_NOTE2_AUTHORIZATION_CONSENT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(EOCL_ENV.get().createQuery(oclExpression));
-			}
-			catch (ParserException pe) {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_OPERATIVE_NOTE2_AUTHORIZATION_CONSENT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_OPERATIVE_NOTE2_AUTHORIZATION_CONSENT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(
+					EOCL_ENV.get().createQuery(oclExpression));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		Object oclResult = VALIDATE_OPERATIVE_NOTE2_AUTHORIZATION_CONSENT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(operativeNote2);		
+		}
+
+		Object oclResult = VALIDATE_OPERATIVE_NOTE2_AUTHORIZATION_CONSENT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(
+			operativeNote2);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-  			
+
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.OPERATIVE_NOTE2__OPERATIVE_NOTE2_AUTHORIZATION_CONSENT_CLASS_CODE,
-						 ConsolPlugin.INSTANCE.getString("OperativeNote2OperativeNote2AuthorizationConsentClassCode"),
-						 new Object [] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.OPERATIVE_NOTE2__OPERATIVE_NOTE2_AUTHORIZATION_CONSENT_CLASS_CODE,
+							ConsolPlugin.INSTANCE.getString(
+								"OperativeNote2OperativeNote2AuthorizationConsentClassCode"),
+							new Object[] { eObject }));
 				}
-				 
+
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -3240,7 +2884,7 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal< Query<?, ?, ?> > VALIDATE_OPERATIVE_NOTE2_AUTHORIZATION_CONSENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal< Query<?, ?, ?> >();
+	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_OPERATIVE_NOTE2_AUTHORIZATION_CONSENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -3255,49 +2899,38 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateOperativeNote2AuthorizationConsentMoodCode(OperativeNote2 operativeNote2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"OperativeNote2OperativeNote2AuthorizationConsentMoodCode","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "OperativeNote2OperativeNote2AuthorizationConsentMoodCode", "ERROR");
+
 		if (VALIDATE_OPERATIVE_NOTE2_AUTHORIZATION_CONSENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.OPERATIVE_NOTE2);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_OPERATIVE_NOTE2_AUTHORIZATION_CONSENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_OPERATIVE_NOTE2_AUTHORIZATION_CONSENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(EOCL_ENV.get().createQuery(oclExpression));
-			}
-			catch (ParserException pe) {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_OPERATIVE_NOTE2_AUTHORIZATION_CONSENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_OPERATIVE_NOTE2_AUTHORIZATION_CONSENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(
+					EOCL_ENV.get().createQuery(oclExpression));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		Object oclResult = VALIDATE_OPERATIVE_NOTE2_AUTHORIZATION_CONSENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(operativeNote2);		
+		}
+
+		Object oclResult = VALIDATE_OPERATIVE_NOTE2_AUTHORIZATION_CONSENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(
+			operativeNote2);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-  			
+
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.OPERATIVE_NOTE2__OPERATIVE_NOTE2_AUTHORIZATION_CONSENT_MOOD_CODE,
-						 ConsolPlugin.INSTANCE.getString("OperativeNote2OperativeNote2AuthorizationConsentMoodCode"),
-						 new Object [] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.OPERATIVE_NOTE2__OPERATIVE_NOTE2_AUTHORIZATION_CONSENT_MOOD_CODE,
+							ConsolPlugin.INSTANCE.getString("OperativeNote2OperativeNote2AuthorizationConsentMoodCode"),
+							new Object[] { eObject }));
 				}
-				 
+
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -3323,7 +2956,7 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal< Query<?, ?, ?> > VALIDATE_OPERATIVE_NOTE2_AUTHORIZATION_CONSENT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal< Query<?, ?, ?> >();
+	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_OPERATIVE_NOTE2_AUTHORIZATION_CONSENT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -3338,49 +2971,39 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateOperativeNote2AuthorizationConsentStatusCode(OperativeNote2 operativeNote2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"OperativeNote2OperativeNote2AuthorizationConsentStatusCode","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "OperativeNote2OperativeNote2AuthorizationConsentStatusCode", "ERROR");
+
 		if (VALIDATE_OPERATIVE_NOTE2_AUTHORIZATION_CONSENT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.OPERATIVE_NOTE2);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_OPERATIVE_NOTE2_AUTHORIZATION_CONSENT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_OPERATIVE_NOTE2_AUTHORIZATION_CONSENT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(EOCL_ENV.get().createQuery(oclExpression));
-			}
-			catch (ParserException pe) {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_OPERATIVE_NOTE2_AUTHORIZATION_CONSENT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_OPERATIVE_NOTE2_AUTHORIZATION_CONSENT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(
+					EOCL_ENV.get().createQuery(oclExpression));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		Object oclResult = VALIDATE_OPERATIVE_NOTE2_AUTHORIZATION_CONSENT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(operativeNote2);		
+		}
+
+		Object oclResult = VALIDATE_OPERATIVE_NOTE2_AUTHORIZATION_CONSENT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(
+			operativeNote2);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-  			
+
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.OPERATIVE_NOTE2__OPERATIVE_NOTE2_AUTHORIZATION_CONSENT_STATUS_CODE,
-						 ConsolPlugin.INSTANCE.getString("OperativeNote2OperativeNote2AuthorizationConsentStatusCode"),
-						 new Object [] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.OPERATIVE_NOTE2__OPERATIVE_NOTE2_AUTHORIZATION_CONSENT_STATUS_CODE,
+							ConsolPlugin.INSTANCE.getString(
+								"OperativeNote2OperativeNote2AuthorizationConsentStatusCode"),
+							new Object[] { eObject }));
 				}
-				 
+
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -3406,7 +3029,7 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal< Query<?, ?, ?> > VALIDATE_OPERATIVE_NOTE2_AUTHORIZATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal< Query<?, ?, ?> >();
+	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_OPERATIVE_NOTE2_AUTHORIZATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -3421,49 +3044,38 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateOperativeNote2AuthorizationTypeCode(OperativeNote2 operativeNote2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"OperativeNote2OperativeNote2AuthorizationTypeCode","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "OperativeNote2OperativeNote2AuthorizationTypeCode", "ERROR");
+
 		if (VALIDATE_OPERATIVE_NOTE2_AUTHORIZATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.OPERATIVE_NOTE2);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_OPERATIVE_NOTE2_AUTHORIZATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_OPERATIVE_NOTE2_AUTHORIZATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(EOCL_ENV.get().createQuery(oclExpression));
-			}
-			catch (ParserException pe) {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_OPERATIVE_NOTE2_AUTHORIZATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_OPERATIVE_NOTE2_AUTHORIZATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(
+					EOCL_ENV.get().createQuery(oclExpression));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		Object oclResult = VALIDATE_OPERATIVE_NOTE2_AUTHORIZATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(operativeNote2);		
+		}
+
+		Object oclResult = VALIDATE_OPERATIVE_NOTE2_AUTHORIZATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(
+			operativeNote2);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-  			
+
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.OPERATIVE_NOTE2__OPERATIVE_NOTE2_AUTHORIZATION_TYPE_CODE,
-						 ConsolPlugin.INSTANCE.getString("OperativeNote2OperativeNote2AuthorizationTypeCode"),
-						 new Object [] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.OPERATIVE_NOTE2__OPERATIVE_NOTE2_AUTHORIZATION_TYPE_CODE,
+							ConsolPlugin.INSTANCE.getString("OperativeNote2OperativeNote2AuthorizationTypeCode"),
+							new Object[] { eObject }));
 				}
-				 
+
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -3489,7 +3101,7 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal< Query<?, ?, ?> > VALIDATE_OPERATIVE_NOTE2_AUTHORIZATION_CONSENT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal< Query<?, ?, ?> >();
+	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_OPERATIVE_NOTE2_AUTHORIZATION_CONSENT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -3504,49 +3116,38 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateOperativeNote2AuthorizationConsent(OperativeNote2 operativeNote2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"OperativeNote2OperativeNote2AuthorizationConsent","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "OperativeNote2OperativeNote2AuthorizationConsent", "ERROR");
+
 		if (VALIDATE_OPERATIVE_NOTE2_AUTHORIZATION_CONSENT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.OPERATIVE_NOTE2);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_OPERATIVE_NOTE2_AUTHORIZATION_CONSENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_OPERATIVE_NOTE2_AUTHORIZATION_CONSENT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(EOCL_ENV.get().createQuery(oclExpression));
-			}
-			catch (ParserException pe) {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_OPERATIVE_NOTE2_AUTHORIZATION_CONSENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_OPERATIVE_NOTE2_AUTHORIZATION_CONSENT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(
+					EOCL_ENV.get().createQuery(oclExpression));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		Object oclResult = VALIDATE_OPERATIVE_NOTE2_AUTHORIZATION_CONSENT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(operativeNote2);		
+		}
+
+		Object oclResult = VALIDATE_OPERATIVE_NOTE2_AUTHORIZATION_CONSENT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(
+			operativeNote2);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-  			
+
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.OPERATIVE_NOTE2__OPERATIVE_NOTE2_AUTHORIZATION_CONSENT,
-						 ConsolPlugin.INSTANCE.getString("OperativeNote2OperativeNote2AuthorizationConsent"),
-						 new Object [] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.OPERATIVE_NOTE2__OPERATIVE_NOTE2_AUTHORIZATION_CONSENT,
+							ConsolPlugin.INSTANCE.getString("OperativeNote2OperativeNote2AuthorizationConsent"),
+							new Object[] { eObject }));
 				}
-				 
+
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -3580,22 +3181,20 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 	 */
 
 	public static AnesthesiaSection2 getAnesthesiaSection2(OperativeNote2 operativeNote2) {
-	
-	
-	
+
 		if (GET_ANESTHESIA_SECTION2__EOCL_QRY == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.OPERATIVE_NOTE2, ConsolPackage.Literals.OPERATIVE_NOTE2.getEAllOperations().get(393));
+			helper.setOperationContext(
+				ConsolPackage.Literals.OPERATIVE_NOTE2,
+				ConsolPackage.Literals.OPERATIVE_NOTE2.getEAllOperations().get(393));
 			try {
 				GET_ANESTHESIA_SECTION2__EOCL_QRY = helper.createQuery(GET_ANESTHESIA_SECTION2__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
+		}
+
 		OCL.Query query = EOCL_ENV.get().createQuery(GET_ANESTHESIA_SECTION2__EOCL_QRY);
 		return (AnesthesiaSection2) query.evaluate(operativeNote2);
 	}
@@ -3627,22 +3226,20 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 	 */
 
 	public static ComplicationsSection2 getComplicationsSection2(OperativeNote2 operativeNote2) {
-	
-	
-	
+
 		if (GET_COMPLICATIONS_SECTION2__EOCL_QRY == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.OPERATIVE_NOTE2, ConsolPackage.Literals.OPERATIVE_NOTE2.getEAllOperations().get(394));
+			helper.setOperationContext(
+				ConsolPackage.Literals.OPERATIVE_NOTE2,
+				ConsolPackage.Literals.OPERATIVE_NOTE2.getEAllOperations().get(394));
 			try {
 				GET_COMPLICATIONS_SECTION2__EOCL_QRY = helper.createQuery(GET_COMPLICATIONS_SECTION2__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
+		}
+
 		OCL.Query query = EOCL_ENV.get().createQuery(GET_COMPLICATIONS_SECTION2__EOCL_QRY);
 		return (ComplicationsSection2) query.evaluate(operativeNote2);
 	}
@@ -3674,22 +3271,21 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 	 */
 
 	public static PreoperativeDiagnosisSection2 getPreoperativeDiagnosisSection2(OperativeNote2 operativeNote2) {
-	
-	
-	
+
 		if (GET_PREOPERATIVE_DIAGNOSIS_SECTION2__EOCL_QRY == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.OPERATIVE_NOTE2, ConsolPackage.Literals.OPERATIVE_NOTE2.getEAllOperations().get(395));
+			helper.setOperationContext(
+				ConsolPackage.Literals.OPERATIVE_NOTE2,
+				ConsolPackage.Literals.OPERATIVE_NOTE2.getEAllOperations().get(395));
 			try {
-				GET_PREOPERATIVE_DIAGNOSIS_SECTION2__EOCL_QRY = helper.createQuery(GET_PREOPERATIVE_DIAGNOSIS_SECTION2__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+				GET_PREOPERATIVE_DIAGNOSIS_SECTION2__EOCL_QRY = helper.createQuery(
+					GET_PREOPERATIVE_DIAGNOSIS_SECTION2__EOCL_EXP);
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
+		}
+
 		OCL.Query query = EOCL_ENV.get().createQuery(GET_PREOPERATIVE_DIAGNOSIS_SECTION2__EOCL_QRY);
 		return (PreoperativeDiagnosisSection2) query.evaluate(operativeNote2);
 	}
@@ -3722,22 +3318,21 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 
 	public static ProcedureEstimatedBloodLossSection getProcedureEstimatedBloodLossSection(
 			OperativeNote2 operativeNote2) {
-	
-	
-	
+
 		if (GET_PROCEDURE_ESTIMATED_BLOOD_LOSS_SECTION__EOCL_QRY == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.OPERATIVE_NOTE2, ConsolPackage.Literals.OPERATIVE_NOTE2.getEAllOperations().get(396));
+			helper.setOperationContext(
+				ConsolPackage.Literals.OPERATIVE_NOTE2,
+				ConsolPackage.Literals.OPERATIVE_NOTE2.getEAllOperations().get(396));
 			try {
-				GET_PROCEDURE_ESTIMATED_BLOOD_LOSS_SECTION__EOCL_QRY = helper.createQuery(GET_PROCEDURE_ESTIMATED_BLOOD_LOSS_SECTION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+				GET_PROCEDURE_ESTIMATED_BLOOD_LOSS_SECTION__EOCL_QRY = helper.createQuery(
+					GET_PROCEDURE_ESTIMATED_BLOOD_LOSS_SECTION__EOCL_EXP);
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
+		}
+
 		OCL.Query query = EOCL_ENV.get().createQuery(GET_PROCEDURE_ESTIMATED_BLOOD_LOSS_SECTION__EOCL_QRY);
 		return (ProcedureEstimatedBloodLossSection) query.evaluate(operativeNote2);
 	}
@@ -3769,22 +3364,21 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 	 */
 
 	public static ProcedureFindingsSection2 getProcedureFindingsSection2(OperativeNote2 operativeNote2) {
-	
-	
-	
+
 		if (GET_PROCEDURE_FINDINGS_SECTION2__EOCL_QRY == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.OPERATIVE_NOTE2, ConsolPackage.Literals.OPERATIVE_NOTE2.getEAllOperations().get(397));
+			helper.setOperationContext(
+				ConsolPackage.Literals.OPERATIVE_NOTE2,
+				ConsolPackage.Literals.OPERATIVE_NOTE2.getEAllOperations().get(397));
 			try {
-				GET_PROCEDURE_FINDINGS_SECTION2__EOCL_QRY = helper.createQuery(GET_PROCEDURE_FINDINGS_SECTION2__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+				GET_PROCEDURE_FINDINGS_SECTION2__EOCL_QRY = helper.createQuery(
+					GET_PROCEDURE_FINDINGS_SECTION2__EOCL_EXP);
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
+		}
+
 		OCL.Query query = EOCL_ENV.get().createQuery(GET_PROCEDURE_FINDINGS_SECTION2__EOCL_QRY);
 		return (ProcedureFindingsSection2) query.evaluate(operativeNote2);
 	}
@@ -3816,22 +3410,21 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 	 */
 
 	public static ProcedureSpecimensTakenSection getProcedureSpecimensTakenSection(OperativeNote2 operativeNote2) {
-	
-	
-	
+
 		if (GET_PROCEDURE_SPECIMENS_TAKEN_SECTION__EOCL_QRY == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.OPERATIVE_NOTE2, ConsolPackage.Literals.OPERATIVE_NOTE2.getEAllOperations().get(398));
+			helper.setOperationContext(
+				ConsolPackage.Literals.OPERATIVE_NOTE2,
+				ConsolPackage.Literals.OPERATIVE_NOTE2.getEAllOperations().get(398));
 			try {
-				GET_PROCEDURE_SPECIMENS_TAKEN_SECTION__EOCL_QRY = helper.createQuery(GET_PROCEDURE_SPECIMENS_TAKEN_SECTION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+				GET_PROCEDURE_SPECIMENS_TAKEN_SECTION__EOCL_QRY = helper.createQuery(
+					GET_PROCEDURE_SPECIMENS_TAKEN_SECTION__EOCL_EXP);
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
+		}
+
 		OCL.Query query = EOCL_ENV.get().createQuery(GET_PROCEDURE_SPECIMENS_TAKEN_SECTION__EOCL_QRY);
 		return (ProcedureSpecimensTakenSection) query.evaluate(operativeNote2);
 	}
@@ -3863,22 +3456,21 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 	 */
 
 	public static ProcedureDescriptionSection getProcedureDescriptionSection(OperativeNote2 operativeNote2) {
-	
-	
-	
+
 		if (GET_PROCEDURE_DESCRIPTION_SECTION__EOCL_QRY == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.OPERATIVE_NOTE2, ConsolPackage.Literals.OPERATIVE_NOTE2.getEAllOperations().get(399));
+			helper.setOperationContext(
+				ConsolPackage.Literals.OPERATIVE_NOTE2,
+				ConsolPackage.Literals.OPERATIVE_NOTE2.getEAllOperations().get(399));
 			try {
-				GET_PROCEDURE_DESCRIPTION_SECTION__EOCL_QRY = helper.createQuery(GET_PROCEDURE_DESCRIPTION_SECTION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+				GET_PROCEDURE_DESCRIPTION_SECTION__EOCL_QRY = helper.createQuery(
+					GET_PROCEDURE_DESCRIPTION_SECTION__EOCL_EXP);
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
+		}
+
 		OCL.Query query = EOCL_ENV.get().createQuery(GET_PROCEDURE_DESCRIPTION_SECTION__EOCL_QRY);
 		return (ProcedureDescriptionSection) query.evaluate(operativeNote2);
 	}
@@ -3910,22 +3502,21 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 	 */
 
 	public static PostoperativeDiagnosisSection getPostoperativeDiagnosisSection(OperativeNote2 operativeNote2) {
-	
-	
-	
+
 		if (GET_POSTOPERATIVE_DIAGNOSIS_SECTION__EOCL_QRY == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.OPERATIVE_NOTE2, ConsolPackage.Literals.OPERATIVE_NOTE2.getEAllOperations().get(400));
+			helper.setOperationContext(
+				ConsolPackage.Literals.OPERATIVE_NOTE2,
+				ConsolPackage.Literals.OPERATIVE_NOTE2.getEAllOperations().get(400));
 			try {
-				GET_POSTOPERATIVE_DIAGNOSIS_SECTION__EOCL_QRY = helper.createQuery(GET_POSTOPERATIVE_DIAGNOSIS_SECTION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+				GET_POSTOPERATIVE_DIAGNOSIS_SECTION__EOCL_QRY = helper.createQuery(
+					GET_POSTOPERATIVE_DIAGNOSIS_SECTION__EOCL_EXP);
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
+		}
+
 		OCL.Query query = EOCL_ENV.get().createQuery(GET_POSTOPERATIVE_DIAGNOSIS_SECTION__EOCL_QRY);
 		return (PostoperativeDiagnosisSection) query.evaluate(operativeNote2);
 	}
@@ -3957,22 +3548,20 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 	 */
 
 	public static ProcedureImplantsSection getProcedureImplantsSection(OperativeNote2 operativeNote2) {
-	
-	
-	
+
 		if (GET_PROCEDURE_IMPLANTS_SECTION__EOCL_QRY == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.OPERATIVE_NOTE2, ConsolPackage.Literals.OPERATIVE_NOTE2.getEAllOperations().get(401));
+			helper.setOperationContext(
+				ConsolPackage.Literals.OPERATIVE_NOTE2,
+				ConsolPackage.Literals.OPERATIVE_NOTE2.getEAllOperations().get(401));
 			try {
 				GET_PROCEDURE_IMPLANTS_SECTION__EOCL_QRY = helper.createQuery(GET_PROCEDURE_IMPLANTS_SECTION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
+		}
+
 		OCL.Query query = EOCL_ENV.get().createQuery(GET_PROCEDURE_IMPLANTS_SECTION__EOCL_QRY);
 		return (ProcedureImplantsSection) query.evaluate(operativeNote2);
 	}
@@ -4004,22 +3593,21 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 	 */
 
 	public static OperativeNoteFluidSection getOperativeNoteFluidSection(OperativeNote2 operativeNote2) {
-	
-	
-	
+
 		if (GET_OPERATIVE_NOTE_FLUID_SECTION__EOCL_QRY == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.OPERATIVE_NOTE2, ConsolPackage.Literals.OPERATIVE_NOTE2.getEAllOperations().get(402));
+			helper.setOperationContext(
+				ConsolPackage.Literals.OPERATIVE_NOTE2,
+				ConsolPackage.Literals.OPERATIVE_NOTE2.getEAllOperations().get(402));
 			try {
-				GET_OPERATIVE_NOTE_FLUID_SECTION__EOCL_QRY = helper.createQuery(GET_OPERATIVE_NOTE_FLUID_SECTION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+				GET_OPERATIVE_NOTE_FLUID_SECTION__EOCL_QRY = helper.createQuery(
+					GET_OPERATIVE_NOTE_FLUID_SECTION__EOCL_EXP);
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
+		}
+
 		OCL.Query query = EOCL_ENV.get().createQuery(GET_OPERATIVE_NOTE_FLUID_SECTION__EOCL_QRY);
 		return (OperativeNoteFluidSection) query.evaluate(operativeNote2);
 	}
@@ -4052,22 +3640,21 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 
 	public static OperativeNoteSurgicalProcedureSection getOperativeNoteSurgicalProcedureSection(
 			OperativeNote2 operativeNote2) {
-	
-	
-	
+
 		if (GET_OPERATIVE_NOTE_SURGICAL_PROCEDURE_SECTION__EOCL_QRY == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.OPERATIVE_NOTE2, ConsolPackage.Literals.OPERATIVE_NOTE2.getEAllOperations().get(403));
+			helper.setOperationContext(
+				ConsolPackage.Literals.OPERATIVE_NOTE2,
+				ConsolPackage.Literals.OPERATIVE_NOTE2.getEAllOperations().get(403));
 			try {
-				GET_OPERATIVE_NOTE_SURGICAL_PROCEDURE_SECTION__EOCL_QRY = helper.createQuery(GET_OPERATIVE_NOTE_SURGICAL_PROCEDURE_SECTION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+				GET_OPERATIVE_NOTE_SURGICAL_PROCEDURE_SECTION__EOCL_QRY = helper.createQuery(
+					GET_OPERATIVE_NOTE_SURGICAL_PROCEDURE_SECTION__EOCL_EXP);
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
+		}
+
 		OCL.Query query = EOCL_ENV.get().createQuery(GET_OPERATIVE_NOTE_SURGICAL_PROCEDURE_SECTION__EOCL_QRY);
 		return (OperativeNoteSurgicalProcedureSection) query.evaluate(operativeNote2);
 	}
@@ -4099,22 +3686,20 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 	 */
 
 	public static PlanOfTreatmentSection2 getPlanOfTreatmentSection2(OperativeNote2 operativeNote2) {
-	
-	
-	
+
 		if (GET_PLAN_OF_TREATMENT_SECTION2__EOCL_QRY == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.OPERATIVE_NOTE2, ConsolPackage.Literals.OPERATIVE_NOTE2.getEAllOperations().get(404));
+			helper.setOperationContext(
+				ConsolPackage.Literals.OPERATIVE_NOTE2,
+				ConsolPackage.Literals.OPERATIVE_NOTE2.getEAllOperations().get(404));
 			try {
 				GET_PLAN_OF_TREATMENT_SECTION2__EOCL_QRY = helper.createQuery(GET_PLAN_OF_TREATMENT_SECTION2__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
+		}
+
 		OCL.Query query = EOCL_ENV.get().createQuery(GET_PLAN_OF_TREATMENT_SECTION2__EOCL_QRY);
 		return (PlanOfTreatmentSection2) query.evaluate(operativeNote2);
 	}
@@ -4146,22 +3731,20 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 	 */
 
 	public static PlannedProcedureSection2 getPlannedProcedureSection2(OperativeNote2 operativeNote2) {
-	
-	
-	
+
 		if (GET_PLANNED_PROCEDURE_SECTION2__EOCL_QRY == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.OPERATIVE_NOTE2, ConsolPackage.Literals.OPERATIVE_NOTE2.getEAllOperations().get(405));
+			helper.setOperationContext(
+				ConsolPackage.Literals.OPERATIVE_NOTE2,
+				ConsolPackage.Literals.OPERATIVE_NOTE2.getEAllOperations().get(405));
 			try {
 				GET_PLANNED_PROCEDURE_SECTION2__EOCL_QRY = helper.createQuery(GET_PLANNED_PROCEDURE_SECTION2__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
+		}
+
 		OCL.Query query = EOCL_ENV.get().createQuery(GET_PLANNED_PROCEDURE_SECTION2__EOCL_QRY);
 		return (PlannedProcedureSection2) query.evaluate(operativeNote2);
 	}
@@ -4193,22 +3776,21 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 	 */
 
 	public static ProcedureDispositionSection getProcedureDispositionSection(OperativeNote2 operativeNote2) {
-	
-	
-	
+
 		if (GET_PROCEDURE_DISPOSITION_SECTION__EOCL_QRY == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.OPERATIVE_NOTE2, ConsolPackage.Literals.OPERATIVE_NOTE2.getEAllOperations().get(406));
+			helper.setOperationContext(
+				ConsolPackage.Literals.OPERATIVE_NOTE2,
+				ConsolPackage.Literals.OPERATIVE_NOTE2.getEAllOperations().get(406));
 			try {
-				GET_PROCEDURE_DISPOSITION_SECTION__EOCL_QRY = helper.createQuery(GET_PROCEDURE_DISPOSITION_SECTION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+				GET_PROCEDURE_DISPOSITION_SECTION__EOCL_QRY = helper.createQuery(
+					GET_PROCEDURE_DISPOSITION_SECTION__EOCL_EXP);
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
+		}
+
 		OCL.Query query = EOCL_ENV.get().createQuery(GET_PROCEDURE_DISPOSITION_SECTION__EOCL_QRY);
 		return (ProcedureDispositionSection) query.evaluate(operativeNote2);
 	}
@@ -4240,22 +3822,21 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 	 */
 
 	public static ProcedureIndicationsSection2 getProcedureIndicationsSection2(OperativeNote2 operativeNote2) {
-	
-	
-	
+
 		if (GET_PROCEDURE_INDICATIONS_SECTION2__EOCL_QRY == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.OPERATIVE_NOTE2, ConsolPackage.Literals.OPERATIVE_NOTE2.getEAllOperations().get(407));
+			helper.setOperationContext(
+				ConsolPackage.Literals.OPERATIVE_NOTE2,
+				ConsolPackage.Literals.OPERATIVE_NOTE2.getEAllOperations().get(407));
 			try {
-				GET_PROCEDURE_INDICATIONS_SECTION2__EOCL_QRY = helper.createQuery(GET_PROCEDURE_INDICATIONS_SECTION2__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+				GET_PROCEDURE_INDICATIONS_SECTION2__EOCL_QRY = helper.createQuery(
+					GET_PROCEDURE_INDICATIONS_SECTION2__EOCL_EXP);
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
+		}
+
 		OCL.Query query = EOCL_ENV.get().createQuery(GET_PROCEDURE_INDICATIONS_SECTION2__EOCL_QRY);
 		return (ProcedureIndicationsSection2) query.evaluate(operativeNote2);
 	}
@@ -4287,22 +3868,20 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 	 */
 
 	public static SurgicalDrainsSection getSurgicalDrainsSection(OperativeNote2 operativeNote2) {
-	
-	
-	
+
 		if (GET_SURGICAL_DRAINS_SECTION__EOCL_QRY == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.OPERATIVE_NOTE2, ConsolPackage.Literals.OPERATIVE_NOTE2.getEAllOperations().get(408));
+			helper.setOperationContext(
+				ConsolPackage.Literals.OPERATIVE_NOTE2,
+				ConsolPackage.Literals.OPERATIVE_NOTE2.getEAllOperations().get(408));
 			try {
 				GET_SURGICAL_DRAINS_SECTION__EOCL_QRY = helper.createQuery(GET_SURGICAL_DRAINS_SECTION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
+		}
+
 		OCL.Query query = EOCL_ENV.get().createQuery(GET_SURGICAL_DRAINS_SECTION__EOCL_QRY);
 		return (SurgicalDrainsSection) query.evaluate(operativeNote2);
 	}
@@ -4326,7 +3905,7 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_US_REALM_HEADER2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_US_REALM_HEADER2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -4341,44 +3920,32 @@ public class OperativeNote2Operations extends USRealmHeader2Operations {
 
 	public static boolean validateUSRealmHeader2TemplateId(OperativeNote2 operativeNote2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"OperativeNote2USRealmHeader2TemplateId","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "OperativeNote2USRealmHeader2TemplateId", "ERROR");
+
 		if (VALIDATE_US_REALM_HEADER2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.OPERATIVE_NOTE2);
 			try {
-				VALIDATE_US_REALM_HEADER2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_US_REALM_HEADER2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_US_REALM_HEADER2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_US_REALM_HEADER2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_US_REALM_HEADER2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(operativeNote2)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_US_REALM_HEADER2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(operativeNote2)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.OPERATIVE_NOTE2__US_REALM_HEADER2_TEMPLATE_ID,
-						 ConsolPlugin.INSTANCE.getString("OperativeNote2USRealmHeader2TemplateId"),
-						 new Object [] { operativeNote2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.OPERATIVE_NOTE2__US_REALM_HEADER2_TEMPLATE_ID,
+						ConsolPlugin.INSTANCE.getString("OperativeNote2USRealmHeader2TemplateId"),
+						new Object[] { operativeNote2 }));
 			}
-			 
+
 			return false;
 		}
 		return true;

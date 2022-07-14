@@ -5,8 +5,6 @@ package org.openhealthtools.mdht.uml.cda.consol;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EObject;
 
 import org.eclipse.mdht.emf.runtime.util.Initializer;
@@ -181,7 +179,8 @@ public interface AssessmentScaleObservationV2 extends Observation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.referenceRange-&gt;exists(referenceRange : cda::ReferenceRange | not referenceRange.oclIsUndefined() and referenceRange.oclIsKindOf(cda::ReferenceRange))'"
 	 * @generated
 	 */
-	boolean validateAssessmentScaleObservationV2ReferenceRange(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateAssessmentScaleObservationV2ReferenceRange(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -191,9 +190,9 @@ public interface AssessmentScaleObservationV2 extends Observation {
 	public AssessmentScaleObservationV2 init();
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public AssessmentScaleObservationV2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // AssessmentScaleObservationV2

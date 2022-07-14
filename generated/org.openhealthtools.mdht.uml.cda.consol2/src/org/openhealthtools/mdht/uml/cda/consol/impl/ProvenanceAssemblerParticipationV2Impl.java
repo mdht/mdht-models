@@ -53,7 +53,8 @@ public class ProvenanceAssemblerParticipationV2Impl extends Participant1Impl
 	 */
 	public boolean validateProvenanceAssemblerParticipationV2TemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProvenanceAssemblerParticipationV2Operations.validateProvenanceAssemblerParticipationV2TemplateId(this, diagnostics, context);
+		return ProvenanceAssemblerParticipationV2Operations.validateProvenanceAssemblerParticipationV2TemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -63,7 +64,8 @@ public class ProvenanceAssemblerParticipationV2Impl extends Participant1Impl
 	 */
 	public boolean validateProvenanceAssemblerParticipationV2FunctionCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProvenanceAssemblerParticipationV2Operations.validateProvenanceAssemblerParticipationV2FunctionCode(this, diagnostics, context);
+		return ProvenanceAssemblerParticipationV2Operations.validateProvenanceAssemblerParticipationV2FunctionCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -73,7 +75,8 @@ public class ProvenanceAssemblerParticipationV2Impl extends Participant1Impl
 	 */
 	public boolean validateProvenanceAssemblerParticipationV2FunctionCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProvenanceAssemblerParticipationV2Operations.validateProvenanceAssemblerParticipationV2FunctionCodeP(this, diagnostics, context);
+		return ProvenanceAssemblerParticipationV2Operations.validateProvenanceAssemblerParticipationV2FunctionCodeP(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -83,7 +86,8 @@ public class ProvenanceAssemblerParticipationV2Impl extends Participant1Impl
 	 */
 	public boolean validateProvenanceAssemblerParticipationV2Time(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProvenanceAssemblerParticipationV2Operations.validateProvenanceAssemblerParticipationV2Time(this, diagnostics, context);
+		return ProvenanceAssemblerParticipationV2Operations.validateProvenanceAssemblerParticipationV2Time(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -93,7 +97,8 @@ public class ProvenanceAssemblerParticipationV2Impl extends Participant1Impl
 	 */
 	public boolean validateProvenanceAssemblerParticipationV2TypeCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProvenanceAssemblerParticipationV2Operations.validateProvenanceAssemblerParticipationV2TypeCode(this, diagnostics, context);
+		return ProvenanceAssemblerParticipationV2Operations.validateProvenanceAssemblerParticipationV2TypeCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -103,7 +108,8 @@ public class ProvenanceAssemblerParticipationV2Impl extends Participant1Impl
 	 */
 	public boolean validateProvenanceAssemblerParticipationV2AssociatedEntity(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProvenanceAssemblerParticipationV2Operations.validateProvenanceAssemblerParticipationV2AssociatedEntity(this, diagnostics, context);
+		return ProvenanceAssemblerParticipationV2Operations.validateProvenanceAssemblerParticipationV2AssociatedEntity(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -113,7 +119,8 @@ public class ProvenanceAssemblerParticipationV2Impl extends Participant1Impl
 	 */
 	public boolean validateProvenanceAssemblerParticipationV2AssociatedEntityOrganizationGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProvenanceAssemblerParticipationV2Operations.validateProvenanceAssemblerParticipationV2AssociatedEntityOrganizationGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet(this, diagnostics, context);
+		return ProvenanceAssemblerParticipationV2Operations.validateProvenanceAssemblerParticipationV2AssociatedEntityOrganizationGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -123,7 +130,8 @@ public class ProvenanceAssemblerParticipationV2Impl extends Participant1Impl
 	 */
 	public boolean validateProvenanceAssemblerParticipationV2AssociatedEntityOrganizationGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequireStateElement(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProvenanceAssemblerParticipationV2Operations.validateProvenanceAssemblerParticipationV2AssociatedEntityOrganizationGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequireStateElement(this, diagnostics, context);
+		return ProvenanceAssemblerParticipationV2Operations.validateProvenanceAssemblerParticipationV2AssociatedEntityOrganizationGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequireStateElement(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -133,7 +141,8 @@ public class ProvenanceAssemblerParticipationV2Impl extends Participant1Impl
 	 */
 	public boolean validateProvenanceAssemblerParticipationV2AssociatedEntityOrganizationGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequirePostalCodeElement(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProvenanceAssemblerParticipationV2Operations.validateProvenanceAssemblerParticipationV2AssociatedEntityOrganizationGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequirePostalCodeElement(this, diagnostics, context);
+		return ProvenanceAssemblerParticipationV2Operations.validateProvenanceAssemblerParticipationV2AssociatedEntityOrganizationGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequirePostalCodeElement(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -143,7 +152,8 @@ public class ProvenanceAssemblerParticipationV2Impl extends Participant1Impl
 	 */
 	public boolean validateProvenanceAssemblerParticipationV2AssociatedEntityOrganizationGeneralHeaderConstraintsUSRealmAddressUse(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProvenanceAssemblerParticipationV2Operations.validateProvenanceAssemblerParticipationV2AssociatedEntityOrganizationGeneralHeaderConstraintsUSRealmAddressUse(this, diagnostics, context);
+		return ProvenanceAssemblerParticipationV2Operations.validateProvenanceAssemblerParticipationV2AssociatedEntityOrganizationGeneralHeaderConstraintsUSRealmAddressUse(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -153,7 +163,8 @@ public class ProvenanceAssemblerParticipationV2Impl extends Participant1Impl
 	 */
 	public boolean validateProvenanceAssemblerParticipationV2AssociatedEntityOrganizationGeneralHeaderConstraintsUSRealmAddressUseP(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProvenanceAssemblerParticipationV2Operations.validateProvenanceAssemblerParticipationV2AssociatedEntityOrganizationGeneralHeaderConstraintsUSRealmAddressUseP(this, diagnostics, context);
+		return ProvenanceAssemblerParticipationV2Operations.validateProvenanceAssemblerParticipationV2AssociatedEntityOrganizationGeneralHeaderConstraintsUSRealmAddressUseP(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -163,7 +174,8 @@ public class ProvenanceAssemblerParticipationV2Impl extends Participant1Impl
 	 */
 	public boolean validateProvenanceAssemblerParticipationV2AssociatedEntityOrganizationGeneralHeaderConstraintsUSRealmAddressCountry(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProvenanceAssemblerParticipationV2Operations.validateProvenanceAssemblerParticipationV2AssociatedEntityOrganizationGeneralHeaderConstraintsUSRealmAddressCountry(this, diagnostics, context);
+		return ProvenanceAssemblerParticipationV2Operations.validateProvenanceAssemblerParticipationV2AssociatedEntityOrganizationGeneralHeaderConstraintsUSRealmAddressCountry(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -173,7 +185,8 @@ public class ProvenanceAssemblerParticipationV2Impl extends Participant1Impl
 	 */
 	public boolean validateProvenanceAssemblerParticipationV2AssociatedEntityOrganizationGeneralHeaderConstraintsUSRealmAddressState(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProvenanceAssemblerParticipationV2Operations.validateProvenanceAssemblerParticipationV2AssociatedEntityOrganizationGeneralHeaderConstraintsUSRealmAddressState(this, diagnostics, context);
+		return ProvenanceAssemblerParticipationV2Operations.validateProvenanceAssemblerParticipationV2AssociatedEntityOrganizationGeneralHeaderConstraintsUSRealmAddressState(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -183,7 +196,8 @@ public class ProvenanceAssemblerParticipationV2Impl extends Participant1Impl
 	 */
 	public boolean validateProvenanceAssemblerParticipationV2AssociatedEntityOrganizationGeneralHeaderConstraintsUSRealmAddressCity(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProvenanceAssemblerParticipationV2Operations.validateProvenanceAssemblerParticipationV2AssociatedEntityOrganizationGeneralHeaderConstraintsUSRealmAddressCity(this, diagnostics, context);
+		return ProvenanceAssemblerParticipationV2Operations.validateProvenanceAssemblerParticipationV2AssociatedEntityOrganizationGeneralHeaderConstraintsUSRealmAddressCity(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -193,7 +207,8 @@ public class ProvenanceAssemblerParticipationV2Impl extends Participant1Impl
 	 */
 	public boolean validateProvenanceAssemblerParticipationV2AssociatedEntityOrganizationGeneralHeaderConstraintsUSRealmAddressPostalCode(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProvenanceAssemblerParticipationV2Operations.validateProvenanceAssemblerParticipationV2AssociatedEntityOrganizationGeneralHeaderConstraintsUSRealmAddressPostalCode(this, diagnostics, context);
+		return ProvenanceAssemblerParticipationV2Operations.validateProvenanceAssemblerParticipationV2AssociatedEntityOrganizationGeneralHeaderConstraintsUSRealmAddressPostalCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -203,7 +218,8 @@ public class ProvenanceAssemblerParticipationV2Impl extends Participant1Impl
 	 */
 	public boolean validateProvenanceAssemblerParticipationV2AssociatedEntityOrganizationGeneralHeaderConstraintsUSRealmAddressStreetAddressLine(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProvenanceAssemblerParticipationV2Operations.validateProvenanceAssemblerParticipationV2AssociatedEntityOrganizationGeneralHeaderConstraintsUSRealmAddressStreetAddressLine(this, diagnostics, context);
+		return ProvenanceAssemblerParticipationV2Operations.validateProvenanceAssemblerParticipationV2AssociatedEntityOrganizationGeneralHeaderConstraintsUSRealmAddressStreetAddressLine(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -213,7 +229,8 @@ public class ProvenanceAssemblerParticipationV2Impl extends Participant1Impl
 	 */
 	public boolean validateProvenanceAssemblerParticipationV2AssociatedEntityOrganizationId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProvenanceAssemblerParticipationV2Operations.validateProvenanceAssemblerParticipationV2AssociatedEntityOrganizationId(this, diagnostics, context);
+		return ProvenanceAssemblerParticipationV2Operations.validateProvenanceAssemblerParticipationV2AssociatedEntityOrganizationId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -223,7 +240,8 @@ public class ProvenanceAssemblerParticipationV2Impl extends Participant1Impl
 	 */
 	public boolean validateProvenanceAssemblerParticipationV2AssociatedEntityOrganizationName(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProvenanceAssemblerParticipationV2Operations.validateProvenanceAssemblerParticipationV2AssociatedEntityOrganizationName(this, diagnostics, context);
+		return ProvenanceAssemblerParticipationV2Operations.validateProvenanceAssemblerParticipationV2AssociatedEntityOrganizationName(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -233,7 +251,8 @@ public class ProvenanceAssemblerParticipationV2Impl extends Participant1Impl
 	 */
 	public boolean validateProvenanceAssemblerParticipationV2AssociatedEntityOrganizationTelecom(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProvenanceAssemblerParticipationV2Operations.validateProvenanceAssemblerParticipationV2AssociatedEntityOrganizationTelecom(this, diagnostics, context);
+		return ProvenanceAssemblerParticipationV2Operations.validateProvenanceAssemblerParticipationV2AssociatedEntityOrganizationTelecom(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -243,7 +262,8 @@ public class ProvenanceAssemblerParticipationV2Impl extends Participant1Impl
 	 */
 	public boolean validateProvenanceAssemblerParticipationV2AssociatedEntityOrganizationAddr(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProvenanceAssemblerParticipationV2Operations.validateProvenanceAssemblerParticipationV2AssociatedEntityOrganizationAddr(this, diagnostics, context);
+		return ProvenanceAssemblerParticipationV2Operations.validateProvenanceAssemblerParticipationV2AssociatedEntityOrganizationAddr(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -253,7 +273,8 @@ public class ProvenanceAssemblerParticipationV2Impl extends Participant1Impl
 	 */
 	public boolean validateProvenanceAssemblerParticipationV2AssociatedEntityClassCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProvenanceAssemblerParticipationV2Operations.validateProvenanceAssemblerParticipationV2AssociatedEntityClassCode(this, diagnostics, context);
+		return ProvenanceAssemblerParticipationV2Operations.validateProvenanceAssemblerParticipationV2AssociatedEntityClassCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -263,7 +284,8 @@ public class ProvenanceAssemblerParticipationV2Impl extends Participant1Impl
 	 */
 	public boolean validateProvenanceAssemblerParticipationV2AssociatedEntityScopingOrganization(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProvenanceAssemblerParticipationV2Operations.validateProvenanceAssemblerParticipationV2AssociatedEntityScopingOrganization(this, diagnostics, context);
+		return ProvenanceAssemblerParticipationV2Operations.validateProvenanceAssemblerParticipationV2AssociatedEntityScopingOrganization(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -272,16 +294,16 @@ public class ProvenanceAssemblerParticipationV2Impl extends Participant1Impl
 	 * @generated
 	 */
 	public ProvenanceAssemblerParticipationV2 init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public ProvenanceAssemblerParticipationV2 init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // ProvenanceAssemblerParticipationV2Impl

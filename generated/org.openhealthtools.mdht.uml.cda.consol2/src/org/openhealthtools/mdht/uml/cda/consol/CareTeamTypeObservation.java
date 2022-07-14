@@ -141,9 +141,9 @@ public interface CareTeamTypeObservation extends Observation {
 	public CareTeamTypeObservation init();
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public CareTeamTypeObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // CareTeamTypeObservation

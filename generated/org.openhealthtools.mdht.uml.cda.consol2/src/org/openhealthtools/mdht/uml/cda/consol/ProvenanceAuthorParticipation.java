@@ -167,7 +167,8 @@ public interface ProvenanceAuthorParticipation extends Author {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.assignedAuthor-&gt;excluding(null)-&gt;reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined()))'"
 	 * @generated
 	 */
-	boolean validateProvenanceAuthorParticipationProvenanceAssignedAuthorCodeP(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateProvenanceAuthorParticipationProvenanceAssignedAuthorCodeP(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -229,9 +230,9 @@ public interface ProvenanceAuthorParticipation extends Author {
 	public ProvenanceAuthorParticipation init();
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public ProvenanceAuthorParticipation init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ProvenanceAuthorParticipation

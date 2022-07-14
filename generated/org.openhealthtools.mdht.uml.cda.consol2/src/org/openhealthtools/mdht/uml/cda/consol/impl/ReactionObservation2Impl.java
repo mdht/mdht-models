@@ -119,7 +119,8 @@ public class ReactionObservation2Impl extends ReactionObservationImpl implements
 	@Override
 	public boolean validateReactionObservationProcedureActivityProcedureInversionInd(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ReactionObservation2Operations.validateReactionObservationProcedureActivityProcedureInversionInd(this, diagnostics, context);
+		return ReactionObservation2Operations.validateReactionObservationProcedureActivityProcedureInversionInd(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -130,7 +131,8 @@ public class ReactionObservation2Impl extends ReactionObservationImpl implements
 	@Override
 	public boolean validateReactionObservationMedicationActivityInversionInd(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ReactionObservation2Operations.validateReactionObservationMedicationActivityInversionInd(this, diagnostics, context);
+		return ReactionObservation2Operations.validateReactionObservationMedicationActivityInversionInd(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -141,7 +143,8 @@ public class ReactionObservation2Impl extends ReactionObservationImpl implements
 	@Override
 	public boolean validateReactionObservationSeverityObservationInversionInd(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ReactionObservation2Operations.validateReactionObservationSeverityObservationInversionInd(this, diagnostics, context);
+		return ReactionObservation2Operations.validateReactionObservationSeverityObservationInversionInd(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -243,7 +246,8 @@ public class ReactionObservation2Impl extends ReactionObservationImpl implements
 	@Override
 	public boolean validateReactionObservationProcedureActivityProcedure(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ReactionObservation2Operations.validateReactionObservationProcedureActivityProcedure(this, diagnostics, context);
+		return ReactionObservation2Operations.validateReactionObservationProcedureActivityProcedure(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -265,7 +269,8 @@ public class ReactionObservation2Impl extends ReactionObservationImpl implements
 	@Override
 	public boolean validateReactionObservationSeverityObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ReactionObservation2Operations.validateReactionObservationSeverityObservation(this, diagnostics, context);
+		return ReactionObservation2Operations.validateReactionObservationSeverityObservation(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -275,17 +280,17 @@ public class ReactionObservation2Impl extends ReactionObservationImpl implements
 	 */
 	@Override
 	public ReactionObservation2 init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public ReactionObservation2 init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // ReactionObservation2Impl

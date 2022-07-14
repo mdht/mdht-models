@@ -74,7 +74,7 @@ public class FamilyHistorySection2Operations extends FamilyHistorySectionOperati
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_FAMILY_HISTORY_SECTION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_FAMILY_HISTORY_SECTION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -89,44 +89,34 @@ public class FamilyHistorySection2Operations extends FamilyHistorySectionOperati
 
 	public static boolean validateFamilyHistorySection2TemplateId(FamilyHistorySection2 familyHistorySection2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"FamilyHistorySection2FamilyHistorySection2TemplateId","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "FamilyHistorySection2FamilyHistorySection2TemplateId", "ERROR");
+
 		if (VALIDATE_FAMILY_HISTORY_SECTION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.FAMILY_HISTORY_SECTION2);
 			try {
-				VALIDATE_FAMILY_HISTORY_SECTION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_FAMILY_HISTORY_SECTION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_FAMILY_HISTORY_SECTION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_FAMILY_HISTORY_SECTION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_FAMILY_HISTORY_SECTION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(familyHistorySection2)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_FAMILY_HISTORY_SECTION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				familyHistorySection2)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.FAMILY_HISTORY_SECTION2__FAMILY_HISTORY_SECTION2_TEMPLATE_ID,
-						 ConsolPlugin.INSTANCE.getString("FamilyHistorySection2FamilyHistorySection2TemplateId"),
-						 new Object [] { familyHistorySection2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.FAMILY_HISTORY_SECTION2__FAMILY_HISTORY_SECTION2_TEMPLATE_ID,
+						ConsolPlugin.INSTANCE.getString("FamilyHistorySection2FamilyHistorySection2TemplateId"),
+						new Object[] { familyHistorySection2 }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -160,26 +150,26 @@ public class FamilyHistorySection2Operations extends FamilyHistorySectionOperati
 
 	public static EList<FamilyHistoryOrganizer2> getConsolFamilyHistoryOrganizer2s(
 			FamilyHistorySection2 familyHistorySection2) {
-	
-	
-	
+
 		if (GET_CONSOL_FAMILY_HISTORY_ORGANIZER2S__EOCL_QRY == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.FAMILY_HISTORY_SECTION2, ConsolPackage.Literals.FAMILY_HISTORY_SECTION2.getEAllOperations().get(63));
+			helper.setOperationContext(
+				ConsolPackage.Literals.FAMILY_HISTORY_SECTION2,
+				ConsolPackage.Literals.FAMILY_HISTORY_SECTION2.getEAllOperations().get(63));
 			try {
-				GET_CONSOL_FAMILY_HISTORY_ORGANIZER2S__EOCL_QRY = helper.createQuery(GET_CONSOL_FAMILY_HISTORY_ORGANIZER2S__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+				GET_CONSOL_FAMILY_HISTORY_ORGANIZER2S__EOCL_QRY = helper.createQuery(
+					GET_CONSOL_FAMILY_HISTORY_ORGANIZER2S__EOCL_EXP);
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
+		}
+
 		OCL.Query query = EOCL_ENV.get().createQuery(GET_CONSOL_FAMILY_HISTORY_ORGANIZER2S__EOCL_QRY);
 		@SuppressWarnings("unchecked")
-		Collection<FamilyHistoryOrganizer2> result = (Collection<FamilyHistoryOrganizer2>) query.evaluate(familyHistorySection2);
-		return new BasicEList.UnmodifiableEList<FamilyHistoryOrganizer2>(result.size(), result.toArray());
+		Collection<FamilyHistoryOrganizer2> result = (Collection<FamilyHistoryOrganizer2>) query.evaluate(
+			familyHistorySection2);
+		return new BasicEList.UnmodifiableEList<>(result.size(), result.toArray());
 	}
 
 	/**
@@ -201,7 +191,7 @@ public class FamilyHistorySection2Operations extends FamilyHistorySectionOperati
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_FAMILY_HISTORY_SECTION_FAMILY_HISTORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_FAMILY_HISTORY_SECTION_FAMILY_HISTORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -216,44 +206,34 @@ public class FamilyHistorySection2Operations extends FamilyHistorySectionOperati
 
 	public static boolean validateFamilyHistorySectionFamilyHistory(FamilyHistorySection2 familyHistorySection2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"FamilyHistorySection2FamilyHistorySectionFamilyHistory","INFO");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "FamilyHistorySection2FamilyHistorySectionFamilyHistory", "INFO");
+
 		if (VALIDATE_FAMILY_HISTORY_SECTION_FAMILY_HISTORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.FAMILY_HISTORY_SECTION2);
 			try {
-				VALIDATE_FAMILY_HISTORY_SECTION_FAMILY_HISTORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_FAMILY_HISTORY_SECTION_FAMILY_HISTORY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_FAMILY_HISTORY_SECTION_FAMILY_HISTORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_FAMILY_HISTORY_SECTION_FAMILY_HISTORY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_FAMILY_HISTORY_SECTION_FAMILY_HISTORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(familyHistorySection2)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_FAMILY_HISTORY_SECTION_FAMILY_HISTORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				familyHistorySection2)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.FAMILY_HISTORY_SECTION2__FAMILY_HISTORY_SECTION_FAMILY_HISTORY,
-						 ConsolPlugin.INSTANCE.getString("FamilyHistorySection2FamilyHistorySectionFamilyHistory"),
-						 new Object [] { familyHistorySection2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.FAMILY_HISTORY_SECTION2__FAMILY_HISTORY_SECTION_FAMILY_HISTORY,
+						ConsolPlugin.INSTANCE.getString("FamilyHistorySection2FamilyHistorySectionFamilyHistory"),
+						new Object[] { familyHistorySection2 }));
 			}
-			 
+
 			return false;
 		}
 		return true;

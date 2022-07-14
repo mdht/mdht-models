@@ -111,9 +111,9 @@ public interface ComplicationsSection extends Section {
 	public ComplicationsSection init();
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public ComplicationsSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ComplicationsSection

@@ -162,16 +162,16 @@ public class CareTeamMemberActV2Impl extends ActImpl implements CareTeamMemberAc
 	 * @generated
 	 */
 	public CareTeamMemberActV2 init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public CareTeamMemberActV2 init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // CareTeamMemberActV2Impl

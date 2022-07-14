@@ -52,7 +52,8 @@ public class HighestPressureUlcerStageImpl extends ObservationImpl implements Hi
 	 */
 	public boolean validateHighestPressureUlcerStageTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HighestPressureUlcerStageOperations.validateHighestPressureUlcerStageTemplateId(this, diagnostics, context);
+		return HighestPressureUlcerStageOperations.validateHighestPressureUlcerStageTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -62,7 +63,8 @@ public class HighestPressureUlcerStageImpl extends ObservationImpl implements Hi
 	 */
 	public boolean validateHighestPressureUlcerStageClassCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HighestPressureUlcerStageOperations.validateHighestPressureUlcerStageClassCode(this, diagnostics, context);
+		return HighestPressureUlcerStageOperations.validateHighestPressureUlcerStageClassCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -71,7 +73,8 @@ public class HighestPressureUlcerStageImpl extends ObservationImpl implements Hi
 	 * @generated
 	 */
 	public boolean validateHighestPressureUlcerStageMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return HighestPressureUlcerStageOperations.validateHighestPressureUlcerStageMoodCode(this, diagnostics, context);
+		return HighestPressureUlcerStageOperations.validateHighestPressureUlcerStageMoodCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -116,16 +119,16 @@ public class HighestPressureUlcerStageImpl extends ObservationImpl implements Hi
 	 * @generated
 	 */
 	public HighestPressureUlcerStage init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public HighestPressureUlcerStage init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // HighestPressureUlcerStageImpl

@@ -89,7 +89,7 @@ public class DateOfDiagnosisActOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_DATE_OF_DIAGNOSIS_ACT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_DATE_OF_DIAGNOSIS_ACT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -104,44 +104,33 @@ public class DateOfDiagnosisActOperations extends ClinicalStatementOperations {
 
 	public static boolean validateDateOfDiagnosisActTemplateId(DateOfDiagnosisAct dateOfDiagnosisAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"DateOfDiagnosisActDateOfDiagnosisActTemplateId","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "DateOfDiagnosisActDateOfDiagnosisActTemplateId", "ERROR");
+
 		if (VALIDATE_DATE_OF_DIAGNOSIS_ACT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DATE_OF_DIAGNOSIS_ACT);
 			try {
-				VALIDATE_DATE_OF_DIAGNOSIS_ACT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_DATE_OF_DIAGNOSIS_ACT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_DATE_OF_DIAGNOSIS_ACT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_DATE_OF_DIAGNOSIS_ACT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_DATE_OF_DIAGNOSIS_ACT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(dateOfDiagnosisAct)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_DATE_OF_DIAGNOSIS_ACT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				dateOfDiagnosisAct)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.DATE_OF_DIAGNOSIS_ACT__DATE_OF_DIAGNOSIS_ACT_TEMPLATE_ID,
-						 ConsolPlugin.INSTANCE.getString("DateOfDiagnosisActDateOfDiagnosisActTemplateId"),
-						 new Object [] { dateOfDiagnosisAct }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.DATE_OF_DIAGNOSIS_ACT__DATE_OF_DIAGNOSIS_ACT_TEMPLATE_ID,
+						ConsolPlugin.INSTANCE.getString("DateOfDiagnosisActDateOfDiagnosisActTemplateId"),
+						new Object[] { dateOfDiagnosisAct }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -166,7 +155,7 @@ public class DateOfDiagnosisActOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_DATE_OF_DIAGNOSIS_ACT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_DATE_OF_DIAGNOSIS_ACT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -181,56 +170,45 @@ public class DateOfDiagnosisActOperations extends ClinicalStatementOperations {
 
 	public static boolean validateDateOfDiagnosisActCodeP(DateOfDiagnosisAct dateOfDiagnosisAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"DateOfDiagnosisActDateOfDiagnosisActCodeP","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "DateOfDiagnosisActDateOfDiagnosisActCodeP", "ERROR");
+
 		if (VALIDATE_DATE_OF_DIAGNOSIS_ACT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DATE_OF_DIAGNOSIS_ACT);
 			try {
-				VALIDATE_DATE_OF_DIAGNOSIS_ACT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_DATE_OF_DIAGNOSIS_ACT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_DATE_OF_DIAGNOSIS_ACT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_DATE_OF_DIAGNOSIS_ACT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_DATE_OF_DIAGNOSIS_ACT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(dateOfDiagnosisAct)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_DATE_OF_DIAGNOSIS_ACT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(dateOfDiagnosisAct)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.DATE_OF_DIAGNOSIS_ACT__DATE_OF_DIAGNOSIS_ACT_CODE_P,
-						 ConsolPlugin.INSTANCE.getString("DateOfDiagnosisActDateOfDiagnosisActCodeP"),
-						 new Object [] { dateOfDiagnosisAct }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.DATE_OF_DIAGNOSIS_ACT__DATE_OF_DIAGNOSIS_ACT_CODE_P,
+						ConsolPlugin.INSTANCE.getString("DateOfDiagnosisActDateOfDiagnosisActCodeP"),
+						new Object[] { dateOfDiagnosisAct }));
 			}
-			
+
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
-				Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.consol.DateOfDiagnosisActCodeP");
+				Collection<Object> passToken = (Collection<Object>) context.get(
+					"org.openhealthtools.mdht.uml.cda.consol.DateOfDiagnosisActCodeP");
 				if (passToken == null) {
 					// anticipate a reasonably healthy model
-					passToken = new java.util.ArrayList<Object>(3);
+					passToken = new java.util.ArrayList<>(3);
 					context.put("org.openhealthtools.mdht.uml.cda.consol.DateOfDiagnosisActCodeP", passToken);
 				}
 				passToken.add(dateOfDiagnosisAct);
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -244,9 +222,9 @@ public class DateOfDiagnosisActOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_DATE_OF_DIAGNOSIS_ACT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
-"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
-"value.code = '77975-1' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_DATE_OF_DIAGNOSIS_ACT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and " +
+			"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in " +
+			"value.code = '77975-1' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateDateOfDiagnosisActCode(DateOfDiagnosisAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Date Of Diagnosis Act Code</em>}' invariant operation.
@@ -257,7 +235,7 @@ public class DateOfDiagnosisActOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_DATE_OF_DIAGNOSIS_ACT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_DATE_OF_DIAGNOSIS_ACT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -272,50 +250,40 @@ public class DateOfDiagnosisActOperations extends ClinicalStatementOperations {
 
 	public static boolean validateDateOfDiagnosisActCode(DateOfDiagnosisAct dateOfDiagnosisAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-		Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.consol.DateOfDiagnosisActCodeP");
+
+		Object passToken = (context == null)
+				? null
+				: context.get("org.openhealthtools.mdht.uml.cda.consol.DateOfDiagnosisActCodeP");
 		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(dateOfDiagnosisAct)) {
 			// I have a free pass to short-circuit
 			return true;
 		}
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"DateOfDiagnosisActDateOfDiagnosisActCode","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "DateOfDiagnosisActDateOfDiagnosisActCode", "ERROR");
+
 		if (VALIDATE_DATE_OF_DIAGNOSIS_ACT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DATE_OF_DIAGNOSIS_ACT);
 			try {
-				VALIDATE_DATE_OF_DIAGNOSIS_ACT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_DATE_OF_DIAGNOSIS_ACT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_DATE_OF_DIAGNOSIS_ACT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_DATE_OF_DIAGNOSIS_ACT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_DATE_OF_DIAGNOSIS_ACT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(dateOfDiagnosisAct)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_DATE_OF_DIAGNOSIS_ACT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(dateOfDiagnosisAct)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.DATE_OF_DIAGNOSIS_ACT__DATE_OF_DIAGNOSIS_ACT_CODE,
-						 ConsolPlugin.INSTANCE.getString("DateOfDiagnosisActDateOfDiagnosisActCode"),
-						 new Object [] { dateOfDiagnosisAct }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.DATE_OF_DIAGNOSIS_ACT__DATE_OF_DIAGNOSIS_ACT_CODE,
+						ConsolPlugin.INSTANCE.getString("DateOfDiagnosisActDateOfDiagnosisActCode"),
+						new Object[] { dateOfDiagnosisAct }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -340,7 +308,7 @@ public class DateOfDiagnosisActOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_DATE_OF_DIAGNOSIS_ACT_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_DATE_OF_DIAGNOSIS_ACT_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -355,56 +323,47 @@ public class DateOfDiagnosisActOperations extends ClinicalStatementOperations {
 
 	public static boolean validateDateOfDiagnosisActStatusCodeP(DateOfDiagnosisAct dateOfDiagnosisAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"DateOfDiagnosisActDateOfDiagnosisActStatusCodeP","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "DateOfDiagnosisActDateOfDiagnosisActStatusCodeP", "ERROR");
+
 		if (VALIDATE_DATE_OF_DIAGNOSIS_ACT_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DATE_OF_DIAGNOSIS_ACT);
 			try {
-				VALIDATE_DATE_OF_DIAGNOSIS_ACT_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_DATE_OF_DIAGNOSIS_ACT_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_DATE_OF_DIAGNOSIS_ACT_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_DATE_OF_DIAGNOSIS_ACT_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_DATE_OF_DIAGNOSIS_ACT_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(dateOfDiagnosisAct)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_DATE_OF_DIAGNOSIS_ACT_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				dateOfDiagnosisAct)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.DATE_OF_DIAGNOSIS_ACT__DATE_OF_DIAGNOSIS_ACT_STATUS_CODE_P,
-						 ConsolPlugin.INSTANCE.getString("DateOfDiagnosisActDateOfDiagnosisActStatusCodeP"),
-						 new Object [] { dateOfDiagnosisAct }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.DATE_OF_DIAGNOSIS_ACT__DATE_OF_DIAGNOSIS_ACT_STATUS_CODE_P,
+						ConsolPlugin.INSTANCE.getString("DateOfDiagnosisActDateOfDiagnosisActStatusCodeP"),
+						new Object[] { dateOfDiagnosisAct }));
 			}
-			
+
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
-				Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.consol.DateOfDiagnosisActStatusCodeP");
+				Collection<Object> passToken = (Collection<Object>) context.get(
+					"org.openhealthtools.mdht.uml.cda.consol.DateOfDiagnosisActStatusCodeP");
 				if (passToken == null) {
 					// anticipate a reasonably healthy model
-					passToken = new java.util.ArrayList<Object>(3);
+					passToken = new java.util.ArrayList<>(3);
 					context.put("org.openhealthtools.mdht.uml.cda.consol.DateOfDiagnosisActStatusCodeP", passToken);
 				}
 				passToken.add(dateOfDiagnosisAct);
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -418,9 +377,8 @@ public class DateOfDiagnosisActOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_DATE_OF_DIAGNOSIS_ACT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and "+
-"let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in "+
-"value.code = 'completed')";
+	protected static final String VALIDATE_DATE_OF_DIAGNOSIS_ACT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and " +
+			"let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in " + "value.code = 'completed')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateDateOfDiagnosisActStatusCode(DateOfDiagnosisAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Date Of Diagnosis Act Status Code</em>}' invariant operation.
@@ -431,7 +389,7 @@ public class DateOfDiagnosisActOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_DATE_OF_DIAGNOSIS_ACT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_DATE_OF_DIAGNOSIS_ACT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -446,50 +404,41 @@ public class DateOfDiagnosisActOperations extends ClinicalStatementOperations {
 
 	public static boolean validateDateOfDiagnosisActStatusCode(DateOfDiagnosisAct dateOfDiagnosisAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-		Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.consol.DateOfDiagnosisActStatusCodeP");
+
+		Object passToken = (context == null)
+				? null
+				: context.get("org.openhealthtools.mdht.uml.cda.consol.DateOfDiagnosisActStatusCodeP");
 		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(dateOfDiagnosisAct)) {
 			// I have a free pass to short-circuit
 			return true;
 		}
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"DateOfDiagnosisActDateOfDiagnosisActStatusCode","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "DateOfDiagnosisActDateOfDiagnosisActStatusCode", "ERROR");
+
 		if (VALIDATE_DATE_OF_DIAGNOSIS_ACT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DATE_OF_DIAGNOSIS_ACT);
 			try {
-				VALIDATE_DATE_OF_DIAGNOSIS_ACT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_DATE_OF_DIAGNOSIS_ACT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_DATE_OF_DIAGNOSIS_ACT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_DATE_OF_DIAGNOSIS_ACT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_DATE_OF_DIAGNOSIS_ACT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(dateOfDiagnosisAct)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_DATE_OF_DIAGNOSIS_ACT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				dateOfDiagnosisAct)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.DATE_OF_DIAGNOSIS_ACT__DATE_OF_DIAGNOSIS_ACT_STATUS_CODE,
-						 ConsolPlugin.INSTANCE.getString("DateOfDiagnosisActDateOfDiagnosisActStatusCode"),
-						 new Object [] { dateOfDiagnosisAct }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.DATE_OF_DIAGNOSIS_ACT__DATE_OF_DIAGNOSIS_ACT_STATUS_CODE,
+						ConsolPlugin.INSTANCE.getString("DateOfDiagnosisActDateOfDiagnosisActStatusCode"),
+						new Object[] { dateOfDiagnosisAct }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -514,7 +463,7 @@ public class DateOfDiagnosisActOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_DATE_OF_DIAGNOSIS_ACT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_DATE_OF_DIAGNOSIS_ACT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -529,44 +478,34 @@ public class DateOfDiagnosisActOperations extends ClinicalStatementOperations {
 
 	public static boolean validateDateOfDiagnosisActEffectiveTime(DateOfDiagnosisAct dateOfDiagnosisAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"DateOfDiagnosisActDateOfDiagnosisActEffectiveTime","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "DateOfDiagnosisActDateOfDiagnosisActEffectiveTime", "ERROR");
+
 		if (VALIDATE_DATE_OF_DIAGNOSIS_ACT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DATE_OF_DIAGNOSIS_ACT);
 			try {
-				VALIDATE_DATE_OF_DIAGNOSIS_ACT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_DATE_OF_DIAGNOSIS_ACT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_DATE_OF_DIAGNOSIS_ACT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_DATE_OF_DIAGNOSIS_ACT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_DATE_OF_DIAGNOSIS_ACT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(dateOfDiagnosisAct)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_DATE_OF_DIAGNOSIS_ACT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				dateOfDiagnosisAct)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.DATE_OF_DIAGNOSIS_ACT__DATE_OF_DIAGNOSIS_ACT_EFFECTIVE_TIME,
-						 ConsolPlugin.INSTANCE.getString("DateOfDiagnosisActDateOfDiagnosisActEffectiveTime"),
-						 new Object [] { dateOfDiagnosisAct }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.DATE_OF_DIAGNOSIS_ACT__DATE_OF_DIAGNOSIS_ACT_EFFECTIVE_TIME,
+						ConsolPlugin.INSTANCE.getString("DateOfDiagnosisActDateOfDiagnosisActEffectiveTime"),
+						new Object[] { dateOfDiagnosisAct }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -591,7 +530,7 @@ public class DateOfDiagnosisActOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_DATE_OF_DIAGNOSIS_ACT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_DATE_OF_DIAGNOSIS_ACT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -606,44 +545,33 @@ public class DateOfDiagnosisActOperations extends ClinicalStatementOperations {
 
 	public static boolean validateDateOfDiagnosisActClassCode(DateOfDiagnosisAct dateOfDiagnosisAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"DateOfDiagnosisActDateOfDiagnosisActClassCode","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "DateOfDiagnosisActDateOfDiagnosisActClassCode", "ERROR");
+
 		if (VALIDATE_DATE_OF_DIAGNOSIS_ACT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DATE_OF_DIAGNOSIS_ACT);
 			try {
-				VALIDATE_DATE_OF_DIAGNOSIS_ACT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_DATE_OF_DIAGNOSIS_ACT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_DATE_OF_DIAGNOSIS_ACT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_DATE_OF_DIAGNOSIS_ACT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_DATE_OF_DIAGNOSIS_ACT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(dateOfDiagnosisAct)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_DATE_OF_DIAGNOSIS_ACT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				dateOfDiagnosisAct)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.DATE_OF_DIAGNOSIS_ACT__DATE_OF_DIAGNOSIS_ACT_CLASS_CODE,
-						 ConsolPlugin.INSTANCE.getString("DateOfDiagnosisActDateOfDiagnosisActClassCode"),
-						 new Object [] { dateOfDiagnosisAct }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.DATE_OF_DIAGNOSIS_ACT__DATE_OF_DIAGNOSIS_ACT_CLASS_CODE,
+						ConsolPlugin.INSTANCE.getString("DateOfDiagnosisActDateOfDiagnosisActClassCode"),
+						new Object[] { dateOfDiagnosisAct }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -668,7 +596,7 @@ public class DateOfDiagnosisActOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_DATE_OF_DIAGNOSIS_ACT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_DATE_OF_DIAGNOSIS_ACT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -683,44 +611,32 @@ public class DateOfDiagnosisActOperations extends ClinicalStatementOperations {
 
 	public static boolean validateDateOfDiagnosisActMoodCode(DateOfDiagnosisAct dateOfDiagnosisAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"DateOfDiagnosisActDateOfDiagnosisActMoodCode","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "DateOfDiagnosisActDateOfDiagnosisActMoodCode", "ERROR");
+
 		if (VALIDATE_DATE_OF_DIAGNOSIS_ACT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DATE_OF_DIAGNOSIS_ACT);
 			try {
-				VALIDATE_DATE_OF_DIAGNOSIS_ACT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_DATE_OF_DIAGNOSIS_ACT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_DATE_OF_DIAGNOSIS_ACT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_DATE_OF_DIAGNOSIS_ACT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_DATE_OF_DIAGNOSIS_ACT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(dateOfDiagnosisAct)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_DATE_OF_DIAGNOSIS_ACT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(dateOfDiagnosisAct)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.DATE_OF_DIAGNOSIS_ACT__DATE_OF_DIAGNOSIS_ACT_MOOD_CODE,
-						 ConsolPlugin.INSTANCE.getString("DateOfDiagnosisActDateOfDiagnosisActMoodCode"),
-						 new Object [] { dateOfDiagnosisAct }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.DATE_OF_DIAGNOSIS_ACT__DATE_OF_DIAGNOSIS_ACT_MOOD_CODE,
+						ConsolPlugin.INSTANCE.getString("DateOfDiagnosisActDateOfDiagnosisActMoodCode"),
+						new Object[] { dateOfDiagnosisAct }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -744,13 +660,8 @@ public class DateOfDiagnosisActOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	
-	
-	
-	
-	
-	protected static ThreadLocal< Query<?, ?, ?> > VALIDATE_DATE_OF_DIAGNOSIS_ACT_IVLTS_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY= new ThreadLocal< Query<?, ?, ?> >();
+
+	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_DATE_OF_DIAGNOSIS_ACT_IVLTS_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -763,50 +674,40 @@ public class DateOfDiagnosisActOperations extends ClinicalStatementOperations {
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
-	public static  boolean validateDateOfDiagnosisActIVLTSValue(DateOfDiagnosisAct dateOfDiagnosisAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"DateOfDiagnosisActDateOfDiagnosisActIVLTSValue","ERROR");
-    
-  	  
-  	  
+	public static boolean validateDateOfDiagnosisActIVLTSValue(DateOfDiagnosisAct dateOfDiagnosisAct,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "DateOfDiagnosisActDateOfDiagnosisActIVLTSValue", "ERROR");
+
 		if (VALIDATE_DATE_OF_DIAGNOSIS_ACT_IVLTS_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DATE_OF_DIAGNOSIS_ACT);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_DATE_OF_DIAGNOSIS_ACT_IVLTS_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_DATE_OF_DIAGNOSIS_ACT_IVLTS_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(EOCL_ENV.get().createQuery(oclExpression));
-			}
-			catch (ParserException pe) {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_DATE_OF_DIAGNOSIS_ACT_IVLTS_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DATE_OF_DIAGNOSIS_ACT_IVLTS_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(
+					EOCL_ENV.get().createQuery(oclExpression));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		Object oclResult = VALIDATE_DATE_OF_DIAGNOSIS_ACT_IVLTS_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(dateOfDiagnosisAct);		
+		}
+
+		Object oclResult = VALIDATE_DATE_OF_DIAGNOSIS_ACT_IVLTS_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(
+			dateOfDiagnosisAct);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-  			
+
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.DATE_OF_DIAGNOSIS_ACT__DATE_OF_DIAGNOSIS_ACT_IVLTS_VALUE,
-						 ConsolPlugin.INSTANCE.getString("DateOfDiagnosisActDateOfDiagnosisActIVLTSValue"),
-						 new Object [] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.DATE_OF_DIAGNOSIS_ACT__DATE_OF_DIAGNOSIS_ACT_IVLTS_VALUE,
+							ConsolPlugin.INSTANCE.getString("DateOfDiagnosisActDateOfDiagnosisActIVLTSValue"),
+							new Object[] { eObject }));
 				}
-				 
+
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -831,13 +732,8 @@ public class DateOfDiagnosisActOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	
-	
-	
-	
-	
-	protected static ThreadLocal< Query<?, ?, ?> > VALIDATE_DATE_OF_DIAGNOSIS_ACT_IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY= new ThreadLocal< Query<?, ?, ?> >();
+
+	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_DATE_OF_DIAGNOSIS_ACT_IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -850,50 +746,40 @@ public class DateOfDiagnosisActOperations extends ClinicalStatementOperations {
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
-	public static  boolean validateDateOfDiagnosisActIVLTSLow(DateOfDiagnosisAct dateOfDiagnosisAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"DateOfDiagnosisActDateOfDiagnosisActIVLTSLow","ERROR");
-    
-  	  
-  	  
+	public static boolean validateDateOfDiagnosisActIVLTSLow(DateOfDiagnosisAct dateOfDiagnosisAct,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "DateOfDiagnosisActDateOfDiagnosisActIVLTSLow", "ERROR");
+
 		if (VALIDATE_DATE_OF_DIAGNOSIS_ACT_IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DATE_OF_DIAGNOSIS_ACT);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_DATE_OF_DIAGNOSIS_ACT_IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_DATE_OF_DIAGNOSIS_ACT_IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(EOCL_ENV.get().createQuery(oclExpression));
-			}
-			catch (ParserException pe) {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_DATE_OF_DIAGNOSIS_ACT_IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DATE_OF_DIAGNOSIS_ACT_IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(
+					EOCL_ENV.get().createQuery(oclExpression));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		Object oclResult = VALIDATE_DATE_OF_DIAGNOSIS_ACT_IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(dateOfDiagnosisAct);		
+		}
+
+		Object oclResult = VALIDATE_DATE_OF_DIAGNOSIS_ACT_IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(
+			dateOfDiagnosisAct);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-  			
+
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.DATE_OF_DIAGNOSIS_ACT__DATE_OF_DIAGNOSIS_ACT_IVLTS_LOW,
-						 ConsolPlugin.INSTANCE.getString("DateOfDiagnosisActDateOfDiagnosisActIVLTSLow"),
-						 new Object [] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.DATE_OF_DIAGNOSIS_ACT__DATE_OF_DIAGNOSIS_ACT_IVLTS_LOW,
+							ConsolPlugin.INSTANCE.getString("DateOfDiagnosisActDateOfDiagnosisActIVLTSLow"),
+							new Object[] { eObject }));
 				}
-				 
+
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -918,13 +804,8 @@ public class DateOfDiagnosisActOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	
-	
-	
-	
-	
-	
-	protected static ThreadLocal< Query<?, ?, ?> > VALIDATE_DATE_OF_DIAGNOSIS_ACT_IVLTS_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY= new ThreadLocal< Query<?, ?, ?> >();
+
+	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_DATE_OF_DIAGNOSIS_ACT_IVLTS_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -937,50 +818,40 @@ public class DateOfDiagnosisActOperations extends ClinicalStatementOperations {
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
-	public static  boolean validateDateOfDiagnosisActIVLTSHigh(DateOfDiagnosisAct dateOfDiagnosisAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"DateOfDiagnosisActDateOfDiagnosisActIVLTSHigh","ERROR");
-    
-  	  
-  	  
+	public static boolean validateDateOfDiagnosisActIVLTSHigh(DateOfDiagnosisAct dateOfDiagnosisAct,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "DateOfDiagnosisActDateOfDiagnosisActIVLTSHigh", "ERROR");
+
 		if (VALIDATE_DATE_OF_DIAGNOSIS_ACT_IVLTS_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DATE_OF_DIAGNOSIS_ACT);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_DATE_OF_DIAGNOSIS_ACT_IVLTS_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_DATE_OF_DIAGNOSIS_ACT_IVLTS_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(EOCL_ENV.get().createQuery(oclExpression));
-			}
-			catch (ParserException pe) {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_DATE_OF_DIAGNOSIS_ACT_IVLTS_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DATE_OF_DIAGNOSIS_ACT_IVLTS_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(
+					EOCL_ENV.get().createQuery(oclExpression));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		Object oclResult = VALIDATE_DATE_OF_DIAGNOSIS_ACT_IVLTS_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(dateOfDiagnosisAct);		
+		}
+
+		Object oclResult = VALIDATE_DATE_OF_DIAGNOSIS_ACT_IVLTS_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(
+			dateOfDiagnosisAct);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-  			
+
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.DATE_OF_DIAGNOSIS_ACT__DATE_OF_DIAGNOSIS_ACT_IVLTS_HIGH,
-						 ConsolPlugin.INSTANCE.getString("DateOfDiagnosisActDateOfDiagnosisActIVLTSHigh"),
-						 new Object [] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.DATE_OF_DIAGNOSIS_ACT__DATE_OF_DIAGNOSIS_ACT_IVLTS_HIGH,
+							ConsolPlugin.INSTANCE.getString("DateOfDiagnosisActDateOfDiagnosisActIVLTSHigh"),
+							new Object[] { eObject }));
 				}
-				 
+
 			}
 			return oclResultSet.isEmpty();
 		}

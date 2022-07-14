@@ -91,7 +91,7 @@ public class FunctionalStatusObservation2Operations extends FunctionalStatusResu
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_FUNCTIONAL_STATUS_OBSERVATION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_FUNCTIONAL_STATUS_OBSERVATION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -107,44 +107,35 @@ public class FunctionalStatusObservation2Operations extends FunctionalStatusResu
 	public static boolean validateFunctionalStatusObservation2TemplateId(
 			FunctionalStatusObservation2 functionalStatusObservation2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"FunctionalStatusObservation2FunctionalStatusObservation2TemplateId","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "FunctionalStatusObservation2FunctionalStatusObservation2TemplateId", "ERROR");
+
 		if (VALIDATE_FUNCTIONAL_STATUS_OBSERVATION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.FUNCTIONAL_STATUS_OBSERVATION2);
 			try {
-				VALIDATE_FUNCTIONAL_STATUS_OBSERVATION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_FUNCTIONAL_STATUS_OBSERVATION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_FUNCTIONAL_STATUS_OBSERVATION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_FUNCTIONAL_STATUS_OBSERVATION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_FUNCTIONAL_STATUS_OBSERVATION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(functionalStatusObservation2)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_FUNCTIONAL_STATUS_OBSERVATION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				functionalStatusObservation2)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.FUNCTIONAL_STATUS_OBSERVATION2__FUNCTIONAL_STATUS_OBSERVATION2_TEMPLATE_ID,
-						 ConsolPlugin.INSTANCE.getString("FunctionalStatusObservation2FunctionalStatusObservation2TemplateId"),
-						 new Object [] { functionalStatusObservation2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.FUNCTIONAL_STATUS_OBSERVATION2__FUNCTIONAL_STATUS_OBSERVATION2_TEMPLATE_ID,
+						ConsolPlugin.INSTANCE.getString(
+							"FunctionalStatusObservation2FunctionalStatusObservation2TemplateId"),
+						new Object[] { functionalStatusObservation2 }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -164,44 +155,36 @@ public class FunctionalStatusObservation2Operations extends FunctionalStatusResu
 	public static boolean validateFunctionalStatusObservation2AuthorParticipation(
 			FunctionalStatusObservation2 functionalStatusObservation2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"FunctionalStatusObservation2FunctionalStatusObservation2AuthorParticipation","WARNING");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(
+			context, "FunctionalStatusObservation2FunctionalStatusObservation2AuthorParticipation", "WARNING");
+
 		if (VALIDATE_FUNCTIONAL_STATUS_OBSERVATION2_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.FUNCTIONAL_STATUS_OBSERVATION2);
 			try {
-				VALIDATE_FUNCTIONAL_STATUS_OBSERVATION2_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_FUNCTIONAL_STATUS_OBSERVATION2_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_FUNCTIONAL_STATUS_OBSERVATION2_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_FUNCTIONAL_STATUS_OBSERVATION2_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_FUNCTIONAL_STATUS_OBSERVATION2_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(functionalStatusObservation2)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_FUNCTIONAL_STATUS_OBSERVATION2_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				functionalStatusObservation2)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.WARNING,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.FUNCTIONAL_STATUS_OBSERVATION2__FUNCTIONAL_STATUS_OBSERVATION2_AUTHOR_PARTICIPATION,
-						 ConsolPlugin.INSTANCE.getString("FunctionalStatusObservation2FunctionalStatusObservation2AuthorParticipation"),
-						 new Object [] { functionalStatusObservation2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.FUNCTIONAL_STATUS_OBSERVATION2__FUNCTIONAL_STATUS_OBSERVATION2_AUTHOR_PARTICIPATION,
+						ConsolPlugin.INSTANCE.getString(
+							"FunctionalStatusObservation2FunctionalStatusObservation2AuthorParticipation"),
+						new Object[] { functionalStatusObservation2 }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -215,22 +198,21 @@ public class FunctionalStatusObservation2Operations extends FunctionalStatusResu
 
 	public static NonMedicinalSupplyActivity2 getConsolNonMedicinalSupplyActivity2(
 			FunctionalStatusObservation2 functionalStatusObservation2) {
-	
-	
-	
+
 		if (GET_CONSOL_NON_MEDICINAL_SUPPLY_ACTIVITY2__EOCL_QRY == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.FUNCTIONAL_STATUS_OBSERVATION2, ConsolPackage.Literals.FUNCTIONAL_STATUS_OBSERVATION2.getEAllOperations().get(84));
+			helper.setOperationContext(
+				ConsolPackage.Literals.FUNCTIONAL_STATUS_OBSERVATION2,
+				ConsolPackage.Literals.FUNCTIONAL_STATUS_OBSERVATION2.getEAllOperations().get(84));
 			try {
-				GET_CONSOL_NON_MEDICINAL_SUPPLY_ACTIVITY2__EOCL_QRY = helper.createQuery(GET_CONSOL_NON_MEDICINAL_SUPPLY_ACTIVITY2__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+				GET_CONSOL_NON_MEDICINAL_SUPPLY_ACTIVITY2__EOCL_QRY = helper.createQuery(
+					GET_CONSOL_NON_MEDICINAL_SUPPLY_ACTIVITY2__EOCL_EXP);
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
+		}
+
 		OCL.Query query = EOCL_ENV.get().createQuery(GET_CONSOL_NON_MEDICINAL_SUPPLY_ACTIVITY2__EOCL_QRY);
 		return (NonMedicinalSupplyActivity2) query.evaluate(functionalStatusObservation2);
 	}
@@ -249,44 +231,33 @@ public class FunctionalStatusObservation2Operations extends FunctionalStatusResu
 	public static boolean validateResultObservationTextReference(
 			FunctionalStatusObservation2 functionalStatusObservation2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"FunctionalStatusObservation2ResultObservationTextReference","INFO");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "FunctionalStatusObservation2ResultObservationTextReference", "INFO");
+
 		if (VALIDATE_RESULT_OBSERVATION_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.FUNCTIONAL_STATUS_OBSERVATION2);
 			try {
-				VALIDATE_RESULT_OBSERVATION_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_RESULT_OBSERVATION_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_RESULT_OBSERVATION_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_RESULT_OBSERVATION_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_RESULT_OBSERVATION_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(functionalStatusObservation2)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_RESULT_OBSERVATION_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				functionalStatusObservation2)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.FUNCTIONAL_STATUS_OBSERVATION2__RESULT_OBSERVATION_TEXT_REFERENCE,
-						 ConsolPlugin.INSTANCE.getString("FunctionalStatusObservation2ResultObservationTextReference"),
-						 new Object [] { functionalStatusObservation2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.FUNCTIONAL_STATUS_OBSERVATION2__RESULT_OBSERVATION_TEXT_REFERENCE,
+						ConsolPlugin.INSTANCE.getString("FunctionalStatusObservation2ResultObservationTextReference"),
+						new Object[] { functionalStatusObservation2 }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -306,44 +277,35 @@ public class FunctionalStatusObservation2Operations extends FunctionalStatusResu
 	public static boolean validateResultObservationTextReferenceValue(
 			FunctionalStatusObservation2 functionalStatusObservation2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"FunctionalStatusObservation2ResultObservationTextReferenceValue","INFO");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "FunctionalStatusObservation2ResultObservationTextReferenceValue", "INFO");
+
 		if (VALIDATE_RESULT_OBSERVATION_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.FUNCTIONAL_STATUS_OBSERVATION2);
 			try {
-				VALIDATE_RESULT_OBSERVATION_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_RESULT_OBSERVATION_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_RESULT_OBSERVATION_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_RESULT_OBSERVATION_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_RESULT_OBSERVATION_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(functionalStatusObservation2)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_RESULT_OBSERVATION_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				functionalStatusObservation2)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.FUNCTIONAL_STATUS_OBSERVATION2__RESULT_OBSERVATION_TEXT_REFERENCE_VALUE,
-						 ConsolPlugin.INSTANCE.getString("FunctionalStatusObservation2ResultObservationTextReferenceValue"),
-						 new Object [] { functionalStatusObservation2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.FUNCTIONAL_STATUS_OBSERVATION2__RESULT_OBSERVATION_TEXT_REFERENCE_VALUE,
+						ConsolPlugin.INSTANCE.getString(
+							"FunctionalStatusObservation2ResultObservationTextReferenceValue"),
+						new Object[] { functionalStatusObservation2 }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -368,7 +330,7 @@ public class FunctionalStatusObservation2Operations extends FunctionalStatusResu
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_FUNCTIONAL_STATUS_OBSERVATION2_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_FUNCTIONAL_STATUS_OBSERVATION2_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * The cached OCL expression body for the '{@link #getConsolNonMedicinalSupplyActivity2(FunctionalStatusObservation2) <em>Get Consol Non Medicinal Supply Activity2</em>}' operation.
@@ -409,7 +371,7 @@ public class FunctionalStatusObservation2Operations extends FunctionalStatusResu
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_RESULT_OBSERVATION_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_RESULT_OBSERVATION_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * The cached OCL expression body for the '{@link #validateResultObservationTextReferenceValue(FunctionalStatusObservation2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Observation Text Reference Value</em>}' operation.
@@ -430,7 +392,7 @@ public class FunctionalStatusObservation2Operations extends FunctionalStatusResu
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_RESULT_OBSERVATION_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_RESULT_OBSERVATION_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * The cached OCL expression body for the '{@link #validateResultObservationCodeP(FunctionalStatusObservation2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Observation Code P</em>}' operation.
@@ -451,7 +413,7 @@ public class FunctionalStatusObservation2Operations extends FunctionalStatusResu
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_RESULT_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_RESULT_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -466,56 +428,45 @@ public class FunctionalStatusObservation2Operations extends FunctionalStatusResu
 
 	public static boolean validateResultObservationCodeP(FunctionalStatusObservation2 functionalStatusObservation2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"FunctionalStatusObservation2ResultObservationCodeP","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "FunctionalStatusObservation2ResultObservationCodeP", "ERROR");
+
 		if (VALIDATE_RESULT_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.FUNCTIONAL_STATUS_OBSERVATION2);
 			try {
-				VALIDATE_RESULT_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_RESULT_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_RESULT_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_RESULT_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_RESULT_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(functionalStatusObservation2)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(VALIDATE_RESULT_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+			functionalStatusObservation2)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.FUNCTIONAL_STATUS_OBSERVATION2__RESULT_OBSERVATION_CODE_P,
-						 ConsolPlugin.INSTANCE.getString("FunctionalStatusObservation2ResultObservationCodeP"),
-						 new Object [] { functionalStatusObservation2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.FUNCTIONAL_STATUS_OBSERVATION2__RESULT_OBSERVATION_CODE_P,
+						ConsolPlugin.INSTANCE.getString("FunctionalStatusObservation2ResultObservationCodeP"),
+						new Object[] { functionalStatusObservation2 }));
 			}
-			
+
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
-				Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.consol.ResultObservationCodeP");
+				Collection<Object> passToken = (Collection<Object>) context.get(
+					"org.openhealthtools.mdht.uml.cda.consol.ResultObservationCodeP");
 				if (passToken == null) {
 					// anticipate a reasonably healthy model
-					passToken = new java.util.ArrayList<Object>(3);
+					passToken = new java.util.ArrayList<>(3);
 					context.put("org.openhealthtools.mdht.uml.cda.consol.ResultObservationCodeP", passToken);
 				}
 				passToken.add(functionalStatusObservation2);
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -529,9 +480,9 @@ public class FunctionalStatusObservation2Operations extends FunctionalStatusResu
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_RESULT_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
-"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
-"value.code = '54522-8' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_RESULT_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and " +
+			"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in " +
+			"value.code = '54522-8' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateResultObservationCode(FunctionalStatusObservation2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Observation Code</em>}' invariant operation.
@@ -542,7 +493,7 @@ public class FunctionalStatusObservation2Operations extends FunctionalStatusResu
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_RESULT_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_RESULT_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -557,50 +508,41 @@ public class FunctionalStatusObservation2Operations extends FunctionalStatusResu
 
 	public static boolean validateResultObservationCode(FunctionalStatusObservation2 functionalStatusObservation2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-		Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.consol.ResultObservationCodeP");
-		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(functionalStatusObservation2)) {
+
+		Object passToken = (context == null)
+				? null
+				: context.get("org.openhealthtools.mdht.uml.cda.consol.ResultObservationCodeP");
+		if ((passToken instanceof Collection<?>) &&
+				((Collection<?>) passToken).contains(functionalStatusObservation2)) {
 			// I have a free pass to short-circuit
 			return true;
 		}
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"FunctionalStatusObservation2ResultObservationCode","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "FunctionalStatusObservation2ResultObservationCode", "ERROR");
+
 		if (VALIDATE_RESULT_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.FUNCTIONAL_STATUS_OBSERVATION2);
 			try {
-				VALIDATE_RESULT_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_RESULT_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_RESULT_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_RESULT_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_RESULT_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(functionalStatusObservation2)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(VALIDATE_RESULT_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+			functionalStatusObservation2)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.FUNCTIONAL_STATUS_OBSERVATION2__RESULT_OBSERVATION_CODE,
-						 ConsolPlugin.INSTANCE.getString("FunctionalStatusObservation2ResultObservationCode"),
-						 new Object [] { functionalStatusObservation2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.FUNCTIONAL_STATUS_OBSERVATION2__RESULT_OBSERVATION_CODE,
+						ConsolPlugin.INSTANCE.getString("FunctionalStatusObservation2ResultObservationCode"),
+						new Object[] { functionalStatusObservation2 }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -625,7 +567,7 @@ public class FunctionalStatusObservation2Operations extends FunctionalStatusResu
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_RESULT_OBSERVATION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_RESULT_OBSERVATION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -640,44 +582,32 @@ public class FunctionalStatusObservation2Operations extends FunctionalStatusResu
 
 	public static boolean validateResultObservationText(FunctionalStatusObservation2 functionalStatusObservation2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"FunctionalStatusObservation2ResultObservationText","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "FunctionalStatusObservation2ResultObservationText", "ERROR");
+
 		if (VALIDATE_RESULT_OBSERVATION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.FUNCTIONAL_STATUS_OBSERVATION2);
 			try {
-				VALIDATE_RESULT_OBSERVATION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_RESULT_OBSERVATION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_RESULT_OBSERVATION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_RESULT_OBSERVATION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_RESULT_OBSERVATION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(functionalStatusObservation2)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(VALIDATE_RESULT_OBSERVATION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+			functionalStatusObservation2)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.FUNCTIONAL_STATUS_OBSERVATION2__RESULT_OBSERVATION_TEXT,
-						 ConsolPlugin.INSTANCE.getString("FunctionalStatusObservation2ResultObservationText"),
-						 new Object [] { functionalStatusObservation2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.FUNCTIONAL_STATUS_OBSERVATION2__RESULT_OBSERVATION_TEXT,
+						ConsolPlugin.INSTANCE.getString("FunctionalStatusObservation2ResultObservationText"),
+						new Object[] { functionalStatusObservation2 }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -702,7 +632,7 @@ public class FunctionalStatusObservation2Operations extends FunctionalStatusResu
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_RESULT_OBSERVATION_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_RESULT_OBSERVATION_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -718,44 +648,35 @@ public class FunctionalStatusObservation2Operations extends FunctionalStatusResu
 	public static boolean validateResultObservationInterpretationCode(
 			FunctionalStatusObservation2 functionalStatusObservation2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"FunctionalStatusObservation2ResultObservationInterpretationCode","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "FunctionalStatusObservation2ResultObservationInterpretationCode", "ERROR");
+
 		if (VALIDATE_RESULT_OBSERVATION_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.FUNCTIONAL_STATUS_OBSERVATION2);
 			try {
-				VALIDATE_RESULT_OBSERVATION_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_RESULT_OBSERVATION_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_RESULT_OBSERVATION_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_RESULT_OBSERVATION_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_RESULT_OBSERVATION_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(functionalStatusObservation2)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_RESULT_OBSERVATION_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				functionalStatusObservation2)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.FUNCTIONAL_STATUS_OBSERVATION2__RESULT_OBSERVATION_INTERPRETATION_CODE,
-						 ConsolPlugin.INSTANCE.getString("FunctionalStatusObservation2ResultObservationInterpretationCode"),
-						 new Object [] { functionalStatusObservation2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.FUNCTIONAL_STATUS_OBSERVATION2__RESULT_OBSERVATION_INTERPRETATION_CODE,
+						ConsolPlugin.INSTANCE.getString(
+							"FunctionalStatusObservation2ResultObservationInterpretationCode"),
+						new Object[] { functionalStatusObservation2 }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -780,7 +701,7 @@ public class FunctionalStatusObservation2Operations extends FunctionalStatusResu
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_RESULT_OBSERVATION_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_RESULT_OBSERVATION_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -795,44 +716,33 @@ public class FunctionalStatusObservation2Operations extends FunctionalStatusResu
 
 	public static boolean validateResultObservationMethodCode(FunctionalStatusObservation2 functionalStatusObservation2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"FunctionalStatusObservation2ResultObservationMethodCode","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "FunctionalStatusObservation2ResultObservationMethodCode", "ERROR");
+
 		if (VALIDATE_RESULT_OBSERVATION_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.FUNCTIONAL_STATUS_OBSERVATION2);
 			try {
-				VALIDATE_RESULT_OBSERVATION_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_RESULT_OBSERVATION_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_RESULT_OBSERVATION_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_RESULT_OBSERVATION_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_RESULT_OBSERVATION_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(functionalStatusObservation2)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_RESULT_OBSERVATION_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				functionalStatusObservation2)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.FUNCTIONAL_STATUS_OBSERVATION2__RESULT_OBSERVATION_METHOD_CODE,
-						 ConsolPlugin.INSTANCE.getString("FunctionalStatusObservation2ResultObservationMethodCode"),
-						 new Object [] { functionalStatusObservation2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.FUNCTIONAL_STATUS_OBSERVATION2__RESULT_OBSERVATION_METHOD_CODE,
+						ConsolPlugin.INSTANCE.getString("FunctionalStatusObservation2ResultObservationMethodCode"),
+						new Object[] { functionalStatusObservation2 }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -857,7 +767,7 @@ public class FunctionalStatusObservation2Operations extends FunctionalStatusResu
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_RESULT_OBSERVATION_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_RESULT_OBSERVATION_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -873,44 +783,34 @@ public class FunctionalStatusObservation2Operations extends FunctionalStatusResu
 	public static boolean validateResultObservationTargetSiteCode(
 			FunctionalStatusObservation2 functionalStatusObservation2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"FunctionalStatusObservation2ResultObservationTargetSiteCode","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "FunctionalStatusObservation2ResultObservationTargetSiteCode", "ERROR");
+
 		if (VALIDATE_RESULT_OBSERVATION_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.FUNCTIONAL_STATUS_OBSERVATION2);
 			try {
-				VALIDATE_RESULT_OBSERVATION_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_RESULT_OBSERVATION_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_RESULT_OBSERVATION_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_RESULT_OBSERVATION_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_RESULT_OBSERVATION_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(functionalStatusObservation2)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_RESULT_OBSERVATION_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				functionalStatusObservation2)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.FUNCTIONAL_STATUS_OBSERVATION2__RESULT_OBSERVATION_TARGET_SITE_CODE,
-						 ConsolPlugin.INSTANCE.getString("FunctionalStatusObservation2ResultObservationTargetSiteCode"),
-						 new Object [] { functionalStatusObservation2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.FUNCTIONAL_STATUS_OBSERVATION2__RESULT_OBSERVATION_TARGET_SITE_CODE,
+						ConsolPlugin.INSTANCE.getString("FunctionalStatusObservation2ResultObservationTargetSiteCode"),
+						new Object[] { functionalStatusObservation2 }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -935,7 +835,7 @@ public class FunctionalStatusObservation2Operations extends FunctionalStatusResu
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_FUNCTIONAL_STATUS_RESULT_OBSERVATION_REFERENCE_RANGE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_FUNCTIONAL_STATUS_RESULT_OBSERVATION_REFERENCE_RANGE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -951,44 +851,36 @@ public class FunctionalStatusObservation2Operations extends FunctionalStatusResu
 	public static boolean validateFunctionalStatusResultObservationReferenceRange(
 			FunctionalStatusObservation2 functionalStatusObservation2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"FunctionalStatusObservation2FunctionalStatusResultObservationReferenceRange","INFO");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(
+			context, "FunctionalStatusObservation2FunctionalStatusResultObservationReferenceRange", "INFO");
+
 		if (VALIDATE_FUNCTIONAL_STATUS_RESULT_OBSERVATION_REFERENCE_RANGE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.FUNCTIONAL_STATUS_OBSERVATION2);
 			try {
-				VALIDATE_FUNCTIONAL_STATUS_RESULT_OBSERVATION_REFERENCE_RANGE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_FUNCTIONAL_STATUS_RESULT_OBSERVATION_REFERENCE_RANGE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_FUNCTIONAL_STATUS_RESULT_OBSERVATION_REFERENCE_RANGE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_FUNCTIONAL_STATUS_RESULT_OBSERVATION_REFERENCE_RANGE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_FUNCTIONAL_STATUS_RESULT_OBSERVATION_REFERENCE_RANGE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(functionalStatusObservation2)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_FUNCTIONAL_STATUS_RESULT_OBSERVATION_REFERENCE_RANGE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				functionalStatusObservation2)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.FUNCTIONAL_STATUS_OBSERVATION2__FUNCTIONAL_STATUS_RESULT_OBSERVATION_REFERENCE_RANGE,
-						 ConsolPlugin.INSTANCE.getString("FunctionalStatusObservation2FunctionalStatusResultObservationReferenceRange"),
-						 new Object [] { functionalStatusObservation2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.FUNCTIONAL_STATUS_OBSERVATION2__FUNCTIONAL_STATUS_RESULT_OBSERVATION_REFERENCE_RANGE,
+						ConsolPlugin.INSTANCE.getString(
+							"FunctionalStatusObservation2FunctionalStatusResultObservationReferenceRange"),
+						new Object[] { functionalStatusObservation2 }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -1013,7 +905,7 @@ public class FunctionalStatusObservation2Operations extends FunctionalStatusResu
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_FUNCTIONAL_STATUS_RESULT_OBSERVATION_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_FUNCTIONAL_STATUS_RESULT_OBSERVATION_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1029,44 +921,36 @@ public class FunctionalStatusObservation2Operations extends FunctionalStatusResu
 	public static boolean validateFunctionalStatusResultObservationAuthor(
 			FunctionalStatusObservation2 functionalStatusObservation2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"FunctionalStatusObservation2FunctionalStatusResultObservationAuthor","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(
+			context, "FunctionalStatusObservation2FunctionalStatusResultObservationAuthor", "ERROR");
+
 		if (VALIDATE_FUNCTIONAL_STATUS_RESULT_OBSERVATION_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.FUNCTIONAL_STATUS_OBSERVATION2);
 			try {
-				VALIDATE_FUNCTIONAL_STATUS_RESULT_OBSERVATION_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_FUNCTIONAL_STATUS_RESULT_OBSERVATION_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_FUNCTIONAL_STATUS_RESULT_OBSERVATION_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_FUNCTIONAL_STATUS_RESULT_OBSERVATION_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_FUNCTIONAL_STATUS_RESULT_OBSERVATION_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(functionalStatusObservation2)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_FUNCTIONAL_STATUS_RESULT_OBSERVATION_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				functionalStatusObservation2)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.FUNCTIONAL_STATUS_OBSERVATION2__FUNCTIONAL_STATUS_RESULT_OBSERVATION_AUTHOR,
-						 ConsolPlugin.INSTANCE.getString("FunctionalStatusObservation2FunctionalStatusResultObservationAuthor"),
-						 new Object [] { functionalStatusObservation2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.FUNCTIONAL_STATUS_OBSERVATION2__FUNCTIONAL_STATUS_RESULT_OBSERVATION_AUTHOR,
+						ConsolPlugin.INSTANCE.getString(
+							"FunctionalStatusObservation2FunctionalStatusResultObservationAuthor"),
+						new Object[] { functionalStatusObservation2 }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -1091,7 +975,7 @@ public class FunctionalStatusObservation2Operations extends FunctionalStatusResu
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_FUNCTIONAL_STATUS_RESULT_OBSERVATION_NON_MEDICINAL_SUPPLY_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_FUNCTIONAL_STATUS_RESULT_OBSERVATION_NON_MEDICINAL_SUPPLY_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1107,44 +991,36 @@ public class FunctionalStatusObservation2Operations extends FunctionalStatusResu
 	public static boolean validateFunctionalStatusResultObservationNonMedicinalSupplyActivity(
 			FunctionalStatusObservation2 functionalStatusObservation2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"FunctionalStatusObservation2FunctionalStatusResultObservationNonMedicinalSupplyActivity","INFO");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(
+			context, "FunctionalStatusObservation2FunctionalStatusResultObservationNonMedicinalSupplyActivity", "INFO");
+
 		if (VALIDATE_FUNCTIONAL_STATUS_RESULT_OBSERVATION_NON_MEDICINAL_SUPPLY_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.FUNCTIONAL_STATUS_OBSERVATION2);
 			try {
-				VALIDATE_FUNCTIONAL_STATUS_RESULT_OBSERVATION_NON_MEDICINAL_SUPPLY_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_FUNCTIONAL_STATUS_RESULT_OBSERVATION_NON_MEDICINAL_SUPPLY_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_FUNCTIONAL_STATUS_RESULT_OBSERVATION_NON_MEDICINAL_SUPPLY_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_FUNCTIONAL_STATUS_RESULT_OBSERVATION_NON_MEDICINAL_SUPPLY_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_FUNCTIONAL_STATUS_RESULT_OBSERVATION_NON_MEDICINAL_SUPPLY_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(functionalStatusObservation2)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_FUNCTIONAL_STATUS_RESULT_OBSERVATION_NON_MEDICINAL_SUPPLY_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				functionalStatusObservation2)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.FUNCTIONAL_STATUS_OBSERVATION2__FUNCTIONAL_STATUS_RESULT_OBSERVATION_NON_MEDICINAL_SUPPLY_ACTIVITY,
-						 ConsolPlugin.INSTANCE.getString("FunctionalStatusObservation2FunctionalStatusResultObservationNonMedicinalSupplyActivity"),
-						 new Object [] { functionalStatusObservation2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.FUNCTIONAL_STATUS_OBSERVATION2__FUNCTIONAL_STATUS_RESULT_OBSERVATION_NON_MEDICINAL_SUPPLY_ACTIVITY,
+						ConsolPlugin.INSTANCE.getString(
+							"FunctionalStatusObservation2FunctionalStatusResultObservationNonMedicinalSupplyActivity"),
+						new Object[] { functionalStatusObservation2 }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -1169,7 +1045,7 @@ public class FunctionalStatusObservation2Operations extends FunctionalStatusResu
 	 * @ordered
 	 */
 
-	protected static ThreadLocal< Query<?, ?, ?> > VALIDATE_FUNCTIONAL_STATUS_RESULT_OBSERVATION_REFERENCE_RANGE_OBSERVATION_RANGE_NO_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal< Query<?, ?, ?> >();
+	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_FUNCTIONAL_STATUS_RESULT_OBSERVATION_REFERENCE_RANGE_OBSERVATION_RANGE_NO_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1185,49 +1061,42 @@ public class FunctionalStatusObservation2Operations extends FunctionalStatusResu
 	public static boolean validateFunctionalStatusResultObservationReferenceRangeObservationRangeNoCode(
 			FunctionalStatusObservation2 functionalStatusObservation2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"FunctionalStatusObservation2FunctionalStatusResultObservationReferenceRangeObservationRangeNoCode","INFO");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(
+			context,
+			"FunctionalStatusObservation2FunctionalStatusResultObservationReferenceRangeObservationRangeNoCode",
+			"INFO");
+
 		if (VALIDATE_FUNCTIONAL_STATUS_RESULT_OBSERVATION_REFERENCE_RANGE_OBSERVATION_RANGE_NO_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.FUNCTIONAL_STATUS_OBSERVATION2);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_FUNCTIONAL_STATUS_RESULT_OBSERVATION_REFERENCE_RANGE_OBSERVATION_RANGE_NO_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_FUNCTIONAL_STATUS_RESULT_OBSERVATION_REFERENCE_RANGE_OBSERVATION_RANGE_NO_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(EOCL_ENV.get().createQuery(oclExpression));
-			}
-			catch (ParserException pe) {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_FUNCTIONAL_STATUS_RESULT_OBSERVATION_REFERENCE_RANGE_OBSERVATION_RANGE_NO_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_FUNCTIONAL_STATUS_RESULT_OBSERVATION_REFERENCE_RANGE_OBSERVATION_RANGE_NO_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(
+					EOCL_ENV.get().createQuery(oclExpression));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		Object oclResult = VALIDATE_FUNCTIONAL_STATUS_RESULT_OBSERVATION_REFERENCE_RANGE_OBSERVATION_RANGE_NO_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(functionalStatusObservation2);		
+		}
+
+		Object oclResult = VALIDATE_FUNCTIONAL_STATUS_RESULT_OBSERVATION_REFERENCE_RANGE_OBSERVATION_RANGE_NO_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(
+			functionalStatusObservation2);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-  			
+
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.FUNCTIONAL_STATUS_OBSERVATION2__FUNCTIONAL_STATUS_RESULT_OBSERVATION_REFERENCE_RANGE_OBSERVATION_RANGE_NO_CODE,
-						 ConsolPlugin.INSTANCE.getString("FunctionalStatusObservation2FunctionalStatusResultObservationReferenceRangeObservationRangeNoCode"),
-						 new Object [] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.FUNCTIONAL_STATUS_OBSERVATION2__FUNCTIONAL_STATUS_RESULT_OBSERVATION_REFERENCE_RANGE_OBSERVATION_RANGE_NO_CODE,
+							ConsolPlugin.INSTANCE.getString(
+								"FunctionalStatusObservation2FunctionalStatusResultObservationReferenceRangeObservationRangeNoCode"),
+							new Object[] { eObject }));
 				}
-				 
+
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -1253,7 +1122,7 @@ public class FunctionalStatusObservation2Operations extends FunctionalStatusResu
 	 * @ordered
 	 */
 
-	protected static ThreadLocal< Query<?, ?, ?> > VALIDATE_FUNCTIONAL_STATUS_RESULT_OBSERVATION_REFERENCE_RANGE_OBSERVATION_RANGE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal< Query<?, ?, ?> >();
+	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_FUNCTIONAL_STATUS_RESULT_OBSERVATION_REFERENCE_RANGE_OBSERVATION_RANGE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1269,49 +1138,41 @@ public class FunctionalStatusObservation2Operations extends FunctionalStatusResu
 	public static boolean validateFunctionalStatusResultObservationReferenceRangeObservationRange(
 			FunctionalStatusObservation2 functionalStatusObservation2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"FunctionalStatusObservation2FunctionalStatusResultObservationReferenceRangeObservationRange","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(
+			context, "FunctionalStatusObservation2FunctionalStatusResultObservationReferenceRangeObservationRange",
+			"ERROR");
+
 		if (VALIDATE_FUNCTIONAL_STATUS_RESULT_OBSERVATION_REFERENCE_RANGE_OBSERVATION_RANGE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.FUNCTIONAL_STATUS_OBSERVATION2);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_FUNCTIONAL_STATUS_RESULT_OBSERVATION_REFERENCE_RANGE_OBSERVATION_RANGE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_FUNCTIONAL_STATUS_RESULT_OBSERVATION_REFERENCE_RANGE_OBSERVATION_RANGE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(EOCL_ENV.get().createQuery(oclExpression));
-			}
-			catch (ParserException pe) {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_FUNCTIONAL_STATUS_RESULT_OBSERVATION_REFERENCE_RANGE_OBSERVATION_RANGE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_FUNCTIONAL_STATUS_RESULT_OBSERVATION_REFERENCE_RANGE_OBSERVATION_RANGE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(
+					EOCL_ENV.get().createQuery(oclExpression));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		Object oclResult = VALIDATE_FUNCTIONAL_STATUS_RESULT_OBSERVATION_REFERENCE_RANGE_OBSERVATION_RANGE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(functionalStatusObservation2);		
+		}
+
+		Object oclResult = VALIDATE_FUNCTIONAL_STATUS_RESULT_OBSERVATION_REFERENCE_RANGE_OBSERVATION_RANGE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(
+			functionalStatusObservation2);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-  			
+
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.FUNCTIONAL_STATUS_OBSERVATION2__FUNCTIONAL_STATUS_RESULT_OBSERVATION_REFERENCE_RANGE_OBSERVATION_RANGE,
-						 ConsolPlugin.INSTANCE.getString("FunctionalStatusObservation2FunctionalStatusResultObservationReferenceRangeObservationRange"),
-						 new Object [] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.FUNCTIONAL_STATUS_OBSERVATION2__FUNCTIONAL_STATUS_RESULT_OBSERVATION_REFERENCE_RANGE_OBSERVATION_RANGE,
+							ConsolPlugin.INSTANCE.getString(
+								"FunctionalStatusObservation2FunctionalStatusResultObservationReferenceRangeObservationRange"),
+							new Object[] { eObject }));
 				}
-				 
+
 			}
 			return oclResultSet.isEmpty();
 		}

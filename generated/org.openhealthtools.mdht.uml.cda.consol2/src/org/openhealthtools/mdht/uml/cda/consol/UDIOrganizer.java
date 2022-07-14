@@ -400,10 +400,10 @@ public interface UDIOrganizer extends Organizer {
 	public UDIOrganizer init();
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public UDIOrganizer init(Iterable<? extends Initializer<? extends EObject>> initializers);
 
 } // UDIOrganizer

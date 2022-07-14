@@ -58,7 +58,8 @@ public class MedicationsAdministeredSectionImpl extends SectionImpl implements M
 	 */
 	public boolean validateMedicationsAdministeredSectionTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationsAdministeredSectionOperations.validateMedicationsAdministeredSectionTemplateId(this, diagnostics, context);
+		return MedicationsAdministeredSectionOperations.validateMedicationsAdministeredSectionTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -68,7 +69,8 @@ public class MedicationsAdministeredSectionImpl extends SectionImpl implements M
 	 */
 	public boolean validateMedicationsAdministeredSectionCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationsAdministeredSectionOperations.validateMedicationsAdministeredSectionCode(this, diagnostics, context);
+		return MedicationsAdministeredSectionOperations.validateMedicationsAdministeredSectionCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -78,7 +80,8 @@ public class MedicationsAdministeredSectionImpl extends SectionImpl implements M
 	 */
 	public boolean validateMedicationsAdministeredSectionCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationsAdministeredSectionOperations.validateMedicationsAdministeredSectionCodeP(this, diagnostics, context);
+		return MedicationsAdministeredSectionOperations.validateMedicationsAdministeredSectionCodeP(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -88,7 +91,8 @@ public class MedicationsAdministeredSectionImpl extends SectionImpl implements M
 	 */
 	public boolean validateMedicationsAdministeredSectionTitle(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationsAdministeredSectionOperations.validateMedicationsAdministeredSectionTitle(this, diagnostics, context);
+		return MedicationsAdministeredSectionOperations.validateMedicationsAdministeredSectionTitle(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -98,7 +102,8 @@ public class MedicationsAdministeredSectionImpl extends SectionImpl implements M
 	 */
 	public boolean validateMedicationsAdministeredSectionText(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationsAdministeredSectionOperations.validateMedicationsAdministeredSectionText(this, diagnostics, context);
+		return MedicationsAdministeredSectionOperations.validateMedicationsAdministeredSectionText(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -108,7 +113,8 @@ public class MedicationsAdministeredSectionImpl extends SectionImpl implements M
 	 */
 	public boolean validateMedicationsAdministeredSectionMedicationActivity(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationsAdministeredSectionOperations.validateMedicationsAdministeredSectionMedicationActivity(this, diagnostics, context);
+		return MedicationsAdministeredSectionOperations.validateMedicationsAdministeredSectionMedicationActivity(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -126,16 +132,16 @@ public class MedicationsAdministeredSectionImpl extends SectionImpl implements M
 	 * @generated
 	 */
 	public MedicationsAdministeredSection init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public MedicationsAdministeredSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // MedicationsAdministeredSectionImpl

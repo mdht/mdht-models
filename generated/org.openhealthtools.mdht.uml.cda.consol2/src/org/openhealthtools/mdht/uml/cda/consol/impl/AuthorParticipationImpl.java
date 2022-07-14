@@ -79,7 +79,8 @@ public class AuthorParticipationImpl extends AuthorImpl implements AuthorPartici
 	 */
 	public boolean validateAuthorParticipationAssignedAuthorAssignedPersonName(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AuthorParticipationOperations.validateAuthorParticipationAssignedAuthorAssignedPersonName(this, diagnostics, context);
+		return AuthorParticipationOperations.validateAuthorParticipationAssignedAuthorAssignedPersonName(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -89,7 +90,8 @@ public class AuthorParticipationImpl extends AuthorImpl implements AuthorPartici
 	 */
 	public boolean validateAuthorParticipationAssignedAuthorRepresentedOrganizationId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AuthorParticipationOperations.validateAuthorParticipationAssignedAuthorRepresentedOrganizationId(this, diagnostics, context);
+		return AuthorParticipationOperations.validateAuthorParticipationAssignedAuthorRepresentedOrganizationId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -99,7 +101,8 @@ public class AuthorParticipationImpl extends AuthorImpl implements AuthorPartici
 	 */
 	public boolean validateAuthorParticipationAssignedAuthorRepresentedOrganizationName(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AuthorParticipationOperations.validateAuthorParticipationAssignedAuthorRepresentedOrganizationName(this, diagnostics, context);
+		return AuthorParticipationOperations.validateAuthorParticipationAssignedAuthorRepresentedOrganizationName(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -109,7 +112,8 @@ public class AuthorParticipationImpl extends AuthorImpl implements AuthorPartici
 	 */
 	public boolean validateAuthorParticipationAssignedAuthorRepresentedOrganizationTelecom(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AuthorParticipationOperations.validateAuthorParticipationAssignedAuthorRepresentedOrganizationTelecom(this, diagnostics, context);
+		return AuthorParticipationOperations.validateAuthorParticipationAssignedAuthorRepresentedOrganizationTelecom(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -119,7 +123,8 @@ public class AuthorParticipationImpl extends AuthorImpl implements AuthorPartici
 	 */
 	public boolean validateAuthorParticipationAssignedAuthorRepresentedOrganizationAddr(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AuthorParticipationOperations.validateAuthorParticipationAssignedAuthorRepresentedOrganizationAddr(this, diagnostics, context);
+		return AuthorParticipationOperations.validateAuthorParticipationAssignedAuthorRepresentedOrganizationAddr(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -129,7 +134,8 @@ public class AuthorParticipationImpl extends AuthorImpl implements AuthorPartici
 	 */
 	public boolean validateAuthorParticipationAssignedAuthorCodeTerminology(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AuthorParticipationOperations.validateAuthorParticipationAssignedAuthorCodeTerminology(this, diagnostics, context);
+		return AuthorParticipationOperations.validateAuthorParticipationAssignedAuthorCodeTerminology(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -159,7 +165,8 @@ public class AuthorParticipationImpl extends AuthorImpl implements AuthorPartici
 	 */
 	public boolean validateAuthorParticipationAssignedAuthorAssignedPerson(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AuthorParticipationOperations.validateAuthorParticipationAssignedAuthorAssignedPerson(this, diagnostics, context);
+		return AuthorParticipationOperations.validateAuthorParticipationAssignedAuthorAssignedPerson(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -169,7 +176,8 @@ public class AuthorParticipationImpl extends AuthorImpl implements AuthorPartici
 	 */
 	public boolean validateAuthorParticipationAssignedAuthorRepresentedOrganization(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AuthorParticipationOperations.validateAuthorParticipationAssignedAuthorRepresentedOrganization(this, diagnostics, context);
+		return AuthorParticipationOperations.validateAuthorParticipationAssignedAuthorRepresentedOrganization(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -178,16 +186,16 @@ public class AuthorParticipationImpl extends AuthorImpl implements AuthorPartici
 	 * @generated
 	 */
 	public AuthorParticipation init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public AuthorParticipation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // AuthorParticipationImpl

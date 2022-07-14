@@ -292,9 +292,9 @@ public interface AdvanceDirectiveObservation2 extends AdvanceDirectiveObservatio
 	public AdvanceDirectiveObservation2 init();
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public AdvanceDirectiveObservation2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // AdvanceDirectiveObservation2

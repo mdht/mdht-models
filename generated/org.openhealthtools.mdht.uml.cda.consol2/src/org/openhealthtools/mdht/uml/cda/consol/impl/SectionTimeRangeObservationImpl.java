@@ -52,7 +52,8 @@ public class SectionTimeRangeObservationImpl extends ObservationImpl implements 
 	 */
 	public boolean validateSectionTimeRangeObservationTextReferenceValue(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return SectionTimeRangeObservationOperations.validateSectionTimeRangeObservationTextReferenceValue(this, diagnostics, context);
+		return SectionTimeRangeObservationOperations.validateSectionTimeRangeObservationTextReferenceValue(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -62,7 +63,8 @@ public class SectionTimeRangeObservationImpl extends ObservationImpl implements 
 	 */
 	public boolean validateSectionTimeRangeObservationTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return SectionTimeRangeObservationOperations.validateSectionTimeRangeObservationTemplateId(this, diagnostics, context);
+		return SectionTimeRangeObservationOperations.validateSectionTimeRangeObservationTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -80,7 +82,8 @@ public class SectionTimeRangeObservationImpl extends ObservationImpl implements 
 	 * @generated
 	 */
 	public boolean validateSectionTimeRangeObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SectionTimeRangeObservationOperations.validateSectionTimeRangeObservationCode(this, diagnostics, context);
+		return SectionTimeRangeObservationOperations.validateSectionTimeRangeObservationCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -89,7 +92,8 @@ public class SectionTimeRangeObservationImpl extends ObservationImpl implements 
 	 * @generated
 	 */
 	public boolean validateSectionTimeRangeObservationText(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SectionTimeRangeObservationOperations.validateSectionTimeRangeObservationText(this, diagnostics, context);
+		return SectionTimeRangeObservationOperations.validateSectionTimeRangeObservationText(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -99,7 +103,8 @@ public class SectionTimeRangeObservationImpl extends ObservationImpl implements 
 	 */
 	public boolean validateSectionTimeRangeObservationStatusCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return SectionTimeRangeObservationOperations.validateSectionTimeRangeObservationStatusCode(this, diagnostics, context);
+		return SectionTimeRangeObservationOperations.validateSectionTimeRangeObservationStatusCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -108,7 +113,8 @@ public class SectionTimeRangeObservationImpl extends ObservationImpl implements 
 	 * @generated
 	 */
 	public boolean validateSectionTimeRangeObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SectionTimeRangeObservationOperations.validateSectionTimeRangeObservationValue(this, diagnostics, context);
+		return SectionTimeRangeObservationOperations.validateSectionTimeRangeObservationValue(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -118,7 +124,8 @@ public class SectionTimeRangeObservationImpl extends ObservationImpl implements 
 	 */
 	public boolean validateSectionTimeRangeObservationClassCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return SectionTimeRangeObservationOperations.validateSectionTimeRangeObservationClassCode(this, diagnostics, context);
+		return SectionTimeRangeObservationOperations.validateSectionTimeRangeObservationClassCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -128,7 +135,8 @@ public class SectionTimeRangeObservationImpl extends ObservationImpl implements 
 	 */
 	public boolean validateSectionTimeRangeObservationMoodCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return SectionTimeRangeObservationOperations.validateSectionTimeRangeObservationMoodCode(this, diagnostics, context);
+		return SectionTimeRangeObservationOperations.validateSectionTimeRangeObservationMoodCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -138,7 +146,8 @@ public class SectionTimeRangeObservationImpl extends ObservationImpl implements 
 	 */
 	public boolean validateSectionTimeRangeObservationIVLTSLow(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return SectionTimeRangeObservationOperations.validateSectionTimeRangeObservationIVLTSLow(this, diagnostics, context);
+		return SectionTimeRangeObservationOperations.validateSectionTimeRangeObservationIVLTSLow(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -148,7 +157,8 @@ public class SectionTimeRangeObservationImpl extends ObservationImpl implements 
 	 */
 	public boolean validateSectionTimeRangeObservationIVLTSHigh(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return SectionTimeRangeObservationOperations.validateSectionTimeRangeObservationIVLTSHigh(this, diagnostics, context);
+		return SectionTimeRangeObservationOperations.validateSectionTimeRangeObservationIVLTSHigh(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -157,16 +167,16 @@ public class SectionTimeRangeObservationImpl extends ObservationImpl implements 
 	 * @generated
 	 */
 	public SectionTimeRangeObservation init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public SectionTimeRangeObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // SectionTimeRangeObservationImpl

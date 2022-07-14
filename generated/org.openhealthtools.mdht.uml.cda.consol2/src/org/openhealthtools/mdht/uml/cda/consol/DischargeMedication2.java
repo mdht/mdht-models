@@ -112,9 +112,9 @@ public interface DischargeMedication2 extends DischargeMedication {
 	public DischargeMedication2 init();
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public DischargeMedication2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // DischargeMedication2

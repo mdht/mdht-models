@@ -761,9 +761,9 @@ public interface HistoryAndPhysicalNote extends GeneralHeaderConstraints {
 	public HistoryAndPhysicalNote init();
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public HistoryAndPhysicalNote init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // HistoryAndPhysicalNote

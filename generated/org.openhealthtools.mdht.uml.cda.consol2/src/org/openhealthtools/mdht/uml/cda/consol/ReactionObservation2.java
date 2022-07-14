@@ -105,9 +105,9 @@ public interface ReactionObservation2 extends ReactionObservation {
 	public ReactionObservation2 init();
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public ReactionObservation2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ReactionObservation2

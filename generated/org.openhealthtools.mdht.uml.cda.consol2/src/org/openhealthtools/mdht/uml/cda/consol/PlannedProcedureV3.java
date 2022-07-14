@@ -163,9 +163,9 @@ public interface PlannedProcedureV3 extends Procedure {
 	public PlannedProcedureV3 init();
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public PlannedProcedureV3 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // PlannedProcedureV3

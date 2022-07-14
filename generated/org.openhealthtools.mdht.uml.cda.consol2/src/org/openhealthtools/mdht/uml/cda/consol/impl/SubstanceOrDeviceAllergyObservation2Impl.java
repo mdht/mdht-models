@@ -57,7 +57,8 @@ public class SubstanceOrDeviceAllergyObservation2Impl extends SubstanceOrDeviceA
 	 */
 	public boolean validateSubstanceOrDeviceAllergyObservation2CriticalityInversionIndicator(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SubstanceOrDeviceAllergyObservation2Operations.validateSubstanceOrDeviceAllergyObservation2CriticalityInversionIndicator(this, diagnostics, context);
+		return SubstanceOrDeviceAllergyObservation2Operations.validateSubstanceOrDeviceAllergyObservation2CriticalityInversionIndicator(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -67,7 +68,8 @@ public class SubstanceOrDeviceAllergyObservation2Impl extends SubstanceOrDeviceA
 	 */
 	public boolean validateSubstanceOrDeviceAllergyObservation2TemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return SubstanceOrDeviceAllergyObservation2Operations.validateSubstanceOrDeviceAllergyObservation2TemplateId(this, diagnostics, context);
+		return SubstanceOrDeviceAllergyObservation2Operations.validateSubstanceOrDeviceAllergyObservation2TemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -77,7 +79,8 @@ public class SubstanceOrDeviceAllergyObservation2Impl extends SubstanceOrDeviceA
 	 */
 	public boolean validateSubstanceOrDeviceAllergyObservation2AuthorParticipation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return SubstanceOrDeviceAllergyObservation2Operations.validateSubstanceOrDeviceAllergyObservation2AuthorParticipation(this, diagnostics, context);
+		return SubstanceOrDeviceAllergyObservation2Operations.validateSubstanceOrDeviceAllergyObservation2AuthorParticipation(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -87,7 +90,8 @@ public class SubstanceOrDeviceAllergyObservation2Impl extends SubstanceOrDeviceA
 	 */
 	public boolean validateSubstanceOrDeviceAllergyObservation2CriticalityObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return SubstanceOrDeviceAllergyObservation2Operations.validateSubstanceOrDeviceAllergyObservation2CriticalityObservation(this, diagnostics, context);
+		return SubstanceOrDeviceAllergyObservation2Operations.validateSubstanceOrDeviceAllergyObservation2CriticalityObservation(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -97,7 +101,8 @@ public class SubstanceOrDeviceAllergyObservation2Impl extends SubstanceOrDeviceA
 	 */
 	public boolean validateSubstanceOrDeviceAllergyObservation2IVLTSLow(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return SubstanceOrDeviceAllergyObservation2Operations.validateSubstanceOrDeviceAllergyObservation2IVLTSLow(this, diagnostics, context);
+		return SubstanceOrDeviceAllergyObservation2Operations.validateSubstanceOrDeviceAllergyObservation2IVLTSLow(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -107,7 +112,8 @@ public class SubstanceOrDeviceAllergyObservation2Impl extends SubstanceOrDeviceA
 	 */
 	public boolean validateSubstanceOrDeviceAllergyObservation2IVLTSHigh(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return SubstanceOrDeviceAllergyObservation2Operations.validateSubstanceOrDeviceAllergyObservation2IVLTSHigh(this, diagnostics, context);
+		return SubstanceOrDeviceAllergyObservation2Operations.validateSubstanceOrDeviceAllergyObservation2IVLTSHigh(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -117,7 +123,8 @@ public class SubstanceOrDeviceAllergyObservation2Impl extends SubstanceOrDeviceA
 	 */
 	public boolean validateSubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntityAllergySpecificMedication(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SubstanceOrDeviceAllergyObservation2Operations.validateSubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntityAllergySpecificMedication(this, diagnostics, context);
+		return SubstanceOrDeviceAllergyObservation2Operations.validateSubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntityAllergySpecificMedication(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -127,7 +134,8 @@ public class SubstanceOrDeviceAllergyObservation2Impl extends SubstanceOrDeviceA
 	 */
 	public boolean validateSubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntityAllergyClassMedication(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SubstanceOrDeviceAllergyObservation2Operations.validateSubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntityAllergyClassMedication(this, diagnostics, context);
+		return SubstanceOrDeviceAllergyObservation2Operations.validateSubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntityAllergyClassMedication(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -137,7 +145,8 @@ public class SubstanceOrDeviceAllergyObservation2Impl extends SubstanceOrDeviceA
 	 */
 	public boolean validateSubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntityAllergyFoodOtherSubstance(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SubstanceOrDeviceAllergyObservation2Operations.validateSubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntityAllergyFoodOtherSubstance(this, diagnostics, context);
+		return SubstanceOrDeviceAllergyObservation2Operations.validateSubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntityAllergyFoodOtherSubstance(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -184,7 +193,8 @@ public class SubstanceOrDeviceAllergyObservation2Impl extends SubstanceOrDeviceA
 	@Override
 	public boolean validateSubstanceOrDeviceAllergyObservationReactionInversionIndicator(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return SubstanceOrDeviceAllergyObservation2Operations.validateSubstanceOrDeviceAllergyObservationReactionInversionIndicator(this, diagnostics, context);
+		return SubstanceOrDeviceAllergyObservation2Operations.validateSubstanceOrDeviceAllergyObservationReactionInversionIndicator(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -195,7 +205,8 @@ public class SubstanceOrDeviceAllergyObservation2Impl extends SubstanceOrDeviceA
 	@Override
 	public boolean validateSubstanceOrDeviceAllergyObservationSeverityInversionIndicator(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return SubstanceOrDeviceAllergyObservation2Operations.validateSubstanceOrDeviceAllergyObservationSeverityInversionIndicator(this, diagnostics, context);
+		return SubstanceOrDeviceAllergyObservation2Operations.validateSubstanceOrDeviceAllergyObservationSeverityInversionIndicator(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -206,7 +217,8 @@ public class SubstanceOrDeviceAllergyObservation2Impl extends SubstanceOrDeviceA
 	@Override
 	public boolean validateSubstanceOrDeviceAllergyObservationAllergyStatusInversionIndicator(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SubstanceOrDeviceAllergyObservation2Operations.validateSubstanceOrDeviceAllergyObservationAllergyStatusInversionIndicator(this, diagnostics, context);
+		return SubstanceOrDeviceAllergyObservation2Operations.validateSubstanceOrDeviceAllergyObservationAllergyStatusInversionIndicator(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -217,7 +229,8 @@ public class SubstanceOrDeviceAllergyObservation2Impl extends SubstanceOrDeviceA
 	@Override
 	public boolean validateSubstanceOrDeviceAllergyObservationEffectiveTime(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return SubstanceOrDeviceAllergyObservation2Operations.validateSubstanceOrDeviceAllergyObservationEffectiveTime(this, diagnostics, context);
+		return SubstanceOrDeviceAllergyObservation2Operations.validateSubstanceOrDeviceAllergyObservationEffectiveTime(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -228,7 +241,8 @@ public class SubstanceOrDeviceAllergyObservation2Impl extends SubstanceOrDeviceA
 	@Override
 	public boolean validateSubstanceOrDeviceAllergyObservationValueP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return SubstanceOrDeviceAllergyObservation2Operations.validateSubstanceOrDeviceAllergyObservationValueP(this, diagnostics, context);
+		return SubstanceOrDeviceAllergyObservation2Operations.validateSubstanceOrDeviceAllergyObservationValueP(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -239,7 +253,8 @@ public class SubstanceOrDeviceAllergyObservation2Impl extends SubstanceOrDeviceA
 	@Override
 	public boolean validateSubstanceOrDeviceAllergyObservationValue(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return SubstanceOrDeviceAllergyObservation2Operations.validateSubstanceOrDeviceAllergyObservationValue(this, diagnostics, context);
+		return SubstanceOrDeviceAllergyObservation2Operations.validateSubstanceOrDeviceAllergyObservationValue(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -250,7 +265,8 @@ public class SubstanceOrDeviceAllergyObservation2Impl extends SubstanceOrDeviceA
 	@Override
 	public boolean validateSubstanceOrDeviceAllergyObservationCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return SubstanceOrDeviceAllergyObservation2Operations.validateSubstanceOrDeviceAllergyObservationCodeP(this, diagnostics, context);
+		return SubstanceOrDeviceAllergyObservation2Operations.validateSubstanceOrDeviceAllergyObservationCodeP(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -261,7 +277,8 @@ public class SubstanceOrDeviceAllergyObservation2Impl extends SubstanceOrDeviceA
 	@Override
 	public boolean validateSubstanceOrDeviceAllergyObservationCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return SubstanceOrDeviceAllergyObservation2Operations.validateSubstanceOrDeviceAllergyObservationCode(this, diagnostics, context);
+		return SubstanceOrDeviceAllergyObservation2Operations.validateSubstanceOrDeviceAllergyObservationCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -272,7 +289,8 @@ public class SubstanceOrDeviceAllergyObservation2Impl extends SubstanceOrDeviceA
 	@Override
 	public boolean validateSubstanceOrDeviceAllergyObservationParticipant(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return SubstanceOrDeviceAllergyObservation2Operations.validateSubstanceOrDeviceAllergyObservationParticipant(this, diagnostics, context);
+		return SubstanceOrDeviceAllergyObservation2Operations.validateSubstanceOrDeviceAllergyObservationParticipant(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -283,7 +301,8 @@ public class SubstanceOrDeviceAllergyObservation2Impl extends SubstanceOrDeviceA
 	@Override
 	public boolean validateSubstanceOrDeviceAllergyObservationReactionObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return SubstanceOrDeviceAllergyObservation2Operations.validateSubstanceOrDeviceAllergyObservationReactionObservation(this, diagnostics, context);
+		return SubstanceOrDeviceAllergyObservation2Operations.validateSubstanceOrDeviceAllergyObservationReactionObservation(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -294,7 +313,8 @@ public class SubstanceOrDeviceAllergyObservation2Impl extends SubstanceOrDeviceA
 	@Override
 	public boolean validateSubstanceOrDeviceAllergyObservationSeverityObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return SubstanceOrDeviceAllergyObservation2Operations.validateSubstanceOrDeviceAllergyObservationSeverityObservation(this, diagnostics, context);
+		return SubstanceOrDeviceAllergyObservation2Operations.validateSubstanceOrDeviceAllergyObservationSeverityObservation(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -305,7 +325,8 @@ public class SubstanceOrDeviceAllergyObservation2Impl extends SubstanceOrDeviceA
 	@Override
 	public boolean validateSubstanceOrDeviceAllergyObservationAllergyStatusObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return SubstanceOrDeviceAllergyObservation2Operations.validateSubstanceOrDeviceAllergyObservationAllergyStatusObservation(this, diagnostics, context);
+		return SubstanceOrDeviceAllergyObservation2Operations.validateSubstanceOrDeviceAllergyObservationAllergyStatusObservation(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -316,7 +337,8 @@ public class SubstanceOrDeviceAllergyObservation2Impl extends SubstanceOrDeviceA
 	@Override
 	public boolean validateSubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntityCEOriginalText(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SubstanceOrDeviceAllergyObservation2Operations.validateSubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntityCEOriginalText(this, diagnostics, context);
+		return SubstanceOrDeviceAllergyObservation2Operations.validateSubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntityCEOriginalText(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -327,7 +349,8 @@ public class SubstanceOrDeviceAllergyObservation2Impl extends SubstanceOrDeviceA
 	@Override
 	public boolean validateSubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntityCETranslation(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SubstanceOrDeviceAllergyObservation2Operations.validateSubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntityCETranslation(this, diagnostics, context);
+		return SubstanceOrDeviceAllergyObservation2Operations.validateSubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntityCETranslation(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -338,7 +361,8 @@ public class SubstanceOrDeviceAllergyObservation2Impl extends SubstanceOrDeviceA
 	@Override
 	public boolean validateSubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntityOriginalTextReference(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SubstanceOrDeviceAllergyObservation2Operations.validateSubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntityOriginalTextReference(this, diagnostics, context);
+		return SubstanceOrDeviceAllergyObservation2Operations.validateSubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntityOriginalTextReference(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -349,7 +373,8 @@ public class SubstanceOrDeviceAllergyObservation2Impl extends SubstanceOrDeviceA
 	@Override
 	public boolean validateSubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntityReferenceValue(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SubstanceOrDeviceAllergyObservation2Operations.validateSubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntityReferenceValue(this, diagnostics, context);
+		return SubstanceOrDeviceAllergyObservation2Operations.validateSubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntityReferenceValue(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -360,7 +385,8 @@ public class SubstanceOrDeviceAllergyObservation2Impl extends SubstanceOrDeviceA
 	@Override
 	public boolean validateSubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntityOriginalTextReferenceValue(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SubstanceOrDeviceAllergyObservation2Operations.validateSubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntityOriginalTextReferenceValue(this, diagnostics, context);
+		return SubstanceOrDeviceAllergyObservation2Operations.validateSubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntityOriginalTextReferenceValue(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -371,7 +397,8 @@ public class SubstanceOrDeviceAllergyObservation2Impl extends SubstanceOrDeviceA
 	@Override
 	public boolean validateSubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntityCode(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SubstanceOrDeviceAllergyObservation2Operations.validateSubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntityCode(this, diagnostics, context);
+		return SubstanceOrDeviceAllergyObservation2Operations.validateSubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntityCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -382,7 +409,8 @@ public class SubstanceOrDeviceAllergyObservation2Impl extends SubstanceOrDeviceA
 	@Override
 	public boolean validateSubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntity(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SubstanceOrDeviceAllergyObservation2Operations.validateSubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntity(this, diagnostics, context);
+		return SubstanceOrDeviceAllergyObservation2Operations.validateSubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntity(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -393,7 +421,8 @@ public class SubstanceOrDeviceAllergyObservation2Impl extends SubstanceOrDeviceA
 	@Override
 	public boolean validateSubstanceOrDeviceAllergyObservationParticipantParticipantRole(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return SubstanceOrDeviceAllergyObservation2Operations.validateSubstanceOrDeviceAllergyObservationParticipantParticipantRole(this, diagnostics, context);
+		return SubstanceOrDeviceAllergyObservation2Operations.validateSubstanceOrDeviceAllergyObservationParticipantParticipantRole(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -403,17 +432,17 @@ public class SubstanceOrDeviceAllergyObservation2Impl extends SubstanceOrDeviceA
 	 */
 	@Override
 	public SubstanceOrDeviceAllergyObservation2 init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public SubstanceOrDeviceAllergyObservation2 init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // SubstanceOrDeviceAllergyObservation2Impl

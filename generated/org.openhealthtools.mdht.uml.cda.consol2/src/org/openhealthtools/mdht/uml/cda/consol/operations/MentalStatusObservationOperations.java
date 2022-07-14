@@ -90,7 +90,7 @@ public class MentalStatusObservationOperations extends ClinicalStatementOperatio
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_MENTAL_STATUS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_MENTAL_STATUS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -105,44 +105,34 @@ public class MentalStatusObservationOperations extends ClinicalStatementOperatio
 
 	public static boolean validateMentalStatusObservationTemplateId(MentalStatusObservation mentalStatusObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"MentalStatusObservationMentalStatusObservationTemplateId","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "MentalStatusObservationMentalStatusObservationTemplateId", "ERROR");
+
 		if (VALIDATE_MENTAL_STATUS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MENTAL_STATUS_OBSERVATION);
 			try {
-				VALIDATE_MENTAL_STATUS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_MENTAL_STATUS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_MENTAL_STATUS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_MENTAL_STATUS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_MENTAL_STATUS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(mentalStatusObservation)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_MENTAL_STATUS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				mentalStatusObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.MENTAL_STATUS_OBSERVATION__MENTAL_STATUS_OBSERVATION_TEMPLATE_ID,
-						 ConsolPlugin.INSTANCE.getString("MentalStatusObservationMentalStatusObservationTemplateId"),
-						 new Object [] { mentalStatusObservation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.MENTAL_STATUS_OBSERVATION__MENTAL_STATUS_OBSERVATION_TEMPLATE_ID,
+						ConsolPlugin.INSTANCE.getString("MentalStatusObservationMentalStatusObservationTemplateId"),
+						new Object[] { mentalStatusObservation }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -167,7 +157,7 @@ public class MentalStatusObservationOperations extends ClinicalStatementOperatio
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_MENTAL_STATUS_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_MENTAL_STATUS_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -182,44 +172,34 @@ public class MentalStatusObservationOperations extends ClinicalStatementOperatio
 
 	public static boolean validateMentalStatusObservationClassCode(MentalStatusObservation mentalStatusObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"MentalStatusObservationMentalStatusObservationClassCode","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "MentalStatusObservationMentalStatusObservationClassCode", "ERROR");
+
 		if (VALIDATE_MENTAL_STATUS_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MENTAL_STATUS_OBSERVATION);
 			try {
-				VALIDATE_MENTAL_STATUS_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_MENTAL_STATUS_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_MENTAL_STATUS_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_MENTAL_STATUS_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_MENTAL_STATUS_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(mentalStatusObservation)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_MENTAL_STATUS_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				mentalStatusObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.MENTAL_STATUS_OBSERVATION__MENTAL_STATUS_OBSERVATION_CLASS_CODE,
-						 ConsolPlugin.INSTANCE.getString("MentalStatusObservationMentalStatusObservationClassCode"),
-						 new Object [] { mentalStatusObservation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.MENTAL_STATUS_OBSERVATION__MENTAL_STATUS_OBSERVATION_CLASS_CODE,
+						ConsolPlugin.INSTANCE.getString("MentalStatusObservationMentalStatusObservationClassCode"),
+						new Object[] { mentalStatusObservation }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -244,7 +224,7 @@ public class MentalStatusObservationOperations extends ClinicalStatementOperatio
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_MENTAL_STATUS_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_MENTAL_STATUS_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -259,44 +239,34 @@ public class MentalStatusObservationOperations extends ClinicalStatementOperatio
 
 	public static boolean validateMentalStatusObservationMoodCode(MentalStatusObservation mentalStatusObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"MentalStatusObservationMentalStatusObservationMoodCode","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "MentalStatusObservationMentalStatusObservationMoodCode", "ERROR");
+
 		if (VALIDATE_MENTAL_STATUS_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MENTAL_STATUS_OBSERVATION);
 			try {
-				VALIDATE_MENTAL_STATUS_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_MENTAL_STATUS_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_MENTAL_STATUS_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_MENTAL_STATUS_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_MENTAL_STATUS_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(mentalStatusObservation)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_MENTAL_STATUS_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				mentalStatusObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.MENTAL_STATUS_OBSERVATION__MENTAL_STATUS_OBSERVATION_MOOD_CODE,
-						 ConsolPlugin.INSTANCE.getString("MentalStatusObservationMentalStatusObservationMoodCode"),
-						 new Object [] { mentalStatusObservation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.MENTAL_STATUS_OBSERVATION__MENTAL_STATUS_OBSERVATION_MOOD_CODE,
+						ConsolPlugin.INSTANCE.getString("MentalStatusObservationMentalStatusObservationMoodCode"),
+						new Object[] { mentalStatusObservation }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -321,7 +291,7 @@ public class MentalStatusObservationOperations extends ClinicalStatementOperatio
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_MENTAL_STATUS_OBSERVATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_MENTAL_STATUS_OBSERVATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -336,44 +306,33 @@ public class MentalStatusObservationOperations extends ClinicalStatementOperatio
 
 	public static boolean validateMentalStatusObservationId(MentalStatusObservation mentalStatusObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"MentalStatusObservationMentalStatusObservationId","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "MentalStatusObservationMentalStatusObservationId", "ERROR");
+
 		if (VALIDATE_MENTAL_STATUS_OBSERVATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MENTAL_STATUS_OBSERVATION);
 			try {
-				VALIDATE_MENTAL_STATUS_OBSERVATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_MENTAL_STATUS_OBSERVATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_MENTAL_STATUS_OBSERVATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_MENTAL_STATUS_OBSERVATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_MENTAL_STATUS_OBSERVATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(mentalStatusObservation)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_MENTAL_STATUS_OBSERVATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				mentalStatusObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.MENTAL_STATUS_OBSERVATION__MENTAL_STATUS_OBSERVATION_ID,
-						 ConsolPlugin.INSTANCE.getString("MentalStatusObservationMentalStatusObservationId"),
-						 new Object [] { mentalStatusObservation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.MENTAL_STATUS_OBSERVATION__MENTAL_STATUS_OBSERVATION_ID,
+						ConsolPlugin.INSTANCE.getString("MentalStatusObservationMentalStatusObservationId"),
+						new Object[] { mentalStatusObservation }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -398,7 +357,7 @@ public class MentalStatusObservationOperations extends ClinicalStatementOperatio
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_MENTAL_STATUS_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_MENTAL_STATUS_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -413,56 +372,46 @@ public class MentalStatusObservationOperations extends ClinicalStatementOperatio
 
 	public static boolean validateMentalStatusObservationCodeP(MentalStatusObservation mentalStatusObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"MentalStatusObservationMentalStatusObservationCodeP","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "MentalStatusObservationMentalStatusObservationCodeP", "ERROR");
+
 		if (VALIDATE_MENTAL_STATUS_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MENTAL_STATUS_OBSERVATION);
 			try {
-				VALIDATE_MENTAL_STATUS_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_MENTAL_STATUS_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_MENTAL_STATUS_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_MENTAL_STATUS_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_MENTAL_STATUS_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(mentalStatusObservation)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_MENTAL_STATUS_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				mentalStatusObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.MENTAL_STATUS_OBSERVATION__MENTAL_STATUS_OBSERVATION_CODE_P,
-						 ConsolPlugin.INSTANCE.getString("MentalStatusObservationMentalStatusObservationCodeP"),
-						 new Object [] { mentalStatusObservation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.MENTAL_STATUS_OBSERVATION__MENTAL_STATUS_OBSERVATION_CODE_P,
+						ConsolPlugin.INSTANCE.getString("MentalStatusObservationMentalStatusObservationCodeP"),
+						new Object[] { mentalStatusObservation }));
 			}
-			
+
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
-				Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.consol.MentalStatusObservationCodeP");
+				Collection<Object> passToken = (Collection<Object>) context.get(
+					"org.openhealthtools.mdht.uml.cda.consol.MentalStatusObservationCodeP");
 				if (passToken == null) {
 					// anticipate a reasonably healthy model
-					passToken = new java.util.ArrayList<Object>(3);
+					passToken = new java.util.ArrayList<>(3);
 					context.put("org.openhealthtools.mdht.uml.cda.consol.MentalStatusObservationCodeP", passToken);
 				}
 				passToken.add(mentalStatusObservation);
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -476,9 +425,9 @@ public class MentalStatusObservationOperations extends ClinicalStatementOperatio
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_MENTAL_STATUS_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
-"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
-"value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '43173001' or value.code = '405051006' or value.code = '363871006' or value.code = '85256008' or value.code = '285231000' or value.code = '6942003'))";
+	protected static final String VALIDATE_MENTAL_STATUS_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and " +
+			"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in " +
+			"value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '43173001' or value.code = '405051006' or value.code = '363871006' or value.code = '85256008' or value.code = '285231000' or value.code = '6942003'))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateMentalStatusObservationCode(MentalStatusObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Mental Status Observation Code</em>}' invariant operation.
@@ -489,7 +438,7 @@ public class MentalStatusObservationOperations extends ClinicalStatementOperatio
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_MENTAL_STATUS_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_MENTAL_STATUS_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -504,50 +453,41 @@ public class MentalStatusObservationOperations extends ClinicalStatementOperatio
 
 	public static boolean validateMentalStatusObservationCode(MentalStatusObservation mentalStatusObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-		Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.consol.MentalStatusObservationCodeP");
+
+		Object passToken = (context == null)
+				? null
+				: context.get("org.openhealthtools.mdht.uml.cda.consol.MentalStatusObservationCodeP");
 		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(mentalStatusObservation)) {
 			// I have a free pass to short-circuit
 			return true;
 		}
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"MentalStatusObservationMentalStatusObservationCode","WARNING");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "MentalStatusObservationMentalStatusObservationCode", "WARNING");
+
 		if (VALIDATE_MENTAL_STATUS_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MENTAL_STATUS_OBSERVATION);
 			try {
-				VALIDATE_MENTAL_STATUS_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_MENTAL_STATUS_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_MENTAL_STATUS_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_MENTAL_STATUS_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_MENTAL_STATUS_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(mentalStatusObservation)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_MENTAL_STATUS_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				mentalStatusObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.WARNING,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.MENTAL_STATUS_OBSERVATION__MENTAL_STATUS_OBSERVATION_CODE,
-						 ConsolPlugin.INSTANCE.getString("MentalStatusObservationMentalStatusObservationCode"),
-						 new Object [] { mentalStatusObservation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.MENTAL_STATUS_OBSERVATION__MENTAL_STATUS_OBSERVATION_CODE,
+						ConsolPlugin.INSTANCE.getString("MentalStatusObservationMentalStatusObservationCode"),
+						new Object[] { mentalStatusObservation }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -561,9 +501,8 @@ public class MentalStatusObservationOperations extends ClinicalStatementOperatio
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_MENTAL_STATUS_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and "+
-"let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in "+
-"value.code = 'completed')";
+	protected static final String VALIDATE_MENTAL_STATUS_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and " +
+			"let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in " + "value.code = 'completed')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateMentalStatusObservationStatusCode(MentalStatusObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Mental Status Observation Status Code</em>}' invariant operation.
@@ -574,7 +513,7 @@ public class MentalStatusObservationOperations extends ClinicalStatementOperatio
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_MENTAL_STATUS_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_MENTAL_STATUS_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -589,44 +528,34 @@ public class MentalStatusObservationOperations extends ClinicalStatementOperatio
 
 	public static boolean validateMentalStatusObservationStatusCode(MentalStatusObservation mentalStatusObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"MentalStatusObservationMentalStatusObservationStatusCode","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "MentalStatusObservationMentalStatusObservationStatusCode", "ERROR");
+
 		if (VALIDATE_MENTAL_STATUS_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MENTAL_STATUS_OBSERVATION);
 			try {
-				VALIDATE_MENTAL_STATUS_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_MENTAL_STATUS_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_MENTAL_STATUS_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_MENTAL_STATUS_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_MENTAL_STATUS_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(mentalStatusObservation)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_MENTAL_STATUS_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				mentalStatusObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.MENTAL_STATUS_OBSERVATION__MENTAL_STATUS_OBSERVATION_STATUS_CODE,
-						 ConsolPlugin.INSTANCE.getString("MentalStatusObservationMentalStatusObservationStatusCode"),
-						 new Object [] { mentalStatusObservation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.MENTAL_STATUS_OBSERVATION__MENTAL_STATUS_OBSERVATION_STATUS_CODE,
+						ConsolPlugin.INSTANCE.getString("MentalStatusObservationMentalStatusObservationStatusCode"),
+						new Object[] { mentalStatusObservation }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -651,7 +580,7 @@ public class MentalStatusObservationOperations extends ClinicalStatementOperatio
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_MENTAL_STATUS_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_MENTAL_STATUS_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -666,44 +595,34 @@ public class MentalStatusObservationOperations extends ClinicalStatementOperatio
 
 	public static boolean validateMentalStatusObservationStatusCodeP(MentalStatusObservation mentalStatusObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"MentalStatusObservationMentalStatusObservationStatusCodeP","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "MentalStatusObservationMentalStatusObservationStatusCodeP", "ERROR");
+
 		if (VALIDATE_MENTAL_STATUS_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MENTAL_STATUS_OBSERVATION);
 			try {
-				VALIDATE_MENTAL_STATUS_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_MENTAL_STATUS_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_MENTAL_STATUS_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_MENTAL_STATUS_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_MENTAL_STATUS_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(mentalStatusObservation)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_MENTAL_STATUS_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				mentalStatusObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.MENTAL_STATUS_OBSERVATION__MENTAL_STATUS_OBSERVATION_STATUS_CODE_P,
-						 ConsolPlugin.INSTANCE.getString("MentalStatusObservationMentalStatusObservationStatusCodeP"),
-						 new Object [] { mentalStatusObservation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.MENTAL_STATUS_OBSERVATION__MENTAL_STATUS_OBSERVATION_STATUS_CODE_P,
+						ConsolPlugin.INSTANCE.getString("MentalStatusObservationMentalStatusObservationStatusCodeP"),
+						new Object[] { mentalStatusObservation }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -728,7 +647,7 @@ public class MentalStatusObservationOperations extends ClinicalStatementOperatio
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_MENTAL_STATUS_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_MENTAL_STATUS_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -743,44 +662,34 @@ public class MentalStatusObservationOperations extends ClinicalStatementOperatio
 
 	public static boolean validateMentalStatusObservationEffectiveTime(MentalStatusObservation mentalStatusObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"MentalStatusObservationMentalStatusObservationEffectiveTime","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "MentalStatusObservationMentalStatusObservationEffectiveTime", "ERROR");
+
 		if (VALIDATE_MENTAL_STATUS_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MENTAL_STATUS_OBSERVATION);
 			try {
-				VALIDATE_MENTAL_STATUS_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_MENTAL_STATUS_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_MENTAL_STATUS_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_MENTAL_STATUS_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_MENTAL_STATUS_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(mentalStatusObservation)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_MENTAL_STATUS_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				mentalStatusObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.MENTAL_STATUS_OBSERVATION__MENTAL_STATUS_OBSERVATION_EFFECTIVE_TIME,
-						 ConsolPlugin.INSTANCE.getString("MentalStatusObservationMentalStatusObservationEffectiveTime"),
-						 new Object [] { mentalStatusObservation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.MENTAL_STATUS_OBSERVATION__MENTAL_STATUS_OBSERVATION_EFFECTIVE_TIME,
+						ConsolPlugin.INSTANCE.getString("MentalStatusObservationMentalStatusObservationEffectiveTime"),
+						new Object[] { mentalStatusObservation }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -794,9 +703,9 @@ public class MentalStatusObservationOperations extends ClinicalStatementOperatio
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_MENTAL_STATUS_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "+
-"let value : datatypes::CD = element.oclAsType(datatypes::CD) in "+
-"value.codeSystem = '2.16.840.1.113883.6.96' and not value.code.oclIsUndefined()))";
+	protected static final String VALIDATE_MENTAL_STATUS_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and " +
+			"let value : datatypes::CD = element.oclAsType(datatypes::CD) in " +
+			"value.codeSystem = '2.16.840.1.113883.6.96' and not value.code.oclIsUndefined()))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateMentalStatusObservationValue(MentalStatusObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Mental Status Observation Value</em>}' invariant operation.
@@ -807,7 +716,7 @@ public class MentalStatusObservationOperations extends ClinicalStatementOperatio
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_MENTAL_STATUS_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_MENTAL_STATUS_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -822,44 +731,33 @@ public class MentalStatusObservationOperations extends ClinicalStatementOperatio
 
 	public static boolean validateMentalStatusObservationValue(MentalStatusObservation mentalStatusObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"MentalStatusObservationMentalStatusObservationValue","WARNING");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "MentalStatusObservationMentalStatusObservationValue", "WARNING");
+
 		if (VALIDATE_MENTAL_STATUS_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MENTAL_STATUS_OBSERVATION);
 			try {
-				VALIDATE_MENTAL_STATUS_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_MENTAL_STATUS_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_MENTAL_STATUS_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_MENTAL_STATUS_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_MENTAL_STATUS_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(mentalStatusObservation)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_MENTAL_STATUS_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				mentalStatusObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.WARNING,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.MENTAL_STATUS_OBSERVATION__MENTAL_STATUS_OBSERVATION_VALUE,
-						 ConsolPlugin.INSTANCE.getString("MentalStatusObservationMentalStatusObservationValue"),
-						 new Object [] { mentalStatusObservation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.MENTAL_STATUS_OBSERVATION__MENTAL_STATUS_OBSERVATION_VALUE,
+						ConsolPlugin.INSTANCE.getString("MentalStatusObservationMentalStatusObservationValue"),
+						new Object[] { mentalStatusObservation }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -884,7 +782,7 @@ public class MentalStatusObservationOperations extends ClinicalStatementOperatio
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_MENTAL_STATUS_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_MENTAL_STATUS_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -899,44 +797,33 @@ public class MentalStatusObservationOperations extends ClinicalStatementOperatio
 
 	public static boolean validateMentalStatusObservationValueP(MentalStatusObservation mentalStatusObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"MentalStatusObservationMentalStatusObservationValueP","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "MentalStatusObservationMentalStatusObservationValueP", "ERROR");
+
 		if (VALIDATE_MENTAL_STATUS_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MENTAL_STATUS_OBSERVATION);
 			try {
-				VALIDATE_MENTAL_STATUS_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_MENTAL_STATUS_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_MENTAL_STATUS_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_MENTAL_STATUS_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_MENTAL_STATUS_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(mentalStatusObservation)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_MENTAL_STATUS_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				mentalStatusObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.MENTAL_STATUS_OBSERVATION__MENTAL_STATUS_OBSERVATION_VALUE_P,
-						 ConsolPlugin.INSTANCE.getString("MentalStatusObservationMentalStatusObservationValueP"),
-						 new Object [] { mentalStatusObservation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.MENTAL_STATUS_OBSERVATION__MENTAL_STATUS_OBSERVATION_VALUE_P,
+						ConsolPlugin.INSTANCE.getString("MentalStatusObservationMentalStatusObservationValueP"),
+						new Object[] { mentalStatusObservation }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -961,7 +848,7 @@ public class MentalStatusObservationOperations extends ClinicalStatementOperatio
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_MENTAL_STATUS_OBSERVATION_ASSESSMENT_SCALE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_MENTAL_STATUS_OBSERVATION_ASSESSMENT_SCALE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -976,44 +863,36 @@ public class MentalStatusObservationOperations extends ClinicalStatementOperatio
 
 	public static boolean validateMentalStatusObservationAssessmentScaleObservation(
 			MentalStatusObservation mentalStatusObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"MentalStatusObservationMentalStatusObservationAssessmentScaleObservation","INFO");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(
+			context, "MentalStatusObservationMentalStatusObservationAssessmentScaleObservation", "INFO");
+
 		if (VALIDATE_MENTAL_STATUS_OBSERVATION_ASSESSMENT_SCALE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MENTAL_STATUS_OBSERVATION);
 			try {
-				VALIDATE_MENTAL_STATUS_OBSERVATION_ASSESSMENT_SCALE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_MENTAL_STATUS_OBSERVATION_ASSESSMENT_SCALE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_MENTAL_STATUS_OBSERVATION_ASSESSMENT_SCALE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_MENTAL_STATUS_OBSERVATION_ASSESSMENT_SCALE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_MENTAL_STATUS_OBSERVATION_ASSESSMENT_SCALE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(mentalStatusObservation)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_MENTAL_STATUS_OBSERVATION_ASSESSMENT_SCALE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				mentalStatusObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.MENTAL_STATUS_OBSERVATION__MENTAL_STATUS_OBSERVATION_ASSESSMENT_SCALE_OBSERVATION,
-						 ConsolPlugin.INSTANCE.getString("MentalStatusObservationMentalStatusObservationAssessmentScaleObservation"),
-						 new Object [] { mentalStatusObservation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.MENTAL_STATUS_OBSERVATION__MENTAL_STATUS_OBSERVATION_ASSESSMENT_SCALE_OBSERVATION,
+						ConsolPlugin.INSTANCE.getString(
+							"MentalStatusObservationMentalStatusObservationAssessmentScaleObservation"),
+						new Object[] { mentalStatusObservation }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -1038,7 +917,7 @@ public class MentalStatusObservationOperations extends ClinicalStatementOperatio
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_MENTAL_STATUS_OBSERVATION_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_MENTAL_STATUS_OBSERVATION_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1053,44 +932,36 @@ public class MentalStatusObservationOperations extends ClinicalStatementOperatio
 
 	public static boolean validateMentalStatusObservationAuthorParticipation(
 			MentalStatusObservation mentalStatusObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"MentalStatusObservationMentalStatusObservationAuthorParticipation","WARNING");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(
+			context, "MentalStatusObservationMentalStatusObservationAuthorParticipation", "WARNING");
+
 		if (VALIDATE_MENTAL_STATUS_OBSERVATION_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MENTAL_STATUS_OBSERVATION);
 			try {
-				VALIDATE_MENTAL_STATUS_OBSERVATION_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_MENTAL_STATUS_OBSERVATION_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_MENTAL_STATUS_OBSERVATION_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_MENTAL_STATUS_OBSERVATION_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_MENTAL_STATUS_OBSERVATION_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(mentalStatusObservation)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_MENTAL_STATUS_OBSERVATION_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				mentalStatusObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.WARNING,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.MENTAL_STATUS_OBSERVATION__MENTAL_STATUS_OBSERVATION_AUTHOR_PARTICIPATION,
-						 ConsolPlugin.INSTANCE.getString("MentalStatusObservationMentalStatusObservationAuthorParticipation"),
-						 new Object [] { mentalStatusObservation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.MENTAL_STATUS_OBSERVATION__MENTAL_STATUS_OBSERVATION_AUTHOR_PARTICIPATION,
+						ConsolPlugin.INSTANCE.getString(
+							"MentalStatusObservationMentalStatusObservationAuthorParticipation"),
+						new Object[] { mentalStatusObservation }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -1124,26 +995,26 @@ public class MentalStatusObservationOperations extends ClinicalStatementOperatio
 
 	public static EList<AssessmentScaleObservation> getAssessmentScaleObservations(
 			MentalStatusObservation mentalStatusObservation) {
-	
-	
-	
+
 		if (GET_ASSESSMENT_SCALE_OBSERVATIONS__EOCL_QRY == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.MENTAL_STATUS_OBSERVATION, ConsolPackage.Literals.MENTAL_STATUS_OBSERVATION.getEAllOperations().get(64));
+			helper.setOperationContext(
+				ConsolPackage.Literals.MENTAL_STATUS_OBSERVATION,
+				ConsolPackage.Literals.MENTAL_STATUS_OBSERVATION.getEAllOperations().get(64));
 			try {
-				GET_ASSESSMENT_SCALE_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_ASSESSMENT_SCALE_OBSERVATIONS__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+				GET_ASSESSMENT_SCALE_OBSERVATIONS__EOCL_QRY = helper.createQuery(
+					GET_ASSESSMENT_SCALE_OBSERVATIONS__EOCL_EXP);
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
+		}
+
 		OCL.Query query = EOCL_ENV.get().createQuery(GET_ASSESSMENT_SCALE_OBSERVATIONS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
-		Collection<AssessmentScaleObservation> result = (Collection<AssessmentScaleObservation>) query.evaluate(mentalStatusObservation);
-		return new BasicEList.UnmodifiableEList<AssessmentScaleObservation>(result.size(), result.toArray());
+		Collection<AssessmentScaleObservation> result = (Collection<AssessmentScaleObservation>) query.evaluate(
+			mentalStatusObservation);
+		return new BasicEList.UnmodifiableEList<>(result.size(), result.toArray());
 	}
 
 } // MentalStatusObservationOperations

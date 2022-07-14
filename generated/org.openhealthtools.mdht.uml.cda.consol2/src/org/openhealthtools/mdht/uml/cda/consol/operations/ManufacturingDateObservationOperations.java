@@ -48,7 +48,7 @@ public class ManufacturingDateObservationOperations extends ClinicalStatementOpe
 	 * @generated
 	 * @ordered
 	 */
-	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+	protected static final ThreadLocal<OCL> EOCL_ENV = new ThreadLocal<OCL>() {
 		@Override
 		public OCL initialValue() {
 			return OCL.newInstance();
@@ -82,7 +82,7 @@ public class ManufacturingDateObservationOperations extends ClinicalStatementOpe
 	 * @generated
 	 * @ordered
 	 */
-	protected static ThreadLocal<  Constraint> VALIDATE_MANUFACTURING_DATE_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_MANUFACTURING_DATE_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -97,44 +97,35 @@ public class ManufacturingDateObservationOperations extends ClinicalStatementOpe
 	public static boolean validateManufacturingDateObservationTemplateId(
 			ManufacturingDateObservation manufacturingDateObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"ManufacturingDateObservationManufacturingDateObservationTemplateId","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "ManufacturingDateObservationManufacturingDateObservationTemplateId", "ERROR");
+
 		if (VALIDATE_MANUFACTURING_DATE_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MANUFACTURING_DATE_OBSERVATION);
 			try {
-				VALIDATE_MANUFACTURING_DATE_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_MANUFACTURING_DATE_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_MANUFACTURING_DATE_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_MANUFACTURING_DATE_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_MANUFACTURING_DATE_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(manufacturingDateObservation)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_MANUFACTURING_DATE_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				manufacturingDateObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.MANUFACTURING_DATE_OBSERVATION__MANUFACTURING_DATE_OBSERVATION_TEMPLATE_ID,
-						 ConsolPlugin.INSTANCE.getString("ManufacturingDateObservationManufacturingDateObservationTemplateId"),
-						 new Object [] { manufacturingDateObservation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.MANUFACTURING_DATE_OBSERVATION__MANUFACTURING_DATE_OBSERVATION_TEMPLATE_ID,
+						ConsolPlugin.INSTANCE.getString(
+							"ManufacturingDateObservationManufacturingDateObservationTemplateId"),
+						new Object[] { manufacturingDateObservation }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -159,7 +150,7 @@ public class ManufacturingDateObservationOperations extends ClinicalStatementOpe
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_MANUFACTURING_DATE_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_MANUFACTURING_DATE_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -175,56 +166,48 @@ public class ManufacturingDateObservationOperations extends ClinicalStatementOpe
 	public static boolean validateManufacturingDateObservationCodeP(
 			ManufacturingDateObservation manufacturingDateObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"ManufacturingDateObservationManufacturingDateObservationCodeP","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "ManufacturingDateObservationManufacturingDateObservationCodeP", "ERROR");
+
 		if (VALIDATE_MANUFACTURING_DATE_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MANUFACTURING_DATE_OBSERVATION);
 			try {
-				VALIDATE_MANUFACTURING_DATE_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_MANUFACTURING_DATE_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_MANUFACTURING_DATE_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_MANUFACTURING_DATE_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_MANUFACTURING_DATE_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(manufacturingDateObservation)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_MANUFACTURING_DATE_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				manufacturingDateObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.MANUFACTURING_DATE_OBSERVATION__MANUFACTURING_DATE_OBSERVATION_CODE_P,
-						 ConsolPlugin.INSTANCE.getString("ManufacturingDateObservationManufacturingDateObservationCodeP"),
-						 new Object [] { manufacturingDateObservation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.MANUFACTURING_DATE_OBSERVATION__MANUFACTURING_DATE_OBSERVATION_CODE_P,
+						ConsolPlugin.INSTANCE.getString(
+							"ManufacturingDateObservationManufacturingDateObservationCodeP"),
+						new Object[] { manufacturingDateObservation }));
 			}
-			
+
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
-				Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.consol.ManufacturingDateObservationCodeP");
+				Collection<Object> passToken = (Collection<Object>) context.get(
+					"org.openhealthtools.mdht.uml.cda.consol.ManufacturingDateObservationCodeP");
 				if (passToken == null) {
 					// anticipate a reasonably healthy model
-					passToken = new java.util.ArrayList<Object>(3);
+					passToken = new java.util.ArrayList<>(3);
 					context.put("org.openhealthtools.mdht.uml.cda.consol.ManufacturingDateObservationCodeP", passToken);
 				}
 				passToken.add(manufacturingDateObservation);
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -238,9 +221,9 @@ public class ManufacturingDateObservationOperations extends ClinicalStatementOpe
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_MANUFACTURING_DATE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
-"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
-"value.code = 'C101669' and value.codeSystem = '2.16.840.1.113883.3.26.1.1')";
+	protected static final String VALIDATE_MANUFACTURING_DATE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and " +
+			"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in " +
+			"value.code = 'C101669' and value.codeSystem = '2.16.840.1.113883.3.26.1.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateManufacturingDateObservationCode(ManufacturingDateObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Manufacturing Date Observation Code</em>}' invariant operation.
@@ -250,7 +233,7 @@ public class ManufacturingDateObservationOperations extends ClinicalStatementOpe
 	 * @generated
 	 * @ordered
 	 */
-	protected static ThreadLocal<  Constraint> VALIDATE_MANUFACTURING_DATE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_MANUFACTURING_DATE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -265,50 +248,43 @@ public class ManufacturingDateObservationOperations extends ClinicalStatementOpe
 	public static boolean validateManufacturingDateObservationCode(
 			ManufacturingDateObservation manufacturingDateObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-	
-	
-	
-  	  
-		Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.consol.ManufacturingDateObservationCodeP");
-		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(manufacturingDateObservation)) {
+
+		Object passToken = (context == null)
+				? null
+				: context.get("org.openhealthtools.mdht.uml.cda.consol.ManufacturingDateObservationCodeP");
+		if ((passToken instanceof Collection<?>) &&
+				((Collection<?>) passToken).contains(manufacturingDateObservation)) {
 			// I have a free pass to short-circuit
 			return true;
 		}
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"ManufacturingDateObservationManufacturingDateObservationCode","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "ManufacturingDateObservationManufacturingDateObservationCode", "ERROR");
+
 		if (VALIDATE_MANUFACTURING_DATE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MANUFACTURING_DATE_OBSERVATION);
 			try {
-				VALIDATE_MANUFACTURING_DATE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_MANUFACTURING_DATE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_MANUFACTURING_DATE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_MANUFACTURING_DATE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_MANUFACTURING_DATE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(manufacturingDateObservation)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_MANUFACTURING_DATE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				manufacturingDateObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.MANUFACTURING_DATE_OBSERVATION__MANUFACTURING_DATE_OBSERVATION_CODE,
-						 ConsolPlugin.INSTANCE.getString("ManufacturingDateObservationManufacturingDateObservationCode"),
-						 new Object [] { manufacturingDateObservation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.MANUFACTURING_DATE_OBSERVATION__MANUFACTURING_DATE_OBSERVATION_CODE,
+						ConsolPlugin.INSTANCE.getString("ManufacturingDateObservationManufacturingDateObservationCode"),
+						new Object[] { manufacturingDateObservation }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -332,7 +308,7 @@ public class ManufacturingDateObservationOperations extends ClinicalStatementOpe
 	 * @generated
 	 * @ordered
 	 */
-	protected static ThreadLocal<  Constraint> VALIDATE_MANUFACTURING_DATE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_MANUFACTURING_DATE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -347,44 +323,35 @@ public class ManufacturingDateObservationOperations extends ClinicalStatementOpe
 	public static boolean validateManufacturingDateObservationValue(
 			ManufacturingDateObservation manufacturingDateObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"ManufacturingDateObservationManufacturingDateObservationValue","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "ManufacturingDateObservationManufacturingDateObservationValue", "ERROR");
+
 		if (VALIDATE_MANUFACTURING_DATE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MANUFACTURING_DATE_OBSERVATION);
 			try {
-				VALIDATE_MANUFACTURING_DATE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_MANUFACTURING_DATE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_MANUFACTURING_DATE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_MANUFACTURING_DATE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_MANUFACTURING_DATE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(manufacturingDateObservation)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_MANUFACTURING_DATE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				manufacturingDateObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.MANUFACTURING_DATE_OBSERVATION__MANUFACTURING_DATE_OBSERVATION_VALUE,
-						 ConsolPlugin.INSTANCE.getString("ManufacturingDateObservationManufacturingDateObservationValue"),
-						 new Object [] { manufacturingDateObservation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.MANUFACTURING_DATE_OBSERVATION__MANUFACTURING_DATE_OBSERVATION_VALUE,
+						ConsolPlugin.INSTANCE.getString(
+							"ManufacturingDateObservationManufacturingDateObservationValue"),
+						new Object[] { manufacturingDateObservation }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -409,7 +376,7 @@ public class ManufacturingDateObservationOperations extends ClinicalStatementOpe
 	 * @ordered
 	 */
 
-	protected static ThreadLocal< Query<?, ?, ?> > VALIDATE_MANUFACTURING_DATE_OBSERVATION_TS_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal< Query<?, ?, ?> >();
+	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_MANUFACTURING_DATE_OBSERVATION_TS_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -425,49 +392,39 @@ public class ManufacturingDateObservationOperations extends ClinicalStatementOpe
 	public static boolean validateManufacturingDateObservationTSValue(
 			ManufacturingDateObservation manufacturingDateObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"ManufacturingDateObservationManufacturingDateObservationTSValue","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "ManufacturingDateObservationManufacturingDateObservationTSValue", "ERROR");
+
 		if (VALIDATE_MANUFACTURING_DATE_OBSERVATION_TS_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MANUFACTURING_DATE_OBSERVATION);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_MANUFACTURING_DATE_OBSERVATION_TS_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_MANUFACTURING_DATE_OBSERVATION_TS_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(EOCL_ENV.get().createQuery(oclExpression));
-			}
-			catch (ParserException pe) {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_MANUFACTURING_DATE_OBSERVATION_TS_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_MANUFACTURING_DATE_OBSERVATION_TS_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(
+					EOCL_ENV.get().createQuery(oclExpression));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		Object oclResult = VALIDATE_MANUFACTURING_DATE_OBSERVATION_TS_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(manufacturingDateObservation);		
+		}
+
+		Object oclResult = VALIDATE_MANUFACTURING_DATE_OBSERVATION_TS_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(
+			manufacturingDateObservation);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-  			
+
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.MANUFACTURING_DATE_OBSERVATION__MANUFACTURING_DATE_OBSERVATION_TS_VALUE,
-						 ConsolPlugin.INSTANCE.getString("ManufacturingDateObservationManufacturingDateObservationTSValue"),
-						 new Object [] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.MANUFACTURING_DATE_OBSERVATION__MANUFACTURING_DATE_OBSERVATION_TS_VALUE,
+							ConsolPlugin.INSTANCE.getString(
+								"ManufacturingDateObservationManufacturingDateObservationTSValue"),
+							new Object[] { eObject }));
 				}
-				 
+
 			}
 			return oclResultSet.isEmpty();
 		}

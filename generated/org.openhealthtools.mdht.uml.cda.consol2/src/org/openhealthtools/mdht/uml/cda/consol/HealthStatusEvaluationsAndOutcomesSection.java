@@ -130,10 +130,10 @@ public interface HealthStatusEvaluationsAndOutcomesSection extends Section {
 	public HealthStatusEvaluationsAndOutcomesSection init();
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public HealthStatusEvaluationsAndOutcomesSection init(
 			Iterable<? extends Initializer<? extends EObject>> initializers);
 } // HealthStatusEvaluationsAndOutcomesSection

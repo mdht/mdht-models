@@ -301,9 +301,9 @@ public interface AssessmentScaleObservation extends Observation {
 	public AssessmentScaleObservation init();
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public AssessmentScaleObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // AssessmentScaleObservation

@@ -88,7 +88,7 @@ public class CoverageActivity2Operations extends CoverageActivityOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_COVERAGE_ACTIVITY2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_COVERAGE_ACTIVITY2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -103,44 +103,32 @@ public class CoverageActivity2Operations extends CoverageActivityOperations {
 
 	public static boolean validateCoverageActivity2TemplateId(CoverageActivity2 coverageActivity2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"CoverageActivity2CoverageActivity2TemplateId","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "CoverageActivity2CoverageActivity2TemplateId", "ERROR");
+
 		if (VALIDATE_COVERAGE_ACTIVITY2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.COVERAGE_ACTIVITY2);
 			try {
-				VALIDATE_COVERAGE_ACTIVITY2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_COVERAGE_ACTIVITY2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_COVERAGE_ACTIVITY2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_COVERAGE_ACTIVITY2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_COVERAGE_ACTIVITY2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(coverageActivity2)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_COVERAGE_ACTIVITY2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(coverageActivity2)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.COVERAGE_ACTIVITY2__COVERAGE_ACTIVITY2_TEMPLATE_ID,
-						 ConsolPlugin.INSTANCE.getString("CoverageActivity2CoverageActivity2TemplateId"),
-						 new Object [] { coverageActivity2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.COVERAGE_ACTIVITY2__COVERAGE_ACTIVITY2_TEMPLATE_ID,
+						ConsolPlugin.INSTANCE.getString("CoverageActivity2CoverageActivity2TemplateId"),
+						new Object[] { coverageActivity2 }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -159,56 +147,45 @@ public class CoverageActivity2Operations extends CoverageActivityOperations {
 
 	public static boolean validateCoverageActivityCodeP(CoverageActivity2 coverageActivity2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"CoverageActivity2CoverageActivityCodeP","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "CoverageActivity2CoverageActivityCodeP", "ERROR");
+
 		if (VALIDATE_COVERAGE_ACTIVITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.COVERAGE_ACTIVITY2);
 			try {
-				VALIDATE_COVERAGE_ACTIVITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_COVERAGE_ACTIVITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_COVERAGE_ACTIVITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_COVERAGE_ACTIVITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_COVERAGE_ACTIVITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(coverageActivity2)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(VALIDATE_COVERAGE_ACTIVITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+			coverageActivity2)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.COVERAGE_ACTIVITY2__COVERAGE_ACTIVITY_CODE_P,
-						 ConsolPlugin.INSTANCE.getString("CoverageActivity2CoverageActivityCodeP"),
-						 new Object [] { coverageActivity2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.COVERAGE_ACTIVITY2__COVERAGE_ACTIVITY_CODE_P,
+						ConsolPlugin.INSTANCE.getString("CoverageActivity2CoverageActivityCodeP"),
+						new Object[] { coverageActivity2 }));
 			}
-			
+
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
-				Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.consol.CoverageActivityCodeP");
+				Collection<Object> passToken = (Collection<Object>) context.get(
+					"org.openhealthtools.mdht.uml.cda.consol.CoverageActivityCodeP");
 				if (passToken == null) {
 					// anticipate a reasonably healthy model
-					passToken = new java.util.ArrayList<Object>(3);
+					passToken = new java.util.ArrayList<>(3);
 					context.put("org.openhealthtools.mdht.uml.cda.consol.CoverageActivityCodeP", passToken);
 				}
 				passToken.add(coverageActivity2);
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -227,44 +204,34 @@ public class CoverageActivity2Operations extends CoverageActivityOperations {
 
 	public static boolean validateCoverageActivity2EntryRelationship(CoverageActivity2 coverageActivity2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"CoverageActivity2CoverageActivity2EntryRelationship","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "CoverageActivity2CoverageActivity2EntryRelationship", "ERROR");
+
 		if (VALIDATE_COVERAGE_ACTIVITY2_ENTRY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.COVERAGE_ACTIVITY2);
 			try {
-				VALIDATE_COVERAGE_ACTIVITY2_ENTRY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_COVERAGE_ACTIVITY2_ENTRY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_COVERAGE_ACTIVITY2_ENTRY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_COVERAGE_ACTIVITY2_ENTRY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_COVERAGE_ACTIVITY2_ENTRY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(coverageActivity2)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_COVERAGE_ACTIVITY2_ENTRY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				coverageActivity2)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.COVERAGE_ACTIVITY2__COVERAGE_ACTIVITY2_ENTRY_RELATIONSHIP,
-						 ConsolPlugin.INSTANCE.getString("CoverageActivity2CoverageActivity2EntryRelationship"),
-						 new Object [] { coverageActivity2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.COVERAGE_ACTIVITY2__COVERAGE_ACTIVITY2_ENTRY_RELATIONSHIP,
+						ConsolPlugin.INSTANCE.getString("CoverageActivity2CoverageActivity2EntryRelationship"),
+						new Object[] { coverageActivity2 }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -283,49 +250,39 @@ public class CoverageActivity2Operations extends CoverageActivityOperations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateCoverageActivity2EntryRelationshipINTValue(CoverageActivity2 coverageActivity2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"CoverageActivity2CoverageActivity2EntryRelationshipINTValue","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "CoverageActivity2CoverageActivity2EntryRelationshipINTValue", "ERROR");
+
 		if (VALIDATE_COVERAGE_ACTIVITY2_ENTRY_RELATIONSHIP_INT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.COVERAGE_ACTIVITY2);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_COVERAGE_ACTIVITY2_ENTRY_RELATIONSHIP_INT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_COVERAGE_ACTIVITY2_ENTRY_RELATIONSHIP_INT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(EOCL_ENV.get().createQuery(oclExpression));
-			}
-			catch (ParserException pe) {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_COVERAGE_ACTIVITY2_ENTRY_RELATIONSHIP_INT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_COVERAGE_ACTIVITY2_ENTRY_RELATIONSHIP_INT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(
+					EOCL_ENV.get().createQuery(oclExpression));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		Object oclResult = VALIDATE_COVERAGE_ACTIVITY2_ENTRY_RELATIONSHIP_INT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(coverageActivity2);		
+		}
+
+		Object oclResult = VALIDATE_COVERAGE_ACTIVITY2_ENTRY_RELATIONSHIP_INT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(
+			coverageActivity2);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-  			
+
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.COVERAGE_ACTIVITY2__COVERAGE_ACTIVITY2_ENTRY_RELATIONSHIP_INT_VALUE,
-						 ConsolPlugin.INSTANCE.getString("CoverageActivity2CoverageActivity2EntryRelationshipINTValue"),
-						 new Object [] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.COVERAGE_ACTIVITY2__COVERAGE_ACTIVITY2_ENTRY_RELATIONSHIP_INT_VALUE,
+							ConsolPlugin.INSTANCE.getString(
+								"CoverageActivity2CoverageActivity2EntryRelationshipINTValue"),
+							new Object[] { eObject }));
 				}
-				 
+
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -345,49 +302,39 @@ public class CoverageActivity2Operations extends CoverageActivityOperations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateCoverageActivity2EntryRelationshipTypeCode(CoverageActivity2 coverageActivity2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"CoverageActivity2CoverageActivity2EntryRelationshipTypeCode","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "CoverageActivity2CoverageActivity2EntryRelationshipTypeCode", "ERROR");
+
 		if (VALIDATE_COVERAGE_ACTIVITY2_ENTRY_RELATIONSHIP_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.COVERAGE_ACTIVITY2);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_COVERAGE_ACTIVITY2_ENTRY_RELATIONSHIP_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_COVERAGE_ACTIVITY2_ENTRY_RELATIONSHIP_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(EOCL_ENV.get().createQuery(oclExpression));
-			}
-			catch (ParserException pe) {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_COVERAGE_ACTIVITY2_ENTRY_RELATIONSHIP_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_COVERAGE_ACTIVITY2_ENTRY_RELATIONSHIP_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(
+					EOCL_ENV.get().createQuery(oclExpression));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		Object oclResult = VALIDATE_COVERAGE_ACTIVITY2_ENTRY_RELATIONSHIP_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(coverageActivity2);		
+		}
+
+		Object oclResult = VALIDATE_COVERAGE_ACTIVITY2_ENTRY_RELATIONSHIP_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(
+			coverageActivity2);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-  			
+
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.COVERAGE_ACTIVITY2__COVERAGE_ACTIVITY2_ENTRY_RELATIONSHIP_TYPE_CODE,
-						 ConsolPlugin.INSTANCE.getString("CoverageActivity2CoverageActivity2EntryRelationshipTypeCode"),
-						 new Object [] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.COVERAGE_ACTIVITY2__COVERAGE_ACTIVITY2_ENTRY_RELATIONSHIP_TYPE_CODE,
+							ConsolPlugin.INSTANCE.getString(
+								"CoverageActivity2CoverageActivity2EntryRelationshipTypeCode"),
+							new Object[] { eObject }));
 				}
-				 
+
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -407,49 +354,39 @@ public class CoverageActivity2Operations extends CoverageActivityOperations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateCoverageActivity2EntryRelationshipSequenceNumber(CoverageActivity2 coverageActivity2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"CoverageActivity2CoverageActivity2EntryRelationshipSequenceNumber","INFO");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "CoverageActivity2CoverageActivity2EntryRelationshipSequenceNumber", "INFO");
+
 		if (VALIDATE_COVERAGE_ACTIVITY2_ENTRY_RELATIONSHIP_SEQUENCE_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.COVERAGE_ACTIVITY2);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_COVERAGE_ACTIVITY2_ENTRY_RELATIONSHIP_SEQUENCE_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_COVERAGE_ACTIVITY2_ENTRY_RELATIONSHIP_SEQUENCE_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(EOCL_ENV.get().createQuery(oclExpression));
-			}
-			catch (ParserException pe) {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_COVERAGE_ACTIVITY2_ENTRY_RELATIONSHIP_SEQUENCE_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_COVERAGE_ACTIVITY2_ENTRY_RELATIONSHIP_SEQUENCE_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(
+					EOCL_ENV.get().createQuery(oclExpression));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		Object oclResult = VALIDATE_COVERAGE_ACTIVITY2_ENTRY_RELATIONSHIP_SEQUENCE_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(coverageActivity2);		
+		}
+
+		Object oclResult = VALIDATE_COVERAGE_ACTIVITY2_ENTRY_RELATIONSHIP_SEQUENCE_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(
+			coverageActivity2);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-  			
+
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.COVERAGE_ACTIVITY2__COVERAGE_ACTIVITY2_ENTRY_RELATIONSHIP_SEQUENCE_NUMBER,
-						 ConsolPlugin.INSTANCE.getString("CoverageActivity2CoverageActivity2EntryRelationshipSequenceNumber"),
-						 new Object [] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.COVERAGE_ACTIVITY2__COVERAGE_ACTIVITY2_ENTRY_RELATIONSHIP_SEQUENCE_NUMBER,
+							ConsolPlugin.INSTANCE.getString(
+								"CoverageActivity2CoverageActivity2EntryRelationshipSequenceNumber"),
+							new Object[] { eObject }));
 				}
-				 
+
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -469,49 +406,39 @@ public class CoverageActivity2Operations extends CoverageActivityOperations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateCoverageActivity2EntryRelationshipPolicyActivity2(CoverageActivity2 coverageActivity2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"CoverageActivity2CoverageActivity2EntryRelationshipPolicyActivity2","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "CoverageActivity2CoverageActivity2EntryRelationshipPolicyActivity2", "ERROR");
+
 		if (VALIDATE_COVERAGE_ACTIVITY2_ENTRY_RELATIONSHIP_POLICY_ACTIVITY2__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.COVERAGE_ACTIVITY2);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_COVERAGE_ACTIVITY2_ENTRY_RELATIONSHIP_POLICY_ACTIVITY2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_COVERAGE_ACTIVITY2_ENTRY_RELATIONSHIP_POLICY_ACTIVITY2__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(EOCL_ENV.get().createQuery(oclExpression));
-			}
-			catch (ParserException pe) {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_COVERAGE_ACTIVITY2_ENTRY_RELATIONSHIP_POLICY_ACTIVITY2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_COVERAGE_ACTIVITY2_ENTRY_RELATIONSHIP_POLICY_ACTIVITY2__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(
+					EOCL_ENV.get().createQuery(oclExpression));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		Object oclResult = VALIDATE_COVERAGE_ACTIVITY2_ENTRY_RELATIONSHIP_POLICY_ACTIVITY2__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(coverageActivity2);		
+		}
+
+		Object oclResult = VALIDATE_COVERAGE_ACTIVITY2_ENTRY_RELATIONSHIP_POLICY_ACTIVITY2__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(
+			coverageActivity2);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-  			
+
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.COVERAGE_ACTIVITY2__COVERAGE_ACTIVITY2_ENTRY_RELATIONSHIP_POLICY_ACTIVITY2,
-						 ConsolPlugin.INSTANCE.getString("CoverageActivity2CoverageActivity2EntryRelationshipPolicyActivity2"),
-						 new Object [] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.COVERAGE_ACTIVITY2__COVERAGE_ACTIVITY2_ENTRY_RELATIONSHIP_POLICY_ACTIVITY2,
+							ConsolPlugin.INSTANCE.getString(
+								"CoverageActivity2CoverageActivity2EntryRelationshipPolicyActivity2"),
+							new Object[] { eObject }));
 				}
-				 
+
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -525,26 +452,24 @@ public class CoverageActivity2Operations extends CoverageActivityOperations {
 	 */
 
 	public static EList<PolicyActivity2> getConsolPolicyActivity2s(CoverageActivity2 coverageActivity2) {
-	
-	
-	
+
 		if (GET_CONSOL_POLICY_ACTIVITY2S__EOCL_QRY == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.COVERAGE_ACTIVITY2, ConsolPackage.Literals.COVERAGE_ACTIVITY2.getEAllOperations().get(67));
+			helper.setOperationContext(
+				ConsolPackage.Literals.COVERAGE_ACTIVITY2,
+				ConsolPackage.Literals.COVERAGE_ACTIVITY2.getEAllOperations().get(67));
 			try {
 				GET_CONSOL_POLICY_ACTIVITY2S__EOCL_QRY = helper.createQuery(GET_CONSOL_POLICY_ACTIVITY2S__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
+		}
+
 		OCL.Query query = EOCL_ENV.get().createQuery(GET_CONSOL_POLICY_ACTIVITY2S__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<PolicyActivity2> result = (Collection<PolicyActivity2>) query.evaluate(coverageActivity2);
-		return new BasicEList.UnmodifiableEList<PolicyActivity2>(result.size(), result.toArray());
+		return new BasicEList.UnmodifiableEList<>(result.size(), result.toArray());
 	}
 
 	/**
@@ -560,44 +485,36 @@ public class CoverageActivity2Operations extends CoverageActivityOperations {
 
 	public static boolean validateCoverageActivityCoverageActivityRelationshipSequenceNumber(
 			CoverageActivity2 coverageActivity2, DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"CoverageActivity2CoverageActivityCoverageActivityRelationshipSequenceNumber","INFO");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(
+			context, "CoverageActivity2CoverageActivityCoverageActivityRelationshipSequenceNumber", "INFO");
+
 		if (VALIDATE_COVERAGE_ACTIVITY_COVERAGE_ACTIVITY_RELATIONSHIP_SEQUENCE_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.COVERAGE_ACTIVITY2);
 			try {
-				VALIDATE_COVERAGE_ACTIVITY_COVERAGE_ACTIVITY_RELATIONSHIP_SEQUENCE_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_COVERAGE_ACTIVITY_COVERAGE_ACTIVITY_RELATIONSHIP_SEQUENCE_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_COVERAGE_ACTIVITY_COVERAGE_ACTIVITY_RELATIONSHIP_SEQUENCE_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_COVERAGE_ACTIVITY_COVERAGE_ACTIVITY_RELATIONSHIP_SEQUENCE_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_COVERAGE_ACTIVITY_COVERAGE_ACTIVITY_RELATIONSHIP_SEQUENCE_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(coverageActivity2)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_COVERAGE_ACTIVITY_COVERAGE_ACTIVITY_RELATIONSHIP_SEQUENCE_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				coverageActivity2)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.COVERAGE_ACTIVITY2__COVERAGE_ACTIVITY_COVERAGE_ACTIVITY_RELATIONSHIP_SEQUENCE_NUMBER,
-						 ConsolPlugin.INSTANCE.getString("CoverageActivity2CoverageActivityCoverageActivityRelationshipSequenceNumber"),
-						 new Object [] { coverageActivity2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.COVERAGE_ACTIVITY2__COVERAGE_ACTIVITY_COVERAGE_ACTIVITY_RELATIONSHIP_SEQUENCE_NUMBER,
+						ConsolPlugin.INSTANCE.getString(
+							"CoverageActivity2CoverageActivityCoverageActivityRelationshipSequenceNumber"),
+						new Object[] { coverageActivity2 }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -622,7 +539,7 @@ public class CoverageActivity2Operations extends CoverageActivityOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_COVERAGE_ACTIVITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_COVERAGE_ACTIVITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * The cached OCL expression body for the '{@link #validateCoverageActivity2EntryRelationship(CoverageActivity2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coverage Activity2 Entry Relationship</em>}' operation.
@@ -643,7 +560,7 @@ public class CoverageActivity2Operations extends CoverageActivityOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_COVERAGE_ACTIVITY2_ENTRY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_COVERAGE_ACTIVITY2_ENTRY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * The cached OCL expression body for the '{@link #validateCoverageActivity2EntryRelationshipINTValue(CoverageActivity2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coverage Activity2 Entry Relationship INT Value</em>}' operation.
@@ -664,7 +581,7 @@ public class CoverageActivity2Operations extends CoverageActivityOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal< Query<?, ?, ?> > VALIDATE_COVERAGE_ACTIVITY2_ENTRY_RELATIONSHIP_INT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal< Query<?, ?, ?> >();
+	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_COVERAGE_ACTIVITY2_ENTRY_RELATIONSHIP_INT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<>();
 
 	/**
 	 * The cached OCL expression body for the '{@link #validateCoverageActivity2EntryRelationshipTypeCode(CoverageActivity2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coverage Activity2 Entry Relationship Type Code</em>}' operation.
@@ -685,7 +602,7 @@ public class CoverageActivity2Operations extends CoverageActivityOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal< Query<?, ?, ?> > VALIDATE_COVERAGE_ACTIVITY2_ENTRY_RELATIONSHIP_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal< Query<?, ?, ?> >();
+	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_COVERAGE_ACTIVITY2_ENTRY_RELATIONSHIP_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<>();
 
 	/**
 	 * The cached OCL expression body for the '{@link #validateCoverageActivity2EntryRelationshipSequenceNumber(CoverageActivity2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coverage Activity2 Entry Relationship Sequence Number</em>}' operation.
@@ -706,7 +623,7 @@ public class CoverageActivity2Operations extends CoverageActivityOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal< Query<?, ?, ?> > VALIDATE_COVERAGE_ACTIVITY2_ENTRY_RELATIONSHIP_SEQUENCE_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal< Query<?, ?, ?> >();
+	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_COVERAGE_ACTIVITY2_ENTRY_RELATIONSHIP_SEQUENCE_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<>();
 
 	/**
 	 * The cached OCL expression body for the '{@link #validateCoverageActivity2EntryRelationshipPolicyActivity2(CoverageActivity2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coverage Activity2 Entry Relationship Policy Activity2</em>}' operation.
@@ -727,7 +644,7 @@ public class CoverageActivity2Operations extends CoverageActivityOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal< Query<?, ?, ?> > VALIDATE_COVERAGE_ACTIVITY2_ENTRY_RELATIONSHIP_POLICY_ACTIVITY2__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal< Query<?, ?, ?> >();
+	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_COVERAGE_ACTIVITY2_ENTRY_RELATIONSHIP_POLICY_ACTIVITY2__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<>();
 
 	/**
 	 * The cached OCL expression body for the '{@link #getConsolPolicyActivity2s(CoverageActivity2) <em>Get Consol Policy Activity2s</em>}' operation.
@@ -768,7 +685,7 @@ public class CoverageActivity2Operations extends CoverageActivityOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_COVERAGE_ACTIVITY_COVERAGE_ACTIVITY_RELATIONSHIP_SEQUENCE_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_COVERAGE_ACTIVITY_COVERAGE_ACTIVITY_RELATIONSHIP_SEQUENCE_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * The cached OCL expression body for the '{@link #validateCoverageActivityCode(CoverageActivity2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coverage Activity Code</em>}' operation.
@@ -778,9 +695,9 @@ public class CoverageActivity2Operations extends CoverageActivityOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_COVERAGE_ACTIVITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
-"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
-"value.code = '48768-6' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_COVERAGE_ACTIVITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and " +
+			"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in " +
+			"value.code = '48768-6' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateCoverageActivityCode(CoverageActivity2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coverage Activity Code</em>}' invariant operation.
@@ -791,7 +708,7 @@ public class CoverageActivity2Operations extends CoverageActivityOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_COVERAGE_ACTIVITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_COVERAGE_ACTIVITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -806,50 +723,40 @@ public class CoverageActivity2Operations extends CoverageActivityOperations {
 
 	public static boolean validateCoverageActivityCode(CoverageActivity2 coverageActivity2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-	
-	
-	
-  	  
-		Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.consol.CoverageActivityCodeP");
+
+		Object passToken = (context == null)
+				? null
+				: context.get("org.openhealthtools.mdht.uml.cda.consol.CoverageActivityCodeP");
 		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(coverageActivity2)) {
 			// I have a free pass to short-circuit
 			return true;
 		}
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"CoverageActivity2CoverageActivityCode","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "CoverageActivity2CoverageActivityCode", "ERROR");
+
 		if (VALIDATE_COVERAGE_ACTIVITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.COVERAGE_ACTIVITY2);
 			try {
-				VALIDATE_COVERAGE_ACTIVITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_COVERAGE_ACTIVITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_COVERAGE_ACTIVITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_COVERAGE_ACTIVITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_COVERAGE_ACTIVITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(coverageActivity2)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(VALIDATE_COVERAGE_ACTIVITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+			coverageActivity2)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.COVERAGE_ACTIVITY2__COVERAGE_ACTIVITY_CODE,
-						 ConsolPlugin.INSTANCE.getString("CoverageActivity2CoverageActivityCode"),
-						 new Object [] { coverageActivity2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.COVERAGE_ACTIVITY2__COVERAGE_ACTIVITY_CODE,
+						ConsolPlugin.INSTANCE.getString("CoverageActivity2CoverageActivityCode"),
+						new Object[] { coverageActivity2 }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -874,7 +781,7 @@ public class CoverageActivity2Operations extends CoverageActivityOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_COVERAGE_ACTIVITY_POLICY_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_COVERAGE_ACTIVITY_POLICY_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -889,44 +796,33 @@ public class CoverageActivity2Operations extends CoverageActivityOperations {
 
 	public static boolean validateCoverageActivityPolicyActivity(CoverageActivity2 coverageActivity2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"CoverageActivity2CoverageActivityPolicyActivity","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "CoverageActivity2CoverageActivityPolicyActivity", "ERROR");
+
 		if (VALIDATE_COVERAGE_ACTIVITY_POLICY_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.COVERAGE_ACTIVITY2);
 			try {
-				VALIDATE_COVERAGE_ACTIVITY_POLICY_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_COVERAGE_ACTIVITY_POLICY_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_COVERAGE_ACTIVITY_POLICY_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_COVERAGE_ACTIVITY_POLICY_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_COVERAGE_ACTIVITY_POLICY_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(coverageActivity2)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_COVERAGE_ACTIVITY_POLICY_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				coverageActivity2)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.COVERAGE_ACTIVITY2__COVERAGE_ACTIVITY_POLICY_ACTIVITY,
-						 ConsolPlugin.INSTANCE.getString("CoverageActivity2CoverageActivityPolicyActivity"),
-						 new Object [] { coverageActivity2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.COVERAGE_ACTIVITY2__COVERAGE_ACTIVITY_POLICY_ACTIVITY,
+						ConsolPlugin.INSTANCE.getString("CoverageActivity2CoverageActivityPolicyActivity"),
+						new Object[] { coverageActivity2 }));
 			}
-			 
+
 			return false;
 		}
 		return true;

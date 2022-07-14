@@ -164,9 +164,9 @@ public interface SexualOrientationObservation extends Observation {
 	public SexualOrientationObservation init();
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public SexualOrientationObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // SexualOrientationObservation

@@ -196,7 +196,8 @@ public class InterventionActImpl extends ActImpl implements InterventionAct {
 	 */
 	public boolean validateInterventionActAdvanceDirectiveObservation2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return InterventionActOperations.validateInterventionActAdvanceDirectiveObservation2(this, diagnostics, context);
+		return InterventionActOperations.validateInterventionActAdvanceDirectiveObservation2(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -236,7 +237,8 @@ public class InterventionActImpl extends ActImpl implements InterventionAct {
 	 */
 	public boolean validateInterventionActProcedureActivityObservation2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return InterventionActOperations.validateInterventionActProcedureActivityObservation2(this, diagnostics, context);
+		return InterventionActOperations.validateInterventionActProcedureActivityObservation2(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -284,7 +286,8 @@ public class InterventionActImpl extends ActImpl implements InterventionAct {
 	 */
 	public boolean validateInterventionActHandoffCommunicationParticipants(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return InterventionActOperations.validateInterventionActHandoffCommunicationParticipants(this, diagnostics, context);
+		return InterventionActOperations.validateInterventionActHandoffCommunicationParticipants(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -322,7 +325,8 @@ public class InterventionActImpl extends ActImpl implements InterventionAct {
 	 */
 	public boolean validateInterventionActReferenceExternalDocumentReference(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return InterventionActOperations.validateInterventionActReferenceExternalDocumentReference(this, diagnostics, context);
+		return InterventionActOperations.validateInterventionActReferenceExternalDocumentReference(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -457,16 +461,16 @@ public class InterventionActImpl extends ActImpl implements InterventionAct {
 	 * @generated
 	 */
 	public InterventionAct init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public InterventionAct init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // InterventionActImpl

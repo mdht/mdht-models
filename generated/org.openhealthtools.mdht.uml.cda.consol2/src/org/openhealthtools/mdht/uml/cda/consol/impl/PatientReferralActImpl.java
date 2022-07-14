@@ -191,7 +191,8 @@ public class PatientReferralActImpl extends ActImpl implements PatientReferralAc
 	 */
 	public boolean validatePatientReferralActEntryRelationshipObservationClassCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PatientReferralActOperations.validatePatientReferralActEntryRelationshipObservationClassCode(this, diagnostics, context);
+		return PatientReferralActOperations.validatePatientReferralActEntryRelationshipObservationClassCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -201,7 +202,8 @@ public class PatientReferralActImpl extends ActImpl implements PatientReferralAc
 	 */
 	public boolean validatePatientReferralActEntryRelationshipObservationMoodCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PatientReferralActOperations.validatePatientReferralActEntryRelationshipObservationMoodCode(this, diagnostics, context);
+		return PatientReferralActOperations.validatePatientReferralActEntryRelationshipObservationMoodCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -211,7 +213,8 @@ public class PatientReferralActImpl extends ActImpl implements PatientReferralAc
 	 */
 	public boolean validatePatientReferralActEntryRelationshipObservationCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PatientReferralActOperations.validatePatientReferralActEntryRelationshipObservationCodeP(this, diagnostics, context);
+		return PatientReferralActOperations.validatePatientReferralActEntryRelationshipObservationCodeP(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -221,7 +224,8 @@ public class PatientReferralActImpl extends ActImpl implements PatientReferralAc
 	 */
 	public boolean validatePatientReferralActEntryRelationshipObservationCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PatientReferralActOperations.validatePatientReferralActEntryRelationshipObservationCode(this, diagnostics, context);
+		return PatientReferralActOperations.validatePatientReferralActEntryRelationshipObservationCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -231,7 +235,8 @@ public class PatientReferralActImpl extends ActImpl implements PatientReferralAc
 	 */
 	public boolean validatePatientReferralActEntryRelationshipObservationStatusCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PatientReferralActOperations.validatePatientReferralActEntryRelationshipObservationStatusCode(this, diagnostics, context);
+		return PatientReferralActOperations.validatePatientReferralActEntryRelationshipObservationStatusCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -241,7 +246,8 @@ public class PatientReferralActImpl extends ActImpl implements PatientReferralAc
 	 */
 	public boolean validatePatientReferralActEntryRelationshipObservationStatusCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PatientReferralActOperations.validatePatientReferralActEntryRelationshipObservationStatusCodeP(this, diagnostics, context);
+		return PatientReferralActOperations.validatePatientReferralActEntryRelationshipObservationStatusCodeP(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -251,7 +257,8 @@ public class PatientReferralActImpl extends ActImpl implements PatientReferralAc
 	 */
 	public boolean validatePatientReferralActEntryRelationshipObservationPriorityCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PatientReferralActOperations.validatePatientReferralActEntryRelationshipObservationPriorityCodeP(this, diagnostics, context);
+		return PatientReferralActOperations.validatePatientReferralActEntryRelationshipObservationPriorityCodeP(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -261,7 +268,8 @@ public class PatientReferralActImpl extends ActImpl implements PatientReferralAc
 	 */
 	public boolean validatePatientReferralActEntryRelationshipObservationPriorityCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PatientReferralActOperations.validatePatientReferralActEntryRelationshipObservationPriorityCode(this, diagnostics, context);
+		return PatientReferralActOperations.validatePatientReferralActEntryRelationshipObservationPriorityCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -271,7 +279,8 @@ public class PatientReferralActImpl extends ActImpl implements PatientReferralAc
 	 */
 	public boolean validatePatientReferralActEntryRelationshipObservationValue(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PatientReferralActOperations.validatePatientReferralActEntryRelationshipObservationValue(this, diagnostics, context);
+		return PatientReferralActOperations.validatePatientReferralActEntryRelationshipObservationValue(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -281,7 +290,8 @@ public class PatientReferralActImpl extends ActImpl implements PatientReferralAc
 	 */
 	public boolean validatePatientReferralActEntryRelationshipObservationValueP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PatientReferralActOperations.validatePatientReferralActEntryRelationshipObservationValueP(this, diagnostics, context);
+		return PatientReferralActOperations.validatePatientReferralActEntryRelationshipObservationValueP(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -291,7 +301,8 @@ public class PatientReferralActImpl extends ActImpl implements PatientReferralAc
 	 */
 	public boolean validatePatientReferralActEntryRelationshipTypeCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PatientReferralActOperations.validatePatientReferralActEntryRelationshipTypeCode(this, diagnostics, context);
+		return PatientReferralActOperations.validatePatientReferralActEntryRelationshipTypeCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -301,7 +312,8 @@ public class PatientReferralActImpl extends ActImpl implements PatientReferralAc
 	 */
 	public boolean validatePatientReferralActEntryRelationshipObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PatientReferralActOperations.validatePatientReferralActEntryRelationshipObservation(this, diagnostics, context);
+		return PatientReferralActOperations.validatePatientReferralActEntryRelationshipObservation(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -311,7 +323,8 @@ public class PatientReferralActImpl extends ActImpl implements PatientReferralAc
 	 */
 	public boolean validatePatientReferralActParticipantParticipantRoleCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PatientReferralActOperations.validatePatientReferralActParticipantParticipantRoleCodeP(this, diagnostics, context);
+		return PatientReferralActOperations.validatePatientReferralActParticipantParticipantRoleCodeP(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -321,7 +334,8 @@ public class PatientReferralActImpl extends ActImpl implements PatientReferralAc
 	 */
 	public boolean validatePatientReferralActParticipantParticipantRoleCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PatientReferralActOperations.validatePatientReferralActParticipantParticipantRoleCode(this, diagnostics, context);
+		return PatientReferralActOperations.validatePatientReferralActParticipantParticipantRoleCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -341,7 +355,8 @@ public class PatientReferralActImpl extends ActImpl implements PatientReferralAc
 	 */
 	public boolean validatePatientReferralActParticipantParticipantRole(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PatientReferralActOperations.validatePatientReferralActParticipantParticipantRole(this, diagnostics, context);
+		return PatientReferralActOperations.validatePatientReferralActParticipantParticipantRole(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -359,16 +374,16 @@ public class PatientReferralActImpl extends ActImpl implements PatientReferralAc
 	 * @generated
 	 */
 	public PatientReferralAct init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public PatientReferralAct init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // PatientReferralActImpl

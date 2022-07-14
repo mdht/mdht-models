@@ -50,8 +50,10 @@ public class SexualOrientationObservationImpl extends ObservationImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSexualOrientationObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SexualOrientationObservationOperations.validateSexualOrientationObservationTemplateId(this, diagnostics, context);
+	public boolean validateSexualOrientationObservationTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return SexualOrientationObservationOperations.validateSexualOrientationObservationTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -60,7 +62,8 @@ public class SexualOrientationObservationImpl extends ObservationImpl implements
 	 * @generated
 	 */
 	public boolean validateSexualOrientationObservationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SexualOrientationObservationOperations.validateSexualOrientationObservationCodeP(this, diagnostics, context);
+		return SexualOrientationObservationOperations.validateSexualOrientationObservationCodeP(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -69,7 +72,8 @@ public class SexualOrientationObservationImpl extends ObservationImpl implements
 	 * @generated
 	 */
 	public boolean validateSexualOrientationObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SexualOrientationObservationOperations.validateSexualOrientationObservationCode(this, diagnostics, context);
+		return SexualOrientationObservationOperations.validateSexualOrientationObservationCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -77,8 +81,10 @@ public class SexualOrientationObservationImpl extends ObservationImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSexualOrientationObservationStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SexualOrientationObservationOperations.validateSexualOrientationObservationStatusCodeP(this, diagnostics, context);
+	public boolean validateSexualOrientationObservationStatusCodeP(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return SexualOrientationObservationOperations.validateSexualOrientationObservationStatusCodeP(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -86,8 +92,10 @@ public class SexualOrientationObservationImpl extends ObservationImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSexualOrientationObservationStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SexualOrientationObservationOperations.validateSexualOrientationObservationStatusCode(this, diagnostics, context);
+	public boolean validateSexualOrientationObservationStatusCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return SexualOrientationObservationOperations.validateSexualOrientationObservationStatusCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -95,8 +103,10 @@ public class SexualOrientationObservationImpl extends ObservationImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSexualOrientationObservationEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SexualOrientationObservationOperations.validateSexualOrientationObservationEffectiveTime(this, diagnostics, context);
+	public boolean validateSexualOrientationObservationEffectiveTime(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return SexualOrientationObservationOperations.validateSexualOrientationObservationEffectiveTime(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -105,7 +115,8 @@ public class SexualOrientationObservationImpl extends ObservationImpl implements
 	 * @generated
 	 */
 	public boolean validateSexualOrientationObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SexualOrientationObservationOperations.validateSexualOrientationObservationValue(this, diagnostics, context);
+		return SexualOrientationObservationOperations.validateSexualOrientationObservationValue(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -113,8 +124,10 @@ public class SexualOrientationObservationImpl extends ObservationImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSexualOrientationObservationClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SexualOrientationObservationOperations.validateSexualOrientationObservationClassCode(this, diagnostics, context);
+	public boolean validateSexualOrientationObservationClassCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return SexualOrientationObservationOperations.validateSexualOrientationObservationClassCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -122,8 +135,10 @@ public class SexualOrientationObservationImpl extends ObservationImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSexualOrientationObservationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SexualOrientationObservationOperations.validateSexualOrientationObservationMoodCode(this, diagnostics, context);
+	public boolean validateSexualOrientationObservationMoodCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return SexualOrientationObservationOperations.validateSexualOrientationObservationMoodCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -131,8 +146,10 @@ public class SexualOrientationObservationImpl extends ObservationImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSexualOrientationObservationIVLTSLow(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SexualOrientationObservationOperations.validateSexualOrientationObservationIVLTSLow(this, diagnostics, context);
+	public boolean validateSexualOrientationObservationIVLTSLow(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return SexualOrientationObservationOperations.validateSexualOrientationObservationIVLTSLow(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -140,8 +157,10 @@ public class SexualOrientationObservationImpl extends ObservationImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSexualOrientationObservationIVLTSHigh(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SexualOrientationObservationOperations.validateSexualOrientationObservationIVLTSHigh(this, diagnostics, context);
+	public boolean validateSexualOrientationObservationIVLTSHigh(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return SexualOrientationObservationOperations.validateSexualOrientationObservationIVLTSHigh(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -150,15 +169,16 @@ public class SexualOrientationObservationImpl extends ObservationImpl implements
 	 * @generated
 	 */
 	public SexualOrientationObservation init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public SexualOrientationObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
-} //SexualOrientationObservationImpl
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public SexualOrientationObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
+} // SexualOrientationObservationImpl

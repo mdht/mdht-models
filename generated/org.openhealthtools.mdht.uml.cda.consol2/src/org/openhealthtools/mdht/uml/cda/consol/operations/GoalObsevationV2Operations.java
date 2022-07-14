@@ -82,7 +82,7 @@ public class GoalObsevationV2Operations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_GOAL_OBSEVATION_V2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_GOAL_OBSEVATION_V2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -97,44 +97,32 @@ public class GoalObsevationV2Operations extends ClinicalStatementOperations {
 
 	public static boolean validateGoalObsevationV2TemplateId(GoalObsevationV2 goalObsevationV2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"GoalObsevationV2GoalObsevationV2TemplateId","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "GoalObsevationV2GoalObsevationV2TemplateId", "ERROR");
+
 		if (VALIDATE_GOAL_OBSEVATION_V2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.GOAL_OBSEVATION_V2);
 			try {
-				VALIDATE_GOAL_OBSEVATION_V2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_GOAL_OBSEVATION_V2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_GOAL_OBSEVATION_V2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_GOAL_OBSEVATION_V2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_GOAL_OBSEVATION_V2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(goalObsevationV2)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_GOAL_OBSEVATION_V2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(goalObsevationV2)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.GOAL_OBSEVATION_V2__GOAL_OBSEVATION_V2_TEMPLATE_ID,
-						 ConsolPlugin.INSTANCE.getString("GoalObsevationV2GoalObsevationV2TemplateId"),
-						 new Object [] { goalObsevationV2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.GOAL_OBSEVATION_V2__GOAL_OBSEVATION_V2_TEMPLATE_ID,
+						ConsolPlugin.INSTANCE.getString("GoalObsevationV2GoalObsevationV2TemplateId"),
+						new Object[] { goalObsevationV2 }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -159,7 +147,7 @@ public class GoalObsevationV2Operations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_GOAL_OBSEVATION_V2_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_GOAL_OBSEVATION_V2_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -174,44 +162,32 @@ public class GoalObsevationV2Operations extends ClinicalStatementOperations {
 
 	public static boolean validateGoalObsevationV2Id(GoalObsevationV2 goalObsevationV2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"GoalObsevationV2GoalObsevationV2Id","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "GoalObsevationV2GoalObsevationV2Id", "ERROR");
+
 		if (VALIDATE_GOAL_OBSEVATION_V2_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.GOAL_OBSEVATION_V2);
 			try {
-				VALIDATE_GOAL_OBSEVATION_V2_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_GOAL_OBSEVATION_V2_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_GOAL_OBSEVATION_V2_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_GOAL_OBSEVATION_V2_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_GOAL_OBSEVATION_V2_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(goalObsevationV2)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(VALIDATE_GOAL_OBSEVATION_V2_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+			goalObsevationV2)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.GOAL_OBSEVATION_V2__GOAL_OBSEVATION_V2_ID,
-						 ConsolPlugin.INSTANCE.getString("GoalObsevationV2GoalObsevationV2Id"),
-						 new Object [] { goalObsevationV2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.GOAL_OBSEVATION_V2__GOAL_OBSEVATION_V2_ID,
+						ConsolPlugin.INSTANCE.getString("GoalObsevationV2GoalObsevationV2Id"),
+						new Object[] { goalObsevationV2 }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -236,7 +212,7 @@ public class GoalObsevationV2Operations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_GOAL_OBSEVATION_V2_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_GOAL_OBSEVATION_V2_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -251,44 +227,32 @@ public class GoalObsevationV2Operations extends ClinicalStatementOperations {
 
 	public static boolean validateGoalObsevationV2Code(GoalObsevationV2 goalObsevationV2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"GoalObsevationV2GoalObsevationV2Code","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "GoalObsevationV2GoalObsevationV2Code", "ERROR");
+
 		if (VALIDATE_GOAL_OBSEVATION_V2_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.GOAL_OBSEVATION_V2);
 			try {
-				VALIDATE_GOAL_OBSEVATION_V2_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_GOAL_OBSEVATION_V2_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_GOAL_OBSEVATION_V2_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_GOAL_OBSEVATION_V2_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_GOAL_OBSEVATION_V2_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(goalObsevationV2)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(VALIDATE_GOAL_OBSEVATION_V2_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+			goalObsevationV2)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.GOAL_OBSEVATION_V2__GOAL_OBSEVATION_V2_CODE,
-						 ConsolPlugin.INSTANCE.getString("GoalObsevationV2GoalObsevationV2Code"),
-						 new Object [] { goalObsevationV2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.GOAL_OBSEVATION_V2__GOAL_OBSEVATION_V2_CODE,
+						ConsolPlugin.INSTANCE.getString("GoalObsevationV2GoalObsevationV2Code"),
+						new Object[] { goalObsevationV2 }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -313,7 +277,7 @@ public class GoalObsevationV2Operations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_GOAL_OBSEVATION_V2_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_GOAL_OBSEVATION_V2_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -328,44 +292,32 @@ public class GoalObsevationV2Operations extends ClinicalStatementOperations {
 
 	public static boolean validateGoalObsevationV2StatusCode(GoalObsevationV2 goalObsevationV2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"GoalObsevationV2GoalObsevationV2StatusCode","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "GoalObsevationV2GoalObsevationV2StatusCode", "ERROR");
+
 		if (VALIDATE_GOAL_OBSEVATION_V2_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.GOAL_OBSEVATION_V2);
 			try {
-				VALIDATE_GOAL_OBSEVATION_V2_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_GOAL_OBSEVATION_V2_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_GOAL_OBSEVATION_V2_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_GOAL_OBSEVATION_V2_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_GOAL_OBSEVATION_V2_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(goalObsevationV2)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_GOAL_OBSEVATION_V2_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(goalObsevationV2)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.GOAL_OBSEVATION_V2__GOAL_OBSEVATION_V2_STATUS_CODE,
-						 ConsolPlugin.INSTANCE.getString("GoalObsevationV2GoalObsevationV2StatusCode"),
-						 new Object [] { goalObsevationV2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.GOAL_OBSEVATION_V2__GOAL_OBSEVATION_V2_STATUS_CODE,
+						ConsolPlugin.INSTANCE.getString("GoalObsevationV2GoalObsevationV2StatusCode"),
+						new Object[] { goalObsevationV2 }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -390,7 +342,7 @@ public class GoalObsevationV2Operations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_GOAL_OBSEVATION_V2_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_GOAL_OBSEVATION_V2_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -405,44 +357,32 @@ public class GoalObsevationV2Operations extends ClinicalStatementOperations {
 
 	public static boolean validateGoalObsevationV2Value(GoalObsevationV2 goalObsevationV2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"GoalObsevationV2GoalObsevationV2Value","INFO");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "GoalObsevationV2GoalObsevationV2Value", "INFO");
+
 		if (VALIDATE_GOAL_OBSEVATION_V2_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.GOAL_OBSEVATION_V2);
 			try {
-				VALIDATE_GOAL_OBSEVATION_V2_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_GOAL_OBSEVATION_V2_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_GOAL_OBSEVATION_V2_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_GOAL_OBSEVATION_V2_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_GOAL_OBSEVATION_V2_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(goalObsevationV2)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(VALIDATE_GOAL_OBSEVATION_V2_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+			goalObsevationV2)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.GOAL_OBSEVATION_V2__GOAL_OBSEVATION_V2_VALUE,
-						 ConsolPlugin.INSTANCE.getString("GoalObsevationV2GoalObsevationV2Value"),
-						 new Object [] { goalObsevationV2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.GOAL_OBSEVATION_V2__GOAL_OBSEVATION_V2_VALUE,
+						ConsolPlugin.INSTANCE.getString("GoalObsevationV2GoalObsevationV2Value"),
+						new Object[] { goalObsevationV2 }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -467,7 +407,7 @@ public class GoalObsevationV2Operations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_GOAL_OBSEVATION_V2_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_GOAL_OBSEVATION_V2_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -482,44 +422,32 @@ public class GoalObsevationV2Operations extends ClinicalStatementOperations {
 
 	public static boolean validateGoalObsevationV2ClassCode(GoalObsevationV2 goalObsevationV2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"GoalObsevationV2GoalObsevationV2ClassCode","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "GoalObsevationV2GoalObsevationV2ClassCode", "ERROR");
+
 		if (VALIDATE_GOAL_OBSEVATION_V2_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.GOAL_OBSEVATION_V2);
 			try {
-				VALIDATE_GOAL_OBSEVATION_V2_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_GOAL_OBSEVATION_V2_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_GOAL_OBSEVATION_V2_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_GOAL_OBSEVATION_V2_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_GOAL_OBSEVATION_V2_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(goalObsevationV2)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_GOAL_OBSEVATION_V2_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(goalObsevationV2)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.GOAL_OBSEVATION_V2__GOAL_OBSEVATION_V2_CLASS_CODE,
-						 ConsolPlugin.INSTANCE.getString("GoalObsevationV2GoalObsevationV2ClassCode"),
-						 new Object [] { goalObsevationV2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.GOAL_OBSEVATION_V2__GOAL_OBSEVATION_V2_CLASS_CODE,
+						ConsolPlugin.INSTANCE.getString("GoalObsevationV2GoalObsevationV2ClassCode"),
+						new Object[] { goalObsevationV2 }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -544,7 +472,7 @@ public class GoalObsevationV2Operations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_GOAL_OBSEVATION_V2_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_GOAL_OBSEVATION_V2_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -559,44 +487,32 @@ public class GoalObsevationV2Operations extends ClinicalStatementOperations {
 
 	public static boolean validateGoalObsevationV2MoodCode(GoalObsevationV2 goalObsevationV2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"GoalObsevationV2GoalObsevationV2MoodCode","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "GoalObsevationV2GoalObsevationV2MoodCode", "ERROR");
+
 		if (VALIDATE_GOAL_OBSEVATION_V2_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.GOAL_OBSEVATION_V2);
 			try {
-				VALIDATE_GOAL_OBSEVATION_V2_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_GOAL_OBSEVATION_V2_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_GOAL_OBSEVATION_V2_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_GOAL_OBSEVATION_V2_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_GOAL_OBSEVATION_V2_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(goalObsevationV2)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_GOAL_OBSEVATION_V2_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(goalObsevationV2)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.GOAL_OBSEVATION_V2__GOAL_OBSEVATION_V2_MOOD_CODE,
-						 ConsolPlugin.INSTANCE.getString("GoalObsevationV2GoalObsevationV2MoodCode"),
-						 new Object [] { goalObsevationV2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.GOAL_OBSEVATION_V2__GOAL_OBSEVATION_V2_MOOD_CODE,
+						ConsolPlugin.INSTANCE.getString("GoalObsevationV2GoalObsevationV2MoodCode"),
+						new Object[] { goalObsevationV2 }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -621,7 +537,7 @@ public class GoalObsevationV2Operations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_GOAL_OBSEVATION_V2_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_GOAL_OBSEVATION_V2_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -636,44 +552,32 @@ public class GoalObsevationV2Operations extends ClinicalStatementOperations {
 
 	public static boolean validateGoalObsevationV2Author(GoalObsevationV2 goalObsevationV2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"GoalObsevationV2GoalObsevationV2Author","WARNING");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "GoalObsevationV2GoalObsevationV2Author", "WARNING");
+
 		if (VALIDATE_GOAL_OBSEVATION_V2_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.GOAL_OBSEVATION_V2);
 			try {
-				VALIDATE_GOAL_OBSEVATION_V2_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_GOAL_OBSEVATION_V2_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_GOAL_OBSEVATION_V2_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_GOAL_OBSEVATION_V2_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_GOAL_OBSEVATION_V2_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(goalObsevationV2)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(VALIDATE_GOAL_OBSEVATION_V2_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+			goalObsevationV2)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.WARNING,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.GOAL_OBSEVATION_V2__GOAL_OBSEVATION_V2_AUTHOR,
-						 ConsolPlugin.INSTANCE.getString("GoalObsevationV2GoalObsevationV2Author"),
-						 new Object [] { goalObsevationV2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.GOAL_OBSEVATION_V2__GOAL_OBSEVATION_V2_AUTHOR,
+						ConsolPlugin.INSTANCE.getString("GoalObsevationV2GoalObsevationV2Author"),
+						new Object[] { goalObsevationV2 }));
 			}
-			 
+
 			return false;
 		}
 		return true;

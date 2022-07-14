@@ -47,7 +47,7 @@ public class ModelNumberObservationOperations extends ClinicalStatementOperation
 	 * @generated
 	 * @ordered
 	 */
-	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+	protected static final ThreadLocal<OCL> EOCL_ENV = new ThreadLocal<OCL>() {
 		@Override
 		public OCL initialValue() {
 			return OCL.newInstance();
@@ -81,7 +81,7 @@ public class ModelNumberObservationOperations extends ClinicalStatementOperation
 	 * @generated
 	 * @ordered
 	 */
-	protected static ThreadLocal<  Constraint> VALIDATE_MODEL_NUMBER_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_MODEL_NUMBER_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -95,44 +95,34 @@ public class ModelNumberObservationOperations extends ClinicalStatementOperation
 	 */
 	public static boolean validateModelNumberObservationTemplateId(ModelNumberObservation modelNumberObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"ModelNumberObservationModelNumberObservationTemplateId","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "ModelNumberObservationModelNumberObservationTemplateId", "ERROR");
+
 		if (VALIDATE_MODEL_NUMBER_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MODEL_NUMBER_OBSERVATION);
 			try {
-				VALIDATE_MODEL_NUMBER_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_MODEL_NUMBER_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_MODEL_NUMBER_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_MODEL_NUMBER_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_MODEL_NUMBER_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(modelNumberObservation)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_MODEL_NUMBER_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				modelNumberObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.MODEL_NUMBER_OBSERVATION__MODEL_NUMBER_OBSERVATION_TEMPLATE_ID,
-						 ConsolPlugin.INSTANCE.getString("ModelNumberObservationModelNumberObservationTemplateId"),
-						 new Object [] { modelNumberObservation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.MODEL_NUMBER_OBSERVATION__MODEL_NUMBER_OBSERVATION_TEMPLATE_ID,
+						ConsolPlugin.INSTANCE.getString("ModelNumberObservationModelNumberObservationTemplateId"),
+						new Object[] { modelNumberObservation }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -156,7 +146,7 @@ public class ModelNumberObservationOperations extends ClinicalStatementOperation
 	 * @generated
 	 * @ordered
 	 */
-	protected static ThreadLocal<  Constraint> VALIDATE_MODEL_NUMBER_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_MODEL_NUMBER_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -170,56 +160,46 @@ public class ModelNumberObservationOperations extends ClinicalStatementOperation
 	 */
 	public static boolean validateModelNumberObservationCodeP(ModelNumberObservation modelNumberObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"ModelNumberObservationModelNumberObservationCodeP","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "ModelNumberObservationModelNumberObservationCodeP", "ERROR");
+
 		if (VALIDATE_MODEL_NUMBER_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MODEL_NUMBER_OBSERVATION);
 			try {
-				VALIDATE_MODEL_NUMBER_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_MODEL_NUMBER_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_MODEL_NUMBER_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_MODEL_NUMBER_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_MODEL_NUMBER_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(modelNumberObservation)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_MODEL_NUMBER_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				modelNumberObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.MODEL_NUMBER_OBSERVATION__MODEL_NUMBER_OBSERVATION_CODE_P,
-						 ConsolPlugin.INSTANCE.getString("ModelNumberObservationModelNumberObservationCodeP"),
-						 new Object [] { modelNumberObservation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.MODEL_NUMBER_OBSERVATION__MODEL_NUMBER_OBSERVATION_CODE_P,
+						ConsolPlugin.INSTANCE.getString("ModelNumberObservationModelNumberObservationCodeP"),
+						new Object[] { modelNumberObservation }));
 			}
-			
+
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
-				Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.consol.ModelNumberObservationCodeP");
+				Collection<Object> passToken = (Collection<Object>) context.get(
+					"org.openhealthtools.mdht.uml.cda.consol.ModelNumberObservationCodeP");
 				if (passToken == null) {
 					// anticipate a reasonably healthy model
-					passToken = new java.util.ArrayList<Object>(3);
+					passToken = new java.util.ArrayList<>(3);
 					context.put("org.openhealthtools.mdht.uml.cda.consol.ModelNumberObservationCodeP", passToken);
 				}
 				passToken.add(modelNumberObservation);
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -233,9 +213,9 @@ public class ModelNumberObservationOperations extends ClinicalStatementOperation
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_MODEL_NUMBER_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
-"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
-"value.code = 'C99285' and value.codeSystem = '2.16.840.1.113883.3.26.1.1')";
+	protected static final String VALIDATE_MODEL_NUMBER_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and " +
+			"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in " +
+			"value.code = 'C99285' and value.codeSystem = '2.16.840.1.113883.3.26.1.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateModelNumberObservationCode(ModelNumberObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Model Number Observation Code</em>}' invariant operation.
@@ -245,7 +225,7 @@ public class ModelNumberObservationOperations extends ClinicalStatementOperation
 	 * @generated
 	 * @ordered
 	 */
-	protected static ThreadLocal<  Constraint> VALIDATE_MODEL_NUMBER_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_MODEL_NUMBER_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -259,50 +239,41 @@ public class ModelNumberObservationOperations extends ClinicalStatementOperation
 	 */
 	public static boolean validateModelNumberObservationCode(ModelNumberObservation modelNumberObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-		Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.consol.ModelNumberObservationCodeP");
+
+		Object passToken = (context == null)
+				? null
+				: context.get("org.openhealthtools.mdht.uml.cda.consol.ModelNumberObservationCodeP");
 		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(modelNumberObservation)) {
 			// I have a free pass to short-circuit
 			return true;
 		}
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"ModelNumberObservationModelNumberObservationCode","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "ModelNumberObservationModelNumberObservationCode", "ERROR");
+
 		if (VALIDATE_MODEL_NUMBER_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MODEL_NUMBER_OBSERVATION);
 			try {
-				VALIDATE_MODEL_NUMBER_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_MODEL_NUMBER_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_MODEL_NUMBER_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_MODEL_NUMBER_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_MODEL_NUMBER_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(modelNumberObservation)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_MODEL_NUMBER_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				modelNumberObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.MODEL_NUMBER_OBSERVATION__MODEL_NUMBER_OBSERVATION_CODE,
-						 ConsolPlugin.INSTANCE.getString("ModelNumberObservationModelNumberObservationCode"),
-						 new Object [] { modelNumberObservation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.MODEL_NUMBER_OBSERVATION__MODEL_NUMBER_OBSERVATION_CODE,
+						ConsolPlugin.INSTANCE.getString("ModelNumberObservationModelNumberObservationCode"),
+						new Object[] { modelNumberObservation }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -326,7 +297,7 @@ public class ModelNumberObservationOperations extends ClinicalStatementOperation
 	 * @generated
 	 * @ordered
 	 */
-	protected static ThreadLocal<  Constraint> VALIDATE_MODEL_NUMBER_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_MODEL_NUMBER_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -340,44 +311,33 @@ public class ModelNumberObservationOperations extends ClinicalStatementOperation
 	 */
 	public static boolean validateModelNumberObservationValue(ModelNumberObservation modelNumberObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"ModelNumberObservationModelNumberObservationValue","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "ModelNumberObservationModelNumberObservationValue", "ERROR");
+
 		if (VALIDATE_MODEL_NUMBER_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MODEL_NUMBER_OBSERVATION);
 			try {
-				VALIDATE_MODEL_NUMBER_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_MODEL_NUMBER_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_MODEL_NUMBER_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_MODEL_NUMBER_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_MODEL_NUMBER_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(modelNumberObservation)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_MODEL_NUMBER_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				modelNumberObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.MODEL_NUMBER_OBSERVATION__MODEL_NUMBER_OBSERVATION_VALUE,
-						 ConsolPlugin.INSTANCE.getString("ModelNumberObservationModelNumberObservationValue"),
-						 new Object [] { modelNumberObservation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.MODEL_NUMBER_OBSERVATION__MODEL_NUMBER_OBSERVATION_VALUE,
+						ConsolPlugin.INSTANCE.getString("ModelNumberObservationModelNumberObservationValue"),
+						new Object[] { modelNumberObservation }));
 			}
-			 
+
 			return false;
 		}
 		return true;

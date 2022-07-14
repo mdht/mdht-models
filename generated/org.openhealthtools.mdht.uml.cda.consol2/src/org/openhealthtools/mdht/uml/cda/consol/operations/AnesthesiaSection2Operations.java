@@ -83,7 +83,7 @@ public class AnesthesiaSection2Operations extends AnesthesiaSectionOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_ANESTHESIA_SECTION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_ANESTHESIA_SECTION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -98,44 +98,32 @@ public class AnesthesiaSection2Operations extends AnesthesiaSectionOperations {
 
 	public static boolean validateAnesthesiaSection2TemplateId(AnesthesiaSection2 anesthesiaSection2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"AnesthesiaSection2AnesthesiaSection2TemplateId","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "AnesthesiaSection2AnesthesiaSection2TemplateId", "ERROR");
+
 		if (VALIDATE_ANESTHESIA_SECTION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ANESTHESIA_SECTION2);
 			try {
-				VALIDATE_ANESTHESIA_SECTION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_ANESTHESIA_SECTION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_ANESTHESIA_SECTION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_ANESTHESIA_SECTION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_ANESTHESIA_SECTION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(anesthesiaSection2)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_ANESTHESIA_SECTION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(anesthesiaSection2)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.ANESTHESIA_SECTION2__ANESTHESIA_SECTION2_TEMPLATE_ID,
-						 ConsolPlugin.INSTANCE.getString("AnesthesiaSection2AnesthesiaSection2TemplateId"),
-						 new Object [] { anesthesiaSection2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.ANESTHESIA_SECTION2__ANESTHESIA_SECTION2_TEMPLATE_ID,
+						ConsolPlugin.INSTANCE.getString("AnesthesiaSection2AnesthesiaSection2TemplateId"),
+						new Object[] { anesthesiaSection2 }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -169,26 +157,26 @@ public class AnesthesiaSection2Operations extends AnesthesiaSectionOperations {
 
 	public static EList<ProcedureActivityProcedure2> getConsolProcedureActivityProcedure2s(
 			AnesthesiaSection2 anesthesiaSection2) {
-	
-	
-	
+
 		if (GET_CONSOL_PROCEDURE_ACTIVITY_PROCEDURE2S__EOCL_QRY == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.ANESTHESIA_SECTION2, ConsolPackage.Literals.ANESTHESIA_SECTION2.getEAllOperations().get(65));
+			helper.setOperationContext(
+				ConsolPackage.Literals.ANESTHESIA_SECTION2,
+				ConsolPackage.Literals.ANESTHESIA_SECTION2.getEAllOperations().get(65));
 			try {
-				GET_CONSOL_PROCEDURE_ACTIVITY_PROCEDURE2S__EOCL_QRY = helper.createQuery(GET_CONSOL_PROCEDURE_ACTIVITY_PROCEDURE2S__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+				GET_CONSOL_PROCEDURE_ACTIVITY_PROCEDURE2S__EOCL_QRY = helper.createQuery(
+					GET_CONSOL_PROCEDURE_ACTIVITY_PROCEDURE2S__EOCL_EXP);
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
+		}
+
 		OCL.Query query = EOCL_ENV.get().createQuery(GET_CONSOL_PROCEDURE_ACTIVITY_PROCEDURE2S__EOCL_QRY);
 		@SuppressWarnings("unchecked")
-		Collection<ProcedureActivityProcedure2> result = (Collection<ProcedureActivityProcedure2>) query.evaluate(anesthesiaSection2);
-		return new BasicEList.UnmodifiableEList<ProcedureActivityProcedure2>(result.size(), result.toArray());
+		Collection<ProcedureActivityProcedure2> result = (Collection<ProcedureActivityProcedure2>) query.evaluate(
+			anesthesiaSection2);
+		return new BasicEList.UnmodifiableEList<>(result.size(), result.toArray());
 	}
 
 	/**
@@ -218,26 +206,25 @@ public class AnesthesiaSection2Operations extends AnesthesiaSectionOperations {
 	 */
 
 	public static EList<MedicationActivity2> getConsolMedicationActivity2s(AnesthesiaSection2 anesthesiaSection2) {
-	
-	
-	
+
 		if (GET_CONSOL_MEDICATION_ACTIVITY2S__EOCL_QRY == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.ANESTHESIA_SECTION2, ConsolPackage.Literals.ANESTHESIA_SECTION2.getEAllOperations().get(66));
+			helper.setOperationContext(
+				ConsolPackage.Literals.ANESTHESIA_SECTION2,
+				ConsolPackage.Literals.ANESTHESIA_SECTION2.getEAllOperations().get(66));
 			try {
-				GET_CONSOL_MEDICATION_ACTIVITY2S__EOCL_QRY = helper.createQuery(GET_CONSOL_MEDICATION_ACTIVITY2S__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+				GET_CONSOL_MEDICATION_ACTIVITY2S__EOCL_QRY = helper.createQuery(
+					GET_CONSOL_MEDICATION_ACTIVITY2S__EOCL_EXP);
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
+		}
+
 		OCL.Query query = EOCL_ENV.get().createQuery(GET_CONSOL_MEDICATION_ACTIVITY2S__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<MedicationActivity2> result = (Collection<MedicationActivity2>) query.evaluate(anesthesiaSection2);
-		return new BasicEList.UnmodifiableEList<MedicationActivity2>(result.size(), result.toArray());
+		return new BasicEList.UnmodifiableEList<>(result.size(), result.toArray());
 	}
 
 	/**
@@ -259,7 +246,7 @@ public class AnesthesiaSection2Operations extends AnesthesiaSectionOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_ANESTHESIA_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_ANESTHESIA_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -274,56 +261,45 @@ public class AnesthesiaSection2Operations extends AnesthesiaSectionOperations {
 
 	public static boolean validateAnesthesiaSectionCodeP(AnesthesiaSection2 anesthesiaSection2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"AnesthesiaSection2AnesthesiaSectionCodeP","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "AnesthesiaSection2AnesthesiaSectionCodeP", "ERROR");
+
 		if (VALIDATE_ANESTHESIA_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ANESTHESIA_SECTION2);
 			try {
-				VALIDATE_ANESTHESIA_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_ANESTHESIA_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_ANESTHESIA_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_ANESTHESIA_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_ANESTHESIA_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(anesthesiaSection2)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ANESTHESIA_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+			anesthesiaSection2)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.ANESTHESIA_SECTION2__ANESTHESIA_SECTION_CODE_P,
-						 ConsolPlugin.INSTANCE.getString("AnesthesiaSection2AnesthesiaSectionCodeP"),
-						 new Object [] { anesthesiaSection2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.ANESTHESIA_SECTION2__ANESTHESIA_SECTION_CODE_P,
+						ConsolPlugin.INSTANCE.getString("AnesthesiaSection2AnesthesiaSectionCodeP"),
+						new Object[] { anesthesiaSection2 }));
 			}
-			
+
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
-				Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.consol.AnesthesiaSectionCodeP");
+				Collection<Object> passToken = (Collection<Object>) context.get(
+					"org.openhealthtools.mdht.uml.cda.consol.AnesthesiaSectionCodeP");
 				if (passToken == null) {
 					// anticipate a reasonably healthy model
-					passToken = new java.util.ArrayList<Object>(3);
+					passToken = new java.util.ArrayList<>(3);
 					context.put("org.openhealthtools.mdht.uml.cda.consol.AnesthesiaSectionCodeP", passToken);
 				}
 				passToken.add(anesthesiaSection2);
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -337,9 +313,9 @@ public class AnesthesiaSection2Operations extends AnesthesiaSectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_ANESTHESIA_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "+
-"let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "+
-"value.code = '59774-0' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_ANESTHESIA_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and " +
+			"let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in " +
+			"value.code = '59774-0' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateAnesthesiaSectionCode(AnesthesiaSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Anesthesia Section Code</em>}' invariant operation.
@@ -350,7 +326,7 @@ public class AnesthesiaSection2Operations extends AnesthesiaSectionOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_ANESTHESIA_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_ANESTHESIA_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -365,50 +341,40 @@ public class AnesthesiaSection2Operations extends AnesthesiaSectionOperations {
 
 	public static boolean validateAnesthesiaSectionCode(AnesthesiaSection2 anesthesiaSection2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-		Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.consol.AnesthesiaSectionCodeP");
+
+		Object passToken = (context == null)
+				? null
+				: context.get("org.openhealthtools.mdht.uml.cda.consol.AnesthesiaSectionCodeP");
 		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(anesthesiaSection2)) {
 			// I have a free pass to short-circuit
 			return true;
 		}
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"AnesthesiaSection2AnesthesiaSectionCode","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "AnesthesiaSection2AnesthesiaSectionCode", "ERROR");
+
 		if (VALIDATE_ANESTHESIA_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ANESTHESIA_SECTION2);
 			try {
-				VALIDATE_ANESTHESIA_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_ANESTHESIA_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_ANESTHESIA_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_ANESTHESIA_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_ANESTHESIA_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(anesthesiaSection2)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ANESTHESIA_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+			anesthesiaSection2)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.ANESTHESIA_SECTION2__ANESTHESIA_SECTION_CODE,
-						 ConsolPlugin.INSTANCE.getString("AnesthesiaSection2AnesthesiaSectionCode"),
-						 new Object [] { anesthesiaSection2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.ANESTHESIA_SECTION2__ANESTHESIA_SECTION_CODE,
+						ConsolPlugin.INSTANCE.getString("AnesthesiaSection2AnesthesiaSectionCode"),
+						new Object[] { anesthesiaSection2 }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -433,7 +399,7 @@ public class AnesthesiaSection2Operations extends AnesthesiaSectionOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_ANESTHESIA_SECTION_PROCEDURE_ACTIVITY_PROCEDURE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_ANESTHESIA_SECTION_PROCEDURE_ACTIVITY_PROCEDURE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -448,44 +414,35 @@ public class AnesthesiaSection2Operations extends AnesthesiaSectionOperations {
 
 	public static boolean validateAnesthesiaSectionProcedureActivityProcedure(AnesthesiaSection2 anesthesiaSection2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"AnesthesiaSection2AnesthesiaSectionProcedureActivityProcedure","INFO");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "AnesthesiaSection2AnesthesiaSectionProcedureActivityProcedure", "INFO");
+
 		if (VALIDATE_ANESTHESIA_SECTION_PROCEDURE_ACTIVITY_PROCEDURE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ANESTHESIA_SECTION2);
 			try {
-				VALIDATE_ANESTHESIA_SECTION_PROCEDURE_ACTIVITY_PROCEDURE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_ANESTHESIA_SECTION_PROCEDURE_ACTIVITY_PROCEDURE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_ANESTHESIA_SECTION_PROCEDURE_ACTIVITY_PROCEDURE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_ANESTHESIA_SECTION_PROCEDURE_ACTIVITY_PROCEDURE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_ANESTHESIA_SECTION_PROCEDURE_ACTIVITY_PROCEDURE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(anesthesiaSection2)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_ANESTHESIA_SECTION_PROCEDURE_ACTIVITY_PROCEDURE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				anesthesiaSection2)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.ANESTHESIA_SECTION2__ANESTHESIA_SECTION_PROCEDURE_ACTIVITY_PROCEDURE,
-						 ConsolPlugin.INSTANCE.getString("AnesthesiaSection2AnesthesiaSectionProcedureActivityProcedure"),
-						 new Object [] { anesthesiaSection2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.ANESTHESIA_SECTION2__ANESTHESIA_SECTION_PROCEDURE_ACTIVITY_PROCEDURE,
+						ConsolPlugin.INSTANCE.getString(
+							"AnesthesiaSection2AnesthesiaSectionProcedureActivityProcedure"),
+						new Object[] { anesthesiaSection2 }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -510,7 +467,7 @@ public class AnesthesiaSection2Operations extends AnesthesiaSectionOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_ANESTHESIA_SECTION_MEDICATION_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_ANESTHESIA_SECTION_MEDICATION_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -525,44 +482,34 @@ public class AnesthesiaSection2Operations extends AnesthesiaSectionOperations {
 
 	public static boolean validateAnesthesiaSectionMedicationActivity(AnesthesiaSection2 anesthesiaSection2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"AnesthesiaSection2AnesthesiaSectionMedicationActivity","INFO");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "AnesthesiaSection2AnesthesiaSectionMedicationActivity", "INFO");
+
 		if (VALIDATE_ANESTHESIA_SECTION_MEDICATION_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ANESTHESIA_SECTION2);
 			try {
-				VALIDATE_ANESTHESIA_SECTION_MEDICATION_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_ANESTHESIA_SECTION_MEDICATION_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_ANESTHESIA_SECTION_MEDICATION_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_ANESTHESIA_SECTION_MEDICATION_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_ANESTHESIA_SECTION_MEDICATION_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(anesthesiaSection2)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_ANESTHESIA_SECTION_MEDICATION_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				anesthesiaSection2)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.ANESTHESIA_SECTION2__ANESTHESIA_SECTION_MEDICATION_ACTIVITY,
-						 ConsolPlugin.INSTANCE.getString("AnesthesiaSection2AnesthesiaSectionMedicationActivity"),
-						 new Object [] { anesthesiaSection2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.ANESTHESIA_SECTION2__ANESTHESIA_SECTION_MEDICATION_ACTIVITY,
+						ConsolPlugin.INSTANCE.getString("AnesthesiaSection2AnesthesiaSectionMedicationActivity"),
+						new Object[] { anesthesiaSection2 }));
 			}
-			 
+
 			return false;
 		}
 		return true;

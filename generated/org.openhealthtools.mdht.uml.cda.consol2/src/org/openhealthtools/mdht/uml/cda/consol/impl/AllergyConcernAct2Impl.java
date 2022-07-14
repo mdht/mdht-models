@@ -103,7 +103,8 @@ public class AllergyConcernAct2Impl extends AllergyProblemActImpl implements All
 	@Override
 	public boolean validateAllergyProblemActCDCodeAndCodeSystemValues(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AllergyConcernAct2Operations.validateAllergyProblemActCDCodeAndCodeSystemValues(this, diagnostics, context);
+		return AllergyConcernAct2Operations.validateAllergyProblemActCDCodeAndCodeSystemValues(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -133,17 +134,17 @@ public class AllergyConcernAct2Impl extends AllergyProblemActImpl implements All
 	 */
 	@Override
 	public AllergyConcernAct2 init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public AllergyConcernAct2 init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // AllergyConcernAct2Impl

@@ -127,9 +127,9 @@ public interface GoalObsevationV2 extends Observation {
 	public GoalObsevationV2 init();
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public GoalObsevationV2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // GoalObsevationV2

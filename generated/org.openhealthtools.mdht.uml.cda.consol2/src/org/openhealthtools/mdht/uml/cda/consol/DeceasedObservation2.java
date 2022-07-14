@@ -50,9 +50,9 @@ public interface DeceasedObservation2 extends DeceasedObservation {
 	public DeceasedObservation2 init();
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public DeceasedObservation2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // DeceasedObservation2

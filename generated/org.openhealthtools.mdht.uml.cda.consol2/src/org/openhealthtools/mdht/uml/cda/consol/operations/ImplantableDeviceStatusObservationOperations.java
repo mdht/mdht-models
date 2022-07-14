@@ -48,7 +48,7 @@ public class ImplantableDeviceStatusObservationOperations extends ClinicalStatem
 	 * @generated
 	 * @ordered
 	 */
-	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+	protected static final ThreadLocal<OCL> EOCL_ENV = new ThreadLocal<OCL>() {
 		@Override
 		public OCL initialValue() {
 			return OCL.newInstance();
@@ -82,7 +82,7 @@ public class ImplantableDeviceStatusObservationOperations extends ClinicalStatem
 	 * @generated
 	 * @ordered
 	 */
-	protected static ThreadLocal<  Constraint> VALIDATE_IMPLANTABLE_DEVICE_STATUS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_IMPLANTABLE_DEVICE_STATUS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -97,44 +97,36 @@ public class ImplantableDeviceStatusObservationOperations extends ClinicalStatem
 	public static boolean validateImplantableDeviceStatusObservationTemplateId(
 			ImplantableDeviceStatusObservation implantableDeviceStatusObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"ImplantableDeviceStatusObservationImplantableDeviceStatusObservationTemplateId","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(
+			context, "ImplantableDeviceStatusObservationImplantableDeviceStatusObservationTemplateId", "ERROR");
+
 		if (VALIDATE_IMPLANTABLE_DEVICE_STATUS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.IMPLANTABLE_DEVICE_STATUS_OBSERVATION);
 			try {
-				VALIDATE_IMPLANTABLE_DEVICE_STATUS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_IMPLANTABLE_DEVICE_STATUS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_IMPLANTABLE_DEVICE_STATUS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_IMPLANTABLE_DEVICE_STATUS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_IMPLANTABLE_DEVICE_STATUS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(implantableDeviceStatusObservation)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_IMPLANTABLE_DEVICE_STATUS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				implantableDeviceStatusObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.IMPLANTABLE_DEVICE_STATUS_OBSERVATION__IMPLANTABLE_DEVICE_STATUS_OBSERVATION_TEMPLATE_ID,
-						 ConsolPlugin.INSTANCE.getString("ImplantableDeviceStatusObservationImplantableDeviceStatusObservationTemplateId"),
-						 new Object [] { implantableDeviceStatusObservation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.IMPLANTABLE_DEVICE_STATUS_OBSERVATION__IMPLANTABLE_DEVICE_STATUS_OBSERVATION_TEMPLATE_ID,
+						ConsolPlugin.INSTANCE.getString(
+							"ImplantableDeviceStatusObservationImplantableDeviceStatusObservationTemplateId"),
+						new Object[] { implantableDeviceStatusObservation }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -158,7 +150,7 @@ public class ImplantableDeviceStatusObservationOperations extends ClinicalStatem
 	 * @generated
 	 * @ordered
 	 */
-	protected static ThreadLocal<  Constraint> VALIDATE_IMPLANTABLE_DEVICE_STATUS_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_IMPLANTABLE_DEVICE_STATUS_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -173,56 +165,50 @@ public class ImplantableDeviceStatusObservationOperations extends ClinicalStatem
 	public static boolean validateImplantableDeviceStatusObservationCodeP(
 			ImplantableDeviceStatusObservation implantableDeviceStatusObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"ImplantableDeviceStatusObservationImplantableDeviceStatusObservationCodeP","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(
+			context, "ImplantableDeviceStatusObservationImplantableDeviceStatusObservationCodeP", "ERROR");
+
 		if (VALIDATE_IMPLANTABLE_DEVICE_STATUS_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.IMPLANTABLE_DEVICE_STATUS_OBSERVATION);
 			try {
-				VALIDATE_IMPLANTABLE_DEVICE_STATUS_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_IMPLANTABLE_DEVICE_STATUS_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_IMPLANTABLE_DEVICE_STATUS_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_IMPLANTABLE_DEVICE_STATUS_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_IMPLANTABLE_DEVICE_STATUS_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(implantableDeviceStatusObservation)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_IMPLANTABLE_DEVICE_STATUS_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				implantableDeviceStatusObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.IMPLANTABLE_DEVICE_STATUS_OBSERVATION__IMPLANTABLE_DEVICE_STATUS_OBSERVATION_CODE_P,
-						 ConsolPlugin.INSTANCE.getString("ImplantableDeviceStatusObservationImplantableDeviceStatusObservationCodeP"),
-						 new Object [] { implantableDeviceStatusObservation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.IMPLANTABLE_DEVICE_STATUS_OBSERVATION__IMPLANTABLE_DEVICE_STATUS_OBSERVATION_CODE_P,
+						ConsolPlugin.INSTANCE.getString(
+							"ImplantableDeviceStatusObservationImplantableDeviceStatusObservationCodeP"),
+						new Object[] { implantableDeviceStatusObservation }));
 			}
-			
+
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
-				Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.consol.ImplantableDeviceStatusObservationCodeP");
+				Collection<Object> passToken = (Collection<Object>) context.get(
+					"org.openhealthtools.mdht.uml.cda.consol.ImplantableDeviceStatusObservationCodeP");
 				if (passToken == null) {
 					// anticipate a reasonably healthy model
-					passToken = new java.util.ArrayList<Object>(3);
-					context.put("org.openhealthtools.mdht.uml.cda.consol.ImplantableDeviceStatusObservationCodeP", passToken);
+					passToken = new java.util.ArrayList<>(3);
+					context.put(
+						"org.openhealthtools.mdht.uml.cda.consol.ImplantableDeviceStatusObservationCodeP", passToken);
 				}
 				passToken.add(implantableDeviceStatusObservation);
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -236,9 +222,9 @@ public class ImplantableDeviceStatusObservationOperations extends ClinicalStatem
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_IMPLANTABLE_DEVICE_STATUS_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
-"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
-"value.code = 'C160939' and value.codeSystem = '2.16.840.1.113883.3.26.1.1')";
+	protected static final String VALIDATE_IMPLANTABLE_DEVICE_STATUS_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and " +
+			"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in " +
+			"value.code = 'C160939' and value.codeSystem = '2.16.840.1.113883.3.26.1.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateImplantableDeviceStatusObservationCode(ImplantableDeviceStatusObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Implantable Device Status Observation Code</em>}' invariant operation.
@@ -248,7 +234,7 @@ public class ImplantableDeviceStatusObservationOperations extends ClinicalStatem
 	 * @generated
 	 * @ordered
 	 */
-	protected static ThreadLocal<  Constraint> VALIDATE_IMPLANTABLE_DEVICE_STATUS_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_IMPLANTABLE_DEVICE_STATUS_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -263,50 +249,45 @@ public class ImplantableDeviceStatusObservationOperations extends ClinicalStatem
 	public static boolean validateImplantableDeviceStatusObservationCode(
 			ImplantableDeviceStatusObservation implantableDeviceStatusObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-	
-	
-	
-  	  
-		Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.consol.ImplantableDeviceStatusObservationCodeP");
-		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(implantableDeviceStatusObservation)) {
+
+		Object passToken = (context == null)
+				? null
+				: context.get("org.openhealthtools.mdht.uml.cda.consol.ImplantableDeviceStatusObservationCodeP");
+		if ((passToken instanceof Collection<?>) &&
+				((Collection<?>) passToken).contains(implantableDeviceStatusObservation)) {
 			// I have a free pass to short-circuit
 			return true;
 		}
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"ImplantableDeviceStatusObservationImplantableDeviceStatusObservationCode","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(
+			context, "ImplantableDeviceStatusObservationImplantableDeviceStatusObservationCode", "ERROR");
+
 		if (VALIDATE_IMPLANTABLE_DEVICE_STATUS_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.IMPLANTABLE_DEVICE_STATUS_OBSERVATION);
 			try {
-				VALIDATE_IMPLANTABLE_DEVICE_STATUS_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_IMPLANTABLE_DEVICE_STATUS_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_IMPLANTABLE_DEVICE_STATUS_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_IMPLANTABLE_DEVICE_STATUS_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_IMPLANTABLE_DEVICE_STATUS_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(implantableDeviceStatusObservation)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_IMPLANTABLE_DEVICE_STATUS_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				implantableDeviceStatusObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.IMPLANTABLE_DEVICE_STATUS_OBSERVATION__IMPLANTABLE_DEVICE_STATUS_OBSERVATION_CODE,
-						 ConsolPlugin.INSTANCE.getString("ImplantableDeviceStatusObservationImplantableDeviceStatusObservationCode"),
-						 new Object [] { implantableDeviceStatusObservation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.IMPLANTABLE_DEVICE_STATUS_OBSERVATION__IMPLANTABLE_DEVICE_STATUS_OBSERVATION_CODE,
+						ConsolPlugin.INSTANCE.getString(
+							"ImplantableDeviceStatusObservationImplantableDeviceStatusObservationCode"),
+						new Object[] { implantableDeviceStatusObservation }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -320,9 +301,9 @@ public class ImplantableDeviceStatusObservationOperations extends ClinicalStatem
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_IMPLANTABLE_DEVICE_STATUS_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "+
-"let value : datatypes::CD = element.oclAsType(datatypes::CD) in "+
-"value.codeSystem = '2.16.840.1.113883.3.26.1.1' and (value.code = 'C45329' or value.code = 'C154407' or value.code = 'C122711' or value.code = 'C160942')))";
+	protected static final String VALIDATE_IMPLANTABLE_DEVICE_STATUS_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and " +
+			"let value : datatypes::CD = element.oclAsType(datatypes::CD) in " +
+			"value.codeSystem = '2.16.840.1.113883.3.26.1.1' and (value.code = 'C45329' or value.code = 'C154407' or value.code = 'C122711' or value.code = 'C160942')))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateImplantableDeviceStatusObservationValue(ImplantableDeviceStatusObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Implantable Device Status Observation Value</em>}' invariant operation.
@@ -332,7 +313,7 @@ public class ImplantableDeviceStatusObservationOperations extends ClinicalStatem
 	 * @generated
 	 * @ordered
 	 */
-	protected static ThreadLocal<  Constraint> VALIDATE_IMPLANTABLE_DEVICE_STATUS_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_IMPLANTABLE_DEVICE_STATUS_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -347,44 +328,36 @@ public class ImplantableDeviceStatusObservationOperations extends ClinicalStatem
 	public static boolean validateImplantableDeviceStatusObservationValue(
 			ImplantableDeviceStatusObservation implantableDeviceStatusObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"ImplantableDeviceStatusObservationImplantableDeviceStatusObservationValue","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(
+			context, "ImplantableDeviceStatusObservationImplantableDeviceStatusObservationValue", "ERROR");
+
 		if (VALIDATE_IMPLANTABLE_DEVICE_STATUS_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.IMPLANTABLE_DEVICE_STATUS_OBSERVATION);
 			try {
-				VALIDATE_IMPLANTABLE_DEVICE_STATUS_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_IMPLANTABLE_DEVICE_STATUS_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_IMPLANTABLE_DEVICE_STATUS_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_IMPLANTABLE_DEVICE_STATUS_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_IMPLANTABLE_DEVICE_STATUS_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(implantableDeviceStatusObservation)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_IMPLANTABLE_DEVICE_STATUS_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				implantableDeviceStatusObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.IMPLANTABLE_DEVICE_STATUS_OBSERVATION__IMPLANTABLE_DEVICE_STATUS_OBSERVATION_VALUE,
-						 ConsolPlugin.INSTANCE.getString("ImplantableDeviceStatusObservationImplantableDeviceStatusObservationValue"),
-						 new Object [] { implantableDeviceStatusObservation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.IMPLANTABLE_DEVICE_STATUS_OBSERVATION__IMPLANTABLE_DEVICE_STATUS_OBSERVATION_VALUE,
+						ConsolPlugin.INSTANCE.getString(
+							"ImplantableDeviceStatusObservationImplantableDeviceStatusObservationValue"),
+						new Object[] { implantableDeviceStatusObservation }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -408,7 +381,7 @@ public class ImplantableDeviceStatusObservationOperations extends ClinicalStatem
 	 * @generated
 	 * @ordered
 	 */
-	protected static ThreadLocal<  Constraint> VALIDATE_IMPLANTABLE_DEVICE_STATUS_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_IMPLANTABLE_DEVICE_STATUS_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -423,44 +396,36 @@ public class ImplantableDeviceStatusObservationOperations extends ClinicalStatem
 	public static boolean validateImplantableDeviceStatusObservationValueP(
 			ImplantableDeviceStatusObservation implantableDeviceStatusObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"ImplantableDeviceStatusObservationImplantableDeviceStatusObservationValueP","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(
+			context, "ImplantableDeviceStatusObservationImplantableDeviceStatusObservationValueP", "ERROR");
+
 		if (VALIDATE_IMPLANTABLE_DEVICE_STATUS_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.IMPLANTABLE_DEVICE_STATUS_OBSERVATION);
 			try {
-				VALIDATE_IMPLANTABLE_DEVICE_STATUS_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_IMPLANTABLE_DEVICE_STATUS_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_IMPLANTABLE_DEVICE_STATUS_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_IMPLANTABLE_DEVICE_STATUS_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_IMPLANTABLE_DEVICE_STATUS_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(implantableDeviceStatusObservation)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_IMPLANTABLE_DEVICE_STATUS_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				implantableDeviceStatusObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.IMPLANTABLE_DEVICE_STATUS_OBSERVATION__IMPLANTABLE_DEVICE_STATUS_OBSERVATION_VALUE_P,
-						 ConsolPlugin.INSTANCE.getString("ImplantableDeviceStatusObservationImplantableDeviceStatusObservationValueP"),
-						 new Object [] { implantableDeviceStatusObservation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.IMPLANTABLE_DEVICE_STATUS_OBSERVATION__IMPLANTABLE_DEVICE_STATUS_OBSERVATION_VALUE_P,
+						ConsolPlugin.INSTANCE.getString(
+							"ImplantableDeviceStatusObservationImplantableDeviceStatusObservationValueP"),
+						new Object[] { implantableDeviceStatusObservation }));
 			}
-			 
+
 			return false;
 		}
 		return true;

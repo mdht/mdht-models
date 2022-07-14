@@ -64,7 +64,8 @@ public class ResultsSectionEntriesOptional2Impl extends ResultsSectionEntriesOpt
 	@Override
 	public boolean validateResultsSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ResultsSectionEntriesOptional2Operations.validateResultsSectionEntriesOptionalTemplateId(this, diagnostics, context);
+		return ResultsSectionEntriesOptional2Operations.validateResultsSectionEntriesOptionalTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -75,7 +76,8 @@ public class ResultsSectionEntriesOptional2Impl extends ResultsSectionEntriesOpt
 	@Override
 	public boolean validateResultsSectionEntriesOptionalCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ResultsSectionEntriesOptional2Operations.validateResultsSectionEntriesOptionalCodeP(this, diagnostics, context);
+		return ResultsSectionEntriesOptional2Operations.validateResultsSectionEntriesOptionalCodeP(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -85,7 +87,8 @@ public class ResultsSectionEntriesOptional2Impl extends ResultsSectionEntriesOpt
 	 */
 	@Override
 	public boolean validateResultsSectionEntriesOptionalCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ResultsSectionEntriesOptional2Operations.validateResultsSectionEntriesOptionalCode(this, diagnostics, context);
+		return ResultsSectionEntriesOptional2Operations.validateResultsSectionEntriesOptionalCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -96,7 +99,8 @@ public class ResultsSectionEntriesOptional2Impl extends ResultsSectionEntriesOpt
 	@Override
 	public boolean validateResultsSectionEntriesOptionalResultOrganizer(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ResultsSectionEntriesOptional2Operations.validateResultsSectionEntriesOptionalResultOrganizer(this, diagnostics, context);
+		return ResultsSectionEntriesOptional2Operations.validateResultsSectionEntriesOptionalResultOrganizer(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -106,17 +110,17 @@ public class ResultsSectionEntriesOptional2Impl extends ResultsSectionEntriesOpt
 	 */
 	@Override
 	public ResultsSectionEntriesOptional2 init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public ResultsSectionEntriesOptional2 init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // ResultsSectionEntriesOptional2Impl

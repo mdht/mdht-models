@@ -142,9 +142,9 @@ public interface SocialHistoryObservation2 extends SocialHistoryObservation {
 	public SocialHistoryObservation2 init();
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public SocialHistoryObservation2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // SocialHistoryObservation2

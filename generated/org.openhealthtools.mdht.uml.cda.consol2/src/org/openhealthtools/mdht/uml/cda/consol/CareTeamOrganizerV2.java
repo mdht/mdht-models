@@ -172,7 +172,8 @@ public interface CareTeamOrganizerV2 extends Organizer {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component-&gt;exists(component : cda::Component4 | not component.observation.oclIsUndefined() and component.observation.oclIsKindOf(consol::CareTeamTypeObservation))'"
 	 * @generated
 	 */
-	boolean validateCareTeamOrganizerV2CareTeamTypeObservation(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateCareTeamOrganizerV2CareTeamTypeObservation(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -245,9 +246,9 @@ public interface CareTeamOrganizerV2 extends Organizer {
 	public CareTeamOrganizerV2 init();
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public CareTeamOrganizerV2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // CareTeamOrganizerV2

@@ -92,7 +92,7 @@ public class SectionTimeRangeObservationOperations extends ClinicalStatementOper
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_SECTION_TIME_RANGE_OBSERVATION_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_SECTION_TIME_RANGE_OBSERVATION_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -108,44 +108,40 @@ public class SectionTimeRangeObservationOperations extends ClinicalStatementOper
 	public static boolean validateSectionTimeRangeObservationTextReferenceValue(
 			SectionTimeRangeObservation sectionTimeRangeObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"SectionTimeRangeObservationSectionTimeRangeObservationTextReferenceValue","null");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(
+			context, "SectionTimeRangeObservationSectionTimeRangeObservationTextReferenceValue", "null");
+
 		if (VALIDATE_SECTION_TIME_RANGE_OBSERVATION_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SECTION_TIME_RANGE_OBSERVATION);
 			try {
-				VALIDATE_SECTION_TIME_RANGE_OBSERVATION_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_SECTION_TIME_RANGE_OBSERVATION_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_SECTION_TIME_RANGE_OBSERVATION_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_SECTION_TIME_RANGE_OBSERVATION_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_SECTION_TIME_RANGE_OBSERVATION_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(sectionTimeRangeObservation)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_SECTION_TIME_RANGE_OBSERVATION_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				sectionTimeRangeObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.SECTION_TIME_RANGE_OBSERVATION__SECTION_TIME_RANGE_OBSERVATION_TEXT_REFERENCE_VALUE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SectionTimeRangeObservationSectionTimeRangeObservationTextReferenceValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(sectionTimeRangeObservation, context) }),
-						 new Object [] { sectionTimeRangeObservation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.SECTION_TIME_RANGE_OBSERVATION__SECTION_TIME_RANGE_OBSERVATION_TEXT_REFERENCE_VALUE,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"SectionTimeRangeObservationSectionTimeRangeObservationTextReferenceValue",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										sectionTimeRangeObservation, context) }),
+						new Object[] { sectionTimeRangeObservation }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -170,7 +166,7 @@ public class SectionTimeRangeObservationOperations extends ClinicalStatementOper
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_SECTION_TIME_RANGE_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_SECTION_TIME_RANGE_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -186,44 +182,35 @@ public class SectionTimeRangeObservationOperations extends ClinicalStatementOper
 	public static boolean validateSectionTimeRangeObservationTemplateId(
 			SectionTimeRangeObservation sectionTimeRangeObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"SectionTimeRangeObservationSectionTimeRangeObservationTemplateId","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "SectionTimeRangeObservationSectionTimeRangeObservationTemplateId", "ERROR");
+
 		if (VALIDATE_SECTION_TIME_RANGE_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SECTION_TIME_RANGE_OBSERVATION);
 			try {
-				VALIDATE_SECTION_TIME_RANGE_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_SECTION_TIME_RANGE_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_SECTION_TIME_RANGE_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_SECTION_TIME_RANGE_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_SECTION_TIME_RANGE_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(sectionTimeRangeObservation)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_SECTION_TIME_RANGE_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				sectionTimeRangeObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.SECTION_TIME_RANGE_OBSERVATION__SECTION_TIME_RANGE_OBSERVATION_TEMPLATE_ID,
-						 ConsolPlugin.INSTANCE.getString("SectionTimeRangeObservationSectionTimeRangeObservationTemplateId"),
-						 new Object [] { sectionTimeRangeObservation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.SECTION_TIME_RANGE_OBSERVATION__SECTION_TIME_RANGE_OBSERVATION_TEMPLATE_ID,
+						ConsolPlugin.INSTANCE.getString(
+							"SectionTimeRangeObservationSectionTimeRangeObservationTemplateId"),
+						new Object[] { sectionTimeRangeObservation }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -248,7 +235,7 @@ public class SectionTimeRangeObservationOperations extends ClinicalStatementOper
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_SECTION_TIME_RANGE_OBSERVATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_SECTION_TIME_RANGE_OBSERVATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -263,44 +250,33 @@ public class SectionTimeRangeObservationOperations extends ClinicalStatementOper
 
 	public static boolean validateSectionTimeRangeObservationId(SectionTimeRangeObservation sectionTimeRangeObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"SectionTimeRangeObservationSectionTimeRangeObservationId","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "SectionTimeRangeObservationSectionTimeRangeObservationId", "ERROR");
+
 		if (VALIDATE_SECTION_TIME_RANGE_OBSERVATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SECTION_TIME_RANGE_OBSERVATION);
 			try {
-				VALIDATE_SECTION_TIME_RANGE_OBSERVATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_SECTION_TIME_RANGE_OBSERVATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_SECTION_TIME_RANGE_OBSERVATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_SECTION_TIME_RANGE_OBSERVATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_SECTION_TIME_RANGE_OBSERVATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(sectionTimeRangeObservation)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_SECTION_TIME_RANGE_OBSERVATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				sectionTimeRangeObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.SECTION_TIME_RANGE_OBSERVATION__SECTION_TIME_RANGE_OBSERVATION_ID,
-						 ConsolPlugin.INSTANCE.getString("SectionTimeRangeObservationSectionTimeRangeObservationId"),
-						 new Object [] { sectionTimeRangeObservation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.SECTION_TIME_RANGE_OBSERVATION__SECTION_TIME_RANGE_OBSERVATION_ID,
+						ConsolPlugin.INSTANCE.getString("SectionTimeRangeObservationSectionTimeRangeObservationId"),
+						new Object[] { sectionTimeRangeObservation }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -314,9 +290,9 @@ public class SectionTimeRangeObservationOperations extends ClinicalStatementOper
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_SECTION_TIME_RANGE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
-"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
-"value.code = '82607-3' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_SECTION_TIME_RANGE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and " +
+			"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in " +
+			"value.code = '82607-3' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateSectionTimeRangeObservationCode(SectionTimeRangeObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Section Time Range Observation Code</em>}' invariant operation.
@@ -327,7 +303,7 @@ public class SectionTimeRangeObservationOperations extends ClinicalStatementOper
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_SECTION_TIME_RANGE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_SECTION_TIME_RANGE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -343,44 +319,34 @@ public class SectionTimeRangeObservationOperations extends ClinicalStatementOper
 	public static boolean validateSectionTimeRangeObservationCode(
 			SectionTimeRangeObservation sectionTimeRangeObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"SectionTimeRangeObservationSectionTimeRangeObservationCode","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "SectionTimeRangeObservationSectionTimeRangeObservationCode", "ERROR");
+
 		if (VALIDATE_SECTION_TIME_RANGE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SECTION_TIME_RANGE_OBSERVATION);
 			try {
-				VALIDATE_SECTION_TIME_RANGE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_SECTION_TIME_RANGE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_SECTION_TIME_RANGE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_SECTION_TIME_RANGE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_SECTION_TIME_RANGE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(sectionTimeRangeObservation)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_SECTION_TIME_RANGE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				sectionTimeRangeObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.SECTION_TIME_RANGE_OBSERVATION__SECTION_TIME_RANGE_OBSERVATION_CODE,
-						 ConsolPlugin.INSTANCE.getString("SectionTimeRangeObservationSectionTimeRangeObservationCode"),
-						 new Object [] { sectionTimeRangeObservation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.SECTION_TIME_RANGE_OBSERVATION__SECTION_TIME_RANGE_OBSERVATION_CODE,
+						ConsolPlugin.INSTANCE.getString("SectionTimeRangeObservationSectionTimeRangeObservationCode"),
+						new Object[] { sectionTimeRangeObservation }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -405,7 +371,7 @@ public class SectionTimeRangeObservationOperations extends ClinicalStatementOper
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_SECTION_TIME_RANGE_OBSERVATION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_SECTION_TIME_RANGE_OBSERVATION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -421,44 +387,34 @@ public class SectionTimeRangeObservationOperations extends ClinicalStatementOper
 	public static boolean validateSectionTimeRangeObservationText(
 			SectionTimeRangeObservation sectionTimeRangeObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"SectionTimeRangeObservationSectionTimeRangeObservationText","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "SectionTimeRangeObservationSectionTimeRangeObservationText", "ERROR");
+
 		if (VALIDATE_SECTION_TIME_RANGE_OBSERVATION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SECTION_TIME_RANGE_OBSERVATION);
 			try {
-				VALIDATE_SECTION_TIME_RANGE_OBSERVATION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_SECTION_TIME_RANGE_OBSERVATION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_SECTION_TIME_RANGE_OBSERVATION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_SECTION_TIME_RANGE_OBSERVATION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_SECTION_TIME_RANGE_OBSERVATION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(sectionTimeRangeObservation)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_SECTION_TIME_RANGE_OBSERVATION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				sectionTimeRangeObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.SECTION_TIME_RANGE_OBSERVATION__SECTION_TIME_RANGE_OBSERVATION_TEXT,
-						 ConsolPlugin.INSTANCE.getString("SectionTimeRangeObservationSectionTimeRangeObservationText"),
-						 new Object [] { sectionTimeRangeObservation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.SECTION_TIME_RANGE_OBSERVATION__SECTION_TIME_RANGE_OBSERVATION_TEXT,
+						ConsolPlugin.INSTANCE.getString("SectionTimeRangeObservationSectionTimeRangeObservationText"),
+						new Object[] { sectionTimeRangeObservation }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -472,9 +428,8 @@ public class SectionTimeRangeObservationOperations extends ClinicalStatementOper
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_SECTION_TIME_RANGE_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and "+
-"let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in "+
-"value.code = 'completed')";
+	protected static final String VALIDATE_SECTION_TIME_RANGE_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and " +
+			"let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in " + "value.code = 'completed')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateSectionTimeRangeObservationStatusCode(SectionTimeRangeObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Section Time Range Observation Status Code</em>}' invariant operation.
@@ -485,7 +440,7 @@ public class SectionTimeRangeObservationOperations extends ClinicalStatementOper
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_SECTION_TIME_RANGE_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_SECTION_TIME_RANGE_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -501,44 +456,35 @@ public class SectionTimeRangeObservationOperations extends ClinicalStatementOper
 	public static boolean validateSectionTimeRangeObservationStatusCode(
 			SectionTimeRangeObservation sectionTimeRangeObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"SectionTimeRangeObservationSectionTimeRangeObservationStatusCode","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "SectionTimeRangeObservationSectionTimeRangeObservationStatusCode", "ERROR");
+
 		if (VALIDATE_SECTION_TIME_RANGE_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SECTION_TIME_RANGE_OBSERVATION);
 			try {
-				VALIDATE_SECTION_TIME_RANGE_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_SECTION_TIME_RANGE_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_SECTION_TIME_RANGE_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_SECTION_TIME_RANGE_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_SECTION_TIME_RANGE_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(sectionTimeRangeObservation)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_SECTION_TIME_RANGE_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				sectionTimeRangeObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.SECTION_TIME_RANGE_OBSERVATION__SECTION_TIME_RANGE_OBSERVATION_STATUS_CODE,
-						 ConsolPlugin.INSTANCE.getString("SectionTimeRangeObservationSectionTimeRangeObservationStatusCode"),
-						 new Object [] { sectionTimeRangeObservation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.SECTION_TIME_RANGE_OBSERVATION__SECTION_TIME_RANGE_OBSERVATION_STATUS_CODE,
+						ConsolPlugin.INSTANCE.getString(
+							"SectionTimeRangeObservationSectionTimeRangeObservationStatusCode"),
+						new Object[] { sectionTimeRangeObservation }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -563,7 +509,7 @@ public class SectionTimeRangeObservationOperations extends ClinicalStatementOper
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_SECTION_TIME_RANGE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_SECTION_TIME_RANGE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -579,44 +525,34 @@ public class SectionTimeRangeObservationOperations extends ClinicalStatementOper
 	public static boolean validateSectionTimeRangeObservationValue(
 			SectionTimeRangeObservation sectionTimeRangeObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"SectionTimeRangeObservationSectionTimeRangeObservationValue","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "SectionTimeRangeObservationSectionTimeRangeObservationValue", "ERROR");
+
 		if (VALIDATE_SECTION_TIME_RANGE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SECTION_TIME_RANGE_OBSERVATION);
 			try {
-				VALIDATE_SECTION_TIME_RANGE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_SECTION_TIME_RANGE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_SECTION_TIME_RANGE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_SECTION_TIME_RANGE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_SECTION_TIME_RANGE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(sectionTimeRangeObservation)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_SECTION_TIME_RANGE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				sectionTimeRangeObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.SECTION_TIME_RANGE_OBSERVATION__SECTION_TIME_RANGE_OBSERVATION_VALUE,
-						 ConsolPlugin.INSTANCE.getString("SectionTimeRangeObservationSectionTimeRangeObservationValue"),
-						 new Object [] { sectionTimeRangeObservation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.SECTION_TIME_RANGE_OBSERVATION__SECTION_TIME_RANGE_OBSERVATION_VALUE,
+						ConsolPlugin.INSTANCE.getString("SectionTimeRangeObservationSectionTimeRangeObservationValue"),
+						new Object[] { sectionTimeRangeObservation }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -641,7 +577,7 @@ public class SectionTimeRangeObservationOperations extends ClinicalStatementOper
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_SECTION_TIME_RANGE_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_SECTION_TIME_RANGE_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -657,44 +593,35 @@ public class SectionTimeRangeObservationOperations extends ClinicalStatementOper
 	public static boolean validateSectionTimeRangeObservationClassCode(
 			SectionTimeRangeObservation sectionTimeRangeObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"SectionTimeRangeObservationSectionTimeRangeObservationClassCode","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "SectionTimeRangeObservationSectionTimeRangeObservationClassCode", "ERROR");
+
 		if (VALIDATE_SECTION_TIME_RANGE_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SECTION_TIME_RANGE_OBSERVATION);
 			try {
-				VALIDATE_SECTION_TIME_RANGE_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_SECTION_TIME_RANGE_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_SECTION_TIME_RANGE_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_SECTION_TIME_RANGE_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_SECTION_TIME_RANGE_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(sectionTimeRangeObservation)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_SECTION_TIME_RANGE_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				sectionTimeRangeObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.SECTION_TIME_RANGE_OBSERVATION__SECTION_TIME_RANGE_OBSERVATION_CLASS_CODE,
-						 ConsolPlugin.INSTANCE.getString("SectionTimeRangeObservationSectionTimeRangeObservationClassCode"),
-						 new Object [] { sectionTimeRangeObservation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.SECTION_TIME_RANGE_OBSERVATION__SECTION_TIME_RANGE_OBSERVATION_CLASS_CODE,
+						ConsolPlugin.INSTANCE.getString(
+							"SectionTimeRangeObservationSectionTimeRangeObservationClassCode"),
+						new Object[] { sectionTimeRangeObservation }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -719,7 +646,7 @@ public class SectionTimeRangeObservationOperations extends ClinicalStatementOper
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_SECTION_TIME_RANGE_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_SECTION_TIME_RANGE_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -735,44 +662,35 @@ public class SectionTimeRangeObservationOperations extends ClinicalStatementOper
 	public static boolean validateSectionTimeRangeObservationMoodCode(
 			SectionTimeRangeObservation sectionTimeRangeObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"SectionTimeRangeObservationSectionTimeRangeObservationMoodCode","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "SectionTimeRangeObservationSectionTimeRangeObservationMoodCode", "ERROR");
+
 		if (VALIDATE_SECTION_TIME_RANGE_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SECTION_TIME_RANGE_OBSERVATION);
 			try {
-				VALIDATE_SECTION_TIME_RANGE_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_SECTION_TIME_RANGE_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_SECTION_TIME_RANGE_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_SECTION_TIME_RANGE_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_SECTION_TIME_RANGE_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(sectionTimeRangeObservation)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_SECTION_TIME_RANGE_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				sectionTimeRangeObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.SECTION_TIME_RANGE_OBSERVATION__SECTION_TIME_RANGE_OBSERVATION_MOOD_CODE,
-						 ConsolPlugin.INSTANCE.getString("SectionTimeRangeObservationSectionTimeRangeObservationMoodCode"),
-						 new Object [] { sectionTimeRangeObservation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.SECTION_TIME_RANGE_OBSERVATION__SECTION_TIME_RANGE_OBSERVATION_MOOD_CODE,
+						ConsolPlugin.INSTANCE.getString(
+							"SectionTimeRangeObservationSectionTimeRangeObservationMoodCode"),
+						new Object[] { sectionTimeRangeObservation }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -797,7 +715,7 @@ public class SectionTimeRangeObservationOperations extends ClinicalStatementOper
 	 * @ordered
 	 */
 
-	protected static ThreadLocal< Query<?, ?, ?> > VALIDATE_SECTION_TIME_RANGE_OBSERVATION_IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal< Query<?, ?, ?> >();
+	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_SECTION_TIME_RANGE_OBSERVATION_IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -813,49 +731,39 @@ public class SectionTimeRangeObservationOperations extends ClinicalStatementOper
 	public static boolean validateSectionTimeRangeObservationIVLTSLow(
 			SectionTimeRangeObservation sectionTimeRangeObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"SectionTimeRangeObservationSectionTimeRangeObservationIVLTSLow","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "SectionTimeRangeObservationSectionTimeRangeObservationIVLTSLow", "ERROR");
+
 		if (VALIDATE_SECTION_TIME_RANGE_OBSERVATION_IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SECTION_TIME_RANGE_OBSERVATION);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_SECTION_TIME_RANGE_OBSERVATION_IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_SECTION_TIME_RANGE_OBSERVATION_IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(EOCL_ENV.get().createQuery(oclExpression));
-			}
-			catch (ParserException pe) {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_SECTION_TIME_RANGE_OBSERVATION_IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_SECTION_TIME_RANGE_OBSERVATION_IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(
+					EOCL_ENV.get().createQuery(oclExpression));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		Object oclResult = VALIDATE_SECTION_TIME_RANGE_OBSERVATION_IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(sectionTimeRangeObservation);		
+		}
+
+		Object oclResult = VALIDATE_SECTION_TIME_RANGE_OBSERVATION_IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(
+			sectionTimeRangeObservation);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-  			
+
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.SECTION_TIME_RANGE_OBSERVATION__SECTION_TIME_RANGE_OBSERVATION_IVLTS_LOW,
-						 ConsolPlugin.INSTANCE.getString("SectionTimeRangeObservationSectionTimeRangeObservationIVLTSLow"),
-						 new Object [] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.SECTION_TIME_RANGE_OBSERVATION__SECTION_TIME_RANGE_OBSERVATION_IVLTS_LOW,
+							ConsolPlugin.INSTANCE.getString(
+								"SectionTimeRangeObservationSectionTimeRangeObservationIVLTSLow"),
+							new Object[] { eObject }));
 				}
-				 
+
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -881,7 +789,7 @@ public class SectionTimeRangeObservationOperations extends ClinicalStatementOper
 	 * @ordered
 	 */
 
-	protected static ThreadLocal< Query<?, ?, ?> > VALIDATE_SECTION_TIME_RANGE_OBSERVATION_IVLTS_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal< Query<?, ?, ?> >();
+	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_SECTION_TIME_RANGE_OBSERVATION_IVLTS_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -897,49 +805,39 @@ public class SectionTimeRangeObservationOperations extends ClinicalStatementOper
 	public static boolean validateSectionTimeRangeObservationIVLTSHigh(
 			SectionTimeRangeObservation sectionTimeRangeObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"SectionTimeRangeObservationSectionTimeRangeObservationIVLTSHigh","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "SectionTimeRangeObservationSectionTimeRangeObservationIVLTSHigh", "ERROR");
+
 		if (VALIDATE_SECTION_TIME_RANGE_OBSERVATION_IVLTS_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SECTION_TIME_RANGE_OBSERVATION);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_SECTION_TIME_RANGE_OBSERVATION_IVLTS_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_SECTION_TIME_RANGE_OBSERVATION_IVLTS_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(EOCL_ENV.get().createQuery(oclExpression));
-			}
-			catch (ParserException pe) {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_SECTION_TIME_RANGE_OBSERVATION_IVLTS_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_SECTION_TIME_RANGE_OBSERVATION_IVLTS_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(
+					EOCL_ENV.get().createQuery(oclExpression));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		Object oclResult = VALIDATE_SECTION_TIME_RANGE_OBSERVATION_IVLTS_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(sectionTimeRangeObservation);		
+		}
+
+		Object oclResult = VALIDATE_SECTION_TIME_RANGE_OBSERVATION_IVLTS_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(
+			sectionTimeRangeObservation);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-  			
+
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.SECTION_TIME_RANGE_OBSERVATION__SECTION_TIME_RANGE_OBSERVATION_IVLTS_HIGH,
-						 ConsolPlugin.INSTANCE.getString("SectionTimeRangeObservationSectionTimeRangeObservationIVLTSHigh"),
-						 new Object [] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.SECTION_TIME_RANGE_OBSERVATION__SECTION_TIME_RANGE_OBSERVATION_IVLTS_HIGH,
+							ConsolPlugin.INSTANCE.getString(
+								"SectionTimeRangeObservationSectionTimeRangeObservationIVLTSHigh"),
+							new Object[] { eObject }));
 				}
-				 
+
 			}
 			return oclResultSet.isEmpty();
 		}

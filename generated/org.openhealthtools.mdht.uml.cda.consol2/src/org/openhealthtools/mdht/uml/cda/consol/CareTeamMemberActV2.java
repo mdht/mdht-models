@@ -171,9 +171,9 @@ public interface CareTeamMemberActV2 extends Act {
 	public CareTeamMemberActV2 init();
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public CareTeamMemberActV2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // CareTeamMemberActV2

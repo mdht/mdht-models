@@ -87,9 +87,9 @@ public interface DICOMObjectCatalogSection extends Section {
 	public DICOMObjectCatalogSection init();
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public DICOMObjectCatalogSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // DICOMObjectCatalogSection

@@ -186,9 +186,9 @@ public interface TobaccoUse extends Observation {
 	public TobaccoUse init();
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public TobaccoUse init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // TobaccoUse

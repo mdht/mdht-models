@@ -81,7 +81,8 @@ public class EncountersSection2Impl extends EncountersSectionEntriesOptional2Imp
 	@Override
 	public boolean validateEncountersSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return EncountersSection2Operations.validateEncountersSectionEntriesOptionalTemplateId(this, diagnostics, context);
+		return EncountersSection2Operations.validateEncountersSectionEntriesOptionalTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -114,7 +115,8 @@ public class EncountersSection2Impl extends EncountersSectionEntriesOptional2Imp
 	@Override
 	public boolean validateEncountersSectionEntriesOptionalEncounterActivities(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return EncountersSection2Operations.validateEncountersSectionEntriesOptionalEncounterActivities(this, diagnostics, context);
+		return EncountersSection2Operations.validateEncountersSectionEntriesOptionalEncounterActivities(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -134,17 +136,17 @@ public class EncountersSection2Impl extends EncountersSectionEntriesOptional2Imp
 	 */
 	@Override
 	public EncountersSection2 init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public EncountersSection2 init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // EncountersSection2Impl

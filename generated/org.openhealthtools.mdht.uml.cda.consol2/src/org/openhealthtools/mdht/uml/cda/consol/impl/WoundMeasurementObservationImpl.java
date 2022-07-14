@@ -52,7 +52,8 @@ public class WoundMeasurementObservationImpl extends ObservationImpl implements 
 	 */
 	public boolean validateWoundMeasurementObservationTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return WoundMeasurementObservationOperations.validateWoundMeasurementObservationTemplateId(this, diagnostics, context);
+		return WoundMeasurementObservationOperations.validateWoundMeasurementObservationTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -62,7 +63,8 @@ public class WoundMeasurementObservationImpl extends ObservationImpl implements 
 	 */
 	public boolean validateWoundMeasurementObservationClassCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return WoundMeasurementObservationOperations.validateWoundMeasurementObservationClassCode(this, diagnostics, context);
+		return WoundMeasurementObservationOperations.validateWoundMeasurementObservationClassCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -72,7 +74,8 @@ public class WoundMeasurementObservationImpl extends ObservationImpl implements 
 	 */
 	public boolean validateWoundMeasurementObservationMoodCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return WoundMeasurementObservationOperations.validateWoundMeasurementObservationMoodCode(this, diagnostics, context);
+		return WoundMeasurementObservationOperations.validateWoundMeasurementObservationMoodCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -90,7 +93,8 @@ public class WoundMeasurementObservationImpl extends ObservationImpl implements 
 	 * @generated
 	 */
 	public boolean validateWoundMeasurementObservationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return WoundMeasurementObservationOperations.validateWoundMeasurementObservationCodeP(this, diagnostics, context);
+		return WoundMeasurementObservationOperations.validateWoundMeasurementObservationCodeP(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -99,7 +103,8 @@ public class WoundMeasurementObservationImpl extends ObservationImpl implements 
 	 * @generated
 	 */
 	public boolean validateWoundMeasurementObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return WoundMeasurementObservationOperations.validateWoundMeasurementObservationCode(this, diagnostics, context);
+		return WoundMeasurementObservationOperations.validateWoundMeasurementObservationCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -109,7 +114,8 @@ public class WoundMeasurementObservationImpl extends ObservationImpl implements 
 	 */
 	public boolean validateWoundMeasurementObservationStatusCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return WoundMeasurementObservationOperations.validateWoundMeasurementObservationStatusCode(this, diagnostics, context);
+		return WoundMeasurementObservationOperations.validateWoundMeasurementObservationStatusCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -119,7 +125,8 @@ public class WoundMeasurementObservationImpl extends ObservationImpl implements 
 	 */
 	public boolean validateWoundMeasurementObservationStatusCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return WoundMeasurementObservationOperations.validateWoundMeasurementObservationStatusCodeP(this, diagnostics, context);
+		return WoundMeasurementObservationOperations.validateWoundMeasurementObservationStatusCodeP(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -129,7 +136,8 @@ public class WoundMeasurementObservationImpl extends ObservationImpl implements 
 	 */
 	public boolean validateWoundMeasurementObservationEffectiveTime(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return WoundMeasurementObservationOperations.validateWoundMeasurementObservationEffectiveTime(this, diagnostics, context);
+		return WoundMeasurementObservationOperations.validateWoundMeasurementObservationEffectiveTime(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -138,7 +146,8 @@ public class WoundMeasurementObservationImpl extends ObservationImpl implements 
 	 * @generated
 	 */
 	public boolean validateWoundMeasurementObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return WoundMeasurementObservationOperations.validateWoundMeasurementObservationValue(this, diagnostics, context);
+		return WoundMeasurementObservationOperations.validateWoundMeasurementObservationValue(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -147,16 +156,16 @@ public class WoundMeasurementObservationImpl extends ObservationImpl implements 
 	 * @generated
 	 */
 	public WoundMeasurementObservation init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public WoundMeasurementObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // WoundMeasurementObservationImpl

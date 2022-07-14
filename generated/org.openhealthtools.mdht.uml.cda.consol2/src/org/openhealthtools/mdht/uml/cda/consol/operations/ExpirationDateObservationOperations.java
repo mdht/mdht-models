@@ -48,7 +48,7 @@ public class ExpirationDateObservationOperations extends ClinicalStatementOperat
 	 * @generated
 	 * @ordered
 	 */
-	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+	protected static final ThreadLocal<OCL> EOCL_ENV = new ThreadLocal<OCL>() {
 		@Override
 		public OCL initialValue() {
 			return OCL.newInstance();
@@ -82,7 +82,7 @@ public class ExpirationDateObservationOperations extends ClinicalStatementOperat
 	 * @generated
 	 * @ordered
 	 */
-	protected static ThreadLocal<  Constraint> VALIDATE_EXPIRATION_DATE_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_EXPIRATION_DATE_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -97,44 +97,34 @@ public class ExpirationDateObservationOperations extends ClinicalStatementOperat
 	public static boolean validateExpirationDateObservationTemplateId(
 			ExpirationDateObservation expirationDateObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"ExpirationDateObservationExpirationDateObservationTemplateId","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "ExpirationDateObservationExpirationDateObservationTemplateId", "ERROR");
+
 		if (VALIDATE_EXPIRATION_DATE_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.EXPIRATION_DATE_OBSERVATION);
 			try {
-				VALIDATE_EXPIRATION_DATE_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_EXPIRATION_DATE_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_EXPIRATION_DATE_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_EXPIRATION_DATE_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_EXPIRATION_DATE_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(expirationDateObservation)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_EXPIRATION_DATE_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				expirationDateObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.EXPIRATION_DATE_OBSERVATION__EXPIRATION_DATE_OBSERVATION_TEMPLATE_ID,
-						 ConsolPlugin.INSTANCE.getString("ExpirationDateObservationExpirationDateObservationTemplateId"),
-						 new Object [] { expirationDateObservation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.EXPIRATION_DATE_OBSERVATION__EXPIRATION_DATE_OBSERVATION_TEMPLATE_ID,
+						ConsolPlugin.INSTANCE.getString("ExpirationDateObservationExpirationDateObservationTemplateId"),
+						new Object[] { expirationDateObservation }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -158,7 +148,7 @@ public class ExpirationDateObservationOperations extends ClinicalStatementOperat
 	 * @generated
 	 * @ordered
 	 */
-	protected static ThreadLocal<  Constraint> VALIDATE_EXPIRATION_DATE_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_EXPIRATION_DATE_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -172,56 +162,47 @@ public class ExpirationDateObservationOperations extends ClinicalStatementOperat
 	 */
 	public static boolean validateExpirationDateObservationCodeP(ExpirationDateObservation expirationDateObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"ExpirationDateObservationExpirationDateObservationCodeP","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "ExpirationDateObservationExpirationDateObservationCodeP", "ERROR");
+
 		if (VALIDATE_EXPIRATION_DATE_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.EXPIRATION_DATE_OBSERVATION);
 			try {
-				VALIDATE_EXPIRATION_DATE_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_EXPIRATION_DATE_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_EXPIRATION_DATE_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_EXPIRATION_DATE_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_EXPIRATION_DATE_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(expirationDateObservation)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_EXPIRATION_DATE_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				expirationDateObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.EXPIRATION_DATE_OBSERVATION__EXPIRATION_DATE_OBSERVATION_CODE_P,
-						 ConsolPlugin.INSTANCE.getString("ExpirationDateObservationExpirationDateObservationCodeP"),
-						 new Object [] { expirationDateObservation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.EXPIRATION_DATE_OBSERVATION__EXPIRATION_DATE_OBSERVATION_CODE_P,
+						ConsolPlugin.INSTANCE.getString("ExpirationDateObservationExpirationDateObservationCodeP"),
+						new Object[] { expirationDateObservation }));
 			}
-			
+
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
-				Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.consol.ExpirationDateObservationCodeP");
+				Collection<Object> passToken = (Collection<Object>) context.get(
+					"org.openhealthtools.mdht.uml.cda.consol.ExpirationDateObservationCodeP");
 				if (passToken == null) {
 					// anticipate a reasonably healthy model
-					passToken = new java.util.ArrayList<Object>(3);
+					passToken = new java.util.ArrayList<>(3);
 					context.put("org.openhealthtools.mdht.uml.cda.consol.ExpirationDateObservationCodeP", passToken);
 				}
 				passToken.add(expirationDateObservation);
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -235,9 +216,9 @@ public class ExpirationDateObservationOperations extends ClinicalStatementOperat
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_EXPIRATION_DATE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
-"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
-"value.code = 'C101670' and value.codeSystem = '2.16.840.1.113883.3.26.1.1')";
+	protected static final String VALIDATE_EXPIRATION_DATE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and " +
+			"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in " +
+			"value.code = 'C101670' and value.codeSystem = '2.16.840.1.113883.3.26.1.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateExpirationDateObservationCode(ExpirationDateObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Expiration Date Observation Code</em>}' invariant operation.
@@ -247,7 +228,7 @@ public class ExpirationDateObservationOperations extends ClinicalStatementOperat
 	 * @generated
 	 * @ordered
 	 */
-	protected static ThreadLocal<  Constraint> VALIDATE_EXPIRATION_DATE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_EXPIRATION_DATE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -261,50 +242,41 @@ public class ExpirationDateObservationOperations extends ClinicalStatementOperat
 	 */
 	public static boolean validateExpirationDateObservationCode(ExpirationDateObservation expirationDateObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-		Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.consol.ExpirationDateObservationCodeP");
+
+		Object passToken = (context == null)
+				? null
+				: context.get("org.openhealthtools.mdht.uml.cda.consol.ExpirationDateObservationCodeP");
 		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(expirationDateObservation)) {
 			// I have a free pass to short-circuit
 			return true;
 		}
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"ExpirationDateObservationExpirationDateObservationCode","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "ExpirationDateObservationExpirationDateObservationCode", "ERROR");
+
 		if (VALIDATE_EXPIRATION_DATE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.EXPIRATION_DATE_OBSERVATION);
 			try {
-				VALIDATE_EXPIRATION_DATE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_EXPIRATION_DATE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_EXPIRATION_DATE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_EXPIRATION_DATE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_EXPIRATION_DATE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(expirationDateObservation)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_EXPIRATION_DATE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				expirationDateObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.EXPIRATION_DATE_OBSERVATION__EXPIRATION_DATE_OBSERVATION_CODE,
-						 ConsolPlugin.INSTANCE.getString("ExpirationDateObservationExpirationDateObservationCode"),
-						 new Object [] { expirationDateObservation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.EXPIRATION_DATE_OBSERVATION__EXPIRATION_DATE_OBSERVATION_CODE,
+						ConsolPlugin.INSTANCE.getString("ExpirationDateObservationExpirationDateObservationCode"),
+						new Object[] { expirationDateObservation }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -328,7 +300,7 @@ public class ExpirationDateObservationOperations extends ClinicalStatementOperat
 	 * @generated
 	 * @ordered
 	 */
-	protected static ThreadLocal<  Constraint> VALIDATE_EXPIRATION_DATE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_EXPIRATION_DATE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -342,44 +314,33 @@ public class ExpirationDateObservationOperations extends ClinicalStatementOperat
 	 */
 	public static boolean validateExpirationDateObservationValue(ExpirationDateObservation expirationDateObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"ExpirationDateObservationExpirationDateObservationValue","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "ExpirationDateObservationExpirationDateObservationValue", "ERROR");
+
 		if (VALIDATE_EXPIRATION_DATE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.EXPIRATION_DATE_OBSERVATION);
 			try {
-				VALIDATE_EXPIRATION_DATE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_EXPIRATION_DATE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_EXPIRATION_DATE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_EXPIRATION_DATE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_EXPIRATION_DATE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(expirationDateObservation)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_EXPIRATION_DATE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				expirationDateObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.EXPIRATION_DATE_OBSERVATION__EXPIRATION_DATE_OBSERVATION_VALUE,
-						 ConsolPlugin.INSTANCE.getString("ExpirationDateObservationExpirationDateObservationValue"),
-						 new Object [] { expirationDateObservation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.EXPIRATION_DATE_OBSERVATION__EXPIRATION_DATE_OBSERVATION_VALUE,
+						ConsolPlugin.INSTANCE.getString("ExpirationDateObservationExpirationDateObservationValue"),
+						new Object[] { expirationDateObservation }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -404,7 +365,7 @@ public class ExpirationDateObservationOperations extends ClinicalStatementOperat
 	 * @ordered
 	 */
 
-	protected static ThreadLocal< Query<?, ?, ?> > VALIDATE_EXPIRATION_DATE_OBSERVATION_TS_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal< Query<?, ?, ?> >();
+	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_EXPIRATION_DATE_OBSERVATION_TS_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -419,49 +380,39 @@ public class ExpirationDateObservationOperations extends ClinicalStatementOperat
 	@SuppressWarnings("unchecked")
 	public static boolean validateExpirationDateObservationTSValue(ExpirationDateObservation expirationDateObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"ExpirationDateObservationExpirationDateObservationTSValue","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "ExpirationDateObservationExpirationDateObservationTSValue", "ERROR");
+
 		if (VALIDATE_EXPIRATION_DATE_OBSERVATION_TS_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.EXPIRATION_DATE_OBSERVATION);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_EXPIRATION_DATE_OBSERVATION_TS_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_EXPIRATION_DATE_OBSERVATION_TS_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(EOCL_ENV.get().createQuery(oclExpression));
-			}
-			catch (ParserException pe) {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_EXPIRATION_DATE_OBSERVATION_TS_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_EXPIRATION_DATE_OBSERVATION_TS_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(
+					EOCL_ENV.get().createQuery(oclExpression));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		Object oclResult = VALIDATE_EXPIRATION_DATE_OBSERVATION_TS_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(expirationDateObservation);		
+		}
+
+		Object oclResult = VALIDATE_EXPIRATION_DATE_OBSERVATION_TS_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(
+			expirationDateObservation);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-  			
+
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.EXPIRATION_DATE_OBSERVATION__EXPIRATION_DATE_OBSERVATION_TS_VALUE,
-						 ConsolPlugin.INSTANCE.getString("ExpirationDateObservationExpirationDateObservationTSValue"),
-						 new Object [] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.EXPIRATION_DATE_OBSERVATION__EXPIRATION_DATE_OBSERVATION_TS_VALUE,
+							ConsolPlugin.INSTANCE.getString(
+								"ExpirationDateObservationExpirationDateObservationTSValue"),
+							new Object[] { eObject }));
 				}
-				 
+
 			}
 			return oclResultSet.isEmpty();
 		}

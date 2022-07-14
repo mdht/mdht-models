@@ -56,7 +56,8 @@ public class ProcedureDescriptionSectionImpl extends SectionImpl implements Proc
 	 */
 	public boolean validateProcedureDescriptionSectionTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProcedureDescriptionSectionOperations.validateProcedureDescriptionSectionTemplateId(this, diagnostics, context);
+		return ProcedureDescriptionSectionOperations.validateProcedureDescriptionSectionTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -65,7 +66,8 @@ public class ProcedureDescriptionSectionImpl extends SectionImpl implements Proc
 	 * @generated
 	 */
 	public boolean validateProcedureDescriptionSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureDescriptionSectionOperations.validateProcedureDescriptionSectionCode(this, diagnostics, context);
+		return ProcedureDescriptionSectionOperations.validateProcedureDescriptionSectionCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -74,7 +76,8 @@ public class ProcedureDescriptionSectionImpl extends SectionImpl implements Proc
 	 * @generated
 	 */
 	public boolean validateProcedureDescriptionSectionCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureDescriptionSectionOperations.validateProcedureDescriptionSectionCodeP(this, diagnostics, context);
+		return ProcedureDescriptionSectionOperations.validateProcedureDescriptionSectionCodeP(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -83,7 +86,8 @@ public class ProcedureDescriptionSectionImpl extends SectionImpl implements Proc
 	 * @generated
 	 */
 	public boolean validateProcedureDescriptionSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureDescriptionSectionOperations.validateProcedureDescriptionSectionText(this, diagnostics, context);
+		return ProcedureDescriptionSectionOperations.validateProcedureDescriptionSectionText(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -92,7 +96,8 @@ public class ProcedureDescriptionSectionImpl extends SectionImpl implements Proc
 	 * @generated
 	 */
 	public boolean validateProcedureDescriptionSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureDescriptionSectionOperations.validateProcedureDescriptionSectionTitle(this, diagnostics, context);
+		return ProcedureDescriptionSectionOperations.validateProcedureDescriptionSectionTitle(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -101,16 +106,16 @@ public class ProcedureDescriptionSectionImpl extends SectionImpl implements Proc
 	 * @generated
 	 */
 	public ProcedureDescriptionSection init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public ProcedureDescriptionSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // ProcedureDescriptionSectionImpl

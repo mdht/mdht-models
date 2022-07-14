@@ -123,9 +123,9 @@ public interface GoalsSection extends Section {
 	public GoalsSection init();
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public GoalsSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // GoalsSection

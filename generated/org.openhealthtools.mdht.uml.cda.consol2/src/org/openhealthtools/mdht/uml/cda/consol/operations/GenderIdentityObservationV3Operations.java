@@ -11,8 +11,6 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.emf.ecore.EObject;
-import org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations;
-
 import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 
 import org.eclipse.ocl.ParserException;
@@ -44,6 +42,7 @@ import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GenderIdentityObservationV3#validateGenderIdentityObservationV3MoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Gender Identity Observation V3 Mood Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GenderIdentityObservationV3#validateGenderIdentityObservationV3IVLTSLow(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Gender Identity Observation V3IVLTS Low</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GenderIdentityObservationV3#validateGenderIdentityObservationV3IVLTSHigh(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Gender Identity Observation V3IVLTS High</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GenderIdentityObservationV3#validateSocialHistoryObservation2TemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Observation2 Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GenderIdentityObservationV3#validateSocialHistoryObservationCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Observation Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GenderIdentityObservationV3#validateSocialHistoryObservationCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Observation Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GenderIdentityObservationV3#validateSocialHistoryObservationStatusCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Observation Status Code P</em>}</li>
@@ -90,7 +89,7 @@ public class GenderIdentityObservationV3Operations extends SocialHistoryObservat
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_GENDER_IDENTITY_OBSERVATION_V3_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_GENDER_IDENTITY_OBSERVATION_V3_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -106,44 +105,36 @@ public class GenderIdentityObservationV3Operations extends SocialHistoryObservat
 	public static boolean validateGenderIdentityObservationV3EffectiveTime(
 			GenderIdentityObservationV3 genderIdentityObservationV3, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"GenderIdentityObservationV3GenderIdentityObservationV3EffectiveTime","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(
+			context, "GenderIdentityObservationV3GenderIdentityObservationV3EffectiveTime", "ERROR");
+
 		if (VALIDATE_GENDER_IDENTITY_OBSERVATION_V3_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.GENDER_IDENTITY_OBSERVATION_V3);
 			try {
-				VALIDATE_GENDER_IDENTITY_OBSERVATION_V3_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_GENDER_IDENTITY_OBSERVATION_V3_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_GENDER_IDENTITY_OBSERVATION_V3_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_GENDER_IDENTITY_OBSERVATION_V3_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_GENDER_IDENTITY_OBSERVATION_V3_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(genderIdentityObservationV3)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_GENDER_IDENTITY_OBSERVATION_V3_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				genderIdentityObservationV3)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.GENDER_IDENTITY_OBSERVATION_V3__GENDER_IDENTITY_OBSERVATION_V3_EFFECTIVE_TIME,
-						 ConsolPlugin.INSTANCE.getString("GenderIdentityObservationV3GenderIdentityObservationV3EffectiveTime"),
-						 new Object [] { genderIdentityObservationV3 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.GENDER_IDENTITY_OBSERVATION_V3__GENDER_IDENTITY_OBSERVATION_V3_EFFECTIVE_TIME,
+						ConsolPlugin.INSTANCE.getString(
+							"GenderIdentityObservationV3GenderIdentityObservationV3EffectiveTime"),
+						new Object[] { genderIdentityObservationV3 }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -157,12 +148,10 @@ public class GenderIdentityObservationV3Operations extends SocialHistoryObservat
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_GENDER_IDENTITY_OBSERVATION_V3_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "+
-"let value : datatypes::CD = element.oclAsType(datatypes::CD) in "+
-"value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '407376001' or value.code = '407377005' or value.code = '44613100012"+
-"4102' or value.code = '44614100012"+
-"4107' or value.code = '44615100012"+
-"4109')))";
+	protected static final String VALIDATE_GENDER_IDENTITY_OBSERVATION_V3_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and " +
+			"let value : datatypes::CD = element.oclAsType(datatypes::CD) in " +
+			"value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '407376001' or value.code = '407377005' or value.code = '44613100012" +
+			"4102' or value.code = '44614100012" + "4107' or value.code = '44615100012" + "4109')))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateGenderIdentityObservationV3Value(GenderIdentityObservationV3, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Gender Identity Observation V3 Value</em>}' invariant operation.
@@ -173,7 +162,7 @@ public class GenderIdentityObservationV3Operations extends SocialHistoryObservat
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_GENDER_IDENTITY_OBSERVATION_V3_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_GENDER_IDENTITY_OBSERVATION_V3_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -189,44 +178,34 @@ public class GenderIdentityObservationV3Operations extends SocialHistoryObservat
 	public static boolean validateGenderIdentityObservationV3Value(
 			GenderIdentityObservationV3 genderIdentityObservationV3, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"GenderIdentityObservationV3GenderIdentityObservationV3Value","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "GenderIdentityObservationV3GenderIdentityObservationV3Value", "ERROR");
+
 		if (VALIDATE_GENDER_IDENTITY_OBSERVATION_V3_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.GENDER_IDENTITY_OBSERVATION_V3);
 			try {
-				VALIDATE_GENDER_IDENTITY_OBSERVATION_V3_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_GENDER_IDENTITY_OBSERVATION_V3_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_GENDER_IDENTITY_OBSERVATION_V3_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_GENDER_IDENTITY_OBSERVATION_V3_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_GENDER_IDENTITY_OBSERVATION_V3_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(genderIdentityObservationV3)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_GENDER_IDENTITY_OBSERVATION_V3_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				genderIdentityObservationV3)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.GENDER_IDENTITY_OBSERVATION_V3__GENDER_IDENTITY_OBSERVATION_V3_VALUE,
-						 ConsolPlugin.INSTANCE.getString("GenderIdentityObservationV3GenderIdentityObservationV3Value"),
-						 new Object [] { genderIdentityObservationV3 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.GENDER_IDENTITY_OBSERVATION_V3__GENDER_IDENTITY_OBSERVATION_V3_VALUE,
+						ConsolPlugin.INSTANCE.getString("GenderIdentityObservationV3GenderIdentityObservationV3Value"),
+						new Object[] { genderIdentityObservationV3 }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -251,7 +230,7 @@ public class GenderIdentityObservationV3Operations extends SocialHistoryObservat
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_GENDER_IDENTITY_OBSERVATION_V3_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_GENDER_IDENTITY_OBSERVATION_V3_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -267,44 +246,34 @@ public class GenderIdentityObservationV3Operations extends SocialHistoryObservat
 	public static boolean validateGenderIdentityObservationV3ValueP(
 			GenderIdentityObservationV3 genderIdentityObservationV3, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"GenderIdentityObservationV3GenderIdentityObservationV3ValueP","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "GenderIdentityObservationV3GenderIdentityObservationV3ValueP", "ERROR");
+
 		if (VALIDATE_GENDER_IDENTITY_OBSERVATION_V3_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.GENDER_IDENTITY_OBSERVATION_V3);
 			try {
-				VALIDATE_GENDER_IDENTITY_OBSERVATION_V3_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_GENDER_IDENTITY_OBSERVATION_V3_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_GENDER_IDENTITY_OBSERVATION_V3_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_GENDER_IDENTITY_OBSERVATION_V3_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_GENDER_IDENTITY_OBSERVATION_V3_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(genderIdentityObservationV3)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_GENDER_IDENTITY_OBSERVATION_V3_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				genderIdentityObservationV3)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.GENDER_IDENTITY_OBSERVATION_V3__GENDER_IDENTITY_OBSERVATION_V3_VALUE_P,
-						 ConsolPlugin.INSTANCE.getString("GenderIdentityObservationV3GenderIdentityObservationV3ValueP"),
-						 new Object [] { genderIdentityObservationV3 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.GENDER_IDENTITY_OBSERVATION_V3__GENDER_IDENTITY_OBSERVATION_V3_VALUE_P,
+						ConsolPlugin.INSTANCE.getString("GenderIdentityObservationV3GenderIdentityObservationV3ValueP"),
+						new Object[] { genderIdentityObservationV3 }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -328,8 +297,8 @@ public class GenderIdentityObservationV3Operations extends SocialHistoryObservat
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_GENDER_IDENTITY_OBSERVATION_V3_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
+
+	protected static ThreadLocal<Constraint> VALIDATE_GENDER_IDENTITY_OBSERVATION_V3_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -341,46 +310,39 @@ public class GenderIdentityObservationV3Operations extends SocialHistoryObservat
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateGenderIdentityObservationV3ClassCode(GenderIdentityObservationV3 genderIdentityObservationV3, DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"GenderIdentityObservationV3GenderIdentityObservationV3ClassCode","ERROR");
-    
-  	  
-  	  
+
+	public static boolean validateGenderIdentityObservationV3ClassCode(
+			GenderIdentityObservationV3 genderIdentityObservationV3, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "GenderIdentityObservationV3GenderIdentityObservationV3ClassCode", "ERROR");
+
 		if (VALIDATE_GENDER_IDENTITY_OBSERVATION_V3_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.GENDER_IDENTITY_OBSERVATION_V3);
 			try {
-				VALIDATE_GENDER_IDENTITY_OBSERVATION_V3_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_GENDER_IDENTITY_OBSERVATION_V3_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_GENDER_IDENTITY_OBSERVATION_V3_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_GENDER_IDENTITY_OBSERVATION_V3_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_GENDER_IDENTITY_OBSERVATION_V3_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(genderIdentityObservationV3)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_GENDER_IDENTITY_OBSERVATION_V3_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				genderIdentityObservationV3)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.GENDER_IDENTITY_OBSERVATION_V3__GENDER_IDENTITY_OBSERVATION_V3_CLASS_CODE,
-						 ConsolPlugin.INSTANCE.getString("GenderIdentityObservationV3GenderIdentityObservationV3ClassCode"),
-						 new Object [] { genderIdentityObservationV3 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.GENDER_IDENTITY_OBSERVATION_V3__GENDER_IDENTITY_OBSERVATION_V3_CLASS_CODE,
+						ConsolPlugin.INSTANCE.getString(
+							"GenderIdentityObservationV3GenderIdentityObservationV3ClassCode"),
+						new Object[] { genderIdentityObservationV3 }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -404,8 +366,8 @@ public class GenderIdentityObservationV3Operations extends SocialHistoryObservat
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_GENDER_IDENTITY_OBSERVATION_V3_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
+
+	protected static ThreadLocal<Constraint> VALIDATE_GENDER_IDENTITY_OBSERVATION_V3_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -417,46 +379,39 @@ public class GenderIdentityObservationV3Operations extends SocialHistoryObservat
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateGenderIdentityObservationV3MoodCode(GenderIdentityObservationV3 genderIdentityObservationV3, DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"GenderIdentityObservationV3GenderIdentityObservationV3MoodCode","ERROR");
-    
-  	  
-  	  
+
+	public static boolean validateGenderIdentityObservationV3MoodCode(
+			GenderIdentityObservationV3 genderIdentityObservationV3, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "GenderIdentityObservationV3GenderIdentityObservationV3MoodCode", "ERROR");
+
 		if (VALIDATE_GENDER_IDENTITY_OBSERVATION_V3_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.GENDER_IDENTITY_OBSERVATION_V3);
 			try {
-				VALIDATE_GENDER_IDENTITY_OBSERVATION_V3_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_GENDER_IDENTITY_OBSERVATION_V3_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_GENDER_IDENTITY_OBSERVATION_V3_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_GENDER_IDENTITY_OBSERVATION_V3_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_GENDER_IDENTITY_OBSERVATION_V3_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(genderIdentityObservationV3)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_GENDER_IDENTITY_OBSERVATION_V3_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				genderIdentityObservationV3)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.GENDER_IDENTITY_OBSERVATION_V3__GENDER_IDENTITY_OBSERVATION_V3_MOOD_CODE,
-						 ConsolPlugin.INSTANCE.getString("GenderIdentityObservationV3GenderIdentityObservationV3MoodCode"),
-						 new Object [] { genderIdentityObservationV3 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.GENDER_IDENTITY_OBSERVATION_V3__GENDER_IDENTITY_OBSERVATION_V3_MOOD_CODE,
+						ConsolPlugin.INSTANCE.getString(
+							"GenderIdentityObservationV3GenderIdentityObservationV3MoodCode"),
+						new Object[] { genderIdentityObservationV3 }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -480,13 +435,8 @@ public class GenderIdentityObservationV3Operations extends SocialHistoryObservat
 	 * @generated
 	 * @ordered
 	 */
-	
-	
-	
-	
-	
-	
-	protected static ThreadLocal< Query<?, ?, ?> > VALIDATE_GENDER_IDENTITY_OBSERVATION_V3IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY= new ThreadLocal< Query<?, ?, ?> >();
+
+	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_GENDER_IDENTITY_OBSERVATION_V3IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -499,50 +449,42 @@ public class GenderIdentityObservationV3Operations extends SocialHistoryObservat
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
-	public static  boolean validateGenderIdentityObservationV3IVLTSLow(GenderIdentityObservationV3 genderIdentityObservationV3, DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"GenderIdentityObservationV3GenderIdentityObservationV3IVLTSLow","ERROR");
-    
-  	  
-  	  
+	public static boolean validateGenderIdentityObservationV3IVLTSLow(
+			GenderIdentityObservationV3 genderIdentityObservationV3, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "GenderIdentityObservationV3GenderIdentityObservationV3IVLTSLow", "ERROR");
+
 		if (VALIDATE_GENDER_IDENTITY_OBSERVATION_V3IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.GENDER_IDENTITY_OBSERVATION_V3);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_GENDER_IDENTITY_OBSERVATION_V3IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_GENDER_IDENTITY_OBSERVATION_V3IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(EOCL_ENV.get().createQuery(oclExpression));
-			}
-			catch (ParserException pe) {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_GENDER_IDENTITY_OBSERVATION_V3IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_GENDER_IDENTITY_OBSERVATION_V3IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(
+					EOCL_ENV.get().createQuery(oclExpression));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		Object oclResult = VALIDATE_GENDER_IDENTITY_OBSERVATION_V3IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(genderIdentityObservationV3);		
+		}
+
+		Object oclResult = VALIDATE_GENDER_IDENTITY_OBSERVATION_V3IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(
+			genderIdentityObservationV3);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-  			
+
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.GENDER_IDENTITY_OBSERVATION_V3__GENDER_IDENTITY_OBSERVATION_V3IVLTS_LOW,
-						 ConsolPlugin.INSTANCE.getString("GenderIdentityObservationV3GenderIdentityObservationV3IVLTSLow"),
-						 new Object [] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.GENDER_IDENTITY_OBSERVATION_V3__GENDER_IDENTITY_OBSERVATION_V3IVLTS_LOW,
+							ConsolPlugin.INSTANCE.getString(
+								"GenderIdentityObservationV3GenderIdentityObservationV3IVLTSLow"),
+							new Object[] { eObject }));
 				}
-				 
+
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -567,13 +509,8 @@ public class GenderIdentityObservationV3Operations extends SocialHistoryObservat
 	 * @generated
 	 * @ordered
 	 */
-	
-	
-	
-	
-	
-	
-	protected static ThreadLocal< Query<?, ?, ?> > VALIDATE_GENDER_IDENTITY_OBSERVATION_V3IVLTS_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY= new ThreadLocal< Query<?, ?, ?> >();
+
+	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_GENDER_IDENTITY_OBSERVATION_V3IVLTS_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -586,52 +523,113 @@ public class GenderIdentityObservationV3Operations extends SocialHistoryObservat
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
-	public static  boolean validateGenderIdentityObservationV3IVLTSHigh(GenderIdentityObservationV3 genderIdentityObservationV3, DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"GenderIdentityObservationV3GenderIdentityObservationV3IVLTSHigh","INFO");
-    
-  	  
-  	  
+	public static boolean validateGenderIdentityObservationV3IVLTSHigh(
+			GenderIdentityObservationV3 genderIdentityObservationV3, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "GenderIdentityObservationV3GenderIdentityObservationV3IVLTSHigh", "INFO");
+
 		if (VALIDATE_GENDER_IDENTITY_OBSERVATION_V3IVLTS_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.GENDER_IDENTITY_OBSERVATION_V3);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_GENDER_IDENTITY_OBSERVATION_V3IVLTS_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_GENDER_IDENTITY_OBSERVATION_V3IVLTS_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(EOCL_ENV.get().createQuery(oclExpression));
-			}
-			catch (ParserException pe) {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_GENDER_IDENTITY_OBSERVATION_V3IVLTS_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_GENDER_IDENTITY_OBSERVATION_V3IVLTS_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(
+					EOCL_ENV.get().createQuery(oclExpression));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		Object oclResult = VALIDATE_GENDER_IDENTITY_OBSERVATION_V3IVLTS_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(genderIdentityObservationV3);		
+		}
+
+		Object oclResult = VALIDATE_GENDER_IDENTITY_OBSERVATION_V3IVLTS_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(
+			genderIdentityObservationV3);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-  			
+
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.GENDER_IDENTITY_OBSERVATION_V3__GENDER_IDENTITY_OBSERVATION_V3IVLTS_HIGH,
-						 ConsolPlugin.INSTANCE.getString("GenderIdentityObservationV3GenderIdentityObservationV3IVLTSHigh"),
-						 new Object [] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.GENDER_IDENTITY_OBSERVATION_V3__GENDER_IDENTITY_OBSERVATION_V3IVLTS_HIGH,
+							ConsolPlugin.INSTANCE.getString(
+								"GenderIdentityObservationV3GenderIdentityObservationV3IVLTSHigh"),
+							new Object[] { eObject }));
 				}
-				 
+
 			}
 			return oclResultSet.isEmpty();
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateSocialHistoryObservation2TemplateId(GenderIdentityObservationV3, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Observation2 Template Id</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateSocialHistoryObservation2TemplateId(GenderIdentityObservationV3, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_SOCIAL_HISTORY_OBSERVATION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.34.3.45' and id.extension = '2022-06-01')";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateSocialHistoryObservation2TemplateId(GenderIdentityObservationV3, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Observation2 Template Id</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateSocialHistoryObservation2TemplateId(GenderIdentityObservationV3, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static ThreadLocal<Constraint> VALIDATE_SOCIAL_HISTORY_OBSERVATION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param genderIdentityObservationV3 The receiving '<em><b>Gender Identity Observation V3</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+
+	public static boolean validateSocialHistoryObservation2TemplateId(
+			GenderIdentityObservationV3 genderIdentityObservationV3, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "GenderIdentityObservationV3SocialHistoryObservation2TemplateId", "ERROR");
+
+		if (VALIDATE_SOCIAL_HISTORY_OBSERVATION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.GENDER_IDENTITY_OBSERVATION_V3);
+			try {
+				VALIDATE_SOCIAL_HISTORY_OBSERVATION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_SOCIAL_HISTORY_OBSERVATION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_SOCIAL_HISTORY_OBSERVATION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				genderIdentityObservationV3)) {
+			if (diagnostics != null) {
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.GENDER_IDENTITY_OBSERVATION_V3__SOCIAL_HISTORY_OBSERVATION2_TEMPLATE_ID,
+						ConsolPlugin.INSTANCE.getString(
+							"GenderIdentityObservationV3SocialHistoryObservation2TemplateId"),
+						new Object[] { genderIdentityObservationV3 }));
+			}
+
+			return false;
 		}
 		return true;
 	}
@@ -654,8 +652,8 @@ public class GenderIdentityObservationV3Operations extends SocialHistoryObservat
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_SOCIAL_HISTORY_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
+
+	protected static ThreadLocal<Constraint> VALIDATE_SOCIAL_HISTORY_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -667,58 +665,49 @@ public class GenderIdentityObservationV3Operations extends SocialHistoryObservat
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateSocialHistoryObservationCodeP(GenderIdentityObservationV3 genderIdentityObservationV3, DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"GenderIdentityObservationV3SocialHistoryObservationCodeP","ERROR");
-    
-  	  
-  	  
+
+	public static boolean validateSocialHistoryObservationCodeP(GenderIdentityObservationV3 genderIdentityObservationV3,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "GenderIdentityObservationV3SocialHistoryObservationCodeP", "ERROR");
+
 		if (VALIDATE_SOCIAL_HISTORY_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.GENDER_IDENTITY_OBSERVATION_V3);
 			try {
-				VALIDATE_SOCIAL_HISTORY_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_SOCIAL_HISTORY_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_SOCIAL_HISTORY_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_SOCIAL_HISTORY_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_SOCIAL_HISTORY_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(genderIdentityObservationV3)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_SOCIAL_HISTORY_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				genderIdentityObservationV3)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.GENDER_IDENTITY_OBSERVATION_V3__SOCIAL_HISTORY_OBSERVATION_CODE_P,
-						 ConsolPlugin.INSTANCE.getString("GenderIdentityObservationV3SocialHistoryObservationCodeP"),
-						 new Object [] { genderIdentityObservationV3 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.GENDER_IDENTITY_OBSERVATION_V3__SOCIAL_HISTORY_OBSERVATION_CODE_P,
+						ConsolPlugin.INSTANCE.getString("GenderIdentityObservationV3SocialHistoryObservationCodeP"),
+						new Object[] { genderIdentityObservationV3 }));
 			}
-			
+
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
-				Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.consol.SocialHistoryObservationCodeP");
+				Collection<Object> passToken = (Collection<Object>) context.get(
+					"org.openhealthtools.mdht.uml.cda.consol.SocialHistoryObservationCodeP");
 				if (passToken == null) {
 					// anticipate a reasonably healthy model
-					passToken = new java.util.ArrayList<Object>(3);
+					passToken = new java.util.ArrayList<>(3);
 					context.put("org.openhealthtools.mdht.uml.cda.consol.SocialHistoryObservationCodeP", passToken);
 				}
 				passToken.add(genderIdentityObservationV3);
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -732,9 +721,9 @@ public class GenderIdentityObservationV3Operations extends SocialHistoryObservat
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_SOCIAL_HISTORY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
-"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
-"value.code = '76691-5' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_SOCIAL_HISTORY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and " +
+			"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in " +
+			"value.code = '76691-5' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateSocialHistoryObservationCode(GenderIdentityObservationV3, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Observation Code</em>}' invariant operation.
@@ -744,8 +733,8 @@ public class GenderIdentityObservationV3Operations extends SocialHistoryObservat
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_SOCIAL_HISTORY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
+
+	protected static ThreadLocal<Constraint> VALIDATE_SOCIAL_HISTORY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -757,52 +746,44 @@ public class GenderIdentityObservationV3Operations extends SocialHistoryObservat
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateSocialHistoryObservationCode(GenderIdentityObservationV3 genderIdentityObservationV3, DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-		Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.consol.SocialHistoryObservationCodeP");
+
+	public static boolean validateSocialHistoryObservationCode(GenderIdentityObservationV3 genderIdentityObservationV3,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		Object passToken = (context == null)
+				? null
+				: context.get("org.openhealthtools.mdht.uml.cda.consol.SocialHistoryObservationCodeP");
 		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(genderIdentityObservationV3)) {
 			// I have a free pass to short-circuit
 			return true;
 		}
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"GenderIdentityObservationV3SocialHistoryObservationCode","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "GenderIdentityObservationV3SocialHistoryObservationCode", "ERROR");
+
 		if (VALIDATE_SOCIAL_HISTORY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.GENDER_IDENTITY_OBSERVATION_V3);
 			try {
-				VALIDATE_SOCIAL_HISTORY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_SOCIAL_HISTORY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_SOCIAL_HISTORY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_SOCIAL_HISTORY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_SOCIAL_HISTORY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(genderIdentityObservationV3)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_SOCIAL_HISTORY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				genderIdentityObservationV3)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.GENDER_IDENTITY_OBSERVATION_V3__SOCIAL_HISTORY_OBSERVATION_CODE,
-						 ConsolPlugin.INSTANCE.getString("GenderIdentityObservationV3SocialHistoryObservationCode"),
-						 new Object [] { genderIdentityObservationV3 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.GENDER_IDENTITY_OBSERVATION_V3__SOCIAL_HISTORY_OBSERVATION_CODE,
+						ConsolPlugin.INSTANCE.getString("GenderIdentityObservationV3SocialHistoryObservationCode"),
+						new Object[] { genderIdentityObservationV3 }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -826,8 +807,8 @@ public class GenderIdentityObservationV3Operations extends SocialHistoryObservat
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_SOCIAL_HISTORY_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
+
+	protected static ThreadLocal<Constraint> VALIDATE_SOCIAL_HISTORY_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -839,58 +820,53 @@ public class GenderIdentityObservationV3Operations extends SocialHistoryObservat
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateSocialHistoryObservationStatusCodeP(GenderIdentityObservationV3 genderIdentityObservationV3, DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"GenderIdentityObservationV3SocialHistoryObservationStatusCodeP","ERROR");
-    
-  	  
-  	  
+
+	public static boolean validateSocialHistoryObservationStatusCodeP(
+			GenderIdentityObservationV3 genderIdentityObservationV3, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "GenderIdentityObservationV3SocialHistoryObservationStatusCodeP", "ERROR");
+
 		if (VALIDATE_SOCIAL_HISTORY_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.GENDER_IDENTITY_OBSERVATION_V3);
 			try {
-				VALIDATE_SOCIAL_HISTORY_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_SOCIAL_HISTORY_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_SOCIAL_HISTORY_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_SOCIAL_HISTORY_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_SOCIAL_HISTORY_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(genderIdentityObservationV3)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_SOCIAL_HISTORY_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				genderIdentityObservationV3)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.GENDER_IDENTITY_OBSERVATION_V3__SOCIAL_HISTORY_OBSERVATION_STATUS_CODE_P,
-						 ConsolPlugin.INSTANCE.getString("GenderIdentityObservationV3SocialHistoryObservationStatusCodeP"),
-						 new Object [] { genderIdentityObservationV3 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.GENDER_IDENTITY_OBSERVATION_V3__SOCIAL_HISTORY_OBSERVATION_STATUS_CODE_P,
+						ConsolPlugin.INSTANCE.getString(
+							"GenderIdentityObservationV3SocialHistoryObservationStatusCodeP"),
+						new Object[] { genderIdentityObservationV3 }));
 			}
-			
+
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
-				Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.consol.SocialHistoryObservationStatusCodeP");
+				Collection<Object> passToken = (Collection<Object>) context.get(
+					"org.openhealthtools.mdht.uml.cda.consol.SocialHistoryObservationStatusCodeP");
 				if (passToken == null) {
 					// anticipate a reasonably healthy model
-					passToken = new java.util.ArrayList<Object>(3);
-					context.put("org.openhealthtools.mdht.uml.cda.consol.SocialHistoryObservationStatusCodeP", passToken);
+					passToken = new java.util.ArrayList<>(3);
+					context.put(
+						"org.openhealthtools.mdht.uml.cda.consol.SocialHistoryObservationStatusCodeP", passToken);
 				}
 				passToken.add(genderIdentityObservationV3);
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -904,9 +880,8 @@ public class GenderIdentityObservationV3Operations extends SocialHistoryObservat
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_SOCIAL_HISTORY_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and "+
-"let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in "+
-"value.code = 'completed')";
+	protected static final String VALIDATE_SOCIAL_HISTORY_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and " +
+			"let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in " + "value.code = 'completed')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateSocialHistoryObservationStatusCode(GenderIdentityObservationV3, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Observation Status Code</em>}' invariant operation.
@@ -916,8 +891,8 @@ public class GenderIdentityObservationV3Operations extends SocialHistoryObservat
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_SOCIAL_HISTORY_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
+
+	protected static ThreadLocal<Constraint> VALIDATE_SOCIAL_HISTORY_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -929,52 +904,47 @@ public class GenderIdentityObservationV3Operations extends SocialHistoryObservat
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateSocialHistoryObservationStatusCode(GenderIdentityObservationV3 genderIdentityObservationV3, DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-		Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.consol.SocialHistoryObservationStatusCodeP");
+
+	public static boolean validateSocialHistoryObservationStatusCode(
+			GenderIdentityObservationV3 genderIdentityObservationV3, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
+		Object passToken = (context == null)
+				? null
+				: context.get("org.openhealthtools.mdht.uml.cda.consol.SocialHistoryObservationStatusCodeP");
 		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(genderIdentityObservationV3)) {
 			// I have a free pass to short-circuit
 			return true;
 		}
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"GenderIdentityObservationV3SocialHistoryObservationStatusCode","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "GenderIdentityObservationV3SocialHistoryObservationStatusCode", "ERROR");
+
 		if (VALIDATE_SOCIAL_HISTORY_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.GENDER_IDENTITY_OBSERVATION_V3);
 			try {
-				VALIDATE_SOCIAL_HISTORY_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_SOCIAL_HISTORY_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_SOCIAL_HISTORY_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_SOCIAL_HISTORY_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_SOCIAL_HISTORY_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(genderIdentityObservationV3)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_SOCIAL_HISTORY_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				genderIdentityObservationV3)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.GENDER_IDENTITY_OBSERVATION_V3__SOCIAL_HISTORY_OBSERVATION_STATUS_CODE,
-						 ConsolPlugin.INSTANCE.getString("GenderIdentityObservationV3SocialHistoryObservationStatusCode"),
-						 new Object [] { genderIdentityObservationV3 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.GENDER_IDENTITY_OBSERVATION_V3__SOCIAL_HISTORY_OBSERVATION_STATUS_CODE,
+						ConsolPlugin.INSTANCE.getString(
+							"GenderIdentityObservationV3SocialHistoryObservationStatusCode"),
+						new Object[] { genderIdentityObservationV3 }));
 			}
-			 
+
 			return false;
 		}
 		return true;

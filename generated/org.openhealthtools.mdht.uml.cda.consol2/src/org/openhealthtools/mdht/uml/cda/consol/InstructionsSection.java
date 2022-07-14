@@ -111,9 +111,9 @@ public interface InstructionsSection extends Section {
 	public InstructionsSection init();
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public InstructionsSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // InstructionsSection

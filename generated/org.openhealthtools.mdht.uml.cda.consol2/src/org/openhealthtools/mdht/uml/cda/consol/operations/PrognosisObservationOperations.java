@@ -80,7 +80,7 @@ public class PrognosisObservationOperations extends ClinicalStatementOperations 
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_PROGNOSIS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_PROGNOSIS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -95,44 +95,33 @@ public class PrognosisObservationOperations extends ClinicalStatementOperations 
 
 	public static boolean validatePrognosisObservationTemplateId(PrognosisObservation prognosisObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"PrognosisObservationPrognosisObservationTemplateId","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "PrognosisObservationPrognosisObservationTemplateId", "ERROR");
+
 		if (VALIDATE_PROGNOSIS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROGNOSIS_OBSERVATION);
 			try {
-				VALIDATE_PROGNOSIS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PROGNOSIS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_PROGNOSIS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_PROGNOSIS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_PROGNOSIS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(prognosisObservation)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_PROGNOSIS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				prognosisObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.PROGNOSIS_OBSERVATION__PROGNOSIS_OBSERVATION_TEMPLATE_ID,
-						 ConsolPlugin.INSTANCE.getString("PrognosisObservationPrognosisObservationTemplateId"),
-						 new Object [] { prognosisObservation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PROGNOSIS_OBSERVATION__PROGNOSIS_OBSERVATION_TEMPLATE_ID,
+						ConsolPlugin.INSTANCE.getString("PrognosisObservationPrognosisObservationTemplateId"),
+						new Object[] { prognosisObservation }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -157,7 +146,7 @@ public class PrognosisObservationOperations extends ClinicalStatementOperations 
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_PROGNOSIS_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_PROGNOSIS_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -172,44 +161,33 @@ public class PrognosisObservationOperations extends ClinicalStatementOperations 
 
 	public static boolean validatePrognosisObservationClassCode(PrognosisObservation prognosisObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"PrognosisObservationPrognosisObservationClassCode","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "PrognosisObservationPrognosisObservationClassCode", "ERROR");
+
 		if (VALIDATE_PROGNOSIS_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROGNOSIS_OBSERVATION);
 			try {
-				VALIDATE_PROGNOSIS_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PROGNOSIS_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_PROGNOSIS_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_PROGNOSIS_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_PROGNOSIS_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(prognosisObservation)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_PROGNOSIS_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				prognosisObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.PROGNOSIS_OBSERVATION__PROGNOSIS_OBSERVATION_CLASS_CODE,
-						 ConsolPlugin.INSTANCE.getString("PrognosisObservationPrognosisObservationClassCode"),
-						 new Object [] { prognosisObservation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PROGNOSIS_OBSERVATION__PROGNOSIS_OBSERVATION_CLASS_CODE,
+						ConsolPlugin.INSTANCE.getString("PrognosisObservationPrognosisObservationClassCode"),
+						new Object[] { prognosisObservation }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -234,7 +212,7 @@ public class PrognosisObservationOperations extends ClinicalStatementOperations 
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_PROGNOSIS_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_PROGNOSIS_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -249,44 +227,33 @@ public class PrognosisObservationOperations extends ClinicalStatementOperations 
 
 	public static boolean validatePrognosisObservationMoodCode(PrognosisObservation prognosisObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"PrognosisObservationPrognosisObservationMoodCode","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "PrognosisObservationPrognosisObservationMoodCode", "ERROR");
+
 		if (VALIDATE_PROGNOSIS_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROGNOSIS_OBSERVATION);
 			try {
-				VALIDATE_PROGNOSIS_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PROGNOSIS_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_PROGNOSIS_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_PROGNOSIS_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_PROGNOSIS_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(prognosisObservation)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_PROGNOSIS_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				prognosisObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.PROGNOSIS_OBSERVATION__PROGNOSIS_OBSERVATION_MOOD_CODE,
-						 ConsolPlugin.INSTANCE.getString("PrognosisObservationPrognosisObservationMoodCode"),
-						 new Object [] { prognosisObservation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PROGNOSIS_OBSERVATION__PROGNOSIS_OBSERVATION_MOOD_CODE,
+						ConsolPlugin.INSTANCE.getString("PrognosisObservationPrognosisObservationMoodCode"),
+						new Object[] { prognosisObservation }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -311,7 +278,7 @@ public class PrognosisObservationOperations extends ClinicalStatementOperations 
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_PROGNOSIS_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_PROGNOSIS_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -326,56 +293,45 @@ public class PrognosisObservationOperations extends ClinicalStatementOperations 
 
 	public static boolean validatePrognosisObservationCodeP(PrognosisObservation prognosisObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"PrognosisObservationPrognosisObservationCodeP","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "PrognosisObservationPrognosisObservationCodeP", "ERROR");
+
 		if (VALIDATE_PROGNOSIS_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROGNOSIS_OBSERVATION);
 			try {
-				VALIDATE_PROGNOSIS_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PROGNOSIS_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_PROGNOSIS_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_PROGNOSIS_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_PROGNOSIS_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(prognosisObservation)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_PROGNOSIS_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(prognosisObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.PROGNOSIS_OBSERVATION__PROGNOSIS_OBSERVATION_CODE_P,
-						 ConsolPlugin.INSTANCE.getString("PrognosisObservationPrognosisObservationCodeP"),
-						 new Object [] { prognosisObservation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PROGNOSIS_OBSERVATION__PROGNOSIS_OBSERVATION_CODE_P,
+						ConsolPlugin.INSTANCE.getString("PrognosisObservationPrognosisObservationCodeP"),
+						new Object[] { prognosisObservation }));
 			}
-			
+
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
-				Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.consol.PrognosisObservationCodeP");
+				Collection<Object> passToken = (Collection<Object>) context.get(
+					"org.openhealthtools.mdht.uml.cda.consol.PrognosisObservationCodeP");
 				if (passToken == null) {
 					// anticipate a reasonably healthy model
-					passToken = new java.util.ArrayList<Object>(3);
+					passToken = new java.util.ArrayList<>(3);
 					context.put("org.openhealthtools.mdht.uml.cda.consol.PrognosisObservationCodeP", passToken);
 				}
 				passToken.add(prognosisObservation);
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -389,9 +345,9 @@ public class PrognosisObservationOperations extends ClinicalStatementOperations 
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PROGNOSIS_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
-"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
-"value.code = '75328-5' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_PROGNOSIS_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and " +
+			"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in " +
+			"value.code = '75328-5' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePrognosisObservationCode(PrognosisObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Prognosis Observation Code</em>}' invariant operation.
@@ -402,7 +358,7 @@ public class PrognosisObservationOperations extends ClinicalStatementOperations 
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_PROGNOSIS_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_PROGNOSIS_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -417,50 +373,40 @@ public class PrognosisObservationOperations extends ClinicalStatementOperations 
 
 	public static boolean validatePrognosisObservationCode(PrognosisObservation prognosisObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-		Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.consol.PrognosisObservationCodeP");
+
+		Object passToken = (context == null)
+				? null
+				: context.get("org.openhealthtools.mdht.uml.cda.consol.PrognosisObservationCodeP");
 		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(prognosisObservation)) {
 			// I have a free pass to short-circuit
 			return true;
 		}
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"PrognosisObservationPrognosisObservationCode","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "PrognosisObservationPrognosisObservationCode", "ERROR");
+
 		if (VALIDATE_PROGNOSIS_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROGNOSIS_OBSERVATION);
 			try {
-				VALIDATE_PROGNOSIS_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PROGNOSIS_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_PROGNOSIS_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_PROGNOSIS_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_PROGNOSIS_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(prognosisObservation)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_PROGNOSIS_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(prognosisObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.PROGNOSIS_OBSERVATION__PROGNOSIS_OBSERVATION_CODE,
-						 ConsolPlugin.INSTANCE.getString("PrognosisObservationPrognosisObservationCode"),
-						 new Object [] { prognosisObservation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PROGNOSIS_OBSERVATION__PROGNOSIS_OBSERVATION_CODE,
+						ConsolPlugin.INSTANCE.getString("PrognosisObservationPrognosisObservationCode"),
+						new Object[] { prognosisObservation }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -474,9 +420,8 @@ public class PrognosisObservationOperations extends ClinicalStatementOperations 
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PROGNOSIS_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and "+
-"let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in "+
-"value.code = 'completed')";
+	protected static final String VALIDATE_PROGNOSIS_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and " +
+			"let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in " + "value.code = 'completed')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePrognosisObservationStatusCode(PrognosisObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Prognosis Observation Status Code</em>}' invariant operation.
@@ -487,7 +432,7 @@ public class PrognosisObservationOperations extends ClinicalStatementOperations 
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_PROGNOSIS_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_PROGNOSIS_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -502,44 +447,33 @@ public class PrognosisObservationOperations extends ClinicalStatementOperations 
 
 	public static boolean validatePrognosisObservationStatusCode(PrognosisObservation prognosisObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"PrognosisObservationPrognosisObservationStatusCode","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "PrognosisObservationPrognosisObservationStatusCode", "ERROR");
+
 		if (VALIDATE_PROGNOSIS_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROGNOSIS_OBSERVATION);
 			try {
-				VALIDATE_PROGNOSIS_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PROGNOSIS_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_PROGNOSIS_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_PROGNOSIS_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_PROGNOSIS_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(prognosisObservation)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_PROGNOSIS_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				prognosisObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.PROGNOSIS_OBSERVATION__PROGNOSIS_OBSERVATION_STATUS_CODE,
-						 ConsolPlugin.INSTANCE.getString("PrognosisObservationPrognosisObservationStatusCode"),
-						 new Object [] { prognosisObservation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PROGNOSIS_OBSERVATION__PROGNOSIS_OBSERVATION_STATUS_CODE,
+						ConsolPlugin.INSTANCE.getString("PrognosisObservationPrognosisObservationStatusCode"),
+						new Object[] { prognosisObservation }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -564,7 +498,7 @@ public class PrognosisObservationOperations extends ClinicalStatementOperations 
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_PROGNOSIS_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_PROGNOSIS_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -579,44 +513,34 @@ public class PrognosisObservationOperations extends ClinicalStatementOperations 
 
 	public static boolean validatePrognosisObservationStatusCodeP(PrognosisObservation prognosisObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"PrognosisObservationPrognosisObservationStatusCodeP","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "PrognosisObservationPrognosisObservationStatusCodeP", "ERROR");
+
 		if (VALIDATE_PROGNOSIS_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROGNOSIS_OBSERVATION);
 			try {
-				VALIDATE_PROGNOSIS_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PROGNOSIS_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_PROGNOSIS_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_PROGNOSIS_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_PROGNOSIS_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(prognosisObservation)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_PROGNOSIS_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				prognosisObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.PROGNOSIS_OBSERVATION__PROGNOSIS_OBSERVATION_STATUS_CODE_P,
-						 ConsolPlugin.INSTANCE.getString("PrognosisObservationPrognosisObservationStatusCodeP"),
-						 new Object [] { prognosisObservation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PROGNOSIS_OBSERVATION__PROGNOSIS_OBSERVATION_STATUS_CODE_P,
+						ConsolPlugin.INSTANCE.getString("PrognosisObservationPrognosisObservationStatusCodeP"),
+						new Object[] { prognosisObservation }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -641,7 +565,7 @@ public class PrognosisObservationOperations extends ClinicalStatementOperations 
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_PROGNOSIS_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_PROGNOSIS_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -656,44 +580,34 @@ public class PrognosisObservationOperations extends ClinicalStatementOperations 
 
 	public static boolean validatePrognosisObservationEffectiveTime(PrognosisObservation prognosisObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"PrognosisObservationPrognosisObservationEffectiveTime","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "PrognosisObservationPrognosisObservationEffectiveTime", "ERROR");
+
 		if (VALIDATE_PROGNOSIS_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROGNOSIS_OBSERVATION);
 			try {
-				VALIDATE_PROGNOSIS_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PROGNOSIS_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_PROGNOSIS_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_PROGNOSIS_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_PROGNOSIS_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(prognosisObservation)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_PROGNOSIS_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				prognosisObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.PROGNOSIS_OBSERVATION__PROGNOSIS_OBSERVATION_EFFECTIVE_TIME,
-						 ConsolPlugin.INSTANCE.getString("PrognosisObservationPrognosisObservationEffectiveTime"),
-						 new Object [] { prognosisObservation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PROGNOSIS_OBSERVATION__PROGNOSIS_OBSERVATION_EFFECTIVE_TIME,
+						ConsolPlugin.INSTANCE.getString("PrognosisObservationPrognosisObservationEffectiveTime"),
+						new Object[] { prognosisObservation }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -718,7 +632,7 @@ public class PrognosisObservationOperations extends ClinicalStatementOperations 
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_PROGNOSIS_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_PROGNOSIS_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -733,44 +647,32 @@ public class PrognosisObservationOperations extends ClinicalStatementOperations 
 
 	public static boolean validatePrognosisObservationValue(PrognosisObservation prognosisObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"PrognosisObservationPrognosisObservationValue","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "PrognosisObservationPrognosisObservationValue", "ERROR");
+
 		if (VALIDATE_PROGNOSIS_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROGNOSIS_OBSERVATION);
 			try {
-				VALIDATE_PROGNOSIS_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PROGNOSIS_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_PROGNOSIS_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_PROGNOSIS_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_PROGNOSIS_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(prognosisObservation)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_PROGNOSIS_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(prognosisObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.PROGNOSIS_OBSERVATION__PROGNOSIS_OBSERVATION_VALUE,
-						 ConsolPlugin.INSTANCE.getString("PrognosisObservationPrognosisObservationValue"),
-						 new Object [] { prognosisObservation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PROGNOSIS_OBSERVATION__PROGNOSIS_OBSERVATION_VALUE,
+						ConsolPlugin.INSTANCE.getString("PrognosisObservationPrognosisObservationValue"),
+						new Object[] { prognosisObservation }));
 			}
-			 
+
 			return false;
 		}
 		return true;

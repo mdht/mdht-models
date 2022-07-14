@@ -54,7 +54,8 @@ public class HospitalDischargeDiagnosis2Impl extends HospitalDischargeDiagnosisI
 	 */
 	public boolean validateHospitalDischargeDiagnosis2TemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HospitalDischargeDiagnosis2Operations.validateHospitalDischargeDiagnosis2TemplateId(this, diagnostics, context);
+		return HospitalDischargeDiagnosis2Operations.validateHospitalDischargeDiagnosis2TemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -63,7 +64,8 @@ public class HospitalDischargeDiagnosis2Impl extends HospitalDischargeDiagnosisI
 	 * @generated
 	 */
 	public boolean validateHospitalDischargeDiagnosisCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return HospitalDischargeDiagnosis2Operations.validateHospitalDischargeDiagnosisCodeP(this, diagnostics, context);
+		return HospitalDischargeDiagnosis2Operations.validateHospitalDischargeDiagnosisCodeP(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -93,7 +95,8 @@ public class HospitalDischargeDiagnosis2Impl extends HospitalDischargeDiagnosisI
 	@Override
 	public boolean validateHospitalDischargeDiagnosisProblemObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HospitalDischargeDiagnosis2Operations.validateHospitalDischargeDiagnosisProblemObservation(this, diagnostics, context);
+		return HospitalDischargeDiagnosis2Operations.validateHospitalDischargeDiagnosisProblemObservation(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -103,17 +106,17 @@ public class HospitalDischargeDiagnosis2Impl extends HospitalDischargeDiagnosisI
 	 */
 	@Override
 	public HospitalDischargeDiagnosis2 init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public HospitalDischargeDiagnosis2 init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // HospitalDischargeDiagnosis2Impl

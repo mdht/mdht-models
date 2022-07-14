@@ -90,10 +90,10 @@ public interface ManufacturingDateObservation extends Observation {
 	public ManufacturingDateObservation init();
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public ManufacturingDateObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
 
 } // ManufacturingDateObservation

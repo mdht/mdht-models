@@ -93,9 +93,9 @@ public interface ReviewOfSystemsSection extends Section {
 	public ReviewOfSystemsSection init();
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public ReviewOfSystemsSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ReviewOfSystemsSection

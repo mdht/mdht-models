@@ -58,7 +58,8 @@ public class FamilyHistoryObservationImpl extends ObservationImpl implements Fam
 	 */
 	public boolean validateFamilyHistoryObservationAgeObservationInversion(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return FamilyHistoryObservationOperations.validateFamilyHistoryObservationAgeObservationInversion(this, diagnostics, context);
+		return FamilyHistoryObservationOperations.validateFamilyHistoryObservationAgeObservationInversion(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -68,7 +69,8 @@ public class FamilyHistoryObservationImpl extends ObservationImpl implements Fam
 	 */
 	public boolean validateFamilyHistoryObservationTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return FamilyHistoryObservationOperations.validateFamilyHistoryObservationTemplateId(this, diagnostics, context);
+		return FamilyHistoryObservationOperations.validateFamilyHistoryObservationTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -123,7 +125,8 @@ public class FamilyHistoryObservationImpl extends ObservationImpl implements Fam
 	 */
 	public boolean validateFamilyHistoryObservationStatusCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return FamilyHistoryObservationOperations.validateFamilyHistoryObservationStatusCode(this, diagnostics, context);
+		return FamilyHistoryObservationOperations.validateFamilyHistoryObservationStatusCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -133,7 +136,8 @@ public class FamilyHistoryObservationImpl extends ObservationImpl implements Fam
 	 */
 	public boolean validateFamilyHistoryObservationStatusCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return FamilyHistoryObservationOperations.validateFamilyHistoryObservationStatusCodeP(this, diagnostics, context);
+		return FamilyHistoryObservationOperations.validateFamilyHistoryObservationStatusCodeP(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -143,7 +147,8 @@ public class FamilyHistoryObservationImpl extends ObservationImpl implements Fam
 	 */
 	public boolean validateFamilyHistoryObservationEffectiveTime(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return FamilyHistoryObservationOperations.validateFamilyHistoryObservationEffectiveTime(this, diagnostics, context);
+		return FamilyHistoryObservationOperations.validateFamilyHistoryObservationEffectiveTime(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -162,7 +167,8 @@ public class FamilyHistoryObservationImpl extends ObservationImpl implements Fam
 	 */
 	public boolean validateFamilyHistoryObservationAgeObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return FamilyHistoryObservationOperations.validateFamilyHistoryObservationAgeObservation(this, diagnostics, context);
+		return FamilyHistoryObservationOperations.validateFamilyHistoryObservationAgeObservation(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -172,7 +178,8 @@ public class FamilyHistoryObservationImpl extends ObservationImpl implements Fam
 	 */
 	public boolean validateFamilyHistoryObservationFamilyHistoryDeathObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return FamilyHistoryObservationOperations.validateFamilyHistoryObservationFamilyHistoryDeathObservation(this, diagnostics, context);
+		return FamilyHistoryObservationOperations.validateFamilyHistoryObservationFamilyHistoryDeathObservation(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -199,16 +206,16 @@ public class FamilyHistoryObservationImpl extends ObservationImpl implements Fam
 	 * @generated
 	 */
 	public FamilyHistoryObservation init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public FamilyHistoryObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // FamilyHistoryObservationImpl

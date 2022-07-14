@@ -270,9 +270,9 @@ public interface PlannedProcedure2 extends PlanOfCareActivityProcedure {
 	public PlannedProcedure2 init();
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public PlannedProcedure2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // PlannedProcedure2

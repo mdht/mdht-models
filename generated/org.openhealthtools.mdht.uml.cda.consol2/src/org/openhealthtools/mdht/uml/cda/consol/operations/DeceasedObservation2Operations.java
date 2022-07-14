@@ -78,7 +78,7 @@ public class DeceasedObservation2Operations extends DeceasedObservationOperation
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_DECEASED_OBSERVATION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_DECEASED_OBSERVATION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -93,44 +93,33 @@ public class DeceasedObservation2Operations extends DeceasedObservationOperation
 
 	public static boolean validateDeceasedObservation2TemplateId(DeceasedObservation2 deceasedObservation2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"DeceasedObservation2DeceasedObservation2TemplateId","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "DeceasedObservation2DeceasedObservation2TemplateId", "ERROR");
+
 		if (VALIDATE_DECEASED_OBSERVATION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DECEASED_OBSERVATION2);
 			try {
-				VALIDATE_DECEASED_OBSERVATION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_DECEASED_OBSERVATION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_DECEASED_OBSERVATION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_DECEASED_OBSERVATION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_DECEASED_OBSERVATION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(deceasedObservation2)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_DECEASED_OBSERVATION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				deceasedObservation2)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.DECEASED_OBSERVATION2__DECEASED_OBSERVATION2_TEMPLATE_ID,
-						 ConsolPlugin.INSTANCE.getString("DeceasedObservation2DeceasedObservation2TemplateId"),
-						 new Object [] { deceasedObservation2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.DECEASED_OBSERVATION2__DECEASED_OBSERVATION2_TEMPLATE_ID,
+						ConsolPlugin.INSTANCE.getString("DeceasedObservation2DeceasedObservation2TemplateId"),
+						new Object[] { deceasedObservation2 }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -163,22 +152,21 @@ public class DeceasedObservation2Operations extends DeceasedObservationOperation
 	 */
 
 	public static ProblemObservation2 getConsolProblemObservation2(DeceasedObservation2 deceasedObservation2) {
-	
-	
-	
+
 		if (GET_CONSOL_PROBLEM_OBSERVATION2__EOCL_QRY == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.DECEASED_OBSERVATION2, ConsolPackage.Literals.DECEASED_OBSERVATION2.getEAllOperations().get(66));
+			helper.setOperationContext(
+				ConsolPackage.Literals.DECEASED_OBSERVATION2,
+				ConsolPackage.Literals.DECEASED_OBSERVATION2.getEAllOperations().get(66));
 			try {
-				GET_CONSOL_PROBLEM_OBSERVATION2__EOCL_QRY = helper.createQuery(GET_CONSOL_PROBLEM_OBSERVATION2__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+				GET_CONSOL_PROBLEM_OBSERVATION2__EOCL_QRY = helper.createQuery(
+					GET_CONSOL_PROBLEM_OBSERVATION2__EOCL_EXP);
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
+		}
+
 		OCL.Query query = EOCL_ENV.get().createQuery(GET_CONSOL_PROBLEM_OBSERVATION2__EOCL_QRY);
 		return (ProblemObservation2) query.evaluate(deceasedObservation2);
 	}
@@ -202,7 +190,7 @@ public class DeceasedObservation2Operations extends DeceasedObservationOperation
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_DECEASED_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_DECEASED_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -217,56 +205,45 @@ public class DeceasedObservation2Operations extends DeceasedObservationOperation
 
 	public static boolean validateDeceasedObservationCodeP(DeceasedObservation2 deceasedObservation2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"DeceasedObservation2DeceasedObservationCodeP","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "DeceasedObservation2DeceasedObservationCodeP", "ERROR");
+
 		if (VALIDATE_DECEASED_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DECEASED_OBSERVATION2);
 			try {
-				VALIDATE_DECEASED_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_DECEASED_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_DECEASED_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_DECEASED_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_DECEASED_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(deceasedObservation2)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_DECEASED_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(deceasedObservation2)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.DECEASED_OBSERVATION2__DECEASED_OBSERVATION_CODE_P,
-						 ConsolPlugin.INSTANCE.getString("DeceasedObservation2DeceasedObservationCodeP"),
-						 new Object [] { deceasedObservation2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.DECEASED_OBSERVATION2__DECEASED_OBSERVATION_CODE_P,
+						ConsolPlugin.INSTANCE.getString("DeceasedObservation2DeceasedObservationCodeP"),
+						new Object[] { deceasedObservation2 }));
 			}
-			
+
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
-				Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.consol.DeceasedObservationCodeP");
+				Collection<Object> passToken = (Collection<Object>) context.get(
+					"org.openhealthtools.mdht.uml.cda.consol.DeceasedObservationCodeP");
 				if (passToken == null) {
 					// anticipate a reasonably healthy model
-					passToken = new java.util.ArrayList<Object>(3);
+					passToken = new java.util.ArrayList<>(3);
 					context.put("org.openhealthtools.mdht.uml.cda.consol.DeceasedObservationCodeP", passToken);
 				}
 				passToken.add(deceasedObservation2);
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -280,9 +257,9 @@ public class DeceasedObservation2Operations extends DeceasedObservationOperation
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_DECEASED_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
-"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
-"value.code = 'ASSERTION' and value.codeSystem = '2.16.840.1.113883.5.4')";
+	protected static final String VALIDATE_DECEASED_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and " +
+			"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in " +
+			"value.code = 'ASSERTION' and value.codeSystem = '2.16.840.1.113883.5.4')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateDeceasedObservationCode(DeceasedObservation2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Deceased Observation Code</em>}' invariant operation.
@@ -293,7 +270,7 @@ public class DeceasedObservation2Operations extends DeceasedObservationOperation
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_DECEASED_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_DECEASED_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -308,50 +285,40 @@ public class DeceasedObservation2Operations extends DeceasedObservationOperation
 
 	public static boolean validateDeceasedObservationCode(DeceasedObservation2 deceasedObservation2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-		Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.consol.DeceasedObservationCodeP");
+
+		Object passToken = (context == null)
+				? null
+				: context.get("org.openhealthtools.mdht.uml.cda.consol.DeceasedObservationCodeP");
 		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(deceasedObservation2)) {
 			// I have a free pass to short-circuit
 			return true;
 		}
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"DeceasedObservation2DeceasedObservationCode","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "DeceasedObservation2DeceasedObservationCode", "ERROR");
+
 		if (VALIDATE_DECEASED_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DECEASED_OBSERVATION2);
 			try {
-				VALIDATE_DECEASED_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_DECEASED_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_DECEASED_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_DECEASED_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_DECEASED_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(deceasedObservation2)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(VALIDATE_DECEASED_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+			deceasedObservation2)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.DECEASED_OBSERVATION2__DECEASED_OBSERVATION_CODE,
-						 ConsolPlugin.INSTANCE.getString("DeceasedObservation2DeceasedObservationCode"),
-						 new Object [] { deceasedObservation2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.DECEASED_OBSERVATION2__DECEASED_OBSERVATION_CODE,
+						ConsolPlugin.INSTANCE.getString("DeceasedObservation2DeceasedObservationCode"),
+						new Object[] { deceasedObservation2 }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -376,7 +343,7 @@ public class DeceasedObservation2Operations extends DeceasedObservationOperation
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_DECEASED_OBSERVATION_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_DECEASED_OBSERVATION_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -391,44 +358,34 @@ public class DeceasedObservation2Operations extends DeceasedObservationOperation
 
 	public static boolean validateDeceasedObservationProblemObservation(DeceasedObservation2 deceasedObservation2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"DeceasedObservation2DeceasedObservationProblemObservation","WARNING");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "DeceasedObservation2DeceasedObservationProblemObservation", "WARNING");
+
 		if (VALIDATE_DECEASED_OBSERVATION_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DECEASED_OBSERVATION2);
 			try {
-				VALIDATE_DECEASED_OBSERVATION_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_DECEASED_OBSERVATION_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_DECEASED_OBSERVATION_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_DECEASED_OBSERVATION_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_DECEASED_OBSERVATION_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(deceasedObservation2)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_DECEASED_OBSERVATION_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				deceasedObservation2)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.WARNING,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.DECEASED_OBSERVATION2__DECEASED_OBSERVATION_PROBLEM_OBSERVATION,
-						 ConsolPlugin.INSTANCE.getString("DeceasedObservation2DeceasedObservationProblemObservation"),
-						 new Object [] { deceasedObservation2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.DECEASED_OBSERVATION2__DECEASED_OBSERVATION_PROBLEM_OBSERVATION,
+						ConsolPlugin.INSTANCE.getString("DeceasedObservation2DeceasedObservationProblemObservation"),
+						new Object[] { deceasedObservation2 }));
 			}
-			 
+
 			return false;
 		}
 		return true;

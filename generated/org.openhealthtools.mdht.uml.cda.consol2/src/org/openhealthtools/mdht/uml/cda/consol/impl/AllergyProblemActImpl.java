@@ -150,7 +150,8 @@ public class AllergyProblemActImpl extends ActImpl implements AllergyProblemAct 
 	 */
 	public boolean validateAllergyProblemActCDCodeAndCodeSystemValues(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AllergyProblemActOperations.validateAllergyProblemActCDCodeAndCodeSystemValues(this, diagnostics, context);
+		return AllergyProblemActOperations.validateAllergyProblemActCDCodeAndCodeSystemValues(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -186,16 +187,16 @@ public class AllergyProblemActImpl extends ActImpl implements AllergyProblemAct 
 	 * @generated
 	 */
 	public AllergyProblemAct init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public AllergyProblemAct init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // AllergyProblemActImpl

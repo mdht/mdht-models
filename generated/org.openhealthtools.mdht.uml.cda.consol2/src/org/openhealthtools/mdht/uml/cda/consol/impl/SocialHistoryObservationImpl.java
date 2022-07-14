@@ -56,7 +56,8 @@ public class SocialHistoryObservationImpl extends ObservationImpl implements Soc
 	 */
 	public boolean validateSocialHistoryObservationOriginalText(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return SocialHistoryObservationOperations.validateSocialHistoryObservationOriginalText(this, diagnostics, context);
+		return SocialHistoryObservationOperations.validateSocialHistoryObservationOriginalText(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -75,7 +76,8 @@ public class SocialHistoryObservationImpl extends ObservationImpl implements Soc
 	 */
 	public boolean validateSocialHistoryObservationReferenceValue(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return SocialHistoryObservationOperations.validateSocialHistoryObservationReferenceValue(this, diagnostics, context);
+		return SocialHistoryObservationOperations.validateSocialHistoryObservationReferenceValue(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -85,7 +87,8 @@ public class SocialHistoryObservationImpl extends ObservationImpl implements Soc
 	 */
 	public boolean validateSocialHistoryObservationTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return SocialHistoryObservationOperations.validateSocialHistoryObservationTemplateId(this, diagnostics, context);
+		return SocialHistoryObservationOperations.validateSocialHistoryObservationTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -140,7 +143,8 @@ public class SocialHistoryObservationImpl extends ObservationImpl implements Soc
 	 */
 	public boolean validateSocialHistoryObservationStatusCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return SocialHistoryObservationOperations.validateSocialHistoryObservationStatusCode(this, diagnostics, context);
+		return SocialHistoryObservationOperations.validateSocialHistoryObservationStatusCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -158,16 +162,16 @@ public class SocialHistoryObservationImpl extends ObservationImpl implements Soc
 	 * @generated
 	 */
 	public SocialHistoryObservation init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public SocialHistoryObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // SocialHistoryObservationImpl

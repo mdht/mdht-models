@@ -64,7 +64,8 @@ public class AllergiesSectionEntriesOptional2Impl extends AllergiesSectionEntrie
 	@Override
 	public boolean validateAllergiesSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AllergiesSectionEntriesOptional2Operations.validateAllergiesSectionEntriesOptionalTemplateId(this, diagnostics, context);
+		return AllergiesSectionEntriesOptional2Operations.validateAllergiesSectionEntriesOptionalTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -75,7 +76,8 @@ public class AllergiesSectionEntriesOptional2Impl extends AllergiesSectionEntrie
 	@Override
 	public boolean validateAllergiesSectionEntriesOptionalCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AllergiesSectionEntriesOptional2Operations.validateAllergiesSectionEntriesOptionalCodeP(this, diagnostics, context);
+		return AllergiesSectionEntriesOptional2Operations.validateAllergiesSectionEntriesOptionalCodeP(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -86,7 +88,8 @@ public class AllergiesSectionEntriesOptional2Impl extends AllergiesSectionEntrie
 	@Override
 	public boolean validateAllergiesSectionEntriesOptionalCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AllergiesSectionEntriesOptional2Operations.validateAllergiesSectionEntriesOptionalCode(this, diagnostics, context);
+		return AllergiesSectionEntriesOptional2Operations.validateAllergiesSectionEntriesOptionalCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -97,7 +100,8 @@ public class AllergiesSectionEntriesOptional2Impl extends AllergiesSectionEntrie
 	@Override
 	public boolean validateAllergiesSectionEntriesOptionalAllergyProblemAct(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AllergiesSectionEntriesOptional2Operations.validateAllergiesSectionEntriesOptionalAllergyProblemAct(this, diagnostics, context);
+		return AllergiesSectionEntriesOptional2Operations.validateAllergiesSectionEntriesOptionalAllergyProblemAct(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -107,17 +111,17 @@ public class AllergiesSectionEntriesOptional2Impl extends AllergiesSectionEntrie
 	 */
 	@Override
 	public AllergiesSectionEntriesOptional2 init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public AllergiesSectionEntriesOptional2 init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // AllergiesSectionEntriesOptional2Impl

@@ -90,7 +90,7 @@ public class HandoffCommunicationParticipantsOperations extends ClinicalStatemen
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -106,44 +106,36 @@ public class HandoffCommunicationParticipantsOperations extends ClinicalStatemen
 	public static boolean validateHandoffCommunicationParticipantsTemplateId(
 			HandoffCommunicationParticipants handoffCommunicationParticipants, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"HandoffCommunicationParticipantsHandoffCommunicationParticipantsTemplateId","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(
+			context, "HandoffCommunicationParticipantsHandoffCommunicationParticipantsTemplateId", "ERROR");
+
 		if (VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.HANDOFF_COMMUNICATION_PARTICIPANTS);
 			try {
-				VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(handoffCommunicationParticipants)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				handoffCommunicationParticipants)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.HANDOFF_COMMUNICATION_PARTICIPANTS__HANDOFF_COMMUNICATION_PARTICIPANTS_TEMPLATE_ID,
-						 ConsolPlugin.INSTANCE.getString("HandoffCommunicationParticipantsHandoffCommunicationParticipantsTemplateId"),
-						 new Object [] { handoffCommunicationParticipants }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.HANDOFF_COMMUNICATION_PARTICIPANTS__HANDOFF_COMMUNICATION_PARTICIPANTS_TEMPLATE_ID,
+						ConsolPlugin.INSTANCE.getString(
+							"HandoffCommunicationParticipantsHandoffCommunicationParticipantsTemplateId"),
+						new Object[] { handoffCommunicationParticipants }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -168,7 +160,7 @@ public class HandoffCommunicationParticipantsOperations extends ClinicalStatemen
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -184,44 +176,36 @@ public class HandoffCommunicationParticipantsOperations extends ClinicalStatemen
 	public static boolean validateHandoffCommunicationParticipantsClassCode(
 			HandoffCommunicationParticipants handoffCommunicationParticipants, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"HandoffCommunicationParticipantsHandoffCommunicationParticipantsClassCode","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(
+			context, "HandoffCommunicationParticipantsHandoffCommunicationParticipantsClassCode", "ERROR");
+
 		if (VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.HANDOFF_COMMUNICATION_PARTICIPANTS);
 			try {
-				VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(handoffCommunicationParticipants)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				handoffCommunicationParticipants)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.HANDOFF_COMMUNICATION_PARTICIPANTS__HANDOFF_COMMUNICATION_PARTICIPANTS_CLASS_CODE,
-						 ConsolPlugin.INSTANCE.getString("HandoffCommunicationParticipantsHandoffCommunicationParticipantsClassCode"),
-						 new Object [] { handoffCommunicationParticipants }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.HANDOFF_COMMUNICATION_PARTICIPANTS__HANDOFF_COMMUNICATION_PARTICIPANTS_CLASS_CODE,
+						ConsolPlugin.INSTANCE.getString(
+							"HandoffCommunicationParticipantsHandoffCommunicationParticipantsClassCode"),
+						new Object[] { handoffCommunicationParticipants }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -246,7 +230,7 @@ public class HandoffCommunicationParticipantsOperations extends ClinicalStatemen
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -262,44 +246,36 @@ public class HandoffCommunicationParticipantsOperations extends ClinicalStatemen
 	public static boolean validateHandoffCommunicationParticipantsMoodCode(
 			HandoffCommunicationParticipants handoffCommunicationParticipants, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"HandoffCommunicationParticipantsHandoffCommunicationParticipantsMoodCode","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(
+			context, "HandoffCommunicationParticipantsHandoffCommunicationParticipantsMoodCode", "ERROR");
+
 		if (VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.HANDOFF_COMMUNICATION_PARTICIPANTS);
 			try {
-				VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(handoffCommunicationParticipants)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				handoffCommunicationParticipants)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.HANDOFF_COMMUNICATION_PARTICIPANTS__HANDOFF_COMMUNICATION_PARTICIPANTS_MOOD_CODE,
-						 ConsolPlugin.INSTANCE.getString("HandoffCommunicationParticipantsHandoffCommunicationParticipantsMoodCode"),
-						 new Object [] { handoffCommunicationParticipants }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.HANDOFF_COMMUNICATION_PARTICIPANTS__HANDOFF_COMMUNICATION_PARTICIPANTS_MOOD_CODE,
+						ConsolPlugin.INSTANCE.getString(
+							"HandoffCommunicationParticipantsHandoffCommunicationParticipantsMoodCode"),
+						new Object[] { handoffCommunicationParticipants }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -324,7 +300,7 @@ public class HandoffCommunicationParticipantsOperations extends ClinicalStatemen
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -340,56 +316,50 @@ public class HandoffCommunicationParticipantsOperations extends ClinicalStatemen
 	public static boolean validateHandoffCommunicationParticipantsCodeP(
 			HandoffCommunicationParticipants handoffCommunicationParticipants, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"HandoffCommunicationParticipantsHandoffCommunicationParticipantsCodeP","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(
+			context, "HandoffCommunicationParticipantsHandoffCommunicationParticipantsCodeP", "ERROR");
+
 		if (VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.HANDOFF_COMMUNICATION_PARTICIPANTS);
 			try {
-				VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(handoffCommunicationParticipants)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				handoffCommunicationParticipants)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.HANDOFF_COMMUNICATION_PARTICIPANTS__HANDOFF_COMMUNICATION_PARTICIPANTS_CODE_P,
-						 ConsolPlugin.INSTANCE.getString("HandoffCommunicationParticipantsHandoffCommunicationParticipantsCodeP"),
-						 new Object [] { handoffCommunicationParticipants }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.HANDOFF_COMMUNICATION_PARTICIPANTS__HANDOFF_COMMUNICATION_PARTICIPANTS_CODE_P,
+						ConsolPlugin.INSTANCE.getString(
+							"HandoffCommunicationParticipantsHandoffCommunicationParticipantsCodeP"),
+						new Object[] { handoffCommunicationParticipants }));
 			}
-			
+
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
-				Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.consol.HandoffCommunicationParticipantsCodeP");
+				Collection<Object> passToken = (Collection<Object>) context.get(
+					"org.openhealthtools.mdht.uml.cda.consol.HandoffCommunicationParticipantsCodeP");
 				if (passToken == null) {
 					// anticipate a reasonably healthy model
-					passToken = new java.util.ArrayList<Object>(3);
-					context.put("org.openhealthtools.mdht.uml.cda.consol.HandoffCommunicationParticipantsCodeP", passToken);
+					passToken = new java.util.ArrayList<>(3);
+					context.put(
+						"org.openhealthtools.mdht.uml.cda.consol.HandoffCommunicationParticipantsCodeP", passToken);
 				}
 				passToken.add(handoffCommunicationParticipants);
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -403,9 +373,9 @@ public class HandoffCommunicationParticipantsOperations extends ClinicalStatemen
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
-"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
-"value.code = '432138007' and value.codeSystem = '2.16.840.1.113883.6.96')";
+	protected static final String VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and " +
+			"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in " +
+			"value.code = '432138007' and value.codeSystem = '2.16.840.1.113883.6.96')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateHandoffCommunicationParticipantsCode(HandoffCommunicationParticipants, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Handoff Communication Participants Code</em>}' invariant operation.
@@ -416,7 +386,7 @@ public class HandoffCommunicationParticipantsOperations extends ClinicalStatemen
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -432,50 +402,45 @@ public class HandoffCommunicationParticipantsOperations extends ClinicalStatemen
 	public static boolean validateHandoffCommunicationParticipantsCode(
 			HandoffCommunicationParticipants handoffCommunicationParticipants, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-	
-	
-	
-  	  
-		Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.consol.HandoffCommunicationParticipantsCodeP");
-		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(handoffCommunicationParticipants)) {
+
+		Object passToken = (context == null)
+				? null
+				: context.get("org.openhealthtools.mdht.uml.cda.consol.HandoffCommunicationParticipantsCodeP");
+		if ((passToken instanceof Collection<?>) &&
+				((Collection<?>) passToken).contains(handoffCommunicationParticipants)) {
 			// I have a free pass to short-circuit
 			return true;
 		}
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"HandoffCommunicationParticipantsHandoffCommunicationParticipantsCode","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(
+			context, "HandoffCommunicationParticipantsHandoffCommunicationParticipantsCode", "ERROR");
+
 		if (VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.HANDOFF_COMMUNICATION_PARTICIPANTS);
 			try {
-				VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(handoffCommunicationParticipants)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				handoffCommunicationParticipants)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.HANDOFF_COMMUNICATION_PARTICIPANTS__HANDOFF_COMMUNICATION_PARTICIPANTS_CODE,
-						 ConsolPlugin.INSTANCE.getString("HandoffCommunicationParticipantsHandoffCommunicationParticipantsCode"),
-						 new Object [] { handoffCommunicationParticipants }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.HANDOFF_COMMUNICATION_PARTICIPANTS__HANDOFF_COMMUNICATION_PARTICIPANTS_CODE,
+						ConsolPlugin.INSTANCE.getString(
+							"HandoffCommunicationParticipantsHandoffCommunicationParticipantsCode"),
+						new Object[] { handoffCommunicationParticipants }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -489,9 +454,8 @@ public class HandoffCommunicationParticipantsOperations extends ClinicalStatemen
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and "+
-"let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in "+
-"value.code = 'completed')";
+	protected static final String VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and " +
+			"let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in " + "value.code = 'completed')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateHandoffCommunicationParticipantsStatusCode(HandoffCommunicationParticipants, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Handoff Communication Participants Status Code</em>}' invariant operation.
@@ -502,7 +466,7 @@ public class HandoffCommunicationParticipantsOperations extends ClinicalStatemen
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -518,44 +482,36 @@ public class HandoffCommunicationParticipantsOperations extends ClinicalStatemen
 	public static boolean validateHandoffCommunicationParticipantsStatusCode(
 			HandoffCommunicationParticipants handoffCommunicationParticipants, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"HandoffCommunicationParticipantsHandoffCommunicationParticipantsStatusCode","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(
+			context, "HandoffCommunicationParticipantsHandoffCommunicationParticipantsStatusCode", "ERROR");
+
 		if (VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.HANDOFF_COMMUNICATION_PARTICIPANTS);
 			try {
-				VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(handoffCommunicationParticipants)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				handoffCommunicationParticipants)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.HANDOFF_COMMUNICATION_PARTICIPANTS__HANDOFF_COMMUNICATION_PARTICIPANTS_STATUS_CODE,
-						 ConsolPlugin.INSTANCE.getString("HandoffCommunicationParticipantsHandoffCommunicationParticipantsStatusCode"),
-						 new Object [] { handoffCommunicationParticipants }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.HANDOFF_COMMUNICATION_PARTICIPANTS__HANDOFF_COMMUNICATION_PARTICIPANTS_STATUS_CODE,
+						ConsolPlugin.INSTANCE.getString(
+							"HandoffCommunicationParticipantsHandoffCommunicationParticipantsStatusCode"),
+						new Object[] { handoffCommunicationParticipants }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -580,7 +536,7 @@ public class HandoffCommunicationParticipantsOperations extends ClinicalStatemen
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -596,44 +552,36 @@ public class HandoffCommunicationParticipantsOperations extends ClinicalStatemen
 	public static boolean validateHandoffCommunicationParticipantsStatusCodeP(
 			HandoffCommunicationParticipants handoffCommunicationParticipants, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"HandoffCommunicationParticipantsHandoffCommunicationParticipantsStatusCodeP","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(
+			context, "HandoffCommunicationParticipantsHandoffCommunicationParticipantsStatusCodeP", "ERROR");
+
 		if (VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.HANDOFF_COMMUNICATION_PARTICIPANTS);
 			try {
-				VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(handoffCommunicationParticipants)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				handoffCommunicationParticipants)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.HANDOFF_COMMUNICATION_PARTICIPANTS__HANDOFF_COMMUNICATION_PARTICIPANTS_STATUS_CODE_P,
-						 ConsolPlugin.INSTANCE.getString("HandoffCommunicationParticipantsHandoffCommunicationParticipantsStatusCodeP"),
-						 new Object [] { handoffCommunicationParticipants }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.HANDOFF_COMMUNICATION_PARTICIPANTS__HANDOFF_COMMUNICATION_PARTICIPANTS_STATUS_CODE_P,
+						ConsolPlugin.INSTANCE.getString(
+							"HandoffCommunicationParticipantsHandoffCommunicationParticipantsStatusCodeP"),
+						new Object[] { handoffCommunicationParticipants }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -658,7 +606,7 @@ public class HandoffCommunicationParticipantsOperations extends ClinicalStatemen
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -674,44 +622,36 @@ public class HandoffCommunicationParticipantsOperations extends ClinicalStatemen
 	public static boolean validateHandoffCommunicationParticipantsEffectiveTime(
 			HandoffCommunicationParticipants handoffCommunicationParticipants, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"HandoffCommunicationParticipantsHandoffCommunicationParticipantsEffectiveTime","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(
+			context, "HandoffCommunicationParticipantsHandoffCommunicationParticipantsEffectiveTime", "ERROR");
+
 		if (VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.HANDOFF_COMMUNICATION_PARTICIPANTS);
 			try {
-				VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(handoffCommunicationParticipants)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				handoffCommunicationParticipants)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.HANDOFF_COMMUNICATION_PARTICIPANTS__HANDOFF_COMMUNICATION_PARTICIPANTS_EFFECTIVE_TIME,
-						 ConsolPlugin.INSTANCE.getString("HandoffCommunicationParticipantsHandoffCommunicationParticipantsEffectiveTime"),
-						 new Object [] { handoffCommunicationParticipants }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.HANDOFF_COMMUNICATION_PARTICIPANTS__HANDOFF_COMMUNICATION_PARTICIPANTS_EFFECTIVE_TIME,
+						ConsolPlugin.INSTANCE.getString(
+							"HandoffCommunicationParticipantsHandoffCommunicationParticipantsEffectiveTime"),
+						new Object[] { handoffCommunicationParticipants }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -736,7 +676,7 @@ public class HandoffCommunicationParticipantsOperations extends ClinicalStatemen
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -752,44 +692,36 @@ public class HandoffCommunicationParticipantsOperations extends ClinicalStatemen
 	public static boolean validateHandoffCommunicationParticipantsParticipant(
 			HandoffCommunicationParticipants handoffCommunicationParticipants, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"HandoffCommunicationParticipantsHandoffCommunicationParticipantsParticipant","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(
+			context, "HandoffCommunicationParticipantsHandoffCommunicationParticipantsParticipant", "ERROR");
+
 		if (VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.HANDOFF_COMMUNICATION_PARTICIPANTS);
 			try {
-				VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(handoffCommunicationParticipants)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				handoffCommunicationParticipants)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.HANDOFF_COMMUNICATION_PARTICIPANTS__HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT,
-						 ConsolPlugin.INSTANCE.getString("HandoffCommunicationParticipantsHandoffCommunicationParticipantsParticipant"),
-						 new Object [] { handoffCommunicationParticipants }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.HANDOFF_COMMUNICATION_PARTICIPANTS__HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT,
+						ConsolPlugin.INSTANCE.getString(
+							"HandoffCommunicationParticipantsHandoffCommunicationParticipantsParticipant"),
+						new Object[] { handoffCommunicationParticipants }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -814,7 +746,7 @@ public class HandoffCommunicationParticipantsOperations extends ClinicalStatemen
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -830,44 +762,36 @@ public class HandoffCommunicationParticipantsOperations extends ClinicalStatemen
 	public static boolean validateHandoffCommunicationParticipantsAuthorParticipation(
 			HandoffCommunicationParticipants handoffCommunicationParticipants, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"HandoffCommunicationParticipantsHandoffCommunicationParticipantsAuthorParticipation","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(
+			context, "HandoffCommunicationParticipantsHandoffCommunicationParticipantsAuthorParticipation", "ERROR");
+
 		if (VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.HANDOFF_COMMUNICATION_PARTICIPANTS);
 			try {
-				VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(handoffCommunicationParticipants)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				handoffCommunicationParticipants)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.HANDOFF_COMMUNICATION_PARTICIPANTS__HANDOFF_COMMUNICATION_PARTICIPANTS_AUTHOR_PARTICIPATION,
-						 ConsolPlugin.INSTANCE.getString("HandoffCommunicationParticipantsHandoffCommunicationParticipantsAuthorParticipation"),
-						 new Object [] { handoffCommunicationParticipants }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.HANDOFF_COMMUNICATION_PARTICIPANTS__HANDOFF_COMMUNICATION_PARTICIPANTS_AUTHOR_PARTICIPATION,
+						ConsolPlugin.INSTANCE.getString(
+							"HandoffCommunicationParticipantsHandoffCommunicationParticipantsAuthorParticipation"),
+						new Object[] { handoffCommunicationParticipants }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -892,7 +816,7 @@ public class HandoffCommunicationParticipantsOperations extends ClinicalStatemen
 	 * @ordered
 	 */
 
-	protected static ThreadLocal< Query<?, ?, ?> > VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal< Query<?, ?, ?> >();
+	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -908,49 +832,42 @@ public class HandoffCommunicationParticipantsOperations extends ClinicalStatemen
 	public static boolean validateHandoffCommunicationParticipantsParticipantParticipantRolePlayingEntityName(
 			HandoffCommunicationParticipants handoffCommunicationParticipants, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"HandoffCommunicationParticipantsHandoffCommunicationParticipantsParticipantParticipantRolePlayingEntityName","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(
+			context,
+			"HandoffCommunicationParticipantsHandoffCommunicationParticipantsParticipantParticipantRolePlayingEntityName",
+			"ERROR");
+
 		if (VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.HANDOFF_COMMUNICATION_PARTICIPANTS);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(EOCL_ENV.get().createQuery(oclExpression));
-			}
-			catch (ParserException pe) {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(
+					EOCL_ENV.get().createQuery(oclExpression));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		Object oclResult = VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(handoffCommunicationParticipants);		
+		}
+
+		Object oclResult = VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(
+			handoffCommunicationParticipants);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-  			
+
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.HANDOFF_COMMUNICATION_PARTICIPANTS__HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY_NAME,
-						 ConsolPlugin.INSTANCE.getString("HandoffCommunicationParticipantsHandoffCommunicationParticipantsParticipantParticipantRolePlayingEntityName"),
-						 new Object [] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.HANDOFF_COMMUNICATION_PARTICIPANTS__HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY_NAME,
+							ConsolPlugin.INSTANCE.getString(
+								"HandoffCommunicationParticipantsHandoffCommunicationParticipantsParticipantParticipantRolePlayingEntityName"),
+							new Object[] { eObject }));
 				}
-				 
+
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -976,7 +893,7 @@ public class HandoffCommunicationParticipantsOperations extends ClinicalStatemen
 	 * @ordered
 	 */
 
-	protected static ThreadLocal< Query<?, ?, ?> > VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT_PARTICIPANT_ROLE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal< Query<?, ?, ?> >();
+	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT_PARTICIPANT_ROLE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -992,49 +909,41 @@ public class HandoffCommunicationParticipantsOperations extends ClinicalStatemen
 	public static boolean validateHandoffCommunicationParticipantsParticipantParticipantRoleId(
 			HandoffCommunicationParticipants handoffCommunicationParticipants, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"HandoffCommunicationParticipantsHandoffCommunicationParticipantsParticipantParticipantRoleId","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(
+			context, "HandoffCommunicationParticipantsHandoffCommunicationParticipantsParticipantParticipantRoleId",
+			"ERROR");
+
 		if (VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT_PARTICIPANT_ROLE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.HANDOFF_COMMUNICATION_PARTICIPANTS);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT_PARTICIPANT_ROLE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT_PARTICIPANT_ROLE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(EOCL_ENV.get().createQuery(oclExpression));
-			}
-			catch (ParserException pe) {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT_PARTICIPANT_ROLE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT_PARTICIPANT_ROLE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(
+					EOCL_ENV.get().createQuery(oclExpression));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		Object oclResult = VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT_PARTICIPANT_ROLE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(handoffCommunicationParticipants);		
+		}
+
+		Object oclResult = VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT_PARTICIPANT_ROLE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(
+			handoffCommunicationParticipants);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-  			
+
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.HANDOFF_COMMUNICATION_PARTICIPANTS__HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT_PARTICIPANT_ROLE_ID,
-						 ConsolPlugin.INSTANCE.getString("HandoffCommunicationParticipantsHandoffCommunicationParticipantsParticipantParticipantRoleId"),
-						 new Object [] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.HANDOFF_COMMUNICATION_PARTICIPANTS__HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT_PARTICIPANT_ROLE_ID,
+							ConsolPlugin.INSTANCE.getString(
+								"HandoffCommunicationParticipantsHandoffCommunicationParticipantsParticipantParticipantRoleId"),
+							new Object[] { eObject }));
 				}
-				 
+
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -1060,7 +969,7 @@ public class HandoffCommunicationParticipantsOperations extends ClinicalStatemen
 	 * @ordered
 	 */
 
-	protected static ThreadLocal< Query<?, ?, ?> > VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT_PARTICIPANT_ROLE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal< Query<?, ?, ?> >();
+	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT_PARTICIPANT_ROLE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1076,60 +985,55 @@ public class HandoffCommunicationParticipantsOperations extends ClinicalStatemen
 	public static boolean validateHandoffCommunicationParticipantsParticipantParticipantRoleCodeP(
 			HandoffCommunicationParticipants handoffCommunicationParticipants, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"HandoffCommunicationParticipantsHandoffCommunicationParticipantsParticipantParticipantRoleCodeP","WARNING");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(
+			context, "HandoffCommunicationParticipantsHandoffCommunicationParticipantsParticipantParticipantRoleCodeP",
+			"WARNING");
+
 		if (VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT_PARTICIPANT_ROLE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.HANDOFF_COMMUNICATION_PARTICIPANTS);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT_PARTICIPANT_ROLE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT_PARTICIPANT_ROLE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(EOCL_ENV.get().createQuery(oclExpression));
-			}
-			catch (ParserException pe) {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT_PARTICIPANT_ROLE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT_PARTICIPANT_ROLE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(
+					EOCL_ENV.get().createQuery(oclExpression));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		Object oclResult = VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT_PARTICIPANT_ROLE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(handoffCommunicationParticipants);		
+		}
+
+		Object oclResult = VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT_PARTICIPANT_ROLE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(
+			handoffCommunicationParticipants);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-  			
+
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.WARNING,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.HANDOFF_COMMUNICATION_PARTICIPANTS__HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT_PARTICIPANT_ROLE_CODE_P,
-						 ConsolPlugin.INSTANCE.getString("HandoffCommunicationParticipantsHandoffCommunicationParticipantsParticipantParticipantRoleCodeP"),
-						 new Object [] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.HANDOFF_COMMUNICATION_PARTICIPANTS__HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT_PARTICIPANT_ROLE_CODE_P,
+							ConsolPlugin.INSTANCE.getString(
+								"HandoffCommunicationParticipantsHandoffCommunicationParticipantsParticipantParticipantRoleCodeP"),
+							new Object[] { eObject }));
 				}
-				
+
 				if (context != null) {
 					// generate a pass token for my dependent constraints to short-circuit or filter results
-					Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.consol.HandoffCommunicationParticipantsParticipantParticipantRoleCodeP");
+					Collection<Object> passToken = (Collection<Object>) context.get(
+						"org.openhealthtools.mdht.uml.cda.consol.HandoffCommunicationParticipantsParticipantParticipantRoleCodeP");
 					if (passToken == null) {
 						// anticipate a reasonably healthy model
-						passToken = new java.util.ArrayList<Object>(3);
-						context.put("org.openhealthtools.mdht.uml.cda.consol.HandoffCommunicationParticipantsParticipantParticipantRoleCodeP", passToken);
+						passToken = new java.util.ArrayList<>(3);
+						context.put(
+							"org.openhealthtools.mdht.uml.cda.consol.HandoffCommunicationParticipantsParticipantParticipantRoleCodeP",
+							passToken);
 					}
 					passToken.addAll(oclResultSet);
 				}
-				 
+
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -1144,9 +1048,9 @@ public class HandoffCommunicationParticipantsOperations extends ClinicalStatemen
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT_PARTICIPANT_ROLE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.participant->excluding(null).participantRole->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined() and code.oclIsKindOf(datatypes::CE) and "+
-"let value : datatypes::CE = code.oclAsType(datatypes::CE) in "+
-"value.codeSystem = '2.16.840.1.113883.6.101' and not value.code.oclIsUndefined()))";
+	protected static final String VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT_PARTICIPANT_ROLE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.participant->excluding(null).participantRole->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined() and code.oclIsKindOf(datatypes::CE) and " +
+			"let value : datatypes::CE = code.oclAsType(datatypes::CE) in " +
+			"value.codeSystem = '2.16.840.1.113883.6.101' and not value.code.oclIsUndefined()))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateHandoffCommunicationParticipantsParticipantParticipantRoleCode(HandoffCommunicationParticipants, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Handoff Communication Participants Participant Participant Role Code</em>}' invariant operation.
@@ -1157,7 +1061,7 @@ public class HandoffCommunicationParticipantsOperations extends ClinicalStatemen
 	 * @ordered
 	 */
 
-	protected static ThreadLocal< Query<?, ?, ?> > VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT_PARTICIPANT_ROLE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal< Query<?, ?, ?> >();
+	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT_PARTICIPANT_ROLE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1173,56 +1077,51 @@ public class HandoffCommunicationParticipantsOperations extends ClinicalStatemen
 	public static boolean validateHandoffCommunicationParticipantsParticipantParticipantRoleCode(
 			HandoffCommunicationParticipants handoffCommunicationParticipants, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"HandoffCommunicationParticipantsHandoffCommunicationParticipantsParticipantParticipantRoleCode","WARNING");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(
+			context, "HandoffCommunicationParticipantsHandoffCommunicationParticipantsParticipantParticipantRoleCode",
+			"WARNING");
+
 		if (VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT_PARTICIPANT_ROLE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.HANDOFF_COMMUNICATION_PARTICIPANTS);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT_PARTICIPANT_ROLE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT_PARTICIPANT_ROLE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(EOCL_ENV.get().createQuery(oclExpression));
-			}
-			catch (ParserException pe) {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT_PARTICIPANT_ROLE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT_PARTICIPANT_ROLE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(
+					EOCL_ENV.get().createQuery(oclExpression));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		Object oclResult = VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT_PARTICIPANT_ROLE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(handoffCommunicationParticipants);		
+		}
+
+		Object oclResult = VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT_PARTICIPANT_ROLE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(
+			handoffCommunicationParticipants);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-  			
-			Object passFilter = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.consol.HandoffCommunicationParticipantsParticipantParticipantRoleCodeP");
+
+			Object passFilter = (context == null)
+					? null
+					: context.get(
+						"org.openhealthtools.mdht.uml.cda.consol.HandoffCommunicationParticipantsParticipantParticipantRoleCodeP");
 			if (passFilter instanceof Collection<?>) {
 				// filter my query results
 				oclResultSet = new ArrayList<EObject>(oclResultSet);
 				oclResultSet.removeAll((Collection<?>) passFilter);
 			}
-	  		
+
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.WARNING,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.HANDOFF_COMMUNICATION_PARTICIPANTS__HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT_PARTICIPANT_ROLE_CODE,
-						 ConsolPlugin.INSTANCE.getString("HandoffCommunicationParticipantsHandoffCommunicationParticipantsParticipantParticipantRoleCode"),
-						 new Object [] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.HANDOFF_COMMUNICATION_PARTICIPANTS__HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT_PARTICIPANT_ROLE_CODE,
+							ConsolPlugin.INSTANCE.getString(
+								"HandoffCommunicationParticipantsHandoffCommunicationParticipantsParticipantParticipantRoleCode"),
+							new Object[] { eObject }));
 				}
-				 
+
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -1248,7 +1147,7 @@ public class HandoffCommunicationParticipantsOperations extends ClinicalStatemen
 	 * @ordered
 	 */
 
-	protected static ThreadLocal< Query<?, ?, ?> > VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT_PARTICIPANT_ROLE_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal< Query<?, ?, ?> >();
+	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT_PARTICIPANT_ROLE_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1264,49 +1163,41 @@ public class HandoffCommunicationParticipantsOperations extends ClinicalStatemen
 	public static boolean validateHandoffCommunicationParticipantsParticipantParticipantRoleAddr(
 			HandoffCommunicationParticipants handoffCommunicationParticipants, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"HandoffCommunicationParticipantsHandoffCommunicationParticipantsParticipantParticipantRoleAddr","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(
+			context, "HandoffCommunicationParticipantsHandoffCommunicationParticipantsParticipantParticipantRoleAddr",
+			"ERROR");
+
 		if (VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT_PARTICIPANT_ROLE_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.HANDOFF_COMMUNICATION_PARTICIPANTS);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT_PARTICIPANT_ROLE_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT_PARTICIPANT_ROLE_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(EOCL_ENV.get().createQuery(oclExpression));
-			}
-			catch (ParserException pe) {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT_PARTICIPANT_ROLE_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT_PARTICIPANT_ROLE_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(
+					EOCL_ENV.get().createQuery(oclExpression));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		Object oclResult = VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT_PARTICIPANT_ROLE_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(handoffCommunicationParticipants);		
+		}
+
+		Object oclResult = VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT_PARTICIPANT_ROLE_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(
+			handoffCommunicationParticipants);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-  			
+
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.HANDOFF_COMMUNICATION_PARTICIPANTS__HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT_PARTICIPANT_ROLE_ADDR,
-						 ConsolPlugin.INSTANCE.getString("HandoffCommunicationParticipantsHandoffCommunicationParticipantsParticipantParticipantRoleAddr"),
-						 new Object [] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.HANDOFF_COMMUNICATION_PARTICIPANTS__HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT_PARTICIPANT_ROLE_ADDR,
+							ConsolPlugin.INSTANCE.getString(
+								"HandoffCommunicationParticipantsHandoffCommunicationParticipantsParticipantParticipantRoleAddr"),
+							new Object[] { eObject }));
 				}
-				 
+
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -1332,7 +1223,7 @@ public class HandoffCommunicationParticipantsOperations extends ClinicalStatemen
 	 * @ordered
 	 */
 
-	protected static ThreadLocal< Query<?, ?, ?> > VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal< Query<?, ?, ?> >();
+	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1348,49 +1239,42 @@ public class HandoffCommunicationParticipantsOperations extends ClinicalStatemen
 	public static boolean validateHandoffCommunicationParticipantsParticipantParticipantRolePlayingEntity(
 			HandoffCommunicationParticipants handoffCommunicationParticipants, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"HandoffCommunicationParticipantsHandoffCommunicationParticipantsParticipantParticipantRolePlayingEntity","INFO");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(
+			context,
+			"HandoffCommunicationParticipantsHandoffCommunicationParticipantsParticipantParticipantRolePlayingEntity",
+			"INFO");
+
 		if (VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.HANDOFF_COMMUNICATION_PARTICIPANTS);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(EOCL_ENV.get().createQuery(oclExpression));
-			}
-			catch (ParserException pe) {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(
+					EOCL_ENV.get().createQuery(oclExpression));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		Object oclResult = VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(handoffCommunicationParticipants);		
+		}
+
+		Object oclResult = VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(
+			handoffCommunicationParticipants);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-  			
+
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.HANDOFF_COMMUNICATION_PARTICIPANTS__HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY,
-						 ConsolPlugin.INSTANCE.getString("HandoffCommunicationParticipantsHandoffCommunicationParticipantsParticipantParticipantRolePlayingEntity"),
-						 new Object [] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.HANDOFF_COMMUNICATION_PARTICIPANTS__HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY,
+							ConsolPlugin.INSTANCE.getString(
+								"HandoffCommunicationParticipantsHandoffCommunicationParticipantsParticipantParticipantRolePlayingEntity"),
+							new Object[] { eObject }));
 				}
-				 
+
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -1416,7 +1300,7 @@ public class HandoffCommunicationParticipantsOperations extends ClinicalStatemen
 	 * @ordered
 	 */
 
-	protected static ThreadLocal< Query<?, ?, ?> > VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal< Query<?, ?, ?> >();
+	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1432,49 +1316,40 @@ public class HandoffCommunicationParticipantsOperations extends ClinicalStatemen
 	public static boolean validateHandoffCommunicationParticipantsParticipantTypeCode(
 			HandoffCommunicationParticipants handoffCommunicationParticipants, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"HandoffCommunicationParticipantsHandoffCommunicationParticipantsParticipantTypeCode","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(
+			context, "HandoffCommunicationParticipantsHandoffCommunicationParticipantsParticipantTypeCode", "ERROR");
+
 		if (VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.HANDOFF_COMMUNICATION_PARTICIPANTS);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(EOCL_ENV.get().createQuery(oclExpression));
-			}
-			catch (ParserException pe) {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(
+					EOCL_ENV.get().createQuery(oclExpression));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		Object oclResult = VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(handoffCommunicationParticipants);		
+		}
+
+		Object oclResult = VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(
+			handoffCommunicationParticipants);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-  			
+
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.HANDOFF_COMMUNICATION_PARTICIPANTS__HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT_TYPE_CODE,
-						 ConsolPlugin.INSTANCE.getString("HandoffCommunicationParticipantsHandoffCommunicationParticipantsParticipantTypeCode"),
-						 new Object [] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.HANDOFF_COMMUNICATION_PARTICIPANTS__HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT_TYPE_CODE,
+							ConsolPlugin.INSTANCE.getString(
+								"HandoffCommunicationParticipantsHandoffCommunicationParticipantsParticipantTypeCode"),
+							new Object[] { eObject }));
 				}
-				 
+
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -1500,7 +1375,7 @@ public class HandoffCommunicationParticipantsOperations extends ClinicalStatemen
 	 * @ordered
 	 */
 
-	protected static ThreadLocal< Query<?, ?, ?> > VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT_PARTICIPANT_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal< Query<?, ?, ?> >();
+	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT_PARTICIPANT_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1516,49 +1391,41 @@ public class HandoffCommunicationParticipantsOperations extends ClinicalStatemen
 	public static boolean validateHandoffCommunicationParticipantsParticipantParticipantRole(
 			HandoffCommunicationParticipants handoffCommunicationParticipants, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"HandoffCommunicationParticipantsHandoffCommunicationParticipantsParticipantParticipantRole","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(
+			context, "HandoffCommunicationParticipantsHandoffCommunicationParticipantsParticipantParticipantRole",
+			"ERROR");
+
 		if (VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT_PARTICIPANT_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.HANDOFF_COMMUNICATION_PARTICIPANTS);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT_PARTICIPANT_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT_PARTICIPANT_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(EOCL_ENV.get().createQuery(oclExpression));
-			}
-			catch (ParserException pe) {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT_PARTICIPANT_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT_PARTICIPANT_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(
+					EOCL_ENV.get().createQuery(oclExpression));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		Object oclResult = VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT_PARTICIPANT_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(handoffCommunicationParticipants);		
+		}
+
+		Object oclResult = VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT_PARTICIPANT_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(
+			handoffCommunicationParticipants);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-  			
+
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.HANDOFF_COMMUNICATION_PARTICIPANTS__HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT_PARTICIPANT_ROLE,
-						 ConsolPlugin.INSTANCE.getString("HandoffCommunicationParticipantsHandoffCommunicationParticipantsParticipantParticipantRole"),
-						 new Object [] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.HANDOFF_COMMUNICATION_PARTICIPANTS__HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT_PARTICIPANT_ROLE,
+							ConsolPlugin.INSTANCE.getString(
+								"HandoffCommunicationParticipantsHandoffCommunicationParticipantsParticipantParticipantRole"),
+							new Object[] { eObject }));
 				}
-				 
+
 			}
 			return oclResultSet.isEmpty();
 		}

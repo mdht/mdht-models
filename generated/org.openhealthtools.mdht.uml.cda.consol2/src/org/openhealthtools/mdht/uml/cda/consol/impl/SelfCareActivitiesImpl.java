@@ -151,16 +151,16 @@ public class SelfCareActivitiesImpl extends ObservationImpl implements SelfCareA
 	 * @generated
 	 */
 	public SelfCareActivities init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public SelfCareActivities init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // SelfCareActivitiesImpl

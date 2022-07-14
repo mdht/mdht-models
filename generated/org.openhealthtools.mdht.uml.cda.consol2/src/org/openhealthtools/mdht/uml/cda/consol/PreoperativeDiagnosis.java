@@ -99,9 +99,9 @@ public interface PreoperativeDiagnosis extends Act {
 	public PreoperativeDiagnosis init();
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public PreoperativeDiagnosis init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // PreoperativeDiagnosis

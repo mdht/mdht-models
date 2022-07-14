@@ -971,9 +971,9 @@ public interface RiskConcernAct extends Act {
 	public RiskConcernAct init();
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public RiskConcernAct init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // RiskConcernAct

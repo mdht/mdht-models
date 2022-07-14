@@ -101,7 +101,8 @@ public class MentalStatusSectionImpl extends SectionImpl implements MentalStatus
 	 */
 	public boolean validateMentalStatusSectionAssessmentScaleObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MentalStatusSectionOperations.validateMentalStatusSectionAssessmentScaleObservation(this, diagnostics, context);
+		return MentalStatusSectionOperations.validateMentalStatusSectionAssessmentScaleObservation(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -111,7 +112,8 @@ public class MentalStatusSectionImpl extends SectionImpl implements MentalStatus
 	 */
 	public boolean validateMentalStatusSectionMentalStatusOrganizer2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MentalStatusSectionOperations.validateMentalStatusSectionMentalStatusOrganizer2(this, diagnostics, context);
+		return MentalStatusSectionOperations.validateMentalStatusSectionMentalStatusOrganizer2(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -121,7 +123,8 @@ public class MentalStatusSectionImpl extends SectionImpl implements MentalStatus
 	 */
 	public boolean validateMentalStatusSectionMentalStatusObservation2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MentalStatusSectionOperations.validateMentalStatusSectionMentalStatusObservation2(this, diagnostics, context);
+		return MentalStatusSectionOperations.validateMentalStatusSectionMentalStatusObservation2(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -157,16 +160,16 @@ public class MentalStatusSectionImpl extends SectionImpl implements MentalStatus
 	 * @generated
 	 */
 	public MentalStatusSection init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public MentalStatusSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // MentalStatusSectionImpl

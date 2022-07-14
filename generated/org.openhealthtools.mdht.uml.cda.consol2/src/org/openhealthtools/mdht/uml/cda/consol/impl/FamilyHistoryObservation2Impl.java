@@ -47,7 +47,8 @@ public class FamilyHistoryObservation2Impl extends FamilyHistoryObservationImpl 
 	 */
 	public boolean validateFamilyHistoryObservation2TemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return FamilyHistoryObservation2Operations.validateFamilyHistoryObservation2TemplateId(this, diagnostics, context);
+		return FamilyHistoryObservation2Operations.validateFamilyHistoryObservation2TemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -57,7 +58,8 @@ public class FamilyHistoryObservation2Impl extends FamilyHistoryObservationImpl 
 	 */
 	public boolean validateFamilyHistoryObservation2CDTranslation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return FamilyHistoryObservation2Operations.validateFamilyHistoryObservation2CDTranslation(this, diagnostics, context);
+		return FamilyHistoryObservation2Operations.validateFamilyHistoryObservation2CDTranslation(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -67,7 +69,8 @@ public class FamilyHistoryObservation2Impl extends FamilyHistoryObservationImpl 
 	 */
 	public boolean validateFamilyHistoryObservation2CDTranslationP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return FamilyHistoryObservation2Operations.validateFamilyHistoryObservation2CDTranslationP(this, diagnostics, context);
+		return FamilyHistoryObservation2Operations.validateFamilyHistoryObservation2CDTranslationP(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -97,17 +100,17 @@ public class FamilyHistoryObservation2Impl extends FamilyHistoryObservationImpl 
 	 */
 	@Override
 	public FamilyHistoryObservation2 init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public FamilyHistoryObservation2 init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // FamilyHistoryObservation2Impl

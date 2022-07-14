@@ -58,7 +58,8 @@ public class CoverageActivityImpl extends ActImpl implements CoverageActivity {
 	 */
 	public boolean validateCoverageActivityCoverageActivityRelationshipSequenceNumber(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return CoverageActivityOperations.validateCoverageActivityCoverageActivityRelationshipSequenceNumber(this, diagnostics, context);
+		return CoverageActivityOperations.validateCoverageActivityCoverageActivityRelationshipSequenceNumber(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -139,16 +140,16 @@ public class CoverageActivityImpl extends ActImpl implements CoverageActivity {
 	 * @generated
 	 */
 	public CoverageActivity init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public CoverageActivity init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // CoverageActivityImpl

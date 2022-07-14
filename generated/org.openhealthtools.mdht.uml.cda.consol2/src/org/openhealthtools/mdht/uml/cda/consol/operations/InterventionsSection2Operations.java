@@ -86,7 +86,7 @@ public class InterventionsSection2Operations extends InterventionsSectionOperati
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_INTERVENTIONS_SECTION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_INTERVENTIONS_SECTION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -101,44 +101,34 @@ public class InterventionsSection2Operations extends InterventionsSectionOperati
 
 	public static boolean validateInterventionsSection2TemplateId(InterventionsSection2 interventionsSection2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"InterventionsSection2InterventionsSection2TemplateId","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "InterventionsSection2InterventionsSection2TemplateId", "ERROR");
+
 		if (VALIDATE_INTERVENTIONS_SECTION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.INTERVENTIONS_SECTION2);
 			try {
-				VALIDATE_INTERVENTIONS_SECTION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_INTERVENTIONS_SECTION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_INTERVENTIONS_SECTION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_INTERVENTIONS_SECTION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_INTERVENTIONS_SECTION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(interventionsSection2)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_INTERVENTIONS_SECTION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				interventionsSection2)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.INTERVENTIONS_SECTION2__INTERVENTIONS_SECTION2_TEMPLATE_ID,
-						 ConsolPlugin.INSTANCE.getString("InterventionsSection2InterventionsSection2TemplateId"),
-						 new Object [] { interventionsSection2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.INTERVENTIONS_SECTION2__INTERVENTIONS_SECTION2_TEMPLATE_ID,
+						ConsolPlugin.INSTANCE.getString("InterventionsSection2InterventionsSection2TemplateId"),
+						new Object[] { interventionsSection2 }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -163,7 +153,7 @@ public class InterventionsSection2Operations extends InterventionsSectionOperati
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_INTERVENTIONS_SECTION2_INTERVENTION_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_INTERVENTIONS_SECTION2_INTERVENTION_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -178,44 +168,34 @@ public class InterventionsSection2Operations extends InterventionsSectionOperati
 
 	public static boolean validateInterventionsSection2InterventionAct(InterventionsSection2 interventionsSection2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"InterventionsSection2InterventionsSection2InterventionAct","WARNING");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "InterventionsSection2InterventionsSection2InterventionAct", "WARNING");
+
 		if (VALIDATE_INTERVENTIONS_SECTION2_INTERVENTION_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.INTERVENTIONS_SECTION2);
 			try {
-				VALIDATE_INTERVENTIONS_SECTION2_INTERVENTION_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_INTERVENTIONS_SECTION2_INTERVENTION_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_INTERVENTIONS_SECTION2_INTERVENTION_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_INTERVENTIONS_SECTION2_INTERVENTION_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_INTERVENTIONS_SECTION2_INTERVENTION_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(interventionsSection2)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_INTERVENTIONS_SECTION2_INTERVENTION_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				interventionsSection2)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.WARNING,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.INTERVENTIONS_SECTION2__INTERVENTIONS_SECTION2_INTERVENTION_ACT,
-						 ConsolPlugin.INSTANCE.getString("InterventionsSection2InterventionsSection2InterventionAct"),
-						 new Object [] { interventionsSection2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.INTERVENTIONS_SECTION2__INTERVENTIONS_SECTION2_INTERVENTION_ACT,
+						ConsolPlugin.INSTANCE.getString("InterventionsSection2InterventionsSection2InterventionAct"),
+						new Object[] { interventionsSection2 }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -240,7 +220,7 @@ public class InterventionsSection2Operations extends InterventionsSectionOperati
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_INTERVENTIONS_SECTION2_HANDOFF_COMMUNICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_INTERVENTIONS_SECTION2_HANDOFF_COMMUNICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -255,44 +235,35 @@ public class InterventionsSection2Operations extends InterventionsSectionOperati
 
 	public static boolean validateInterventionsSection2HandoffCommunication(InterventionsSection2 interventionsSection2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"InterventionsSection2InterventionsSection2HandoffCommunication","INFO");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "InterventionsSection2InterventionsSection2HandoffCommunication", "INFO");
+
 		if (VALIDATE_INTERVENTIONS_SECTION2_HANDOFF_COMMUNICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.INTERVENTIONS_SECTION2);
 			try {
-				VALIDATE_INTERVENTIONS_SECTION2_HANDOFF_COMMUNICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_INTERVENTIONS_SECTION2_HANDOFF_COMMUNICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_INTERVENTIONS_SECTION2_HANDOFF_COMMUNICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_INTERVENTIONS_SECTION2_HANDOFF_COMMUNICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_INTERVENTIONS_SECTION2_HANDOFF_COMMUNICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(interventionsSection2)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_INTERVENTIONS_SECTION2_HANDOFF_COMMUNICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				interventionsSection2)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.INTERVENTIONS_SECTION2__INTERVENTIONS_SECTION2_HANDOFF_COMMUNICATION,
-						 ConsolPlugin.INSTANCE.getString("InterventionsSection2InterventionsSection2HandoffCommunication"),
-						 new Object [] { interventionsSection2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.INTERVENTIONS_SECTION2__INTERVENTIONS_SECTION2_HANDOFF_COMMUNICATION,
+						ConsolPlugin.INSTANCE.getString(
+							"InterventionsSection2InterventionsSection2HandoffCommunication"),
+						new Object[] { interventionsSection2 }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -317,7 +288,7 @@ public class InterventionsSection2Operations extends InterventionsSectionOperati
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_INTERVENTIONS_SECTION2_PLANNED_INTERVENTION_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_INTERVENTIONS_SECTION2_PLANNED_INTERVENTION_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -332,44 +303,35 @@ public class InterventionsSection2Operations extends InterventionsSectionOperati
 
 	public static boolean validateInterventionsSection2PlannedInterventionAct(
 			InterventionsSection2 interventionsSection2, DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"InterventionsSection2InterventionsSection2PlannedInterventionAct","WARNING");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "InterventionsSection2InterventionsSection2PlannedInterventionAct", "WARNING");
+
 		if (VALIDATE_INTERVENTIONS_SECTION2_PLANNED_INTERVENTION_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.INTERVENTIONS_SECTION2);
 			try {
-				VALIDATE_INTERVENTIONS_SECTION2_PLANNED_INTERVENTION_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_INTERVENTIONS_SECTION2_PLANNED_INTERVENTION_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_INTERVENTIONS_SECTION2_PLANNED_INTERVENTION_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_INTERVENTIONS_SECTION2_PLANNED_INTERVENTION_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_INTERVENTIONS_SECTION2_PLANNED_INTERVENTION_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(interventionsSection2)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_INTERVENTIONS_SECTION2_PLANNED_INTERVENTION_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				interventionsSection2)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.WARNING,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.INTERVENTIONS_SECTION2__INTERVENTIONS_SECTION2_PLANNED_INTERVENTION_ACT,
-						 ConsolPlugin.INSTANCE.getString("InterventionsSection2InterventionsSection2PlannedInterventionAct"),
-						 new Object [] { interventionsSection2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.INTERVENTIONS_SECTION2__INTERVENTIONS_SECTION2_PLANNED_INTERVENTION_ACT,
+						ConsolPlugin.INSTANCE.getString(
+							"InterventionsSection2InterventionsSection2PlannedInterventionAct"),
+						new Object[] { interventionsSection2 }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -402,26 +364,24 @@ public class InterventionsSection2Operations extends InterventionsSectionOperati
 	 */
 
 	public static EList<InterventionAct> getInterventionActs(InterventionsSection2 interventionsSection2) {
-	
-	
-	
+
 		if (GET_INTERVENTION_ACTS__EOCL_QRY == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.INTERVENTIONS_SECTION2, ConsolPackage.Literals.INTERVENTIONS_SECTION2.getEAllOperations().get(64));
+			helper.setOperationContext(
+				ConsolPackage.Literals.INTERVENTIONS_SECTION2,
+				ConsolPackage.Literals.INTERVENTIONS_SECTION2.getEAllOperations().get(64));
 			try {
 				GET_INTERVENTION_ACTS__EOCL_QRY = helper.createQuery(GET_INTERVENTION_ACTS__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
+		}
+
 		OCL.Query query = EOCL_ENV.get().createQuery(GET_INTERVENTION_ACTS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<InterventionAct> result = (Collection<InterventionAct>) query.evaluate(interventionsSection2);
-		return new BasicEList.UnmodifiableEList<InterventionAct>(result.size(), result.toArray());
+		return new BasicEList.UnmodifiableEList<>(result.size(), result.toArray());
 	}
 
 	/**
@@ -452,26 +412,25 @@ public class InterventionsSection2Operations extends InterventionsSectionOperati
 
 	public static EList<HandoffCommunicationParticipants> getHandoffCommunications(
 			InterventionsSection2 interventionsSection2) {
-	
-	
-	
+
 		if (GET_HANDOFF_COMMUNICATIONS__EOCL_QRY == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.INTERVENTIONS_SECTION2, ConsolPackage.Literals.INTERVENTIONS_SECTION2.getEAllOperations().get(65));
+			helper.setOperationContext(
+				ConsolPackage.Literals.INTERVENTIONS_SECTION2,
+				ConsolPackage.Literals.INTERVENTIONS_SECTION2.getEAllOperations().get(65));
 			try {
 				GET_HANDOFF_COMMUNICATIONS__EOCL_QRY = helper.createQuery(GET_HANDOFF_COMMUNICATIONS__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
+		}
+
 		OCL.Query query = EOCL_ENV.get().createQuery(GET_HANDOFF_COMMUNICATIONS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
-		Collection<HandoffCommunicationParticipants> result = (Collection<HandoffCommunicationParticipants>) query.evaluate(interventionsSection2);
-		return new BasicEList.UnmodifiableEList<HandoffCommunicationParticipants>(result.size(), result.toArray());
+		Collection<HandoffCommunicationParticipants> result = (Collection<HandoffCommunicationParticipants>) query.evaluate(
+			interventionsSection2);
+		return new BasicEList.UnmodifiableEList<>(result.size(), result.toArray());
 	}
 
 	/**
@@ -502,26 +461,25 @@ public class InterventionsSection2Operations extends InterventionsSectionOperati
 
 	public static EList<PlannedInterventionAct> getPlannedInterventionActs(
 			InterventionsSection2 interventionsSection2) {
-	
-	
-	
+
 		if (GET_PLANNED_INTERVENTION_ACTS__EOCL_QRY == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.INTERVENTIONS_SECTION2, ConsolPackage.Literals.INTERVENTIONS_SECTION2.getEAllOperations().get(66));
+			helper.setOperationContext(
+				ConsolPackage.Literals.INTERVENTIONS_SECTION2,
+				ConsolPackage.Literals.INTERVENTIONS_SECTION2.getEAllOperations().get(66));
 			try {
 				GET_PLANNED_INTERVENTION_ACTS__EOCL_QRY = helper.createQuery(GET_PLANNED_INTERVENTION_ACTS__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
+		}
+
 		OCL.Query query = EOCL_ENV.get().createQuery(GET_PLANNED_INTERVENTION_ACTS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
-		Collection<PlannedInterventionAct> result = (Collection<PlannedInterventionAct>) query.evaluate(interventionsSection2);
-		return new BasicEList.UnmodifiableEList<PlannedInterventionAct>(result.size(), result.toArray());
+		Collection<PlannedInterventionAct> result = (Collection<PlannedInterventionAct>) query.evaluate(
+			interventionsSection2);
+		return new BasicEList.UnmodifiableEList<>(result.size(), result.toArray());
 	}
 
 	/**
@@ -543,7 +501,7 @@ public class InterventionsSection2Operations extends InterventionsSectionOperati
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_INTERVENTIONS_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_INTERVENTIONS_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -558,56 +516,45 @@ public class InterventionsSection2Operations extends InterventionsSectionOperati
 
 	public static boolean validateInterventionsSectionCodeP(InterventionsSection2 interventionsSection2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"InterventionsSection2InterventionsSectionCodeP","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "InterventionsSection2InterventionsSectionCodeP", "ERROR");
+
 		if (VALIDATE_INTERVENTIONS_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.INTERVENTIONS_SECTION2);
 			try {
-				VALIDATE_INTERVENTIONS_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_INTERVENTIONS_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_INTERVENTIONS_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_INTERVENTIONS_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_INTERVENTIONS_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(interventionsSection2)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_INTERVENTIONS_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(interventionsSection2)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.INTERVENTIONS_SECTION2__INTERVENTIONS_SECTION_CODE_P,
-						 ConsolPlugin.INSTANCE.getString("InterventionsSection2InterventionsSectionCodeP"),
-						 new Object [] { interventionsSection2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.INTERVENTIONS_SECTION2__INTERVENTIONS_SECTION_CODE_P,
+						ConsolPlugin.INSTANCE.getString("InterventionsSection2InterventionsSectionCodeP"),
+						new Object[] { interventionsSection2 }));
 			}
-			
+
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
-				Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.consol.InterventionsSectionCodeP");
+				Collection<Object> passToken = (Collection<Object>) context.get(
+					"org.openhealthtools.mdht.uml.cda.consol.InterventionsSectionCodeP");
 				if (passToken == null) {
 					// anticipate a reasonably healthy model
-					passToken = new java.util.ArrayList<Object>(3);
+					passToken = new java.util.ArrayList<>(3);
 					context.put("org.openhealthtools.mdht.uml.cda.consol.InterventionsSectionCodeP", passToken);
 				}
 				passToken.add(interventionsSection2);
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -621,9 +568,9 @@ public class InterventionsSection2Operations extends InterventionsSectionOperati
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_INTERVENTIONS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "+
-"let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "+
-"value.code = '62387-6' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_INTERVENTIONS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and " +
+			"let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in " +
+			"value.code = '62387-6' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateInterventionsSectionCode(InterventionsSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Interventions Section Code</em>}' invariant operation.
@@ -634,7 +581,7 @@ public class InterventionsSection2Operations extends InterventionsSectionOperati
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_INTERVENTIONS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_INTERVENTIONS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -649,50 +596,40 @@ public class InterventionsSection2Operations extends InterventionsSectionOperati
 
 	public static boolean validateInterventionsSectionCode(InterventionsSection2 interventionsSection2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-		Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.consol.InterventionsSectionCodeP");
+
+		Object passToken = (context == null)
+				? null
+				: context.get("org.openhealthtools.mdht.uml.cda.consol.InterventionsSectionCodeP");
 		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(interventionsSection2)) {
 			// I have a free pass to short-circuit
 			return true;
 		}
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"InterventionsSection2InterventionsSectionCode","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "InterventionsSection2InterventionsSectionCode", "ERROR");
+
 		if (VALIDATE_INTERVENTIONS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.INTERVENTIONS_SECTION2);
 			try {
-				VALIDATE_INTERVENTIONS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_INTERVENTIONS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_INTERVENTIONS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_INTERVENTIONS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_INTERVENTIONS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(interventionsSection2)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_INTERVENTIONS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(interventionsSection2)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.INTERVENTIONS_SECTION2__INTERVENTIONS_SECTION_CODE,
-						 ConsolPlugin.INSTANCE.getString("InterventionsSection2InterventionsSectionCode"),
-						 new Object [] { interventionsSection2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.INTERVENTIONS_SECTION2__INTERVENTIONS_SECTION_CODE,
+						ConsolPlugin.INSTANCE.getString("InterventionsSection2InterventionsSectionCode"),
+						new Object[] { interventionsSection2 }));
 			}
-			 
+
 			return false;
 		}
 		return true;

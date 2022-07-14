@@ -161,9 +161,9 @@ public interface Indication extends Observation {
 	public Indication init();
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public Indication init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // Indication

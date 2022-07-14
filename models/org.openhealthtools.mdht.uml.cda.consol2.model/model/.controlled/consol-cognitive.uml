@@ -17,13 +17,13 @@ An appropriate nullFlavor can be used when the organizer/code or organizer/id is
       <general xmi:type="uml:Class" href="consol-results.uml#_2JxzgBSVEeGGzu7fmW9pXw"/>
     </generalization>
     <ownedAttribute xmi:id="_Dku5YOZjEeGINOJ_SD9_dA" name="classCode" visibility="private" isReadOnly="true">
-      <type xmi:type="uml:Enumeration" href="../../../org.eclipse.mdht.uml.hl7.vocab/model/vocab.uml#__zOnw0DcEd6xYZuu1VKCVw"/>
+      <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__zOnw0DcEd6xYZuu1VKCVw"/>
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_OBLDEOZjEeGINOJ_SD9_dA" value="CLUSTER"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_NjnHQEb9Ed6besF9iFIJkQ"/>
       <redefinedProperty href="consol-results.uml#_eyn08NzJEeG4UqssEkZt3w"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_Dku5auZjEeGINOJ_SD9_dA" name="moodCode" visibility="private" isReadOnly="true">
-      <type xmi:type="uml:Enumeration" href="../../../org.eclipse.mdht.uml.hl7.vocab/model/vocab.uml#__yeW3UDcEd6xYZuu1VKCVw"/>
+      <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__yeW3UDcEd6xYZuu1VKCVw"/>
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_Dku5a-ZjEeGINOJ_SD9_dA" value="EVN"/>
       <redefinedProperty href="consol-results.uml#_2JzBoBSVEeGGzu7fmW9pXw"/>
     </ownedAttribute>
@@ -114,13 +114,13 @@ This is different from a cognitive status problem observation, which is a clinic
       <general xmi:type="uml:Class" href="consol-results.uml#_2J1d4BSVEeGGzu7fmW9pXw"/>
     </generalization>
     <ownedAttribute xmi:id="_rPRcUOZgEeGINOJ_SD9_dA" name="classCode" visibility="private" isReadOnly="true">
-      <type xmi:type="uml:Enumeration" href="../../../org.eclipse.mdht.uml.hl7.vocab/model/vocab.uml#__yVecEDcEd6xYZuu1VKCVw"/>
+      <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__yVecEDcEd6xYZuu1VKCVw"/>
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_rPRcUeZgEeGINOJ_SD9_dA" value="OBS"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_FcjT0EbtEd6besF9iFIJkQ"/>
       <redefinedProperty href="consol-results.uml#_2J4hMRSVEeGGzu7fmW9pXw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_rPRcZeZgEeGINOJ_SD9_dA" name="moodCode" visibility="private" isReadOnly="true">
-      <type xmi:type="uml:Enumeration" href="../../../org.eclipse.mdht.uml.hl7.vocab/model/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
+      <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_rPRcZuZgEeGINOJ_SD9_dA" value="EVN"/>
       <redefinedProperty href="consol-results.uml#_2J4hMxSVEeGGzu7fmW9pXw"/>
     </ownedAttribute>
@@ -387,13 +387,13 @@ Reason for deprecation: Cognitive Status Problem Observation has been merged, wi
       <general xmi:type="uml:Class" href="consol-problems.uml#_5Ha7ABUyEeGbmN_W114JUw"/>
     </generalization>
     <ownedAttribute xmi:id="_aFueQOZcEeGINOJ_SD9_dA" name="classCode" visibility="private" isReadOnly="true">
-      <type xmi:type="uml:Enumeration" href="../../../org.eclipse.mdht.uml.hl7.vocab/model/vocab.uml#__yVecEDcEd6xYZuu1VKCVw"/>
+      <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__yVecEDcEd6xYZuu1VKCVw"/>
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_aFueQeZcEeGINOJ_SD9_dA" value="OBS"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_FcjT0EbtEd6besF9iFIJkQ"/>
       <redefinedProperty href="consol-problems.uml#_6-B3UBUyEeGbmN_W114JUw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_aFueUeZcEeGINOJ_SD9_dA" name="moodCode" visibility="private" isReadOnly="true">
-      <type xmi:type="uml:Enumeration" href="../../../org.eclipse.mdht.uml.hl7.vocab/model/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
+      <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_aFueUuZcEeGINOJ_SD9_dA" value="EVN"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_BLZhcEo_Ed6c3qsAxlFHaQ"/>
       <redefinedProperty href="consol-problems.uml#_6-ejRBUyEeGbmN_W114JUw"/>
@@ -573,12 +573,12 @@ Reason for deprecation: Cognitive Status Problem Observation has been merged, wi
       <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
     </generalization>
     <ownedAttribute xmi:id="_aZZWEOY5EeGINOJ_SD9_dA" name="classCode" visibility="private" isReadOnly="true">
-      <type xmi:type="uml:Enumeration" href="../../../org.eclipse.mdht.uml.hl7.vocab/model/vocab.uml#__yVecEDcEd6xYZuu1VKCVw"/>
+      <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__yVecEDcEd6xYZuu1VKCVw"/>
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_LGhMcOY6EeGINOJ_SD9_dA" value="OBS"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_FcjT0EbtEd6besF9iFIJkQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_aZZWFeY5EeGINOJ_SD9_dA" name="moodCode" visibility="private" isReadOnly="true">
-      <type xmi:type="uml:Enumeration" href="../../../org.eclipse.mdht.uml.hl7.vocab/model/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
+      <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_Mk_VkOY6EeGINOJ_SD9_dA" value="EVN"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_BLZhcEo_Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
@@ -663,12 +663,12 @@ Reason for deprecation: Cognitive Status Problem Observation has been merged, wi
       <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
     </generalization>
     <ownedAttribute xmi:id="_hvJ8UOYxEeGINOJ_SD9_dA" name="classCode" visibility="private" isReadOnly="true">
-      <type xmi:type="uml:Enumeration" href="../../../org.eclipse.mdht.uml.hl7.vocab/model/vocab.uml#__yVecEDcEd6xYZuu1VKCVw"/>
+      <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__yVecEDcEd6xYZuu1VKCVw"/>
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_c8rZ4OYzEeGINOJ_SD9_dA" value="OBS"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_FcjT0EbtEd6besF9iFIJkQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_hvJ8XuYxEeGINOJ_SD9_dA" name="moodCode" visibility="private" isReadOnly="true">
-      <type xmi:type="uml:Enumeration" href="../../../org.eclipse.mdht.uml.hl7.vocab/model/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
+      <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_fGF9cOYzEeGINOJ_SD9_dA" value="EVN"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_BLZhcEo_Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
@@ -870,12 +870,12 @@ Reason for deprecation: Cognitive Status Problem Observation has been merged, wi
       <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
     </generalization>
     <ownedAttribute xmi:id="_GfC4wOY_EeGINOJ_SD9_dA" name="classCode" visibility="private" isReadOnly="true">
-      <type xmi:type="uml:Enumeration" href="../../../org.eclipse.mdht.uml.hl7.vocab/model/vocab.uml#__yVecEDcEd6xYZuu1VKCVw"/>
+      <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__yVecEDcEd6xYZuu1VKCVw"/>
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_H3tU0OY_EeGINOJ_SD9_dA" value="OBS"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_FcjT0EbtEd6besF9iFIJkQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_GfC4xeY_EeGINOJ_SD9_dA" name="moodCode" visibility="private" isReadOnly="true">
-      <type xmi:type="uml:Enumeration" href="../../../org.eclipse.mdht.uml.hl7.vocab/model/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
+      <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_MhQS0OY_EeGINOJ_SD9_dA" value="EVN"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_BLZhcEo_Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
@@ -930,7 +930,7 @@ Reason for deprecation: Cognitive Status Problem Observation has been merged, wi
         <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_51DLwEcZEd6besF9iFIJkQ"/>
       </generalization>
       <ownedAttribute xmi:id="_yp6noEJ8EeOECfdQ4ITPew" name="typeCode" visibility="private" isReadOnly="true">
-        <type xmi:type="uml:Enumeration" href="../../../org.eclipse.mdht.uml.hl7.vocab/model/vocab.uml#__y7BekDcEd6xYZuu1VKCVw"/>
+        <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__y7BekDcEd6xYZuu1VKCVw"/>
         <defaultValue xmi:type="uml:LiteralString" xmi:id="_9IjJsEJ8EeOECfdQ4ITPew" value="IND"/>
         <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_CRBsgEreEd6FXKclYGEDCw"/>
       </ownedAttribute>
@@ -951,7 +951,7 @@ Reason for deprecation: Cognitive Status Problem Observation has been merged, wi
           <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#__QZaIEcZEd6besF9iFIJkQ"/>
         </generalization>
         <ownedAttribute xmi:id="_JnCvAOZAEeGINOJ_SD9_dA" name="classCode" visibility="private" isReadOnly="true">
-          <type xmi:type="uml:Enumeration" href="../../../org.eclipse.mdht.uml.hl7.vocab/model/vocab.uml#__zE4tEDcEd6xYZuu1VKCVw"/>
+          <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__zE4tEDcEd6xYZuu1VKCVw"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_aVK5MeZAEeGINOJ_SD9_dA" value="1"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_aVK5MOZAEeGINOJ_SD9_dA" value="1"/>
           <defaultValue xmi:type="uml:LiteralString" xmi:id="_5K_kcEJ7EeOECfdQ4ITPew" value="CAREGIVER"/>
@@ -1020,12 +1020,12 @@ Reason for deprecation: Cognitive Status Problem Observation has been merged, wi
       <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
     </generalization>
     <ownedAttribute xmi:id="_9fGUUIoAEeOoMZgUoTghIg" name="classCode" visibility="private" isReadOnly="true">
-      <type xmi:type="uml:Enumeration" href="../../../org.eclipse.mdht.uml.hl7.vocab/model/vocab.uml#__yVecEDcEd6xYZuu1VKCVw"/>
+      <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__yVecEDcEd6xYZuu1VKCVw"/>
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_hgrsMIoBEeOoMZgUoTghIg" value="OBS"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_FcjT0EbtEd6besF9iFIJkQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_9fHicIoAEeOoMZgUoTghIg" name="moodCode" visibility="private" isReadOnly="true">
-      <type xmi:type="uml:Enumeration" href="../../../org.eclipse.mdht.uml.hl7.vocab/model/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
+      <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_iSSIQIoBEeOoMZgUoTghIg" value="EVN"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_BLZhcEo_Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
@@ -1125,12 +1125,12 @@ Reason for deprecation: Cognitive Status Problem Observation has been merged, wi
       <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
     </generalization>
     <ownedAttribute xmi:id="_vnbNEI0lEeOB0eBUISUB4Q" name="classCode" visibility="private" isReadOnly="true">
-      <type xmi:type="uml:Enumeration" href="../../../org.eclipse.mdht.uml.hl7.vocab/model/vocab.uml#__yVecEDcEd6xYZuu1VKCVw"/>
+      <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__yVecEDcEd6xYZuu1VKCVw"/>
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_KcZrcI0mEeOB0eBUISUB4Q" value="OBS"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_FcjT0EbtEd6besF9iFIJkQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_vncbMI0lEeOB0eBUISUB4Q" name="moodCode" visibility="private" isReadOnly="true">
-      <type xmi:type="uml:Enumeration" href="../../../org.eclipse.mdht.uml.hl7.vocab/model/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
+      <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_Lgha4I0mEeOB0eBUISUB4Q" value="EVN"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_BLZhcEo_Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
@@ -1218,12 +1218,12 @@ Reason for deprecation: Cognitive Status Problem Observation has been merged, wi
       <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
     </generalization>
     <ownedAttribute xmi:id="_wSfzoJm4EeOLJeQez13EkQ" name="classCode" visibility="private" isReadOnly="true">
-      <type xmi:type="uml:Enumeration" href="../../../org.eclipse.mdht.uml.hl7.vocab/model/vocab.uml#__yVecEDcEd6xYZuu1VKCVw"/>
+      <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__yVecEDcEd6xYZuu1VKCVw"/>
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_wFJesJm5EeOLJeQez13EkQ" value="OBS"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_FcjT0EbtEd6besF9iFIJkQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_wSfzpZm4EeOLJeQez13EkQ" name="moodCode" visibility="private" isReadOnly="true">
-      <type xmi:type="uml:Enumeration" href="../../../org.eclipse.mdht.uml.hl7.vocab/model/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
+      <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_w-6_UJm5EeOLJeQez13EkQ" value="EVN"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_BLZhcEo_Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
@@ -1536,11 +1536,11 @@ The Mental Status Section contains observations and evaluations related to a pat
     <generalization xmi:id="_ze150fitEeOXlK95I8tUew" general="_gkBM0OZbEeGINOJ_SD9_dA"/>
     <substitution xmi:id="_tV8oMGvjEeeGpbQRBTrLBg" name="CognitiveStatusResultObservation" client="_ze150PitEeOXlK95I8tUew" supplier="_gkBM0OZbEeGINOJ_SD9_dA" contract="_gkBM0OZbEeGINOJ_SD9_dA"/>
     <ownedAttribute xmi:id="_DzAE0PiuEeOXlK95I8tUew" name="classCode" visibility="private" isReadOnly="true" redefinedProperty="_rPRcUOZgEeGINOJ_SD9_dA">
-      <type xmi:type="uml:Enumeration" href="../../../org.eclipse.mdht.uml.hl7.vocab/model/vocab.uml#__yVecEDcEd6xYZuu1VKCVw"/>
+      <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__yVecEDcEd6xYZuu1VKCVw"/>
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_Y3R6cPivEeOXlK95I8tUew" value="OBS"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_DzB6APiuEeOXlK95I8tUew" name="moodCode" visibility="private" isReadOnly="true" redefinedProperty="_rPRcZeZgEeGINOJ_SD9_dA">
-      <type xmi:type="uml:Enumeration" href="../../../org.eclipse.mdht.uml.hl7.vocab/model/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
+      <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_ZlNXcPivEeOXlK95I8tUew" value="EVN"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_DzAr5PiuEeOXlK95I8tUew" name="id" visibility="private" aggregation="composite" redefinedProperty="_rPRcWeZgEeGINOJ_SD9_dA">

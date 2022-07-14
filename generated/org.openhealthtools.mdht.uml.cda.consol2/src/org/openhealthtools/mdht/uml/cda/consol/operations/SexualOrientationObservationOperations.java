@@ -56,15 +56,13 @@ import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
  * @generated
  */
 public class SexualOrientationObservationOperations extends ClinicalStatementOperations {
- 
-	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+
+	protected static final ThreadLocal<OCL> EOCL_ENV = new ThreadLocal<OCL>() {
 		@Override
 		public OCL initialValue() {
 			return OCL.newInstance();
 		}
 	};
-	
-	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -93,9 +91,8 @@ public class SexualOrientationObservationOperations extends ClinicalStatementOpe
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_SEXUAL_ORIENTATION_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<Constraint> VALIDATE_SEXUAL_ORIENTATION_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -107,46 +104,39 @@ public class SexualOrientationObservationOperations extends ClinicalStatementOpe
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateSexualOrientationObservationTemplateId(SexualOrientationObservation sexualOrientationObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"SexualOrientationObservationSexualOrientationObservationTemplateId","ERROR");
-    
-  	  
-  	  
+
+	public static boolean validateSexualOrientationObservationTemplateId(
+			SexualOrientationObservation sexualOrientationObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "SexualOrientationObservationSexualOrientationObservationTemplateId", "ERROR");
+
 		if (VALIDATE_SEXUAL_ORIENTATION_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SEXUAL_ORIENTATION_OBSERVATION);
 			try {
-				VALIDATE_SEXUAL_ORIENTATION_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_SEXUAL_ORIENTATION_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_SEXUAL_ORIENTATION_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_SEXUAL_ORIENTATION_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_SEXUAL_ORIENTATION_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(sexualOrientationObservation)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_SEXUAL_ORIENTATION_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				sexualOrientationObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.SEXUAL_ORIENTATION_OBSERVATION__SEXUAL_ORIENTATION_OBSERVATION_TEMPLATE_ID,
-						 ConsolPlugin.INSTANCE.getString("SexualOrientationObservationSexualOrientationObservationTemplateId"),
-						 new Object [] { sexualOrientationObservation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.SEXUAL_ORIENTATION_OBSERVATION__SEXUAL_ORIENTATION_OBSERVATION_TEMPLATE_ID,
+						ConsolPlugin.INSTANCE.getString(
+							"SexualOrientationObservationSexualOrientationObservationTemplateId"),
+						new Object[] { sexualOrientationObservation }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -170,9 +160,8 @@ public class SexualOrientationObservationOperations extends ClinicalStatementOpe
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_SEXUAL_ORIENTATION_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<Constraint> VALIDATE_SEXUAL_ORIENTATION_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -184,58 +173,52 @@ public class SexualOrientationObservationOperations extends ClinicalStatementOpe
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateSexualOrientationObservationCodeP(SexualOrientationObservation sexualOrientationObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"SexualOrientationObservationSexualOrientationObservationCodeP","ERROR");
-    
-  	  
-  	  
+
+	public static boolean validateSexualOrientationObservationCodeP(
+			SexualOrientationObservation sexualOrientationObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "SexualOrientationObservationSexualOrientationObservationCodeP", "ERROR");
+
 		if (VALIDATE_SEXUAL_ORIENTATION_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SEXUAL_ORIENTATION_OBSERVATION);
 			try {
-				VALIDATE_SEXUAL_ORIENTATION_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_SEXUAL_ORIENTATION_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_SEXUAL_ORIENTATION_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_SEXUAL_ORIENTATION_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_SEXUAL_ORIENTATION_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(sexualOrientationObservation)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_SEXUAL_ORIENTATION_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				sexualOrientationObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.SEXUAL_ORIENTATION_OBSERVATION__SEXUAL_ORIENTATION_OBSERVATION_CODE_P,
-						 ConsolPlugin.INSTANCE.getString("SexualOrientationObservationSexualOrientationObservationCodeP"),
-						 new Object [] { sexualOrientationObservation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.SEXUAL_ORIENTATION_OBSERVATION__SEXUAL_ORIENTATION_OBSERVATION_CODE_P,
+						ConsolPlugin.INSTANCE.getString(
+							"SexualOrientationObservationSexualOrientationObservationCodeP"),
+						new Object[] { sexualOrientationObservation }));
 			}
-			
+
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
-				Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.consol.SexualOrientationObservationCodeP");
+				Collection<Object> passToken = (Collection<Object>) context.get(
+					"org.openhealthtools.mdht.uml.cda.consol.SexualOrientationObservationCodeP");
 				if (passToken == null) {
 					// anticipate a reasonably healthy model
-					passToken = new java.util.ArrayList<Object>(3);
+					passToken = new java.util.ArrayList<>(3);
 					context.put("org.openhealthtools.mdht.uml.cda.consol.SexualOrientationObservationCodeP", passToken);
 				}
 				passToken.add(sexualOrientationObservation);
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -249,9 +232,9 @@ public class SexualOrientationObservationOperations extends ClinicalStatementOpe
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_SEXUAL_ORIENTATION_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
-"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
-"value.code = '76690-7' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_SEXUAL_ORIENTATION_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and " +
+			"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in " +
+			"value.code = '76690-7' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateSexualOrientationObservationCode(SexualOrientationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Sexual Orientation Observation Code</em>}' invariant operation.
@@ -261,9 +244,8 @@ public class SexualOrientationObservationOperations extends ClinicalStatementOpe
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_SEXUAL_ORIENTATION_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<Constraint> VALIDATE_SEXUAL_ORIENTATION_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -275,52 +257,47 @@ public class SexualOrientationObservationOperations extends ClinicalStatementOpe
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateSexualOrientationObservationCode(SexualOrientationObservation sexualOrientationObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-		Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.consol.SexualOrientationObservationCodeP");
-		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(sexualOrientationObservation)) {
+
+	public static boolean validateSexualOrientationObservationCode(
+			SexualOrientationObservation sexualOrientationObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
+		Object passToken = (context == null)
+				? null
+				: context.get("org.openhealthtools.mdht.uml.cda.consol.SexualOrientationObservationCodeP");
+		if ((passToken instanceof Collection<?>) &&
+				((Collection<?>) passToken).contains(sexualOrientationObservation)) {
 			// I have a free pass to short-circuit
 			return true;
 		}
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"SexualOrientationObservationSexualOrientationObservationCode","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "SexualOrientationObservationSexualOrientationObservationCode", "ERROR");
+
 		if (VALIDATE_SEXUAL_ORIENTATION_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SEXUAL_ORIENTATION_OBSERVATION);
 			try {
-				VALIDATE_SEXUAL_ORIENTATION_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_SEXUAL_ORIENTATION_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_SEXUAL_ORIENTATION_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_SEXUAL_ORIENTATION_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_SEXUAL_ORIENTATION_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(sexualOrientationObservation)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_SEXUAL_ORIENTATION_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				sexualOrientationObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.SEXUAL_ORIENTATION_OBSERVATION__SEXUAL_ORIENTATION_OBSERVATION_CODE,
-						 ConsolPlugin.INSTANCE.getString("SexualOrientationObservationSexualOrientationObservationCode"),
-						 new Object [] { sexualOrientationObservation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.SEXUAL_ORIENTATION_OBSERVATION__SEXUAL_ORIENTATION_OBSERVATION_CODE,
+						ConsolPlugin.INSTANCE.getString("SexualOrientationObservationSexualOrientationObservationCode"),
+						new Object[] { sexualOrientationObservation }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -344,9 +321,8 @@ public class SexualOrientationObservationOperations extends ClinicalStatementOpe
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_SEXUAL_ORIENTATION_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<Constraint> VALIDATE_SEXUAL_ORIENTATION_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -358,58 +334,54 @@ public class SexualOrientationObservationOperations extends ClinicalStatementOpe
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateSexualOrientationObservationStatusCodeP(SexualOrientationObservation sexualOrientationObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"SexualOrientationObservationSexualOrientationObservationStatusCodeP","ERROR");
-    
-  	  
-  	  
+
+	public static boolean validateSexualOrientationObservationStatusCodeP(
+			SexualOrientationObservation sexualOrientationObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "SexualOrientationObservationSexualOrientationObservationStatusCodeP", "ERROR");
+
 		if (VALIDATE_SEXUAL_ORIENTATION_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SEXUAL_ORIENTATION_OBSERVATION);
 			try {
-				VALIDATE_SEXUAL_ORIENTATION_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_SEXUAL_ORIENTATION_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_SEXUAL_ORIENTATION_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_SEXUAL_ORIENTATION_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_SEXUAL_ORIENTATION_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(sexualOrientationObservation)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_SEXUAL_ORIENTATION_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				sexualOrientationObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.SEXUAL_ORIENTATION_OBSERVATION__SEXUAL_ORIENTATION_OBSERVATION_STATUS_CODE_P,
-						 ConsolPlugin.INSTANCE.getString("SexualOrientationObservationSexualOrientationObservationStatusCodeP"),
-						 new Object [] { sexualOrientationObservation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.SEXUAL_ORIENTATION_OBSERVATION__SEXUAL_ORIENTATION_OBSERVATION_STATUS_CODE_P,
+						ConsolPlugin.INSTANCE.getString(
+							"SexualOrientationObservationSexualOrientationObservationStatusCodeP"),
+						new Object[] { sexualOrientationObservation }));
 			}
-			
+
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
-				Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.consol.SexualOrientationObservationStatusCodeP");
+				Collection<Object> passToken = (Collection<Object>) context.get(
+					"org.openhealthtools.mdht.uml.cda.consol.SexualOrientationObservationStatusCodeP");
 				if (passToken == null) {
 					// anticipate a reasonably healthy model
-					passToken = new java.util.ArrayList<Object>(3);
-					context.put("org.openhealthtools.mdht.uml.cda.consol.SexualOrientationObservationStatusCodeP", passToken);
+					passToken = new java.util.ArrayList<>(3);
+					context.put(
+						"org.openhealthtools.mdht.uml.cda.consol.SexualOrientationObservationStatusCodeP", passToken);
 				}
 				passToken.add(sexualOrientationObservation);
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -423,9 +395,8 @@ public class SexualOrientationObservationOperations extends ClinicalStatementOpe
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_SEXUAL_ORIENTATION_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and "+
-"let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in "+
-"value.code = 'completed')";
+	protected static final String VALIDATE_SEXUAL_ORIENTATION_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and " +
+			"let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in " + "value.code = 'completed')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateSexualOrientationObservationStatusCode(SexualOrientationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Sexual Orientation Observation Status Code</em>}' invariant operation.
@@ -435,9 +406,8 @@ public class SexualOrientationObservationOperations extends ClinicalStatementOpe
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_SEXUAL_ORIENTATION_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<Constraint> VALIDATE_SEXUAL_ORIENTATION_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -449,52 +419,48 @@ public class SexualOrientationObservationOperations extends ClinicalStatementOpe
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateSexualOrientationObservationStatusCode(SexualOrientationObservation sexualOrientationObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-		Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.consol.SexualOrientationObservationStatusCodeP");
-		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(sexualOrientationObservation)) {
+
+	public static boolean validateSexualOrientationObservationStatusCode(
+			SexualOrientationObservation sexualOrientationObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
+		Object passToken = (context == null)
+				? null
+				: context.get("org.openhealthtools.mdht.uml.cda.consol.SexualOrientationObservationStatusCodeP");
+		if ((passToken instanceof Collection<?>) &&
+				((Collection<?>) passToken).contains(sexualOrientationObservation)) {
 			// I have a free pass to short-circuit
 			return true;
 		}
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"SexualOrientationObservationSexualOrientationObservationStatusCode","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "SexualOrientationObservationSexualOrientationObservationStatusCode", "ERROR");
+
 		if (VALIDATE_SEXUAL_ORIENTATION_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SEXUAL_ORIENTATION_OBSERVATION);
 			try {
-				VALIDATE_SEXUAL_ORIENTATION_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_SEXUAL_ORIENTATION_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_SEXUAL_ORIENTATION_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_SEXUAL_ORIENTATION_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_SEXUAL_ORIENTATION_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(sexualOrientationObservation)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_SEXUAL_ORIENTATION_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				sexualOrientationObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.SEXUAL_ORIENTATION_OBSERVATION__SEXUAL_ORIENTATION_OBSERVATION_STATUS_CODE,
-						 ConsolPlugin.INSTANCE.getString("SexualOrientationObservationSexualOrientationObservationStatusCode"),
-						 new Object [] { sexualOrientationObservation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.SEXUAL_ORIENTATION_OBSERVATION__SEXUAL_ORIENTATION_OBSERVATION_STATUS_CODE,
+						ConsolPlugin.INSTANCE.getString(
+							"SexualOrientationObservationSexualOrientationObservationStatusCode"),
+						new Object[] { sexualOrientationObservation }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -518,9 +484,8 @@ public class SexualOrientationObservationOperations extends ClinicalStatementOpe
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_SEXUAL_ORIENTATION_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<Constraint> VALIDATE_SEXUAL_ORIENTATION_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -532,46 +497,40 @@ public class SexualOrientationObservationOperations extends ClinicalStatementOpe
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateSexualOrientationObservationEffectiveTime(SexualOrientationObservation sexualOrientationObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"SexualOrientationObservationSexualOrientationObservationEffectiveTime","ERROR");
-    
-  	  
-  	  
+
+	public static boolean validateSexualOrientationObservationEffectiveTime(
+			SexualOrientationObservation sexualOrientationObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "SexualOrientationObservationSexualOrientationObservationEffectiveTime", "ERROR");
+
 		if (VALIDATE_SEXUAL_ORIENTATION_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SEXUAL_ORIENTATION_OBSERVATION);
 			try {
-				VALIDATE_SEXUAL_ORIENTATION_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_SEXUAL_ORIENTATION_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_SEXUAL_ORIENTATION_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_SEXUAL_ORIENTATION_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_SEXUAL_ORIENTATION_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(sexualOrientationObservation)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_SEXUAL_ORIENTATION_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				sexualOrientationObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.SEXUAL_ORIENTATION_OBSERVATION__SEXUAL_ORIENTATION_OBSERVATION_EFFECTIVE_TIME,
-						 ConsolPlugin.INSTANCE.getString("SexualOrientationObservationSexualOrientationObservationEffectiveTime"),
-						 new Object [] { sexualOrientationObservation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.SEXUAL_ORIENTATION_OBSERVATION__SEXUAL_ORIENTATION_OBSERVATION_EFFECTIVE_TIME,
+						ConsolPlugin.INSTANCE.getString(
+							"SexualOrientationObservationSexualOrientationObservationEffectiveTime"),
+						new Object[] { sexualOrientationObservation }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -595,9 +554,8 @@ public class SexualOrientationObservationOperations extends ClinicalStatementOpe
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_SEXUAL_ORIENTATION_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<Constraint> VALIDATE_SEXUAL_ORIENTATION_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -609,46 +567,39 @@ public class SexualOrientationObservationOperations extends ClinicalStatementOpe
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateSexualOrientationObservationValue(SexualOrientationObservation sexualOrientationObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"SexualOrientationObservationSexualOrientationObservationValue","ERROR");
-    
-  	  
-  	  
+
+	public static boolean validateSexualOrientationObservationValue(
+			SexualOrientationObservation sexualOrientationObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "SexualOrientationObservationSexualOrientationObservationValue", "ERROR");
+
 		if (VALIDATE_SEXUAL_ORIENTATION_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SEXUAL_ORIENTATION_OBSERVATION);
 			try {
-				VALIDATE_SEXUAL_ORIENTATION_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_SEXUAL_ORIENTATION_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_SEXUAL_ORIENTATION_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_SEXUAL_ORIENTATION_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_SEXUAL_ORIENTATION_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(sexualOrientationObservation)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_SEXUAL_ORIENTATION_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				sexualOrientationObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.SEXUAL_ORIENTATION_OBSERVATION__SEXUAL_ORIENTATION_OBSERVATION_VALUE,
-						 ConsolPlugin.INSTANCE.getString("SexualOrientationObservationSexualOrientationObservationValue"),
-						 new Object [] { sexualOrientationObservation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.SEXUAL_ORIENTATION_OBSERVATION__SEXUAL_ORIENTATION_OBSERVATION_VALUE,
+						ConsolPlugin.INSTANCE.getString(
+							"SexualOrientationObservationSexualOrientationObservationValue"),
+						new Object[] { sexualOrientationObservation }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -672,9 +623,8 @@ public class SexualOrientationObservationOperations extends ClinicalStatementOpe
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_SEXUAL_ORIENTATION_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<Constraint> VALIDATE_SEXUAL_ORIENTATION_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -686,46 +636,39 @@ public class SexualOrientationObservationOperations extends ClinicalStatementOpe
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateSexualOrientationObservationClassCode(SexualOrientationObservation sexualOrientationObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"SexualOrientationObservationSexualOrientationObservationClassCode","ERROR");
-    
-  	  
-  	  
+
+	public static boolean validateSexualOrientationObservationClassCode(
+			SexualOrientationObservation sexualOrientationObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "SexualOrientationObservationSexualOrientationObservationClassCode", "ERROR");
+
 		if (VALIDATE_SEXUAL_ORIENTATION_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SEXUAL_ORIENTATION_OBSERVATION);
 			try {
-				VALIDATE_SEXUAL_ORIENTATION_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_SEXUAL_ORIENTATION_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_SEXUAL_ORIENTATION_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_SEXUAL_ORIENTATION_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_SEXUAL_ORIENTATION_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(sexualOrientationObservation)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_SEXUAL_ORIENTATION_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				sexualOrientationObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.SEXUAL_ORIENTATION_OBSERVATION__SEXUAL_ORIENTATION_OBSERVATION_CLASS_CODE,
-						 ConsolPlugin.INSTANCE.getString("SexualOrientationObservationSexualOrientationObservationClassCode"),
-						 new Object [] { sexualOrientationObservation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.SEXUAL_ORIENTATION_OBSERVATION__SEXUAL_ORIENTATION_OBSERVATION_CLASS_CODE,
+						ConsolPlugin.INSTANCE.getString(
+							"SexualOrientationObservationSexualOrientationObservationClassCode"),
+						new Object[] { sexualOrientationObservation }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -749,9 +692,8 @@ public class SexualOrientationObservationOperations extends ClinicalStatementOpe
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_SEXUAL_ORIENTATION_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
-	
+
+	protected static ThreadLocal<Constraint> VALIDATE_SEXUAL_ORIENTATION_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -763,46 +705,39 @@ public class SexualOrientationObservationOperations extends ClinicalStatementOpe
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateSexualOrientationObservationMoodCode(SexualOrientationObservation sexualOrientationObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"SexualOrientationObservationSexualOrientationObservationMoodCode","ERROR");
-    
-  	  
-  	  
+
+	public static boolean validateSexualOrientationObservationMoodCode(
+			SexualOrientationObservation sexualOrientationObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "SexualOrientationObservationSexualOrientationObservationMoodCode", "ERROR");
+
 		if (VALIDATE_SEXUAL_ORIENTATION_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SEXUAL_ORIENTATION_OBSERVATION);
 			try {
-				VALIDATE_SEXUAL_ORIENTATION_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_SEXUAL_ORIENTATION_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_SEXUAL_ORIENTATION_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_SEXUAL_ORIENTATION_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_SEXUAL_ORIENTATION_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(sexualOrientationObservation)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_SEXUAL_ORIENTATION_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				sexualOrientationObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.SEXUAL_ORIENTATION_OBSERVATION__SEXUAL_ORIENTATION_OBSERVATION_MOOD_CODE,
-						 ConsolPlugin.INSTANCE.getString("SexualOrientationObservationSexualOrientationObservationMoodCode"),
-						 new Object [] { sexualOrientationObservation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.SEXUAL_ORIENTATION_OBSERVATION__SEXUAL_ORIENTATION_OBSERVATION_MOOD_CODE,
+						ConsolPlugin.INSTANCE.getString(
+							"SexualOrientationObservationSexualOrientationObservationMoodCode"),
+						new Object[] { sexualOrientationObservation }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -826,14 +761,8 @@ public class SexualOrientationObservationOperations extends ClinicalStatementOpe
 	 * @generated
 	 * @ordered
 	 */
-	
-	
-	
-	
-	
-	
-	protected static ThreadLocal< Query<?, ?, ?> > VALIDATE_SEXUAL_ORIENTATION_OBSERVATION_IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY= new ThreadLocal< Query<?, ?, ?> >();
-	
+
+	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_SEXUAL_ORIENTATION_OBSERVATION_IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -846,50 +775,42 @@ public class SexualOrientationObservationOperations extends ClinicalStatementOpe
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
-	public static  boolean validateSexualOrientationObservationIVLTSLow(SexualOrientationObservation sexualOrientationObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"SexualOrientationObservationSexualOrientationObservationIVLTSLow","WARNING");
-    
-  	  
-  	  
+	public static boolean validateSexualOrientationObservationIVLTSLow(
+			SexualOrientationObservation sexualOrientationObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "SexualOrientationObservationSexualOrientationObservationIVLTSLow", "WARNING");
+
 		if (VALIDATE_SEXUAL_ORIENTATION_OBSERVATION_IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SEXUAL_ORIENTATION_OBSERVATION);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_SEXUAL_ORIENTATION_OBSERVATION_IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_SEXUAL_ORIENTATION_OBSERVATION_IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(EOCL_ENV.get().createQuery(oclExpression));
-			}
-			catch (ParserException pe) {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_SEXUAL_ORIENTATION_OBSERVATION_IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_SEXUAL_ORIENTATION_OBSERVATION_IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(
+					EOCL_ENV.get().createQuery(oclExpression));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		Object oclResult = VALIDATE_SEXUAL_ORIENTATION_OBSERVATION_IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(sexualOrientationObservation);		
+		}
+
+		Object oclResult = VALIDATE_SEXUAL_ORIENTATION_OBSERVATION_IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(
+			sexualOrientationObservation);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-  			
+
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.WARNING,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.SEXUAL_ORIENTATION_OBSERVATION__SEXUAL_ORIENTATION_OBSERVATION_IVLTS_LOW,
-						 ConsolPlugin.INSTANCE.getString("SexualOrientationObservationSexualOrientationObservationIVLTSLow"),
-						 new Object [] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.SEXUAL_ORIENTATION_OBSERVATION__SEXUAL_ORIENTATION_OBSERVATION_IVLTS_LOW,
+							ConsolPlugin.INSTANCE.getString(
+								"SexualOrientationObservationSexualOrientationObservationIVLTSLow"),
+							new Object[] { eObject }));
 				}
-				 
+
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -914,14 +835,8 @@ public class SexualOrientationObservationOperations extends ClinicalStatementOpe
 	 * @generated
 	 * @ordered
 	 */
-	
-	
-	
-	
-	
-	
-	protected static ThreadLocal< Query<?, ?, ?> > VALIDATE_SEXUAL_ORIENTATION_OBSERVATION_IVLTS_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY= new ThreadLocal< Query<?, ?, ?> >();
-	
+
+	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_SEXUAL_ORIENTATION_OBSERVATION_IVLTS_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -934,50 +849,42 @@ public class SexualOrientationObservationOperations extends ClinicalStatementOpe
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
-	public static  boolean validateSexualOrientationObservationIVLTSHigh(SexualOrientationObservation sexualOrientationObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"SexualOrientationObservationSexualOrientationObservationIVLTSHigh","INFO");
-    
-  	  
-  	  
+	public static boolean validateSexualOrientationObservationIVLTSHigh(
+			SexualOrientationObservation sexualOrientationObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "SexualOrientationObservationSexualOrientationObservationIVLTSHigh", "INFO");
+
 		if (VALIDATE_SEXUAL_ORIENTATION_OBSERVATION_IVLTS_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SEXUAL_ORIENTATION_OBSERVATION);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_SEXUAL_ORIENTATION_OBSERVATION_IVLTS_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_SEXUAL_ORIENTATION_OBSERVATION_IVLTS_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(EOCL_ENV.get().createQuery(oclExpression));
-			}
-			catch (ParserException pe) {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_SEXUAL_ORIENTATION_OBSERVATION_IVLTS_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_SEXUAL_ORIENTATION_OBSERVATION_IVLTS_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(
+					EOCL_ENV.get().createQuery(oclExpression));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		Object oclResult = VALIDATE_SEXUAL_ORIENTATION_OBSERVATION_IVLTS_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(sexualOrientationObservation);		
+		}
+
+		Object oclResult = VALIDATE_SEXUAL_ORIENTATION_OBSERVATION_IVLTS_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(
+			sexualOrientationObservation);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-  			
+
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.SEXUAL_ORIENTATION_OBSERVATION__SEXUAL_ORIENTATION_OBSERVATION_IVLTS_HIGH,
-						 ConsolPlugin.INSTANCE.getString("SexualOrientationObservationSexualOrientationObservationIVLTSHigh"),
-						 new Object [] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.SEXUAL_ORIENTATION_OBSERVATION__SEXUAL_ORIENTATION_OBSERVATION_IVLTS_HIGH,
+							ConsolPlugin.INSTANCE.getString(
+								"SexualOrientationObservationSexualOrientationObservationIVLTSHigh"),
+							new Object[] { eObject }));
 				}
-				 
+
 			}
 			return oclResultSet.isEmpty();
 		}

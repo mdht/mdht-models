@@ -63,9 +63,9 @@ public interface VitalSignsSection extends VitalSignsSectionEntriesOptional {
 	public VitalSignsSection init();
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public VitalSignsSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // VitalSignsSection

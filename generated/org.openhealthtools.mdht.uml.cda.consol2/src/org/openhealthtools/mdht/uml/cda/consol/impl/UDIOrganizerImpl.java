@@ -185,7 +185,8 @@ public class UDIOrganizerImpl extends OrganizerImpl implements UDIOrganizer {
 	 */
 	public boolean validateUDIOrganizerDistinctIdentificationCodeObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return UDIOrganizerOperations.validateUDIOrganizerDistinctIdentificationCodeObservation(this, diagnostics, context);
+		return UDIOrganizerOperations.validateUDIOrganizerDistinctIdentificationCodeObservation(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -253,7 +254,8 @@ public class UDIOrganizerImpl extends OrganizerImpl implements UDIOrganizer {
 	 */
 	public boolean validateUDIOrganizerImplantableDeviceStatusObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return UDIOrganizerOperations.validateUDIOrganizerImplantableDeviceStatusObservation(this, diagnostics, context);
+		return UDIOrganizerOperations.validateUDIOrganizerImplantableDeviceStatusObservation(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -379,17 +381,17 @@ public class UDIOrganizerImpl extends OrganizerImpl implements UDIOrganizer {
 	 * @generated
 	 */
 	public UDIOrganizer init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public UDIOrganizer init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 
 } // UDIOrganizerImpl

@@ -151,9 +151,9 @@ public interface CulturalAndReligiousObservation extends Observation {
 	public CulturalAndReligiousObservation init();
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public CulturalAndReligiousObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // CulturalAndReligiousObservation

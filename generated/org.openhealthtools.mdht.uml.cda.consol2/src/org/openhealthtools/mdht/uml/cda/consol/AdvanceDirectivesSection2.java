@@ -128,9 +128,9 @@ public interface AdvanceDirectivesSection2 extends AdvanceDirectivesSectionEntri
 	public AdvanceDirectivesSection2 init();
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public AdvanceDirectivesSection2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // AdvanceDirectivesSection2

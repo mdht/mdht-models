@@ -139,9 +139,9 @@ public interface HealthConcernActV3 extends Act {
 	public HealthConcernActV3 init();
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public HealthConcernActV3 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // HealthConcernActV3

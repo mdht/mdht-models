@@ -392,7 +392,8 @@ public class RiskConcernActImpl extends ActImpl implements RiskConcernAct {
 	 */
 	public boolean validateRiskConcernActSubstanceOrDeviceAllergyObservation2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return RiskConcernActOperations.validateRiskConcernActSubstanceOrDeviceAllergyObservation2(this, diagnostics, context);
+		return RiskConcernActOperations.validateRiskConcernActSubstanceOrDeviceAllergyObservation2(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -450,7 +451,8 @@ public class RiskConcernActImpl extends ActImpl implements RiskConcernAct {
 	 */
 	public boolean validateRiskConcernActCulturalAndReligiousObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return RiskConcernActOperations.validateRiskConcernActCulturalAndReligiousObservation(this, diagnostics, context);
+		return RiskConcernActOperations.validateRiskConcernActCulturalAndReligiousObservation(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -460,7 +462,8 @@ public class RiskConcernActImpl extends ActImpl implements RiskConcernAct {
 	 */
 	public boolean validateRiskConcernActCharacteristicsOfHomeEnvironment(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return RiskConcernActOperations.validateRiskConcernActCharacteristicsOfHomeEnvironment(this, diagnostics, context);
+		return RiskConcernActOperations.validateRiskConcernActCharacteristicsOfHomeEnvironment(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -546,7 +549,8 @@ public class RiskConcernActImpl extends ActImpl implements RiskConcernAct {
 	 */
 	public boolean validateRiskConcernActReferenceExternalDocumentReference(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return RiskConcernActOperations.validateRiskConcernActReferenceExternalDocumentReference(this, diagnostics, context);
+		return RiskConcernActOperations.validateRiskConcernActReferenceExternalDocumentReference(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -888,16 +892,16 @@ public class RiskConcernActImpl extends ActImpl implements RiskConcernAct {
 	 * @generated
 	 */
 	public RiskConcernAct init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public RiskConcernAct init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // RiskConcernActImpl

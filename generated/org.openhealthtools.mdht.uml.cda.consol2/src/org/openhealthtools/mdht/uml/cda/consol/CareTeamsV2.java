@@ -113,9 +113,9 @@ public interface CareTeamsV2 extends Section {
 	public CareTeamsV2 init();
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public CareTeamsV2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // CareTeamsV2

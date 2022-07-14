@@ -186,9 +186,9 @@ public interface ProblemObservationV4 extends ProblemObservation2 {
 	public ProblemObservationV4 init();
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public ProblemObservationV4 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ProblemObservationV4

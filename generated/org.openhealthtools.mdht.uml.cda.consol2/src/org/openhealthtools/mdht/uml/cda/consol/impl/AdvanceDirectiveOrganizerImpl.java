@@ -54,7 +54,8 @@ public class AdvanceDirectiveOrganizerImpl extends OrganizerImpl implements Adva
 	 */
 	public boolean validateAdvanceDirectiveOrganizerTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AdvanceDirectiveOrganizerOperations.validateAdvanceDirectiveOrganizerTemplateId(this, diagnostics, context);
+		return AdvanceDirectiveOrganizerOperations.validateAdvanceDirectiveOrganizerTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -64,7 +65,8 @@ public class AdvanceDirectiveOrganizerImpl extends OrganizerImpl implements Adva
 	 */
 	public boolean validateAdvanceDirectiveOrganizerClassCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AdvanceDirectiveOrganizerOperations.validateAdvanceDirectiveOrganizerClassCode(this, diagnostics, context);
+		return AdvanceDirectiveOrganizerOperations.validateAdvanceDirectiveOrganizerClassCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -73,7 +75,8 @@ public class AdvanceDirectiveOrganizerImpl extends OrganizerImpl implements Adva
 	 * @generated
 	 */
 	public boolean validateAdvanceDirectiveOrganizerMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AdvanceDirectiveOrganizerOperations.validateAdvanceDirectiveOrganizerMoodCode(this, diagnostics, context);
+		return AdvanceDirectiveOrganizerOperations.validateAdvanceDirectiveOrganizerMoodCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -110,7 +113,8 @@ public class AdvanceDirectiveOrganizerImpl extends OrganizerImpl implements Adva
 	 */
 	public boolean validateAdvanceDirectiveOrganizerStatusCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AdvanceDirectiveOrganizerOperations.validateAdvanceDirectiveOrganizerStatusCodeP(this, diagnostics, context);
+		return AdvanceDirectiveOrganizerOperations.validateAdvanceDirectiveOrganizerStatusCodeP(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -120,7 +124,8 @@ public class AdvanceDirectiveOrganizerImpl extends OrganizerImpl implements Adva
 	 */
 	public boolean validateAdvanceDirectiveOrganizerStatusCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AdvanceDirectiveOrganizerOperations.validateAdvanceDirectiveOrganizerStatusCode(this, diagnostics, context);
+		return AdvanceDirectiveOrganizerOperations.validateAdvanceDirectiveOrganizerStatusCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -130,7 +135,8 @@ public class AdvanceDirectiveOrganizerImpl extends OrganizerImpl implements Adva
 	 */
 	public boolean validateAdvanceDirectiveOrganizerAdvanceDirectiveObservation2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AdvanceDirectiveOrganizerOperations.validateAdvanceDirectiveOrganizerAdvanceDirectiveObservation2(this, diagnostics, context);
+		return AdvanceDirectiveOrganizerOperations.validateAdvanceDirectiveOrganizerAdvanceDirectiveObservation2(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -140,7 +146,8 @@ public class AdvanceDirectiveOrganizerImpl extends OrganizerImpl implements Adva
 	 */
 	public boolean validateAdvanceDirectiveOrganizerAuthorParticipation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AdvanceDirectiveOrganizerOperations.validateAdvanceDirectiveOrganizerAuthorParticipation(this, diagnostics, context);
+		return AdvanceDirectiveOrganizerOperations.validateAdvanceDirectiveOrganizerAuthorParticipation(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -158,16 +165,16 @@ public class AdvanceDirectiveOrganizerImpl extends OrganizerImpl implements Adva
 	 * @generated
 	 */
 	public AdvanceDirectiveOrganizer init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public AdvanceDirectiveOrganizer init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // AdvanceDirectiveOrganizerImpl

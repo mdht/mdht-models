@@ -99,7 +99,7 @@ public class PlannedObservation2Operations extends PlanOfCareActivityObservation
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_PLANNED_OBSERVATION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_PLANNED_OBSERVATION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -114,44 +114,33 @@ public class PlannedObservation2Operations extends PlanOfCareActivityObservation
 
 	public static boolean validatePlannedObservation2TemplateId(PlannedObservation2 plannedObservation2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"PlannedObservation2PlannedObservation2TemplateId","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "PlannedObservation2PlannedObservation2TemplateId", "ERROR");
+
 		if (VALIDATE_PLANNED_OBSERVATION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PLANNED_OBSERVATION2);
 			try {
-				VALIDATE_PLANNED_OBSERVATION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PLANNED_OBSERVATION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_PLANNED_OBSERVATION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_PLANNED_OBSERVATION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_PLANNED_OBSERVATION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(plannedObservation2)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_PLANNED_OBSERVATION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				plannedObservation2)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.PLANNED_OBSERVATION2__PLANNED_OBSERVATION2_TEMPLATE_ID,
-						 ConsolPlugin.INSTANCE.getString("PlannedObservation2PlannedObservation2TemplateId"),
-						 new Object [] { plannedObservation2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PLANNED_OBSERVATION2__PLANNED_OBSERVATION2_TEMPLATE_ID,
+						ConsolPlugin.INSTANCE.getString("PlannedObservation2PlannedObservation2TemplateId"),
+						new Object[] { plannedObservation2 }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -176,7 +165,7 @@ public class PlannedObservation2Operations extends PlanOfCareActivityObservation
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_PLANNED_OBSERVATION2_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_PLANNED_OBSERVATION2_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -191,56 +180,45 @@ public class PlannedObservation2Operations extends PlanOfCareActivityObservation
 
 	public static boolean validatePlannedObservation2CodeP(PlannedObservation2 plannedObservation2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"PlannedObservation2PlannedObservation2CodeP","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "PlannedObservation2PlannedObservation2CodeP", "ERROR");
+
 		if (VALIDATE_PLANNED_OBSERVATION2_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PLANNED_OBSERVATION2);
 			try {
-				VALIDATE_PLANNED_OBSERVATION2_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PLANNED_OBSERVATION2_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_PLANNED_OBSERVATION2_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_PLANNED_OBSERVATION2_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_PLANNED_OBSERVATION2_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(plannedObservation2)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_PLANNED_OBSERVATION2_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(plannedObservation2)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.PLANNED_OBSERVATION2__PLANNED_OBSERVATION2_CODE_P,
-						 ConsolPlugin.INSTANCE.getString("PlannedObservation2PlannedObservation2CodeP"),
-						 new Object [] { plannedObservation2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PLANNED_OBSERVATION2__PLANNED_OBSERVATION2_CODE_P,
+						ConsolPlugin.INSTANCE.getString("PlannedObservation2PlannedObservation2CodeP"),
+						new Object[] { plannedObservation2 }));
 			}
-			
+
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
-				Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.consol.PlannedObservation2CodeP");
+				Collection<Object> passToken = (Collection<Object>) context.get(
+					"org.openhealthtools.mdht.uml.cda.consol.PlannedObservation2CodeP");
 				if (passToken == null) {
 					// anticipate a reasonably healthy model
-					passToken = new java.util.ArrayList<Object>(3);
+					passToken = new java.util.ArrayList<>(3);
 					context.put("org.openhealthtools.mdht.uml.cda.consol.PlannedObservation2CodeP", passToken);
 				}
 				passToken.add(plannedObservation2);
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -254,9 +232,9 @@ public class PlannedObservation2Operations extends PlanOfCareActivityObservation
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PLANNED_OBSERVATION2_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
-"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
-"value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_PLANNED_OBSERVATION2_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and " +
+			"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in " +
+			"value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePlannedObservation2Code(PlannedObservation2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Observation2 Code</em>}' invariant operation.
@@ -267,7 +245,7 @@ public class PlannedObservation2Operations extends PlanOfCareActivityObservation
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_PLANNED_OBSERVATION2_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_PLANNED_OBSERVATION2_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -282,50 +260,40 @@ public class PlannedObservation2Operations extends PlanOfCareActivityObservation
 
 	public static boolean validatePlannedObservation2Code(PlannedObservation2 plannedObservation2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-		Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.consol.PlannedObservation2CodeP");
+
+		Object passToken = (context == null)
+				? null
+				: context.get("org.openhealthtools.mdht.uml.cda.consol.PlannedObservation2CodeP");
 		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(plannedObservation2)) {
 			// I have a free pass to short-circuit
 			return true;
 		}
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"PlannedObservation2PlannedObservation2Code","WARNING");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "PlannedObservation2PlannedObservation2Code", "WARNING");
+
 		if (VALIDATE_PLANNED_OBSERVATION2_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PLANNED_OBSERVATION2);
 			try {
-				VALIDATE_PLANNED_OBSERVATION2_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PLANNED_OBSERVATION2_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_PLANNED_OBSERVATION2_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_PLANNED_OBSERVATION2_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_PLANNED_OBSERVATION2_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(plannedObservation2)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(VALIDATE_PLANNED_OBSERVATION2_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+			plannedObservation2)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.WARNING,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.PLANNED_OBSERVATION2__PLANNED_OBSERVATION2_CODE,
-						 ConsolPlugin.INSTANCE.getString("PlannedObservation2PlannedObservation2Code"),
-						 new Object [] { plannedObservation2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PLANNED_OBSERVATION2__PLANNED_OBSERVATION2_CODE,
+						ConsolPlugin.INSTANCE.getString("PlannedObservation2PlannedObservation2Code"),
+						new Object[] { plannedObservation2 }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -339,9 +307,8 @@ public class PlannedObservation2Operations extends PlanOfCareActivityObservation
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PLANNED_OBSERVATION2_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and "+
-"let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in "+
-"value.code = 'active')";
+	protected static final String VALIDATE_PLANNED_OBSERVATION2_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and " +
+			"let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in " + "value.code = 'active')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePlannedObservation2StatusCode(PlannedObservation2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Observation2 Status Code</em>}' invariant operation.
@@ -352,7 +319,7 @@ public class PlannedObservation2Operations extends PlanOfCareActivityObservation
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_PLANNED_OBSERVATION2_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_PLANNED_OBSERVATION2_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -367,44 +334,33 @@ public class PlannedObservation2Operations extends PlanOfCareActivityObservation
 
 	public static boolean validatePlannedObservation2StatusCode(PlannedObservation2 plannedObservation2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"PlannedObservation2PlannedObservation2StatusCode","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "PlannedObservation2PlannedObservation2StatusCode", "ERROR");
+
 		if (VALIDATE_PLANNED_OBSERVATION2_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PLANNED_OBSERVATION2);
 			try {
-				VALIDATE_PLANNED_OBSERVATION2_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PLANNED_OBSERVATION2_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_PLANNED_OBSERVATION2_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_PLANNED_OBSERVATION2_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_PLANNED_OBSERVATION2_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(plannedObservation2)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_PLANNED_OBSERVATION2_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				plannedObservation2)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.PLANNED_OBSERVATION2__PLANNED_OBSERVATION2_STATUS_CODE,
-						 ConsolPlugin.INSTANCE.getString("PlannedObservation2PlannedObservation2StatusCode"),
-						 new Object [] { plannedObservation2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PLANNED_OBSERVATION2__PLANNED_OBSERVATION2_STATUS_CODE,
+						ConsolPlugin.INSTANCE.getString("PlannedObservation2PlannedObservation2StatusCode"),
+						new Object[] { plannedObservation2 }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -429,7 +385,7 @@ public class PlannedObservation2Operations extends PlanOfCareActivityObservation
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_PLANNED_OBSERVATION2_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_PLANNED_OBSERVATION2_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -444,44 +400,34 @@ public class PlannedObservation2Operations extends PlanOfCareActivityObservation
 
 	public static boolean validatePlannedObservation2StatusCodeP(PlannedObservation2 plannedObservation2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"PlannedObservation2PlannedObservation2StatusCodeP","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "PlannedObservation2PlannedObservation2StatusCodeP", "ERROR");
+
 		if (VALIDATE_PLANNED_OBSERVATION2_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PLANNED_OBSERVATION2);
 			try {
-				VALIDATE_PLANNED_OBSERVATION2_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PLANNED_OBSERVATION2_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_PLANNED_OBSERVATION2_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_PLANNED_OBSERVATION2_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_PLANNED_OBSERVATION2_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(plannedObservation2)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_PLANNED_OBSERVATION2_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				plannedObservation2)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.PLANNED_OBSERVATION2__PLANNED_OBSERVATION2_STATUS_CODE_P,
-						 ConsolPlugin.INSTANCE.getString("PlannedObservation2PlannedObservation2StatusCodeP"),
-						 new Object [] { plannedObservation2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PLANNED_OBSERVATION2__PLANNED_OBSERVATION2_STATUS_CODE_P,
+						ConsolPlugin.INSTANCE.getString("PlannedObservation2PlannedObservation2StatusCodeP"),
+						new Object[] { plannedObservation2 }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -506,7 +452,7 @@ public class PlannedObservation2Operations extends PlanOfCareActivityObservation
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_PLANNED_OBSERVATION2_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_PLANNED_OBSERVATION2_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -521,44 +467,34 @@ public class PlannedObservation2Operations extends PlanOfCareActivityObservation
 
 	public static boolean validatePlannedObservation2EffectiveTime(PlannedObservation2 plannedObservation2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"PlannedObservation2PlannedObservation2EffectiveTime","WARNING");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "PlannedObservation2PlannedObservation2EffectiveTime", "WARNING");
+
 		if (VALIDATE_PLANNED_OBSERVATION2_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PLANNED_OBSERVATION2);
 			try {
-				VALIDATE_PLANNED_OBSERVATION2_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PLANNED_OBSERVATION2_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_PLANNED_OBSERVATION2_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_PLANNED_OBSERVATION2_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_PLANNED_OBSERVATION2_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(plannedObservation2)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_PLANNED_OBSERVATION2_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				plannedObservation2)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.WARNING,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.PLANNED_OBSERVATION2__PLANNED_OBSERVATION2_EFFECTIVE_TIME,
-						 ConsolPlugin.INSTANCE.getString("PlannedObservation2PlannedObservation2EffectiveTime"),
-						 new Object [] { plannedObservation2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PLANNED_OBSERVATION2__PLANNED_OBSERVATION2_EFFECTIVE_TIME,
+						ConsolPlugin.INSTANCE.getString("PlannedObservation2PlannedObservation2EffectiveTime"),
+						new Object[] { plannedObservation2 }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -583,7 +519,7 @@ public class PlannedObservation2Operations extends PlanOfCareActivityObservation
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_PLANNED_OBSERVATION2_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_PLANNED_OBSERVATION2_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -598,44 +534,32 @@ public class PlannedObservation2Operations extends PlanOfCareActivityObservation
 
 	public static boolean validatePlannedObservation2Value(PlannedObservation2 plannedObservation2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"PlannedObservation2PlannedObservation2Value","INFO");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "PlannedObservation2PlannedObservation2Value", "INFO");
+
 		if (VALIDATE_PLANNED_OBSERVATION2_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PLANNED_OBSERVATION2);
 			try {
-				VALIDATE_PLANNED_OBSERVATION2_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PLANNED_OBSERVATION2_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_PLANNED_OBSERVATION2_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_PLANNED_OBSERVATION2_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_PLANNED_OBSERVATION2_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(plannedObservation2)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_PLANNED_OBSERVATION2_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(plannedObservation2)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.PLANNED_OBSERVATION2__PLANNED_OBSERVATION2_VALUE,
-						 ConsolPlugin.INSTANCE.getString("PlannedObservation2PlannedObservation2Value"),
-						 new Object [] { plannedObservation2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PLANNED_OBSERVATION2__PLANNED_OBSERVATION2_VALUE,
+						ConsolPlugin.INSTANCE.getString("PlannedObservation2PlannedObservation2Value"),
+						new Object[] { plannedObservation2 }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -660,7 +584,7 @@ public class PlannedObservation2Operations extends PlanOfCareActivityObservation
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_PLANNED_OBSERVATION2_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_PLANNED_OBSERVATION2_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -675,44 +599,33 @@ public class PlannedObservation2Operations extends PlanOfCareActivityObservation
 
 	public static boolean validatePlannedObservation2MethodCode(PlannedObservation2 plannedObservation2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"PlannedObservation2PlannedObservation2MethodCode","INFO");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "PlannedObservation2PlannedObservation2MethodCode", "INFO");
+
 		if (VALIDATE_PLANNED_OBSERVATION2_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PLANNED_OBSERVATION2);
 			try {
-				VALIDATE_PLANNED_OBSERVATION2_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PLANNED_OBSERVATION2_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_PLANNED_OBSERVATION2_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_PLANNED_OBSERVATION2_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_PLANNED_OBSERVATION2_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(plannedObservation2)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_PLANNED_OBSERVATION2_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				plannedObservation2)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.PLANNED_OBSERVATION2__PLANNED_OBSERVATION2_METHOD_CODE,
-						 ConsolPlugin.INSTANCE.getString("PlannedObservation2PlannedObservation2MethodCode"),
-						 new Object [] { plannedObservation2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PLANNED_OBSERVATION2__PLANNED_OBSERVATION2_METHOD_CODE,
+						ConsolPlugin.INSTANCE.getString("PlannedObservation2PlannedObservation2MethodCode"),
+						new Object[] { plannedObservation2 }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -737,7 +650,7 @@ public class PlannedObservation2Operations extends PlanOfCareActivityObservation
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_PLANNED_OBSERVATION2_TARGET_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_PLANNED_OBSERVATION2_TARGET_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -752,56 +665,48 @@ public class PlannedObservation2Operations extends PlanOfCareActivityObservation
 
 	public static boolean validatePlannedObservation2TargetSiteCodeP(PlannedObservation2 plannedObservation2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"PlannedObservation2PlannedObservation2TargetSiteCodeP","WARNING");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "PlannedObservation2PlannedObservation2TargetSiteCodeP", "WARNING");
+
 		if (VALIDATE_PLANNED_OBSERVATION2_TARGET_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PLANNED_OBSERVATION2);
 			try {
-				VALIDATE_PLANNED_OBSERVATION2_TARGET_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PLANNED_OBSERVATION2_TARGET_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_PLANNED_OBSERVATION2_TARGET_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_PLANNED_OBSERVATION2_TARGET_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_PLANNED_OBSERVATION2_TARGET_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(plannedObservation2)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_PLANNED_OBSERVATION2_TARGET_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				plannedObservation2)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.WARNING,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.PLANNED_OBSERVATION2__PLANNED_OBSERVATION2_TARGET_SITE_CODE_P,
-						 ConsolPlugin.INSTANCE.getString("PlannedObservation2PlannedObservation2TargetSiteCodeP"),
-						 new Object [] { plannedObservation2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PLANNED_OBSERVATION2__PLANNED_OBSERVATION2_TARGET_SITE_CODE_P,
+						ConsolPlugin.INSTANCE.getString("PlannedObservation2PlannedObservation2TargetSiteCodeP"),
+						new Object[] { plannedObservation2 }));
 			}
-			
+
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
-				Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.consol.PlannedObservation2TargetSiteCodeP");
+				Collection<Object> passToken = (Collection<Object>) context.get(
+					"org.openhealthtools.mdht.uml.cda.consol.PlannedObservation2TargetSiteCodeP");
 				if (passToken == null) {
 					// anticipate a reasonably healthy model
-					passToken = new java.util.ArrayList<Object>(3);
-					context.put("org.openhealthtools.mdht.uml.cda.consol.PlannedObservation2TargetSiteCodeP", passToken);
+					passToken = new java.util.ArrayList<>(3);
+					context.put(
+						"org.openhealthtools.mdht.uml.cda.consol.PlannedObservation2TargetSiteCodeP", passToken);
 				}
 				passToken.add(plannedObservation2);
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -815,9 +720,9 @@ public class PlannedObservation2Operations extends PlanOfCareActivityObservation
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PLANNED_OBSERVATION2_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.targetSiteCode->isEmpty() or self.targetSiteCode->exists(element | element.isNullFlavorUndefined())) implies (self.targetSiteCode->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "+
-"let value : datatypes::CD = element.oclAsType(datatypes::CD) in "+
-"value.codeSystem = '2.16.840.1.113883.6.96' and not value.code.oclIsUndefined()))";
+	protected static final String VALIDATE_PLANNED_OBSERVATION2_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.targetSiteCode->isEmpty() or self.targetSiteCode->exists(element | element.isNullFlavorUndefined())) implies (self.targetSiteCode->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and " +
+			"let value : datatypes::CD = element.oclAsType(datatypes::CD) in " +
+			"value.codeSystem = '2.16.840.1.113883.6.96' and not value.code.oclIsUndefined()))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePlannedObservation2TargetSiteCode(PlannedObservation2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Observation2 Target Site Code</em>}' invariant operation.
@@ -828,7 +733,7 @@ public class PlannedObservation2Operations extends PlanOfCareActivityObservation
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_PLANNED_OBSERVATION2_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_PLANNED_OBSERVATION2_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -843,50 +748,42 @@ public class PlannedObservation2Operations extends PlanOfCareActivityObservation
 
 	public static boolean validatePlannedObservation2TargetSiteCode(PlannedObservation2 plannedObservation2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-		Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.consol.PlannedObservation2TargetSiteCodeP");
+
+		Object passToken = (context == null)
+				? null
+				: context.get("org.openhealthtools.mdht.uml.cda.consol.PlannedObservation2TargetSiteCodeP");
 		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(plannedObservation2)) {
 			// I have a free pass to short-circuit
 			return true;
 		}
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"PlannedObservation2PlannedObservation2TargetSiteCode","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "PlannedObservation2PlannedObservation2TargetSiteCode", "ERROR");
+
 		if (VALIDATE_PLANNED_OBSERVATION2_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PLANNED_OBSERVATION2);
 			try {
-				VALIDATE_PLANNED_OBSERVATION2_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PLANNED_OBSERVATION2_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_PLANNED_OBSERVATION2_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_PLANNED_OBSERVATION2_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_PLANNED_OBSERVATION2_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(plannedObservation2)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_PLANNED_OBSERVATION2_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				plannedObservation2)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.PLANNED_OBSERVATION2__PLANNED_OBSERVATION2_TARGET_SITE_CODE,
-						 ConsolPlugin.INSTANCE.getString("PlannedObservation2PlannedObservation2TargetSiteCode"),
-						 new Object [] { plannedObservation2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PLANNED_OBSERVATION2__PLANNED_OBSERVATION2_TARGET_SITE_CODE,
+						ConsolPlugin.INSTANCE.getString("PlannedObservation2PlannedObservation2TargetSiteCode"),
+						new Object[] { plannedObservation2 }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -911,7 +808,7 @@ public class PlannedObservation2Operations extends PlanOfCareActivityObservation
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_PLANNED_OBSERVATION2_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_PLANNED_OBSERVATION2_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -926,44 +823,32 @@ public class PlannedObservation2Operations extends PlanOfCareActivityObservation
 
 	public static boolean validatePlannedObservation2Performer(PlannedObservation2 plannedObservation2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"PlannedObservation2PlannedObservation2Performer","INFO");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "PlannedObservation2PlannedObservation2Performer", "INFO");
+
 		if (VALIDATE_PLANNED_OBSERVATION2_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PLANNED_OBSERVATION2);
 			try {
-				VALIDATE_PLANNED_OBSERVATION2_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PLANNED_OBSERVATION2_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_PLANNED_OBSERVATION2_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_PLANNED_OBSERVATION2_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_PLANNED_OBSERVATION2_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(plannedObservation2)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_PLANNED_OBSERVATION2_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(plannedObservation2)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.PLANNED_OBSERVATION2__PLANNED_OBSERVATION2_PERFORMER,
-						 ConsolPlugin.INSTANCE.getString("PlannedObservation2PlannedObservation2Performer"),
-						 new Object [] { plannedObservation2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PLANNED_OBSERVATION2__PLANNED_OBSERVATION2_PERFORMER,
+						ConsolPlugin.INSTANCE.getString("PlannedObservation2PlannedObservation2Performer"),
+						new Object[] { plannedObservation2 }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -988,7 +873,7 @@ public class PlannedObservation2Operations extends PlanOfCareActivityObservation
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_PLANNED_OBSERVATION2_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_PLANNED_OBSERVATION2_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1003,44 +888,34 @@ public class PlannedObservation2Operations extends PlanOfCareActivityObservation
 
 	public static boolean validatePlannedObservation2AuthorParticipation(PlannedObservation2 plannedObservation2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"PlannedObservation2PlannedObservation2AuthorParticipation","WARNING");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "PlannedObservation2PlannedObservation2AuthorParticipation", "WARNING");
+
 		if (VALIDATE_PLANNED_OBSERVATION2_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PLANNED_OBSERVATION2);
 			try {
-				VALIDATE_PLANNED_OBSERVATION2_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PLANNED_OBSERVATION2_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_PLANNED_OBSERVATION2_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_PLANNED_OBSERVATION2_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_PLANNED_OBSERVATION2_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(plannedObservation2)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_PLANNED_OBSERVATION2_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				plannedObservation2)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.WARNING,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.PLANNED_OBSERVATION2__PLANNED_OBSERVATION2_AUTHOR_PARTICIPATION,
-						 ConsolPlugin.INSTANCE.getString("PlannedObservation2PlannedObservation2AuthorParticipation"),
-						 new Object [] { plannedObservation2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PLANNED_OBSERVATION2__PLANNED_OBSERVATION2_AUTHOR_PARTICIPATION,
+						ConsolPlugin.INSTANCE.getString("PlannedObservation2PlannedObservation2AuthorParticipation"),
+						new Object[] { plannedObservation2 }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -1065,7 +940,7 @@ public class PlannedObservation2Operations extends PlanOfCareActivityObservation
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_PLANNED_OBSERVATION2_PRIORITY_PREFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_PLANNED_OBSERVATION2_PRIORITY_PREFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1080,44 +955,34 @@ public class PlannedObservation2Operations extends PlanOfCareActivityObservation
 
 	public static boolean validatePlannedObservation2PriorityPreference(PlannedObservation2 plannedObservation2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"PlannedObservation2PlannedObservation2PriorityPreference","INFO");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "PlannedObservation2PlannedObservation2PriorityPreference", "INFO");
+
 		if (VALIDATE_PLANNED_OBSERVATION2_PRIORITY_PREFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PLANNED_OBSERVATION2);
 			try {
-				VALIDATE_PLANNED_OBSERVATION2_PRIORITY_PREFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PLANNED_OBSERVATION2_PRIORITY_PREFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_PLANNED_OBSERVATION2_PRIORITY_PREFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_PLANNED_OBSERVATION2_PRIORITY_PREFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_PLANNED_OBSERVATION2_PRIORITY_PREFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(plannedObservation2)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_PLANNED_OBSERVATION2_PRIORITY_PREFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				plannedObservation2)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.PLANNED_OBSERVATION2__PLANNED_OBSERVATION2_PRIORITY_PREFERENCE,
-						 ConsolPlugin.INSTANCE.getString("PlannedObservation2PlannedObservation2PriorityPreference"),
-						 new Object [] { plannedObservation2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PLANNED_OBSERVATION2__PLANNED_OBSERVATION2_PRIORITY_PREFERENCE,
+						ConsolPlugin.INSTANCE.getString("PlannedObservation2PlannedObservation2PriorityPreference"),
+						new Object[] { plannedObservation2 }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -1142,7 +1007,7 @@ public class PlannedObservation2Operations extends PlanOfCareActivityObservation
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_PLANNED_OBSERVATION2_INDICATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_PLANNED_OBSERVATION2_INDICATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1157,44 +1022,33 @@ public class PlannedObservation2Operations extends PlanOfCareActivityObservation
 
 	public static boolean validatePlannedObservation2Indication2(PlannedObservation2 plannedObservation2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"PlannedObservation2PlannedObservation2Indication2","INFO");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "PlannedObservation2PlannedObservation2Indication2", "INFO");
+
 		if (VALIDATE_PLANNED_OBSERVATION2_INDICATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PLANNED_OBSERVATION2);
 			try {
-				VALIDATE_PLANNED_OBSERVATION2_INDICATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PLANNED_OBSERVATION2_INDICATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_PLANNED_OBSERVATION2_INDICATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_PLANNED_OBSERVATION2_INDICATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_PLANNED_OBSERVATION2_INDICATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(plannedObservation2)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_PLANNED_OBSERVATION2_INDICATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				plannedObservation2)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.PLANNED_OBSERVATION2__PLANNED_OBSERVATION2_INDICATION2,
-						 ConsolPlugin.INSTANCE.getString("PlannedObservation2PlannedObservation2Indication2"),
-						 new Object [] { plannedObservation2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PLANNED_OBSERVATION2__PLANNED_OBSERVATION2_INDICATION2,
+						ConsolPlugin.INSTANCE.getString("PlannedObservation2PlannedObservation2Indication2"),
+						new Object[] { plannedObservation2 }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -1219,7 +1073,7 @@ public class PlannedObservation2Operations extends PlanOfCareActivityObservation
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_PLANNED_OBSERVATION2_INSTRUCTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_PLANNED_OBSERVATION2_INSTRUCTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1234,44 +1088,33 @@ public class PlannedObservation2Operations extends PlanOfCareActivityObservation
 
 	public static boolean validatePlannedObservation2Instruction2(PlannedObservation2 plannedObservation2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"PlannedObservation2PlannedObservation2Instruction2","INFO");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "PlannedObservation2PlannedObservation2Instruction2", "INFO");
+
 		if (VALIDATE_PLANNED_OBSERVATION2_INSTRUCTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PLANNED_OBSERVATION2);
 			try {
-				VALIDATE_PLANNED_OBSERVATION2_INSTRUCTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PLANNED_OBSERVATION2_INSTRUCTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_PLANNED_OBSERVATION2_INSTRUCTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_PLANNED_OBSERVATION2_INSTRUCTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_PLANNED_OBSERVATION2_INSTRUCTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(plannedObservation2)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_PLANNED_OBSERVATION2_INSTRUCTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				plannedObservation2)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.PLANNED_OBSERVATION2__PLANNED_OBSERVATION2_INSTRUCTION2,
-						 ConsolPlugin.INSTANCE.getString("PlannedObservation2PlannedObservation2Instruction2"),
-						 new Object [] { plannedObservation2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PLANNED_OBSERVATION2__PLANNED_OBSERVATION2_INSTRUCTION2,
+						ConsolPlugin.INSTANCE.getString("PlannedObservation2PlannedObservation2Instruction2"),
+						new Object[] { plannedObservation2 }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -1296,7 +1139,7 @@ public class PlannedObservation2Operations extends PlanOfCareActivityObservation
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_PLANNED_OBSERVATION2_PLANNED_COVERAGE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_PLANNED_OBSERVATION2_PLANNED_COVERAGE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1311,44 +1154,34 @@ public class PlannedObservation2Operations extends PlanOfCareActivityObservation
 
 	public static boolean validatePlannedObservation2PlannedCoverage(PlannedObservation2 plannedObservation2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"PlannedObservation2PlannedObservation2PlannedCoverage","INFO");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "PlannedObservation2PlannedObservation2PlannedCoverage", "INFO");
+
 		if (VALIDATE_PLANNED_OBSERVATION2_PLANNED_COVERAGE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PLANNED_OBSERVATION2);
 			try {
-				VALIDATE_PLANNED_OBSERVATION2_PLANNED_COVERAGE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PLANNED_OBSERVATION2_PLANNED_COVERAGE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_PLANNED_OBSERVATION2_PLANNED_COVERAGE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_PLANNED_OBSERVATION2_PLANNED_COVERAGE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_PLANNED_OBSERVATION2_PLANNED_COVERAGE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(plannedObservation2)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_PLANNED_OBSERVATION2_PLANNED_COVERAGE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				plannedObservation2)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.PLANNED_OBSERVATION2__PLANNED_OBSERVATION2_PLANNED_COVERAGE,
-						 ConsolPlugin.INSTANCE.getString("PlannedObservation2PlannedObservation2PlannedCoverage"),
-						 new Object [] { plannedObservation2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PLANNED_OBSERVATION2__PLANNED_OBSERVATION2_PLANNED_COVERAGE,
+						ConsolPlugin.INSTANCE.getString("PlannedObservation2PlannedObservation2PlannedCoverage"),
+						new Object[] { plannedObservation2 }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -1381,26 +1214,24 @@ public class PlannedObservation2Operations extends PlanOfCareActivityObservation
 	 */
 
 	public static EList<PriorityPreference> getPriorityPreferences(PlannedObservation2 plannedObservation2) {
-	
-	
-	
+
 		if (GET_PRIORITY_PREFERENCES__EOCL_QRY == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.PLANNED_OBSERVATION2, ConsolPackage.Literals.PLANNED_OBSERVATION2.getEAllOperations().get(71));
+			helper.setOperationContext(
+				ConsolPackage.Literals.PLANNED_OBSERVATION2,
+				ConsolPackage.Literals.PLANNED_OBSERVATION2.getEAllOperations().get(71));
 			try {
 				GET_PRIORITY_PREFERENCES__EOCL_QRY = helper.createQuery(GET_PRIORITY_PREFERENCES__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
+		}
+
 		OCL.Query query = EOCL_ENV.get().createQuery(GET_PRIORITY_PREFERENCES__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<PriorityPreference> result = (Collection<PriorityPreference>) query.evaluate(plannedObservation2);
-		return new BasicEList.UnmodifiableEList<PriorityPreference>(result.size(), result.toArray());
+		return new BasicEList.UnmodifiableEList<>(result.size(), result.toArray());
 	}
 
 	/**
@@ -1430,26 +1261,24 @@ public class PlannedObservation2Operations extends PlanOfCareActivityObservation
 	 */
 
 	public static EList<Indication2> getIndication2s(PlannedObservation2 plannedObservation2) {
-	
-	
-	
+
 		if (GET_INDICATION2S__EOCL_QRY == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.PLANNED_OBSERVATION2, ConsolPackage.Literals.PLANNED_OBSERVATION2.getEAllOperations().get(72));
+			helper.setOperationContext(
+				ConsolPackage.Literals.PLANNED_OBSERVATION2,
+				ConsolPackage.Literals.PLANNED_OBSERVATION2.getEAllOperations().get(72));
 			try {
 				GET_INDICATION2S__EOCL_QRY = helper.createQuery(GET_INDICATION2S__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
+		}
+
 		OCL.Query query = EOCL_ENV.get().createQuery(GET_INDICATION2S__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<Indication2> result = (Collection<Indication2>) query.evaluate(plannedObservation2);
-		return new BasicEList.UnmodifiableEList<Indication2>(result.size(), result.toArray());
+		return new BasicEList.UnmodifiableEList<>(result.size(), result.toArray());
 	}
 
 	/**
@@ -1479,26 +1308,24 @@ public class PlannedObservation2Operations extends PlanOfCareActivityObservation
 	 */
 
 	public static EList<Instruction2> getInstruction2s(PlannedObservation2 plannedObservation2) {
-	
-	
-	
+
 		if (GET_INSTRUCTION2S__EOCL_QRY == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.PLANNED_OBSERVATION2, ConsolPackage.Literals.PLANNED_OBSERVATION2.getEAllOperations().get(73));
+			helper.setOperationContext(
+				ConsolPackage.Literals.PLANNED_OBSERVATION2,
+				ConsolPackage.Literals.PLANNED_OBSERVATION2.getEAllOperations().get(73));
 			try {
 				GET_INSTRUCTION2S__EOCL_QRY = helper.createQuery(GET_INSTRUCTION2S__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
+		}
+
 		OCL.Query query = EOCL_ENV.get().createQuery(GET_INSTRUCTION2S__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<Instruction2> result = (Collection<Instruction2>) query.evaluate(plannedObservation2);
-		return new BasicEList.UnmodifiableEList<Instruction2>(result.size(), result.toArray());
+		return new BasicEList.UnmodifiableEList<>(result.size(), result.toArray());
 	}
 
 	/**
@@ -1528,26 +1355,24 @@ public class PlannedObservation2Operations extends PlanOfCareActivityObservation
 	 */
 
 	public static EList<PlannedCoverage> getPlannedCoverages(PlannedObservation2 plannedObservation2) {
-	
-	
-	
+
 		if (GET_PLANNED_COVERAGES__EOCL_QRY == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.PLANNED_OBSERVATION2, ConsolPackage.Literals.PLANNED_OBSERVATION2.getEAllOperations().get(74));
+			helper.setOperationContext(
+				ConsolPackage.Literals.PLANNED_OBSERVATION2,
+				ConsolPackage.Literals.PLANNED_OBSERVATION2.getEAllOperations().get(74));
 			try {
 				GET_PLANNED_COVERAGES__EOCL_QRY = helper.createQuery(GET_PLANNED_COVERAGES__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
+		}
+
 		OCL.Query query = EOCL_ENV.get().createQuery(GET_PLANNED_COVERAGES__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<PlannedCoverage> result = (Collection<PlannedCoverage>) query.evaluate(plannedObservation2);
-		return new BasicEList.UnmodifiableEList<PlannedCoverage>(result.size(), result.toArray());
+		return new BasicEList.UnmodifiableEList<>(result.size(), result.toArray());
 	}
 
 	/**
@@ -1558,9 +1383,9 @@ public class PlannedObservation2Operations extends PlanOfCareActivityObservation
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PLAN_OF_CARE_ACTIVITY_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.moodCode.oclIsUndefined() and self.moodCode.oclIsKindOf(vocab::x_ActMoodDocumentObservation) and "+
-"let value : vocab::x_ActMoodDocumentObservation = self.moodCode.oclAsType(vocab::x_ActMoodDocumentObservation) in "+
-"value = vocab::x_ActMoodDocumentObservation::INT or value = vocab::x_ActMoodDocumentObservation::GOL or value = vocab::x_ActMoodDocumentObservation::PRMS or value = vocab::x_ActMoodDocumentObservation::PRP or value = vocab::x_ActMoodDocumentObservation::RQO";
+	protected static final String VALIDATE_PLAN_OF_CARE_ACTIVITY_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.moodCode.oclIsUndefined() and self.moodCode.oclIsKindOf(vocab::x_ActMoodDocumentObservation) and " +
+			"let value : vocab::x_ActMoodDocumentObservation = self.moodCode.oclAsType(vocab::x_ActMoodDocumentObservation) in " +
+			"value = vocab::x_ActMoodDocumentObservation::INT or value = vocab::x_ActMoodDocumentObservation::GOL or value = vocab::x_ActMoodDocumentObservation::PRMS or value = vocab::x_ActMoodDocumentObservation::PRP or value = vocab::x_ActMoodDocumentObservation::RQO";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePlanOfCareActivityObservationMoodCode(PlannedObservation2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Plan Of Care Activity Observation Mood Code</em>}' invariant operation.
@@ -1571,7 +1396,7 @@ public class PlannedObservation2Operations extends PlanOfCareActivityObservation
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_PLAN_OF_CARE_ACTIVITY_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_PLAN_OF_CARE_ACTIVITY_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1586,44 +1411,34 @@ public class PlannedObservation2Operations extends PlanOfCareActivityObservation
 
 	public static boolean validatePlanOfCareActivityObservationMoodCode(PlannedObservation2 plannedObservation2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"PlannedObservation2PlanOfCareActivityObservationMoodCode","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "PlannedObservation2PlanOfCareActivityObservationMoodCode", "ERROR");
+
 		if (VALIDATE_PLAN_OF_CARE_ACTIVITY_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PLANNED_OBSERVATION2);
 			try {
-				VALIDATE_PLAN_OF_CARE_ACTIVITY_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PLAN_OF_CARE_ACTIVITY_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_PLAN_OF_CARE_ACTIVITY_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_PLAN_OF_CARE_ACTIVITY_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_PLAN_OF_CARE_ACTIVITY_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(plannedObservation2)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_PLAN_OF_CARE_ACTIVITY_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				plannedObservation2)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.PLANNED_OBSERVATION2__PLAN_OF_CARE_ACTIVITY_OBSERVATION_MOOD_CODE,
-						 ConsolPlugin.INSTANCE.getString("PlannedObservation2PlanOfCareActivityObservationMoodCode"),
-						 new Object [] { plannedObservation2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PLANNED_OBSERVATION2__PLAN_OF_CARE_ACTIVITY_OBSERVATION_MOOD_CODE,
+						ConsolPlugin.INSTANCE.getString("PlannedObservation2PlanOfCareActivityObservationMoodCode"),
+						new Object[] { plannedObservation2 }));
 			}
-			 
+
 			return false;
 		}
 		return true;

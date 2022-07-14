@@ -141,7 +141,8 @@ public interface ProcedureActivityProcedureV3 extends Procedure {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.targetSiteCode-&gt;isEmpty() or self.targetSiteCode-&gt;exists(element | element.isNullFlavorUndefined())) implies (not self.targetSiteCode-&gt;isEmpty())'"
 	 * @generated
 	 */
-	boolean validateProcedureActivityProcedureV3TargetSiteCodeP(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateProcedureActivityProcedureV3TargetSiteCodeP(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -188,9 +189,9 @@ public interface ProcedureActivityProcedureV3 extends Procedure {
 	public ProcedureActivityProcedureV3 init();
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public ProcedureActivityProcedureV3 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ProcedureActivityProcedureV3

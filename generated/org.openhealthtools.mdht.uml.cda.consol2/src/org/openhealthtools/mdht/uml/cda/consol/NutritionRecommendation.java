@@ -266,9 +266,9 @@ public interface NutritionRecommendation extends Act {
 	public NutritionRecommendation init();
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public NutritionRecommendation init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // NutritionRecommendation

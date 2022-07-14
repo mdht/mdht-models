@@ -255,9 +255,9 @@ public interface DrugMonitoringAct extends Act {
 	public DrugMonitoringAct init();
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public DrugMonitoringAct init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // DrugMonitoringAct

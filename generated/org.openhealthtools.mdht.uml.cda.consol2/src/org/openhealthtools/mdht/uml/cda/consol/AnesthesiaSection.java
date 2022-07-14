@@ -133,9 +133,9 @@ public interface AnesthesiaSection extends Section {
 	public AnesthesiaSection init();
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public AnesthesiaSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // AnesthesiaSection

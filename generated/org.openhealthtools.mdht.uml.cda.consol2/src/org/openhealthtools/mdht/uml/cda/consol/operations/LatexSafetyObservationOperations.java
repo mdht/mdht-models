@@ -48,7 +48,7 @@ public class LatexSafetyObservationOperations extends ClinicalStatementOperation
 	 * @generated
 	 * @ordered
 	 */
-	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+	protected static final ThreadLocal<OCL> EOCL_ENV = new ThreadLocal<OCL>() {
 		@Override
 		public OCL initialValue() {
 			return OCL.newInstance();
@@ -82,7 +82,7 @@ public class LatexSafetyObservationOperations extends ClinicalStatementOperation
 	 * @generated
 	 * @ordered
 	 */
-	protected static ThreadLocal<  Constraint> VALIDATE_LATEX_SAFETY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_LATEX_SAFETY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -96,44 +96,34 @@ public class LatexSafetyObservationOperations extends ClinicalStatementOperation
 	 */
 	public static boolean validateLatexSafetyObservationTemplateId(LatexSafetyObservation latexSafetyObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"LatexSafetyObservationLatexSafetyObservationTemplateId","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "LatexSafetyObservationLatexSafetyObservationTemplateId", "ERROR");
+
 		if (VALIDATE_LATEX_SAFETY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.LATEX_SAFETY_OBSERVATION);
 			try {
-				VALIDATE_LATEX_SAFETY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_LATEX_SAFETY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_LATEX_SAFETY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_LATEX_SAFETY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_LATEX_SAFETY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(latexSafetyObservation)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_LATEX_SAFETY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				latexSafetyObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.LATEX_SAFETY_OBSERVATION__LATEX_SAFETY_OBSERVATION_TEMPLATE_ID,
-						 ConsolPlugin.INSTANCE.getString("LatexSafetyObservationLatexSafetyObservationTemplateId"),
-						 new Object [] { latexSafetyObservation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.LATEX_SAFETY_OBSERVATION__LATEX_SAFETY_OBSERVATION_TEMPLATE_ID,
+						ConsolPlugin.INSTANCE.getString("LatexSafetyObservationLatexSafetyObservationTemplateId"),
+						new Object[] { latexSafetyObservation }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -157,7 +147,7 @@ public class LatexSafetyObservationOperations extends ClinicalStatementOperation
 	 * @generated
 	 * @ordered
 	 */
-	protected static ThreadLocal<  Constraint> VALIDATE_LATEX_SAFETY_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_LATEX_SAFETY_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -171,56 +161,46 @@ public class LatexSafetyObservationOperations extends ClinicalStatementOperation
 	 */
 	public static boolean validateLatexSafetyObservationCodeP(LatexSafetyObservation latexSafetyObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"LatexSafetyObservationLatexSafetyObservationCodeP","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "LatexSafetyObservationLatexSafetyObservationCodeP", "ERROR");
+
 		if (VALIDATE_LATEX_SAFETY_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.LATEX_SAFETY_OBSERVATION);
 			try {
-				VALIDATE_LATEX_SAFETY_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_LATEX_SAFETY_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_LATEX_SAFETY_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_LATEX_SAFETY_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_LATEX_SAFETY_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(latexSafetyObservation)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_LATEX_SAFETY_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				latexSafetyObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.LATEX_SAFETY_OBSERVATION__LATEX_SAFETY_OBSERVATION_CODE_P,
-						 ConsolPlugin.INSTANCE.getString("LatexSafetyObservationLatexSafetyObservationCodeP"),
-						 new Object [] { latexSafetyObservation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.LATEX_SAFETY_OBSERVATION__LATEX_SAFETY_OBSERVATION_CODE_P,
+						ConsolPlugin.INSTANCE.getString("LatexSafetyObservationLatexSafetyObservationCodeP"),
+						new Object[] { latexSafetyObservation }));
 			}
-			
+
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
-				Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.consol.LatexSafetyObservationCodeP");
+				Collection<Object> passToken = (Collection<Object>) context.get(
+					"org.openhealthtools.mdht.uml.cda.consol.LatexSafetyObservationCodeP");
 				if (passToken == null) {
 					// anticipate a reasonably healthy model
-					passToken = new java.util.ArrayList<Object>(3);
+					passToken = new java.util.ArrayList<>(3);
 					context.put("org.openhealthtools.mdht.uml.cda.consol.LatexSafetyObservationCodeP", passToken);
 				}
 				passToken.add(latexSafetyObservation);
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -234,9 +214,9 @@ public class LatexSafetyObservationOperations extends ClinicalStatementOperation
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_LATEX_SAFETY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
-"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
-"value.code = 'C160938' and value.codeSystem = '2.16.840.1.113883.3.26.1.1')";
+	protected static final String VALIDATE_LATEX_SAFETY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and " +
+			"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in " +
+			"value.code = 'C160938' and value.codeSystem = '2.16.840.1.113883.3.26.1.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateLatexSafetyObservationCode(LatexSafetyObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Latex Safety Observation Code</em>}' invariant operation.
@@ -246,7 +226,7 @@ public class LatexSafetyObservationOperations extends ClinicalStatementOperation
 	 * @generated
 	 * @ordered
 	 */
-	protected static ThreadLocal<  Constraint> VALIDATE_LATEX_SAFETY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_LATEX_SAFETY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -260,50 +240,41 @@ public class LatexSafetyObservationOperations extends ClinicalStatementOperation
 	 */
 	public static boolean validateLatexSafetyObservationCode(LatexSafetyObservation latexSafetyObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-		Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.consol.LatexSafetyObservationCodeP");
+
+		Object passToken = (context == null)
+				? null
+				: context.get("org.openhealthtools.mdht.uml.cda.consol.LatexSafetyObservationCodeP");
 		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(latexSafetyObservation)) {
 			// I have a free pass to short-circuit
 			return true;
 		}
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"LatexSafetyObservationLatexSafetyObservationCode","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "LatexSafetyObservationLatexSafetyObservationCode", "ERROR");
+
 		if (VALIDATE_LATEX_SAFETY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.LATEX_SAFETY_OBSERVATION);
 			try {
-				VALIDATE_LATEX_SAFETY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_LATEX_SAFETY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_LATEX_SAFETY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_LATEX_SAFETY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_LATEX_SAFETY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(latexSafetyObservation)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_LATEX_SAFETY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				latexSafetyObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.LATEX_SAFETY_OBSERVATION__LATEX_SAFETY_OBSERVATION_CODE,
-						 ConsolPlugin.INSTANCE.getString("LatexSafetyObservationLatexSafetyObservationCode"),
-						 new Object [] { latexSafetyObservation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.LATEX_SAFETY_OBSERVATION__LATEX_SAFETY_OBSERVATION_CODE,
+						ConsolPlugin.INSTANCE.getString("LatexSafetyObservationLatexSafetyObservationCode"),
+						new Object[] { latexSafetyObservation }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -317,9 +288,9 @@ public class LatexSafetyObservationOperations extends ClinicalStatementOperation
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_LATEX_SAFETY_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "+
-"let value : datatypes::CD = element.oclAsType(datatypes::CD) in "+
-"value.codeSystem = '2.16.840.1.113883.3.26.1.1' and (value.code = 'C106043' or value.code = 'C106038')))";
+	protected static final String VALIDATE_LATEX_SAFETY_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and " +
+			"let value : datatypes::CD = element.oclAsType(datatypes::CD) in " +
+			"value.codeSystem = '2.16.840.1.113883.3.26.1.1' and (value.code = 'C106043' or value.code = 'C106038')))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateLatexSafetyObservationValue(LatexSafetyObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Latex Safety Observation Value</em>}' invariant operation.
@@ -329,7 +300,7 @@ public class LatexSafetyObservationOperations extends ClinicalStatementOperation
 	 * @generated
 	 * @ordered
 	 */
-	protected static ThreadLocal<  Constraint> VALIDATE_LATEX_SAFETY_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_LATEX_SAFETY_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -343,44 +314,33 @@ public class LatexSafetyObservationOperations extends ClinicalStatementOperation
 	 */
 	public static boolean validateLatexSafetyObservationValue(LatexSafetyObservation latexSafetyObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"LatexSafetyObservationLatexSafetyObservationValue","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "LatexSafetyObservationLatexSafetyObservationValue", "ERROR");
+
 		if (VALIDATE_LATEX_SAFETY_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.LATEX_SAFETY_OBSERVATION);
 			try {
-				VALIDATE_LATEX_SAFETY_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_LATEX_SAFETY_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_LATEX_SAFETY_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_LATEX_SAFETY_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_LATEX_SAFETY_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(latexSafetyObservation)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_LATEX_SAFETY_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				latexSafetyObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.LATEX_SAFETY_OBSERVATION__LATEX_SAFETY_OBSERVATION_VALUE,
-						 ConsolPlugin.INSTANCE.getString("LatexSafetyObservationLatexSafetyObservationValue"),
-						 new Object [] { latexSafetyObservation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.LATEX_SAFETY_OBSERVATION__LATEX_SAFETY_OBSERVATION_VALUE,
+						ConsolPlugin.INSTANCE.getString("LatexSafetyObservationLatexSafetyObservationValue"),
+						new Object[] { latexSafetyObservation }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -404,7 +364,7 @@ public class LatexSafetyObservationOperations extends ClinicalStatementOperation
 	 * @generated
 	 * @ordered
 	 */
-	protected static ThreadLocal<  Constraint> VALIDATE_LATEX_SAFETY_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_LATEX_SAFETY_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -418,44 +378,33 @@ public class LatexSafetyObservationOperations extends ClinicalStatementOperation
 	 */
 	public static boolean validateLatexSafetyObservationValueP(LatexSafetyObservation latexSafetyObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"LatexSafetyObservationLatexSafetyObservationValueP","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "LatexSafetyObservationLatexSafetyObservationValueP", "ERROR");
+
 		if (VALIDATE_LATEX_SAFETY_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.LATEX_SAFETY_OBSERVATION);
 			try {
-				VALIDATE_LATEX_SAFETY_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_LATEX_SAFETY_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_LATEX_SAFETY_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_LATEX_SAFETY_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_LATEX_SAFETY_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(latexSafetyObservation)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_LATEX_SAFETY_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				latexSafetyObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.LATEX_SAFETY_OBSERVATION__LATEX_SAFETY_OBSERVATION_VALUE_P,
-						 ConsolPlugin.INSTANCE.getString("LatexSafetyObservationLatexSafetyObservationValueP"),
-						 new Object [] { latexSafetyObservation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.LATEX_SAFETY_OBSERVATION__LATEX_SAFETY_OBSERVATION_VALUE_P,
+						ConsolPlugin.INSTANCE.getString("LatexSafetyObservationLatexSafetyObservationValueP"),
+						new Object[] { latexSafetyObservation }));
 			}
-			 
+
 			return false;
 		}
 		return true;

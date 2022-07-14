@@ -129,9 +129,9 @@ public interface ProceduresSection2 extends ProceduresSectionEntriesOptional2 {
 	public ProceduresSection2 init();
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public ProceduresSection2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ProceduresSection2

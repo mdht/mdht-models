@@ -90,7 +90,7 @@ public class ProblemObservationV4Operations extends ProblemObservation2Operation
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_PROBLEM_OBSERVATION_V4_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_PROBLEM_OBSERVATION_V4_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -105,44 +105,34 @@ public class ProblemObservationV4Operations extends ProblemObservation2Operation
 
 	public static boolean validateProblemObservationV4TemplateId(ProblemObservationV4 problemObservationV4,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"ProblemObservationV4ProblemObservationV4TemplateId","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "ProblemObservationV4ProblemObservationV4TemplateId", "ERROR");
+
 		if (VALIDATE_PROBLEM_OBSERVATION_V4_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROBLEM_OBSERVATION_V4);
 			try {
-				VALIDATE_PROBLEM_OBSERVATION_V4_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PROBLEM_OBSERVATION_V4_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_PROBLEM_OBSERVATION_V4_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_PROBLEM_OBSERVATION_V4_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_PROBLEM_OBSERVATION_V4_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(problemObservationV4)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_PROBLEM_OBSERVATION_V4_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				problemObservationV4)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.PROBLEM_OBSERVATION_V4__PROBLEM_OBSERVATION_V4_TEMPLATE_ID,
-						 ConsolPlugin.INSTANCE.getString("ProblemObservationV4ProblemObservationV4TemplateId"),
-						 new Object [] { problemObservationV4 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PROBLEM_OBSERVATION_V4__PROBLEM_OBSERVATION_V4_TEMPLATE_ID,
+						ConsolPlugin.INSTANCE.getString("ProblemObservationV4ProblemObservationV4TemplateId"),
+						new Object[] { problemObservationV4 }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -167,7 +157,7 @@ public class ProblemObservationV4Operations extends ProblemObservation2Operation
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_PROBLEM_OBSERVATION_V4_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_PROBLEM_OBSERVATION_V4_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -182,44 +172,32 @@ public class ProblemObservationV4Operations extends ProblemObservation2Operation
 
 	public static boolean validateProblemObservationV4Id(ProblemObservationV4 problemObservationV4,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"ProblemObservationV4ProblemObservationV4Id","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "ProblemObservationV4ProblemObservationV4Id", "ERROR");
+
 		if (VALIDATE_PROBLEM_OBSERVATION_V4_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROBLEM_OBSERVATION_V4);
 			try {
-				VALIDATE_PROBLEM_OBSERVATION_V4_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PROBLEM_OBSERVATION_V4_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_PROBLEM_OBSERVATION_V4_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_PROBLEM_OBSERVATION_V4_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_PROBLEM_OBSERVATION_V4_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(problemObservationV4)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(VALIDATE_PROBLEM_OBSERVATION_V4_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+			problemObservationV4)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.PROBLEM_OBSERVATION_V4__PROBLEM_OBSERVATION_V4_ID,
-						 ConsolPlugin.INSTANCE.getString("ProblemObservationV4ProblemObservationV4Id"),
-						 new Object [] { problemObservationV4 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PROBLEM_OBSERVATION_V4__PROBLEM_OBSERVATION_V4_ID,
+						ConsolPlugin.INSTANCE.getString("ProblemObservationV4ProblemObservationV4Id"),
+						new Object[] { problemObservationV4 }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -244,7 +222,7 @@ public class ProblemObservationV4Operations extends ProblemObservation2Operation
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_PROBLEM_OBSERVATION_V4_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_PROBLEM_OBSERVATION_V4_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -259,56 +237,45 @@ public class ProblemObservationV4Operations extends ProblemObservation2Operation
 
 	public static boolean validateProblemObservationV4CodeP(ProblemObservationV4 problemObservationV4,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"ProblemObservationV4ProblemObservationV4CodeP","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "ProblemObservationV4ProblemObservationV4CodeP", "ERROR");
+
 		if (VALIDATE_PROBLEM_OBSERVATION_V4_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROBLEM_OBSERVATION_V4);
 			try {
-				VALIDATE_PROBLEM_OBSERVATION_V4_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PROBLEM_OBSERVATION_V4_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_PROBLEM_OBSERVATION_V4_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_PROBLEM_OBSERVATION_V4_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_PROBLEM_OBSERVATION_V4_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(problemObservationV4)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_PROBLEM_OBSERVATION_V4_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(problemObservationV4)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.PROBLEM_OBSERVATION_V4__PROBLEM_OBSERVATION_V4_CODE_P,
-						 ConsolPlugin.INSTANCE.getString("ProblemObservationV4ProblemObservationV4CodeP"),
-						 new Object [] { problemObservationV4 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PROBLEM_OBSERVATION_V4__PROBLEM_OBSERVATION_V4_CODE_P,
+						ConsolPlugin.INSTANCE.getString("ProblemObservationV4ProblemObservationV4CodeP"),
+						new Object[] { problemObservationV4 }));
 			}
-			
+
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
-				Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.consol.ProblemObservationV4CodeP");
+				Collection<Object> passToken = (Collection<Object>) context.get(
+					"org.openhealthtools.mdht.uml.cda.consol.ProblemObservationV4CodeP");
 				if (passToken == null) {
 					// anticipate a reasonably healthy model
-					passToken = new java.util.ArrayList<Object>(3);
+					passToken = new java.util.ArrayList<>(3);
 					context.put("org.openhealthtools.mdht.uml.cda.consol.ProblemObservationV4CodeP", passToken);
 				}
 				passToken.add(problemObservationV4);
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -322,9 +289,9 @@ public class ProblemObservationV4Operations extends ProblemObservation2Operation
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PROBLEM_OBSERVATION_V4_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
-"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
-"value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '404684003' or value.code = '409586006' or value.code = '282291009' or value.code = '64572001' or value.code = '248536006' or value.code = '418799008' or value.code = '55607006' or value.code = '373930000'))";
+	protected static final String VALIDATE_PROBLEM_OBSERVATION_V4_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and " +
+			"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in " +
+			"value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '404684003' or value.code = '409586006' or value.code = '282291009' or value.code = '64572001' or value.code = '248536006' or value.code = '418799008' or value.code = '55607006' or value.code = '373930000'))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateProblemObservationV4Code(ProblemObservationV4, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Observation V4 Code</em>}' invariant operation.
@@ -335,7 +302,7 @@ public class ProblemObservationV4Operations extends ProblemObservation2Operation
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_PROBLEM_OBSERVATION_V4_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_PROBLEM_OBSERVATION_V4_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -350,50 +317,40 @@ public class ProblemObservationV4Operations extends ProblemObservation2Operation
 
 	public static boolean validateProblemObservationV4Code(ProblemObservationV4 problemObservationV4,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-		Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.consol.ProblemObservationV4CodeP");
+
+		Object passToken = (context == null)
+				? null
+				: context.get("org.openhealthtools.mdht.uml.cda.consol.ProblemObservationV4CodeP");
 		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(problemObservationV4)) {
 			// I have a free pass to short-circuit
 			return true;
 		}
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"ProblemObservationV4ProblemObservationV4Code","WARNING");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "ProblemObservationV4ProblemObservationV4Code", "WARNING");
+
 		if (VALIDATE_PROBLEM_OBSERVATION_V4_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROBLEM_OBSERVATION_V4);
 			try {
-				VALIDATE_PROBLEM_OBSERVATION_V4_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PROBLEM_OBSERVATION_V4_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_PROBLEM_OBSERVATION_V4_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_PROBLEM_OBSERVATION_V4_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_PROBLEM_OBSERVATION_V4_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(problemObservationV4)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_PROBLEM_OBSERVATION_V4_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(problemObservationV4)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.WARNING,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.PROBLEM_OBSERVATION_V4__PROBLEM_OBSERVATION_V4_CODE,
-						 ConsolPlugin.INSTANCE.getString("ProblemObservationV4ProblemObservationV4Code"),
-						 new Object [] { problemObservationV4 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PROBLEM_OBSERVATION_V4__PROBLEM_OBSERVATION_V4_CODE,
+						ConsolPlugin.INSTANCE.getString("ProblemObservationV4ProblemObservationV4Code"),
+						new Object[] { problemObservationV4 }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -417,8 +374,8 @@ public class ProblemObservationV4Operations extends ProblemObservation2Operation
 	 * @generated
 	 * @ordered
 	 */
-	
-	protected static ThreadLocal<  Constraint> VALIDATE_PROBLEM_OBSERVATION_V4_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
+
+	protected static ThreadLocal<Constraint> VALIDATE_PROBLEM_OBSERVATION_V4_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -430,58 +387,50 @@ public class ProblemObservationV4Operations extends ProblemObservation2Operation
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	
-	public static  boolean validateProblemObservationV4StatusCodeP(ProblemObservationV4 problemObservationV4, DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"ProblemObservationV4ProblemObservationV4StatusCodeP","ERROR");
-    
-  	  
-  	  
+
+	public static boolean validateProblemObservationV4StatusCodeP(ProblemObservationV4 problemObservationV4,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ProblemObservationV4ProblemObservationV4StatusCodeP", "ERROR");
+
 		if (VALIDATE_PROBLEM_OBSERVATION_V4_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROBLEM_OBSERVATION_V4);
 			try {
-				VALIDATE_PROBLEM_OBSERVATION_V4_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PROBLEM_OBSERVATION_V4_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_PROBLEM_OBSERVATION_V4_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_PROBLEM_OBSERVATION_V4_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_PROBLEM_OBSERVATION_V4_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(problemObservationV4)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_PROBLEM_OBSERVATION_V4_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				problemObservationV4)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.PROBLEM_OBSERVATION_V4__PROBLEM_OBSERVATION_V4_STATUS_CODE_P,
-						 ConsolPlugin.INSTANCE.getString("ProblemObservationV4ProblemObservationV4StatusCodeP"),
-						 new Object [] { problemObservationV4 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PROBLEM_OBSERVATION_V4__PROBLEM_OBSERVATION_V4_STATUS_CODE_P,
+						ConsolPlugin.INSTANCE.getString("ProblemObservationV4ProblemObservationV4StatusCodeP"),
+						new Object[] { problemObservationV4 }));
 			}
-			
+
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
-				Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.consol.ProblemObservationV4StatusCodeP");
+				Collection<Object> passToken = (Collection<Object>) context.get(
+					"org.openhealthtools.mdht.uml.cda.consol.ProblemObservationV4StatusCodeP");
 				if (passToken == null) {
 					// anticipate a reasonably healthy model
-					passToken = new java.util.ArrayList<Object>(3);
+					passToken = new java.util.ArrayList<>(3);
 					context.put("org.openhealthtools.mdht.uml.cda.consol.ProblemObservationV4StatusCodeP", passToken);
 				}
 				passToken.add(problemObservationV4);
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -495,9 +444,8 @@ public class ProblemObservationV4Operations extends ProblemObservation2Operation
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PROBLEM_OBSERVATION_V4_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and "+
-"let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in "+
-"value.code = 'completed')";
+	protected static final String VALIDATE_PROBLEM_OBSERVATION_V4_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and " +
+			"let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in " + "value.code = 'completed')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateProblemObservationV4StatusCode(ProblemObservationV4, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Observation V4 Status Code</em>}' invariant operation.
@@ -508,7 +456,7 @@ public class ProblemObservationV4Operations extends ProblemObservation2Operation
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_PROBLEM_OBSERVATION_V4_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_PROBLEM_OBSERVATION_V4_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -523,50 +471,42 @@ public class ProblemObservationV4Operations extends ProblemObservation2Operation
 
 	public static boolean validateProblemObservationV4StatusCode(ProblemObservationV4 problemObservationV4,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-		Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.consol.ProblemObservationV4StatusCodeP");
+
+		Object passToken = (context == null)
+				? null
+				: context.get("org.openhealthtools.mdht.uml.cda.consol.ProblemObservationV4StatusCodeP");
 		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(problemObservationV4)) {
 			// I have a free pass to short-circuit
 			return true;
 		}
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"ProblemObservationV4ProblemObservationV4StatusCode","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "ProblemObservationV4ProblemObservationV4StatusCode", "ERROR");
+
 		if (VALIDATE_PROBLEM_OBSERVATION_V4_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROBLEM_OBSERVATION_V4);
 			try {
-				VALIDATE_PROBLEM_OBSERVATION_V4_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PROBLEM_OBSERVATION_V4_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_PROBLEM_OBSERVATION_V4_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_PROBLEM_OBSERVATION_V4_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_PROBLEM_OBSERVATION_V4_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(problemObservationV4)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_PROBLEM_OBSERVATION_V4_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				problemObservationV4)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.PROBLEM_OBSERVATION_V4__PROBLEM_OBSERVATION_V4_STATUS_CODE,
-						 ConsolPlugin.INSTANCE.getString("ProblemObservationV4ProblemObservationV4StatusCode"),
-						 new Object [] { problemObservationV4 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PROBLEM_OBSERVATION_V4__PROBLEM_OBSERVATION_V4_STATUS_CODE,
+						ConsolPlugin.INSTANCE.getString("ProblemObservationV4ProblemObservationV4StatusCode"),
+						new Object[] { problemObservationV4 }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -591,7 +531,7 @@ public class ProblemObservationV4Operations extends ProblemObservation2Operation
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_PROBLEM_OBSERVATION_V4_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_PROBLEM_OBSERVATION_V4_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -606,44 +546,34 @@ public class ProblemObservationV4Operations extends ProblemObservation2Operation
 
 	public static boolean validateProblemObservationV4EffectiveTime(ProblemObservationV4 problemObservationV4,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"ProblemObservationV4ProblemObservationV4EffectiveTime","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "ProblemObservationV4ProblemObservationV4EffectiveTime", "ERROR");
+
 		if (VALIDATE_PROBLEM_OBSERVATION_V4_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROBLEM_OBSERVATION_V4);
 			try {
-				VALIDATE_PROBLEM_OBSERVATION_V4_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PROBLEM_OBSERVATION_V4_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_PROBLEM_OBSERVATION_V4_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_PROBLEM_OBSERVATION_V4_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_PROBLEM_OBSERVATION_V4_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(problemObservationV4)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_PROBLEM_OBSERVATION_V4_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				problemObservationV4)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.PROBLEM_OBSERVATION_V4__PROBLEM_OBSERVATION_V4_EFFECTIVE_TIME,
-						 ConsolPlugin.INSTANCE.getString("ProblemObservationV4ProblemObservationV4EffectiveTime"),
-						 new Object [] { problemObservationV4 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PROBLEM_OBSERVATION_V4__PROBLEM_OBSERVATION_V4_EFFECTIVE_TIME,
+						ConsolPlugin.INSTANCE.getString("ProblemObservationV4ProblemObservationV4EffectiveTime"),
+						new Object[] { problemObservationV4 }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -657,9 +587,9 @@ public class ProblemObservationV4Operations extends ProblemObservation2Operation
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PROBLEM_OBSERVATION_V4_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "+
-"let value : datatypes::CD = element.oclAsType(datatypes::CD) in "+
-"value.codeSystem = '2.16.840.1.113883.6.96' and not value.code.oclIsUndefined()))";
+	protected static final String VALIDATE_PROBLEM_OBSERVATION_V4_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and " +
+			"let value : datatypes::CD = element.oclAsType(datatypes::CD) in " +
+			"value.codeSystem = '2.16.840.1.113883.6.96' and not value.code.oclIsUndefined()))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateProblemObservationV4Value(ProblemObservationV4, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Observation V4 Value</em>}' invariant operation.
@@ -670,7 +600,7 @@ public class ProblemObservationV4Operations extends ProblemObservation2Operation
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_PROBLEM_OBSERVATION_V4_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_PROBLEM_OBSERVATION_V4_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -685,44 +615,32 @@ public class ProblemObservationV4Operations extends ProblemObservation2Operation
 
 	public static boolean validateProblemObservationV4Value(ProblemObservationV4 problemObservationV4,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"ProblemObservationV4ProblemObservationV4Value","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "ProblemObservationV4ProblemObservationV4Value", "ERROR");
+
 		if (VALIDATE_PROBLEM_OBSERVATION_V4_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROBLEM_OBSERVATION_V4);
 			try {
-				VALIDATE_PROBLEM_OBSERVATION_V4_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PROBLEM_OBSERVATION_V4_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_PROBLEM_OBSERVATION_V4_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_PROBLEM_OBSERVATION_V4_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_PROBLEM_OBSERVATION_V4_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(problemObservationV4)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_PROBLEM_OBSERVATION_V4_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(problemObservationV4)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.PROBLEM_OBSERVATION_V4__PROBLEM_OBSERVATION_V4_VALUE,
-						 ConsolPlugin.INSTANCE.getString("ProblemObservationV4ProblemObservationV4Value"),
-						 new Object [] { problemObservationV4 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PROBLEM_OBSERVATION_V4__PROBLEM_OBSERVATION_V4_VALUE,
+						ConsolPlugin.INSTANCE.getString("ProblemObservationV4ProblemObservationV4Value"),
+						new Object[] { problemObservationV4 }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -747,7 +665,7 @@ public class ProblemObservationV4Operations extends ProblemObservation2Operation
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_PROBLEM_OBSERVATION_V4_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_PROBLEM_OBSERVATION_V4_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -762,44 +680,33 @@ public class ProblemObservationV4Operations extends ProblemObservation2Operation
 
 	public static boolean validateProblemObservationV4ValueP(ProblemObservationV4 problemObservationV4,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"ProblemObservationV4ProblemObservationV4ValueP","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "ProblemObservationV4ProblemObservationV4ValueP", "ERROR");
+
 		if (VALIDATE_PROBLEM_OBSERVATION_V4_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROBLEM_OBSERVATION_V4);
 			try {
-				VALIDATE_PROBLEM_OBSERVATION_V4_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PROBLEM_OBSERVATION_V4_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_PROBLEM_OBSERVATION_V4_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_PROBLEM_OBSERVATION_V4_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_PROBLEM_OBSERVATION_V4_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(problemObservationV4)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_PROBLEM_OBSERVATION_V4_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				problemObservationV4)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.PROBLEM_OBSERVATION_V4__PROBLEM_OBSERVATION_V4_VALUE_P,
-						 ConsolPlugin.INSTANCE.getString("ProblemObservationV4ProblemObservationV4ValueP"),
-						 new Object [] { problemObservationV4 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PROBLEM_OBSERVATION_V4__PROBLEM_OBSERVATION_V4_VALUE_P,
+						ConsolPlugin.INSTANCE.getString("ProblemObservationV4ProblemObservationV4ValueP"),
+						new Object[] { problemObservationV4 }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -824,7 +731,7 @@ public class ProblemObservationV4Operations extends ProblemObservation2Operation
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_PROBLEM_OBSERVATION_V4_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_PROBLEM_OBSERVATION_V4_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -839,44 +746,33 @@ public class ProblemObservationV4Operations extends ProblemObservation2Operation
 
 	public static boolean validateProblemObservationV4ClassCode(ProblemObservationV4 problemObservationV4,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"ProblemObservationV4ProblemObservationV4ClassCode","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "ProblemObservationV4ProblemObservationV4ClassCode", "ERROR");
+
 		if (VALIDATE_PROBLEM_OBSERVATION_V4_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROBLEM_OBSERVATION_V4);
 			try {
-				VALIDATE_PROBLEM_OBSERVATION_V4_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PROBLEM_OBSERVATION_V4_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_PROBLEM_OBSERVATION_V4_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_PROBLEM_OBSERVATION_V4_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_PROBLEM_OBSERVATION_V4_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(problemObservationV4)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_PROBLEM_OBSERVATION_V4_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				problemObservationV4)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.PROBLEM_OBSERVATION_V4__PROBLEM_OBSERVATION_V4_CLASS_CODE,
-						 ConsolPlugin.INSTANCE.getString("ProblemObservationV4ProblemObservationV4ClassCode"),
-						 new Object [] { problemObservationV4 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PROBLEM_OBSERVATION_V4__PROBLEM_OBSERVATION_V4_CLASS_CODE,
+						ConsolPlugin.INSTANCE.getString("ProblemObservationV4ProblemObservationV4ClassCode"),
+						new Object[] { problemObservationV4 }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -901,7 +797,7 @@ public class ProblemObservationV4Operations extends ProblemObservation2Operation
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_PROBLEM_OBSERVATION_V4_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_PROBLEM_OBSERVATION_V4_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -916,44 +812,33 @@ public class ProblemObservationV4Operations extends ProblemObservation2Operation
 
 	public static boolean validateProblemObservationV4MoodCode(ProblemObservationV4 problemObservationV4,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"ProblemObservationV4ProblemObservationV4MoodCode","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "ProblemObservationV4ProblemObservationV4MoodCode", "ERROR");
+
 		if (VALIDATE_PROBLEM_OBSERVATION_V4_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROBLEM_OBSERVATION_V4);
 			try {
-				VALIDATE_PROBLEM_OBSERVATION_V4_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PROBLEM_OBSERVATION_V4_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_PROBLEM_OBSERVATION_V4_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_PROBLEM_OBSERVATION_V4_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_PROBLEM_OBSERVATION_V4_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(problemObservationV4)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_PROBLEM_OBSERVATION_V4_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				problemObservationV4)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.PROBLEM_OBSERVATION_V4__PROBLEM_OBSERVATION_V4_MOOD_CODE,
-						 ConsolPlugin.INSTANCE.getString("ProblemObservationV4ProblemObservationV4MoodCode"),
-						 new Object [] { problemObservationV4 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PROBLEM_OBSERVATION_V4__PROBLEM_OBSERVATION_V4_MOOD_CODE,
+						ConsolPlugin.INSTANCE.getString("ProblemObservationV4ProblemObservationV4MoodCode"),
+						new Object[] { problemObservationV4 }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -977,13 +862,8 @@ public class ProblemObservationV4Operations extends ProblemObservation2Operation
 	 * @generated
 	 * @ordered
 	 */
-	
-	
-	
-	
-	
-	
-	protected static ThreadLocal< Query<?, ?, ?> > VALIDATE_PROBLEM_OBSERVATION_V4IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY= new ThreadLocal< Query<?, ?, ?> >();
+
+	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_PROBLEM_OBSERVATION_V4IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -996,50 +876,40 @@ public class ProblemObservationV4Operations extends ProblemObservation2Operation
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
-	public static  boolean validateProblemObservationV4IVLTSLow(ProblemObservationV4 problemObservationV4, DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"ProblemObservationV4ProblemObservationV4IVLTSLow","ERROR");
-    
-  	  
-  	  
+	public static boolean validateProblemObservationV4IVLTSLow(ProblemObservationV4 problemObservationV4,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ProblemObservationV4ProblemObservationV4IVLTSLow", "ERROR");
+
 		if (VALIDATE_PROBLEM_OBSERVATION_V4IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROBLEM_OBSERVATION_V4);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_PROBLEM_OBSERVATION_V4IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_PROBLEM_OBSERVATION_V4IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(EOCL_ENV.get().createQuery(oclExpression));
-			}
-			catch (ParserException pe) {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_PROBLEM_OBSERVATION_V4IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PROBLEM_OBSERVATION_V4IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(
+					EOCL_ENV.get().createQuery(oclExpression));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		Object oclResult = VALIDATE_PROBLEM_OBSERVATION_V4IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(problemObservationV4);		
+		}
+
+		Object oclResult = VALIDATE_PROBLEM_OBSERVATION_V4IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(
+			problemObservationV4);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-  			
+
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.PROBLEM_OBSERVATION_V4__PROBLEM_OBSERVATION_V4IVLTS_LOW,
-						 ConsolPlugin.INSTANCE.getString("ProblemObservationV4ProblemObservationV4IVLTSLow"),
-						 new Object [] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.PROBLEM_OBSERVATION_V4__PROBLEM_OBSERVATION_V4IVLTS_LOW,
+							ConsolPlugin.INSTANCE.getString("ProblemObservationV4ProblemObservationV4IVLTSLow"),
+							new Object[] { eObject }));
 				}
-				 
+
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -1064,13 +934,8 @@ public class ProblemObservationV4Operations extends ProblemObservation2Operation
 	 * @generated
 	 * @ordered
 	 */
-	
-	
-	
-	
-	
-	
-	protected static ThreadLocal< Query<?, ?, ?> > VALIDATE_PROBLEM_OBSERVATION_V4IVLTS_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY= new ThreadLocal< Query<?, ?, ?> >();
+
+	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_PROBLEM_OBSERVATION_V4IVLTS_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1083,50 +948,40 @@ public class ProblemObservationV4Operations extends ProblemObservation2Operation
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
-	public static  boolean validateProblemObservationV4IVLTSHigh(ProblemObservationV4 problemObservationV4, DiagnosticChain diagnostics, Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"ProblemObservationV4ProblemObservationV4IVLTSHigh","INFO");
-    
-  	  
-  	  
+	public static boolean validateProblemObservationV4IVLTSHigh(ProblemObservationV4 problemObservationV4,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "ProblemObservationV4ProblemObservationV4IVLTSHigh", "INFO");
+
 		if (VALIDATE_PROBLEM_OBSERVATION_V4IVLTS_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROBLEM_OBSERVATION_V4);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_PROBLEM_OBSERVATION_V4IVLTS_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_PROBLEM_OBSERVATION_V4IVLTS_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(EOCL_ENV.get().createQuery(oclExpression));
-			}
-			catch (ParserException pe) {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_PROBLEM_OBSERVATION_V4IVLTS_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PROBLEM_OBSERVATION_V4IVLTS_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(
+					EOCL_ENV.get().createQuery(oclExpression));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		Object oclResult = VALIDATE_PROBLEM_OBSERVATION_V4IVLTS_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(problemObservationV4);		
+		}
+
+		Object oclResult = VALIDATE_PROBLEM_OBSERVATION_V4IVLTS_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(
+			problemObservationV4);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-  			
+
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.PROBLEM_OBSERVATION_V4__PROBLEM_OBSERVATION_V4IVLTS_HIGH,
-						 ConsolPlugin.INSTANCE.getString("ProblemObservationV4ProblemObservationV4IVLTSHigh"),
-						 new Object [] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.PROBLEM_OBSERVATION_V4__PROBLEM_OBSERVATION_V4IVLTS_HIGH,
+							ConsolPlugin.INSTANCE.getString("ProblemObservationV4ProblemObservationV4IVLTSHigh"),
+							new Object[] { eObject }));
 				}
-				 
+
 			}
 			return oclResultSet.isEmpty();
 		}

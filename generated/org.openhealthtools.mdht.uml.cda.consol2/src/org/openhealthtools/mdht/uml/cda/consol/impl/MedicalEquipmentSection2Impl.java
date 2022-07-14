@@ -55,7 +55,8 @@ public class MedicalEquipmentSection2Impl extends MedicalEquipmentSectionImpl im
 	 */
 	public boolean validateMedicalEquipmentSection2TemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicalEquipmentSection2Operations.validateMedicalEquipmentSection2TemplateId(this, diagnostics, context);
+		return MedicalEquipmentSection2Operations.validateMedicalEquipmentSection2TemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -65,7 +66,8 @@ public class MedicalEquipmentSection2Impl extends MedicalEquipmentSectionImpl im
 	 */
 	public boolean validateMedicalEquipmentSection2MedicalEquipmentOrganizer(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicalEquipmentSection2Operations.validateMedicalEquipmentSection2MedicalEquipmentOrganizer(this, diagnostics, context);
+		return MedicalEquipmentSection2Operations.validateMedicalEquipmentSection2MedicalEquipmentOrganizer(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -75,7 +77,8 @@ public class MedicalEquipmentSection2Impl extends MedicalEquipmentSectionImpl im
 	 */
 	public boolean validateMedicalEquipmentSection2ProcedureActivityProcedure2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicalEquipmentSection2Operations.validateMedicalEquipmentSection2ProcedureActivityProcedure2(this, diagnostics, context);
+		return MedicalEquipmentSection2Operations.validateMedicalEquipmentSection2ProcedureActivityProcedure2(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -133,7 +136,8 @@ public class MedicalEquipmentSection2Impl extends MedicalEquipmentSectionImpl im
 	@Override
 	public boolean validateMedicalEquipmentSectionNonMedicinalSupplyActivity(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicalEquipmentSection2Operations.validateMedicalEquipmentSectionNonMedicinalSupplyActivity(this, diagnostics, context);
+		return MedicalEquipmentSection2Operations.validateMedicalEquipmentSectionNonMedicinalSupplyActivity(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -143,17 +147,17 @@ public class MedicalEquipmentSection2Impl extends MedicalEquipmentSectionImpl im
 	 */
 	@Override
 	public MedicalEquipmentSection2 init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public MedicalEquipmentSection2 init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // MedicalEquipmentSection2Impl

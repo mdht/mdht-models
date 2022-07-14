@@ -121,6 +121,18 @@ public class GenderIdentityObservationV3Impl extends SocialHistoryObservation2Im
 	 * @generated
 	 */
 	@Override
+	public boolean validateSocialHistoryObservation2TemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return GenderIdentityObservationV3Operations.validateSocialHistoryObservation2TemplateId(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public boolean validateSocialHistoryObservationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return GenderIdentityObservationV3Operations.validateSocialHistoryObservationCodeP(this, diagnostics, context);
 	}

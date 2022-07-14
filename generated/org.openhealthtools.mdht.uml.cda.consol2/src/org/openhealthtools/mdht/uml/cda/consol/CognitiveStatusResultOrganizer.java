@@ -52,9 +52,9 @@ public interface CognitiveStatusResultOrganizer extends ResultOrganizer {
 	public CognitiveStatusResultOrganizer init();
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public CognitiveStatusResultOrganizer init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // CognitiveStatusResultOrganizer

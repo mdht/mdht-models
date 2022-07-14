@@ -351,9 +351,9 @@ public interface USRealmHeader2 extends GeneralHeaderConstraints {
 	public USRealmHeader2 init();
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public USRealmHeader2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // USRealmHeader2

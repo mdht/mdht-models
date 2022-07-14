@@ -60,7 +60,8 @@ public class VitalSignObservation2Impl extends VitalSignObservationImpl implemen
 	 */
 	public boolean validateVitalSignObservationInterpretationCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return VitalSignObservation2Operations.validateVitalSignObservationInterpretationCodeP(this, diagnostics, context);
+		return VitalSignObservation2Operations.validateVitalSignObservationInterpretationCodeP(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -70,7 +71,8 @@ public class VitalSignObservation2Impl extends VitalSignObservationImpl implemen
 	 */
 	public boolean validateVitalSignObservation2AuthorParticipation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return VitalSignObservation2Operations.validateVitalSignObservation2AuthorParticipation(this, diagnostics, context);
+		return VitalSignObservation2Operations.validateVitalSignObservation2AuthorParticipation(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -102,7 +104,8 @@ public class VitalSignObservation2Impl extends VitalSignObservationImpl implemen
 	@Override
 	public boolean validateVitalSignObservationTextReferenceValue(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return VitalSignObservation2Operations.validateVitalSignObservationTextReferenceValue(this, diagnostics, context);
+		return VitalSignObservation2Operations.validateVitalSignObservationTextReferenceValue(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -143,7 +146,8 @@ public class VitalSignObservation2Impl extends VitalSignObservationImpl implemen
 	@Override
 	public boolean validateVitalSignObservationInterpretationCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return VitalSignObservation2Operations.validateVitalSignObservationInterpretationCode(this, diagnostics, context);
+		return VitalSignObservation2Operations.validateVitalSignObservationInterpretationCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -163,17 +167,17 @@ public class VitalSignObservation2Impl extends VitalSignObservationImpl implemen
 	 */
 	@Override
 	public VitalSignObservation2 init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public VitalSignObservation2 init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // VitalSignObservation2Impl

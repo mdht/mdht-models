@@ -47,7 +47,7 @@ public class DistinctIdentificationCodeObservationOperations extends ClinicalSta
 	 * @generated
 	 * @ordered
 	 */
-	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+	protected static final ThreadLocal<OCL> EOCL_ENV = new ThreadLocal<OCL>() {
 		@Override
 		public OCL initialValue() {
 			return OCL.newInstance();
@@ -81,7 +81,7 @@ public class DistinctIdentificationCodeObservationOperations extends ClinicalSta
 	 * @generated
 	 * @ordered
 	 */
-	protected static ThreadLocal<  Constraint> VALIDATE_DISTINCT_IDENTIFICATION_CODE_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_DISTINCT_IDENTIFICATION_CODE_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -96,44 +96,36 @@ public class DistinctIdentificationCodeObservationOperations extends ClinicalSta
 	public static boolean validateDistinctIdentificationCodeObservationTemplateId(
 			DistinctIdentificationCodeObservation distinctIdentificationCodeObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"DistinctIdentificationCodeObservationDistinctIdentificationCodeObservationTemplateId","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(
+			context, "DistinctIdentificationCodeObservationDistinctIdentificationCodeObservationTemplateId", "ERROR");
+
 		if (VALIDATE_DISTINCT_IDENTIFICATION_CODE_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DISTINCT_IDENTIFICATION_CODE_OBSERVATION);
 			try {
-				VALIDATE_DISTINCT_IDENTIFICATION_CODE_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_DISTINCT_IDENTIFICATION_CODE_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_DISTINCT_IDENTIFICATION_CODE_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_DISTINCT_IDENTIFICATION_CODE_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_DISTINCT_IDENTIFICATION_CODE_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(distinctIdentificationCodeObservation)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_DISTINCT_IDENTIFICATION_CODE_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				distinctIdentificationCodeObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.DISTINCT_IDENTIFICATION_CODE_OBSERVATION__DISTINCT_IDENTIFICATION_CODE_OBSERVATION_TEMPLATE_ID,
-						 ConsolPlugin.INSTANCE.getString("DistinctIdentificationCodeObservationDistinctIdentificationCodeObservationTemplateId"),
-						 new Object [] { distinctIdentificationCodeObservation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.DISTINCT_IDENTIFICATION_CODE_OBSERVATION__DISTINCT_IDENTIFICATION_CODE_OBSERVATION_TEMPLATE_ID,
+						ConsolPlugin.INSTANCE.getString(
+							"DistinctIdentificationCodeObservationDistinctIdentificationCodeObservationTemplateId"),
+						new Object[] { distinctIdentificationCodeObservation }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -157,7 +149,7 @@ public class DistinctIdentificationCodeObservationOperations extends ClinicalSta
 	 * @generated
 	 * @ordered
 	 */
-	protected static ThreadLocal<  Constraint> VALIDATE_DISTINCT_IDENTIFICATION_CODE_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_DISTINCT_IDENTIFICATION_CODE_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -172,56 +164,51 @@ public class DistinctIdentificationCodeObservationOperations extends ClinicalSta
 	public static boolean validateDistinctIdentificationCodeObservationCodeP(
 			DistinctIdentificationCodeObservation distinctIdentificationCodeObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"DistinctIdentificationCodeObservationDistinctIdentificationCodeObservationCodeP","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(
+			context, "DistinctIdentificationCodeObservationDistinctIdentificationCodeObservationCodeP", "ERROR");
+
 		if (VALIDATE_DISTINCT_IDENTIFICATION_CODE_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DISTINCT_IDENTIFICATION_CODE_OBSERVATION);
 			try {
-				VALIDATE_DISTINCT_IDENTIFICATION_CODE_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_DISTINCT_IDENTIFICATION_CODE_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_DISTINCT_IDENTIFICATION_CODE_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_DISTINCT_IDENTIFICATION_CODE_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_DISTINCT_IDENTIFICATION_CODE_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(distinctIdentificationCodeObservation)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_DISTINCT_IDENTIFICATION_CODE_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				distinctIdentificationCodeObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.DISTINCT_IDENTIFICATION_CODE_OBSERVATION__DISTINCT_IDENTIFICATION_CODE_OBSERVATION_CODE_P,
-						 ConsolPlugin.INSTANCE.getString("DistinctIdentificationCodeObservationDistinctIdentificationCodeObservationCodeP"),
-						 new Object [] { distinctIdentificationCodeObservation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.DISTINCT_IDENTIFICATION_CODE_OBSERVATION__DISTINCT_IDENTIFICATION_CODE_OBSERVATION_CODE_P,
+						ConsolPlugin.INSTANCE.getString(
+							"DistinctIdentificationCodeObservationDistinctIdentificationCodeObservationCodeP"),
+						new Object[] { distinctIdentificationCodeObservation }));
 			}
-			
+
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
-				Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.consol.DistinctIdentificationCodeObservationCodeP");
+				Collection<Object> passToken = (Collection<Object>) context.get(
+					"org.openhealthtools.mdht.uml.cda.consol.DistinctIdentificationCodeObservationCodeP");
 				if (passToken == null) {
 					// anticipate a reasonably healthy model
-					passToken = new java.util.ArrayList<Object>(3);
-					context.put("org.openhealthtools.mdht.uml.cda.consol.DistinctIdentificationCodeObservationCodeP", passToken);
+					passToken = new java.util.ArrayList<>(3);
+					context.put(
+						"org.openhealthtools.mdht.uml.cda.consol.DistinctIdentificationCodeObservationCodeP",
+						passToken);
 				}
 				passToken.add(distinctIdentificationCodeObservation);
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -235,9 +222,9 @@ public class DistinctIdentificationCodeObservationOperations extends ClinicalSta
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_DISTINCT_IDENTIFICATION_CODE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
-"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
-"value.code = 'C113843' and value.codeSystem = '2.16.840.1.113883.3.26.1.1')";
+	protected static final String VALIDATE_DISTINCT_IDENTIFICATION_CODE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and " +
+			"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in " +
+			"value.code = 'C113843' and value.codeSystem = '2.16.840.1.113883.3.26.1.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateDistinctIdentificationCodeObservationCode(DistinctIdentificationCodeObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Distinct Identification Code Observation Code</em>}' invariant operation.
@@ -247,7 +234,7 @@ public class DistinctIdentificationCodeObservationOperations extends ClinicalSta
 	 * @generated
 	 * @ordered
 	 */
-	protected static ThreadLocal<  Constraint> VALIDATE_DISTINCT_IDENTIFICATION_CODE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_DISTINCT_IDENTIFICATION_CODE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -262,50 +249,45 @@ public class DistinctIdentificationCodeObservationOperations extends ClinicalSta
 	public static boolean validateDistinctIdentificationCodeObservationCode(
 			DistinctIdentificationCodeObservation distinctIdentificationCodeObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-	
-	
-	
-  	  
-		Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.consol.DistinctIdentificationCodeObservationCodeP");
-		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(distinctIdentificationCodeObservation)) {
+
+		Object passToken = (context == null)
+				? null
+				: context.get("org.openhealthtools.mdht.uml.cda.consol.DistinctIdentificationCodeObservationCodeP");
+		if ((passToken instanceof Collection<?>) &&
+				((Collection<?>) passToken).contains(distinctIdentificationCodeObservation)) {
 			// I have a free pass to short-circuit
 			return true;
 		}
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"DistinctIdentificationCodeObservationDistinctIdentificationCodeObservationCode","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(
+			context, "DistinctIdentificationCodeObservationDistinctIdentificationCodeObservationCode", "ERROR");
+
 		if (VALIDATE_DISTINCT_IDENTIFICATION_CODE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DISTINCT_IDENTIFICATION_CODE_OBSERVATION);
 			try {
-				VALIDATE_DISTINCT_IDENTIFICATION_CODE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_DISTINCT_IDENTIFICATION_CODE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_DISTINCT_IDENTIFICATION_CODE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_DISTINCT_IDENTIFICATION_CODE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_DISTINCT_IDENTIFICATION_CODE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(distinctIdentificationCodeObservation)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_DISTINCT_IDENTIFICATION_CODE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				distinctIdentificationCodeObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.DISTINCT_IDENTIFICATION_CODE_OBSERVATION__DISTINCT_IDENTIFICATION_CODE_OBSERVATION_CODE,
-						 ConsolPlugin.INSTANCE.getString("DistinctIdentificationCodeObservationDistinctIdentificationCodeObservationCode"),
-						 new Object [] { distinctIdentificationCodeObservation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.DISTINCT_IDENTIFICATION_CODE_OBSERVATION__DISTINCT_IDENTIFICATION_CODE_OBSERVATION_CODE,
+						ConsolPlugin.INSTANCE.getString(
+							"DistinctIdentificationCodeObservationDistinctIdentificationCodeObservationCode"),
+						new Object[] { distinctIdentificationCodeObservation }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -329,7 +311,7 @@ public class DistinctIdentificationCodeObservationOperations extends ClinicalSta
 	 * @generated
 	 * @ordered
 	 */
-	protected static ThreadLocal<  Constraint> VALIDATE_DISTINCT_IDENTIFICATION_CODE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_DISTINCT_IDENTIFICATION_CODE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -344,44 +326,36 @@ public class DistinctIdentificationCodeObservationOperations extends ClinicalSta
 	public static boolean validateDistinctIdentificationCodeObservationValue(
 			DistinctIdentificationCodeObservation distinctIdentificationCodeObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"DistinctIdentificationCodeObservationDistinctIdentificationCodeObservationValue","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(
+			context, "DistinctIdentificationCodeObservationDistinctIdentificationCodeObservationValue", "ERROR");
+
 		if (VALIDATE_DISTINCT_IDENTIFICATION_CODE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DISTINCT_IDENTIFICATION_CODE_OBSERVATION);
 			try {
-				VALIDATE_DISTINCT_IDENTIFICATION_CODE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_DISTINCT_IDENTIFICATION_CODE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_DISTINCT_IDENTIFICATION_CODE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_DISTINCT_IDENTIFICATION_CODE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_DISTINCT_IDENTIFICATION_CODE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(distinctIdentificationCodeObservation)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_DISTINCT_IDENTIFICATION_CODE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				distinctIdentificationCodeObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.DISTINCT_IDENTIFICATION_CODE_OBSERVATION__DISTINCT_IDENTIFICATION_CODE_OBSERVATION_VALUE,
-						 ConsolPlugin.INSTANCE.getString("DistinctIdentificationCodeObservationDistinctIdentificationCodeObservationValue"),
-						 new Object [] { distinctIdentificationCodeObservation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.DISTINCT_IDENTIFICATION_CODE_OBSERVATION__DISTINCT_IDENTIFICATION_CODE_OBSERVATION_VALUE,
+						ConsolPlugin.INSTANCE.getString(
+							"DistinctIdentificationCodeObservationDistinctIdentificationCodeObservationValue"),
+						new Object[] { distinctIdentificationCodeObservation }));
 			}
-			 
+
 			return false;
 		}
 		return true;

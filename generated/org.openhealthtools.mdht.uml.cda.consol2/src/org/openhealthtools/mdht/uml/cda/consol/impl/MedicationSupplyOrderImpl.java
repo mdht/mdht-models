@@ -57,7 +57,8 @@ public class MedicationSupplyOrderImpl extends SupplyImpl implements MedicationS
 	 */
 	public boolean validateMedicationSupplyOrderInstructionInversionInd(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationSupplyOrderOperations.validateMedicationSupplyOrderInstructionInversionInd(this, diagnostics, context);
+		return MedicationSupplyOrderOperations.validateMedicationSupplyOrderInstructionInversionInd(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -67,7 +68,8 @@ public class MedicationSupplyOrderImpl extends SupplyImpl implements MedicationS
 	 */
 	public boolean validateMedicationSupplyOrderEffectiveTimeHigh(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationSupplyOrderOperations.validateMedicationSupplyOrderEffectiveTimeHigh(this, diagnostics, context);
+		return MedicationSupplyOrderOperations.validateMedicationSupplyOrderEffectiveTimeHigh(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -77,7 +79,8 @@ public class MedicationSupplyOrderImpl extends SupplyImpl implements MedicationS
 	 */
 	public boolean validateMedicationSupplyOrderContainsMedicationOrImmunization(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationSupplyOrderOperations.validateMedicationSupplyOrderContainsMedicationOrImmunization(this, diagnostics, context);
+		return MedicationSupplyOrderOperations.validateMedicationSupplyOrderContainsMedicationOrImmunization(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -186,16 +189,16 @@ public class MedicationSupplyOrderImpl extends SupplyImpl implements MedicationS
 	 * @generated
 	 */
 	public MedicationSupplyOrder init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public MedicationSupplyOrder init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // MedicationSupplyOrderImpl

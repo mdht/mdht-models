@@ -245,9 +245,9 @@ public interface PlanOfCareSection extends Section {
 	public PlanOfCareSection init();
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public PlanOfCareSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // PlanOfCareSection

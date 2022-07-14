@@ -58,7 +58,8 @@ public interface AssessmentScaleSupportingObservationV2 extends Observation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined())'"
 	 * @generated
 	 */
-	boolean validateAssessmentScaleSupportingObservationV2StatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateAssessmentScaleSupportingObservationV2StatusCodeP(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -96,7 +97,8 @@ public interface AssessmentScaleSupportingObservationV2 extends Observation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())'"
 	 * @generated
 	 */
-	boolean validateAssessmentScaleSupportingObservationV2CodeP(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateAssessmentScaleSupportingObservationV2CodeP(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -108,7 +110,8 @@ public interface AssessmentScaleSupportingObservationV2 extends Observation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and \nlet value : datatypes::CD = self.code.oclAsType(datatypes::CD) in \nvalue.codeSystem = \'2.16.840.1.113883.6.1\')'"
 	 * @generated
 	 */
-	boolean validateAssessmentScaleSupportingObservationV2Code(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateAssessmentScaleSupportingObservationV2Code(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -144,9 +147,9 @@ public interface AssessmentScaleSupportingObservationV2 extends Observation {
 	public AssessmentScaleSupportingObservationV2 init();
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public AssessmentScaleSupportingObservationV2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // AssessmentScaleSupportingObservationV2

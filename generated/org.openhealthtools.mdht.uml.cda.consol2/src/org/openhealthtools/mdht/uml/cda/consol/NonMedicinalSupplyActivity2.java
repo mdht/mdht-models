@@ -96,9 +96,9 @@ public interface NonMedicinalSupplyActivity2 extends NonMedicinalSupplyActivity 
 	public NonMedicinalSupplyActivity2 init();
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public NonMedicinalSupplyActivity2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // NonMedicinalSupplyActivity2

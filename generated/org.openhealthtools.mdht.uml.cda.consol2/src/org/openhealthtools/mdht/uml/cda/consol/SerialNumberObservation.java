@@ -77,10 +77,10 @@ public interface SerialNumberObservation extends Observation {
 	public SerialNumberObservation init();
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public SerialNumberObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
 
 } // SerialNumberObservation

@@ -89,9 +89,9 @@ public interface ReasonForVisitSection extends Section {
 	public ReasonForVisitSection init();
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public ReasonForVisitSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ReasonForVisitSection

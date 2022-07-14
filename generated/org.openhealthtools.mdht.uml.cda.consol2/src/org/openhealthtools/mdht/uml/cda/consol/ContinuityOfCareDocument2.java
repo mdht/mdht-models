@@ -636,9 +636,9 @@ public interface ContinuityOfCareDocument2 extends USRealmHeader2 {
 	public ContinuityOfCareDocument2 init();
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public ContinuityOfCareDocument2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ContinuityOfCareDocument2

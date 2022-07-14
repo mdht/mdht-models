@@ -184,9 +184,9 @@ public interface NutritionalStatusObservation extends Observation {
 	public NutritionalStatusObservation init();
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public NutritionalStatusObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // NutritionalStatusObservation

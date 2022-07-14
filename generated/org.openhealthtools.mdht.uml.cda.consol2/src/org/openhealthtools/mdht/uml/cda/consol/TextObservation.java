@@ -193,9 +193,9 @@ public interface TextObservation extends Observation {
 	public TextObservation init();
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public TextObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // TextObservation

@@ -61,9 +61,9 @@ public interface ProblemSectionEntriesOptional2 extends ProblemSectionEntriesOpt
 	public ProblemSectionEntriesOptional2 init();
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public ProblemSectionEntriesOptional2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ProblemSectionEntriesOptional2

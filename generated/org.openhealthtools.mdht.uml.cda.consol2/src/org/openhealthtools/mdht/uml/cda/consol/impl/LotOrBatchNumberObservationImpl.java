@@ -50,7 +50,8 @@ public class LotOrBatchNumberObservationImpl extends ObservationImpl implements 
 	 */
 	public boolean validateLotOrBatchNumberObservationTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return LotOrBatchNumberObservationOperations.validateLotOrBatchNumberObservationTemplateId(this, diagnostics, context);
+		return LotOrBatchNumberObservationOperations.validateLotOrBatchNumberObservationTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -59,7 +60,8 @@ public class LotOrBatchNumberObservationImpl extends ObservationImpl implements 
 	 * @generated
 	 */
 	public boolean validateLotOrBatchNumberObservationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return LotOrBatchNumberObservationOperations.validateLotOrBatchNumberObservationCodeP(this, diagnostics, context);
+		return LotOrBatchNumberObservationOperations.validateLotOrBatchNumberObservationCodeP(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -68,7 +70,8 @@ public class LotOrBatchNumberObservationImpl extends ObservationImpl implements 
 	 * @generated
 	 */
 	public boolean validateLotOrBatchNumberObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return LotOrBatchNumberObservationOperations.validateLotOrBatchNumberObservationCode(this, diagnostics, context);
+		return LotOrBatchNumberObservationOperations.validateLotOrBatchNumberObservationCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -77,7 +80,8 @@ public class LotOrBatchNumberObservationImpl extends ObservationImpl implements 
 	 * @generated
 	 */
 	public boolean validateLotOrBatchNumberObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return LotOrBatchNumberObservationOperations.validateLotOrBatchNumberObservationValue(this, diagnostics, context);
+		return LotOrBatchNumberObservationOperations.validateLotOrBatchNumberObservationValue(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -86,17 +90,17 @@ public class LotOrBatchNumberObservationImpl extends ObservationImpl implements 
 	 * @generated
 	 */
 	public LotOrBatchNumberObservation init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public LotOrBatchNumberObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 
 } // LotOrBatchNumberObservationImpl

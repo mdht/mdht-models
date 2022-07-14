@@ -52,7 +52,8 @@ public class MedicationSupplyOrder2Impl extends MedicationSupplyOrderImpl implem
 	 */
 	public boolean validateMedicationSupplyOrder2ContainsMedicationInformation2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationSupplyOrder2Operations.validateMedicationSupplyOrder2ContainsMedicationInformation2(this, diagnostics, context);
+		return MedicationSupplyOrder2Operations.validateMedicationSupplyOrder2ContainsMedicationInformation2(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -62,7 +63,8 @@ public class MedicationSupplyOrder2Impl extends MedicationSupplyOrderImpl implem
 	 */
 	public boolean validateMedicationSupplyOrder2ContainsImmunizationMedicationInformation2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationSupplyOrder2Operations.validateMedicationSupplyOrder2ContainsImmunizationMedicationInformation2(this, diagnostics, context);
+		return MedicationSupplyOrder2Operations.validateMedicationSupplyOrder2ContainsImmunizationMedicationInformation2(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -100,7 +102,8 @@ public class MedicationSupplyOrder2Impl extends MedicationSupplyOrderImpl implem
 	@Override
 	public boolean validateMedicationSupplyOrderContainsMedicationOrImmunization(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationSupplyOrder2Operations.validateMedicationSupplyOrderContainsMedicationOrImmunization(this, diagnostics, context);
+		return MedicationSupplyOrder2Operations.validateMedicationSupplyOrderContainsMedicationOrImmunization(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -111,7 +114,8 @@ public class MedicationSupplyOrder2Impl extends MedicationSupplyOrderImpl implem
 	@Override
 	public boolean validateMedicationSupplyOrderInstructionInversionInd(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationSupplyOrder2Operations.validateMedicationSupplyOrderInstructionInversionInd(this, diagnostics, context);
+		return MedicationSupplyOrder2Operations.validateMedicationSupplyOrderInstructionInversionInd(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -151,17 +155,17 @@ public class MedicationSupplyOrder2Impl extends MedicationSupplyOrderImpl implem
 	 */
 	@Override
 	public MedicationSupplyOrder2 init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public MedicationSupplyOrder2 init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // MedicationSupplyOrder2Impl

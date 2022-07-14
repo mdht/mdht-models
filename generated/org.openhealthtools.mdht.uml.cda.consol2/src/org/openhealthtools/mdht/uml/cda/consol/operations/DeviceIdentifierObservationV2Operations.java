@@ -81,7 +81,7 @@ public class DeviceIdentifierObservationV2Operations extends ClinicalStatementOp
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_DEVICE_IDENTIFIER_OBSERVATION_V2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_DEVICE_IDENTIFIER_OBSERVATION_V2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -97,44 +97,36 @@ public class DeviceIdentifierObservationV2Operations extends ClinicalStatementOp
 	public static boolean validateDeviceIdentifierObservationV2TemplateId(
 			DeviceIdentifierObservationV2 deviceIdentifierObservationV2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"DeviceIdentifierObservationV2DeviceIdentifierObservationV2TemplateId","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(
+			context, "DeviceIdentifierObservationV2DeviceIdentifierObservationV2TemplateId", "ERROR");
+
 		if (VALIDATE_DEVICE_IDENTIFIER_OBSERVATION_V2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DEVICE_IDENTIFIER_OBSERVATION_V2);
 			try {
-				VALIDATE_DEVICE_IDENTIFIER_OBSERVATION_V2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_DEVICE_IDENTIFIER_OBSERVATION_V2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_DEVICE_IDENTIFIER_OBSERVATION_V2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_DEVICE_IDENTIFIER_OBSERVATION_V2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_DEVICE_IDENTIFIER_OBSERVATION_V2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(deviceIdentifierObservationV2)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_DEVICE_IDENTIFIER_OBSERVATION_V2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				deviceIdentifierObservationV2)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.DEVICE_IDENTIFIER_OBSERVATION_V2__DEVICE_IDENTIFIER_OBSERVATION_V2_TEMPLATE_ID,
-						 ConsolPlugin.INSTANCE.getString("DeviceIdentifierObservationV2DeviceIdentifierObservationV2TemplateId"),
-						 new Object [] { deviceIdentifierObservationV2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.DEVICE_IDENTIFIER_OBSERVATION_V2__DEVICE_IDENTIFIER_OBSERVATION_V2_TEMPLATE_ID,
+						ConsolPlugin.INSTANCE.getString(
+							"DeviceIdentifierObservationV2DeviceIdentifierObservationV2TemplateId"),
+						new Object[] { deviceIdentifierObservationV2 }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -159,7 +151,7 @@ public class DeviceIdentifierObservationV2Operations extends ClinicalStatementOp
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_DEVICE_IDENTIFIER_OBSERVATION_V2_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_DEVICE_IDENTIFIER_OBSERVATION_V2_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -175,56 +167,49 @@ public class DeviceIdentifierObservationV2Operations extends ClinicalStatementOp
 	public static boolean validateDeviceIdentifierObservationV2CodeP(
 			DeviceIdentifierObservationV2 deviceIdentifierObservationV2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"DeviceIdentifierObservationV2DeviceIdentifierObservationV2CodeP","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "DeviceIdentifierObservationV2DeviceIdentifierObservationV2CodeP", "ERROR");
+
 		if (VALIDATE_DEVICE_IDENTIFIER_OBSERVATION_V2_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DEVICE_IDENTIFIER_OBSERVATION_V2);
 			try {
-				VALIDATE_DEVICE_IDENTIFIER_OBSERVATION_V2_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_DEVICE_IDENTIFIER_OBSERVATION_V2_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_DEVICE_IDENTIFIER_OBSERVATION_V2_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_DEVICE_IDENTIFIER_OBSERVATION_V2_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_DEVICE_IDENTIFIER_OBSERVATION_V2_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(deviceIdentifierObservationV2)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_DEVICE_IDENTIFIER_OBSERVATION_V2_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				deviceIdentifierObservationV2)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.DEVICE_IDENTIFIER_OBSERVATION_V2__DEVICE_IDENTIFIER_OBSERVATION_V2_CODE_P,
-						 ConsolPlugin.INSTANCE.getString("DeviceIdentifierObservationV2DeviceIdentifierObservationV2CodeP"),
-						 new Object [] { deviceIdentifierObservationV2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.DEVICE_IDENTIFIER_OBSERVATION_V2__DEVICE_IDENTIFIER_OBSERVATION_V2_CODE_P,
+						ConsolPlugin.INSTANCE.getString(
+							"DeviceIdentifierObservationV2DeviceIdentifierObservationV2CodeP"),
+						new Object[] { deviceIdentifierObservationV2 }));
 			}
-			
+
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
-				Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.consol.DeviceIdentifierObservationV2CodeP");
+				Collection<Object> passToken = (Collection<Object>) context.get(
+					"org.openhealthtools.mdht.uml.cda.consol.DeviceIdentifierObservationV2CodeP");
 				if (passToken == null) {
 					// anticipate a reasonably healthy model
-					passToken = new java.util.ArrayList<Object>(3);
-					context.put("org.openhealthtools.mdht.uml.cda.consol.DeviceIdentifierObservationV2CodeP", passToken);
+					passToken = new java.util.ArrayList<>(3);
+					context.put(
+						"org.openhealthtools.mdht.uml.cda.consol.DeviceIdentifierObservationV2CodeP", passToken);
 				}
 				passToken.add(deviceIdentifierObservationV2);
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -238,9 +223,9 @@ public class DeviceIdentifierObservationV2Operations extends ClinicalStatementOp
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_DEVICE_IDENTIFIER_OBSERVATION_V2_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
-"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
-"value.code = 'C101722' and value.codeSystem = '2.16.840.1.113883.3.26.1.1')";
+	protected static final String VALIDATE_DEVICE_IDENTIFIER_OBSERVATION_V2_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and " +
+			"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in " +
+			"value.code = 'C101722' and value.codeSystem = '2.16.840.1.113883.3.26.1.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateDeviceIdentifierObservationV2Code(DeviceIdentifierObservationV2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Device Identifier Observation V2 Code</em>}' invariant operation.
@@ -251,7 +236,7 @@ public class DeviceIdentifierObservationV2Operations extends ClinicalStatementOp
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_DEVICE_IDENTIFIER_OBSERVATION_V2_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_DEVICE_IDENTIFIER_OBSERVATION_V2_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -267,50 +252,44 @@ public class DeviceIdentifierObservationV2Operations extends ClinicalStatementOp
 	public static boolean validateDeviceIdentifierObservationV2Code(
 			DeviceIdentifierObservationV2 deviceIdentifierObservationV2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-	
-	
-	
-  	  
-		Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.consol.DeviceIdentifierObservationV2CodeP");
-		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(deviceIdentifierObservationV2)) {
+
+		Object passToken = (context == null)
+				? null
+				: context.get("org.openhealthtools.mdht.uml.cda.consol.DeviceIdentifierObservationV2CodeP");
+		if ((passToken instanceof Collection<?>) &&
+				((Collection<?>) passToken).contains(deviceIdentifierObservationV2)) {
 			// I have a free pass to short-circuit
 			return true;
 		}
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"DeviceIdentifierObservationV2DeviceIdentifierObservationV2Code","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "DeviceIdentifierObservationV2DeviceIdentifierObservationV2Code", "ERROR");
+
 		if (VALIDATE_DEVICE_IDENTIFIER_OBSERVATION_V2_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DEVICE_IDENTIFIER_OBSERVATION_V2);
 			try {
-				VALIDATE_DEVICE_IDENTIFIER_OBSERVATION_V2_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_DEVICE_IDENTIFIER_OBSERVATION_V2_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_DEVICE_IDENTIFIER_OBSERVATION_V2_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_DEVICE_IDENTIFIER_OBSERVATION_V2_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_DEVICE_IDENTIFIER_OBSERVATION_V2_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(deviceIdentifierObservationV2)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_DEVICE_IDENTIFIER_OBSERVATION_V2_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				deviceIdentifierObservationV2)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.DEVICE_IDENTIFIER_OBSERVATION_V2__DEVICE_IDENTIFIER_OBSERVATION_V2_CODE,
-						 ConsolPlugin.INSTANCE.getString("DeviceIdentifierObservationV2DeviceIdentifierObservationV2Code"),
-						 new Object [] { deviceIdentifierObservationV2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.DEVICE_IDENTIFIER_OBSERVATION_V2__DEVICE_IDENTIFIER_OBSERVATION_V2_CODE,
+						ConsolPlugin.INSTANCE.getString(
+							"DeviceIdentifierObservationV2DeviceIdentifierObservationV2Code"),
+						new Object[] { deviceIdentifierObservationV2 }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -335,7 +314,7 @@ public class DeviceIdentifierObservationV2Operations extends ClinicalStatementOp
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_DEVICE_IDENTIFIER_OBSERVATION_V2_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_DEVICE_IDENTIFIER_OBSERVATION_V2_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -351,44 +330,35 @@ public class DeviceIdentifierObservationV2Operations extends ClinicalStatementOp
 	public static boolean validateDeviceIdentifierObservationV2Value(
 			DeviceIdentifierObservationV2 deviceIdentifierObservationV2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"DeviceIdentifierObservationV2DeviceIdentifierObservationV2Value","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "DeviceIdentifierObservationV2DeviceIdentifierObservationV2Value", "ERROR");
+
 		if (VALIDATE_DEVICE_IDENTIFIER_OBSERVATION_V2_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DEVICE_IDENTIFIER_OBSERVATION_V2);
 			try {
-				VALIDATE_DEVICE_IDENTIFIER_OBSERVATION_V2_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_DEVICE_IDENTIFIER_OBSERVATION_V2_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_DEVICE_IDENTIFIER_OBSERVATION_V2_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_DEVICE_IDENTIFIER_OBSERVATION_V2_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_DEVICE_IDENTIFIER_OBSERVATION_V2_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(deviceIdentifierObservationV2)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_DEVICE_IDENTIFIER_OBSERVATION_V2_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				deviceIdentifierObservationV2)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.DEVICE_IDENTIFIER_OBSERVATION_V2__DEVICE_IDENTIFIER_OBSERVATION_V2_VALUE,
-						 ConsolPlugin.INSTANCE.getString("DeviceIdentifierObservationV2DeviceIdentifierObservationV2Value"),
-						 new Object [] { deviceIdentifierObservationV2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.DEVICE_IDENTIFIER_OBSERVATION_V2__DEVICE_IDENTIFIER_OBSERVATION_V2_VALUE,
+						ConsolPlugin.INSTANCE.getString(
+							"DeviceIdentifierObservationV2DeviceIdentifierObservationV2Value"),
+						new Object[] { deviceIdentifierObservationV2 }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -414,7 +384,7 @@ public class DeviceIdentifierObservationV2Operations extends ClinicalStatementOp
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<  Constraint> VALIDATE_DEVICE_IDENTIFIER_OBSERVATION_V2IIUD_IISSUINGAGENCY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+	protected static ThreadLocal<Constraint> VALIDATE_DEVICE_IDENTIFIER_OBSERVATION_V2IIUD_IISSUINGAGENCY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -430,44 +400,40 @@ public class DeviceIdentifierObservationV2Operations extends ClinicalStatementOp
 	public static boolean validateDeviceIdentifierObservationV2IIUDIissuingagency(
 			DeviceIdentifierObservationV2 deviceIdentifierObservationV2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"DeviceIdentifierObservationV2DeviceIdentifierObservationV2IIUDIissuingagency","null");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(
+			context, "DeviceIdentifierObservationV2DeviceIdentifierObservationV2IIUDIissuingagency", "null");
+
 		if (VALIDATE_DEVICE_IDENTIFIER_OBSERVATION_V2IIUD_IISSUINGAGENCY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DEVICE_IDENTIFIER_OBSERVATION_V2);
 			try {
-				VALIDATE_DEVICE_IDENTIFIER_OBSERVATION_V2IIUD_IISSUINGAGENCY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_DEVICE_IDENTIFIER_OBSERVATION_V2IIUD_IISSUINGAGENCY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			}
-			catch (ParserException pe) {
+				VALIDATE_DEVICE_IDENTIFIER_OBSERVATION_V2IIUD_IISSUINGAGENCY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_DEVICE_IDENTIFIER_OBSERVATION_V2IIUD_IISSUINGAGENCY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		if (!EOCL_ENV.get().createQuery(VALIDATE_DEVICE_IDENTIFIER_OBSERVATION_V2IIUD_IISSUINGAGENCY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(deviceIdentifierObservationV2)) {
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_DEVICE_IDENTIFIER_OBSERVATION_V2IIUD_IISSUINGAGENCY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				deviceIdentifierObservationV2)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.DEVICE_IDENTIFIER_OBSERVATION_V2__DEVICE_IDENTIFIER_OBSERVATION_V2IIUD_IISSUINGAGENCY,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DeviceIdentifierObservationV2DeviceIdentifierObservationV2IIUDIissuingagency", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(deviceIdentifierObservationV2, context) }),
-						 new Object [] { deviceIdentifierObservationV2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.DEVICE_IDENTIFIER_OBSERVATION_V2__DEVICE_IDENTIFIER_OBSERVATION_V2IIUD_IISSUINGAGENCY,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"DeviceIdentifierObservationV2DeviceIdentifierObservationV2IIUDIissuingagency",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										deviceIdentifierObservationV2, context) }),
+						new Object[] { deviceIdentifierObservationV2 }));
 			}
-			 
+
 			return false;
 		}
 		return true;
@@ -493,7 +459,7 @@ public class DeviceIdentifierObservationV2Operations extends ClinicalStatementOp
 	 * @ordered
 	 */
 
-	protected static ThreadLocal< Query<?, ?, ?> > VALIDATE_DEVICE_IDENTIFIER_OBSERVATION_V2II_ROOT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal< Query<?, ?, ?> >();
+	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_DEVICE_IDENTIFIER_OBSERVATION_V2II_ROOT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -509,49 +475,39 @@ public class DeviceIdentifierObservationV2Operations extends ClinicalStatementOp
 	public static boolean validateDeviceIdentifierObservationV2IIRoot(
 			DeviceIdentifierObservationV2 deviceIdentifierObservationV2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"DeviceIdentifierObservationV2DeviceIdentifierObservationV2IIRoot","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(context, "DeviceIdentifierObservationV2DeviceIdentifierObservationV2IIRoot", "ERROR");
+
 		if (VALIDATE_DEVICE_IDENTIFIER_OBSERVATION_V2II_ROOT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DEVICE_IDENTIFIER_OBSERVATION_V2);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_DEVICE_IDENTIFIER_OBSERVATION_V2II_ROOT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_DEVICE_IDENTIFIER_OBSERVATION_V2II_ROOT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(EOCL_ENV.get().createQuery(oclExpression));
-			}
-			catch (ParserException pe) {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_DEVICE_IDENTIFIER_OBSERVATION_V2II_ROOT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DEVICE_IDENTIFIER_OBSERVATION_V2II_ROOT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(
+					EOCL_ENV.get().createQuery(oclExpression));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		Object oclResult = VALIDATE_DEVICE_IDENTIFIER_OBSERVATION_V2II_ROOT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(deviceIdentifierObservationV2);		
+		}
+
+		Object oclResult = VALIDATE_DEVICE_IDENTIFIER_OBSERVATION_V2II_ROOT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(
+			deviceIdentifierObservationV2);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-  			
+
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.DEVICE_IDENTIFIER_OBSERVATION_V2__DEVICE_IDENTIFIER_OBSERVATION_V2II_ROOT,
-						 ConsolPlugin.INSTANCE.getString("DeviceIdentifierObservationV2DeviceIdentifierObservationV2IIRoot"),
-						 new Object [] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.DEVICE_IDENTIFIER_OBSERVATION_V2__DEVICE_IDENTIFIER_OBSERVATION_V2II_ROOT,
+							ConsolPlugin.INSTANCE.getString(
+								"DeviceIdentifierObservationV2DeviceIdentifierObservationV2IIRoot"),
+							new Object[] { eObject }));
 				}
-				 
+
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -577,7 +533,7 @@ public class DeviceIdentifierObservationV2Operations extends ClinicalStatementOp
 	 * @ordered
 	 */
 
-	protected static ThreadLocal< Query<?, ?, ?> > VALIDATE_DEVICE_IDENTIFIER_OBSERVATION_V2II_EXTENSION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal< Query<?, ?, ?> >();
+	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_DEVICE_IDENTIFIER_OBSERVATION_V2II_EXTENSION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -593,49 +549,40 @@ public class DeviceIdentifierObservationV2Operations extends ClinicalStatementOp
 	public static boolean validateDeviceIdentifierObservationV2IIExtension(
 			DeviceIdentifierObservationV2 deviceIdentifierObservationV2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"DeviceIdentifierObservationV2DeviceIdentifierObservationV2IIExtension","WARNING");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(
+			context, "DeviceIdentifierObservationV2DeviceIdentifierObservationV2IIExtension", "WARNING");
+
 		if (VALIDATE_DEVICE_IDENTIFIER_OBSERVATION_V2II_EXTENSION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DEVICE_IDENTIFIER_OBSERVATION_V2);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_DEVICE_IDENTIFIER_OBSERVATION_V2II_EXTENSION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_DEVICE_IDENTIFIER_OBSERVATION_V2II_EXTENSION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(EOCL_ENV.get().createQuery(oclExpression));
-			}
-			catch (ParserException pe) {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_DEVICE_IDENTIFIER_OBSERVATION_V2II_EXTENSION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DEVICE_IDENTIFIER_OBSERVATION_V2II_EXTENSION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(
+					EOCL_ENV.get().createQuery(oclExpression));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		Object oclResult = VALIDATE_DEVICE_IDENTIFIER_OBSERVATION_V2II_EXTENSION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(deviceIdentifierObservationV2);		
+		}
+
+		Object oclResult = VALIDATE_DEVICE_IDENTIFIER_OBSERVATION_V2II_EXTENSION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(
+			deviceIdentifierObservationV2);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-  			
+
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.WARNING,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.DEVICE_IDENTIFIER_OBSERVATION_V2__DEVICE_IDENTIFIER_OBSERVATION_V2II_EXTENSION,
-						 ConsolPlugin.INSTANCE.getString("DeviceIdentifierObservationV2DeviceIdentifierObservationV2IIExtension"),
-						 new Object [] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.DEVICE_IDENTIFIER_OBSERVATION_V2__DEVICE_IDENTIFIER_OBSERVATION_V2II_EXTENSION,
+							ConsolPlugin.INSTANCE.getString(
+								"DeviceIdentifierObservationV2DeviceIdentifierObservationV2IIExtension"),
+							new Object[] { eObject }));
 				}
-				 
+
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -661,7 +608,7 @@ public class DeviceIdentifierObservationV2Operations extends ClinicalStatementOp
 	 * @ordered
 	 */
 
-	protected static ThreadLocal< Query<?, ?, ?> > VALIDATE_DEVICE_IDENTIFIER_OBSERVATION_V2II_DISPLAYABLE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal< Query<?, ?, ?> >();
+	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_DEVICE_IDENTIFIER_OBSERVATION_V2II_DISPLAYABLE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -677,49 +624,40 @@ public class DeviceIdentifierObservationV2Operations extends ClinicalStatementOp
 	public static boolean validateDeviceIdentifierObservationV2IIDisplayable(
 			DeviceIdentifierObservationV2 deviceIdentifierObservationV2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-	
-	
-	
-  	  
-  	  
-  	  
-  	  
-  	 
-  	 
-  	 
-    DatatypesUtil.increment(context,"DeviceIdentifierObservationV2DeviceIdentifierObservationV2IIDisplayable","ERROR");
-    
-  	  
-  	  
+
+		DatatypesUtil.increment(
+			context, "DeviceIdentifierObservationV2DeviceIdentifierObservationV2IIDisplayable", "ERROR");
+
 		if (VALIDATE_DEVICE_IDENTIFIER_OBSERVATION_V2II_DISPLAYABLE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
-		
-	 
+
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DEVICE_IDENTIFIER_OBSERVATION_V2);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_DEVICE_IDENTIFIER_OBSERVATION_V2II_DISPLAYABLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_DEVICE_IDENTIFIER_OBSERVATION_V2II_DISPLAYABLE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(EOCL_ENV.get().createQuery(oclExpression));
-			}
-			catch (ParserException pe) {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_DEVICE_IDENTIFIER_OBSERVATION_V2II_DISPLAYABLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DEVICE_IDENTIFIER_OBSERVATION_V2II_DISPLAYABLE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(
+					EOCL_ENV.get().createQuery(oclExpression));
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-			}
-		 
-		Object oclResult = VALIDATE_DEVICE_IDENTIFIER_OBSERVATION_V2II_DISPLAYABLE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(deviceIdentifierObservationV2);		
+		}
+
+		Object oclResult = VALIDATE_DEVICE_IDENTIFIER_OBSERVATION_V2II_DISPLAYABLE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(
+			deviceIdentifierObservationV2);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-  			
+
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.DEVICE_IDENTIFIER_OBSERVATION_V2__DEVICE_IDENTIFIER_OBSERVATION_V2II_DISPLAYABLE,
-						 ConsolPlugin.INSTANCE.getString("DeviceIdentifierObservationV2DeviceIdentifierObservationV2IIDisplayable"),
-						 new Object [] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.DEVICE_IDENTIFIER_OBSERVATION_V2__DEVICE_IDENTIFIER_OBSERVATION_V2II_DISPLAYABLE,
+							ConsolPlugin.INSTANCE.getString(
+								"DeviceIdentifierObservationV2DeviceIdentifierObservationV2IIDisplayable"),
+							new Object[] { eObject }));
 				}
-				 
+
 			}
 			return oclResultSet.isEmpty();
 		}

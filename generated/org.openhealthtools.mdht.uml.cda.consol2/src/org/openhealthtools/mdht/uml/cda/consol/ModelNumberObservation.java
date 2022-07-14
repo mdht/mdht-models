@@ -77,10 +77,10 @@ public interface ModelNumberObservation extends Observation {
 	public ModelNumberObservation init();
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public ModelNumberObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
 
 } // ModelNumberObservation

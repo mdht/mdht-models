@@ -52,7 +52,8 @@ public class ProcedureActivityProcedureV3Impl extends ProcedureImpl implements P
 	 */
 	public boolean validateProcedureActivityProcedureV3TemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProcedureActivityProcedureV3Operations.validateProcedureActivityProcedureV3TemplateId(this, diagnostics, context);
+		return ProcedureActivityProcedureV3Operations.validateProcedureActivityProcedureV3TemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -61,7 +62,8 @@ public class ProcedureActivityProcedureV3Impl extends ProcedureImpl implements P
 	 * @generated
 	 */
 	public boolean validateProcedureActivityProcedureV3Id(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureActivityProcedureV3Operations.validateProcedureActivityProcedureV3Id(this, diagnostics, context);
+		return ProcedureActivityProcedureV3Operations.validateProcedureActivityProcedureV3Id(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -70,7 +72,8 @@ public class ProcedureActivityProcedureV3Impl extends ProcedureImpl implements P
 	 * @generated
 	 */
 	public boolean validateProcedureActivityProcedureV3Code(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureActivityProcedureV3Operations.validateProcedureActivityProcedureV3Code(this, diagnostics, context);
+		return ProcedureActivityProcedureV3Operations.validateProcedureActivityProcedureV3Code(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -80,7 +83,8 @@ public class ProcedureActivityProcedureV3Impl extends ProcedureImpl implements P
 	 */
 	public boolean validateProcedureActivityProcedureV3StatusCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProcedureActivityProcedureV3Operations.validateProcedureActivityProcedureV3StatusCodeP(this, diagnostics, context);
+		return ProcedureActivityProcedureV3Operations.validateProcedureActivityProcedureV3StatusCodeP(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -90,7 +94,8 @@ public class ProcedureActivityProcedureV3Impl extends ProcedureImpl implements P
 	 */
 	public boolean validateProcedureActivityProcedureV3StatusCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProcedureActivityProcedureV3Operations.validateProcedureActivityProcedureV3StatusCode(this, diagnostics, context);
+		return ProcedureActivityProcedureV3Operations.validateProcedureActivityProcedureV3StatusCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -100,7 +105,8 @@ public class ProcedureActivityProcedureV3Impl extends ProcedureImpl implements P
 	 */
 	public boolean validateProcedureActivityProcedureV3EffectiveTime(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProcedureActivityProcedureV3Operations.validateProcedureActivityProcedureV3EffectiveTime(this, diagnostics, context);
+		return ProcedureActivityProcedureV3Operations.validateProcedureActivityProcedureV3EffectiveTime(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -108,8 +114,10 @@ public class ProcedureActivityProcedureV3Impl extends ProcedureImpl implements P
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProcedureActivityProcedureV3PriorityCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureActivityProcedureV3Operations.validateProcedureActivityProcedureV3PriorityCodeP(this, diagnostics, context);
+	public boolean validateProcedureActivityProcedureV3PriorityCodeP(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ProcedureActivityProcedureV3Operations.validateProcedureActivityProcedureV3PriorityCodeP(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -119,7 +127,8 @@ public class ProcedureActivityProcedureV3Impl extends ProcedureImpl implements P
 	 */
 	public boolean validateProcedureActivityProcedureV3PriorityCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProcedureActivityProcedureV3Operations.validateProcedureActivityProcedureV3PriorityCode(this, diagnostics, context);
+		return ProcedureActivityProcedureV3Operations.validateProcedureActivityProcedureV3PriorityCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -129,7 +138,8 @@ public class ProcedureActivityProcedureV3Impl extends ProcedureImpl implements P
 	 */
 	public boolean validateProcedureActivityProcedureV3MethodCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProcedureActivityProcedureV3Operations.validateProcedureActivityProcedureV3MethodCode(this, diagnostics, context);
+		return ProcedureActivityProcedureV3Operations.validateProcedureActivityProcedureV3MethodCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -137,8 +147,10 @@ public class ProcedureActivityProcedureV3Impl extends ProcedureImpl implements P
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProcedureActivityProcedureV3TargetSiteCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureActivityProcedureV3Operations.validateProcedureActivityProcedureV3TargetSiteCodeP(this, diagnostics, context);
+	public boolean validateProcedureActivityProcedureV3TargetSiteCodeP(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ProcedureActivityProcedureV3Operations.validateProcedureActivityProcedureV3TargetSiteCodeP(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -148,7 +160,8 @@ public class ProcedureActivityProcedureV3Impl extends ProcedureImpl implements P
 	 */
 	public boolean validateProcedureActivityProcedureV3TargetSiteCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProcedureActivityProcedureV3Operations.validateProcedureActivityProcedureV3TargetSiteCode(this, diagnostics, context);
+		return ProcedureActivityProcedureV3Operations.validateProcedureActivityProcedureV3TargetSiteCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -158,7 +171,8 @@ public class ProcedureActivityProcedureV3Impl extends ProcedureImpl implements P
 	 */
 	public boolean validateProcedureActivityProcedureV3ClassCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProcedureActivityProcedureV3Operations.validateProcedureActivityProcedureV3ClassCode(this, diagnostics, context);
+		return ProcedureActivityProcedureV3Operations.validateProcedureActivityProcedureV3ClassCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -168,7 +182,8 @@ public class ProcedureActivityProcedureV3Impl extends ProcedureImpl implements P
 	 */
 	public boolean validateProcedureActivityProcedureV3MoodCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProcedureActivityProcedureV3Operations.validateProcedureActivityProcedureV3MoodCode(this, diagnostics, context);
+		return ProcedureActivityProcedureV3Operations.validateProcedureActivityProcedureV3MoodCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -177,16 +192,16 @@ public class ProcedureActivityProcedureV3Impl extends ProcedureImpl implements P
 	 * @generated
 	 */
 	public ProcedureActivityProcedureV3 init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public ProcedureActivityProcedureV3 init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // ProcedureActivityProcedureV3Impl

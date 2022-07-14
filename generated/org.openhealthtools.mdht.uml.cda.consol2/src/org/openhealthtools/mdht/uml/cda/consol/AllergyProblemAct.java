@@ -202,9 +202,9 @@ public interface AllergyProblemAct extends Act {
 	public AllergyProblemAct init();
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public AllergyProblemAct init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // AllergyProblemAct

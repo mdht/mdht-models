@@ -166,9 +166,9 @@ public interface HealthStatusObservation extends Observation {
 	public HealthStatusObservation init();
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public HealthStatusObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // HealthStatusObservation

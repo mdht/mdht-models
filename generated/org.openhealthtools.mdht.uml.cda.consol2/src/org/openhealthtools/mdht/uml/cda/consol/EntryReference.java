@@ -151,9 +151,9 @@ public interface EntryReference extends Act {
 	public EntryReference init();
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public EntryReference init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // EntryReference

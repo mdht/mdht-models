@@ -109,9 +109,9 @@ public interface CognitiveStatusProblemObservation extends ProblemObservation {
 	public CognitiveStatusProblemObservation init();
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public CognitiveStatusProblemObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // CognitiveStatusProblemObservation

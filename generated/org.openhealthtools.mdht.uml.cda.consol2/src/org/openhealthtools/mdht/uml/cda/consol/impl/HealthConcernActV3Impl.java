@@ -132,16 +132,16 @@ public class HealthConcernActV3Impl extends ActImpl implements HealthConcernActV
 	 * @generated
 	 */
 	public HealthConcernActV3 init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public HealthConcernActV3 init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // HealthConcernActV3Impl

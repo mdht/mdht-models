@@ -153,8 +153,10 @@ public class CareTeamOrganizerV2Impl extends OrganizerImpl implements CareTeamOr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateCareTeamOrganizerV2CareTeamTypeObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return CareTeamOrganizerV2Operations.validateCareTeamOrganizerV2CareTeamTypeObservation(this, diagnostics, context);
+	public boolean validateCareTeamOrganizerV2CareTeamTypeObservation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return CareTeamOrganizerV2Operations.validateCareTeamOrganizerV2CareTeamTypeObservation(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -162,7 +164,8 @@ public class CareTeamOrganizerV2Impl extends OrganizerImpl implements CareTeamOr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateCareTeamOrganizerV2CareTeamMemberActV2(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateCareTeamOrganizerV2CareTeamMemberActV2(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return CareTeamOrganizerV2Operations.validateCareTeamOrganizerV2CareTeamMemberActV2(this, diagnostics, context);
 	}
 
@@ -217,16 +220,16 @@ public class CareTeamOrganizerV2Impl extends OrganizerImpl implements CareTeamOr
 	 * @generated
 	 */
 	public CareTeamOrganizerV2 init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public CareTeamOrganizerV2 init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // CareTeamOrganizerV2Impl

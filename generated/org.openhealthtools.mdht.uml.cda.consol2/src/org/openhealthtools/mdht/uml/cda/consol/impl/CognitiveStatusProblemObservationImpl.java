@@ -56,7 +56,8 @@ public class CognitiveStatusProblemObservationImpl extends ProblemObservationImp
 	 */
 	public boolean validateCognitiveStatusProblemObservationMethodCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return CognitiveStatusProblemObservationOperations.validateCognitiveStatusProblemObservationMethodCode(this, diagnostics, context);
+		return CognitiveStatusProblemObservationOperations.validateCognitiveStatusProblemObservationMethodCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -66,7 +67,8 @@ public class CognitiveStatusProblemObservationImpl extends ProblemObservationImp
 	 */
 	public boolean validateCognitiveStatusProblemObservationNonMedicinalSupplyActivity(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return CognitiveStatusProblemObservationOperations.validateCognitiveStatusProblemObservationNonMedicinalSupplyActivity(this, diagnostics, context);
+		return CognitiveStatusProblemObservationOperations.validateCognitiveStatusProblemObservationNonMedicinalSupplyActivity(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -76,7 +78,8 @@ public class CognitiveStatusProblemObservationImpl extends ProblemObservationImp
 	 */
 	public boolean validateCognitiveStatusProblemObservationCaregiverCharacteristics(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return CognitiveStatusProblemObservationOperations.validateCognitiveStatusProblemObservationCaregiverCharacteristics(this, diagnostics, context);
+		return CognitiveStatusProblemObservationOperations.validateCognitiveStatusProblemObservationCaregiverCharacteristics(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -86,7 +89,8 @@ public class CognitiveStatusProblemObservationImpl extends ProblemObservationImp
 	 */
 	public boolean validateCognitiveStatusProblemObservationAssessmentScaleObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return CognitiveStatusProblemObservationOperations.validateCognitiveStatusProblemObservationAssessmentScaleObservation(this, diagnostics, context);
+		return CognitiveStatusProblemObservationOperations.validateCognitiveStatusProblemObservationAssessmentScaleObservation(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -124,7 +128,8 @@ public class CognitiveStatusProblemObservationImpl extends ProblemObservationImp
 	@Override
 	public boolean validateProblemObservationHasTextReference(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return CognitiveStatusProblemObservationOperations.validateProblemObservationHasTextReference(this, diagnostics, context);
+		return CognitiveStatusProblemObservationOperations.validateProblemObservationHasTextReference(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -135,7 +140,8 @@ public class CognitiveStatusProblemObservationImpl extends ProblemObservationImp
 	@Override
 	public boolean validateProblemObservationHasTextReferenceValue(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return CognitiveStatusProblemObservationOperations.validateProblemObservationHasTextReferenceValue(this, diagnostics, context);
+		return CognitiveStatusProblemObservationOperations.validateProblemObservationHasTextReferenceValue(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -145,7 +151,8 @@ public class CognitiveStatusProblemObservationImpl extends ProblemObservationImp
 	 */
 	@Override
 	public boolean validateProblemObservationHasOnsetDate(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return CognitiveStatusProblemObservationOperations.validateProblemObservationHasOnsetDate(this, diagnostics, context);
+		return CognitiveStatusProblemObservationOperations.validateProblemObservationHasOnsetDate(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -156,7 +163,8 @@ public class CognitiveStatusProblemObservationImpl extends ProblemObservationImp
 	@Override
 	public boolean validateProblemObservationHasResolutionDate(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return CognitiveStatusProblemObservationOperations.validateProblemObservationHasResolutionDate(this, diagnostics, context);
+		return CognitiveStatusProblemObservationOperations.validateProblemObservationHasResolutionDate(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -166,7 +174,8 @@ public class CognitiveStatusProblemObservationImpl extends ProblemObservationImp
 	 */
 	@Override
 	public boolean validateProblemObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return CognitiveStatusProblemObservationOperations.validateProblemObservationTemplateId(this, diagnostics, context);
+		return CognitiveStatusProblemObservationOperations.validateProblemObservationTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -176,7 +185,8 @@ public class CognitiveStatusProblemObservationImpl extends ProblemObservationImp
 	 */
 	@Override
 	public boolean validateProblemObservationClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return CognitiveStatusProblemObservationOperations.validateProblemObservationClassCode(this, diagnostics, context);
+		return CognitiveStatusProblemObservationOperations.validateProblemObservationClassCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -186,7 +196,8 @@ public class CognitiveStatusProblemObservationImpl extends ProblemObservationImp
 	 */
 	@Override
 	public boolean validateProblemObservationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return CognitiveStatusProblemObservationOperations.validateProblemObservationMoodCode(this, diagnostics, context);
+		return CognitiveStatusProblemObservationOperations.validateProblemObservationMoodCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -196,7 +207,8 @@ public class CognitiveStatusProblemObservationImpl extends ProblemObservationImp
 	 */
 	@Override
 	public boolean validateProblemObservationNegationInd(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return CognitiveStatusProblemObservationOperations.validateProblemObservationNegationInd(this, diagnostics, context);
+		return CognitiveStatusProblemObservationOperations.validateProblemObservationNegationInd(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -246,7 +258,8 @@ public class CognitiveStatusProblemObservationImpl extends ProblemObservationImp
 	 */
 	@Override
 	public boolean validateProblemObservationStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return CognitiveStatusProblemObservationOperations.validateProblemObservationStatusCode(this, diagnostics, context);
+		return CognitiveStatusProblemObservationOperations.validateProblemObservationStatusCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -256,7 +269,8 @@ public class CognitiveStatusProblemObservationImpl extends ProblemObservationImp
 	 */
 	@Override
 	public boolean validateProblemObservationEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return CognitiveStatusProblemObservationOperations.validateProblemObservationEffectiveTime(this, diagnostics, context);
+		return CognitiveStatusProblemObservationOperations.validateProblemObservationEffectiveTime(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -286,17 +300,17 @@ public class CognitiveStatusProblemObservationImpl extends ProblemObservationImp
 	 */
 	@Override
 	public CognitiveStatusProblemObservation init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public CognitiveStatusProblemObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // CognitiveStatusProblemObservationImpl

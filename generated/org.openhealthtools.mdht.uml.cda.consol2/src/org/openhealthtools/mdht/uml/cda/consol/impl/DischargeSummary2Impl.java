@@ -74,7 +74,8 @@ public class DischargeSummary2Impl extends USRealmHeader2Impl implements Dischar
 	 */
 	public boolean validateDischargeSummary2DoesNotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return DischargeSummary2Operations.validateDischargeSummary2DoesNotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection(this, diagnostics, context);
+		return DischargeSummary2Operations.validateDischargeSummary2DoesNotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -120,7 +121,8 @@ public class DischargeSummary2Impl extends USRealmHeader2Impl implements Dischar
 	 */
 	public boolean validateDischargeSummary2AllergiesSectionEntriesOptional2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return DischargeSummary2Operations.validateDischargeSummary2AllergiesSectionEntriesOptional2(this, diagnostics, context);
+		return DischargeSummary2Operations.validateDischargeSummary2AllergiesSectionEntriesOptional2(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -160,7 +162,8 @@ public class DischargeSummary2Impl extends USRealmHeader2Impl implements Dischar
 	 */
 	public boolean validateDischargeSummary2ChiefComplaintAndReasonForVisitSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return DischargeSummary2Operations.validateDischargeSummary2ChiefComplaintAndReasonForVisitSection(this, diagnostics, context);
+		return DischargeSummary2Operations.validateDischargeSummary2ChiefComplaintAndReasonForVisitSection(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -179,7 +182,8 @@ public class DischargeSummary2Impl extends USRealmHeader2Impl implements Dischar
 	 */
 	public boolean validateDischargeSummary2FunctionalStatusSection2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return DischargeSummary2Operations.validateDischargeSummary2FunctionalStatusSection2(this, diagnostics, context);
+		return DischargeSummary2Operations.validateDischargeSummary2FunctionalStatusSection2(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -189,7 +193,8 @@ public class DischargeSummary2Impl extends USRealmHeader2Impl implements Dischar
 	 */
 	public boolean validateDischargeSummary2HistoryOfPastIllnessSection2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return DischargeSummary2Operations.validateDischargeSummary2HistoryOfPastIllnessSection2(this, diagnostics, context);
+		return DischargeSummary2Operations.validateDischargeSummary2HistoryOfPastIllnessSection2(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -199,7 +204,8 @@ public class DischargeSummary2Impl extends USRealmHeader2Impl implements Dischar
 	 */
 	public boolean validateDischargeSummary2HistoryOfPresentIllnessSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return DischargeSummary2Operations.validateDischargeSummary2HistoryOfPresentIllnessSection(this, diagnostics, context);
+		return DischargeSummary2Operations.validateDischargeSummary2HistoryOfPresentIllnessSection(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -209,7 +215,8 @@ public class DischargeSummary2Impl extends USRealmHeader2Impl implements Dischar
 	 */
 	public boolean validateDischargeSummary2HospitalConsultationsSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return DischargeSummary2Operations.validateDischargeSummary2HospitalConsultationsSection(this, diagnostics, context);
+		return DischargeSummary2Operations.validateDischargeSummary2HospitalConsultationsSection(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -219,7 +226,8 @@ public class DischargeSummary2Impl extends USRealmHeader2Impl implements Dischar
 	 */
 	public boolean validateDischargeSummary2HospitalDischargeInstructionsSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return DischargeSummary2Operations.validateDischargeSummary2HospitalDischargeInstructionsSection(this, diagnostics, context);
+		return DischargeSummary2Operations.validateDischargeSummary2HospitalDischargeInstructionsSection(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -229,7 +237,8 @@ public class DischargeSummary2Impl extends USRealmHeader2Impl implements Dischar
 	 */
 	public boolean validateDischargeSummary2HospitalDischargePhysicalSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return DischargeSummary2Operations.validateDischargeSummary2HospitalDischargePhysicalSection(this, diagnostics, context);
+		return DischargeSummary2Operations.validateDischargeSummary2HospitalDischargePhysicalSection(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -239,7 +248,8 @@ public class DischargeSummary2Impl extends USRealmHeader2Impl implements Dischar
 	 */
 	public boolean validateDischargeSummary2HospitalDischargeStudiesSummarySection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return DischargeSummary2Operations.validateDischargeSummary2HospitalDischargeStudiesSummarySection(this, diagnostics, context);
+		return DischargeSummary2Operations.validateDischargeSummary2HospitalDischargeStudiesSummarySection(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -249,7 +259,8 @@ public class DischargeSummary2Impl extends USRealmHeader2Impl implements Dischar
 	 */
 	public boolean validateDischargeSummary2ImmunizationsSectionEntriesOptional2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return DischargeSummary2Operations.validateDischargeSummary2ImmunizationsSectionEntriesOptional2(this, diagnostics, context);
+		return DischargeSummary2Operations.validateDischargeSummary2ImmunizationsSectionEntriesOptional2(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -259,7 +270,8 @@ public class DischargeSummary2Impl extends USRealmHeader2Impl implements Dischar
 	 */
 	public boolean validateDischargeSummary2ProblemSectionEntriesOptional2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return DischargeSummary2Operations.validateDischargeSummary2ProblemSectionEntriesOptional2(this, diagnostics, context);
+		return DischargeSummary2Operations.validateDischargeSummary2ProblemSectionEntriesOptional2(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -269,7 +281,8 @@ public class DischargeSummary2Impl extends USRealmHeader2Impl implements Dischar
 	 */
 	public boolean validateDischargeSummary2ProceduresSectionEntriesOptional2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return DischargeSummary2Operations.validateDischargeSummary2ProceduresSectionEntriesOptional2(this, diagnostics, context);
+		return DischargeSummary2Operations.validateDischargeSummary2ProceduresSectionEntriesOptional2(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -309,7 +322,8 @@ public class DischargeSummary2Impl extends USRealmHeader2Impl implements Dischar
 	 */
 	public boolean validateDischargeSummary2VitalSignsSectionEntriesOptional2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return DischargeSummary2Operations.validateDischargeSummary2VitalSignsSectionEntriesOptional2(this, diagnostics, context);
+		return DischargeSummary2Operations.validateDischargeSummary2VitalSignsSectionEntriesOptional2(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -319,7 +333,8 @@ public class DischargeSummary2Impl extends USRealmHeader2Impl implements Dischar
 	 */
 	public boolean validateDischargeSummary2DischargeDiagnosisSection2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return DischargeSummary2Operations.validateDischargeSummary2DischargeDiagnosisSection2(this, diagnostics, context);
+		return DischargeSummary2Operations.validateDischargeSummary2DischargeDiagnosisSection2(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -329,7 +344,8 @@ public class DischargeSummary2Impl extends USRealmHeader2Impl implements Dischar
 	 */
 	public boolean validateDischargeSummary2DischargeMedicationsSectionEntriesOptional2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return DischargeSummary2Operations.validateDischargeSummary2DischargeMedicationsSectionEntriesOptional2(this, diagnostics, context);
+		return DischargeSummary2Operations.validateDischargeSummary2DischargeMedicationsSectionEntriesOptional2(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -349,7 +365,8 @@ public class DischargeSummary2Impl extends USRealmHeader2Impl implements Dischar
 	 */
 	public boolean validateDischargeSummary2AdmissionDiagnosisSection2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return DischargeSummary2Operations.validateDischargeSummary2AdmissionDiagnosisSection2(this, diagnostics, context);
+		return DischargeSummary2Operations.validateDischargeSummary2AdmissionDiagnosisSection2(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -359,7 +376,8 @@ public class DischargeSummary2Impl extends USRealmHeader2Impl implements Dischar
 	 */
 	public boolean validateDischargeSummary2AdmissionMedicationsSectionEntriesOptional2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return DischargeSummary2Operations.validateDischargeSummary2AdmissionMedicationsSectionEntriesOptional2(this, diagnostics, context);
+		return DischargeSummary2Operations.validateDischargeSummary2AdmissionMedicationsSectionEntriesOptional2(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -369,7 +387,8 @@ public class DischargeSummary2Impl extends USRealmHeader2Impl implements Dischar
 	 */
 	public boolean validateDischargeSummary2DischargeMedicationsSection2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return DischargeSummary2Operations.validateDischargeSummary2DischargeMedicationsSection2(this, diagnostics, context);
+		return DischargeSummary2Operations.validateDischargeSummary2DischargeMedicationsSection2(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -389,7 +408,8 @@ public class DischargeSummary2Impl extends USRealmHeader2Impl implements Dischar
 	 */
 	public boolean validateDischargeSummary2ParticipantIfParTypeCodeINDThenAEClassCodeIND(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return DischargeSummary2Operations.validateDischargeSummary2ParticipantIfParTypeCodeINDThenAEClassCodeIND(this, diagnostics, context);
+		return DischargeSummary2Operations.validateDischargeSummary2ParticipantIfParTypeCodeINDThenAEClassCodeIND(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -399,7 +419,8 @@ public class DischargeSummary2Impl extends USRealmHeader2Impl implements Dischar
 	 */
 	public boolean validateDischargeSummary2ComponentOfEncompassingEncounterIVLTSLow(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return DischargeSummary2Operations.validateDischargeSummary2ComponentOfEncompassingEncounterIVLTSLow(this, diagnostics, context);
+		return DischargeSummary2Operations.validateDischargeSummary2ComponentOfEncompassingEncounterIVLTSLow(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -409,7 +430,8 @@ public class DischargeSummary2Impl extends USRealmHeader2Impl implements Dischar
 	 */
 	public boolean validateDischargeSummary2ComponentOfEncompassingEncounterIVLTSHigh(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return DischargeSummary2Operations.validateDischargeSummary2ComponentOfEncompassingEncounterIVLTSHigh(this, diagnostics, context);
+		return DischargeSummary2Operations.validateDischargeSummary2ComponentOfEncompassingEncounterIVLTSHigh(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -419,7 +441,8 @@ public class DischargeSummary2Impl extends USRealmHeader2Impl implements Dischar
 	 */
 	public boolean validateDischargeSummary2ComponentOfEncompassingEncounterEncounterParticipantAssignedEntityAssignedPerson(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return DischargeSummary2Operations.validateDischargeSummary2ComponentOfEncompassingEncounterEncounterParticipantAssignedEntityAssignedPerson(this, diagnostics, context);
+		return DischargeSummary2Operations.validateDischargeSummary2ComponentOfEncompassingEncounterEncounterParticipantAssignedEntityAssignedPerson(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -429,7 +452,8 @@ public class DischargeSummary2Impl extends USRealmHeader2Impl implements Dischar
 	 */
 	public boolean validateDischargeSummary2ComponentOfEncompassingEncounterEncounterParticipantAssignedEntityRepresentedOrganization(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return DischargeSummary2Operations.validateDischargeSummary2ComponentOfEncompassingEncounterEncounterParticipantAssignedEntityRepresentedOrganization(this, diagnostics, context);
+		return DischargeSummary2Operations.validateDischargeSummary2ComponentOfEncompassingEncounterEncounterParticipantAssignedEntityRepresentedOrganization(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -439,7 +463,8 @@ public class DischargeSummary2Impl extends USRealmHeader2Impl implements Dischar
 	 */
 	public boolean validateDischargeSummary2ComponentOfEncompassingEncounterEncounterParticipantAssignedEntityHasPersonOrOrganization(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return DischargeSummary2Operations.validateDischargeSummary2ComponentOfEncompassingEncounterEncounterParticipantAssignedEntityHasPersonOrOrganization(this, diagnostics, context);
+		return DischargeSummary2Operations.validateDischargeSummary2ComponentOfEncompassingEncounterEncounterParticipantAssignedEntityHasPersonOrOrganization(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -449,7 +474,8 @@ public class DischargeSummary2Impl extends USRealmHeader2Impl implements Dischar
 	 */
 	public boolean validateDischargeSummary2ComponentOfEncompassingEncounterEncounterParticipantAssignedEntity(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return DischargeSummary2Operations.validateDischargeSummary2ComponentOfEncompassingEncounterEncounterParticipantAssignedEntity(this, diagnostics, context);
+		return DischargeSummary2Operations.validateDischargeSummary2ComponentOfEncompassingEncounterEncounterParticipantAssignedEntity(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -459,7 +485,8 @@ public class DischargeSummary2Impl extends USRealmHeader2Impl implements Dischar
 	 */
 	public boolean validateDischargeSummary2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntityAssignedPerson(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return DischargeSummary2Operations.validateDischargeSummary2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntityAssignedPerson(this, diagnostics, context);
+		return DischargeSummary2Operations.validateDischargeSummary2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntityAssignedPerson(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -469,7 +496,8 @@ public class DischargeSummary2Impl extends USRealmHeader2Impl implements Dischar
 	 */
 	public boolean validateDischargeSummary2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntityRepresentedOrganization(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return DischargeSummary2Operations.validateDischargeSummary2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntityRepresentedOrganization(this, diagnostics, context);
+		return DischargeSummary2Operations.validateDischargeSummary2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntityRepresentedOrganization(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -479,7 +507,8 @@ public class DischargeSummary2Impl extends USRealmHeader2Impl implements Dischar
 	 */
 	public boolean validateDischargeSummary2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntityHasPersonOrOrganization(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return DischargeSummary2Operations.validateDischargeSummary2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntityHasPersonOrOrganization(this, diagnostics, context);
+		return DischargeSummary2Operations.validateDischargeSummary2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntityHasPersonOrOrganization(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -489,7 +518,8 @@ public class DischargeSummary2Impl extends USRealmHeader2Impl implements Dischar
 	 */
 	public boolean validateDischargeSummary2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntity(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return DischargeSummary2Operations.validateDischargeSummary2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntity(this, diagnostics, context);
+		return DischargeSummary2Operations.validateDischargeSummary2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntity(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -499,7 +529,8 @@ public class DischargeSummary2Impl extends USRealmHeader2Impl implements Dischar
 	 */
 	public boolean validateDischargeSummary2ComponentOfEncompassingEncounterEffectiveTime(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return DischargeSummary2Operations.validateDischargeSummary2ComponentOfEncompassingEncounterEffectiveTime(this, diagnostics, context);
+		return DischargeSummary2Operations.validateDischargeSummary2ComponentOfEncompassingEncounterEffectiveTime(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -509,7 +540,8 @@ public class DischargeSummary2Impl extends USRealmHeader2Impl implements Dischar
 	 */
 	public boolean validateDischargeSummary2ComponentOfEncompassingEncounterDischargeDispositionCode(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return DischargeSummary2Operations.validateDischargeSummary2ComponentOfEncompassingEncounterDischargeDispositionCode(this, diagnostics, context);
+		return DischargeSummary2Operations.validateDischargeSummary2ComponentOfEncompassingEncounterDischargeDispositionCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -519,7 +551,8 @@ public class DischargeSummary2Impl extends USRealmHeader2Impl implements Dischar
 	 */
 	public boolean validateDischargeSummary2ComponentOfEncompassingEncounterDischargeDispositionCodeP(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return DischargeSummary2Operations.validateDischargeSummary2ComponentOfEncompassingEncounterDischargeDispositionCodeP(this, diagnostics, context);
+		return DischargeSummary2Operations.validateDischargeSummary2ComponentOfEncompassingEncounterDischargeDispositionCodeP(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -529,7 +562,8 @@ public class DischargeSummary2Impl extends USRealmHeader2Impl implements Dischar
 	 */
 	public boolean validateDischargeSummary2ComponentOfEncompassingEncounterEncounterParticipant(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return DischargeSummary2Operations.validateDischargeSummary2ComponentOfEncompassingEncounterEncounterParticipant(this, diagnostics, context);
+		return DischargeSummary2Operations.validateDischargeSummary2ComponentOfEncompassingEncounterEncounterParticipant(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -539,7 +573,8 @@ public class DischargeSummary2Impl extends USRealmHeader2Impl implements Dischar
 	 */
 	public boolean validateDischargeSummary2ComponentOfEncompassingEncounterResponsibleParty(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return DischargeSummary2Operations.validateDischargeSummary2ComponentOfEncompassingEncounterResponsibleParty(this, diagnostics, context);
+		return DischargeSummary2Operations.validateDischargeSummary2ComponentOfEncompassingEncounterResponsibleParty(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -549,7 +584,8 @@ public class DischargeSummary2Impl extends USRealmHeader2Impl implements Dischar
 	 */
 	public boolean validateDischargeSummary2ComponentOfEncompassingEncounter(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return DischargeSummary2Operations.validateDischargeSummary2ComponentOfEncompassingEncounter(this, diagnostics, context);
+		return DischargeSummary2Operations.validateDischargeSummary2ComponentOfEncompassingEncounter(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -812,17 +848,17 @@ public class DischargeSummary2Impl extends USRealmHeader2Impl implements Dischar
 	 */
 	@Override
 	public DischargeSummary2 init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public DischargeSummary2 init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // DischargeSummary2Impl
