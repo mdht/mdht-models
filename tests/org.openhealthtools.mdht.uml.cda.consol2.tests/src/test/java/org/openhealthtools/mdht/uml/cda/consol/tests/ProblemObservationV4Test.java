@@ -462,7 +462,7 @@ public class ProblemObservationV4Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 
@@ -500,7 +500,7 @@ public class ProblemObservationV4Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 
