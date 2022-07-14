@@ -26,7 +26,7 @@ import org.eclipse.mdht.uml.cda.Organizer;
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolCareTeamOrganizerV2CareTeamMemberParticipantRole constraints.validation.error='CareTeamOrganizerV2CareTeamMemberParticipantRoleId'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolCareTeamOrganizerV2CareLocation typeCode='LOC' constraints.validation.error='CareTeamOrganizerV2CareLocationTypeCode CareTeamOrganizerV2CareLocationParticipantRole'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolCareTeamOrganizerV2CareLocationParticipantRole constraints.validation.error='CareTeamOrganizerV2CareLocationParticipantRoleId CareTeamOrganizerV2CareLocationParticipantRolePlayingEntity' constraints.validation.warning='CareTeamOrganizerV2CareLocationParticipantRoleAddr CareTeamOrganizerV2CareLocationParticipantRoleTelecom'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolCareTeamOrganizerV2CareLocationParticipantRolePlayingEntity constraints.validation.error='CareTeamOrganizerV2CareLocationParticipantRolePlayingEntityName CareTeamOrganizerV2CareLocationParticipantRolePlayingEntityClassCode'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolCareTeamOrganizerV2CareLocationParticipantRolePlayingEntity constraints.validation.error='CareTeamOrganizerV2CareLocationParticipantRolePlayingEntityName CareTeamOrganizerV2CareLocationParticipantRolePlayingEntityClassCode' classCode='ENT'"
  * @generated
  */
 public interface CareTeamOrganizerV2 extends Organizer {
