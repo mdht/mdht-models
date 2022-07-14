@@ -453,7 +453,7 @@ public class DateOfDiagnosisActTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 
@@ -489,7 +489,7 @@ public class DateOfDiagnosisActTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 
