@@ -33,16 +33,17 @@ import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
  * <ul>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AssessmentScaleObservationV2#validateAssessmentScaleObservationV2TemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Assessment Scale Observation V2 Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AssessmentScaleObservationV2#validateAssessmentScaleObservationV2Id(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Assessment Scale Observation V2 Id</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AssessmentScaleObservationV2#validateAssessmentScaleObservationV2CodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Assessment Scale Observation V2 Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AssessmentScaleObservationV2#validateAssessmentScaleObservationV2Code(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Assessment Scale Observation V2 Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AssessmentScaleObservationV2#validateAssessmentScaleObservationV2DerivationExpr(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Assessment Scale Observation V2 Derivation Expr</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AssessmentScaleObservationV2#validateAssessmentScaleObservationV2StatusCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Assessment Scale Observation V2 Status Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AssessmentScaleObservationV2#validateAssessmentScaleObservationV2StatusCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Assessment Scale Observation V2 Status Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AssessmentScaleObservationV2#validateAssessmentScaleObservationV2EffectiveTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Assessment Scale Observation V2 Effective Time</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AssessmentScaleObservationV2#validateAssessmentScaleObservationV2Value(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Assessment Scale Observation V2 Value</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AssessmentScaleObservationV2#validateAssessmentScaleObservationV2InterpretationCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Assessment Scale Observation V2 Interpretation Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AssessmentScaleObservationV2#validateAssessmentScaleObservationV2ClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Assessment Scale Observation V2 Class Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AssessmentScaleObservationV2#validateAssessmentScaleObservationV2MoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Assessment Scale Observation V2 Mood Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AssessmentScaleObservationV2#validateAssessmentScaleObservationV2AssessmentScaleSupportingObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Assessment Scale Observation V2 Assessment Scale Supporting Observation</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AssessmentScaleObservationV2#getAssessmentScaleSupportingObservations() <em>Get Assessment Scale Supporting Observations</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AssessmentScaleObservationV2#validateAssessmentScaleObservationV2ReferenceRange(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Assessment Scale Observation V2 Reference Range</em>}</li>
  * </ul>
  * </p>
  *
@@ -85,7 +86,7 @@ public class AssessmentScaleObservationV2Operations extends ClinicalStatementOpe
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_ASSESSMENT_SCALE_OBSERVATION_V2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<  Constraint> VALIDATE_ASSESSMENT_SCALE_OBSERVATION_V2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -101,35 +102,44 @@ public class AssessmentScaleObservationV2Operations extends ClinicalStatementOpe
 	public static boolean validateAssessmentScaleObservationV2TemplateId(
 			AssessmentScaleObservationV2 assessmentScaleObservationV2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		DatatypesUtil.increment(context, "AssessmentScaleObservationV2AssessmentScaleObservationV2TemplateId", "ERROR");
-
+	
+	
+	
+  	  
+  	  
+  	  
+  	  
+  	 
+  	 
+  	 
+    DatatypesUtil.increment(context,"AssessmentScaleObservationV2AssessmentScaleObservationV2TemplateId","ERROR");
+    
+  	  
+  	  
 		if (VALIDATE_ASSESSMENT_SCALE_OBSERVATION_V2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-
+		
+	 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ASSESSMENT_SCALE_OBSERVATION_V2);
 			try {
-				VALIDATE_ASSESSMENT_SCALE_OBSERVATION_V2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
-					helper.createInvariant(
-						VALIDATE_ASSESSMENT_SCALE_OBSERVATION_V2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			} catch (ParserException pe) {
+				VALIDATE_ASSESSMENT_SCALE_OBSERVATION_V2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_ASSESSMENT_SCALE_OBSERVATION_V2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-
-		if (!EOCL_ENV.get().createQuery(
-			VALIDATE_ASSESSMENT_SCALE_OBSERVATION_V2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
-				assessmentScaleObservationV2)) {
-			if (diagnostics != null) {
-				diagnostics.add(
-					new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.ASSESSMENT_SCALE_OBSERVATION_V2__ASSESSMENT_SCALE_OBSERVATION_V2_TEMPLATE_ID,
-						ConsolPlugin.INSTANCE.getString(
-							"AssessmentScaleObservationV2AssessmentScaleObservationV2TemplateId"),
-						new Object[] { assessmentScaleObservationV2 }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ASSESSMENT_SCALE_OBSERVATION_V2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(assessmentScaleObservationV2)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.ASSESSMENT_SCALE_OBSERVATION_V2__ASSESSMENT_SCALE_OBSERVATION_V2_TEMPLATE_ID,
+						 ConsolPlugin.INSTANCE.getString("AssessmentScaleObservationV2AssessmentScaleObservationV2TemplateId"),
+						 new Object [] { assessmentScaleObservationV2 }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -154,7 +164,7 @@ public class AssessmentScaleObservationV2Operations extends ClinicalStatementOpe
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_ASSESSMENT_SCALE_OBSERVATION_V2_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<  Constraint> VALIDATE_ASSESSMENT_SCALE_OBSERVATION_V2_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -170,34 +180,132 @@ public class AssessmentScaleObservationV2Operations extends ClinicalStatementOpe
 	public static boolean validateAssessmentScaleObservationV2Id(
 			AssessmentScaleObservationV2 assessmentScaleObservationV2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		DatatypesUtil.increment(context, "AssessmentScaleObservationV2AssessmentScaleObservationV2Id", "ERROR");
-
+	
+	
+	
+  	  
+  	  
+  	  
+  	  
+  	 
+  	 
+  	 
+    DatatypesUtil.increment(context,"AssessmentScaleObservationV2AssessmentScaleObservationV2Id","ERROR");
+    
+  	  
+  	  
 		if (VALIDATE_ASSESSMENT_SCALE_OBSERVATION_V2_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-
+		
+	 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ASSESSMENT_SCALE_OBSERVATION_V2);
 			try {
-				VALIDATE_ASSESSMENT_SCALE_OBSERVATION_V2_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
-					helper.createInvariant(
-						VALIDATE_ASSESSMENT_SCALE_OBSERVATION_V2_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			} catch (ParserException pe) {
+				VALIDATE_ASSESSMENT_SCALE_OBSERVATION_V2_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_ASSESSMENT_SCALE_OBSERVATION_V2_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-
-		if (!EOCL_ENV.get().createQuery(
-			VALIDATE_ASSESSMENT_SCALE_OBSERVATION_V2_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
-				assessmentScaleObservationV2)) {
-			if (diagnostics != null) {
-				diagnostics.add(
-					new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.ASSESSMENT_SCALE_OBSERVATION_V2__ASSESSMENT_SCALE_OBSERVATION_V2_ID,
-						ConsolPlugin.INSTANCE.getString("AssessmentScaleObservationV2AssessmentScaleObservationV2Id"),
-						new Object[] { assessmentScaleObservationV2 }));
 			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ASSESSMENT_SCALE_OBSERVATION_V2_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(assessmentScaleObservationV2)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.ASSESSMENT_SCALE_OBSERVATION_V2__ASSESSMENT_SCALE_OBSERVATION_V2_ID,
+						 ConsolPlugin.INSTANCE.getString("AssessmentScaleObservationV2AssessmentScaleObservationV2Id"),
+						 new Object [] { assessmentScaleObservationV2 }));
+			}
+			 
+			return false;
+		}
+		return true;
+	}
 
+	/**
+	 * The cached OCL expression body for the '{@link #validateAssessmentScaleObservationV2CodeP(AssessmentScaleObservationV2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Assessment Scale Observation V2 Code P</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateAssessmentScaleObservationV2CodeP(AssessmentScaleObservationV2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_ASSESSMENT_SCALE_OBSERVATION_V2_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateAssessmentScaleObservationV2CodeP(AssessmentScaleObservationV2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Assessment Scale Observation V2 Code P</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateAssessmentScaleObservationV2CodeP(AssessmentScaleObservationV2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	
+	protected static ThreadLocal<  Constraint> VALIDATE_ASSESSMENT_SCALE_OBSERVATION_V2_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param assessmentScaleObservationV2 The receiving '<em><b>Assessment Scale Observation V2</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	
+	public static  boolean validateAssessmentScaleObservationV2CodeP(AssessmentScaleObservationV2 assessmentScaleObservationV2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
+  	  
+  	  
+  	  
+  	  
+  	 
+  	 
+  	 
+    DatatypesUtil.increment(context,"AssessmentScaleObservationV2AssessmentScaleObservationV2CodeP","ERROR");
+    
+  	  
+  	  
+		if (VALIDATE_ASSESSMENT_SCALE_OBSERVATION_V2_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.ASSESSMENT_SCALE_OBSERVATION_V2);
+			try {
+				VALIDATE_ASSESSMENT_SCALE_OBSERVATION_V2_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_ASSESSMENT_SCALE_OBSERVATION_V2_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ASSESSMENT_SCALE_OBSERVATION_V2_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(assessmentScaleObservationV2)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.ASSESSMENT_SCALE_OBSERVATION_V2__ASSESSMENT_SCALE_OBSERVATION_V2_CODE_P,
+						 ConsolPlugin.INSTANCE.getString("AssessmentScaleObservationV2AssessmentScaleObservationV2CodeP"),
+						 new Object [] { assessmentScaleObservationV2 }));
+			}
+			
+			if (context != null) {
+				// generate a pass token for my dependent constraints to short-circuit or filter results
+				@SuppressWarnings("unchecked")
+				Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.consol.AssessmentScaleObservationV2CodeP");
+				if (passToken == null) {
+					// anticipate a reasonably healthy model
+					passToken = new java.util.ArrayList<Object>(3);
+					context.put("org.openhealthtools.mdht.uml.cda.consol.AssessmentScaleObservationV2CodeP", passToken);
+				}
+				passToken.add(assessmentScaleObservationV2);
+			}
+			 
 			return false;
 		}
 		return true;
@@ -211,7 +319,9 @@ public class AssessmentScaleObservationV2Operations extends ClinicalStatementOpe
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_ASSESSMENT_SCALE_OBSERVATION_V2_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())";
+	protected static final String VALIDATE_ASSESSMENT_SCALE_OBSERVATION_V2_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
+"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
+"value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateAssessmentScaleObservationV2Code(AssessmentScaleObservationV2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Assessment Scale Observation V2 Code</em>}' invariant operation.
@@ -222,7 +332,7 @@ public class AssessmentScaleObservationV2Operations extends ClinicalStatementOpe
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_ASSESSMENT_SCALE_OBSERVATION_V2_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<  Constraint> VALIDATE_ASSESSMENT_SCALE_OBSERVATION_V2_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -238,34 +348,50 @@ public class AssessmentScaleObservationV2Operations extends ClinicalStatementOpe
 	public static boolean validateAssessmentScaleObservationV2Code(
 			AssessmentScaleObservationV2 assessmentScaleObservationV2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		DatatypesUtil.increment(context, "AssessmentScaleObservationV2AssessmentScaleObservationV2Code", "ERROR");
-
+	
+	
+	
+  	  
+		Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.consol.AssessmentScaleObservationV2CodeP");
+		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(assessmentScaleObservationV2)) {
+			// I have a free pass to short-circuit
+			return true;
+		}
+  	  
+  	  
+  	  
+  	  
+  	 
+  	 
+  	 
+    DatatypesUtil.increment(context,"AssessmentScaleObservationV2AssessmentScaleObservationV2Code","ERROR");
+    
+  	  
+  	  
 		if (VALIDATE_ASSESSMENT_SCALE_OBSERVATION_V2_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-
+		
+	 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ASSESSMENT_SCALE_OBSERVATION_V2);
 			try {
-				VALIDATE_ASSESSMENT_SCALE_OBSERVATION_V2_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
-					helper.createInvariant(
-						VALIDATE_ASSESSMENT_SCALE_OBSERVATION_V2_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			} catch (ParserException pe) {
+				VALIDATE_ASSESSMENT_SCALE_OBSERVATION_V2_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_ASSESSMENT_SCALE_OBSERVATION_V2_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-
-		if (!EOCL_ENV.get().createQuery(
-			VALIDATE_ASSESSMENT_SCALE_OBSERVATION_V2_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
-				assessmentScaleObservationV2)) {
-			if (diagnostics != null) {
-				diagnostics.add(
-					new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.ASSESSMENT_SCALE_OBSERVATION_V2__ASSESSMENT_SCALE_OBSERVATION_V2_CODE,
-						ConsolPlugin.INSTANCE.getString("AssessmentScaleObservationV2AssessmentScaleObservationV2Code"),
-						new Object[] { assessmentScaleObservationV2 }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ASSESSMENT_SCALE_OBSERVATION_V2_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(assessmentScaleObservationV2)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.ASSESSMENT_SCALE_OBSERVATION_V2__ASSESSMENT_SCALE_OBSERVATION_V2_CODE,
+						 ConsolPlugin.INSTANCE.getString("AssessmentScaleObservationV2AssessmentScaleObservationV2Code"),
+						 new Object [] { assessmentScaleObservationV2 }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -290,7 +416,7 @@ public class AssessmentScaleObservationV2Operations extends ClinicalStatementOpe
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_ASSESSMENT_SCALE_OBSERVATION_V2_DERIVATION_EXPR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<  Constraint> VALIDATE_ASSESSMENT_SCALE_OBSERVATION_V2_DERIVATION_EXPR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -306,36 +432,132 @@ public class AssessmentScaleObservationV2Operations extends ClinicalStatementOpe
 	public static boolean validateAssessmentScaleObservationV2DerivationExpr(
 			AssessmentScaleObservationV2 assessmentScaleObservationV2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		DatatypesUtil.increment(
-			context, "AssessmentScaleObservationV2AssessmentScaleObservationV2DerivationExpr", "INFO");
-
+	
+	
+	
+  	  
+  	  
+  	  
+  	  
+  	 
+  	 
+  	 
+    DatatypesUtil.increment(context,"AssessmentScaleObservationV2AssessmentScaleObservationV2DerivationExpr","INFO");
+    
+  	  
+  	  
 		if (VALIDATE_ASSESSMENT_SCALE_OBSERVATION_V2_DERIVATION_EXPR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-
+		
+	 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ASSESSMENT_SCALE_OBSERVATION_V2);
 			try {
-				VALIDATE_ASSESSMENT_SCALE_OBSERVATION_V2_DERIVATION_EXPR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
-					helper.createInvariant(
-						VALIDATE_ASSESSMENT_SCALE_OBSERVATION_V2_DERIVATION_EXPR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			} catch (ParserException pe) {
+				VALIDATE_ASSESSMENT_SCALE_OBSERVATION_V2_DERIVATION_EXPR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_ASSESSMENT_SCALE_OBSERVATION_V2_DERIVATION_EXPR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-
-		if (!EOCL_ENV.get().createQuery(
-			VALIDATE_ASSESSMENT_SCALE_OBSERVATION_V2_DERIVATION_EXPR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
-				assessmentScaleObservationV2)) {
-			if (diagnostics != null) {
-				diagnostics.add(
-					new BasicDiagnostic(
-						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.ASSESSMENT_SCALE_OBSERVATION_V2__ASSESSMENT_SCALE_OBSERVATION_V2_DERIVATION_EXPR,
-						ConsolPlugin.INSTANCE.getString(
-							"AssessmentScaleObservationV2AssessmentScaleObservationV2DerivationExpr"),
-						new Object[] { assessmentScaleObservationV2 }));
 			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ASSESSMENT_SCALE_OBSERVATION_V2_DERIVATION_EXPR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(assessmentScaleObservationV2)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.ASSESSMENT_SCALE_OBSERVATION_V2__ASSESSMENT_SCALE_OBSERVATION_V2_DERIVATION_EXPR,
+						 ConsolPlugin.INSTANCE.getString("AssessmentScaleObservationV2AssessmentScaleObservationV2DerivationExpr"),
+						 new Object [] { assessmentScaleObservationV2 }));
+			}
+			 
+			return false;
+		}
+		return true;
+	}
 
+	/**
+	 * The cached OCL expression body for the '{@link #validateAssessmentScaleObservationV2StatusCodeP(AssessmentScaleObservationV2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Assessment Scale Observation V2 Status Code P</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateAssessmentScaleObservationV2StatusCodeP(AssessmentScaleObservationV2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_ASSESSMENT_SCALE_OBSERVATION_V2_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined())";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateAssessmentScaleObservationV2StatusCodeP(AssessmentScaleObservationV2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Assessment Scale Observation V2 Status Code P</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateAssessmentScaleObservationV2StatusCodeP(AssessmentScaleObservationV2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	
+	protected static ThreadLocal<  Constraint> VALIDATE_ASSESSMENT_SCALE_OBSERVATION_V2_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param assessmentScaleObservationV2 The receiving '<em><b>Assessment Scale Observation V2</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	
+	public static  boolean validateAssessmentScaleObservationV2StatusCodeP(AssessmentScaleObservationV2 assessmentScaleObservationV2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
+  	  
+  	  
+  	  
+  	  
+  	 
+  	 
+  	 
+    DatatypesUtil.increment(context,"AssessmentScaleObservationV2AssessmentScaleObservationV2StatusCodeP","ERROR");
+    
+  	  
+  	  
+		if (VALIDATE_ASSESSMENT_SCALE_OBSERVATION_V2_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.ASSESSMENT_SCALE_OBSERVATION_V2);
+			try {
+				VALIDATE_ASSESSMENT_SCALE_OBSERVATION_V2_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_ASSESSMENT_SCALE_OBSERVATION_V2_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ASSESSMENT_SCALE_OBSERVATION_V2_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(assessmentScaleObservationV2)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.ASSESSMENT_SCALE_OBSERVATION_V2__ASSESSMENT_SCALE_OBSERVATION_V2_STATUS_CODE_P,
+						 ConsolPlugin.INSTANCE.getString("AssessmentScaleObservationV2AssessmentScaleObservationV2StatusCodeP"),
+						 new Object [] { assessmentScaleObservationV2 }));
+			}
+			
+			if (context != null) {
+				// generate a pass token for my dependent constraints to short-circuit or filter results
+				@SuppressWarnings("unchecked")
+				Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.consol.AssessmentScaleObservationV2StatusCodeP");
+				if (passToken == null) {
+					// anticipate a reasonably healthy model
+					passToken = new java.util.ArrayList<Object>(3);
+					context.put("org.openhealthtools.mdht.uml.cda.consol.AssessmentScaleObservationV2StatusCodeP", passToken);
+				}
+				passToken.add(assessmentScaleObservationV2);
+			}
+			 
 			return false;
 		}
 		return true;
@@ -349,7 +571,9 @@ public class AssessmentScaleObservationV2Operations extends ClinicalStatementOpe
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_ASSESSMENT_SCALE_OBSERVATION_V2_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined())";
+	protected static final String VALIDATE_ASSESSMENT_SCALE_OBSERVATION_V2_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and "+
+"let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in "+
+"value.code = 'completed')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateAssessmentScaleObservationV2StatusCode(AssessmentScaleObservationV2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Assessment Scale Observation V2 Status Code</em>}' invariant operation.
@@ -360,7 +584,7 @@ public class AssessmentScaleObservationV2Operations extends ClinicalStatementOpe
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_ASSESSMENT_SCALE_OBSERVATION_V2_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<  Constraint> VALIDATE_ASSESSMENT_SCALE_OBSERVATION_V2_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -376,35 +600,50 @@ public class AssessmentScaleObservationV2Operations extends ClinicalStatementOpe
 	public static boolean validateAssessmentScaleObservationV2StatusCode(
 			AssessmentScaleObservationV2 assessmentScaleObservationV2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		DatatypesUtil.increment(context, "AssessmentScaleObservationV2AssessmentScaleObservationV2StatusCode", "ERROR");
-
+	
+	
+	
+  	  
+		Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.consol.AssessmentScaleObservationV2StatusCodeP");
+		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(assessmentScaleObservationV2)) {
+			// I have a free pass to short-circuit
+			return true;
+		}
+  	  
+  	  
+  	  
+  	  
+  	 
+  	 
+  	 
+    DatatypesUtil.increment(context,"AssessmentScaleObservationV2AssessmentScaleObservationV2StatusCode","ERROR");
+    
+  	  
+  	  
 		if (VALIDATE_ASSESSMENT_SCALE_OBSERVATION_V2_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-
+		
+	 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ASSESSMENT_SCALE_OBSERVATION_V2);
 			try {
-				VALIDATE_ASSESSMENT_SCALE_OBSERVATION_V2_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
-					helper.createInvariant(
-						VALIDATE_ASSESSMENT_SCALE_OBSERVATION_V2_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			} catch (ParserException pe) {
+				VALIDATE_ASSESSMENT_SCALE_OBSERVATION_V2_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_ASSESSMENT_SCALE_OBSERVATION_V2_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-
-		if (!EOCL_ENV.get().createQuery(
-			VALIDATE_ASSESSMENT_SCALE_OBSERVATION_V2_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
-				assessmentScaleObservationV2)) {
-			if (diagnostics != null) {
-				diagnostics.add(
-					new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.ASSESSMENT_SCALE_OBSERVATION_V2__ASSESSMENT_SCALE_OBSERVATION_V2_STATUS_CODE,
-						ConsolPlugin.INSTANCE.getString(
-							"AssessmentScaleObservationV2AssessmentScaleObservationV2StatusCode"),
-						new Object[] { assessmentScaleObservationV2 }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ASSESSMENT_SCALE_OBSERVATION_V2_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(assessmentScaleObservationV2)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.ASSESSMENT_SCALE_OBSERVATION_V2__ASSESSMENT_SCALE_OBSERVATION_V2_STATUS_CODE,
+						 ConsolPlugin.INSTANCE.getString("AssessmentScaleObservationV2AssessmentScaleObservationV2StatusCode"),
+						 new Object [] { assessmentScaleObservationV2 }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -429,7 +668,7 @@ public class AssessmentScaleObservationV2Operations extends ClinicalStatementOpe
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_ASSESSMENT_SCALE_OBSERVATION_V2_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<  Constraint> VALIDATE_ASSESSMENT_SCALE_OBSERVATION_V2_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -445,36 +684,44 @@ public class AssessmentScaleObservationV2Operations extends ClinicalStatementOpe
 	public static boolean validateAssessmentScaleObservationV2EffectiveTime(
 			AssessmentScaleObservationV2 assessmentScaleObservationV2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		DatatypesUtil.increment(
-			context, "AssessmentScaleObservationV2AssessmentScaleObservationV2EffectiveTime", "ERROR");
-
+	
+	
+	
+  	  
+  	  
+  	  
+  	  
+  	 
+  	 
+  	 
+    DatatypesUtil.increment(context,"AssessmentScaleObservationV2AssessmentScaleObservationV2EffectiveTime","ERROR");
+    
+  	  
+  	  
 		if (VALIDATE_ASSESSMENT_SCALE_OBSERVATION_V2_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-
+		
+	 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ASSESSMENT_SCALE_OBSERVATION_V2);
 			try {
-				VALIDATE_ASSESSMENT_SCALE_OBSERVATION_V2_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
-					helper.createInvariant(
-						VALIDATE_ASSESSMENT_SCALE_OBSERVATION_V2_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			} catch (ParserException pe) {
+				VALIDATE_ASSESSMENT_SCALE_OBSERVATION_V2_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_ASSESSMENT_SCALE_OBSERVATION_V2_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-
-		if (!EOCL_ENV.get().createQuery(
-			VALIDATE_ASSESSMENT_SCALE_OBSERVATION_V2_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
-				assessmentScaleObservationV2)) {
-			if (diagnostics != null) {
-				diagnostics.add(
-					new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.ASSESSMENT_SCALE_OBSERVATION_V2__ASSESSMENT_SCALE_OBSERVATION_V2_EFFECTIVE_TIME,
-						ConsolPlugin.INSTANCE.getString(
-							"AssessmentScaleObservationV2AssessmentScaleObservationV2EffectiveTime"),
-						new Object[] { assessmentScaleObservationV2 }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ASSESSMENT_SCALE_OBSERVATION_V2_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(assessmentScaleObservationV2)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.ASSESSMENT_SCALE_OBSERVATION_V2__ASSESSMENT_SCALE_OBSERVATION_V2_EFFECTIVE_TIME,
+						 ConsolPlugin.INSTANCE.getString("AssessmentScaleObservationV2AssessmentScaleObservationV2EffectiveTime"),
+						 new Object [] { assessmentScaleObservationV2 }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -488,7 +735,7 @@ public class AssessmentScaleObservationV2Operations extends ClinicalStatementOpe
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_ASSESSMENT_SCALE_OBSERVATION_V2_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (true)";
+	protected static final String VALIDATE_ASSESSMENT_SCALE_OBSERVATION_V2_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (not self.value->isEmpty())";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateAssessmentScaleObservationV2Value(AssessmentScaleObservationV2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Assessment Scale Observation V2 Value</em>}' invariant operation.
@@ -499,7 +746,7 @@ public class AssessmentScaleObservationV2Operations extends ClinicalStatementOpe
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_ASSESSMENT_SCALE_OBSERVATION_V2_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<  Constraint> VALIDATE_ASSESSMENT_SCALE_OBSERVATION_V2_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -515,35 +762,44 @@ public class AssessmentScaleObservationV2Operations extends ClinicalStatementOpe
 	public static boolean validateAssessmentScaleObservationV2Value(
 			AssessmentScaleObservationV2 assessmentScaleObservationV2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		DatatypesUtil.increment(context, "AssessmentScaleObservationV2AssessmentScaleObservationV2Value", "ERROR");
-
+	
+	
+	
+  	  
+  	  
+  	  
+  	  
+  	 
+  	 
+  	 
+    DatatypesUtil.increment(context,"AssessmentScaleObservationV2AssessmentScaleObservationV2Value","ERROR");
+    
+  	  
+  	  
 		if (VALIDATE_ASSESSMENT_SCALE_OBSERVATION_V2_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-
+		
+	 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ASSESSMENT_SCALE_OBSERVATION_V2);
 			try {
-				VALIDATE_ASSESSMENT_SCALE_OBSERVATION_V2_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
-					helper.createInvariant(
-						VALIDATE_ASSESSMENT_SCALE_OBSERVATION_V2_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			} catch (ParserException pe) {
+				VALIDATE_ASSESSMENT_SCALE_OBSERVATION_V2_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_ASSESSMENT_SCALE_OBSERVATION_V2_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-
-		if (!EOCL_ENV.get().createQuery(
-			VALIDATE_ASSESSMENT_SCALE_OBSERVATION_V2_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
-				assessmentScaleObservationV2)) {
-			if (diagnostics != null) {
-				diagnostics.add(
-					new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.ASSESSMENT_SCALE_OBSERVATION_V2__ASSESSMENT_SCALE_OBSERVATION_V2_VALUE,
-						ConsolPlugin.INSTANCE.getString(
-							"AssessmentScaleObservationV2AssessmentScaleObservationV2Value"),
-						new Object[] { assessmentScaleObservationV2 }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ASSESSMENT_SCALE_OBSERVATION_V2_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(assessmentScaleObservationV2)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.ASSESSMENT_SCALE_OBSERVATION_V2__ASSESSMENT_SCALE_OBSERVATION_V2_VALUE,
+						 ConsolPlugin.INSTANCE.getString("AssessmentScaleObservationV2AssessmentScaleObservationV2Value"),
+						 new Object [] { assessmentScaleObservationV2 }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -568,7 +824,7 @@ public class AssessmentScaleObservationV2Operations extends ClinicalStatementOpe
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_ASSESSMENT_SCALE_OBSERVATION_V2_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<  Constraint> VALIDATE_ASSESSMENT_SCALE_OBSERVATION_V2_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -584,36 +840,44 @@ public class AssessmentScaleObservationV2Operations extends ClinicalStatementOpe
 	public static boolean validateAssessmentScaleObservationV2InterpretationCode(
 			AssessmentScaleObservationV2 assessmentScaleObservationV2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		DatatypesUtil.increment(
-			context, "AssessmentScaleObservationV2AssessmentScaleObservationV2InterpretationCode", "INFO");
-
+	
+	
+	
+  	  
+  	  
+  	  
+  	  
+  	 
+  	 
+  	 
+    DatatypesUtil.increment(context,"AssessmentScaleObservationV2AssessmentScaleObservationV2InterpretationCode","INFO");
+    
+  	  
+  	  
 		if (VALIDATE_ASSESSMENT_SCALE_OBSERVATION_V2_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-
+		
+	 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ASSESSMENT_SCALE_OBSERVATION_V2);
 			try {
-				VALIDATE_ASSESSMENT_SCALE_OBSERVATION_V2_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
-					helper.createInvariant(
-						VALIDATE_ASSESSMENT_SCALE_OBSERVATION_V2_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			} catch (ParserException pe) {
+				VALIDATE_ASSESSMENT_SCALE_OBSERVATION_V2_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_ASSESSMENT_SCALE_OBSERVATION_V2_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-
-		if (!EOCL_ENV.get().createQuery(
-			VALIDATE_ASSESSMENT_SCALE_OBSERVATION_V2_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
-				assessmentScaleObservationV2)) {
-			if (diagnostics != null) {
-				diagnostics.add(
-					new BasicDiagnostic(
-						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.ASSESSMENT_SCALE_OBSERVATION_V2__ASSESSMENT_SCALE_OBSERVATION_V2_INTERPRETATION_CODE,
-						ConsolPlugin.INSTANCE.getString(
-							"AssessmentScaleObservationV2AssessmentScaleObservationV2InterpretationCode"),
-						new Object[] { assessmentScaleObservationV2 }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ASSESSMENT_SCALE_OBSERVATION_V2_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(assessmentScaleObservationV2)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.ASSESSMENT_SCALE_OBSERVATION_V2__ASSESSMENT_SCALE_OBSERVATION_V2_INTERPRETATION_CODE,
+						 ConsolPlugin.INSTANCE.getString("AssessmentScaleObservationV2AssessmentScaleObservationV2InterpretationCode"),
+						 new Object [] { assessmentScaleObservationV2 }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -638,7 +902,7 @@ public class AssessmentScaleObservationV2Operations extends ClinicalStatementOpe
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_ASSESSMENT_SCALE_OBSERVATION_V2_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<  Constraint> VALIDATE_ASSESSMENT_SCALE_OBSERVATION_V2_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -654,35 +918,44 @@ public class AssessmentScaleObservationV2Operations extends ClinicalStatementOpe
 	public static boolean validateAssessmentScaleObservationV2ClassCode(
 			AssessmentScaleObservationV2 assessmentScaleObservationV2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		DatatypesUtil.increment(context, "AssessmentScaleObservationV2AssessmentScaleObservationV2ClassCode", "ERROR");
-
+	
+	
+	
+  	  
+  	  
+  	  
+  	  
+  	 
+  	 
+  	 
+    DatatypesUtil.increment(context,"AssessmentScaleObservationV2AssessmentScaleObservationV2ClassCode","ERROR");
+    
+  	  
+  	  
 		if (VALIDATE_ASSESSMENT_SCALE_OBSERVATION_V2_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-
+		
+	 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ASSESSMENT_SCALE_OBSERVATION_V2);
 			try {
-				VALIDATE_ASSESSMENT_SCALE_OBSERVATION_V2_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
-					helper.createInvariant(
-						VALIDATE_ASSESSMENT_SCALE_OBSERVATION_V2_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			} catch (ParserException pe) {
+				VALIDATE_ASSESSMENT_SCALE_OBSERVATION_V2_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_ASSESSMENT_SCALE_OBSERVATION_V2_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-
-		if (!EOCL_ENV.get().createQuery(
-			VALIDATE_ASSESSMENT_SCALE_OBSERVATION_V2_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
-				assessmentScaleObservationV2)) {
-			if (diagnostics != null) {
-				diagnostics.add(
-					new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.ASSESSMENT_SCALE_OBSERVATION_V2__ASSESSMENT_SCALE_OBSERVATION_V2_CLASS_CODE,
-						ConsolPlugin.INSTANCE.getString(
-							"AssessmentScaleObservationV2AssessmentScaleObservationV2ClassCode"),
-						new Object[] { assessmentScaleObservationV2 }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ASSESSMENT_SCALE_OBSERVATION_V2_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(assessmentScaleObservationV2)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.ASSESSMENT_SCALE_OBSERVATION_V2__ASSESSMENT_SCALE_OBSERVATION_V2_CLASS_CODE,
+						 ConsolPlugin.INSTANCE.getString("AssessmentScaleObservationV2AssessmentScaleObservationV2ClassCode"),
+						 new Object [] { assessmentScaleObservationV2 }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -707,7 +980,7 @@ public class AssessmentScaleObservationV2Operations extends ClinicalStatementOpe
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_ASSESSMENT_SCALE_OBSERVATION_V2_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<  Constraint> VALIDATE_ASSESSMENT_SCALE_OBSERVATION_V2_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -723,60 +996,69 @@ public class AssessmentScaleObservationV2Operations extends ClinicalStatementOpe
 	public static boolean validateAssessmentScaleObservationV2MoodCode(
 			AssessmentScaleObservationV2 assessmentScaleObservationV2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		DatatypesUtil.increment(context, "AssessmentScaleObservationV2AssessmentScaleObservationV2MoodCode", "ERROR");
-
+	
+	
+	
+  	  
+  	  
+  	  
+  	  
+  	 
+  	 
+  	 
+    DatatypesUtil.increment(context,"AssessmentScaleObservationV2AssessmentScaleObservationV2MoodCode","ERROR");
+    
+  	  
+  	  
 		if (VALIDATE_ASSESSMENT_SCALE_OBSERVATION_V2_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-
+		
+	 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ASSESSMENT_SCALE_OBSERVATION_V2);
 			try {
-				VALIDATE_ASSESSMENT_SCALE_OBSERVATION_V2_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
-					helper.createInvariant(
-						VALIDATE_ASSESSMENT_SCALE_OBSERVATION_V2_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			} catch (ParserException pe) {
+				VALIDATE_ASSESSMENT_SCALE_OBSERVATION_V2_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_ASSESSMENT_SCALE_OBSERVATION_V2_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-
-		if (!EOCL_ENV.get().createQuery(
-			VALIDATE_ASSESSMENT_SCALE_OBSERVATION_V2_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
-				assessmentScaleObservationV2)) {
-			if (diagnostics != null) {
-				diagnostics.add(
-					new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.ASSESSMENT_SCALE_OBSERVATION_V2__ASSESSMENT_SCALE_OBSERVATION_V2_MOOD_CODE,
-						ConsolPlugin.INSTANCE.getString(
-							"AssessmentScaleObservationV2AssessmentScaleObservationV2MoodCode"),
-						new Object[] { assessmentScaleObservationV2 }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ASSESSMENT_SCALE_OBSERVATION_V2_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(assessmentScaleObservationV2)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.ASSESSMENT_SCALE_OBSERVATION_V2__ASSESSMENT_SCALE_OBSERVATION_V2_MOOD_CODE,
+						 ConsolPlugin.INSTANCE.getString("AssessmentScaleObservationV2AssessmentScaleObservationV2MoodCode"),
+						 new Object [] { assessmentScaleObservationV2 }));
+			}
+			 
 			return false;
 		}
 		return true;
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateAssessmentScaleObservationV2AssessmentScaleSupportingObservation(AssessmentScaleObservationV2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Assessment Scale Observation V2 Assessment Scale Supporting Observation</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validateAssessmentScaleObservationV2ReferenceRange(AssessmentScaleObservationV2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Assessment Scale Observation V2 Reference Range</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateAssessmentScaleObservationV2AssessmentScaleSupportingObservation(AssessmentScaleObservationV2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #validateAssessmentScaleObservationV2ReferenceRange(AssessmentScaleObservationV2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_ASSESSMENT_SCALE_OBSERVATION_V2_ASSESSMENT_SCALE_SUPPORTING_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::AssessmentScaleSupportingObservation) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)";
+	protected static final String VALIDATE_ASSESSMENT_SCALE_OBSERVATION_V2_REFERENCE_RANGE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.referenceRange->exists(referenceRange : cda::ReferenceRange | not referenceRange.oclIsUndefined() and referenceRange.oclIsKindOf(cda::ReferenceRange))";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateAssessmentScaleObservationV2AssessmentScaleSupportingObservation(AssessmentScaleObservationV2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Assessment Scale Observation V2 Assessment Scale Supporting Observation</em>}' invariant operation.
+	 * The cached OCL invariant for the '{@link #validateAssessmentScaleObservationV2ReferenceRange(AssessmentScaleObservationV2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Assessment Scale Observation V2 Reference Range</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateAssessmentScaleObservationV2AssessmentScaleSupportingObservation(AssessmentScaleObservationV2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #validateAssessmentScaleObservationV2ReferenceRange(AssessmentScaleObservationV2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-
-	protected static ThreadLocal<Constraint> VALIDATE_ASSESSMENT_SCALE_OBSERVATION_V2_ASSESSMENT_SCALE_SUPPORTING_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	
+	protected static ThreadLocal<  Constraint> VALIDATE_ASSESSMENT_SCALE_OBSERVATION_V2_REFERENCE_RANGE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV=new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -788,94 +1070,49 @@ public class AssessmentScaleObservationV2Operations extends ClinicalStatementOpe
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateAssessmentScaleObservationV2AssessmentScaleSupportingObservation(
-			AssessmentScaleObservationV2 assessmentScaleObservationV2, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
-		DatatypesUtil.increment(
-			context, "AssessmentScaleObservationV2AssessmentScaleObservationV2AssessmentScaleSupportingObservation",
-			"ERROR");
-
-		if (VALIDATE_ASSESSMENT_SCALE_OBSERVATION_V2_ASSESSMENT_SCALE_SUPPORTING_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-
+	
+	public static  boolean validateAssessmentScaleObservationV2ReferenceRange(AssessmentScaleObservationV2 assessmentScaleObservationV2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
+  	  
+  	  
+  	  
+  	  
+  	 
+  	 
+  	 
+    DatatypesUtil.increment(context,"AssessmentScaleObservationV2AssessmentScaleObservationV2ReferenceRange","INFO");
+    
+  	  
+  	  
+		if (VALIDATE_ASSESSMENT_SCALE_OBSERVATION_V2_REFERENCE_RANGE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ASSESSMENT_SCALE_OBSERVATION_V2);
 			try {
-				VALIDATE_ASSESSMENT_SCALE_OBSERVATION_V2_ASSESSMENT_SCALE_SUPPORTING_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
-					helper.createInvariant(
-						VALIDATE_ASSESSMENT_SCALE_OBSERVATION_V2_ASSESSMENT_SCALE_SUPPORTING_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			} catch (ParserException pe) {
+				VALIDATE_ASSESSMENT_SCALE_OBSERVATION_V2_REFERENCE_RANGE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_ASSESSMENT_SCALE_OBSERVATION_V2_REFERENCE_RANGE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-
-		if (!EOCL_ENV.get().createQuery(
-			VALIDATE_ASSESSMENT_SCALE_OBSERVATION_V2_ASSESSMENT_SCALE_SUPPORTING_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
-				assessmentScaleObservationV2)) {
-			if (diagnostics != null) {
-				diagnostics.add(
-					new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.ASSESSMENT_SCALE_OBSERVATION_V2__ASSESSMENT_SCALE_OBSERVATION_V2_ASSESSMENT_SCALE_SUPPORTING_OBSERVATION,
-						ConsolPlugin.INSTANCE.getString(
-							"AssessmentScaleObservationV2AssessmentScaleObservationV2AssessmentScaleSupportingObservation"),
-						new Object[] { assessmentScaleObservationV2 }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ASSESSMENT_SCALE_OBSERVATION_V2_REFERENCE_RANGE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(assessmentScaleObservationV2)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.ASSESSMENT_SCALE_OBSERVATION_V2__ASSESSMENT_SCALE_OBSERVATION_V2_REFERENCE_RANGE,
+						 ConsolPlugin.INSTANCE.getString("AssessmentScaleObservationV2AssessmentScaleObservationV2ReferenceRange"),
+						 new Object [] { assessmentScaleObservationV2 }));
+			}
+			 
 			return false;
 		}
 		return true;
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #getAssessmentScaleSupportingObservations(AssessmentScaleObservationV2) <em>Get Assessment Scale Supporting Observations</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getAssessmentScaleSupportingObservations(AssessmentScaleObservationV2)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String GET_ASSESSMENT_SCALE_SUPPORTING_OBSERVATIONS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::AssessmentScaleSupportingObservation)).oclAsType(consol::AssessmentScaleSupportingObservation)";
-
-	/**
-	 * The cached OCL query for the '{@link #getAssessmentScaleSupportingObservations(AssessmentScaleObservationV2) <em>Get Assessment Scale Supporting Observations</em>}' query operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getAssessmentScaleSupportingObservations(AssessmentScaleObservationV2)
-	 * @generated
-	 * @ordered
-	 */
-	protected static OCLExpression<EClassifier> GET_ASSESSMENT_SCALE_SUPPORTING_OBSERVATIONS__EOCL_QRY;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-
-	public static EList<AssessmentScaleSupportingObservation> getAssessmentScaleSupportingObservations(
-			AssessmentScaleObservationV2 assessmentScaleObservationV2) {
-
-		if (GET_ASSESSMENT_SCALE_SUPPORTING_OBSERVATIONS__EOCL_QRY == null) {
-
-			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.ASSESSMENT_SCALE_OBSERVATION_V2,
-				ConsolPackage.Literals.ASSESSMENT_SCALE_OBSERVATION_V2.getEAllOperations().get(62));
-			try {
-				GET_ASSESSMENT_SCALE_SUPPORTING_OBSERVATIONS__EOCL_QRY = helper.createQuery(
-					GET_ASSESSMENT_SCALE_SUPPORTING_OBSERVATIONS__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-
-		OCL.Query query = EOCL_ENV.get().createQuery(GET_ASSESSMENT_SCALE_SUPPORTING_OBSERVATIONS__EOCL_QRY);
-		@SuppressWarnings("unchecked")
-		Collection<AssessmentScaleSupportingObservation> result = (Collection<AssessmentScaleSupportingObservation>) query.evaluate(
-			assessmentScaleObservationV2);
-		return new BasicEList.UnmodifiableEList<>(result.size(), result.toArray());
 	}
 
 } // AssessmentScaleObservationV2Operations

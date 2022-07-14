@@ -32,6 +32,8 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.HealthConcernActV3Oper
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernActV3#validateHealthConcernActV3EffectiveTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Health Concern Act V3 Effective Time</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernActV3#validateHealthConcernActV3ClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Health Concern Act V3 Class Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernActV3#validateHealthConcernActV3MoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Health Concern Act V3 Mood Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernActV3#validateHealthConcernActV3CodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Health Concern Act V3 Code P</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthConcernActV3#validateHealthConcernActV3Code(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Health Concern Act V3 Code</em>}</li>
  * </ul>
  * </p>
  *
@@ -298,6 +300,83 @@ public class HealthConcernActV3Test extends CDAValidationTest {
 		};
 
 		validateHealthConcernActV3MoodCodeTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateHealthConcernActV3CodeP() {
+		OperationsTestCase<HealthConcernActV3> validateHealthConcernActV3CodePTestCase = new OperationsTestCase<HealthConcernActV3>(
+			"validateHealthConcernActV3CodeP",
+			operationsForOCL.getOCLValue("VALIDATE_HEALTH_CONCERN_ACT_V3_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(HealthConcernActV3 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(HealthConcernActV3 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return HealthConcernActV3Operations.validateHealthConcernActV3CodeP(
+					(HealthConcernActV3) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateHealthConcernActV3CodePTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateHealthConcernActV3Code() {
+		OperationsTestCase<HealthConcernActV3> validateHealthConcernActV3CodeTestCase = new OperationsTestCase<HealthConcernActV3>(
+			"validateHealthConcernActV3Code",
+			operationsForOCL.getOCLValue("VALIDATE_HEALTH_CONCERN_ACT_V3_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(HealthConcernActV3 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(HealthConcernActV3 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected void setDependency(HealthConcernActV3 target) {
+				Collection<Object> passToken = new java.util.ArrayList<>(3);
+				passToken.add(target);
+				map.put("org.openhealthtools.mdht.uml.cda.consol.HealthConcernActV3CodeP", passToken);
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return HealthConcernActV3Operations.validateHealthConcernActV3Code(
+					(HealthConcernActV3) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateHealthConcernActV3CodeTestCase.doValidationTest();
 	}
 
 	/**

@@ -31,8 +31,10 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.ProcedureActivityProce
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityProcedureV3#validateProcedureActivityProcedureV3StatusCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Procedure V3 Status Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityProcedureV3#validateProcedureActivityProcedureV3StatusCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Procedure V3 Status Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityProcedureV3#validateProcedureActivityProcedureV3EffectiveTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Procedure V3 Effective Time</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityProcedureV3#validateProcedureActivityProcedureV3PriorityCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Procedure V3 Priority Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityProcedureV3#validateProcedureActivityProcedureV3PriorityCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Procedure V3 Priority Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityProcedureV3#validateProcedureActivityProcedureV3MethodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Procedure V3 Method Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityProcedureV3#validateProcedureActivityProcedureV3TargetSiteCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Procedure V3 Target Site Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityProcedureV3#validateProcedureActivityProcedureV3TargetSiteCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Procedure V3 Target Site Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityProcedureV3#validateProcedureActivityProcedureV3ClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Procedure V3 Class Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityProcedureV3#validateProcedureActivityProcedureV3MoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Procedure V3 Mood Code</em>}</li>
@@ -276,6 +278,42 @@ public class ProcedureActivityProcedureV3Test extends CDAValidationTest {
 
 	/**
 	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateProcedureActivityProcedureV3PriorityCodeP() {
+		OperationsTestCase<ProcedureActivityProcedureV3> validateProcedureActivityProcedureV3PriorityCodePTestCase = new OperationsTestCase<ProcedureActivityProcedureV3>(
+			"validateProcedureActivityProcedureV3PriorityCodeP",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PROCEDURE_ACTIVITY_PROCEDURE_V3_PRIORITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(ProcedureActivityProcedureV3 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(ProcedureActivityProcedureV3 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return ProcedureActivityProcedureV3Operations.validateProcedureActivityProcedureV3PriorityCodeP(
+					(ProcedureActivityProcedureV3) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateProcedureActivityProcedureV3PriorityCodePTestCase.doValidationTest();
+	}
+
+	/**
+	*
 	* @generated NOT
 	*/
 	@Test
@@ -295,7 +333,7 @@ public class ProcedureActivityProcedureV3Test extends CDAValidationTest {
 			@Override
 			protected void updateToPass(ProcedureActivityProcedureV3 target) {
 				target.init();
-				target.setPriorityCode(DatatypesFactory.eINSTANCE.createCE());
+				target.setPriorityCode(DatatypesFactory.eINSTANCE.createCE("A", "2.16.840.1.113883.5.7"));
 
 			}
 
@@ -350,6 +388,42 @@ public class ProcedureActivityProcedureV3Test extends CDAValidationTest {
 
 	/**
 	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateProcedureActivityProcedureV3TargetSiteCodeP() {
+		OperationsTestCase<ProcedureActivityProcedureV3> validateProcedureActivityProcedureV3TargetSiteCodePTestCase = new OperationsTestCase<ProcedureActivityProcedureV3>(
+			"validateProcedureActivityProcedureV3TargetSiteCodeP",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PROCEDURE_ACTIVITY_PROCEDURE_V3_TARGET_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(ProcedureActivityProcedureV3 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(ProcedureActivityProcedureV3 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return ProcedureActivityProcedureV3Operations.validateProcedureActivityProcedureV3TargetSiteCodeP(
+					(ProcedureActivityProcedureV3) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateProcedureActivityProcedureV3TargetSiteCodePTestCase.doValidationTest();
+	}
+
+	/**
+	*
 	* @generated NOT
 	*/
 	@Test
@@ -363,13 +437,14 @@ public class ProcedureActivityProcedureV3Test extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(ProcedureActivityProcedureV3 target) {
-
+				target.getTargetSiteCodes().add(DatatypesFactory.eINSTANCE.createCD());
 			}
 
 			@Override
 			protected void updateToPass(ProcedureActivityProcedureV3 target) {
 				target.init();
-				target.getTargetSiteCodes().add(DatatypesFactory.eINSTANCE.createCD());
+				target.getTargetSiteCodes().clear();
+				target.getTargetSiteCodes().add(DatatypesFactory.eINSTANCE.createCD("code", "2.16.840.1.113883.6.96"));
 
 			}
 

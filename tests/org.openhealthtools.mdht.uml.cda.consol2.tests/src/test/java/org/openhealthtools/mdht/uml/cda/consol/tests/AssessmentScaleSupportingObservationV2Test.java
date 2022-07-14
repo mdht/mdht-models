@@ -3,6 +3,7 @@
  */
 package org.openhealthtools.mdht.uml.cda.consol.tests;
 
+import java.util.Collection;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
@@ -24,13 +25,15 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.AssessmentScaleSupport
  * <p>
  * The following operations are supported:
  * <ul>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AssessmentScaleSupportingObservationV2#validateAssessmentScaleSupportingObservationV2CodeCodeSystem(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Assessment Scale Supporting Observation V2 Code Code System</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AssessmentScaleSupportingObservationV2#validateAssessmentScaleSupportingObservationV2TemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Assessment Scale Supporting Observation V2 Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AssessmentScaleSupportingObservationV2#validateAssessmentScaleSupportingObservationV2Id(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Assessment Scale Supporting Observation V2 Id</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AssessmentScaleSupportingObservationV2#validateAssessmentScaleSupportingObservationV2StatusCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Assessment Scale Supporting Observation V2 Status Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AssessmentScaleSupportingObservationV2#validateAssessmentScaleSupportingObservationV2StatusCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Assessment Scale Supporting Observation V2 Status Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AssessmentScaleSupportingObservationV2#validateAssessmentScaleSupportingObservationV2ClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Assessment Scale Supporting Observation V2 Class Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AssessmentScaleSupportingObservationV2#validateAssessmentScaleSupportingObservationV2MoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Assessment Scale Supporting Observation V2 Mood Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AssessmentScaleSupportingObservationV2#validateAssessmentScaleSupportingObservationV2Value(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Assessment Scale Supporting Observation V2 Value</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AssessmentScaleSupportingObservationV2#validateAssessmentScaleSupportingObservationV2CodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Assessment Scale Supporting Observation V2 Code P</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AssessmentScaleSupportingObservationV2#validateAssessmentScaleSupportingObservationV2Code(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Assessment Scale Supporting Observation V2 Code</em>}</li>
  * </ul>
  * </p>
  *
@@ -43,38 +46,39 @@ public class AssessmentScaleSupportingObservationV2Test extends CDAValidationTes
 	*
 	* @generated NOT
 	*/
-	@Test
-
-	public void testValidateAssessmentScaleSupportingObservationV2CodeCodeSystem() {
-		OperationsTestCase<AssessmentScaleSupportingObservationV2> validateAssessmentScaleSupportingObservationV2CodeCodeSystemTestCase = new OperationsTestCase<AssessmentScaleSupportingObservationV2>(
-			"validateAssessmentScaleSupportingObservationV2CodeCodeSystem",
-			operationsForOCL.getOCLValue(
-				"VALIDATE_ASSESSMENT_SCALE_SUPPORTING_OBSERVATION_V2_CODE_CODE_SYSTEM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(AssessmentScaleSupportingObservationV2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(AssessmentScaleSupportingObservationV2 target) {
-				target.init();
-				target.setCode(DatatypesFactory.eINSTANCE.createCD(BAD_CODE_VALUE, "2.16.840.1.113883.6.1"));
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return AssessmentScaleSupportingObservationV2Operations.validateAssessmentScaleSupportingObservationV2CodeCodeSystem(
-					(AssessmentScaleSupportingObservationV2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateAssessmentScaleSupportingObservationV2CodeCodeSystemTestCase.doValidationTest();
-	}
+	// @Test
+	//
+	// public void testValidateAssessmentScaleSupportingObservationV2CodeCodeSystem() {
+	// OperationsTestCase<AssessmentScaleSupportingObservationV2> validateAssessmentScaleSupportingObservationV2CodeCodeSystemTestCase = new
+	// OperationsTestCase<AssessmentScaleSupportingObservationV2>(
+	// "validateAssessmentScaleSupportingObservationV2CodeCodeSystem",
+	// operationsForOCL.getOCLValue(
+	// "VALIDATE_ASSESSMENT_SCALE_SUPPORTING_OBSERVATION_V2_CODE_CODE_SYSTEM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+	// objectFactory) {
+	//
+	// @Override
+	// protected void updateToFail(AssessmentScaleSupportingObservationV2 target) {
+	//
+	// }
+	//
+	// @Override
+	// protected void updateToPass(AssessmentScaleSupportingObservationV2 target) {
+	// target.init();
+	// target.setCode(DatatypesFactory.eINSTANCE.createCD(BAD_CODE_VALUE, "2.16.840.1.113883.6.1"));
+	//
+	// }
+	//
+	// @Override
+	// protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+	//
+	// return AssessmentScaleSupportingObservationV2Operations.validateAssessmentScaleSupportingObservationV2CodeCodeSystem(
+	// (AssessmentScaleSupportingObservationV2) objectToTest, diagnostician, map);
+	// }
+	//
+	// };
+	//
+	// validateAssessmentScaleSupportingObservationV2CodeCodeSystemTestCase.doValidationTest();
+	// }
 
 	/**
 	*
@@ -155,6 +159,42 @@ public class AssessmentScaleSupportingObservationV2Test extends CDAValidationTes
 	*/
 	@Test
 
+	public void testValidateAssessmentScaleSupportingObservationV2StatusCodeP() {
+		OperationsTestCase<AssessmentScaleSupportingObservationV2> validateAssessmentScaleSupportingObservationV2StatusCodePTestCase = new OperationsTestCase<AssessmentScaleSupportingObservationV2>(
+			"validateAssessmentScaleSupportingObservationV2StatusCodeP",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_ASSESSMENT_SCALE_SUPPORTING_OBSERVATION_V2_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(AssessmentScaleSupportingObservationV2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(AssessmentScaleSupportingObservationV2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return AssessmentScaleSupportingObservationV2Operations.validateAssessmentScaleSupportingObservationV2StatusCodeP(
+					(AssessmentScaleSupportingObservationV2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateAssessmentScaleSupportingObservationV2StatusCodePTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
 	public void testValidateAssessmentScaleSupportingObservationV2StatusCode() {
 		OperationsTestCase<AssessmentScaleSupportingObservationV2> validateAssessmentScaleSupportingObservationV2StatusCodeTestCase = new OperationsTestCase<AssessmentScaleSupportingObservationV2>(
 			"validateAssessmentScaleSupportingObservationV2StatusCode",
@@ -174,6 +214,15 @@ public class AssessmentScaleSupportingObservationV2Test extends CDAValidationTes
 				CS cs = DatatypesFactory.eINSTANCE.createCS("completed");
 				target.setStatusCode(cs);
 
+			}
+
+			@Override
+			protected void setDependency(AssessmentScaleSupportingObservationV2 target) {
+				Collection<Object> passToken = new java.util.ArrayList<>(3);
+				passToken.add(target);
+				map.put(
+					"org.openhealthtools.mdht.uml.cda.consol.AssessmentScaleSupportingObservationV2StatusCodeP",
+					passToken);
 			}
 
 			@Override
@@ -225,6 +274,86 @@ public class AssessmentScaleSupportingObservationV2Test extends CDAValidationTes
 		};
 
 		validateAssessmentScaleSupportingObservationV2ValueTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateAssessmentScaleSupportingObservationV2CodeP() {
+		OperationsTestCase<AssessmentScaleSupportingObservationV2> validateAssessmentScaleSupportingObservationV2CodePTestCase = new OperationsTestCase<AssessmentScaleSupportingObservationV2>(
+			"validateAssessmentScaleSupportingObservationV2CodeP",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_ASSESSMENT_SCALE_SUPPORTING_OBSERVATION_V2_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(AssessmentScaleSupportingObservationV2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(AssessmentScaleSupportingObservationV2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return AssessmentScaleSupportingObservationV2Operations.validateAssessmentScaleSupportingObservationV2CodeP(
+					(AssessmentScaleSupportingObservationV2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateAssessmentScaleSupportingObservationV2CodePTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateAssessmentScaleSupportingObservationV2Code() {
+		OperationsTestCase<AssessmentScaleSupportingObservationV2> validateAssessmentScaleSupportingObservationV2CodeTestCase = new OperationsTestCase<AssessmentScaleSupportingObservationV2>(
+			"validateAssessmentScaleSupportingObservationV2Code",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_ASSESSMENT_SCALE_SUPPORTING_OBSERVATION_V2_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(AssessmentScaleSupportingObservationV2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(AssessmentScaleSupportingObservationV2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected void setDependency(AssessmentScaleSupportingObservationV2 target) {
+				Collection<Object> passToken = new java.util.ArrayList<>(3);
+				passToken.add(target);
+				map.put(
+					"org.openhealthtools.mdht.uml.cda.consol.AssessmentScaleSupportingObservationV2CodeP", passToken);
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return AssessmentScaleSupportingObservationV2Operations.validateAssessmentScaleSupportingObservationV2Code(
+					(AssessmentScaleSupportingObservationV2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateAssessmentScaleSupportingObservationV2CodeTestCase.doValidationTest();
 	}
 
 	/**

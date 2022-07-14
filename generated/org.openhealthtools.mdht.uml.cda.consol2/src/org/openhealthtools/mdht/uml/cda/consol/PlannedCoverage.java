@@ -263,9 +263,9 @@ public interface PlannedCoverage extends Act {
 	public PlannedCoverage init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public PlannedCoverage init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // PlannedCoverage

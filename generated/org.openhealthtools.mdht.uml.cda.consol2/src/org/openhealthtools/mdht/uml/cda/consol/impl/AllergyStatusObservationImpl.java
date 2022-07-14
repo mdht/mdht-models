@@ -56,8 +56,7 @@ public class AllergyStatusObservationImpl extends ObservationImpl implements All
 	 */
 	public boolean validateAllergyStatusObservationTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AllergyStatusObservationOperations.validateAllergyStatusObservationTemplateId(
-			this, diagnostics, context);
+		return AllergyStatusObservationOperations.validateAllergyStatusObservationTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -94,8 +93,7 @@ public class AllergyStatusObservationImpl extends ObservationImpl implements All
 	 */
 	public boolean validateAllergyStatusObservationStatusCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AllergyStatusObservationOperations.validateAllergyStatusObservationStatusCode(
-			this, diagnostics, context);
+		return AllergyStatusObservationOperations.validateAllergyStatusObservationStatusCode(this, diagnostics, context);
 	}
 
 	/**
@@ -113,16 +111,16 @@ public class AllergyStatusObservationImpl extends ObservationImpl implements All
 	 * @generated
 	 */
 	public AllergyStatusObservation init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public AllergyStatusObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // AllergyStatusObservationImpl

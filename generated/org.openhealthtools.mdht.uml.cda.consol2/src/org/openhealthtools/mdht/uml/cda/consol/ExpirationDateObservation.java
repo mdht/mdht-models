@@ -90,10 +90,10 @@ public interface ExpirationDateObservation extends Observation {
 	public ExpirationDateObservation init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public ExpirationDateObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
 
 } // ExpirationDateObservation

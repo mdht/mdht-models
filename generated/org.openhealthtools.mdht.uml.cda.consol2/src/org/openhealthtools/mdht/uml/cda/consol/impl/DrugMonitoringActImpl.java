@@ -142,8 +142,7 @@ public class DrugMonitoringActImpl extends ActImpl implements DrugMonitoringAct 
 	 */
 	public boolean validateDrugMonitoringActParticipantParticipantRolePlayingEntityGeneralHeaderConstraintsUSRealmPersonNameUSRealmPersonNameMixedContent(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return DrugMonitoringActOperations.validateDrugMonitoringActParticipantParticipantRolePlayingEntityGeneralHeaderConstraintsUSRealmPersonNameUSRealmPersonNameMixedContent(
-			this, diagnostics, context);
+		return DrugMonitoringActOperations.validateDrugMonitoringActParticipantParticipantRolePlayingEntityGeneralHeaderConstraintsUSRealmPersonNameUSRealmPersonNameMixedContent(this, diagnostics, context);
 	}
 
 	/**
@@ -153,8 +152,7 @@ public class DrugMonitoringActImpl extends ActImpl implements DrugMonitoringAct 
 	 */
 	public boolean validateDrugMonitoringActParticipantParticipantRolePlayingEntityClassCode(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return DrugMonitoringActOperations.validateDrugMonitoringActParticipantParticipantRolePlayingEntityClassCode(
-			this, diagnostics, context);
+		return DrugMonitoringActOperations.validateDrugMonitoringActParticipantParticipantRolePlayingEntityClassCode(this, diagnostics, context);
 	}
 
 	/**
@@ -164,8 +162,7 @@ public class DrugMonitoringActImpl extends ActImpl implements DrugMonitoringAct 
 	 */
 	public boolean validateDrugMonitoringActParticipantParticipantRolePlayingEntityName(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return DrugMonitoringActOperations.validateDrugMonitoringActParticipantParticipantRolePlayingEntityName(
-			this, diagnostics, context);
+		return DrugMonitoringActOperations.validateDrugMonitoringActParticipantParticipantRolePlayingEntityName(this, diagnostics, context);
 	}
 
 	/**
@@ -175,8 +172,7 @@ public class DrugMonitoringActImpl extends ActImpl implements DrugMonitoringAct 
 	 */
 	public boolean validateDrugMonitoringActParticipantParticipantRoleClassCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return DrugMonitoringActOperations.validateDrugMonitoringActParticipantParticipantRoleClassCode(
-			this, diagnostics, context);
+		return DrugMonitoringActOperations.validateDrugMonitoringActParticipantParticipantRoleClassCode(this, diagnostics, context);
 	}
 
 	/**
@@ -186,8 +182,7 @@ public class DrugMonitoringActImpl extends ActImpl implements DrugMonitoringAct 
 	 */
 	public boolean validateDrugMonitoringActParticipantParticipantRoleId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return DrugMonitoringActOperations.validateDrugMonitoringActParticipantParticipantRoleId(
-			this, diagnostics, context);
+		return DrugMonitoringActOperations.validateDrugMonitoringActParticipantParticipantRoleId(this, diagnostics, context);
 	}
 
 	/**
@@ -197,8 +192,7 @@ public class DrugMonitoringActImpl extends ActImpl implements DrugMonitoringAct 
 	 */
 	public boolean validateDrugMonitoringActParticipantParticipantRolePlayingEntity(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return DrugMonitoringActOperations.validateDrugMonitoringActParticipantParticipantRolePlayingEntity(
-			this, diagnostics, context);
+		return DrugMonitoringActOperations.validateDrugMonitoringActParticipantParticipantRolePlayingEntity(this, diagnostics, context);
 	}
 
 	/**
@@ -218,8 +212,7 @@ public class DrugMonitoringActImpl extends ActImpl implements DrugMonitoringAct 
 	 */
 	public boolean validateDrugMonitoringActParticipantParticipantRole(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return DrugMonitoringActOperations.validateDrugMonitoringActParticipantParticipantRole(
-			this, diagnostics, context);
+		return DrugMonitoringActOperations.validateDrugMonitoringActParticipantParticipantRole(this, diagnostics, context);
 	}
 
 	/**
@@ -228,16 +221,16 @@ public class DrugMonitoringActImpl extends ActImpl implements DrugMonitoringAct 
 	 * @generated
 	 */
 	public DrugMonitoringAct init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public DrugMonitoringAct init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // DrugMonitoringActImpl

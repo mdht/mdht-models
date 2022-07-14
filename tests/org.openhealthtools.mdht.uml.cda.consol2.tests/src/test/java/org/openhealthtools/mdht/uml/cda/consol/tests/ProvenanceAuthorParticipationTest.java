@@ -34,6 +34,7 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.ProvenanceAuthorPartic
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProvenanceAuthorParticipation#validateProvenanceAuthorParticipationProvenanceAssignedAuthorRepresentedOrganizationName(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Provenance Author Participation Provenance Assigned Author Represented Organization Name</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProvenanceAuthorParticipation#validateProvenanceAuthorParticipationProvenanceAssignedAuthorRepresentedOrganizationTelecom(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Provenance Author Participation Provenance Assigned Author Represented Organization Telecom</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProvenanceAuthorParticipation#validateProvenanceAuthorParticipationProvenanceAssignedAuthorId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Provenance Author Participation Provenance Assigned Author Id</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProvenanceAuthorParticipation#validateProvenanceAuthorParticipationProvenanceAssignedAuthorCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Provenance Author Participation Provenance Assigned Author Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProvenanceAuthorParticipation#validateProvenanceAuthorParticipationProvenanceAssignedAuthorCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Provenance Author Participation Provenance Assigned Author Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProvenanceAuthorParticipation#validateProvenanceAuthorParticipationProvenanceAssignedAuthorAssignedPerson(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Provenance Author Participation Provenance Assigned Author Assigned Person</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProvenanceAuthorParticipation#validateProvenanceAuthorParticipationProvenanceAssignedAuthorRepresentedOrganization(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Provenance Author Participation Provenance Assigned Author Represented Organization</em>}</li>
@@ -439,6 +440,44 @@ public class ProvenanceAuthorParticipationTest extends CDAValidationTest {
 		};
 
 		validateProvenanceAuthorParticipationProvenanceAssignedAuthorIdTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+
+	public void testValidateProvenanceAuthorParticipationProvenanceAssignedAuthorCodeP() {
+		OperationsTestCase<ProvenanceAuthorParticipation> validateProvenanceAuthorParticipationProvenanceAssignedAuthorCodePTestCase = new OperationsTestCase<ProvenanceAuthorParticipation>(
+			"validateProvenanceAuthorParticipationProvenanceAssignedAuthorCodeP",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PROVENANCE_AUTHOR_PARTICIPATION_PROVENANCE_ASSIGNED_AUTHOR_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(ProvenanceAuthorParticipation target) {
+				target.init();
+				target.setAssignedAuthor(CDAFactory.eINSTANCE.createAssignedAuthor());
+
+			}
+
+			@Override
+			protected void updateToPass(ProvenanceAuthorParticipation target) {
+				target.getAssignedAuthor().setCode(DatatypesFactory.eINSTANCE.createCE());
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return ProvenanceAuthorParticipationOperations.validateProvenanceAuthorParticipationProvenanceAssignedAuthorCodeP(
+					(ProvenanceAuthorParticipation) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateProvenanceAuthorParticipationProvenanceAssignedAuthorCodePTestCase.doValidationTest();
 	}
 
 	/**

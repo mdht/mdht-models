@@ -371,9 +371,9 @@ public interface PolicyActivity2 extends PolicyActivity {
 	public PolicyActivity2 init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public PolicyActivity2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // PolicyActivity2

@@ -201,8 +201,7 @@ public class CarePlanImpl extends USRealmHeader2Impl implements CarePlan {
 	 */
 	public boolean validateCarePlanInformationRecipientIntendedRecipientInformationRecipientGeneralHeaderConstraintsUSRealmPersonNameUSRealmPersonNameMixedContent(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return CarePlanOperations.validateCarePlanInformationRecipientIntendedRecipientInformationRecipientGeneralHeaderConstraintsUSRealmPersonNameUSRealmPersonNameMixedContent(
-			this, diagnostics, context);
+		return CarePlanOperations.validateCarePlanInformationRecipientIntendedRecipientInformationRecipientGeneralHeaderConstraintsUSRealmPersonNameUSRealmPersonNameMixedContent(this, diagnostics, context);
 	}
 
 	/**
@@ -212,8 +211,7 @@ public class CarePlanImpl extends USRealmHeader2Impl implements CarePlan {
 	 */
 	public boolean validateCarePlanInformationRecipientIntendedRecipientInformationRecipientName(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return CarePlanOperations.validateCarePlanInformationRecipientIntendedRecipientInformationRecipientName(
-			this, diagnostics, context);
+		return CarePlanOperations.validateCarePlanInformationRecipientIntendedRecipientInformationRecipientName(this, diagnostics, context);
 	}
 
 	/**
@@ -223,8 +221,7 @@ public class CarePlanImpl extends USRealmHeader2Impl implements CarePlan {
 	 */
 	public boolean validateCarePlanInformationRecipientIntendedRecipientReceivedOrganizationId(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return CarePlanOperations.validateCarePlanInformationRecipientIntendedRecipientReceivedOrganizationId(
-			this, diagnostics, context);
+		return CarePlanOperations.validateCarePlanInformationRecipientIntendedRecipientReceivedOrganizationId(this, diagnostics, context);
 	}
 
 	/**
@@ -234,8 +231,7 @@ public class CarePlanImpl extends USRealmHeader2Impl implements CarePlan {
 	 */
 	public boolean validateCarePlanInformationRecipientIntendedRecipientReceivedOrganizationName(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return CarePlanOperations.validateCarePlanInformationRecipientIntendedRecipientReceivedOrganizationName(
-			this, diagnostics, context);
+		return CarePlanOperations.validateCarePlanInformationRecipientIntendedRecipientReceivedOrganizationName(this, diagnostics, context);
 	}
 
 	/**
@@ -245,8 +241,7 @@ public class CarePlanImpl extends USRealmHeader2Impl implements CarePlan {
 	 */
 	public boolean validateCarePlanInformationRecipientIntendedRecipientReceivedOrganizationStandardIndustryClassCodeP(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return CarePlanOperations.validateCarePlanInformationRecipientIntendedRecipientReceivedOrganizationStandardIndustryClassCodeP(
-			this, diagnostics, context);
+		return CarePlanOperations.validateCarePlanInformationRecipientIntendedRecipientReceivedOrganizationStandardIndustryClassCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -256,8 +251,7 @@ public class CarePlanImpl extends USRealmHeader2Impl implements CarePlan {
 	 */
 	public boolean validateCarePlanInformationRecipientIntendedRecipientReceivedOrganizationStandardIndustryClassCode(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return CarePlanOperations.validateCarePlanInformationRecipientIntendedRecipientReceivedOrganizationStandardIndustryClassCode(
-			this, diagnostics, context);
+		return CarePlanOperations.validateCarePlanInformationRecipientIntendedRecipientReceivedOrganizationStandardIndustryClassCode(this, diagnostics, context);
 	}
 
 	/**
@@ -287,8 +281,7 @@ public class CarePlanImpl extends USRealmHeader2Impl implements CarePlan {
 	 */
 	public boolean validateCarePlanInformationRecipientIntendedRecipientTelecom(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return CarePlanOperations.validateCarePlanInformationRecipientIntendedRecipientTelecom(
-			this, diagnostics, context);
+		return CarePlanOperations.validateCarePlanInformationRecipientIntendedRecipientTelecom(this, diagnostics, context);
 	}
 
 	/**
@@ -298,8 +291,7 @@ public class CarePlanImpl extends USRealmHeader2Impl implements CarePlan {
 	 */
 	public boolean validateCarePlanInformationRecipientIntendedRecipientInformationRecipient(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return CarePlanOperations.validateCarePlanInformationRecipientIntendedRecipientInformationRecipient(
-			this, diagnostics, context);
+		return CarePlanOperations.validateCarePlanInformationRecipientIntendedRecipientInformationRecipient(this, diagnostics, context);
 	}
 
 	/**
@@ -309,8 +301,7 @@ public class CarePlanImpl extends USRealmHeader2Impl implements CarePlan {
 	 */
 	public boolean validateCarePlanInformationRecipientIntendedRecipientReceivedOrganization(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return CarePlanOperations.validateCarePlanInformationRecipientIntendedRecipientReceivedOrganization(
-			this, diagnostics, context);
+		return CarePlanOperations.validateCarePlanInformationRecipientIntendedRecipientReceivedOrganization(this, diagnostics, context);
 	}
 
 	/**
@@ -399,8 +390,7 @@ public class CarePlanImpl extends USRealmHeader2Impl implements CarePlan {
 	 */
 	public boolean validateCarePlanParticipantCarePlanReviewAssociatedEntityClassCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return CarePlanOperations.validateCarePlanParticipantCarePlanReviewAssociatedEntityClassCode(
-			this, diagnostics, context);
+		return CarePlanOperations.validateCarePlanParticipantCarePlanReviewAssociatedEntityClassCode(this, diagnostics, context);
 	}
 
 	/**
@@ -410,8 +400,7 @@ public class CarePlanImpl extends USRealmHeader2Impl implements CarePlan {
 	 */
 	public boolean validateCarePlanParticipantCarePlanReviewAssociatedEntityId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return CarePlanOperations.validateCarePlanParticipantCarePlanReviewAssociatedEntityId(
-			this, diagnostics, context);
+		return CarePlanOperations.validateCarePlanParticipantCarePlanReviewAssociatedEntityId(this, diagnostics, context);
 	}
 
 	/**
@@ -421,8 +410,7 @@ public class CarePlanImpl extends USRealmHeader2Impl implements CarePlan {
 	 */
 	public boolean validateCarePlanParticipantCarePlanReviewAssociatedEntityCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return CarePlanOperations.validateCarePlanParticipantCarePlanReviewAssociatedEntityCodeP(
-			this, diagnostics, context);
+		return CarePlanOperations.validateCarePlanParticipantCarePlanReviewAssociatedEntityCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -432,8 +420,7 @@ public class CarePlanImpl extends USRealmHeader2Impl implements CarePlan {
 	 */
 	public boolean validateCarePlanParticipantCarePlanReviewAssociatedEntityCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return CarePlanOperations.validateCarePlanParticipantCarePlanReviewAssociatedEntityCode(
-			this, diagnostics, context);
+		return CarePlanOperations.validateCarePlanParticipantCarePlanReviewAssociatedEntityCode(this, diagnostics, context);
 	}
 
 	/**
@@ -493,8 +480,7 @@ public class CarePlanImpl extends USRealmHeader2Impl implements CarePlan {
 	 */
 	public boolean validateCarePlanParticipantCaregiverAssociatedEntityAssociatedPersonName(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return CarePlanOperations.validateCarePlanParticipantCaregiverAssociatedEntityAssociatedPersonName(
-			this, diagnostics, context);
+		return CarePlanOperations.validateCarePlanParticipantCaregiverAssociatedEntityAssociatedPersonName(this, diagnostics, context);
 	}
 
 	/**
@@ -504,8 +490,7 @@ public class CarePlanImpl extends USRealmHeader2Impl implements CarePlan {
 	 */
 	public boolean validateCarePlanParticipantCaregiverAssociatedEntityClassCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return CarePlanOperations.validateCarePlanParticipantCaregiverAssociatedEntityClassCodeP(
-			this, diagnostics, context);
+		return CarePlanOperations.validateCarePlanParticipantCaregiverAssociatedEntityClassCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -515,8 +500,7 @@ public class CarePlanImpl extends USRealmHeader2Impl implements CarePlan {
 	 */
 	public boolean validateCarePlanParticipantCaregiverAssociatedEntityClassCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return CarePlanOperations.validateCarePlanParticipantCaregiverAssociatedEntityClassCode(
-			this, diagnostics, context);
+		return CarePlanOperations.validateCarePlanParticipantCaregiverAssociatedEntityClassCode(this, diagnostics, context);
 	}
 
 	/**
@@ -526,8 +510,7 @@ public class CarePlanImpl extends USRealmHeader2Impl implements CarePlan {
 	 */
 	public boolean validateCarePlanParticipantCaregiverAssociatedEntityAssociatedPerson(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return CarePlanOperations.validateCarePlanParticipantCaregiverAssociatedEntityAssociatedPerson(
-			this, diagnostics, context);
+		return CarePlanOperations.validateCarePlanParticipantCaregiverAssociatedEntityAssociatedPerson(this, diagnostics, context);
 	}
 
 	/**
@@ -577,8 +560,7 @@ public class CarePlanImpl extends USRealmHeader2Impl implements CarePlan {
 	 */
 	public boolean validateCarePlanDocumentationOfServiceEventPerformerAssignedEntityAssignedPersonGeneralHeaderConstraintsUSRealmPersonNameUSRealmPersonNameMixedContent(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return CarePlanOperations.validateCarePlanDocumentationOfServiceEventPerformerAssignedEntityAssignedPersonGeneralHeaderConstraintsUSRealmPersonNameUSRealmPersonNameMixedContent(
-			this, diagnostics, context);
+		return CarePlanOperations.validateCarePlanDocumentationOfServiceEventPerformerAssignedEntityAssignedPersonGeneralHeaderConstraintsUSRealmPersonNameUSRealmPersonNameMixedContent(this, diagnostics, context);
 	}
 
 	/**
@@ -588,8 +570,7 @@ public class CarePlanImpl extends USRealmHeader2Impl implements CarePlan {
 	 */
 	public boolean validateCarePlanDocumentationOfServiceEventPerformerAssignedEntityAssignedPersonName(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return CarePlanOperations.validateCarePlanDocumentationOfServiceEventPerformerAssignedEntityAssignedPersonName(
-			this, diagnostics, context);
+		return CarePlanOperations.validateCarePlanDocumentationOfServiceEventPerformerAssignedEntityAssignedPersonName(this, diagnostics, context);
 	}
 
 	/**
@@ -599,8 +580,7 @@ public class CarePlanImpl extends USRealmHeader2Impl implements CarePlan {
 	 */
 	public boolean validateCarePlanDocumentationOfServiceEventPerformerAssignedEntityId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return CarePlanOperations.validateCarePlanDocumentationOfServiceEventPerformerAssignedEntityId(
-			this, diagnostics, context);
+		return CarePlanOperations.validateCarePlanDocumentationOfServiceEventPerformerAssignedEntityId(this, diagnostics, context);
 	}
 
 	/**
@@ -610,8 +590,7 @@ public class CarePlanImpl extends USRealmHeader2Impl implements CarePlan {
 	 */
 	public boolean validateCarePlanDocumentationOfServiceEventPerformerAssignedEntityCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return CarePlanOperations.validateCarePlanDocumentationOfServiceEventPerformerAssignedEntityCode(
-			this, diagnostics, context);
+		return CarePlanOperations.validateCarePlanDocumentationOfServiceEventPerformerAssignedEntityCode(this, diagnostics, context);
 	}
 
 	/**
@@ -621,8 +600,7 @@ public class CarePlanImpl extends USRealmHeader2Impl implements CarePlan {
 	 */
 	public boolean validateCarePlanDocumentationOfServiceEventPerformerAssignedEntityAssignedPerson(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return CarePlanOperations.validateCarePlanDocumentationOfServiceEventPerformerAssignedEntityAssignedPerson(
-			this, diagnostics, context);
+		return CarePlanOperations.validateCarePlanDocumentationOfServiceEventPerformerAssignedEntityAssignedPerson(this, diagnostics, context);
 	}
 
 	/**
@@ -632,8 +610,7 @@ public class CarePlanImpl extends USRealmHeader2Impl implements CarePlan {
 	 */
 	public boolean validateCarePlanDocumentationOfServiceEventPerformerAssignedEntity(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return CarePlanOperations.validateCarePlanDocumentationOfServiceEventPerformerAssignedEntity(
-			this, diagnostics, context);
+		return CarePlanOperations.validateCarePlanDocumentationOfServiceEventPerformerAssignedEntity(this, diagnostics, context);
 	}
 
 	/**
@@ -703,8 +680,7 @@ public class CarePlanImpl extends USRealmHeader2Impl implements CarePlan {
 	 */
 	public boolean validateCarePlanRelatedDocumentParentDocumentVersionNumber(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return CarePlanOperations.validateCarePlanRelatedDocumentParentDocumentVersionNumber(
-			this, diagnostics, context);
+		return CarePlanOperations.validateCarePlanRelatedDocumentParentDocumentVersionNumber(this, diagnostics, context);
 	}
 
 	/**
@@ -742,8 +718,7 @@ public class CarePlanImpl extends USRealmHeader2Impl implements CarePlan {
 	 */
 	public boolean validateCarePlanComponentOfEncompassingEncounterEffectiveTime(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return CarePlanOperations.validateCarePlanComponentOfEncompassingEncounterEffectiveTime(
-			this, diagnostics, context);
+		return CarePlanOperations.validateCarePlanComponentOfEncompassingEncounterEffectiveTime(this, diagnostics, context);
 	}
 
 	/**
@@ -809,17 +784,17 @@ public class CarePlanImpl extends USRealmHeader2Impl implements CarePlan {
 	 */
 	@Override
 	public CarePlan init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public CarePlan init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // CarePlanImpl

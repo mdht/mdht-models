@@ -51,21 +51,9 @@ public class AssessmentScaleSupportingObservationV2Impl extends ObservationImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAssessmentScaleSupportingObservationV2CodeCodeSystem(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return AssessmentScaleSupportingObservationV2Operations.validateAssessmentScaleSupportingObservationV2CodeCodeSystem(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public boolean validateAssessmentScaleSupportingObservationV2TemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AssessmentScaleSupportingObservationV2Operations.validateAssessmentScaleSupportingObservationV2TemplateId(
-			this, diagnostics, context);
+		return AssessmentScaleSupportingObservationV2Operations.validateAssessmentScaleSupportingObservationV2TemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -75,8 +63,16 @@ public class AssessmentScaleSupportingObservationV2Impl extends ObservationImpl
 	 */
 	public boolean validateAssessmentScaleSupportingObservationV2Id(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AssessmentScaleSupportingObservationV2Operations.validateAssessmentScaleSupportingObservationV2Id(
-			this, diagnostics, context);
+		return AssessmentScaleSupportingObservationV2Operations.validateAssessmentScaleSupportingObservationV2Id(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateAssessmentScaleSupportingObservationV2StatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AssessmentScaleSupportingObservationV2Operations.validateAssessmentScaleSupportingObservationV2StatusCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -86,8 +82,7 @@ public class AssessmentScaleSupportingObservationV2Impl extends ObservationImpl
 	 */
 	public boolean validateAssessmentScaleSupportingObservationV2StatusCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AssessmentScaleSupportingObservationV2Operations.validateAssessmentScaleSupportingObservationV2StatusCode(
-			this, diagnostics, context);
+		return AssessmentScaleSupportingObservationV2Operations.validateAssessmentScaleSupportingObservationV2StatusCode(this, diagnostics, context);
 	}
 
 	/**
@@ -97,8 +92,25 @@ public class AssessmentScaleSupportingObservationV2Impl extends ObservationImpl
 	 */
 	public boolean validateAssessmentScaleSupportingObservationV2Value(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AssessmentScaleSupportingObservationV2Operations.validateAssessmentScaleSupportingObservationV2Value(
-			this, diagnostics, context);
+		return AssessmentScaleSupportingObservationV2Operations.validateAssessmentScaleSupportingObservationV2Value(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateAssessmentScaleSupportingObservationV2CodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AssessmentScaleSupportingObservationV2Operations.validateAssessmentScaleSupportingObservationV2CodeP(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateAssessmentScaleSupportingObservationV2Code(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AssessmentScaleSupportingObservationV2Operations.validateAssessmentScaleSupportingObservationV2Code(this, diagnostics, context);
 	}
 
 	/**
@@ -108,8 +120,7 @@ public class AssessmentScaleSupportingObservationV2Impl extends ObservationImpl
 	 */
 	public boolean validateAssessmentScaleSupportingObservationV2ClassCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AssessmentScaleSupportingObservationV2Operations.validateAssessmentScaleSupportingObservationV2ClassCode(
-			this, diagnostics, context);
+		return AssessmentScaleSupportingObservationV2Operations.validateAssessmentScaleSupportingObservationV2ClassCode(this, diagnostics, context);
 	}
 
 	/**
@@ -119,8 +130,7 @@ public class AssessmentScaleSupportingObservationV2Impl extends ObservationImpl
 	 */
 	public boolean validateAssessmentScaleSupportingObservationV2MoodCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AssessmentScaleSupportingObservationV2Operations.validateAssessmentScaleSupportingObservationV2MoodCode(
-			this, diagnostics, context);
+		return AssessmentScaleSupportingObservationV2Operations.validateAssessmentScaleSupportingObservationV2MoodCode(this, diagnostics, context);
 	}
 
 	/**
@@ -129,17 +139,17 @@ public class AssessmentScaleSupportingObservationV2Impl extends ObservationImpl
 	 * @generated
 	 */
 	public AssessmentScaleSupportingObservationV2 init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public AssessmentScaleSupportingObservationV2 init(
 			Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // AssessmentScaleSupportingObservationV2Impl

@@ -50,8 +50,7 @@ public class ExpirationDateObservationImpl extends ObservationImpl implements Ex
 	 */
 	public boolean validateExpirationDateObservationTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ExpirationDateObservationOperations.validateExpirationDateObservationTemplateId(
-			this, diagnostics, context);
+		return ExpirationDateObservationOperations.validateExpirationDateObservationTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -96,17 +95,17 @@ public class ExpirationDateObservationImpl extends ObservationImpl implements Ex
 	 * @generated
 	 */
 	public ExpirationDateObservation init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public ExpirationDateObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 
 } // ExpirationDateObservationImpl

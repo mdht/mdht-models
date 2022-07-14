@@ -54,8 +54,7 @@ public class MedicationsAdministeredSection2Impl extends MedicationsAdministered
 	 */
 	public boolean validateMedicationsAdministeredSection2TemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationsAdministeredSection2Operations.validateMedicationsAdministeredSection2TemplateId(
-			this, diagnostics, context);
+		return MedicationsAdministeredSection2Operations.validateMedicationsAdministeredSection2TemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -75,8 +74,7 @@ public class MedicationsAdministeredSection2Impl extends MedicationsAdministered
 	@Override
 	public boolean validateMedicationsAdministeredSectionCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationsAdministeredSection2Operations.validateMedicationsAdministeredSectionCodeP(
-			this, diagnostics, context);
+		return MedicationsAdministeredSection2Operations.validateMedicationsAdministeredSectionCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -87,8 +85,7 @@ public class MedicationsAdministeredSection2Impl extends MedicationsAdministered
 	@Override
 	public boolean validateMedicationsAdministeredSectionCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationsAdministeredSection2Operations.validateMedicationsAdministeredSectionCode(
-			this, diagnostics, context);
+		return MedicationsAdministeredSection2Operations.validateMedicationsAdministeredSectionCode(this, diagnostics, context);
 	}
 
 	/**
@@ -99,8 +96,7 @@ public class MedicationsAdministeredSection2Impl extends MedicationsAdministered
 	@Override
 	public boolean validateMedicationsAdministeredSectionMedicationActivity(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationsAdministeredSection2Operations.validateMedicationsAdministeredSectionMedicationActivity(
-			this, diagnostics, context);
+		return MedicationsAdministeredSection2Operations.validateMedicationsAdministeredSectionMedicationActivity(this, diagnostics, context);
 	}
 
 	/**
@@ -110,17 +106,17 @@ public class MedicationsAdministeredSection2Impl extends MedicationsAdministered
 	 */
 	@Override
 	public MedicationsAdministeredSection2 init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public MedicationsAdministeredSection2 init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // MedicationsAdministeredSection2Impl

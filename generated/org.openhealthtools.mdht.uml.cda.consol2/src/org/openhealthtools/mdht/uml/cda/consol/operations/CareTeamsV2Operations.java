@@ -89,7 +89,7 @@ public class CareTeamsV2Operations extends SectionOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_CARE_TEAMS_V2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<  Constraint> VALIDATE_CARE_TEAMS_V2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -104,32 +104,44 @@ public class CareTeamsV2Operations extends SectionOperations {
 
 	public static boolean validateCareTeamsV2TemplateId(CareTeamsV2 careTeamsV2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		DatatypesUtil.increment(context, "CareTeamsV2CareTeamsV2TemplateId", "ERROR");
-
+	
+	
+	
+  	  
+  	  
+  	  
+  	  
+  	 
+  	 
+  	 
+    DatatypesUtil.increment(context,"CareTeamsV2CareTeamsV2TemplateId","ERROR");
+    
+  	  
+  	  
 		if (VALIDATE_CARE_TEAMS_V2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-
+		
+	 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CARE_TEAMS_V2);
 			try {
-				VALIDATE_CARE_TEAMS_V2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
-					helper.createInvariant(VALIDATE_CARE_TEAMS_V2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			} catch (ParserException pe) {
+				VALIDATE_CARE_TEAMS_V2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_CARE_TEAMS_V2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-
-		if (!EOCL_ENV.get().createQuery(VALIDATE_CARE_TEAMS_V2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
-			careTeamsV2)) {
-			if (diagnostics != null) {
-				diagnostics.add(
-					new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.CARE_TEAMS_V2__CARE_TEAMS_V2_TEMPLATE_ID,
-						ConsolPlugin.INSTANCE.getString("CareTeamsV2CareTeamsV2TemplateId"),
-						new Object[] { careTeamsV2 }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_CARE_TEAMS_V2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(careTeamsV2)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.CARE_TEAMS_V2__CARE_TEAMS_V2_TEMPLATE_ID,
+						 ConsolPlugin.INSTANCE.getString("CareTeamsV2CareTeamsV2TemplateId"),
+						 new Object [] { careTeamsV2 }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -143,9 +155,9 @@ public class CareTeamsV2Operations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_CARE_TEAMS_V2_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and " +
-			"let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in " +
-			"value.code = '85847-2' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_CARE_TEAMS_V2_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "+
+"let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "+
+"value.code = '85847-2' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateCareTeamsV2Code(CareTeamsV2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Teams V2 Code</em>}' invariant operation.
@@ -156,7 +168,7 @@ public class CareTeamsV2Operations extends SectionOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_CARE_TEAMS_V2_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<  Constraint> VALIDATE_CARE_TEAMS_V2_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -171,31 +183,44 @@ public class CareTeamsV2Operations extends SectionOperations {
 
 	public static boolean validateCareTeamsV2Code(CareTeamsV2 careTeamsV2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		DatatypesUtil.increment(context, "CareTeamsV2CareTeamsV2Code", "ERROR");
-
+	
+	
+	
+  	  
+  	  
+  	  
+  	  
+  	 
+  	 
+  	 
+    DatatypesUtil.increment(context,"CareTeamsV2CareTeamsV2Code","ERROR");
+    
+  	  
+  	  
 		if (VALIDATE_CARE_TEAMS_V2_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-
+		
+	 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CARE_TEAMS_V2);
 			try {
-				VALIDATE_CARE_TEAMS_V2_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
-					helper.createInvariant(VALIDATE_CARE_TEAMS_V2_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			} catch (ParserException pe) {
+				VALIDATE_CARE_TEAMS_V2_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_CARE_TEAMS_V2_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-
-		if (!EOCL_ENV.get().createQuery(VALIDATE_CARE_TEAMS_V2_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
-			careTeamsV2)) {
-			if (diagnostics != null) {
-				diagnostics.add(
-					new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.CARE_TEAMS_V2__CARE_TEAMS_V2_CODE,
-						ConsolPlugin.INSTANCE.getString("CareTeamsV2CareTeamsV2Code"), new Object[] { careTeamsV2 }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_CARE_TEAMS_V2_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(careTeamsV2)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.CARE_TEAMS_V2__CARE_TEAMS_V2_CODE,
+						 ConsolPlugin.INSTANCE.getString("CareTeamsV2CareTeamsV2Code"),
+						 new Object [] { careTeamsV2 }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -220,7 +245,7 @@ public class CareTeamsV2Operations extends SectionOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_CARE_TEAMS_V2_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<  Constraint> VALIDATE_CARE_TEAMS_V2_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -235,31 +260,44 @@ public class CareTeamsV2Operations extends SectionOperations {
 
 	public static boolean validateCareTeamsV2CodeP(CareTeamsV2 careTeamsV2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		DatatypesUtil.increment(context, "CareTeamsV2CareTeamsV2CodeP", "ERROR");
-
+	
+	
+	
+  	  
+  	  
+  	  
+  	  
+  	 
+  	 
+  	 
+    DatatypesUtil.increment(context,"CareTeamsV2CareTeamsV2CodeP","ERROR");
+    
+  	  
+  	  
 		if (VALIDATE_CARE_TEAMS_V2_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-
+		
+	 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CARE_TEAMS_V2);
 			try {
-				VALIDATE_CARE_TEAMS_V2_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
-					helper.createInvariant(VALIDATE_CARE_TEAMS_V2_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			} catch (ParserException pe) {
+				VALIDATE_CARE_TEAMS_V2_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_CARE_TEAMS_V2_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-
-		if (!EOCL_ENV.get().createQuery(VALIDATE_CARE_TEAMS_V2_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
-			careTeamsV2)) {
-			if (diagnostics != null) {
-				diagnostics.add(
-					new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.CARE_TEAMS_V2__CARE_TEAMS_V2_CODE_P,
-						ConsolPlugin.INSTANCE.getString("CareTeamsV2CareTeamsV2CodeP"), new Object[] { careTeamsV2 }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_CARE_TEAMS_V2_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(careTeamsV2)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.CARE_TEAMS_V2__CARE_TEAMS_V2_CODE_P,
+						 ConsolPlugin.INSTANCE.getString("CareTeamsV2CareTeamsV2CodeP"),
+						 new Object [] { careTeamsV2 }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -284,7 +322,7 @@ public class CareTeamsV2Operations extends SectionOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_CARE_TEAMS_V2_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<  Constraint> VALIDATE_CARE_TEAMS_V2_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -299,31 +337,44 @@ public class CareTeamsV2Operations extends SectionOperations {
 
 	public static boolean validateCareTeamsV2Title(CareTeamsV2 careTeamsV2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		DatatypesUtil.increment(context, "CareTeamsV2CareTeamsV2Title", "ERROR");
-
+	
+	
+	
+  	  
+  	  
+  	  
+  	  
+  	 
+  	 
+  	 
+    DatatypesUtil.increment(context,"CareTeamsV2CareTeamsV2Title","ERROR");
+    
+  	  
+  	  
 		if (VALIDATE_CARE_TEAMS_V2_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-
+		
+	 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CARE_TEAMS_V2);
 			try {
-				VALIDATE_CARE_TEAMS_V2_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
-					helper.createInvariant(VALIDATE_CARE_TEAMS_V2_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			} catch (ParserException pe) {
+				VALIDATE_CARE_TEAMS_V2_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_CARE_TEAMS_V2_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-
-		if (!EOCL_ENV.get().createQuery(VALIDATE_CARE_TEAMS_V2_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
-			careTeamsV2)) {
-			if (diagnostics != null) {
-				diagnostics.add(
-					new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.CARE_TEAMS_V2__CARE_TEAMS_V2_TITLE,
-						ConsolPlugin.INSTANCE.getString("CareTeamsV2CareTeamsV2Title"), new Object[] { careTeamsV2 }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_CARE_TEAMS_V2_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(careTeamsV2)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.CARE_TEAMS_V2__CARE_TEAMS_V2_TITLE,
+						 ConsolPlugin.INSTANCE.getString("CareTeamsV2CareTeamsV2Title"),
+						 new Object [] { careTeamsV2 }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -348,7 +399,7 @@ public class CareTeamsV2Operations extends SectionOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_CARE_TEAMS_V2_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<  Constraint> VALIDATE_CARE_TEAMS_V2_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -363,31 +414,44 @@ public class CareTeamsV2Operations extends SectionOperations {
 
 	public static boolean validateCareTeamsV2Text(CareTeamsV2 careTeamsV2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		DatatypesUtil.increment(context, "CareTeamsV2CareTeamsV2Text", "ERROR");
-
+	
+	
+	
+  	  
+  	  
+  	  
+  	  
+  	 
+  	 
+  	 
+    DatatypesUtil.increment(context,"CareTeamsV2CareTeamsV2Text","ERROR");
+    
+  	  
+  	  
 		if (VALIDATE_CARE_TEAMS_V2_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-
+		
+	 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CARE_TEAMS_V2);
 			try {
-				VALIDATE_CARE_TEAMS_V2_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
-					helper.createInvariant(VALIDATE_CARE_TEAMS_V2_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			} catch (ParserException pe) {
+				VALIDATE_CARE_TEAMS_V2_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_CARE_TEAMS_V2_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-
-		if (!EOCL_ENV.get().createQuery(VALIDATE_CARE_TEAMS_V2_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
-			careTeamsV2)) {
-			if (diagnostics != null) {
-				diagnostics.add(
-					new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.CARE_TEAMS_V2__CARE_TEAMS_V2_TEXT,
-						ConsolPlugin.INSTANCE.getString("CareTeamsV2CareTeamsV2Text"), new Object[] { careTeamsV2 }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_CARE_TEAMS_V2_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(careTeamsV2)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.CARE_TEAMS_V2__CARE_TEAMS_V2_TEXT,
+						 ConsolPlugin.INSTANCE.getString("CareTeamsV2CareTeamsV2Text"),
+						 new Object [] { careTeamsV2 }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -412,7 +476,7 @@ public class CareTeamsV2Operations extends SectionOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_CARE_TEAMS_V2_CARE_TEAM_ORGANIZER_V2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<  Constraint> VALIDATE_CARE_TEAMS_V2_CARE_TEAM_ORGANIZER_V2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -427,33 +491,44 @@ public class CareTeamsV2Operations extends SectionOperations {
 
 	public static boolean validateCareTeamsV2CareTeamOrganizerV2(CareTeamsV2 careTeamsV2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		DatatypesUtil.increment(context, "CareTeamsV2CareTeamsV2CareTeamOrganizerV2", "WARNING");
-
+	
+	
+	
+  	  
+  	  
+  	  
+  	  
+  	 
+  	 
+  	 
+    DatatypesUtil.increment(context,"CareTeamsV2CareTeamsV2CareTeamOrganizerV2","WARNING");
+    
+  	  
+  	  
 		if (VALIDATE_CARE_TEAMS_V2_CARE_TEAM_ORGANIZER_V2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-
+		
+	 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CARE_TEAMS_V2);
 			try {
-				VALIDATE_CARE_TEAMS_V2_CARE_TEAM_ORGANIZER_V2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
-					helper.createInvariant(
-						VALIDATE_CARE_TEAMS_V2_CARE_TEAM_ORGANIZER_V2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			} catch (ParserException pe) {
+				VALIDATE_CARE_TEAMS_V2_CARE_TEAM_ORGANIZER_V2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_CARE_TEAMS_V2_CARE_TEAM_ORGANIZER_V2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-
-		if (!EOCL_ENV.get().createQuery(
-			VALIDATE_CARE_TEAMS_V2_CARE_TEAM_ORGANIZER_V2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(careTeamsV2)) {
-			if (diagnostics != null) {
-				diagnostics.add(
-					new BasicDiagnostic(
-						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.CARE_TEAMS_V2__CARE_TEAMS_V2_CARE_TEAM_ORGANIZER_V2,
-						ConsolPlugin.INSTANCE.getString("CareTeamsV2CareTeamsV2CareTeamOrganizerV2"),
-						new Object[] { careTeamsV2 }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_CARE_TEAMS_V2_CARE_TEAM_ORGANIZER_V2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(careTeamsV2)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.CARE_TEAMS_V2__CARE_TEAMS_V2_CARE_TEAM_ORGANIZER_V2,
+						 ConsolPlugin.INSTANCE.getString("CareTeamsV2CareTeamsV2CareTeamOrganizerV2"),
+						 new Object [] { careTeamsV2 }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -486,23 +561,26 @@ public class CareTeamsV2Operations extends SectionOperations {
 	 */
 
 	public static EList<CareTeamOrganizerV2> getCareTeamOrganizerV2s(CareTeamsV2 careTeamsV2) {
-
+	
+	
+	
 		if (GET_CARE_TEAM_ORGANIZER_V2S__EOCL_QRY == null) {
-
+		
+	 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.CARE_TEAMS_V2, ConsolPackage.Literals.CARE_TEAMS_V2.getEAllOperations().get(61));
+			helper.setOperationContext(ConsolPackage.Literals.CARE_TEAMS_V2, ConsolPackage.Literals.CARE_TEAMS_V2.getEAllOperations().get(61));
 			try {
 				GET_CARE_TEAM_ORGANIZER_V2S__EOCL_QRY = helper.createQuery(GET_CARE_TEAM_ORGANIZER_V2S__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-
+			}
+		 
 		OCL.Query query = EOCL_ENV.get().createQuery(GET_CARE_TEAM_ORGANIZER_V2S__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<CareTeamOrganizerV2> result = (Collection<CareTeamOrganizerV2>) query.evaluate(careTeamsV2);
-		return new BasicEList.UnmodifiableEList<>(result.size(), result.toArray());
+		return new BasicEList.UnmodifiableEList<CareTeamOrganizerV2>(result.size(), result.toArray());
 	}
 
 } // CareTeamsV2Operations

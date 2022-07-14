@@ -48,8 +48,7 @@ public class MedicationFreeTextSigImpl extends SubstanceAdministrationImpl imple
 	 */
 	public boolean validateMedicationFreeTextSigTextReferenceValue(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationFreeTextSigOperations.validateMedicationFreeTextSigTextReferenceValue(
-			this, diagnostics, context);
+		return MedicationFreeTextSigOperations.validateMedicationFreeTextSigTextReferenceValue(this, diagnostics, context);
 	}
 
 	/**
@@ -140,8 +139,7 @@ public class MedicationFreeTextSigImpl extends SubstanceAdministrationImpl imple
 	 */
 	public boolean validateMedicationFreeTextSigConsumableManufacturedProductManufacturedLabeledDrugNullFlavor(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationFreeTextSigOperations.validateMedicationFreeTextSigConsumableManufacturedProductManufacturedLabeledDrugNullFlavor(
-			this, diagnostics, context);
+		return MedicationFreeTextSigOperations.validateMedicationFreeTextSigConsumableManufacturedProductManufacturedLabeledDrugNullFlavor(this, diagnostics, context);
 	}
 
 	/**
@@ -151,8 +149,7 @@ public class MedicationFreeTextSigImpl extends SubstanceAdministrationImpl imple
 	 */
 	public boolean validateMedicationFreeTextSigConsumableManufacturedProductManufacturedLabeledDrug(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationFreeTextSigOperations.validateMedicationFreeTextSigConsumableManufacturedProductManufacturedLabeledDrug(
-			this, diagnostics, context);
+		return MedicationFreeTextSigOperations.validateMedicationFreeTextSigConsumableManufacturedProductManufacturedLabeledDrug(this, diagnostics, context);
 	}
 
 	/**
@@ -162,8 +159,7 @@ public class MedicationFreeTextSigImpl extends SubstanceAdministrationImpl imple
 	 */
 	public boolean validateMedicationFreeTextSigConsumableManufacturedProduct(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationFreeTextSigOperations.validateMedicationFreeTextSigConsumableManufacturedProduct(
-			this, diagnostics, context);
+		return MedicationFreeTextSigOperations.validateMedicationFreeTextSigConsumableManufacturedProduct(this, diagnostics, context);
 	}
 
 	/**
@@ -172,16 +168,16 @@ public class MedicationFreeTextSigImpl extends SubstanceAdministrationImpl imple
 	 * @generated
 	 */
 	public MedicationFreeTextSig init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public MedicationFreeTextSig init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // MedicationFreeTextSigImpl

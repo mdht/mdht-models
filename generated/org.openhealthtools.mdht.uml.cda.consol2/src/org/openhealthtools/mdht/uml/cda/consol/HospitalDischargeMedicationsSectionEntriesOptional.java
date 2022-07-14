@@ -121,10 +121,10 @@ public interface HospitalDischargeMedicationsSectionEntriesOptional extends Sect
 	public HospitalDischargeMedicationsSectionEntriesOptional init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public HospitalDischargeMedicationsSectionEntriesOptional init(
 			Iterable<? extends Initializer<? extends EObject>> initializers);
 } // HospitalDischargeMedicationsSectionEntriesOptional

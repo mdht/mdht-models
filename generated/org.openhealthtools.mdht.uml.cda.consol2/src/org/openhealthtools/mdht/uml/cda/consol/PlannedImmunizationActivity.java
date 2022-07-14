@@ -392,9 +392,9 @@ public interface PlannedImmunizationActivity extends SubstanceAdministration {
 	public PlannedImmunizationActivity init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public PlannedImmunizationActivity init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // PlannedImmunizationActivity

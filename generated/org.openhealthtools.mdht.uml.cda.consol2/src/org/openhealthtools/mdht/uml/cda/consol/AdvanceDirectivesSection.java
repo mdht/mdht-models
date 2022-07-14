@@ -76,9 +76,9 @@ public interface AdvanceDirectivesSection extends AdvanceDirectivesSectionEntrie
 	public AdvanceDirectivesSection init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public AdvanceDirectivesSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // AdvanceDirectivesSection

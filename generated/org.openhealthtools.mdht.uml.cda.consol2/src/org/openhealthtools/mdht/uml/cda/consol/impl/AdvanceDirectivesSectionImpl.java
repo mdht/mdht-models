@@ -76,8 +76,7 @@ public class AdvanceDirectivesSectionImpl extends AdvanceDirectivesSectionEntrie
 	 */
 	public boolean validateAdvanceDirectivesSectionAdvanceDirectiveObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AdvanceDirectivesSectionOperations.validateAdvanceDirectivesSectionAdvanceDirectiveObservation(
-			this, diagnostics, context);
+		return AdvanceDirectivesSectionOperations.validateAdvanceDirectivesSectionAdvanceDirectiveObservation(this, diagnostics, context);
 	}
 
 	/**
@@ -97,8 +96,7 @@ public class AdvanceDirectivesSectionImpl extends AdvanceDirectivesSectionEntrie
 	@Override
 	public boolean validateAdvanceDirectivesSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AdvanceDirectivesSectionOperations.validateAdvanceDirectivesSectionEntriesOptionalTemplateId(
-			this, diagnostics, context);
+		return AdvanceDirectivesSectionOperations.validateAdvanceDirectivesSectionEntriesOptionalTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -109,8 +107,7 @@ public class AdvanceDirectivesSectionImpl extends AdvanceDirectivesSectionEntrie
 	@Override
 	public boolean validateAdvanceDirectivesSectionEntriesOptionalCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AdvanceDirectivesSectionOperations.validateAdvanceDirectivesSectionEntriesOptionalCodeP(
-			this, diagnostics, context);
+		return AdvanceDirectivesSectionOperations.validateAdvanceDirectivesSectionEntriesOptionalCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -121,8 +118,7 @@ public class AdvanceDirectivesSectionImpl extends AdvanceDirectivesSectionEntrie
 	@Override
 	public boolean validateAdvanceDirectivesSectionEntriesOptionalCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AdvanceDirectivesSectionOperations.validateAdvanceDirectivesSectionEntriesOptionalCode(
-			this, diagnostics, context);
+		return AdvanceDirectivesSectionOperations.validateAdvanceDirectivesSectionEntriesOptionalCode(this, diagnostics, context);
 	}
 
 	/**
@@ -132,17 +128,17 @@ public class AdvanceDirectivesSectionImpl extends AdvanceDirectivesSectionEntrie
 	 */
 	@Override
 	public AdvanceDirectivesSection init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public AdvanceDirectivesSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // AdvanceDirectivesSectionImpl

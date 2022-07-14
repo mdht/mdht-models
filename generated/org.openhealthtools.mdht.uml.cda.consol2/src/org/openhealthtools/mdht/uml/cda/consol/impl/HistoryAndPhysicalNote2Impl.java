@@ -68,8 +68,7 @@ public class HistoryAndPhysicalNote2Impl extends USRealmHeader2Impl implements H
 	 */
 	public boolean validateHistoryAndPhysicalNote2HasChiefComplaintAndReasonForVisitChiefComplaintOrReasonForVisit(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2HasChiefComplaintAndReasonForVisitChiefComplaintOrReasonForVisit(
-			this, diagnostics, context);
+		return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2HasChiefComplaintAndReasonForVisitChiefComplaintOrReasonForVisit(this, diagnostics, context);
 	}
 
 	/**
@@ -79,8 +78,7 @@ public class HistoryAndPhysicalNote2Impl extends USRealmHeader2Impl implements H
 	 */
 	public boolean validateHistoryAndPhysicalNote2HasAnAssementAndPlanSection2OrBothAssementSectionAndPlanOfTreatmentSection2(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2HasAnAssementAndPlanSection2OrBothAssementSectionAndPlanOfTreatmentSection2(
-			this, diagnostics, context);
+		return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2HasAnAssementAndPlanSection2OrBothAssementSectionAndPlanOfTreatmentSection2(this, diagnostics, context);
 	}
 
 	/**
@@ -90,8 +88,7 @@ public class HistoryAndPhysicalNote2Impl extends USRealmHeader2Impl implements H
 	 */
 	public boolean validateHistoryAndPhysicalNote2DoesNotHaveAssementAndPlanSection2WhenAssementAndPlanOfTreatment2ArePresent(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2DoesNotHaveAssementAndPlanSection2WhenAssementAndPlanOfTreatment2ArePresent(
-			this, diagnostics, context);
+		return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2DoesNotHaveAssementAndPlanSection2WhenAssementAndPlanOfTreatment2ArePresent(this, diagnostics, context);
 	}
 
 	/**
@@ -101,8 +98,7 @@ public class HistoryAndPhysicalNote2Impl extends USRealmHeader2Impl implements H
 	 */
 	public boolean validateHistoryAndPhysicalNote2DoesNotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2DoesNotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection(
-			this, diagnostics, context);
+		return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2DoesNotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection(this, diagnostics, context);
 	}
 
 	/**
@@ -130,8 +126,7 @@ public class HistoryAndPhysicalNote2Impl extends USRealmHeader2Impl implements H
 	 */
 	public boolean validateHistoryAndPhysicalNote2InformationRecipient(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2InformationRecipient(
-			this, diagnostics, context);
+		return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2InformationRecipient(this, diagnostics, context);
 	}
 
 	/**
@@ -151,8 +146,7 @@ public class HistoryAndPhysicalNote2Impl extends USRealmHeader2Impl implements H
 	 */
 	public boolean validateHistoryAndPhysicalNote2InFulfillmentOf(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2InFulfillmentOf(
-			this, diagnostics, context);
+		return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2InFulfillmentOf(this, diagnostics, context);
 	}
 
 	/**
@@ -172,8 +166,7 @@ public class HistoryAndPhysicalNote2Impl extends USRealmHeader2Impl implements H
 	 */
 	public boolean validateHistoryAndPhysicalNote2AllergiesSectionEntriesOptional2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2AllergiesSectionEntriesOptional2(
-			this, diagnostics, context);
+		return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2AllergiesSectionEntriesOptional2(this, diagnostics, context);
 	}
 
 	/**
@@ -183,8 +176,7 @@ public class HistoryAndPhysicalNote2Impl extends USRealmHeader2Impl implements H
 	 */
 	public boolean validateHistoryAndPhysicalNote2AssessmentSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2AssessmentSection(
-			this, diagnostics, context);
+		return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2AssessmentSection(this, diagnostics, context);
 	}
 
 	/**
@@ -194,8 +186,7 @@ public class HistoryAndPhysicalNote2Impl extends USRealmHeader2Impl implements H
 	 */
 	public boolean validateHistoryAndPhysicalNote2PlanOfTreatmentSection2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2PlanOfTreatmentSection2(
-			this, diagnostics, context);
+		return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2PlanOfTreatmentSection2(this, diagnostics, context);
 	}
 
 	/**
@@ -205,8 +196,7 @@ public class HistoryAndPhysicalNote2Impl extends USRealmHeader2Impl implements H
 	 */
 	public boolean validateHistoryAndPhysicalNote2AssessmentAndPlanSection2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2AssessmentAndPlanSection2(
-			this, diagnostics, context);
+		return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2AssessmentAndPlanSection2(this, diagnostics, context);
 	}
 
 	/**
@@ -216,8 +206,7 @@ public class HistoryAndPhysicalNote2Impl extends USRealmHeader2Impl implements H
 	 */
 	public boolean validateHistoryAndPhysicalNote2ChiefComplaintSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2ChiefComplaintSection(
-			this, diagnostics, context);
+		return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2ChiefComplaintSection(this, diagnostics, context);
 	}
 
 	/**
@@ -227,8 +216,7 @@ public class HistoryAndPhysicalNote2Impl extends USRealmHeader2Impl implements H
 	 */
 	public boolean validateHistoryAndPhysicalNote2ChiefComplaintAndReasonForVisitSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2ChiefComplaintAndReasonForVisitSection(
-			this, diagnostics, context);
+		return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2ChiefComplaintAndReasonForVisitSection(this, diagnostics, context);
 	}
 
 	/**
@@ -238,8 +226,7 @@ public class HistoryAndPhysicalNote2Impl extends USRealmHeader2Impl implements H
 	 */
 	public boolean validateHistoryAndPhysicalNote2GeneralStatusSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2GeneralStatusSection(
-			this, diagnostics, context);
+		return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2GeneralStatusSection(this, diagnostics, context);
 	}
 
 	/**
@@ -249,8 +236,7 @@ public class HistoryAndPhysicalNote2Impl extends USRealmHeader2Impl implements H
 	 */
 	public boolean validateHistoryAndPhysicalNote2HistoryOfPastIllnessSection2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2HistoryOfPastIllnessSection2(
-			this, diagnostics, context);
+		return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2HistoryOfPastIllnessSection2(this, diagnostics, context);
 	}
 
 	/**
@@ -260,8 +246,7 @@ public class HistoryAndPhysicalNote2Impl extends USRealmHeader2Impl implements H
 	 */
 	public boolean validateHistoryAndPhysicalNote2HistoryOfPresentIllnessSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2HistoryOfPresentIllnessSection(
-			this, diagnostics, context);
+		return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2HistoryOfPresentIllnessSection(this, diagnostics, context);
 	}
 
 	/**
@@ -271,8 +256,7 @@ public class HistoryAndPhysicalNote2Impl extends USRealmHeader2Impl implements H
 	 */
 	public boolean validateHistoryAndPhysicalNote2ImmunizationsSectionEntriesOptional2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2ImmunizationsSectionEntriesOptional2(
-			this, diagnostics, context);
+		return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2ImmunizationsSectionEntriesOptional2(this, diagnostics, context);
 	}
 
 	/**
@@ -282,8 +266,7 @@ public class HistoryAndPhysicalNote2Impl extends USRealmHeader2Impl implements H
 	 */
 	public boolean validateHistoryAndPhysicalNote2InstructionsSection2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2InstructionsSection2(
-			this, diagnostics, context);
+		return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2InstructionsSection2(this, diagnostics, context);
 	}
 
 	/**
@@ -293,8 +276,7 @@ public class HistoryAndPhysicalNote2Impl extends USRealmHeader2Impl implements H
 	 */
 	public boolean validateHistoryAndPhysicalNote2MedicationsSectionEntriesOptional2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2MedicationsSectionEntriesOptional2(
-			this, diagnostics, context);
+		return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2MedicationsSectionEntriesOptional2(this, diagnostics, context);
 	}
 
 	/**
@@ -304,8 +286,7 @@ public class HistoryAndPhysicalNote2Impl extends USRealmHeader2Impl implements H
 	 */
 	public boolean validateHistoryAndPhysicalNote2PhysicalExamSection2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2PhysicalExamSection2(
-			this, diagnostics, context);
+		return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2PhysicalExamSection2(this, diagnostics, context);
 	}
 
 	/**
@@ -315,8 +296,7 @@ public class HistoryAndPhysicalNote2Impl extends USRealmHeader2Impl implements H
 	 */
 	public boolean validateHistoryAndPhysicalNote2ProblemSectionEntriesOptional2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2ProblemSectionEntriesOptional2(
-			this, diagnostics, context);
+		return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2ProblemSectionEntriesOptional2(this, diagnostics, context);
 	}
 
 	/**
@@ -326,8 +306,7 @@ public class HistoryAndPhysicalNote2Impl extends USRealmHeader2Impl implements H
 	 */
 	public boolean validateHistoryAndPhysicalNote2ProceduresSectionEntriesOptional2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2ProceduresSectionEntriesOptional2(
-			this, diagnostics, context);
+		return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2ProceduresSectionEntriesOptional2(this, diagnostics, context);
 	}
 
 	/**
@@ -337,8 +316,7 @@ public class HistoryAndPhysicalNote2Impl extends USRealmHeader2Impl implements H
 	 */
 	public boolean validateHistoryAndPhysicalNote2ReasonForVisitSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2ReasonForVisitSection(
-			this, diagnostics, context);
+		return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2ReasonForVisitSection(this, diagnostics, context);
 	}
 
 	/**
@@ -348,8 +326,7 @@ public class HistoryAndPhysicalNote2Impl extends USRealmHeader2Impl implements H
 	 */
 	public boolean validateHistoryAndPhysicalNote2ResultsSectionEntriesOptional2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2ResultsSectionEntriesOptional2(
-			this, diagnostics, context);
+		return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2ResultsSectionEntriesOptional2(this, diagnostics, context);
 	}
 
 	/**
@@ -359,8 +336,7 @@ public class HistoryAndPhysicalNote2Impl extends USRealmHeader2Impl implements H
 	 */
 	public boolean validateHistoryAndPhysicalNote2ReviewOfSystemsSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2ReviewOfSystemsSection(
-			this, diagnostics, context);
+		return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2ReviewOfSystemsSection(this, diagnostics, context);
 	}
 
 	/**
@@ -370,8 +346,7 @@ public class HistoryAndPhysicalNote2Impl extends USRealmHeader2Impl implements H
 	 */
 	public boolean validateHistoryAndPhysicalNote2SocialHistorySection2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2SocialHistorySection2(
-			this, diagnostics, context);
+		return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2SocialHistorySection2(this, diagnostics, context);
 	}
 
 	/**
@@ -381,8 +356,7 @@ public class HistoryAndPhysicalNote2Impl extends USRealmHeader2Impl implements H
 	 */
 	public boolean validateHistoryAndPhysicalNote2VitalSignsSectionEntriesOptional2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2VitalSignsSectionEntriesOptional2(
-			this, diagnostics, context);
+		return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2VitalSignsSectionEntriesOptional2(this, diagnostics, context);
 	}
 
 	/**
@@ -392,8 +366,7 @@ public class HistoryAndPhysicalNote2Impl extends USRealmHeader2Impl implements H
 	 */
 	public boolean validateHistoryAndPhysicalNote2FamilyHistorySection2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2FamilyHistorySection2(
-			this, diagnostics, context);
+		return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2FamilyHistorySection2(this, diagnostics, context);
 	}
 
 	/**
@@ -403,8 +376,7 @@ public class HistoryAndPhysicalNote2Impl extends USRealmHeader2Impl implements H
 	 */
 	public boolean validateHistoryAndPhysicalNote2InformationRecipientIntendedRecipient(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2InformationRecipientIntendedRecipient(
-			this, diagnostics, context);
+		return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2InformationRecipientIntendedRecipient(this, diagnostics, context);
 	}
 
 	/**
@@ -414,8 +386,7 @@ public class HistoryAndPhysicalNote2Impl extends USRealmHeader2Impl implements H
 	 */
 	public boolean validateHistoryAndPhysicalNote2ParticipantIfParTypeCodeINDThenAEClassCodeIND(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2ParticipantIfParTypeCodeINDThenAEClassCodeIND(
-			this, diagnostics, context);
+		return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2ParticipantIfParTypeCodeINDThenAEClassCodeIND(this, diagnostics, context);
 	}
 
 	/**
@@ -425,8 +396,7 @@ public class HistoryAndPhysicalNote2Impl extends USRealmHeader2Impl implements H
 	 */
 	public boolean validateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheDayIVLTS(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheDayIVLTS(
-			this, diagnostics, context);
+		return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheDayIVLTS(this, diagnostics, context);
 	}
 
 	/**
@@ -436,8 +406,7 @@ public class HistoryAndPhysicalNote2Impl extends USRealmHeader2Impl implements H
 	 */
 	public boolean validateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheMinuteIVLTS(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheMinuteIVLTS(
-			this, diagnostics, context);
+		return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheMinuteIVLTS(this, diagnostics, context);
 	}
 
 	/**
@@ -447,8 +416,7 @@ public class HistoryAndPhysicalNote2Impl extends USRealmHeader2Impl implements H
 	 */
 	public boolean validateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheSecondIVLTS(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheSecondIVLTS(
-			this, diagnostics, context);
+		return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheSecondIVLTS(this, diagnostics, context);
 	}
 
 	/**
@@ -458,8 +426,7 @@ public class HistoryAndPhysicalNote2Impl extends USRealmHeader2Impl implements H
 	 */
 	public boolean validateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTIfMorePreciseThanDayIncludeTimeZoneOffsetIVLTS(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTIfMorePreciseThanDayIncludeTimeZoneOffsetIVLTS(
-			this, diagnostics, context);
+		return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTIfMorePreciseThanDayIncludeTimeZoneOffsetIVLTS(this, diagnostics, context);
 	}
 
 	/**
@@ -469,8 +436,7 @@ public class HistoryAndPhysicalNote2Impl extends USRealmHeader2Impl implements H
 	 */
 	public boolean validateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntityHasPersonOrOrganization(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntityHasPersonOrOrganization(
-			this, diagnostics, context);
+		return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntityHasPersonOrOrganization(this, diagnostics, context);
 	}
 
 	/**
@@ -480,8 +446,7 @@ public class HistoryAndPhysicalNote2Impl extends USRealmHeader2Impl implements H
 	 */
 	public boolean validateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntity(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntity(
-			this, diagnostics, context);
+		return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntity(this, diagnostics, context);
 	}
 
 	/**
@@ -491,8 +456,7 @@ public class HistoryAndPhysicalNote2Impl extends USRealmHeader2Impl implements H
 	 */
 	public boolean validateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterEncounterParticipantAssignedEntityHasPersonOrOrganization(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterEncounterParticipantAssignedEntityHasPersonOrOrganization(
-			this, diagnostics, context);
+		return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterEncounterParticipantAssignedEntityHasPersonOrOrganization(this, diagnostics, context);
 	}
 
 	/**
@@ -502,8 +466,7 @@ public class HistoryAndPhysicalNote2Impl extends USRealmHeader2Impl implements H
 	 */
 	public boolean validateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterEncounterParticipantAssignedEntity(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterEncounterParticipantAssignedEntity(
-			this, diagnostics, context);
+		return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterEncounterParticipantAssignedEntity(this, diagnostics, context);
 	}
 
 	/**
@@ -513,8 +476,7 @@ public class HistoryAndPhysicalNote2Impl extends USRealmHeader2Impl implements H
 	 */
 	public boolean validateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterId(
-			this, diagnostics, context);
+		return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterId(this, diagnostics, context);
 	}
 
 	/**
@@ -524,8 +486,7 @@ public class HistoryAndPhysicalNote2Impl extends USRealmHeader2Impl implements H
 	 */
 	public boolean validateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterEffectiveTime(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterEffectiveTime(
-			this, diagnostics, context);
+		return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterEffectiveTime(this, diagnostics, context);
 	}
 
 	/**
@@ -535,8 +496,7 @@ public class HistoryAndPhysicalNote2Impl extends USRealmHeader2Impl implements H
 	 */
 	public boolean validateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterResponsibleParty(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterResponsibleParty(
-			this, diagnostics, context);
+		return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterResponsibleParty(this, diagnostics, context);
 	}
 
 	/**
@@ -546,8 +506,7 @@ public class HistoryAndPhysicalNote2Impl extends USRealmHeader2Impl implements H
 	 */
 	public boolean validateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterEncounterParticipant(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterEncounterParticipant(
-			this, diagnostics, context);
+		return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterEncounterParticipant(this, diagnostics, context);
 	}
 
 	/**
@@ -557,8 +516,7 @@ public class HistoryAndPhysicalNote2Impl extends USRealmHeader2Impl implements H
 	 */
 	public boolean validateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterLocation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterLocation(
-			this, diagnostics, context);
+		return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterLocation(this, diagnostics, context);
 	}
 
 	/**
@@ -568,8 +526,7 @@ public class HistoryAndPhysicalNote2Impl extends USRealmHeader2Impl implements H
 	 */
 	public boolean validateHistoryAndPhysicalNote2ComponentOfEncompassingEncounter(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2ComponentOfEncompassingEncounter(
-			this, diagnostics, context);
+		return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2ComponentOfEncompassingEncounter(this, diagnostics, context);
 	}
 
 	/**
@@ -778,17 +735,17 @@ public class HistoryAndPhysicalNote2Impl extends USRealmHeader2Impl implements H
 	 */
 	@Override
 	public HistoryAndPhysicalNote2 init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public HistoryAndPhysicalNote2 init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // HistoryAndPhysicalNote2Impl

@@ -52,8 +52,7 @@ public class DeviceIdentifierObservationV2Impl extends ObservationImpl implement
 	 */
 	public boolean validateDeviceIdentifierObservationV2TemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return DeviceIdentifierObservationV2Operations.validateDeviceIdentifierObservationV2TemplateId(
-			this, diagnostics, context);
+		return DeviceIdentifierObservationV2Operations.validateDeviceIdentifierObservationV2TemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -63,8 +62,7 @@ public class DeviceIdentifierObservationV2Impl extends ObservationImpl implement
 	 */
 	public boolean validateDeviceIdentifierObservationV2CodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return DeviceIdentifierObservationV2Operations.validateDeviceIdentifierObservationV2CodeP(
-			this, diagnostics, context);
+		return DeviceIdentifierObservationV2Operations.validateDeviceIdentifierObservationV2CodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -73,8 +71,7 @@ public class DeviceIdentifierObservationV2Impl extends ObservationImpl implement
 	 * @generated
 	 */
 	public boolean validateDeviceIdentifierObservationV2Code(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return DeviceIdentifierObservationV2Operations.validateDeviceIdentifierObservationV2Code(
-			this, diagnostics, context);
+		return DeviceIdentifierObservationV2Operations.validateDeviceIdentifierObservationV2Code(this, diagnostics, context);
 	}
 
 	/**
@@ -84,8 +81,7 @@ public class DeviceIdentifierObservationV2Impl extends ObservationImpl implement
 	 */
 	public boolean validateDeviceIdentifierObservationV2Value(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return DeviceIdentifierObservationV2Operations.validateDeviceIdentifierObservationV2Value(
-			this, diagnostics, context);
+		return DeviceIdentifierObservationV2Operations.validateDeviceIdentifierObservationV2Value(this, diagnostics, context);
 	}
 
 	/**
@@ -95,8 +91,7 @@ public class DeviceIdentifierObservationV2Impl extends ObservationImpl implement
 	 */
 	public boolean validateDeviceIdentifierObservationV2IIUDIissuingagency(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return DeviceIdentifierObservationV2Operations.validateDeviceIdentifierObservationV2IIUDIissuingagency(
-			this, diagnostics, context);
+		return DeviceIdentifierObservationV2Operations.validateDeviceIdentifierObservationV2IIUDIissuingagency(this, diagnostics, context);
 	}
 
 	/**
@@ -106,8 +101,7 @@ public class DeviceIdentifierObservationV2Impl extends ObservationImpl implement
 	 */
 	public boolean validateDeviceIdentifierObservationV2IIRoot(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return DeviceIdentifierObservationV2Operations.validateDeviceIdentifierObservationV2IIRoot(
-			this, diagnostics, context);
+		return DeviceIdentifierObservationV2Operations.validateDeviceIdentifierObservationV2IIRoot(this, diagnostics, context);
 	}
 
 	/**
@@ -117,8 +111,7 @@ public class DeviceIdentifierObservationV2Impl extends ObservationImpl implement
 	 */
 	public boolean validateDeviceIdentifierObservationV2IIExtension(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return DeviceIdentifierObservationV2Operations.validateDeviceIdentifierObservationV2IIExtension(
-			this, diagnostics, context);
+		return DeviceIdentifierObservationV2Operations.validateDeviceIdentifierObservationV2IIExtension(this, diagnostics, context);
 	}
 
 	/**
@@ -128,8 +121,7 @@ public class DeviceIdentifierObservationV2Impl extends ObservationImpl implement
 	 */
 	public boolean validateDeviceIdentifierObservationV2IIDisplayable(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return DeviceIdentifierObservationV2Operations.validateDeviceIdentifierObservationV2IIDisplayable(
-			this, diagnostics, context);
+		return DeviceIdentifierObservationV2Operations.validateDeviceIdentifierObservationV2IIDisplayable(this, diagnostics, context);
 	}
 
 	/**
@@ -138,16 +130,16 @@ public class DeviceIdentifierObservationV2Impl extends ObservationImpl implement
 	 * @generated
 	 */
 	public DeviceIdentifierObservationV2 init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public DeviceIdentifierObservationV2 init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // DeviceIdentifierObservationV2Impl

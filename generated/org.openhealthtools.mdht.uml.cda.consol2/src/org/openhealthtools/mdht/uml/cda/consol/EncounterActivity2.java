@@ -109,9 +109,9 @@ public interface EncounterActivity2 extends EncounterActivities {
 	public EncounterActivity2 init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public EncounterActivity2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // EncounterActivity2

@@ -88,9 +88,9 @@ public interface MedicationSupplyOrder2 extends MedicationSupplyOrder {
 	public MedicationSupplyOrder2 init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public MedicationSupplyOrder2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // MedicationSupplyOrder2

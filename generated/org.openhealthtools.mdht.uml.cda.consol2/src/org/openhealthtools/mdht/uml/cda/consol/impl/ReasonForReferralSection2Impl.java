@@ -53,8 +53,7 @@ public class ReasonForReferralSection2Impl extends ReasonForReferralSectionImpl 
 	 */
 	public boolean validateReasonForReferralSection2TemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ReasonForReferralSection2Operations.validateReasonForReferralSection2TemplateId(
-			this, diagnostics, context);
+		return ReasonForReferralSection2Operations.validateReasonForReferralSection2TemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -64,8 +63,7 @@ public class ReasonForReferralSection2Impl extends ReasonForReferralSectionImpl 
 	 */
 	public boolean validateReasonForReferralSection2PatientReferralAct(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ReasonForReferralSection2Operations.validateReasonForReferralSection2PatientReferralAct(
-			this, diagnostics, context);
+		return ReasonForReferralSection2Operations.validateReasonForReferralSection2PatientReferralAct(this, diagnostics, context);
 	}
 
 	/**
@@ -104,17 +102,17 @@ public class ReasonForReferralSection2Impl extends ReasonForReferralSectionImpl 
 	 */
 	@Override
 	public ReasonForReferralSection2 init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public ReasonForReferralSection2 init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // ReasonForReferralSection2Impl

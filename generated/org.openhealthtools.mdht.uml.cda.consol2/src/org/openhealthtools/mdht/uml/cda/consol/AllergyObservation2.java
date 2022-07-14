@@ -219,9 +219,9 @@ public interface AllergyObservation2 extends AllergyObservation {
 	public AllergyObservation2 init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public AllergyObservation2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // AllergyObservation2

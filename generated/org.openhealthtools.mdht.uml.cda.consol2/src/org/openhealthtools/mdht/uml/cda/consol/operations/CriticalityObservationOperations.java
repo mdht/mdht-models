@@ -76,7 +76,7 @@ public class CriticalityObservationOperations extends ClinicalStatementOperation
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_CRITICALITY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<  Constraint> VALIDATE_CRITICALITY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -91,34 +91,44 @@ public class CriticalityObservationOperations extends ClinicalStatementOperation
 
 	public static boolean validateCriticalityObservationTemplateId(CriticalityObservation criticalityObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		DatatypesUtil.increment(context, "CriticalityObservationCriticalityObservationTemplateId", "ERROR");
-
+	
+	
+	
+  	  
+  	  
+  	  
+  	  
+  	 
+  	 
+  	 
+    DatatypesUtil.increment(context,"CriticalityObservationCriticalityObservationTemplateId","ERROR");
+    
+  	  
+  	  
 		if (VALIDATE_CRITICALITY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-
+		
+	 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CRITICALITY_OBSERVATION);
 			try {
-				VALIDATE_CRITICALITY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
-					helper.createInvariant(
-						VALIDATE_CRITICALITY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			} catch (ParserException pe) {
+				VALIDATE_CRITICALITY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_CRITICALITY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-
-		if (!EOCL_ENV.get().createQuery(
-			VALIDATE_CRITICALITY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
-				criticalityObservation)) {
-			if (diagnostics != null) {
-				diagnostics.add(
-					new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.CRITICALITY_OBSERVATION__CRITICALITY_OBSERVATION_TEMPLATE_ID,
-						ConsolPlugin.INSTANCE.getString("CriticalityObservationCriticalityObservationTemplateId"),
-						new Object[] { criticalityObservation }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_CRITICALITY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(criticalityObservation)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.CRITICALITY_OBSERVATION__CRITICALITY_OBSERVATION_TEMPLATE_ID,
+						 ConsolPlugin.INSTANCE.getString("CriticalityObservationCriticalityObservationTemplateId"),
+						 new Object [] { criticalityObservation }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -143,7 +153,7 @@ public class CriticalityObservationOperations extends ClinicalStatementOperation
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_CRITICALITY_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<  Constraint> VALIDATE_CRITICALITY_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -158,34 +168,44 @@ public class CriticalityObservationOperations extends ClinicalStatementOperation
 
 	public static boolean validateCriticalityObservationClassCode(CriticalityObservation criticalityObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		DatatypesUtil.increment(context, "CriticalityObservationCriticalityObservationClassCode", "ERROR");
-
+	
+	
+	
+  	  
+  	  
+  	  
+  	  
+  	 
+  	 
+  	 
+    DatatypesUtil.increment(context,"CriticalityObservationCriticalityObservationClassCode","ERROR");
+    
+  	  
+  	  
 		if (VALIDATE_CRITICALITY_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-
+		
+	 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CRITICALITY_OBSERVATION);
 			try {
-				VALIDATE_CRITICALITY_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
-					helper.createInvariant(
-						VALIDATE_CRITICALITY_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			} catch (ParserException pe) {
+				VALIDATE_CRITICALITY_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_CRITICALITY_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-
-		if (!EOCL_ENV.get().createQuery(
-			VALIDATE_CRITICALITY_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
-				criticalityObservation)) {
-			if (diagnostics != null) {
-				diagnostics.add(
-					new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.CRITICALITY_OBSERVATION__CRITICALITY_OBSERVATION_CLASS_CODE,
-						ConsolPlugin.INSTANCE.getString("CriticalityObservationCriticalityObservationClassCode"),
-						new Object[] { criticalityObservation }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_CRITICALITY_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(criticalityObservation)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.CRITICALITY_OBSERVATION__CRITICALITY_OBSERVATION_CLASS_CODE,
+						 ConsolPlugin.INSTANCE.getString("CriticalityObservationCriticalityObservationClassCode"),
+						 new Object [] { criticalityObservation }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -210,7 +230,7 @@ public class CriticalityObservationOperations extends ClinicalStatementOperation
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_CRITICALITY_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<  Constraint> VALIDATE_CRITICALITY_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -225,33 +245,44 @@ public class CriticalityObservationOperations extends ClinicalStatementOperation
 
 	public static boolean validateCriticalityObservationMoodCode(CriticalityObservation criticalityObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		DatatypesUtil.increment(context, "CriticalityObservationCriticalityObservationMoodCode", "ERROR");
-
+	
+	
+	
+  	  
+  	  
+  	  
+  	  
+  	 
+  	 
+  	 
+    DatatypesUtil.increment(context,"CriticalityObservationCriticalityObservationMoodCode","ERROR");
+    
+  	  
+  	  
 		if (VALIDATE_CRITICALITY_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-
+		
+	 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CRITICALITY_OBSERVATION);
 			try {
-				VALIDATE_CRITICALITY_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
-					helper.createInvariant(VALIDATE_CRITICALITY_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			} catch (ParserException pe) {
+				VALIDATE_CRITICALITY_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_CRITICALITY_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-
-		if (!EOCL_ENV.get().createQuery(
-			VALIDATE_CRITICALITY_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
-				criticalityObservation)) {
-			if (diagnostics != null) {
-				diagnostics.add(
-					new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.CRITICALITY_OBSERVATION__CRITICALITY_OBSERVATION_MOOD_CODE,
-						ConsolPlugin.INSTANCE.getString("CriticalityObservationCriticalityObservationMoodCode"),
-						new Object[] { criticalityObservation }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_CRITICALITY_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(criticalityObservation)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.CRITICALITY_OBSERVATION__CRITICALITY_OBSERVATION_MOOD_CODE,
+						 ConsolPlugin.INSTANCE.getString("CriticalityObservationCriticalityObservationMoodCode"),
+						 new Object [] { criticalityObservation }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -276,7 +307,7 @@ public class CriticalityObservationOperations extends ClinicalStatementOperation
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_CRITICALITY_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<  Constraint> VALIDATE_CRITICALITY_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -291,46 +322,56 @@ public class CriticalityObservationOperations extends ClinicalStatementOperation
 
 	public static boolean validateCriticalityObservationCodeP(CriticalityObservation criticalityObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		DatatypesUtil.increment(context, "CriticalityObservationCriticalityObservationCodeP", "ERROR");
-
+	
+	
+	
+  	  
+  	  
+  	  
+  	  
+  	 
+  	 
+  	 
+    DatatypesUtil.increment(context,"CriticalityObservationCriticalityObservationCodeP","ERROR");
+    
+  	  
+  	  
 		if (VALIDATE_CRITICALITY_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-
+		
+	 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CRITICALITY_OBSERVATION);
 			try {
-				VALIDATE_CRITICALITY_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
-					helper.createInvariant(VALIDATE_CRITICALITY_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			} catch (ParserException pe) {
+				VALIDATE_CRITICALITY_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_CRITICALITY_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-
-		if (!EOCL_ENV.get().createQuery(
-			VALIDATE_CRITICALITY_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
-				criticalityObservation)) {
-			if (diagnostics != null) {
-				diagnostics.add(
-					new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.CRITICALITY_OBSERVATION__CRITICALITY_OBSERVATION_CODE_P,
-						ConsolPlugin.INSTANCE.getString("CriticalityObservationCriticalityObservationCodeP"),
-						new Object[] { criticalityObservation }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_CRITICALITY_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(criticalityObservation)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.CRITICALITY_OBSERVATION__CRITICALITY_OBSERVATION_CODE_P,
+						 ConsolPlugin.INSTANCE.getString("CriticalityObservationCriticalityObservationCodeP"),
+						 new Object [] { criticalityObservation }));
+			}
+			
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
-				Collection<Object> passToken = (Collection<Object>) context.get(
-					"org.openhealthtools.mdht.uml.cda.consol.CriticalityObservationCodeP");
+				Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.consol.CriticalityObservationCodeP");
 				if (passToken == null) {
 					// anticipate a reasonably healthy model
-					passToken = new java.util.ArrayList<>(3);
+					passToken = new java.util.ArrayList<Object>(3);
 					context.put("org.openhealthtools.mdht.uml.cda.consol.CriticalityObservationCodeP", passToken);
 				}
 				passToken.add(criticalityObservation);
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -344,9 +385,9 @@ public class CriticalityObservationOperations extends ClinicalStatementOperation
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_CRITICALITY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and " +
-			"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in " +
-			"value.code = '82606-5' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_CRITICALITY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
+"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
+"value.code = '82606-5' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateCriticalityObservationCode(CriticalityObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Criticality Observation Code</em>}' invariant operation.
@@ -357,7 +398,7 @@ public class CriticalityObservationOperations extends ClinicalStatementOperation
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_CRITICALITY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<  Constraint> VALIDATE_CRITICALITY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -372,41 +413,50 @@ public class CriticalityObservationOperations extends ClinicalStatementOperation
 
 	public static boolean validateCriticalityObservationCode(CriticalityObservation criticalityObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		Object passToken = (context == null)
-				? null
-				: context.get("org.openhealthtools.mdht.uml.cda.consol.CriticalityObservationCodeP");
+	
+	
+	
+  	  
+		Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.consol.CriticalityObservationCodeP");
 		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(criticalityObservation)) {
 			// I have a free pass to short-circuit
 			return true;
 		}
-
-		DatatypesUtil.increment(context, "CriticalityObservationCriticalityObservationCode", "ERROR");
-
+  	  
+  	  
+  	  
+  	  
+  	 
+  	 
+  	 
+    DatatypesUtil.increment(context,"CriticalityObservationCriticalityObservationCode","ERROR");
+    
+  	  
+  	  
 		if (VALIDATE_CRITICALITY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-
+		
+	 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CRITICALITY_OBSERVATION);
 			try {
-				VALIDATE_CRITICALITY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
-					helper.createInvariant(VALIDATE_CRITICALITY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			} catch (ParserException pe) {
+				VALIDATE_CRITICALITY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_CRITICALITY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-
-		if (!EOCL_ENV.get().createQuery(
-			VALIDATE_CRITICALITY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
-				criticalityObservation)) {
-			if (diagnostics != null) {
-				diagnostics.add(
-					new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.CRITICALITY_OBSERVATION__CRITICALITY_OBSERVATION_CODE,
-						ConsolPlugin.INSTANCE.getString("CriticalityObservationCriticalityObservationCode"),
-						new Object[] { criticalityObservation }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_CRITICALITY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(criticalityObservation)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.CRITICALITY_OBSERVATION__CRITICALITY_OBSERVATION_CODE,
+						 ConsolPlugin.INSTANCE.getString("CriticalityObservationCriticalityObservationCode"),
+						 new Object [] { criticalityObservation }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -420,8 +470,9 @@ public class CriticalityObservationOperations extends ClinicalStatementOperation
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_CRITICALITY_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and " +
-			"let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in " + "value.code = 'completed')";
+	protected static final String VALIDATE_CRITICALITY_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and "+
+"let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in "+
+"value.code = 'completed')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateCriticalityObservationStatusCode(CriticalityObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Criticality Observation Status Code</em>}' invariant operation.
@@ -432,7 +483,7 @@ public class CriticalityObservationOperations extends ClinicalStatementOperation
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_CRITICALITY_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<  Constraint> VALIDATE_CRITICALITY_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -447,34 +498,44 @@ public class CriticalityObservationOperations extends ClinicalStatementOperation
 
 	public static boolean validateCriticalityObservationStatusCode(CriticalityObservation criticalityObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		DatatypesUtil.increment(context, "CriticalityObservationCriticalityObservationStatusCode", "ERROR");
-
+	
+	
+	
+  	  
+  	  
+  	  
+  	  
+  	 
+  	 
+  	 
+    DatatypesUtil.increment(context,"CriticalityObservationCriticalityObservationStatusCode","ERROR");
+    
+  	  
+  	  
 		if (VALIDATE_CRITICALITY_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-
+		
+	 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CRITICALITY_OBSERVATION);
 			try {
-				VALIDATE_CRITICALITY_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
-					helper.createInvariant(
-						VALIDATE_CRITICALITY_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			} catch (ParserException pe) {
+				VALIDATE_CRITICALITY_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_CRITICALITY_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-
-		if (!EOCL_ENV.get().createQuery(
-			VALIDATE_CRITICALITY_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
-				criticalityObservation)) {
-			if (diagnostics != null) {
-				diagnostics.add(
-					new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.CRITICALITY_OBSERVATION__CRITICALITY_OBSERVATION_STATUS_CODE,
-						ConsolPlugin.INSTANCE.getString("CriticalityObservationCriticalityObservationStatusCode"),
-						new Object[] { criticalityObservation }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_CRITICALITY_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(criticalityObservation)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.CRITICALITY_OBSERVATION__CRITICALITY_OBSERVATION_STATUS_CODE,
+						 ConsolPlugin.INSTANCE.getString("CriticalityObservationCriticalityObservationStatusCode"),
+						 new Object [] { criticalityObservation }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -499,7 +560,7 @@ public class CriticalityObservationOperations extends ClinicalStatementOperation
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_CRITICALITY_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<  Constraint> VALIDATE_CRITICALITY_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -514,34 +575,44 @@ public class CriticalityObservationOperations extends ClinicalStatementOperation
 
 	public static boolean validateCriticalityObservationStatusCodeP(CriticalityObservation criticalityObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		DatatypesUtil.increment(context, "CriticalityObservationCriticalityObservationStatusCodeP", "ERROR");
-
+	
+	
+	
+  	  
+  	  
+  	  
+  	  
+  	 
+  	 
+  	 
+    DatatypesUtil.increment(context,"CriticalityObservationCriticalityObservationStatusCodeP","ERROR");
+    
+  	  
+  	  
 		if (VALIDATE_CRITICALITY_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-
+		
+	 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CRITICALITY_OBSERVATION);
 			try {
-				VALIDATE_CRITICALITY_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
-					helper.createInvariant(
-						VALIDATE_CRITICALITY_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			} catch (ParserException pe) {
+				VALIDATE_CRITICALITY_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_CRITICALITY_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-
-		if (!EOCL_ENV.get().createQuery(
-			VALIDATE_CRITICALITY_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
-				criticalityObservation)) {
-			if (diagnostics != null) {
-				diagnostics.add(
-					new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.CRITICALITY_OBSERVATION__CRITICALITY_OBSERVATION_STATUS_CODE_P,
-						ConsolPlugin.INSTANCE.getString("CriticalityObservationCriticalityObservationStatusCodeP"),
-						new Object[] { criticalityObservation }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_CRITICALITY_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(criticalityObservation)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.CRITICALITY_OBSERVATION__CRITICALITY_OBSERVATION_STATUS_CODE_P,
+						 ConsolPlugin.INSTANCE.getString("CriticalityObservationCriticalityObservationStatusCodeP"),
+						 new Object [] { criticalityObservation }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -555,9 +626,9 @@ public class CriticalityObservationOperations extends ClinicalStatementOperation
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_CRITICALITY_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and " +
-			"let value : datatypes::CD = element.oclAsType(datatypes::CD) in " +
-			"value.codeSystem = '2.16.840.1.113883.5.1063' and (value.code = 'CRITL' or value.code = 'CRITH' or value.code = 'CRITU')))";
+	protected static final String VALIDATE_CRITICALITY_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "+
+"let value : datatypes::CD = element.oclAsType(datatypes::CD) in "+
+"value.codeSystem = '2.16.840.1.113883.5.1063' and (value.code = 'CRITL' or value.code = 'CRITH' or value.code = 'CRITU')))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateCriticalityObservationValue(CriticalityObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Criticality Observation Value</em>}' invariant operation.
@@ -568,7 +639,7 @@ public class CriticalityObservationOperations extends ClinicalStatementOperation
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_CRITICALITY_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<  Constraint> VALIDATE_CRITICALITY_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -583,33 +654,44 @@ public class CriticalityObservationOperations extends ClinicalStatementOperation
 
 	public static boolean validateCriticalityObservationValue(CriticalityObservation criticalityObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		DatatypesUtil.increment(context, "CriticalityObservationCriticalityObservationValue", "ERROR");
-
+	
+	
+	
+  	  
+  	  
+  	  
+  	  
+  	 
+  	 
+  	 
+    DatatypesUtil.increment(context,"CriticalityObservationCriticalityObservationValue","ERROR");
+    
+  	  
+  	  
 		if (VALIDATE_CRITICALITY_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-
+		
+	 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CRITICALITY_OBSERVATION);
 			try {
-				VALIDATE_CRITICALITY_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
-					helper.createInvariant(VALIDATE_CRITICALITY_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			} catch (ParserException pe) {
+				VALIDATE_CRITICALITY_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_CRITICALITY_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-
-		if (!EOCL_ENV.get().createQuery(
-			VALIDATE_CRITICALITY_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
-				criticalityObservation)) {
-			if (diagnostics != null) {
-				diagnostics.add(
-					new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.CRITICALITY_OBSERVATION__CRITICALITY_OBSERVATION_VALUE,
-						ConsolPlugin.INSTANCE.getString("CriticalityObservationCriticalityObservationValue"),
-						new Object[] { criticalityObservation }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_CRITICALITY_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(criticalityObservation)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.CRITICALITY_OBSERVATION__CRITICALITY_OBSERVATION_VALUE,
+						 ConsolPlugin.INSTANCE.getString("CriticalityObservationCriticalityObservationValue"),
+						 new Object [] { criticalityObservation }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -634,7 +716,7 @@ public class CriticalityObservationOperations extends ClinicalStatementOperation
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_CRITICALITY_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<  Constraint> VALIDATE_CRITICALITY_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -649,33 +731,44 @@ public class CriticalityObservationOperations extends ClinicalStatementOperation
 
 	public static boolean validateCriticalityObservationValueP(CriticalityObservation criticalityObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		DatatypesUtil.increment(context, "CriticalityObservationCriticalityObservationValueP", "ERROR");
-
+	
+	
+	
+  	  
+  	  
+  	  
+  	  
+  	 
+  	 
+  	 
+    DatatypesUtil.increment(context,"CriticalityObservationCriticalityObservationValueP","ERROR");
+    
+  	  
+  	  
 		if (VALIDATE_CRITICALITY_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-
+		
+	 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CRITICALITY_OBSERVATION);
 			try {
-				VALIDATE_CRITICALITY_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
-					helper.createInvariant(VALIDATE_CRITICALITY_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			} catch (ParserException pe) {
+				VALIDATE_CRITICALITY_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_CRITICALITY_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-
-		if (!EOCL_ENV.get().createQuery(
-			VALIDATE_CRITICALITY_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
-				criticalityObservation)) {
-			if (diagnostics != null) {
-				diagnostics.add(
-					new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.CRITICALITY_OBSERVATION__CRITICALITY_OBSERVATION_VALUE_P,
-						ConsolPlugin.INSTANCE.getString("CriticalityObservationCriticalityObservationValueP"),
-						new Object[] { criticalityObservation }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_CRITICALITY_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(criticalityObservation)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.CRITICALITY_OBSERVATION__CRITICALITY_OBSERVATION_VALUE_P,
+						 ConsolPlugin.INSTANCE.getString("CriticalityObservationCriticalityObservationValueP"),
+						 new Object [] { criticalityObservation }));
+			}
+			 
 			return false;
 		}
 		return true;

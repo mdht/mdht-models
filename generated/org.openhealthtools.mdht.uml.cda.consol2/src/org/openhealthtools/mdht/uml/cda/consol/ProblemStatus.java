@@ -149,9 +149,9 @@ public interface ProblemStatus extends Observation {
 	public ProblemStatus init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public ProblemStatus init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ProblemStatus

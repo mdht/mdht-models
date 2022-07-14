@@ -47,7 +47,7 @@ public class CompanyNameObservationOperations extends ClinicalStatementOperation
 	 * @generated
 	 * @ordered
 	 */
-	protected static final ThreadLocal<OCL> EOCL_ENV = new ThreadLocal<OCL>() {
+	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
 		@Override
 		public OCL initialValue() {
 			return OCL.newInstance();
@@ -81,7 +81,7 @@ public class CompanyNameObservationOperations extends ClinicalStatementOperation
 	 * @generated
 	 * @ordered
 	 */
-	protected static ThreadLocal<Constraint> VALIDATE_COMPANY_NAME_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<  Constraint> VALIDATE_COMPANY_NAME_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -95,34 +95,44 @@ public class CompanyNameObservationOperations extends ClinicalStatementOperation
 	 */
 	public static boolean validateCompanyNameObservationTemplateId(CompanyNameObservation companyNameObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		DatatypesUtil.increment(context, "CompanyNameObservationCompanyNameObservationTemplateId", "ERROR");
-
+	
+	
+	
+  	  
+  	  
+  	  
+  	  
+  	 
+  	 
+  	 
+    DatatypesUtil.increment(context,"CompanyNameObservationCompanyNameObservationTemplateId","ERROR");
+    
+  	  
+  	  
 		if (VALIDATE_COMPANY_NAME_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-
+		
+	 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.COMPANY_NAME_OBSERVATION);
 			try {
-				VALIDATE_COMPANY_NAME_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
-					helper.createInvariant(
-						VALIDATE_COMPANY_NAME_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			} catch (ParserException pe) {
+				VALIDATE_COMPANY_NAME_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_COMPANY_NAME_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-
-		if (!EOCL_ENV.get().createQuery(
-			VALIDATE_COMPANY_NAME_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
-				companyNameObservation)) {
-			if (diagnostics != null) {
-				diagnostics.add(
-					new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.COMPANY_NAME_OBSERVATION__COMPANY_NAME_OBSERVATION_TEMPLATE_ID,
-						ConsolPlugin.INSTANCE.getString("CompanyNameObservationCompanyNameObservationTemplateId"),
-						new Object[] { companyNameObservation }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_COMPANY_NAME_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(companyNameObservation)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.COMPANY_NAME_OBSERVATION__COMPANY_NAME_OBSERVATION_TEMPLATE_ID,
+						 ConsolPlugin.INSTANCE.getString("CompanyNameObservationCompanyNameObservationTemplateId"),
+						 new Object [] { companyNameObservation }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -146,7 +156,7 @@ public class CompanyNameObservationOperations extends ClinicalStatementOperation
 	 * @generated
 	 * @ordered
 	 */
-	protected static ThreadLocal<Constraint> VALIDATE_COMPANY_NAME_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<  Constraint> VALIDATE_COMPANY_NAME_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -160,46 +170,56 @@ public class CompanyNameObservationOperations extends ClinicalStatementOperation
 	 */
 	public static boolean validateCompanyNameObservationCodeP(CompanyNameObservation companyNameObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		DatatypesUtil.increment(context, "CompanyNameObservationCompanyNameObservationCodeP", "ERROR");
-
+	
+	
+	
+  	  
+  	  
+  	  
+  	  
+  	 
+  	 
+  	 
+    DatatypesUtil.increment(context,"CompanyNameObservationCompanyNameObservationCodeP","ERROR");
+    
+  	  
+  	  
 		if (VALIDATE_COMPANY_NAME_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-
+		
+	 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.COMPANY_NAME_OBSERVATION);
 			try {
-				VALIDATE_COMPANY_NAME_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
-					helper.createInvariant(VALIDATE_COMPANY_NAME_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			} catch (ParserException pe) {
+				VALIDATE_COMPANY_NAME_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_COMPANY_NAME_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-
-		if (!EOCL_ENV.get().createQuery(
-			VALIDATE_COMPANY_NAME_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
-				companyNameObservation)) {
-			if (diagnostics != null) {
-				diagnostics.add(
-					new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.COMPANY_NAME_OBSERVATION__COMPANY_NAME_OBSERVATION_CODE_P,
-						ConsolPlugin.INSTANCE.getString("CompanyNameObservationCompanyNameObservationCodeP"),
-						new Object[] { companyNameObservation }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_COMPANY_NAME_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(companyNameObservation)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.COMPANY_NAME_OBSERVATION__COMPANY_NAME_OBSERVATION_CODE_P,
+						 ConsolPlugin.INSTANCE.getString("CompanyNameObservationCompanyNameObservationCodeP"),
+						 new Object [] { companyNameObservation }));
+			}
+			
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
-				Collection<Object> passToken = (Collection<Object>) context.get(
-					"org.openhealthtools.mdht.uml.cda.consol.CompanyNameObservationCodeP");
+				Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.consol.CompanyNameObservationCodeP");
 				if (passToken == null) {
 					// anticipate a reasonably healthy model
-					passToken = new java.util.ArrayList<>(3);
+					passToken = new java.util.ArrayList<Object>(3);
 					context.put("org.openhealthtools.mdht.uml.cda.consol.CompanyNameObservationCodeP", passToken);
 				}
 				passToken.add(companyNameObservation);
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -213,9 +233,9 @@ public class CompanyNameObservationOperations extends ClinicalStatementOperation
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_COMPANY_NAME_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and " +
-			"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in " +
-			"value.code = 'C54131' and value.codeSystem = '2.16.840.1.113883.3.26.1.1')";
+	protected static final String VALIDATE_COMPANY_NAME_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
+"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
+"value.code = 'C54131' and value.codeSystem = '2.16.840.1.113883.3.26.1.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateCompanyNameObservationCode(CompanyNameObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Company Name Observation Code</em>}' invariant operation.
@@ -225,7 +245,7 @@ public class CompanyNameObservationOperations extends ClinicalStatementOperation
 	 * @generated
 	 * @ordered
 	 */
-	protected static ThreadLocal<Constraint> VALIDATE_COMPANY_NAME_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<  Constraint> VALIDATE_COMPANY_NAME_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -239,41 +259,50 @@ public class CompanyNameObservationOperations extends ClinicalStatementOperation
 	 */
 	public static boolean validateCompanyNameObservationCode(CompanyNameObservation companyNameObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		Object passToken = (context == null)
-				? null
-				: context.get("org.openhealthtools.mdht.uml.cda.consol.CompanyNameObservationCodeP");
+	
+	
+	
+  	  
+		Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.consol.CompanyNameObservationCodeP");
 		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(companyNameObservation)) {
 			// I have a free pass to short-circuit
 			return true;
 		}
-
-		DatatypesUtil.increment(context, "CompanyNameObservationCompanyNameObservationCode", "ERROR");
-
+  	  
+  	  
+  	  
+  	  
+  	 
+  	 
+  	 
+    DatatypesUtil.increment(context,"CompanyNameObservationCompanyNameObservationCode","ERROR");
+    
+  	  
+  	  
 		if (VALIDATE_COMPANY_NAME_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-
+		
+	 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.COMPANY_NAME_OBSERVATION);
 			try {
-				VALIDATE_COMPANY_NAME_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
-					helper.createInvariant(VALIDATE_COMPANY_NAME_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			} catch (ParserException pe) {
+				VALIDATE_COMPANY_NAME_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_COMPANY_NAME_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-
-		if (!EOCL_ENV.get().createQuery(
-			VALIDATE_COMPANY_NAME_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
-				companyNameObservation)) {
-			if (diagnostics != null) {
-				diagnostics.add(
-					new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.COMPANY_NAME_OBSERVATION__COMPANY_NAME_OBSERVATION_CODE,
-						ConsolPlugin.INSTANCE.getString("CompanyNameObservationCompanyNameObservationCode"),
-						new Object[] { companyNameObservation }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_COMPANY_NAME_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(companyNameObservation)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.COMPANY_NAME_OBSERVATION__COMPANY_NAME_OBSERVATION_CODE,
+						 ConsolPlugin.INSTANCE.getString("CompanyNameObservationCompanyNameObservationCode"),
+						 new Object [] { companyNameObservation }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -297,7 +326,7 @@ public class CompanyNameObservationOperations extends ClinicalStatementOperation
 	 * @generated
 	 * @ordered
 	 */
-	protected static ThreadLocal<Constraint> VALIDATE_COMPANY_NAME_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<  Constraint> VALIDATE_COMPANY_NAME_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -311,33 +340,44 @@ public class CompanyNameObservationOperations extends ClinicalStatementOperation
 	 */
 	public static boolean validateCompanyNameObservationValue(CompanyNameObservation companyNameObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		DatatypesUtil.increment(context, "CompanyNameObservationCompanyNameObservationValue", "ERROR");
-
+	
+	
+	
+  	  
+  	  
+  	  
+  	  
+  	 
+  	 
+  	 
+    DatatypesUtil.increment(context,"CompanyNameObservationCompanyNameObservationValue","ERROR");
+    
+  	  
+  	  
 		if (VALIDATE_COMPANY_NAME_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-
+		
+	 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.COMPANY_NAME_OBSERVATION);
 			try {
-				VALIDATE_COMPANY_NAME_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
-					helper.createInvariant(VALIDATE_COMPANY_NAME_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			} catch (ParserException pe) {
+				VALIDATE_COMPANY_NAME_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_COMPANY_NAME_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-
-		if (!EOCL_ENV.get().createQuery(
-			VALIDATE_COMPANY_NAME_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
-				companyNameObservation)) {
-			if (diagnostics != null) {
-				diagnostics.add(
-					new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.COMPANY_NAME_OBSERVATION__COMPANY_NAME_OBSERVATION_VALUE,
-						ConsolPlugin.INSTANCE.getString("CompanyNameObservationCompanyNameObservationValue"),
-						new Object[] { companyNameObservation }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_COMPANY_NAME_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(companyNameObservation)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.COMPANY_NAME_OBSERVATION__COMPANY_NAME_OBSERVATION_VALUE,
+						 ConsolPlugin.INSTANCE.getString("CompanyNameObservationCompanyNameObservationValue"),
+						 new Object [] { companyNameObservation }));
+			}
+			 
 			return false;
 		}
 		return true;

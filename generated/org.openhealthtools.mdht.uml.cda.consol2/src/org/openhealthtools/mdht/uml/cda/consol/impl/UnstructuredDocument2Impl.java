@@ -74,8 +74,7 @@ public class UnstructuredDocument2Impl extends USRealmHeader2Impl implements Uns
 	 */
 	public boolean validateUnstructuredDocument2RecordTargetPatientRoleId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return UnstructuredDocument2Operations.validateUnstructuredDocument2RecordTargetPatientRoleId(
-			this, diagnostics, context);
+		return UnstructuredDocument2Operations.validateUnstructuredDocument2RecordTargetPatientRoleId(this, diagnostics, context);
 	}
 
 	/**
@@ -85,8 +84,7 @@ public class UnstructuredDocument2Impl extends USRealmHeader2Impl implements Uns
 	 */
 	public boolean validateUnstructuredDocument2RecordTargetPatientRole(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return UnstructuredDocument2Operations.validateUnstructuredDocument2RecordTargetPatientRole(
-			this, diagnostics, context);
+		return UnstructuredDocument2Operations.validateUnstructuredDocument2RecordTargetPatientRole(this, diagnostics, context);
 	}
 
 	/**
@@ -96,8 +94,7 @@ public class UnstructuredDocument2Impl extends USRealmHeader2Impl implements Uns
 	 */
 	public boolean validateUnstructuredDocument2CustodianAssignedCustodianRepresentedCustodianOrganization(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return UnstructuredDocument2Operations.validateUnstructuredDocument2CustodianAssignedCustodianRepresentedCustodianOrganization(
-			this, diagnostics, context);
+		return UnstructuredDocument2Operations.validateUnstructuredDocument2CustodianAssignedCustodianRepresentedCustodianOrganization(this, diagnostics, context);
 	}
 
 	/**
@@ -107,8 +104,7 @@ public class UnstructuredDocument2Impl extends USRealmHeader2Impl implements Uns
 	 */
 	public boolean validateUnstructuredDocument2CustodianAssignedCustodian(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return UnstructuredDocument2Operations.validateUnstructuredDocument2CustodianAssignedCustodian(
-			this, diagnostics, context);
+		return UnstructuredDocument2Operations.validateUnstructuredDocument2CustodianAssignedCustodian(this, diagnostics, context);
 	}
 
 	/**
@@ -118,8 +114,7 @@ public class UnstructuredDocument2Impl extends USRealmHeader2Impl implements Uns
 	 */
 	public boolean validateUnstructuredDocument2ComponentNonXMLBodyEDMediaType(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return UnstructuredDocument2Operations.validateUnstructuredDocument2ComponentNonXMLBodyEDMediaType(
-			this, diagnostics, context);
+		return UnstructuredDocument2Operations.validateUnstructuredDocument2ComponentNonXMLBodyEDMediaType(this, diagnostics, context);
 	}
 
 	/**
@@ -129,8 +124,7 @@ public class UnstructuredDocument2Impl extends USRealmHeader2Impl implements Uns
 	 */
 	public boolean validateUnstructuredDocument2ComponentNonXMLBodyHasReferenceOrRepresentation(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return UnstructuredDocument2Operations.validateUnstructuredDocument2ComponentNonXMLBodyHasReferenceOrRepresentation(
-			this, diagnostics, context);
+		return UnstructuredDocument2Operations.validateUnstructuredDocument2ComponentNonXMLBodyHasReferenceOrRepresentation(this, diagnostics, context);
 	}
 
 	/**
@@ -140,8 +134,7 @@ public class UnstructuredDocument2Impl extends USRealmHeader2Impl implements Uns
 	 */
 	public boolean validateUnstructuredDocument2ComponentNonXMLBodyMediaTypeFileFormats(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return UnstructuredDocument2Operations.validateUnstructuredDocument2ComponentNonXMLBodyMediaTypeFileFormats(
-			this, diagnostics, context);
+		return UnstructuredDocument2Operations.validateUnstructuredDocument2ComponentNonXMLBodyMediaTypeFileFormats(this, diagnostics, context);
 	}
 
 	/**
@@ -151,8 +144,7 @@ public class UnstructuredDocument2Impl extends USRealmHeader2Impl implements Uns
 	 */
 	public boolean validateUnstructuredDocument2ComponentNonXMLBodyText(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return UnstructuredDocument2Operations.validateUnstructuredDocument2ComponentNonXMLBodyText(
-			this, diagnostics, context);
+		return UnstructuredDocument2Operations.validateUnstructuredDocument2ComponentNonXMLBodyText(this, diagnostics, context);
 	}
 
 	/**
@@ -162,8 +154,7 @@ public class UnstructuredDocument2Impl extends USRealmHeader2Impl implements Uns
 	 */
 	public boolean validateUnstructuredDocument2ComponentNonXMLBody(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return UnstructuredDocument2Operations.validateUnstructuredDocument2ComponentNonXMLBody(
-			this, diagnostics, context);
+		return UnstructuredDocument2Operations.validateUnstructuredDocument2ComponentNonXMLBody(this, diagnostics, context);
 	}
 
 	/**
@@ -183,17 +174,17 @@ public class UnstructuredDocument2Impl extends USRealmHeader2Impl implements Uns
 	 */
 	@Override
 	public UnstructuredDocument2 init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public UnstructuredDocument2 init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // UnstructuredDocument2Impl

@@ -128,10 +128,10 @@ public interface DeviceIdentifierObservation extends Observation {
 	public DeviceIdentifierObservation init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public DeviceIdentifierObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
 
 } // DeviceIdentifierObservation

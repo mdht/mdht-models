@@ -259,9 +259,9 @@ public interface NumberOfPressureUlcersObservation extends Observation {
 	public NumberOfPressureUlcersObservation init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public NumberOfPressureUlcersObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // NumberOfPressureUlcersObservation

@@ -81,7 +81,7 @@ public class ComplicationsSection2Operations extends ComplicationsSectionOperati
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_COMPLICATIONS_SECTION_EXPLICIT_COMPLICATIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<  Constraint> VALIDATE_COMPLICATIONS_SECTION_EXPLICIT_COMPLICATIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -96,35 +96,44 @@ public class ComplicationsSection2Operations extends ComplicationsSectionOperati
 
 	public static boolean validateComplicationsSectionExplicitComplications(ComplicationsSection2 complicationsSection2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		DatatypesUtil.increment(context, "ComplicationsSection2ComplicationsSectionExplicitComplications", "INFO");
-
+	
+	
+	
+  	  
+  	  
+  	  
+  	  
+  	 
+  	 
+  	 
+    DatatypesUtil.increment(context,"ComplicationsSection2ComplicationsSectionExplicitComplications","INFO");
+    
+  	  
+  	  
 		if (VALIDATE_COMPLICATIONS_SECTION_EXPLICIT_COMPLICATIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-
+		
+	 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.COMPLICATIONS_SECTION2);
 			try {
-				VALIDATE_COMPLICATIONS_SECTION_EXPLICIT_COMPLICATIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
-					helper.createInvariant(
-						VALIDATE_COMPLICATIONS_SECTION_EXPLICIT_COMPLICATIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			} catch (ParserException pe) {
+				VALIDATE_COMPLICATIONS_SECTION_EXPLICIT_COMPLICATIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_COMPLICATIONS_SECTION_EXPLICIT_COMPLICATIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-
-		if (!EOCL_ENV.get().createQuery(
-			VALIDATE_COMPLICATIONS_SECTION_EXPLICIT_COMPLICATIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
-				complicationsSection2)) {
-			if (diagnostics != null) {
-				diagnostics.add(
-					new BasicDiagnostic(
-						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.COMPLICATIONS_SECTION2__COMPLICATIONS_SECTION_EXPLICIT_COMPLICATIONS,
-						ConsolPlugin.INSTANCE.getString(
-							"ComplicationsSection2ComplicationsSectionExplicitComplications"),
-						new Object[] { complicationsSection2 }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_COMPLICATIONS_SECTION_EXPLICIT_COMPLICATIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(complicationsSection2)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.COMPLICATIONS_SECTION2__COMPLICATIONS_SECTION_EXPLICIT_COMPLICATIONS,
+						 ConsolPlugin.INSTANCE.getString("ComplicationsSection2ComplicationsSectionExplicitComplications"),
+						 new Object [] { complicationsSection2 }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -149,7 +158,7 @@ public class ComplicationsSection2Operations extends ComplicationsSectionOperati
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_COMPLICATIONS_SECTION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<  Constraint> VALIDATE_COMPLICATIONS_SECTION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -164,34 +173,44 @@ public class ComplicationsSection2Operations extends ComplicationsSectionOperati
 
 	public static boolean validateComplicationsSection2TemplateId(ComplicationsSection2 complicationsSection2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		DatatypesUtil.increment(context, "ComplicationsSection2ComplicationsSection2TemplateId", "ERROR");
-
+	
+	
+	
+  	  
+  	  
+  	  
+  	  
+  	 
+  	 
+  	 
+    DatatypesUtil.increment(context,"ComplicationsSection2ComplicationsSection2TemplateId","ERROR");
+    
+  	  
+  	  
 		if (VALIDATE_COMPLICATIONS_SECTION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-
+		
+	 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.COMPLICATIONS_SECTION2);
 			try {
-				VALIDATE_COMPLICATIONS_SECTION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
-					helper.createInvariant(
-						VALIDATE_COMPLICATIONS_SECTION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			} catch (ParserException pe) {
+				VALIDATE_COMPLICATIONS_SECTION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_COMPLICATIONS_SECTION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-
-		if (!EOCL_ENV.get().createQuery(
-			VALIDATE_COMPLICATIONS_SECTION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
-				complicationsSection2)) {
-			if (diagnostics != null) {
-				diagnostics.add(
-					new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.COMPLICATIONS_SECTION2__COMPLICATIONS_SECTION2_TEMPLATE_ID,
-						ConsolPlugin.INSTANCE.getString("ComplicationsSection2ComplicationsSection2TemplateId"),
-						new Object[] { complicationsSection2 }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_COMPLICATIONS_SECTION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(complicationsSection2)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.COMPLICATIONS_SECTION2__COMPLICATIONS_SECTION2_TEMPLATE_ID,
+						 ConsolPlugin.INSTANCE.getString("ComplicationsSection2ComplicationsSection2TemplateId"),
+						 new Object [] { complicationsSection2 }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -225,26 +244,26 @@ public class ComplicationsSection2Operations extends ComplicationsSectionOperati
 
 	public static EList<ProblemObservation2> getConsolProblemObservation2s(
 			ComplicationsSection2 complicationsSection2) {
-
+	
+	
+	
 		if (GET_CONSOL_PROBLEM_OBSERVATION2S__EOCL_QRY == null) {
-
+		
+	 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.COMPLICATIONS_SECTION2,
-				ConsolPackage.Literals.COMPLICATIONS_SECTION2.getEAllOperations().get(64));
+			helper.setOperationContext(ConsolPackage.Literals.COMPLICATIONS_SECTION2, ConsolPackage.Literals.COMPLICATIONS_SECTION2.getEAllOperations().get(64));
 			try {
-				GET_CONSOL_PROBLEM_OBSERVATION2S__EOCL_QRY = helper.createQuery(
-					GET_CONSOL_PROBLEM_OBSERVATION2S__EOCL_EXP);
-			} catch (ParserException pe) {
+				GET_CONSOL_PROBLEM_OBSERVATION2S__EOCL_QRY = helper.createQuery(GET_CONSOL_PROBLEM_OBSERVATION2S__EOCL_EXP);
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-
+			}
+		 
 		OCL.Query query = EOCL_ENV.get().createQuery(GET_CONSOL_PROBLEM_OBSERVATION2S__EOCL_QRY);
 		@SuppressWarnings("unchecked")
-		Collection<ProblemObservation2> result = (Collection<ProblemObservation2>) query.evaluate(
-			complicationsSection2);
-		return new BasicEList.UnmodifiableEList<>(result.size(), result.toArray());
+		Collection<ProblemObservation2> result = (Collection<ProblemObservation2>) query.evaluate(complicationsSection2);
+		return new BasicEList.UnmodifiableEList<ProblemObservation2>(result.size(), result.toArray());
 	}
 
 	/**
@@ -266,7 +285,7 @@ public class ComplicationsSection2Operations extends ComplicationsSectionOperati
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_COMPLICATIONS_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<  Constraint> VALIDATE_COMPLICATIONS_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -281,45 +300,56 @@ public class ComplicationsSection2Operations extends ComplicationsSectionOperati
 
 	public static boolean validateComplicationsSectionCodeP(ComplicationsSection2 complicationsSection2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		DatatypesUtil.increment(context, "ComplicationsSection2ComplicationsSectionCodeP", "ERROR");
-
+	
+	
+	
+  	  
+  	  
+  	  
+  	  
+  	 
+  	 
+  	 
+    DatatypesUtil.increment(context,"ComplicationsSection2ComplicationsSectionCodeP","ERROR");
+    
+  	  
+  	  
 		if (VALIDATE_COMPLICATIONS_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-
+		
+	 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.COMPLICATIONS_SECTION2);
 			try {
-				VALIDATE_COMPLICATIONS_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
-					helper.createInvariant(VALIDATE_COMPLICATIONS_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			} catch (ParserException pe) {
+				VALIDATE_COMPLICATIONS_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_COMPLICATIONS_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-
-		if (!EOCL_ENV.get().createQuery(
-			VALIDATE_COMPLICATIONS_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(complicationsSection2)) {
-			if (diagnostics != null) {
-				diagnostics.add(
-					new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.COMPLICATIONS_SECTION2__COMPLICATIONS_SECTION_CODE_P,
-						ConsolPlugin.INSTANCE.getString("ComplicationsSection2ComplicationsSectionCodeP"),
-						new Object[] { complicationsSection2 }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_COMPLICATIONS_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(complicationsSection2)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.COMPLICATIONS_SECTION2__COMPLICATIONS_SECTION_CODE_P,
+						 ConsolPlugin.INSTANCE.getString("ComplicationsSection2ComplicationsSectionCodeP"),
+						 new Object [] { complicationsSection2 }));
+			}
+			
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
-				Collection<Object> passToken = (Collection<Object>) context.get(
-					"org.openhealthtools.mdht.uml.cda.consol.ComplicationsSectionCodeP");
+				Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.consol.ComplicationsSectionCodeP");
 				if (passToken == null) {
 					// anticipate a reasonably healthy model
-					passToken = new java.util.ArrayList<>(3);
+					passToken = new java.util.ArrayList<Object>(3);
 					context.put("org.openhealthtools.mdht.uml.cda.consol.ComplicationsSectionCodeP", passToken);
 				}
 				passToken.add(complicationsSection2);
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -333,9 +363,9 @@ public class ComplicationsSection2Operations extends ComplicationsSectionOperati
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_COMPLICATIONS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and " +
-			"let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in " +
-			"value.code = '55109-3' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_COMPLICATIONS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "+
+"let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "+
+"value.code = '55109-3' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateComplicationsSectionCode(ComplicationsSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Complications Section Code</em>}' invariant operation.
@@ -346,7 +376,7 @@ public class ComplicationsSection2Operations extends ComplicationsSectionOperati
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_COMPLICATIONS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<  Constraint> VALIDATE_COMPLICATIONS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -361,40 +391,50 @@ public class ComplicationsSection2Operations extends ComplicationsSectionOperati
 
 	public static boolean validateComplicationsSectionCode(ComplicationsSection2 complicationsSection2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		Object passToken = (context == null)
-				? null
-				: context.get("org.openhealthtools.mdht.uml.cda.consol.ComplicationsSectionCodeP");
+	
+	
+	
+  	  
+		Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.consol.ComplicationsSectionCodeP");
 		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(complicationsSection2)) {
 			// I have a free pass to short-circuit
 			return true;
 		}
-
-		DatatypesUtil.increment(context, "ComplicationsSection2ComplicationsSectionCode", "ERROR");
-
+  	  
+  	  
+  	  
+  	  
+  	 
+  	 
+  	 
+    DatatypesUtil.increment(context,"ComplicationsSection2ComplicationsSectionCode","ERROR");
+    
+  	  
+  	  
 		if (VALIDATE_COMPLICATIONS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-
+		
+	 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.COMPLICATIONS_SECTION2);
 			try {
-				VALIDATE_COMPLICATIONS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
-					helper.createInvariant(VALIDATE_COMPLICATIONS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			} catch (ParserException pe) {
+				VALIDATE_COMPLICATIONS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_COMPLICATIONS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-
-		if (!EOCL_ENV.get().createQuery(
-			VALIDATE_COMPLICATIONS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(complicationsSection2)) {
-			if (diagnostics != null) {
-				diagnostics.add(
-					new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.COMPLICATIONS_SECTION2__COMPLICATIONS_SECTION_CODE,
-						ConsolPlugin.INSTANCE.getString("ComplicationsSection2ComplicationsSectionCode"),
-						new Object[] { complicationsSection2 }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_COMPLICATIONS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(complicationsSection2)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.COMPLICATIONS_SECTION2__COMPLICATIONS_SECTION_CODE,
+						 ConsolPlugin.INSTANCE.getString("ComplicationsSection2ComplicationsSectionCode"),
+						 new Object [] { complicationsSection2 }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -419,7 +459,7 @@ public class ComplicationsSection2Operations extends ComplicationsSectionOperati
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_COMPLICATIONS_SECTION_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<  Constraint> VALIDATE_COMPLICATIONS_SECTION_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -434,34 +474,44 @@ public class ComplicationsSection2Operations extends ComplicationsSectionOperati
 
 	public static boolean validateComplicationsSectionProblemObservation(ComplicationsSection2 complicationsSection2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		DatatypesUtil.increment(context, "ComplicationsSection2ComplicationsSectionProblemObservation", "INFO");
-
+	
+	
+	
+  	  
+  	  
+  	  
+  	  
+  	 
+  	 
+  	 
+    DatatypesUtil.increment(context,"ComplicationsSection2ComplicationsSectionProblemObservation","INFO");
+    
+  	  
+  	  
 		if (VALIDATE_COMPLICATIONS_SECTION_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-
+		
+	 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.COMPLICATIONS_SECTION2);
 			try {
-				VALIDATE_COMPLICATIONS_SECTION_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
-					helper.createInvariant(
-						VALIDATE_COMPLICATIONS_SECTION_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			} catch (ParserException pe) {
+				VALIDATE_COMPLICATIONS_SECTION_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_COMPLICATIONS_SECTION_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-
-		if (!EOCL_ENV.get().createQuery(
-			VALIDATE_COMPLICATIONS_SECTION_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
-				complicationsSection2)) {
-			if (diagnostics != null) {
-				diagnostics.add(
-					new BasicDiagnostic(
-						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.COMPLICATIONS_SECTION2__COMPLICATIONS_SECTION_PROBLEM_OBSERVATION,
-						ConsolPlugin.INSTANCE.getString("ComplicationsSection2ComplicationsSectionProblemObservation"),
-						new Object[] { complicationsSection2 }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_COMPLICATIONS_SECTION_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(complicationsSection2)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.COMPLICATIONS_SECTION2__COMPLICATIONS_SECTION_PROBLEM_OBSERVATION,
+						 ConsolPlugin.INSTANCE.getString("ComplicationsSection2ComplicationsSectionProblemObservation"),
+						 new Object [] { complicationsSection2 }));
+			}
+			 
 			return false;
 		}
 		return true;

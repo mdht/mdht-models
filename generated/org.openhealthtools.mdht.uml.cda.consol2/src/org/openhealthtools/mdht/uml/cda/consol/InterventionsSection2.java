@@ -106,9 +106,9 @@ public interface InterventionsSection2 extends InterventionsSection {
 	public InterventionsSection2 init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public InterventionsSection2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // InterventionsSection2

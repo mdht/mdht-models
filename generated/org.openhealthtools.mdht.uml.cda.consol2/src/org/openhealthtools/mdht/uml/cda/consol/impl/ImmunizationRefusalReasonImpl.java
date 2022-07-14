@@ -56,8 +56,7 @@ public class ImmunizationRefusalReasonImpl extends ObservationImpl implements Im
 	 */
 	public boolean validateImmunizationRefusalReasonTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ImmunizationRefusalReasonOperations.validateImmunizationRefusalReasonTemplateId(
-			this, diagnostics, context);
+		return ImmunizationRefusalReasonOperations.validateImmunizationRefusalReasonTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -67,8 +66,7 @@ public class ImmunizationRefusalReasonImpl extends ObservationImpl implements Im
 	 */
 	public boolean validateImmunizationRefusalReasonClassCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ImmunizationRefusalReasonOperations.validateImmunizationRefusalReasonClassCode(
-			this, diagnostics, context);
+		return ImmunizationRefusalReasonOperations.validateImmunizationRefusalReasonClassCode(this, diagnostics, context);
 	}
 
 	/**
@@ -95,8 +93,7 @@ public class ImmunizationRefusalReasonImpl extends ObservationImpl implements Im
 	 * @generated
 	 */
 	public boolean validateImmunizationRefusalReasonMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ImmunizationRefusalReasonOperations.validateImmunizationRefusalReasonMoodCode(
-			this, diagnostics, context);
+		return ImmunizationRefusalReasonOperations.validateImmunizationRefusalReasonMoodCode(this, diagnostics, context);
 	}
 
 	/**
@@ -106,8 +103,7 @@ public class ImmunizationRefusalReasonImpl extends ObservationImpl implements Im
 	 */
 	public boolean validateImmunizationRefusalReasonStatusCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ImmunizationRefusalReasonOperations.validateImmunizationRefusalReasonStatusCode(
-			this, diagnostics, context);
+		return ImmunizationRefusalReasonOperations.validateImmunizationRefusalReasonStatusCode(this, diagnostics, context);
 	}
 
 	/**
@@ -116,16 +112,16 @@ public class ImmunizationRefusalReasonImpl extends ObservationImpl implements Im
 	 * @generated
 	 */
 	public ImmunizationRefusalReason init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public ImmunizationRefusalReason init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // ImmunizationRefusalReasonImpl

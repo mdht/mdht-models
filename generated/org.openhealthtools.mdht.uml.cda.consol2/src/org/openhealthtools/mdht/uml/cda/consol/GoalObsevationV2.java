@@ -19,7 +19,7 @@ import org.eclipse.mdht.uml.cda.Observation;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getGoalObsevationV2()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='GoalObsevationV2TemplateId GoalObsevationV2Id GoalObsevationV2Code GoalObsevationV2StatusCode GoalObsevationV2Value GoalObsevationV2ClassCode GoalObsevationV2MoodCode' templateId.root='2.16.840.1.113883.10.20.22.4.121' templateId.extension='2022-06-01' classCode='OBS' moodCode='GOL' constraints.validation.warning='GoalObsevationV2Author'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='GoalObsevationV2TemplateId GoalObsevationV2Id GoalObsevationV2Code GoalObsevationV2StatusCode GoalObsevationV2ClassCode GoalObsevationV2MoodCode' templateId.root='2.16.840.1.113883.10.20.22.4.121' templateId.extension='2022-06-01' constraints.validation.info='GoalObsevationV2Value' classCode='OBS' moodCode='GOL' constraints.validation.warning='GoalObsevationV2Author'"
  * @generated
  */
 public interface GoalObsevationV2 extends Observation {
@@ -127,9 +127,9 @@ public interface GoalObsevationV2 extends Observation {
 	public GoalObsevationV2 init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public GoalObsevationV2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // GoalObsevationV2

@@ -20,7 +20,7 @@ import org.eclipse.mdht.uml.cda.Organizer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getCareTeamOrganizerV2()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='CareTeamOrganizerV2TemplateId CareTeamOrganizerV2Id CareTeamOrganizerV2Code CareTeamOrganizerV2CodeP CareTeamOrganizerV2StatusCode CareTeamOrganizerV2EffectiveTime CareTeamOrganizerV2ClassCode CareTeamOrganizerV2MoodCode CareTeamOrganizerV2CareTeamMember CareTeamOrganizerV2CareLocation CareTeamOrganizerV2IVLTSLow' templateId.root='2.16.840.1.113883.10.20.22.4.500' templateId.extension='2022-06-01' code.code='86744-0' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' classCode='CLUSTER' moodCode='EVN' constraints.validation.query='CareTeamOrganizerV2IVLTSLow CareTeamOrganizerV2IVLTSHigh' constraints.validation.info='CareTeamOrganizerV2IVLTSHigh'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='CareTeamOrganizerV2TemplateId CareTeamOrganizerV2Id CareTeamOrganizerV2Code CareTeamOrganizerV2CodeP CareTeamOrganizerV2StatusCode CareTeamOrganizerV2EffectiveTime CareTeamOrganizerV2ClassCode CareTeamOrganizerV2MoodCode CareTeamOrganizerV2CareTeamMemberActV2 CareTeamOrganizerV2IVLTSLow' templateId.root='2.16.840.1.113883.10.20.22.4.500' templateId.extension='2022-06-01' code.code='86744-0' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' classCode='CLUSTER' moodCode='EVN' constraints.validation.warning='CareTeamOrganizerV2CareTeamMember CareTeamOrganizerV2CareLocation CareTeamOrganizerV2NoteActivity' constraints.validation.info='CareTeamOrganizerV2CareTeamTypeObservation CareTeamOrganizerV2IVLTSHigh' constraints.validation.query='CareTeamOrganizerV2IVLTSLow CareTeamOrganizerV2IVLTSHigh'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolCareTeamOrganizerV2IVLTS constraints.validation.error='CareTeamOrganizerV2IVLTSLow' constraints.validation.info='CareTeamOrganizerV2IVLTSHigh'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolCareTeamOrganizerV2CareTeamMember typeCode='PPRF' constraints.validation.error='CareTeamOrganizerV2CareTeamMemberTypeCode CareTeamOrganizerV2CareTeamMemberParticipantRole' constraints.validation.info='CareTeamOrganizerV2CareTeamMemberSDTCFunctionCode'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolCareTeamOrganizerV2CareTeamMemberParticipantRole constraints.validation.error='CareTeamOrganizerV2CareTeamMemberParticipantRoleId'"
@@ -133,7 +133,7 @@ public interface CareTeamOrganizerV2 extends Organizer {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='true'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.participant-&gt;exists(participant : cda::Participant2 | not participant.oclIsUndefined() and participant.oclIsKindOf(cda::Participant2))'"
 	 * @generated
 	 */
 	boolean validateCareTeamOrganizerV2CareTeamMember(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -145,10 +145,46 @@ public interface CareTeamOrganizerV2 extends Organizer {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='true'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.participant-&gt;exists(participant : cda::Participant2 | not participant.oclIsUndefined() and participant.oclIsKindOf(cda::Participant2))'"
 	 * @generated
 	 */
 	boolean validateCareTeamOrganizerV2CareLocation(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component-&gt;exists(component : cda::Component4 | not component.act.oclIsUndefined() and component.act.oclIsKindOf(consol::NoteActivity))'"
+	 * @generated
+	 */
+	boolean validateCareTeamOrganizerV2NoteActivity(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component-&gt;exists(component : cda::Component4 | not component.observation.oclIsUndefined() and component.observation.oclIsKindOf(consol::CareTeamTypeObservation))'"
+	 * @generated
+	 */
+	boolean validateCareTeamOrganizerV2CareTeamTypeObservation(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component-&gt;exists(component : cda::Component4 | not component.act.oclIsUndefined() and component.act.oclIsKindOf(consol::CareTeamMemberActV2))'"
+	 * @generated
+	 */
+	boolean validateCareTeamOrganizerV2CareTeamMemberActV2(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -209,9 +245,9 @@ public interface CareTeamOrganizerV2 extends Organizer {
 	public CareTeamOrganizerV2 init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public CareTeamOrganizerV2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // CareTeamOrganizerV2

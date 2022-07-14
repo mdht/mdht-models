@@ -116,9 +116,9 @@ public interface HospitalDischargeDiagnosisSection extends Section {
 	public HospitalDischargeDiagnosisSection init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public HospitalDischargeDiagnosisSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // HospitalDischargeDiagnosisSection

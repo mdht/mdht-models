@@ -966,9 +966,9 @@ public interface CarePlan extends USRealmHeader2 {
 	public CarePlan init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public CarePlan init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // CarePlan

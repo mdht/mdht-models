@@ -77,8 +77,7 @@ public class FamilyHistoryOrganizer2Impl extends FamilyHistoryOrganizerImpl impl
 	@Override
 	public boolean validateFamilyHistoryOrganizerFamilyHistoryObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return FamilyHistoryOrganizer2Operations.validateFamilyHistoryOrganizerFamilyHistoryObservation(
-			this, diagnostics, context);
+		return FamilyHistoryOrganizer2Operations.validateFamilyHistoryOrganizerFamilyHistoryObservation(this, diagnostics, context);
 	}
 
 	/**
@@ -88,17 +87,17 @@ public class FamilyHistoryOrganizer2Impl extends FamilyHistoryOrganizerImpl impl
 	 */
 	@Override
 	public FamilyHistoryOrganizer2 init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public FamilyHistoryOrganizer2 init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // FamilyHistoryOrganizer2Impl

@@ -63,8 +63,7 @@ public class ProgressNote2Impl extends USRealmHeader2Impl implements ProgressNot
 	 */
 	public boolean validateProgressNote2HasAnAssementAndPlanSection2OrBothAssementSectionAndPlanOfTreatmentSection2(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProgressNote2Operations.validateProgressNote2HasAnAssementAndPlanSection2OrBothAssementSectionAndPlanOfTreatmentSection2(
-			this, diagnostics, context);
+		return ProgressNote2Operations.validateProgressNote2HasAnAssementAndPlanSection2OrBothAssementSectionAndPlanOfTreatmentSection2(this, diagnostics, context);
 	}
 
 	/**
@@ -74,8 +73,7 @@ public class ProgressNote2Impl extends USRealmHeader2Impl implements ProgressNot
 	 */
 	public boolean validateProgressNote2DoesNotHaveAssementAndPlanSection2WhenAssementOrPlanOfTreatment2ArePresent(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProgressNote2Operations.validateProgressNote2DoesNotHaveAssementAndPlanSection2WhenAssementOrPlanOfTreatment2ArePresent(
-			this, diagnostics, context);
+		return ProgressNote2Operations.validateProgressNote2DoesNotHaveAssementAndPlanSection2WhenAssementOrPlanOfTreatment2ArePresent(this, diagnostics, context);
 	}
 
 	/**
@@ -150,8 +148,7 @@ public class ProgressNote2Impl extends USRealmHeader2Impl implements ProgressNot
 	 */
 	public boolean validateProgressNote2AllergiesSectionEntriesOptional2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProgressNote2Operations.validateProgressNote2AllergiesSectionEntriesOptional2(
-			this, diagnostics, context);
+		return ProgressNote2Operations.validateProgressNote2AllergiesSectionEntriesOptional2(this, diagnostics, context);
 	}
 
 	/**
@@ -190,8 +187,7 @@ public class ProgressNote2Impl extends USRealmHeader2Impl implements ProgressNot
 	 */
 	public boolean validateProgressNote2MedicationsSectionEntriesOptional2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProgressNote2Operations.validateProgressNote2MedicationsSectionEntriesOptional2(
-			this, diagnostics, context);
+		return ProgressNote2Operations.validateProgressNote2MedicationsSectionEntriesOptional2(this, diagnostics, context);
 	}
 
 	/**
@@ -258,8 +254,7 @@ public class ProgressNote2Impl extends USRealmHeader2Impl implements ProgressNot
 	 */
 	public boolean validateProgressNote2VitalSignsSectionEntriesOptional2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProgressNote2Operations.validateProgressNote2VitalSignsSectionEntriesOptional2(
-			this, diagnostics, context);
+		return ProgressNote2Operations.validateProgressNote2VitalSignsSectionEntriesOptional2(this, diagnostics, context);
 	}
 
 	/**
@@ -278,8 +273,7 @@ public class ProgressNote2Impl extends USRealmHeader2Impl implements ProgressNot
 	 */
 	public boolean validateProgressNote2DocumentationOfServiceEventUSRealmDateAndTimeDTLow(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProgressNote2Operations.validateProgressNote2DocumentationOfServiceEventUSRealmDateAndTimeDTLow(
-			this, diagnostics, context);
+		return ProgressNote2Operations.validateProgressNote2DocumentationOfServiceEventUSRealmDateAndTimeDTLow(this, diagnostics, context);
 	}
 
 	/**
@@ -289,8 +283,7 @@ public class ProgressNote2Impl extends USRealmHeader2Impl implements ProgressNot
 	 */
 	public boolean validateProgressNote2DocumentationOfServiceEventEffectiveTimeHasHighWhenNoWidth(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProgressNote2Operations.validateProgressNote2DocumentationOfServiceEventEffectiveTimeHasHighWhenNoWidth(
-			this, diagnostics, context);
+		return ProgressNote2Operations.validateProgressNote2DocumentationOfServiceEventEffectiveTimeHasHighWhenNoWidth(this, diagnostics, context);
 	}
 
 	/**
@@ -300,8 +293,7 @@ public class ProgressNote2Impl extends USRealmHeader2Impl implements ProgressNot
 	 */
 	public boolean validateProgressNote2DocumentationOfServiceEventTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProgressNote2Operations.validateProgressNote2DocumentationOfServiceEventTemplateId(
-			this, diagnostics, context);
+		return ProgressNote2Operations.validateProgressNote2DocumentationOfServiceEventTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -311,8 +303,7 @@ public class ProgressNote2Impl extends USRealmHeader2Impl implements ProgressNot
 	 */
 	public boolean validateProgressNote2DocumentationOfServiceEventClassCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProgressNote2Operations.validateProgressNote2DocumentationOfServiceEventClassCode(
-			this, diagnostics, context);
+		return ProgressNote2Operations.validateProgressNote2DocumentationOfServiceEventClassCode(this, diagnostics, context);
 	}
 
 	/**
@@ -322,8 +313,7 @@ public class ProgressNote2Impl extends USRealmHeader2Impl implements ProgressNot
 	 */
 	public boolean validateProgressNote2DocumentationOfServiceEventEffectiveTime(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProgressNote2Operations.validateProgressNote2DocumentationOfServiceEventEffectiveTime(
-			this, diagnostics, context);
+		return ProgressNote2Operations.validateProgressNote2DocumentationOfServiceEventEffectiveTime(this, diagnostics, context);
 	}
 
 	/**
@@ -343,8 +333,7 @@ public class ProgressNote2Impl extends USRealmHeader2Impl implements ProgressNot
 	 */
 	public boolean validateProgressNote2ComponentOfEncompassingEncounterUSRealmDateAndTimeDTLow(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProgressNote2Operations.validateProgressNote2ComponentOfEncompassingEncounterUSRealmDateAndTimeDTLow(
-			this, diagnostics, context);
+		return ProgressNote2Operations.validateProgressNote2ComponentOfEncompassingEncounterUSRealmDateAndTimeDTLow(this, diagnostics, context);
 	}
 
 	/**
@@ -354,8 +343,7 @@ public class ProgressNote2Impl extends USRealmHeader2Impl implements ProgressNot
 	 */
 	public boolean validateProgressNote2ComponentOfEncompassingEncounterLocationHealthCareFacilityId(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProgressNote2Operations.validateProgressNote2ComponentOfEncompassingEncounterLocationHealthCareFacilityId(
-			this, diagnostics, context);
+		return ProgressNote2Operations.validateProgressNote2ComponentOfEncompassingEncounterLocationHealthCareFacilityId(this, diagnostics, context);
 	}
 
 	/**
@@ -365,8 +353,7 @@ public class ProgressNote2Impl extends USRealmHeader2Impl implements ProgressNot
 	 */
 	public boolean validateProgressNote2ComponentOfEncompassingEncounterLocationHealthCareFacility(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProgressNote2Operations.validateProgressNote2ComponentOfEncompassingEncounterLocationHealthCareFacility(
-			this, diagnostics, context);
+		return ProgressNote2Operations.validateProgressNote2ComponentOfEncompassingEncounterLocationHealthCareFacility(this, diagnostics, context);
 	}
 
 	/**
@@ -376,8 +363,7 @@ public class ProgressNote2Impl extends USRealmHeader2Impl implements ProgressNot
 	 */
 	public boolean validateProgressNote2ComponentOfEncompassingEncounterId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProgressNote2Operations.validateProgressNote2ComponentOfEncompassingEncounterId(
-			this, diagnostics, context);
+		return ProgressNote2Operations.validateProgressNote2ComponentOfEncompassingEncounterId(this, diagnostics, context);
 	}
 
 	/**
@@ -387,8 +373,7 @@ public class ProgressNote2Impl extends USRealmHeader2Impl implements ProgressNot
 	 */
 	public boolean validateProgressNote2ComponentOfEncompassingEncounterEffectiveTime(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProgressNote2Operations.validateProgressNote2ComponentOfEncompassingEncounterEffectiveTime(
-			this, diagnostics, context);
+		return ProgressNote2Operations.validateProgressNote2ComponentOfEncompassingEncounterEffectiveTime(this, diagnostics, context);
 	}
 
 	/**
@@ -398,8 +383,7 @@ public class ProgressNote2Impl extends USRealmHeader2Impl implements ProgressNot
 	 */
 	public boolean validateProgressNote2ComponentOfEncompassingEncounterLocation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProgressNote2Operations.validateProgressNote2ComponentOfEncompassingEncounterLocation(
-			this, diagnostics, context);
+		return ProgressNote2Operations.validateProgressNote2ComponentOfEncompassingEncounterLocation(this, diagnostics, context);
 	}
 
 	/**
@@ -409,8 +393,7 @@ public class ProgressNote2Impl extends USRealmHeader2Impl implements ProgressNot
 	 */
 	public boolean validateProgressNote2ComponentOfEncompassingEncounter(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProgressNote2Operations.validateProgressNote2ComponentOfEncompassingEncounter(
-			this, diagnostics, context);
+		return ProgressNote2Operations.validateProgressNote2ComponentOfEncompassingEncounter(this, diagnostics, context);
 	}
 
 	/**
@@ -574,17 +557,17 @@ public class ProgressNote2Impl extends USRealmHeader2Impl implements ProgressNot
 	 */
 	@Override
 	public ProgressNote2 init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public ProgressNote2 init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // ProgressNote2Impl

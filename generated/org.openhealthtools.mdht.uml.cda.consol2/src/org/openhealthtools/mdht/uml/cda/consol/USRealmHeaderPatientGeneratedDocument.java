@@ -905,9 +905,9 @@ public interface USRealmHeaderPatientGeneratedDocument extends USRealmHeader2 {
 	public USRealmHeaderPatientGeneratedDocument init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public USRealmHeaderPatientGeneratedDocument init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // USRealmHeaderPatientGeneratedDocument

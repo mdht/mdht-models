@@ -49,8 +49,7 @@ public class DischargeDiagnosisSection2Impl extends HospitalDischargeDiagnosisSe
 	 */
 	public boolean validateDischargeDiagnosisSection2TemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return DischargeDiagnosisSection2Operations.validateDischargeDiagnosisSection2TemplateId(
-			this, diagnostics, context);
+		return DischargeDiagnosisSection2Operations.validateDischargeDiagnosisSection2TemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -60,8 +59,7 @@ public class DischargeDiagnosisSection2Impl extends HospitalDischargeDiagnosisSe
 	 */
 	public boolean validateDischargeDiagnosisSection2CETranslation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return DischargeDiagnosisSection2Operations.validateDischargeDiagnosisSection2CETranslation(
-			this, diagnostics, context);
+		return DischargeDiagnosisSection2Operations.validateDischargeDiagnosisSection2CETranslation(this, diagnostics, context);
 	}
 
 	/**
@@ -71,8 +69,7 @@ public class DischargeDiagnosisSection2Impl extends HospitalDischargeDiagnosisSe
 	 */
 	public boolean validateDischargeDiagnosisSection2CETranslationP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return DischargeDiagnosisSection2Operations.validateDischargeDiagnosisSection2CETranslationP(
-			this, diagnostics, context);
+		return DischargeDiagnosisSection2Operations.validateDischargeDiagnosisSection2CETranslationP(this, diagnostics, context);
 	}
 
 	/**
@@ -92,8 +89,7 @@ public class DischargeDiagnosisSection2Impl extends HospitalDischargeDiagnosisSe
 	@Override
 	public boolean validateHospitalDischargeDiagnosisSectionCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return DischargeDiagnosisSection2Operations.validateHospitalDischargeDiagnosisSectionCodeP(
-			this, diagnostics, context);
+		return DischargeDiagnosisSection2Operations.validateHospitalDischargeDiagnosisSectionCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -104,8 +100,7 @@ public class DischargeDiagnosisSection2Impl extends HospitalDischargeDiagnosisSe
 	@Override
 	public boolean validateHospitalDischargeDiagnosisSectionCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return DischargeDiagnosisSection2Operations.validateHospitalDischargeDiagnosisSectionCode(
-			this, diagnostics, context);
+		return DischargeDiagnosisSection2Operations.validateHospitalDischargeDiagnosisSectionCode(this, diagnostics, context);
 	}
 
 	/**
@@ -116,8 +111,7 @@ public class DischargeDiagnosisSection2Impl extends HospitalDischargeDiagnosisSe
 	@Override
 	public boolean validateHospitalDischargeDiagnosisSectionHospitalDischargeDiagnosis(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return DischargeDiagnosisSection2Operations.validateHospitalDischargeDiagnosisSectionHospitalDischargeDiagnosis(
-			this, diagnostics, context);
+		return DischargeDiagnosisSection2Operations.validateHospitalDischargeDiagnosisSectionHospitalDischargeDiagnosis(this, diagnostics, context);
 	}
 
 	/**
@@ -127,17 +121,17 @@ public class DischargeDiagnosisSection2Impl extends HospitalDischargeDiagnosisSe
 	 */
 	@Override
 	public DischargeDiagnosisSection2 init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public DischargeDiagnosisSection2 init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // DischargeDiagnosisSection2Impl

@@ -113,9 +113,9 @@ public interface ImmunizationsSectionEntriesOptional extends Section {
 	public ImmunizationsSectionEntriesOptional init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public ImmunizationsSectionEntriesOptional init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ImmunizationsSectionEntriesOptional

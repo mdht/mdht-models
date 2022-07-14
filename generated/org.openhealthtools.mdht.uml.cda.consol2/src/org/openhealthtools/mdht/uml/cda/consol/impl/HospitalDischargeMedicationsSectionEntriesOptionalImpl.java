@@ -59,8 +59,7 @@ public class HospitalDischargeMedicationsSectionEntriesOptionalImpl extends Sect
 	 */
 	public boolean validateHospitalDischargeMedicationsSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HospitalDischargeMedicationsSectionEntriesOptionalOperations.validateHospitalDischargeMedicationsSectionEntriesOptionalTemplateId(
-			this, diagnostics, context);
+		return HospitalDischargeMedicationsSectionEntriesOptionalOperations.validateHospitalDischargeMedicationsSectionEntriesOptionalTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -70,8 +69,7 @@ public class HospitalDischargeMedicationsSectionEntriesOptionalImpl extends Sect
 	 */
 	public boolean validateHospitalDischargeMedicationsSectionEntriesOptionalCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HospitalDischargeMedicationsSectionEntriesOptionalOperations.validateHospitalDischargeMedicationsSectionEntriesOptionalCode(
-			this, diagnostics, context);
+		return HospitalDischargeMedicationsSectionEntriesOptionalOperations.validateHospitalDischargeMedicationsSectionEntriesOptionalCode(this, diagnostics, context);
 	}
 
 	/**
@@ -81,8 +79,7 @@ public class HospitalDischargeMedicationsSectionEntriesOptionalImpl extends Sect
 	 */
 	public boolean validateHospitalDischargeMedicationsSectionEntriesOptionalCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HospitalDischargeMedicationsSectionEntriesOptionalOperations.validateHospitalDischargeMedicationsSectionEntriesOptionalCodeP(
-			this, diagnostics, context);
+		return HospitalDischargeMedicationsSectionEntriesOptionalOperations.validateHospitalDischargeMedicationsSectionEntriesOptionalCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -92,8 +89,7 @@ public class HospitalDischargeMedicationsSectionEntriesOptionalImpl extends Sect
 	 */
 	public boolean validateHospitalDischargeMedicationsSectionEntriesOptionalTitle(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HospitalDischargeMedicationsSectionEntriesOptionalOperations.validateHospitalDischargeMedicationsSectionEntriesOptionalTitle(
-			this, diagnostics, context);
+		return HospitalDischargeMedicationsSectionEntriesOptionalOperations.validateHospitalDischargeMedicationsSectionEntriesOptionalTitle(this, diagnostics, context);
 	}
 
 	/**
@@ -103,8 +99,7 @@ public class HospitalDischargeMedicationsSectionEntriesOptionalImpl extends Sect
 	 */
 	public boolean validateHospitalDischargeMedicationsSectionEntriesOptionalText(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HospitalDischargeMedicationsSectionEntriesOptionalOperations.validateHospitalDischargeMedicationsSectionEntriesOptionalText(
-			this, diagnostics, context);
+		return HospitalDischargeMedicationsSectionEntriesOptionalOperations.validateHospitalDischargeMedicationsSectionEntriesOptionalText(this, diagnostics, context);
 	}
 
 	/**
@@ -114,8 +109,7 @@ public class HospitalDischargeMedicationsSectionEntriesOptionalImpl extends Sect
 	 */
 	public boolean validateHospitalDischargeMedicationsSectionEntriesOptionalDischargeMedication(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return HospitalDischargeMedicationsSectionEntriesOptionalOperations.validateHospitalDischargeMedicationsSectionEntriesOptionalDischargeMedication(
-			this, diagnostics, context);
+		return HospitalDischargeMedicationsSectionEntriesOptionalOperations.validateHospitalDischargeMedicationsSectionEntriesOptionalDischargeMedication(this, diagnostics, context);
 	}
 
 	/**
@@ -133,17 +127,17 @@ public class HospitalDischargeMedicationsSectionEntriesOptionalImpl extends Sect
 	 * @generated
 	 */
 	public HospitalDischargeMedicationsSectionEntriesOptional init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public HospitalDischargeMedicationsSectionEntriesOptional init(
 			Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // HospitalDischargeMedicationsSectionEntriesOptionalImpl

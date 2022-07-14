@@ -19,23 +19,10 @@ import org.eclipse.mdht.uml.cda.Observation;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getAssessmentScaleSupportingObservationV2()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='AssessmentScaleSupportingObservationV2TemplateId AssessmentScaleSupportingObservationV2CodeCodeSystem AssessmentScaleSupportingObservationV2Id AssessmentScaleSupportingObservationV2StatusCode AssessmentScaleSupportingObservationV2ClassCode AssessmentScaleSupportingObservationV2MoodCode AssessmentScaleSupportingObservationV2Value' templateId.root='2.16.840.1.113883.10.20.22.4.86' templateId.extension='2022-06-01' classCode='OBS' moodCode='EVN'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='AssessmentScaleSupportingObservationV2TemplateId AssessmentScaleSupportingObservationV2Id AssessmentScaleSupportingObservationV2StatusCode AssessmentScaleSupportingObservationV2StatusCodeP AssessmentScaleSupportingObservationV2ClassCode AssessmentScaleSupportingObservationV2MoodCode AssessmentScaleSupportingObservationV2Value AssessmentScaleSupportingObservationV2Code AssessmentScaleSupportingObservationV2CodeP' templateId.root='2.16.840.1.113883.10.20.22.4.86' templateId.extension='2022-06-01' statusCode.code='completed' constraints.validation.dependOn.AssessmentScaleSupportingObservationV2StatusCode='AssessmentScaleSupportingObservationV2StatusCodeP' classCode='OBS' moodCode='EVN' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' constraints.validation.dependOn.AssessmentScaleSupportingObservationV2Code='AssessmentScaleSupportingObservationV2CodeP'"
  * @generated
  */
 public interface AssessmentScaleSupportingObservationV2 extends Observation {
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.code.isNullFlavorDefined() or self.code.codeSystem = \'2.16.840.1.113883.6.1\''"
-	 * @generated
-	 */
-	boolean validateAssessmentScaleSupportingObservationV2CodeCodeSystem(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
-
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -71,6 +58,18 @@ public interface AssessmentScaleSupportingObservationV2 extends Observation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined())'"
 	 * @generated
 	 */
+	boolean validateAssessmentScaleSupportingObservationV2StatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and \nlet value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in \nvalue.code = \'completed\')'"
+	 * @generated
+	 */
 	boolean validateAssessmentScaleSupportingObservationV2StatusCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context);
 
@@ -86,6 +85,30 @@ public interface AssessmentScaleSupportingObservationV2 extends Observation {
 	 */
 	boolean validateAssessmentScaleSupportingObservationV2Value(DiagnosticChain diagnostics,
 			Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())'"
+	 * @generated
+	 */
+	boolean validateAssessmentScaleSupportingObservationV2CodeP(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and \nlet value : datatypes::CD = self.code.oclAsType(datatypes::CD) in \nvalue.codeSystem = \'2.16.840.1.113883.6.1\')'"
+	 * @generated
+	 */
+	boolean validateAssessmentScaleSupportingObservationV2Code(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -121,9 +144,9 @@ public interface AssessmentScaleSupportingObservationV2 extends Observation {
 	public AssessmentScaleSupportingObservationV2 init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public AssessmentScaleSupportingObservationV2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // AssessmentScaleSupportingObservationV2

@@ -131,9 +131,9 @@ public interface DeviceIdentifierObservationV2 extends Observation {
 	public DeviceIdentifierObservationV2 init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public DeviceIdentifierObservationV2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // DeviceIdentifierObservationV2

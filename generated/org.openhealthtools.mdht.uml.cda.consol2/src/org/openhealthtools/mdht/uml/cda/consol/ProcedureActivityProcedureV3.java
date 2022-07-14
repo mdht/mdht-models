@@ -19,7 +19,7 @@ import org.eclipse.mdht.uml.cda.Procedure;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getProcedureActivityProcedureV3()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ProcedureActivityProcedureV3TemplateId ProcedureActivityProcedureV3Id ProcedureActivityProcedureV3Code ProcedureActivityProcedureV3StatusCode ProcedureActivityProcedureV3StatusCodeP ProcedureActivityProcedureV3ClassCode ProcedureActivityProcedureV3MoodCode' templateId.root='2.16.840.1.113883.10.20.22.4.14' templateId.extension='2022-06-01' constraints.validation.dependOn.ProcedureActivityProcedureV3StatusCode='ProcedureActivityProcedureV3StatusCodeP' constraints.validation.warning='ProcedureActivityProcedureV3EffectiveTime ProcedureActivityProcedureV3TargetSiteCode' constraints.validation.info='ProcedureActivityProcedureV3PriorityCode ProcedureActivityProcedureV3MethodCode' classCode='PROC' moodCode='EVN'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ProcedureActivityProcedureV3TemplateId ProcedureActivityProcedureV3Id ProcedureActivityProcedureV3Code ProcedureActivityProcedureV3StatusCode ProcedureActivityProcedureV3StatusCodeP ProcedureActivityProcedureV3PriorityCode ProcedureActivityProcedureV3TargetSiteCode ProcedureActivityProcedureV3ClassCode ProcedureActivityProcedureV3MoodCode' templateId.root='2.16.840.1.113883.10.20.22.4.14' templateId.extension='2022-06-01' constraints.validation.dependOn.ProcedureActivityProcedureV3StatusCode='ProcedureActivityProcedureV3StatusCodeP' constraints.validation.warning='ProcedureActivityProcedureV3EffectiveTime ProcedureActivityProcedureV3TargetSiteCodeP' priorityCode.codeSystem='2.16.840.1.113883.5.7' priorityCode.codeSystemName='ActPriority' constraints.validation.info='ProcedureActivityProcedureV3PriorityCodeP ProcedureActivityProcedureV3MethodCode' constraints.validation.dependOn.ProcedureActivityProcedureV3PriorityCode='ProcedureActivityProcedureV3PriorityCodeP' targetSiteCode.codeSystem='2.16.840.1.113883.6.96' targetSiteCode.codeSystemName='SNOMEDCT' constraints.validation.dependOn.ProcedureActivityProcedureV3TargetSiteCode='ProcedureActivityProcedureV3TargetSiteCodeP' classCode='PROC' moodCode='EVN'"
  * @generated
  */
 public interface ProcedureActivityProcedureV3 extends Procedure {
@@ -105,6 +105,18 @@ public interface ProcedureActivityProcedureV3 extends Procedure {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.priorityCode.oclIsUndefined() or self.priorityCode.isNullFlavorUndefined()) implies (not self.priorityCode.oclIsUndefined())'"
 	 * @generated
 	 */
+	boolean validateProcedureActivityProcedureV3PriorityCodeP(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.priorityCode.oclIsUndefined() or self.priorityCode.isNullFlavorUndefined()) implies (not self.priorityCode.oclIsUndefined() and self.priorityCode.oclIsKindOf(datatypes::CE) and \nlet value : datatypes::CE = self.priorityCode.oclAsType(datatypes::CE) in \nvalue.codeSystem = \'2.16.840.1.113883.5.7\' and (value.code = \'A\' or value.code = \'CR\' or value.code = \'CS\' or value.code = \'CSP\' or value.code = \'CSR\' or value.code = \'EL\' or value.code = \'EM\' or value.code = \'P\' or value.code = \'PRN\' or value.code = \'R\' or value.code = \'RR\' or value.code = \'S\' or value.code = \'T\' or value.code = \'UD\' or value.code = \'UR\'))'"
+	 * @generated
+	 */
 	boolean validateProcedureActivityProcedureV3PriorityCode(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
@@ -127,6 +139,18 @@ public interface ProcedureActivityProcedureV3 extends Procedure {
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.targetSiteCode-&gt;isEmpty() or self.targetSiteCode-&gt;exists(element | element.isNullFlavorUndefined())) implies (not self.targetSiteCode-&gt;isEmpty())'"
+	 * @generated
+	 */
+	boolean validateProcedureActivityProcedureV3TargetSiteCodeP(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.targetSiteCode-&gt;isEmpty() or self.targetSiteCode-&gt;exists(element | element.isNullFlavorUndefined())) implies (self.targetSiteCode-&gt;forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and \nlet value : datatypes::CD = element.oclAsType(datatypes::CD) in \nvalue.codeSystem = \'2.16.840.1.113883.6.96\' and not value.code.oclIsUndefined()))'"
 	 * @generated
 	 */
 	boolean validateProcedureActivityProcedureV3TargetSiteCode(DiagnosticChain diagnostics,
@@ -164,9 +188,9 @@ public interface ProcedureActivityProcedureV3 extends Procedure {
 	public ProcedureActivityProcedureV3 init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public ProcedureActivityProcedureV3 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ProcedureActivityProcedureV3

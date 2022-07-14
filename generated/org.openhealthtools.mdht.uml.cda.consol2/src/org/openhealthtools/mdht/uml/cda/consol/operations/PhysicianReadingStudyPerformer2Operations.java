@@ -66,7 +66,7 @@ public class PhysicianReadingStudyPerformer2Operations extends PhysicianReadingS
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_PHYSICIAN_READING_STUDY_PERFORMER2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<  Constraint> VALIDATE_PHYSICIAN_READING_STUDY_PERFORMER2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -82,36 +82,44 @@ public class PhysicianReadingStudyPerformer2Operations extends PhysicianReadingS
 	public static boolean validatePhysicianReadingStudyPerformer2TemplateId(
 			PhysicianReadingStudyPerformer2 physicianReadingStudyPerformer2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		DatatypesUtil.increment(
-			context, "PhysicianReadingStudyPerformer2PhysicianReadingStudyPerformer2TemplateId", "ERROR");
-
+	
+	
+	
+  	  
+  	  
+  	  
+  	  
+  	 
+  	 
+  	 
+    DatatypesUtil.increment(context,"PhysicianReadingStudyPerformer2PhysicianReadingStudyPerformer2TemplateId","ERROR");
+    
+  	  
+  	  
 		if (VALIDATE_PHYSICIAN_READING_STUDY_PERFORMER2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-
+		
+	 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PHYSICIAN_READING_STUDY_PERFORMER2);
 			try {
-				VALIDATE_PHYSICIAN_READING_STUDY_PERFORMER2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
-					helper.createInvariant(
-						VALIDATE_PHYSICIAN_READING_STUDY_PERFORMER2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			} catch (ParserException pe) {
+				VALIDATE_PHYSICIAN_READING_STUDY_PERFORMER2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PHYSICIAN_READING_STUDY_PERFORMER2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-
-		if (!EOCL_ENV.get().createQuery(
-			VALIDATE_PHYSICIAN_READING_STUDY_PERFORMER2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
-				physicianReadingStudyPerformer2)) {
-			if (diagnostics != null) {
-				diagnostics.add(
-					new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.PHYSICIAN_READING_STUDY_PERFORMER2__PHYSICIAN_READING_STUDY_PERFORMER2_TEMPLATE_ID,
-						ConsolPlugin.INSTANCE.getString(
-							"PhysicianReadingStudyPerformer2PhysicianReadingStudyPerformer2TemplateId"),
-						new Object[] { physicianReadingStudyPerformer2 }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_PHYSICIAN_READING_STUDY_PERFORMER2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(physicianReadingStudyPerformer2)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PHYSICIAN_READING_STUDY_PERFORMER2__PHYSICIAN_READING_STUDY_PERFORMER2_TEMPLATE_ID,
+						 ConsolPlugin.INSTANCE.getString("PhysicianReadingStudyPerformer2PhysicianReadingStudyPerformer2TemplateId"),
+						 new Object [] { physicianReadingStudyPerformer2 }));
+			}
+			 
 			return false;
 		}
 		return true;

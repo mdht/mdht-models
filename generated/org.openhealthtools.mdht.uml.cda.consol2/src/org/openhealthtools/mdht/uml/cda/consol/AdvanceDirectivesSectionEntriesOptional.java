@@ -18,7 +18,7 @@ import org.eclipse.mdht.uml.cda.Section;
  *
  * <!-- begin-model-doc -->
  * <p>
- * This section contains data defining the patient's advance directives and any reference to supporting documentation. The most recent and up-to-date directives are required, if known, and should be listed in as much detail as possible. This section contains data such as the existence of living wills, healthcare proxies, and CPR and resuscitation status. If referenced documents are available, they can be included in the CCD exchange package.
+ * This section contains data defining the patient's advance directives and any reference to supporting documentation. The most recent and up-to-date directives are required, if known, and should be listed in as much detail as possible. This section contains data such as the existence of living wills, healthcare proxies, and CPR and resuscitation status. If referenced documents are available, they can be included in the CCD exchange package. 
  * </p>
  * <p>
  * NOTE: The descriptions in this section differentiate between "advance directives" and "advance directive documents". The former are the directions whereas the latter are legal documents containing those directions. Thus, an advance directive might be "no cardiopulmonary resuscitation", and this directive might be stated in a legal advance directive document.
@@ -126,10 +126,10 @@ public interface AdvanceDirectivesSectionEntriesOptional extends Section {
 	public AdvanceDirectivesSectionEntriesOptional init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public AdvanceDirectivesSectionEntriesOptional init(
 			Iterable<? extends Initializer<? extends EObject>> initializers);
 } // AdvanceDirectivesSectionEntriesOptional

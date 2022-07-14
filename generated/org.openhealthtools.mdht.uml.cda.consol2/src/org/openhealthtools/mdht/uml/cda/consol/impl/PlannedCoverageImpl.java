@@ -143,8 +143,7 @@ public class PlannedCoverageImpl extends ActImpl implements PlannedCoverage {
 	 */
 	public boolean validatePlannedCoverageEntryRelationshipActClassCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PlannedCoverageOperations.validatePlannedCoverageEntryRelationshipActClassCode(
-			this, diagnostics, context);
+		return PlannedCoverageOperations.validatePlannedCoverageEntryRelationshipActClassCode(this, diagnostics, context);
 	}
 
 	/**
@@ -154,8 +153,7 @@ public class PlannedCoverageImpl extends ActImpl implements PlannedCoverage {
 	 */
 	public boolean validatePlannedCoverageEntryRelationshipActMoodCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PlannedCoverageOperations.validatePlannedCoverageEntryRelationshipActMoodCode(
-			this, diagnostics, context);
+		return PlannedCoverageOperations.validatePlannedCoverageEntryRelationshipActMoodCode(this, diagnostics, context);
 	}
 
 	/**
@@ -195,8 +193,7 @@ public class PlannedCoverageImpl extends ActImpl implements PlannedCoverage {
 	 */
 	public boolean validatePlannedCoverageEntryRelationshipActStatusCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PlannedCoverageOperations.validatePlannedCoverageEntryRelationshipActStatusCode(
-			this, diagnostics, context);
+		return PlannedCoverageOperations.validatePlannedCoverageEntryRelationshipActStatusCode(this, diagnostics, context);
 	}
 
 	/**
@@ -206,8 +203,7 @@ public class PlannedCoverageImpl extends ActImpl implements PlannedCoverage {
 	 */
 	public boolean validatePlannedCoverageEntryRelationshipActStatusCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PlannedCoverageOperations.validatePlannedCoverageEntryRelationshipActStatusCodeP(
-			this, diagnostics, context);
+		return PlannedCoverageOperations.validatePlannedCoverageEntryRelationshipActStatusCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -236,16 +232,16 @@ public class PlannedCoverageImpl extends ActImpl implements PlannedCoverage {
 	 * @generated
 	 */
 	public PlannedCoverage init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public PlannedCoverage init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // PlannedCoverageImpl

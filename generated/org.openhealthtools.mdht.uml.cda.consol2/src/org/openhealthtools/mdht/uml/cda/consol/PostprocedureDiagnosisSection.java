@@ -111,9 +111,9 @@ public interface PostprocedureDiagnosisSection extends Section {
 	public PostprocedureDiagnosisSection init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public PostprocedureDiagnosisSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // PostprocedureDiagnosisSection

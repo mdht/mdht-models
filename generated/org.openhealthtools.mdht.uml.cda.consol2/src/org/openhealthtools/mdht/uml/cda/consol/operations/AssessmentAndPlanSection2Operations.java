@@ -80,7 +80,7 @@ public class AssessmentAndPlanSection2Operations extends AssessmentAndPlanSectio
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_ASSESSMENT_AND_PLAN_SECTION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<  Constraint> VALIDATE_ASSESSMENT_AND_PLAN_SECTION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -96,34 +96,44 @@ public class AssessmentAndPlanSection2Operations extends AssessmentAndPlanSectio
 	public static boolean validateAssessmentAndPlanSection2TemplateId(
 			AssessmentAndPlanSection2 assessmentAndPlanSection2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		DatatypesUtil.increment(context, "AssessmentAndPlanSection2AssessmentAndPlanSection2TemplateId", "ERROR");
-
+	
+	
+	
+  	  
+  	  
+  	  
+  	  
+  	 
+  	 
+  	 
+    DatatypesUtil.increment(context,"AssessmentAndPlanSection2AssessmentAndPlanSection2TemplateId","ERROR");
+    
+  	  
+  	  
 		if (VALIDATE_ASSESSMENT_AND_PLAN_SECTION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-
+		
+	 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ASSESSMENT_AND_PLAN_SECTION2);
 			try {
-				VALIDATE_ASSESSMENT_AND_PLAN_SECTION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
-					helper.createInvariant(
-						VALIDATE_ASSESSMENT_AND_PLAN_SECTION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			} catch (ParserException pe) {
+				VALIDATE_ASSESSMENT_AND_PLAN_SECTION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_ASSESSMENT_AND_PLAN_SECTION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-
-		if (!EOCL_ENV.get().createQuery(
-			VALIDATE_ASSESSMENT_AND_PLAN_SECTION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
-				assessmentAndPlanSection2)) {
-			if (diagnostics != null) {
-				diagnostics.add(
-					new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.ASSESSMENT_AND_PLAN_SECTION2__ASSESSMENT_AND_PLAN_SECTION2_TEMPLATE_ID,
-						ConsolPlugin.INSTANCE.getString("AssessmentAndPlanSection2AssessmentAndPlanSection2TemplateId"),
-						new Object[] { assessmentAndPlanSection2 }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ASSESSMENT_AND_PLAN_SECTION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(assessmentAndPlanSection2)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.ASSESSMENT_AND_PLAN_SECTION2__ASSESSMENT_AND_PLAN_SECTION2_TEMPLATE_ID,
+						 ConsolPlugin.INSTANCE.getString("AssessmentAndPlanSection2AssessmentAndPlanSection2TemplateId"),
+						 new Object [] { assessmentAndPlanSection2 }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -156,24 +166,26 @@ public class AssessmentAndPlanSection2Operations extends AssessmentAndPlanSectio
 	 */
 
 	public static EList<PlannedAct2> getConsolPlannedAct2s(AssessmentAndPlanSection2 assessmentAndPlanSection2) {
-
+	
+	
+	
 		if (GET_CONSOL_PLANNED_ACT2S__EOCL_QRY == null) {
-
+		
+	 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.ASSESSMENT_AND_PLAN_SECTION2,
-				ConsolPackage.Literals.ASSESSMENT_AND_PLAN_SECTION2.getEAllOperations().get(62));
+			helper.setOperationContext(ConsolPackage.Literals.ASSESSMENT_AND_PLAN_SECTION2, ConsolPackage.Literals.ASSESSMENT_AND_PLAN_SECTION2.getEAllOperations().get(62));
 			try {
 				GET_CONSOL_PLANNED_ACT2S__EOCL_QRY = helper.createQuery(GET_CONSOL_PLANNED_ACT2S__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-
+			}
+		 
 		OCL.Query query = EOCL_ENV.get().createQuery(GET_CONSOL_PLANNED_ACT2S__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<PlannedAct2> result = (Collection<PlannedAct2>) query.evaluate(assessmentAndPlanSection2);
-		return new BasicEList.UnmodifiableEList<>(result.size(), result.toArray());
+		return new BasicEList.UnmodifiableEList<PlannedAct2>(result.size(), result.toArray());
 	}
 
 	/**
@@ -195,7 +207,7 @@ public class AssessmentAndPlanSection2Operations extends AssessmentAndPlanSectio
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_ASSESSMENT_AND_PLAN_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<  Constraint> VALIDATE_ASSESSMENT_AND_PLAN_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -210,47 +222,56 @@ public class AssessmentAndPlanSection2Operations extends AssessmentAndPlanSectio
 
 	public static boolean validateAssessmentAndPlanSectionCodeP(AssessmentAndPlanSection2 assessmentAndPlanSection2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		DatatypesUtil.increment(context, "AssessmentAndPlanSection2AssessmentAndPlanSectionCodeP", "ERROR");
-
+	
+	
+	
+  	  
+  	  
+  	  
+  	  
+  	 
+  	 
+  	 
+    DatatypesUtil.increment(context,"AssessmentAndPlanSection2AssessmentAndPlanSectionCodeP","ERROR");
+    
+  	  
+  	  
 		if (VALIDATE_ASSESSMENT_AND_PLAN_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-
+		
+	 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ASSESSMENT_AND_PLAN_SECTION2);
 			try {
-				VALIDATE_ASSESSMENT_AND_PLAN_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
-					helper.createInvariant(
-						VALIDATE_ASSESSMENT_AND_PLAN_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			} catch (ParserException pe) {
+				VALIDATE_ASSESSMENT_AND_PLAN_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_ASSESSMENT_AND_PLAN_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-
-		if (!EOCL_ENV.get().createQuery(
-			VALIDATE_ASSESSMENT_AND_PLAN_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
-				assessmentAndPlanSection2)) {
-			if (diagnostics != null) {
-				diagnostics.add(
-					new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.ASSESSMENT_AND_PLAN_SECTION2__ASSESSMENT_AND_PLAN_SECTION_CODE_P,
-						ConsolPlugin.INSTANCE.getString("AssessmentAndPlanSection2AssessmentAndPlanSectionCodeP"),
-						new Object[] { assessmentAndPlanSection2 }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ASSESSMENT_AND_PLAN_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(assessmentAndPlanSection2)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.ASSESSMENT_AND_PLAN_SECTION2__ASSESSMENT_AND_PLAN_SECTION_CODE_P,
+						 ConsolPlugin.INSTANCE.getString("AssessmentAndPlanSection2AssessmentAndPlanSectionCodeP"),
+						 new Object [] { assessmentAndPlanSection2 }));
+			}
+			
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
-				Collection<Object> passToken = (Collection<Object>) context.get(
-					"org.openhealthtools.mdht.uml.cda.consol.AssessmentAndPlanSectionCodeP");
+				Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.consol.AssessmentAndPlanSectionCodeP");
 				if (passToken == null) {
 					// anticipate a reasonably healthy model
-					passToken = new java.util.ArrayList<>(3);
+					passToken = new java.util.ArrayList<Object>(3);
 					context.put("org.openhealthtools.mdht.uml.cda.consol.AssessmentAndPlanSectionCodeP", passToken);
 				}
 				passToken.add(assessmentAndPlanSection2);
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -264,9 +285,9 @@ public class AssessmentAndPlanSection2Operations extends AssessmentAndPlanSectio
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_ASSESSMENT_AND_PLAN_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and " +
-			"let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in " +
-			"value.code = '51847-2' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_ASSESSMENT_AND_PLAN_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "+
+"let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "+
+"value.code = '51847-2' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateAssessmentAndPlanSectionCode(AssessmentAndPlanSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Assessment And Plan Section Code</em>}' invariant operation.
@@ -277,7 +298,7 @@ public class AssessmentAndPlanSection2Operations extends AssessmentAndPlanSectio
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_ASSESSMENT_AND_PLAN_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<  Constraint> VALIDATE_ASSESSMENT_AND_PLAN_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -292,41 +313,50 @@ public class AssessmentAndPlanSection2Operations extends AssessmentAndPlanSectio
 
 	public static boolean validateAssessmentAndPlanSectionCode(AssessmentAndPlanSection2 assessmentAndPlanSection2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		Object passToken = (context == null)
-				? null
-				: context.get("org.openhealthtools.mdht.uml.cda.consol.AssessmentAndPlanSectionCodeP");
+	
+	
+	
+  	  
+		Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.consol.AssessmentAndPlanSectionCodeP");
 		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(assessmentAndPlanSection2)) {
 			// I have a free pass to short-circuit
 			return true;
 		}
-
-		DatatypesUtil.increment(context, "AssessmentAndPlanSection2AssessmentAndPlanSectionCode", "ERROR");
-
+  	  
+  	  
+  	  
+  	  
+  	 
+  	 
+  	 
+    DatatypesUtil.increment(context,"AssessmentAndPlanSection2AssessmentAndPlanSectionCode","ERROR");
+    
+  	  
+  	  
 		if (VALIDATE_ASSESSMENT_AND_PLAN_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-
+		
+	 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ASSESSMENT_AND_PLAN_SECTION2);
 			try {
-				VALIDATE_ASSESSMENT_AND_PLAN_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
-					helper.createInvariant(VALIDATE_ASSESSMENT_AND_PLAN_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			} catch (ParserException pe) {
+				VALIDATE_ASSESSMENT_AND_PLAN_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_ASSESSMENT_AND_PLAN_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-
-		if (!EOCL_ENV.get().createQuery(
-			VALIDATE_ASSESSMENT_AND_PLAN_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
-				assessmentAndPlanSection2)) {
-			if (diagnostics != null) {
-				diagnostics.add(
-					new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.ASSESSMENT_AND_PLAN_SECTION2__ASSESSMENT_AND_PLAN_SECTION_CODE,
-						ConsolPlugin.INSTANCE.getString("AssessmentAndPlanSection2AssessmentAndPlanSectionCode"),
-						new Object[] { assessmentAndPlanSection2 }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ASSESSMENT_AND_PLAN_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(assessmentAndPlanSection2)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.ASSESSMENT_AND_PLAN_SECTION2__ASSESSMENT_AND_PLAN_SECTION_CODE,
+						 ConsolPlugin.INSTANCE.getString("AssessmentAndPlanSection2AssessmentAndPlanSectionCode"),
+						 new Object [] { assessmentAndPlanSection2 }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -351,7 +381,7 @@ public class AssessmentAndPlanSection2Operations extends AssessmentAndPlanSectio
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_ASSESSMENT_AND_PLAN_SECTION_PLAN_OF_CARE_ACTIVITY_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<  Constraint> VALIDATE_ASSESSMENT_AND_PLAN_SECTION_PLAN_OF_CARE_ACTIVITY_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -367,36 +397,44 @@ public class AssessmentAndPlanSection2Operations extends AssessmentAndPlanSectio
 	public static boolean validateAssessmentAndPlanSectionPlanOfCareActivityAct(
 			AssessmentAndPlanSection2 assessmentAndPlanSection2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		DatatypesUtil.increment(
-			context, "AssessmentAndPlanSection2AssessmentAndPlanSectionPlanOfCareActivityAct", "INFO");
-
+	
+	
+	
+  	  
+  	  
+  	  
+  	  
+  	 
+  	 
+  	 
+    DatatypesUtil.increment(context,"AssessmentAndPlanSection2AssessmentAndPlanSectionPlanOfCareActivityAct","INFO");
+    
+  	  
+  	  
 		if (VALIDATE_ASSESSMENT_AND_PLAN_SECTION_PLAN_OF_CARE_ACTIVITY_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-
+		
+	 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ASSESSMENT_AND_PLAN_SECTION2);
 			try {
-				VALIDATE_ASSESSMENT_AND_PLAN_SECTION_PLAN_OF_CARE_ACTIVITY_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
-					helper.createInvariant(
-						VALIDATE_ASSESSMENT_AND_PLAN_SECTION_PLAN_OF_CARE_ACTIVITY_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			} catch (ParserException pe) {
+				VALIDATE_ASSESSMENT_AND_PLAN_SECTION_PLAN_OF_CARE_ACTIVITY_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_ASSESSMENT_AND_PLAN_SECTION_PLAN_OF_CARE_ACTIVITY_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-
-		if (!EOCL_ENV.get().createQuery(
-			VALIDATE_ASSESSMENT_AND_PLAN_SECTION_PLAN_OF_CARE_ACTIVITY_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
-				assessmentAndPlanSection2)) {
-			if (diagnostics != null) {
-				diagnostics.add(
-					new BasicDiagnostic(
-						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.ASSESSMENT_AND_PLAN_SECTION2__ASSESSMENT_AND_PLAN_SECTION_PLAN_OF_CARE_ACTIVITY_ACT,
-						ConsolPlugin.INSTANCE.getString(
-							"AssessmentAndPlanSection2AssessmentAndPlanSectionPlanOfCareActivityAct"),
-						new Object[] { assessmentAndPlanSection2 }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ASSESSMENT_AND_PLAN_SECTION_PLAN_OF_CARE_ACTIVITY_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(assessmentAndPlanSection2)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.ASSESSMENT_AND_PLAN_SECTION2__ASSESSMENT_AND_PLAN_SECTION_PLAN_OF_CARE_ACTIVITY_ACT,
+						 ConsolPlugin.INSTANCE.getString("AssessmentAndPlanSection2AssessmentAndPlanSectionPlanOfCareActivityAct"),
+						 new Object [] { assessmentAndPlanSection2 }));
+			}
+			 
 			return false;
 		}
 		return true;

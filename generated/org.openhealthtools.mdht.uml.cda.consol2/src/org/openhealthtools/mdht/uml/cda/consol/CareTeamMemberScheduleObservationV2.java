@@ -82,7 +82,7 @@ public interface CareTeamMemberScheduleObservationV2 extends Observation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.value-&gt;isEmpty() or self.value-&gt;exists(element | element.isNullFlavorUndefined())) implies (self.value-&gt;forAll(element | element.oclIsTypeOf(datatypes::IVL_TS)))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.value-&gt;isEmpty() or self.value-&gt;exists(element | element.isNullFlavorUndefined())) implies (self.value-&gt;size() =  1 and self.value-&gt;forAll(element | element.oclIsTypeOf(datatypes::IVL_TS)))'"
 	 * @generated
 	 */
 	boolean validateCareTeamMemberScheduleObservationV2Value(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -186,9 +186,9 @@ public interface CareTeamMemberScheduleObservationV2 extends Observation {
 	public CareTeamMemberScheduleObservationV2 init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public CareTeamMemberScheduleObservationV2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // CareTeamMemberScheduleObservationV2

@@ -19,7 +19,7 @@ import org.eclipse.mdht.uml.cda.Act;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getHealthConcernActV3()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='HealthConcernActV3TemplateId HealthConcernActV3Id HealthConcernActV3StatusCode HealthConcernActV3StatusCodeP HealthConcernActV3ClassCode HealthConcernActV3MoodCode' templateId.root='2.16.840.1.113883.10.20.22.4.132' templateId.extension='2022-06-01' constraints.validation.dependOn.HealthConcernActV3StatusCode='HealthConcernActV3StatusCodeP' constraints.validation.info='HealthConcernActV3EffectiveTime' classCode='ACT' moodCode='EVN'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='HealthConcernActV3TemplateId HealthConcernActV3Id HealthConcernActV3StatusCode HealthConcernActV3StatusCodeP HealthConcernActV3ClassCode HealthConcernActV3MoodCode HealthConcernActV3Code HealthConcernActV3CodeP' templateId.root='2.16.840.1.113883.10.20.22.4.132' templateId.extension='2022-06-01' constraints.validation.dependOn.HealthConcernActV3StatusCode='HealthConcernActV3StatusCodeP' constraints.validation.info='HealthConcernActV3EffectiveTime' classCode='ACT' moodCode='EVN' code.code='75310-3' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Health Concern' constraints.validation.dependOn.HealthConcernActV3Code='HealthConcernActV3CodeP'"
  * @generated
  */
 public interface HealthConcernActV3 extends Act {
@@ -110,14 +110,38 @@ public interface HealthConcernActV3 extends Act {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())'"
 	 * @generated
 	 */
-	public HealthConcernActV3 init();
+	boolean validateHealthConcernActV3CodeP(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and \nlet value : datatypes::CD = self.code.oclAsType(datatypes::CD) in \nvalue.code = \'75310-3\' and value.codeSystem = \'2.16.840.1.113883.6.1\')'"
+	 * @generated
+	 */
+	boolean validateHealthConcernActV3Code(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public HealthConcernActV3 init();
+
+	/**
+     * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+     * @generated
+     */
 	public HealthConcernActV3 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // HealthConcernActV3

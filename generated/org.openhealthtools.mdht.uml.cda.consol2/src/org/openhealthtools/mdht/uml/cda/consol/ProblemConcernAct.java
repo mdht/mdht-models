@@ -171,9 +171,9 @@ public interface ProblemConcernAct extends Act {
 	public ProblemConcernAct init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public ProblemConcernAct init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ProblemConcernAct

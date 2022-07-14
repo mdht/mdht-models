@@ -84,6 +84,15 @@ public class ProblemObservationV4Impl extends ProblemObservation2Impl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateProblemObservationV4StatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProblemObservationV4Operations.validateProblemObservationV4StatusCodeP(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateProblemObservationV4StatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProblemObservationV4Operations.validateProblemObservationV4StatusCode(this, diagnostics, context);
 	}
@@ -138,9 +147,17 @@ public class ProblemObservationV4Impl extends ProblemObservation2Impl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public ProblemObservationV4 init() {
-		return Initializer.Util.init(this);
+	public boolean validateProblemObservationV4IVLTSLow(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProblemObservationV4Operations.validateProblemObservationV4IVLTSLow(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProblemObservationV4IVLTSHigh(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProblemObservationV4Operations.validateProblemObservationV4IVLTSHigh(this, diagnostics, context);
 	}
 
 	/**
@@ -149,8 +166,18 @@ public class ProblemObservationV4Impl extends ProblemObservation2Impl implements
 	 * @generated
 	 */
 	@Override
-	public ProblemObservationV4 init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
+	public ProblemObservationV4 init() {
+	    return Initializer.Util.init(this);
 	}
+
+	/**
+     * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+     * @generated
+     */
+	@Override
+	public ProblemObservationV4 init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // ProblemObservationV4Impl

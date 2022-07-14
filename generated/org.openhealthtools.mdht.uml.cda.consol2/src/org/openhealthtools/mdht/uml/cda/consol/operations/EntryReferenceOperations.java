@@ -91,7 +91,7 @@ public class EntryReferenceOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_ENTRY_REFERENCE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<  Constraint> VALIDATE_ENTRY_REFERENCE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -106,32 +106,44 @@ public class EntryReferenceOperations extends ClinicalStatementOperations {
 
 	public static boolean validateEntryReferenceTemplateId(EntryReference entryReference, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		DatatypesUtil.increment(context, "EntryReferenceEntryReferenceTemplateId", "ERROR");
-
+	
+	
+	
+  	  
+  	  
+  	  
+  	  
+  	 
+  	 
+  	 
+    DatatypesUtil.increment(context,"EntryReferenceEntryReferenceTemplateId","ERROR");
+    
+  	  
+  	  
 		if (VALIDATE_ENTRY_REFERENCE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-
+		
+	 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ENTRY_REFERENCE);
 			try {
-				VALIDATE_ENTRY_REFERENCE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
-					helper.createInvariant(VALIDATE_ENTRY_REFERENCE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			} catch (ParserException pe) {
+				VALIDATE_ENTRY_REFERENCE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_ENTRY_REFERENCE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-
-		if (!EOCL_ENV.get().createQuery(
-			VALIDATE_ENTRY_REFERENCE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(entryReference)) {
-			if (diagnostics != null) {
-				diagnostics.add(
-					new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.ENTRY_REFERENCE__ENTRY_REFERENCE_TEMPLATE_ID,
-						ConsolPlugin.INSTANCE.getString("EntryReferenceEntryReferenceTemplateId"),
-						new Object[] { entryReference }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ENTRY_REFERENCE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(entryReference)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.ENTRY_REFERENCE__ENTRY_REFERENCE_TEMPLATE_ID,
+						 ConsolPlugin.INSTANCE.getString("EntryReferenceEntryReferenceTemplateId"),
+						 new Object [] { entryReference }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -156,7 +168,7 @@ public class EntryReferenceOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_ENTRY_REFERENCE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<  Constraint> VALIDATE_ENTRY_REFERENCE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -171,32 +183,44 @@ public class EntryReferenceOperations extends ClinicalStatementOperations {
 
 	public static boolean validateEntryReferenceClassCode(EntryReference entryReference, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		DatatypesUtil.increment(context, "EntryReferenceEntryReferenceClassCode", "ERROR");
-
+	
+	
+	
+  	  
+  	  
+  	  
+  	  
+  	 
+  	 
+  	 
+    DatatypesUtil.increment(context,"EntryReferenceEntryReferenceClassCode","ERROR");
+    
+  	  
+  	  
 		if (VALIDATE_ENTRY_REFERENCE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-
+		
+	 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ENTRY_REFERENCE);
 			try {
-				VALIDATE_ENTRY_REFERENCE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
-					helper.createInvariant(VALIDATE_ENTRY_REFERENCE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			} catch (ParserException pe) {
+				VALIDATE_ENTRY_REFERENCE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_ENTRY_REFERENCE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-
-		if (!EOCL_ENV.get().createQuery(
-			VALIDATE_ENTRY_REFERENCE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(entryReference)) {
-			if (diagnostics != null) {
-				diagnostics.add(
-					new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.ENTRY_REFERENCE__ENTRY_REFERENCE_CLASS_CODE,
-						ConsolPlugin.INSTANCE.getString("EntryReferenceEntryReferenceClassCode"),
-						new Object[] { entryReference }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ENTRY_REFERENCE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(entryReference)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.ENTRY_REFERENCE__ENTRY_REFERENCE_CLASS_CODE,
+						 ConsolPlugin.INSTANCE.getString("EntryReferenceEntryReferenceClassCode"),
+						 new Object [] { entryReference }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -221,7 +245,7 @@ public class EntryReferenceOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_ENTRY_REFERENCE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<  Constraint> VALIDATE_ENTRY_REFERENCE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -236,32 +260,44 @@ public class EntryReferenceOperations extends ClinicalStatementOperations {
 
 	public static boolean validateEntryReferenceMoodCode(EntryReference entryReference, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		DatatypesUtil.increment(context, "EntryReferenceEntryReferenceMoodCode", "ERROR");
-
+	
+	
+	
+  	  
+  	  
+  	  
+  	  
+  	 
+  	 
+  	 
+    DatatypesUtil.increment(context,"EntryReferenceEntryReferenceMoodCode","ERROR");
+    
+  	  
+  	  
 		if (VALIDATE_ENTRY_REFERENCE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-
+		
+	 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ENTRY_REFERENCE);
 			try {
-				VALIDATE_ENTRY_REFERENCE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
-					helper.createInvariant(VALIDATE_ENTRY_REFERENCE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			} catch (ParserException pe) {
+				VALIDATE_ENTRY_REFERENCE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_ENTRY_REFERENCE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-
-		if (!EOCL_ENV.get().createQuery(VALIDATE_ENTRY_REFERENCE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
-			entryReference)) {
-			if (diagnostics != null) {
-				diagnostics.add(
-					new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.ENTRY_REFERENCE__ENTRY_REFERENCE_MOOD_CODE,
-						ConsolPlugin.INSTANCE.getString("EntryReferenceEntryReferenceMoodCode"),
-						new Object[] { entryReference }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ENTRY_REFERENCE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(entryReference)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.ENTRY_REFERENCE__ENTRY_REFERENCE_MOOD_CODE,
+						 ConsolPlugin.INSTANCE.getString("EntryReferenceEntryReferenceMoodCode"),
+						 new Object [] { entryReference }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -286,7 +322,7 @@ public class EntryReferenceOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_ENTRY_REFERENCE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<  Constraint> VALIDATE_ENTRY_REFERENCE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -301,32 +337,44 @@ public class EntryReferenceOperations extends ClinicalStatementOperations {
 
 	public static boolean validateEntryReferenceId(EntryReference entryReference, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		DatatypesUtil.increment(context, "EntryReferenceEntryReferenceId", "ERROR");
-
+	
+	
+	
+  	  
+  	  
+  	  
+  	  
+  	 
+  	 
+  	 
+    DatatypesUtil.increment(context,"EntryReferenceEntryReferenceId","ERROR");
+    
+  	  
+  	  
 		if (VALIDATE_ENTRY_REFERENCE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-
+		
+	 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ENTRY_REFERENCE);
 			try {
-				VALIDATE_ENTRY_REFERENCE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
-					helper.createInvariant(VALIDATE_ENTRY_REFERENCE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			} catch (ParserException pe) {
+				VALIDATE_ENTRY_REFERENCE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_ENTRY_REFERENCE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-
-		if (!EOCL_ENV.get().createQuery(VALIDATE_ENTRY_REFERENCE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
-			entryReference)) {
-			if (diagnostics != null) {
-				diagnostics.add(
-					new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.ENTRY_REFERENCE__ENTRY_REFERENCE_ID,
-						ConsolPlugin.INSTANCE.getString("EntryReferenceEntryReferenceId"),
-						new Object[] { entryReference }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ENTRY_REFERENCE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(entryReference)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.ENTRY_REFERENCE__ENTRY_REFERENCE_ID,
+						 ConsolPlugin.INSTANCE.getString("EntryReferenceEntryReferenceId"),
+						 new Object [] { entryReference }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -351,7 +399,7 @@ public class EntryReferenceOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_ENTRY_REFERENCE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<  Constraint> VALIDATE_ENTRY_REFERENCE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -366,32 +414,44 @@ public class EntryReferenceOperations extends ClinicalStatementOperations {
 
 	public static boolean validateEntryReferenceCode(EntryReference entryReference, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		DatatypesUtil.increment(context, "EntryReferenceEntryReferenceCode", "ERROR");
-
+	
+	
+	
+  	  
+  	  
+  	  
+  	  
+  	 
+  	 
+  	 
+    DatatypesUtil.increment(context,"EntryReferenceEntryReferenceCode","ERROR");
+    
+  	  
+  	  
 		if (VALIDATE_ENTRY_REFERENCE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-
+		
+	 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ENTRY_REFERENCE);
 			try {
-				VALIDATE_ENTRY_REFERENCE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
-					helper.createInvariant(VALIDATE_ENTRY_REFERENCE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			} catch (ParserException pe) {
+				VALIDATE_ENTRY_REFERENCE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_ENTRY_REFERENCE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-
-		if (!EOCL_ENV.get().createQuery(VALIDATE_ENTRY_REFERENCE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
-			entryReference)) {
-			if (diagnostics != null) {
-				diagnostics.add(
-					new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.ENTRY_REFERENCE__ENTRY_REFERENCE_CODE,
-						ConsolPlugin.INSTANCE.getString("EntryReferenceEntryReferenceCode"),
-						new Object[] { entryReference }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ENTRY_REFERENCE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(entryReference)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.ENTRY_REFERENCE__ENTRY_REFERENCE_CODE,
+						 ConsolPlugin.INSTANCE.getString("EntryReferenceEntryReferenceCode"),
+						 new Object [] { entryReference }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -405,9 +465,9 @@ public class EntryReferenceOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_ENTRY_REFERENCE_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and " +
-			"let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in " +
-			"not value.codeSystem.oclIsUndefined() or not value.codeSystemName.oclIsUndefined())";
+	protected static final String VALIDATE_ENTRY_REFERENCE_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and "+
+"let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in "+
+"not value.codeSystem.oclIsUndefined() or not value.codeSystemName.oclIsUndefined())";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateEntryReferenceStatusCode(EntryReference, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Entry Reference Status Code</em>}' invariant operation.
@@ -418,7 +478,7 @@ public class EntryReferenceOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_ENTRY_REFERENCE_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<  Constraint> VALIDATE_ENTRY_REFERENCE_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -433,32 +493,44 @@ public class EntryReferenceOperations extends ClinicalStatementOperations {
 
 	public static boolean validateEntryReferenceStatusCode(EntryReference entryReference, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		DatatypesUtil.increment(context, "EntryReferenceEntryReferenceStatusCode", "INFO");
-
+	
+	
+	
+  	  
+  	  
+  	  
+  	  
+  	 
+  	 
+  	 
+    DatatypesUtil.increment(context,"EntryReferenceEntryReferenceStatusCode","INFO");
+    
+  	  
+  	  
 		if (VALIDATE_ENTRY_REFERENCE_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-
+		
+	 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ENTRY_REFERENCE);
 			try {
-				VALIDATE_ENTRY_REFERENCE_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
-					helper.createInvariant(VALIDATE_ENTRY_REFERENCE_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			} catch (ParserException pe) {
+				VALIDATE_ENTRY_REFERENCE_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_ENTRY_REFERENCE_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-
-		if (!EOCL_ENV.get().createQuery(
-			VALIDATE_ENTRY_REFERENCE_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(entryReference)) {
-			if (diagnostics != null) {
-				diagnostics.add(
-					new BasicDiagnostic(
-						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.ENTRY_REFERENCE__ENTRY_REFERENCE_STATUS_CODE,
-						ConsolPlugin.INSTANCE.getString("EntryReferenceEntryReferenceStatusCode"),
-						new Object[] { entryReference }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ENTRY_REFERENCE_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(entryReference)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.ENTRY_REFERENCE__ENTRY_REFERENCE_STATUS_CODE,
+						 ConsolPlugin.INSTANCE.getString("EntryReferenceEntryReferenceStatusCode"),
+						 new Object [] { entryReference }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -483,7 +555,7 @@ public class EntryReferenceOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_ENTRY_REFERENCE_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<  Constraint> VALIDATE_ENTRY_REFERENCE_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -498,32 +570,44 @@ public class EntryReferenceOperations extends ClinicalStatementOperations {
 
 	public static boolean validateEntryReferenceStatusCodeP(EntryReference entryReference, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		DatatypesUtil.increment(context, "EntryReferenceEntryReferenceStatusCodeP", "ERROR");
-
+	
+	
+	
+  	  
+  	  
+  	  
+  	  
+  	 
+  	 
+  	 
+    DatatypesUtil.increment(context,"EntryReferenceEntryReferenceStatusCodeP","ERROR");
+    
+  	  
+  	  
 		if (VALIDATE_ENTRY_REFERENCE_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-
+		
+	 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ENTRY_REFERENCE);
 			try {
-				VALIDATE_ENTRY_REFERENCE_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
-					helper.createInvariant(VALIDATE_ENTRY_REFERENCE_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			} catch (ParserException pe) {
+				VALIDATE_ENTRY_REFERENCE_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_ENTRY_REFERENCE_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-
-		if (!EOCL_ENV.get().createQuery(
-			VALIDATE_ENTRY_REFERENCE_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(entryReference)) {
-			if (diagnostics != null) {
-				diagnostics.add(
-					new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.ENTRY_REFERENCE__ENTRY_REFERENCE_STATUS_CODE_P,
-						ConsolPlugin.INSTANCE.getString("EntryReferenceEntryReferenceStatusCodeP"),
-						new Object[] { entryReference }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ENTRY_REFERENCE_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(entryReference)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.ENTRY_REFERENCE__ENTRY_REFERENCE_STATUS_CODE_P,
+						 ConsolPlugin.INSTANCE.getString("EntryReferenceEntryReferenceStatusCodeP"),
+						 new Object [] { entryReference }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -552,7 +636,7 @@ public class EntryReferenceOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_ENTRY_REFERENCE_II_NULL_FLAVOR__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<>();
+	protected static ThreadLocal< Query<?, ?, ?> > VALIDATE_ENTRY_REFERENCE_II_NULL_FLAVOR__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal< Query<?, ?, ?> >();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -567,38 +651,49 @@ public class EntryReferenceOperations extends ClinicalStatementOperations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateEntryReferenceIINullFlavor(EntryReference entryReference, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		DatatypesUtil.increment(context, "EntryReferenceEntryReferenceIINullFlavor", "ERROR");
-
+	
+	
+	
+  	  
+  	  
+  	  
+  	  
+  	 
+  	 
+  	 
+    DatatypesUtil.increment(context,"EntryReferenceEntryReferenceIINullFlavor","ERROR");
+    
+  	  
+  	  
 		if (VALIDATE_ENTRY_REFERENCE_II_NULL_FLAVOR__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
-
+		
+	 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ENTRY_REFERENCE);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(
-					VALIDATE_ENTRY_REFERENCE_II_NULL_FLAVOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_ENTRY_REFERENCE_II_NULL_FLAVOR__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(
-					EOCL_ENV.get().createQuery(oclExpression));
-			} catch (ParserException pe) {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_ENTRY_REFERENCE_II_NULL_FLAVOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ENTRY_REFERENCE_II_NULL_FLAVOR__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(EOCL_ENV.get().createQuery(oclExpression));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-
-		Object oclResult = VALIDATE_ENTRY_REFERENCE_II_NULL_FLAVOR__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(
-			entryReference);
+			}
+		 
+		Object oclResult = VALIDATE_ENTRY_REFERENCE_II_NULL_FLAVOR__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(entryReference);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
+  			
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(
-						new BasicDiagnostic(
-							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-							ConsolValidator.ENTRY_REFERENCE__ENTRY_REFERENCE_II_NULL_FLAVOR,
-							ConsolPlugin.INSTANCE.getString("EntryReferenceEntryReferenceIINullFlavor"),
-							new Object[] { eObject }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.ENTRY_REFERENCE__ENTRY_REFERENCE_II_NULL_FLAVOR,
+						 ConsolPlugin.INSTANCE.getString("EntryReferenceEntryReferenceIINullFlavor"),
+						 new Object [] { eObject }));
 				}
-
+				 
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -613,9 +708,9 @@ public class EntryReferenceOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_ENTRY_REFERENCE_CD_NULL_FLAVOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.code->excluding(null)->select(isNullFlavorUndefined())->reject( ( isNullFlavorUndefined() implies (not nullFlavor.oclIsUndefined() and nullFlavor.oclIsKindOf(vocab::NullFlavor) and " +
-			"let value : vocab::NullFlavor = nullFlavor.oclAsType(vocab::NullFlavor) in " +
-			"value = vocab::NullFlavor::NP )))";
+	protected static final String VALIDATE_ENTRY_REFERENCE_CD_NULL_FLAVOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.code->excluding(null)->select(isNullFlavorUndefined())->reject( ( isNullFlavorUndefined() implies (not nullFlavor.oclIsUndefined() and nullFlavor.oclIsKindOf(vocab::NullFlavor) and "+
+"let value : vocab::NullFlavor = nullFlavor.oclAsType(vocab::NullFlavor) in "+
+"value = vocab::NullFlavor::NP )))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateEntryReferenceCDNullFlavor(EntryReference, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Entry Reference CD Null Flavor</em>}' invariant operation.
@@ -626,7 +721,7 @@ public class EntryReferenceOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_ENTRY_REFERENCE_CD_NULL_FLAVOR__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<>();
+	protected static ThreadLocal< Query<?, ?, ?> > VALIDATE_ENTRY_REFERENCE_CD_NULL_FLAVOR__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal< Query<?, ?, ?> >();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -641,38 +736,49 @@ public class EntryReferenceOperations extends ClinicalStatementOperations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateEntryReferenceCDNullFlavor(EntryReference entryReference, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		DatatypesUtil.increment(context, "EntryReferenceEntryReferenceCDNullFlavor", "ERROR");
-
+	
+	
+	
+  	  
+  	  
+  	  
+  	  
+  	 
+  	 
+  	 
+    DatatypesUtil.increment(context,"EntryReferenceEntryReferenceCDNullFlavor","ERROR");
+    
+  	  
+  	  
 		if (VALIDATE_ENTRY_REFERENCE_CD_NULL_FLAVOR__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
-
+		
+	 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ENTRY_REFERENCE);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(
-					VALIDATE_ENTRY_REFERENCE_CD_NULL_FLAVOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_ENTRY_REFERENCE_CD_NULL_FLAVOR__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(
-					EOCL_ENV.get().createQuery(oclExpression));
-			} catch (ParserException pe) {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_ENTRY_REFERENCE_CD_NULL_FLAVOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ENTRY_REFERENCE_CD_NULL_FLAVOR__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(EOCL_ENV.get().createQuery(oclExpression));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-
-		Object oclResult = VALIDATE_ENTRY_REFERENCE_CD_NULL_FLAVOR__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(
-			entryReference);
+			}
+		 
+		Object oclResult = VALIDATE_ENTRY_REFERENCE_CD_NULL_FLAVOR__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(entryReference);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
+  			
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(
-						new BasicDiagnostic(
-							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-							ConsolValidator.ENTRY_REFERENCE__ENTRY_REFERENCE_CD_NULL_FLAVOR,
-							ConsolPlugin.INSTANCE.getString("EntryReferenceEntryReferenceCDNullFlavor"),
-							new Object[] { eObject }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.ENTRY_REFERENCE__ENTRY_REFERENCE_CD_NULL_FLAVOR,
+						 ConsolPlugin.INSTANCE.getString("EntryReferenceEntryReferenceCDNullFlavor"),
+						 new Object [] { eObject }));
 				}
-
+				 
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -698,7 +804,7 @@ public class EntryReferenceOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_ENTRY_REFERENCE_CD_NULL_FLAVOR_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<>();
+	protected static ThreadLocal< Query<?, ?, ?> > VALIDATE_ENTRY_REFERENCE_CD_NULL_FLAVOR_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal< Query<?, ?, ?> >();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -713,38 +819,49 @@ public class EntryReferenceOperations extends ClinicalStatementOperations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateEntryReferenceCDNullFlavorP(EntryReference entryReference,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		DatatypesUtil.increment(context, "EntryReferenceEntryReferenceCDNullFlavorP", "ERROR");
-
+	
+	
+	
+  	  
+  	  
+  	  
+  	  
+  	 
+  	 
+  	 
+    DatatypesUtil.increment(context,"EntryReferenceEntryReferenceCDNullFlavorP","ERROR");
+    
+  	  
+  	  
 		if (VALIDATE_ENTRY_REFERENCE_CD_NULL_FLAVOR_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
-
+		
+	 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ENTRY_REFERENCE);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(
-					VALIDATE_ENTRY_REFERENCE_CD_NULL_FLAVOR_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_ENTRY_REFERENCE_CD_NULL_FLAVOR_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(
-					EOCL_ENV.get().createQuery(oclExpression));
-			} catch (ParserException pe) {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_ENTRY_REFERENCE_CD_NULL_FLAVOR_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ENTRY_REFERENCE_CD_NULL_FLAVOR_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(EOCL_ENV.get().createQuery(oclExpression));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-
-		Object oclResult = VALIDATE_ENTRY_REFERENCE_CD_NULL_FLAVOR_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(
-			entryReference);
+			}
+		 
+		Object oclResult = VALIDATE_ENTRY_REFERENCE_CD_NULL_FLAVOR_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(entryReference);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
+  			
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(
-						new BasicDiagnostic(
-							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-							ConsolValidator.ENTRY_REFERENCE__ENTRY_REFERENCE_CD_NULL_FLAVOR_P,
-							ConsolPlugin.INSTANCE.getString("EntryReferenceEntryReferenceCDNullFlavorP"),
-							new Object[] { eObject }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.ENTRY_REFERENCE__ENTRY_REFERENCE_CD_NULL_FLAVOR_P,
+						 ConsolPlugin.INSTANCE.getString("EntryReferenceEntryReferenceCDNullFlavorP"),
+						 new Object [] { eObject }));
 				}
-
+				 
 			}
 			return oclResultSet.isEmpty();
 		}

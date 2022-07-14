@@ -36,9 +36,9 @@ public interface ResultsSectionEntriesOptional2 extends ResultsSectionEntriesOpt
 	public ResultsSectionEntriesOptional2 init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public ResultsSectionEntriesOptional2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ResultsSectionEntriesOptional2

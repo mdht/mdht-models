@@ -96,9 +96,9 @@ public interface ProblemConcernAct2 extends ProblemConcernAct {
 	public ProblemConcernAct2 init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public ProblemConcernAct2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ProblemConcernAct2

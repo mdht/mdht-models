@@ -87,7 +87,7 @@ public class AdvanceDirectiveOrganizerOperations extends OrganizerOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<  Constraint> VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -103,34 +103,44 @@ public class AdvanceDirectiveOrganizerOperations extends OrganizerOperations {
 	public static boolean validateAdvanceDirectiveOrganizerTemplateId(
 			AdvanceDirectiveOrganizer advanceDirectiveOrganizer, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		DatatypesUtil.increment(context, "AdvanceDirectiveOrganizerAdvanceDirectiveOrganizerTemplateId", "ERROR");
-
+	
+	
+	
+  	  
+  	  
+  	  
+  	  
+  	 
+  	 
+  	 
+    DatatypesUtil.increment(context,"AdvanceDirectiveOrganizerAdvanceDirectiveOrganizerTemplateId","ERROR");
+    
+  	  
+  	  
 		if (VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-
+		
+	 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ADVANCE_DIRECTIVE_ORGANIZER);
 			try {
-				VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
-					helper.createInvariant(
-						VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			} catch (ParserException pe) {
+				VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-
-		if (!EOCL_ENV.get().createQuery(
-			VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
-				advanceDirectiveOrganizer)) {
-			if (diagnostics != null) {
-				diagnostics.add(
-					new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.ADVANCE_DIRECTIVE_ORGANIZER__ADVANCE_DIRECTIVE_ORGANIZER_TEMPLATE_ID,
-						ConsolPlugin.INSTANCE.getString("AdvanceDirectiveOrganizerAdvanceDirectiveOrganizerTemplateId"),
-						new Object[] { advanceDirectiveOrganizer }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(advanceDirectiveOrganizer)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.ADVANCE_DIRECTIVE_ORGANIZER__ADVANCE_DIRECTIVE_ORGANIZER_TEMPLATE_ID,
+						 ConsolPlugin.INSTANCE.getString("AdvanceDirectiveOrganizerAdvanceDirectiveOrganizerTemplateId"),
+						 new Object [] { advanceDirectiveOrganizer }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -155,7 +165,7 @@ public class AdvanceDirectiveOrganizerOperations extends OrganizerOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<  Constraint> VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -171,34 +181,44 @@ public class AdvanceDirectiveOrganizerOperations extends OrganizerOperations {
 	public static boolean validateAdvanceDirectiveOrganizerClassCode(
 			AdvanceDirectiveOrganizer advanceDirectiveOrganizer, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		DatatypesUtil.increment(context, "AdvanceDirectiveOrganizerAdvanceDirectiveOrganizerClassCode", "ERROR");
-
+	
+	
+	
+  	  
+  	  
+  	  
+  	  
+  	 
+  	 
+  	 
+    DatatypesUtil.increment(context,"AdvanceDirectiveOrganizerAdvanceDirectiveOrganizerClassCode","ERROR");
+    
+  	  
+  	  
 		if (VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-
+		
+	 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ADVANCE_DIRECTIVE_ORGANIZER);
 			try {
-				VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
-					helper.createInvariant(
-						VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			} catch (ParserException pe) {
+				VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-
-		if (!EOCL_ENV.get().createQuery(
-			VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
-				advanceDirectiveOrganizer)) {
-			if (diagnostics != null) {
-				diagnostics.add(
-					new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.ADVANCE_DIRECTIVE_ORGANIZER__ADVANCE_DIRECTIVE_ORGANIZER_CLASS_CODE,
-						ConsolPlugin.INSTANCE.getString("AdvanceDirectiveOrganizerAdvanceDirectiveOrganizerClassCode"),
-						new Object[] { advanceDirectiveOrganizer }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(advanceDirectiveOrganizer)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.ADVANCE_DIRECTIVE_ORGANIZER__ADVANCE_DIRECTIVE_ORGANIZER_CLASS_CODE,
+						 ConsolPlugin.INSTANCE.getString("AdvanceDirectiveOrganizerAdvanceDirectiveOrganizerClassCode"),
+						 new Object [] { advanceDirectiveOrganizer }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -223,7 +243,7 @@ public class AdvanceDirectiveOrganizerOperations extends OrganizerOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<  Constraint> VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -238,34 +258,44 @@ public class AdvanceDirectiveOrganizerOperations extends OrganizerOperations {
 
 	public static boolean validateAdvanceDirectiveOrganizerMoodCode(AdvanceDirectiveOrganizer advanceDirectiveOrganizer,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		DatatypesUtil.increment(context, "AdvanceDirectiveOrganizerAdvanceDirectiveOrganizerMoodCode", "ERROR");
-
+	
+	
+	
+  	  
+  	  
+  	  
+  	  
+  	 
+  	 
+  	 
+    DatatypesUtil.increment(context,"AdvanceDirectiveOrganizerAdvanceDirectiveOrganizerMoodCode","ERROR");
+    
+  	  
+  	  
 		if (VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-
+		
+	 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ADVANCE_DIRECTIVE_ORGANIZER);
 			try {
-				VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
-					helper.createInvariant(
-						VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			} catch (ParserException pe) {
+				VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-
-		if (!EOCL_ENV.get().createQuery(
-			VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
-				advanceDirectiveOrganizer)) {
-			if (diagnostics != null) {
-				diagnostics.add(
-					new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.ADVANCE_DIRECTIVE_ORGANIZER__ADVANCE_DIRECTIVE_ORGANIZER_MOOD_CODE,
-						ConsolPlugin.INSTANCE.getString("AdvanceDirectiveOrganizerAdvanceDirectiveOrganizerMoodCode"),
-						new Object[] { advanceDirectiveOrganizer }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(advanceDirectiveOrganizer)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.ADVANCE_DIRECTIVE_ORGANIZER__ADVANCE_DIRECTIVE_ORGANIZER_MOOD_CODE,
+						 ConsolPlugin.INSTANCE.getString("AdvanceDirectiveOrganizerAdvanceDirectiveOrganizerMoodCode"),
+						 new Object [] { advanceDirectiveOrganizer }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -290,7 +320,7 @@ public class AdvanceDirectiveOrganizerOperations extends OrganizerOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<  Constraint> VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -305,33 +335,44 @@ public class AdvanceDirectiveOrganizerOperations extends OrganizerOperations {
 
 	public static boolean validateAdvanceDirectiveOrganizerId(AdvanceDirectiveOrganizer advanceDirectiveOrganizer,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		DatatypesUtil.increment(context, "AdvanceDirectiveOrganizerAdvanceDirectiveOrganizerId", "ERROR");
-
+	
+	
+	
+  	  
+  	  
+  	  
+  	  
+  	 
+  	 
+  	 
+    DatatypesUtil.increment(context,"AdvanceDirectiveOrganizerAdvanceDirectiveOrganizerId","ERROR");
+    
+  	  
+  	  
 		if (VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-
+		
+	 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ADVANCE_DIRECTIVE_ORGANIZER);
 			try {
-				VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
-					helper.createInvariant(VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			} catch (ParserException pe) {
+				VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-
-		if (!EOCL_ENV.get().createQuery(
-			VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
-				advanceDirectiveOrganizer)) {
-			if (diagnostics != null) {
-				diagnostics.add(
-					new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.ADVANCE_DIRECTIVE_ORGANIZER__ADVANCE_DIRECTIVE_ORGANIZER_ID,
-						ConsolPlugin.INSTANCE.getString("AdvanceDirectiveOrganizerAdvanceDirectiveOrganizerId"),
-						new Object[] { advanceDirectiveOrganizer }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(advanceDirectiveOrganizer)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.ADVANCE_DIRECTIVE_ORGANIZER__ADVANCE_DIRECTIVE_ORGANIZER_ID,
+						 ConsolPlugin.INSTANCE.getString("AdvanceDirectiveOrganizerAdvanceDirectiveOrganizerId"),
+						 new Object [] { advanceDirectiveOrganizer }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -345,9 +386,9 @@ public class AdvanceDirectiveOrganizerOperations extends OrganizerOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and " +
-			"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in " +
-			"value.code = '45473-6' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
+"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
+"value.code = '45473-6' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateAdvanceDirectiveOrganizerCode(AdvanceDirectiveOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Organizer Code</em>}' invariant operation.
@@ -358,7 +399,7 @@ public class AdvanceDirectiveOrganizerOperations extends OrganizerOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<  Constraint> VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -373,33 +414,44 @@ public class AdvanceDirectiveOrganizerOperations extends OrganizerOperations {
 
 	public static boolean validateAdvanceDirectiveOrganizerCode(AdvanceDirectiveOrganizer advanceDirectiveOrganizer,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		DatatypesUtil.increment(context, "AdvanceDirectiveOrganizerAdvanceDirectiveOrganizerCode", "ERROR");
-
+	
+	
+	
+  	  
+  	  
+  	  
+  	  
+  	 
+  	 
+  	 
+    DatatypesUtil.increment(context,"AdvanceDirectiveOrganizerAdvanceDirectiveOrganizerCode","ERROR");
+    
+  	  
+  	  
 		if (VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-
+		
+	 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ADVANCE_DIRECTIVE_ORGANIZER);
 			try {
-				VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
-					helper.createInvariant(VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			} catch (ParserException pe) {
+				VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-
-		if (!EOCL_ENV.get().createQuery(
-			VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
-				advanceDirectiveOrganizer)) {
-			if (diagnostics != null) {
-				diagnostics.add(
-					new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.ADVANCE_DIRECTIVE_ORGANIZER__ADVANCE_DIRECTIVE_ORGANIZER_CODE,
-						ConsolPlugin.INSTANCE.getString("AdvanceDirectiveOrganizerAdvanceDirectiveOrganizerCode"),
-						new Object[] { advanceDirectiveOrganizer }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(advanceDirectiveOrganizer)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.ADVANCE_DIRECTIVE_ORGANIZER__ADVANCE_DIRECTIVE_ORGANIZER_CODE,
+						 ConsolPlugin.INSTANCE.getString("AdvanceDirectiveOrganizerAdvanceDirectiveOrganizerCode"),
+						 new Object [] { advanceDirectiveOrganizer }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -424,7 +476,7 @@ public class AdvanceDirectiveOrganizerOperations extends OrganizerOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<  Constraint> VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -439,34 +491,44 @@ public class AdvanceDirectiveOrganizerOperations extends OrganizerOperations {
 
 	public static boolean validateAdvanceDirectiveOrganizerCodeP(AdvanceDirectiveOrganizer advanceDirectiveOrganizer,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		DatatypesUtil.increment(context, "AdvanceDirectiveOrganizerAdvanceDirectiveOrganizerCodeP", "ERROR");
-
+	
+	
+	
+  	  
+  	  
+  	  
+  	  
+  	 
+  	 
+  	 
+    DatatypesUtil.increment(context,"AdvanceDirectiveOrganizerAdvanceDirectiveOrganizerCodeP","ERROR");
+    
+  	  
+  	  
 		if (VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-
+		
+	 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ADVANCE_DIRECTIVE_ORGANIZER);
 			try {
-				VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
-					helper.createInvariant(
-						VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			} catch (ParserException pe) {
+				VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-
-		if (!EOCL_ENV.get().createQuery(
-			VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
-				advanceDirectiveOrganizer)) {
-			if (diagnostics != null) {
-				diagnostics.add(
-					new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.ADVANCE_DIRECTIVE_ORGANIZER__ADVANCE_DIRECTIVE_ORGANIZER_CODE_P,
-						ConsolPlugin.INSTANCE.getString("AdvanceDirectiveOrganizerAdvanceDirectiveOrganizerCodeP"),
-						new Object[] { advanceDirectiveOrganizer }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(advanceDirectiveOrganizer)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.ADVANCE_DIRECTIVE_ORGANIZER__ADVANCE_DIRECTIVE_ORGANIZER_CODE_P,
+						 ConsolPlugin.INSTANCE.getString("AdvanceDirectiveOrganizerAdvanceDirectiveOrganizerCodeP"),
+						 new Object [] { advanceDirectiveOrganizer }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -491,7 +553,7 @@ public class AdvanceDirectiveOrganizerOperations extends OrganizerOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<  Constraint> VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -507,49 +569,56 @@ public class AdvanceDirectiveOrganizerOperations extends OrganizerOperations {
 	public static boolean validateAdvanceDirectiveOrganizerStatusCodeP(
 			AdvanceDirectiveOrganizer advanceDirectiveOrganizer, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		DatatypesUtil.increment(context, "AdvanceDirectiveOrganizerAdvanceDirectiveOrganizerStatusCodeP", "ERROR");
-
+	
+	
+	
+  	  
+  	  
+  	  
+  	  
+  	 
+  	 
+  	 
+    DatatypesUtil.increment(context,"AdvanceDirectiveOrganizerAdvanceDirectiveOrganizerStatusCodeP","ERROR");
+    
+  	  
+  	  
 		if (VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-
+		
+	 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ADVANCE_DIRECTIVE_ORGANIZER);
 			try {
-				VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
-					helper.createInvariant(
-						VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			} catch (ParserException pe) {
+				VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-
-		if (!EOCL_ENV.get().createQuery(
-			VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
-				advanceDirectiveOrganizer)) {
-			if (diagnostics != null) {
-				diagnostics.add(
-					new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.ADVANCE_DIRECTIVE_ORGANIZER__ADVANCE_DIRECTIVE_ORGANIZER_STATUS_CODE_P,
-						ConsolPlugin.INSTANCE.getString(
-							"AdvanceDirectiveOrganizerAdvanceDirectiveOrganizerStatusCodeP"),
-						new Object[] { advanceDirectiveOrganizer }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(advanceDirectiveOrganizer)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.ADVANCE_DIRECTIVE_ORGANIZER__ADVANCE_DIRECTIVE_ORGANIZER_STATUS_CODE_P,
+						 ConsolPlugin.INSTANCE.getString("AdvanceDirectiveOrganizerAdvanceDirectiveOrganizerStatusCodeP"),
+						 new Object [] { advanceDirectiveOrganizer }));
+			}
+			
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
-				Collection<Object> passToken = (Collection<Object>) context.get(
-					"org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveOrganizerStatusCodeP");
+				Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveOrganizerStatusCodeP");
 				if (passToken == null) {
 					// anticipate a reasonably healthy model
-					passToken = new java.util.ArrayList<>(3);
-					context.put(
-						"org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveOrganizerStatusCodeP", passToken);
+					passToken = new java.util.ArrayList<Object>(3);
+					context.put("org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveOrganizerStatusCodeP", passToken);
 				}
 				passToken.add(advanceDirectiveOrganizer);
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -563,8 +632,9 @@ public class AdvanceDirectiveOrganizerOperations extends OrganizerOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and " +
-			"let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in " + "value.code = 'completed')";
+	protected static final String VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and "+
+"let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in "+
+"value.code = 'completed')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateAdvanceDirectiveOrganizerStatusCode(AdvanceDirectiveOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Organizer Status Code</em>}' invariant operation.
@@ -575,7 +645,7 @@ public class AdvanceDirectiveOrganizerOperations extends OrganizerOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<  Constraint> VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -591,42 +661,50 @@ public class AdvanceDirectiveOrganizerOperations extends OrganizerOperations {
 	public static boolean validateAdvanceDirectiveOrganizerStatusCode(
 			AdvanceDirectiveOrganizer advanceDirectiveOrganizer, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		Object passToken = (context == null)
-				? null
-				: context.get("org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveOrganizerStatusCodeP");
+	
+	
+	
+  	  
+		Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveOrganizerStatusCodeP");
 		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(advanceDirectiveOrganizer)) {
 			// I have a free pass to short-circuit
 			return true;
 		}
-
-		DatatypesUtil.increment(context, "AdvanceDirectiveOrganizerAdvanceDirectiveOrganizerStatusCode", "ERROR");
-
+  	  
+  	  
+  	  
+  	  
+  	 
+  	 
+  	 
+    DatatypesUtil.increment(context,"AdvanceDirectiveOrganizerAdvanceDirectiveOrganizerStatusCode","ERROR");
+    
+  	  
+  	  
 		if (VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-
+		
+	 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ADVANCE_DIRECTIVE_ORGANIZER);
 			try {
-				VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
-					helper.createInvariant(
-						VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			} catch (ParserException pe) {
+				VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-
-		if (!EOCL_ENV.get().createQuery(
-			VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
-				advanceDirectiveOrganizer)) {
-			if (diagnostics != null) {
-				diagnostics.add(
-					new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.ADVANCE_DIRECTIVE_ORGANIZER__ADVANCE_DIRECTIVE_ORGANIZER_STATUS_CODE,
-						ConsolPlugin.INSTANCE.getString("AdvanceDirectiveOrganizerAdvanceDirectiveOrganizerStatusCode"),
-						new Object[] { advanceDirectiveOrganizer }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(advanceDirectiveOrganizer)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.ADVANCE_DIRECTIVE_ORGANIZER__ADVANCE_DIRECTIVE_ORGANIZER_STATUS_CODE,
+						 ConsolPlugin.INSTANCE.getString("AdvanceDirectiveOrganizerAdvanceDirectiveOrganizerStatusCode"),
+						 new Object [] { advanceDirectiveOrganizer }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -651,7 +729,7 @@ public class AdvanceDirectiveOrganizerOperations extends OrganizerOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_ADVANCE_DIRECTIVE_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<  Constraint> VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_ADVANCE_DIRECTIVE_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -667,36 +745,44 @@ public class AdvanceDirectiveOrganizerOperations extends OrganizerOperations {
 	public static boolean validateAdvanceDirectiveOrganizerAdvanceDirectiveObservation2(
 			AdvanceDirectiveOrganizer advanceDirectiveOrganizer, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		DatatypesUtil.increment(
-			context, "AdvanceDirectiveOrganizerAdvanceDirectiveOrganizerAdvanceDirectiveObservation2", "ERROR");
-
+	
+	
+	
+  	  
+  	  
+  	  
+  	  
+  	 
+  	 
+  	 
+    DatatypesUtil.increment(context,"AdvanceDirectiveOrganizerAdvanceDirectiveOrganizerAdvanceDirectiveObservation2","ERROR");
+    
+  	  
+  	  
 		if (VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_ADVANCE_DIRECTIVE_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-
+		
+	 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ADVANCE_DIRECTIVE_ORGANIZER);
 			try {
-				VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_ADVANCE_DIRECTIVE_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
-					helper.createInvariant(
-						VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_ADVANCE_DIRECTIVE_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			} catch (ParserException pe) {
+				VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_ADVANCE_DIRECTIVE_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_ADVANCE_DIRECTIVE_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-
-		if (!EOCL_ENV.get().createQuery(
-			VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_ADVANCE_DIRECTIVE_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
-				advanceDirectiveOrganizer)) {
-			if (diagnostics != null) {
-				diagnostics.add(
-					new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.ADVANCE_DIRECTIVE_ORGANIZER__ADVANCE_DIRECTIVE_ORGANIZER_ADVANCE_DIRECTIVE_OBSERVATION2,
-						ConsolPlugin.INSTANCE.getString(
-							"AdvanceDirectiveOrganizerAdvanceDirectiveOrganizerAdvanceDirectiveObservation2"),
-						new Object[] { advanceDirectiveOrganizer }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_ADVANCE_DIRECTIVE_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(advanceDirectiveOrganizer)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.ADVANCE_DIRECTIVE_ORGANIZER__ADVANCE_DIRECTIVE_ORGANIZER_ADVANCE_DIRECTIVE_OBSERVATION2,
+						 ConsolPlugin.INSTANCE.getString("AdvanceDirectiveOrganizerAdvanceDirectiveOrganizerAdvanceDirectiveObservation2"),
+						 new Object [] { advanceDirectiveOrganizer }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -721,7 +807,7 @@ public class AdvanceDirectiveOrganizerOperations extends OrganizerOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<  Constraint> VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -737,36 +823,44 @@ public class AdvanceDirectiveOrganizerOperations extends OrganizerOperations {
 	public static boolean validateAdvanceDirectiveOrganizerAuthorParticipation(
 			AdvanceDirectiveOrganizer advanceDirectiveOrganizer, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		DatatypesUtil.increment(
-			context, "AdvanceDirectiveOrganizerAdvanceDirectiveOrganizerAuthorParticipation", "WARNING");
-
+	
+	
+	
+  	  
+  	  
+  	  
+  	  
+  	 
+  	 
+  	 
+    DatatypesUtil.increment(context,"AdvanceDirectiveOrganizerAdvanceDirectiveOrganizerAuthorParticipation","WARNING");
+    
+  	  
+  	  
 		if (VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-
+		
+	 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ADVANCE_DIRECTIVE_ORGANIZER);
 			try {
-				VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
-					helper.createInvariant(
-						VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			} catch (ParserException pe) {
+				VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-
-		if (!EOCL_ENV.get().createQuery(
-			VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
-				advanceDirectiveOrganizer)) {
-			if (diagnostics != null) {
-				diagnostics.add(
-					new BasicDiagnostic(
-						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.ADVANCE_DIRECTIVE_ORGANIZER__ADVANCE_DIRECTIVE_ORGANIZER_AUTHOR_PARTICIPATION,
-						ConsolPlugin.INSTANCE.getString(
-							"AdvanceDirectiveOrganizerAdvanceDirectiveOrganizerAuthorParticipation"),
-						new Object[] { advanceDirectiveOrganizer }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(advanceDirectiveOrganizer)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.ADVANCE_DIRECTIVE_ORGANIZER__ADVANCE_DIRECTIVE_ORGANIZER_AUTHOR_PARTICIPATION,
+						 ConsolPlugin.INSTANCE.getString("AdvanceDirectiveOrganizerAdvanceDirectiveOrganizerAuthorParticipation"),
+						 new Object [] { advanceDirectiveOrganizer }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -800,26 +894,26 @@ public class AdvanceDirectiveOrganizerOperations extends OrganizerOperations {
 
 	public static EList<AdvanceDirectiveObservation2> getAdvanceDirectiveObservation2s(
 			AdvanceDirectiveOrganizer advanceDirectiveOrganizer) {
-
+	
+	
+	
 		if (GET_ADVANCE_DIRECTIVE_OBSERVATION2S__EOCL_QRY == null) {
-
+		
+	 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.ADVANCE_DIRECTIVE_ORGANIZER,
-				ConsolPackage.Literals.ADVANCE_DIRECTIVE_ORGANIZER.getEAllOperations().get(62));
+			helper.setOperationContext(ConsolPackage.Literals.ADVANCE_DIRECTIVE_ORGANIZER, ConsolPackage.Literals.ADVANCE_DIRECTIVE_ORGANIZER.getEAllOperations().get(62));
 			try {
-				GET_ADVANCE_DIRECTIVE_OBSERVATION2S__EOCL_QRY = helper.createQuery(
-					GET_ADVANCE_DIRECTIVE_OBSERVATION2S__EOCL_EXP);
-			} catch (ParserException pe) {
+				GET_ADVANCE_DIRECTIVE_OBSERVATION2S__EOCL_QRY = helper.createQuery(GET_ADVANCE_DIRECTIVE_OBSERVATION2S__EOCL_EXP);
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-
+			}
+		 
 		OCL.Query query = EOCL_ENV.get().createQuery(GET_ADVANCE_DIRECTIVE_OBSERVATION2S__EOCL_QRY);
 		@SuppressWarnings("unchecked")
-		Collection<AdvanceDirectiveObservation2> result = (Collection<AdvanceDirectiveObservation2>) query.evaluate(
-			advanceDirectiveOrganizer);
-		return new BasicEList.UnmodifiableEList<>(result.size(), result.toArray());
+		Collection<AdvanceDirectiveObservation2> result = (Collection<AdvanceDirectiveObservation2>) query.evaluate(advanceDirectiveOrganizer);
+		return new BasicEList.UnmodifiableEList<AdvanceDirectiveObservation2>(result.size(), result.toArray());
 	}
 
 } // AdvanceDirectiveOrganizerOperations

@@ -51,8 +51,7 @@ public class HealthStatusEvaluationsAndOutcomesSectionImpl extends SectionImpl
 	 */
 	public boolean validateHealthStatusEvaluationsAndOutcomesSectionTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HealthStatusEvaluationsAndOutcomesSectionOperations.validateHealthStatusEvaluationsAndOutcomesSectionTemplateId(
-			this, diagnostics, context);
+		return HealthStatusEvaluationsAndOutcomesSectionOperations.validateHealthStatusEvaluationsAndOutcomesSectionTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -62,8 +61,7 @@ public class HealthStatusEvaluationsAndOutcomesSectionImpl extends SectionImpl
 	 */
 	public boolean validateHealthStatusEvaluationsAndOutcomesSectionNullFlavor(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HealthStatusEvaluationsAndOutcomesSectionOperations.validateHealthStatusEvaluationsAndOutcomesSectionNullFlavor(
-			this, diagnostics, context);
+		return HealthStatusEvaluationsAndOutcomesSectionOperations.validateHealthStatusEvaluationsAndOutcomesSectionNullFlavor(this, diagnostics, context);
 	}
 
 	/**
@@ -73,8 +71,7 @@ public class HealthStatusEvaluationsAndOutcomesSectionImpl extends SectionImpl
 	 */
 	public boolean validateHealthStatusEvaluationsAndOutcomesSectionCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HealthStatusEvaluationsAndOutcomesSectionOperations.validateHealthStatusEvaluationsAndOutcomesSectionCode(
-			this, diagnostics, context);
+		return HealthStatusEvaluationsAndOutcomesSectionOperations.validateHealthStatusEvaluationsAndOutcomesSectionCode(this, diagnostics, context);
 	}
 
 	/**
@@ -84,8 +81,7 @@ public class HealthStatusEvaluationsAndOutcomesSectionImpl extends SectionImpl
 	 */
 	public boolean validateHealthStatusEvaluationsAndOutcomesSectionCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HealthStatusEvaluationsAndOutcomesSectionOperations.validateHealthStatusEvaluationsAndOutcomesSectionCodeP(
-			this, diagnostics, context);
+		return HealthStatusEvaluationsAndOutcomesSectionOperations.validateHealthStatusEvaluationsAndOutcomesSectionCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -95,8 +91,7 @@ public class HealthStatusEvaluationsAndOutcomesSectionImpl extends SectionImpl
 	 */
 	public boolean validateHealthStatusEvaluationsAndOutcomesSectionTitle(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HealthStatusEvaluationsAndOutcomesSectionOperations.validateHealthStatusEvaluationsAndOutcomesSectionTitle(
-			this, diagnostics, context);
+		return HealthStatusEvaluationsAndOutcomesSectionOperations.validateHealthStatusEvaluationsAndOutcomesSectionTitle(this, diagnostics, context);
 	}
 
 	/**
@@ -106,8 +101,7 @@ public class HealthStatusEvaluationsAndOutcomesSectionImpl extends SectionImpl
 	 */
 	public boolean validateHealthStatusEvaluationsAndOutcomesSectionText(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HealthStatusEvaluationsAndOutcomesSectionOperations.validateHealthStatusEvaluationsAndOutcomesSectionText(
-			this, diagnostics, context);
+		return HealthStatusEvaluationsAndOutcomesSectionOperations.validateHealthStatusEvaluationsAndOutcomesSectionText(this, diagnostics, context);
 	}
 
 	/**
@@ -117,8 +111,7 @@ public class HealthStatusEvaluationsAndOutcomesSectionImpl extends SectionImpl
 	 */
 	public boolean validateHealthStatusEvaluationsAndOutcomesSectionOutcomeObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HealthStatusEvaluationsAndOutcomesSectionOperations.validateHealthStatusEvaluationsAndOutcomesSectionOutcomeObservation(
-			this, diagnostics, context);
+		return HealthStatusEvaluationsAndOutcomesSectionOperations.validateHealthStatusEvaluationsAndOutcomesSectionOutcomeObservation(this, diagnostics, context);
 	}
 
 	/**
@@ -136,17 +129,17 @@ public class HealthStatusEvaluationsAndOutcomesSectionImpl extends SectionImpl
 	 * @generated
 	 */
 	public HealthStatusEvaluationsAndOutcomesSection init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public HealthStatusEvaluationsAndOutcomesSection init(
 			Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // HealthStatusEvaluationsAndOutcomesSectionImpl

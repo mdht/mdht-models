@@ -91,8 +91,7 @@ public class UnstructuredDocumentImpl extends GeneralHeaderConstraintsImpl imple
 	 */
 	public boolean validateUnstructuredDocumentRecordTargetPatientRole2Id(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return UnstructuredDocumentOperations.validateUnstructuredDocumentRecordTargetPatientRole2Id(
-			this, diagnostics, context);
+		return UnstructuredDocumentOperations.validateUnstructuredDocumentRecordTargetPatientRole2Id(this, diagnostics, context);
 	}
 
 	/**
@@ -102,8 +101,7 @@ public class UnstructuredDocumentImpl extends GeneralHeaderConstraintsImpl imple
 	 */
 	public boolean validateUnstructuredDocumentRecordTargetPatientRole2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return UnstructuredDocumentOperations.validateUnstructuredDocumentRecordTargetPatientRole2(
-			this, diagnostics, context);
+		return UnstructuredDocumentOperations.validateUnstructuredDocumentRecordTargetPatientRole2(this, diagnostics, context);
 	}
 
 	/**
@@ -113,8 +111,7 @@ public class UnstructuredDocumentImpl extends GeneralHeaderConstraintsImpl imple
 	 */
 	public boolean validateUnstructuredDocumentAuthorAssignedAuthor2Addr(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return UnstructuredDocumentOperations.validateUnstructuredDocumentAuthorAssignedAuthor2Addr(
-			this, diagnostics, context);
+		return UnstructuredDocumentOperations.validateUnstructuredDocumentAuthorAssignedAuthor2Addr(this, diagnostics, context);
 	}
 
 	/**
@@ -124,8 +121,7 @@ public class UnstructuredDocumentImpl extends GeneralHeaderConstraintsImpl imple
 	 */
 	public boolean validateUnstructuredDocumentAuthorAssignedAuthor2Telecom(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return UnstructuredDocumentOperations.validateUnstructuredDocumentAuthorAssignedAuthor2Telecom(
-			this, diagnostics, context);
+		return UnstructuredDocumentOperations.validateUnstructuredDocumentAuthorAssignedAuthor2Telecom(this, diagnostics, context);
 	}
 
 	/**
@@ -135,8 +131,7 @@ public class UnstructuredDocumentImpl extends GeneralHeaderConstraintsImpl imple
 	 */
 	public boolean validateUnstructuredDocumentAuthorAssignedAuthor2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return UnstructuredDocumentOperations.validateUnstructuredDocumentAuthorAssignedAuthor2(
-			this, diagnostics, context);
+		return UnstructuredDocumentOperations.validateUnstructuredDocumentAuthorAssignedAuthor2(this, diagnostics, context);
 	}
 
 	/**
@@ -146,8 +141,7 @@ public class UnstructuredDocumentImpl extends GeneralHeaderConstraintsImpl imple
 	 */
 	public boolean validateUnstructuredDocumentCustodianAssignedCustodian3CustodianOrganizationAddr(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return UnstructuredDocumentOperations.validateUnstructuredDocumentCustodianAssignedCustodian3CustodianOrganizationAddr(
-			this, diagnostics, context);
+		return UnstructuredDocumentOperations.validateUnstructuredDocumentCustodianAssignedCustodian3CustodianOrganizationAddr(this, diagnostics, context);
 	}
 
 	/**
@@ -157,8 +151,7 @@ public class UnstructuredDocumentImpl extends GeneralHeaderConstraintsImpl imple
 	 */
 	public boolean validateUnstructuredDocumentCustodianAssignedCustodian3CustodianOrganizationId(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return UnstructuredDocumentOperations.validateUnstructuredDocumentCustodianAssignedCustodian3CustodianOrganizationId(
-			this, diagnostics, context);
+		return UnstructuredDocumentOperations.validateUnstructuredDocumentCustodianAssignedCustodian3CustodianOrganizationId(this, diagnostics, context);
 	}
 
 	/**
@@ -168,8 +161,7 @@ public class UnstructuredDocumentImpl extends GeneralHeaderConstraintsImpl imple
 	 */
 	public boolean validateUnstructuredDocumentCustodianAssignedCustodian3CustodianOrganizationName(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return UnstructuredDocumentOperations.validateUnstructuredDocumentCustodianAssignedCustodian3CustodianOrganizationName(
-			this, diagnostics, context);
+		return UnstructuredDocumentOperations.validateUnstructuredDocumentCustodianAssignedCustodian3CustodianOrganizationName(this, diagnostics, context);
 	}
 
 	/**
@@ -179,8 +171,7 @@ public class UnstructuredDocumentImpl extends GeneralHeaderConstraintsImpl imple
 	 */
 	public boolean validateUnstructuredDocumentCustodianAssignedCustodian3CustodianOrganizationTelecom(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return UnstructuredDocumentOperations.validateUnstructuredDocumentCustodianAssignedCustodian3CustodianOrganizationTelecom(
-			this, diagnostics, context);
+		return UnstructuredDocumentOperations.validateUnstructuredDocumentCustodianAssignedCustodian3CustodianOrganizationTelecom(this, diagnostics, context);
 	}
 
 	/**
@@ -190,8 +181,7 @@ public class UnstructuredDocumentImpl extends GeneralHeaderConstraintsImpl imple
 	 */
 	public boolean validateUnstructuredDocumentCustodianAssignedCustodian3CustodianOrganization(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return UnstructuredDocumentOperations.validateUnstructuredDocumentCustodianAssignedCustodian3CustodianOrganization(
-			this, diagnostics, context);
+		return UnstructuredDocumentOperations.validateUnstructuredDocumentCustodianAssignedCustodian3CustodianOrganization(this, diagnostics, context);
 	}
 
 	/**
@@ -201,8 +191,7 @@ public class UnstructuredDocumentImpl extends GeneralHeaderConstraintsImpl imple
 	 */
 	public boolean validateUnstructuredDocumentCustodianAssignedCustodian2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return UnstructuredDocumentOperations.validateUnstructuredDocumentCustodianAssignedCustodian2(
-			this, diagnostics, context);
+		return UnstructuredDocumentOperations.validateUnstructuredDocumentCustodianAssignedCustodian2(this, diagnostics, context);
 	}
 
 	/**
@@ -223,17 +212,17 @@ public class UnstructuredDocumentImpl extends GeneralHeaderConstraintsImpl imple
 	 */
 	@Override
 	public UnstructuredDocument init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public UnstructuredDocument init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // UnstructuredDocumentImpl

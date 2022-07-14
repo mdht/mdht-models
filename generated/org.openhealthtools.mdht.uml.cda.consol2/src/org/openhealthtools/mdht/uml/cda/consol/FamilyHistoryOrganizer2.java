@@ -63,9 +63,9 @@ public interface FamilyHistoryOrganizer2 extends FamilyHistoryOrganizer {
 	public FamilyHistoryOrganizer2 init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public FamilyHistoryOrganizer2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // FamilyHistoryOrganizer2

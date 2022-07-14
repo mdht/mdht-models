@@ -20,7 +20,7 @@ import org.eclipse.mdht.uml.cda.Act;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getCareTeamMemberActV2()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='CareTeamMemberActV2TemplateId CareTeamMemberActV2StatusCode CareTeamMemberActV2EffectiveTime CareTeamMemberActV2ClassCode CareTeamMemberActV2MoodCode CareTeamMemberActV2Code CareTeamMemberActV2CodeP CareTeamMemberActV2Id CareTeamMemberActV2Participant CareTeamMemberActV2IVLTSLow' templateId.root='2.16.840.1.113883.10.20.22.4.500.1' templateId.extension='2022-06-01' classCode='PCPR' moodCode='EVN' code.code='85847-2' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Patient Care team information' constraints.validation.dependOn.CareTeamMemberActV2Code='CareTeamMemberActV2CodeP' constraints.validation.query='CareTeamMemberActV2IVLTSLow CareTeamMemberActV2IVLTSHigh' constraints.validation.info='CareTeamMemberActV2IVLTSHigh'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='CareTeamMemberActV2TemplateId CareTeamMemberActV2StatusCode CareTeamMemberActV2EffectiveTime CareTeamMemberActV2ClassCode CareTeamMemberActV2MoodCode CareTeamMemberActV2Code CareTeamMemberActV2CodeP CareTeamMemberActV2Participant CareTeamMemberActV2IVLTSLow' templateId.root='2.16.840.1.113883.10.20.22.4.500.1' templateId.extension='2022-06-01' classCode='PCPR' moodCode='EVN' code.code='85847-2' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Patient Care team information' constraints.validation.dependOn.CareTeamMemberActV2Code='CareTeamMemberActV2CodeP' constraints.validation.query='CareTeamMemberActV2IVLTSLow CareTeamMemberActV2IVLTSHigh' constraints.validation.info='CareTeamMemberActV2IVLTSHigh'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolCareTeamMemberActV2IVLTS constraints.validation.error='CareTeamMemberActV2IVLTSLow' constraints.validation.info='CareTeamMemberActV2IVLTSHigh'"
  * @generated
  */
@@ -36,18 +36,6 @@ public interface CareTeamMemberActV2 extends Act {
 	 * @generated
 	 */
 	boolean validateCareTeamMemberActV2TemplateId(DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.id-&gt;isEmpty() or self.id-&gt;exists(element | element.isNullFlavorUndefined())) implies (self.id-&gt;size() =  1)'"
-	 * @generated
-	 */
-	boolean validateCareTeamMemberActV2Id(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -183,9 +171,9 @@ public interface CareTeamMemberActV2 extends Act {
 	public CareTeamMemberActV2 init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public CareTeamMemberActV2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // CareTeamMemberActV2

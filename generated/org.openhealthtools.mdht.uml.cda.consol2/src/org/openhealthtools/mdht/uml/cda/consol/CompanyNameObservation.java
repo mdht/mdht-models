@@ -77,10 +77,10 @@ public interface CompanyNameObservation extends Observation {
 	public CompanyNameObservation init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public CompanyNameObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
 
 } // CompanyNameObservation

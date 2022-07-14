@@ -462,9 +462,9 @@ public interface PlannedMedicationActivity2 extends PlanOfCareActivitySubstanceA
 	public PlannedMedicationActivity2 init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public PlannedMedicationActivity2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // PlannedMedicationActivity2

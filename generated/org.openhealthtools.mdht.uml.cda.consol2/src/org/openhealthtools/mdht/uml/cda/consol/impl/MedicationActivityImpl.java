@@ -63,8 +63,7 @@ public class MedicationActivityImpl extends SubstanceAdministrationImpl implemen
 	 */
 	public boolean validateMedicationActivityDoseQuantityorrateQuantity(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationActivityOperations.validateMedicationActivityDoseQuantityorrateQuantity(
-			this, diagnostics, context);
+		return MedicationActivityOperations.validateMedicationActivityDoseQuantityorrateQuantity(this, diagnostics, context);
 	}
 
 	/**
@@ -102,8 +101,7 @@ public class MedicationActivityImpl extends SubstanceAdministrationImpl implemen
 	 */
 	public boolean validateMedicationActivityEffectiveTimeIVLTSorTS(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationActivityOperations.validateMedicationActivityEffectiveTimeIVLTSorTS(
-			this, diagnostics, context);
+		return MedicationActivityOperations.validateMedicationActivityEffectiveTimeIVLTSorTS(this, diagnostics, context);
 	}
 
 	/**
@@ -123,8 +121,7 @@ public class MedicationActivityImpl extends SubstanceAdministrationImpl implemen
 	 */
 	public boolean validateMedicationActivityEffectiveTimeIVLTSHigh(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationActivityOperations.validateMedicationActivityEffectiveTimeIVLTSHigh(
-			this, diagnostics, context);
+		return MedicationActivityOperations.validateMedicationActivityEffectiveTimeIVLTSHigh(this, diagnostics, context);
 	}
 
 	/**
@@ -184,8 +181,7 @@ public class MedicationActivityImpl extends SubstanceAdministrationImpl implemen
 	 */
 	public boolean validateMedicationActivityInstructionsInversionInd(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationActivityOperations.validateMedicationActivityInstructionsInversionInd(
-			this, diagnostics, context);
+		return MedicationActivityOperations.validateMedicationActivityInstructionsInversionInd(this, diagnostics, context);
 	}
 
 	/**
@@ -324,8 +320,7 @@ public class MedicationActivityImpl extends SubstanceAdministrationImpl implemen
 	 */
 	public boolean validateMedicationActivityAdministrationUnitCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationActivityOperations.validateMedicationActivityAdministrationUnitCodeP(
-			this, diagnostics, context);
+		return MedicationActivityOperations.validateMedicationActivityAdministrationUnitCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -335,8 +330,7 @@ public class MedicationActivityImpl extends SubstanceAdministrationImpl implemen
 	 */
 	public boolean validateMedicationActivityAdministrationUnitCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationActivityOperations.validateMedicationActivityAdministrationUnitCode(
-			this, diagnostics, context);
+		return MedicationActivityOperations.validateMedicationActivityAdministrationUnitCode(this, diagnostics, context);
 	}
 
 	/**
@@ -448,8 +442,7 @@ public class MedicationActivityImpl extends SubstanceAdministrationImpl implemen
 	 */
 	public boolean validateMedicationActivityConsumableMedicationInformation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationActivityOperations.validateMedicationActivityConsumableMedicationInformation(
-			this, diagnostics, context);
+		return MedicationActivityOperations.validateMedicationActivityConsumableMedicationInformation(this, diagnostics, context);
 	}
 
 	/**
@@ -469,8 +462,7 @@ public class MedicationActivityImpl extends SubstanceAdministrationImpl implemen
 	 */
 	public boolean validateMedicationActivityPreconditionPreconditionForSubstanceAdministration(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationActivityOperations.validateMedicationActivityPreconditionPreconditionForSubstanceAdministration(
-			this, diagnostics, context);
+		return MedicationActivityOperations.validateMedicationActivityPreconditionPreconditionForSubstanceAdministration(this, diagnostics, context);
 	}
 
 	/**
@@ -533,16 +525,16 @@ public class MedicationActivityImpl extends SubstanceAdministrationImpl implemen
 	 * @generated
 	 */
 	public MedicationActivity init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public MedicationActivity init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // MedicationActivityImpl

@@ -75,8 +75,7 @@ public class PlannedProcedure2Impl extends PlanOfCareActivityProcedureImpl imple
 	 */
 	public boolean validatePlannedProcedure2Instruction2InversionInd(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PlannedProcedure2Operations.validatePlannedProcedure2Instruction2InversionInd(
-			this, diagnostics, context);
+		return PlannedProcedure2Operations.validatePlannedProcedure2Instruction2InversionInd(this, diagnostics, context);
 	}
 
 	/**
@@ -261,17 +260,17 @@ public class PlannedProcedure2Impl extends PlanOfCareActivityProcedureImpl imple
 	 */
 	@Override
 	public PlannedProcedure2 init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public PlannedProcedure2 init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // PlannedProcedure2Impl

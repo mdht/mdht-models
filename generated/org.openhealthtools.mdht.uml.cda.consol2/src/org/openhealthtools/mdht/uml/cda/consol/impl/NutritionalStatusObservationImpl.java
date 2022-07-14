@@ -54,8 +54,7 @@ public class NutritionalStatusObservationImpl extends ObservationImpl implements
 	 */
 	public boolean validateNutritionalStatusObservationTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return NutritionalStatusObservationOperations.validateNutritionalStatusObservationTemplateId(
-			this, diagnostics, context);
+		return NutritionalStatusObservationOperations.validateNutritionalStatusObservationTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -65,8 +64,7 @@ public class NutritionalStatusObservationImpl extends ObservationImpl implements
 	 */
 	public boolean validateNutritionalStatusObservationClassCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return NutritionalStatusObservationOperations.validateNutritionalStatusObservationClassCode(
-			this, diagnostics, context);
+		return NutritionalStatusObservationOperations.validateNutritionalStatusObservationClassCode(this, diagnostics, context);
 	}
 
 	/**
@@ -76,8 +74,7 @@ public class NutritionalStatusObservationImpl extends ObservationImpl implements
 	 */
 	public boolean validateNutritionalStatusObservationMoodCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return NutritionalStatusObservationOperations.validateNutritionalStatusObservationMoodCode(
-			this, diagnostics, context);
+		return NutritionalStatusObservationOperations.validateNutritionalStatusObservationMoodCode(this, diagnostics, context);
 	}
 
 	/**
@@ -86,8 +83,7 @@ public class NutritionalStatusObservationImpl extends ObservationImpl implements
 	 * @generated
 	 */
 	public boolean validateNutritionalStatusObservationId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return NutritionalStatusObservationOperations.validateNutritionalStatusObservationId(
-			this, diagnostics, context);
+		return NutritionalStatusObservationOperations.validateNutritionalStatusObservationId(this, diagnostics, context);
 	}
 
 	/**
@@ -96,8 +92,7 @@ public class NutritionalStatusObservationImpl extends ObservationImpl implements
 	 * @generated
 	 */
 	public boolean validateNutritionalStatusObservationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return NutritionalStatusObservationOperations.validateNutritionalStatusObservationCodeP(
-			this, diagnostics, context);
+		return NutritionalStatusObservationOperations.validateNutritionalStatusObservationCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -106,8 +101,7 @@ public class NutritionalStatusObservationImpl extends ObservationImpl implements
 	 * @generated
 	 */
 	public boolean validateNutritionalStatusObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return NutritionalStatusObservationOperations.validateNutritionalStatusObservationCode(
-			this, diagnostics, context);
+		return NutritionalStatusObservationOperations.validateNutritionalStatusObservationCode(this, diagnostics, context);
 	}
 
 	/**
@@ -117,8 +111,7 @@ public class NutritionalStatusObservationImpl extends ObservationImpl implements
 	 */
 	public boolean validateNutritionalStatusObservationStatusCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return NutritionalStatusObservationOperations.validateNutritionalStatusObservationStatusCode(
-			this, diagnostics, context);
+		return NutritionalStatusObservationOperations.validateNutritionalStatusObservationStatusCode(this, diagnostics, context);
 	}
 
 	/**
@@ -128,8 +121,7 @@ public class NutritionalStatusObservationImpl extends ObservationImpl implements
 	 */
 	public boolean validateNutritionalStatusObservationStatusCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return NutritionalStatusObservationOperations.validateNutritionalStatusObservationStatusCodeP(
-			this, diagnostics, context);
+		return NutritionalStatusObservationOperations.validateNutritionalStatusObservationStatusCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -139,8 +131,7 @@ public class NutritionalStatusObservationImpl extends ObservationImpl implements
 	 */
 	public boolean validateNutritionalStatusObservationEffectiveTime(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return NutritionalStatusObservationOperations.validateNutritionalStatusObservationEffectiveTime(
-			this, diagnostics, context);
+		return NutritionalStatusObservationOperations.validateNutritionalStatusObservationEffectiveTime(this, diagnostics, context);
 	}
 
 	/**
@@ -149,8 +140,7 @@ public class NutritionalStatusObservationImpl extends ObservationImpl implements
 	 * @generated
 	 */
 	public boolean validateNutritionalStatusObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return NutritionalStatusObservationOperations.validateNutritionalStatusObservationValue(
-			this, diagnostics, context);
+		return NutritionalStatusObservationOperations.validateNutritionalStatusObservationValue(this, diagnostics, context);
 	}
 
 	/**
@@ -160,8 +150,7 @@ public class NutritionalStatusObservationImpl extends ObservationImpl implements
 	 */
 	public boolean validateNutritionalStatusObservationValueP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return NutritionalStatusObservationOperations.validateNutritionalStatusObservationValueP(
-			this, diagnostics, context);
+		return NutritionalStatusObservationOperations.validateNutritionalStatusObservationValueP(this, diagnostics, context);
 	}
 
 	/**
@@ -171,8 +160,7 @@ public class NutritionalStatusObservationImpl extends ObservationImpl implements
 	 */
 	public boolean validateNutritionalStatusObservationNutritionAssessment(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return NutritionalStatusObservationOperations.validateNutritionalStatusObservationNutritionAssessment(
-			this, diagnostics, context);
+		return NutritionalStatusObservationOperations.validateNutritionalStatusObservationNutritionAssessment(this, diagnostics, context);
 	}
 
 	/**
@@ -190,16 +178,16 @@ public class NutritionalStatusObservationImpl extends ObservationImpl implements
 	 * @generated
 	 */
 	public NutritionalStatusObservation init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public NutritionalStatusObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // NutritionalStatusObservationImpl

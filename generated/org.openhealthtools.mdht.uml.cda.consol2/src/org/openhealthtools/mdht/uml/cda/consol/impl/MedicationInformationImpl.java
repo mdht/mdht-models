@@ -83,8 +83,7 @@ public class MedicationInformationImpl extends ManufacturedProductImpl implement
 	 */
 	public boolean validateMedicationInformationManufacturerOrganization(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationInformationOperations.validateMedicationInformationManufacturerOrganization(
-			this, diagnostics, context);
+		return MedicationInformationOperations.validateMedicationInformationManufacturerOrganization(this, diagnostics, context);
 	}
 
 	/**
@@ -94,8 +93,7 @@ public class MedicationInformationImpl extends ManufacturedProductImpl implement
 	 */
 	public boolean validateMedicationInformationManufacturedMaterial(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationInformationOperations.validateMedicationInformationManufacturedMaterial(
-			this, diagnostics, context);
+		return MedicationInformationOperations.validateMedicationInformationManufacturedMaterial(this, diagnostics, context);
 	}
 
 	/**
@@ -105,8 +103,7 @@ public class MedicationInformationImpl extends ManufacturedProductImpl implement
 	 */
 	public boolean validateMedicationInformationMedicationInformationManufacturedMaterialCodeOriginalText(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationInformationOperations.validateMedicationInformationMedicationInformationManufacturedMaterialCodeOriginalText(
-			this, diagnostics, context);
+		return MedicationInformationOperations.validateMedicationInformationMedicationInformationManufacturedMaterialCodeOriginalText(this, diagnostics, context);
 	}
 
 	/**
@@ -116,8 +113,7 @@ public class MedicationInformationImpl extends ManufacturedProductImpl implement
 	 */
 	public boolean validateMedicationInformationMedicationInformationManufacturedMaterialReference(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationInformationOperations.validateMedicationInformationMedicationInformationManufacturedMaterialReference(
-			this, diagnostics, context);
+		return MedicationInformationOperations.validateMedicationInformationMedicationInformationManufacturedMaterialReference(this, diagnostics, context);
 	}
 
 	/**
@@ -127,8 +123,7 @@ public class MedicationInformationImpl extends ManufacturedProductImpl implement
 	 */
 	public boolean validateMedicationInformationMedicationInformationManufacturedMaterialOriginalTextReferenceValue(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationInformationOperations.validateMedicationInformationMedicationInformationManufacturedMaterialOriginalTextReferenceValue(
-			this, diagnostics, context);
+		return MedicationInformationOperations.validateMedicationInformationMedicationInformationManufacturedMaterialOriginalTextReferenceValue(this, diagnostics, context);
 	}
 
 	/**
@@ -138,8 +133,7 @@ public class MedicationInformationImpl extends ManufacturedProductImpl implement
 	 */
 	public boolean validateMedicationInformationMedicationInformationManufacturedMaterialCodeTranslation(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationInformationOperations.validateMedicationInformationMedicationInformationManufacturedMaterialCodeTranslation(
-			this, diagnostics, context);
+		return MedicationInformationOperations.validateMedicationInformationMedicationInformationManufacturedMaterialCodeTranslation(this, diagnostics, context);
 	}
 
 	/**
@@ -149,8 +143,7 @@ public class MedicationInformationImpl extends ManufacturedProductImpl implement
 	 */
 	public boolean validateMedicationInformationMedicationInformationManufacturedMaterialCode(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationInformationOperations.validateMedicationInformationMedicationInformationManufacturedMaterialCode(
-			this, diagnostics, context);
+		return MedicationInformationOperations.validateMedicationInformationMedicationInformationManufacturedMaterialCode(this, diagnostics, context);
 	}
 
 	/**
@@ -159,16 +152,16 @@ public class MedicationInformationImpl extends ManufacturedProductImpl implement
 	 * @generated
 	 */
 	public MedicationInformation init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public MedicationInformation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // MedicationInformationImpl

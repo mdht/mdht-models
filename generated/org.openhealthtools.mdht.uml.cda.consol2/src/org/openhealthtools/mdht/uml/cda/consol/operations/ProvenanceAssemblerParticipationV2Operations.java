@@ -90,7 +90,7 @@ public class ProvenanceAssemblerParticipationV2Operations extends Participant1Op
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.5 .7' and id.extension = '2020-05-19')";
+	protected static final String VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.5.7' and id.extension = '2020-05-19')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateProvenanceAssemblerParticipationV2TemplateId(ProvenanceAssemblerParticipationV2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Provenance Assembler Participation V2 Template Id</em>}' invariant operation.
@@ -101,7 +101,7 @@ public class ProvenanceAssemblerParticipationV2Operations extends Participant1Op
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<  Constraint> VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -117,36 +117,44 @@ public class ProvenanceAssemblerParticipationV2Operations extends Participant1Op
 	public static boolean validateProvenanceAssemblerParticipationV2TemplateId(
 			ProvenanceAssemblerParticipationV2 provenanceAssemblerParticipationV2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		DatatypesUtil.increment(
-			context, "ProvenanceAssemblerParticipationV2ProvenanceAssemblerParticipationV2TemplateId", "ERROR");
-
+	
+	
+	
+  	  
+  	  
+  	  
+  	  
+  	 
+  	 
+  	 
+    DatatypesUtil.increment(context,"ProvenanceAssemblerParticipationV2ProvenanceAssemblerParticipationV2TemplateId","ERROR");
+    
+  	  
+  	  
 		if (VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-
+		
+	 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROVENANCE_ASSEMBLER_PARTICIPATION_V2);
 			try {
-				VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
-					helper.createInvariant(
-						VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			} catch (ParserException pe) {
+				VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-
-		if (!EOCL_ENV.get().createQuery(
-			VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
-				provenanceAssemblerParticipationV2)) {
-			if (diagnostics != null) {
-				diagnostics.add(
-					new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.PROVENANCE_ASSEMBLER_PARTICIPATION_V2__PROVENANCE_ASSEMBLER_PARTICIPATION_V2_TEMPLATE_ID,
-						ConsolPlugin.INSTANCE.getString(
-							"ProvenanceAssemblerParticipationV2ProvenanceAssemblerParticipationV2TemplateId"),
-						new Object[] { provenanceAssemblerParticipationV2 }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(provenanceAssemblerParticipationV2)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PROVENANCE_ASSEMBLER_PARTICIPATION_V2__PROVENANCE_ASSEMBLER_PARTICIPATION_V2_TEMPLATE_ID,
+						 ConsolPlugin.INSTANCE.getString("ProvenanceAssemblerParticipationV2ProvenanceAssemblerParticipationV2TemplateId"),
+						 new Object [] { provenanceAssemblerParticipationV2 }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -160,9 +168,9 @@ public class ProvenanceAssemblerParticipationV2Operations extends Participant1Op
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_FUNCTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.functionCode.oclIsUndefined() or self.functionCode.isNullFlavorUndefined()) implies (not self.functionCode.oclIsUndefined() and self.functionCode.oclIsKindOf(datatypes::CE) and " +
-			"let value : datatypes::CE = self.functionCode.oclAsType(datatypes::CE) in " +
-			"value.code = 'assembler' and value.codeSystem = '2.16.840.1.113883.4.642.4.1131')";
+	protected static final String VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_FUNCTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.functionCode.oclIsUndefined() or self.functionCode.isNullFlavorUndefined()) implies (not self.functionCode.oclIsUndefined() and self.functionCode.oclIsKindOf(datatypes::CE) and "+
+"let value : datatypes::CE = self.functionCode.oclAsType(datatypes::CE) in "+
+"value.code = 'assembler' and value.codeSystem = '2.16.840.1.113883.4.642.4.1131')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateProvenanceAssemblerParticipationV2FunctionCode(ProvenanceAssemblerParticipationV2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Provenance Assembler Participation V2 Function Code</em>}' invariant operation.
@@ -173,7 +181,7 @@ public class ProvenanceAssemblerParticipationV2Operations extends Participant1Op
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_FUNCTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<  Constraint> VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_FUNCTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -189,36 +197,44 @@ public class ProvenanceAssemblerParticipationV2Operations extends Participant1Op
 	public static boolean validateProvenanceAssemblerParticipationV2FunctionCode(
 			ProvenanceAssemblerParticipationV2 provenanceAssemblerParticipationV2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		DatatypesUtil.increment(
-			context, "ProvenanceAssemblerParticipationV2ProvenanceAssemblerParticipationV2FunctionCode", "ERROR");
-
+	
+	
+	
+  	  
+  	  
+  	  
+  	  
+  	 
+  	 
+  	 
+    DatatypesUtil.increment(context,"ProvenanceAssemblerParticipationV2ProvenanceAssemblerParticipationV2FunctionCode","ERROR");
+    
+  	  
+  	  
 		if (VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_FUNCTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-
+		
+	 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROVENANCE_ASSEMBLER_PARTICIPATION_V2);
 			try {
-				VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_FUNCTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
-					helper.createInvariant(
-						VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_FUNCTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			} catch (ParserException pe) {
+				VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_FUNCTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_FUNCTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-
-		if (!EOCL_ENV.get().createQuery(
-			VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_FUNCTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
-				provenanceAssemblerParticipationV2)) {
-			if (diagnostics != null) {
-				diagnostics.add(
-					new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.PROVENANCE_ASSEMBLER_PARTICIPATION_V2__PROVENANCE_ASSEMBLER_PARTICIPATION_V2_FUNCTION_CODE,
-						ConsolPlugin.INSTANCE.getString(
-							"ProvenanceAssemblerParticipationV2ProvenanceAssemblerParticipationV2FunctionCode"),
-						new Object[] { provenanceAssemblerParticipationV2 }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_FUNCTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(provenanceAssemblerParticipationV2)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PROVENANCE_ASSEMBLER_PARTICIPATION_V2__PROVENANCE_ASSEMBLER_PARTICIPATION_V2_FUNCTION_CODE,
+						 ConsolPlugin.INSTANCE.getString("ProvenanceAssemblerParticipationV2ProvenanceAssemblerParticipationV2FunctionCode"),
+						 new Object [] { provenanceAssemblerParticipationV2 }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -243,7 +259,7 @@ public class ProvenanceAssemblerParticipationV2Operations extends Participant1Op
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_FUNCTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<  Constraint> VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_FUNCTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -259,36 +275,44 @@ public class ProvenanceAssemblerParticipationV2Operations extends Participant1Op
 	public static boolean validateProvenanceAssemblerParticipationV2FunctionCodeP(
 			ProvenanceAssemblerParticipationV2 provenanceAssemblerParticipationV2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		DatatypesUtil.increment(
-			context, "ProvenanceAssemblerParticipationV2ProvenanceAssemblerParticipationV2FunctionCodeP", "ERROR");
-
+	
+	
+	
+  	  
+  	  
+  	  
+  	  
+  	 
+  	 
+  	 
+    DatatypesUtil.increment(context,"ProvenanceAssemblerParticipationV2ProvenanceAssemblerParticipationV2FunctionCodeP","ERROR");
+    
+  	  
+  	  
 		if (VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_FUNCTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-
+		
+	 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROVENANCE_ASSEMBLER_PARTICIPATION_V2);
 			try {
-				VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_FUNCTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
-					helper.createInvariant(
-						VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_FUNCTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			} catch (ParserException pe) {
+				VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_FUNCTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_FUNCTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-
-		if (!EOCL_ENV.get().createQuery(
-			VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_FUNCTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
-				provenanceAssemblerParticipationV2)) {
-			if (diagnostics != null) {
-				diagnostics.add(
-					new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.PROVENANCE_ASSEMBLER_PARTICIPATION_V2__PROVENANCE_ASSEMBLER_PARTICIPATION_V2_FUNCTION_CODE_P,
-						ConsolPlugin.INSTANCE.getString(
-							"ProvenanceAssemblerParticipationV2ProvenanceAssemblerParticipationV2FunctionCodeP"),
-						new Object[] { provenanceAssemblerParticipationV2 }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_FUNCTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(provenanceAssemblerParticipationV2)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PROVENANCE_ASSEMBLER_PARTICIPATION_V2__PROVENANCE_ASSEMBLER_PARTICIPATION_V2_FUNCTION_CODE_P,
+						 ConsolPlugin.INSTANCE.getString("ProvenanceAssemblerParticipationV2ProvenanceAssemblerParticipationV2FunctionCodeP"),
+						 new Object [] { provenanceAssemblerParticipationV2 }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -313,7 +337,7 @@ public class ProvenanceAssemblerParticipationV2Operations extends Participant1Op
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<  Constraint> VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -329,36 +353,44 @@ public class ProvenanceAssemblerParticipationV2Operations extends Participant1Op
 	public static boolean validateProvenanceAssemblerParticipationV2Time(
 			ProvenanceAssemblerParticipationV2 provenanceAssemblerParticipationV2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		DatatypesUtil.increment(
-			context, "ProvenanceAssemblerParticipationV2ProvenanceAssemblerParticipationV2Time", "ERROR");
-
+	
+	
+	
+  	  
+  	  
+  	  
+  	  
+  	 
+  	 
+  	 
+    DatatypesUtil.increment(context,"ProvenanceAssemblerParticipationV2ProvenanceAssemblerParticipationV2Time","ERROR");
+    
+  	  
+  	  
 		if (VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-
+		
+	 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROVENANCE_ASSEMBLER_PARTICIPATION_V2);
 			try {
-				VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
-					helper.createInvariant(
-						VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			} catch (ParserException pe) {
+				VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-
-		if (!EOCL_ENV.get().createQuery(
-			VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
-				provenanceAssemblerParticipationV2)) {
-			if (diagnostics != null) {
-				diagnostics.add(
-					new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.PROVENANCE_ASSEMBLER_PARTICIPATION_V2__PROVENANCE_ASSEMBLER_PARTICIPATION_V2_TIME,
-						ConsolPlugin.INSTANCE.getString(
-							"ProvenanceAssemblerParticipationV2ProvenanceAssemblerParticipationV2Time"),
-						new Object[] { provenanceAssemblerParticipationV2 }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(provenanceAssemblerParticipationV2)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PROVENANCE_ASSEMBLER_PARTICIPATION_V2__PROVENANCE_ASSEMBLER_PARTICIPATION_V2_TIME,
+						 ConsolPlugin.INSTANCE.getString("ProvenanceAssemblerParticipationV2ProvenanceAssemblerParticipationV2Time"),
+						 new Object [] { provenanceAssemblerParticipationV2 }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -383,7 +415,7 @@ public class ProvenanceAssemblerParticipationV2Operations extends Participant1Op
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<  Constraint> VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -399,36 +431,44 @@ public class ProvenanceAssemblerParticipationV2Operations extends Participant1Op
 	public static boolean validateProvenanceAssemblerParticipationV2TypeCode(
 			ProvenanceAssemblerParticipationV2 provenanceAssemblerParticipationV2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		DatatypesUtil.increment(
-			context, "ProvenanceAssemblerParticipationV2ProvenanceAssemblerParticipationV2TypeCode", "ERROR");
-
+	
+	
+	
+  	  
+  	  
+  	  
+  	  
+  	 
+  	 
+  	 
+    DatatypesUtil.increment(context,"ProvenanceAssemblerParticipationV2ProvenanceAssemblerParticipationV2TypeCode","ERROR");
+    
+  	  
+  	  
 		if (VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-
+		
+	 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROVENANCE_ASSEMBLER_PARTICIPATION_V2);
 			try {
-				VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
-					helper.createInvariant(
-						VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			} catch (ParserException pe) {
+				VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-
-		if (!EOCL_ENV.get().createQuery(
-			VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
-				provenanceAssemblerParticipationV2)) {
-			if (diagnostics != null) {
-				diagnostics.add(
-					new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.PROVENANCE_ASSEMBLER_PARTICIPATION_V2__PROVENANCE_ASSEMBLER_PARTICIPATION_V2_TYPE_CODE,
-						ConsolPlugin.INSTANCE.getString(
-							"ProvenanceAssemblerParticipationV2ProvenanceAssemblerParticipationV2TypeCode"),
-						new Object[] { provenanceAssemblerParticipationV2 }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(provenanceAssemblerParticipationV2)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PROVENANCE_ASSEMBLER_PARTICIPATION_V2__PROVENANCE_ASSEMBLER_PARTICIPATION_V2_TYPE_CODE,
+						 ConsolPlugin.INSTANCE.getString("ProvenanceAssemblerParticipationV2ProvenanceAssemblerParticipationV2TypeCode"),
+						 new Object [] { provenanceAssemblerParticipationV2 }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -453,7 +493,7 @@ public class ProvenanceAssemblerParticipationV2Operations extends Participant1Op
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<  Constraint> VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -469,36 +509,44 @@ public class ProvenanceAssemblerParticipationV2Operations extends Participant1Op
 	public static boolean validateProvenanceAssemblerParticipationV2AssociatedEntity(
 			ProvenanceAssemblerParticipationV2 provenanceAssemblerParticipationV2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		DatatypesUtil.increment(
-			context, "ProvenanceAssemblerParticipationV2ProvenanceAssemblerParticipationV2AssociatedEntity", "ERROR");
-
+	
+	
+	
+  	  
+  	  
+  	  
+  	  
+  	 
+  	 
+  	 
+    DatatypesUtil.increment(context,"ProvenanceAssemblerParticipationV2ProvenanceAssemblerParticipationV2AssociatedEntity","ERROR");
+    
+  	  
+  	  
 		if (VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-
+		
+	 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROVENANCE_ASSEMBLER_PARTICIPATION_V2);
 			try {
-				VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
-					helper.createInvariant(
-						VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			} catch (ParserException pe) {
+				VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-
-		if (!EOCL_ENV.get().createQuery(
-			VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
-				provenanceAssemblerParticipationV2)) {
-			if (diagnostics != null) {
-				diagnostics.add(
-					new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.PROVENANCE_ASSEMBLER_PARTICIPATION_V2__PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY,
-						ConsolPlugin.INSTANCE.getString(
-							"ProvenanceAssemblerParticipationV2ProvenanceAssemblerParticipationV2AssociatedEntity"),
-						new Object[] { provenanceAssemblerParticipationV2 }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(provenanceAssemblerParticipationV2)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PROVENANCE_ASSEMBLER_PARTICIPATION_V2__PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY,
+						 ConsolPlugin.INSTANCE.getString("ProvenanceAssemblerParticipationV2ProvenanceAssemblerParticipationV2AssociatedEntity"),
+						 new Object [] { provenanceAssemblerParticipationV2 }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -523,7 +571,7 @@ public class ProvenanceAssemblerParticipationV2Operations extends Participant1Op
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_US_REALM_ADDRESS_STREET__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<>();
+	protected static ThreadLocal< Query<?, ?, ?> > VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_US_REALM_ADDRESS_STREET__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal< Query<?, ?, ?> >();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -539,42 +587,49 @@ public class ProvenanceAssemblerParticipationV2Operations extends Participant1Op
 	public static boolean validateProvenanceAssemblerParticipationV2AssociatedEntityOrganizationGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet(
 			ProvenanceAssemblerParticipationV2 provenanceAssemblerParticipationV2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		DatatypesUtil.increment(
-			context,
-			"ProvenanceAssemblerParticipationV2ProvenanceAssemblerParticipationV2AssociatedEntityOrganizationGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet",
-			"ERROR");
-
+	
+	
+	
+  	  
+  	  
+  	  
+  	  
+  	 
+  	 
+  	 
+    DatatypesUtil.increment(context,"ProvenanceAssemblerParticipationV2ProvenanceAssemblerParticipationV2AssociatedEntityOrganizationGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet","ERROR");
+    
+  	  
+  	  
 		if (VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_US_REALM_ADDRESS_STREET__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
-
+		
+	 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROVENANCE_ASSEMBLER_PARTICIPATION_V2);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(
-					VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_US_REALM_ADDRESS_STREET__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_US_REALM_ADDRESS_STREET__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(
-					EOCL_ENV.get().createQuery(oclExpression));
-			} catch (ParserException pe) {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_US_REALM_ADDRESS_STREET__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_US_REALM_ADDRESS_STREET__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(EOCL_ENV.get().createQuery(oclExpression));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-
-		Object oclResult = VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_US_REALM_ADDRESS_STREET__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(
-			provenanceAssemblerParticipationV2);
+			}
+		 
+		Object oclResult = VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_US_REALM_ADDRESS_STREET__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(provenanceAssemblerParticipationV2);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
+  			
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(
-						new BasicDiagnostic(
-							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-							ConsolValidator.PROVENANCE_ASSEMBLER_PARTICIPATION_V2__PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_US_REALM_ADDRESS_STREET,
-							ConsolPlugin.INSTANCE.getString(
-								"ProvenanceAssemblerParticipationV2ProvenanceAssemblerParticipationV2AssociatedEntityOrganizationGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet"),
-							new Object[] { eObject }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PROVENANCE_ASSEMBLER_PARTICIPATION_V2__PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_US_REALM_ADDRESS_STREET,
+						 ConsolPlugin.INSTANCE.getString("ProvenanceAssemblerParticipationV2ProvenanceAssemblerParticipationV2AssociatedEntityOrganizationGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet"),
+						 new Object [] { eObject }));
 				}
-
+				 
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -600,7 +655,7 @@ public class ProvenanceAssemblerParticipationV2Operations extends Participant1Op
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_IF_COUNTRY_IS_US_REQUIRE_STATE_ELEMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<>();
+	protected static ThreadLocal< Query<?, ?, ?> > VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_IF_COUNTRY_IS_US_REQUIRE_STATE_ELEMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal< Query<?, ?, ?> >();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -616,42 +671,49 @@ public class ProvenanceAssemblerParticipationV2Operations extends Participant1Op
 	public static boolean validateProvenanceAssemblerParticipationV2AssociatedEntityOrganizationGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequireStateElement(
 			ProvenanceAssemblerParticipationV2 provenanceAssemblerParticipationV2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		DatatypesUtil.increment(
-			context,
-			"ProvenanceAssemblerParticipationV2ProvenanceAssemblerParticipationV2AssociatedEntityOrganizationGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequireStateElement",
-			"ERROR");
-
+	
+	
+	
+  	  
+  	  
+  	  
+  	  
+  	 
+  	 
+  	 
+    DatatypesUtil.increment(context,"ProvenanceAssemblerParticipationV2ProvenanceAssemblerParticipationV2AssociatedEntityOrganizationGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequireStateElement","ERROR");
+    
+  	  
+  	  
 		if (VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_IF_COUNTRY_IS_US_REQUIRE_STATE_ELEMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
-
+		
+	 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROVENANCE_ASSEMBLER_PARTICIPATION_V2);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(
-					VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_IF_COUNTRY_IS_US_REQUIRE_STATE_ELEMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_IF_COUNTRY_IS_US_REQUIRE_STATE_ELEMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(
-					EOCL_ENV.get().createQuery(oclExpression));
-			} catch (ParserException pe) {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_IF_COUNTRY_IS_US_REQUIRE_STATE_ELEMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_IF_COUNTRY_IS_US_REQUIRE_STATE_ELEMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(EOCL_ENV.get().createQuery(oclExpression));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-
-		Object oclResult = VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_IF_COUNTRY_IS_US_REQUIRE_STATE_ELEMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(
-			provenanceAssemblerParticipationV2);
+			}
+		 
+		Object oclResult = VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_IF_COUNTRY_IS_US_REQUIRE_STATE_ELEMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(provenanceAssemblerParticipationV2);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
+  			
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(
-						new BasicDiagnostic(
-							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-							ConsolValidator.PROVENANCE_ASSEMBLER_PARTICIPATION_V2__PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_IF_COUNTRY_IS_US_REQUIRE_STATE_ELEMENT,
-							ConsolPlugin.INSTANCE.getString(
-								"ProvenanceAssemblerParticipationV2ProvenanceAssemblerParticipationV2AssociatedEntityOrganizationGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequireStateElement"),
-							new Object[] { eObject }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PROVENANCE_ASSEMBLER_PARTICIPATION_V2__PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_IF_COUNTRY_IS_US_REQUIRE_STATE_ELEMENT,
+						 ConsolPlugin.INSTANCE.getString("ProvenanceAssemblerParticipationV2ProvenanceAssemblerParticipationV2AssociatedEntityOrganizationGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequireStateElement"),
+						 new Object [] { eObject }));
 				}
-
+				 
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -677,7 +739,7 @@ public class ProvenanceAssemblerParticipationV2Operations extends Participant1Op
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_IF_COUNTRY_IS_US_REQUIRE_POSTAL_CODE_ELEMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<>();
+	protected static ThreadLocal< Query<?, ?, ?> > VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_IF_COUNTRY_IS_US_REQUIRE_POSTAL_CODE_ELEMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal< Query<?, ?, ?> >();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -693,42 +755,49 @@ public class ProvenanceAssemblerParticipationV2Operations extends Participant1Op
 	public static boolean validateProvenanceAssemblerParticipationV2AssociatedEntityOrganizationGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequirePostalCodeElement(
 			ProvenanceAssemblerParticipationV2 provenanceAssemblerParticipationV2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		DatatypesUtil.increment(
-			context,
-			"ProvenanceAssemblerParticipationV2ProvenanceAssemblerParticipationV2AssociatedEntityOrganizationGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequirePostalCodeElement",
-			"ERROR");
-
+	
+	
+	
+  	  
+  	  
+  	  
+  	  
+  	 
+  	 
+  	 
+    DatatypesUtil.increment(context,"ProvenanceAssemblerParticipationV2ProvenanceAssemblerParticipationV2AssociatedEntityOrganizationGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequirePostalCodeElement","ERROR");
+    
+  	  
+  	  
 		if (VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_IF_COUNTRY_IS_US_REQUIRE_POSTAL_CODE_ELEMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
-
+		
+	 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROVENANCE_ASSEMBLER_PARTICIPATION_V2);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(
-					VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_IF_COUNTRY_IS_US_REQUIRE_POSTAL_CODE_ELEMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_IF_COUNTRY_IS_US_REQUIRE_POSTAL_CODE_ELEMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(
-					EOCL_ENV.get().createQuery(oclExpression));
-			} catch (ParserException pe) {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_IF_COUNTRY_IS_US_REQUIRE_POSTAL_CODE_ELEMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_IF_COUNTRY_IS_US_REQUIRE_POSTAL_CODE_ELEMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(EOCL_ENV.get().createQuery(oclExpression));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-
-		Object oclResult = VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_IF_COUNTRY_IS_US_REQUIRE_POSTAL_CODE_ELEMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(
-			provenanceAssemblerParticipationV2);
+			}
+		 
+		Object oclResult = VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_IF_COUNTRY_IS_US_REQUIRE_POSTAL_CODE_ELEMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(provenanceAssemblerParticipationV2);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
+  			
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(
-						new BasicDiagnostic(
-							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-							ConsolValidator.PROVENANCE_ASSEMBLER_PARTICIPATION_V2__PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_IF_COUNTRY_IS_US_REQUIRE_POSTAL_CODE_ELEMENT,
-							ConsolPlugin.INSTANCE.getString(
-								"ProvenanceAssemblerParticipationV2ProvenanceAssemblerParticipationV2AssociatedEntityOrganizationGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequirePostalCodeElement"),
-							new Object[] { eObject }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PROVENANCE_ASSEMBLER_PARTICIPATION_V2__PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_IF_COUNTRY_IS_US_REQUIRE_POSTAL_CODE_ELEMENT,
+						 ConsolPlugin.INSTANCE.getString("ProvenanceAssemblerParticipationV2ProvenanceAssemblerParticipationV2AssociatedEntityOrganizationGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequirePostalCodeElement"),
+						 new Object [] { eObject }));
 				}
-
+				 
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -743,9 +812,9 @@ public class ProvenanceAssemblerParticipationV2Operations extends Participant1Op
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_USE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.associatedEntity->excluding(null).scopingOrganization->excluding(null).addr->excluding(null)->select(isNullFlavorUndefined())->reject( ( isNullFlavorUndefined() implies (use->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(vocab::PostalAddressUse) and " +
-			"let value : vocab::PostalAddressUse = element.oclAsType(vocab::PostalAddressUse) in " +
-			"value = vocab::PostalAddressUse::BAD or value = vocab::PostalAddressUse::DIR or value = vocab::PostalAddressUse::H or value = vocab::PostalAddressUse::HP or value = vocab::PostalAddressUse::HV or value = vocab::PostalAddressUse::PHYS or value = vocab::PostalAddressUse::PST or value = vocab::PostalAddressUse::PUB or value = vocab::PostalAddressUse::TMP or value = vocab::PostalAddressUse::WP) )))";
+	protected static final String VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_USE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.associatedEntity->excluding(null).scopingOrganization->excluding(null).addr->excluding(null)->select(isNullFlavorUndefined())->reject( ( isNullFlavorUndefined() implies (use->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(vocab::PostalAddressUse) and "+
+"let value : vocab::PostalAddressUse = element.oclAsType(vocab::PostalAddressUse) in "+
+"value = vocab::PostalAddressUse::BAD or value = vocab::PostalAddressUse::DIR or value = vocab::PostalAddressUse::H or value = vocab::PostalAddressUse::HP or value = vocab::PostalAddressUse::HV or value = vocab::PostalAddressUse::PHYS or value = vocab::PostalAddressUse::PST or value = vocab::PostalAddressUse::PUB or value = vocab::PostalAddressUse::TMP or value = vocab::PostalAddressUse::WP) )))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateProvenanceAssemblerParticipationV2AssociatedEntityOrganizationGeneralHeaderConstraintsUSRealmAddressUse(ProvenanceAssemblerParticipationV2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Provenance Assembler Participation V2 Associated Entity Organization General Header Constraints US Realm Address Use</em>}' invariant operation.
@@ -756,7 +825,7 @@ public class ProvenanceAssemblerParticipationV2Operations extends Participant1Op
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_USE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<>();
+	protected static ThreadLocal< Query<?, ?, ?> > VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_USE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal< Query<?, ?, ?> >();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -772,42 +841,49 @@ public class ProvenanceAssemblerParticipationV2Operations extends Participant1Op
 	public static boolean validateProvenanceAssemblerParticipationV2AssociatedEntityOrganizationGeneralHeaderConstraintsUSRealmAddressUse(
 			ProvenanceAssemblerParticipationV2 provenanceAssemblerParticipationV2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		DatatypesUtil.increment(
-			context,
-			"ProvenanceAssemblerParticipationV2ProvenanceAssemblerParticipationV2AssociatedEntityOrganizationGeneralHeaderConstraintsUSRealmAddressUse",
-			"ERROR");
-
+	
+	
+	
+  	  
+  	  
+  	  
+  	  
+  	 
+  	 
+  	 
+    DatatypesUtil.increment(context,"ProvenanceAssemblerParticipationV2ProvenanceAssemblerParticipationV2AssociatedEntityOrganizationGeneralHeaderConstraintsUSRealmAddressUse","ERROR");
+    
+  	  
+  	  
 		if (VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_USE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
-
+		
+	 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROVENANCE_ASSEMBLER_PARTICIPATION_V2);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(
-					VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_USE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_USE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(
-					EOCL_ENV.get().createQuery(oclExpression));
-			} catch (ParserException pe) {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_USE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_USE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(EOCL_ENV.get().createQuery(oclExpression));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-
-		Object oclResult = VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_USE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(
-			provenanceAssemblerParticipationV2);
+			}
+		 
+		Object oclResult = VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_USE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(provenanceAssemblerParticipationV2);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
+  			
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(
-						new BasicDiagnostic(
-							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-							ConsolValidator.PROVENANCE_ASSEMBLER_PARTICIPATION_V2__PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_USE,
-							ConsolPlugin.INSTANCE.getString(
-								"ProvenanceAssemblerParticipationV2ProvenanceAssemblerParticipationV2AssociatedEntityOrganizationGeneralHeaderConstraintsUSRealmAddressUse"),
-							new Object[] { eObject }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PROVENANCE_ASSEMBLER_PARTICIPATION_V2__PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_USE,
+						 ConsolPlugin.INSTANCE.getString("ProvenanceAssemblerParticipationV2ProvenanceAssemblerParticipationV2AssociatedEntityOrganizationGeneralHeaderConstraintsUSRealmAddressUse"),
+						 new Object [] { eObject }));
 				}
-
+				 
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -833,7 +909,7 @@ public class ProvenanceAssemblerParticipationV2Operations extends Participant1Op
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_USE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<>();
+	protected static ThreadLocal< Query<?, ?, ?> > VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_USE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal< Query<?, ?, ?> >();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -849,42 +925,49 @@ public class ProvenanceAssemblerParticipationV2Operations extends Participant1Op
 	public static boolean validateProvenanceAssemblerParticipationV2AssociatedEntityOrganizationGeneralHeaderConstraintsUSRealmAddressUseP(
 			ProvenanceAssemblerParticipationV2 provenanceAssemblerParticipationV2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		DatatypesUtil.increment(
-			context,
-			"ProvenanceAssemblerParticipationV2ProvenanceAssemblerParticipationV2AssociatedEntityOrganizationGeneralHeaderConstraintsUSRealmAddressUseP",
-			"WARNING");
-
+	
+	
+	
+  	  
+  	  
+  	  
+  	  
+  	 
+  	 
+  	 
+    DatatypesUtil.increment(context,"ProvenanceAssemblerParticipationV2ProvenanceAssemblerParticipationV2AssociatedEntityOrganizationGeneralHeaderConstraintsUSRealmAddressUseP","WARNING");
+    
+  	  
+  	  
 		if (VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_USE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
-
+		
+	 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROVENANCE_ASSEMBLER_PARTICIPATION_V2);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(
-					VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_USE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_USE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(
-					EOCL_ENV.get().createQuery(oclExpression));
-			} catch (ParserException pe) {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_USE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_USE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(EOCL_ENV.get().createQuery(oclExpression));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-
-		Object oclResult = VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_USE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(
-			provenanceAssemblerParticipationV2);
+			}
+		 
+		Object oclResult = VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_USE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(provenanceAssemblerParticipationV2);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
+  			
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(
-						new BasicDiagnostic(
-							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
-							ConsolValidator.PROVENANCE_ASSEMBLER_PARTICIPATION_V2__PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_USE_P,
-							ConsolPlugin.INSTANCE.getString(
-								"ProvenanceAssemblerParticipationV2ProvenanceAssemblerParticipationV2AssociatedEntityOrganizationGeneralHeaderConstraintsUSRealmAddressUseP"),
-							new Object[] { eObject }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PROVENANCE_ASSEMBLER_PARTICIPATION_V2__PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_USE_P,
+						 ConsolPlugin.INSTANCE.getString("ProvenanceAssemblerParticipationV2ProvenanceAssemblerParticipationV2AssociatedEntityOrganizationGeneralHeaderConstraintsUSRealmAddressUseP"),
+						 new Object [] { eObject }));
 				}
-
+				 
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -910,7 +993,7 @@ public class ProvenanceAssemblerParticipationV2Operations extends Participant1Op
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_COUNTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<>();
+	protected static ThreadLocal< Query<?, ?, ?> > VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_COUNTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal< Query<?, ?, ?> >();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -926,42 +1009,49 @@ public class ProvenanceAssemblerParticipationV2Operations extends Participant1Op
 	public static boolean validateProvenanceAssemblerParticipationV2AssociatedEntityOrganizationGeneralHeaderConstraintsUSRealmAddressCountry(
 			ProvenanceAssemblerParticipationV2 provenanceAssemblerParticipationV2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		DatatypesUtil.increment(
-			context,
-			"ProvenanceAssemblerParticipationV2ProvenanceAssemblerParticipationV2AssociatedEntityOrganizationGeneralHeaderConstraintsUSRealmAddressCountry",
-			"WARNING");
-
+	
+	
+	
+  	  
+  	  
+  	  
+  	  
+  	 
+  	 
+  	 
+    DatatypesUtil.increment(context,"ProvenanceAssemblerParticipationV2ProvenanceAssemblerParticipationV2AssociatedEntityOrganizationGeneralHeaderConstraintsUSRealmAddressCountry","WARNING");
+    
+  	  
+  	  
 		if (VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_COUNTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
-
+		
+	 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROVENANCE_ASSEMBLER_PARTICIPATION_V2);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(
-					VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_COUNTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_COUNTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(
-					EOCL_ENV.get().createQuery(oclExpression));
-			} catch (ParserException pe) {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_COUNTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_COUNTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(EOCL_ENV.get().createQuery(oclExpression));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-
-		Object oclResult = VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_COUNTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(
-			provenanceAssemblerParticipationV2);
+			}
+		 
+		Object oclResult = VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_COUNTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(provenanceAssemblerParticipationV2);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
+  			
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(
-						new BasicDiagnostic(
-							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
-							ConsolValidator.PROVENANCE_ASSEMBLER_PARTICIPATION_V2__PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_COUNTRY,
-							ConsolPlugin.INSTANCE.getString(
-								"ProvenanceAssemblerParticipationV2ProvenanceAssemblerParticipationV2AssociatedEntityOrganizationGeneralHeaderConstraintsUSRealmAddressCountry"),
-							new Object[] { eObject }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PROVENANCE_ASSEMBLER_PARTICIPATION_V2__PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_COUNTRY,
+						 ConsolPlugin.INSTANCE.getString("ProvenanceAssemblerParticipationV2ProvenanceAssemblerParticipationV2AssociatedEntityOrganizationGeneralHeaderConstraintsUSRealmAddressCountry"),
+						 new Object [] { eObject }));
 				}
-
+				 
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -987,7 +1077,7 @@ public class ProvenanceAssemblerParticipationV2Operations extends Participant1Op
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_STATE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<>();
+	protected static ThreadLocal< Query<?, ?, ?> > VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_STATE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal< Query<?, ?, ?> >();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1003,42 +1093,49 @@ public class ProvenanceAssemblerParticipationV2Operations extends Participant1Op
 	public static boolean validateProvenanceAssemblerParticipationV2AssociatedEntityOrganizationGeneralHeaderConstraintsUSRealmAddressState(
 			ProvenanceAssemblerParticipationV2 provenanceAssemblerParticipationV2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		DatatypesUtil.increment(
-			context,
-			"ProvenanceAssemblerParticipationV2ProvenanceAssemblerParticipationV2AssociatedEntityOrganizationGeneralHeaderConstraintsUSRealmAddressState",
-			"WARNING");
-
+	
+	
+	
+  	  
+  	  
+  	  
+  	  
+  	 
+  	 
+  	 
+    DatatypesUtil.increment(context,"ProvenanceAssemblerParticipationV2ProvenanceAssemblerParticipationV2AssociatedEntityOrganizationGeneralHeaderConstraintsUSRealmAddressState","WARNING");
+    
+  	  
+  	  
 		if (VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_STATE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
-
+		
+	 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROVENANCE_ASSEMBLER_PARTICIPATION_V2);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(
-					VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_STATE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_STATE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(
-					EOCL_ENV.get().createQuery(oclExpression));
-			} catch (ParserException pe) {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_STATE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_STATE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(EOCL_ENV.get().createQuery(oclExpression));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-
-		Object oclResult = VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_STATE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(
-			provenanceAssemblerParticipationV2);
+			}
+		 
+		Object oclResult = VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_STATE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(provenanceAssemblerParticipationV2);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
+  			
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(
-						new BasicDiagnostic(
-							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
-							ConsolValidator.PROVENANCE_ASSEMBLER_PARTICIPATION_V2__PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_STATE,
-							ConsolPlugin.INSTANCE.getString(
-								"ProvenanceAssemblerParticipationV2ProvenanceAssemblerParticipationV2AssociatedEntityOrganizationGeneralHeaderConstraintsUSRealmAddressState"),
-							new Object[] { eObject }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PROVENANCE_ASSEMBLER_PARTICIPATION_V2__PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_STATE,
+						 ConsolPlugin.INSTANCE.getString("ProvenanceAssemblerParticipationV2ProvenanceAssemblerParticipationV2AssociatedEntityOrganizationGeneralHeaderConstraintsUSRealmAddressState"),
+						 new Object [] { eObject }));
 				}
-
+				 
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -1064,7 +1161,7 @@ public class ProvenanceAssemblerParticipationV2Operations extends Participant1Op
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_CITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<>();
+	protected static ThreadLocal< Query<?, ?, ?> > VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_CITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal< Query<?, ?, ?> >();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1080,42 +1177,49 @@ public class ProvenanceAssemblerParticipationV2Operations extends Participant1Op
 	public static boolean validateProvenanceAssemblerParticipationV2AssociatedEntityOrganizationGeneralHeaderConstraintsUSRealmAddressCity(
 			ProvenanceAssemblerParticipationV2 provenanceAssemblerParticipationV2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		DatatypesUtil.increment(
-			context,
-			"ProvenanceAssemblerParticipationV2ProvenanceAssemblerParticipationV2AssociatedEntityOrganizationGeneralHeaderConstraintsUSRealmAddressCity",
-			"ERROR");
-
+	
+	
+	
+  	  
+  	  
+  	  
+  	  
+  	 
+  	 
+  	 
+    DatatypesUtil.increment(context,"ProvenanceAssemblerParticipationV2ProvenanceAssemblerParticipationV2AssociatedEntityOrganizationGeneralHeaderConstraintsUSRealmAddressCity","ERROR");
+    
+  	  
+  	  
 		if (VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_CITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
-
+		
+	 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROVENANCE_ASSEMBLER_PARTICIPATION_V2);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(
-					VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_CITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_CITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(
-					EOCL_ENV.get().createQuery(oclExpression));
-			} catch (ParserException pe) {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_CITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_CITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(EOCL_ENV.get().createQuery(oclExpression));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-
-		Object oclResult = VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_CITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(
-			provenanceAssemblerParticipationV2);
+			}
+		 
+		Object oclResult = VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_CITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(provenanceAssemblerParticipationV2);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
+  			
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(
-						new BasicDiagnostic(
-							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-							ConsolValidator.PROVENANCE_ASSEMBLER_PARTICIPATION_V2__PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_CITY,
-							ConsolPlugin.INSTANCE.getString(
-								"ProvenanceAssemblerParticipationV2ProvenanceAssemblerParticipationV2AssociatedEntityOrganizationGeneralHeaderConstraintsUSRealmAddressCity"),
-							new Object[] { eObject }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PROVENANCE_ASSEMBLER_PARTICIPATION_V2__PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_CITY,
+						 ConsolPlugin.INSTANCE.getString("ProvenanceAssemblerParticipationV2ProvenanceAssemblerParticipationV2AssociatedEntityOrganizationGeneralHeaderConstraintsUSRealmAddressCity"),
+						 new Object [] { eObject }));
 				}
-
+				 
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -1141,7 +1245,7 @@ public class ProvenanceAssemblerParticipationV2Operations extends Participant1Op
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_POSTAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<>();
+	protected static ThreadLocal< Query<?, ?, ?> > VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_POSTAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal< Query<?, ?, ?> >();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1157,42 +1261,49 @@ public class ProvenanceAssemblerParticipationV2Operations extends Participant1Op
 	public static boolean validateProvenanceAssemblerParticipationV2AssociatedEntityOrganizationGeneralHeaderConstraintsUSRealmAddressPostalCode(
 			ProvenanceAssemblerParticipationV2 provenanceAssemblerParticipationV2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		DatatypesUtil.increment(
-			context,
-			"ProvenanceAssemblerParticipationV2ProvenanceAssemblerParticipationV2AssociatedEntityOrganizationGeneralHeaderConstraintsUSRealmAddressPostalCode",
-			"WARNING");
-
+	
+	
+	
+  	  
+  	  
+  	  
+  	  
+  	 
+  	 
+  	 
+    DatatypesUtil.increment(context,"ProvenanceAssemblerParticipationV2ProvenanceAssemblerParticipationV2AssociatedEntityOrganizationGeneralHeaderConstraintsUSRealmAddressPostalCode","WARNING");
+    
+  	  
+  	  
 		if (VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_POSTAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
-
+		
+	 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROVENANCE_ASSEMBLER_PARTICIPATION_V2);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(
-					VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_POSTAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_POSTAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(
-					EOCL_ENV.get().createQuery(oclExpression));
-			} catch (ParserException pe) {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_POSTAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_POSTAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(EOCL_ENV.get().createQuery(oclExpression));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-
-		Object oclResult = VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_POSTAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(
-			provenanceAssemblerParticipationV2);
+			}
+		 
+		Object oclResult = VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_POSTAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(provenanceAssemblerParticipationV2);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
+  			
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(
-						new BasicDiagnostic(
-							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
-							ConsolValidator.PROVENANCE_ASSEMBLER_PARTICIPATION_V2__PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_POSTAL_CODE,
-							ConsolPlugin.INSTANCE.getString(
-								"ProvenanceAssemblerParticipationV2ProvenanceAssemblerParticipationV2AssociatedEntityOrganizationGeneralHeaderConstraintsUSRealmAddressPostalCode"),
-							new Object[] { eObject }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PROVENANCE_ASSEMBLER_PARTICIPATION_V2__PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_POSTAL_CODE,
+						 ConsolPlugin.INSTANCE.getString("ProvenanceAssemblerParticipationV2ProvenanceAssemblerParticipationV2AssociatedEntityOrganizationGeneralHeaderConstraintsUSRealmAddressPostalCode"),
+						 new Object [] { eObject }));
 				}
-
+				 
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -1218,7 +1329,7 @@ public class ProvenanceAssemblerParticipationV2Operations extends Participant1Op
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_STREET_ADDRESS_LINE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<>();
+	protected static ThreadLocal< Query<?, ?, ?> > VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_STREET_ADDRESS_LINE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal< Query<?, ?, ?> >();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1234,42 +1345,49 @@ public class ProvenanceAssemblerParticipationV2Operations extends Participant1Op
 	public static boolean validateProvenanceAssemblerParticipationV2AssociatedEntityOrganizationGeneralHeaderConstraintsUSRealmAddressStreetAddressLine(
 			ProvenanceAssemblerParticipationV2 provenanceAssemblerParticipationV2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		DatatypesUtil.increment(
-			context,
-			"ProvenanceAssemblerParticipationV2ProvenanceAssemblerParticipationV2AssociatedEntityOrganizationGeneralHeaderConstraintsUSRealmAddressStreetAddressLine",
-			"ERROR");
-
+	
+	
+	
+  	  
+  	  
+  	  
+  	  
+  	 
+  	 
+  	 
+    DatatypesUtil.increment(context,"ProvenanceAssemblerParticipationV2ProvenanceAssemblerParticipationV2AssociatedEntityOrganizationGeneralHeaderConstraintsUSRealmAddressStreetAddressLine","ERROR");
+    
+  	  
+  	  
 		if (VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_STREET_ADDRESS_LINE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
-
+		
+	 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROVENANCE_ASSEMBLER_PARTICIPATION_V2);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(
-					VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_STREET_ADDRESS_LINE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_STREET_ADDRESS_LINE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(
-					EOCL_ENV.get().createQuery(oclExpression));
-			} catch (ParserException pe) {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_STREET_ADDRESS_LINE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_STREET_ADDRESS_LINE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(EOCL_ENV.get().createQuery(oclExpression));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-
-		Object oclResult = VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_STREET_ADDRESS_LINE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(
-			provenanceAssemblerParticipationV2);
+			}
+		 
+		Object oclResult = VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_STREET_ADDRESS_LINE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(provenanceAssemblerParticipationV2);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
+  			
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(
-						new BasicDiagnostic(
-							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-							ConsolValidator.PROVENANCE_ASSEMBLER_PARTICIPATION_V2__PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_STREET_ADDRESS_LINE,
-							ConsolPlugin.INSTANCE.getString(
-								"ProvenanceAssemblerParticipationV2ProvenanceAssemblerParticipationV2AssociatedEntityOrganizationGeneralHeaderConstraintsUSRealmAddressStreetAddressLine"),
-							new Object[] { eObject }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PROVENANCE_ASSEMBLER_PARTICIPATION_V2__PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_STREET_ADDRESS_LINE,
+						 ConsolPlugin.INSTANCE.getString("ProvenanceAssemblerParticipationV2ProvenanceAssemblerParticipationV2AssociatedEntityOrganizationGeneralHeaderConstraintsUSRealmAddressStreetAddressLine"),
+						 new Object [] { eObject }));
 				}
-
+				 
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -1295,7 +1413,7 @@ public class ProvenanceAssemblerParticipationV2Operations extends Participant1Op
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<>();
+	protected static ThreadLocal< Query<?, ?, ?> > VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal< Query<?, ?, ?> >();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1311,42 +1429,49 @@ public class ProvenanceAssemblerParticipationV2Operations extends Participant1Op
 	public static boolean validateProvenanceAssemblerParticipationV2AssociatedEntityOrganizationId(
 			ProvenanceAssemblerParticipationV2 provenanceAssemblerParticipationV2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		DatatypesUtil.increment(
-			context,
-			"ProvenanceAssemblerParticipationV2ProvenanceAssemblerParticipationV2AssociatedEntityOrganizationId",
-			"ERROR");
-
+	
+	
+	
+  	  
+  	  
+  	  
+  	  
+  	 
+  	 
+  	 
+    DatatypesUtil.increment(context,"ProvenanceAssemblerParticipationV2ProvenanceAssemblerParticipationV2AssociatedEntityOrganizationId","ERROR");
+    
+  	  
+  	  
 		if (VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
-
+		
+	 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROVENANCE_ASSEMBLER_PARTICIPATION_V2);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(
-					VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(
-					EOCL_ENV.get().createQuery(oclExpression));
-			} catch (ParserException pe) {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(EOCL_ENV.get().createQuery(oclExpression));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-
-		Object oclResult = VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(
-			provenanceAssemblerParticipationV2);
+			}
+		 
+		Object oclResult = VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(provenanceAssemblerParticipationV2);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
+  			
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(
-						new BasicDiagnostic(
-							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-							ConsolValidator.PROVENANCE_ASSEMBLER_PARTICIPATION_V2__PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_ID,
-							ConsolPlugin.INSTANCE.getString(
-								"ProvenanceAssemblerParticipationV2ProvenanceAssemblerParticipationV2AssociatedEntityOrganizationId"),
-							new Object[] { eObject }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PROVENANCE_ASSEMBLER_PARTICIPATION_V2__PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_ID,
+						 ConsolPlugin.INSTANCE.getString("ProvenanceAssemblerParticipationV2ProvenanceAssemblerParticipationV2AssociatedEntityOrganizationId"),
+						 new Object [] { eObject }));
 				}
-
+				 
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -1372,7 +1497,7 @@ public class ProvenanceAssemblerParticipationV2Operations extends Participant1Op
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<>();
+	protected static ThreadLocal< Query<?, ?, ?> > VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal< Query<?, ?, ?> >();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1388,42 +1513,49 @@ public class ProvenanceAssemblerParticipationV2Operations extends Participant1Op
 	public static boolean validateProvenanceAssemblerParticipationV2AssociatedEntityOrganizationName(
 			ProvenanceAssemblerParticipationV2 provenanceAssemblerParticipationV2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		DatatypesUtil.increment(
-			context,
-			"ProvenanceAssemblerParticipationV2ProvenanceAssemblerParticipationV2AssociatedEntityOrganizationName",
-			"ERROR");
-
+	
+	
+	
+  	  
+  	  
+  	  
+  	  
+  	 
+  	 
+  	 
+    DatatypesUtil.increment(context,"ProvenanceAssemblerParticipationV2ProvenanceAssemblerParticipationV2AssociatedEntityOrganizationName","ERROR");
+    
+  	  
+  	  
 		if (VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
-
+		
+	 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROVENANCE_ASSEMBLER_PARTICIPATION_V2);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(
-					VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(
-					EOCL_ENV.get().createQuery(oclExpression));
-			} catch (ParserException pe) {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(EOCL_ENV.get().createQuery(oclExpression));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-
-		Object oclResult = VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(
-			provenanceAssemblerParticipationV2);
+			}
+		 
+		Object oclResult = VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(provenanceAssemblerParticipationV2);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
+  			
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(
-						new BasicDiagnostic(
-							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-							ConsolValidator.PROVENANCE_ASSEMBLER_PARTICIPATION_V2__PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_NAME,
-							ConsolPlugin.INSTANCE.getString(
-								"ProvenanceAssemblerParticipationV2ProvenanceAssemblerParticipationV2AssociatedEntityOrganizationName"),
-							new Object[] { eObject }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PROVENANCE_ASSEMBLER_PARTICIPATION_V2__PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_NAME,
+						 ConsolPlugin.INSTANCE.getString("ProvenanceAssemblerParticipationV2ProvenanceAssemblerParticipationV2AssociatedEntityOrganizationName"),
+						 new Object [] { eObject }));
 				}
-
+				 
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -1449,7 +1581,7 @@ public class ProvenanceAssemblerParticipationV2Operations extends Participant1Op
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<>();
+	protected static ThreadLocal< Query<?, ?, ?> > VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal< Query<?, ?, ?> >();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1465,42 +1597,49 @@ public class ProvenanceAssemblerParticipationV2Operations extends Participant1Op
 	public static boolean validateProvenanceAssemblerParticipationV2AssociatedEntityOrganizationTelecom(
 			ProvenanceAssemblerParticipationV2 provenanceAssemblerParticipationV2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		DatatypesUtil.increment(
-			context,
-			"ProvenanceAssemblerParticipationV2ProvenanceAssemblerParticipationV2AssociatedEntityOrganizationTelecom",
-			"WARNING");
-
+	
+	
+	
+  	  
+  	  
+  	  
+  	  
+  	 
+  	 
+  	 
+    DatatypesUtil.increment(context,"ProvenanceAssemblerParticipationV2ProvenanceAssemblerParticipationV2AssociatedEntityOrganizationTelecom","WARNING");
+    
+  	  
+  	  
 		if (VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
-
+		
+	 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROVENANCE_ASSEMBLER_PARTICIPATION_V2);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(
-					VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(
-					EOCL_ENV.get().createQuery(oclExpression));
-			} catch (ParserException pe) {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(EOCL_ENV.get().createQuery(oclExpression));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-
-		Object oclResult = VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(
-			provenanceAssemblerParticipationV2);
+			}
+		 
+		Object oclResult = VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(provenanceAssemblerParticipationV2);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
+  			
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(
-						new BasicDiagnostic(
-							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
-							ConsolValidator.PROVENANCE_ASSEMBLER_PARTICIPATION_V2__PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_TELECOM,
-							ConsolPlugin.INSTANCE.getString(
-								"ProvenanceAssemblerParticipationV2ProvenanceAssemblerParticipationV2AssociatedEntityOrganizationTelecom"),
-							new Object[] { eObject }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PROVENANCE_ASSEMBLER_PARTICIPATION_V2__PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_TELECOM,
+						 ConsolPlugin.INSTANCE.getString("ProvenanceAssemblerParticipationV2ProvenanceAssemblerParticipationV2AssociatedEntityOrganizationTelecom"),
+						 new Object [] { eObject }));
 				}
-
+				 
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -1526,7 +1665,7 @@ public class ProvenanceAssemblerParticipationV2Operations extends Participant1Op
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<>();
+	protected static ThreadLocal< Query<?, ?, ?> > VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal< Query<?, ?, ?> >();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1542,42 +1681,49 @@ public class ProvenanceAssemblerParticipationV2Operations extends Participant1Op
 	public static boolean validateProvenanceAssemblerParticipationV2AssociatedEntityOrganizationAddr(
 			ProvenanceAssemblerParticipationV2 provenanceAssemblerParticipationV2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		DatatypesUtil.increment(
-			context,
-			"ProvenanceAssemblerParticipationV2ProvenanceAssemblerParticipationV2AssociatedEntityOrganizationAddr",
-			"WARNING");
-
+	
+	
+	
+  	  
+  	  
+  	  
+  	  
+  	 
+  	 
+  	 
+    DatatypesUtil.increment(context,"ProvenanceAssemblerParticipationV2ProvenanceAssemblerParticipationV2AssociatedEntityOrganizationAddr","WARNING");
+    
+  	  
+  	  
 		if (VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
-
+		
+	 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROVENANCE_ASSEMBLER_PARTICIPATION_V2);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(
-					VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(
-					EOCL_ENV.get().createQuery(oclExpression));
-			} catch (ParserException pe) {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(EOCL_ENV.get().createQuery(oclExpression));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-
-		Object oclResult = VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(
-			provenanceAssemblerParticipationV2);
+			}
+		 
+		Object oclResult = VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(provenanceAssemblerParticipationV2);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
+  			
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(
-						new BasicDiagnostic(
-							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
-							ConsolValidator.PROVENANCE_ASSEMBLER_PARTICIPATION_V2__PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_ADDR,
-							ConsolPlugin.INSTANCE.getString(
-								"ProvenanceAssemblerParticipationV2ProvenanceAssemblerParticipationV2AssociatedEntityOrganizationAddr"),
-							new Object[] { eObject }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PROVENANCE_ASSEMBLER_PARTICIPATION_V2__PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_ORGANIZATION_ADDR,
+						 ConsolPlugin.INSTANCE.getString("ProvenanceAssemblerParticipationV2ProvenanceAssemblerParticipationV2AssociatedEntityOrganizationAddr"),
+						 new Object [] { eObject }));
 				}
-
+				 
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -1603,7 +1749,7 @@ public class ProvenanceAssemblerParticipationV2Operations extends Participant1Op
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<>();
+	protected static ThreadLocal< Query<?, ?, ?> > VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal< Query<?, ?, ?> >();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1619,41 +1765,49 @@ public class ProvenanceAssemblerParticipationV2Operations extends Participant1Op
 	public static boolean validateProvenanceAssemblerParticipationV2AssociatedEntityClassCode(
 			ProvenanceAssemblerParticipationV2 provenanceAssemblerParticipationV2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		DatatypesUtil.increment(
-			context, "ProvenanceAssemblerParticipationV2ProvenanceAssemblerParticipationV2AssociatedEntityClassCode",
-			"ERROR");
-
+	
+	
+	
+  	  
+  	  
+  	  
+  	  
+  	 
+  	 
+  	 
+    DatatypesUtil.increment(context,"ProvenanceAssemblerParticipationV2ProvenanceAssemblerParticipationV2AssociatedEntityClassCode","ERROR");
+    
+  	  
+  	  
 		if (VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
-
+		
+	 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROVENANCE_ASSEMBLER_PARTICIPATION_V2);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(
-					VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(
-					EOCL_ENV.get().createQuery(oclExpression));
-			} catch (ParserException pe) {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(EOCL_ENV.get().createQuery(oclExpression));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-
-		Object oclResult = VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(
-			provenanceAssemblerParticipationV2);
+			}
+		 
+		Object oclResult = VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(provenanceAssemblerParticipationV2);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
+  			
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(
-						new BasicDiagnostic(
-							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-							ConsolValidator.PROVENANCE_ASSEMBLER_PARTICIPATION_V2__PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_CLASS_CODE,
-							ConsolPlugin.INSTANCE.getString(
-								"ProvenanceAssemblerParticipationV2ProvenanceAssemblerParticipationV2AssociatedEntityClassCode"),
-							new Object[] { eObject }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PROVENANCE_ASSEMBLER_PARTICIPATION_V2__PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_CLASS_CODE,
+						 ConsolPlugin.INSTANCE.getString("ProvenanceAssemblerParticipationV2ProvenanceAssemblerParticipationV2AssociatedEntityClassCode"),
+						 new Object [] { eObject }));
 				}
-
+				 
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -1679,7 +1833,7 @@ public class ProvenanceAssemblerParticipationV2Operations extends Participant1Op
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_SCOPING_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<>();
+	protected static ThreadLocal< Query<?, ?, ?> > VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_SCOPING_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal< Query<?, ?, ?> >();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1695,42 +1849,49 @@ public class ProvenanceAssemblerParticipationV2Operations extends Participant1Op
 	public static boolean validateProvenanceAssemblerParticipationV2AssociatedEntityScopingOrganization(
 			ProvenanceAssemblerParticipationV2 provenanceAssemblerParticipationV2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		DatatypesUtil.increment(
-			context,
-			"ProvenanceAssemblerParticipationV2ProvenanceAssemblerParticipationV2AssociatedEntityScopingOrganization",
-			"ERROR");
-
+	
+	
+	
+  	  
+  	  
+  	  
+  	  
+  	 
+  	 
+  	 
+    DatatypesUtil.increment(context,"ProvenanceAssemblerParticipationV2ProvenanceAssemblerParticipationV2AssociatedEntityScopingOrganization","ERROR");
+    
+  	  
+  	  
 		if (VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_SCOPING_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
-
+		
+	 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROVENANCE_ASSEMBLER_PARTICIPATION_V2);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(
-					VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_SCOPING_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_SCOPING_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(
-					EOCL_ENV.get().createQuery(oclExpression));
-			} catch (ParserException pe) {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_SCOPING_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_SCOPING_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(EOCL_ENV.get().createQuery(oclExpression));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-
-		Object oclResult = VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_SCOPING_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(
-			provenanceAssemblerParticipationV2);
+			}
+		 
+		Object oclResult = VALIDATE_PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_SCOPING_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(provenanceAssemblerParticipationV2);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
+  			
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(
-						new BasicDiagnostic(
-							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-							ConsolValidator.PROVENANCE_ASSEMBLER_PARTICIPATION_V2__PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_SCOPING_ORGANIZATION,
-							ConsolPlugin.INSTANCE.getString(
-								"ProvenanceAssemblerParticipationV2ProvenanceAssemblerParticipationV2AssociatedEntityScopingOrganization"),
-							new Object[] { eObject }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PROVENANCE_ASSEMBLER_PARTICIPATION_V2__PROVENANCE_ASSEMBLER_PARTICIPATION_V2_ASSOCIATED_ENTITY_SCOPING_ORGANIZATION,
+						 ConsolPlugin.INSTANCE.getString("ProvenanceAssemblerParticipationV2ProvenanceAssemblerParticipationV2AssociatedEntityScopingOrganization"),
+						 new Object [] { eObject }));
 				}
-
+				 
 			}
 			return oclResultSet.isEmpty();
 		}

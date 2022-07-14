@@ -60,8 +60,7 @@ public class MedicationInformation2Impl extends MedicationInformationImpl implem
 	 */
 	public boolean validateMedicationInformation2MedicationInformationManufacturedMaterialCETranslation(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationInformation2Operations.validateMedicationInformation2MedicationInformationManufacturedMaterialCETranslation(
-			this, diagnostics, context);
+		return MedicationInformation2Operations.validateMedicationInformation2MedicationInformationManufacturedMaterialCETranslation(this, diagnostics, context);
 	}
 
 	/**
@@ -71,8 +70,7 @@ public class MedicationInformation2Impl extends MedicationInformationImpl implem
 	 */
 	public boolean validateMedicationInformationMedicationInformationManufacturedMaterialReferenceValue(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationInformation2Operations.validateMedicationInformationMedicationInformationManufacturedMaterialReferenceValue(
-			this, diagnostics, context);
+		return MedicationInformation2Operations.validateMedicationInformationMedicationInformationManufacturedMaterialReferenceValue(this, diagnostics, context);
 	}
 
 	/**
@@ -82,8 +80,7 @@ public class MedicationInformation2Impl extends MedicationInformationImpl implem
 	 */
 	public boolean validateMedicationInformationMedicationInformationManufacturedMaterialCodeP(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationInformation2Operations.validateMedicationInformationMedicationInformationManufacturedMaterialCodeP(
-			this, diagnostics, context);
+		return MedicationInformation2Operations.validateMedicationInformationMedicationInformationManufacturedMaterialCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -94,8 +91,7 @@ public class MedicationInformation2Impl extends MedicationInformationImpl implem
 	@Override
 	public boolean validateMedicationInformationManufacturedMaterial(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationInformation2Operations.validateMedicationInformationManufacturedMaterial(
-			this, diagnostics, context);
+		return MedicationInformation2Operations.validateMedicationInformationManufacturedMaterial(this, diagnostics, context);
 	}
 
 	/**
@@ -106,8 +102,7 @@ public class MedicationInformation2Impl extends MedicationInformationImpl implem
 	@Override
 	public boolean validateMedicationInformationMedicationInformationManufacturedMaterialCodeOriginalText(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationInformation2Operations.validateMedicationInformationMedicationInformationManufacturedMaterialCodeOriginalText(
-			this, diagnostics, context);
+		return MedicationInformation2Operations.validateMedicationInformationMedicationInformationManufacturedMaterialCodeOriginalText(this, diagnostics, context);
 	}
 
 	/**
@@ -118,8 +113,7 @@ public class MedicationInformation2Impl extends MedicationInformationImpl implem
 	@Override
 	public boolean validateMedicationInformationMedicationInformationManufacturedMaterialCodeTranslation(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationInformation2Operations.validateMedicationInformationMedicationInformationManufacturedMaterialCodeTranslation(
-			this, diagnostics, context);
+		return MedicationInformation2Operations.validateMedicationInformationMedicationInformationManufacturedMaterialCodeTranslation(this, diagnostics, context);
 	}
 
 	/**
@@ -130,8 +124,7 @@ public class MedicationInformation2Impl extends MedicationInformationImpl implem
 	@Override
 	public boolean validateMedicationInformationMedicationInformationManufacturedMaterialReference(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationInformation2Operations.validateMedicationInformationMedicationInformationManufacturedMaterialReference(
-			this, diagnostics, context);
+		return MedicationInformation2Operations.validateMedicationInformationMedicationInformationManufacturedMaterialReference(this, diagnostics, context);
 	}
 
 	/**
@@ -142,8 +135,7 @@ public class MedicationInformation2Impl extends MedicationInformationImpl implem
 	@Override
 	public boolean validateMedicationInformationMedicationInformationManufacturedMaterialOriginalTextReferenceValue(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationInformation2Operations.validateMedicationInformationMedicationInformationManufacturedMaterialOriginalTextReferenceValue(
-			this, diagnostics, context);
+		return MedicationInformation2Operations.validateMedicationInformationMedicationInformationManufacturedMaterialOriginalTextReferenceValue(this, diagnostics, context);
 	}
 
 	/**
@@ -154,8 +146,7 @@ public class MedicationInformation2Impl extends MedicationInformationImpl implem
 	@Override
 	public boolean validateMedicationInformationMedicationInformationManufacturedMaterialCode(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationInformation2Operations.validateMedicationInformationMedicationInformationManufacturedMaterialCode(
-			this, diagnostics, context);
+		return MedicationInformation2Operations.validateMedicationInformationMedicationInformationManufacturedMaterialCode(this, diagnostics, context);
 	}
 
 	/**
@@ -165,17 +156,17 @@ public class MedicationInformation2Impl extends MedicationInformationImpl implem
 	 */
 	@Override
 	public MedicationInformation2 init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public MedicationInformation2 init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // MedicationInformation2Impl

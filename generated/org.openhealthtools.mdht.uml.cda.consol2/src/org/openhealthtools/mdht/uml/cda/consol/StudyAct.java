@@ -194,9 +194,9 @@ public interface StudyAct extends Act {
 	public StudyAct init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public StudyAct init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // StudyAct

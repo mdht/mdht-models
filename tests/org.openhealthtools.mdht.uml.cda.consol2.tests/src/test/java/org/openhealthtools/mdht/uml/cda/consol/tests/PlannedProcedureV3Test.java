@@ -3,6 +3,7 @@
  */
 package org.openhealthtools.mdht.uml.cda.consol.tests;
 
+import java.util.Collection;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
@@ -24,12 +25,17 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.PlannedProcedureV3Oper
  * <p>
  * The following operations are supported:
  * <ul>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedProcedureV3#validatePlannedProcedureV3TemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Procedure V3 Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedProcedureV3#validatePlannedProcedureV3Id(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Procedure V3 Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedProcedureV3#validatePlannedProcedureV3Code(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Procedure V3 Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedProcedureV3#validatePlannedProcedureV3StatusCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Procedure V3 Status Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedProcedureV3#validatePlannedProcedureV3StatusCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Procedure V3 Status Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedProcedureV3#validatePlannedProcedureV3EffectiveTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Procedure V3 Effective Time</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedProcedureV3#validatePlannedProcedureV3MethodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Procedure V3 Method Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedProcedureV3#validatePlannedProcedureV3TargetSiteCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Procedure V3 Target Site Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedProcedureV3#validatePlannedProcedureV3ClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Procedure V3 Class Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedProcedureV3#validatePlannedProcedureV3MoodCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Procedure V3 Mood Code P</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedProcedureV3#validatePlannedProcedureV3MoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Procedure V3 Mood Code</em>}</li>
  * </ul>
  * </p>
  *
@@ -37,6 +43,41 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.PlannedProcedureV3Oper
  */
 
 public class PlannedProcedureV3Test extends CDAValidationTest {
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidatePlannedProcedureV3TemplateId() {
+		OperationsTestCase<PlannedProcedureV3> validatePlannedProcedureV3TemplateIdTestCase = new OperationsTestCase<PlannedProcedureV3>(
+			"validatePlannedProcedureV3TemplateId",
+			operationsForOCL.getOCLValue("VALIDATE_PLANNED_PROCEDURE_V3_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(PlannedProcedureV3 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(PlannedProcedureV3 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PlannedProcedureV3Operations.validatePlannedProcedureV3TemplateId(
+					(PlannedProcedureV3) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePlannedProcedureV3TemplateIdTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -116,6 +157,41 @@ public class PlannedProcedureV3Test extends CDAValidationTest {
 	*/
 	@Test
 
+	public void testValidatePlannedProcedureV3StatusCodeP() {
+		OperationsTestCase<PlannedProcedureV3> validatePlannedProcedureV3StatusCodePTestCase = new OperationsTestCase<PlannedProcedureV3>(
+			"validatePlannedProcedureV3StatusCodeP",
+			operationsForOCL.getOCLValue("VALIDATE_PLANNED_PROCEDURE_V3_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(PlannedProcedureV3 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(PlannedProcedureV3 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PlannedProcedureV3Operations.validatePlannedProcedureV3StatusCodeP(
+					(PlannedProcedureV3) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePlannedProcedureV3StatusCodePTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
 	public void testValidatePlannedProcedureV3StatusCode() {
 		OperationsTestCase<PlannedProcedureV3> validatePlannedProcedureV3StatusCodeTestCase = new OperationsTestCase<PlannedProcedureV3>(
 			"validatePlannedProcedureV3StatusCode",
@@ -134,6 +210,13 @@ public class PlannedProcedureV3Test extends CDAValidationTest {
 				CS cs = DatatypesFactory.eINSTANCE.createCS("completed");
 				target.setStatusCode(cs);
 
+			}
+
+			@Override
+			protected void setDependency(PlannedProcedureV3 target) {
+				Collection<Object> passToken = new java.util.ArrayList<>(3);
+				passToken.add(target);
+				map.put("org.openhealthtools.mdht.uml.cda.consol.PlannedProcedureV3StatusCodeP", passToken);
 			}
 
 			@Override
@@ -256,6 +339,118 @@ public class PlannedProcedureV3Test extends CDAValidationTest {
 		};
 
 		validatePlannedProcedureV3TargetSiteCodeTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidatePlannedProcedureV3ClassCode() {
+		OperationsTestCase<PlannedProcedureV3> validatePlannedProcedureV3ClassCodeTestCase = new OperationsTestCase<PlannedProcedureV3>(
+			"validatePlannedProcedureV3ClassCode",
+			operationsForOCL.getOCLValue("VALIDATE_PLANNED_PROCEDURE_V3_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(PlannedProcedureV3 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(PlannedProcedureV3 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PlannedProcedureV3Operations.validatePlannedProcedureV3ClassCode(
+					(PlannedProcedureV3) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePlannedProcedureV3ClassCodeTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidatePlannedProcedureV3MoodCodeP() {
+		OperationsTestCase<PlannedProcedureV3> validatePlannedProcedureV3MoodCodePTestCase = new OperationsTestCase<PlannedProcedureV3>(
+			"validatePlannedProcedureV3MoodCodeP",
+			operationsForOCL.getOCLValue("VALIDATE_PLANNED_PROCEDURE_V3_MOOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(PlannedProcedureV3 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(PlannedProcedureV3 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PlannedProcedureV3Operations.validatePlannedProcedureV3MoodCodeP(
+					(PlannedProcedureV3) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePlannedProcedureV3MoodCodePTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidatePlannedProcedureV3MoodCode() {
+		OperationsTestCase<PlannedProcedureV3> validatePlannedProcedureV3MoodCodeTestCase = new OperationsTestCase<PlannedProcedureV3>(
+			"validatePlannedProcedureV3MoodCode",
+			operationsForOCL.getOCLValue("VALIDATE_PLANNED_PROCEDURE_V3_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(PlannedProcedureV3 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(PlannedProcedureV3 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected void setDependency(PlannedProcedureV3 target) {
+				Collection<Object> passToken = new java.util.ArrayList<>(3);
+				passToken.add(target);
+				map.put("org.openhealthtools.mdht.uml.cda.consol.PlannedProcedureV3MoodCodeP", passToken);
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PlannedProcedureV3Operations.validatePlannedProcedureV3MoodCode(
+					(PlannedProcedureV3) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePlannedProcedureV3MoodCodeTestCase.doValidationTest();
 	}
 
 	/**

@@ -161,9 +161,9 @@ public interface AdvanceDirectiveOrganizer extends Organizer {
 	public AdvanceDirectiveOrganizer init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public AdvanceDirectiveOrganizer init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // AdvanceDirectiveOrganizer

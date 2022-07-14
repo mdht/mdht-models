@@ -93,9 +93,9 @@ public interface GeneralStatusSection extends Section {
 	public GeneralStatusSection init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public GeneralStatusSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // GeneralStatusSection

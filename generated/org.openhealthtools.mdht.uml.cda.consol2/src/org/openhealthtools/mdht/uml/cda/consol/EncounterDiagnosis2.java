@@ -51,9 +51,9 @@ public interface EncounterDiagnosis2 extends EncounterDiagnosis {
 	public EncounterDiagnosis2 init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public EncounterDiagnosis2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // EncounterDiagnosis2

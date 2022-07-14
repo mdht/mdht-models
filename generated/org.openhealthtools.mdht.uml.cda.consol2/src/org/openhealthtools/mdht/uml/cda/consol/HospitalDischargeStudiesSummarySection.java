@@ -94,9 +94,9 @@ public interface HospitalDischargeStudiesSummarySection extends Section {
 	public HospitalDischargeStudiesSummarySection init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public HospitalDischargeStudiesSummarySection init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // HospitalDischargeStudiesSummarySection

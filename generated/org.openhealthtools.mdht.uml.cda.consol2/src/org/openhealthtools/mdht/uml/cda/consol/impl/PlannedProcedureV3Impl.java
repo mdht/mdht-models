@@ -50,6 +50,15 @@ public class PlannedProcedureV3Impl extends ProcedureImpl implements PlannedProc
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validatePlannedProcedureV3TemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PlannedProcedureV3Operations.validatePlannedProcedureV3TemplateId(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validatePlannedProcedureV3Id(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PlannedProcedureV3Operations.validatePlannedProcedureV3Id(this, diagnostics, context);
 	}
@@ -61,6 +70,15 @@ public class PlannedProcedureV3Impl extends ProcedureImpl implements PlannedProc
 	 */
 	public boolean validatePlannedProcedureV3Code(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PlannedProcedureV3Operations.validatePlannedProcedureV3Code(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePlannedProcedureV3StatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PlannedProcedureV3Operations.validatePlannedProcedureV3StatusCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -104,8 +122,8 @@ public class PlannedProcedureV3Impl extends ProcedureImpl implements PlannedProc
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public PlannedProcedureV3 init() {
-		return Initializer.Util.init(this);
+	public boolean validatePlannedProcedureV3ClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PlannedProcedureV3Operations.validatePlannedProcedureV3ClassCode(this, diagnostics, context);
 	}
 
 	/**
@@ -113,8 +131,35 @@ public class PlannedProcedureV3Impl extends ProcedureImpl implements PlannedProc
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public PlannedProcedureV3 init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
+	public boolean validatePlannedProcedureV3MoodCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PlannedProcedureV3Operations.validatePlannedProcedureV3MoodCodeP(this, diagnostics, context);
 	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePlannedProcedureV3MoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PlannedProcedureV3Operations.validatePlannedProcedureV3MoodCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public PlannedProcedureV3 init() {
+	    return Initializer.Util.init(this);
+	}
+
+	/**
+     * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+     * @generated
+     */
+	public PlannedProcedureV3 init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // PlannedProcedureV3Impl

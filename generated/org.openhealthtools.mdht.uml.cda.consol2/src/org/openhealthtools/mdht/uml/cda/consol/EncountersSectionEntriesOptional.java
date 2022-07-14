@@ -117,9 +117,9 @@ public interface EncountersSectionEntriesOptional extends Section {
 	public EncountersSectionEntriesOptional init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public EncountersSectionEntriesOptional init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // EncountersSectionEntriesOptional

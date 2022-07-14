@@ -51,8 +51,7 @@ public class DistinctIdentificationCodeObservationImpl extends ObservationImpl
 	 */
 	public boolean validateDistinctIdentificationCodeObservationTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return DistinctIdentificationCodeObservationOperations.validateDistinctIdentificationCodeObservationTemplateId(
-			this, diagnostics, context);
+		return DistinctIdentificationCodeObservationOperations.validateDistinctIdentificationCodeObservationTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -62,8 +61,7 @@ public class DistinctIdentificationCodeObservationImpl extends ObservationImpl
 	 */
 	public boolean validateDistinctIdentificationCodeObservationCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return DistinctIdentificationCodeObservationOperations.validateDistinctIdentificationCodeObservationCodeP(
-			this, diagnostics, context);
+		return DistinctIdentificationCodeObservationOperations.validateDistinctIdentificationCodeObservationCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -73,8 +71,7 @@ public class DistinctIdentificationCodeObservationImpl extends ObservationImpl
 	 */
 	public boolean validateDistinctIdentificationCodeObservationCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return DistinctIdentificationCodeObservationOperations.validateDistinctIdentificationCodeObservationCode(
-			this, diagnostics, context);
+		return DistinctIdentificationCodeObservationOperations.validateDistinctIdentificationCodeObservationCode(this, diagnostics, context);
 	}
 
 	/**
@@ -84,8 +81,7 @@ public class DistinctIdentificationCodeObservationImpl extends ObservationImpl
 	 */
 	public boolean validateDistinctIdentificationCodeObservationValue(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return DistinctIdentificationCodeObservationOperations.validateDistinctIdentificationCodeObservationValue(
-			this, diagnostics, context);
+		return DistinctIdentificationCodeObservationOperations.validateDistinctIdentificationCodeObservationValue(this, diagnostics, context);
 	}
 
 	/**
@@ -94,17 +90,17 @@ public class DistinctIdentificationCodeObservationImpl extends ObservationImpl
 	 * @generated
 	 */
 	public DistinctIdentificationCodeObservation init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public DistinctIdentificationCodeObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 
 } // DistinctIdentificationCodeObservationImpl

@@ -151,9 +151,9 @@ public interface QuantityMeasurementObservation extends Observation {
 	public QuantityMeasurementObservation init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public QuantityMeasurementObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // QuantityMeasurementObservation

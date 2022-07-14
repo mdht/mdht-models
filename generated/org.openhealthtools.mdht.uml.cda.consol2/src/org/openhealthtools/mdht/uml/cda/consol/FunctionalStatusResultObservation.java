@@ -173,9 +173,9 @@ public interface FunctionalStatusResultObservation extends ResultObservation {
 	public FunctionalStatusResultObservation init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public FunctionalStatusResultObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // FunctionalStatusResultObservation

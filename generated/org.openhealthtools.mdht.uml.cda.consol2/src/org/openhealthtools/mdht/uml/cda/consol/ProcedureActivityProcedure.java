@@ -661,9 +661,9 @@ public interface ProcedureActivityProcedure extends Procedure {
 	public ProcedureActivityProcedure init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public ProcedureActivityProcedure init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ProcedureActivityProcedure

@@ -81,8 +81,7 @@ public class VitalSignsSection2Impl extends VitalSignsSectionEntriesOptional2Imp
 	@Override
 	public boolean validateVitalSignsSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return VitalSignsSection2Operations.validateVitalSignsSectionEntriesOptionalTemplateId(
-			this, diagnostics, context);
+		return VitalSignsSection2Operations.validateVitalSignsSectionEntriesOptionalTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -115,8 +114,7 @@ public class VitalSignsSection2Impl extends VitalSignsSectionEntriesOptional2Imp
 	@Override
 	public boolean validateVitalSignsSectionEntriesOptionalVitalSignsOrganizer(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return VitalSignsSection2Operations.validateVitalSignsSectionEntriesOptionalVitalSignsOrganizer(
-			this, diagnostics, context);
+		return VitalSignsSection2Operations.validateVitalSignsSectionEntriesOptionalVitalSignsOrganizer(this, diagnostics, context);
 	}
 
 	/**
@@ -136,17 +134,17 @@ public class VitalSignsSection2Impl extends VitalSignsSectionEntriesOptional2Imp
 	 */
 	@Override
 	public VitalSignsSection2 init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public VitalSignsSection2 init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // VitalSignsSection2Impl

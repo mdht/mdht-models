@@ -62,8 +62,7 @@ public class VitalSignsOrganizer2Impl extends VitalSignsOrganizerImpl implements
 	 */
 	public boolean validateVitalSignsOrganizer2AuthorParticipation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return VitalSignsOrganizer2Operations.validateVitalSignsOrganizer2AuthorParticipation(
-			this, diagnostics, context);
+		return VitalSignsOrganizer2Operations.validateVitalSignsOrganizer2AuthorParticipation(this, diagnostics, context);
 	}
 
 	/**
@@ -132,8 +131,7 @@ public class VitalSignsOrganizer2Impl extends VitalSignsOrganizerImpl implements
 	@Override
 	public boolean validateVitalSignsOrganizerVitalSignObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return VitalSignsOrganizer2Operations.validateVitalSignsOrganizerVitalSignObservation(
-			this, diagnostics, context);
+		return VitalSignsOrganizer2Operations.validateVitalSignsOrganizerVitalSignObservation(this, diagnostics, context);
 	}
 
 	/**
@@ -143,17 +141,17 @@ public class VitalSignsOrganizer2Impl extends VitalSignsOrganizerImpl implements
 	 */
 	@Override
 	public VitalSignsOrganizer2 init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public VitalSignsOrganizer2 init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // VitalSignsOrganizer2Impl

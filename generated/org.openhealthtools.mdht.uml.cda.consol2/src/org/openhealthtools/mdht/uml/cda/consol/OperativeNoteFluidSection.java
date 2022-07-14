@@ -89,9 +89,9 @@ public interface OperativeNoteFluidSection extends Section {
 	public OperativeNoteFluidSection init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public OperativeNoteFluidSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // OperativeNoteFluidSection

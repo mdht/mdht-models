@@ -101,9 +101,9 @@ public interface DrugVehicle extends ParticipantRole {
 	public DrugVehicle init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public DrugVehicle init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // DrugVehicle

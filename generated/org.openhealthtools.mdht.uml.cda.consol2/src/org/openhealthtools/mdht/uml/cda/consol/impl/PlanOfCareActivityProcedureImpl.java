@@ -56,8 +56,7 @@ public class PlanOfCareActivityProcedureImpl extends ProcedureImpl implements Pl
 	 */
 	public boolean validatePlanOfCareActivityProcedureTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PlanOfCareActivityProcedureOperations.validatePlanOfCareActivityProcedureTemplateId(
-			this, diagnostics, context);
+		return PlanOfCareActivityProcedureOperations.validatePlanOfCareActivityProcedureTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -67,8 +66,7 @@ public class PlanOfCareActivityProcedureImpl extends ProcedureImpl implements Pl
 	 */
 	public boolean validatePlanOfCareActivityProcedureClassCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PlanOfCareActivityProcedureOperations.validatePlanOfCareActivityProcedureClassCode(
-			this, diagnostics, context);
+		return PlanOfCareActivityProcedureOperations.validatePlanOfCareActivityProcedureClassCode(this, diagnostics, context);
 	}
 
 	/**
@@ -78,8 +76,7 @@ public class PlanOfCareActivityProcedureImpl extends ProcedureImpl implements Pl
 	 */
 	public boolean validatePlanOfCareActivityProcedureMoodCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PlanOfCareActivityProcedureOperations.validatePlanOfCareActivityProcedureMoodCode(
-			this, diagnostics, context);
+		return PlanOfCareActivityProcedureOperations.validatePlanOfCareActivityProcedureMoodCode(this, diagnostics, context);
 	}
 
 	/**
@@ -97,16 +94,16 @@ public class PlanOfCareActivityProcedureImpl extends ProcedureImpl implements Pl
 	 * @generated
 	 */
 	public PlanOfCareActivityProcedure init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public PlanOfCareActivityProcedure init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // PlanOfCareActivityProcedureImpl

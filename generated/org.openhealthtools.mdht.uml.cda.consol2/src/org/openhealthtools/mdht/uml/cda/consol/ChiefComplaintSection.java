@@ -93,9 +93,9 @@ public interface ChiefComplaintSection extends Section {
 	public ChiefComplaintSection init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public ChiefComplaintSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ChiefComplaintSection

@@ -7,12 +7,12 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.CDAFactory;
 import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
 import org.eclipse.mdht.uml.hl7.datatypes.CD;
 import org.eclipse.mdht.uml.hl7.datatypes.CS;
 import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
 import org.eclipse.mdht.uml.hl7.datatypes.IVL_TS;
-import org.eclipse.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship;
 import org.junit.Test;
 import org.openhealthtools.mdht.uml.cda.consol.AssessmentScaleObservationV2;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
@@ -28,16 +28,17 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.AssessmentScaleObserva
  * <ul>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AssessmentScaleObservationV2#validateAssessmentScaleObservationV2TemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Assessment Scale Observation V2 Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AssessmentScaleObservationV2#validateAssessmentScaleObservationV2Id(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Assessment Scale Observation V2 Id</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AssessmentScaleObservationV2#validateAssessmentScaleObservationV2CodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Assessment Scale Observation V2 Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AssessmentScaleObservationV2#validateAssessmentScaleObservationV2Code(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Assessment Scale Observation V2 Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AssessmentScaleObservationV2#validateAssessmentScaleObservationV2DerivationExpr(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Assessment Scale Observation V2 Derivation Expr</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AssessmentScaleObservationV2#validateAssessmentScaleObservationV2StatusCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Assessment Scale Observation V2 Status Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AssessmentScaleObservationV2#validateAssessmentScaleObservationV2StatusCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Assessment Scale Observation V2 Status Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AssessmentScaleObservationV2#validateAssessmentScaleObservationV2EffectiveTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Assessment Scale Observation V2 Effective Time</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AssessmentScaleObservationV2#validateAssessmentScaleObservationV2Value(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Assessment Scale Observation V2 Value</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AssessmentScaleObservationV2#validateAssessmentScaleObservationV2InterpretationCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Assessment Scale Observation V2 Interpretation Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AssessmentScaleObservationV2#validateAssessmentScaleObservationV2ClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Assessment Scale Observation V2 Class Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AssessmentScaleObservationV2#validateAssessmentScaleObservationV2MoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Assessment Scale Observation V2 Mood Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AssessmentScaleObservationV2#validateAssessmentScaleObservationV2AssessmentScaleSupportingObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Assessment Scale Observation V2 Assessment Scale Supporting Observation</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AssessmentScaleObservationV2#getAssessmentScaleSupportingObservations() <em>Get Assessment Scale Supporting Observations</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AssessmentScaleObservationV2#validateAssessmentScaleObservationV2ReferenceRange(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Assessment Scale Observation V2 Reference Range</em>}</li>
  * </ul>
  * </p>
  *
@@ -120,6 +121,41 @@ public class AssessmentScaleObservationV2Test extends CDAValidationTest {
 
 	/**
 	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateAssessmentScaleObservationV2CodeP() {
+		OperationsTestCase<AssessmentScaleObservationV2> validateAssessmentScaleObservationV2CodePTestCase = new OperationsTestCase<AssessmentScaleObservationV2>(
+			"validateAssessmentScaleObservationV2CodeP", operationsForOCL.getOCLValue(
+				"VALIDATE_ASSESSMENT_SCALE_OBSERVATION_V2_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(AssessmentScaleObservationV2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(AssessmentScaleObservationV2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return AssessmentScaleObservationV2Operations.validateAssessmentScaleObservationV2CodeP(
+					(AssessmentScaleObservationV2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateAssessmentScaleObservationV2CodePTestCase.doValidationTest();
+	}
+
+	/**
+	*
 	* @generated NOT
 	*/
 	@Test
@@ -138,7 +174,7 @@ public class AssessmentScaleObservationV2Test extends CDAValidationTest {
 			@Override
 			protected void updateToPass(AssessmentScaleObservationV2 target) {
 				target.init();
-				target.setCode(DatatypesFactory.eINSTANCE.createCD());
+				// target.setCode(DatatypesFactory.eINSTANCE.createCD());
 
 			}
 
@@ -189,6 +225,42 @@ public class AssessmentScaleObservationV2Test extends CDAValidationTest {
 		};
 
 		validateAssessmentScaleObservationV2DerivationExprTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateAssessmentScaleObservationV2StatusCodeP() {
+		OperationsTestCase<AssessmentScaleObservationV2> validateAssessmentScaleObservationV2StatusCodePTestCase = new OperationsTestCase<AssessmentScaleObservationV2>(
+			"validateAssessmentScaleObservationV2StatusCodeP",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_ASSESSMENT_SCALE_OBSERVATION_V2_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(AssessmentScaleObservationV2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(AssessmentScaleObservationV2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return AssessmentScaleObservationV2Operations.validateAssessmentScaleObservationV2StatusCodeP(
+					(AssessmentScaleObservationV2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateAssessmentScaleObservationV2StatusCodePTestCase.doValidationTest();
 	}
 
 	/**
@@ -423,52 +495,76 @@ public class AssessmentScaleObservationV2Test extends CDAValidationTest {
 	*/
 	@Test
 
-	public void testValidateAssessmentScaleObservationV2AssessmentScaleSupportingObservation() {
-		OperationsTestCase<AssessmentScaleObservationV2> validateAssessmentScaleObservationV2AssessmentScaleSupportingObservationTestCase = new OperationsTestCase<AssessmentScaleObservationV2>(
-			"validateAssessmentScaleObservationV2AssessmentScaleSupportingObservation",
+	public void testValidateAssessmentScaleObservationV2ReferenceRange() {
+		OperationsTestCase<AssessmentScaleObservationV2> validateAssessmentScaleObservationV2ReferenceRangeTestCase = new OperationsTestCase<AssessmentScaleObservationV2>(
+			"validateAssessmentScaleObservationV2ReferenceRange",
 			operationsForOCL.getOCLValue(
-				"VALIDATE_ASSESSMENT_SCALE_OBSERVATION_V2_ASSESSMENT_SCALE_SUPPORTING_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+				"VALIDATE_ASSESSMENT_SCALE_OBSERVATION_V2_REFERENCE_RANGE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(AssessmentScaleObservationV2 target) {
-
+				target.init();
 			}
 
 			@Override
 			protected void updateToPass(AssessmentScaleObservationV2 target) {
-				target.init();
-				target.addObservation(ConsolFactory.eINSTANCE.createAssessmentScaleSupportingObservation().init());
-				for (org.eclipse.mdht.uml.cda.EntryRelationship er : target.getEntryRelationships()) {
-					er.setTypeCode(x_ActRelationshipEntryRelationship.COMP);
-				}
+				target.getReferenceRanges().add(CDAFactory.eINSTANCE.createReferenceRange());
 
 			}
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return AssessmentScaleObservationV2Operations.validateAssessmentScaleObservationV2AssessmentScaleSupportingObservation(
+				return AssessmentScaleObservationV2Operations.validateAssessmentScaleObservationV2ReferenceRange(
 					(AssessmentScaleObservationV2) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateAssessmentScaleObservationV2AssessmentScaleSupportingObservationTestCase.doValidationTest();
+		validateAssessmentScaleObservationV2ReferenceRangeTestCase.doValidationTest();
 	}
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
-	@Test
-
-	public void testGetAssessmentScaleSupportingObservations() {
-
-		AssessmentScaleObservationV2 target = objectFactory.create();
-		target.getAssessmentScaleSupportingObservations();
-
-	}
+	// @Test
+	//
+	// public void testValidateAssessmentScaleObservationV2AssessmentScaleSupportingObservation() {
+	// OperationsTestCase<AssessmentScaleObservationV2> validateAssessmentScaleObservationV2AssessmentScaleSupportingObservationTestCase = new
+	// OperationsTestCase<AssessmentScaleObservationV2>(
+	// "validateAssessmentScaleObservationV2AssessmentScaleSupportingObservation",
+	// operationsForOCL.getOCLValue(
+	// "VALIDATE_ASSESSMENT_SCALE_OBSERVATION_V2_ASSESSMENT_SCALE_SUPPORTING_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+	// objectFactory) {
+	//
+	// @Override
+	// protected void updateToFail(AssessmentScaleObservationV2 target) {
+	//
+	// }
+	//
+	// @Override
+	// protected void updateToPass(AssessmentScaleObservationV2 target) {
+	// target.init();
+	// target.addObservation(ConsolFactory.eINSTANCE.createAssessmentScaleSupportingObservation().init());
+	// for (org.eclipse.mdht.uml.cda.EntryRelationship er : target.getEntryRelationships()) {
+	// er.setTypeCode(x_ActRelationshipEntryRelationship.COMP);
+	// }
+	//
+	// }
+	//
+	// @Override
+	// protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+	//
+	// return AssessmentScaleObservationV2Operations.validateAssessmentScaleObservationV2AssessmentScaleSupportingObservation(
+	// (AssessmentScaleObservationV2) objectToTest, diagnostician, map);
+	// }
+	//
+	// };
+	//
+	// validateAssessmentScaleObservationV2AssessmentScaleSupportingObservationTestCase.doValidationTest();
+	// }
 
 	/**
 	*

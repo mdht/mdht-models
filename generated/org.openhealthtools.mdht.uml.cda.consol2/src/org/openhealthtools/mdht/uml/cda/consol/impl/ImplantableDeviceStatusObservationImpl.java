@@ -51,8 +51,7 @@ public class ImplantableDeviceStatusObservationImpl extends ObservationImpl
 	 */
 	public boolean validateImplantableDeviceStatusObservationTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ImplantableDeviceStatusObservationOperations.validateImplantableDeviceStatusObservationTemplateId(
-			this, diagnostics, context);
+		return ImplantableDeviceStatusObservationOperations.validateImplantableDeviceStatusObservationTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -62,8 +61,7 @@ public class ImplantableDeviceStatusObservationImpl extends ObservationImpl
 	 */
 	public boolean validateImplantableDeviceStatusObservationCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ImplantableDeviceStatusObservationOperations.validateImplantableDeviceStatusObservationCodeP(
-			this, diagnostics, context);
+		return ImplantableDeviceStatusObservationOperations.validateImplantableDeviceStatusObservationCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -73,8 +71,7 @@ public class ImplantableDeviceStatusObservationImpl extends ObservationImpl
 	 */
 	public boolean validateImplantableDeviceStatusObservationCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ImplantableDeviceStatusObservationOperations.validateImplantableDeviceStatusObservationCode(
-			this, diagnostics, context);
+		return ImplantableDeviceStatusObservationOperations.validateImplantableDeviceStatusObservationCode(this, diagnostics, context);
 	}
 
 	/**
@@ -84,8 +81,7 @@ public class ImplantableDeviceStatusObservationImpl extends ObservationImpl
 	 */
 	public boolean validateImplantableDeviceStatusObservationValue(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ImplantableDeviceStatusObservationOperations.validateImplantableDeviceStatusObservationValue(
-			this, diagnostics, context);
+		return ImplantableDeviceStatusObservationOperations.validateImplantableDeviceStatusObservationValue(this, diagnostics, context);
 	}
 
 	/**
@@ -95,8 +91,7 @@ public class ImplantableDeviceStatusObservationImpl extends ObservationImpl
 	 */
 	public boolean validateImplantableDeviceStatusObservationValueP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ImplantableDeviceStatusObservationOperations.validateImplantableDeviceStatusObservationValueP(
-			this, diagnostics, context);
+		return ImplantableDeviceStatusObservationOperations.validateImplantableDeviceStatusObservationValueP(this, diagnostics, context);
 	}
 
 	/**
@@ -105,17 +100,17 @@ public class ImplantableDeviceStatusObservationImpl extends ObservationImpl
 	 * @generated
 	 */
 	public ImplantableDeviceStatusObservation init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public ImplantableDeviceStatusObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 
 } // ImplantableDeviceStatusObservationImpl

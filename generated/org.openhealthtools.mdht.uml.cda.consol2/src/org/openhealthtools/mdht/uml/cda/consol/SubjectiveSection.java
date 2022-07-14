@@ -89,9 +89,9 @@ public interface SubjectiveSection extends Section {
 	public SubjectiveSection init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public SubjectiveSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // SubjectiveSection

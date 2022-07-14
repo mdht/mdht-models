@@ -65,9 +65,9 @@ public interface ImmunizationsSection2 extends ImmunizationsSectionEntriesOption
 	public ImmunizationsSection2 init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public ImmunizationsSection2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ImmunizationsSection2

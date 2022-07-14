@@ -17,7 +17,8 @@ import org.eclipse.mdht.emf.runtime.util.Initializer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getProblemObservationV4()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ProblemObservationV4TemplateId ProblemObservationV4Id ProblemObservationV4Code ProblemObservationV4CodeP ProblemObservationV4StatusCode ProblemObservationV4EffectiveTime ProblemObservationV4Value ProblemObservationV4ValueP ProblemObservationV4ClassCode ProblemObservationV4MoodCode' templateId.root='2.16.840.1.113883.10.20.22.4.4' templateId.extension='2022-06-01' code.codeSystem='2.16.840.1.113883.6.96' code.codeSystemName='SNOMEDCT' constraints.validation.dependOn.ProblemObservationV4Code='ProblemObservationV4CodeP' value.codeSystem='2.16.840.1.113883.6.96' value.codeSystemName='SNOMEDCT'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ProblemObservationV4TemplateId ProblemObservationV4Id ProblemObservationV4CodeP ProblemObservationV4StatusCode ProblemObservationV4StatusCodeP ProblemObservationV4EffectiveTime ProblemObservationV4Value ProblemObservationV4ValueP ProblemObservationV4ClassCode ProblemObservationV4MoodCode ProblemObservationV4IVLTSLow' templateId.root='2.16.840.1.113883.10.20.22.4.4' templateId.extension='2022-06-01' code.codeSystem='2.16.840.1.113883.6.96' code.codeSystemName='SNOMEDCT' constraints.validation.warning='ProblemObservationV4Code' constraints.validation.dependOn.ProblemObservationV4Code='ProblemObservationV4CodeP' statusCode.code='completed' constraints.validation.dependOn.ProblemObservationV4StatusCode='ProblemObservationV4StatusCodeP' value.codeSystem='2.16.840.1.113883.6.96' value.codeSystemName='SNOMEDCT' classCode='OBS' moodCode='EVN' constraints.validation.query='ProblemObservationV4IVLTSLow ProblemObservationV4IVLTSHigh' constraints.validation.info='ProblemObservationV4IVLTSHigh'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolProblemObservationV4IVLTS constraints.validation.error='ProblemObservationV4IVLTSLow' constraints.validation.info='ProblemObservationV4IVLTSHigh'"
  * @generated
  */
 public interface ProblemObservationV4 extends ProblemObservation2 {
@@ -77,6 +78,18 @@ public interface ProblemObservationV4 extends ProblemObservation2 {
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined())'"
+	 * @generated
+	 */
+	boolean validateProblemObservationV4StatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and \nlet value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in \nvalue.code = \'completed\')'"
 	 * @generated
 	 */
 	boolean validateProblemObservationV4StatusCode(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -144,14 +157,38 @@ public interface ProblemObservationV4 extends ProblemObservation2 {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.effectiveTime-&gt;excluding(null)-&gt;select(isNullFlavorUndefined())-&gt;reject( ( isNullFlavorUndefined() implies ((low.oclIsUndefined() or low.isNullFlavorUndefined()) implies (not low.oclIsUndefined()) )))'"
 	 * @generated
 	 */
-	public ProblemObservationV4 init();
+	boolean validateProblemObservationV4IVLTSLow(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.effectiveTime-&gt;excluding(null)-&gt;select(isNullFlavorUndefined())-&gt;reject( ( isNullFlavorUndefined() implies ((high.oclIsUndefined() or high.isNullFlavorUndefined()) implies (not high.oclIsUndefined()) )))'"
+	 * @generated
+	 */
+	boolean validateProblemObservationV4IVLTSHigh(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public ProblemObservationV4 init();
+
+	/**
+     * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+     * @generated
+     */
 	public ProblemObservationV4 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ProblemObservationV4

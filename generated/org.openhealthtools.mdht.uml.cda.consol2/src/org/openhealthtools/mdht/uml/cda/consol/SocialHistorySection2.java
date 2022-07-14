@@ -156,9 +156,9 @@ public interface SocialHistorySection2 extends SocialHistorySection {
 	public SocialHistorySection2 init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public SocialHistorySection2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // SocialHistorySection2

@@ -196,9 +196,9 @@ public interface MedicationSupplyOrder extends Supply {
 	public MedicationSupplyOrder init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public MedicationSupplyOrder init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // MedicationSupplyOrder

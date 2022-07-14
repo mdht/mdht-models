@@ -127,9 +127,9 @@ public interface ServiceDeliveryLocation extends ParticipantRole {
 	public ServiceDeliveryLocation init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public ServiceDeliveryLocation init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ServiceDeliveryLocation

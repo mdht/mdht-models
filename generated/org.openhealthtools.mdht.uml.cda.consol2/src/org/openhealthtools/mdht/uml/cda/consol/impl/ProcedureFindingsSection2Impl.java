@@ -53,8 +53,7 @@ public class ProcedureFindingsSection2Impl extends ProcedureFindingsSectionImpl 
 	 */
 	public boolean validateProcedureFindingsSection2TemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProcedureFindingsSection2Operations.validateProcedureFindingsSection2TemplateId(
-			this, diagnostics, context);
+		return ProcedureFindingsSection2Operations.validateProcedureFindingsSection2TemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -94,8 +93,7 @@ public class ProcedureFindingsSection2Impl extends ProcedureFindingsSectionImpl 
 	@Override
 	public boolean validateProcedureFindingsSectionProblemObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProcedureFindingsSection2Operations.validateProcedureFindingsSectionProblemObservation(
-			this, diagnostics, context);
+		return ProcedureFindingsSection2Operations.validateProcedureFindingsSectionProblemObservation(this, diagnostics, context);
 	}
 
 	/**
@@ -105,17 +103,17 @@ public class ProcedureFindingsSection2Impl extends ProcedureFindingsSectionImpl 
 	 */
 	@Override
 	public ProcedureFindingsSection2 init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public ProcedureFindingsSection2 init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // ProcedureFindingsSection2Impl

@@ -25,8 +25,6 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.DateOfDiagnosisActOper
  * <p>
  * The following operations are supported:
  * <ul>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DateOfDiagnosisAct#validateDateOfDiagnosisActEffectiveTimeLow(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Date Of Diagnosis Act Effective Time Low</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DateOfDiagnosisAct#validateDateOfDiagnosisActEffectiveTimehigh(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Date Of Diagnosis Act Effective Timehigh</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DateOfDiagnosisAct#validateDateOfDiagnosisActTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Date Of Diagnosis Act Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DateOfDiagnosisAct#validateDateOfDiagnosisActCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Date Of Diagnosis Act Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DateOfDiagnosisAct#validateDateOfDiagnosisActCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Date Of Diagnosis Act Code</em>}</li>
@@ -35,6 +33,9 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.DateOfDiagnosisActOper
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DateOfDiagnosisAct#validateDateOfDiagnosisActEffectiveTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Date Of Diagnosis Act Effective Time</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DateOfDiagnosisAct#validateDateOfDiagnosisActClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Date Of Diagnosis Act Class Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DateOfDiagnosisAct#validateDateOfDiagnosisActMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Date Of Diagnosis Act Mood Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DateOfDiagnosisAct#validateDateOfDiagnosisActIVLTSValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Date Of Diagnosis Act IVLTS Value</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DateOfDiagnosisAct#validateDateOfDiagnosisActIVLTSLow(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Date Of Diagnosis Act IVLTS Low</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DateOfDiagnosisAct#validateDateOfDiagnosisActIVLTSHigh(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Date Of Diagnosis Act IVLTS High</em>}</li>
  * </ul>
  * </p>
  *
@@ -43,77 +44,77 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.DateOfDiagnosisActOper
 
 public class DateOfDiagnosisActTest extends CDAValidationTest {
 
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
+	// /**
+	// *
+	// * @generated NOT
+	// */
+	// @Test
+	//
+	// public void testValidateDateOfDiagnosisActEffectiveTimeLow() {
+	// OperationsTestCase<DateOfDiagnosisAct> validateDateOfDiagnosisActEffectiveTimeLowTestCase = new OperationsTestCase<DateOfDiagnosisAct>(
+	// "validateDateOfDiagnosisActEffectiveTimeLow", operationsForOCL.getOCLValue(
+	// "VALIDATE_DATE_OF_DIAGNOSIS_ACT_EFFECTIVE_TIME_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+	// objectFactory) {
+	//
+	// @Override
+	// protected void updateToFail(DateOfDiagnosisAct target) {
+	// target.init();
+	// target.setEffectiveTime(DatatypesFactory.eINSTANCE.createIVL_TS());
+	//
+	// }
+	//
+	// @Override
+	// protected void updateToPass(DateOfDiagnosisAct target) {
+	// target.getEffectiveTime().setLow(DatatypesFactory.eINSTANCE.createIVXB_TS());
+	//
+	// }
+	//
+	// @Override
+	// protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+	//
+	// return DateOfDiagnosisActOperations.validateDateOfDiagnosisActEffectiveTimeLow(
+	// (DateOfDiagnosisAct) objectToTest, diagnostician, map);
+	// }
+	//
+	// };
+	//
+	// validateDateOfDiagnosisActEffectiveTimeLowTestCase.doValidationTest();
+	// }
 
-	public void testValidateDateOfDiagnosisActEffectiveTimeLow() {
-		OperationsTestCase<DateOfDiagnosisAct> validateDateOfDiagnosisActEffectiveTimeLowTestCase = new OperationsTestCase<DateOfDiagnosisAct>(
-			"validateDateOfDiagnosisActEffectiveTimeLow", operationsForOCL.getOCLValue(
-				"VALIDATE_DATE_OF_DIAGNOSIS_ACT_EFFECTIVE_TIME_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(DateOfDiagnosisAct target) {
-				target.init();
-				target.setEffectiveTime(DatatypesFactory.eINSTANCE.createIVL_TS());
-
-			}
-
-			@Override
-			protected void updateToPass(DateOfDiagnosisAct target) {
-				target.getEffectiveTime().setLow(DatatypesFactory.eINSTANCE.createIVXB_TS());
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return DateOfDiagnosisActOperations.validateDateOfDiagnosisActEffectiveTimeLow(
-					(DateOfDiagnosisAct) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateDateOfDiagnosisActEffectiveTimeLowTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-
-	public void testValidateDateOfDiagnosisActEffectiveTimehigh() {
-		OperationsTestCase<DateOfDiagnosisAct> validateDateOfDiagnosisActEffectiveTimehighTestCase = new OperationsTestCase<DateOfDiagnosisAct>(
-			"validateDateOfDiagnosisActEffectiveTimehigh", operationsForOCL.getOCLValue(
-				"VALIDATE_DATE_OF_DIAGNOSIS_ACT_EFFECTIVE_TIMEHIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(DateOfDiagnosisAct target) {
-				target.init();
-				target.setEffectiveTime(DatatypesFactory.eINSTANCE.createIVL_TS());
-			}
-
-			@Override
-			protected void updateToPass(DateOfDiagnosisAct target) {
-				target.getEffectiveTime().setHigh(DatatypesFactory.eINSTANCE.createIVXB_TS());
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return DateOfDiagnosisActOperations.validateDateOfDiagnosisActEffectiveTimehigh(
-					(DateOfDiagnosisAct) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateDateOfDiagnosisActEffectiveTimehighTestCase.doValidationTest();
-	}
+	// /**
+	// *
+	// * @generated NOT
+	// */
+	// @Test
+	//
+	// public void testValidateDateOfDiagnosisActEffectiveTimehigh() {
+	// OperationsTestCase<DateOfDiagnosisAct> validateDateOfDiagnosisActEffectiveTimehighTestCase = new OperationsTestCase<DateOfDiagnosisAct>(
+	// "validateDateOfDiagnosisActEffectiveTimehigh", operationsForOCL.getOCLValue(
+	// "VALIDATE_DATE_OF_DIAGNOSIS_ACT_EFFECTIVE_TIMEHIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+	// objectFactory) {
+	//
+	// @Override
+	// protected void updateToFail(DateOfDiagnosisAct target) {
+	// target.init();
+	// target.setEffectiveTime(DatatypesFactory.eINSTANCE.createIVL_TS());
+	// }
+	//
+	// @Override
+	// protected void updateToPass(DateOfDiagnosisAct target) {
+	// target.getEffectiveTime().setHigh(DatatypesFactory.eINSTANCE.createIVXB_TS());
+	// }
+	//
+	// @Override
+	// protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+	//
+	// return DateOfDiagnosisActOperations.validateDateOfDiagnosisActEffectiveTimehigh(
+	// (DateOfDiagnosisAct) objectToTest, diagnostician, map);
+	// }
+	//
+	// };
+	//
+	// validateDateOfDiagnosisActEffectiveTimehighTestCase.doValidationTest();
+	// }
 
 	/**
 	*
@@ -413,6 +414,113 @@ public class DateOfDiagnosisActTest extends CDAValidationTest {
 		};
 
 		validateDateOfDiagnosisActMoodCodeTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+
+	public void testValidateDateOfDiagnosisActIVLTSValue() {
+		OperationsTestCase<DateOfDiagnosisAct> validateDateOfDiagnosisActIVLTSValueTestCase = new OperationsTestCase<DateOfDiagnosisAct>(
+			"validateDateOfDiagnosisActIVLTSValue",
+			operationsForOCL.getOCLValue("VALIDATE_DATE_OF_DIAGNOSIS_ACT_IVLTS_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(DateOfDiagnosisAct target) {
+				target.init();
+				target.setEffectiveTime(DatatypesFactory.eINSTANCE.createIVL_TS());
+			}
+
+			@Override
+			protected void updateToPass(DateOfDiagnosisAct target) {
+				target.setEffectiveTime(DatatypesFactory.eINSTANCE.createIVL_TS("2022"));
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return DateOfDiagnosisActOperations.validateDateOfDiagnosisActIVLTSValue(
+					(DateOfDiagnosisAct) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateDateOfDiagnosisActIVLTSValueTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateDateOfDiagnosisActIVLTSLow() {
+		OperationsTestCase<DateOfDiagnosisAct> validateDateOfDiagnosisActIVLTSLowTestCase = new OperationsTestCase<DateOfDiagnosisAct>(
+			"validateDateOfDiagnosisActIVLTSLow",
+			operationsForOCL.getOCLValue("VALIDATE_DATE_OF_DIAGNOSIS_ACT_IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(DateOfDiagnosisAct target) {
+				target.init();
+				target.setEffectiveTime(DatatypesFactory.eINSTANCE.createIVL_TS("2021", "2022"));
+
+			}
+
+			@Override
+			protected void updateToPass(DateOfDiagnosisAct target) {
+				target.setEffectiveTime(DatatypesFactory.eINSTANCE.createIVL_TS());
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return DateOfDiagnosisActOperations.validateDateOfDiagnosisActIVLTSLow(
+					(DateOfDiagnosisAct) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateDateOfDiagnosisActIVLTSLowTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateDateOfDiagnosisActIVLTSHigh() {
+		OperationsTestCase<DateOfDiagnosisAct> validateDateOfDiagnosisActIVLTSHighTestCase = new OperationsTestCase<DateOfDiagnosisAct>(
+			"validateDateOfDiagnosisActIVLTSHigh",
+			operationsForOCL.getOCLValue("VALIDATE_DATE_OF_DIAGNOSIS_ACT_IVLTS_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(DateOfDiagnosisAct target) {
+				target.init();
+				target.setEffectiveTime(DatatypesFactory.eINSTANCE.createIVL_TS("2021", "2022"));
+
+			}
+
+			@Override
+			protected void updateToPass(DateOfDiagnosisAct target) {
+				target.setEffectiveTime(DatatypesFactory.eINSTANCE.createIVL_TS());
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return DateOfDiagnosisActOperations.validateDateOfDiagnosisActIVLTSHigh(
+					(DateOfDiagnosisAct) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateDateOfDiagnosisActIVLTSHighTestCase.doValidationTest();
 	}
 
 	/**

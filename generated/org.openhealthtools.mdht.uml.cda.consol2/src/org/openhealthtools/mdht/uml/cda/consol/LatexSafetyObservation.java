@@ -89,10 +89,10 @@ public interface LatexSafetyObservation extends Observation {
 	public LatexSafetyObservation init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public LatexSafetyObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
 
 } // LatexSafetyObservation

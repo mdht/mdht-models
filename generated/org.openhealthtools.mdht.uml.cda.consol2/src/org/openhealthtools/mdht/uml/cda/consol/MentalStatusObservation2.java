@@ -109,9 +109,9 @@ public interface MentalStatusObservation2 extends CognitiveStatusResultObservati
 	public MentalStatusObservation2 init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public MentalStatusObservation2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // MentalStatusObservation2

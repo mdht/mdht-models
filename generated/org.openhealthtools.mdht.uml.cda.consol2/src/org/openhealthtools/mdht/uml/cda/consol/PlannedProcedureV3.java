@@ -19,10 +19,22 @@ import org.eclipse.mdht.uml.cda.Procedure;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getPlannedProcedureV3()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='PlannedProcedureV3Id PlannedProcedureV3Code PlannedProcedureV3StatusCode' constraints.validation.warning='PlannedProcedureV3EffectiveTime' constraints.validation.info='PlannedProcedureV3MethodCode PlannedProcedureV3TargetSiteCode'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='PlannedProcedureV3TemplateId PlannedProcedureV3Id PlannedProcedureV3Code PlannedProcedureV3StatusCode PlannedProcedureV3StatusCodeP PlannedProcedureV3ClassCode PlannedProcedureV3MoodCode PlannedProcedureV3MoodCodeP' templateId.root='2.16.840.1.113883.10.20.22.4.41' templateId.extension='2014-06-09' statusCode.code='active' constraints.validation.dependOn.PlannedProcedureV3StatusCode='PlannedProcedureV3StatusCodeP' constraints.validation.warning='PlannedProcedureV3EffectiveTime' constraints.validation.info='PlannedProcedureV3MethodCode PlannedProcedureV3TargetSiteCode' classCode='PROC' constraints.validation.dependOn.PlannedProcedureV3MoodCode='PlannedProcedureV3MoodCodeP'"
  * @generated
  */
 public interface PlannedProcedureV3 extends Procedure {
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId-&gt;exists(id : datatypes::II | id.root = \'2.16.840.1.113883.10.20.22.4.41\' and id.extension = \'2014-06-09\')'"
+	 * @generated
+	 */
+	boolean validatePlannedProcedureV3TemplateId(DiagnosticChain diagnostics, Map<Object, Object> context);
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -55,6 +67,18 @@ public interface PlannedProcedureV3 extends Procedure {
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined())'"
+	 * @generated
+	 */
+	boolean validatePlannedProcedureV3StatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and \nlet value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in \nvalue.code = \'active\')'"
 	 * @generated
 	 */
 	boolean validatePlannedProcedureV3StatusCode(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -98,14 +122,50 @@ public interface PlannedProcedureV3 extends Procedure {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='isDefined(\'classCode\')'"
 	 * @generated
 	 */
-	public PlannedProcedureV3 init();
+	boolean validatePlannedProcedureV3ClassCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='isDefined(\'moodCode\')'"
+	 * @generated
+	 */
+	boolean validatePlannedProcedureV3MoodCodeP(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.moodCode.oclIsUndefined() and self.moodCode.oclIsKindOf(vocab::x_DocumentProcedureMood) and \nlet value : vocab::x_DocumentProcedureMood = self.moodCode.oclAsType(vocab::x_DocumentProcedureMood) in \nvalue = vocab::x_DocumentProcedureMood::INT or value = vocab::x_DocumentProcedureMood::ARQ or value = vocab::x_DocumentProcedureMood::PRMS or value = vocab::x_DocumentProcedureMood::PRP or value = vocab::x_DocumentProcedureMood::RQO or value = vocab::x_DocumentProcedureMood::APT'"
+	 * @generated
+	 */
+	boolean validatePlannedProcedureV3MoodCode(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public PlannedProcedureV3 init();
+
+	/**
+     * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+     * @generated
+     */
 	public PlannedProcedureV3 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // PlannedProcedureV3

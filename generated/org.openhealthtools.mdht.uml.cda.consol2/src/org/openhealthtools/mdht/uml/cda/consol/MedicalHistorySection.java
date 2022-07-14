@@ -89,9 +89,9 @@ public interface MedicalHistorySection extends Section {
 	public MedicalHistorySection init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public MedicalHistorySection init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // MedicalHistorySection

@@ -19,34 +19,11 @@ import org.eclipse.mdht.uml.cda.Act;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getDateOfDiagnosisAct()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='DateOfDiagnosisActTemplateId DateOfDiagnosisActEffectiveTimeLow DateOfDiagnosisActCode DateOfDiagnosisActCodeP DateOfDiagnosisActStatusCode DateOfDiagnosisActStatusCodeP DateOfDiagnosisActEffectiveTime DateOfDiagnosisActClassCode DateOfDiagnosisActMoodCode' templateId.root='2.16.840.1.113883.10.20.22.4.502' templateId.extension='2022-06-01' constraints.validation.info='DateOfDiagnosisActEffectiveTimehigh' code.code='77975-1' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Earliest date of diagnosis' constraints.validation.dependOn.DateOfDiagnosisActCode='DateOfDiagnosisActCodeP' statusCode.code='completed' constraints.validation.dependOn.DateOfDiagnosisActStatusCode='DateOfDiagnosisActStatusCodeP' classCode='ACT' moodCode='EVN'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='DateOfDiagnosisActTemplateId DateOfDiagnosisActCode DateOfDiagnosisActCodeP DateOfDiagnosisActStatusCode DateOfDiagnosisActStatusCodeP DateOfDiagnosisActEffectiveTime DateOfDiagnosisActClassCode DateOfDiagnosisActMoodCode DateOfDiagnosisActIVLTSValue DateOfDiagnosisActIVLTSLow DateOfDiagnosisActIVLTSHigh' templateId.root='2.16.840.1.113883.10.20.22.4.502' templateId.extension='2022-06-01' code.code='77975-1' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Earliest date of diagnosis' constraints.validation.dependOn.DateOfDiagnosisActCode='DateOfDiagnosisActCodeP' statusCode.code='completed' constraints.validation.dependOn.DateOfDiagnosisActStatusCode='DateOfDiagnosisActStatusCodeP' classCode='ACT' moodCode='EVN' constraints.validation.query='DateOfDiagnosisActIVLTSValue DateOfDiagnosisActIVLTSLow DateOfDiagnosisActIVLTSHigh'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolDateOfDiagnosisActIVLTS constraints.validation.error='DateOfDiagnosisActIVLTSValue DateOfDiagnosisActIVLTSLow DateOfDiagnosisActIVLTSHigh'"
  * @generated
  */
 public interface DateOfDiagnosisAct extends Act {
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.effectiveTime.oclIsUndefined() implies self.effectiveTime.low-&gt;size() = 1'"
-	 * @generated
-	 */
-	boolean validateDateOfDiagnosisActEffectiveTimeLow(DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.effectiveTime.oclIsUndefined() implies self.effectiveTime.high-&gt;size() = 1'"
-	 * @generated
-	 */
-	boolean validateDateOfDiagnosisActEffectiveTimehigh(DiagnosticChain diagnostics, Map<Object, Object> context);
-
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -146,14 +123,50 @@ public interface DateOfDiagnosisAct extends Act {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.effectiveTime-&gt;excluding(null)-&gt;select(isNullFlavorUndefined())-&gt;reject( ( isNullFlavorUndefined() implies (not value.oclIsUndefined() )))'"
 	 * @generated
 	 */
-	public DateOfDiagnosisAct init();
+	boolean validateDateOfDiagnosisActIVLTSValue(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.effectiveTime-&gt;excluding(null)-&gt;select(isNullFlavorUndefined())-&gt;reject( ( isNullFlavorUndefined() implies (low.oclIsUndefined() )))'"
+	 * @generated
+	 */
+	boolean validateDateOfDiagnosisActIVLTSLow(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.effectiveTime-&gt;excluding(null)-&gt;select(isNullFlavorUndefined())-&gt;reject( ( isNullFlavorUndefined() implies (high.oclIsUndefined() )))'"
+	 * @generated
+	 */
+	boolean validateDateOfDiagnosisActIVLTSHigh(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public DateOfDiagnosisAct init();
+
+	/**
+     * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+     * @generated
+     */
 	public DateOfDiagnosisAct init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // DateOfDiagnosisAct

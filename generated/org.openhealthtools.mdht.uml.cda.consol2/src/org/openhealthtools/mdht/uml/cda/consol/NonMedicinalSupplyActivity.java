@@ -160,9 +160,9 @@ public interface NonMedicinalSupplyActivity extends Supply {
 	public NonMedicinalSupplyActivity init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public NonMedicinalSupplyActivity init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // NonMedicinalSupplyActivity

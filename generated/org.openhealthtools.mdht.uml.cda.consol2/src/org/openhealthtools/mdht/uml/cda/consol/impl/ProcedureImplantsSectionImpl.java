@@ -56,8 +56,7 @@ public class ProcedureImplantsSectionImpl extends SectionImpl implements Procedu
 	 */
 	public boolean validateProcedureImplantsSectionTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProcedureImplantsSectionOperations.validateProcedureImplantsSectionTemplateId(
-			this, diagnostics, context);
+		return ProcedureImplantsSectionOperations.validateProcedureImplantsSectionTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -102,16 +101,16 @@ public class ProcedureImplantsSectionImpl extends SectionImpl implements Procedu
 	 * @generated
 	 */
 	public ProcedureImplantsSection init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public ProcedureImplantsSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // ProcedureImplantsSectionImpl

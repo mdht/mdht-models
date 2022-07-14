@@ -674,9 +674,9 @@ public interface ProgressNote extends GeneralHeaderConstraints {
 	public ProgressNote init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public ProgressNote init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ProgressNote

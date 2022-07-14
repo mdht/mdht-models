@@ -65,9 +65,9 @@ public interface ResultsSection2 extends ResultsSectionEntriesOptional2 {
 	public ResultsSection2 init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public ResultsSection2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ResultsSection2

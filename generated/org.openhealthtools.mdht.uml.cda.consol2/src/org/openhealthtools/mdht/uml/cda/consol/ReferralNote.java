@@ -904,9 +904,9 @@ public interface ReferralNote extends USRealmHeader2 {
 	public ReferralNote init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public ReferralNote init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ReferralNote

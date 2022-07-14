@@ -115,9 +115,9 @@ public interface DischargeMedicationsSection2 extends DischargeMedicationsSectio
 	public DischargeMedicationsSection2 init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public DischargeMedicationsSection2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // DischargeMedicationsSection2

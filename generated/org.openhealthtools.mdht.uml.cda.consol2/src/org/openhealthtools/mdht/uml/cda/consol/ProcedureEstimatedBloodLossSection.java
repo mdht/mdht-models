@@ -90,9 +90,9 @@ public interface ProcedureEstimatedBloodLossSection extends Section {
 	public ProcedureEstimatedBloodLossSection init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public ProcedureEstimatedBloodLossSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ProcedureEstimatedBloodLossSection

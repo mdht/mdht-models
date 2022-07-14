@@ -161,9 +161,9 @@ public interface SocialHistoryObservation extends Observation {
 	public SocialHistoryObservation init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public SocialHistoryObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // SocialHistoryObservation

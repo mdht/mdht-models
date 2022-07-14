@@ -93,9 +93,9 @@ public interface SmokingStatusMeaningfulUse2 extends SmokingStatusObservation {
 	public SmokingStatusMeaningfulUse2 init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public SmokingStatusMeaningfulUse2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // SmokingStatusMeaningfulUse2

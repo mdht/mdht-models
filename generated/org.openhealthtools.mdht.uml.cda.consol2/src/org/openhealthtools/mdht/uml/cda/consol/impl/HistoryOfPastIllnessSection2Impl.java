@@ -54,8 +54,7 @@ public class HistoryOfPastIllnessSection2Impl extends HistoryOfPastIllnessSectio
 	 */
 	public boolean validateHistoryOfPastIllnessSection2TemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HistoryOfPastIllnessSection2Operations.validateHistoryOfPastIllnessSection2TemplateId(
-			this, diagnostics, context);
+		return HistoryOfPastIllnessSection2Operations.validateHistoryOfPastIllnessSection2TemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -74,8 +73,7 @@ public class HistoryOfPastIllnessSection2Impl extends HistoryOfPastIllnessSectio
 	 */
 	@Override
 	public boolean validateHistoryOfPastIllnessSectionCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return HistoryOfPastIllnessSection2Operations.validateHistoryOfPastIllnessSectionCodeP(
-			this, diagnostics, context);
+		return HistoryOfPastIllnessSection2Operations.validateHistoryOfPastIllnessSectionCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -85,8 +83,7 @@ public class HistoryOfPastIllnessSection2Impl extends HistoryOfPastIllnessSectio
 	 */
 	@Override
 	public boolean validateHistoryOfPastIllnessSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return HistoryOfPastIllnessSection2Operations.validateHistoryOfPastIllnessSectionCode(
-			this, diagnostics, context);
+		return HistoryOfPastIllnessSection2Operations.validateHistoryOfPastIllnessSectionCode(this, diagnostics, context);
 	}
 
 	/**
@@ -97,8 +94,7 @@ public class HistoryOfPastIllnessSection2Impl extends HistoryOfPastIllnessSectio
 	@Override
 	public boolean validateHistoryOfPastIllnessSectionProblemObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HistoryOfPastIllnessSection2Operations.validateHistoryOfPastIllnessSectionProblemObservation(
-			this, diagnostics, context);
+		return HistoryOfPastIllnessSection2Operations.validateHistoryOfPastIllnessSectionProblemObservation(this, diagnostics, context);
 	}
 
 	/**
@@ -108,17 +104,17 @@ public class HistoryOfPastIllnessSection2Impl extends HistoryOfPastIllnessSectio
 	 */
 	@Override
 	public HistoryOfPastIllnessSection2 init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public HistoryOfPastIllnessSection2 init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // HistoryOfPastIllnessSection2Impl

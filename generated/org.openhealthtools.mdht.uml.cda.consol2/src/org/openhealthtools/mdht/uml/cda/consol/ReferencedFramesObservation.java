@@ -99,9 +99,9 @@ public interface ReferencedFramesObservation extends Observation {
 	public ReferencedFramesObservation init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public ReferencedFramesObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ReferencedFramesObservation

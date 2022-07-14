@@ -50,8 +50,7 @@ public class ManufacturingDateObservationImpl extends ObservationImpl implements
 	 */
 	public boolean validateManufacturingDateObservationTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ManufacturingDateObservationOperations.validateManufacturingDateObservationTemplateId(
-			this, diagnostics, context);
+		return ManufacturingDateObservationOperations.validateManufacturingDateObservationTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -60,8 +59,7 @@ public class ManufacturingDateObservationImpl extends ObservationImpl implements
 	 * @generated
 	 */
 	public boolean validateManufacturingDateObservationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ManufacturingDateObservationOperations.validateManufacturingDateObservationCodeP(
-			this, diagnostics, context);
+		return ManufacturingDateObservationOperations.validateManufacturingDateObservationCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -70,8 +68,7 @@ public class ManufacturingDateObservationImpl extends ObservationImpl implements
 	 * @generated
 	 */
 	public boolean validateManufacturingDateObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ManufacturingDateObservationOperations.validateManufacturingDateObservationCode(
-			this, diagnostics, context);
+		return ManufacturingDateObservationOperations.validateManufacturingDateObservationCode(this, diagnostics, context);
 	}
 
 	/**
@@ -80,8 +77,7 @@ public class ManufacturingDateObservationImpl extends ObservationImpl implements
 	 * @generated
 	 */
 	public boolean validateManufacturingDateObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ManufacturingDateObservationOperations.validateManufacturingDateObservationValue(
-			this, diagnostics, context);
+		return ManufacturingDateObservationOperations.validateManufacturingDateObservationValue(this, diagnostics, context);
 	}
 
 	/**
@@ -91,8 +87,7 @@ public class ManufacturingDateObservationImpl extends ObservationImpl implements
 	 */
 	public boolean validateManufacturingDateObservationTSValue(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ManufacturingDateObservationOperations.validateManufacturingDateObservationTSValue(
-			this, diagnostics, context);
+		return ManufacturingDateObservationOperations.validateManufacturingDateObservationTSValue(this, diagnostics, context);
 	}
 
 	/**
@@ -101,17 +96,17 @@ public class ManufacturingDateObservationImpl extends ObservationImpl implements
 	 * @generated
 	 */
 	public ManufacturingDateObservation init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public ManufacturingDateObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 
 } // ManufacturingDateObservationImpl

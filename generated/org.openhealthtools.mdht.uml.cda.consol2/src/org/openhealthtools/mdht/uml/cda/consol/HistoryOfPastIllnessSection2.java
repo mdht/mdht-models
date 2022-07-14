@@ -51,9 +51,9 @@ public interface HistoryOfPastIllnessSection2 extends HistoryOfPastIllnessSectio
 	public HistoryOfPastIllnessSection2 init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public HistoryOfPastIllnessSection2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // HistoryOfPastIllnessSection2

@@ -52,8 +52,7 @@ public class SmokingStatusObservationImpl extends ObservationImpl implements Smo
 	 */
 	public boolean validateSmokingStatusObservationTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return SmokingStatusObservationOperations.validateSmokingStatusObservationTemplateId(
-			this, diagnostics, context);
+		return SmokingStatusObservationOperations.validateSmokingStatusObservationTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -90,8 +89,7 @@ public class SmokingStatusObservationImpl extends ObservationImpl implements Smo
 	 */
 	public boolean validateSmokingStatusObservationStatusCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return SmokingStatusObservationOperations.validateSmokingStatusObservationStatusCode(
-			this, diagnostics, context);
+		return SmokingStatusObservationOperations.validateSmokingStatusObservationStatusCode(this, diagnostics, context);
 	}
 
 	/**
@@ -101,8 +99,7 @@ public class SmokingStatusObservationImpl extends ObservationImpl implements Smo
 	 */
 	public boolean validateSmokingStatusObservationStatusCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return SmokingStatusObservationOperations.validateSmokingStatusObservationStatusCodeP(
-			this, diagnostics, context);
+		return SmokingStatusObservationOperations.validateSmokingStatusObservationStatusCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -112,8 +109,7 @@ public class SmokingStatusObservationImpl extends ObservationImpl implements Smo
 	 */
 	public boolean validateSmokingStatusObservationEffectiveTime(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return SmokingStatusObservationOperations.validateSmokingStatusObservationEffectiveTime(
-			this, diagnostics, context);
+		return SmokingStatusObservationOperations.validateSmokingStatusObservationEffectiveTime(this, diagnostics, context);
 	}
 
 	/**
@@ -141,8 +137,7 @@ public class SmokingStatusObservationImpl extends ObservationImpl implements Smo
 	 */
 	public boolean validateSmokingStatusObservationCDCodeTermAssertionOrLoinc(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return SmokingStatusObservationOperations.validateSmokingStatusObservationCDCodeTermAssertionOrLoinc(
-			this, diagnostics, context);
+		return SmokingStatusObservationOperations.validateSmokingStatusObservationCDCodeTermAssertionOrLoinc(this, diagnostics, context);
 	}
 
 	/**
@@ -161,8 +156,7 @@ public class SmokingStatusObservationImpl extends ObservationImpl implements Smo
 	 */
 	public boolean validateSmokingStatusObservationCDCodeSystem(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return SmokingStatusObservationOperations.validateSmokingStatusObservationCDCodeSystem(
-			this, diagnostics, context);
+		return SmokingStatusObservationOperations.validateSmokingStatusObservationCDCodeSystem(this, diagnostics, context);
 	}
 
 	/**
@@ -172,8 +166,7 @@ public class SmokingStatusObservationImpl extends ObservationImpl implements Smo
 	 */
 	public boolean validateSmokingStatusObservationIVLTSCenter(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return SmokingStatusObservationOperations.validateSmokingStatusObservationIVLTSCenter(
-			this, diagnostics, context);
+		return SmokingStatusObservationOperations.validateSmokingStatusObservationIVLTSCenter(this, diagnostics, context);
 	}
 
 	/**
@@ -201,8 +194,7 @@ public class SmokingStatusObservationImpl extends ObservationImpl implements Smo
 	 */
 	public boolean validateSmokingStatusObservationIVLTSWidth(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return SmokingStatusObservationOperations.validateSmokingStatusObservationIVLTSWidth(
-			this, diagnostics, context);
+		return SmokingStatusObservationOperations.validateSmokingStatusObservationIVLTSWidth(this, diagnostics, context);
 	}
 
 	/**
@@ -211,16 +203,16 @@ public class SmokingStatusObservationImpl extends ObservationImpl implements Smo
 	 * @generated
 	 */
 	public SmokingStatusObservation init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public SmokingStatusObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // SmokingStatusObservationImpl

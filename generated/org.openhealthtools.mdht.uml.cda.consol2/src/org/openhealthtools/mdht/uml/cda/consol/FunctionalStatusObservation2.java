@@ -65,9 +65,9 @@ public interface FunctionalStatusObservation2 extends FunctionalStatusResultObse
 	public FunctionalStatusObservation2 init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public FunctionalStatusObservation2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // FunctionalStatusObservation2

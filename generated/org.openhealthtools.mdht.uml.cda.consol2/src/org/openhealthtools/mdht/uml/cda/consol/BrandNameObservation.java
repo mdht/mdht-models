@@ -77,10 +77,10 @@ public interface BrandNameObservation extends Observation {
 	public BrandNameObservation init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public BrandNameObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
 
 } // BrandNameObservation

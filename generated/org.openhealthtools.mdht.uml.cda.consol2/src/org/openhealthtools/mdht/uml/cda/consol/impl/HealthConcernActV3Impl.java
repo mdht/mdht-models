@@ -113,8 +113,8 @@ public class HealthConcernActV3Impl extends ActImpl implements HealthConcernActV
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public HealthConcernActV3 init() {
-		return Initializer.Util.init(this);
+	public boolean validateHealthConcernActV3CodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return HealthConcernActV3Operations.validateHealthConcernActV3CodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -122,8 +122,26 @@ public class HealthConcernActV3Impl extends ActImpl implements HealthConcernActV
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public HealthConcernActV3 init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
+	public boolean validateHealthConcernActV3Code(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return HealthConcernActV3Operations.validateHealthConcernActV3Code(this, diagnostics, context);
 	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public HealthConcernActV3 init() {
+	    return Initializer.Util.init(this);
+	}
+
+	/**
+     * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+     * @generated
+     */
+	public HealthConcernActV3 init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // HealthConcernActV3Impl

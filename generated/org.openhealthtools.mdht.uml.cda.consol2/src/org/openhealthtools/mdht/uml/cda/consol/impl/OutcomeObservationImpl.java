@@ -55,8 +55,7 @@ public class OutcomeObservationImpl extends ObservationImpl implements OutcomeOb
 	 */
 	public boolean validateOutcomeObservationProgTowardGoalObsInversionIndIsTrue(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return OutcomeObservationOperations.validateOutcomeObservationProgTowardGoalObsInversionIndIsTrue(
-			this, diagnostics, context);
+		return OutcomeObservationOperations.validateOutcomeObservationProgTowardGoalObsInversionIndIsTrue(this, diagnostics, context);
 	}
 
 	/**
@@ -139,8 +138,7 @@ public class OutcomeObservationImpl extends ObservationImpl implements OutcomeOb
 	 */
 	public boolean validateOutcomeObservationEntryReferenceInterventionAct(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return OutcomeObservationOperations.validateOutcomeObservationEntryReferenceInterventionAct(
-			this, diagnostics, context);
+		return OutcomeObservationOperations.validateOutcomeObservationEntryReferenceInterventionAct(this, diagnostics, context);
 	}
 
 	/**
@@ -160,8 +158,7 @@ public class OutcomeObservationImpl extends ObservationImpl implements OutcomeOb
 	 */
 	public boolean validateOutcomeObservationProgressTowardGoalObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return OutcomeObservationOperations.validateOutcomeObservationProgressTowardGoalObservation(
-			this, diagnostics, context);
+		return OutcomeObservationOperations.validateOutcomeObservationProgressTowardGoalObservation(this, diagnostics, context);
 	}
 
 	/**
@@ -200,8 +197,7 @@ public class OutcomeObservationImpl extends ObservationImpl implements OutcomeOb
 	 */
 	public boolean validateOutcomeObservationReferenceExternalDocumentReference(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return OutcomeObservationOperations.validateOutcomeObservationReferenceExternalDocumentReference(
-			this, diagnostics, context);
+		return OutcomeObservationOperations.validateOutcomeObservationReferenceExternalDocumentReference(this, diagnostics, context);
 	}
 
 	/**
@@ -237,16 +233,16 @@ public class OutcomeObservationImpl extends ObservationImpl implements OutcomeOb
 	 * @generated
 	 */
 	public OutcomeObservation init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public OutcomeObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // OutcomeObservationImpl

@@ -991,9 +991,9 @@ public interface ConsultationNote2 extends USRealmHeader2 {
 	public ConsultationNote2 init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public ConsultationNote2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ConsultationNote2

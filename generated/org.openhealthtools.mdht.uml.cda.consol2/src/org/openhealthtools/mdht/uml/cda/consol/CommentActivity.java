@@ -137,9 +137,9 @@ public interface CommentActivity extends Act {
 	public CommentActivity init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public CommentActivity init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // CommentActivity

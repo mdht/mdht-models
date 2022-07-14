@@ -109,9 +109,9 @@ public interface FunctionalStatusProblemObservation extends ProblemObservation {
 	public FunctionalStatusProblemObservation init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public FunctionalStatusProblemObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // FunctionalStatusProblemObservation

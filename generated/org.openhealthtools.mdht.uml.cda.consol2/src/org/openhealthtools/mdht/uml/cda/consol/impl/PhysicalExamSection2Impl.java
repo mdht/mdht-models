@@ -84,8 +84,7 @@ public class PhysicalExamSection2Impl extends PhysicalExamSectionImpl implements
 	 */
 	public boolean validatePhysicalExamSection2ComponentSectionCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PhysicalExamSection2Operations.validatePhysicalExamSection2ComponentSectionCode(
-			this, diagnostics, context);
+		return PhysicalExamSection2Operations.validatePhysicalExamSection2ComponentSectionCode(this, diagnostics, context);
 	}
 
 	/**
@@ -95,8 +94,7 @@ public class PhysicalExamSection2Impl extends PhysicalExamSectionImpl implements
 	 */
 	public boolean validatePhysicalExamSection2ComponentSectionCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PhysicalExamSection2Operations.validatePhysicalExamSection2ComponentSectionCodeP(
-			this, diagnostics, context);
+		return PhysicalExamSection2Operations.validatePhysicalExamSection2ComponentSectionCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -106,8 +104,7 @@ public class PhysicalExamSection2Impl extends PhysicalExamSectionImpl implements
 	 */
 	public boolean validatePhysicalExamSection2ComponentSectionTitle(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PhysicalExamSection2Operations.validatePhysicalExamSection2ComponentSectionTitle(
-			this, diagnostics, context);
+		return PhysicalExamSection2Operations.validatePhysicalExamSection2ComponentSectionTitle(this, diagnostics, context);
 	}
 
 	/**
@@ -117,8 +114,7 @@ public class PhysicalExamSection2Impl extends PhysicalExamSectionImpl implements
 	 */
 	public boolean validatePhysicalExamSection2ComponentSectionText(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PhysicalExamSection2Operations.validatePhysicalExamSection2ComponentSectionText(
-			this, diagnostics, context);
+		return PhysicalExamSection2Operations.validatePhysicalExamSection2ComponentSectionText(this, diagnostics, context);
 	}
 
 	/**
@@ -195,8 +191,7 @@ public class PhysicalExamSection2Impl extends PhysicalExamSectionImpl implements
 	@Override
 	public boolean validatePhysicalExamSectionPressureUlcerObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PhysicalExamSection2Operations.validatePhysicalExamSectionPressureUlcerObservation(
-			this, diagnostics, context);
+		return PhysicalExamSection2Operations.validatePhysicalExamSectionPressureUlcerObservation(this, diagnostics, context);
 	}
 
 	/**
@@ -207,8 +202,7 @@ public class PhysicalExamSection2Impl extends PhysicalExamSectionImpl implements
 	@Override
 	public boolean validatePhysicalExamSectionHighestPressureUlcerStage(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PhysicalExamSection2Operations.validatePhysicalExamSectionHighestPressureUlcerStage(
-			this, diagnostics, context);
+		return PhysicalExamSection2Operations.validatePhysicalExamSectionHighestPressureUlcerStage(this, diagnostics, context);
 	}
 
 	/**
@@ -219,8 +213,7 @@ public class PhysicalExamSection2Impl extends PhysicalExamSectionImpl implements
 	@Override
 	public boolean validatePhysicalExamSectionNumberOfPressureUlcersObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PhysicalExamSection2Operations.validatePhysicalExamSectionNumberOfPressureUlcersObservation(
-			this, diagnostics, context);
+		return PhysicalExamSection2Operations.validatePhysicalExamSectionNumberOfPressureUlcersObservation(this, diagnostics, context);
 	}
 
 	/**
@@ -230,17 +223,17 @@ public class PhysicalExamSection2Impl extends PhysicalExamSectionImpl implements
 	 */
 	@Override
 	public PhysicalExamSection2 init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public PhysicalExamSection2 init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // PhysicalExamSection2Impl

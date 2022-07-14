@@ -39,8 +39,10 @@ import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityProcedureV3#validateProcedureActivityProcedureV3StatusCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Procedure V3 Status Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityProcedureV3#validateProcedureActivityProcedureV3StatusCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Procedure V3 Status Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityProcedureV3#validateProcedureActivityProcedureV3EffectiveTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Procedure V3 Effective Time</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityProcedureV3#validateProcedureActivityProcedureV3PriorityCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Procedure V3 Priority Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityProcedureV3#validateProcedureActivityProcedureV3PriorityCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Procedure V3 Priority Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityProcedureV3#validateProcedureActivityProcedureV3MethodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Procedure V3 Method Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityProcedureV3#validateProcedureActivityProcedureV3TargetSiteCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Procedure V3 Target Site Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityProcedureV3#validateProcedureActivityProcedureV3TargetSiteCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Procedure V3 Target Site Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityProcedureV3#validateProcedureActivityProcedureV3ClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Procedure V3 Class Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityProcedureV3#validateProcedureActivityProcedureV3MoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Procedure V3 Mood Code</em>}</li>
@@ -507,6 +509,90 @@ public class ProcedureActivityProcedureV3Operations extends ClinicalStatementOpe
 	}
 
 	/**
+	 * The cached OCL expression body for the '{@link #validateProcedureActivityProcedureV3PriorityCodeP(ProcedureActivityProcedureV3, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Procedure V3 Priority Code P</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateProcedureActivityProcedureV3PriorityCodeP(ProcedureActivityProcedureV3, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_PROCEDURE_ACTIVITY_PROCEDURE_V3_PRIORITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.priorityCode.oclIsUndefined() or self.priorityCode.isNullFlavorUndefined()) implies (not self.priorityCode.oclIsUndefined())";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateProcedureActivityProcedureV3PriorityCodeP(ProcedureActivityProcedureV3, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Procedure V3 Priority Code P</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateProcedureActivityProcedureV3PriorityCodeP(ProcedureActivityProcedureV3, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static ThreadLocal<Constraint> VALIDATE_PROCEDURE_ACTIVITY_PROCEDURE_V3_PRIORITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param procedureActivityProcedureV3 The receiving '<em><b>Procedure Activity Procedure V3</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+
+	public static boolean validateProcedureActivityProcedureV3PriorityCodeP(
+			ProcedureActivityProcedureV3 procedureActivityProcedureV3, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "ProcedureActivityProcedureV3ProcedureActivityProcedureV3PriorityCodeP", "INFO");
+
+		if (VALIDATE_PROCEDURE_ACTIVITY_PROCEDURE_V3_PRIORITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.PROCEDURE_ACTIVITY_PROCEDURE_V3);
+			try {
+				VALIDATE_PROCEDURE_ACTIVITY_PROCEDURE_V3_PRIORITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_PROCEDURE_ACTIVITY_PROCEDURE_V3_PRIORITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_PROCEDURE_ACTIVITY_PROCEDURE_V3_PRIORITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				procedureActivityProcedureV3)) {
+			if (diagnostics != null) {
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PROCEDURE_ACTIVITY_PROCEDURE_V3__PROCEDURE_ACTIVITY_PROCEDURE_V3_PRIORITY_CODE_P,
+						ConsolPlugin.INSTANCE.getString(
+							"ProcedureActivityProcedureV3ProcedureActivityProcedureV3PriorityCodeP"),
+						new Object[] { procedureActivityProcedureV3 }));
+			}
+
+			if (context != null) {
+				// generate a pass token for my dependent constraints to short-circuit or filter results
+				@SuppressWarnings("unchecked")
+				Collection<Object> passToken = (Collection<Object>) context.get(
+					"org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityProcedureV3PriorityCodeP");
+				if (passToken == null) {
+					// anticipate a reasonably healthy model
+					passToken = new java.util.ArrayList<>(3);
+					context.put(
+						"org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityProcedureV3PriorityCodeP", passToken);
+				}
+				passToken.add(procedureActivityProcedureV3);
+			}
+
+			return false;
+		}
+		return true;
+	}
+
+	/**
 	 * The cached OCL expression body for the '{@link #validateProcedureActivityProcedureV3PriorityCode(ProcedureActivityProcedureV3, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Procedure V3 Priority Code</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -514,7 +600,9 @@ public class ProcedureActivityProcedureV3Operations extends ClinicalStatementOpe
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PROCEDURE_ACTIVITY_PROCEDURE_V3_PRIORITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.priorityCode.oclIsUndefined() or self.priorityCode.isNullFlavorUndefined()) implies (not self.priorityCode.oclIsUndefined())";
+	protected static final String VALIDATE_PROCEDURE_ACTIVITY_PROCEDURE_V3_PRIORITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.priorityCode.oclIsUndefined() or self.priorityCode.isNullFlavorUndefined()) implies (not self.priorityCode.oclIsUndefined() and self.priorityCode.oclIsKindOf(datatypes::CE) and " +
+			"let value : datatypes::CE = self.priorityCode.oclAsType(datatypes::CE) in " +
+			"value.codeSystem = '2.16.840.1.113883.5.7' and (value.code = 'A' or value.code = 'CR' or value.code = 'CS' or value.code = 'CSP' or value.code = 'CSR' or value.code = 'EL' or value.code = 'EM' or value.code = 'P' or value.code = 'PRN' or value.code = 'R' or value.code = 'RR' or value.code = 'S' or value.code = 'T' or value.code = 'UD' or value.code = 'UR'))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateProcedureActivityProcedureV3PriorityCode(ProcedureActivityProcedureV3, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Procedure V3 Priority Code</em>}' invariant operation.
@@ -542,8 +630,17 @@ public class ProcedureActivityProcedureV3Operations extends ClinicalStatementOpe
 			ProcedureActivityProcedureV3 procedureActivityProcedureV3, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		Object passToken = (context == null)
+				? null
+				: context.get("org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityProcedureV3PriorityCodeP");
+		if ((passToken instanceof Collection<?>) &&
+				((Collection<?>) passToken).contains(procedureActivityProcedureV3)) {
+			// I have a free pass to short-circuit
+			return true;
+		}
+
 		DatatypesUtil.increment(
-			context, "ProcedureActivityProcedureV3ProcedureActivityProcedureV3PriorityCode", "INFO");
+			context, "ProcedureActivityProcedureV3ProcedureActivityProcedureV3PriorityCode", "ERROR");
 
 		if (VALIDATE_PROCEDURE_ACTIVITY_PROCEDURE_V3_PRIORITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -564,7 +661,7 @@ public class ProcedureActivityProcedureV3Operations extends ClinicalStatementOpe
 			if (diagnostics != null) {
 				diagnostics.add(
 					new BasicDiagnostic(
-						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROCEDURE_ACTIVITY_PROCEDURE_V3__PROCEDURE_ACTIVITY_PROCEDURE_V3_PRIORITY_CODE,
 						ConsolPlugin.INSTANCE.getString(
 							"ProcedureActivityProcedureV3ProcedureActivityProcedureV3PriorityCode"),
@@ -646,6 +743,91 @@ public class ProcedureActivityProcedureV3Operations extends ClinicalStatementOpe
 	}
 
 	/**
+	 * The cached OCL expression body for the '{@link #validateProcedureActivityProcedureV3TargetSiteCodeP(ProcedureActivityProcedureV3, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Procedure V3 Target Site Code P</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateProcedureActivityProcedureV3TargetSiteCodeP(ProcedureActivityProcedureV3, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_PROCEDURE_ACTIVITY_PROCEDURE_V3_TARGET_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.targetSiteCode->isEmpty() or self.targetSiteCode->exists(element | element.isNullFlavorUndefined())) implies (not self.targetSiteCode->isEmpty())";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateProcedureActivityProcedureV3TargetSiteCodeP(ProcedureActivityProcedureV3, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Procedure V3 Target Site Code P</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateProcedureActivityProcedureV3TargetSiteCodeP(ProcedureActivityProcedureV3, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static ThreadLocal<Constraint> VALIDATE_PROCEDURE_ACTIVITY_PROCEDURE_V3_TARGET_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param procedureActivityProcedureV3 The receiving '<em><b>Procedure Activity Procedure V3</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+
+	public static boolean validateProcedureActivityProcedureV3TargetSiteCodeP(
+			ProcedureActivityProcedureV3 procedureActivityProcedureV3, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(
+			context, "ProcedureActivityProcedureV3ProcedureActivityProcedureV3TargetSiteCodeP", "WARNING");
+
+		if (VALIDATE_PROCEDURE_ACTIVITY_PROCEDURE_V3_TARGET_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.PROCEDURE_ACTIVITY_PROCEDURE_V3);
+			try {
+				VALIDATE_PROCEDURE_ACTIVITY_PROCEDURE_V3_TARGET_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_PROCEDURE_ACTIVITY_PROCEDURE_V3_TARGET_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_PROCEDURE_ACTIVITY_PROCEDURE_V3_TARGET_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				procedureActivityProcedureV3)) {
+			if (diagnostics != null) {
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PROCEDURE_ACTIVITY_PROCEDURE_V3__PROCEDURE_ACTIVITY_PROCEDURE_V3_TARGET_SITE_CODE_P,
+						ConsolPlugin.INSTANCE.getString(
+							"ProcedureActivityProcedureV3ProcedureActivityProcedureV3TargetSiteCodeP"),
+						new Object[] { procedureActivityProcedureV3 }));
+			}
+
+			if (context != null) {
+				// generate a pass token for my dependent constraints to short-circuit or filter results
+				@SuppressWarnings("unchecked")
+				Collection<Object> passToken = (Collection<Object>) context.get(
+					"org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityProcedureV3TargetSiteCodeP");
+				if (passToken == null) {
+					// anticipate a reasonably healthy model
+					passToken = new java.util.ArrayList<>(3);
+					context.put(
+						"org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityProcedureV3TargetSiteCodeP",
+						passToken);
+				}
+				passToken.add(procedureActivityProcedureV3);
+			}
+
+			return false;
+		}
+		return true;
+	}
+
+	/**
 	 * The cached OCL expression body for the '{@link #validateProcedureActivityProcedureV3TargetSiteCode(ProcedureActivityProcedureV3, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Procedure V3 Target Site Code</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -653,7 +835,9 @@ public class ProcedureActivityProcedureV3Operations extends ClinicalStatementOpe
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PROCEDURE_ACTIVITY_PROCEDURE_V3_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.targetSiteCode->isEmpty() or self.targetSiteCode->exists(element | element.isNullFlavorUndefined())) implies (not self.targetSiteCode->isEmpty())";
+	protected static final String VALIDATE_PROCEDURE_ACTIVITY_PROCEDURE_V3_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.targetSiteCode->isEmpty() or self.targetSiteCode->exists(element | element.isNullFlavorUndefined())) implies (self.targetSiteCode->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and " +
+			"let value : datatypes::CD = element.oclAsType(datatypes::CD) in " +
+			"value.codeSystem = '2.16.840.1.113883.6.96' and not value.code.oclIsUndefined()))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateProcedureActivityProcedureV3TargetSiteCode(ProcedureActivityProcedureV3, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Procedure V3 Target Site Code</em>}' invariant operation.
@@ -681,8 +865,17 @@ public class ProcedureActivityProcedureV3Operations extends ClinicalStatementOpe
 			ProcedureActivityProcedureV3 procedureActivityProcedureV3, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
+		Object passToken = (context == null)
+				? null
+				: context.get("org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityProcedureV3TargetSiteCodeP");
+		if ((passToken instanceof Collection<?>) &&
+				((Collection<?>) passToken).contains(procedureActivityProcedureV3)) {
+			// I have a free pass to short-circuit
+			return true;
+		}
+
 		DatatypesUtil.increment(
-			context, "ProcedureActivityProcedureV3ProcedureActivityProcedureV3TargetSiteCode", "WARNING");
+			context, "ProcedureActivityProcedureV3ProcedureActivityProcedureV3TargetSiteCode", "ERROR");
 
 		if (VALIDATE_PROCEDURE_ACTIVITY_PROCEDURE_V3_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -703,7 +896,7 @@ public class ProcedureActivityProcedureV3Operations extends ClinicalStatementOpe
 			if (diagnostics != null) {
 				diagnostics.add(
 					new BasicDiagnostic(
-						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROCEDURE_ACTIVITY_PROCEDURE_V3__PROCEDURE_ACTIVITY_PROCEDURE_V3_TARGET_SITE_CODE,
 						ConsolPlugin.INSTANCE.getString(
 							"ProcedureActivityProcedureV3ProcedureActivityProcedureV3TargetSiteCode"),

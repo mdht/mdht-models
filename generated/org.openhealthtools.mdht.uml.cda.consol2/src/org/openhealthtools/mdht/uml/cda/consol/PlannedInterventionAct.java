@@ -653,9 +653,9 @@ public interface PlannedInterventionAct extends Act {
 	public PlannedInterventionAct init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public PlannedInterventionAct init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // PlannedInterventionAct

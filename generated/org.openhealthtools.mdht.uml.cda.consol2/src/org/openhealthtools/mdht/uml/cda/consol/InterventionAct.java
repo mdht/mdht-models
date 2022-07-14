@@ -499,9 +499,9 @@ public interface InterventionAct extends Act {
 	public InterventionAct init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public InterventionAct init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // InterventionAct

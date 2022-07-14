@@ -54,8 +54,7 @@ public class ProvenanceAuthorParticipationImpl extends AuthorImpl implements Pro
 	 */
 	public boolean validateProvenanceAuthorParticipationTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProvenanceAuthorParticipationOperations.validateProvenanceAuthorParticipationTemplateId(
-			this, diagnostics, context);
+		return ProvenanceAuthorParticipationOperations.validateProvenanceAuthorParticipationTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -64,8 +63,7 @@ public class ProvenanceAuthorParticipationImpl extends AuthorImpl implements Pro
 	 * @generated
 	 */
 	public boolean validateProvenanceAuthorParticipationTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProvenanceAuthorParticipationOperations.validateProvenanceAuthorParticipationTime(
-			this, diagnostics, context);
+		return ProvenanceAuthorParticipationOperations.validateProvenanceAuthorParticipationTime(this, diagnostics, context);
 	}
 
 	/**
@@ -75,8 +73,7 @@ public class ProvenanceAuthorParticipationImpl extends AuthorImpl implements Pro
 	 */
 	public boolean validateProvenanceAuthorParticipationAssignedAuthor(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProvenanceAuthorParticipationOperations.validateProvenanceAuthorParticipationAssignedAuthor(
-			this, diagnostics, context);
+		return ProvenanceAuthorParticipationOperations.validateProvenanceAuthorParticipationAssignedAuthor(this, diagnostics, context);
 	}
 
 	/**
@@ -86,8 +83,7 @@ public class ProvenanceAuthorParticipationImpl extends AuthorImpl implements Pro
 	 */
 	public boolean validateProvenanceAuthorParticipationProvenanceAssignedAuthorAssignedPersonPNFamily(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProvenanceAuthorParticipationOperations.validateProvenanceAuthorParticipationProvenanceAssignedAuthorAssignedPersonPNFamily(
-			this, diagnostics, context);
+		return ProvenanceAuthorParticipationOperations.validateProvenanceAuthorParticipationProvenanceAssignedAuthorAssignedPersonPNFamily(this, diagnostics, context);
 	}
 
 	/**
@@ -97,8 +93,7 @@ public class ProvenanceAuthorParticipationImpl extends AuthorImpl implements Pro
 	 */
 	public boolean validateProvenanceAuthorParticipationProvenanceAssignedAuthorAssignedPersonPNGiven(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProvenanceAuthorParticipationOperations.validateProvenanceAuthorParticipationProvenanceAssignedAuthorAssignedPersonPNGiven(
-			this, diagnostics, context);
+		return ProvenanceAuthorParticipationOperations.validateProvenanceAuthorParticipationProvenanceAssignedAuthorAssignedPersonPNGiven(this, diagnostics, context);
 	}
 
 	/**
@@ -108,8 +103,7 @@ public class ProvenanceAuthorParticipationImpl extends AuthorImpl implements Pro
 	 */
 	public boolean validateProvenanceAuthorParticipationProvenanceAssignedAuthorAssignedPersonName(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProvenanceAuthorParticipationOperations.validateProvenanceAuthorParticipationProvenanceAssignedAuthorAssignedPersonName(
-			this, diagnostics, context);
+		return ProvenanceAuthorParticipationOperations.validateProvenanceAuthorParticipationProvenanceAssignedAuthorAssignedPersonName(this, diagnostics, context);
 	}
 
 	/**
@@ -119,8 +113,7 @@ public class ProvenanceAuthorParticipationImpl extends AuthorImpl implements Pro
 	 */
 	public boolean validateProvenanceAuthorParticipationProvenanceAssignedAuthorRepresentedOrganizationId(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProvenanceAuthorParticipationOperations.validateProvenanceAuthorParticipationProvenanceAssignedAuthorRepresentedOrganizationId(
-			this, diagnostics, context);
+		return ProvenanceAuthorParticipationOperations.validateProvenanceAuthorParticipationProvenanceAssignedAuthorRepresentedOrganizationId(this, diagnostics, context);
 	}
 
 	/**
@@ -130,8 +123,7 @@ public class ProvenanceAuthorParticipationImpl extends AuthorImpl implements Pro
 	 */
 	public boolean validateProvenanceAuthorParticipationProvenanceAssignedAuthorRepresentedOrganizationName(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProvenanceAuthorParticipationOperations.validateProvenanceAuthorParticipationProvenanceAssignedAuthorRepresentedOrganizationName(
-			this, diagnostics, context);
+		return ProvenanceAuthorParticipationOperations.validateProvenanceAuthorParticipationProvenanceAssignedAuthorRepresentedOrganizationName(this, diagnostics, context);
 	}
 
 	/**
@@ -141,8 +133,7 @@ public class ProvenanceAuthorParticipationImpl extends AuthorImpl implements Pro
 	 */
 	public boolean validateProvenanceAuthorParticipationProvenanceAssignedAuthorRepresentedOrganizationTelecom(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProvenanceAuthorParticipationOperations.validateProvenanceAuthorParticipationProvenanceAssignedAuthorRepresentedOrganizationTelecom(
-			this, diagnostics, context);
+		return ProvenanceAuthorParticipationOperations.validateProvenanceAuthorParticipationProvenanceAssignedAuthorRepresentedOrganizationTelecom(this, diagnostics, context);
 	}
 
 	/**
@@ -152,8 +143,16 @@ public class ProvenanceAuthorParticipationImpl extends AuthorImpl implements Pro
 	 */
 	public boolean validateProvenanceAuthorParticipationProvenanceAssignedAuthorId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProvenanceAuthorParticipationOperations.validateProvenanceAuthorParticipationProvenanceAssignedAuthorId(
-			this, diagnostics, context);
+		return ProvenanceAuthorParticipationOperations.validateProvenanceAuthorParticipationProvenanceAssignedAuthorId(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProvenanceAuthorParticipationProvenanceAssignedAuthorCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProvenanceAuthorParticipationOperations.validateProvenanceAuthorParticipationProvenanceAssignedAuthorCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -163,8 +162,7 @@ public class ProvenanceAuthorParticipationImpl extends AuthorImpl implements Pro
 	 */
 	public boolean validateProvenanceAuthorParticipationProvenanceAssignedAuthorCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProvenanceAuthorParticipationOperations.validateProvenanceAuthorParticipationProvenanceAssignedAuthorCode(
-			this, diagnostics, context);
+		return ProvenanceAuthorParticipationOperations.validateProvenanceAuthorParticipationProvenanceAssignedAuthorCode(this, diagnostics, context);
 	}
 
 	/**
@@ -174,8 +172,7 @@ public class ProvenanceAuthorParticipationImpl extends AuthorImpl implements Pro
 	 */
 	public boolean validateProvenanceAuthorParticipationProvenanceAssignedAuthorAssignedPerson(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProvenanceAuthorParticipationOperations.validateProvenanceAuthorParticipationProvenanceAssignedAuthorAssignedPerson(
-			this, diagnostics, context);
+		return ProvenanceAuthorParticipationOperations.validateProvenanceAuthorParticipationProvenanceAssignedAuthorAssignedPerson(this, diagnostics, context);
 	}
 
 	/**
@@ -185,8 +182,7 @@ public class ProvenanceAuthorParticipationImpl extends AuthorImpl implements Pro
 	 */
 	public boolean validateProvenanceAuthorParticipationProvenanceAssignedAuthorRepresentedOrganization(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProvenanceAuthorParticipationOperations.validateProvenanceAuthorParticipationProvenanceAssignedAuthorRepresentedOrganization(
-			this, diagnostics, context);
+		return ProvenanceAuthorParticipationOperations.validateProvenanceAuthorParticipationProvenanceAssignedAuthorRepresentedOrganization(this, diagnostics, context);
 	}
 
 	/**
@@ -196,8 +192,7 @@ public class ProvenanceAuthorParticipationImpl extends AuthorImpl implements Pro
 	 */
 	public boolean validateProvenanceAuthorParticipationProvenanceAssignedAuthorAssignedAuthoringDevice(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProvenanceAuthorParticipationOperations.validateProvenanceAuthorParticipationProvenanceAssignedAuthorAssignedAuthoringDevice(
-			this, diagnostics, context);
+		return ProvenanceAuthorParticipationOperations.validateProvenanceAuthorParticipationProvenanceAssignedAuthorAssignedAuthoringDevice(this, diagnostics, context);
 	}
 
 	/**
@@ -206,16 +201,16 @@ public class ProvenanceAuthorParticipationImpl extends AuthorImpl implements Pro
 	 * @generated
 	 */
 	public ProvenanceAuthorParticipation init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public ProvenanceAuthorParticipation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // ProvenanceAuthorParticipationImpl

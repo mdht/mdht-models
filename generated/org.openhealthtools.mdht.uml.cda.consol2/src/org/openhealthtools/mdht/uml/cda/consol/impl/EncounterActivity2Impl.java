@@ -82,8 +82,7 @@ public class EncounterActivity2Impl extends EncounterActivitiesImpl implements E
 	 */
 	public boolean validateEncounterActivitiesEncounterPerformerEncounterPerformerAssignedEntityCodeP(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return EncounterActivity2Operations.validateEncounterActivitiesEncounterPerformerEncounterPerformerAssignedEntityCodeP(
-			this, diagnostics, context);
+		return EncounterActivity2Operations.validateEncounterActivitiesEncounterPerformerEncounterPerformerAssignedEntityCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -142,8 +141,7 @@ public class EncounterActivity2Impl extends EncounterActivitiesImpl implements E
 	@Override
 	public boolean validateEncounterActivitiesSDTCDischargeDispositionCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return EncounterActivity2Operations.validateEncounterActivitiesSDTCDischargeDispositionCode(
-			this, diagnostics, context);
+		return EncounterActivity2Operations.validateEncounterActivitiesSDTCDischargeDispositionCode(this, diagnostics, context);
 	}
 
 	/**
@@ -175,8 +173,7 @@ public class EncounterActivity2Impl extends EncounterActivitiesImpl implements E
 	@Override
 	public boolean validateEncounterActivitiesServiceDeliveryLocation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return EncounterActivity2Operations.validateEncounterActivitiesServiceDeliveryLocation(
-			this, diagnostics, context);
+		return EncounterActivity2Operations.validateEncounterActivitiesServiceDeliveryLocation(this, diagnostics, context);
 	}
 
 	/**
@@ -198,8 +195,7 @@ public class EncounterActivity2Impl extends EncounterActivitiesImpl implements E
 	@Override
 	public boolean validateEncounterActivitiesEncounterPerformerEncounterPerformerAssignedEntityCode(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return EncounterActivity2Operations.validateEncounterActivitiesEncounterPerformerEncounterPerformerAssignedEntityCode(
-			this, diagnostics, context);
+		return EncounterActivity2Operations.validateEncounterActivitiesEncounterPerformerEncounterPerformerAssignedEntityCode(this, diagnostics, context);
 	}
 
 	/**
@@ -210,8 +206,7 @@ public class EncounterActivity2Impl extends EncounterActivitiesImpl implements E
 	@Override
 	public boolean validateEncounterActivitiesEncounterPerformerEncounterPerformerAssignedEntity(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return EncounterActivity2Operations.validateEncounterActivitiesEncounterPerformerEncounterPerformerAssignedEntity(
-			this, diagnostics, context);
+		return EncounterActivity2Operations.validateEncounterActivitiesEncounterPerformerEncounterPerformerAssignedEntity(this, diagnostics, context);
 	}
 
 	/**
@@ -221,17 +216,17 @@ public class EncounterActivity2Impl extends EncounterActivitiesImpl implements E
 	 */
 	@Override
 	public EncounterActivity2 init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public EncounterActivity2 init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // EncounterActivity2Impl

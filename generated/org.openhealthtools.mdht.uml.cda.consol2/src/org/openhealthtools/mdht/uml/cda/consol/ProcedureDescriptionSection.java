@@ -89,9 +89,9 @@ public interface ProcedureDescriptionSection extends Section {
 	public ProcedureDescriptionSection init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public ProcedureDescriptionSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ProcedureDescriptionSection

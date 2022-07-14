@@ -3244,6 +3244,15 @@ public interface ConsolFactory extends EFactory {
 	DeviceIdentifierObservationV2 createDeviceIdentifierObservationV2();
 
 	/**
+	 * Returns a new object of class '<em>Sexual Orientation Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Sexual Orientation Observation</em>'.
+	 * @generated
+	 */
+	SexualOrientationObservation createSexualOrientationObservation();
+
+	/**
 	 * Returns a new object of class '<em>Criticality Observation</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

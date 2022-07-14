@@ -60,8 +60,7 @@ public class ProceduresSectionEntriesOptionalImpl extends SectionImpl implements
 	 */
 	public boolean validateProceduresSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProceduresSectionEntriesOptionalOperations.validateProceduresSectionEntriesOptionalTemplateId(
-			this, diagnostics, context);
+		return ProceduresSectionEntriesOptionalOperations.validateProceduresSectionEntriesOptionalTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -71,8 +70,7 @@ public class ProceduresSectionEntriesOptionalImpl extends SectionImpl implements
 	 */
 	public boolean validateProceduresSectionEntriesOptionalCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProceduresSectionEntriesOptionalOperations.validateProceduresSectionEntriesOptionalCode(
-			this, diagnostics, context);
+		return ProceduresSectionEntriesOptionalOperations.validateProceduresSectionEntriesOptionalCode(this, diagnostics, context);
 	}
 
 	/**
@@ -82,8 +80,7 @@ public class ProceduresSectionEntriesOptionalImpl extends SectionImpl implements
 	 */
 	public boolean validateProceduresSectionEntriesOptionalCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProceduresSectionEntriesOptionalOperations.validateProceduresSectionEntriesOptionalCodeP(
-			this, diagnostics, context);
+		return ProceduresSectionEntriesOptionalOperations.validateProceduresSectionEntriesOptionalCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -93,8 +90,7 @@ public class ProceduresSectionEntriesOptionalImpl extends SectionImpl implements
 	 */
 	public boolean validateProceduresSectionEntriesOptionalTitle(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProceduresSectionEntriesOptionalOperations.validateProceduresSectionEntriesOptionalTitle(
-			this, diagnostics, context);
+		return ProceduresSectionEntriesOptionalOperations.validateProceduresSectionEntriesOptionalTitle(this, diagnostics, context);
 	}
 
 	/**
@@ -104,8 +100,7 @@ public class ProceduresSectionEntriesOptionalImpl extends SectionImpl implements
 	 */
 	public boolean validateProceduresSectionEntriesOptionalText(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProceduresSectionEntriesOptionalOperations.validateProceduresSectionEntriesOptionalText(
-			this, diagnostics, context);
+		return ProceduresSectionEntriesOptionalOperations.validateProceduresSectionEntriesOptionalText(this, diagnostics, context);
 	}
 
 	/**
@@ -115,8 +110,7 @@ public class ProceduresSectionEntriesOptionalImpl extends SectionImpl implements
 	 */
 	public boolean validateProceduresSectionEntriesOptionalProcedureActivityProcedure(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProceduresSectionEntriesOptionalOperations.validateProceduresSectionEntriesOptionalProcedureActivityProcedure(
-			this, diagnostics, context);
+		return ProceduresSectionEntriesOptionalOperations.validateProceduresSectionEntriesOptionalProcedureActivityProcedure(this, diagnostics, context);
 	}
 
 	/**
@@ -126,8 +120,7 @@ public class ProceduresSectionEntriesOptionalImpl extends SectionImpl implements
 	 */
 	public boolean validateProceduresSectionEntriesOptionalProcedureActivityObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProceduresSectionEntriesOptionalOperations.validateProceduresSectionEntriesOptionalProcedureActivityObservation(
-			this, diagnostics, context);
+		return ProceduresSectionEntriesOptionalOperations.validateProceduresSectionEntriesOptionalProcedureActivityObservation(this, diagnostics, context);
 	}
 
 	/**
@@ -137,8 +130,7 @@ public class ProceduresSectionEntriesOptionalImpl extends SectionImpl implements
 	 */
 	public boolean validateProceduresSectionEntriesOptionalProcedureActivityAct(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProceduresSectionEntriesOptionalOperations.validateProceduresSectionEntriesOptionalProcedureActivityAct(
-			this, diagnostics, context);
+		return ProceduresSectionEntriesOptionalOperations.validateProceduresSectionEntriesOptionalProcedureActivityAct(this, diagnostics, context);
 	}
 
 	/**
@@ -174,16 +166,16 @@ public class ProceduresSectionEntriesOptionalImpl extends SectionImpl implements
 	 * @generated
 	 */
 	public ProceduresSectionEntriesOptional init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public ProceduresSectionEntriesOptional init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // ProceduresSectionEntriesOptionalImpl

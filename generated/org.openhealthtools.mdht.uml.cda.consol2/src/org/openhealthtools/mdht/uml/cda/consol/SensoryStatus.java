@@ -208,9 +208,9 @@ public interface SensoryStatus extends Observation {
 	public SensoryStatus init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public SensoryStatus init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // SensoryStatus

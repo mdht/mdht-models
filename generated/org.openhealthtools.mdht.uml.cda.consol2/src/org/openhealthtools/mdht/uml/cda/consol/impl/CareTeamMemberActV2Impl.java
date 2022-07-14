@@ -62,15 +62,6 @@ public class CareTeamMemberActV2Impl extends ActImpl implements CareTeamMemberAc
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateCareTeamMemberActV2Id(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return CareTeamMemberActV2Operations.validateCareTeamMemberActV2Id(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public boolean validateCareTeamMemberActV2StatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CareTeamMemberActV2Operations.validateCareTeamMemberActV2StatusCode(this, diagnostics, context);
 	}
@@ -171,16 +162,16 @@ public class CareTeamMemberActV2Impl extends ActImpl implements CareTeamMemberAc
 	 * @generated
 	 */
 	public CareTeamMemberActV2 init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public CareTeamMemberActV2 init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // CareTeamMemberActV2Impl

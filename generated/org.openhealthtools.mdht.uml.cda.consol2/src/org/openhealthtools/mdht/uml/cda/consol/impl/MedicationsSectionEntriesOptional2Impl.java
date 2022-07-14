@@ -54,8 +54,7 @@ public class MedicationsSectionEntriesOptional2Impl extends MedicationsSectionEn
 	 */
 	public boolean validateMedicationsSectionEntriesOptionalAbsenceOfMedications(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationsSectionEntriesOptional2Operations.validateMedicationsSectionEntriesOptionalAbsenceOfMedications(
-			this, diagnostics, context);
+		return MedicationsSectionEntriesOptional2Operations.validateMedicationsSectionEntriesOptionalAbsenceOfMedications(this, diagnostics, context);
 	}
 
 	/**
@@ -75,8 +74,7 @@ public class MedicationsSectionEntriesOptional2Impl extends MedicationsSectionEn
 	@Override
 	public boolean validateMedicationsSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationsSectionEntriesOptional2Operations.validateMedicationsSectionEntriesOptionalTemplateId(
-			this, diagnostics, context);
+		return MedicationsSectionEntriesOptional2Operations.validateMedicationsSectionEntriesOptionalTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -87,8 +85,7 @@ public class MedicationsSectionEntriesOptional2Impl extends MedicationsSectionEn
 	@Override
 	public boolean validateMedicationsSectionEntriesOptionalCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationsSectionEntriesOptional2Operations.validateMedicationsSectionEntriesOptionalCodeP(
-			this, diagnostics, context);
+		return MedicationsSectionEntriesOptional2Operations.validateMedicationsSectionEntriesOptionalCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -99,8 +96,7 @@ public class MedicationsSectionEntriesOptional2Impl extends MedicationsSectionEn
 	@Override
 	public boolean validateMedicationsSectionEntriesOptionalCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationsSectionEntriesOptional2Operations.validateMedicationsSectionEntriesOptionalCode(
-			this, diagnostics, context);
+		return MedicationsSectionEntriesOptional2Operations.validateMedicationsSectionEntriesOptionalCode(this, diagnostics, context);
 	}
 
 	/**
@@ -111,8 +107,7 @@ public class MedicationsSectionEntriesOptional2Impl extends MedicationsSectionEn
 	@Override
 	public boolean validateMedicationsSectionEntriesOptionalMedicationActivity(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationsSectionEntriesOptional2Operations.validateMedicationsSectionEntriesOptionalMedicationActivity(
-			this, diagnostics, context);
+		return MedicationsSectionEntriesOptional2Operations.validateMedicationsSectionEntriesOptionalMedicationActivity(this, diagnostics, context);
 	}
 
 	/**
@@ -122,17 +117,17 @@ public class MedicationsSectionEntriesOptional2Impl extends MedicationsSectionEn
 	 */
 	@Override
 	public MedicationsSectionEntriesOptional2 init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public MedicationsSectionEntriesOptional2 init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // MedicationsSectionEntriesOptional2Impl

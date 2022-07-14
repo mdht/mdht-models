@@ -99,8 +99,7 @@ public class NutritionSectionImpl extends SectionImpl implements NutritionSectio
 	 */
 	public boolean validateNutritionSectionNutritionalStatusObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return NutritionSectionOperations.validateNutritionSectionNutritionalStatusObservation(
-			this, diagnostics, context);
+		return NutritionSectionOperations.validateNutritionSectionNutritionalStatusObservation(this, diagnostics, context);
 	}
 
 	/**
@@ -118,16 +117,16 @@ public class NutritionSectionImpl extends SectionImpl implements NutritionSectio
 	 * @generated
 	 */
 	public NutritionSection init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public NutritionSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // NutritionSectionImpl

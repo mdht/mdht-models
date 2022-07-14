@@ -50,26 +50,6 @@ public class DateOfDiagnosisActImpl extends ActImpl implements DateOfDiagnosisAc
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateDateOfDiagnosisActEffectiveTimeLow(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return DateOfDiagnosisActOperations.validateDateOfDiagnosisActEffectiveTimeLow(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateDateOfDiagnosisActEffectiveTimehigh(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return DateOfDiagnosisActOperations.validateDateOfDiagnosisActEffectiveTimehigh(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public boolean validateDateOfDiagnosisActTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DateOfDiagnosisActOperations.validateDateOfDiagnosisActTemplateId(this, diagnostics, context);
 	}
@@ -142,8 +122,8 @@ public class DateOfDiagnosisActImpl extends ActImpl implements DateOfDiagnosisAc
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DateOfDiagnosisAct init() {
-		return Initializer.Util.init(this);
+	public boolean validateDateOfDiagnosisActIVLTSValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return DateOfDiagnosisActOperations.validateDateOfDiagnosisActIVLTSValue(this, diagnostics, context);
 	}
 
 	/**
@@ -151,8 +131,35 @@ public class DateOfDiagnosisActImpl extends ActImpl implements DateOfDiagnosisAc
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DateOfDiagnosisAct init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
+	public boolean validateDateOfDiagnosisActIVLTSLow(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return DateOfDiagnosisActOperations.validateDateOfDiagnosisActIVLTSLow(this, diagnostics, context);
 	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateDateOfDiagnosisActIVLTSHigh(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return DateOfDiagnosisActOperations.validateDateOfDiagnosisActIVLTSHigh(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public DateOfDiagnosisAct init() {
+	    return Initializer.Util.init(this);
+	}
+
+	/**
+     * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+     * @generated
+     */
+	public DateOfDiagnosisAct init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // DateOfDiagnosisActImpl

@@ -30,12 +30,15 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.ProblemObservationV4Op
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProblemObservationV4#validateProblemObservationV4Id(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Observation V4 Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProblemObservationV4#validateProblemObservationV4CodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Observation V4 Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProblemObservationV4#validateProblemObservationV4Code(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Observation V4 Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProblemObservationV4#validateProblemObservationV4StatusCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Observation V4 Status Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProblemObservationV4#validateProblemObservationV4StatusCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Observation V4 Status Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProblemObservationV4#validateProblemObservationV4EffectiveTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Observation V4 Effective Time</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProblemObservationV4#validateProblemObservationV4Value(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Observation V4 Value</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProblemObservationV4#validateProblemObservationV4ValueP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Observation V4 Value P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProblemObservationV4#validateProblemObservationV4ClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Observation V4 Class Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProblemObservationV4#validateProblemObservationV4MoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Observation V4 Mood Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProblemObservationV4#validateProblemObservationV4IVLTSLow(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Observation V4IVLTS Low</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProblemObservationV4#validateProblemObservationV4IVLTSHigh(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Observation V4IVLTS High</em>}</li>
  * </ul>
  * </p>
  *
@@ -197,6 +200,41 @@ public class ProblemObservationV4Test extends CDAValidationTest {
 	*/
 	@Test
 
+	public void testValidateProblemObservationV4StatusCodeP() {
+		OperationsTestCase<ProblemObservationV4> validateProblemObservationV4StatusCodePTestCase = new OperationsTestCase<ProblemObservationV4>(
+			"validateProblemObservationV4StatusCodeP", operationsForOCL.getOCLValue(
+				"VALIDATE_PROBLEM_OBSERVATION_V4_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(ProblemObservationV4 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(ProblemObservationV4 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return ProblemObservationV4Operations.validateProblemObservationV4StatusCodeP(
+					(ProblemObservationV4) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateProblemObservationV4StatusCodePTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
 	public void testValidateProblemObservationV4StatusCode() {
 		OperationsTestCase<ProblemObservationV4> validateProblemObservationV4StatusCodeTestCase = new OperationsTestCase<ProblemObservationV4>(
 			"validateProblemObservationV4StatusCode",
@@ -215,6 +253,13 @@ public class ProblemObservationV4Test extends CDAValidationTest {
 				CS cs = DatatypesFactory.eINSTANCE.createCS("completed");
 				target.setStatusCode(cs);
 
+			}
+
+			@Override
+			protected void setDependency(ProblemObservationV4 target) {
+				Collection<Object> passToken = new java.util.ArrayList<>(3);
+				passToken.add(target);
+				map.put("org.openhealthtools.mdht.uml.cda.consol.ProblemObservationV4StatusCodeP", passToken);
 			}
 
 			@Override
@@ -413,6 +458,82 @@ public class ProblemObservationV4Test extends CDAValidationTest {
 		};
 
 		validateProblemObservationV4MoodCodeTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateProblemObservationV4IVLTSLow() {
+		OperationsTestCase<ProblemObservationV4> validateProblemObservationV4IVLTSLowTestCase = new OperationsTestCase<ProblemObservationV4>(
+			"validateProblemObservationV4IVLTSLow",
+			operationsForOCL.getOCLValue("VALIDATE_PROBLEM_OBSERVATION_V4IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(ProblemObservationV4 target) {
+				target.init();
+				target.setEffectiveTime(DatatypesFactory.eINSTANCE.createIVL_TS());
+
+			}
+
+			@Override
+			protected void updateToPass(ProblemObservationV4 target) {
+
+				target.setEffectiveTime(DatatypesFactory.eINSTANCE.createIVL_TS("2002", "2023"));
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return ProblemObservationV4Operations.validateProblemObservationV4IVLTSLow(
+					(ProblemObservationV4) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateProblemObservationV4IVLTSLowTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateProblemObservationV4IVLTSHigh() {
+		OperationsTestCase<ProblemObservationV4> validateProblemObservationV4IVLTSHighTestCase = new OperationsTestCase<ProblemObservationV4>(
+			"validateProblemObservationV4IVLTSHigh",
+			operationsForOCL.getOCLValue("VALIDATE_PROBLEM_OBSERVATION_V4IVLTS_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(ProblemObservationV4 target) {
+				target.init();
+				target.setEffectiveTime(DatatypesFactory.eINSTANCE.createIVL_TS());
+
+			}
+
+			@Override
+			protected void updateToPass(ProblemObservationV4 target) {
+
+				target.setEffectiveTime(DatatypesFactory.eINSTANCE.createIVL_TS("2002", "2023"));
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return ProblemObservationV4Operations.validateProblemObservationV4IVLTSHigh(
+					(ProblemObservationV4) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateProblemObservationV4IVLTSHighTestCase.doValidationTest();
 	}
 
 	/**

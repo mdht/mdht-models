@@ -792,9 +792,9 @@ public interface DischargeSummary extends GeneralHeaderConstraints {
 	public DischargeSummary init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public DischargeSummary init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // DischargeSummary

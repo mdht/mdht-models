@@ -174,9 +174,9 @@ public interface CognitiveStatusResultObservation extends ResultObservation {
 	public CognitiveStatusResultObservation init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public CognitiveStatusResultObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // CognitiveStatusResultObservation

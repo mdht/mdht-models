@@ -101,9 +101,9 @@ public interface ProcedureContext extends Act {
 	public ProcedureContext init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public ProcedureContext init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ProcedureContext

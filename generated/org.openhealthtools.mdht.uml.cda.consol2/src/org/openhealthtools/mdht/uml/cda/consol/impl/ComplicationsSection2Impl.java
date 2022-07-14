@@ -53,8 +53,7 @@ public class ComplicationsSection2Impl extends ComplicationsSectionImpl implemen
 	 */
 	public boolean validateComplicationsSectionExplicitComplications(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ComplicationsSection2Operations.validateComplicationsSectionExplicitComplications(
-			this, diagnostics, context);
+		return ComplicationsSection2Operations.validateComplicationsSectionExplicitComplications(this, diagnostics, context);
 	}
 
 	/**
@@ -103,8 +102,7 @@ public class ComplicationsSection2Impl extends ComplicationsSectionImpl implemen
 	@Override
 	public boolean validateComplicationsSectionProblemObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ComplicationsSection2Operations.validateComplicationsSectionProblemObservation(
-			this, diagnostics, context);
+		return ComplicationsSection2Operations.validateComplicationsSectionProblemObservation(this, diagnostics, context);
 	}
 
 	/**
@@ -114,17 +112,17 @@ public class ComplicationsSection2Impl extends ComplicationsSectionImpl implemen
 	 */
 	@Override
 	public ComplicationsSection2 init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public ComplicationsSection2 init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // ComplicationsSection2Impl
