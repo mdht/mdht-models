@@ -3179,12 +3179,6 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6wPoYewLEeyw159CnA53VA"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6wPoYuwLEeyw159CnA53VA" value="*"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_Do348O5cEeyzELqFfLgO9w" name="id" visibility="private" aggregation="composite">
-        <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FA7RAe5cEeyzELqFfLgO9w" value="1"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FA7RAO5cEeyzELqFfLgO9w" value="1"/>
-        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_FHobYEocEd6c3qsAxlFHaQ"/>
-      </ownedAttribute>
       <nestedClassifier xmi:type="uml:Class" xmi:id="_aJRBXum9Eey0U6rqckWY4A" name="IVLTS">
         <generalization xmi:id="_aJRBX-m9Eey0U6rqckWY4A">
           <general xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
@@ -3237,14 +3231,9 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
         <defaultValue xmi:type="uml:LiteralString" xmi:id="_vxzcUOv0Eeyw159CnA53VA" value="EVN"/>
         <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_BLZhcEo_Ed6c3qsAxlFHaQ"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_X1-w0Ov-Eeyw159CnA53VA" name="effectiveTime" visibility="private" aggregation="composite">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_X1-w0ev-Eeyw159CnA53VA"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_X1-w0uv-Eeyw159CnA53VA" value="1"/>
-        <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_fUQ50Eo8Ed6c3qsAxlFHaQ"/>
-      </ownedAttribute>
       <ownedAttribute xmi:id="_OLt4gO5PEeyzELqFfLgO9w" name="value" visibility="private" type="_Ti9qAO5PEeyzELqFfLgO9w" aggregation="composite">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OLt4ge5PEeyzELqFfLgO9w"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OLt4gu5PEeyzELqFfLgO9w" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9KoVEAHhEe2uf-Hpx0eOMw" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9KnG8AHhEe2uf-Hpx0eOMw" value="1"/>
         <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
       </ownedAttribute>
       <nestedClassifier xmi:type="uml:Class" xmi:id="_Liyt4OnCEey0U6rqckWY4A" name="ED">
@@ -3370,23 +3359,28 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
         <defaultValue xmi:type="uml:LiteralString" xmi:id="_zW1wsO5iEeyzELqFfLgO9w" value="EVN"/>
         <redefinedProperty href="pathmap://CDA_MODEL///cda.uml#_BLZhcEo_Ed6c3qsAxlFHaQ"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_bLe_9e5iEeyzELqFfLgO9w" name="author1" visibility="private" aggregation="composite" association="_bLfnAO5iEeyzELqFfLgO9w">
+      <ownedAttribute xmi:id="_bLe_9e5iEeyzELqFfLgO9w" name="author" visibility="private" aggregation="composite" association="_bLfnAO5iEeyzELqFfLgO9w">
         <type xmi:type="uml:Class" href="pathmap://CDA_MODEL///cda.uml#_ChEisEcEEd6besF9iFIJkQ"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bLe_9u5iEeyzELqFfLgO9w"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bLe_9-5iEeyzELqFfLgO9w" value="*"/>
         <subsettedProperty href="pathmap://CDA_MODEL///cda.uml#_7TcH0ExoEd6h-an5IXo-DA"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_bLgOEO5iEeyzELqFfLgO9w" name="referenceRange1" visibility="private" aggregation="composite" association="_bLgOE-5iEeyzELqFfLgO9w">
-        <type xmi:type="uml:Class" href="pathmap://CDA_MODEL///cda.uml#_XFrNMEcaEd6besF9iFIJkQ"/>
+      <ownedAttribute xmi:id="_bLgOEO5iEeyzELqFfLgO9w" name="referenceRange" visibility="private" type="_MVjxIAF0Ee2uf-Hpx0eOMw" aggregation="composite" association="_bLgOE-5iEeyzELqFfLgO9w">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bLgOEe5iEeyzELqFfLgO9w"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bLgOEu5iEeyzELqFfLgO9w" value="*"/>
         <subsettedProperty href="pathmap://CDA_MODEL///cda.uml#_dwljkUobEd6c3qsAxlFHaQ"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_2uYUQO5iEeyzELqFfLgO9w" name="assessmentScaleSupportingObservation" association="_2uYUQ-5iEeyzELqFfLgO9w">
-        <type xmi:type="uml:Class" href=".controlled/consol-cognitive.uml#_1ZKPgOY2EeGINOJ_SD9_dA"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2uYUQe5iEeyzELqFfLgO9w"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2uYUQu5iEeyzELqFfLgO9w" value="*"/>
-      </ownedAttribute>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_MVjxIAF0Ee2uf-Hpx0eOMw" name="ReferenceRange">
+        <generalization xmi:id="_MVkYMAF0Ee2uf-Hpx0eOMw">
+          <general xmi:type="uml:Class" href="pathmap://CDA_MODEL///cda.uml#_XFrNMEcaEd6besF9iFIJkQ"/>
+        </generalization>
+        <ownedAttribute xmi:id="_NAuOAAF0Ee2uf-Hpx0eOMw" name="observationRange" visibility="private" aggregation="composite" association="_NAu1EAF0Ee2uf-Hpx0eOMw">
+          <type xmi:type="uml:Class" href="pathmap://CDA_MODEL///cda.uml#_ujrlMEcZEd6besF9iFIJkQ"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NAuOAQF0Ee2uf-Hpx0eOMw" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NAuOAgF0Ee2uf-Hpx0eOMw" value="1"/>
+          <redefinedProperty href="pathmap://CDA_MODEL///cda.uml#_fupywUobEd6c3qsAxlFHaQ"/>
+        </ownedAttribute>
+      </nestedClassifier>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_bLfnAO5iEeyzELqFfLgO9w" memberEnd="_bLe_9e5iEeyzELqFfLgO9w _bLfnAe5iEeyzELqFfLgO9w">
       <ownedEnd xmi:id="_bLfnAe5iEeyzELqFfLgO9w" type="_PmLJsO5iEeyzELqFfLgO9w" association="_bLfnAO5iEeyzELqFfLgO9w"/>
@@ -3394,19 +3388,7 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
     <packagedElement xmi:type="uml:Association" xmi:id="_bLgOE-5iEeyzELqFfLgO9w" memberEnd="_bLgOEO5iEeyzELqFfLgO9w _bLgOFO5iEeyzELqFfLgO9w">
       <ownedEnd xmi:id="_bLgOFO5iEeyzELqFfLgO9w" type="_PmLJsO5iEeyzELqFfLgO9w" association="_bLgOE-5iEeyzELqFfLgO9w"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_2uYUQ-5iEeyzELqFfLgO9w" memberEnd="_2uYUQO5iEeyzELqFfLgO9w _2uYURO5iEeyzELqFfLgO9w">
-      <ownedEnd xmi:id="_2uYURO5iEeyzELqFfLgO9w" type="_PmLJsO5iEeyzELqFfLgO9w" association="_2uYUQ-5iEeyzELqFfLgO9w"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_XlcQ4O5jEeyzELqFfLgO9w" name="AssessmentScaleSupportingObservationV2">
-      <ownedRule xmi:id="_yJewQO5jEeyzELqFfLgO9w" name="codeCodeSystem">
-        <constrainedElement xmi:type="uml:Class" href=".controlled/consol-cognitive.uml#_1ZKPgOY2EeGINOJ_SD9_dA"/>
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_yJewQe5jEeyzELqFfLgO9w">
-          <language>Analysis</language>
-          <language>OCL</language>
-          <body>observation/code SHALL be from LOINC (CodeSystem: 2.16.840.1.113883.6.1) or SNOMED CT (CodeSystem: 2.16.840.1.113883.6.96) and represents components of the scale</body>
-          <body>self.code.isNullFlavorDefined() or self.code.codeSystem = '2.16.840.1.113883.6.1'</body>
-        </specification>
-      </ownedRule>
       <generalization xmi:id="_XlcQ4e5jEeyzELqFfLgO9w">
         <general xmi:type="uml:Class" href="pathmap://CDA_MODEL///cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
       </generalization>
@@ -3438,26 +3420,12 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_C8eyYPDgEeyzELqFfLgO9w" value="1"/>
         <subsettedProperty href="pathmap://CDA_MODEL///cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
       </ownedAttribute>
+      <ownedAttribute xmi:id="_4EVeMAF0Ee2uf-Hpx0eOMw" name="code" visibility="private" aggregation="composite">
+        <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+        <redefinedProperty href="pathmap://CDA_MODEL///cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
+      </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_8ddksO5nEeyzELqFfLgO9w" name="DateOfDiagnosisAct">
-      <ownedRule xmi:id="_Xv93EPGeEeyzELqFfLgO9w" name="effectiveTimeLow">
-        <constrainedElement xmi:type="uml:Class" href=".controlled/consol-vitalsigns.uml#_lm3boOZbEeGINOJ_SD9_dA"/>
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_Xv93EfGeEeyzELqFfLgO9w">
-          <language>Analysis</language>
-          <language>OCL</language>
-          <body>effectiveTime SHALL contain exactly one [1..1] low</body>
-          <body>not self.effectiveTime.oclIsUndefined() implies self.effectiveTime.low->size() = 1</body>
-        </specification>
-      </ownedRule>
-      <ownedRule xmi:id="_YTFLMPGeEeyzELqFfLgO9w" name="effectiveTimehigh">
-        <constrainedElement xmi:type="uml:Class" href=".controlled/consol-vitalsigns.uml#_lm3boOZbEeGINOJ_SD9_dA"/>
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_YTFLMfGeEeyzELqFfLgO9w">
-          <language>Analysis</language>
-          <language>OCL</language>
-          <body>effectiveTime SHALL contain exactly one [1..1] low</body>
-          <body>not self.effectiveTime.oclIsUndefined() implies self.effectiveTime.high->size() = 1</body>
-        </specification>
-      </ownedRule>
       <generalization xmi:id="_8ddkse5nEeyzELqFfLgO9w">
         <general xmi:type="uml:Class" href="pathmap://CDA_MODEL///cda.uml#_YiANsDxYEd6JwqSGecoePg"/>
       </generalization>
@@ -3471,8 +3439,7 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CKPhUu5oEeyzELqFfLgO9w" value="1"/>
         <redefinedProperty href="pathmap://CDA_MODEL///cda.uml#_Q0j8kEocEd6c3qsAxlFHaQ"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_CKPhU-5oEeyzELqFfLgO9w" name="effectiveTime" visibility="private" aggregation="composite">
-        <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
+      <ownedAttribute xmi:id="_CKPhU-5oEeyzELqFfLgO9w" name="effectiveTime" visibility="private" type="_--zWgAHjEe2uf-Hpx0eOMw" aggregation="composite">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vkHeMfGdEeyzELqFfLgO9w" value="1"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vkHeMPGdEeyzELqFfLgO9w" value="1"/>
         <redefinedProperty href="pathmap://CDA_MODEL///cda.uml#_hbddYEocEd6c3qsAxlFHaQ"/>
@@ -3487,23 +3454,51 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
         <defaultValue xmi:type="uml:LiteralString" xmi:id="_1jRroPGaEeyzELqFfLgO9w" value="EVN"/>
         <redefinedProperty href="pathmap://CDA_MODEL///cda.uml#_yWn-AEocEd6c3qsAxlFHaQ"/>
       </ownedAttribute>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_--zWgAHjEe2uf-Hpx0eOMw" name="IVLTS">
+        <ownedRule xmi:id="_QlLXUAHkEe2uf-Hpx0eOMw" name="PreciseToYear" constrainedElement="_--zWgAHjEe2uf-Hpx0eOMw">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_TLhugAHkEe2uf-Hpx0eOMw">
+            <language>Analysis</language>
+            <body>SHALL be precise to at least the year</body>
+          </specification>
+        </ownedRule>
+        <generalization xmi:id="_--0koAHjEe2uf-Hpx0eOMw">
+          <general xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
+        </generalization>
+        <ownedAttribute xmi:id="_AMXV0AHkEe2uf-Hpx0eOMw" name="value" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://DATATYPES_MODEL/datatypes.uml#_CWZPMEWyEeC7E8_5Rmjcog"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_GEAeoAHkEe2uf-Hpx0eOMw" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_GD_QgAHkEe2uf-Hpx0eOMw" value="1"/>
+          <redefinedProperty href="pathmap://DATATYPES_MODEL/datatypes.uml#_HXr2YD5_Ed6cla2oXsPtlA"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_AMX84AHkEe2uf-Hpx0eOMw" name="low" visibility="private" aggregation="composite">
+          <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_BY5uUD6AEd6cla2oXsPtlA"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ETKzIAHkEe2uf-Hpx0eOMw"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ETJlAAHkEe2uf-Hpx0eOMw"/>
+          <redefinedProperty href="pathmap://DATATYPES_MODEL/datatypes.uml#_fmxbID6AEd6cla2oXsPtlA"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_AMX84wHkEe2uf-Hpx0eOMw" name="high" visibility="private" aggregation="composite">
+          <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_BY5uUD6AEd6cla2oXsPtlA"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FL7AEAHkEe2uf-Hpx0eOMw"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FL6ZAAHkEe2uf-Hpx0eOMw"/>
+          <redefinedProperty href="pathmap://DATATYPES_MODEL/datatypes.uml#_jfCGID6AEd6cla2oXsPtlA"/>
+        </ownedAttribute>
+      </nestedClassifier>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_sjj3UO5oEeyzELqFfLgO9w" name="GenderIdentityObservationV3">
       <generalization xmi:id="_sjkeYO5oEeyzELqFfLgO9w">
-        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL///cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
+        <general xmi:type="uml:Class" href=".controlled/consol-socialhistory.uml#_b_iGIPJfEeO2NaSiicarcg"/>
       </generalization>
       <ownedAttribute xmi:id="_9ft2cO5oEeyzELqFfLgO9w" name="code" visibility="private" aggregation="composite">
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-        <redefinedProperty href="pathmap://CDA_MODEL///cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
+        <redefinedProperty href=".controlled/consol-socialhistory.uml#_YzlcoPJhEeO2NaSiicarcg"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_9ft2ce5oEeyzELqFfLgO9w" name="statusCode" visibility="private" aggregation="composite">
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9ft2cu5oEeyzELqFfLgO9w"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9ft2c-5oEeyzELqFfLgO9w" value="1"/>
-        <redefinedProperty href="pathmap://CDA_MODEL///cda.uml#_c-D3cEo8Ed6c3qsAxlFHaQ"/>
+        <redefinedProperty href=".controlled/consol-socialhistory.uml#_3Dg4MM3JEeSEZ8MJJ3ZzLg"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_9ft2dO5oEeyzELqFfLgO9w" name="effectiveTime" visibility="private" aggregation="composite">
-        <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
+      <ownedAttribute xmi:id="_9ft2dO5oEeyzELqFfLgO9w" name="effectiveTime" visibility="private" type="_GgGvUAHlEe2uf-Hpx0eOMw" aggregation="composite">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9ft2de5oEeyzELqFfLgO9w"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9ft2du5oEeyzELqFfLgO9w" value="1"/>
         <redefinedProperty href="pathmap://CDA_MODEL///cda.uml#_fUQ50Eo8Ed6c3qsAxlFHaQ"/>
@@ -3514,6 +3509,39 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9ft2ee5oEeyzELqFfLgO9w" value="*"/>
         <subsettedProperty href="pathmap://CDA_MODEL///cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
       </ownedAttribute>
+      <ownedAttribute xmi:id="_mnFIQAHkEe2uf-Hpx0eOMw" name="classCode" visibility="private" isReadOnly="true">
+        <type xmi:type="uml:Enumeration" href="../../org.eclipse.mdht.uml.hl7.vocab/model/vocab.uml#__yVecEDcEd6xYZuu1VKCVw"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_mnFIQQHkEe2uf-Hpx0eOMw" value="OBS"/>
+        <redefinedProperty href=".controlled/consol-socialhistory.uml#_2JSEQBSVEeGGzu7fmW9pXw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_mnFvUQHkEe2uf-Hpx0eOMw" name="moodCode" visibility="private" isReadOnly="true">
+        <type xmi:type="uml:Enumeration" href="../../org.eclipse.mdht.uml.hl7.vocab/model/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_mnFvUgHkEe2uf-Hpx0eOMw" value="EVN"/>
+        <redefinedProperty href=".controlled/consol-socialhistory.uml#_2JSEQhSVEeGGzu7fmW9pXw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_mnGWYQHkEe2uf-Hpx0eOMw" name="id1" visibility="private">
+        <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_mnGWYgHkEe2uf-Hpx0eOMw" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_mnGWYwHkEe2uf-Hpx0eOMw" value="*"/>
+        <subsettedProperty href=".controlled/consol-socialhistory.uml#_2JSrURSVEeGGzu7fmW9pXw"/>
+      </ownedAttribute>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_GgGvUAHlEe2uf-Hpx0eOMw" name="IVLTS">
+        <generalization xmi:id="_GgIkgAHlEe2uf-Hpx0eOMw">
+          <general xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
+        </generalization>
+        <ownedAttribute xmi:id="_HqdCkAHlEe2uf-Hpx0eOMw" name="low" visibility="private" aggregation="composite">
+          <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_BY5uUD6AEd6cla2oXsPtlA"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MeDUcAHlEe2uf-Hpx0eOMw" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MeCGUAHlEe2uf-Hpx0eOMw" value="1"/>
+          <redefinedProperty href="pathmap://DATATYPES_MODEL/datatypes.uml#_fmxbID6AEd6cla2oXsPtlA"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_HqdCkwHlEe2uf-Hpx0eOMw" name="high" visibility="private" aggregation="composite">
+          <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_BY5uUD6AEd6cla2oXsPtlA"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HqdClAHlEe2uf-Hpx0eOMw"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HqdClQHlEe2uf-Hpx0eOMw" value="1"/>
+          <redefinedProperty href="pathmap://DATATYPES_MODEL/datatypes.uml#_jfCGID6AEd6cla2oXsPtlA"/>
+        </ownedAttribute>
+      </nestedClassifier>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_oMRKIO5sEeyzELqFfLgO9w" name="GoalObsevationV2">
       <generalization xmi:id="_oMRKIe5sEeyzELqFfLgO9w">
@@ -3593,6 +3621,10 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
         <defaultValue xmi:type="uml:LiteralString" xmi:id="_kwBjYO6FEeyzELqFfLgO9w" value="EVN"/>
         <redefinedProperty href="pathmap://CDA_MODEL///cda.uml#_yWn-AEocEd6c3qsAxlFHaQ"/>
       </ownedAttribute>
+      <ownedAttribute xmi:id="_OjRCkAHnEe2uf-Hpx0eOMw" name="code" visibility="private" aggregation="composite">
+        <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+        <redefinedProperty href="pathmap://CDA_MODEL///cda.uml#_HUTHQEocEd6c3qsAxlFHaQ"/>
+      </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_yNEh4O6GEeyzELqFfLgO9w" name="PlannedProcedureV3">
       <generalization xmi:id="_yNEh4e6GEeyzELqFfLgO9w">
@@ -3634,6 +3666,15 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_RBl_Au6HEeyzELqFfLgO9w" value="*"/>
         <subsettedProperty href="pathmap://CDA_MODEL///cda.uml#_Ia2NoEriEd6FXKclYGEDCw"/>
       </ownedAttribute>
+      <ownedAttribute xmi:id="_80mzAAHnEe2uf-Hpx0eOMw" name="classCode" visibility="private">
+        <type xmi:type="uml:Enumeration" href="../../org.eclipse.mdht.uml.hl7.vocab/model/vocab.uml#__yVdYEDcEd6xYZuu1VKCVw"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="__9TpUAHnEe2uf-Hpx0eOMw" value="PROC"/>
+        <redefinedProperty href="pathmap://CDA_MODEL///cda.uml#_Hp3ssEb9Ed6besF9iFIJkQ"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_EpxYcAHoEe2uf-Hpx0eOMw" name="moodCode" visibility="private">
+        <type xmi:type="uml:Enumeration" href="../../org.eclipse.mdht.uml.hl7.vocab/model/vocab.uml#__zOprUDcEd6xYZuu1VKCVw"/>
+        <redefinedProperty href="pathmap://CDA_MODEL///cda.uml#_MIhZQEriEd6FXKclYGEDCw"/>
+      </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_4d040O6HEeyzELqFfLgO9w" name="ProblemObservationV4">
       <generalization xmi:id="_4d1f4O6HEeyzELqFfLgO9w">
@@ -3655,8 +3696,7 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_BDwz5u6IEeyzELqFfLgO9w" value="1"/>
         <redefinedProperty href="pathmap://CDA_MODEL///cda.uml#_c-D3cEo8Ed6c3qsAxlFHaQ"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_BDwz5-6IEeyzELqFfLgO9w" name="effectiveTime" visibility="private" aggregation="composite">
-        <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
+      <ownedAttribute xmi:id="_BDwz5-6IEeyzELqFfLgO9w" name="effectiveTime" visibility="private" type="_2FocwAHrEe2uf-Hpx0eOMw" aggregation="composite">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_BDwz6O6IEeyzELqFfLgO9w"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_BDwz6e6IEeyzELqFfLgO9w" value="1"/>
         <redefinedProperty href="pathmap://CDA_MODEL///cda.uml#_fUQ50Eo8Ed6c3qsAxlFHaQ"/>
@@ -3669,12 +3709,31 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
       </ownedAttribute>
       <ownedAttribute xmi:id="_BDxa8O6IEeyzELqFfLgO9w" name="classCode" visibility="private">
         <type xmi:type="uml:Enumeration" href="../../org.eclipse.mdht.uml.hl7.vocab/model/vocab.uml#__yVecEDcEd6xYZuu1VKCVw"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_3SQvUAHoEe2uf-Hpx0eOMw" value="OBS"/>
         <redefinedProperty href="pathmap://CDA_MODEL///cda.uml#_FcjT0EbtEd6besF9iFIJkQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_BDxa8e6IEeyzELqFfLgO9w" name="moodCode" visibility="private">
         <type xmi:type="uml:Enumeration" href="../../org.eclipse.mdht.uml.hl7.vocab/model/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_6X64sAHoEe2uf-Hpx0eOMw" value="EVN"/>
         <redefinedProperty href="pathmap://CDA_MODEL///cda.uml#_BLZhcEo_Ed6c3qsAxlFHaQ"/>
       </ownedAttribute>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_2FocwAHrEe2uf-Hpx0eOMw" name="IVLTS">
+        <generalization xmi:id="_2FtVQAHrEe2uf-Hpx0eOMw">
+          <general xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
+        </generalization>
+        <ownedAttribute xmi:id="_3qW-4AHrEe2uf-Hpx0eOMw" name="low" visibility="private" aggregation="composite">
+          <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_BY5uUD6AEd6cla2oXsPtlA"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3qW-4QHrEe2uf-Hpx0eOMw"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3qW-4gHrEe2uf-Hpx0eOMw" value="1"/>
+          <redefinedProperty href="pathmap://DATATYPES_MODEL/datatypes.uml#_fmxbID6AEd6cla2oXsPtlA"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_3qW-4wHrEe2uf-Hpx0eOMw" name="high" visibility="private" aggregation="composite">
+          <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_BY5uUD6AEd6cla2oXsPtlA"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3qW-5AHrEe2uf-Hpx0eOMw"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3qW-5QHrEe2uf-Hpx0eOMw" value="1"/>
+          <redefinedProperty href="pathmap://DATATYPES_MODEL/datatypes.uml#_jfCGID6AEd6cla2oXsPtlA"/>
+        </ownedAttribute>
+      </nestedClassifier>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_RTA0QO6JEeyzELqFfLgO9w" name="ProcedureActivityProcedureV3">
       <generalization xmi:id="_RTA0Qe6JEeyzELqFfLgO9w">
@@ -3729,7 +3788,7 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
       </ownedAttribute>
       <ownedAttribute xmi:id="_gadUge6JEeyzELqFfLgO9w" name="moodCode" visibility="private">
         <type xmi:type="uml:Enumeration" href="../../org.eclipse.mdht.uml.hl7.vocab/model/vocab.uml#__zOprUDcEd6xYZuu1VKCVw"/>
-        <defaultValue xmi:type="uml:LiteralString" xmi:id="_AHZnYO6KEeyzELqFfLgO9w" value="EVN"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_qxvRMAHsEe2uf-Hpx0eOMw" value="EVN"/>
         <redefinedProperty href="pathmap://CDA_MODEL///cda.uml#_MIhZQEriEd6FXKclYGEDCw"/>
       </ownedAttribute>
     </packagedElement>
@@ -3845,6 +3904,62 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iU_yEPlfEey44McGZH1Wqg" value="1"/>
           <defaultValue xmi:type="uml:LiteralString" xmi:id="_27zMEPlhEey44McGZH1Wqg" value="true"/>
           <redefinedProperty href="pathmap://DATATYPES_MODEL/datatypes.uml#_KhPg8D6CEd6cla2oXsPtlA"/>
+        </ownedAttribute>
+      </nestedClassifier>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NAu1EAF0Ee2uf-Hpx0eOMw" memberEnd="_NAuOAAF0Ee2uf-Hpx0eOMw _NAu1EQF0Ee2uf-Hpx0eOMw">
+      <ownedEnd xmi:id="_NAu1EQF0Ee2uf-Hpx0eOMw" type="_MVjxIAF0Ee2uf-Hpx0eOMw" association="_NAu1EAF0Ee2uf-Hpx0eOMw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_64AX4AHxEe2uf-Hpx0eOMw" name="SexualOrientationObservation">
+      <generalization xmi:id="_64AX4QHxEe2uf-Hpx0eOMw">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL///cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
+      </generalization>
+      <ownedAttribute xmi:id="_BJEGQAHyEe2uf-Hpx0eOMw" name="code" visibility="private" aggregation="composite">
+        <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+        <redefinedProperty href="pathmap://CDA_MODEL///cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_BJEGQQHyEe2uf-Hpx0eOMw" name="statusCode" visibility="private" aggregation="composite">
+        <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_BJEGQgHyEe2uf-Hpx0eOMw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_BJEGQwHyEe2uf-Hpx0eOMw" value="1"/>
+        <redefinedProperty href="pathmap://CDA_MODEL///cda.uml#_c-D3cEo8Ed6c3qsAxlFHaQ"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_BJEGRAHyEe2uf-Hpx0eOMw" name="effectiveTime" visibility="private" type="_eftQIAHyEe2uf-Hpx0eOMw" aggregation="composite">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_BJEGRQHyEe2uf-Hpx0eOMw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_BJEGRgHyEe2uf-Hpx0eOMw" value="1"/>
+        <redefinedProperty href="pathmap://CDA_MODEL///cda.uml#_fUQ50Eo8Ed6c3qsAxlFHaQ"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_BJEGRwHyEe2uf-Hpx0eOMw" name="value" visibility="private" aggregation="composite">
+        <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_BJEGSAHyEe2uf-Hpx0eOMw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_BJEGSQHyEe2uf-Hpx0eOMw" value="*"/>
+        <subsettedProperty href="pathmap://CDA_MODEL///cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_BJEtUAHyEe2uf-Hpx0eOMw" name="classCode" visibility="private">
+        <type xmi:type="uml:Enumeration" href="../../org.eclipse.mdht.uml.hl7.vocab/model/vocab.uml#__yVecEDcEd6xYZuu1VKCVw"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_H6v1cAHyEe2uf-Hpx0eOMw" value="OBS"/>
+        <redefinedProperty href="pathmap://CDA_MODEL///cda.uml#_FcjT0EbtEd6besF9iFIJkQ"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_BJEtUQHyEe2uf-Hpx0eOMw" name="moodCode" visibility="private">
+        <type xmi:type="uml:Enumeration" href="../../org.eclipse.mdht.uml.hl7.vocab/model/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_J1nmsAHyEe2uf-Hpx0eOMw" value="EVN"/>
+        <redefinedProperty href="pathmap://CDA_MODEL///cda.uml#_BLZhcEo_Ed6c3qsAxlFHaQ"/>
+      </ownedAttribute>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_eftQIAHyEe2uf-Hpx0eOMw" name="IVLTS">
+        <generalization xmi:id="_efz90AHyEe2uf-Hpx0eOMw">
+          <general xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
+        </generalization>
+        <ownedAttribute xmi:id="_fEAQAAHyEe2uf-Hpx0eOMw" name="low" visibility="private" aggregation="composite">
+          <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_BY5uUD6AEd6cla2oXsPtlA"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fEAQAQHyEe2uf-Hpx0eOMw"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fEAQAgHyEe2uf-Hpx0eOMw" value="1"/>
+          <redefinedProperty href="pathmap://DATATYPES_MODEL/datatypes.uml#_fmxbID6AEd6cla2oXsPtlA"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_fEAQAwHyEe2uf-Hpx0eOMw" name="high" visibility="private" aggregation="composite">
+          <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_BY5uUD6AEd6cla2oXsPtlA"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fEAQBAHyEe2uf-Hpx0eOMw"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fEAQBQHyEe2uf-Hpx0eOMw" value="1"/>
+          <redefinedProperty href="pathmap://DATATYPES_MODEL/datatypes.uml#_jfCGID6AEd6cla2oXsPtlA"/>
         </ownedAttribute>
       </nestedClassifier>
     </packagedElement>
@@ -5443,7 +5558,9 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
   <CDA:AssociationValidation xmi:id="__mBy8A2EEeuzkrfERpFDKQ" severity="WARNING" base_Association="_6w6eIA2EEeuzkrfERpFDKQ">
     <ruleId>4435-116</ruleId>
   </CDA:AssociationValidation>
-  <CDA:AssociationValidation xmi:id="_ojx5wA-9EeuzkrfERpFDKQ" severity="INFO" base_Association="_nKGKAA-9EeuzkrfERpFDKQ"/>
+  <CDA:AssociationValidation xmi:id="_ojx5wA-9EeuzkrfERpFDKQ" severity="INFO" base_Association="_nKGKAA-9EeuzkrfERpFDKQ">
+    <ruleId>4515-32</ruleId>
+  </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_yptaUBMSEeuSZb_3V465dg" base_Association="_jDi9wBMSEeuSZb_3V465dg">
     <ruleId>CONF:4435-173</ruleId>
   </CDA:AssociationValidation>
@@ -5477,7 +5594,7 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
   <CDA:PropertyValidation xmi:id="_X_dTkDIyEeuZ4JQfWCUcKA" base_Property="_XCR5oDIyEeuZ4JQfWCUcKA">
     <ruleId>CONF:4437-3461</ruleId>
   </CDA:PropertyValidation>
-  <CDA:CDATemplate xmi:id="_s1H94OmFEeyDzOkHqzU3zg" base_Class="_h5QtQOmFEeyDzOkHqzU3zg" templateId="2.16.840.1.113883.10.20.22.5 .7" templateVersion="2020-05-19">
+  <CDA:CDATemplate xmi:id="_s1H94OmFEeyDzOkHqzU3zg" base_Class="_h5QtQOmFEeyDzOkHqzU3zg" templateId="2.16.840.1.113883.10.20.22.5.7" templateVersion="2020-05-19">
     <ruleId>4515-44</ruleId>
     <ruleId>4515-32974</ruleId>
   </CDA:CDATemplate>
@@ -5648,98 +5765,227 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
     <ruleId>CONF:4515-33025</ruleId>
   </CDA:PropertyValidation>
   <CDA:AssociationValidation xmi:id="_GUpGkOnFEey0U6rqckWY4A" severity="WARNING" base_Association="_D_InwunFEey0U6rqckWY4A"/>
-  <CDA:PropertyValidation xmi:id="_thN5wOv0Eeyw159CnA53VA" base_Property="_kVPSYOv0Eeyw159CnA53VA"/>
-  <CDA:PropertyValidation xmi:id="_vMnroOv0Eeyw159CnA53VA" base_Property="_kVP5cOv0Eeyw159CnA53VA"/>
-  <CDA:PropertyValidation xmi:id="_akp9kOv-Eeyw159CnA53VA" base_Property="_X1-w0Ov-Eeyw159CnA53VA"/>
+  <CDA:PropertyValidation xmi:id="_thN5wOv0Eeyw159CnA53VA" base_Property="_kVPSYOv0Eeyw159CnA53VA">
+    <ruleId>4515-33026</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_vMnroOv0Eeyw159CnA53VA" base_Property="_kVP5cOv0Eeyw159CnA53VA">
+    <ruleId>4515-33027</ruleId>
+  </CDA:PropertyValidation>
   <CDA:AssociationValidation xmi:id="_8tFIgOwLEeyw159CnA53VA" base_Association="_6wPBUewLEeyw159CnA53VA"/>
-  <CDA:PropertyValidation xmi:id="_CAm7oO5REeyzELqFfLgO9w" base_Property="_UjhIEO5PEeyzELqFfLgO9w"/>
-  <CDA:PropertyValidation xmi:id="_CsYcgO5REeyzELqFfLgO9w" severity="WARNING" negationIndicator="true" base_Property="_UjhIE-5PEeyzELqFfLgO9w"/>
-  <CDA:PropertyValidation xmi:id="_D0IHsO5REeyzELqFfLgO9w" base_Property="_OLt4gO5PEeyzELqFfLgO9w"/>
-  <CDA:PropertyValidation xmi:id="_GFOmoO5cEeyzELqFfLgO9w" base_Property="_Do348O5cEeyzELqFfLgO9w"/>
-  <CDA:CDATemplate xmi:id="_duK_IO5iEeyzELqFfLgO9w" base_Class="_PmLJsO5iEeyzELqFfLgO9w" templateId="2.16.840.1.113883.10.20.22.4.69" templateVersion="2022-06-01"/>
-  <CDA:PropertyValidation xmi:id="_jiVWIO5iEeyzELqFfLgO9w" base_Property="_bLdx0O5iEeyzELqFfLgO9w"/>
-  <CDA:PropertyValidation xmi:id="_kBA2MO5iEeyzELqFfLgO9w" base_Property="_bLdx0-5iEeyzELqFfLgO9w"/>
-  <CDA:PropertyValidation xmi:id="_lu9lwO5iEeyzELqFfLgO9w" severity="INFO" base_Property="_bLeY4O5iEeyzELqFfLgO9w"/>
-  <CDA:PropertyValidation xmi:id="_nMLKoO5iEeyzELqFfLgO9w" base_Property="_bLeY4-5iEeyzELqFfLgO9w"/>
-  <CDA:PropertyValidation xmi:id="_oAXAoO5iEeyzELqFfLgO9w" base_Property="_bLeY5u5iEeyzELqFfLgO9w"/>
-  <CDA:PropertyValidation xmi:id="_rfxt0O5iEeyzELqFfLgO9w" severity="INFO" base_Property="_bLe_8O5iEeyzELqFfLgO9w"/>
-  <CDA:PropertyValidation xmi:id="_uK-v0O5iEeyzELqFfLgO9w" base_Property="_bLe_8-5iEeyzELqFfLgO9w"/>
-  <CDA:PropertyValidation xmi:id="_ukh4QO5iEeyzELqFfLgO9w" base_Property="_bLe_9O5iEeyzELqFfLgO9w"/>
-  <CDA:EntryRelationship xmi:id="_5NroQO5iEeyzELqFfLgO9w" base_Association="_2uYUQ-5iEeyzELqFfLgO9w" typeCode="COMP"/>
-  <CDA:CDATemplate xmi:id="_exCU4O5jEeyzELqFfLgO9w" base_Class="_XlcQ4O5jEeyzELqFfLgO9w" templateId="2.16.840.1.113883.10.20.22.4.86" templateVersion="2022-06-01"/>
-  <CDA:PropertyValidation xmi:id="_kghnQO5jEeyzELqFfLgO9w" base_Property="_eIrUYO5jEeyzELqFfLgO9w"/>
-  <CDA:PropertyValidation xmi:id="_k-yQkO5jEeyzELqFfLgO9w" base_Property="_eIrUY-5jEeyzELqFfLgO9w"/>
-  <CDA:PropertyValidation xmi:id="_nM6VAO5jEeyzELqFfLgO9w" base_Property="_eIr7c-5jEeyzELqFfLgO9w"/>
-  <CDA:PropertyValidation xmi:id="_nxBusO5jEeyzELqFfLgO9w" base_Property="_eIr7dO5jEeyzELqFfLgO9w"/>
-  <CDA:ConstraintValidation xmi:id="_zJW44O5jEeyzELqFfLgO9w" base_Constraint="_yJewQO5jEeyzELqFfLgO9w"/>
-  <CDA:CDATemplate xmi:id="_DxOGMO5oEeyzELqFfLgO9w" base_Class="_8ddksO5nEeyzELqFfLgO9w" templateId="2.16.840.1.113883.10.20.22.4.502" templateVersion="2022-06-01"/>
-  <CDA:PropertyValidation xmi:id="_Fn8-UO5oEeyzELqFfLgO9w" base_Property="_CKO6QO5oEeyzELqFfLgO9w"/>
-  <CDA:PropertyValidation xmi:id="_GG0roO5oEeyzELqFfLgO9w" base_Property="_CKPhUO5oEeyzELqFfLgO9w"/>
-  <CDA:PropertyValidation xmi:id="_GkrFQO5oEeyzELqFfLgO9w" base_Property="_CKPhU-5oEeyzELqFfLgO9w"/>
-  <CDA:PropertyValidation xmi:id="_HBCRIO5oEeyzELqFfLgO9w" base_Property="_CKPhVu5oEeyzELqFfLgO9w"/>
-  <CDA:PropertyValidation xmi:id="_HeYUcO5oEeyzELqFfLgO9w" base_Property="_CKPhV-5oEeyzELqFfLgO9w"/>
+  <CDA:PropertyValidation xmi:id="_CAm7oO5REeyzELqFfLgO9w" base_Property="_UjhIEO5PEeyzELqFfLgO9w">
+    <ruleId>4515-33030</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_CsYcgO5REeyzELqFfLgO9w" severity="WARNING" negationIndicator="true" base_Property="_UjhIE-5PEeyzELqFfLgO9w">
+    <ruleId>4515-33029</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_D0IHsO5REeyzELqFfLgO9w" base_Property="_OLt4gO5PEeyzELqFfLgO9w">
+    <ruleId>4515-33020</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:CDATemplate xmi:id="_duK_IO5iEeyzELqFfLgO9w" base_Class="_PmLJsO5iEeyzELqFfLgO9w" templateId="2.16.840.1.113883.10.20.22.4.69" templateVersion="2022-06-01">
+    <ruleId>4515-14437</ruleId>
+    <ruleId>4515-33037</ruleId>
+  </CDA:CDATemplate>
+  <CDA:PropertyValidation xmi:id="_jiVWIO5iEeyzELqFfLgO9w" base_Property="_bLdx0O5iEeyzELqFfLgO9w">
+    <ruleId>4515-14438</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_kBA2MO5iEeyzELqFfLgO9w" base_Property="_bLdx0-5iEeyzELqFfLgO9w">
+    <ruleId>4515-14439</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_lu9lwO5iEeyzELqFfLgO9w" severity="INFO" base_Property="_bLeY4O5iEeyzELqFfLgO9w">
+    <ruleId>4515-14637</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_nMLKoO5iEeyzELqFfLgO9w" base_Property="_bLeY4-5iEeyzELqFfLgO9w">
+    <ruleId>4515-14444</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_oAXAoO5iEeyzELqFfLgO9w" base_Property="_bLeY5u5iEeyzELqFfLgO9w">
+    <ruleId>4515-14445</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_rfxt0O5iEeyzELqFfLgO9w" severity="INFO" base_Property="_bLe_8O5iEeyzELqFfLgO9w">
+    <ruleId>4515-14459</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_uK-v0O5iEeyzELqFfLgO9w" base_Property="_bLe_8-5iEeyzELqFfLgO9w">
+    <ruleId>4515-14434</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_ukh4QO5iEeyzELqFfLgO9w" base_Property="_bLe_9O5iEeyzELqFfLgO9w">
+    <ruleId>4515-14435</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:CDATemplate xmi:id="_exCU4O5jEeyzELqFfLgO9w" base_Class="_XlcQ4O5jEeyzELqFfLgO9w" templateId="2.16.840.1.113883.10.20.22.4.86" templateVersion="2022-06-01">
+    <ruleId>4515-16722</ruleId>
+  </CDA:CDATemplate>
+  <CDA:PropertyValidation xmi:id="_kghnQO5jEeyzELqFfLgO9w" base_Property="_eIrUYO5jEeyzELqFfLgO9w">
+    <ruleId>4515-16724</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_k-yQkO5jEeyzELqFfLgO9w" base_Property="_eIrUY-5jEeyzELqFfLgO9w">
+    <ruleId>4515-19178</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_nM6VAO5jEeyzELqFfLgO9w" base_Property="_eIr7c-5jEeyzELqFfLgO9w">
+    <ruleId>4515-16715</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_nxBusO5jEeyzELqFfLgO9w" base_Property="_eIr7dO5jEeyzELqFfLgO9w">
+    <ruleId>4515-16716</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:CDATemplate xmi:id="_DxOGMO5oEeyzELqFfLgO9w" base_Class="_8ddksO5nEeyzELqFfLgO9w" templateId="2.16.840.1.113883.10.20.22.4.502" templateVersion="2022-06-01">
+    <ruleId>4515-33000</ruleId>
+  </CDA:CDATemplate>
+  <CDA:PropertyValidation xmi:id="_Fn8-UO5oEeyzELqFfLgO9w" base_Property="_CKO6QO5oEeyzELqFfLgO9w">
+    <ruleId>4515-33001</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_GG0roO5oEeyzELqFfLgO9w" base_Property="_CKPhUO5oEeyzELqFfLgO9w">
+    <ruleId>4515-33006</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_GkrFQO5oEeyzELqFfLgO9w" base_Property="_CKPhU-5oEeyzELqFfLgO9w">
+    <ruleId>4515-33007</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_HBCRIO5oEeyzELqFfLgO9w" base_Property="_CKPhVu5oEeyzELqFfLgO9w">
+    <ruleId>4515-33010</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_HeYUcO5oEeyzELqFfLgO9w" base_Property="_CKPhV-5oEeyzELqFfLgO9w">
+    <ruleId>4515-33011</ruleId>
+  </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_NvgUQO5oEeyzELqFfLgO9w" code="77975-1" displayName="Earliest date of diagnosis" base_Property="_CKO6QO5oEeyzELqFfLgO9w">
     <reference href="pathmap://TERM_MODEL///CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>4515-33004</ruleId>
+    <ruleId>4515-33005</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:CodeSystemConstraint xmi:id="_QVzoIO5oEeyzELqFfLgO9w" code="completed" base_Property="_CKPhUO5oEeyzELqFfLgO9w">
     <reference href="pathmap://TERM_MODEL///CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
-  <CDA:PropertyValidation xmi:id="_-op0cO5oEeyzELqFfLgO9w" base_Property="_9ft2cO5oEeyzELqFfLgO9w"/>
-  <CDA:PropertyValidation xmi:id="__OOmsO5oEeyzELqFfLgO9w" base_Property="_9ft2ce5oEeyzELqFfLgO9w"/>
-  <CDA:PropertyValidation xmi:id="__uxvAO5oEeyzELqFfLgO9w" base_Property="_9ft2dO5oEeyzELqFfLgO9w"/>
+  <CDA:PropertyValidation xmi:id="_-op0cO5oEeyzELqFfLgO9w" base_Property="_9ft2cO5oEeyzELqFfLgO9w">
+    <ruleId>4515-1222</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="__OOmsO5oEeyzELqFfLgO9w" base_Property="_9ft2ce5oEeyzELqFfLgO9w">
+    <ruleId>4515-33031</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="__uxvAO5oEeyzELqFfLgO9w" base_Property="_9ft2dO5oEeyzELqFfLgO9w">
+    <ruleId>4515-33033</ruleId>
+  </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_elvcIO5pEeyzELqFfLgO9w" base_Property="_9ft2d-5oEeyzELqFfLgO9w"/>
   <CDA:ValueSetConstraint xmi:id="_Begx0O5qEeyzELqFfLgO9w" base_Property="_9ft2d-5oEeyzELqFfLgO9w" uri="consol-vocab::GenderIdentityUSCDICore">
     <reference href="pathmap://CONSOL_MODEL///consol-vocab.uml#_s1PAse5pEeyzELqFfLgO9w"/>
   </CDA:ValueSetConstraint>
-  <CDA:PropertyValidation xmi:id="_PbwBYO5tEeyzELqFfLgO9w" base_Property="_MzGkI-5tEeyzELqFfLgO9w"/>
-  <CDA:PropertyValidation xmi:id="_P_iD4O5tEeyzELqFfLgO9w" base_Property="_MzGkJO5tEeyzELqFfLgO9w"/>
-  <CDA:PropertyValidation xmi:id="_QiMFAO5tEeyzELqFfLgO9w" base_Property="_MzGkJ-5tEeyzELqFfLgO9w"/>
-  <CDA:PropertyValidation xmi:id="_RARvMO5tEeyzELqFfLgO9w" base_Property="_MzHLMO5tEeyzELqFfLgO9w"/>
-  <CDA:PropertyValidation xmi:id="_Rk44IO5tEeyzELqFfLgO9w" base_Property="_MzHLMe5tEeyzELqFfLgO9w"/>
+  <CDA:PropertyValidation xmi:id="_PbwBYO5tEeyzELqFfLgO9w" base_Property="_MzGkI-5tEeyzELqFfLgO9w">
+    <ruleId>4515-30784</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_P_iD4O5tEeyzELqFfLgO9w" base_Property="_MzGkJO5tEeyzELqFfLgO9w">
+    <ruleId>4515-32333</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_QiMFAO5tEeyzELqFfLgO9w" severity="INFO" base_Property="_MzGkJ-5tEeyzELqFfLgO9w">
+    <ruleId>4515-32743</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_RARvMO5tEeyzELqFfLgO9w" base_Property="_MzHLMO5tEeyzELqFfLgO9w">
+    <ruleId>4515-30418</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_Rk44IO5tEeyzELqFfLgO9w" base_Property="_MzHLMe5tEeyzELqFfLgO9w">
+    <ruleId>4515-30419</ruleId>
+  </CDA:PropertyValidation>
   <CDA:AssociationValidation xmi:id="_T4OzwO5tEeyzELqFfLgO9w" severity="WARNING" base_Association="_MzHLNe5tEeyzELqFfLgO9w"/>
-  <CDA:PropertyValidation xmi:id="_VmVUUO5tEeyzELqFfLgO9w" base_Property="_MzGkIO5tEeyzELqFfLgO9w"/>
-  <CDA:CDATemplate xmi:id="_Xr8CAO6FEeyzELqFfLgO9w" base_Class="_Kc0VUO6FEeyzELqFfLgO9w" templateId="2.16.840.1.113883.10.20.22.4.132" templateVersion="2022-06-01"/>
-  <CDA:PropertyValidation xmi:id="_hvVZkO6FEeyzELqFfLgO9w" base_Property="_VmRWAO6FEeyzELqFfLgO9w"/>
-  <CDA:PropertyValidation xmi:id="_iPPBoO6FEeyzELqFfLgO9w" base_Property="_VmRWA-6FEeyzELqFfLgO9w"/>
-  <CDA:PropertyValidation xmi:id="_isvdAO6FEeyzELqFfLgO9w" severity="INFO" base_Property="_VmRWBu6FEeyzELqFfLgO9w"/>
-  <CDA:PropertyValidation xmi:id="_jJqpkO6FEeyzELqFfLgO9w" base_Property="_VmRWCe6FEeyzELqFfLgO9w"/>
-  <CDA:PropertyValidation xmi:id="_j3fY4O6FEeyzELqFfLgO9w" base_Property="_VmRWCu6FEeyzELqFfLgO9w"/>
+  <CDA:PropertyValidation xmi:id="_VmVUUO5tEeyzELqFfLgO9w" base_Property="_MzGkIO5tEeyzELqFfLgO9w">
+    <ruleId>4515-32332</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:CDATemplate xmi:id="_Xr8CAO6FEeyzELqFfLgO9w" base_Class="_Kc0VUO6FEeyzELqFfLgO9w" templateId="2.16.840.1.113883.10.20.22.4.132" templateVersion="2022-06-01">
+    <ruleId>4515-30752</ruleId>
+  </CDA:CDATemplate>
+  <CDA:PropertyValidation xmi:id="_hvVZkO6FEeyzELqFfLgO9w" base_Property="_VmRWAO6FEeyzELqFfLgO9w">
+    <ruleId>4515-30754</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_iPPBoO6FEeyzELqFfLgO9w" base_Property="_VmRWA-6FEeyzELqFfLgO9w">
+    <ruleId>4515-30758</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_isvdAO6FEeyzELqFfLgO9w" severity="INFO" base_Property="_VmRWBu6FEeyzELqFfLgO9w">
+    <ruleId>4515-30759</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_jJqpkO6FEeyzELqFfLgO9w" base_Property="_VmRWCe6FEeyzELqFfLgO9w">
+    <ruleId>4515-30750</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_j3fY4O6FEeyzELqFfLgO9w" base_Property="_VmRWCu6FEeyzELqFfLgO9w">
+    <ruleId>4515-30751</ruleId>
+  </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_5PiUgO6FEeyzELqFfLgO9w" base_Property="_VmRWA-6FEeyzELqFfLgO9w" uri="consol-vocab::ProblemAct statusCode">
     <reference href="pathmap://CONSOL_MODEL///consol-vocab.uml#_SZOJNsmlEeSr1c1X9ACWbg"/>
+    <ruleId>4515-32313</ruleId>
   </CDA:ValueSetConstraint>
-  <CDA:PropertyValidation xmi:id="_VnDuQO6HEeyzELqFfLgO9w" base_Property="_RBlX8O6HEeyzELqFfLgO9w"/>
-  <CDA:PropertyValidation xmi:id="_WkAesO6HEeyzELqFfLgO9w" base_Property="_RBlX8-6HEeyzELqFfLgO9w"/>
-  <CDA:PropertyValidation xmi:id="_XXfKEO6HEeyzELqFfLgO9w" base_Property="_RBlX9u6HEeyzELqFfLgO9w"/>
-  <CDA:PropertyValidation xmi:id="_Yt0D0O6HEeyzELqFfLgO9w" severity="WARNING" base_Property="_RBlX-e6HEeyzELqFfLgO9w"/>
-  <CDA:PropertyValidation xmi:id="_aKWTQO6HEeyzELqFfLgO9w" severity="INFO" base_Property="_RBlX_O6HEeyzELqFfLgO9w"/>
-  <CDA:PropertyValidation xmi:id="_a0LTYO6HEeyzELqFfLgO9w" severity="INFO" base_Property="_RBl_AO6HEeyzELqFfLgO9w"/>
-  <CDA:CDATemplate xmi:id="_DHbUwO6IEeyzELqFfLgO9w" base_Class="_4d040O6HEeyzELqFfLgO9w" templateId="2.16.840.1.113883.10.20.22.4.4" templateVersion="2022-06-01"/>
+  <CDA:PropertyValidation xmi:id="_VnDuQO6HEeyzELqFfLgO9w" base_Property="_RBlX8O6HEeyzELqFfLgO9w">
+    <ruleId>4515-8571</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_WkAesO6HEeyzELqFfLgO9w" base_Property="_RBlX8-6HEeyzELqFfLgO9w">
+    <ruleId>4515-31976</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_XXfKEO6HEeyzELqFfLgO9w" base_Property="_RBlX9u6HEeyzELqFfLgO9w">
+    <ruleId>4515-30446</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_Yt0D0O6HEeyzELqFfLgO9w" severity="WARNING" base_Property="_RBlX-e6HEeyzELqFfLgO9w">
+    <ruleId>4515-30447</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_aKWTQO6HEeyzELqFfLgO9w" severity="INFO" base_Property="_RBlX_O6HEeyzELqFfLgO9w">
+    <ruleId>4515-31980</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_a0LTYO6HEeyzELqFfLgO9w" severity="INFO" base_Property="_RBl_AO6HEeyzELqFfLgO9w">
+    <ruleId>4515-31981</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:CDATemplate xmi:id="_DHbUwO6IEeyzELqFfLgO9w" base_Class="_4d040O6HEeyzELqFfLgO9w" templateId="2.16.840.1.113883.10.20.22.4.4" templateVersion="2022-06-01">
+    <ruleId>4515-14926</ruleId>
+  </CDA:CDATemplate>
   <CDA:PropertyValidation xmi:id="_IwLtAO6IEeyzELqFfLgO9w" base_Property="_BDwz4O6IEeyzELqFfLgO9w"/>
-  <CDA:PropertyValidation xmi:id="_JOW2wO6IEeyzELqFfLgO9w" base_Property="_BDwz4-6IEeyzELqFfLgO9w"/>
-  <CDA:PropertyValidation xmi:id="_JpbpMO6IEeyzELqFfLgO9w" base_Property="_BDwz5O6IEeyzELqFfLgO9w"/>
-  <CDA:PropertyValidation xmi:id="_KnNgEO6IEeyzELqFfLgO9w" base_Property="_BDwz5-6IEeyzELqFfLgO9w"/>
-  <CDA:PropertyValidation xmi:id="_LxVJ0O6IEeyzELqFfLgO9w" base_Property="_BDwz6u6IEeyzELqFfLgO9w"/>
-  <CDA:PropertyValidation xmi:id="_NaguIO6IEeyzELqFfLgO9w" base_Property="_BDxa8O6IEeyzELqFfLgO9w"/>
-  <CDA:PropertyValidation xmi:id="_N5GHkO6IEeyzELqFfLgO9w" base_Property="_BDxa8e6IEeyzELqFfLgO9w"/>
-  <CDA:ValueSetConstraint xmi:id="_dxnfcO6IEeyzELqFfLgO9w" base_Property="_BDwz6u6IEeyzELqFfLgO9w" uri="consol-vocab::Problem Type (SNOMED CT)">
+  <CDA:PropertyValidation xmi:id="_JOW2wO6IEeyzELqFfLgO9w" base_Property="_BDwz4-6IEeyzELqFfLgO9w">
+    <ruleId>4515-9045</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_JpbpMO6IEeyzELqFfLgO9w" base_Property="_BDwz5O6IEeyzELqFfLgO9w">
+    <ruleId>4515-9049</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_KnNgEO6IEeyzELqFfLgO9w" base_Property="_BDwz5-6IEeyzELqFfLgO9w">
+    <ruleId>4515-9050</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_LxVJ0O6IEeyzELqFfLgO9w" base_Property="_BDwz6u6IEeyzELqFfLgO9w">
+    <ruleId>4515-9058</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_NaguIO6IEeyzELqFfLgO9w" base_Property="_BDxa8O6IEeyzELqFfLgO9w">
+    <ruleId>4515-9041</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_N5GHkO6IEeyzELqFfLgO9w" base_Property="_BDxa8e6IEeyzELqFfLgO9w">
+    <ruleId>4515-9042</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:ValueSetConstraint xmi:id="_dxnfcO6IEeyzELqFfLgO9w" base_Property="_BDwz6u6IEeyzELqFfLgO9w" uri="consol-vocab::Problem">
     <reference href="pathmap://CONSOL_MODEL///consol-vocab.uml#_2SVSkRSVEeGGzu7fmW9pXw"/>
+    <ruleId>4515-9058</ruleId>
   </CDA:ValueSetConstraint>
-  <CDA:ValueSetConstraint xmi:id="_nhalkO6IEeyzELqFfLgO9w" base_Property="_BDwz4-6IEeyzELqFfLgO9w" uri="consol-vocab::Problem Type (SNOMED CT)">
+  <CDA:ValueSetConstraint xmi:id="_nhalkO6IEeyzELqFfLgO9w" base_Property="_BDwz4-6IEeyzELqFfLgO9w" uri="consol-vocab::Problem Type (SNOMED CT)" severity="WARNING">
     <reference href="pathmap://CONSOL_MODEL///consol-vocab.uml#_ngam0Ez2EeWJ65CktI2ODQ"/>
+    <ruleId>4515-9045</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:ConformsTo xmi:id="__gMS4O6IEeyzELqFfLgO9w" base_Generalization="_4d1f4O6HEeyzELqFfLgO9w" requiresParentId="true"/>
-  <CDA:CDATemplate xmi:id="_jzAksO6JEeyzELqFfLgO9w" base_Class="_RTA0QO6JEeyzELqFfLgO9w" templateId="2.16.840.1.113883.10.20.22.4.14" templateVersion="2022-06-01"/>
-  <CDA:PropertyValidation xmi:id="_o-DtQO6JEeyzELqFfLgO9w" base_Property="_gacGYO6JEeyzELqFfLgO9w"/>
-  <CDA:PropertyValidation xmi:id="_pp7UwO6JEeyzELqFfLgO9w" base_Property="_gacGY-6JEeyzELqFfLgO9w"/>
-  <CDA:PropertyValidation xmi:id="_qJdwcO6JEeyzELqFfLgO9w" base_Property="_gactcO6JEeyzELqFfLgO9w"/>
-  <CDA:PropertyValidation xmi:id="_sPj6QO6JEeyzELqFfLgO9w" severity="WARNING" base_Property="_gactc-6JEeyzELqFfLgO9w"/>
-  <CDA:PropertyValidation xmi:id="_tNJj4O6JEeyzELqFfLgO9w" severity="INFO" base_Property="_gactdu6JEeyzELqFfLgO9w"/>
-  <CDA:PropertyValidation xmi:id="_twceMO6JEeyzELqFfLgO9w" severity="INFO" base_Property="_gactee6JEeyzELqFfLgO9w"/>
-  <CDA:PropertyValidation xmi:id="_ujEN8O6JEeyzELqFfLgO9w" severity="WARNING" base_Property="_gactfO6JEeyzELqFfLgO9w"/>
-  <CDA:PropertyValidation xmi:id="_7lgwkO6JEeyzELqFfLgO9w" base_Property="_gadUgO6JEeyzELqFfLgO9w"/>
-  <CDA:PropertyValidation xmi:id="_8QwtAO6JEeyzELqFfLgO9w" base_Property="_gadUge6JEeyzELqFfLgO9w"/>
+  <CDA:CDATemplate xmi:id="_jzAksO6JEeyzELqFfLgO9w" base_Class="_RTA0QO6JEeyzELqFfLgO9w" templateId="2.16.840.1.113883.10.20.22.4.14" templateVersion="2022-06-01">
+    <ruleId>4515-7654</ruleId>
+  </CDA:CDATemplate>
+  <CDA:PropertyValidation xmi:id="_o-DtQO6JEeyzELqFfLgO9w" base_Property="_gacGYO6JEeyzELqFfLgO9w">
+    <ruleId>4515-7655</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_pp7UwO6JEeyzELqFfLgO9w" base_Property="_gacGY-6JEeyzELqFfLgO9w">
+    <ruleId>4515-7656</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_qJdwcO6JEeyzELqFfLgO9w" base_Property="_gactcO6JEeyzELqFfLgO9w">
+    <ruleId>4515-7661</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_sPj6QO6JEeyzELqFfLgO9w" severity="WARNING" base_Property="_gactc-6JEeyzELqFfLgO9w">
+    <ruleId>4515-7662</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_tNJj4O6JEeyzELqFfLgO9w" severity="INFO" base_Property="_gactdu6JEeyzELqFfLgO9w">
+    <ruleId>4515-7668</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_twceMO6JEeyzELqFfLgO9w" severity="INFO" base_Property="_gactee6JEeyzELqFfLgO9w">
+    <ruleId>4515-7890</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_ujEN8O6JEeyzELqFfLgO9w" severity="WARNING" base_Property="_gactfO6JEeyzELqFfLgO9w">
+    <ruleId>4515-7683</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_7lgwkO6JEeyzELqFfLgO9w" base_Property="_gadUgO6JEeyzELqFfLgO9w">
+    <ruleId>4515-7652</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_8QwtAO6JEeyzELqFfLgO9w" base_Property="_gadUge6JEeyzELqFfLgO9w">
+    <ruleId>4515-7653</ruleId>
+  </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_v7XoMO6KEeyzELqFfLgO9w" base_Property="_gactcO6JEeyzELqFfLgO9w" uri="consol-vocab::ProcedureAct statusCode">
     <reference href="pathmap://CONSOL_MODEL///consol-vocab.uml#_QKXXEMnIEeSr1c1X9ACWbg"/>
+    <ruleId>4515-32366</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:CDATemplate xmi:id="_HR1_YO6LEeyzELqFfLgO9w" base_Class="_ASdycO6LEeyzELqFfLgO9w" templateId="2.16.840.1.113883.10.20.22.4.201" templateVersion="2016-06-01"/>
   <CDA:PropertyValidation xmi:id="_LaG1QO6LEeyzELqFfLgO9w" base_Property="_FEHjkO6LEeyzELqFfLgO9w"/>
@@ -5755,10 +6001,12 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
   <CDA:PropertyValidation xmi:id="_3TsrMO6LEeyzELqFfLgO9w" base_Property="_1CL7k-6LEeyzELqFfLgO9w"/>
   <CDA:PropertyValidation xmi:id="_4pFw0O6LEeyzELqFfLgO9w" base_Property="_FEIKqu6LEeyzELqFfLgO9w"/>
   <CDA:PropertyValidation xmi:id="_5G_NwO6LEeyzELqFfLgO9w" base_Property="_FEIKq-6LEeyzELqFfLgO9w"/>
-  <CDA:CDATemplate xmi:id="_uQHDQPDaEeyzELqFfLgO9w" base_Class="_oMRKIO5sEeyzELqFfLgO9w" templateId="2.16.840.1.113883.10.20.22.4.121" templateVersion="2022-06-01"/>
-  <CDA:PropertyValidation xmi:id="_EzewQPDgEeyzELqFfLgO9w" base_Property="_AtKbIPDgEeyzELqFfLgO9w"/>
-  <CDA:ConstraintValidation xmi:id="_ag9YAPGeEeyzELqFfLgO9w" severity="INFO" base_Constraint="_YTFLMPGeEeyzELqFfLgO9w"/>
-  <CDA:ConstraintValidation xmi:id="_b5VgMPGeEeyzELqFfLgO9w" base_Constraint="_Xv93EPGeEeyzELqFfLgO9w"/>
+  <CDA:CDATemplate xmi:id="_uQHDQPDaEeyzELqFfLgO9w" base_Class="_oMRKIO5sEeyzELqFfLgO9w" templateId="2.16.840.1.113883.10.20.22.4.121" templateVersion="2022-06-01">
+    <ruleId>4515-8583</ruleId>
+  </CDA:CDATemplate>
+  <CDA:PropertyValidation xmi:id="_EzewQPDgEeyzELqFfLgO9w" base_Property="_AtKbIPDgEeyzELqFfLgO9w">
+    <ruleId>4515-16754</ruleId>
+  </CDA:PropertyValidation>
   <CDA:CDATemplate xmi:id="_QxkXkPlfEey44McGZH1Wqg" base_Class="_5v9dIPleEey44McGZH1Wqg" templateId="2.16.840.1.113883.10.20.22.4.304" templateVersion="2022-06-01"/>
   <CDA:PropertyValidation xmi:id="_T1vTMPlfEey44McGZH1Wqg" base_Property="_7oiIUPleEey44McGZH1Wqg"/>
   <CDA:PropertyValidation xmi:id="_VZIYkPlfEey44McGZH1Wqg" base_Property="_7oivYPleEey44McGZH1Wqg"/>
@@ -5768,4 +6016,155 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
   <CDA:CodeSystemConstraint xmi:id="_UvfwQPlgEey44McGZH1Wqg" code="C101722" displayName="Primary DI Number" base_Property="_7oiIUPleEey44McGZH1Wqg">
     <reference href="pathmap://TERM_MODEL///CodeSystems.uml#_dWKSsaDqEd-dVeaMP0XXQw"/>
   </CDA:CodeSystemConstraint>
+  <CDA:CodeSystemConstraint xmi:id="_9MOz0AFuEe2uf-Hpx0eOMw" base_Property="_bLdx0-5iEeyzELqFfLgO9w">
+    <reference href="pathmap://TERM_MODEL///CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>4515-14439</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:CodeSystemConstraint xmi:id="_VdAQEAFvEe2uf-Hpx0eOMw" code="completed" displayName="completed" base_Property="_bLeY4-5iEeyzELqFfLgO9w">
+    <reference href="pathmap://TERM_MODEL///CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
+    <ruleId>4515-19088</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_hIj4QAFvEe2uf-Hpx0eOMw" base_Property="_bLeY6e5iEeyzELqFfLgO9w">
+    <ruleId>4515-14450</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:AssociationValidation xmi:id="_4OVkMAFzEe2uf-Hpx0eOMw" severity="INFO" base_Association="_bLgOE-5iEeyzELqFfLgO9w">
+    <ruleId>4515-16799</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:AssociationValidation xmi:id="_SrdjQAF0Ee2uf-Hpx0eOMw" base_Association="_NAu1EAF0Ee2uf-Hpx0eOMw">
+    <ruleId>4515-16800</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:PropertyValidation xmi:id="_5GL8wAF0Ee2uf-Hpx0eOMw" base_Property="_4EVeMAF0Ee2uf-Hpx0eOMw">
+    <ruleId>4515-19178</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:CodeSystemConstraint xmi:id="_60AJcAF0Ee2uf-Hpx0eOMw" base_Property="_4EVeMAF0Ee2uf-Hpx0eOMw">
+    <reference href="pathmap://TERM_MODEL///CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </CDA:CodeSystemConstraint>
+  <CDA:CodeSystemConstraint xmi:id="_EPi20AF1Ee2uf-Hpx0eOMw" code="completed" displayName="completed" base_Property="_eIrUY-5jEeyzELqFfLgO9w">
+    <reference href="pathmap://TERM_MODEL///CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
+    <ruleId>4515-19178</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:AssociationValidation xmi:id="_oyBAsAHiEe2uf-Hpx0eOMw" base_Association="_uHXDMunEEey0U6rqckWY4A">
+    <ruleId>CONF:4515-152</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:AssociationValidation xmi:id="_vO3IUAHiEe2uf-Hpx0eOMw" severity="WARNING" base_Association="_fux0EunEEey0U6rqckWY4A">
+    <ruleId>4515-128</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:AssociationValidation xmi:id="_zwNMkAHiEe2uf-Hpx0eOMw" severity="WARNING" base_Association="_iSnCw-nEEey0U6rqckWY4A">
+    <ruleId>4515-134</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:AssociationValidation xmi:id="_At7nQAHjEe2uf-Hpx0eOMw" severity="WARNING" negationIndicator="true" base_Association="_lpA94-nEEey0U6rqckWY4A">
+    <ruleId>4515-150</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:AssociationValidation xmi:id="_EH83EAHjEe2uf-Hpx0eOMw" severity="INFO" base_Association="_qUX5wunEEey0U6rqckWY4A">
+    <ruleId>4515-110</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:PropertyValidation xmi:id="_BO4iwAHkEe2uf-Hpx0eOMw" base_Property="_AMXV0AHkEe2uf-Hpx0eOMw">
+    <ruleId>4515-33008</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_CM8GcAHkEe2uf-Hpx0eOMw" base_Property="_AMX84AHkEe2uf-Hpx0eOMw">
+    <ruleId>4515-33016</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_C--AUAHkEe2uf-Hpx0eOMw" base_Property="_AMX84wHkEe2uf-Hpx0eOMw">
+    <ruleId>4515-33017</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_mnFvUAHkEe2uf-Hpx0eOMw" base_Property="_mnFIQAHkEe2uf-Hpx0eOMw">
+    <ruleId>CONF:8548, R2.1=CONF:1198-8548</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_mnGWYAHkEe2uf-Hpx0eOMw" base_Property="_mnFvUQHkEe2uf-Hpx0eOMw">
+    <ruleId>CONF:8549, R2.1=CONF:1198-8549</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_mnGWZAHkEe2uf-Hpx0eOMw" base_Property="_mnGWYQHkEe2uf-Hpx0eOMw">
+    <ruleId>CONF:8551, R2.1=CONF:1198-8551</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:CodeSystemConstraint xmi:id="_00MuQAHkEe2uf-Hpx0eOMw" code="completed" displayName="completed" base_Property="_9ft2ce5oEeyzELqFfLgO9w">
+    <reference href="pathmap://TERM_MODEL///CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
+  </CDA:CodeSystemConstraint>
+  <CDA:CodeSystemConstraint xmi:id="_6FrO8AHkEe2uf-Hpx0eOMw" code="76691-5" displayName="Gender identity" base_Property="_9ft2cO5oEeyzELqFfLgO9w">
+    <reference href="pathmap://TERM_MODEL///CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_Iik9YAHlEe2uf-Hpx0eOMw" base_Property="_HqdCkAHlEe2uf-Hpx0eOMw">
+    <ruleId>4515-33034</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_JHpZUAHlEe2uf-Hpx0eOMw" severity="INFO" base_Property="_HqdCkwHlEe2uf-Hpx0eOMw"/>
+  <CDA:CodeSystemConstraint xmi:id="_f6tE8AHmEe2uf-Hpx0eOMw" base_Property="_MzGkJO5tEeyzELqFfLgO9w">
+    <reference href="pathmap://TERM_MODEL///CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
+    <ruleId>4515-32334</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_PeswEAHnEe2uf-Hpx0eOMw" base_Property="_OjRCkAHnEe2uf-Hpx0eOMw">
+    <ruleId>4515-32310</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:CodeSystemConstraint xmi:id="_Qv-xwAHnEe2uf-Hpx0eOMw" code="75310-3" displayName="Health Concern" base_Property="_OjRCkAHnEe2uf-Hpx0eOMw">
+    <reference href="pathmap://TERM_MODEL///CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>4515-32311</ruleId>
+    <ruleId>4515-32312</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:CDATemplate xmi:id="_0sljAAHnEe2uf-Hpx0eOMw" base_Class="_yNEh4O6GEeyzELqFfLgO9w" templateId="2.16.840.1.113883.10.20.22.4.41" templateVersion="2014-06-09">
+    <ruleId>4515-30444</ruleId>
+  </CDA:CDATemplate>
+  <CDA:PropertyValidation xmi:id="_9pEV0AHnEe2uf-Hpx0eOMw" base_Property="_80mzAAHnEe2uf-Hpx0eOMw">
+    <ruleId>4515-8568</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_HkCKIAHoEe2uf-Hpx0eOMw" base_Property="_EpxYcAHoEe2uf-Hpx0eOMw">
+    <ruleId>4515-8569</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:ValueSetConstraint xmi:id="_L88rIAHoEe2uf-Hpx0eOMw" base_Property="_EpxYcAHoEe2uf-Hpx0eOMw" uri="consol-vocab::Planned moodCode (Act/Encounter/Procedure)">
+    <reference href="pathmap://CONSOL_MODEL///consol-vocab.uml#_kX95d_8pEeS4jrgU1p4iug"/>
+    <ruleId>4515-8569</ruleId>
+  </CDA:ValueSetConstraint>
+  <CDA:CodeSystemConstraint xmi:id="_X0I7kAHoEe2uf-Hpx0eOMw" code="active" displayName="active" base_Property="_RBlX9u6HEeyzELqFfLgO9w">
+    <reference href="pathmap://TERM_MODEL///CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
+  </CDA:CodeSystemConstraint>
+  <CDA:CodeSystemConstraint xmi:id="_Kjz4gAHpEe2uf-Hpx0eOMw" code="completed" displayName="completed" base_Property="_BDwz5O6IEeyzELqFfLgO9w">
+    <reference href="pathmap://TERM_MODEL///CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
+    <ruleId>4515-19112</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_45MJgAHrEe2uf-Hpx0eOMw" base_Property="_3qW-4AHrEe2uf-Hpx0eOMw">
+    <ruleId>4515-15603</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_5kbe4AHrEe2uf-Hpx0eOMw" severity="INFO" base_Property="_3qW-4wHrEe2uf-Hpx0eOMw">
+    <ruleId>4515-15604</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:ValueSetConstraint xmi:id="_G5vdsAHtEe2uf-Hpx0eOMw" base_Property="_gactdu6JEeyzELqFfLgO9w" uri="consol-vocab::Act Priority">
+    <reference href="pathmap://CONSOL_MODEL///consol-vocab.uml#_I5UjIG07EeGCevFpokwODw"/>
+    <ruleId>4515-7668</ruleId>
+  </CDA:ValueSetConstraint>
+  <CDA:ValueSetConstraint xmi:id="_X1q2gAHxEe2uf-Hpx0eOMw" base_Property="_gactfO6JEeyzELqFfLgO9w" uri="consol-vocab::Body Site">
+    <reference href="pathmap://CONSOL_MODEL///consol-vocab.uml#_2H3vABSVEeGGzu7fmW9pXw"/>
+    <ruleId>4515-7683</ruleId>
+  </CDA:ValueSetConstraint>
+  <CDA:CDATemplate xmi:id="_DkiqMAHyEe2uf-Hpx0eOMw" base_Class="_64AX4AHxEe2uf-Hpx0eOMw" templateId="2.16.840.1.113883.10.20.22.4.501" templateVersion="2022-06-01">
+    <ruleId>4515-185</ruleId>
+  </CDA:CDATemplate>
+  <CDA:PropertyValidation xmi:id="_HDBjQAHyEe2uf-Hpx0eOMw" base_Property="_BJEtUAHyEe2uf-Hpx0eOMw">
+    <ruleId>:4515-193</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_KYu60AHyEe2uf-Hpx0eOMw" base_Property="_BJEtUQHyEe2uf-Hpx0eOMw">
+    <ruleId>4515-194</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_QutlcAHyEe2uf-Hpx0eOMw" base_Property="_BJEGQAHyEe2uf-Hpx0eOMw">
+    <ruleId>4515-186</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:CodeSystemConstraint xmi:id="_SboaQAHyEe2uf-Hpx0eOMw" code="76690-7" displayName="Sexual Orientation" base_Property="_BJEGQAHyEe2uf-Hpx0eOMw">
+    <reference href="pathmap://TERM_MODEL///CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_XBytEAHyEe2uf-Hpx0eOMw" base_Property="_BJEGQQHyEe2uf-Hpx0eOMw">
+    <ruleId>4515-32881</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:CodeSystemConstraint xmi:id="_YgvXUAHyEe2uf-Hpx0eOMw" code="completed" displayName="completed" base_Property="_BJEGQQHyEe2uf-Hpx0eOMw">
+    <reference href="pathmap://TERM_MODEL///CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_c07wYAHyEe2uf-Hpx0eOMw" base_Property="_BJEGRAHyEe2uf-Hpx0eOMw">
+    <ruleId>4515-32882</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_g0KmEAHyEe2uf-Hpx0eOMw" severity="WARNING" base_Property="_fEAQAAHyEe2uf-Hpx0eOMw">
+    <ruleId>4515-32884</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_i_J28AHyEe2uf-Hpx0eOMw" severity="INFO" base_Property="_fEAQAwHyEe2uf-Hpx0eOMw">
+    <ruleId>4515-32885</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_oOtFAAHyEe2uf-Hpx0eOMw" base_Property="_BJEGRwHyEe2uf-Hpx0eOMw">
+    <ruleId>4515-187</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:ValueSetConstraint xmi:id="_qD3P0AHyEe2uf-Hpx0eOMw" base_Property="_BJEGRwHyEe2uf-Hpx0eOMw"/>
+  <CDA:CDATemplate xmi:id="_xpRqsALyEe2J57ejT9Rp7w" base_Class="_sjj3UO5oEeyzELqFfLgO9w" templateId="2.16.840.1.113883.10.20.34.3.45" templateVersion="2022-06-01"/>
 </xmi:XMI>

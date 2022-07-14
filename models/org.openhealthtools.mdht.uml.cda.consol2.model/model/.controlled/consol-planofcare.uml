@@ -114,11 +114,11 @@
       <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_YiANsDxYEd6JwqSGecoePg"/>
     </generalization>
     <ownedAttribute xmi:id="_2NWE-RSVEeGGzu7fmW9pXw" name="classCode" visibility="private" isReadOnly="true">
-      <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__zOntkDcEd6xYZuu1VKCVw"/>
+      <type xmi:type="uml:Enumeration" href="../../../org.eclipse.mdht.uml.hl7.vocab/model/vocab.uml#__zOntkDcEd6xYZuu1VKCVw"/>
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_uAr30CoSEeGHF88-qhhUMA" value="ACT"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2NWE8hSVEeGGzu7fmW9pXw" name="moodCode" visibility="private">
-      <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__zOpkkDcEd6xYZuu1VKCVw"/>
+      <type xmi:type="uml:Enumeration" href="../../../org.eclipse.mdht.uml.hl7.vocab/model/vocab.uml#__zOpkkDcEd6xYZuu1VKCVw"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_yWn-AEocEd6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2NWE7xSVEeGGzu7fmW9pXw" name="id" visibility="private">
@@ -146,12 +146,12 @@
       <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_AAXtEEbvEd6besF9iFIJkQ"/>
     </generalization>
     <ownedAttribute xmi:id="_WZy4UCoNEeGHF88-qhhUMA" name="classCode" visibility="private" isReadOnly="true">
-      <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__yVdYEDcEd6xYZuu1VKCVw"/>
+      <type xmi:type="uml:Enumeration" href="../../../org.eclipse.mdht.uml.hl7.vocab/model/vocab.uml#__yVdYEDcEd6xYZuu1VKCVw"/>
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_xT-0kCoSEeGHF88-qhhUMA" value="ENC"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_n4VYQEb9Ed6besF9iFIJkQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2NWFDxSVEeGGzu7fmW9pXw" name="moodCode" visibility="private">
-      <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__zOpnUDcEd6xYZuu1VKCVw"/>
+      <type xmi:type="uml:Enumeration" href="../../../org.eclipse.mdht.uml.hl7.vocab/model/vocab.uml#__zOpnUDcEd6xYZuu1VKCVw"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2NWFERSVEeGGzu7fmW9pXw" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2NWFEBSVEeGGzu7fmW9pXw" value="1"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_SaymoEo0Ed6c3qsAxlFHaQ"/>
@@ -181,11 +181,11 @@
       <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
     </generalization>
     <ownedAttribute xmi:id="_2NcLoBSVEeGGzu7fmW9pXw" name="classCode" visibility="private" isReadOnly="true">
-      <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__yVecEDcEd6xYZuu1VKCVw"/>
+      <type xmi:type="uml:Enumeration" href="../../../org.eclipse.mdht.uml.hl7.vocab/model/vocab.uml#__yVecEDcEd6xYZuu1VKCVw"/>
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_zmmXcCoSEeGHF88-qhhUMA" value="OBS"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2NcLmRSVEeGGzu7fmW9pXw" name="moodCode" visibility="private">
-      <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
+      <type xmi:type="uml:Enumeration" href="../../../org.eclipse.mdht.uml.hl7.vocab/model/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_BLZhcEo_Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2NcLlhSVEeGGzu7fmW9pXw" name="id" visibility="private">
@@ -213,11 +213,11 @@
       <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_-jiisEbuEd6besF9iFIJkQ"/>
     </generalization>
     <ownedAttribute xmi:id="_2NiSPBSVEeGGzu7fmW9pXw" name="classCode" visibility="private" isReadOnly="true">
-      <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__yVdYEDcEd6xYZuu1VKCVw"/>
+      <type xmi:type="uml:Enumeration" href="../../../org.eclipse.mdht.uml.hl7.vocab/model/vocab.uml#__yVdYEDcEd6xYZuu1VKCVw"/>
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_rFQBcCoSEeGHF88-qhhUMA" value="PROC"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2NiSNRSVEeGGzu7fmW9pXw" name="moodCode" visibility="private">
-      <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__zOprUDcEd6xYZuu1VKCVw"/>
+      <type xmi:type="uml:Enumeration" href="../../../org.eclipse.mdht.uml.hl7.vocab/model/vocab.uml#__zOprUDcEd6xYZuu1VKCVw"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_MIhZQEriEd6FXKclYGEDCw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2NiSMhSVEeGGzu7fmW9pXw" name="id" visibility="private" aggregation="composite">
@@ -245,14 +245,14 @@
       <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_nazskEbuEd6besF9iFIJkQ"/>
     </generalization>
     <ownedAttribute xmi:id="_2NoY1BSVEeGGzu7fmW9pXw" name="classCode" visibility="private" isReadOnly="true">
-      <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__yVdYEDcEd6xYZuu1VKCVw"/>
+      <type xmi:type="uml:Enumeration" href="../../../org.eclipse.mdht.uml.hl7.vocab/model/vocab.uml#__yVdYEDcEd6xYZuu1VKCVw"/>
       <defaultValue xmi:type="uml:InstanceValue" xmi:id="_2NoY1RSVEeGGzu7fmW9pXw" name="SBADM">
-        <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__yVdYEDcEd6xYZuu1VKCVw"/>
+        <type xmi:type="uml:Enumeration" href="../../../org.eclipse.mdht.uml.hl7.vocab/model/vocab.uml#__yVdYEDcEd6xYZuu1VKCVw"/>
         <instance xmi:type="uml:EnumerationLiteral" href="pathmap://VOCAB_MODEL/vocab.uml#__yVdc0DcEd6xYZuu1VKCVw"/>
       </defaultValue>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2NoYzhSVEeGGzu7fmW9pXw" name="moodCode" visibility="private">
-      <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__zOpxEDcEd6xYZuu1VKCVw"/>
+      <type xmi:type="uml:Enumeration" href="../../../org.eclipse.mdht.uml.hl7.vocab/model/vocab.uml#__zOpxEDcEd6xYZuu1VKCVw"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_bN2_sErtEd6FXKclYGEDCw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2NoYyxSVEeGGzu7fmW9pXw" name="id" visibility="private" aggregation="composite">
@@ -277,14 +277,14 @@
       <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_3gL0sEbuEd6besF9iFIJkQ"/>
     </generalization>
     <ownedAttribute xmi:id="_2NufYxSVEeGGzu7fmW9pXw" name="classCode" visibility="private" isReadOnly="true">
-      <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__yVfcUDcEd6xYZuu1VKCVw"/>
+      <type xmi:type="uml:Enumeration" href="../../../org.eclipse.mdht.uml.hl7.vocab/model/vocab.uml#__yVfcUDcEd6xYZuu1VKCVw"/>
       <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_2NufZBSVEeGGzu7fmW9pXw">
-        <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__yVfcUDcEd6xYZuu1VKCVw"/>
+        <type xmi:type="uml:Enumeration" href="../../../org.eclipse.mdht.uml.hl7.vocab/model/vocab.uml#__yVfcUDcEd6xYZuu1VKCVw"/>
         <body>SPLY</body>
       </defaultValue>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2NoY7xSVEeGGzu7fmW9pXw" name="moodCode" visibility="private">
-      <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__zOpxEDcEd6xYZuu1VKCVw"/>
+      <type xmi:type="uml:Enumeration" href="../../../org.eclipse.mdht.uml.hl7.vocab/model/vocab.uml#__zOpxEDcEd6xYZuu1VKCVw"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_U-F1UEruEd6FXKclYGEDCw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2NoY7BSVEeGGzu7fmW9pXw" name="id" visibility="private" aggregation="composite">
@@ -381,12 +381,12 @@
       <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_YiANsDxYEd6JwqSGecoePg"/>
     </generalization>
     <ownedAttribute xmi:id="_KJ93YI3FEeOB0eBUISUB4Q" name="classCode" visibility="private" isReadOnly="true">
-      <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__zOntkDcEd6xYZuu1VKCVw"/>
+      <type xmi:type="uml:Enumeration" href="../../../org.eclipse.mdht.uml.hl7.vocab/model/vocab.uml#__zOntkDcEd6xYZuu1VKCVw"/>
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_rRo0II3LEeOB0eBUISUB4Q" value="ACT"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_1DWqEEbnEd6besF9iFIJkQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_KJ-edI3FEeOB0eBUISUB4Q" name="moodCode" visibility="private">
-      <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__zOpkkDcEd6xYZuu1VKCVw"/>
+      <type xmi:type="uml:Enumeration" href="../../../org.eclipse.mdht.uml.hl7.vocab/model/vocab.uml#__zOpkkDcEd6xYZuu1VKCVw"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_yWn-AEocEd6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_KJ-ecI3FEeOB0eBUISUB4Q" name="code" visibility="private" aggregation="composite">
@@ -468,12 +468,12 @@
       <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_YiANsDxYEd6JwqSGecoePg"/>
     </generalization>
     <ownedAttribute xmi:id="_Bz4nQI63EeOB0eBUISUB4Q" name="classCode" visibility="private" isReadOnly="true">
-      <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__zOntkDcEd6xYZuu1VKCVw"/>
+      <type xmi:type="uml:Enumeration" href="../../../org.eclipse.mdht.uml.hl7.vocab/model/vocab.uml#__zOntkDcEd6xYZuu1VKCVw"/>
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_iMsq8AAJEeWla-1cYCOuzQ" value="PCPR"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_1DWqEEbnEd6besF9iFIJkQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_Fj3-cAALEeWla-1cYCOuzQ" name="moodCode" visibility="private">
-      <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__zOpkkDcEd6xYZuu1VKCVw"/>
+      <type xmi:type="uml:Enumeration" href="../../../org.eclipse.mdht.uml.hl7.vocab/model/vocab.uml#__zOpkkDcEd6xYZuu1VKCVw"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_yWn-AEocEd6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_Bz5OU463EeOB0eBUISUB4Q" name="id" visibility="private" aggregation="composite">
@@ -543,7 +543,7 @@
         <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_BoxMQEcFEd6besF9iFIJkQ"/>
       </generalization>
       <ownedAttribute xmi:id="_jmOC4I7DEeOB0eBUISUB4Q" name="typeCode" visibility="private" isReadOnly="true">
-        <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__zOoTEDcEd6xYZuu1VKCVw"/>
+        <type xmi:type="uml:Enumeration" href="../../../org.eclipse.mdht.uml.hl7.vocab/model/vocab.uml#__zOoTEDcEd6xYZuu1VKCVw"/>
         <defaultValue xmi:type="uml:LiteralString" xmi:id="_tKf1gI7DEeOB0eBUISUB4Q" value="SUBJ"/>
         <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_3B4C0Eo1Ed6c3qsAxlFHaQ"/>
       </ownedAttribute>
@@ -558,12 +558,12 @@
           <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
         </generalization>
         <ownedAttribute xmi:id="_gGL_wI7FEeOB0eBUISUB4Q" name="classCode" visibility="private" isReadOnly="true">
-          <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__yVecEDcEd6xYZuu1VKCVw"/>
+          <type xmi:type="uml:Enumeration" href="../../../org.eclipse.mdht.uml.hl7.vocab/model/vocab.uml#__yVecEDcEd6xYZuu1VKCVw"/>
           <defaultValue xmi:type="uml:LiteralString" xmi:id="_y900II7FEeOB0eBUISUB4Q" value="OBS"/>
           <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_FcjT0EbtEd6besF9iFIJkQ"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_gGMm0I7FEeOB0eBUISUB4Q" name="moodCode" visibility="private" isReadOnly="true">
-          <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
+          <type xmi:type="uml:Enumeration" href="../../../org.eclipse.mdht.uml.hl7.vocab/model/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
           <defaultValue xmi:type="uml:LiteralString" xmi:id="_nO_4cAAPEeWla-1cYCOuzQ" value="RQO"/>
           <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_BLZhcEo_Ed6c3qsAxlFHaQ"/>
         </ownedAttribute>
@@ -693,12 +693,12 @@ A goal may have components consisting of other goals (milestones). These milesto
       <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
     </generalization>
     <ownedAttribute xmi:id="_TjYZgI9UEeOB0eBUISUB4Q" name="classCode" visibility="private" isReadOnly="true">
-      <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__yVecEDcEd6xYZuu1VKCVw"/>
+      <type xmi:type="uml:Enumeration" href="../../../org.eclipse.mdht.uml.hl7.vocab/model/vocab.uml#__yVecEDcEd6xYZuu1VKCVw"/>
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_BYN0II9VEeOB0eBUISUB4Q" value="OBS"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_FcjT0EbtEd6besF9iFIJkQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_TjYZgo9UEeOB0eBUISUB4Q" name="moodCode" visibility="private" isReadOnly="true">
-      <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
+      <type xmi:type="uml:Enumeration" href="../../../org.eclipse.mdht.uml.hl7.vocab/model/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_ClQPAI9VEeOB0eBUISUB4Q" value="GOL"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_BLZhcEo_Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
@@ -788,7 +788,7 @@ A goal may have components consisting of other goals (milestones). These milesto
         <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_NDnXkEcIEd6besF9iFIJkQ"/>
       </generalization>
       <ownedAttribute xmi:id="_BOaisPp8EeS-CfvNxekztA" name="typeCode" visibility="private" isReadOnly="true">
-        <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__zOoWUDcEd6xYZuu1VKCVw"/>
+        <type xmi:type="uml:Enumeration" href="../../../org.eclipse.mdht.uml.hl7.vocab/model/vocab.uml#__zOoWUDcEd6xYZuu1VKCVw"/>
         <defaultValue xmi:type="uml:LiteralString" xmi:id="_EU-rAPp8EeS-CfvNxekztA" value="REFR"/>
         <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_7QZToErjEd6FXKclYGEDCw"/>
       </ownedAttribute>
@@ -848,12 +848,12 @@ Health concerns require intervention(s) to increase the likelihood of achieving 
       <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_YiANsDxYEd6JwqSGecoePg"/>
     </generalization>
     <ownedAttribute xmi:id="_PDtV8I9kEeOB0eBUISUB4Q" name="classCode" visibility="private" isReadOnly="true">
-      <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__zOntkDcEd6xYZuu1VKCVw"/>
+      <type xmi:type="uml:Enumeration" href="../../../org.eclipse.mdht.uml.hl7.vocab/model/vocab.uml#__zOntkDcEd6xYZuu1VKCVw"/>
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_hBqT0I9lEeOB0eBUISUB4Q" value="ACT"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_1DWqEEbnEd6besF9iFIJkQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_PDt9A49kEeOB0eBUISUB4Q" name="moodCode" visibility="private" isReadOnly="true">
-      <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__zOpkkDcEd6xYZuu1VKCVw"/>
+      <type xmi:type="uml:Enumeration" href="../../../org.eclipse.mdht.uml.hl7.vocab/model/vocab.uml#__zOpkkDcEd6xYZuu1VKCVw"/>
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_gjtMgI9lEeOB0eBUISUB4Q" value="EVN"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_yWn-AEocEd6c3qsAxlFHaQ"/>
     </ownedAttribute>
@@ -1107,7 +1107,7 @@ Health concerns require intervention(s) to increase the likelihood of achieving 
         <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_NDnXkEcIEd6besF9iFIJkQ"/>
       </generalization>
       <ownedAttribute xmi:id="_-w2fkP2mEeS3qvpPe63SpA" name="typeCode" visibility="private" isReadOnly="true">
-        <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__zOoWUDcEd6xYZuu1VKCVw"/>
+        <type xmi:type="uml:Enumeration" href="../../../org.eclipse.mdht.uml.hl7.vocab/model/vocab.uml#__zOoWUDcEd6xYZuu1VKCVw"/>
         <defaultValue xmi:type="uml:LiteralString" xmi:id="_F82MMP2nEeS3qvpPe63SpA" value="REFR"/>
         <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_7QZToErjEd6FXKclYGEDCw"/>
       </ownedAttribute>
@@ -1232,12 +1232,12 @@ All interventions referenced in an Intervention Act must have a moodCode of EVN,
       <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_YiANsDxYEd6JwqSGecoePg"/>
     </generalization>
     <ownedAttribute xmi:id="_pznW8JA8EeOZX935IVJfOg" name="classCode" visibility="private" isReadOnly="true">
-      <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__zOntkDcEd6xYZuu1VKCVw"/>
+      <type xmi:type="uml:Enumeration" href="../../../org.eclipse.mdht.uml.hl7.vocab/model/vocab.uml#__zOntkDcEd6xYZuu1VKCVw"/>
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_0ZCoEJA9EeOZX935IVJfOg" value="ACT"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_1DWqEEbnEd6besF9iFIJkQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_pzpzMJA8EeOZX935IVJfOg" name="moodCode" visibility="private" isReadOnly="true">
-      <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__zOpkkDcEd6xYZuu1VKCVw"/>
+      <type xmi:type="uml:Enumeration" href="../../../org.eclipse.mdht.uml.hl7.vocab/model/vocab.uml#__zOpkkDcEd6xYZuu1VKCVw"/>
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_1WjrMP2tEeS3qvpPe63SpA" value="EVN"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_yWn-AEocEd6c3qsAxlFHaQ"/>
     </ownedAttribute>
@@ -1368,7 +1368,7 @@ All interventions referenced in an Intervention Act must have a moodCode of EVN,
         <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_NDnXkEcIEd6besF9iFIJkQ"/>
       </generalization>
       <ownedAttribute xmi:id="_nNQ7YP5UEeSoDZvueq4eYw" name="typeCode" visibility="private" isReadOnly="true">
-        <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__zOoWUDcEd6xYZuu1VKCVw"/>
+        <type xmi:type="uml:Enumeration" href="../../../org.eclipse.mdht.uml.hl7.vocab/model/vocab.uml#__zOoWUDcEd6xYZuu1VKCVw"/>
         <defaultValue xmi:type="uml:LiteralString" xmi:id="_r4FrwP5UEeSoDZvueq4eYw" value="REFR"/>
         <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_7QZToErjEd6FXKclYGEDCw"/>
       </ownedAttribute>
@@ -1446,12 +1446,12 @@ For example, an observation outcome of a blood oxygen saturation level of 95% is
       <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
     </generalization>
     <ownedAttribute xmi:id="_7xZNwJmVEeOLJeQez13EkQ" name="classCode" visibility="private" isReadOnly="true">
-      <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__yVecEDcEd6xYZuu1VKCVw"/>
+      <type xmi:type="uml:Enumeration" href="../../../org.eclipse.mdht.uml.hl7.vocab/model/vocab.uml#__yVecEDcEd6xYZuu1VKCVw"/>
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_3S_TUJmWEeOLJeQez13EkQ" value="OBS"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_FcjT0EbtEd6besF9iFIJkQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_7xab4JmVEeOLJeQez13EkQ" name="moodCode" visibility="private" isReadOnly="true">
-      <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
+      <type xmi:type="uml:Enumeration" href="../../../org.eclipse.mdht.uml.hl7.vocab/model/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_5IxJMJmWEeOLJeQez13EkQ" value="EVN"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_BLZhcEo_Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
@@ -1520,12 +1520,12 @@ For example, an observation outcome of a blood oxygen saturation level of 95% is
       <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
     </generalization>
     <ownedAttribute xmi:id="_vwcyIJmaEeOLJeQez13EkQ" name="classCode" visibility="private" isReadOnly="true">
-      <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__yVecEDcEd6xYZuu1VKCVw"/>
+      <type xmi:type="uml:Enumeration" href="../../../org.eclipse.mdht.uml.hl7.vocab/model/vocab.uml#__yVecEDcEd6xYZuu1VKCVw"/>
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_a9ttkJmbEeOLJeQez13EkQ" value="OBS"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_FcjT0EbtEd6besF9iFIJkQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_vwdZMJmaEeOLJeQez13EkQ" name="moodCode" visibility="private" isReadOnly="true">
-      <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
+      <type xmi:type="uml:Enumeration" href="../../../org.eclipse.mdht.uml.hl7.vocab/model/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_cK-K4JmbEeOLJeQez13EkQ" value="EVN"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_BLZhcEo_Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
@@ -1591,7 +1591,7 @@ For example, an observation outcome of a blood oxygen saturation level of 95% is
       <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
     </generalization>
     <ownedAttribute xmi:id="_PFPwoPgAEeSx6PQhw3nAUw" name="nullFlavor" visibility="private">
-      <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__yyDSUDcEd6xYZuu1VKCVw"/>
+      <type xmi:type="uml:Enumeration" href="../../../org.eclipse.mdht.uml.hl7.vocab/model/vocab.uml#__yyDSUDcEd6xYZuu1VKCVw"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_PFPwofgAEeSx6PQhw3nAUw"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_PFPwovgAEeSx6PQhw3nAUw" value="1"/>
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_XDBfgPgAEeSx6PQhw3nAUw" value="NI"/>
@@ -1758,7 +1758,7 @@ The priority of the activity to the patient and provider is communicated through
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cU4ZseabEeOmzetP5oaH3A" value="*"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_r7TgwMQdEeSt_63yiINGSw" name="moodCode" visibility="private" redefinedProperty="_2NWE8hSVEeGGzu7fmW9pXw">
-      <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__zOpkkDcEd6xYZuu1VKCVw"/>
+      <type xmi:type="uml:Enumeration" href="../../../org.eclipse.mdht.uml.hl7.vocab/model/vocab.uml#__zOpkkDcEd6xYZuu1VKCVw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="__uLNEOacEeOmzetP5oaH3A" name="code" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
@@ -1857,7 +1857,7 @@ The priority of the activity to the patient and provider is communicated through
     <generalization xmi:id="_bDRhcOdXEeOqBOMhgDlycQ" general="_2NWFBBSVEeGGzu7fmW9pXw"/>
     <substitution xmi:id="_NAoQoOdYEeOqBOMhgDlycQ" name="PlanOfCareActivityEncounter" client="_bDPFMOdXEeOqBOMhgDlycQ" supplier="_2NWFBBSVEeGGzu7fmW9pXw" contract="_2NWFBBSVEeGGzu7fmW9pXw"/>
     <ownedAttribute xmi:id="_X5-3wMafEeSY-qHOFt9wVQ" name="moodCode" visibility="private" redefinedProperty="_2NWFDxSVEeGGzu7fmW9pXw">
-      <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__zOpnUDcEd6xYZuu1VKCVw"/>
+      <type xmi:type="uml:Enumeration" href="../../../org.eclipse.mdht.uml.hl7.vocab/model/vocab.uml#__zOpnUDcEd6xYZuu1VKCVw"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_X5-3wcafEeSY-qHOFt9wVQ" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_X5-3wsafEeSY-qHOFt9wVQ" value="1"/>
     </ownedAttribute>
@@ -1996,7 +1996,7 @@ The Planned Observation template may also indicate the potential insurance cover
     <generalization xmi:id="_jKZssedvEeOqBOMhgDlycQ" general="_2NcLjhSVEeGGzu7fmW9pXw"/>
     <substitution xmi:id="_wyoc8OdvEeOqBOMhgDlycQ" name="PlanOfCareActivityObservation" client="_jKZssOdvEeOqBOMhgDlycQ" supplier="_2NcLjhSVEeGGzu7fmW9pXw" contract="_2NcLjhSVEeGGzu7fmW9pXw"/>
     <ownedAttribute xmi:id="_K7kOYMdAEeShCO0Pdt1H3g" name="moodCode" visibility="private" redefinedProperty="_2NcLmRSVEeGGzu7fmW9pXw">
-      <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
+      <type xmi:type="uml:Enumeration" href="../../../org.eclipse.mdht.uml.hl7.vocab/model/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_-xcLEOd4EeOqBOMhgDlycQ" name="code" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
@@ -2195,7 +2195,7 @@ The Planned Observation template may also indicate the potential insurance cover
     <generalization xmi:id="_cs0YseeEEeOqBOMhgDlycQ" general="_2NiSKhSVEeGGzu7fmW9pXw"/>
     <substitution xmi:id="_EvJCIOeFEeOqBOMhgDlycQ" name="PlanOfCareActivityProcedure" client="_cs0YsOeEEeOqBOMhgDlycQ" supplier="_2NiSKhSVEeGGzu7fmW9pXw" contract="_2NiSKhSVEeGGzu7fmW9pXw"/>
     <ownedAttribute xmi:id="_DAEvwMdGEeShCO0Pdt1H3g" name="moodCode" visibility="private" redefinedProperty="_2NiSNRSVEeGGzu7fmW9pXw">
-      <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__zOprUDcEd6xYZuu1VKCVw"/>
+      <type xmi:type="uml:Enumeration" href="../../../org.eclipse.mdht.uml.hl7.vocab/model/vocab.uml#__zOprUDcEd6xYZuu1VKCVw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_YIljEOeFEeOqBOMhgDlycQ" name="code" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
@@ -2424,7 +2424,7 @@ MethodCode SHALL NOT conflict with the method inherent in Procedure / code.</bod
     <generalization xmi:id="_Yj5gcOgREeO-iJTuAv7BKQ" general="_2NoYwxSVEeGGzu7fmW9pXw"/>
     <substitution xmi:id="_4bsYcOgREeO-iJTuAv7BKQ" name="PlanOfCareActivitySubstanceAdministration" client="_Yj45YOgREeO-iJTuAv7BKQ" supplier="_2NoYwxSVEeGGzu7fmW9pXw" contract="_2NoYwxSVEeGGzu7fmW9pXw"/>
     <ownedAttribute xmi:id="_ZNTVQMapEeSY-qHOFt9wVQ" name="moodCode" visibility="private" redefinedProperty="_2NoYzhSVEeGGzu7fmW9pXw">
-      <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__zOpxEDcEd6xYZuu1VKCVw"/>
+      <type xmi:type="uml:Enumeration" href="../../../org.eclipse.mdht.uml.hl7.vocab/model/vocab.uml#__zOpxEDcEd6xYZuu1VKCVw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_NrRfIOgTEeO-iJTuAv7BKQ" name="statusCode" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
@@ -2575,11 +2575,11 @@ MethodCode SHALL NOT conflict with the method inherent in Procedure / code.</bod
         <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_OJn4MEcaEd6besF9iFIJkQ"/>
       </generalization>
       <ownedAttribute xmi:id="_4W5vsD3fEeSyGa6KC25kiw" name="typeCode" visibility="private" isReadOnly="true">
-        <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__yeao0DcEd6xYZuu1VKCVw"/>
+        <type xmi:type="uml:Enumeration" href="../../../org.eclipse.mdht.uml.hl7.vocab/model/vocab.uml#__yeao0DcEd6xYZuu1VKCVw"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__K2IsD3fEeSyGa6KC25kiw" value="1"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__KuM4D3fEeSyGa6KC25kiw" value="1"/>
         <defaultValue xmi:type="uml:InstanceValue" xmi:id="_4W5vsz3fEeSyGa6KC25kiw" name="PRCN">
-          <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__yeao0DcEd6xYZuu1VKCVw"/>
+          <type xmi:type="uml:Enumeration" href="../../../org.eclipse.mdht.uml.hl7.vocab/model/vocab.uml#__yeao0DcEd6xYZuu1VKCVw"/>
           <instance xmi:type="uml:EnumerationLiteral" href="pathmap://VOCAB_MODEL/vocab.uml#__yeapUDcEd6xYZuu1VKCVw"/>
         </defaultValue>
         <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_cdWvIErhEd6FXKclYGEDCw"/>
@@ -2725,7 +2725,7 @@ Depending on the type of supply, the product or participant will be either a Med
     <generalization xmi:id="_vEecgOg0EeO-iJTuAv7BKQ" general="_2NoY5BSVEeGGzu7fmW9pXw"/>
     <substitution xmi:id="_PYldEOg1EeO-iJTuAv7BKQ" name="PlanOfCareActivitySupply" client="_vEd1cOg0EeO-iJTuAv7BKQ" supplier="_2NoY5BSVEeGGzu7fmW9pXw" contract="_2NoY5BSVEeGGzu7fmW9pXw"/>
     <ownedAttribute xmi:id="_mIpF4MdPEeShCO0Pdt1H3g" name="moodCode" visibility="private" redefinedProperty="_2NoY7xSVEeGGzu7fmW9pXw">
-      <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__zOpxEDcEd6xYZuu1VKCVw"/>
+      <type xmi:type="uml:Enumeration" href="../../../org.eclipse.mdht.uml.hl7.vocab/model/vocab.uml#__zOpxEDcEd6xYZuu1VKCVw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_danigug3EeO-iJTuAv7BKQ" name="statusCode" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
@@ -3383,12 +3383,12 @@ All interventions referenced in a Planned Intervention Act must have moodCodes i
       <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_YiANsDxYEd6JwqSGecoePg"/>
     </generalization>
     <ownedAttribute xmi:id="_oM2YEOLUEeS505YV9ux2XA" name="classCode" visibility="private" isReadOnly="true">
-      <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__zOntkDcEd6xYZuu1VKCVw"/>
+      <type xmi:type="uml:Enumeration" href="../../../org.eclipse.mdht.uml.hl7.vocab/model/vocab.uml#__zOntkDcEd6xYZuu1VKCVw"/>
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_OOx3EOLVEeS505YV9ux2XA" value="ACT"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_1DWqEEbnEd6besF9iFIJkQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_oM4NQOLUEeS505YV9ux2XA" name="moodCode" visibility="private">
-      <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__zOpkkDcEd6xYZuu1VKCVw"/>
+      <type xmi:type="uml:Enumeration" href="../../../org.eclipse.mdht.uml.hl7.vocab/model/vocab.uml#__zOpkkDcEd6xYZuu1VKCVw"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_yWn-AEocEd6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_oM3mMOLUEeS505YV9ux2XA" name="id" visibility="private" aggregation="composite">
@@ -3536,7 +3536,7 @@ All interventions referenced in a Planned Intervention Act must have moodCodes i
         <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_NDnXkEcIEd6besF9iFIJkQ"/>
       </generalization>
       <ownedAttribute xmi:id="_bdzX8OLnEeS505YV9ux2XA" name="typeCode" visibility="private" isReadOnly="true">
-        <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__zOoWUDcEd6xYZuu1VKCVw"/>
+        <type xmi:type="uml:Enumeration" href="../../../org.eclipse.mdht.uml.hl7.vocab/model/vocab.uml#__zOoWUDcEd6xYZuu1VKCVw"/>
         <defaultValue xmi:type="uml:LiteralString" xmi:id="_gg-98OLnEeS505YV9ux2XA" value="REFR"/>
         <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_7QZToErjEd6FXKclYGEDCw"/>
       </ownedAttribute>
@@ -3751,12 +3751,12 @@ A Risk Concern Act represents a health concern that is a risk. A risk is a clini
       <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_YiANsDxYEd6JwqSGecoePg"/>
     </generalization>
     <ownedAttribute xmi:id="_Z_1isON3EeS_XOr-dz_KWA" name="classCode" visibility="private" isReadOnly="true">
-      <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__zOntkDcEd6xYZuu1VKCVw"/>
+      <type xmi:type="uml:Enumeration" href="../../../org.eclipse.mdht.uml.hl7.vocab/model/vocab.uml#__zOntkDcEd6xYZuu1VKCVw"/>
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_gAJfUON3EeS_XOr-dz_KWA" value="ACT"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_1DWqEEbnEd6besF9iFIJkQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_Z_2JwON3EeS_XOr-dz_KWA" name="moodCode" visibility="private" isReadOnly="true">
-      <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__zOpkkDcEd6xYZuu1VKCVw"/>
+      <type xmi:type="uml:Enumeration" href="../../../org.eclipse.mdht.uml.hl7.vocab/model/vocab.uml#__zOpkkDcEd6xYZuu1VKCVw"/>
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_gi-fkON3EeS_XOr-dz_KWA" value="EVN"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_yWn-AEocEd6c3qsAxlFHaQ"/>
     </ownedAttribute>
@@ -4000,7 +4000,7 @@ A Risk Concern Act represents a health concern that is a risk. A risk is a clini
         <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_NDnXkEcIEd6besF9iFIJkQ"/>
       </generalization>
       <ownedAttribute xmi:id="_Xrs_QOOrEeS_XOr-dz_KWA" name="typeCode" visibility="private" isReadOnly="true">
-        <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__zOoWUDcEd6xYZuu1VKCVw"/>
+        <type xmi:type="uml:Enumeration" href="../../../org.eclipse.mdht.uml.hl7.vocab/model/vocab.uml#__zOoWUDcEd6xYZuu1VKCVw"/>
         <defaultValue xmi:type="uml:LiteralString" xmi:id="_g4zoAOOrEeS_XOr-dz_KWA" value="REFR"/>
         <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_7QZToErjEd6FXKclYGEDCw"/>
       </ownedAttribute>
@@ -4514,12 +4514,12 @@ A Risk Concern Act represents a health concern that is a risk. A risk is a clini
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_hbddYEocEd6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_8pL4ZgmUEeut3_ZvYAZhww" name="classCode" visibility="private">
-      <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__zOntkDcEd6xYZuu1VKCVw"/>
+      <type xmi:type="uml:Enumeration" href="../../../org.eclipse.mdht.uml.hl7.vocab/model/vocab.uml#__zOntkDcEd6xYZuu1VKCVw"/>
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_c8JCYAmVEeut3_ZvYAZhww" value="PCPR"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_1DWqEEbnEd6besF9iFIJkQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_8pMfcAmUEeut3_ZvYAZhww" name="moodCode" visibility="private">
-      <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__zOpkkDcEd6xYZuu1VKCVw"/>
+      <type xmi:type="uml:Enumeration" href="../../../org.eclipse.mdht.uml.hl7.vocab/model/vocab.uml#__zOpkkDcEd6xYZuu1VKCVw"/>
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_biDC8AmVEeut3_ZvYAZhww" value="EVN"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_yWn-AEocEd6c3qsAxlFHaQ"/>
     </ownedAttribute>
@@ -4599,7 +4599,7 @@ A Risk Concern Act represents a health concern that is a risk. A risk is a clini
           <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#__QZaIEcZEd6besF9iFIJkQ"/>
         </generalization>
         <ownedAttribute xmi:id="_az5w4BMUEeuSZb_3V465dg" name="nullFlavor" visibility="private">
-          <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__yyDSUDcEd6xYZuu1VKCVw"/>
+          <type xmi:type="uml:Enumeration" href="../../../org.eclipse.mdht.uml.hl7.vocab/model/vocab.uml#__yyDSUDcEd6xYZuu1VKCVw"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lWBSMCzmEeu0qLzLs4h0DQ" value="1"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lWArICzmEeu0qLzLs4h0DQ" value="1"/>
           <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_fSVT-ExwEd6h-an5IXo-DA"/>
@@ -4689,12 +4689,12 @@ A Risk Concern Act represents a health concern that is a risk. A risk is a clini
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_4BWwQAvGEeuHK5c-vnh5Wg" name="classCode" visibility="private">
-      <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__yVecEDcEd6xYZuu1VKCVw"/>
+      <type xmi:type="uml:Enumeration" href="../../../org.eclipse.mdht.uml.hl7.vocab/model/vocab.uml#__yVecEDcEd6xYZuu1VKCVw"/>
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_yPtsUAvHEeuHK5c-vnh5Wg" value="OBS"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_FcjT0EbtEd6besF9iFIJkQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_4BWwQQvGEeuHK5c-vnh5Wg" name="moodCode" visibility="private">
-      <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
+      <type xmi:type="uml:Enumeration" href="../../../org.eclipse.mdht.uml.hl7.vocab/model/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_y5ebAAvHEeuHK5c-vnh5Wg" value="EVN"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_BLZhcEo_Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
@@ -5057,12 +5057,12 @@ A Risk Concern Act represents a health concern that is a risk. A risk is a clini
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_6wiqAAdKEeu6cuZQ8fwlvQ" name="classCode" visibility="private">
-      <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__yVecEDcEd6xYZuu1VKCVw"/>
+      <type xmi:type="uml:Enumeration" href="../../../org.eclipse.mdht.uml.hl7.vocab/model/vocab.uml#__yVecEDcEd6xYZuu1VKCVw"/>
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_SLtegAdMEeu6cuZQ8fwlvQ" value="OBS"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_FcjT0EbtEd6besF9iFIJkQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_6wiqAQdKEeu6cuZQ8fwlvQ" name="moodCode" visibility="private">
-      <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
+      <type xmi:type="uml:Enumeration" href="../../../org.eclipse.mdht.uml.hl7.vocab/model/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_oiKjIAdMEeu6cuZQ8fwlvQ" value="EVN"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_BLZhcEo_Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
@@ -5079,7 +5079,7 @@ A Risk Concern Act represents a health concern that is a risk. A risk is a clini
     <ruleId>4435-107</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:ValueSetConstraint xmi:id="_apFI4AdLEeu6cuZQ8fwlvQ" base_Property="_6wiC9AdKEeu6cuZQ8fwlvQ" uri="consol-vocab::CareTeamCategory">
-    <reference href="../consol-vocab.uml#_MPemEAdLEeu6cuZQ8fwlvQ"/>
+    <reference href="pathmap://CONSOL_MODEL/consol-vocab.uml#_MPemEAdLEeu6cuZQ8fwlvQ"/>
     <ruleId>4435-109</ruleId>
   </CDA:ValueSetConstraint>
   <uml:Class xmi:id="_hBwkAAmBEeut3_ZvYAZhww" name="NoteActivity">
@@ -5107,12 +5107,12 @@ A Risk Concern Act represents a health concern that is a risk. A risk is a clini
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_hbddYEocEd6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_p-dZRgmBEeut3_ZvYAZhww" name="classCode" visibility="private">
-      <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__zOntkDcEd6xYZuu1VKCVw"/>
+      <type xmi:type="uml:Enumeration" href="../../../org.eclipse.mdht.uml.hl7.vocab/model/vocab.uml#__zOntkDcEd6xYZuu1VKCVw"/>
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_yHt_YAmBEeut3_ZvYAZhww" value="ACT"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_1DWqEEbnEd6besF9iFIJkQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_p-dZRwmBEeut3_ZvYAZhww" name="moodCode" visibility="private">
-      <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__zOpkkDcEd6xYZuu1VKCVw"/>
+      <type xmi:type="uml:Enumeration" href="../../../org.eclipse.mdht.uml.hl7.vocab/model/vocab.uml#__zOpkkDcEd6xYZuu1VKCVw"/>
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_0uHZ4AmBEeut3_ZvYAZhww" value="EVN"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_yWn-AEocEd6c3qsAxlFHaQ"/>
     </ownedAttribute>
@@ -5317,7 +5317,7 @@ A Risk Concern Act represents a health concern that is a risk. A risk is a clini
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_1CJp4A2XEeuzkrfERpFDKQ" severity="WARNING" base_Association="_zMYbEg2XEeuzkrfERpFDKQ"/>
   <CDA:PropertyValidation xmi:id="_8aJLIA2XEeuzkrfERpFDKQ" base_Property="_6wiC8AdKEeu6cuZQ8fwlvQ">
-    <ruleId>4435-106</ruleId>
+    <ruleId>4435-97</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_9T1zQA2XEeuzkrfERpFDKQ" base_Property="_6wiqAAdKEeu6cuZQ8fwlvQ">
     <ruleId>CONF:4435-101</ruleId>
