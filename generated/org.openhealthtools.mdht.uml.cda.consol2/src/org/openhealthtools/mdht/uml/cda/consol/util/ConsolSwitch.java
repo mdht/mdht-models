@@ -7362,6 +7362,26 @@ public class ConsolSwitch<T> {
 				}
 				return result;
 			}
+			case ConsolPackage.SOCIAL_HISTORY_OBSERVATION_V4: {
+				SocialHistoryObservationV4 socialHistoryObservationV4 = (SocialHistoryObservationV4) theEObject;
+				T result = caseSocialHistoryObservationV4(socialHistoryObservationV4);
+				if (result == null) {
+					result = caseObservation(socialHistoryObservationV4);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(socialHistoryObservationV4);
+				}
+				if (result == null) {
+					result = caseAct(socialHistoryObservationV4);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(socialHistoryObservationV4);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
 			default:
 				return defaultCase(theEObject);
 		}
@@ -12706,6 +12726,21 @@ public class ConsolSwitch<T> {
 	 * @generated
 	 */
 	public T caseSexualOrientationObservation(SexualOrientationObservation object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Social History Observation V4</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Social History Observation V4</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseSocialHistoryObservationV4(SocialHistoryObservationV4 object) {
 		return null;
 	}
 

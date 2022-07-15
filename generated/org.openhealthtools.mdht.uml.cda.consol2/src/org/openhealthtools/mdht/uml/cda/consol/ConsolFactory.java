@@ -3253,6 +3253,15 @@ public interface ConsolFactory extends EFactory {
 	SexualOrientationObservation createSexualOrientationObservation();
 
 	/**
+	 * Returns a new object of class '<em>Social History Observation V4</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Social History Observation V4</em>'.
+	 * @generated
+	 */
+	SocialHistoryObservationV4 createSocialHistoryObservationV4();
+
+	/**
 	 * Returns a new object of class '<em>Criticality Observation</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

@@ -18834,5 +18834,47 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//SexualOrientationObservation/SexualOrientationObservationIVLTSHigh/context"/>
       </genOperations>
     </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="consol.ecore#//SocialHistoryObservationV4">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//SocialHistoryObservationV4/SocialHistoryObservationV4TemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//SocialHistoryObservationV4/SocialHistoryObservationV4TemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//SocialHistoryObservationV4/SocialHistoryObservationV4TemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//SocialHistoryObservationV4/SocialHistoryObservationV4Id">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//SocialHistoryObservationV4/SocialHistoryObservationV4Id/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//SocialHistoryObservationV4/SocialHistoryObservationV4Id/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//SocialHistoryObservationV4/SocialHistoryObservationV4CodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//SocialHistoryObservationV4/SocialHistoryObservationV4CodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//SocialHistoryObservationV4/SocialHistoryObservationV4CodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//SocialHistoryObservationV4/SocialHistoryObservationV4Code">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//SocialHistoryObservationV4/SocialHistoryObservationV4Code/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//SocialHistoryObservationV4/SocialHistoryObservationV4Code/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//SocialHistoryObservationV4/SocialHistoryObservationV4Value">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//SocialHistoryObservationV4/SocialHistoryObservationV4Value/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//SocialHistoryObservationV4/SocialHistoryObservationV4Value/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//SocialHistoryObservationV4/SocialHistoryObservationV4ClassCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//SocialHistoryObservationV4/SocialHistoryObservationV4ClassCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//SocialHistoryObservationV4/SocialHistoryObservationV4ClassCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//SocialHistoryObservationV4/SocialHistoryObservationV4MoodCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//SocialHistoryObservationV4/SocialHistoryObservationV4MoodCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//SocialHistoryObservationV4/SocialHistoryObservationV4MoodCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//SocialHistoryObservationV4/SocialHistoryObservationV4StatusCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//SocialHistoryObservationV4/SocialHistoryObservationV4StatusCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//SocialHistoryObservationV4/SocialHistoryObservationV4StatusCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//SocialHistoryObservationV4/SocialHistoryObservationV4StatusCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//SocialHistoryObservationV4/SocialHistoryObservationV4StatusCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//SocialHistoryObservationV4/SocialHistoryObservationV4StatusCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//SocialHistoryObservationV4/SocialHistoryObservationV4EffectiveTime">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//SocialHistoryObservationV4/SocialHistoryObservationV4EffectiveTime/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//SocialHistoryObservationV4/SocialHistoryObservationV4EffectiveTime/context"/>
+      </genOperations>
+    </genClasses>
   </genPackages>
 </genmodel:GenModel>

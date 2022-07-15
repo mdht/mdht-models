@@ -783,6 +783,8 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createDeviceIdentifierObservationV2();
 			case ConsolPackage.SEXUAL_ORIENTATION_OBSERVATION:
 				return createSexualOrientationObservation();
+			case ConsolPackage.SOCIAL_HISTORY_OBSERVATION_V4:
+				return createSocialHistoryObservationV4();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -4504,6 +4506,17 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	public SexualOrientationObservation createSexualOrientationObservation() {
 		SexualOrientationObservationImpl sexualOrientationObservation = new SexualOrientationObservationImpl();
 		return sexualOrientationObservation;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public SocialHistoryObservationV4 createSocialHistoryObservationV4() {
+		SocialHistoryObservationV4Impl socialHistoryObservationV4 = new SocialHistoryObservationV4Impl();
+		return socialHistoryObservationV4;
 	}
 
 	/**

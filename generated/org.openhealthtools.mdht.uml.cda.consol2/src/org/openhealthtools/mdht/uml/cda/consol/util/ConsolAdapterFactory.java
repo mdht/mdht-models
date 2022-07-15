@@ -1903,6 +1903,11 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
+		public Adapter caseSocialHistoryObservationV4(SocialHistoryObservationV4 object) {
+			return createSocialHistoryObservationV4Adapter();
+		}
+
+		@Override
 		public Adapter caseInfrastructureRoot(InfrastructureRoot object) {
 			return createInfrastructureRootAdapter();
 		}
@@ -7227,6 +7232,20 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createSexualOrientationObservationAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.SocialHistoryObservationV4 <em>Social History Observation V4</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.SocialHistoryObservationV4
+	 * @generated
+	 */
+	public Adapter createSocialHistoryObservationV4Adapter() {
 		return null;
 	}
 

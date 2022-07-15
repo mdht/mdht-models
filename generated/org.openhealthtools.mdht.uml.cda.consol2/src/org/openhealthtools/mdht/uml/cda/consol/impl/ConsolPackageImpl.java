@@ -2419,6 +2419,13 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	private EClass socialHistoryObservationV4EClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	private EClass criticalityObservationEClass = null;
 
 	/**
@@ -7316,6 +7323,19 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 				ConsolPackage.eNS_URI).getEClassifiers().get(360);
 		}
 		return sexualOrientationObservationEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getSocialHistoryObservationV4() {
+		if (socialHistoryObservationV4EClass == null) {
+			socialHistoryObservationV4EClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				ConsolPackage.eNS_URI).getEClassifiers().get(361);
+		}
+		return socialHistoryObservationV4EClass;
 	}
 
 	/**
