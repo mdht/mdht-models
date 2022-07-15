@@ -18461,6 +18461,10 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GenderIdentityObservationV3/GenderIdentityObservationV3MoodCode/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GenderIdentityObservationV3/GenderIdentityObservationV3MoodCode/context"/>
       </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//GenderIdentityObservationV3/GenderIdentityObservationV3Id">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GenderIdentityObservationV3/GenderIdentityObservationV3Id/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GenderIdentityObservationV3/GenderIdentityObservationV3Id/context"/>
+      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//GenderIdentityObservationV3/GenderIdentityObservationV3IVLTSLow">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GenderIdentityObservationV3/GenderIdentityObservationV3IVLTSLow/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GenderIdentityObservationV3/GenderIdentityObservationV3IVLTSLow/context"/>
@@ -18482,6 +18486,10 @@
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//GoalObsevationV2/GoalObsevationV2Code">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GoalObsevationV2/GoalObsevationV2Code/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GoalObsevationV2/GoalObsevationV2Code/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//GoalObsevationV2/GoalObsevationV2StatusCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GoalObsevationV2/GoalObsevationV2StatusCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GoalObsevationV2/GoalObsevationV2StatusCodeP/context"/>
       </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//GoalObsevationV2/GoalObsevationV2StatusCode">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GoalObsevationV2/GoalObsevationV2StatusCode/diagnostics"/>
@@ -18804,6 +18812,10 @@
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//SexualOrientationObservation/SexualOrientationObservationValue">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//SexualOrientationObservation/SexualOrientationObservationValue/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//SexualOrientationObservation/SexualOrientationObservationValue/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//SexualOrientationObservation/SexualOrientationObservationValueP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//SexualOrientationObservation/SexualOrientationObservationValueP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//SexualOrientationObservation/SexualOrientationObservationValueP/context"/>
       </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//SexualOrientationObservation/SexualOrientationObservationClassCode">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//SexualOrientationObservation/SexualOrientationObservationClassCode/diagnostics"/>

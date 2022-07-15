@@ -77,6 +77,15 @@ public class GoalObsevationV2Impl extends ObservationImpl implements GoalObsevat
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateGoalObsevationV2StatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return GoalObsevationV2Operations.validateGoalObsevationV2StatusCodeP(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateGoalObsevationV2StatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return GoalObsevationV2Operations.validateGoalObsevationV2StatusCode(this, diagnostics, context);
 	}

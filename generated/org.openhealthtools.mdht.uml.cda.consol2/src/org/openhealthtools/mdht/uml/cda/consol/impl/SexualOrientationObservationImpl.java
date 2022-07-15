@@ -124,6 +124,17 @@ public class SexualOrientationObservationImpl extends ObservationImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateSexualOrientationObservationValueP(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return SexualOrientationObservationOperations.validateSexualOrientationObservationValueP(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateSexualOrientationObservationClassCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return SexualOrientationObservationOperations.validateSexualOrientationObservationClassCode(

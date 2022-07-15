@@ -31,6 +31,7 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.GenderIdentityObservat
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GenderIdentityObservationV3#validateGenderIdentityObservationV3ValueP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Gender Identity Observation V3 Value P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GenderIdentityObservationV3#validateGenderIdentityObservationV3ClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Gender Identity Observation V3 Class Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GenderIdentityObservationV3#validateGenderIdentityObservationV3MoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Gender Identity Observation V3 Mood Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GenderIdentityObservationV3#validateGenderIdentityObservationV3Id(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Gender Identity Observation V3 Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GenderIdentityObservationV3#validateGenderIdentityObservationV3IVLTSLow(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Gender Identity Observation V3IVLTS Low</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GenderIdentityObservationV3#validateGenderIdentityObservationV3IVLTSHigh(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Gender Identity Observation V3IVLTS High</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GenderIdentityObservationV3#validateSocialHistoryObservation2TemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Observation2 Template Id</em>}</li>
@@ -46,48 +47,7 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.GenderIdentityObservat
 
 public class GenderIdentityObservationV3Test extends CDAValidationTest {
 
-	/**
-	*
-	* @generated
-	*/
-	// @Test
-
-	// public void testValidateGenderIdentityObservationV3Code() {
-	// OperationsTestCase<GenderIdentityObservationV3> validateGenderIdentityObservationV3CodeTestCase = new
-	// OperationsTestCase<GenderIdentityObservationV3>(
-	// "validateGenderIdentityObservationV3Code", operationsForOCL.getOCLValue(
-	// "VALIDATE_GENDER_IDENTITY_OBSERVATION_V3_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-	// objectFactory) {
-	//
-	// @Override
-	// protected void updateToFail(GenderIdentityObservationV3 target) {
-	//
-	// }
-	//
-	// @Override
-	// protected void updateToPass(GenderIdentityObservationV3 target) {
-	// target.init();
-	// target.setCode(DatatypesFactory.eINSTANCE.createCD());
-	// }
-	//
-	// @Override
-	// protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-	//
-	// return GenderIdentityObservationV3Operations.validateGenderIdentityObservationV3Code(
-	// (GenderIdentityObservationV3) objectToTest, diagnostician, map);
-	// }
-	//
-	// };
-	//
-	// validateGenderIdentityObservationV3CodeTestCase.doValidationTest();
-	// }
-
-	// /**
-	// *
-	// * @generated
-	// */
 	@Test
-
 	public void testValidateGenderIdentityObservationV3EffectiveTime() {
 		OperationsTestCase<GenderIdentityObservationV3> validateGenderIdentityObservationV3EffectiveTimeTestCase = new OperationsTestCase<GenderIdentityObservationV3>(
 			"validateGenderIdentityObservationV3EffectiveTime",
@@ -270,7 +230,43 @@ public class GenderIdentityObservationV3Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generatedNOT
+	* @generated NOT
+	*/
+	@Test
+
+	public void testValidateGenderIdentityObservationV3Id() {
+		OperationsTestCase<GenderIdentityObservationV3> validateGenderIdentityObservationV3IdTestCase = new OperationsTestCase<GenderIdentityObservationV3>(
+			"validateGenderIdentityObservationV3Id",
+			operationsForOCL.getOCLValue("VALIDATE_GENDER_IDENTITY_OBSERVATION_V3_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(GenderIdentityObservationV3 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(GenderIdentityObservationV3 target) {
+				target.init();
+				target.getIds().add(DatatypesFactory.eINSTANCE.createII());
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return GenderIdentityObservationV3Operations.validateGenderIdentityObservationV3Id(
+					(GenderIdentityObservationV3) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateGenderIdentityObservationV3IdTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
 	*/
 	@Test
 

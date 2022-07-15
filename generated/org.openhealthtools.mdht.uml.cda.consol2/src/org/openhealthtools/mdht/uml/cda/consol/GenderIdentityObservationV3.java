@@ -17,7 +17,7 @@ import org.eclipse.mdht.emf.runtime.util.Initializer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getGenderIdentityObservationV3()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='SocialHistoryObservation2TemplateId SocialHistoryObservationCode SocialHistoryObservationCodeP SocialHistoryObservationStatusCode SocialHistoryObservationStatusCodeP GenderIdentityObservationV3EffectiveTime GenderIdentityObservationV3Value GenderIdentityObservationV3ValueP GenderIdentityObservationV3ClassCode GenderIdentityObservationV3MoodCode GenderIdentityObservationV3IVLTSLow' templateId.root='2.16.840.1.113883.10.20.34.3.45' templateId.extension='2022-06-01' code.code='76691-5' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Gender identity' constraints.validation.dependOn.SocialHistoryObservationCode='SocialHistoryObservationCodeP' constraints.validation.dependOn.SocialHistoryObservationStatusCode='SocialHistoryObservationStatusCodeP' value.codeSystem='2.16.840.1.113883.6.96' value.codeSystemName='SNOMEDCT' classCode='OBS' moodCode='EVN' constraints.validation.query='GenderIdentityObservationV3IVLTSLow GenderIdentityObservationV3IVLTSHigh' constraints.validation.info='GenderIdentityObservationV3IVLTSHigh'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='SocialHistoryObservation2TemplateId SocialHistoryObservationCode SocialHistoryObservationCodeP SocialHistoryObservationStatusCode SocialHistoryObservationStatusCodeP GenderIdentityObservationV3EffectiveTime GenderIdentityObservationV3Value GenderIdentityObservationV3ValueP GenderIdentityObservationV3ClassCode GenderIdentityObservationV3MoodCode GenderIdentityObservationV3Id GenderIdentityObservationV3IVLTSLow' templateId.root='2.16.840.1.113883.10.20.34.3.45' templateId.extension='2022-06-01' code.code='76691-5' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Gender identity' constraints.validation.dependOn.SocialHistoryObservationCode='SocialHistoryObservationCodeP' constraints.validation.dependOn.SocialHistoryObservationStatusCode='SocialHistoryObservationStatusCodeP' value.codeSystem='2.16.840.1.113883.6.96' value.codeSystemName='SNOMEDCT' classCode='OBS' moodCode='EVN' constraints.validation.query='GenderIdentityObservationV3IVLTSLow GenderIdentityObservationV3IVLTSHigh' constraints.validation.info='GenderIdentityObservationV3IVLTSHigh'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolGenderIdentityObservationV3IVLTS constraints.validation.error='GenderIdentityObservationV3IVLTSLow' constraints.validation.info='GenderIdentityObservationV3IVLTSHigh'"
  *        annotation="duplicates"
  * @generated
@@ -82,6 +82,18 @@ public interface GenderIdentityObservationV3 extends SocialHistoryObservation2 {
 	 * @generated
 	 */
 	boolean validateGenderIdentityObservationV3MoodCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.id-&gt;isEmpty() or self.id-&gt;exists(element | element.isNullFlavorUndefined())) implies (not self.id-&gt;isEmpty())'"
+	 * @generated
+	 */
+	boolean validateGenderIdentityObservationV3Id(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

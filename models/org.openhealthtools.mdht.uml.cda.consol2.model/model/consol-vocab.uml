@@ -1855,6 +1855,12 @@ Used to enumerate the relationships between two clinical documents for document 
       <ownedLiteral xmi:id="_8EtbkO5pEeyzELqFfLgO9w" name="44614100012&#xA;4107"/>
       <ownedLiteral xmi:id="_-U5VgO5pEeyzELqFfLgO9w" name="44615100012&#xA;4109"/>
     </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_r3YcIAPEEe2tgO6cHznuZA" name="SexualOrientationVS">
+      <ownedLiteral xmi:id="_4V9csAPEEe2tgO6cHznuZA" name="20430005"/>
+      <ownedLiteral xmi:id="_8ifHgAPEEe2tgO6cHznuZA" name="38628009"/>
+      <ownedLiteral xmi:id="_ArF7oAPFEe2tgO6cHznuZA" name="42035005"/>
+      <ownedLiteral xmi:id="_CjK3kAPFEe2tgO6cHznuZA" name="765288000"/>
+    </packagedElement>
     <profileApplication xmi:id="_2B97WxSVEeGGzu7fmW9pXw">
       <eAnnotations xmi:id="_2B97XBSVEeGGzu7fmW9pXw" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.openhealthtools.org/mdht/schemas/term/1#/"/>
@@ -3485,7 +3491,7 @@ Used to enumerate the relationships between two clinical documents for document 
   <term:ValueSetCode xmi:id="_76bCgS0CEeuxZ80rBBFFIQ" conceptName="Reduced Function" base_EnumerationLiteral="_76bCgC0CEeuxZ80rBBFFIQ"/>
   <term:ValueSetCode xmi:id="_YxIfsF9PEey5t-mahoHmrg" conceptName="Common Law" base_EnumerationLiteral="_YxH4oF9PEey5t-mahoHmrg"/>
   <term:ValueSetCode xmi:id="_a8lqoV9PEey5t-mahoHmrg" conceptName="UnMarried" usageNote="UnMarried" base_EnumerationLiteral="_a8lqoF9PEey5t-mahoHmrg"/>
-  <term:ValueSetVersion xmi:id="_s1PAse5pEeyzELqFfLgO9w" fullName="GenderIdentityUSCDICore" base_Enumeration="_s1PAsO5pEeyzELqFfLgO9w">
+  <term:ValueSetVersion xmi:id="_s1PAse5pEeyzELqFfLgO9w" identifier="2.16.840.1.113762.1.4.1021.101" fullName="GenderIdentityUSCDICore" base_Enumeration="_s1PAsO5pEeyzELqFfLgO9w">
     <codeSystem href="pathmap://TERM_MODEL///CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
   <term:ValueSetCode xmi:id="_0W-T0e5pEeyzELqFfLgO9w" base_EnumerationLiteral="_0W-T0O5pEeyzELqFfLgO9w"/>
@@ -3493,4 +3499,11 @@ Used to enumerate the relationships between two clinical documents for document 
   <term:ValueSetCode xmi:id="_6NwhAe5pEeyzELqFfLgO9w" conceptName="Identifies as non- conforming gender (finding)" base_EnumerationLiteral="_6NwhAO5pEeyzELqFfLgO9w"/>
   <term:ValueSetCode xmi:id="_8Etbke5pEeyzELqFfLgO9w" base_EnumerationLiteral="_8EtbkO5pEeyzELqFfLgO9w"/>
   <term:ValueSetCode xmi:id="_-U5Vge5pEeyzELqFfLgO9w" conceptName="Identifies as male gender (finding)" base_EnumerationLiteral="_-U5VgO5pEeyzELqFfLgO9w"/>
+  <term:ValueSetVersion xmi:id="_r3bfcAPEEe2tgO6cHznuZA" identifier="2.16.840.1.113762.1.4.1021.33" fullName="Sexual Orientation" base_Enumeration="_r3YcIAPEEe2tgO6cHznuZA">
+    <codeSystem href="pathmap://TERM_MODEL///CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_4V-DwAPEEe2tgO6cHznuZA" conceptName="Heterosexual (finding)" base_EnumerationLiteral="_4V9csAPEEe2tgO6cHznuZA"/>
+  <term:ValueSetCode xmi:id="_8ifHgQPEEe2tgO6cHznuZA" conceptName="Homosexual (finding)" base_EnumerationLiteral="_8ifHgAPEEe2tgO6cHznuZA"/>
+  <term:ValueSetCode xmi:id="_ArF7oQPFEe2tgO6cHznuZA" conceptName="Bisexual (finding)" usageNote="Bisexual (finding)" base_EnumerationLiteral="_ArF7oAPFEe2tgO6cHznuZA"/>
+  <term:ValueSetCode xmi:id="_CjK3kQPFEe2tgO6cHznuZA" conceptName="Sexually attracted to neither male nor female sex (finding)" usageNote="Sexually attracted to neither male nor female sex (finding)" base_EnumerationLiteral="_CjK3kAPFEe2tgO6cHznuZA"/>
 </xmi:XMI>

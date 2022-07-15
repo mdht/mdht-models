@@ -19,7 +19,7 @@ import org.eclipse.mdht.uml.cda.Observation;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getSexualOrientationObservation()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='SexualOrientationObservationTemplateId SexualOrientationObservationCode SexualOrientationObservationCodeP SexualOrientationObservationStatusCode SexualOrientationObservationStatusCodeP SexualOrientationObservationEffectiveTime SexualOrientationObservationValue SexualOrientationObservationClassCode SexualOrientationObservationMoodCode' templateId.root='2.16.840.1.113883.10.20.22.4.501' templateId.extension='2022-06-01' code.code='76690-7' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Sexual Orientation' constraints.validation.dependOn.SexualOrientationObservationCode='SexualOrientationObservationCodeP' statusCode.code='completed' constraints.validation.dependOn.SexualOrientationObservationStatusCode='SexualOrientationObservationStatusCodeP' classCode='OBS' moodCode='EVN' constraints.validation.warning='SexualOrientationObservationIVLTSLow' constraints.validation.query='SexualOrientationObservationIVLTSLow SexualOrientationObservationIVLTSHigh' constraints.validation.info='SexualOrientationObservationIVLTSHigh'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='SexualOrientationObservationTemplateId SexualOrientationObservationCode SexualOrientationObservationCodeP SexualOrientationObservationStatusCode SexualOrientationObservationStatusCodeP SexualOrientationObservationEffectiveTime SexualOrientationObservationValue SexualOrientationObservationValueP SexualOrientationObservationClassCode SexualOrientationObservationMoodCode' templateId.root='2.16.840.1.113883.10.20.22.4.501' templateId.extension='2022-06-01' code.code='76690-7' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Sexual Orientation' constraints.validation.dependOn.SexualOrientationObservationCode='SexualOrientationObservationCodeP' statusCode.code='completed' constraints.validation.dependOn.SexualOrientationObservationStatusCode='SexualOrientationObservationStatusCodeP' value.codeSystem='2.16.840.1.113883.6.96' value.codeSystemName='SNOMEDCT' classCode='OBS' moodCode='EVN' constraints.validation.warning='SexualOrientationObservationIVLTSLow' constraints.validation.query='SexualOrientationObservationIVLTSLow SexualOrientationObservationIVLTSHigh' constraints.validation.info='SexualOrientationObservationIVLTSHigh'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolSexualOrientationObservationIVLTS constraints.validation.warning='SexualOrientationObservationIVLTSLow' constraints.validation.info='SexualOrientationObservationIVLTSHigh'"
  * @generated
  */
@@ -103,10 +103,22 @@ public interface SexualOrientationObservation extends Observation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.value-&gt;isEmpty() or self.value-&gt;exists(element | element.isNullFlavorUndefined())) implies (self.value-&gt;forAll(element | element.oclIsTypeOf(datatypes::CD)))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.value-&gt;isEmpty() or self.value-&gt;exists(element | element.isNullFlavorUndefined())) implies (self.value-&gt;forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and \nlet value : datatypes::CD = element.oclAsType(datatypes::CD) in \nvalue.codeSystem = \'2.16.840.1.113883.6.96\' and (value.code = \'20430005\' or value.code = \'38628009\' or value.code = \'42035005\' or value.code = \'765288000\')))'"
 	 * @generated
 	 */
 	boolean validateSexualOrientationObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.value-&gt;isEmpty() or self.value-&gt;exists(element | element.isNullFlavorUndefined())) implies (self.value-&gt;forAll(element | element.oclIsTypeOf(datatypes::CD)))'"
+	 * @generated
+	 */
+	boolean validateSexualOrientationObservationValueP(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

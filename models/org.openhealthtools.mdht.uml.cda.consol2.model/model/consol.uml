@@ -3507,7 +3507,7 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9ft2eO5oEeyzELqFfLgO9w"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9ft2ee5oEeyzELqFfLgO9w" value="*"/>
-        <subsettedProperty href="pathmap://CDA_MODEL///cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
+        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_mnFIQAHkEe2uf-Hpx0eOMw" name="classCode" visibility="private" isReadOnly="true">
         <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__yVecEDcEd6xYZuu1VKCVw"/>
@@ -3519,7 +3519,7 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
         <defaultValue xmi:type="uml:LiteralString" xmi:id="_mnFvUgHkEe2uf-Hpx0eOMw" value="EVN"/>
         <redefinedProperty href=".controlled/consol-socialhistory.uml#_2JSEQhSVEeGGzu7fmW9pXw"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_mnGWYQHkEe2uf-Hpx0eOMw" name="id1" visibility="private">
+      <ownedAttribute xmi:id="_mnGWYQHkEe2uf-Hpx0eOMw" name="id" visibility="private">
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_mnGWYgHkEe2uf-Hpx0eOMw" value="1"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_mnGWYwHkEe2uf-Hpx0eOMw" value="*"/>
@@ -6086,10 +6086,6 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
     <ruleId>4515-33034</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_JHpZUAHlEe2uf-Hpx0eOMw" severity="INFO" base_Property="_HqdCkwHlEe2uf-Hpx0eOMw"/>
-  <CDA:CodeSystemConstraint xmi:id="_f6tE8AHmEe2uf-Hpx0eOMw" base_Property="_MzGkJO5tEeyzELqFfLgO9w">
-    <reference href="pathmap://TERM_MODEL///CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
-    <ruleId>4515-32334</ruleId>
-  </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_PeswEAHnEe2uf-Hpx0eOMw" base_Property="_OjRCkAHnEe2uf-Hpx0eOMw">
     <ruleId>4515-32310</ruleId>
   </CDA:PropertyValidation>
@@ -6165,6 +6161,11 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
   <CDA:PropertyValidation xmi:id="_oOtFAAHyEe2uf-Hpx0eOMw" base_Property="_BJEGRwHyEe2uf-Hpx0eOMw">
     <ruleId>4515-187</ruleId>
   </CDA:PropertyValidation>
-  <CDA:ValueSetConstraint xmi:id="_qD3P0AHyEe2uf-Hpx0eOMw" base_Property="_BJEGRwHyEe2uf-Hpx0eOMw"/>
+  <CDA:ValueSetConstraint xmi:id="_qD3P0AHyEe2uf-Hpx0eOMw" base_Property="_BJEGRwHyEe2uf-Hpx0eOMw" uri="consol-vocab::SexualOrientationVS">
+    <reference href="pathmap://CONSOL_MODEL///consol-vocab.uml#_r3bfcAPEEe2tgO6cHznuZA"/>
+  </CDA:ValueSetConstraint>
   <CDA:CDATemplate xmi:id="_xpRqsALyEe2J57ejT9Rp7w" base_Class="_sjj3UO5oEeyzELqFfLgO9w" templateId="2.16.840.1.113883.10.20.34.3.45" templateVersion="2022-06-01"/>
+  <CDA:ValueSetConstraint xmi:id="_Vx_HwAPDEe2tgO6cHznuZA" base_Property="_MzGkJO5tEeyzELqFfLgO9w" uri="consol-vocab::ActStatus">
+    <reference href="pathmap://CONSOL_MODEL///consol-vocab.uml#_SdFiQeHGEeO04sHNODkHmQ"/>
+  </CDA:ValueSetConstraint>
 </xmi:XMI>

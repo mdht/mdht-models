@@ -98,6 +98,15 @@ public class GenderIdentityObservationV3Impl extends SocialHistoryObservation2Im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateGenderIdentityObservationV3Id(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return GenderIdentityObservationV3Operations.validateGenderIdentityObservationV3Id(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateGenderIdentityObservationV3IVLTSLow(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return GenderIdentityObservationV3Operations.validateGenderIdentityObservationV3IVLTSLow(

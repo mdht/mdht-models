@@ -19,7 +19,7 @@ import org.eclipse.mdht.uml.cda.Observation;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getGoalObsevationV2()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='GoalObsevationV2TemplateId GoalObsevationV2Id GoalObsevationV2Code GoalObsevationV2StatusCode GoalObsevationV2ClassCode GoalObsevationV2MoodCode' templateId.root='2.16.840.1.113883.10.20.22.4.121' templateId.extension='2022-06-01' constraints.validation.info='GoalObsevationV2Value' classCode='OBS' moodCode='GOL' constraints.validation.warning='GoalObsevationV2Author'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='GoalObsevationV2TemplateId GoalObsevationV2Id GoalObsevationV2Code GoalObsevationV2StatusCode GoalObsevationV2StatusCodeP GoalObsevationV2ClassCode GoalObsevationV2MoodCode' templateId.root='2.16.840.1.113883.10.20.22.4.121' templateId.extension='2022-06-01' constraints.validation.dependOn.GoalObsevationV2StatusCode='GoalObsevationV2StatusCodeP' constraints.validation.info='GoalObsevationV2Value' classCode='OBS' moodCode='GOL' constraints.validation.warning='GoalObsevationV2Author'"
  * @generated
  */
 public interface GoalObsevationV2 extends Observation {
@@ -67,6 +67,18 @@ public interface GoalObsevationV2 extends Observation {
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined())'"
+	 * @generated
+	 */
+	boolean validateGoalObsevationV2StatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and \nlet value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in \nvalue.code = \'normal\' or value.code = \'aborted\' or value.code = \'active\' or value.code = \'cancelled\' or value.code = \'completed\' or value.code = \'held\' or value.code = \'new\' or value.code = \'suspended\' or value.code = \'nullified\' or value.code = \'obsolete\')'"
 	 * @generated
 	 */
 	boolean validateGoalObsevationV2StatusCode(DiagnosticChain diagnostics, Map<Object, Object> context);

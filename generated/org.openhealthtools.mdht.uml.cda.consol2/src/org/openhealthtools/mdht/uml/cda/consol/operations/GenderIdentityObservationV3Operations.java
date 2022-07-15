@@ -40,6 +40,7 @@ import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GenderIdentityObservationV3#validateGenderIdentityObservationV3ValueP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Gender Identity Observation V3 Value P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GenderIdentityObservationV3#validateGenderIdentityObservationV3ClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Gender Identity Observation V3 Class Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GenderIdentityObservationV3#validateGenderIdentityObservationV3MoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Gender Identity Observation V3 Mood Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GenderIdentityObservationV3#validateGenderIdentityObservationV3Id(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Gender Identity Observation V3 Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GenderIdentityObservationV3#validateGenderIdentityObservationV3IVLTSLow(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Gender Identity Observation V3IVLTS Low</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GenderIdentityObservationV3#validateGenderIdentityObservationV3IVLTSHigh(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Gender Identity Observation V3IVLTS High</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GenderIdentityObservationV3#validateSocialHistoryObservation2TemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Observation2 Template Id</em>}</li>
@@ -409,6 +410,72 @@ public class GenderIdentityObservationV3Operations extends SocialHistoryObservat
 						ConsolValidator.GENDER_IDENTITY_OBSERVATION_V3__GENDER_IDENTITY_OBSERVATION_V3_MOOD_CODE,
 						ConsolPlugin.INSTANCE.getString(
 							"GenderIdentityObservationV3GenderIdentityObservationV3MoodCode"),
+						new Object[] { genderIdentityObservationV3 }));
+			}
+
+			return false;
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateGenderIdentityObservationV3Id(GenderIdentityObservationV3, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Gender Identity Observation V3 Id</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateGenderIdentityObservationV3Id(GenderIdentityObservationV3, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_GENDER_IDENTITY_OBSERVATION_V3_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (not self.id->isEmpty())";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateGenderIdentityObservationV3Id(GenderIdentityObservationV3, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Gender Identity Observation V3 Id</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateGenderIdentityObservationV3Id(GenderIdentityObservationV3, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static ThreadLocal<Constraint> VALIDATE_GENDER_IDENTITY_OBSERVATION_V3_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param genderIdentityObservationV3 The receiving '<em><b>Gender Identity Observation V3</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+
+	public static boolean validateGenderIdentityObservationV3Id(GenderIdentityObservationV3 genderIdentityObservationV3,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "GenderIdentityObservationV3GenderIdentityObservationV3Id", "ERROR");
+
+		if (VALIDATE_GENDER_IDENTITY_OBSERVATION_V3_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.GENDER_IDENTITY_OBSERVATION_V3);
+			try {
+				VALIDATE_GENDER_IDENTITY_OBSERVATION_V3_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_GENDER_IDENTITY_OBSERVATION_V3_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_GENDER_IDENTITY_OBSERVATION_V3_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				genderIdentityObservationV3)) {
+			if (diagnostics != null) {
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.GENDER_IDENTITY_OBSERVATION_V3__GENDER_IDENTITY_OBSERVATION_V3_ID,
+						ConsolPlugin.INSTANCE.getString("GenderIdentityObservationV3GenderIdentityObservationV3Id"),
 						new Object[] { genderIdentityObservationV3 }));
 			}
 

@@ -2,6 +2,7 @@
  */
 package org.openhealthtools.mdht.uml.cda.consol.operations;
 
+import java.util.Collection;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
@@ -35,6 +36,7 @@ import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GoalObsevationV2#validateGoalObsevationV2TemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Goal Obsevation V2 Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GoalObsevationV2#validateGoalObsevationV2Id(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Goal Obsevation V2 Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GoalObsevationV2#validateGoalObsevationV2Code(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Goal Obsevation V2 Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GoalObsevationV2#validateGoalObsevationV2StatusCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Goal Obsevation V2 Status Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GoalObsevationV2#validateGoalObsevationV2StatusCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Goal Obsevation V2 Status Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GoalObsevationV2#validateGoalObsevationV2Value(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Goal Obsevation V2 Value</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GoalObsevationV2#validateGoalObsevationV2ClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Goal Obsevation V2 Class Code</em>}</li>
@@ -259,6 +261,84 @@ public class GoalObsevationV2Operations extends ClinicalStatementOperations {
 	}
 
 	/**
+	 * The cached OCL expression body for the '{@link #validateGoalObsevationV2StatusCodeP(GoalObsevationV2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Goal Obsevation V2 Status Code P</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateGoalObsevationV2StatusCodeP(GoalObsevationV2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_GOAL_OBSEVATION_V2_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined())";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateGoalObsevationV2StatusCodeP(GoalObsevationV2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Goal Obsevation V2 Status Code P</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateGoalObsevationV2StatusCodeP(GoalObsevationV2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static ThreadLocal<Constraint> VALIDATE_GOAL_OBSEVATION_V2_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param goalObsevationV2 The receiving '<em><b>Goal Obsevation V2</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+
+	public static boolean validateGoalObsevationV2StatusCodeP(GoalObsevationV2 goalObsevationV2,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "GoalObsevationV2GoalObsevationV2StatusCodeP", "ERROR");
+
+		if (VALIDATE_GOAL_OBSEVATION_V2_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.GOAL_OBSEVATION_V2);
+			try {
+				VALIDATE_GOAL_OBSEVATION_V2_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_GOAL_OBSEVATION_V2_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_GOAL_OBSEVATION_V2_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(goalObsevationV2)) {
+			if (diagnostics != null) {
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.GOAL_OBSEVATION_V2__GOAL_OBSEVATION_V2_STATUS_CODE_P,
+						ConsolPlugin.INSTANCE.getString("GoalObsevationV2GoalObsevationV2StatusCodeP"),
+						new Object[] { goalObsevationV2 }));
+			}
+
+			if (context != null) {
+				// generate a pass token for my dependent constraints to short-circuit or filter results
+				@SuppressWarnings("unchecked")
+				Collection<Object> passToken = (Collection<Object>) context.get(
+					"org.openhealthtools.mdht.uml.cda.consol.GoalObsevationV2StatusCodeP");
+				if (passToken == null) {
+					// anticipate a reasonably healthy model
+					passToken = new java.util.ArrayList<>(3);
+					context.put("org.openhealthtools.mdht.uml.cda.consol.GoalObsevationV2StatusCodeP", passToken);
+				}
+				passToken.add(goalObsevationV2);
+			}
+
+			return false;
+		}
+		return true;
+	}
+
+	/**
 	 * The cached OCL expression body for the '{@link #validateGoalObsevationV2StatusCode(GoalObsevationV2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Goal Obsevation V2 Status Code</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -266,7 +346,9 @@ public class GoalObsevationV2Operations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_GOAL_OBSEVATION_V2_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined())";
+	protected static final String VALIDATE_GOAL_OBSEVATION_V2_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and " +
+			"let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in " +
+			"value.code = 'normal' or value.code = 'aborted' or value.code = 'active' or value.code = 'cancelled' or value.code = 'completed' or value.code = 'held' or value.code = 'new' or value.code = 'suspended' or value.code = 'nullified' or value.code = 'obsolete')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateGoalObsevationV2StatusCode(GoalObsevationV2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Goal Obsevation V2 Status Code</em>}' invariant operation.
@@ -292,6 +374,14 @@ public class GoalObsevationV2Operations extends ClinicalStatementOperations {
 
 	public static boolean validateGoalObsevationV2StatusCode(GoalObsevationV2 goalObsevationV2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		Object passToken = (context == null)
+				? null
+				: context.get("org.openhealthtools.mdht.uml.cda.consol.GoalObsevationV2StatusCodeP");
+		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(goalObsevationV2)) {
+			// I have a free pass to short-circuit
+			return true;
+		}
 
 		DatatypesUtil.increment(context, "GoalObsevationV2GoalObsevationV2StatusCode", "ERROR");
 

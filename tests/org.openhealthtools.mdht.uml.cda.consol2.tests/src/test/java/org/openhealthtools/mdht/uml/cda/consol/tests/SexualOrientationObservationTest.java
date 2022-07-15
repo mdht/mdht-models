@@ -33,6 +33,7 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.SexualOrientationObser
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SexualOrientationObservation#validateSexualOrientationObservationStatusCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Sexual Orientation Observation Status Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SexualOrientationObservation#validateSexualOrientationObservationEffectiveTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Sexual Orientation Observation Effective Time</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SexualOrientationObservation#validateSexualOrientationObservationValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Sexual Orientation Observation Value</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SexualOrientationObservation#validateSexualOrientationObservationValueP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Sexual Orientation Observation Value P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SexualOrientationObservation#validateSexualOrientationObservationClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Sexual Orientation Observation Class Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SexualOrientationObservation#validateSexualOrientationObservationMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Sexual Orientation Observation Mood Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SexualOrientationObservation#validateSexualOrientationObservationIVLTSLow(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Sexual Orientation Observation IVLTS Low</em>}</li>
@@ -303,7 +304,7 @@ public class SexualOrientationObservationTest extends CDAValidationTest {
 			protected void updateToPass(SexualOrientationObservation target) {
 
 				target.getValues().clear();
-				CD value = DatatypesFactory.eINSTANCE.createCD();
+				CD value = DatatypesFactory.eINSTANCE.createCD("20430005", "2.16.840.1.113883.6.96");
 				target.getValues().add(value);
 
 			}
@@ -318,6 +319,44 @@ public class SexualOrientationObservationTest extends CDAValidationTest {
 		};
 
 		validateSexualOrientationObservationValueTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+
+	public void testValidateSexualOrientationObservationValueP() {
+		OperationsTestCase<SexualOrientationObservation> validateSexualOrientationObservationValuePTestCase = new OperationsTestCase<SexualOrientationObservation>(
+			"validateSexualOrientationObservationValueP", operationsForOCL.getOCLValue(
+				"VALIDATE_SEXUAL_ORIENTATION_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(SexualOrientationObservation target) {
+				target.init();
+				target.getValues().add(DatatypesFactory.eINSTANCE.createAD());
+			}
+
+			@Override
+			protected void updateToPass(SexualOrientationObservation target) {
+
+				target.getValues().clear();
+				CD value = DatatypesFactory.eINSTANCE.createCD();
+				target.getValues().add(value);
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return SexualOrientationObservationOperations.validateSexualOrientationObservationValueP(
+					(SexualOrientationObservation) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateSexualOrientationObservationValuePTestCase.doValidationTest();
 	}
 
 	/**
