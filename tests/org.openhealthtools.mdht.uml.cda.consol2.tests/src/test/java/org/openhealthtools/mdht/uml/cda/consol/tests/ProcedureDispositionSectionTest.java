@@ -267,7 +267,7 @@ public class ProcedureDispositionSectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ConstructorTestClass extends ProcedureDispositionSectionOperations {
-	};
+	}
 
 	/**
 	* Tests Operations Constructor for 100% coverage

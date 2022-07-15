@@ -736,7 +736,7 @@ public class CaregiverCharacteristicsTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ConstructorTestClass extends CaregiverCharacteristicsOperations {
-	};
+	}
 
 	/**
 	* Tests Operations Constructor for 100% coverage

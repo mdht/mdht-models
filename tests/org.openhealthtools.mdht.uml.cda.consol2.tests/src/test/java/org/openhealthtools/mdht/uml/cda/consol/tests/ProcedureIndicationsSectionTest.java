@@ -315,7 +315,7 @@ public class ProcedureIndicationsSectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ConstructorTestClass extends ProcedureIndicationsSectionOperations {
-	};
+	}
 
 	/**
 	* Tests Operations Constructor for 100% coverage

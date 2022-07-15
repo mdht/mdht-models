@@ -351,7 +351,7 @@ public class MentalStatusOrganizer2Test extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ConstructorTestClass extends MentalStatusOrganizer2Operations {
-	};
+	}
 
 	/**
 	* Tests Operations Constructor for 100% coverage

@@ -267,7 +267,7 @@ public class ProcedureImplantsSectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ConstructorTestClass extends ProcedureImplantsSectionOperations {
-	};
+	}
 
 	/**
 	* Tests Operations Constructor for 100% coverage

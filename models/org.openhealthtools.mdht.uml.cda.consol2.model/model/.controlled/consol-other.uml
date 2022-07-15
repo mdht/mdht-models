@@ -3453,22 +3453,45 @@ If the ID isn't referencing an author described elsewhere in the document, then 
       </nestedClassifier>
     </nestedClassifier>
   </uml:Class>
-  <CDA:PropertyValidation xmi:id="_PknjQA5ZEeuzkrfERpFDKQ" base_Property="_NqbugA5ZEeuzkrfERpFDKQ"/>
-  <CDA:CDATemplate xmi:id="_S9YU8A8AEeuzkrfERpFDKQ" base_Class="_J9bRQA5ZEeuzkrfERpFDKQ" templateId="2.16.840.1.113883.10.20.22.5 .6" templateVersion="2019-10-01"/>
+  <CDA:PropertyValidation xmi:id="_PknjQA5ZEeuzkrfERpFDKQ" base_Property="_NqbugA5ZEeuzkrfERpFDKQ">
+    <ruleId>4515-32983</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:CDATemplate xmi:id="_S9YU8A8AEeuzkrfERpFDKQ" base_Class="_J9bRQA5ZEeuzkrfERpFDKQ" templateId="2.16.840.1.113883.10.20.22.5.6" templateVersion="2019-10-01"/>
   <uml:Association xmi:id="_XOKWMw8XEeuzkrfERpFDKQ" memberEnd="_XOKWMA8XEeuzkrfERpFDKQ _XOK9QA8XEeuzkrfERpFDKQ">
     <ownedEnd xmi:id="_XOK9QA8XEeuzkrfERpFDKQ" type="_J9bRQA5ZEeuzkrfERpFDKQ" association="_XOKWMw8XEeuzkrfERpFDKQ"/>
   </uml:Association>
-  <CDA:PropertyValidation xmi:id="_cVkU4A8XEeuzkrfERpFDKQ" severity="WARNING" base_Property="_RYx3PA8XEeuzkrfERpFDKQ"/>
-  <CDA:AssociationValidation xmi:id="_c-FGYA8XEeuzkrfERpFDKQ" base_Association="_XOKWMw8XEeuzkrfERpFDKQ"/>
-  <CDA:PropertyValidation xmi:id="_BQ7_AA8ZEeuzkrfERpFDKQ" base_Property="_RYx3NQ8XEeuzkrfERpFDKQ"/>
-  <CDA:PropertyValidation xmi:id="_H9hLwA8ZEeuzkrfERpFDKQ" severity="WARNING" base_Property="_RYx3SQ8XEeuzkrfERpFDKQ"/>
-  <CDA:PropertyValidation xmi:id="_IcXD4A8ZEeuzkrfERpFDKQ" base_Property="_RYx3TA8XEeuzkrfERpFDKQ"/>
-  <CDA:PropertyValidation xmi:id="_I9rBMA8ZEeuzkrfERpFDKQ" severity="WARNING" base_Property="_RYx3Tw8XEeuzkrfERpFDKQ"/>
-  <CDA:PropertyValidation xmi:id="_LZ-EgA8ZEeuzkrfERpFDKQ" base_Property="_RYx3RA8XEeuzkrfERpFDKQ"/>
+  <CDA:PropertyValidation xmi:id="_cVkU4A8XEeuzkrfERpFDKQ" severity="WARNING" base_Property="_RYx3PA8XEeuzkrfERpFDKQ">
+    <ruleId>4515-32976</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:AssociationValidation xmi:id="_c-FGYA8XEeuzkrfERpFDKQ" base_Association="_XOKWMw8XEeuzkrfERpFDKQ">
+    <ruleId>4515-32975</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:PropertyValidation xmi:id="_BQ7_AA8ZEeuzkrfERpFDKQ" base_Property="_RYx3NQ8XEeuzkrfERpFDKQ">
+    <ruleId>4515-2</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_H9hLwA8ZEeuzkrfERpFDKQ" base_Property="_RYx3SQ8XEeuzkrfERpFDKQ">
+    <ruleId>4515-32981</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_IcXD4A8ZEeuzkrfERpFDKQ" base_Property="_RYx3TA8XEeuzkrfERpFDKQ">
+    <ruleId>4515-11</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_I9rBMA8ZEeuzkrfERpFDKQ" severity="WARNING" base_Property="_RYx3Tw8XEeuzkrfERpFDKQ">
+    <ruleId>4515-12</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_LZ-EgA8ZEeuzkrfERpFDKQ" base_Property="_RYx3RA8XEeuzkrfERpFDKQ">
+    <ruleId>4515-32977</ruleId>
+  </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_XOmWoA-9EeuzkrfERpFDKQ" base_Property="_RYx3OQ8XEeuzkrfERpFDKQ" uri="consol-vocab::Personal And Legal Relationship Role Type">
     <reference href="pathmap://CONSOL_MODEL///consol-vocab.uml#_x4P9YZ6CEeOr4eM3k36wAg"/>
   </CDA:ValueSetConstraint>
-  <CDA:PropertyValidation xmi:id="_ft43IA-9EeuzkrfERpFDKQ" base_Property="_RYx3Pw8XEeuzkrfERpFDKQ"/>
-  <CDA:PropertyValidation xmi:id="_xb_3oA-9EeuzkrfERpFDKQ" base_Property="_uTIpQA-9EeuzkrfERpFDKQ"/>
-  <CDA:PropertyValidation xmi:id="_yLFLMA-9EeuzkrfERpFDKQ" base_Property="_uTLskA-9EeuzkrfERpFDKQ"/>
+  <CDA:PropertyValidation xmi:id="_ft43IA-9EeuzkrfERpFDKQ" base_Property="_RYx3Pw8XEeuzkrfERpFDKQ">
+    <ruleId>4515-32978</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_xb_3oA-9EeuzkrfERpFDKQ" base_Property="_uTIpQA-9EeuzkrfERpFDKQ">
+    <ruleId>4515-17</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_yLFLMA-9EeuzkrfERpFDKQ" base_Property="_uTLskA-9EeuzkrfERpFDKQ">
+    <ruleId>4515-18</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_mqWCoAFrEe2uf-Hpx0eOMw" severity="WARNING" base_Property="_RYx3OQ8XEeuzkrfERpFDKQ"/>
 </xmi:XMI>

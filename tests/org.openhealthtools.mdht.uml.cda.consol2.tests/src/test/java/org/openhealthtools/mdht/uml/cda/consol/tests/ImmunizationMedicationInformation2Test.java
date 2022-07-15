@@ -540,7 +540,7 @@ public class ImmunizationMedicationInformation2Test extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ConstructorTestClass extends ImmunizationMedicationInformation2Operations {
-	};
+	}
 
 	/**
 	* Tests Operations Constructor for 100% coverage

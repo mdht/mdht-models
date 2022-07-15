@@ -28,6 +28,10 @@
 		<attribute name="filePath" />
 
 		<sequential>
+			
+			<replace file="@{filePath}" token="pathmap://CDA_MODEL///" value="pathmap://CDA_MODEL/" />
+			
+			
 			<replace file="@{filePath}" token=".model/model/ccd.uml" value="/model/ccd_Ecore.uml" />
 			<replace file="@{filePath}" token=".model/model/.controlled/ccd-advanceDirectives.uml" value="/model/ccd_Ecore.uml" />
 			<replace file="@{filePath}" token=".model/model/.controlled/ccd-alerts.uml" value="/model/ccd_Ecore.uml" />

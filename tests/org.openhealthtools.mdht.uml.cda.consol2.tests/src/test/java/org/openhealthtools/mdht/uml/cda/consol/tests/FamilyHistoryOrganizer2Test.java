@@ -205,7 +205,7 @@ public class FamilyHistoryOrganizer2Test extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ConstructorTestClass extends FamilyHistoryOrganizer2Operations {
-	};
+	}
 
 	/**
 	* Tests Operations Constructor for 100% coverage

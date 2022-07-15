@@ -159,7 +159,7 @@ public class Instruction2Test extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ConstructorTestClass extends Instruction2Operations {
-	};
+	}
 
 	/**
 	* Tests Operations Constructor for 100% coverage

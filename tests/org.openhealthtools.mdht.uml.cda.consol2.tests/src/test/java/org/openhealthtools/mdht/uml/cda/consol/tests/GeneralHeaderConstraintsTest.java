@@ -6124,7 +6124,6 @@ public class GeneralHeaderConstraintsTest extends CDAValidationTest {
 			protected void updateToPass(GeneralHeaderConstraints target) {
 				target.getCustodian().getAssignedCustodian().getRepresentedCustodianOrganization().setName(
 					DatatypesFactory.eINSTANCE.createON());
-				;
 
 			}
 
@@ -15892,7 +15891,7 @@ public class GeneralHeaderConstraintsTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ConstructorTestClass extends GeneralHeaderConstraintsOperations {
-	};
+	}
 
 	/**
 	* Tests Operations Constructor for 100% coverage

@@ -267,7 +267,7 @@ public class ChiefComplaintSectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ConstructorTestClass extends ChiefComplaintSectionOperations {
-	};
+	}
 
 	/**
 	* Tests Operations Constructor for 100% coverage

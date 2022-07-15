@@ -551,7 +551,6 @@ public class ImmunizationActivityTest extends CDAValidationTest {
 						}
 					});
 				}
-				;
 			}
 
 			@Override
@@ -1616,7 +1615,7 @@ public class ImmunizationActivityTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ConstructorTestClass extends ImmunizationActivityOperations {
-	};
+	}
 
 	/**
 	* Tests Operations Constructor for 100% coverage

@@ -442,7 +442,7 @@ public class AgeObservationTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ConstructorTestClass extends AgeObservationOperations {
-	};
+	}
 
 	/**
 	* Tests Operations Constructor for 100% coverage

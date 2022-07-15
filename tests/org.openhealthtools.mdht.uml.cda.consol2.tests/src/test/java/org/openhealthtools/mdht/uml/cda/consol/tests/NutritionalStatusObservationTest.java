@@ -262,7 +262,7 @@ public class NutritionalStatusObservationTest extends CDAValidationTest {
 
 			@Override
 			protected void setDependency(NutritionalStatusObservation target) {
-				Collection<Object> passToken = new java.util.ArrayList<Object>(3);
+				Collection<Object> passToken = new java.util.ArrayList<>(3);
 				passToken.add(target);
 				map.put("org.openhealthtools.mdht.uml.cda.consol.NutritionalStatusObservationCodeP", passToken);
 			}
@@ -556,7 +556,7 @@ public class NutritionalStatusObservationTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ConstructorTestClass extends NutritionalStatusObservationOperations {
-	};
+	}
 
 	/**
 	* Tests Operations Constructor for 100% coverage

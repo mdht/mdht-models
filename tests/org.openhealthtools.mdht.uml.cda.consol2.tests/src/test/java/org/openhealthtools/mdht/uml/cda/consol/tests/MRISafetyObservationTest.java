@@ -228,7 +228,7 @@ public class MRISafetyObservationTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ConstructorTestClass extends MRISafetyObservationOperations {
-	};
+	}
 
 	/**
 	* Tests Operations Constructor for 100% coverage

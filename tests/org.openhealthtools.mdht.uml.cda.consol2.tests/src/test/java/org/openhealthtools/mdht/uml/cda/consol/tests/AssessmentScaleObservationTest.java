@@ -936,7 +936,7 @@ public class AssessmentScaleObservationTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ConstructorTestClass extends AssessmentScaleObservationOperations {
-	};
+	}
 
 	/**
 	* Tests Operations Constructor for 100% coverage

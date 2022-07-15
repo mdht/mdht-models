@@ -937,7 +937,7 @@ public class EncounterActivitiesTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ConstructorTestClass extends EncounterActivitiesOperations {
-	};
+	}
 
 	/**
 	* Tests Operations Constructor for 100% coverage

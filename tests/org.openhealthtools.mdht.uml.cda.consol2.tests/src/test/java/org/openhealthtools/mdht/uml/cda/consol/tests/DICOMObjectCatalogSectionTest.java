@@ -237,7 +237,7 @@ public class DICOMObjectCatalogSectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ConstructorTestClass extends DICOMObjectCatalogSectionOperations {
-	};
+	}
 
 	/**
 	* Tests Operations Constructor for 100% coverage

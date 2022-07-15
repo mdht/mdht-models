@@ -236,7 +236,6 @@ public class NonMedicinalSupplyActivityTest extends CDAValidationTest {
 						}
 					});
 				}
-				;
 			}
 
 			@Override
@@ -489,7 +488,7 @@ public class NonMedicinalSupplyActivityTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ConstructorTestClass extends NonMedicinalSupplyActivityOperations {
-	};
+	}
 
 	/**
 	* Tests Operations Constructor for 100% coverage

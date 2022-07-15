@@ -587,7 +587,7 @@ public class StudyActTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ConstructorTestClass extends StudyActOperations {
-	};
+	}
 
 	/**
 	* Tests Operations Constructor for 100% coverage

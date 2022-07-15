@@ -339,7 +339,7 @@ public class ProductInstanceTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ConstructorTestClass extends ProductInstanceOperations {
-	};
+	}
 
 	/**
 	* Tests Operations Constructor for 100% coverage

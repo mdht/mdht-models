@@ -816,7 +816,7 @@ public class NumberOfPressureUlcersObservationTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ConstructorTestClass extends NumberOfPressureUlcersObservationOperations {
-	};
+	}
 
 	/**
 	* Tests Operations Constructor for 100% coverage

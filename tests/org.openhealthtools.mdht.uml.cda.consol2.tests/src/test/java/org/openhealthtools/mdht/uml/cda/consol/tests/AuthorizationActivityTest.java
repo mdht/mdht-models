@@ -950,7 +950,7 @@ public class AuthorizationActivityTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ConstructorTestClass extends AuthorizationActivityOperations {
-	};
+	}
 
 	/**
 	* Tests Operations Constructor for 100% coverage

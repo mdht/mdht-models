@@ -302,7 +302,7 @@ public class ImmunizationRefusalReasonTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ConstructorTestClass extends ImmunizationRefusalReasonOperations {
-	};
+	}
 
 	/**
 	* Tests Operations Constructor for 100% coverage

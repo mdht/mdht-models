@@ -196,7 +196,7 @@ public class UDIOrganizerTest extends CDAValidationTest {
 
 			@Override
 			protected void setDependency(UDIOrganizer target) {
-				Collection<Object> passToken = new java.util.ArrayList<Object>(3);
+				Collection<Object> passToken = new java.util.ArrayList<>(3);
 				passToken.add(target);
 				map.put("org.openhealthtools.mdht.uml.cda.consol.UDIOrganizerCodeP", passToken);
 			}
@@ -274,7 +274,7 @@ public class UDIOrganizerTest extends CDAValidationTest {
 
 			@Override
 			protected void setDependency(UDIOrganizer target) {
-				Collection<Object> passToken = new java.util.ArrayList<Object>(3);
+				Collection<Object> passToken = new java.util.ArrayList<>(3);
 				passToken.add(target);
 				map.put("org.openhealthtools.mdht.uml.cda.consol.UDIOrganizerStatusCodeP", passToken);
 			}
@@ -1048,7 +1048,7 @@ public class UDIOrganizerTest extends CDAValidationTest {
 	* @generated NOT
 	*/
 	private static class ConstructorTestClass extends UDIOrganizerOperations {
-	};
+	}
 
 	/**
 	* Tests Operations Constructor for 100% coverage

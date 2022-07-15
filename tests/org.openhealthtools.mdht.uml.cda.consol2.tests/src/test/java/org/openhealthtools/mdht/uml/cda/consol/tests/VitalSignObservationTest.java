@@ -785,7 +785,7 @@ public class VitalSignObservationTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ConstructorTestClass extends VitalSignObservationOperations {
-	};
+	}
 
 	/**
 	* Tests Operations Constructor for 100% coverage

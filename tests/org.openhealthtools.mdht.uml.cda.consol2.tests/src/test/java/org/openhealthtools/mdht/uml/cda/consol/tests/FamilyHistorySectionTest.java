@@ -315,7 +315,7 @@ public class FamilyHistorySectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ConstructorTestClass extends FamilyHistorySectionOperations {
-	};
+	}
 
 	/**
 	* Tests Operations Constructor for 100% coverage

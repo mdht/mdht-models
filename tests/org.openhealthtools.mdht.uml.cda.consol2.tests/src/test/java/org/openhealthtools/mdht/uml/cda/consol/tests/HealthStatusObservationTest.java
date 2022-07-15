@@ -521,7 +521,7 @@ public class HealthStatusObservationTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ConstructorTestClass extends HealthStatusObservationOperations {
-	};
+	}
 
 	/**
 	* Tests Operations Constructor for 100% coverage

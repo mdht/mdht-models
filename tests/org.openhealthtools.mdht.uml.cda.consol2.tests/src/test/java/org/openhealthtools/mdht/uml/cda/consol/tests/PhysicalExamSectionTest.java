@@ -414,7 +414,7 @@ public class PhysicalExamSectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ConstructorTestClass extends PhysicalExamSectionOperations {
-	};
+	}
 
 	/**
 	* Tests Operations Constructor for 100% coverage

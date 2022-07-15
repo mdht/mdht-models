@@ -457,7 +457,7 @@ public class EntryReferenceTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ConstructorTestClass extends EntryReferenceOperations {
-	};
+	}
 
 	/**
 	* Tests Operations Constructor for 100% coverage

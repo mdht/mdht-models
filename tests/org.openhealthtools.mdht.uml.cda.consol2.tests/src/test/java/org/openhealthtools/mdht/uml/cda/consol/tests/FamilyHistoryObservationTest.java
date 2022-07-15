@@ -391,7 +391,7 @@ public class FamilyHistoryObservationTest extends CDAValidationTest {
 	}
 
 	static List<? extends Diagnostic> getDiagnostics(Diagnostic diagnostic, int code) {
-		List<Diagnostic> result = new java.util.ArrayList<Diagnostic>(3);
+		List<Diagnostic> result = new java.util.ArrayList<>(3);
 
 		for (Diagnostic next : diagnostic.getChildren()) {
 			if (ConsolValidator.DIAGNOSTIC_SOURCE.equals(next.getSource()) && (next.getCode() == code)) {
@@ -695,7 +695,7 @@ public class FamilyHistoryObservationTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ConstructorTestClass extends FamilyHistoryObservationOperations {
-	};
+	}
 
 	/**
 	* Tests Operations Constructor for 100% coverage

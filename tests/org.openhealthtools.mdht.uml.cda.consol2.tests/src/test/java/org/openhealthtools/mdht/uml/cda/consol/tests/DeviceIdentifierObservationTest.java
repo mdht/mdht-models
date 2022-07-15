@@ -139,7 +139,7 @@ public class DeviceIdentifierObservationTest extends CDAValidationTest {
 
 			@Override
 			protected void setDependency(DeviceIdentifierObservation target) {
-				Collection<Object> passToken = new java.util.ArrayList<Object>(3);
+				Collection<Object> passToken = new java.util.ArrayList<>(3);
 				passToken.add(target);
 				map.put("org.openhealthtools.mdht.uml.cda.consol.DeviceIdentifierObservationCodeP", passToken);
 			}
@@ -478,7 +478,7 @@ public class DeviceIdentifierObservationTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ConstructorTestClass extends DeviceIdentifierObservationOperations {
-	};
+	}
 
 	/**
 	* Tests Operations Constructor for 100% coverage

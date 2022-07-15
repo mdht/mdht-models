@@ -264,7 +264,7 @@ public class AllergiesSectionTest extends CDAValidationTest {
 
 			@Override
 			protected void setDependency(AllergiesSection target) {
-				Collection<Object> passToken = new java.util.ArrayList<Object>(3);
+				Collection<Object> passToken = new java.util.ArrayList<>(3);
 				passToken.add(target);
 				map.put("org.openhealthtools.mdht.uml.cda.consol.AllergiesSectionEntriesOptionalCodeP", passToken);
 			}
@@ -327,7 +327,7 @@ public class AllergiesSectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ConstructorTestClass extends AllergiesSectionOperations {
-	};
+	}
 
 	/**
 	* Tests Operations Constructor for 100% coverage

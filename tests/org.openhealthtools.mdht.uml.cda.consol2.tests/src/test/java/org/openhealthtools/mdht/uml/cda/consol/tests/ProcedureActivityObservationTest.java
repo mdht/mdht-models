@@ -2034,7 +2034,7 @@ public class ProcedureActivityObservationTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ConstructorTestClass extends ProcedureActivityObservationOperations {
-	};
+	}
 
 	/**
 	* Tests Operations Constructor for 100% coverage

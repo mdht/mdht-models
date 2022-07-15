@@ -149,7 +149,7 @@ public class ObserverContextTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ConstructorTestClass extends ObserverContextOperations {
-	};
+	}
 
 	/**
 	* Tests Operations Constructor for 100% coverage

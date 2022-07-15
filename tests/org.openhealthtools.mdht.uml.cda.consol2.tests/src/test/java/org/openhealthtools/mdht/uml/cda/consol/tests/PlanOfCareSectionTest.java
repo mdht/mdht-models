@@ -622,7 +622,7 @@ public class PlanOfCareSectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ConstructorTestClass extends PlanOfCareSectionOperations {
-	};
+	}
 
 	/**
 	* Tests Operations Constructor for 100% coverage

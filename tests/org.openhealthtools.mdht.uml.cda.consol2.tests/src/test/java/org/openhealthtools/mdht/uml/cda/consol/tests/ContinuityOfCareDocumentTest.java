@@ -175,7 +175,7 @@ public class ContinuityOfCareDocumentTest extends CDAValidationTest {
 
 			@Override
 			protected void setDependency(ContinuityOfCareDocument target) {
-				Collection<Object> passToken = new java.util.ArrayList<Object>(3);
+				Collection<Object> passToken = new java.util.ArrayList<>(3);
 				passToken.add(target);
 				map.put("org.openhealthtools.mdht.uml.cda.consol.ContinuityOfCareDocumentCodeP", passToken);
 			}
@@ -1914,7 +1914,7 @@ public class ContinuityOfCareDocumentTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ConstructorTestClass extends ContinuityOfCareDocumentOperations {
-	};
+	}
 
 	/**
 	* Tests Operations Constructor for 100% coverage

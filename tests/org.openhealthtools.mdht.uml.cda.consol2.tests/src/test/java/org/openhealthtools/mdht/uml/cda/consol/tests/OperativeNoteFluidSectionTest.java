@@ -267,7 +267,7 @@ public class OperativeNoteFluidSectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ConstructorTestClass extends OperativeNoteFluidSectionOperations {
-	};
+	}
 
 	/**
 	* Tests Operations Constructor for 100% coverage

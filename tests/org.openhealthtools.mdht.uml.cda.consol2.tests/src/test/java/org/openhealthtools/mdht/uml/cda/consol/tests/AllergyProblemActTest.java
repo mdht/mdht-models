@@ -624,7 +624,7 @@ public class AllergyProblemActTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ConstructorTestClass extends AllergyProblemActOperations {
-	};
+	}
 
 	/**
 	* Tests Operations Constructor for 100% coverage

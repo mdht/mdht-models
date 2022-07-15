@@ -610,7 +610,7 @@ public class PhysicianReadingStudyPerformerTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ConstructorTestClass extends PhysicianReadingStudyPerformerOperations {
-	};
+	}
 
 	/**
 	* Tests Operations Constructor for 100% coverage

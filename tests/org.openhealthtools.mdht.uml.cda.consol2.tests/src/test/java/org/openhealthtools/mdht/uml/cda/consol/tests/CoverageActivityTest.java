@@ -391,7 +391,7 @@ public class CoverageActivityTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ConstructorTestClass extends CoverageActivityOperations {
-	};
+	}
 
 	/**
 	* Tests Operations Constructor for 100% coverage

@@ -54,7 +54,7 @@ public class RequiresParentTemplateIDTest {
 	@Before
 	public void setUp() throws Exception {
 		doc = CDAFactory.eINSTANCE.createClinicalDocument();
-		errors = new ArrayList<String>();
+		errors = new ArrayList<>();
 
 		handler = new ValidationHandler() {
 			@Override

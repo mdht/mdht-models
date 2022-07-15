@@ -318,7 +318,7 @@ public class NutritionSectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ConstructorTestClass extends NutritionSectionOperations {
-	};
+	}
 
 	/**
 	* Tests Operations Constructor for 100% coverage

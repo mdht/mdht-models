@@ -3923,7 +3923,7 @@ public class USRealmHeader2Test extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ConstructorTestClass extends USRealmHeader2Operations {
-	};
+	}
 
 	/**
 	* Tests Operations Constructor for 100% coverage

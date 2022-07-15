@@ -772,7 +772,7 @@ public class SmokingStatusObservationTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ConstructorTestClass extends SmokingStatusObservationOperations {
-	};
+	}
 
 	/**
 	* Tests Operations Constructor for 100% coverage
