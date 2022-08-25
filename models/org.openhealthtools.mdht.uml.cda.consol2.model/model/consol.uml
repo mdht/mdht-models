@@ -5814,7 +5814,7 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
   <CDA:PropertyValidation xmi:id="_vMnroOv0Eeyw159CnA53VA" base_Property="_kVP5cOv0Eeyw159CnA53VA">
     <ruleId>4515-33027</ruleId>
   </CDA:PropertyValidation>
-  <CDA:AssociationValidation xmi:id="_8tFIgOwLEeyw159CnA53VA" base_Association="_6wPBUewLEeyw159CnA53VA"/>
+  <CDA:AssociationValidation xmi:id="_8tFIgOwLEeyw159CnA53VA" severity="INFO" base_Association="_6wPBUewLEeyw159CnA53VA"/>
   <CDA:PropertyValidation xmi:id="_CAm7oO5REeyzELqFfLgO9w" base_Property="_UjhIEO5PEeyzELqFfLgO9w">
     <ruleId>4515-33030</ruleId>
   </CDA:PropertyValidation>

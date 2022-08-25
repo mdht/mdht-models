@@ -600,7 +600,7 @@ public class CareTeamMemberActV2Operations extends ClinicalStatementOperations {
 	public static boolean validateCareTeamMemberActV2Participant(CareTeamMemberActV2 careTeamMemberActV2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		DatatypesUtil.increment(context, "CareTeamMemberActV2CareTeamMemberActV2Participant", "ERROR");
+		DatatypesUtil.increment(context, "CareTeamMemberActV2CareTeamMemberActV2Participant", "INFO");
 
 		if (VALIDATE_CARE_TEAM_MEMBER_ACT_V2_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -621,7 +621,7 @@ public class CareTeamMemberActV2Operations extends ClinicalStatementOperations {
 			if (diagnostics != null) {
 				diagnostics.add(
 					new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CARE_TEAM_MEMBER_ACT_V2__CARE_TEAM_MEMBER_ACT_V2_PARTICIPANT,
 						ConsolPlugin.INSTANCE.getString("CareTeamMemberActV2CareTeamMemberActV2Participant"),
 						new Object[] { careTeamMemberActV2 }));
