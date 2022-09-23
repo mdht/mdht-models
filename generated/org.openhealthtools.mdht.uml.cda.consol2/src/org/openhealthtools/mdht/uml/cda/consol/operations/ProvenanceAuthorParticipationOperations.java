@@ -2,7 +2,6 @@
  */
 package org.openhealthtools.mdht.uml.cda.consol.operations;
 
-import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Map;
 
@@ -41,7 +40,6 @@ import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProvenanceAuthorParticipation#validateProvenanceAuthorParticipationProvenanceAssignedAuthorRepresentedOrganizationName(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Provenance Author Participation Provenance Assigned Author Represented Organization Name</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProvenanceAuthorParticipation#validateProvenanceAuthorParticipationProvenanceAssignedAuthorRepresentedOrganizationTelecom(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Provenance Author Participation Provenance Assigned Author Represented Organization Telecom</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProvenanceAuthorParticipation#validateProvenanceAuthorParticipationProvenanceAssignedAuthorId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Provenance Author Participation Provenance Assigned Author Id</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProvenanceAuthorParticipation#validateProvenanceAuthorParticipationProvenanceAssignedAuthorCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Provenance Author Participation Provenance Assigned Author Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProvenanceAuthorParticipation#validateProvenanceAuthorParticipationProvenanceAssignedAuthorCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Provenance Author Participation Provenance Assigned Author Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProvenanceAuthorParticipation#validateProvenanceAuthorParticipationProvenanceAssignedAuthorAssignedPerson(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Provenance Author Participation Provenance Assigned Author Assigned Person</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProvenanceAuthorParticipation#validateProvenanceAuthorParticipationProvenanceAssignedAuthorRepresentedOrganization(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Provenance Author Participation Provenance Assigned Author Represented Organization</em>}</li>
@@ -816,96 +814,6 @@ public class ProvenanceAuthorParticipationOperations extends AuthorOperations {
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateProvenanceAuthorParticipationProvenanceAssignedAuthorCodeP(ProvenanceAuthorParticipation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Provenance Author Participation Provenance Assigned Author Code P</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateProvenanceAuthorParticipationProvenanceAssignedAuthorCodeP(ProvenanceAuthorParticipation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_PROVENANCE_AUTHOR_PARTICIPATION_PROVENANCE_ASSIGNED_AUTHOR_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.assignedAuthor->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined()))";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateProvenanceAuthorParticipationProvenanceAssignedAuthorCodeP(ProvenanceAuthorParticipation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Provenance Author Participation Provenance Assigned Author Code P</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateProvenanceAuthorParticipationProvenanceAssignedAuthorCodeP(ProvenanceAuthorParticipation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-
-	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_PROVENANCE_AUTHOR_PARTICIPATION_PROVENANCE_ASSIGNED_AUTHOR_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<>();
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param provenanceAuthorParticipation The receiving '<em><b>Provenance Author Participation</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	@SuppressWarnings("unchecked")
-	public static boolean validateProvenanceAuthorParticipationProvenanceAssignedAuthorCodeP(
-			ProvenanceAuthorParticipation provenanceAuthorParticipation, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
-		DatatypesUtil.increment(
-			context, "ProvenanceAuthorParticipationProvenanceAuthorParticipationProvenanceAssignedAuthorCodeP",
-			"WARNING");
-
-		if (VALIDATE_PROVENANCE_AUTHOR_PARTICIPATION_PROVENANCE_ASSIGNED_AUTHOR_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
-
-			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.PROVENANCE_AUTHOR_PARTICIPATION);
-			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(
-					VALIDATE_PROVENANCE_AUTHOR_PARTICIPATION_PROVENANCE_ASSIGNED_AUTHOR_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_PROVENANCE_AUTHOR_PARTICIPATION_PROVENANCE_ASSIGNED_AUTHOR_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(
-					EOCL_ENV.get().createQuery(oclExpression));
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-
-		Object oclResult = VALIDATE_PROVENANCE_AUTHOR_PARTICIPATION_PROVENANCE_ASSIGNED_AUTHOR_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(
-			provenanceAuthorParticipation);
-		if (oclResult != null && oclResult instanceof Collection) {
-			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
-			if (diagnostics != null) {
-				for (EObject eObject : oclResultSet) {
-					diagnostics.add(
-						new BasicDiagnostic(
-							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
-							ConsolValidator.PROVENANCE_AUTHOR_PARTICIPATION__PROVENANCE_AUTHOR_PARTICIPATION_PROVENANCE_ASSIGNED_AUTHOR_CODE_P,
-							ConsolPlugin.INSTANCE.getString(
-								"ProvenanceAuthorParticipationProvenanceAuthorParticipationProvenanceAssignedAuthorCodeP"),
-							new Object[] { eObject }));
-				}
-
-				if (context != null) {
-					// generate a pass token for my dependent constraints to short-circuit or filter results
-					Collection<Object> passToken = (Collection<Object>) context.get(
-						"org.openhealthtools.mdht.uml.cda.consol.ProvenanceAuthorParticipationProvenanceAssignedAuthorCodeP");
-					if (passToken == null) {
-						// anticipate a reasonably healthy model
-						passToken = new java.util.ArrayList<>(3);
-						context.put(
-							"org.openhealthtools.mdht.uml.cda.consol.ProvenanceAuthorParticipationProvenanceAssignedAuthorCodeP",
-							passToken);
-					}
-					passToken.addAll(oclResultSet);
-				}
-
-			}
-			return oclResultSet.isEmpty();
-		}
-		return true;
-	}
-
-	/**
 	 * The cached OCL expression body for the '{@link #validateProvenanceAuthorParticipationProvenanceAssignedAuthorCode(ProvenanceAuthorParticipation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Provenance Author Participation Provenance Assigned Author Code</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -913,9 +821,7 @@ public class ProvenanceAuthorParticipationOperations extends AuthorOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PROVENANCE_AUTHOR_PARTICIPATION_PROVENANCE_ASSIGNED_AUTHOR_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.assignedAuthor->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined() and code.oclIsKindOf(datatypes::CE) and " +
-			"let value : datatypes::CE = code.oclAsType(datatypes::CE) in " +
-			"value.codeSystem = '2.16.840.1.113883.5.111' and (value.code = 'DAUINLAW' or value.code = 'FTH' or value.code = 'DAU' or value.code = 'HPOWATT' or value.code = 'MTH' or value.code = 'SON' or value.code = 'SELF' or value.code = 'SONINLAW')))";
+	protected static final String VALIDATE_PROVENANCE_AUTHOR_PARTICIPATION_PROVENANCE_ASSIGNED_AUTHOR_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.assignedAuthor->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined()))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateProvenanceAuthorParticipationProvenanceAssignedAuthorCode(ProvenanceAuthorParticipation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Provenance Author Participation Provenance Assigned Author Code</em>}' invariant operation.
@@ -944,7 +850,8 @@ public class ProvenanceAuthorParticipationOperations extends AuthorOperations {
 			Map<Object, Object> context) {
 
 		DatatypesUtil.increment(
-			context, "ProvenanceAuthorParticipationProvenanceAuthorParticipationProvenanceAssignedAuthorCode", "ERROR");
+			context, "ProvenanceAuthorParticipationProvenanceAuthorParticipationProvenanceAssignedAuthorCode",
+			"WARNING");
 
 		if (VALIDATE_PROVENANCE_AUTHOR_PARTICIPATION_PROVENANCE_ASSIGNED_AUTHOR_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -965,21 +872,11 @@ public class ProvenanceAuthorParticipationOperations extends AuthorOperations {
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
 
-			Object passFilter = (context == null)
-					? null
-					: context.get(
-						"org.openhealthtools.mdht.uml.cda.consol.ProvenanceAuthorParticipationProvenanceAssignedAuthorCodeP");
-			if (passFilter instanceof Collection<?>) {
-				// filter my query results
-				oclResultSet = new ArrayList<EObject>(oclResultSet);
-				oclResultSet.removeAll((Collection<?>) passFilter);
-			}
-
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
 					diagnostics.add(
 						new BasicDiagnostic(
-							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.PROVENANCE_AUTHOR_PARTICIPATION__PROVENANCE_AUTHOR_PARTICIPATION_PROVENANCE_ASSIGNED_AUTHOR_CODE,
 							ConsolPlugin.INSTANCE.getString(
 								"ProvenanceAuthorParticipationProvenanceAuthorParticipationProvenanceAssignedAuthorCode"),

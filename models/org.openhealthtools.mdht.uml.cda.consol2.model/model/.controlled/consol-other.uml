@@ -3481,9 +3481,6 @@ If the ID isn't referencing an author described elsewhere in the document, then 
   <CDA:PropertyValidation xmi:id="_LZ-EgA8ZEeuzkrfERpFDKQ" base_Property="_RYx3RA8XEeuzkrfERpFDKQ">
     <ruleId>4515-32977</ruleId>
   </CDA:PropertyValidation>
-  <CDA:ValueSetConstraint xmi:id="_XOmWoA-9EeuzkrfERpFDKQ" base_Property="_RYx3OQ8XEeuzkrfERpFDKQ" uri="consol-vocab::Personal And Legal Relationship Role Type">
-    <reference href="pathmap://CONSOL_MODEL///consol-vocab.uml#_x4P9YZ6CEeOr4eM3k36wAg"/>
-  </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_ft43IA-9EeuzkrfERpFDKQ" base_Property="_RYx3Pw8XEeuzkrfERpFDKQ">
     <ruleId>4515-32978</ruleId>
   </CDA:PropertyValidation>
@@ -3493,5 +3490,7 @@ If the ID isn't referencing an author described elsewhere in the document, then 
   <CDA:PropertyValidation xmi:id="_yLFLMA-9EeuzkrfERpFDKQ" base_Property="_uTLskA-9EeuzkrfERpFDKQ">
     <ruleId>4515-18</ruleId>
   </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_mqWCoAFrEe2uf-Hpx0eOMw" severity="WARNING" base_Property="_RYx3OQ8XEeuzkrfERpFDKQ"/>
+  <CDA:PropertyValidation xmi:id="_mqWCoAFrEe2uf-Hpx0eOMw" severity="WARNING" base_Property="_RYx3OQ8XEeuzkrfERpFDKQ">
+    <ruleId>CONF:4515-32979</ruleId>
+  </CDA:PropertyValidation>
 </xmi:XMI>

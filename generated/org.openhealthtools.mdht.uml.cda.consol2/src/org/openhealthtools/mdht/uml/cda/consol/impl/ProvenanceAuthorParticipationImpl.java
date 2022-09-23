@@ -161,17 +161,6 @@ public class ProvenanceAuthorParticipationImpl extends AuthorImpl implements Pro
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProvenanceAuthorParticipationProvenanceAssignedAuthorCodeP(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ProvenanceAuthorParticipationOperations.validateProvenanceAuthorParticipationProvenanceAssignedAuthorCodeP(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public boolean validateProvenanceAuthorParticipationProvenanceAssignedAuthorCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProvenanceAuthorParticipationOperations.validateProvenanceAuthorParticipationProvenanceAssignedAuthorCode(
