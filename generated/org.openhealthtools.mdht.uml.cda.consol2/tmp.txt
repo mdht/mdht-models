@@ -1,3 +1,0 @@
-(getText(true)<>'' and ( family->isEmpty() and given->isEmpty() and suffix->isEmpty() and prefix->isEmpty()   )   ) xor (getText(true)='' and (not family->isEmpty() and not given->isEmpty()  ))
-
-
