@@ -274,13 +274,13 @@ public class PregnancyObservationTest extends CDAValidationTest {
 	*77386006    Pregnancy (finding)
 	146799005    Possible pregnancy (situation)
 	60001007    Not pregnant (finding)
-	
-	
+
+
 	Code	Display
 	102874004	Possible pregnancy (finding)
 	60001007	Not pregnant (finding)
 	77386006	Pregnancy (finding)
-	
+
 	* @generated NOT
 	*/
 	@Test

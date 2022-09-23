@@ -2597,7 +2597,7 @@ This template represents the status of the allergy indicating whether it is acti
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
     </ownedAttribute>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_7sDtYEc1EeiFfJtNAawVHw" base_Class="_W5MCgEc1EeiFfJtNAawVHw" templateId="2.16.840.1.113883.10.20.22.4.28" templateVersion="2014-06-09">
+  <CDA:CDATemplate xmi:id="_7sDtYEc1EeiFfJtNAawVHw" base_Class="_W5MCgEc1EeiFfJtNAawVHw" templateId="2.16.840.1.113883.10.20.22.4.28" templateVersion="2019-06-20">
     <ruleId>CONF:1098-7317</ruleId>
     <ruleId>CONF:1098-10490</ruleId>
     <ruleId>DSTU:816/1356</ruleId>

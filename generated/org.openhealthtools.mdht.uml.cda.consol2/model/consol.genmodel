@@ -17640,10 +17640,6 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProvenanceAuthorParticipation/ProvenanceAuthorParticipationProvenanceAssignedAuthorId/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProvenanceAuthorParticipation/ProvenanceAuthorParticipationProvenanceAssignedAuthorId/context"/>
       </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ProvenanceAuthorParticipation/ProvenanceAuthorParticipationProvenanceAssignedAuthorCodeP">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProvenanceAuthorParticipation/ProvenanceAuthorParticipationProvenanceAssignedAuthorCodeP/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProvenanceAuthorParticipation/ProvenanceAuthorParticipationProvenanceAssignedAuthorCodeP/context"/>
-      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ProvenanceAuthorParticipation/ProvenanceAuthorParticipationProvenanceAssignedAuthorCode">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProvenanceAuthorParticipation/ProvenanceAuthorParticipationProvenanceAssignedAuthorCode/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ProvenanceAuthorParticipation/ProvenanceAuthorParticipationProvenanceAssignedAuthorCode/context"/>
