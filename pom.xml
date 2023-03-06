@@ -118,7 +118,7 @@
 
 	<modules>
 		<module>generated</module>
- <module>tests</module>
+ <module>releng</module>
 	</modules>
 	<profiles>
 		<profile>
