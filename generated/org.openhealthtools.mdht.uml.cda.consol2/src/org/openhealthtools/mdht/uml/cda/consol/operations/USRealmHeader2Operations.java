@@ -4357,47 +4357,16 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @generated
+	 * @generated NOT
 	 */
 	@SuppressWarnings("unchecked")
 	public static boolean validateGeneralHeaderConstraintsInformantRelatedEntityAddr(USRealmHeader2 usRealmHeader2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		DatatypesUtil.increment(context, "USRealmHeader2GeneralHeaderConstraintsInformantRelatedEntityAddr", "ERROR");
+		/*
+		 * Validation deprecated - override to by pass
+		 */
 
-		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_INFORMANT_RELATED_ENTITY_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
-
-			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.US_REALM_HEADER2);
-			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(
-					VALIDATE_GENERAL_HEADER_CONSTRAINTS_INFORMANT_RELATED_ENTITY_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_GENERAL_HEADER_CONSTRAINTS_INFORMANT_RELATED_ENTITY_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(
-					EOCL_ENV.get().createQuery(oclExpression));
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-
-		Object oclResult = VALIDATE_GENERAL_HEADER_CONSTRAINTS_INFORMANT_RELATED_ENTITY_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(
-			usRealmHeader2);
-		if (oclResult != null && oclResult instanceof Collection) {
-			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
-			if (diagnostics != null) {
-				for (EObject eObject : oclResultSet) {
-					diagnostics.add(
-						new BasicDiagnostic(
-							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-							ConsolValidator.US_REALM_HEADER2__GENERAL_HEADER_CONSTRAINTS_INFORMANT_RELATED_ENTITY_ADDR,
-							ConsolPlugin.INSTANCE.getString(
-								"USRealmHeader2GeneralHeaderConstraintsInformantRelatedEntityAddr"),
-							new Object[] { eObject }));
-				}
-
-			}
-			return oclResultSet.isEmpty();
-		}
 		return true;
 	}
 
@@ -4409,47 +4378,15 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @generated
+	 * @generated NOT
 	 */
 	@SuppressWarnings("unchecked")
 	public static boolean validateGeneralHeaderConstraintsInformantRelatedEntityPerson(USRealmHeader2 usRealmHeader2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		DatatypesUtil.increment(context, "USRealmHeader2GeneralHeaderConstraintsInformantRelatedEntityPerson", "ERROR");
-
-		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_INFORMANT_RELATED_ENTITY_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
-
-			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.US_REALM_HEADER2);
-			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(
-					VALIDATE_GENERAL_HEADER_CONSTRAINTS_INFORMANT_RELATED_ENTITY_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_GENERAL_HEADER_CONSTRAINTS_INFORMANT_RELATED_ENTITY_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(
-					EOCL_ENV.get().createQuery(oclExpression));
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-
-		Object oclResult = VALIDATE_GENERAL_HEADER_CONSTRAINTS_INFORMANT_RELATED_ENTITY_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(
-			usRealmHeader2);
-		if (oclResult != null && oclResult instanceof Collection) {
-			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
-			if (diagnostics != null) {
-				for (EObject eObject : oclResultSet) {
-					diagnostics.add(
-						new BasicDiagnostic(
-							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-							ConsolValidator.US_REALM_HEADER2__GENERAL_HEADER_CONSTRAINTS_INFORMANT_RELATED_ENTITY_PERSON,
-							ConsolPlugin.INSTANCE.getString(
-								"USRealmHeader2GeneralHeaderConstraintsInformantRelatedEntityPerson"),
-							new Object[] { eObject }));
-				}
-
-			}
-			return oclResultSet.isEmpty();
-		}
+		/*
+		 * Validation deprecated - override to by pass
+		 */
 		return true;
 	}
 

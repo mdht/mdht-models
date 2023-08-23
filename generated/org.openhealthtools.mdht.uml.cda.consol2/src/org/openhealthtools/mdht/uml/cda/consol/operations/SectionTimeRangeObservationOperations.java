@@ -8,27 +8,18 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.emf.ecore.EObject;
-
 import org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations;
-
 import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
-
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.Query;
-
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
-
 import org.eclipse.ocl.expressions.OCLExpression;
-
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.SectionTimeRangeObservation;
-
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
-
 import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
 
 /**
@@ -247,40 +238,6 @@ public class SectionTimeRangeObservationOperations extends ClinicalStatementOper
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateSectionTimeRangeObservationId(SectionTimeRangeObservation sectionTimeRangeObservation,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		DatatypesUtil.increment(context, "SectionTimeRangeObservationSectionTimeRangeObservationId", "ERROR");
-
-		if (VALIDATE_SECTION_TIME_RANGE_OBSERVATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-
-			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.SECTION_TIME_RANGE_OBSERVATION);
-			try {
-				VALIDATE_SECTION_TIME_RANGE_OBSERVATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
-					helper.createInvariant(VALIDATE_SECTION_TIME_RANGE_OBSERVATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-
-		if (!EOCL_ENV.get().createQuery(
-			VALIDATE_SECTION_TIME_RANGE_OBSERVATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
-				sectionTimeRangeObservation)) {
-			if (diagnostics != null) {
-				diagnostics.add(
-					new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.SECTION_TIME_RANGE_OBSERVATION__SECTION_TIME_RANGE_OBSERVATION_ID,
-						ConsolPlugin.INSTANCE.getString("SectionTimeRangeObservationSectionTimeRangeObservationId"),
-						new Object[] { sectionTimeRangeObservation }));
-			}
-
-			return false;
-		}
-		return true;
-	}
 
 	/**
 	 * The cached OCL expression body for the '{@link #validateSectionTimeRangeObservationCode(SectionTimeRangeObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Section Time Range Observation Code</em>}' operation.

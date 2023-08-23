@@ -5,17 +5,12 @@ package org.openhealthtools.mdht.uml.cda.consol.impl;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
 import org.eclipse.mdht.emf.runtime.util.Initializer;
-
 import org.eclipse.mdht.uml.cda.impl.ObservationImpl;
-
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.SectionTimeRangeObservation;
-
 import org.openhealthtools.mdht.uml.cda.consol.operations.SectionTimeRangeObservationOperations;
 
 /**
@@ -65,15 +60,6 @@ public class SectionTimeRangeObservationImpl extends ObservationImpl implements 
 			Map<Object, Object> context) {
 		return SectionTimeRangeObservationOperations.validateSectionTimeRangeObservationTemplateId(
 			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateSectionTimeRangeObservationId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SectionTimeRangeObservationOperations.validateSectionTimeRangeObservationId(this, diagnostics, context);
 	}
 
 	/**

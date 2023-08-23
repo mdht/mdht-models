@@ -5,11 +5,8 @@ package org.openhealthtools.mdht.uml.cda.consol;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EObject;
-
 import org.eclipse.mdht.emf.runtime.util.Initializer;
-
 import org.eclipse.mdht.uml.cda.Observation;
 
 /**
@@ -48,18 +45,6 @@ public interface SectionTimeRangeObservation extends Observation {
 	 * @generated
 	 */
 	boolean validateSectionTimeRangeObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.id-&gt;isEmpty() or self.id-&gt;exists(element | element.isNullFlavorUndefined())) implies (not self.id-&gt;isEmpty())'"
-	 * @generated
-	 */
-	boolean validateSectionTimeRangeObservationId(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

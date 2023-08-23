@@ -118,7 +118,6 @@
 
 	<modules>
 		<module>generated</module>
- <module>releng</module>
 	</modules>
 	<profiles>
 		<profile>

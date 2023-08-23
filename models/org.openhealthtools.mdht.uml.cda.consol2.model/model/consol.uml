@@ -3805,12 +3805,6 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
       <generalization xmi:id="_ASdyce6LEeyzELqFfLgO9w">
         <general xmi:type="uml:Class" href="pathmap://CDA_MODEL///cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
       </generalization>
-      <ownedAttribute xmi:id="_FEHjkO6LEeyzELqFfLgO9w" name="id" visibility="private" aggregation="composite">
-        <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FEHjke6LEeyzELqFfLgO9w"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FEHjku6LEeyzELqFfLgO9w" value="*"/>
-        <subsettedProperty href="pathmap://CDA_MODEL///cda.uml#_UGBfwEo8Ed6c3qsAxlFHaQ"/>
-      </ownedAttribute>
       <ownedAttribute xmi:id="_FEIKoO6LEeyzELqFfLgO9w" name="code" visibility="private" aggregation="composite">
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
         <redefinedProperty href="pathmap://CDA_MODEL///cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
@@ -6031,7 +6025,6 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
     <ruleId>4515-32366</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:CDATemplate xmi:id="_HR1_YO6LEeyzELqFfLgO9w" base_Class="_ASdycO6LEeyzELqFfLgO9w" templateId="2.16.840.1.113883.10.20.22.4.201" templateVersion="2016-06-01"/>
-  <CDA:PropertyValidation xmi:id="_LaG1QO6LEeyzELqFfLgO9w" base_Property="_FEHjkO6LEeyzELqFfLgO9w"/>
   <CDA:PropertyValidation xmi:id="_L6aF8O6LEeyzELqFfLgO9w" base_Property="_FEIKoe6LEeyzELqFfLgO9w"/>
   <CDA:CodeSystemConstraint xmi:id="_N7o94O6LEeyzELqFfLgO9w" code="82607-3" displayName="Section Time Range" base_Property="_FEIKoO6LEeyzELqFfLgO9w">
     <reference href="pathmap://TERM_MODEL///CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
