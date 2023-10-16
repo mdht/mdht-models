@@ -1866,6 +1866,32 @@ Used to enumerate the relationships between two clinical documents for document 
       <ownedLiteral xmi:id="_kCeBwCI2Ee2zx5mIhiR9ow" name="60001007"/>
       <ownedLiteral xmi:id="_mxsBECI2Ee2zx5mIhiR9ow" name="77386006"/>
     </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_8sfKoGbOEe6ibMoBz2vFZw" name="Pregnancy Intention">
+      <ownedLiteral xmi:id="_Fe6CgGbPEe6ibMoBz2vFZw" name="454391000124108"/>
+      <ownedLiteral xmi:id="_F3orkGbPEe6ibMoBz2vFZw" name="454401000124105"/>
+      <ownedLiteral xmi:id="_GEe0wGbPEe6ibMoBz2vFZw" name="454411000124108"/>
+      <ownedLiteral xmi:id="_GN3aQGbPEe6ibMoBz2vFZw" name="454381000124105"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_VhI7wGbqEe6ibMoBz2vFZw" name="MedicaitonDispenseStatus"/>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_ekH_MGbqEe6ibMoBz2vFZw" name="MedicationDispesnseStatusVS">
+      <ownedLiteral xmi:id="_kW85cGbqEe6ibMoBz2vFZw" name="preparation"/>
+      <ownedLiteral xmi:id="_l-k-kGbqEe6ibMoBz2vFZw" name="in-progress"/>
+      <ownedLiteral xmi:id="_mHUq4GbqEe6ibMoBz2vFZw" name="cancelled"/>
+      <ownedLiteral xmi:id="_mQfN8GbqEe6ibMoBz2vFZw" name="completed"/>
+      <ownedLiteral xmi:id="_mY6xMGbqEe6ibMoBz2vFZw" name="entered-in-error"/>
+      <ownedLiteral xmi:id="_mhA9QGbqEe6ibMoBz2vFZw" name="stopped"/>
+      <ownedLiteral xmi:id="_mqj60GbqEe6ibMoBz2vFZw" name="declined"/>
+      <ownedLiteral xmi:id="_m0ujcGbqEe6ibMoBz2vFZw" name="unknown"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_IER28GwtEe66V-uSC1tAAg" name="CUBS Disability">
+      <ownedLiteral xmi:id="_TWEUQGwtEe66V-uSC1tAAg" name="LA29240-1"/>
+      <ownedLiteral xmi:id="_YUIJsGwtEe66V-uSC1tAAg" name="LA29241-9"/>
+      <ownedLiteral xmi:id="_ZTc4sGwtEe66V-uSC1tAAg" name="LA29242-7"/>
+      <ownedLiteral xmi:id="_ZtxdMGwtEe66V-uSC1tAAg" name="LA29243-5"/>
+      <ownedLiteral xmi:id="_aNyaAGwtEe66V-uSC1tAAg" name="LA29244-3"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_gQO9QGwwEe66V-uSC1tAAg" name="IndustryNAICSDetailODH"/>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_oKQNgGwwEe66V-uSC1tAAg" name="OccupationalDataforHealth"/>
     <profileApplication xmi:id="_2B97WxSVEeGGzu7fmW9pXw">
       <eAnnotations xmi:id="_2B97XBSVEeGGzu7fmW9pXw" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.openhealthtools.org/mdht/schemas/term/1#/"/>
@@ -3517,4 +3543,35 @@ Used to enumerate the relationships between two clinical documents for document 
   <term:ValueSetCode xmi:id="_djsAcCI2Ee2zx5mIhiR9ow" conceptName="Possible pregnancy (finding)" base_EnumerationLiteral="_djrZYCI2Ee2zx5mIhiR9ow"/>
   <term:ValueSetCode xmi:id="_kCeBwSI2Ee2zx5mIhiR9ow" conceptName="Not pregnant (finding)" base_EnumerationLiteral="_kCeBwCI2Ee2zx5mIhiR9ow"/>
   <term:ValueSetCode xmi:id="_mxsoICI2Ee2zx5mIhiR9ow" conceptName="Pregnancy (finding)" base_EnumerationLiteral="_mxsBECI2Ee2zx5mIhiR9ow"/>
+  <term:ValueSetVersion xmi:id="_8sfKoWbOEe6ibMoBz2vFZw" base_Enumeration="_8sfKoGbOEe6ibMoBz2vFZw">
+    <codeSystem href="pathmap://TERM_MODEL///CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_Fe6CgWbPEe6ibMoBz2vFZw" conceptName="Ambivalent about becoming pregnant (finding)" base_EnumerationLiteral="_Fe6CgGbPEe6ibMoBz2vFZw"/>
+  <term:ValueSetCode xmi:id="_F3orkWbPEe6ibMoBz2vFZw" conceptName="No desire to become pregnant (finding)" base_EnumerationLiteral="_F3orkGbPEe6ibMoBz2vFZw"/>
+  <term:ValueSetCode xmi:id="_GEfb0GbPEe6ibMoBz2vFZw" conceptName="Wants to become pregnant (finding)" base_EnumerationLiteral="_GEe0wGbPEe6ibMoBz2vFZw"/>
+  <term:ValueSetCode xmi:id="_GN3aQWbPEe6ibMoBz2vFZw" conceptName="Not sure of desire to become pregnant (finding)" base_EnumerationLiteral="_GN3aQGbPEe6ibMoBz2vFZw"/>
+  <term:CodeSystemVersion xmi:id="_VhJi0GbqEe6ibMoBz2vFZw" identifier="2.16.840.1.113883.4.642.4.1313" base_Enumeration="_VhI7wGbqEe6ibMoBz2vFZw"/>
+  <term:ValueSetVersion xmi:id="_ekH_MWbqEe6ibMoBz2vFZw" identifier="2.16.840.1.113883.4.642.3.1312" base_Enumeration="_ekH_MGbqEe6ibMoBz2vFZw">
+    <codeSystem href="pathmap://CONSOL_MODEL///consol-vocab.uml#_VhJi0GbqEe6ibMoBz2vFZw"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_kW85cWbqEe6ibMoBz2vFZw" conceptName="Preparation" base_EnumerationLiteral="_kW85cGbqEe6ibMoBz2vFZw"/>
+  <term:ValueSetCode xmi:id="_l-k-kWbqEe6ibMoBz2vFZw" conceptName="In Progress" base_EnumerationLiteral="_l-k-kGbqEe6ibMoBz2vFZw"/>
+  <term:ValueSetCode xmi:id="_mHVR8GbqEe6ibMoBz2vFZw" conceptName="Cancelled" base_EnumerationLiteral="_mHUq4GbqEe6ibMoBz2vFZw"/>
+  <term:ValueSetCode xmi:id="_mQfN8WbqEe6ibMoBz2vFZw" conceptName="Completed" base_EnumerationLiteral="_mQfN8GbqEe6ibMoBz2vFZw"/>
+  <term:ValueSetCode xmi:id="_mY6xMWbqEe6ibMoBz2vFZw" conceptName="Entered In Error" base_EnumerationLiteral="_mY6xMGbqEe6ibMoBz2vFZw"/>
+  <term:ValueSetCode xmi:id="_mhBkUGbqEe6ibMoBz2vFZw" conceptName="Stopped" base_EnumerationLiteral="_mhA9QGbqEe6ibMoBz2vFZw"/>
+  <term:ValueSetCode xmi:id="_mqj60WbqEe6ibMoBz2vFZw" conceptName="Declined" base_EnumerationLiteral="_mqj60GbqEe6ibMoBz2vFZw"/>
+  <term:ValueSetCode xmi:id="_m0ujcWbqEe6ibMoBz2vFZw" conceptName="Unknown" base_EnumerationLiteral="_m0ujcGbqEe6ibMoBz2vFZw"/>
+  <term:ValueSetVersion xmi:id="_IESeAGwtEe66V-uSC1tAAg" identifier="1.3.6.1.4.1.12009.10.1.3932" fullName="CUBS_Disability" base_Enumeration="_IER28GwtEe66V-uSC1tAAg">
+    <codeSystem href="pathmap://TERM_MODEL///CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_TWE7UGwtEe66V-uSC1tAAg" conceptName="I'm Thriving" base_EnumerationLiteral="_TWEUQGwtEe66V-uSC1tAAg"/>
+  <term:ValueSetCode xmi:id="_YUIJsWwtEe66V-uSC1tAAg" conceptName="I'm Building Capacity" base_EnumerationLiteral="_YUIJsGwtEe66V-uSC1tAAg"/>
+  <term:ValueSetCode xmi:id="_ZTc4sWwtEe66V-uSC1tAAg" conceptName="I'm Safe" base_EnumerationLiteral="_ZTc4sGwtEe66V-uSC1tAAg"/>
+  <term:ValueSetCode xmi:id="_ZtxdMWwtEe66V-uSC1tAAg" conceptName="I'm Vulnerable" base_EnumerationLiteral="_ZtxdMGwtEe66V-uSC1tAAg"/>
+  <term:ValueSetCode xmi:id="_aNyaAWwtEe66V-uSC1tAAg" conceptName="I'm in Crisis" base_EnumerationLiteral="_aNyaAGwtEe66V-uSC1tAAg"/>
+  <term:ValueSetVersion xmi:id="_gQPkUGwwEe66V-uSC1tAAg" identifier="2.16.840.1.114222.4.11.7900" binding="Dynamic" base_Enumeration="_gQO9QGwwEe66V-uSC1tAAg">
+    <codeSystem href="pathmap://CONSOL_MODEL///consol-vocab.uml#_oKQNgWwwEe66V-uSC1tAAg"/>
+  </term:ValueSetVersion>
+  <term:CodeSystemVersion xmi:id="_oKQNgWwwEe66V-uSC1tAAg" identifier="2.16.840.1.114222.4.5.327" base_Enumeration="_oKQNgGwwEe66V-uSC1tAAg"/>
 </xmi:XMI>

@@ -1,0 +1,40 @@
+Coverage - 
+(new) Coverage Activity - no apparent changes
+(new) Policy Activity - no apparent changes
+Health Status/Assessments 
+(existing) Assessment Scale Observation
+(existing) Assessment Scale Supporting Observation
+(new) Functional Status Observation
+(new) Disability Status Observation
+(new) Mental Status Observation
+(new) Pregnancy Observation - added PregnancyIntention, no change to pregnancy observation
+Laboratory
+(new) Specimen Type
+(existing) Result Organizer
+(existing) Result Observation Medication
+(existing) Medication Information
+(new) Medication Activity ->Indication
+(new)  Medication Dispense Demographics
+(existing) US Realm Header
+(new) Basic Industry Observation
+(new) Basic Occupation Observation
+(new) Tribal Affiliation Observation
+(new) Sex Observation
+(new) Related Person Relationship and Name Participant Procedure
+(new) Reason for Referral Section
+
+2023-05-01 updates
+*** US REALM Header (?) - Does not required US REALM previous versions
+*** Coverage (?) - No apparent changes
+*** Disability Status Observation - Added Template
+*** Indication (V3) - No apparent changes - There is a note that the id can reference a problem in the document
+*** Medication Dispense (V3) - Added medication dispense code
+*** PolicyActivity(V4) (?)  - No apparent changes
+*** Pregnancy Intention in Next Year
+*** Result Observation (V4) (?) - No apparent changes
+*** Result Organizer (V4) (?) - No apparent changes
+*** Basic Industry Observation - Added Template
+*** Basic Occupation Observation - Added Template
+*** Gender Identity Observation (V4) - Added Template
+Sexual Orientation Observation (V2) - No apparent changes - Perhaps the null flavor VS but it is a may and a should
+*** Related Person Relationship and Name Participant  

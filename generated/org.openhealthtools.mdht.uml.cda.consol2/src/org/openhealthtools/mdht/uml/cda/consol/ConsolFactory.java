@@ -3262,6 +3262,96 @@ public interface ConsolFactory extends EFactory {
 	SocialHistoryObservationV4 createSocialHistoryObservationV4();
 
 	/**
+	 * Returns a new object of class '<em>Coverage Activity V4</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Coverage Activity V4</em>'.
+	 * @generated
+	 */
+	CoverageActivityV4 createCoverageActivityV4();
+
+	/**
+	 * Returns a new object of class '<em>Pregnancy Intention</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Pregnancy Intention</em>'.
+	 * @generated
+	 */
+	PregnancyIntention createPregnancyIntention();
+
+	/**
+	 * Returns a new object of class '<em>Related Person Relationshipand Name Participant</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Related Person Relationshipand Name Participant</em>'.
+	 * @generated
+	 */
+	RelatedPersonRelationshipandNameParticipant createRelatedPersonRelationshipandNameParticipant();
+
+	/**
+	 * Returns a new object of class '<em>US Realm Header V4</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>US Realm Header V4</em>'.
+	 * @generated
+	 */
+	USRealmHeaderV4 createUSRealmHeaderV4();
+
+	/**
+	 * Returns a new object of class '<em>Medication Dispense V4</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Medication Dispense V4</em>'.
+	 * @generated
+	 */
+	MedicationDispenseV4 createMedicationDispenseV4();
+
+	/**
+	 * Returns a new object of class '<em>Result Observation V4</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Result Observation V4</em>'.
+	 * @generated
+	 */
+	ResultObservationV4 createResultObservationV4();
+
+	/**
+	 * Returns a new object of class '<em>Disability Status Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Disability Status Observation</em>'.
+	 * @generated
+	 */
+	DisabilityStatusObservation createDisabilityStatusObservation();
+
+	/**
+	 * Returns a new object of class '<em>Basic Industry Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Basic Industry Observation</em>'.
+	 * @generated
+	 */
+	BasicIndustryObservation createBasicIndustryObservation();
+
+	/**
+	 * Returns a new object of class '<em>Basic Occupation Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Basic Occupation Observation</em>'.
+	 * @generated
+	 */
+	BasicOccupationObservation createBasicOccupationObservation();
+
+	/**
+	 * Returns a new object of class '<em>Gender Identity Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Gender Identity Observation</em>'.
+	 * @generated
+	 */
+	GenderIdentityObservation createGenderIdentityObservation();
+
+	/**
 	 * Returns a new object of class '<em>Criticality Observation</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

@@ -785,6 +785,26 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createSexualOrientationObservation();
 			case ConsolPackage.SOCIAL_HISTORY_OBSERVATION_V4:
 				return createSocialHistoryObservationV4();
+			case ConsolPackage.COVERAGE_ACTIVITY_V4:
+				return createCoverageActivityV4();
+			case ConsolPackage.PREGNANCY_INTENTION:
+				return createPregnancyIntention();
+			case ConsolPackage.RELATED_PERSON_RELATIONSHIPAND_NAME_PARTICIPANT:
+				return createRelatedPersonRelationshipandNameParticipant();
+			case ConsolPackage.US_REALM_HEADER_V4:
+				return createUSRealmHeaderV4();
+			case ConsolPackage.MEDICATION_DISPENSE_V4:
+				return createMedicationDispenseV4();
+			case ConsolPackage.RESULT_OBSERVATION_V4:
+				return createResultObservationV4();
+			case ConsolPackage.DISABILITY_STATUS_OBSERVATION:
+				return createDisabilityStatusObservation();
+			case ConsolPackage.BASIC_INDUSTRY_OBSERVATION:
+				return createBasicIndustryObservation();
+			case ConsolPackage.BASIC_OCCUPATION_OBSERVATION:
+				return createBasicOccupationObservation();
+			case ConsolPackage.GENDER_IDENTITY_OBSERVATION:
+				return createGenderIdentityObservation();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -4517,6 +4537,116 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	public SocialHistoryObservationV4 createSocialHistoryObservationV4() {
 		SocialHistoryObservationV4Impl socialHistoryObservationV4 = new SocialHistoryObservationV4Impl();
 		return socialHistoryObservationV4;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public CoverageActivityV4 createCoverageActivityV4() {
+		CoverageActivityV4Impl coverageActivityV4 = new CoverageActivityV4Impl();
+		return coverageActivityV4;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public PregnancyIntention createPregnancyIntention() {
+		PregnancyIntentionImpl pregnancyIntention = new PregnancyIntentionImpl();
+		return pregnancyIntention;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public RelatedPersonRelationshipandNameParticipant createRelatedPersonRelationshipandNameParticipant() {
+		RelatedPersonRelationshipandNameParticipantImpl relatedPersonRelationshipandNameParticipant = new RelatedPersonRelationshipandNameParticipantImpl();
+		return relatedPersonRelationshipandNameParticipant;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public USRealmHeaderV4 createUSRealmHeaderV4() {
+		USRealmHeaderV4Impl usRealmHeaderV4 = new USRealmHeaderV4Impl();
+		return usRealmHeaderV4;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public MedicationDispenseV4 createMedicationDispenseV4() {
+		MedicationDispenseV4Impl medicationDispenseV4 = new MedicationDispenseV4Impl();
+		return medicationDispenseV4;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ResultObservationV4 createResultObservationV4() {
+		ResultObservationV4Impl resultObservationV4 = new ResultObservationV4Impl();
+		return resultObservationV4;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public DisabilityStatusObservation createDisabilityStatusObservation() {
+		DisabilityStatusObservationImpl disabilityStatusObservation = new DisabilityStatusObservationImpl();
+		return disabilityStatusObservation;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public BasicIndustryObservation createBasicIndustryObservation() {
+		BasicIndustryObservationImpl basicIndustryObservation = new BasicIndustryObservationImpl();
+		return basicIndustryObservation;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public BasicOccupationObservation createBasicOccupationObservation() {
+		BasicOccupationObservationImpl basicOccupationObservation = new BasicOccupationObservationImpl();
+		return basicOccupationObservation;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public GenderIdentityObservation createGenderIdentityObservation() {
+		GenderIdentityObservationImpl genderIdentityObservation = new GenderIdentityObservationImpl();
+		return genderIdentityObservation;
 	}
 
 	/**
