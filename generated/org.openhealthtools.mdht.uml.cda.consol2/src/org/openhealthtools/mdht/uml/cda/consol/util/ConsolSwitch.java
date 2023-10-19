@@ -7580,23 +7580,23 @@ public class ConsolSwitch<T> {
 				}
 				return result;
 			}
-			case ConsolPackage.GENDER_IDENTITY_OBSERVATION: {
-				GenderIdentityObservation genderIdentityObservation = (GenderIdentityObservation) theEObject;
-				T result = caseGenderIdentityObservation(genderIdentityObservation);
+			case ConsolPackage.GENDER_IDENTITY_OBSERVATION_V4: {
+				GenderIdentityObservationV4 genderIdentityObservationV4 = (GenderIdentityObservationV4) theEObject;
+				T result = caseGenderIdentityObservationV4(genderIdentityObservationV4);
 				if (result == null) {
-					result = caseSocialHistoryObservationV4(genderIdentityObservation);
+					result = caseSocialHistoryObservationV4(genderIdentityObservationV4);
 				}
 				if (result == null) {
-					result = caseObservation(genderIdentityObservation);
+					result = caseObservation(genderIdentityObservationV4);
 				}
 				if (result == null) {
-					result = caseClinicalStatement(genderIdentityObservation);
+					result = caseClinicalStatement(genderIdentityObservationV4);
 				}
 				if (result == null) {
-					result = caseAct(genderIdentityObservation);
+					result = caseAct(genderIdentityObservationV4);
 				}
 				if (result == null) {
-					result = caseInfrastructureRoot(genderIdentityObservation);
+					result = caseInfrastructureRoot(genderIdentityObservationV4);
 				}
 				if (result == null) {
 					result = defaultCase(theEObject);
@@ -13101,17 +13101,17 @@ public class ConsolSwitch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Gender Identity Observation</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Gender Identity Observation V4</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Gender Identity Observation</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Gender Identity Observation V4</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseGenderIdentityObservation(GenderIdentityObservation object) {
+	public T caseGenderIdentityObservationV4(GenderIdentityObservationV4 object) {
 		return null;
 	}
 

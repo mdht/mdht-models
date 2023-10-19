@@ -3343,13 +3343,13 @@ public interface ConsolFactory extends EFactory {
 	BasicOccupationObservation createBasicOccupationObservation();
 
 	/**
-	 * Returns a new object of class '<em>Gender Identity Observation</em>'.
+	 * Returns a new object of class '<em>Gender Identity Observation V4</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Gender Identity Observation</em>'.
+	 * @return a new object of class '<em>Gender Identity Observation V4</em>'.
 	 * @generated
 	 */
-	GenderIdentityObservation createGenderIdentityObservation();
+	GenderIdentityObservationV4 createGenderIdentityObservationV4();
 
 	/**
 	 * Returns a new object of class '<em>Criticality Observation</em>'.

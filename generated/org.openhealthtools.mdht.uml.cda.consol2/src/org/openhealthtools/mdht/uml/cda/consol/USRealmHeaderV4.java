@@ -17,7 +17,7 @@ import org.eclipse.mdht.emf.runtime.util.Initializer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getUSRealmHeaderV4()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.warning='USRealmHeaderV4Participant1'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.warning='USRealmHeaderV4Participant'"
  * @generated
  */
 public interface USRealmHeaderV4 extends USRealmHeader2 {
@@ -28,10 +28,10 @@ public interface USRealmHeaderV4 extends USRealmHeader2 {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.participant-&gt;exists(participant : cda::Participant1 | not participant.oclIsUndefined() and participant.oclIsKindOf(rim::Participation))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.participant-&gt;exists(participant : cda::Participant1 | not participant.oclIsUndefined() and participant.oclIsKindOf(consol::RelatedPersonRelationshipandNameParticipant))'"
 	 * @generated
 	 */
-	boolean validateUSRealmHeaderV4Participant1(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateUSRealmHeaderV4Participant(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

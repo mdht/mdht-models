@@ -20,7 +20,7 @@ import org.eclipse.mdht.uml.cda.Observation;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getDisabilityStatusObservation()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='DisabilityStatusObservationTemplateId DisabilityStatusObservationCode DisabilityStatusObservationCodeP DisabilityStatusObservationStatusCode DisabilityStatusObservationEffectiveTime DisabilityStatusObservationValue DisabilityStatusObservationValueP DisabilityStatusObservationClassCode DisabilityStatusObservationMoodCode' templateId.root='2.16.840.1.113883.10.20.22.4.505' templateId.extension='2023-05-01' code.code='89571-4' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Disability Status' constraints.validation.dependOn.DisabilityStatusObservationCode='DisabilityStatusObservationCodeP' value.codeSystem='2.16.840.1.113883.6.1' value.codeSystemName='LOINC' constraints.validation.info='DisabilityStatusObservationAssessmentScaleObservationV2'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='DisabilityStatusObservationTemplateId DisabilityStatusObservationCode DisabilityStatusObservationCodeP DisabilityStatusObservationStatusCode DisabilityStatusObservationStatusCodeP DisabilityStatusObservationEffectiveTime DisabilityStatusObservationValue DisabilityStatusObservationValueP DisabilityStatusObservationClassCode DisabilityStatusObservationMoodCode' templateId.root='2.16.840.1.113883.10.20.22.4.505' templateId.extension='2023-05-01' code.code='89571-4' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Disability Status' constraints.validation.dependOn.DisabilityStatusObservationCode='DisabilityStatusObservationCodeP' statusCode.code='completed' constraints.validation.dependOn.DisabilityStatusObservationStatusCode='DisabilityStatusObservationStatusCodeP' value.codeSystem='2.16.840.1.113883.6.1' value.codeSystemName='LOINC' classCode='OBS' moodCode='EVN' constraints.validation.info='DisabilityStatusObservationAssessmentScaleObservationV2'"
  * @generated
  */
 public interface DisabilityStatusObservation extends Observation {
@@ -70,6 +70,18 @@ public interface DisabilityStatusObservation extends Observation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined())'"
 	 * @generated
 	 */
+	boolean validateDisabilityStatusObservationStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and \nlet value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in \nvalue.code = \'completed\')'"
+	 * @generated
+	 */
 	boolean validateDisabilityStatusObservationStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
@@ -91,7 +103,7 @@ public interface DisabilityStatusObservation extends Observation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.value-&gt;isEmpty() or self.value-&gt;exists(element | element.isNullFlavorUndefined())) implies (self.value-&gt;forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and \nlet value : datatypes::CD = element.oclAsType(datatypes::CD) in \nvalue.codeSystem = \'2.16.840.1.113883.6.1\' and (value.code = \'LA29240-1\' or value.code = \'LA29241-9\' or value.code = \'LA29242-7\' or value.code = \'LA29243-5\' or value.code = \'LA29244-3\')))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.value-&gt;isEmpty() or self.value-&gt;exists(element | element.isNullFlavorUndefined())) implies (self.value-&gt;size() = 1 and self.value-&gt;forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and \nlet value : datatypes::CD = element.oclAsType(datatypes::CD) in \nvalue.codeSystem = \'2.16.840.1.113883.6.1\' and (value.code = \'LA29240-1\' or value.code = \'LA29241-9\' or value.code = \'LA29242-7\' or value.code = \'LA29243-5\' or value.code = \'LA29244-3\')))'"
 	 * @generated
 	 */
 	boolean validateDisabilityStatusObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -103,7 +115,7 @@ public interface DisabilityStatusObservation extends Observation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.value-&gt;isEmpty() or self.value-&gt;exists(element | element.isNullFlavorUndefined())) implies (self.value-&gt;forAll(element | element.oclIsTypeOf(datatypes::CD)))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.value-&gt;isEmpty() or self.value-&gt;exists(element | element.isNullFlavorUndefined())) implies (self.value-&gt;size() =  1 and self.value-&gt;forAll(element | element.oclIsTypeOf(datatypes::CD)))'"
 	 * @generated
 	 */
 	boolean validateDisabilityStatusObservationValueP(DiagnosticChain diagnostics, Map<Object, Object> context);

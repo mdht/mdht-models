@@ -8,27 +8,19 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EClassifier;
-
+import org.eclipse.emf.ecore.EObject;
 import org.eclipse.mdht.uml.cda.Observation;
-
 import org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations;
-
 import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
-
 import org.eclipse.ocl.ParserException;
-
+import org.eclipse.ocl.Query;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
-
 import org.eclipse.ocl.expressions.OCLExpression;
-
 import org.openhealthtools.mdht.uml.cda.consol.BasicOccupationObservation;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
-
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
-
 import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
 
 /**
@@ -791,6 +783,9 @@ public class BasicOccupationObservationOperations extends ClinicalStatementOpera
 	 * @generated
 	 * @ordered
 	 */
+	// protected static final String VALIDATE_BASIC_OCCUPATION_OBSERVATION_IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP =
+	// "self.effectiveTime->excluding(null)->select(isNullFlavorUndefined())->reject( ( isNullFlavorUndefined() implies ((low.oclIsUndefined() or
+	// low.isNullFlavorUndefined()) implies (not low.oclIsUndefined()) )))";
 	protected static final String VALIDATE_BASIC_OCCUPATION_OBSERVATION_IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.effectiveTime->excluding(null)->select(isNullFlavorUndefined())->reject( ( isNullFlavorUndefined() implies ((low.oclIsUndefined() or low.isNullFlavorUndefined()) implies (not low.oclIsUndefined()) )))";
 
 	/**
@@ -802,7 +797,7 @@ public class BasicOccupationObservationOperations extends ClinicalStatementOpera
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_BASIC_OCCUPATION_OBSERVATION_IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_BASIC_OCCUPATION_OBSERVATION_IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -815,43 +810,45 @@ public class BasicOccupationObservationOperations extends ClinicalStatementOpera
 	 * @generated
 	 */
 
+	@SuppressWarnings("unchecked")
 	public static boolean validateBasicOccupationObservationIVLTSLow(
 			BasicOccupationObservation basicOccupationObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
-		DatatypesUtil.increment(context, "BasicOccupationObservationBasicOccupationObservationIVLTSLow", "null");
+		DatatypesUtil.increment(context, "BasicOccupationObservationBasicOccupationObservationIVLTSLow", "ERROR");
 
-		if (VALIDATE_BASIC_OCCUPATION_OBSERVATION_IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		if (VALIDATE_BASIC_OCCUPATION_OBSERVATION_IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.BASIC_OCCUPATION_OBSERVATION);
 			try {
-				VALIDATE_BASIC_OCCUPATION_OBSERVATION_IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
-					helper.createInvariant(
-						VALIDATE_BASIC_OCCUPATION_OBSERVATION_IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_BASIC_OCCUPATION_OBSERVATION_IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_BASIC_OCCUPATION_OBSERVATION_IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(
+					EOCL_ENV.get().createQuery(oclExpression));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 
-		if (!EOCL_ENV.get().createQuery(
-			VALIDATE_BASIC_OCCUPATION_OBSERVATION_IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
-				basicOccupationObservation)) {
-			if (diagnostics != null) {
-				diagnostics.add(
-					new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.BASIC_OCCUPATION_OBSERVATION__BASIC_OCCUPATION_OBSERVATION_IVLTS_LOW,
-						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-							"_UI_GenericInvariant_diagnostic",
-							new Object[] {
-									"BasicOccupationObservationBasicOccupationObservationIVLTSLow",
-									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-										basicOccupationObservation, context) }),
-						new Object[] { basicOccupationObservation }));
-			}
+		Object oclResult = VALIDATE_BASIC_OCCUPATION_OBSERVATION_IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(
+			basicOccupationObservation);
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
 
-			return false;
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.BASIC_OCCUPATION_OBSERVATION__BASIC_OCCUPATION_OBSERVATION_IVLTS_LOW,
+							ConsolPlugin.INSTANCE.getString(
+								"BasicOccupationObservationBasicOccupationObservationIVLTSLow"),
+							new Object[] { eObject }));
+				}
+
+			}
+			return oclResultSet.isEmpty();
 		}
 		return true;
 	}
@@ -864,6 +861,9 @@ public class BasicOccupationObservationOperations extends ClinicalStatementOpera
 	 * @generated
 	 * @ordered
 	 */
+	// protected static final String VALIDATE_BASIC_OCCUPATION_OBSERVATION_IVLTS_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP =
+	// "self.effectiveTime->excluding(null)->select(isNullFlavorUndefined())->reject( ( isNullFlavorUndefined() implies ((high.oclIsUndefined() or
+	// high.isNullFlavorUndefined()) implies (not high.oclIsUndefined()) )))";
 	protected static final String VALIDATE_BASIC_OCCUPATION_OBSERVATION_IVLTS_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.effectiveTime->excluding(null)->select(isNullFlavorUndefined())->reject( ( isNullFlavorUndefined() implies ((high.oclIsUndefined() or high.isNullFlavorUndefined()) implies (not high.oclIsUndefined()) )))";
 
 	/**
@@ -875,7 +875,7 @@ public class BasicOccupationObservationOperations extends ClinicalStatementOpera
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_BASIC_OCCUPATION_OBSERVATION_IVLTS_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_BASIC_OCCUPATION_OBSERVATION_IVLTS_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -888,43 +888,45 @@ public class BasicOccupationObservationOperations extends ClinicalStatementOpera
 	 * @generated
 	 */
 
+	@SuppressWarnings("unchecked")
 	public static boolean validateBasicOccupationObservationIVLTSHigh(
 			BasicOccupationObservation basicOccupationObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
-		DatatypesUtil.increment(context, "BasicOccupationObservationBasicOccupationObservationIVLTSHigh", "null");
+		DatatypesUtil.increment(context, "BasicOccupationObservationBasicOccupationObservationIVLTSHigh", "INFO");
 
-		if (VALIDATE_BASIC_OCCUPATION_OBSERVATION_IVLTS_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		if (VALIDATE_BASIC_OCCUPATION_OBSERVATION_IVLTS_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.BASIC_OCCUPATION_OBSERVATION);
 			try {
-				VALIDATE_BASIC_OCCUPATION_OBSERVATION_IVLTS_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
-					helper.createInvariant(
-						VALIDATE_BASIC_OCCUPATION_OBSERVATION_IVLTS_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_BASIC_OCCUPATION_OBSERVATION_IVLTS_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_BASIC_OCCUPATION_OBSERVATION_IVLTS_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(
+					EOCL_ENV.get().createQuery(oclExpression));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 
-		if (!EOCL_ENV.get().createQuery(
-			VALIDATE_BASIC_OCCUPATION_OBSERVATION_IVLTS_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
-				basicOccupationObservation)) {
-			if (diagnostics != null) {
-				diagnostics.add(
-					new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.BASIC_OCCUPATION_OBSERVATION__BASIC_OCCUPATION_OBSERVATION_IVLTS_HIGH,
-						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-							"_UI_GenericInvariant_diagnostic",
-							new Object[] {
-									"BasicOccupationObservationBasicOccupationObservationIVLTSHigh",
-									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-										basicOccupationObservation, context) }),
-						new Object[] { basicOccupationObservation }));
-			}
+		Object oclResult = VALIDATE_BASIC_OCCUPATION_OBSERVATION_IVLTS_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(
+			basicOccupationObservation);
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
 
-			return false;
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.BASIC_OCCUPATION_OBSERVATION__BASIC_OCCUPATION_OBSERVATION_IVLTS_HIGH,
+							ConsolPlugin.INSTANCE.getString(
+								"BasicOccupationObservationBasicOccupationObservationIVLTSHigh"),
+							new Object[] { eObject }));
+				}
+
+			}
+			return oclResultSet.isEmpty();
 		}
 		return true;
 	}

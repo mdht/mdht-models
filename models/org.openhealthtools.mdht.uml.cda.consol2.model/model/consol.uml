@@ -3526,6 +3526,9 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
         <subsettedProperty href=".controlled/consol-socialhistory.uml#_2JSrURSVEeGGzu7fmW9pXw"/>
       </ownedAttribute>
       <nestedClassifier xmi:type="uml:Class" xmi:id="_GgGvUAHlEe2uf-Hpx0eOMw" name="IVLTS">
+        <ownedComment xmi:id="_nvIW0G3oEe66V-uSC1tAAg">
+          <body>INLINE</body>
+        </ownedComment>
         <generalization xmi:id="_GgIkgAHlEe2uf-Hpx0eOMw">
           <general xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
         </generalization>
@@ -4005,7 +4008,7 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
         <general xmi:type="uml:Class" href=".controlled/consol-payers.uml#_aJr6ULkxEeODDJAC5t5vpw"/>
       </generalization>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_c5csQGbNEe6ibMoBz2vFZw" name="PregnancyIntention ">
+    <packagedElement xmi:type="uml:Class" xmi:id="_c5csQGbNEe6ibMoBz2vFZw" name="PregnancyIntention">
       <generalization xmi:id="_c5dTUGbNEe6ibMoBz2vFZw">
         <general xmi:type="uml:Class" href="pathmap://CDA_MODEL///cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
       </generalization>
@@ -4020,11 +4023,6 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_GLxlAWbOEe6ibMoBz2vFZw" value="1"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_GLxlAGbOEe6ibMoBz2vFZw" value="1"/>
         <redefinedProperty href="pathmap://CDA_MODEL///cda.uml#_c-D3cEo8Ed6c3qsAxlFHaQ"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_iUVnoGbNEe6ibMoBz2vFZw" name="effectiveTime" visibility="private" type="_lN7OcGbOEe6ibMoBz2vFZw" aggregation="composite">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HDG1oWbOEe6ibMoBz2vFZw" value="1"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HDG1oGbOEe6ibMoBz2vFZw" value="1"/>
-        <redefinedProperty href="pathmap://CDA_MODEL///cda.uml#_fUQ50Eo8Ed6c3qsAxlFHaQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_iUVno2bNEe6ibMoBz2vFZw" name="value" visibility="private" aggregation="composite">
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
@@ -4046,20 +4044,28 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
         <redefinedProperty href="pathmap://CDA_MODEL///cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
       </ownedAttribute>
-      <nestedClassifier xmi:type="uml:Class" xmi:id="_lN7OcGbOEe6ibMoBz2vFZw" name="IVL_TS">
-        <generalization xmi:id="_lN7OcWbOEe6ibMoBz2vFZw">
+      <ownedAttribute xmi:id="_Bl0goG3sEe66V-uSC1tAAg" name="effectiveTime" visibility="private" type="_DZMiwG3sEe66V-uSC1tAAg" aggregation="composite">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_LuBfsG3sEe66V-uSC1tAAg" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_LuA4oG3sEe66V-uSC1tAAg" value="1"/>
+        <redefinedProperty href="pathmap://CDA_MODEL///cda.uml#_fUQ50Eo8Ed6c3qsAxlFHaQ"/>
+      </ownedAttribute>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_DZMiwG3sEe66V-uSC1tAAg" name="IVLTS">
+        <ownedComment xmi:id="_1KRwgG3sEe66V-uSC1tAAg">
+          <body>INLINE</body>
+        </ownedComment>
+        <generalization xmi:id="_DZNJ0G3sEe66V-uSC1tAAg">
           <general xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
         </generalization>
-        <ownedAttribute xmi:id="_pmGvoGbOEe6ibMoBz2vFZw" name="low" visibility="private" aggregation="composite">
+        <ownedAttribute xmi:id="_EQbswG3sEe66V-uSC1tAAg" name="low" visibility="private" aggregation="composite">
           <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_BY5uUD6AEd6cla2oXsPtlA"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xncI0WbOEe6ibMoBz2vFZw" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xncI0GbOEe6ibMoBz2vFZw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_McB1MW3sEe66V-uSC1tAAg" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_McB1MG3sEe66V-uSC1tAAg" value="1"/>
           <redefinedProperty href="pathmap://DATATYPES_MODEL/datatypes.uml#_fmxbID6AEd6cla2oXsPtlA"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_pmHWsGbOEe6ibMoBz2vFZw" name="high" visibility="private" aggregation="composite">
+        <ownedAttribute xmi:id="_EQcT0G3sEe66V-uSC1tAAg" name="high" visibility="private" aggregation="composite">
           <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_BY5uUD6AEd6cla2oXsPtlA"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yTZP4WbOEe6ibMoBz2vFZw" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yTZP4GbOEe6ibMoBz2vFZw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NHraQW3sEe66V-uSC1tAAg" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NHraQG3sEe66V-uSC1tAAg" value="1"/>
           <redefinedProperty href="pathmap://DATATYPES_MODEL/datatypes.uml#_jfCGID6AEd6cla2oXsPtlA"/>
         </ownedAttribute>
       </nestedClassifier>
@@ -4135,8 +4141,7 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
       <generalization xmi:id="_FU9IYWbnEe6ibMoBz2vFZw">
         <general xmi:type="uml:Class" href=".controlled/consol-documents.uml#_dduXkJ5OEeOr4eM3k36wAg"/>
       </generalization>
-      <ownedAttribute xmi:id="_N-ZqcGbnEe6ibMoBz2vFZw" name="participant1" visibility="private" aggregation="composite" association="_N-aRgGbnEe6ibMoBz2vFZw">
-        <type xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_4_GbMEcZEd6besF9iFIJkQ"/>
+      <ownedAttribute xmi:id="_N-ZqcGbnEe6ibMoBz2vFZw" name="participant" visibility="private" type="_S4QnQGblEe6ibMoBz2vFZw" aggregation="composite" association="_N-aRgGbnEe6ibMoBz2vFZw">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_N-ZqcWbnEe6ibMoBz2vFZw"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_N-ZqcmbnEe6ibMoBz2vFZw" value="*"/>
         <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_iEOSgUcnEd6besF9iFIJkQ"/>
@@ -4228,16 +4233,18 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
       </ownedAttribute>
       <ownedAttribute xmi:id="_QAKk42wsEe66V-uSC1tAAg" name="value" visibility="private" aggregation="composite">
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QAKk5GwsEe66V-uSC1tAAg"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QAKk5WwsEe66V-uSC1tAAg" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_s9yhQGxtEe66V-uSC1tAAg" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_s9xTIGxtEe66V-uSC1tAAg" value="1"/>
         <subsettedProperty href="pathmap://CDA_MODEL///cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_QANBIGwsEe66V-uSC1tAAg" name="classCode" visibility="private">
         <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__yVecEDcEd6xYZuu1VKCVw"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_q28JgGxtEe66V-uSC1tAAg" value="OBS"/>
         <redefinedProperty href="pathmap://CDA_MODEL///cda.uml#_FcjT0EbtEd6besF9iFIJkQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_QANoMGwsEe66V-uSC1tAAg" name="moodCode" visibility="private">
         <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_rtnS0GxtEe66V-uSC1tAAg" value="EVN"/>
         <redefinedProperty href="pathmap://CDA_MODEL///cda.uml#_BLZhcEo_Ed6c3qsAxlFHaQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_krpVcGwsEe66V-uSC1tAAg" name="assessmentScaleObservationV2" type="_PmLJsO5iEeyzELqFfLgO9w" association="_krpVc2wsEe66V-uSC1tAAg">
@@ -4328,7 +4335,10 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
           <redefinedProperty href="pathmap://CDA_MODEL///cda.uml#_IqmIoUoYEd6c3qsAxlFHaQ"/>
         </ownedAttribute>
       </nestedClassifier>
-      <nestedClassifier xmi:type="uml:Class" xmi:id="_gEC-kGw0Ee66V-uSC1tAAg" name="IVL_TS">
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_gEC-kGw0Ee66V-uSC1tAAg" name="IVLTS">
+        <ownedComment xmi:id="_HVLWYG0LEe66V-uSC1tAAg">
+          <body>INLINE</body>
+        </ownedComment>
         <generalization xmi:id="_gEDloGw0Ee66V-uSC1tAAg">
           <general xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
         </generalization>
@@ -4355,7 +4365,7 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
     <packagedElement xmi:type="uml:Association" xmi:id="_Ugmwkmw0Ee66V-uSC1tAAg" memberEnd="_UgmJgGw0Ee66V-uSC1tAAg _Ugmwk2w0Ee66V-uSC1tAAg">
       <ownedEnd xmi:id="_Ugmwk2w0Ee66V-uSC1tAAg" type="_Vs7PMGwzEe66V-uSC1tAAg" association="_Ugmwkmw0Ee66V-uSC1tAAg"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_cHuWIGw4Ee66V-uSC1tAAg" name="GenderIdentityObservation">
+    <packagedElement xmi:type="uml:Class" xmi:id="_cHuWIGw4Ee66V-uSC1tAAg" name="GenderIdentityObservationV4">
       <generalization xmi:id="_cHu9MGw4Ee66V-uSC1tAAg" general="_iyxr0AQ3Ee2zXtXLgnLahw"/>
       <ownedAttribute xmi:id="_nk91h2w4Ee66V-uSC1tAAg" name="value" visibility="private" aggregation="composite">
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
@@ -4367,7 +4377,10 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QlmhUWw5Ee66V-uSC1tAAg"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QlmhUmw5Ee66V-uSC1tAAg" value="1"/>
       </ownedAttribute>
-      <nestedClassifier xmi:type="uml:Class" xmi:id="_S4P5YGw5Ee66V-uSC1tAAg" name="IVL_TS">
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_S4P5YGw5Ee66V-uSC1tAAg" name="IVLTS">
+        <ownedComment xmi:id="_y3t_YG3pEe66V-uSC1tAAg">
+          <body>INLINE</body>
+        </ownedComment>
         <generalization xmi:id="_S4QgcGw5Ee66V-uSC1tAAg">
           <general xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
         </generalization>
@@ -6630,9 +6643,6 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
   <CDA:PropertyValidation xmi:id="_nG2UYGbNEe6ibMoBz2vFZw" base_Property="_iUVAkGbNEe6ibMoBz2vFZw">
     <ruleId>CONF:4537-26551</ruleId>
   </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_npnDMGbNEe6ibMoBz2vFZw" base_Property="_iUVnoGbNEe6ibMoBz2vFZw">
-    <ruleId>CONF:4537-26560)</ruleId>
-  </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_pCloUGbNEe6ibMoBz2vFZw" base_Property="_iUVno2bNEe6ibMoBz2vFZw"/>
   <CDA:PropertyValidation xmi:id="_qAHAgGbNEe6ibMoBz2vFZw" base_Property="_iUWOsGbNEe6ibMoBz2vFZw">
     <ruleId>CONF:4537-26557</ruleId>
@@ -6652,12 +6662,6 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
   <CDA:CodeSystemConstraint xmi:id="_flHL0GbOEe6ibMoBz2vFZw" code="completed" displayName="completed" base_Property="_iUVAkGbNEe6ibMoBz2vFZw">
     <reference href="pathmap://TERM_MODEL///CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
-  <CDA:PropertyValidation xmi:id="_qY3CQGbOEe6ibMoBz2vFZw" base_Property="_pmGvoGbOEe6ibMoBz2vFZw">
-    <ruleId>CONF:4537-26821</ruleId>
-  </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_q963IGbOEe6ibMoBz2vFZw" base_Property="_pmHWsGbOEe6ibMoBz2vFZw">
-    <ruleId>CONF:4537-26822</ruleId>
-  </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_41XvIGbOEe6ibMoBz2vFZw" base_Property="_iUVno2bNEe6ibMoBz2vFZw" uri="consol-vocab::Pregnancy Intention">
     <reference href="pathmap://CONSOL_MODEL///consol-vocab.uml#_8sfKoWbOEe6ibMoBz2vFZw"/>
   </CDA:ValueSetConstraint>
@@ -6793,4 +6797,11 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
   <CDA:PropertyValidation xmi:id="_XhHh8Gw5Ee66V-uSC1tAAg" severity="WARNING" negationIndicator="true" base_Property="_TgrLU2w5Ee66V-uSC1tAAg">
     <ruleId>CONF:4537-33071</ruleId>
   </CDA:PropertyValidation>
+  <CDA:CodeSystemConstraint xmi:id="_uag98GxtEe66V-uSC1tAAg" code="completed" displayName="completed" base_Property="_QAJWwGwsEe66V-uSC1tAAg">
+    <reference href="pathmap://TERM_MODEL///CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
+  </CDA:CodeSystemConstraint>
+  <CDA:CDATemplate xmi:id="_pmkkIG3pEe66V-uSC1tAAg" base_Class="_cHuWIGw4Ee66V-uSC1tAAg" templateId="2.16.840.1.113883.10.20.34.3.45" templateVersion="2023-05-01"/>
+  <CDA:PropertyValidation xmi:id="_GnHQQG3sEe66V-uSC1tAAg" base_Property="_Bl0goG3sEe66V-uSC1tAAg"/>
+  <CDA:PropertyValidation xmi:id="_HU_C4G3sEe66V-uSC1tAAg" base_Property="_EQbswG3sEe66V-uSC1tAAg"/>
+  <CDA:PropertyValidation xmi:id="_H7hecG3sEe66V-uSC1tAAg" base_Property="_EQcT0G3sEe66V-uSC1tAAg"/>
 </xmi:XMI>

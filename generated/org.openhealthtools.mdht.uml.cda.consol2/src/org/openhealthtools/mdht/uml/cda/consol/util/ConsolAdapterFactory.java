@@ -1954,8 +1954,8 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
-		public Adapter caseGenderIdentityObservation(GenderIdentityObservation object) {
-			return createGenderIdentityObservationAdapter();
+		public Adapter caseGenderIdentityObservationV4(GenderIdentityObservationV4 object) {
+			return createGenderIdentityObservationV4Adapter();
 		}
 
 		@Override
@@ -7427,16 +7427,16 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.GenderIdentityObservation <em>Gender Identity Observation</em>}'.
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.GenderIdentityObservationV4 <em>Gender Identity Observation V4</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.consol.GenderIdentityObservation
+	 * @see org.openhealthtools.mdht.uml.cda.consol.GenderIdentityObservationV4
 	 * @generated
 	 */
-	public Adapter createGenderIdentityObservationAdapter() {
+	public Adapter createGenderIdentityObservationV4Adapter() {
 		return null;
 	}
 

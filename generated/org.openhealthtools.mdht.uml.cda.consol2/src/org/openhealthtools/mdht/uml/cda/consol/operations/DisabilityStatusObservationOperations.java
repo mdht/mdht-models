@@ -43,6 +43,7 @@ import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DisabilityStatusObservation#validateDisabilityStatusObservationTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Disability Status Observation Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DisabilityStatusObservation#validateDisabilityStatusObservationCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Disability Status Observation Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DisabilityStatusObservation#validateDisabilityStatusObservationCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Disability Status Observation Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DisabilityStatusObservation#validateDisabilityStatusObservationStatusCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Disability Status Observation Status Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DisabilityStatusObservation#validateDisabilityStatusObservationStatusCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Disability Status Observation Status Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DisabilityStatusObservation#validateDisabilityStatusObservationEffectiveTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Disability Status Observation Effective Time</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DisabilityStatusObservation#validateDisabilityStatusObservationValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Disability Status Observation Value</em>}</li>
@@ -303,6 +304,89 @@ public class DisabilityStatusObservationOperations extends ClinicalStatementOper
 	}
 
 	/**
+	 * The cached OCL expression body for the '{@link #validateDisabilityStatusObservationStatusCodeP(DisabilityStatusObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Disability Status Observation Status Code P</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateDisabilityStatusObservationStatusCodeP(DisabilityStatusObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_DISABILITY_STATUS_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined())";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateDisabilityStatusObservationStatusCodeP(DisabilityStatusObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Disability Status Observation Status Code P</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateDisabilityStatusObservationStatusCodeP(DisabilityStatusObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static ThreadLocal<Constraint> VALIDATE_DISABILITY_STATUS_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param disabilityStatusObservation The receiving '<em><b>Disability Status Observation</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+
+	public static boolean validateDisabilityStatusObservationStatusCodeP(
+			DisabilityStatusObservation disabilityStatusObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "DisabilityStatusObservationDisabilityStatusObservationStatusCodeP", "ERROR");
+
+		if (VALIDATE_DISABILITY_STATUS_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.DISABILITY_STATUS_OBSERVATION);
+			try {
+				VALIDATE_DISABILITY_STATUS_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_DISABILITY_STATUS_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_DISABILITY_STATUS_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				disabilityStatusObservation)) {
+			if (diagnostics != null) {
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.DISABILITY_STATUS_OBSERVATION__DISABILITY_STATUS_OBSERVATION_STATUS_CODE_P,
+						ConsolPlugin.INSTANCE.getString(
+							"DisabilityStatusObservationDisabilityStatusObservationStatusCodeP"),
+						new Object[] { disabilityStatusObservation }));
+			}
+
+			if (context != null) {
+				// generate a pass token for my dependent constraints to short-circuit or filter results
+				@SuppressWarnings("unchecked")
+				Collection<Object> passToken = (Collection<Object>) context.get(
+					"org.openhealthtools.mdht.uml.cda.consol.DisabilityStatusObservationStatusCodeP");
+				if (passToken == null) {
+					// anticipate a reasonably healthy model
+					passToken = new java.util.ArrayList<>(3);
+					context.put(
+						"org.openhealthtools.mdht.uml.cda.consol.DisabilityStatusObservationStatusCodeP", passToken);
+				}
+				passToken.add(disabilityStatusObservation);
+			}
+
+			return false;
+		}
+		return true;
+	}
+
+	/**
 	 * The cached OCL expression body for the '{@link #validateDisabilityStatusObservationStatusCode(DisabilityStatusObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Disability Status Observation Status Code</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -310,7 +394,8 @@ public class DisabilityStatusObservationOperations extends ClinicalStatementOper
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_DISABILITY_STATUS_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined())";
+	protected static final String VALIDATE_DISABILITY_STATUS_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and " +
+			"let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in " + "value.code = 'completed')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateDisabilityStatusObservationStatusCode(DisabilityStatusObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Disability Status Observation Status Code</em>}' invariant operation.
@@ -337,6 +422,14 @@ public class DisabilityStatusObservationOperations extends ClinicalStatementOper
 	public static boolean validateDisabilityStatusObservationStatusCode(
 			DisabilityStatusObservation disabilityStatusObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		Object passToken = (context == null)
+				? null
+				: context.get("org.openhealthtools.mdht.uml.cda.consol.DisabilityStatusObservationStatusCodeP");
+		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(disabilityStatusObservation)) {
+			// I have a free pass to short-circuit
+			return true;
+		}
 
 		DatatypesUtil.increment(context, "DisabilityStatusObservationDisabilityStatusObservationStatusCode", "ERROR");
 
@@ -449,7 +542,7 @@ public class DisabilityStatusObservationOperations extends ClinicalStatementOper
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_DISABILITY_STATUS_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and " +
+	protected static final String VALIDATE_DISABILITY_STATUS_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and " +
 			"let value : datatypes::CD = element.oclAsType(datatypes::CD) in " +
 			"value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA29240-1' or value.code = 'LA29241-9' or value.code = 'LA29242-7' or value.code = 'LA29243-5' or value.code = 'LA29244-3')))";
 
@@ -519,7 +612,7 @@ public class DisabilityStatusObservationOperations extends ClinicalStatementOper
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_DISABILITY_STATUS_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->forAll(element | element.oclIsTypeOf(datatypes::CD)))";
+	protected static final String VALIDATE_DISABILITY_STATUS_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() =  1 and self.value->forAll(element | element.oclIsTypeOf(datatypes::CD)))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateDisabilityStatusObservationValueP(DisabilityStatusObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Disability Status Observation Value P</em>}' invariant operation.
@@ -821,7 +914,7 @@ public class DisabilityStatusObservationOperations extends ClinicalStatementOper
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.DISABILITY_STATUS_OBSERVATION,
-				ConsolPackage.Literals.DISABILITY_STATUS_OBSERVATION.getEAllOperations().get(61));
+				ConsolPackage.Literals.DISABILITY_STATUS_OBSERVATION.getEAllOperations().get(62));
 			try {
 				GET_ASSESSMENT_SCALE_OBSERVATION_V2S__EOCL_QRY = helper.createQuery(
 					GET_ASSESSMENT_SCALE_OBSERVATION_V2S__EOCL_EXP);

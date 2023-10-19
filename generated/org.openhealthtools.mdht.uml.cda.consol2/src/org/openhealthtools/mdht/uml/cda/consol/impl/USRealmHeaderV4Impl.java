@@ -48,8 +48,8 @@ public class USRealmHeaderV4Impl extends USRealmHeader2Impl implements USRealmHe
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateUSRealmHeaderV4Participant1(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return USRealmHeaderV4Operations.validateUSRealmHeaderV4Participant1(this, diagnostics, context);
+	public boolean validateUSRealmHeaderV4Participant(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return USRealmHeaderV4Operations.validateUSRealmHeaderV4Participant(this, diagnostics, context);
 	}
 
 	/**

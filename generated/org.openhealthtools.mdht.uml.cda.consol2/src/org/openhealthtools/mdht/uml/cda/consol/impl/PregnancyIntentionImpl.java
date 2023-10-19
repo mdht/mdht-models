@@ -86,15 +86,6 @@ public class PregnancyIntentionImpl extends ObservationImpl implements Pregnancy
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePregnancyIntentionEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PregnancyIntentionOperations.validatePregnancyIntentionEffectiveTime(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public boolean validatePregnancyIntentionValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PregnancyIntentionOperations.validatePregnancyIntentionValue(this, diagnostics, context);
 	}
@@ -142,6 +133,15 @@ public class PregnancyIntentionImpl extends ObservationImpl implements Pregnancy
 	 */
 	public boolean validatePregnancyIntentionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PregnancyIntentionOperations.validatePregnancyIntentionCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePregnancyIntentionEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PregnancyIntentionOperations.validatePregnancyIntentionEffectiveTime(this, diagnostics, context);
 	}
 
 	/**

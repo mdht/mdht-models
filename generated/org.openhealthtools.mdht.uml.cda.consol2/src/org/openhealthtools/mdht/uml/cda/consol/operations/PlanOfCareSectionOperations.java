@@ -1131,8 +1131,7 @@ public class PlanOfCareSectionOperations extends SectionOperations {
 		@SuppressWarnings("unchecked")
 		Collection<PlanOfCareActivitySubstanceAdministration> result = (Collection<PlanOfCareActivitySubstanceAdministration>) query.evaluate(
 			planOfCareSection);
-		return new BasicEList.UnmodifiableEList<>(
-			result.size(), result.toArray());
+		return new BasicEList.UnmodifiableEList<>(result.size(), result.toArray());
 	}
 
 	/**

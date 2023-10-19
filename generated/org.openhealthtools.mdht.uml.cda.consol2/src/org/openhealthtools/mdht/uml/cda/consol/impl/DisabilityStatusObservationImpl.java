@@ -83,6 +83,17 @@ public class DisabilityStatusObservationImpl extends ObservationImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateDisabilityStatusObservationStatusCodeP(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return DisabilityStatusObservationOperations.validateDisabilityStatusObservationStatusCodeP(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateDisabilityStatusObservationStatusCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return DisabilityStatusObservationOperations.validateDisabilityStatusObservationStatusCode(

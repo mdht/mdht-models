@@ -803,8 +803,8 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createBasicIndustryObservation();
 			case ConsolPackage.BASIC_OCCUPATION_OBSERVATION:
 				return createBasicOccupationObservation();
-			case ConsolPackage.GENDER_IDENTITY_OBSERVATION:
-				return createGenderIdentityObservation();
+			case ConsolPackage.GENDER_IDENTITY_OBSERVATION_V4:
+				return createGenderIdentityObservationV4();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -4644,9 +4644,9 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * @generated
 	 */
 	@Override
-	public GenderIdentityObservation createGenderIdentityObservation() {
-		GenderIdentityObservationImpl genderIdentityObservation = new GenderIdentityObservationImpl();
-		return genderIdentityObservation;
+	public GenderIdentityObservationV4 createGenderIdentityObservationV4() {
+		GenderIdentityObservationV4Impl genderIdentityObservationV4 = new GenderIdentityObservationV4Impl();
+		return genderIdentityObservationV4;
 	}
 
 	/**

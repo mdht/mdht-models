@@ -12,7 +12,6 @@ import org.eclipse.mdht.uml.hl7.datatypes.CD;
 import org.eclipse.mdht.uml.hl7.datatypes.CS;
 import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
 import org.eclipse.mdht.uml.hl7.datatypes.ED;
-import org.eclipse.mdht.uml.hl7.datatypes.II;
 import org.junit.Test;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
@@ -30,7 +29,6 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.SectionTimeRangeObserv
  * <ul>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SectionTimeRangeObservation#validateSectionTimeRangeObservationTextReferenceValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Section Time Range Observation Text Reference Value</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SectionTimeRangeObservation#validateSectionTimeRangeObservationTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Section Time Range Observation Template Id</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SectionTimeRangeObservation#validateSectionTimeRangeObservationId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Section Time Range Observation Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SectionTimeRangeObservation#validateSectionTimeRangeObservationCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Section Time Range Observation Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SectionTimeRangeObservation#validateSectionTimeRangeObservationText(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Section Time Range Observation Text</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SectionTimeRangeObservation#validateSectionTimeRangeObservationStatusCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Section Time Range Observation Status Code</em>}</li>
@@ -131,44 +129,6 @@ public class SectionTimeRangeObservationTest extends CDAValidationTest {
 		};
 
 		validateSectionTimeRangeObservationTemplateIdTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
-
-	public void testValidateSectionTimeRangeObservationId() {
-		OperationsTestCase<SectionTimeRangeObservation> validateSectionTimeRangeObservationIdTestCase = new OperationsTestCase<SectionTimeRangeObservation>(
-			"validateSectionTimeRangeObservationId",
-			operationsForOCL.getOCLValue("VALIDATE_SECTION_TIME_RANGE_OBSERVATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(SectionTimeRangeObservation target) {
-
-			}
-
-			@Override
-			protected void updateToPass(SectionTimeRangeObservation target) {
-				target.init();
-
-				II ii = DatatypesFactory.eINSTANCE.createII();
-				target.getIds().add(ii);
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return SectionTimeRangeObservationOperations.validateSectionTimeRangeObservationId(
-					(SectionTimeRangeObservation) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateSectionTimeRangeObservationIdTestCase.doValidationTest();
 	}
 
 	/**

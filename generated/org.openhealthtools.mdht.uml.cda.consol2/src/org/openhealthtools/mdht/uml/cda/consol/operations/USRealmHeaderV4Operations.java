@@ -30,7 +30,7 @@ import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
  * <p>
  * The following operations are supported:
  * <ul>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeaderV4#validateUSRealmHeaderV4Participant1(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header V4 Participant1</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeaderV4#validateUSRealmHeaderV4Participant(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header V4 Participant</em>}</li>
  * </ul>
  * </p>
  *
@@ -55,25 +55,25 @@ public class USRealmHeaderV4Operations extends USRealmHeader2Operations {
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateUSRealmHeaderV4Participant1(USRealmHeaderV4, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header V4 Participant1</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validateUSRealmHeaderV4Participant(USRealmHeaderV4, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header V4 Participant</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateUSRealmHeaderV4Participant1(USRealmHeaderV4, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #validateUSRealmHeaderV4Participant(USRealmHeaderV4, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_US_REALM_HEADER_V4_PARTICIPANT1__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.participant->exists(participant : cda::Participant1 | not participant.oclIsUndefined() and participant.oclIsKindOf(rim::Participation))";
+	protected static final String VALIDATE_US_REALM_HEADER_V4_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.participant->exists(participant : cda::Participant1 | not participant.oclIsUndefined() and participant.oclIsKindOf(consol::RelatedPersonRelationshipandNameParticipant))";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateUSRealmHeaderV4Participant1(USRealmHeaderV4, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header V4 Participant1</em>}' invariant operation.
+	 * The cached OCL invariant for the '{@link #validateUSRealmHeaderV4Participant(USRealmHeaderV4, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header V4 Participant</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateUSRealmHeaderV4Participant1(USRealmHeaderV4, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #validateUSRealmHeaderV4Participant(USRealmHeaderV4, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_US_REALM_HEADER_V4_PARTICIPANT1__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_US_REALM_HEADER_V4_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -86,31 +86,31 @@ public class USRealmHeaderV4Operations extends USRealmHeader2Operations {
 	 * @generated
 	 */
 
-	public static boolean validateUSRealmHeaderV4Participant1(USRealmHeaderV4 usRealmHeaderV4,
+	public static boolean validateUSRealmHeaderV4Participant(USRealmHeaderV4 usRealmHeaderV4,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		DatatypesUtil.increment(context, "USRealmHeaderV4USRealmHeaderV4Participant1", "WARNING");
+		DatatypesUtil.increment(context, "USRealmHeaderV4USRealmHeaderV4Participant", "WARNING");
 
-		if (VALIDATE_US_REALM_HEADER_V4_PARTICIPANT1__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		if (VALIDATE_US_REALM_HEADER_V4_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.US_REALM_HEADER_V4);
 			try {
-				VALIDATE_US_REALM_HEADER_V4_PARTICIPANT1__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
-					helper.createInvariant(VALIDATE_US_REALM_HEADER_V4_PARTICIPANT1__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+				VALIDATE_US_REALM_HEADER_V4_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_US_REALM_HEADER_V4_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 
 		if (!EOCL_ENV.get().createQuery(
-			VALIDATE_US_REALM_HEADER_V4_PARTICIPANT1__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(usRealmHeaderV4)) {
+			VALIDATE_US_REALM_HEADER_V4_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(usRealmHeaderV4)) {
 			if (diagnostics != null) {
 				diagnostics.add(
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.US_REALM_HEADER_V4__US_REALM_HEADER_V4_PARTICIPANT1,
-						ConsolPlugin.INSTANCE.getString("USRealmHeaderV4USRealmHeaderV4Participant1"),
+						ConsolValidator.US_REALM_HEADER_V4__US_REALM_HEADER_V4_PARTICIPANT,
+						ConsolPlugin.INSTANCE.getString("USRealmHeaderV4USRealmHeaderV4Participant"),
 						new Object[] { usRealmHeaderV4 }));
 			}
 

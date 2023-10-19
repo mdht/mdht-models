@@ -86980,14 +86980,14 @@ public interface ConsolPackage extends EPackage {
 	int BASIC_OCCUPATION_OBSERVATION_FEATURE_COUNT = CDAPackage.OBSERVATION_FEATURE_COUNT + 0;
 
 	/**
-	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.GenderIdentityObservationImpl <em>Gender Identity Observation</em>}' class.
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.GenderIdentityObservationV4Impl <em>Gender Identity Observation V4</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.GenderIdentityObservationImpl
-	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getGenderIdentityObservation()
+	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.GenderIdentityObservationV4Impl
+	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getGenderIdentityObservationV4()
 	 * @generated
 	 */
-	int GENDER_IDENTITY_OBSERVATION = 371;
+	int GENDER_IDENTITY_OBSERVATION_V4 = 371;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -86996,7 +86996,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GENDER_IDENTITY_OBSERVATION__REALM_CODE = SOCIAL_HISTORY_OBSERVATION_V4__REALM_CODE;
+	int GENDER_IDENTITY_OBSERVATION_V4__REALM_CODE = SOCIAL_HISTORY_OBSERVATION_V4__REALM_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
@@ -87005,7 +87005,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GENDER_IDENTITY_OBSERVATION__TYPE_ID = SOCIAL_HISTORY_OBSERVATION_V4__TYPE_ID;
+	int GENDER_IDENTITY_OBSERVATION_V4__TYPE_ID = SOCIAL_HISTORY_OBSERVATION_V4__TYPE_ID;
 
 	/**
 	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
@@ -87014,7 +87014,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GENDER_IDENTITY_OBSERVATION__TEMPLATE_ID = SOCIAL_HISTORY_OBSERVATION_V4__TEMPLATE_ID;
+	int GENDER_IDENTITY_OBSERVATION_V4__TEMPLATE_ID = SOCIAL_HISTORY_OBSERVATION_V4__TEMPLATE_ID;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' containment reference list.
@@ -87023,7 +87023,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GENDER_IDENTITY_OBSERVATION__ID = SOCIAL_HISTORY_OBSERVATION_V4__ID;
+	int GENDER_IDENTITY_OBSERVATION_V4__ID = SOCIAL_HISTORY_OBSERVATION_V4__ID;
 
 	/**
 	 * The feature id for the '<em><b>Code</b></em>' containment reference.
@@ -87032,7 +87032,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GENDER_IDENTITY_OBSERVATION__CODE = SOCIAL_HISTORY_OBSERVATION_V4__CODE;
+	int GENDER_IDENTITY_OBSERVATION_V4__CODE = SOCIAL_HISTORY_OBSERVATION_V4__CODE;
 
 	/**
 	 * The feature id for the '<em><b>Derivation Expr</b></em>' containment reference.
@@ -87041,7 +87041,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GENDER_IDENTITY_OBSERVATION__DERIVATION_EXPR = SOCIAL_HISTORY_OBSERVATION_V4__DERIVATION_EXPR;
+	int GENDER_IDENTITY_OBSERVATION_V4__DERIVATION_EXPR = SOCIAL_HISTORY_OBSERVATION_V4__DERIVATION_EXPR;
 
 	/**
 	 * The feature id for the '<em><b>Text</b></em>' containment reference.
@@ -87050,7 +87050,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GENDER_IDENTITY_OBSERVATION__TEXT = SOCIAL_HISTORY_OBSERVATION_V4__TEXT;
+	int GENDER_IDENTITY_OBSERVATION_V4__TEXT = SOCIAL_HISTORY_OBSERVATION_V4__TEXT;
 
 	/**
 	 * The feature id for the '<em><b>Status Code</b></em>' containment reference.
@@ -87059,7 +87059,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GENDER_IDENTITY_OBSERVATION__STATUS_CODE = SOCIAL_HISTORY_OBSERVATION_V4__STATUS_CODE;
+	int GENDER_IDENTITY_OBSERVATION_V4__STATUS_CODE = SOCIAL_HISTORY_OBSERVATION_V4__STATUS_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
@@ -87068,7 +87068,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GENDER_IDENTITY_OBSERVATION__EFFECTIVE_TIME = SOCIAL_HISTORY_OBSERVATION_V4__EFFECTIVE_TIME;
+	int GENDER_IDENTITY_OBSERVATION_V4__EFFECTIVE_TIME = SOCIAL_HISTORY_OBSERVATION_V4__EFFECTIVE_TIME;
 
 	/**
 	 * The feature id for the '<em><b>Priority Code</b></em>' containment reference.
@@ -87077,7 +87077,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GENDER_IDENTITY_OBSERVATION__PRIORITY_CODE = SOCIAL_HISTORY_OBSERVATION_V4__PRIORITY_CODE;
+	int GENDER_IDENTITY_OBSERVATION_V4__PRIORITY_CODE = SOCIAL_HISTORY_OBSERVATION_V4__PRIORITY_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Repeat Number</b></em>' containment reference.
@@ -87086,7 +87086,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GENDER_IDENTITY_OBSERVATION__REPEAT_NUMBER = SOCIAL_HISTORY_OBSERVATION_V4__REPEAT_NUMBER;
+	int GENDER_IDENTITY_OBSERVATION_V4__REPEAT_NUMBER = SOCIAL_HISTORY_OBSERVATION_V4__REPEAT_NUMBER;
 
 	/**
 	 * The feature id for the '<em><b>Language Code</b></em>' containment reference.
@@ -87095,7 +87095,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GENDER_IDENTITY_OBSERVATION__LANGUAGE_CODE = SOCIAL_HISTORY_OBSERVATION_V4__LANGUAGE_CODE;
+	int GENDER_IDENTITY_OBSERVATION_V4__LANGUAGE_CODE = SOCIAL_HISTORY_OBSERVATION_V4__LANGUAGE_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Value</b></em>' containment reference list.
@@ -87104,7 +87104,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GENDER_IDENTITY_OBSERVATION__VALUE = SOCIAL_HISTORY_OBSERVATION_V4__VALUE;
+	int GENDER_IDENTITY_OBSERVATION_V4__VALUE = SOCIAL_HISTORY_OBSERVATION_V4__VALUE;
 
 	/**
 	 * The feature id for the '<em><b>Interpretation Code</b></em>' containment reference list.
@@ -87113,7 +87113,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GENDER_IDENTITY_OBSERVATION__INTERPRETATION_CODE = SOCIAL_HISTORY_OBSERVATION_V4__INTERPRETATION_CODE;
+	int GENDER_IDENTITY_OBSERVATION_V4__INTERPRETATION_CODE = SOCIAL_HISTORY_OBSERVATION_V4__INTERPRETATION_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Method Code</b></em>' containment reference list.
@@ -87122,7 +87122,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GENDER_IDENTITY_OBSERVATION__METHOD_CODE = SOCIAL_HISTORY_OBSERVATION_V4__METHOD_CODE;
+	int GENDER_IDENTITY_OBSERVATION_V4__METHOD_CODE = SOCIAL_HISTORY_OBSERVATION_V4__METHOD_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Target Site Code</b></em>' containment reference list.
@@ -87131,7 +87131,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GENDER_IDENTITY_OBSERVATION__TARGET_SITE_CODE = SOCIAL_HISTORY_OBSERVATION_V4__TARGET_SITE_CODE;
+	int GENDER_IDENTITY_OBSERVATION_V4__TARGET_SITE_CODE = SOCIAL_HISTORY_OBSERVATION_V4__TARGET_SITE_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Subject</b></em>' containment reference.
@@ -87140,7 +87140,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GENDER_IDENTITY_OBSERVATION__SUBJECT = SOCIAL_HISTORY_OBSERVATION_V4__SUBJECT;
+	int GENDER_IDENTITY_OBSERVATION_V4__SUBJECT = SOCIAL_HISTORY_OBSERVATION_V4__SUBJECT;
 
 	/**
 	 * The feature id for the '<em><b>Specimen</b></em>' containment reference list.
@@ -87149,7 +87149,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GENDER_IDENTITY_OBSERVATION__SPECIMEN = SOCIAL_HISTORY_OBSERVATION_V4__SPECIMEN;
+	int GENDER_IDENTITY_OBSERVATION_V4__SPECIMEN = SOCIAL_HISTORY_OBSERVATION_V4__SPECIMEN;
 
 	/**
 	 * The feature id for the '<em><b>Performer</b></em>' containment reference list.
@@ -87158,7 +87158,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GENDER_IDENTITY_OBSERVATION__PERFORMER = SOCIAL_HISTORY_OBSERVATION_V4__PERFORMER;
+	int GENDER_IDENTITY_OBSERVATION_V4__PERFORMER = SOCIAL_HISTORY_OBSERVATION_V4__PERFORMER;
 
 	/**
 	 * The feature id for the '<em><b>Author</b></em>' containment reference list.
@@ -87167,7 +87167,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GENDER_IDENTITY_OBSERVATION__AUTHOR = SOCIAL_HISTORY_OBSERVATION_V4__AUTHOR;
+	int GENDER_IDENTITY_OBSERVATION_V4__AUTHOR = SOCIAL_HISTORY_OBSERVATION_V4__AUTHOR;
 
 	/**
 	 * The feature id for the '<em><b>Informant</b></em>' containment reference list.
@@ -87176,7 +87176,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GENDER_IDENTITY_OBSERVATION__INFORMANT = SOCIAL_HISTORY_OBSERVATION_V4__INFORMANT;
+	int GENDER_IDENTITY_OBSERVATION_V4__INFORMANT = SOCIAL_HISTORY_OBSERVATION_V4__INFORMANT;
 
 	/**
 	 * The feature id for the '<em><b>Participant</b></em>' containment reference list.
@@ -87185,7 +87185,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GENDER_IDENTITY_OBSERVATION__PARTICIPANT = SOCIAL_HISTORY_OBSERVATION_V4__PARTICIPANT;
+	int GENDER_IDENTITY_OBSERVATION_V4__PARTICIPANT = SOCIAL_HISTORY_OBSERVATION_V4__PARTICIPANT;
 
 	/**
 	 * The feature id for the '<em><b>Entry Relationship</b></em>' containment reference list.
@@ -87194,7 +87194,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GENDER_IDENTITY_OBSERVATION__ENTRY_RELATIONSHIP = SOCIAL_HISTORY_OBSERVATION_V4__ENTRY_RELATIONSHIP;
+	int GENDER_IDENTITY_OBSERVATION_V4__ENTRY_RELATIONSHIP = SOCIAL_HISTORY_OBSERVATION_V4__ENTRY_RELATIONSHIP;
 
 	/**
 	 * The feature id for the '<em><b>Reference</b></em>' containment reference list.
@@ -87203,7 +87203,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GENDER_IDENTITY_OBSERVATION__REFERENCE = SOCIAL_HISTORY_OBSERVATION_V4__REFERENCE;
+	int GENDER_IDENTITY_OBSERVATION_V4__REFERENCE = SOCIAL_HISTORY_OBSERVATION_V4__REFERENCE;
 
 	/**
 	 * The feature id for the '<em><b>Precondition</b></em>' containment reference list.
@@ -87212,7 +87212,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GENDER_IDENTITY_OBSERVATION__PRECONDITION = SOCIAL_HISTORY_OBSERVATION_V4__PRECONDITION;
+	int GENDER_IDENTITY_OBSERVATION_V4__PRECONDITION = SOCIAL_HISTORY_OBSERVATION_V4__PRECONDITION;
 
 	/**
 	 * The feature id for the '<em><b>Reference Range</b></em>' containment reference list.
@@ -87221,7 +87221,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GENDER_IDENTITY_OBSERVATION__REFERENCE_RANGE = SOCIAL_HISTORY_OBSERVATION_V4__REFERENCE_RANGE;
+	int GENDER_IDENTITY_OBSERVATION_V4__REFERENCE_RANGE = SOCIAL_HISTORY_OBSERVATION_V4__REFERENCE_RANGE;
 
 	/**
 	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
@@ -87230,7 +87230,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GENDER_IDENTITY_OBSERVATION__NULL_FLAVOR = SOCIAL_HISTORY_OBSERVATION_V4__NULL_FLAVOR;
+	int GENDER_IDENTITY_OBSERVATION_V4__NULL_FLAVOR = SOCIAL_HISTORY_OBSERVATION_V4__NULL_FLAVOR;
 
 	/**
 	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
@@ -87239,7 +87239,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GENDER_IDENTITY_OBSERVATION__CLASS_CODE = SOCIAL_HISTORY_OBSERVATION_V4__CLASS_CODE;
+	int GENDER_IDENTITY_OBSERVATION_V4__CLASS_CODE = SOCIAL_HISTORY_OBSERVATION_V4__CLASS_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Mood Code</b></em>' attribute.
@@ -87248,7 +87248,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GENDER_IDENTITY_OBSERVATION__MOOD_CODE = SOCIAL_HISTORY_OBSERVATION_V4__MOOD_CODE;
+	int GENDER_IDENTITY_OBSERVATION_V4__MOOD_CODE = SOCIAL_HISTORY_OBSERVATION_V4__MOOD_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Negation Ind</b></em>' attribute.
@@ -87257,7 +87257,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GENDER_IDENTITY_OBSERVATION__NEGATION_IND = SOCIAL_HISTORY_OBSERVATION_V4__NEGATION_IND;
+	int GENDER_IDENTITY_OBSERVATION_V4__NEGATION_IND = SOCIAL_HISTORY_OBSERVATION_V4__NEGATION_IND;
 
 	/**
 	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
@@ -87266,16 +87266,16 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GENDER_IDENTITY_OBSERVATION__IN_FULFILLMENT_OF1 = SOCIAL_HISTORY_OBSERVATION_V4__IN_FULFILLMENT_OF1;
+	int GENDER_IDENTITY_OBSERVATION_V4__IN_FULFILLMENT_OF1 = SOCIAL_HISTORY_OBSERVATION_V4__IN_FULFILLMENT_OF1;
 
 	/**
-	 * The number of structural features of the '<em>Gender Identity Observation</em>' class.
+	 * The number of structural features of the '<em>Gender Identity Observation V4</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int GENDER_IDENTITY_OBSERVATION_FEATURE_COUNT = SOCIAL_HISTORY_OBSERVATION_V4_FEATURE_COUNT + 0;
+	int GENDER_IDENTITY_OBSERVATION_V4_FEATURE_COUNT = SOCIAL_HISTORY_OBSERVATION_V4_FEATURE_COUNT + 0;
 
 	/**
 	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.consol.GeneralHeaderConstraints <em>General Header Constraints</em>}'.
@@ -90968,14 +90968,14 @@ public interface ConsolPackage extends EPackage {
 	EClass getBasicOccupationObservation();
 
 	/**
-	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.consol.GenderIdentityObservation <em>Gender Identity Observation</em>}'.
+	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.consol.GenderIdentityObservationV4 <em>Gender Identity Observation V4</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Gender Identity Observation</em>'.
-	 * @see org.openhealthtools.mdht.uml.cda.consol.GenderIdentityObservation
+	 * @return the meta object for class '<em>Gender Identity Observation V4</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.GenderIdentityObservationV4
 	 * @generated
 	 */
-	EClass getGenderIdentityObservation();
+	EClass getGenderIdentityObservationV4();
 
 	/**
 	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.consol.CriticalityObservation <em>Criticality Observation</em>}'.
@@ -94710,14 +94710,14 @@ public interface ConsolPackage extends EPackage {
 		EClass BASIC_OCCUPATION_OBSERVATION = eINSTANCE.getBasicOccupationObservation();
 
 		/**
-		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.GenderIdentityObservationImpl <em>Gender Identity Observation</em>}' class.
+		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.GenderIdentityObservationV4Impl <em>Gender Identity Observation V4</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.GenderIdentityObservationImpl
-		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getGenderIdentityObservation()
+		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.GenderIdentityObservationV4Impl
+		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getGenderIdentityObservationV4()
 		 * @generated
 		 */
-		EClass GENDER_IDENTITY_OBSERVATION = eINSTANCE.getGenderIdentityObservation();
+		EClass GENDER_IDENTITY_OBSERVATION_V4 = eINSTANCE.getGenderIdentityObservationV4();
 
 		/**
 		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.CriticalityObservationImpl <em>Criticality Observation</em>}' class.

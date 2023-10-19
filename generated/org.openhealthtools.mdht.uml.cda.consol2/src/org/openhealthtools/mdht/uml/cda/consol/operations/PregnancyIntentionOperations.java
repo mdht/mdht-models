@@ -1,26 +1,24 @@
-/**
- */
 package org.openhealthtools.mdht.uml.cda.consol.operations;
 
+import java.util.Collection;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
-
+import org.eclipse.emf.ecore.EClassifier;
+import org.eclipse.emf.ecore.EObject;
 import org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations;
-
 import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
-
 import org.eclipse.ocl.ParserException;
-
+import org.eclipse.ocl.Query;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
-
+import org.eclipse.ocl.expressions.OCLExpression;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.PregnancyIntention;
-
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
+import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
 
 /**
  * <!-- begin-user-doc -->
@@ -34,13 +32,13 @@ import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PregnancyIntention#validatePregnancyIntentionId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pregnancy Intention Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PregnancyIntention#validatePregnancyIntentionStatusCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pregnancy Intention Status Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PregnancyIntention#validatePregnancyIntentionStatusCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pregnancy Intention Status Code P</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PregnancyIntention#validatePregnancyIntentionEffectiveTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pregnancy Intention Effective Time</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PregnancyIntention#validatePregnancyIntentionValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pregnancy Intention Value</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PregnancyIntention#validatePregnancyIntentionValueP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pregnancy Intention Value P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PregnancyIntention#validatePregnancyIntentionClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pregnancy Intention Class Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PregnancyIntention#validatePregnancyIntentionMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pregnancy Intention Mood Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PregnancyIntention#validatePregnancyIntentionCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pregnancy Intention Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PregnancyIntention#validatePregnancyIntentionCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pregnancy Intention Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PregnancyIntention#validatePregnancyIntentionEffectiveTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pregnancy Intention Effective Time</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PregnancyIntention#validatePregnancyIntentionIVLTSLow(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pregnancy Intention IVLTS Low</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PregnancyIntention#validatePregnancyIntentionIVLTSHigh(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pregnancy Intention IVLTS High</em>}</li>
  * </ul>
@@ -101,7 +99,7 @@ public class PregnancyIntentionOperations extends ClinicalStatementOperations {
 	public static boolean validatePregnancyIntentionTemplateId(PregnancyIntention pregnancyIntention,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		DatatypesUtil.increment(context, "PregnancyIntentionPregnancyIntentionTemplateId", "null");
+		DatatypesUtil.increment(context, "PregnancyIntentionPregnancyIntentionTemplateId", "ERROR");
 
 		if (VALIDATE_PREGNANCY_INTENTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -122,12 +120,7 @@ public class PregnancyIntentionOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PREGNANCY_INTENTION__PREGNANCY_INTENTION_TEMPLATE_ID,
-						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-							"_UI_GenericInvariant_diagnostic",
-							new Object[] {
-									"PregnancyIntentionPregnancyIntentionTemplateId",
-									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-										pregnancyIntention, context) }),
+						ConsolPlugin.INSTANCE.getString("PregnancyIntentionPregnancyIntentionTemplateId"),
 						new Object[] { pregnancyIntention }));
 			}
 
@@ -171,7 +164,7 @@ public class PregnancyIntentionOperations extends ClinicalStatementOperations {
 	public static boolean validatePregnancyIntentionId(PregnancyIntention pregnancyIntention,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		DatatypesUtil.increment(context, "PregnancyIntentionPregnancyIntentionId", "null");
+		DatatypesUtil.increment(context, "PregnancyIntentionPregnancyIntentionId", "ERROR");
 
 		if (VALIDATE_PREGNANCY_INTENTION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -192,12 +185,7 @@ public class PregnancyIntentionOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PREGNANCY_INTENTION__PREGNANCY_INTENTION_ID,
-						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-							"_UI_GenericInvariant_diagnostic",
-							new Object[] {
-									"PregnancyIntentionPregnancyIntentionId",
-									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-										pregnancyIntention, context) }),
+						ConsolPlugin.INSTANCE.getString("PregnancyIntentionPregnancyIntentionId"),
 						new Object[] { pregnancyIntention }));
 			}
 
@@ -242,7 +230,7 @@ public class PregnancyIntentionOperations extends ClinicalStatementOperations {
 	public static boolean validatePregnancyIntentionStatusCode(PregnancyIntention pregnancyIntention,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		DatatypesUtil.increment(context, "PregnancyIntentionPregnancyIntentionStatusCode", "null");
+		DatatypesUtil.increment(context, "PregnancyIntentionPregnancyIntentionStatusCode", "ERROR");
 
 		if (VALIDATE_PREGNANCY_INTENTION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -263,12 +251,7 @@ public class PregnancyIntentionOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PREGNANCY_INTENTION__PREGNANCY_INTENTION_STATUS_CODE,
-						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-							"_UI_GenericInvariant_diagnostic",
-							new Object[] {
-									"PregnancyIntentionPregnancyIntentionStatusCode",
-									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-										pregnancyIntention, context) }),
+						ConsolPlugin.INSTANCE.getString("PregnancyIntentionPregnancyIntentionStatusCode"),
 						new Object[] { pregnancyIntention }));
 			}
 
@@ -312,7 +295,7 @@ public class PregnancyIntentionOperations extends ClinicalStatementOperations {
 	public static boolean validatePregnancyIntentionStatusCodeP(PregnancyIntention pregnancyIntention,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		DatatypesUtil.increment(context, "PregnancyIntentionPregnancyIntentionStatusCodeP", "null");
+		DatatypesUtil.increment(context, "PregnancyIntentionPregnancyIntentionStatusCodeP", "ERROR");
 
 		if (VALIDATE_PREGNANCY_INTENTION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -334,84 +317,7 @@ public class PregnancyIntentionOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PREGNANCY_INTENTION__PREGNANCY_INTENTION_STATUS_CODE_P,
-						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-							"_UI_GenericInvariant_diagnostic",
-							new Object[] {
-									"PregnancyIntentionPregnancyIntentionStatusCodeP",
-									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-										pregnancyIntention, context) }),
-						new Object[] { pregnancyIntention }));
-			}
-
-			return false;
-		}
-		return true;
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validatePregnancyIntentionEffectiveTime(PregnancyIntention, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pregnancy Intention Effective Time</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validatePregnancyIntentionEffectiveTime(PregnancyIntention, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_PREGNANCY_INTENTION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.effectiveTime.oclIsUndefined() or self.effectiveTime.isNullFlavorUndefined()) implies (not self.effectiveTime.oclIsUndefined())";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validatePregnancyIntentionEffectiveTime(PregnancyIntention, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pregnancy Intention Effective Time</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validatePregnancyIntentionEffectiveTime(PregnancyIntention, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-
-	protected static ThreadLocal<Constraint> VALIDATE_PREGNANCY_INTENTION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param pregnancyIntention The receiving '<em><b>Pregnancy Intention</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-
-	public static boolean validatePregnancyIntentionEffectiveTime(PregnancyIntention pregnancyIntention,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		DatatypesUtil.increment(context, "PregnancyIntentionPregnancyIntentionEffectiveTime", "null");
-
-		if (VALIDATE_PREGNANCY_INTENTION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-
-			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.PREGNANCY_INTENTION);
-			try {
-				VALIDATE_PREGNANCY_INTENTION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
-					helper.createInvariant(
-						VALIDATE_PREGNANCY_INTENTION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-
-		if (!EOCL_ENV.get().createQuery(
-			VALIDATE_PREGNANCY_INTENTION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
-				pregnancyIntention)) {
-			if (diagnostics != null) {
-				diagnostics.add(
-					new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.PREGNANCY_INTENTION__PREGNANCY_INTENTION_EFFECTIVE_TIME,
-						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-							"_UI_GenericInvariant_diagnostic",
-							new Object[] {
-									"PregnancyIntentionPregnancyIntentionEffectiveTime",
-									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-										pregnancyIntention, context) }),
+						ConsolPlugin.INSTANCE.getString("PregnancyIntentionPregnancyIntentionStatusCodeP"),
 						new Object[] { pregnancyIntention }));
 			}
 
@@ -457,7 +363,7 @@ public class PregnancyIntentionOperations extends ClinicalStatementOperations {
 	public static boolean validatePregnancyIntentionValue(PregnancyIntention pregnancyIntention,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		DatatypesUtil.increment(context, "PregnancyIntentionPregnancyIntentionValue", "null");
+		DatatypesUtil.increment(context, "PregnancyIntentionPregnancyIntentionValue", "ERROR");
 
 		if (VALIDATE_PREGNANCY_INTENTION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -478,12 +384,7 @@ public class PregnancyIntentionOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PREGNANCY_INTENTION__PREGNANCY_INTENTION_VALUE,
-						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-							"_UI_GenericInvariant_diagnostic",
-							new Object[] {
-									"PregnancyIntentionPregnancyIntentionValue",
-									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-										pregnancyIntention, context) }),
+						ConsolPlugin.INSTANCE.getString("PregnancyIntentionPregnancyIntentionValue"),
 						new Object[] { pregnancyIntention }));
 			}
 
@@ -527,7 +428,7 @@ public class PregnancyIntentionOperations extends ClinicalStatementOperations {
 	public static boolean validatePregnancyIntentionValueP(PregnancyIntention pregnancyIntention,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		DatatypesUtil.increment(context, "PregnancyIntentionPregnancyIntentionValueP", "null");
+		DatatypesUtil.increment(context, "PregnancyIntentionPregnancyIntentionValueP", "ERROR");
 
 		if (VALIDATE_PREGNANCY_INTENTION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -548,12 +449,7 @@ public class PregnancyIntentionOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PREGNANCY_INTENTION__PREGNANCY_INTENTION_VALUE_P,
-						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-							"_UI_GenericInvariant_diagnostic",
-							new Object[] {
-									"PregnancyIntentionPregnancyIntentionValueP",
-									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-										pregnancyIntention, context) }),
+						ConsolPlugin.INSTANCE.getString("PregnancyIntentionPregnancyIntentionValueP"),
 						new Object[] { pregnancyIntention }));
 			}
 
@@ -597,7 +493,7 @@ public class PregnancyIntentionOperations extends ClinicalStatementOperations {
 	public static boolean validatePregnancyIntentionClassCode(PregnancyIntention pregnancyIntention,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		DatatypesUtil.increment(context, "PregnancyIntentionPregnancyIntentionClassCode", "null");
+		DatatypesUtil.increment(context, "PregnancyIntentionPregnancyIntentionClassCode", "ERROR");
 
 		if (VALIDATE_PREGNANCY_INTENTION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -618,12 +514,7 @@ public class PregnancyIntentionOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PREGNANCY_INTENTION__PREGNANCY_INTENTION_CLASS_CODE,
-						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-							"_UI_GenericInvariant_diagnostic",
-							new Object[] {
-									"PregnancyIntentionPregnancyIntentionClassCode",
-									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-										pregnancyIntention, context) }),
+						ConsolPlugin.INSTANCE.getString("PregnancyIntentionPregnancyIntentionClassCode"),
 						new Object[] { pregnancyIntention }));
 			}
 
@@ -667,7 +558,7 @@ public class PregnancyIntentionOperations extends ClinicalStatementOperations {
 	public static boolean validatePregnancyIntentionMoodCode(PregnancyIntention pregnancyIntention,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		DatatypesUtil.increment(context, "PregnancyIntentionPregnancyIntentionMoodCode", "null");
+		DatatypesUtil.increment(context, "PregnancyIntentionPregnancyIntentionMoodCode", "ERROR");
 
 		if (VALIDATE_PREGNANCY_INTENTION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -688,12 +579,7 @@ public class PregnancyIntentionOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PREGNANCY_INTENTION__PREGNANCY_INTENTION_MOOD_CODE,
-						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-							"_UI_GenericInvariant_diagnostic",
-							new Object[] {
-									"PregnancyIntentionPregnancyIntentionMoodCode",
-									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-										pregnancyIntention, context) }),
+						ConsolPlugin.INSTANCE.getString("PregnancyIntentionPregnancyIntentionMoodCode"),
 						new Object[] { pregnancyIntention }));
 			}
 
@@ -737,7 +623,7 @@ public class PregnancyIntentionOperations extends ClinicalStatementOperations {
 	public static boolean validatePregnancyIntentionCodeP(PregnancyIntention pregnancyIntention,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		DatatypesUtil.increment(context, "PregnancyIntentionPregnancyIntentionCodeP", "null");
+		DatatypesUtil.increment(context, "PregnancyIntentionPregnancyIntentionCodeP", "ERROR");
 
 		if (VALIDATE_PREGNANCY_INTENTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -758,13 +644,21 @@ public class PregnancyIntentionOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PREGNANCY_INTENTION__PREGNANCY_INTENTION_CODE_P,
-						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-							"_UI_GenericInvariant_diagnostic",
-							new Object[] {
-									"PregnancyIntentionPregnancyIntentionCodeP",
-									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-										pregnancyIntention, context) }),
+						ConsolPlugin.INSTANCE.getString("PregnancyIntentionPregnancyIntentionCodeP"),
 						new Object[] { pregnancyIntention }));
+			}
+
+			if (context != null) {
+				// generate a pass token for my dependent constraints to short-circuit or filter results
+				@SuppressWarnings("unchecked")
+				Collection<Object> passToken = (Collection<Object>) context.get(
+					"org.openhealthtools.mdht.uml.cda.consol.PregnancyIntentionCodeP");
+				if (passToken == null) {
+					// anticipate a reasonably healthy model
+					passToken = new java.util.ArrayList<>(3);
+					context.put("org.openhealthtools.mdht.uml.cda.consol.PregnancyIntentionCodeP", passToken);
+				}
+				passToken.add(pregnancyIntention);
 			}
 
 			return false;
@@ -809,7 +703,15 @@ public class PregnancyIntentionOperations extends ClinicalStatementOperations {
 	public static boolean validatePregnancyIntentionCode(PregnancyIntention pregnancyIntention,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		DatatypesUtil.increment(context, "PregnancyIntentionPregnancyIntentionCode", "null");
+		Object passToken = (context == null)
+				? null
+				: context.get("org.openhealthtools.mdht.uml.cda.consol.PregnancyIntentionCodeP");
+		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(pregnancyIntention)) {
+			// I have a free pass to short-circuit
+			return true;
+		}
+
+		DatatypesUtil.increment(context, "PregnancyIntentionPregnancyIntentionCode", "ERROR");
 
 		if (VALIDATE_PREGNANCY_INTENTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -830,12 +732,74 @@ public class PregnancyIntentionOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PREGNANCY_INTENTION__PREGNANCY_INTENTION_CODE,
-						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-							"_UI_GenericInvariant_diagnostic",
-							new Object[] {
-									"PregnancyIntentionPregnancyIntentionCode",
-									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-										pregnancyIntention, context) }),
+						ConsolPlugin.INSTANCE.getString("PregnancyIntentionPregnancyIntentionCode"),
+						new Object[] { pregnancyIntention }));
+			}
+
+			return false;
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validatePregnancyIntentionEffectiveTime(PregnancyIntention, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pregnancy Intention Effective Time</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validatePregnancyIntentionEffectiveTime(PregnancyIntention, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_PREGNANCY_INTENTION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.effectiveTime.oclIsUndefined() or self.effectiveTime.isNullFlavorUndefined()) implies (not self.effectiveTime.oclIsUndefined())";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validatePregnancyIntentionEffectiveTime(PregnancyIntention, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pregnancy Intention Effective Time</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validatePregnancyIntentionEffectiveTime(PregnancyIntention, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static ThreadLocal<Constraint> VALIDATE_PREGNANCY_INTENTION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param pregnancyIntention The receiving '<em><b>Pregnancy Intention</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+
+	public static boolean validatePregnancyIntentionEffectiveTime(PregnancyIntention pregnancyIntention,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "PregnancyIntentionPregnancyIntentionEffectiveTime", "ERROR");
+
+		if (VALIDATE_PREGNANCY_INTENTION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.PREGNANCY_INTENTION);
+			try {
+				VALIDATE_PREGNANCY_INTENTION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_PREGNANCY_INTENTION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_PREGNANCY_INTENTION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				pregnancyIntention)) {
+			if (diagnostics != null) {
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PREGNANCY_INTENTION__PREGNANCY_INTENTION_EFFECTIVE_TIME,
+						ConsolPlugin.INSTANCE.getString("PregnancyIntentionPregnancyIntentionEffectiveTime"),
 						new Object[] { pregnancyIntention }));
 			}
 
@@ -863,7 +827,7 @@ public class PregnancyIntentionOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_PREGNANCY_INTENTION_IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_PREGNANCY_INTENTION_IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -876,40 +840,43 @@ public class PregnancyIntentionOperations extends ClinicalStatementOperations {
 	 * @generated
 	 */
 
+	@SuppressWarnings("unchecked")
 	public static boolean validatePregnancyIntentionIVLTSLow(PregnancyIntention pregnancyIntention,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		DatatypesUtil.increment(context, "PregnancyIntentionPregnancyIntentionIVLTSLow", "null");
+		DatatypesUtil.increment(context, "PregnancyIntentionPregnancyIntentionIVLTSLow", "ERROR");
 
-		if (VALIDATE_PREGNANCY_INTENTION_IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		if (VALIDATE_PREGNANCY_INTENTION_IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PREGNANCY_INTENTION);
 			try {
-				VALIDATE_PREGNANCY_INTENTION_IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
-					helper.createInvariant(VALIDATE_PREGNANCY_INTENTION_IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_PREGNANCY_INTENTION_IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PREGNANCY_INTENTION_IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(
+					EOCL_ENV.get().createQuery(oclExpression));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 
-		if (!EOCL_ENV.get().createQuery(
-			VALIDATE_PREGNANCY_INTENTION_IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(pregnancyIntention)) {
-			if (diagnostics != null) {
-				diagnostics.add(
-					new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.PREGNANCY_INTENTION__PREGNANCY_INTENTION_IVLTS_LOW,
-						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-							"_UI_GenericInvariant_diagnostic",
-							new Object[] {
-									"PregnancyIntentionPregnancyIntentionIVLTSLow",
-									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-										pregnancyIntention, context) }),
-						new Object[] { pregnancyIntention }));
-			}
+		Object oclResult = VALIDATE_PREGNANCY_INTENTION_IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(
+			pregnancyIntention);
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
 
-			return false;
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.PREGNANCY_INTENTION__PREGNANCY_INTENTION_IVLTS_LOW,
+							ConsolPlugin.INSTANCE.getString("PregnancyIntentionPregnancyIntentionIVLTSLow"),
+							new Object[] { eObject }));
+				}
+
+			}
+			return oclResultSet.isEmpty();
 		}
 		return true;
 	}
@@ -933,7 +900,9 @@ public class PregnancyIntentionOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_PREGNANCY_INTENTION_IVLTS_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_PREGNANCY_INTENTION_IVLTS_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<>();
+
+	protected static final String VALIDATE_BASIC_OCCUPATION_OBSERVATION_IVLTS_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.effectiveTime->excluding(null)->select(isNullFlavorUndefined())->reject( ( isNullFlavorUndefined() implies ((high.oclIsUndefined() or high.isNullFlavorUndefined()) implies (not high.oclIsUndefined()) )))";
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -946,40 +915,43 @@ public class PregnancyIntentionOperations extends ClinicalStatementOperations {
 	 * @generated
 	 */
 
+	@SuppressWarnings("unchecked")
 	public static boolean validatePregnancyIntentionIVLTSHigh(PregnancyIntention pregnancyIntention,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		DatatypesUtil.increment(context, "PregnancyIntentionPregnancyIntentionIVLTSHigh", "null");
+		DatatypesUtil.increment(context, "PregnancyIntentionPregnancyIntentionIVLTSHigh", "ERROR");
 
-		if (VALIDATE_PREGNANCY_INTENTION_IVLTS_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		if (VALIDATE_PREGNANCY_INTENTION_IVLTS_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PREGNANCY_INTENTION);
 			try {
-				VALIDATE_PREGNANCY_INTENTION_IVLTS_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
-					helper.createInvariant(VALIDATE_PREGNANCY_INTENTION_IVLTS_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_PREGNANCY_INTENTION_IVLTS_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PREGNANCY_INTENTION_IVLTS_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(
+					EOCL_ENV.get().createQuery(oclExpression));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 
-		if (!EOCL_ENV.get().createQuery(
-			VALIDATE_PREGNANCY_INTENTION_IVLTS_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(pregnancyIntention)) {
-			if (diagnostics != null) {
-				diagnostics.add(
-					new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.PREGNANCY_INTENTION__PREGNANCY_INTENTION_IVLTS_HIGH,
-						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-							"_UI_GenericInvariant_diagnostic",
-							new Object[] {
-									"PregnancyIntentionPregnancyIntentionIVLTSHigh",
-									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-										pregnancyIntention, context) }),
-						new Object[] { pregnancyIntention }));
-			}
+		Object oclResult = VALIDATE_PREGNANCY_INTENTION_IVLTS_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(
+			pregnancyIntention);
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
 
-			return false;
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.PREGNANCY_INTENTION__PREGNANCY_INTENTION_IVLTS_HIGH,
+							ConsolPlugin.INSTANCE.getString("PregnancyIntentionPregnancyIntentionIVLTSHigh"),
+							new Object[] { eObject }));
+				}
+
+			}
+			return oclResultSet.isEmpty();
 		}
 		return true;
 	}
