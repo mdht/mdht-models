@@ -17,7 +17,7 @@ import org.eclipse.mdht.emf.runtime.util.Initializer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getMedicationDispenseV4()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='MedicationDispense2TemplateId MedicationDispenseV4Code MedicationDispenseV4CodeP' templateId.root='2.16.840.1.113883.10.20.22.4.18' templateId.extension='2023-05-01' code.codeSystem='2.16.840.1.113883.4.642.4.1313' code.codeSystemName='MedicaitonDispenseStatus' constraints.validation.dependOn.MedicationDispenseV4Code='MedicationDispenseV4CodeP'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='MedicationDispense2TemplateId MedicationDispenseV4Code MedicationDispenseV4CodeP MedicationDispenseStatusCode MedicationDispenseStatusCodeP' templateId.root='2.16.840.1.113883.10.20.22.4.18' templateId.extension='2023-05-01' code.codeSystem='2.16.840.1.113883.4.642.4.1313' code.codeSystemName='MedicaitonDispenseStatus' statusCode.code='completed' constraints.validation.dependOn.MedicationDispenseStatusCode='MedicationDispenseStatusCodeP'"
  *        annotation="duplicates"
  * @generated
  */

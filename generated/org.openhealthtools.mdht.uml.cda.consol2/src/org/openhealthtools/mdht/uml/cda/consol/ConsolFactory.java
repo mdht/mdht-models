@@ -3370,6 +3370,24 @@ public interface ConsolFactory extends EFactory {
 	TribalAffiliation createTribalAffiliation();
 
 	/**
+	 * Returns a new object of class '<em>Policy Activity V4</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Policy Activity V4</em>'.
+	 * @generated
+	 */
+	PolicyActivityV4 createPolicyActivityV4();
+
+	/**
+	 * Returns a new object of class '<em>Result Organizer V4</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Result Organizer V4</em>'.
+	 * @generated
+	 */
+	ResultOrganizerV4 createResultOrganizerV4();
+
+	/**
 	 * Returns a new object of class '<em>Criticality Observation</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

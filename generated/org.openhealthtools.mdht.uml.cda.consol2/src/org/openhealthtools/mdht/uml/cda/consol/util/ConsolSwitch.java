@@ -7646,6 +7646,52 @@ public class ConsolSwitch<T> {
 				}
 				return result;
 			}
+			case ConsolPackage.POLICY_ACTIVITY_V4: {
+				PolicyActivityV4 policyActivityV4 = (PolicyActivityV4) theEObject;
+				T result = casePolicyActivityV4(policyActivityV4);
+				if (result == null) {
+					result = casePolicyActivity2(policyActivityV4);
+				}
+				if (result == null) {
+					result = casePolicyActivity(policyActivityV4);
+				}
+				if (result == null) {
+					result = caseCDA_Act(policyActivityV4);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(policyActivityV4);
+				}
+				if (result == null) {
+					result = caseAct(policyActivityV4);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(policyActivityV4);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.RESULT_ORGANIZER_V4: {
+				ResultOrganizerV4 resultOrganizerV4 = (ResultOrganizerV4) theEObject;
+				T result = caseResultOrganizerV4(resultOrganizerV4);
+				if (result == null) {
+					result = caseOrganizer(resultOrganizerV4);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(resultOrganizerV4);
+				}
+				if (result == null) {
+					result = caseAct(resultOrganizerV4);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(resultOrganizerV4);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
 			default:
 				return defaultCase(theEObject);
 		}
@@ -13185,6 +13231,36 @@ public class ConsolSwitch<T> {
 	 * @generated
 	 */
 	public T caseTribalAffiliation(TribalAffiliation object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Policy Activity V4</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Policy Activity V4</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T casePolicyActivityV4(PolicyActivityV4 object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Result Organizer V4</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Result Organizer V4</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseResultOrganizerV4(ResultOrganizerV4 object) {
 		return null;
 	}
 

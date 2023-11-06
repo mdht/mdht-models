@@ -809,6 +809,10 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createReasonV3();
 			case ConsolPackage.TRIBAL_AFFILIATION:
 				return createTribalAffiliation();
+			case ConsolPackage.POLICY_ACTIVITY_V4:
+				return createPolicyActivityV4();
+			case ConsolPackage.RESULT_ORGANIZER_V4:
+				return createResultOrganizerV4();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -4673,6 +4677,28 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	public TribalAffiliation createTribalAffiliation() {
 		TribalAffiliationImpl tribalAffiliation = new TribalAffiliationImpl();
 		return tribalAffiliation;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public PolicyActivityV4 createPolicyActivityV4() {
+		PolicyActivityV4Impl policyActivityV4 = new PolicyActivityV4Impl();
+		return policyActivityV4;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ResultOrganizerV4 createResultOrganizerV4() {
+		ResultOrganizerV4Impl resultOrganizerV4 = new ResultOrganizerV4Impl();
+		return resultOrganizerV4;
 	}
 
 	/**

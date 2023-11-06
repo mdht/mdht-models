@@ -9,6 +9,7 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.CS;
 import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
 import org.junit.Test;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
@@ -23,9 +24,11 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.MedicationDispenseV4Op
  * <p>
  * The following operations are supported:
  * <ul>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationDispenseV4#validateMedicationDispenseV4CodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Dispense V4 Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationDispenseV4#validateMedicationDispenseV4Code(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Dispense V4 Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationDispenseV4#validateMedicationDispenseV4CodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Dispense V4 Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationDispenseV4#validateMedicationDispense2TemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Dispense2 Template Id</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationDispenseV4#validateMedicationDispenseStatusCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Dispense Status Code P</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationDispenseV4#validateMedicationDispenseStatusCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Dispense Status Code</em>}</li>
  * </ul>
  * </p>
  *
@@ -145,6 +148,86 @@ public class MedicationDispenseV4Test extends CDAValidationTest {
 		};
 
 		validateMedicationDispense2TemplateIdTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateMedicationDispenseStatusCodeP() {
+		OperationsTestCase<MedicationDispenseV4> validateMedicationDispenseStatusCodePTestCase = new OperationsTestCase<MedicationDispenseV4>(
+			"validateMedicationDispenseStatusCodeP",
+			operationsForOCL.getOCLValue("VALIDATE_MEDICATION_DISPENSE_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(MedicationDispenseV4 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(MedicationDispenseV4 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return MedicationDispenseV4Operations.validateMedicationDispenseStatusCodeP(
+					(MedicationDispenseV4) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateMedicationDispenseStatusCodePTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateMedicationDispenseStatusCode() {
+		OperationsTestCase<MedicationDispenseV4> validateMedicationDispenseStatusCodeTestCase = new OperationsTestCase<MedicationDispenseV4>(
+			"validateMedicationDispenseStatusCode",
+			operationsForOCL.getOCLValue("VALIDATE_MEDICATION_DISPENSE_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(MedicationDispenseV4 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(MedicationDispenseV4 target) {
+				target.init();
+
+				CS cs = DatatypesFactory.eINSTANCE.createCS("completed");
+				target.setStatusCode(cs);
+
+			}
+
+			@Override
+			protected void setDependency(MedicationDispenseV4 target) {
+				Collection<Object> passToken = new java.util.ArrayList<>(3);
+				passToken.add(target);
+				map.put("org.openhealthtools.mdht.uml.cda.consol.MedicationDispenseStatusCodeP", passToken);
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return MedicationDispenseV4Operations.validateMedicationDispenseStatusCode(
+					(MedicationDispenseV4) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateMedicationDispenseStatusCodeTestCase.doValidationTest();
 	}
 
 	/**

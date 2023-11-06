@@ -77,6 +77,26 @@ public class MedicationDispenseV4Impl extends MedicationDispense2Impl implements
 	 * @generated
 	 */
 	@Override
+	public boolean validateMedicationDispenseStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicationDispenseV4Operations.validateMedicationDispenseStatusCodeP(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateMedicationDispenseStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicationDispenseV4Operations.validateMedicationDispenseStatusCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public MedicationDispenseV4 init() {
 		return Initializer.Util.init(this);
 	}

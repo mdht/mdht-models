@@ -18953,13 +18953,13 @@
       </genOperations>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="consol.ecore#//MedicationDispenseV4">
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//MedicationDispenseV4/MedicationDispenseV4CodeP">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//MedicationDispenseV4/MedicationDispenseV4CodeP/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//MedicationDispenseV4/MedicationDispenseV4CodeP/context"/>
-      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//MedicationDispenseV4/MedicationDispenseV4Code">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//MedicationDispenseV4/MedicationDispenseV4Code/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//MedicationDispenseV4/MedicationDispenseV4Code/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//MedicationDispenseV4/MedicationDispenseV4CodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//MedicationDispenseV4/MedicationDispenseV4CodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//MedicationDispenseV4/MedicationDispenseV4CodeP/context"/>
       </genOperations>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="consol.ecore#//ResultObservationV4">
@@ -19204,6 +19204,13 @@
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//TribalAffiliation/TribalAffiliationIVLTSHigh">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//TribalAffiliation/TribalAffiliationIVLTSHigh/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//TribalAffiliation/TribalAffiliationIVLTSHigh/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="consol.ecore#//PolicyActivityV4"/>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="consol.ecore#//ResultOrganizerV4">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ResultOrganizerV4/ResultOrganizerV4TemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ResultOrganizerV4/ResultOrganizerV4TemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ResultOrganizerV4/ResultOrganizerV4TemplateId/context"/>
       </genOperations>
     </genClasses>
   </genPackages>

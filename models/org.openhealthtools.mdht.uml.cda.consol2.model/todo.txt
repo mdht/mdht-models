@@ -31,7 +31,7 @@ Laboratory
 *** Medication Dispense (V3) - Added medication dispense code
 *** PolicyActivity(V4) (?)  - No apparent changes
 *** Pregnancy Intention in Next Year
-*** Result Observation (V4) (?) - No apparent changes
+*** Result Observation (V4) (?) - Added Specimen constraint
 *** Result Organizer (V4) (?) - No apparent changes
 *** Basic Industry Observation - Added Template
 *** Basic Occupation Observation - Added Template
