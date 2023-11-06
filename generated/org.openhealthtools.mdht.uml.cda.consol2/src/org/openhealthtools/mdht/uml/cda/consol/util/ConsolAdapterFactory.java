@@ -1964,8 +1964,8 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
-		public Adapter caseTribalAffiliationObservation(TribalAffiliationObservation object) {
-			return createTribalAffiliationObservationAdapter();
+		public Adapter caseTribalAffiliation(TribalAffiliation object) {
+			return createTribalAffiliationAdapter();
 		}
 
 		@Override
@@ -7465,16 +7465,16 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.TribalAffiliationObservation <em>Tribal Affiliation Observation</em>}'.
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.TribalAffiliation <em>Tribal Affiliation</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.consol.TribalAffiliationObservation
+	 * @see org.openhealthtools.mdht.uml.cda.consol.TribalAffiliation
 	 * @generated
 	 */
-	public Adapter createTribalAffiliationObservationAdapter() {
+	public Adapter createTribalAffiliationAdapter() {
 		return null;
 	}
 

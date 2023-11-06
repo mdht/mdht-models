@@ -36,7 +36,7 @@ Laboratory
 *** Basic Industry Observation - Added Template
 *** Basic Occupation Observation - Added Template
 *** Gender Identity Observation (V4) - Added Template
-Sexual Orientation Observation (V2) - No apparent changes - Perhaps the null flavor VS but it is a may and a should
+*** Sexual Orientation Observation (V2) - No apparent changes - Perhaps the null flavor VS but it is a may and a should
 *** Related Person Relationship and Name Participant  
 
 

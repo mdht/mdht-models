@@ -807,8 +807,8 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createGenderIdentityObservationV4();
 			case ConsolPackage.REASON_V3:
 				return createReasonV3();
-			case ConsolPackage.TRIBAL_AFFILIATION_OBSERVATION:
-				return createTribalAffiliationObservation();
+			case ConsolPackage.TRIBAL_AFFILIATION:
+				return createTribalAffiliation();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -4670,9 +4670,9 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * @generated
 	 */
 	@Override
-	public TribalAffiliationObservation createTribalAffiliationObservation() {
-		TribalAffiliationObservationImpl tribalAffiliationObservation = new TribalAffiliationObservationImpl();
-		return tribalAffiliationObservation;
+	public TribalAffiliation createTribalAffiliation() {
+		TribalAffiliationImpl tribalAffiliation = new TribalAffiliationImpl();
+		return tribalAffiliation;
 	}
 
 	/**

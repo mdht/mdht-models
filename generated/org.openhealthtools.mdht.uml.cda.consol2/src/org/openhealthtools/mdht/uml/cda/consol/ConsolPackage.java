@@ -87576,23 +87576,302 @@ public interface ConsolPackage extends EPackage {
 	int REASON_V3_FEATURE_COUNT = CDAPackage.OBSERVATION_FEATURE_COUNT + 0;
 
 	/**
-	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.TribalAffiliationObservationImpl <em>Tribal Affiliation Observation</em>}' class.
+	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.TribalAffiliationImpl <em>Tribal Affiliation</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.TribalAffiliationObservationImpl
-	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getTribalAffiliationObservation()
+	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.TribalAffiliationImpl
+	 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getTribalAffiliation()
 	 * @generated
 	 */
-	int TRIBAL_AFFILIATION_OBSERVATION = 373;
+	int TRIBAL_AFFILIATION = 373;
 
 	/**
-	 * The number of structural features of the '<em>Tribal Affiliation Observation</em>' class.
+	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TRIBAL_AFFILIATION_OBSERVATION_FEATURE_COUNT = 0;
+	int TRIBAL_AFFILIATION__REALM_CODE = SOCIAL_HISTORY_OBSERVATION_V4__REALM_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TRIBAL_AFFILIATION__TYPE_ID = SOCIAL_HISTORY_OBSERVATION_V4__TYPE_ID;
+
+	/**
+	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TRIBAL_AFFILIATION__TEMPLATE_ID = SOCIAL_HISTORY_OBSERVATION_V4__TEMPLATE_ID;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TRIBAL_AFFILIATION__ID = SOCIAL_HISTORY_OBSERVATION_V4__ID;
+
+	/**
+	 * The feature id for the '<em><b>Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TRIBAL_AFFILIATION__CODE = SOCIAL_HISTORY_OBSERVATION_V4__CODE;
+
+	/**
+	 * The feature id for the '<em><b>Derivation Expr</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TRIBAL_AFFILIATION__DERIVATION_EXPR = SOCIAL_HISTORY_OBSERVATION_V4__DERIVATION_EXPR;
+
+	/**
+	 * The feature id for the '<em><b>Text</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TRIBAL_AFFILIATION__TEXT = SOCIAL_HISTORY_OBSERVATION_V4__TEXT;
+
+	/**
+	 * The feature id for the '<em><b>Status Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TRIBAL_AFFILIATION__STATUS_CODE = SOCIAL_HISTORY_OBSERVATION_V4__STATUS_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TRIBAL_AFFILIATION__EFFECTIVE_TIME = SOCIAL_HISTORY_OBSERVATION_V4__EFFECTIVE_TIME;
+
+	/**
+	 * The feature id for the '<em><b>Priority Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TRIBAL_AFFILIATION__PRIORITY_CODE = SOCIAL_HISTORY_OBSERVATION_V4__PRIORITY_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Repeat Number</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TRIBAL_AFFILIATION__REPEAT_NUMBER = SOCIAL_HISTORY_OBSERVATION_V4__REPEAT_NUMBER;
+
+	/**
+	 * The feature id for the '<em><b>Language Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TRIBAL_AFFILIATION__LANGUAGE_CODE = SOCIAL_HISTORY_OBSERVATION_V4__LANGUAGE_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Value</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TRIBAL_AFFILIATION__VALUE = SOCIAL_HISTORY_OBSERVATION_V4__VALUE;
+
+	/**
+	 * The feature id for the '<em><b>Interpretation Code</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TRIBAL_AFFILIATION__INTERPRETATION_CODE = SOCIAL_HISTORY_OBSERVATION_V4__INTERPRETATION_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Method Code</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TRIBAL_AFFILIATION__METHOD_CODE = SOCIAL_HISTORY_OBSERVATION_V4__METHOD_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Target Site Code</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TRIBAL_AFFILIATION__TARGET_SITE_CODE = SOCIAL_HISTORY_OBSERVATION_V4__TARGET_SITE_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Subject</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TRIBAL_AFFILIATION__SUBJECT = SOCIAL_HISTORY_OBSERVATION_V4__SUBJECT;
+
+	/**
+	 * The feature id for the '<em><b>Specimen</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TRIBAL_AFFILIATION__SPECIMEN = SOCIAL_HISTORY_OBSERVATION_V4__SPECIMEN;
+
+	/**
+	 * The feature id for the '<em><b>Performer</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TRIBAL_AFFILIATION__PERFORMER = SOCIAL_HISTORY_OBSERVATION_V4__PERFORMER;
+
+	/**
+	 * The feature id for the '<em><b>Author</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TRIBAL_AFFILIATION__AUTHOR = SOCIAL_HISTORY_OBSERVATION_V4__AUTHOR;
+
+	/**
+	 * The feature id for the '<em><b>Informant</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TRIBAL_AFFILIATION__INFORMANT = SOCIAL_HISTORY_OBSERVATION_V4__INFORMANT;
+
+	/**
+	 * The feature id for the '<em><b>Participant</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TRIBAL_AFFILIATION__PARTICIPANT = SOCIAL_HISTORY_OBSERVATION_V4__PARTICIPANT;
+
+	/**
+	 * The feature id for the '<em><b>Entry Relationship</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TRIBAL_AFFILIATION__ENTRY_RELATIONSHIP = SOCIAL_HISTORY_OBSERVATION_V4__ENTRY_RELATIONSHIP;
+
+	/**
+	 * The feature id for the '<em><b>Reference</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TRIBAL_AFFILIATION__REFERENCE = SOCIAL_HISTORY_OBSERVATION_V4__REFERENCE;
+
+	/**
+	 * The feature id for the '<em><b>Precondition</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TRIBAL_AFFILIATION__PRECONDITION = SOCIAL_HISTORY_OBSERVATION_V4__PRECONDITION;
+
+	/**
+	 * The feature id for the '<em><b>Reference Range</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TRIBAL_AFFILIATION__REFERENCE_RANGE = SOCIAL_HISTORY_OBSERVATION_V4__REFERENCE_RANGE;
+
+	/**
+	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TRIBAL_AFFILIATION__NULL_FLAVOR = SOCIAL_HISTORY_OBSERVATION_V4__NULL_FLAVOR;
+
+	/**
+	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TRIBAL_AFFILIATION__CLASS_CODE = SOCIAL_HISTORY_OBSERVATION_V4__CLASS_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Mood Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TRIBAL_AFFILIATION__MOOD_CODE = SOCIAL_HISTORY_OBSERVATION_V4__MOOD_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Negation Ind</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TRIBAL_AFFILIATION__NEGATION_IND = SOCIAL_HISTORY_OBSERVATION_V4__NEGATION_IND;
+
+	/**
+	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TRIBAL_AFFILIATION__IN_FULFILLMENT_OF1 = SOCIAL_HISTORY_OBSERVATION_V4__IN_FULFILLMENT_OF1;
+
+	/**
+	 * The number of structural features of the '<em>Tribal Affiliation</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TRIBAL_AFFILIATION_FEATURE_COUNT = SOCIAL_HISTORY_OBSERVATION_V4_FEATURE_COUNT + 0;
 
 	/**
 	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.consol.GeneralHeaderConstraints <em>General Header Constraints</em>}'.
@@ -91305,14 +91584,14 @@ public interface ConsolPackage extends EPackage {
 	EClass getReasonV3();
 
 	/**
-	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.consol.TribalAffiliationObservation <em>Tribal Affiliation Observation</em>}'.
+	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.consol.TribalAffiliation <em>Tribal Affiliation</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Tribal Affiliation Observation</em>'.
-	 * @see org.openhealthtools.mdht.uml.cda.consol.TribalAffiliationObservation
+	 * @return the meta object for class '<em>Tribal Affiliation</em>'.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.TribalAffiliation
 	 * @generated
 	 */
-	EClass getTribalAffiliationObservation();
+	EClass getTribalAffiliation();
 
 	/**
 	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.consol.CriticalityObservation <em>Criticality Observation</em>}'.
@@ -95067,14 +95346,14 @@ public interface ConsolPackage extends EPackage {
 		EClass REASON_V3 = eINSTANCE.getReasonV3();
 
 		/**
-		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.TribalAffiliationObservationImpl <em>Tribal Affiliation Observation</em>}' class.
+		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.TribalAffiliationImpl <em>Tribal Affiliation</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.TribalAffiliationObservationImpl
-		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getTribalAffiliationObservation()
+		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.TribalAffiliationImpl
+		 * @see org.openhealthtools.mdht.uml.cda.consol.impl.ConsolPackageImpl#getTribalAffiliation()
 		 * @generated
 		 */
-		EClass TRIBAL_AFFILIATION_OBSERVATION = eINSTANCE.getTribalAffiliationObservation();
+		EClass TRIBAL_AFFILIATION = eINSTANCE.getTribalAffiliation();
 
 		/**
 		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.CriticalityObservationImpl <em>Criticality Observation</em>}' class.

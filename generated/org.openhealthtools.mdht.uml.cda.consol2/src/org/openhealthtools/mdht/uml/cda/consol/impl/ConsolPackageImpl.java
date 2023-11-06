@@ -2503,7 +2503,7 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass tribalAffiliationObservationEClass = null;
+	private EClass tribalAffiliationEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -2694,7 +2694,7 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 
 	/**
 	 * Creates, registers, and initializes the <b>Package</b> for this model, and for any others upon which it depends.
-	 * 
+	 *
 	 * <p>This method is used to initialize {@link ConsolPackage#eINSTANCE} when that field is accessed.
 	 * Clients should not invoke it directly. Instead, they should simply access that field to obtain the package.
 	 * <!-- begin-user-doc -->
@@ -7570,12 +7570,12 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getTribalAffiliationObservation() {
-		if (tribalAffiliationObservationEClass == null) {
-			tribalAffiliationObservationEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+	public EClass getTribalAffiliation() {
+		if (tribalAffiliationEClass == null) {
+			tribalAffiliationEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
 				ConsolPackage.eNS_URI).getEClassifiers().get(373);
 		}
-		return tribalAffiliationObservationEClass;
+		return tribalAffiliationEClass;
 	}
 
 	/**

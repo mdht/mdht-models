@@ -18855,13 +18855,13 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//SocialHistoryObservationV4/SocialHistoryObservationV4MoodCode/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//SocialHistoryObservationV4/SocialHistoryObservationV4MoodCode/context"/>
       </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//SocialHistoryObservationV4/SocialHistoryObservationV4StatusCodeP">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//SocialHistoryObservationV4/SocialHistoryObservationV4StatusCodeP/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//SocialHistoryObservationV4/SocialHistoryObservationV4StatusCodeP/context"/>
-      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//SocialHistoryObservationV4/SocialHistoryObservationV4StatusCode">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//SocialHistoryObservationV4/SocialHistoryObservationV4StatusCode/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//SocialHistoryObservationV4/SocialHistoryObservationV4StatusCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//SocialHistoryObservationV4/SocialHistoryObservationV4StatusCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//SocialHistoryObservationV4/SocialHistoryObservationV4StatusCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//SocialHistoryObservationV4/SocialHistoryObservationV4StatusCodeP/context"/>
       </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//SocialHistoryObservationV4/SocialHistoryObservationV4EffectiveTime">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//SocialHistoryObservationV4/SocialHistoryObservationV4EffectiveTime/diagnostics"/>
@@ -19160,6 +19160,51 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ReasonV3/ReasonV3IVLTSHigh/context"/>
       </genOperations>
     </genClasses>
-    <genClasses xsi:type="genmodel:GenClass" ecoreClass="consol.ecore#//TribalAffiliationObservation"/>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="consol.ecore#//TribalAffiliation">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//TribalAffiliation/TribalAffiliationCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//TribalAffiliation/TribalAffiliationCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//TribalAffiliation/TribalAffiliationCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//TribalAffiliation/TribalAffiliationCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//TribalAffiliation/TribalAffiliationCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//TribalAffiliation/TribalAffiliationCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//TribalAffiliation/TribalAffiliationStatusCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//TribalAffiliation/TribalAffiliationStatusCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//TribalAffiliation/TribalAffiliationStatusCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//TribalAffiliation/TribalAffiliationEffectiveTime">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//TribalAffiliation/TribalAffiliationEffectiveTime/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//TribalAffiliation/TribalAffiliationEffectiveTime/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//TribalAffiliation/TribalAffiliationClassCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//TribalAffiliation/TribalAffiliationClassCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//TribalAffiliation/TribalAffiliationClassCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//TribalAffiliation/TribalAffiliationMoodCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//TribalAffiliation/TribalAffiliationMoodCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//TribalAffiliation/TribalAffiliationMoodCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//TribalAffiliation/TribalAffiliationIVLTSValue">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//TribalAffiliation/TribalAffiliationIVLTSValue/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//TribalAffiliation/TribalAffiliationIVLTSValue/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//TribalAffiliation/TribalAffiliationIVLTSLow">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//TribalAffiliation/TribalAffiliationIVLTSLow/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//TribalAffiliation/TribalAffiliationIVLTSLow/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//TribalAffiliation/TribalAffiliationIVLTSCenter">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//TribalAffiliation/TribalAffiliationIVLTSCenter/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//TribalAffiliation/TribalAffiliationIVLTSCenter/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//TribalAffiliation/TribalAffiliationIVLTSWidth">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//TribalAffiliation/TribalAffiliationIVLTSWidth/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//TribalAffiliation/TribalAffiliationIVLTSWidth/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//TribalAffiliation/TribalAffiliationIVLTSHigh">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//TribalAffiliation/TribalAffiliationIVLTSHigh/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//TribalAffiliation/TribalAffiliationIVLTSHigh/context"/>
+      </genOperations>
+    </genClasses>
   </genPackages>
 </genmodel:GenModel>

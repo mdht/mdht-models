@@ -3361,13 +3361,13 @@ public interface ConsolFactory extends EFactory {
 	ReasonV3 createReasonV3();
 
 	/**
-	 * Returns a new object of class '<em>Tribal Affiliation Observation</em>'.
+	 * Returns a new object of class '<em>Tribal Affiliation</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Tribal Affiliation Observation</em>'.
+	 * @return a new object of class '<em>Tribal Affiliation</em>'.
 	 * @generated
 	 */
-	TribalAffiliationObservation createTribalAffiliationObservation();
+	TribalAffiliation createTribalAffiliation();
 
 	/**
 	 * Returns a new object of class '<em>Criticality Observation</em>'.
