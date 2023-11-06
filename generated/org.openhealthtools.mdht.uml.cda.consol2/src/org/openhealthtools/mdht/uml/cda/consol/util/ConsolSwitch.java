@@ -7603,6 +7603,34 @@ public class ConsolSwitch<T> {
 				}
 				return result;
 			}
+			case ConsolPackage.REASON_V3: {
+				ReasonV3 reasonV3 = (ReasonV3) theEObject;
+				T result = caseReasonV3(reasonV3);
+				if (result == null) {
+					result = caseObservation(reasonV3);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(reasonV3);
+				}
+				if (result == null) {
+					result = caseAct(reasonV3);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(reasonV3);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.TRIBAL_AFFILIATION_OBSERVATION: {
+				TribalAffiliationObservation tribalAffiliationObservation = (TribalAffiliationObservation) theEObject;
+				T result = caseTribalAffiliationObservation(tribalAffiliationObservation);
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
 			default:
 				return defaultCase(theEObject);
 		}
@@ -13112,6 +13140,36 @@ public class ConsolSwitch<T> {
 	 * @generated
 	 */
 	public T caseGenderIdentityObservationV4(GenderIdentityObservationV4 object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Reason V3</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Reason V3</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseReasonV3(ReasonV3 object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Tribal Affiliation Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Tribal Affiliation Observation</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseTribalAffiliationObservation(TribalAffiliationObservation object) {
 		return null;
 	}
 

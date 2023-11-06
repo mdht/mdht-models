@@ -22,7 +22,7 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.ResultObservationV4Ope
  * <p>
  * The following operations are supported:
  * <ul>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ResultObservationV4#validateResultObservationV4Specimen1(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Observation V4 Specimen1</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ResultObservationV4#validateResultObservationV4Specimen(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Observation V4 Specimen</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ResultObservationV4#validateResultObservation2TemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Observation2 Template Id</em>}</li>
  * </ul>
  * </p>
@@ -38,10 +38,10 @@ public class ResultObservationV4Test extends CDAValidationTest {
 	*/
 	@Test
 
-	public void testValidateResultObservationV4Specimen1() {
-		OperationsTestCase<ResultObservationV4> validateResultObservationV4Specimen1TestCase = new OperationsTestCase<ResultObservationV4>(
-			"validateResultObservationV4Specimen1",
-			operationsForOCL.getOCLValue("VALIDATE_RESULT_OBSERVATION_V4_SPECIMEN1__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+	public void testValidateResultObservationV4Specimen() {
+		OperationsTestCase<ResultObservationV4> validateResultObservationV4SpecimenTestCase = new OperationsTestCase<ResultObservationV4>(
+			"validateResultObservationV4Specimen",
+			operationsForOCL.getOCLValue("VALIDATE_RESULT_OBSERVATION_V4_SPECIMEN__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -59,13 +59,13 @@ public class ResultObservationV4Test extends CDAValidationTest {
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return ResultObservationV4Operations.validateResultObservationV4Specimen1(
+				return ResultObservationV4Operations.validateResultObservationV4Specimen(
 					(ResultObservationV4) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateResultObservationV4Specimen1TestCase.doValidationTest();
+		validateResultObservationV4SpecimenTestCase.doValidationTest();
 	}
 
 	/**

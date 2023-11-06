@@ -48,6 +48,24 @@ public class CoverageActivityV4Impl extends CoverageActivity2Impl implements Cov
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateCoverageActivityV4EffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return CoverageActivityV4Operations.validateCoverageActivityV4EffectiveTime(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateCoverageActivityV4IVLTSValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return CoverageActivityV4Operations.validateCoverageActivityV4IVLTSValue(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validateCoverageActivity2TemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CoverageActivityV4Operations.validateCoverageActivity2TemplateId(this, diagnostics, context);

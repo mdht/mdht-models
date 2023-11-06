@@ -25,7 +25,7 @@ Laboratory
 
 2023-05-01 updates
 *** US REALM Header (?) - Does not required US REALM previous versions
-*** Coverage (?) - No apparent changes
+*** Coverage - Added effective time should/value shall
 *** Disability Status Observation - Added Template
 *** Indication (V3) - No apparent changes - There is a note that the id can reference a problem in the document
 *** Medication Dispense (V3) - Added medication dispense code

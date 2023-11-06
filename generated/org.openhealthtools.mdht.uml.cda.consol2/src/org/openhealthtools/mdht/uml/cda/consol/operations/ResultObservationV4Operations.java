@@ -30,7 +30,7 @@ import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
  * <p>
  * The following operations are supported:
  * <ul>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ResultObservationV4#validateResultObservationV4Specimen1(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Observation V4 Specimen1</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ResultObservationV4#validateResultObservationV4Specimen(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Observation V4 Specimen</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ResultObservationV4#validateResultObservation2TemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Observation2 Template Id</em>}</li>
  * </ul>
  * </p>
@@ -56,25 +56,25 @@ public class ResultObservationV4Operations extends ResultObservation2Operations 
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateResultObservationV4Specimen1(ResultObservationV4, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Observation V4 Specimen1</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validateResultObservationV4Specimen(ResultObservationV4, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Observation V4 Specimen</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateResultObservationV4Specimen1(ResultObservationV4, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #validateResultObservationV4Specimen(ResultObservationV4, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_RESULT_OBSERVATION_V4_SPECIMEN1__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.specimen->exists(specimen : cda::Specimen | not specimen.oclIsUndefined() and specimen.oclIsKindOf(cda::Specimen))";
+	protected static final String VALIDATE_RESULT_OBSERVATION_V4_SPECIMEN__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.specimen->exists(specimen : cda::Specimen | not specimen.oclIsUndefined() and specimen.oclIsKindOf(cda::Specimen))";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateResultObservationV4Specimen1(ResultObservationV4, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Observation V4 Specimen1</em>}' invariant operation.
+	 * The cached OCL invariant for the '{@link #validateResultObservationV4Specimen(ResultObservationV4, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Observation V4 Specimen</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateResultObservationV4Specimen1(ResultObservationV4, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #validateResultObservationV4Specimen(ResultObservationV4, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_RESULT_OBSERVATION_V4_SPECIMEN1__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_RESULT_OBSERVATION_V4_SPECIMEN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -87,32 +87,31 @@ public class ResultObservationV4Operations extends ResultObservation2Operations 
 	 * @generated
 	 */
 
-	public static boolean validateResultObservationV4Specimen1(ResultObservationV4 resultObservationV4,
+	public static boolean validateResultObservationV4Specimen(ResultObservationV4 resultObservationV4,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		DatatypesUtil.increment(context, "ResultObservationV4ResultObservationV4Specimen1", "INFO");
+		DatatypesUtil.increment(context, "ResultObservationV4ResultObservationV4Specimen", "INFO");
 
-		if (VALIDATE_RESULT_OBSERVATION_V4_SPECIMEN1__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		if (VALIDATE_RESULT_OBSERVATION_V4_SPECIMEN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.RESULT_OBSERVATION_V4);
 			try {
-				VALIDATE_RESULT_OBSERVATION_V4_SPECIMEN1__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
-					helper.createInvariant(VALIDATE_RESULT_OBSERVATION_V4_SPECIMEN1__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+				VALIDATE_RESULT_OBSERVATION_V4_SPECIMEN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_RESULT_OBSERVATION_V4_SPECIMEN__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 
 		if (!EOCL_ENV.get().createQuery(
-			VALIDATE_RESULT_OBSERVATION_V4_SPECIMEN1__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
-				resultObservationV4)) {
+			VALIDATE_RESULT_OBSERVATION_V4_SPECIMEN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(resultObservationV4)) {
 			if (diagnostics != null) {
 				diagnostics.add(
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.RESULT_OBSERVATION_V4__RESULT_OBSERVATION_V4_SPECIMEN1,
-						ConsolPlugin.INSTANCE.getString("ResultObservationV4ResultObservationV4Specimen1"),
+						ConsolValidator.RESULT_OBSERVATION_V4__RESULT_OBSERVATION_V4_SPECIMEN,
+						ConsolPlugin.INSTANCE.getString("ResultObservationV4ResultObservationV4Specimen"),
 						new Object[] { resultObservationV4 }));
 			}
 

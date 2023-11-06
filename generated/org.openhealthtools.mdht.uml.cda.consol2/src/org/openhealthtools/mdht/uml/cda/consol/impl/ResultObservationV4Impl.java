@@ -48,8 +48,8 @@ public class ResultObservationV4Impl extends ResultObservation2Impl implements R
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateResultObservationV4Specimen1(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ResultObservationV4Operations.validateResultObservationV4Specimen1(this, diagnostics, context);
+	public boolean validateResultObservationV4Specimen(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ResultObservationV4Operations.validateResultObservationV4Specimen(this, diagnostics, context);
 	}
 
 	/**

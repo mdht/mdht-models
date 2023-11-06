@@ -1892,6 +1892,7 @@ Used to enumerate the relationships between two clinical documents for document 
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_gQO9QGwwEe66V-uSC1tAAg" name="IndustryNAICSDetailODH"/>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_oKQNgGwwEe66V-uSC1tAAg" name="OccupationalDataforHealth"/>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_AQ70AHQQEe66V-uSC1tAAg" name="TribalEntityUS"/>
     <profileApplication xmi:id="_2B97WxSVEeGGzu7fmW9pXw">
       <eAnnotations xmi:id="_2B97XBSVEeGGzu7fmW9pXw" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.openhealthtools.org/mdht/schemas/term/1#/"/>
@@ -3574,4 +3575,5 @@ Used to enumerate the relationships between two clinical documents for document 
     <codeSystem href="pathmap://CONSOL_MODEL///consol-vocab.uml#_oKQNgWwwEe66V-uSC1tAAg"/>
   </term:ValueSetVersion>
   <term:CodeSystemVersion xmi:id="_oKQNgWwwEe66V-uSC1tAAg" identifier="2.16.840.1.114222.4.5.327" base_Enumeration="_oKQNgGwwEe66V-uSC1tAAg"/>
+  <term:CodeSystemVersion xmi:id="_AQ8bEHQQEe66V-uSC1tAAg" identifier="2.16.840.1.113883.5.140" base_Enumeration="_AQ70AHQQEe66V-uSC1tAAg"/>
 </xmi:XMI>

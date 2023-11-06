@@ -3352,6 +3352,24 @@ public interface ConsolFactory extends EFactory {
 	GenderIdentityObservationV4 createGenderIdentityObservationV4();
 
 	/**
+	 * Returns a new object of class '<em>Reason V3</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Reason V3</em>'.
+	 * @generated
+	 */
+	ReasonV3 createReasonV3();
+
+	/**
+	 * Returns a new object of class '<em>Tribal Affiliation Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Tribal Affiliation Observation</em>'.
+	 * @generated
+	 */
+	TribalAffiliationObservation createTribalAffiliationObservation();
+
+	/**
 	 * Returns a new object of class '<em>Criticality Observation</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

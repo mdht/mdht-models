@@ -17,7 +17,7 @@ import org.eclipse.mdht.emf.runtime.util.Initializer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getResultObservationV4()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ResultObservation2TemplateId' templateId.root='2.16.840.1.113883.10.20.22.4.2' templateId.extension='2023-05-01' constraints.validation.info='ResultObservationV4Specimen1'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ResultObservation2TemplateId' templateId.root='2.16.840.1.113883.10.20.22.4.2' templateId.extension='2023-05-01' constraints.validation.info='ResultObservationV4Specimen'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolResultObservationV4Specimen constraints.validation.error='ResultObservationV4SpecimenSpecimenRole'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolResultObservationV4SpecimenSpecimenRole constraints.validation.error='ResultObservationV4SpecimenSpecimenRoleSpecimenPlayingEntity'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolResultObservationV4SpecimenSpecimenRolePlayingEntity code.codeSystem='2.16.840.1.113883.6.96' code.codeSystemName='SNOMEDCT' constraints.validation.error='ResultObservationV4SpecimenSpecimenRolePlayingEntityCode ResultObservationV4SpecimenSpecimenRolePlayingEntityCodeP'"
@@ -35,7 +35,7 @@ public interface ResultObservationV4 extends ResultObservation2 {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.specimen-&gt;exists(specimen : cda::Specimen | not specimen.oclIsUndefined() and specimen.oclIsKindOf(cda::Specimen))'"
 	 * @generated
 	 */
-	boolean validateResultObservationV4Specimen1(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateResultObservationV4Specimen(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
