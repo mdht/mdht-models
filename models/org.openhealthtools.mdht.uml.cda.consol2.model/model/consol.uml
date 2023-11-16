@@ -7069,7 +7069,7 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
   <CDA:PropertyValidation xmi:id="_0a6ZYHzwEe6-T-DQA50CNA" base_Property="_uzPmQ3zwEe6-T-DQA50CNA"/>
   <CDA:PropertyValidation xmi:id="_0_S40HzwEe6-T-DQA50CNA" base_Property="_uzPmRnzwEe6-T-DQA50CNA"/>
   <CDA:PropertyValidation xmi:id="_rWYrkHz1Ee6-T-DQA50CNA" base_Property="_rWXdcHz1Ee6-T-DQA50CNA">
-    <ruleId>CONF:1098-7455</ruleId>
+    <ruleId>CONF:14537-32361</ruleId>
   </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_zScjMHz1Ee6-T-DQA50CNA" code="completed" displayName="Completed" base_Property="_rWXdcHz1Ee6-T-DQA50CNA"/>
   <CDA:CDATemplate xmi:id="__Sq-YHz2Ee6-T-DQA50CNA" base_Class="_7M9GMHz2Ee6-T-DQA50CNA" templateId="2.16.840.1.113883.10.20.22.4.1" templateVersion="2023-05-01"/>

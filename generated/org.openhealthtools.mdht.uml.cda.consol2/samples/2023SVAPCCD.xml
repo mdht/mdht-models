@@ -1225,7 +1225,7 @@ This sample is designed to be used in conjunction with the HL7 CDA® R2 IG: C-CD
                             <statusCode code="completed"/>
                             <effectiveTime value="20221111"/>
                             <!-- From LOINC Answer Set associated with Disability Status [CUBS] -->
-                            <value xsi:type="CD" code="LA29243-5"
+                            <value xsi:type="CD" code="999999"
                                 displayName="I'm Vulnerable - I sometimes or periodically have acute or chronic symptoms affecting housing, employment, social interactions, etc."
                                 codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
                             <!-- May contain an Assessment Scale template With Assessment Scale observation containing the disability related questions   -->
@@ -2414,7 +2414,7 @@ This sample is designed to be used in conjunction with the HL7 CDA® R2 IG: C-CD
                                         codeSystemName="medicationdispense-status"
                                         displayName="In Progress"/>
                                     <!-- Fixed to completed -->
-                                    <statusCode code="completed"/>
+                                    <statusCode code="notcompleted"/>
                                     <effectiveTime value="201208151450-0800"/>
                                     <repeatNumber value="1"/>
                                     <quantity value="75"/>
@@ -3013,15 +3013,15 @@ This sample is designed to be used in conjunction with the HL7 CDA® R2 IG: C-CD
                     <entry typeCode="DRIV">
                         <act classCode="ACT" moodCode="EVN">
                             <!-- ** Coverage activity (V3) ** -->
-                            <templateId root="2.16.840.1.113883.10.20.22.4.60"
-                                extension="2015-08-01"/>
+                            <templateId root="2.16.840.1.113883.10.20.22.4.60" extension="2023-05-01"/>
+                            <templateId root="2.16.840.1.113883.10.20.22.4.60" extension="2015-08-01"/>
                             <templateId root="2.16.840.1.113883.10.20.22.4.60"/>
                             <id root="1fe2cdd0-7aad-11db-9fe1-0800200c9a66"/>
                             <code code="48768-6" codeSystem="2.16.840.1.113883.6.1"
                                 codeSystemName="LOINC" displayName="Payment sources"/>
                             <statusCode code="completed"/>
                             <!-- SHOULD contain zero or one [0..1] effectiveTime (CONF:4537-33064). Records the point in time when the coverage was checked for a patient, and applies for all policies within the coverage activity. The effectiveTime, if present, SHALL contain exactly one [1..1] @value (CONF:4537-33065).-->
-                            <effectiveTime value="20230501"/>
+                            <effectiveTime />
                             <entryRelationship typeCode="COMP">
                                 <sequenceNumber value="2"/>
                                 <act classCode="ACT" moodCode="EVN">
@@ -3136,7 +3136,7 @@ This sample is designed to be used in conjunction with the HL7 CDA® R2 IG: C-CD
                                                   <given>Boris</given>
                                                   <family>Betterhalf</family>
                                                 </name>
-                                             <!--   <sdtc:birthTime value="19750501"/> -->
+                                            <!--   <sdtc:birthTime value="19750501"/> -->
                                             </playingEntity>
                                         </participantRole>
                                     </participant>
@@ -3534,7 +3534,7 @@ This sample is designed to be used in conjunction with the HL7 CDA® R2 IG: C-CD
                         <organizer classCode="BATTERY" moodCode="EVN">
                             <!-- ** Result organizer (V4) ** -->
                             <templateId root="2.16.840.1.113883.10.20.22.4.1" extension="2023-05-01"/>
-                            <templateId root="2.16.840.1.113883.10.20.22.4.1" extension="2015-08-01"/>
+                            <!-- <templateId root="2.16.840.1.113883.10.20.22.4.1" extension="2015-08-01"/> -->
                             <templateId root="2.16.840.1.113883.10.20.22.4.1"/>
                             <id root="7d5a02b0-67a4-11db-bd13-0800200c9a66"/>
                             <code code="57021-8"
@@ -3545,6 +3545,11 @@ This sample is designed to be used in conjunction with the HL7 CDA® R2 IG: C-CD
                                 <low value="200803190830-0800"/>
                                 <high value="200803190830-0800"/>
                             </effectiveTime>
+                                <specimen typeCode="SPC">
+                                
+                               
+                            </specimen>
+                            
                             <component>
                                 <observation classCode="OBS" moodCode="EVN">
                                     <!-- ** Result observation (V4) ** -->

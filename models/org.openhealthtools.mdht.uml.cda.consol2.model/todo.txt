@@ -44,8 +44,8 @@ Result Organizer (V4) (?) -  ???? Did not generate specimen validation ????    A
 *** US REALM Header (?) - Does not required US REALM previous versions
 *** Coverage - Added to Test
 *** Disability Status Observation -Added to Test
-*** Indication (V3) - ???
-*** Medication Dispense (V3) - Added medication dispense code
+ Indication (V3) - ???
+*** Medication Dispense (V3) - Added to Test
 *** PolicyActivity(V4) (?)  - No apparent changes
 *** Pregnancy Intention in Next Year
 *** Result Observation (V4) (?) - Added Specimen constraint
