@@ -4193,6 +4193,9 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
         <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_3qHbQUxpEd6h-an5IXo-DA"/>
       </ownedAttribute>
       <nestedClassifier xmi:type="uml:Class" xmi:id="_XCQW8GbvEe6ibMoBz2vFZw" name="Specimen">
+        <ownedComment xmi:id="_Dt7oYIQAEe65RJ9boffi_A">
+          <body>INLINE</body>
+        </ownedComment>
         <generalization xmi:id="_XCQW8WbvEe6ibMoBz2vFZw">
           <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_mdwKcEcaEd6besF9iFIJkQ"/>
         </generalization>
@@ -4551,12 +4554,15 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
       <generalization xmi:id="_7M9GMXz2Ee6-T-DQA50CNA">
         <general xmi:type="uml:Class" href="pathmap://CDA_MODEL///cda.uml#_B6aX4EbvEd6besF9iFIJkQ"/>
       </generalization>
-      <ownedAttribute xmi:id="_8kncsHz2Ee6-T-DQA50CNA" name="specimen" visibility="private" type="_Dlal8Hz3Ee6-T-DQA50CNA" aggregation="composite" association="_8koDwHz2Ee6-T-DQA50CNA">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8kncsXz2Ee6-T-DQA50CNA"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8kncsnz2Ee6-T-DQA50CNA" value="*"/>
+      <ownedAttribute xmi:id="_7E6OAIQIEe6b6cxET2sbuA" name="specimen" visibility="private" type="_Dlal8Hz3Ee6-T-DQA50CNA" aggregation="composite" association="_7E61EIQIEe6b6cxET2sbuA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_i8PS8YQKEe6b6cxET2sbuA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_i8PS8IQKEe6b6cxET2sbuA" value="1"/>
         <subsettedProperty href="pathmap://CDA_MODEL///cda.uml#_yqVukUxpEd6h-an5IXo-DA"/>
       </ownedAttribute>
       <nestedClassifier xmi:type="uml:Class" xmi:id="_Dlal8Hz3Ee6-T-DQA50CNA" name="Specimen">
+        <ownedComment xmi:id="_imD9sIQBEe65RJ9boffi_A">
+          <body>INLINE</body>
+        </ownedComment>
         <generalization xmi:id="_Dlal8Xz3Ee6-T-DQA50CNA">
           <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_mdwKcEcaEd6besF9iFIJkQ"/>
         </generalization>
@@ -4566,6 +4572,9 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
           <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_OBFaQUoaEd6c3qsAxlFHaQ"/>
         </ownedAttribute>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_Dlal9Xz3Ee6-T-DQA50CNA" name="SpecimenRole">
+          <ownedComment xmi:id="_Dl4Q4IQGEe65RJ9boffi_A">
+            <body>INLINE</body>
+          </ownedComment>
           <generalization xmi:id="_Dlal9nz3Ee6-T-DQA50CNA">
             <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_nos6oEcaEd6besF9iFIJkQ"/>
           </generalization>
@@ -4588,8 +4597,13 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
         </nestedClassifier>
       </nestedClassifier>
     </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_8koDwHz2Ee6-T-DQA50CNA" memberEnd="_8kncsHz2Ee6-T-DQA50CNA _8koDwXz2Ee6-T-DQA50CNA">
-      <ownedEnd xmi:id="_8koDwXz2Ee6-T-DQA50CNA" type="_7M9GMHz2Ee6-T-DQA50CNA" association="_8koDwHz2Ee6-T-DQA50CNA"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_NR7m0IQDEe65RJ9boffi_A" name="IndicationV3">
+      <generalization xmi:id="_NR7m0YQDEe65RJ9boffi_A">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL///cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_7E61EIQIEe6b6cxET2sbuA" memberEnd="_7E6OAIQIEe6b6cxET2sbuA _7E7cIIQIEe6b6cxET2sbuA">
+      <ownedEnd xmi:id="_7E7cIIQIEe6b6cxET2sbuA" type="_7M9GMHz2Ee6-T-DQA50CNA" association="_7E61EIQIEe6b6cxET2sbuA"/>
     </packagedElement>
     <profileApplication xmi:id="_2B97UBSVEeGGzu7fmW9pXw">
       <eAnnotations xmi:id="_2B97URSVEeGGzu7fmW9pXw" source="http://www.eclipse.org/uml2/2.0.0/UML">
@@ -7065,4 +7079,7 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
   <CDA:CodeSystemConstraint xmi:id="_YamFEHz3Ee6-T-DQA50CNA" base_Property="_Dlal_Hz3Ee6-T-DQA50CNA">
     <reference href="pathmap://TERM_MODEL///CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
+  <CDA:CDATemplate xmi:id="_i_9O8IQCEe65RJ9boffi_A" base_Class="_vm-6QGwvEe66V-uSC1tAAg" templateId="2.16.840.1.113883.10.20.22.4.504" templateVersion="2023-05-01"/>
+  <CDA:CDATemplate xmi:id="_QUA3wIQDEe65RJ9boffi_A" base_Class="_NR7m0IQDEe65RJ9boffi_A" templateId="2.16.840.1.113883.10.20.22.4.19" templateVersion="2023-05-01"/>
+  <CDA:AssociationValidation xmi:id="_9Qk0UIQIEe6b6cxET2sbuA" base_Association="_7E61EIQIEe6b6cxET2sbuA"/>
 </xmi:XMI>

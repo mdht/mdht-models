@@ -24,6 +24,7 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.BasicIndustryObservati
  * <p>
  * The following operations are supported:
  * <ul>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.BasicIndustryObservation#validateBasicIndustryObservationTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Basic Industry Observation Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.BasicIndustryObservation#validateBasicIndustryObservationCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Basic Industry Observation Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.BasicIndustryObservation#validateBasicIndustryObservationStatusCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Basic Industry Observation Status Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.BasicIndustryObservation#validateBasicIndustryObservationStatusCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Basic Industry Observation Status Code P</em>}</li>
@@ -38,6 +39,41 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.BasicIndustryObservati
  */
 
 public class BasicIndustryObservationTest extends CDAValidationTest {
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateBasicIndustryObservationTemplateId() {
+		OperationsTestCase<BasicIndustryObservation> validateBasicIndustryObservationTemplateIdTestCase = new OperationsTestCase<BasicIndustryObservation>(
+			"validateBasicIndustryObservationTemplateId", operationsForOCL.getOCLValue(
+				"VALIDATE_BASIC_INDUSTRY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(BasicIndustryObservation target) {
+
+			}
+
+			@Override
+			protected void updateToPass(BasicIndustryObservation target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return BasicIndustryObservationOperations.validateBasicIndustryObservationTemplateId(
+					(BasicIndustryObservation) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateBasicIndustryObservationTemplateIdTestCase.doValidationTest();
+	}
 
 	/**
 	*

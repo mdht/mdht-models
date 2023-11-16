@@ -6,16 +6,13 @@ package org.openhealthtools.mdht.uml.cda.consol.tests;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
-
 import org.eclipse.emf.ecore.EObject;
-
+import org.eclipse.mdht.uml.cda.CDAFactory;
 import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
-
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
 import org.junit.Test;
-
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.ResultOrganizerV4;
-
 import org.openhealthtools.mdht.uml.cda.consol.operations.ResultOrganizerV4Operations;
 
 /**
@@ -27,6 +24,11 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.ResultOrganizerV4Opera
  * The following operations are supported:
  * <ul>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ResultOrganizerV4#validateResultOrganizerV4TemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Organizer V4 Template Id</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ResultOrganizerV4#validateResultOrganizerV4Specimen(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Organizer V4 Specimen</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ResultOrganizerV4#validateResultOrganizerV4SpecimenSpecimenRolePlayingEntityCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Organizer V4 Specimen Specimen Role Playing Entity Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ResultOrganizerV4#validateResultOrganizerV4SpecimenSpecimenRolePlayingEntityCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Organizer V4 Specimen Specimen Role Playing Entity Code P</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ResultOrganizerV4#validateResultOrganizerV4SpecimenSpecimenRoleSpecimenPlayingEntity(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Organizer V4 Specimen Specimen Role Specimen Playing Entity</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ResultOrganizerV4#validateResultOrganizerV4SpecimenSpecimenRole(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Organizer V4 Specimen Specimen Role</em>}</li>
  * </ul>
  * </p>
  *
@@ -68,6 +70,201 @@ public class ResultOrganizerV4Test extends CDAValidationTest {
 		};
 
 		validateResultOrganizerV4TemplateIdTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+
+	public void testValidateResultOrganizerV4Specimen() {
+		OperationsTestCase<ResultOrganizerV4> validateResultOrganizerV4SpecimenTestCase = new OperationsTestCase<ResultOrganizerV4>(
+			"validateResultOrganizerV4Specimen",
+			operationsForOCL.getOCLValue("VALIDATE_RESULT_ORGANIZER_V4_SPECIMEN__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(ResultOrganizerV4 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected void updateToPass(ResultOrganizerV4 target) {
+				target.getSpecimens().add(CDAFactory.eINSTANCE.createSpecimen());
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return ResultOrganizerV4Operations.validateResultOrganizerV4Specimen(
+					(ResultOrganizerV4) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateResultOrganizerV4SpecimenTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+
+	public void testValidateResultOrganizerV4SpecimenSpecimenRolePlayingEntityCode() {
+		OperationsTestCase<ResultOrganizerV4> validateResultOrganizerV4SpecimenSpecimenRolePlayingEntityCodeTestCase = new OperationsTestCase<ResultOrganizerV4>(
+			"validateResultOrganizerV4SpecimenSpecimenRolePlayingEntityCode",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_RESULT_ORGANIZER_V4_SPECIMEN_SPECIMEN_ROLE_PLAYING_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(ResultOrganizerV4 target) {
+				target.init();
+				target.getSpecimens().add(CDAFactory.eINSTANCE.createSpecimen());
+				target.getSpecimens().get(0).setSpecimenRole(CDAFactory.eINSTANCE.createSpecimenRole());
+				target.getSpecimens().get(0).getSpecimenRole().setSpecimenPlayingEntity(
+					CDAFactory.eINSTANCE.createPlayingEntity());
+
+			}
+
+			@Override
+			protected void updateToPass(ResultOrganizerV4 target) {
+				target.getSpecimens().get(0).getSpecimenRole().getSpecimenPlayingEntity().setCode(
+					DatatypesFactory.eINSTANCE.createCE("code", "2.16.840.1.113883.6.96"));
+				
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return ResultOrganizerV4Operations.validateResultOrganizerV4SpecimenSpecimenRolePlayingEntityCode(
+					(ResultOrganizerV4) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateResultOrganizerV4SpecimenSpecimenRolePlayingEntityCodeTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+
+	public void testValidateResultOrganizerV4SpecimenSpecimenRolePlayingEntityCodeP() {
+		OperationsTestCase<ResultOrganizerV4> validateResultOrganizerV4SpecimenSpecimenRolePlayingEntityCodePTestCase = new OperationsTestCase<ResultOrganizerV4>(
+			"validateResultOrganizerV4SpecimenSpecimenRolePlayingEntityCodeP",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_RESULT_ORGANIZER_V4_SPECIMEN_SPECIMEN_ROLE_PLAYING_ENTITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(ResultOrganizerV4 target) {
+				target.init();
+				target.getSpecimens().add(CDAFactory.eINSTANCE.createSpecimen());
+				target.getSpecimens().get(0).setSpecimenRole(CDAFactory.eINSTANCE.createSpecimenRole());
+				target.getSpecimens().get(0).getSpecimenRole().setSpecimenPlayingEntity(
+					CDAFactory.eINSTANCE.createPlayingEntity());
+			}
+
+			@Override
+			protected void updateToPass(ResultOrganizerV4 target) {
+				target.getSpecimens().get(0).getSpecimenRole().getSpecimenPlayingEntity().setCode(
+					DatatypesFactory.eINSTANCE.createCE());
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return ResultOrganizerV4Operations.validateResultOrganizerV4SpecimenSpecimenRolePlayingEntityCodeP(
+					(ResultOrganizerV4) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateResultOrganizerV4SpecimenSpecimenRolePlayingEntityCodePTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+
+	public void testValidateResultOrganizerV4SpecimenSpecimenRoleSpecimenPlayingEntity() {
+		OperationsTestCase<ResultOrganizerV4> validateResultOrganizerV4SpecimenSpecimenRoleSpecimenPlayingEntityTestCase = new OperationsTestCase<ResultOrganizerV4>(
+			"validateResultOrganizerV4SpecimenSpecimenRoleSpecimenPlayingEntity",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_RESULT_ORGANIZER_V4_SPECIMEN_SPECIMEN_ROLE_SPECIMEN_PLAYING_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(ResultOrganizerV4 target) {
+				target.init();
+				target.getSpecimens().add(CDAFactory.eINSTANCE.createSpecimen());
+				target.getSpecimens().get(0).setSpecimenRole(CDAFactory.eINSTANCE.createSpecimenRole());
+			}
+
+			@Override
+			protected void updateToPass(ResultOrganizerV4 target) {
+				target.getSpecimens().get(0).getSpecimenRole().setSpecimenPlayingEntity(
+					CDAFactory.eINSTANCE.createPlayingEntity());
+
+				// target.getSpecimens().get(0).setSpecimenRole(CDAFactory.eINSTANCE.createSpecimenRole());
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return ResultOrganizerV4Operations.validateResultOrganizerV4SpecimenSpecimenRoleSpecimenPlayingEntity(
+					(ResultOrganizerV4) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateResultOrganizerV4SpecimenSpecimenRoleSpecimenPlayingEntityTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+
+	public void testValidateResultOrganizerV4SpecimenSpecimenRole() {
+		OperationsTestCase<ResultOrganizerV4> validateResultOrganizerV4SpecimenSpecimenRoleTestCase = new OperationsTestCase<ResultOrganizerV4>(
+			"validateResultOrganizerV4SpecimenSpecimenRole", operationsForOCL.getOCLValue(
+				"VALIDATE_RESULT_ORGANIZER_V4_SPECIMEN_SPECIMEN_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(ResultOrganizerV4 target) {
+				target.init();
+				target.getSpecimens().add(CDAFactory.eINSTANCE.createSpecimen());
+			}
+
+			@Override
+			protected void updateToPass(ResultOrganizerV4 target) {
+
+				target.getSpecimens().get(0).setSpecimenRole(CDAFactory.eINSTANCE.createSpecimenRole());
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return ResultOrganizerV4Operations.validateResultOrganizerV4SpecimenSpecimenRole(
+					(ResultOrganizerV4) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateResultOrganizerV4SpecimenSpecimenRoleTestCase.doValidationTest();
 	}
 
 	/**

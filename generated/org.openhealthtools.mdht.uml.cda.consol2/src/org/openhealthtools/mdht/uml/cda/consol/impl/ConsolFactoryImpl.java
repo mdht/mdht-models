@@ -813,6 +813,8 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createPolicyActivityV4();
 			case ConsolPackage.RESULT_ORGANIZER_V4:
 				return createResultOrganizerV4();
+			case ConsolPackage.INDICATION_V3:
+				return createIndicationV3();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -4699,6 +4701,17 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	public ResultOrganizerV4 createResultOrganizerV4() {
 		ResultOrganizerV4Impl resultOrganizerV4 = new ResultOrganizerV4Impl();
 		return resultOrganizerV4;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public IndicationV3 createIndicationV3() {
+		IndicationV3Impl indicationV3 = new IndicationV3Impl();
+		return indicationV3;
 	}
 
 	/**

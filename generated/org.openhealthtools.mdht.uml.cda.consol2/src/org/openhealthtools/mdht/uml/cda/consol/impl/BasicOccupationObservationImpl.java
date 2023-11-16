@@ -11,10 +11,9 @@ import org.eclipse.emf.ecore.EObject;
 
 import org.eclipse.mdht.emf.runtime.util.Initializer;
 
-import org.eclipse.mdht.uml.cda.Observation;
-
 import org.eclipse.mdht.uml.cda.impl.ObservationImpl;
 
+import org.openhealthtools.mdht.uml.cda.consol.BasicIndustryObservation;
 import org.openhealthtools.mdht.uml.cda.consol.BasicOccupationObservation;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 
@@ -179,7 +178,7 @@ public class BasicOccupationObservationImpl extends ObservationImpl implements B
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Observation getBasicIndustryObservation() {
+	public BasicIndustryObservation getBasicIndustryObservation() {
 		return BasicOccupationObservationOperations.getBasicIndustryObservation(this);
 	}
 

@@ -50,6 +50,17 @@ public class BasicIndustryObservationImpl extends ObservationImpl implements Bas
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateBasicIndustryObservationTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return BasicIndustryObservationOperations.validateBasicIndustryObservationTemplateId(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateBasicIndustryObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return BasicIndustryObservationOperations.validateBasicIndustryObservationCode(this, diagnostics, context);
 	}

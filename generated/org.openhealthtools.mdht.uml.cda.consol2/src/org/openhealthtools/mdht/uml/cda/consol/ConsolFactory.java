@@ -3388,6 +3388,15 @@ public interface ConsolFactory extends EFactory {
 	ResultOrganizerV4 createResultOrganizerV4();
 
 	/**
+	 * Returns a new object of class '<em>Indication V3</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Indication V3</em>'.
+	 * @generated
+	 */
+	IndicationV3 createIndicationV3();
+
+	/**
 	 * Returns a new object of class '<em>Criticality Observation</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

@@ -59,6 +59,58 @@ public class ResultOrganizerV4Impl extends OrganizerImpl implements ResultOrgani
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateResultOrganizerV4Specimen(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ResultOrganizerV4Operations.validateResultOrganizerV4Specimen(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateResultOrganizerV4SpecimenSpecimenRolePlayingEntityCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ResultOrganizerV4Operations.validateResultOrganizerV4SpecimenSpecimenRolePlayingEntityCode(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateResultOrganizerV4SpecimenSpecimenRolePlayingEntityCodeP(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ResultOrganizerV4Operations.validateResultOrganizerV4SpecimenSpecimenRolePlayingEntityCodeP(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateResultOrganizerV4SpecimenSpecimenRoleSpecimenPlayingEntity(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ResultOrganizerV4Operations.validateResultOrganizerV4SpecimenSpecimenRoleSpecimenPlayingEntity(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateResultOrganizerV4SpecimenSpecimenRole(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ResultOrganizerV4Operations.validateResultOrganizerV4SpecimenSpecimenRole(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public ResultOrganizerV4 init() {
 		return Initializer.Util.init(this);
 	}

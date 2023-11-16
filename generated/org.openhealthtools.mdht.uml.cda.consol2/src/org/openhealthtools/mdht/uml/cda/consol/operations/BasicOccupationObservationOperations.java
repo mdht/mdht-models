@@ -10,7 +10,6 @@ import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.emf.ecore.EObject;
-import org.eclipse.mdht.uml.cda.Observation;
 import org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations;
 import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 import org.eclipse.ocl.ParserException;
@@ -18,6 +17,7 @@ import org.eclipse.ocl.Query;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
 import org.eclipse.ocl.expressions.OCLExpression;
+import org.openhealthtools.mdht.uml.cda.consol.BasicIndustryObservation;
 import org.openhealthtools.mdht.uml.cda.consol.BasicOccupationObservation;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
@@ -713,7 +713,7 @@ public class BasicOccupationObservationOperations extends ClinicalStatementOpera
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_BASIC_OCCUPATION_OBSERVATION_BASIC_INDUSTRY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(cda::Observation) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)";
+	protected static final String VALIDATE_BASIC_OCCUPATION_OBSERVATION_BASIC_INDUSTRY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::BasicIndustryObservation) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateBasicOccupationObservationBasicIndustryObservation(BasicOccupationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Basic Occupation Observation Basic Industry Observation</em>}' invariant operation.
@@ -939,7 +939,7 @@ public class BasicOccupationObservationOperations extends ClinicalStatementOpera
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_BASIC_INDUSTRY_OBSERVATION__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(cda::Observation))->asSequence()->any(true).oclAsType(cda::Observation)";
+	protected static final String GET_BASIC_INDUSTRY_OBSERVATION__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::BasicIndustryObservation))->asSequence()->any(true).oclAsType(consol::BasicIndustryObservation)";
 
 	/**
 	 * The cached OCL query for the '{@link #getBasicIndustryObservation(BasicOccupationObservation) <em>Get Basic Industry Observation</em>}' query operation.
@@ -957,7 +957,8 @@ public class BasicOccupationObservationOperations extends ClinicalStatementOpera
 	 * @generated
 	 */
 
-	public static Observation getBasicIndustryObservation(BasicOccupationObservation basicOccupationObservation) {
+	public static BasicIndustryObservation getBasicIndustryObservation(
+			BasicOccupationObservation basicOccupationObservation) {
 
 		if (GET_BASIC_INDUSTRY_OBSERVATION__EOCL_QRY == null) {
 
@@ -973,7 +974,7 @@ public class BasicOccupationObservationOperations extends ClinicalStatementOpera
 		}
 
 		OCL.Query query = EOCL_ENV.get().createQuery(GET_BASIC_INDUSTRY_OBSERVATION__EOCL_QRY);
-		return (Observation) query.evaluate(basicOccupationObservation);
+		return (BasicIndustryObservation) query.evaluate(basicOccupationObservation);
 	}
 
 } // BasicOccupationObservationOperations

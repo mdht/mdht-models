@@ -57,6 +57,50 @@ public class ResultObservationV4Impl extends ResultObservation2Impl implements R
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateResultObservationV4SpecimenSpecimenRolePlayingEntityCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ResultObservationV4Operations.validateResultObservationV4SpecimenSpecimenRolePlayingEntityCode(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateResultObservationV4SpecimenSpecimenRolePlayingEntityCodeP(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ResultObservationV4Operations.validateResultObservationV4SpecimenSpecimenRolePlayingEntityCodeP(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateResultObservationV4SpecimenSpecimenRoleSpecimenPlayingEntity(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ResultObservationV4Operations.validateResultObservationV4SpecimenSpecimenRoleSpecimenPlayingEntity(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateResultObservationV4SpecimenSpecimenRole(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ResultObservationV4Operations.validateResultObservationV4SpecimenSpecimenRole(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validateResultObservation2TemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ResultObservationV4Operations.validateResultObservation2TemplateId(this, diagnostics, context);

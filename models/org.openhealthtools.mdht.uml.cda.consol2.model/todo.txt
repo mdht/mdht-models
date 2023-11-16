@@ -27,7 +27,24 @@ Laboratory
 *** US REALM Header (?) - Does not required US REALM previous versions
 *** Coverage - Added effective time should/value shall
 *** Disability Status Observation - Added Template
-*** Indication (V3) - No apparent changes - There is a note that the id can reference a problem in the document
+Indication (V3) - Need to add template for change in MAY to SHOULD
+Medication Dispense (V3) - Need to udpate status code
+PolicyActivity(V4) (?)  - No apparent changes - Do need updated template
+*** Pregnancy Intention in Next Year
+Result Observation (V4) (?) -   ???? Did not generate specimen validation ???? Added Specimen constraint 
+Result Organizer (V4) (?) -  ???? Did not generate specimen validation ????    Added Specimen constraint 
+*** Basic Industry Observation - Added Template
+*** Basic Occupation Observation - Added Template
+*** Gender Identity Observation (V4) - Added Template
+*** Sexual Orientation Observation (V2) - No apparent changes - Perhaps the null flavor VS but it is a may and a should
+*** Related Person Relationship and Name Participant
+
+
+2023-05-01 Tests
+*** US REALM Header (?) - Does not required US REALM previous versions
+*** Coverage - Added to Test
+*** Disability Status Observation -Added to Test
+*** Indication (V3) - ???
 *** Medication Dispense (V3) - Added medication dispense code
 *** PolicyActivity(V4) (?)  - No apparent changes
 *** Pregnancy Intention in Next Year
@@ -37,7 +54,7 @@ Laboratory
 *** Basic Occupation Observation - Added Template
 *** Gender Identity Observation (V4) - Added Template
 *** Sexual Orientation Observation (V2) - No apparent changes - Perhaps the null flavor VS but it is a may and a should
-*** Related Person Relationship and Name Participant  
+*** Related Person Relationship and Name Participant    
 
 
 

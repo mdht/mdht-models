@@ -18967,6 +18967,22 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ResultObservationV4/ResultObservationV4Specimen/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ResultObservationV4/ResultObservationV4Specimen/context"/>
       </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ResultObservationV4/ResultObservationV4SpecimenSpecimenRolePlayingEntityCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ResultObservationV4/ResultObservationV4SpecimenSpecimenRolePlayingEntityCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ResultObservationV4/ResultObservationV4SpecimenSpecimenRolePlayingEntityCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ResultObservationV4/ResultObservationV4SpecimenSpecimenRolePlayingEntityCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ResultObservationV4/ResultObservationV4SpecimenSpecimenRolePlayingEntityCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ResultObservationV4/ResultObservationV4SpecimenSpecimenRolePlayingEntityCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ResultObservationV4/ResultObservationV4SpecimenSpecimenRoleSpecimenPlayingEntity">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ResultObservationV4/ResultObservationV4SpecimenSpecimenRoleSpecimenPlayingEntity/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ResultObservationV4/ResultObservationV4SpecimenSpecimenRoleSpecimenPlayingEntity/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ResultObservationV4/ResultObservationV4SpecimenSpecimenRole">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ResultObservationV4/ResultObservationV4SpecimenSpecimenRole/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ResultObservationV4/ResultObservationV4SpecimenSpecimenRole/context"/>
+      </genOperations>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="consol.ecore#//DisabilityStatusObservation">
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//DisabilityStatusObservation/DisabilityStatusObservationTemplateId">
@@ -19016,6 +19032,10 @@
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//DisabilityStatusObservation/getAssessmentScaleObservationV2s"/>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="consol.ecore#//BasicIndustryObservation">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//BasicIndustryObservation/BasicIndustryObservationTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//BasicIndustryObservation/BasicIndustryObservationTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//BasicIndustryObservation/BasicIndustryObservationTemplateId/context"/>
+      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//BasicIndustryObservation/BasicIndustryObservationCode">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//BasicIndustryObservation/BasicIndustryObservationCode/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//BasicIndustryObservation/BasicIndustryObservationCode/context"/>
@@ -19211,6 +19231,32 @@
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ResultOrganizerV4/ResultOrganizerV4TemplateId">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ResultOrganizerV4/ResultOrganizerV4TemplateId/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ResultOrganizerV4/ResultOrganizerV4TemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ResultOrganizerV4/ResultOrganizerV4Specimen">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ResultOrganizerV4/ResultOrganizerV4Specimen/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ResultOrganizerV4/ResultOrganizerV4Specimen/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ResultOrganizerV4/ResultOrganizerV4SpecimenSpecimenRolePlayingEntityCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ResultOrganizerV4/ResultOrganizerV4SpecimenSpecimenRolePlayingEntityCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ResultOrganizerV4/ResultOrganizerV4SpecimenSpecimenRolePlayingEntityCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ResultOrganizerV4/ResultOrganizerV4SpecimenSpecimenRolePlayingEntityCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ResultOrganizerV4/ResultOrganizerV4SpecimenSpecimenRolePlayingEntityCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ResultOrganizerV4/ResultOrganizerV4SpecimenSpecimenRolePlayingEntityCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ResultOrganizerV4/ResultOrganizerV4SpecimenSpecimenRoleSpecimenPlayingEntity">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ResultOrganizerV4/ResultOrganizerV4SpecimenSpecimenRoleSpecimenPlayingEntity/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ResultOrganizerV4/ResultOrganizerV4SpecimenSpecimenRoleSpecimenPlayingEntity/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ResultOrganizerV4/ResultOrganizerV4SpecimenSpecimenRole">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ResultOrganizerV4/ResultOrganizerV4SpecimenSpecimenRole/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ResultOrganizerV4/ResultOrganizerV4SpecimenSpecimenRole/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="consol.ecore#//IndicationV3">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//IndicationV3/IndicationV3TemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//IndicationV3/IndicationV3TemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//IndicationV3/IndicationV3TemplateId/context"/>
       </genOperations>
     </genClasses>
   </genPackages>
