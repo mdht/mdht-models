@@ -1,21 +1,16 @@
-
-/**
- */
 package org.openhealthtools.mdht.uml.cda.consol.tests;
 
+import java.util.Collection;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
-
 import org.eclipse.emf.ecore.EObject;
-
 import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
-
+import org.eclipse.mdht.uml.hl7.datatypes.CD;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
 import org.junit.Test;
-
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.IndicationV3;
-
 import org.openhealthtools.mdht.uml.cda.consol.operations.IndicationV3Operations;
 
 /**
@@ -26,7 +21,9 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.IndicationV3Operations
  * <p>
  * The following operations are supported:
  * <ul>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.IndicationV3#validateIndicationV3TemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Indication V3 Template Id</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.IndicationV3#validateIndication2TemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Indication2 Template Id</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.IndicationV3#validateIndicationValueP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Indication Value P</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.IndicationV3#validateIndicationValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Indication Value</em>}</li>
  * </ul>
  * </p>
  *
@@ -41,10 +38,10 @@ public class IndicationV3Test extends CDAValidationTest {
 	*/
 	@Test
 
-	public void testValidateIndicationV3TemplateId() {
-		OperationsTestCase<IndicationV3> validateIndicationV3TemplateIdTestCase = new OperationsTestCase<IndicationV3>(
-			"validateIndicationV3TemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_INDICATION_V3_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+	public void testValidateIndication2TemplateId() {
+		OperationsTestCase<IndicationV3> validateIndication2TemplateIdTestCase = new OperationsTestCase<IndicationV3>(
+			"validateIndication2TemplateId",
+			operationsForOCL.getOCLValue("VALIDATE_INDICATION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -61,13 +58,92 @@ public class IndicationV3Test extends CDAValidationTest {
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return IndicationV3Operations.validateIndicationV3TemplateId(
+				return IndicationV3Operations.validateIndication2TemplateId(
 					(IndicationV3) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateIndicationV3TemplateIdTestCase.doValidationTest();
+		validateIndication2TemplateIdTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+
+	public void testValidateIndicationValueP() {
+		OperationsTestCase<IndicationV3> validateIndicationValuePTestCase = new OperationsTestCase<IndicationV3>(
+			"validateIndicationValueP",
+			operationsForOCL.getOCLValue("VALIDATE_INDICATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(IndicationV3 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(IndicationV3 target) {
+				target.init();
+				CD value = DatatypesFactory.eINSTANCE.createCD();
+				target.getValues().add(value);
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return IndicationV3Operations.validateIndicationValueP((IndicationV3) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateIndicationValuePTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+
+	public void testValidateIndicationValue() {
+		OperationsTestCase<IndicationV3> validateIndicationValueTestCase = new OperationsTestCase<IndicationV3>(
+			"validateIndicationValue",
+			operationsForOCL.getOCLValue("VALIDATE_INDICATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"), objectFactory) {
+
+			@Override
+			protected void updateToFail(IndicationV3 target) {
+				target.init();
+
+				CD value = DatatypesFactory.eINSTANCE.createCD();
+				target.getValues().add(value);
+			}
+
+			@Override
+			protected void updateToPass(IndicationV3 target) {
+				CD cd = (CD) target.getValues().get(0);
+				cd.setCodeSystem("ASDF");
+			}
+
+			@Override
+			protected void setDependency(IndicationV3 target) {
+				Collection<Object> passToken = new java.util.ArrayList<>(3);
+				passToken.add(target);
+				map.put("org.openhealthtools.mdht.uml.cda.consol.IndicationValueP", passToken);
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return IndicationV3Operations.validateIndicationValue((IndicationV3) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateIndicationValueTestCase.doValidationTest();
 	}
 
 	/**

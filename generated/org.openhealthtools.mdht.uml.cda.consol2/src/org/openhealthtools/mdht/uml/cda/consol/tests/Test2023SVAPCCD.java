@@ -62,6 +62,10 @@ public class Test2023SVAPCCD {
 						System.out.println(entry.getOrganizer().getClass().getCanonicalName());
 					}
 
+					if (entry.getObservation() != null) {
+						System.out.println(entry.getObservation().getClass().getCanonicalName());
+					}
+
 					// System.out.println(entry.getObservation());
 				}
 

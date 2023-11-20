@@ -2,13 +2,12 @@
  */
 package org.openhealthtools.mdht.uml.cda.consol.operations;
 
+import java.util.Collection;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
-
-import org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations;
 
 import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 
@@ -32,20 +31,20 @@ import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
  * <p>
  * The following operations are supported:
  * <ul>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.BasicIndustryObservation#validateBasicIndustryObservationTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Basic Industry Observation Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.BasicIndustryObservation#validateBasicIndustryObservationCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Basic Industry Observation Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.BasicIndustryObservation#validateBasicIndustryObservationStatusCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Basic Industry Observation Status Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.BasicIndustryObservation#validateBasicIndustryObservationStatusCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Basic Industry Observation Status Code P</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.BasicIndustryObservation#validateBasicIndustryObservationStatusCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Basic Industry Observation Status Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.BasicIndustryObservation#validateBasicIndustryObservationValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Basic Industry Observation Value</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.BasicIndustryObservation#validateBasicIndustryObservationValueP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Basic Industry Observation Value P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.BasicIndustryObservation#validateBasicIndustryObservationClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Basic Industry Observation Class Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.BasicIndustryObservation#validateBasicIndustryObservationMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Basic Industry Observation Mood Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.BasicIndustryObservation#validateSocialHistoryObservationV4TemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Observation V4 Template Id</em>}</li>
  * </ul>
  * </p>
  *
  * @generated
  */
-public class BasicIndustryObservationOperations extends ClinicalStatementOperations {
+public class BasicIndustryObservationOperations extends SocialHistoryObservationV4Operations {
 
 	protected static final ThreadLocal<OCL> EOCL_ENV = new ThreadLocal<OCL>() {
 		@Override
@@ -61,73 +60,6 @@ public class BasicIndustryObservationOperations extends ClinicalStatementOperati
 	 */
 	protected BasicIndustryObservationOperations() {
 		super();
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validateBasicIndustryObservationTemplateId(BasicIndustryObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Basic Industry Observation Template Id</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateBasicIndustryObservationTemplateId(BasicIndustryObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_BASIC_INDUSTRY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.504' and id.extension = '2023-05-01')";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateBasicIndustryObservationTemplateId(BasicIndustryObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Basic Industry Observation Template Id</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateBasicIndustryObservationTemplateId(BasicIndustryObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-
-	protected static ThreadLocal<Constraint> VALIDATE_BASIC_INDUSTRY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param basicIndustryObservation The receiving '<em><b>Basic Industry Observation</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-
-	public static boolean validateBasicIndustryObservationTemplateId(BasicIndustryObservation basicIndustryObservation,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		DatatypesUtil.increment(context, "BasicIndustryObservationBasicIndustryObservationTemplateId", "ERROR");
-
-		if (VALIDATE_BASIC_INDUSTRY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-
-			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.BASIC_INDUSTRY_OBSERVATION);
-			try {
-				VALIDATE_BASIC_INDUSTRY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
-					helper.createInvariant(
-						VALIDATE_BASIC_INDUSTRY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-
-		if (!EOCL_ENV.get().createQuery(
-			VALIDATE_BASIC_INDUSTRY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
-				basicIndustryObservation)) {
-			if (diagnostics != null) {
-				diagnostics.add(
-					new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.BASIC_INDUSTRY_OBSERVATION__BASIC_INDUSTRY_OBSERVATION_TEMPLATE_ID,
-						ConsolPlugin.INSTANCE.getString("BasicIndustryObservationBasicIndustryObservationTemplateId"),
-						new Object[] { basicIndustryObservation }));
-			}
-
-			return false;
-		}
-		return true;
 	}
 
 	/**
@@ -197,28 +129,6 @@ public class BasicIndustryObservationOperations extends ClinicalStatementOperati
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateBasicIndustryObservationStatusCode(BasicIndustryObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Basic Industry Observation Status Code</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateBasicIndustryObservationStatusCode(BasicIndustryObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_BASIC_INDUSTRY_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and " +
-			"let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in " + "value.code = 'completed')";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateBasicIndustryObservationStatusCode(BasicIndustryObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Basic Industry Observation Status Code</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateBasicIndustryObservationStatusCode(BasicIndustryObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-
-	protected static ThreadLocal<Constraint> VALIDATE_BASIC_INDUSTRY_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
-
-	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
@@ -231,6 +141,14 @@ public class BasicIndustryObservationOperations extends ClinicalStatementOperati
 
 	public static boolean validateBasicIndustryObservationStatusCode(BasicIndustryObservation basicIndustryObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		Object passToken = (context == null)
+				? null
+				: context.get("org.openhealthtools.mdht.uml.cda.consol.BasicIndustryObservationStatusCodeP");
+		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(basicIndustryObservation)) {
+			// I have a free pass to short-circuit
+			return true;
+		}
 
 		DatatypesUtil.increment(context, "BasicIndustryObservationBasicIndustryObservationStatusCode", "ERROR");
 
@@ -286,6 +204,28 @@ public class BasicIndustryObservationOperations extends ClinicalStatementOperati
 	protected static ThreadLocal<Constraint> VALIDATE_BASIC_INDUSTRY_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
+	 * The cached OCL expression body for the '{@link #validateBasicIndustryObservationStatusCode(BasicIndustryObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Basic Industry Observation Status Code</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateBasicIndustryObservationStatusCode(BasicIndustryObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_BASIC_INDUSTRY_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and " +
+			"let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in " + "value.code = 'completed')";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateBasicIndustryObservationStatusCode(BasicIndustryObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Basic Industry Observation Status Code</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateBasicIndustryObservationStatusCode(BasicIndustryObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static ThreadLocal<Constraint> VALIDATE_BASIC_INDUSTRY_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+
+	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
@@ -324,6 +264,20 @@ public class BasicIndustryObservationOperations extends ClinicalStatementOperati
 						ConsolValidator.BASIC_INDUSTRY_OBSERVATION__BASIC_INDUSTRY_OBSERVATION_STATUS_CODE_P,
 						ConsolPlugin.INSTANCE.getString("BasicIndustryObservationBasicIndustryObservationStatusCodeP"),
 						new Object[] { basicIndustryObservation }));
+			}
+
+			if (context != null) {
+				// generate a pass token for my dependent constraints to short-circuit or filter results
+				@SuppressWarnings("unchecked")
+				Collection<Object> passToken = (Collection<Object>) context.get(
+					"org.openhealthtools.mdht.uml.cda.consol.BasicIndustryObservationStatusCodeP");
+				if (passToken == null) {
+					// anticipate a reasonably healthy model
+					passToken = new java.util.ArrayList<>(3);
+					context.put(
+						"org.openhealthtools.mdht.uml.cda.consol.BasicIndustryObservationStatusCodeP", passToken);
+				}
+				passToken.add(basicIndustryObservation);
 			}
 
 			return false;
@@ -592,6 +546,74 @@ public class BasicIndustryObservationOperations extends ClinicalStatementOperati
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.BASIC_INDUSTRY_OBSERVATION__BASIC_INDUSTRY_OBSERVATION_MOOD_CODE,
 						ConsolPlugin.INSTANCE.getString("BasicIndustryObservationBasicIndustryObservationMoodCode"),
+						new Object[] { basicIndustryObservation }));
+			}
+
+			return false;
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateSocialHistoryObservationV4TemplateId(BasicIndustryObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Observation V4 Template Id</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateSocialHistoryObservationV4TemplateId(BasicIndustryObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_SOCIAL_HISTORY_OBSERVATION_V4_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.504' and id.extension = '2023-05-01')";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateSocialHistoryObservationV4TemplateId(BasicIndustryObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Observation V4 Template Id</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateSocialHistoryObservationV4TemplateId(BasicIndustryObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static ThreadLocal<Constraint> VALIDATE_SOCIAL_HISTORY_OBSERVATION_V4_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param basicIndustryObservation The receiving '<em><b>Basic Industry Observation</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+
+	public static boolean validateSocialHistoryObservationV4TemplateId(
+			BasicIndustryObservation basicIndustryObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "BasicIndustryObservationSocialHistoryObservationV4TemplateId", "ERROR");
+
+		if (VALIDATE_SOCIAL_HISTORY_OBSERVATION_V4_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.BASIC_INDUSTRY_OBSERVATION);
+			try {
+				VALIDATE_SOCIAL_HISTORY_OBSERVATION_V4_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_SOCIAL_HISTORY_OBSERVATION_V4_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_SOCIAL_HISTORY_OBSERVATION_V4_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				basicIndustryObservation)) {
+			if (diagnostics != null) {
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.BASIC_INDUSTRY_OBSERVATION__SOCIAL_HISTORY_OBSERVATION_V4_TEMPLATE_ID,
+						ConsolPlugin.INSTANCE.getString("BasicIndustryObservationSocialHistoryObservationV4TemplateId"),
 						new Object[] { basicIndustryObservation }));
 			}
 

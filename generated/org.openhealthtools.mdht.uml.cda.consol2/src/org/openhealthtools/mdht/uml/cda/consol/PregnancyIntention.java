@@ -19,7 +19,7 @@ import org.eclipse.mdht.uml.cda.Observation;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getPregnancyIntention()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='PregnancyIntentionTemplateId PregnancyIntentionId PregnancyIntentionStatusCode PregnancyIntentionStatusCodeP PregnancyIntentionValue PregnancyIntentionValueP PregnancyIntentionClassCode PregnancyIntentionMoodCode PregnancyIntentionCode PregnancyIntentionCodeP PregnancyIntentionEffectiveTime PregnancyIntentionIVLTSLow PregnancyIntentionIVLTSHigh' templateId.root='2.16.840.1.113883.10.20.22.4.281' templateId.extension='2023-05- 01' statusCode.code='completed' value.codeSystem='2.16.840.1.113883.6.96' value.codeSystemName='SNOMEDCT' classCode='OBS' moodCode='INT' code.code='86645-9' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Pregnancy intention in the next year Reported Nom' constraints.validation.dependOn.PregnancyIntentionCode='PregnancyIntentionCodeP' constraints.validation.query='PregnancyIntentionIVLTSLow PregnancyIntentionIVLTSHigh'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='PregnancyIntentionTemplateId PregnancyIntentionId PregnancyIntentionStatusCode PregnancyIntentionStatusCodeP PregnancyIntentionValue PregnancyIntentionValueP PregnancyIntentionClassCode PregnancyIntentionMoodCode PregnancyIntentionCode PregnancyIntentionCodeP PregnancyIntentionEffectiveTime PregnancyIntentionIVLTSLow PregnancyIntentionIVLTSHigh' templateId.root='2.16.840.1.113883.10.20.22.4.281' templateId.extension='2023-05-01' statusCode.code='completed' value.codeSystem='2.16.840.1.113883.6.96' value.codeSystemName='SNOMEDCT' classCode='OBS' moodCode='INT' code.code='86645-9' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Pregnancy intention in the next year Reported Nom' constraints.validation.dependOn.PregnancyIntentionCode='PregnancyIntentionCodeP' constraints.validation.query='PregnancyIntentionIVLTSLow PregnancyIntentionIVLTSHigh'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolPregnancyIntentionIVLTS constraints.validation.error='PregnancyIntentionIVLTSLow PregnancyIntentionIVLTSHigh'"
  * @generated
  */
@@ -31,7 +31,7 @@ public interface PregnancyIntention extends Observation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId-&gt;exists(id : datatypes::II | id.root = \'2.16.840.1.113883.10.20.22.4.281\' and id.extension = \'2023-05- 01\')'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId-&gt;exists(id : datatypes::II | id.root = \'2.16.840.1.113883.10.20.22.4.281\' and id.extension = \'2023-05-01\')'"
 	 * @generated
 	 */
 	boolean validatePregnancyIntentionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context);

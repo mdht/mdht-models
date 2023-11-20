@@ -84,6 +84,193 @@ public class RelatedPersonRelationshipandNameParticipantImpl extends Participant
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateRelatedPersonRelationshipandNameParticipantAssociatedEntityGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return RelatedPersonRelationshipandNameParticipantOperations.validateRelatedPersonRelationshipandNameParticipantAssociatedEntityGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateRelatedPersonRelationshipandNameParticipantAssociatedEntityGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequireStateElement(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return RelatedPersonRelationshipandNameParticipantOperations.validateRelatedPersonRelationshipandNameParticipantAssociatedEntityGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequireStateElement(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateRelatedPersonRelationshipandNameParticipantAssociatedEntityGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequirePostalCodeElement(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return RelatedPersonRelationshipandNameParticipantOperations.validateRelatedPersonRelationshipandNameParticipantAssociatedEntityGeneralHeaderConstraintsUSRealmAddressIfCountryIsUsRequirePostalCodeElement(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateRelatedPersonRelationshipandNameParticipantAssociatedEntityGeneralHeaderConstraintsUSRealmAddressUse(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return RelatedPersonRelationshipandNameParticipantOperations.validateRelatedPersonRelationshipandNameParticipantAssociatedEntityGeneralHeaderConstraintsUSRealmAddressUse(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateRelatedPersonRelationshipandNameParticipantAssociatedEntityGeneralHeaderConstraintsUSRealmAddressUseP(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return RelatedPersonRelationshipandNameParticipantOperations.validateRelatedPersonRelationshipandNameParticipantAssociatedEntityGeneralHeaderConstraintsUSRealmAddressUseP(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateRelatedPersonRelationshipandNameParticipantAssociatedEntityGeneralHeaderConstraintsUSRealmAddressCountry(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return RelatedPersonRelationshipandNameParticipantOperations.validateRelatedPersonRelationshipandNameParticipantAssociatedEntityGeneralHeaderConstraintsUSRealmAddressCountry(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateRelatedPersonRelationshipandNameParticipantAssociatedEntityGeneralHeaderConstraintsUSRealmAddressState(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return RelatedPersonRelationshipandNameParticipantOperations.validateRelatedPersonRelationshipandNameParticipantAssociatedEntityGeneralHeaderConstraintsUSRealmAddressState(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateRelatedPersonRelationshipandNameParticipantAssociatedEntityGeneralHeaderConstraintsUSRealmAddressCity(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return RelatedPersonRelationshipandNameParticipantOperations.validateRelatedPersonRelationshipandNameParticipantAssociatedEntityGeneralHeaderConstraintsUSRealmAddressCity(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateRelatedPersonRelationshipandNameParticipantAssociatedEntityGeneralHeaderConstraintsUSRealmAddressPostalCode(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return RelatedPersonRelationshipandNameParticipantOperations.validateRelatedPersonRelationshipandNameParticipantAssociatedEntityGeneralHeaderConstraintsUSRealmAddressPostalCode(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateRelatedPersonRelationshipandNameParticipantAssociatedEntityGeneralHeaderConstraintsUSRealmAddressStreetAddressLine(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return RelatedPersonRelationshipandNameParticipantOperations.validateRelatedPersonRelationshipandNameParticipantAssociatedEntityGeneralHeaderConstraintsUSRealmAddressStreetAddressLine(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateRelatedPersonRelationshipandNameParticipantAssociatedEntityPersonGeneralHeaderConstraintsUSRealmPersonNameUSRealmPersonNameMixedContent(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return RelatedPersonRelationshipandNameParticipantOperations.validateRelatedPersonRelationshipandNameParticipantAssociatedEntityPersonGeneralHeaderConstraintsUSRealmPersonNameUSRealmPersonNameMixedContent(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateRelatedPersonRelationshipandNameParticipantAssociatedEntityPersonName(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return RelatedPersonRelationshipandNameParticipantOperations.validateRelatedPersonRelationshipandNameParticipantAssociatedEntityPersonName(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateRelatedPersonRelationshipandNameParticipantAssociatedEntityCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return RelatedPersonRelationshipandNameParticipantOperations.validateRelatedPersonRelationshipandNameParticipantAssociatedEntityCode(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateRelatedPersonRelationshipandNameParticipantAssociatedEntityAddr(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return RelatedPersonRelationshipandNameParticipantOperations.validateRelatedPersonRelationshipandNameParticipantAssociatedEntityAddr(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateRelatedPersonRelationshipandNameParticipantAssociatedEntityTelecom(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return RelatedPersonRelationshipandNameParticipantOperations.validateRelatedPersonRelationshipandNameParticipantAssociatedEntityTelecom(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateRelatedPersonRelationshipandNameParticipantAssociatedEntityClassCode(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return RelatedPersonRelationshipandNameParticipantOperations.validateRelatedPersonRelationshipandNameParticipantAssociatedEntityClassCode(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateRelatedPersonRelationshipandNameParticipantAssociatedEntityAssociatedPerson(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return RelatedPersonRelationshipandNameParticipantOperations.validateRelatedPersonRelationshipandNameParticipantAssociatedEntityAssociatedPerson(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public RelatedPersonRelationshipandNameParticipant init() {
 		return Initializer.Util.init(this);
 	}

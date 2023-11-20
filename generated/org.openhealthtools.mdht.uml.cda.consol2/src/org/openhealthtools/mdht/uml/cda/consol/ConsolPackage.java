@@ -84009,294 +84009,6 @@ public interface ConsolPackage extends EPackage {
 	int SEXUAL_ORIENTATION_OBSERVATION = 360;
 
 	/**
-	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SEXUAL_ORIENTATION_OBSERVATION__REALM_CODE = CDAPackage.OBSERVATION__REALM_CODE;
-
-	/**
-	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SEXUAL_ORIENTATION_OBSERVATION__TYPE_ID = CDAPackage.OBSERVATION__TYPE_ID;
-
-	/**
-	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SEXUAL_ORIENTATION_OBSERVATION__TEMPLATE_ID = CDAPackage.OBSERVATION__TEMPLATE_ID;
-
-	/**
-	 * The feature id for the '<em><b>Id</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SEXUAL_ORIENTATION_OBSERVATION__ID = CDAPackage.OBSERVATION__ID;
-
-	/**
-	 * The feature id for the '<em><b>Code</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SEXUAL_ORIENTATION_OBSERVATION__CODE = CDAPackage.OBSERVATION__CODE;
-
-	/**
-	 * The feature id for the '<em><b>Derivation Expr</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SEXUAL_ORIENTATION_OBSERVATION__DERIVATION_EXPR = CDAPackage.OBSERVATION__DERIVATION_EXPR;
-
-	/**
-	 * The feature id for the '<em><b>Text</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SEXUAL_ORIENTATION_OBSERVATION__TEXT = CDAPackage.OBSERVATION__TEXT;
-
-	/**
-	 * The feature id for the '<em><b>Status Code</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SEXUAL_ORIENTATION_OBSERVATION__STATUS_CODE = CDAPackage.OBSERVATION__STATUS_CODE;
-
-	/**
-	 * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SEXUAL_ORIENTATION_OBSERVATION__EFFECTIVE_TIME = CDAPackage.OBSERVATION__EFFECTIVE_TIME;
-
-	/**
-	 * The feature id for the '<em><b>Priority Code</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SEXUAL_ORIENTATION_OBSERVATION__PRIORITY_CODE = CDAPackage.OBSERVATION__PRIORITY_CODE;
-
-	/**
-	 * The feature id for the '<em><b>Repeat Number</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SEXUAL_ORIENTATION_OBSERVATION__REPEAT_NUMBER = CDAPackage.OBSERVATION__REPEAT_NUMBER;
-
-	/**
-	 * The feature id for the '<em><b>Language Code</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SEXUAL_ORIENTATION_OBSERVATION__LANGUAGE_CODE = CDAPackage.OBSERVATION__LANGUAGE_CODE;
-
-	/**
-	 * The feature id for the '<em><b>Value</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SEXUAL_ORIENTATION_OBSERVATION__VALUE = CDAPackage.OBSERVATION__VALUE;
-
-	/**
-	 * The feature id for the '<em><b>Interpretation Code</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SEXUAL_ORIENTATION_OBSERVATION__INTERPRETATION_CODE = CDAPackage.OBSERVATION__INTERPRETATION_CODE;
-
-	/**
-	 * The feature id for the '<em><b>Method Code</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SEXUAL_ORIENTATION_OBSERVATION__METHOD_CODE = CDAPackage.OBSERVATION__METHOD_CODE;
-
-	/**
-	 * The feature id for the '<em><b>Target Site Code</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SEXUAL_ORIENTATION_OBSERVATION__TARGET_SITE_CODE = CDAPackage.OBSERVATION__TARGET_SITE_CODE;
-
-	/**
-	 * The feature id for the '<em><b>Subject</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SEXUAL_ORIENTATION_OBSERVATION__SUBJECT = CDAPackage.OBSERVATION__SUBJECT;
-
-	/**
-	 * The feature id for the '<em><b>Specimen</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SEXUAL_ORIENTATION_OBSERVATION__SPECIMEN = CDAPackage.OBSERVATION__SPECIMEN;
-
-	/**
-	 * The feature id for the '<em><b>Performer</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SEXUAL_ORIENTATION_OBSERVATION__PERFORMER = CDAPackage.OBSERVATION__PERFORMER;
-
-	/**
-	 * The feature id for the '<em><b>Author</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SEXUAL_ORIENTATION_OBSERVATION__AUTHOR = CDAPackage.OBSERVATION__AUTHOR;
-
-	/**
-	 * The feature id for the '<em><b>Informant</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SEXUAL_ORIENTATION_OBSERVATION__INFORMANT = CDAPackage.OBSERVATION__INFORMANT;
-
-	/**
-	 * The feature id for the '<em><b>Participant</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SEXUAL_ORIENTATION_OBSERVATION__PARTICIPANT = CDAPackage.OBSERVATION__PARTICIPANT;
-
-	/**
-	 * The feature id for the '<em><b>Entry Relationship</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SEXUAL_ORIENTATION_OBSERVATION__ENTRY_RELATIONSHIP = CDAPackage.OBSERVATION__ENTRY_RELATIONSHIP;
-
-	/**
-	 * The feature id for the '<em><b>Reference</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SEXUAL_ORIENTATION_OBSERVATION__REFERENCE = CDAPackage.OBSERVATION__REFERENCE;
-
-	/**
-	 * The feature id for the '<em><b>Precondition</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SEXUAL_ORIENTATION_OBSERVATION__PRECONDITION = CDAPackage.OBSERVATION__PRECONDITION;
-
-	/**
-	 * The feature id for the '<em><b>Reference Range</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SEXUAL_ORIENTATION_OBSERVATION__REFERENCE_RANGE = CDAPackage.OBSERVATION__REFERENCE_RANGE;
-
-	/**
-	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SEXUAL_ORIENTATION_OBSERVATION__NULL_FLAVOR = CDAPackage.OBSERVATION__NULL_FLAVOR;
-
-	/**
-	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SEXUAL_ORIENTATION_OBSERVATION__CLASS_CODE = CDAPackage.OBSERVATION__CLASS_CODE;
-
-	/**
-	 * The feature id for the '<em><b>Mood Code</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SEXUAL_ORIENTATION_OBSERVATION__MOOD_CODE = CDAPackage.OBSERVATION__MOOD_CODE;
-
-	/**
-	 * The feature id for the '<em><b>Negation Ind</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SEXUAL_ORIENTATION_OBSERVATION__NEGATION_IND = CDAPackage.OBSERVATION__NEGATION_IND;
-
-	/**
-	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SEXUAL_ORIENTATION_OBSERVATION__IN_FULFILLMENT_OF1 = CDAPackage.OBSERVATION__IN_FULFILLMENT_OF1;
-
-	/**
-	 * The number of structural features of the '<em>Sexual Orientation Observation</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SEXUAL_ORIENTATION_OBSERVATION_FEATURE_COUNT = CDAPackage.OBSERVATION_FEATURE_COUNT + 0;
-
-	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.SocialHistoryObservationV4Impl <em>Social History Observation V4</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -84593,6 +84305,294 @@ public interface ConsolPackage extends EPackage {
 	 * @ordered
 	 */
 	int SOCIAL_HISTORY_OBSERVATION_V4_FEATURE_COUNT = CDAPackage.OBSERVATION_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEXUAL_ORIENTATION_OBSERVATION__REALM_CODE = SOCIAL_HISTORY_OBSERVATION_V4__REALM_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEXUAL_ORIENTATION_OBSERVATION__TYPE_ID = SOCIAL_HISTORY_OBSERVATION_V4__TYPE_ID;
+
+	/**
+	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEXUAL_ORIENTATION_OBSERVATION__TEMPLATE_ID = SOCIAL_HISTORY_OBSERVATION_V4__TEMPLATE_ID;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEXUAL_ORIENTATION_OBSERVATION__ID = SOCIAL_HISTORY_OBSERVATION_V4__ID;
+
+	/**
+	 * The feature id for the '<em><b>Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEXUAL_ORIENTATION_OBSERVATION__CODE = SOCIAL_HISTORY_OBSERVATION_V4__CODE;
+
+	/**
+	 * The feature id for the '<em><b>Derivation Expr</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEXUAL_ORIENTATION_OBSERVATION__DERIVATION_EXPR = SOCIAL_HISTORY_OBSERVATION_V4__DERIVATION_EXPR;
+
+	/**
+	 * The feature id for the '<em><b>Text</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEXUAL_ORIENTATION_OBSERVATION__TEXT = SOCIAL_HISTORY_OBSERVATION_V4__TEXT;
+
+	/**
+	 * The feature id for the '<em><b>Status Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEXUAL_ORIENTATION_OBSERVATION__STATUS_CODE = SOCIAL_HISTORY_OBSERVATION_V4__STATUS_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEXUAL_ORIENTATION_OBSERVATION__EFFECTIVE_TIME = SOCIAL_HISTORY_OBSERVATION_V4__EFFECTIVE_TIME;
+
+	/**
+	 * The feature id for the '<em><b>Priority Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEXUAL_ORIENTATION_OBSERVATION__PRIORITY_CODE = SOCIAL_HISTORY_OBSERVATION_V4__PRIORITY_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Repeat Number</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEXUAL_ORIENTATION_OBSERVATION__REPEAT_NUMBER = SOCIAL_HISTORY_OBSERVATION_V4__REPEAT_NUMBER;
+
+	/**
+	 * The feature id for the '<em><b>Language Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEXUAL_ORIENTATION_OBSERVATION__LANGUAGE_CODE = SOCIAL_HISTORY_OBSERVATION_V4__LANGUAGE_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Value</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEXUAL_ORIENTATION_OBSERVATION__VALUE = SOCIAL_HISTORY_OBSERVATION_V4__VALUE;
+
+	/**
+	 * The feature id for the '<em><b>Interpretation Code</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEXUAL_ORIENTATION_OBSERVATION__INTERPRETATION_CODE = SOCIAL_HISTORY_OBSERVATION_V4__INTERPRETATION_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Method Code</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEXUAL_ORIENTATION_OBSERVATION__METHOD_CODE = SOCIAL_HISTORY_OBSERVATION_V4__METHOD_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Target Site Code</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEXUAL_ORIENTATION_OBSERVATION__TARGET_SITE_CODE = SOCIAL_HISTORY_OBSERVATION_V4__TARGET_SITE_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Subject</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEXUAL_ORIENTATION_OBSERVATION__SUBJECT = SOCIAL_HISTORY_OBSERVATION_V4__SUBJECT;
+
+	/**
+	 * The feature id for the '<em><b>Specimen</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEXUAL_ORIENTATION_OBSERVATION__SPECIMEN = SOCIAL_HISTORY_OBSERVATION_V4__SPECIMEN;
+
+	/**
+	 * The feature id for the '<em><b>Performer</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEXUAL_ORIENTATION_OBSERVATION__PERFORMER = SOCIAL_HISTORY_OBSERVATION_V4__PERFORMER;
+
+	/**
+	 * The feature id for the '<em><b>Author</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEXUAL_ORIENTATION_OBSERVATION__AUTHOR = SOCIAL_HISTORY_OBSERVATION_V4__AUTHOR;
+
+	/**
+	 * The feature id for the '<em><b>Informant</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEXUAL_ORIENTATION_OBSERVATION__INFORMANT = SOCIAL_HISTORY_OBSERVATION_V4__INFORMANT;
+
+	/**
+	 * The feature id for the '<em><b>Participant</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEXUAL_ORIENTATION_OBSERVATION__PARTICIPANT = SOCIAL_HISTORY_OBSERVATION_V4__PARTICIPANT;
+
+	/**
+	 * The feature id for the '<em><b>Entry Relationship</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEXUAL_ORIENTATION_OBSERVATION__ENTRY_RELATIONSHIP = SOCIAL_HISTORY_OBSERVATION_V4__ENTRY_RELATIONSHIP;
+
+	/**
+	 * The feature id for the '<em><b>Reference</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEXUAL_ORIENTATION_OBSERVATION__REFERENCE = SOCIAL_HISTORY_OBSERVATION_V4__REFERENCE;
+
+	/**
+	 * The feature id for the '<em><b>Precondition</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEXUAL_ORIENTATION_OBSERVATION__PRECONDITION = SOCIAL_HISTORY_OBSERVATION_V4__PRECONDITION;
+
+	/**
+	 * The feature id for the '<em><b>Reference Range</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEXUAL_ORIENTATION_OBSERVATION__REFERENCE_RANGE = SOCIAL_HISTORY_OBSERVATION_V4__REFERENCE_RANGE;
+
+	/**
+	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEXUAL_ORIENTATION_OBSERVATION__NULL_FLAVOR = SOCIAL_HISTORY_OBSERVATION_V4__NULL_FLAVOR;
+
+	/**
+	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEXUAL_ORIENTATION_OBSERVATION__CLASS_CODE = SOCIAL_HISTORY_OBSERVATION_V4__CLASS_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Mood Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEXUAL_ORIENTATION_OBSERVATION__MOOD_CODE = SOCIAL_HISTORY_OBSERVATION_V4__MOOD_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Negation Ind</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEXUAL_ORIENTATION_OBSERVATION__NEGATION_IND = SOCIAL_HISTORY_OBSERVATION_V4__NEGATION_IND;
+
+	/**
+	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEXUAL_ORIENTATION_OBSERVATION__IN_FULFILLMENT_OF1 = SOCIAL_HISTORY_OBSERVATION_V4__IN_FULFILLMENT_OF1;
+
+	/**
+	 * The number of structural features of the '<em>Sexual Orientation Observation</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEXUAL_ORIENTATION_OBSERVATION_FEATURE_COUNT = SOCIAL_HISTORY_OBSERVATION_V4_FEATURE_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.CoverageActivityV4Impl <em>Coverage Activity V4</em>}' class.
@@ -86400,7 +86400,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BASIC_INDUSTRY_OBSERVATION__REALM_CODE = CDAPackage.OBSERVATION__REALM_CODE;
+	int BASIC_INDUSTRY_OBSERVATION__REALM_CODE = SOCIAL_HISTORY_OBSERVATION_V4__REALM_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
@@ -86409,7 +86409,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BASIC_INDUSTRY_OBSERVATION__TYPE_ID = CDAPackage.OBSERVATION__TYPE_ID;
+	int BASIC_INDUSTRY_OBSERVATION__TYPE_ID = SOCIAL_HISTORY_OBSERVATION_V4__TYPE_ID;
 
 	/**
 	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
@@ -86418,7 +86418,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BASIC_INDUSTRY_OBSERVATION__TEMPLATE_ID = CDAPackage.OBSERVATION__TEMPLATE_ID;
+	int BASIC_INDUSTRY_OBSERVATION__TEMPLATE_ID = SOCIAL_HISTORY_OBSERVATION_V4__TEMPLATE_ID;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' containment reference list.
@@ -86427,7 +86427,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BASIC_INDUSTRY_OBSERVATION__ID = CDAPackage.OBSERVATION__ID;
+	int BASIC_INDUSTRY_OBSERVATION__ID = SOCIAL_HISTORY_OBSERVATION_V4__ID;
 
 	/**
 	 * The feature id for the '<em><b>Code</b></em>' containment reference.
@@ -86436,7 +86436,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BASIC_INDUSTRY_OBSERVATION__CODE = CDAPackage.OBSERVATION__CODE;
+	int BASIC_INDUSTRY_OBSERVATION__CODE = SOCIAL_HISTORY_OBSERVATION_V4__CODE;
 
 	/**
 	 * The feature id for the '<em><b>Derivation Expr</b></em>' containment reference.
@@ -86445,7 +86445,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BASIC_INDUSTRY_OBSERVATION__DERIVATION_EXPR = CDAPackage.OBSERVATION__DERIVATION_EXPR;
+	int BASIC_INDUSTRY_OBSERVATION__DERIVATION_EXPR = SOCIAL_HISTORY_OBSERVATION_V4__DERIVATION_EXPR;
 
 	/**
 	 * The feature id for the '<em><b>Text</b></em>' containment reference.
@@ -86454,7 +86454,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BASIC_INDUSTRY_OBSERVATION__TEXT = CDAPackage.OBSERVATION__TEXT;
+	int BASIC_INDUSTRY_OBSERVATION__TEXT = SOCIAL_HISTORY_OBSERVATION_V4__TEXT;
 
 	/**
 	 * The feature id for the '<em><b>Status Code</b></em>' containment reference.
@@ -86463,7 +86463,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BASIC_INDUSTRY_OBSERVATION__STATUS_CODE = CDAPackage.OBSERVATION__STATUS_CODE;
+	int BASIC_INDUSTRY_OBSERVATION__STATUS_CODE = SOCIAL_HISTORY_OBSERVATION_V4__STATUS_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
@@ -86472,7 +86472,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BASIC_INDUSTRY_OBSERVATION__EFFECTIVE_TIME = CDAPackage.OBSERVATION__EFFECTIVE_TIME;
+	int BASIC_INDUSTRY_OBSERVATION__EFFECTIVE_TIME = SOCIAL_HISTORY_OBSERVATION_V4__EFFECTIVE_TIME;
 
 	/**
 	 * The feature id for the '<em><b>Priority Code</b></em>' containment reference.
@@ -86481,7 +86481,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BASIC_INDUSTRY_OBSERVATION__PRIORITY_CODE = CDAPackage.OBSERVATION__PRIORITY_CODE;
+	int BASIC_INDUSTRY_OBSERVATION__PRIORITY_CODE = SOCIAL_HISTORY_OBSERVATION_V4__PRIORITY_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Repeat Number</b></em>' containment reference.
@@ -86490,7 +86490,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BASIC_INDUSTRY_OBSERVATION__REPEAT_NUMBER = CDAPackage.OBSERVATION__REPEAT_NUMBER;
+	int BASIC_INDUSTRY_OBSERVATION__REPEAT_NUMBER = SOCIAL_HISTORY_OBSERVATION_V4__REPEAT_NUMBER;
 
 	/**
 	 * The feature id for the '<em><b>Language Code</b></em>' containment reference.
@@ -86499,7 +86499,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BASIC_INDUSTRY_OBSERVATION__LANGUAGE_CODE = CDAPackage.OBSERVATION__LANGUAGE_CODE;
+	int BASIC_INDUSTRY_OBSERVATION__LANGUAGE_CODE = SOCIAL_HISTORY_OBSERVATION_V4__LANGUAGE_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Value</b></em>' containment reference list.
@@ -86508,7 +86508,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BASIC_INDUSTRY_OBSERVATION__VALUE = CDAPackage.OBSERVATION__VALUE;
+	int BASIC_INDUSTRY_OBSERVATION__VALUE = SOCIAL_HISTORY_OBSERVATION_V4__VALUE;
 
 	/**
 	 * The feature id for the '<em><b>Interpretation Code</b></em>' containment reference list.
@@ -86517,7 +86517,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BASIC_INDUSTRY_OBSERVATION__INTERPRETATION_CODE = CDAPackage.OBSERVATION__INTERPRETATION_CODE;
+	int BASIC_INDUSTRY_OBSERVATION__INTERPRETATION_CODE = SOCIAL_HISTORY_OBSERVATION_V4__INTERPRETATION_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Method Code</b></em>' containment reference list.
@@ -86526,7 +86526,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BASIC_INDUSTRY_OBSERVATION__METHOD_CODE = CDAPackage.OBSERVATION__METHOD_CODE;
+	int BASIC_INDUSTRY_OBSERVATION__METHOD_CODE = SOCIAL_HISTORY_OBSERVATION_V4__METHOD_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Target Site Code</b></em>' containment reference list.
@@ -86535,7 +86535,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BASIC_INDUSTRY_OBSERVATION__TARGET_SITE_CODE = CDAPackage.OBSERVATION__TARGET_SITE_CODE;
+	int BASIC_INDUSTRY_OBSERVATION__TARGET_SITE_CODE = SOCIAL_HISTORY_OBSERVATION_V4__TARGET_SITE_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Subject</b></em>' containment reference.
@@ -86544,7 +86544,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BASIC_INDUSTRY_OBSERVATION__SUBJECT = CDAPackage.OBSERVATION__SUBJECT;
+	int BASIC_INDUSTRY_OBSERVATION__SUBJECT = SOCIAL_HISTORY_OBSERVATION_V4__SUBJECT;
 
 	/**
 	 * The feature id for the '<em><b>Specimen</b></em>' containment reference list.
@@ -86553,7 +86553,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BASIC_INDUSTRY_OBSERVATION__SPECIMEN = CDAPackage.OBSERVATION__SPECIMEN;
+	int BASIC_INDUSTRY_OBSERVATION__SPECIMEN = SOCIAL_HISTORY_OBSERVATION_V4__SPECIMEN;
 
 	/**
 	 * The feature id for the '<em><b>Performer</b></em>' containment reference list.
@@ -86562,7 +86562,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BASIC_INDUSTRY_OBSERVATION__PERFORMER = CDAPackage.OBSERVATION__PERFORMER;
+	int BASIC_INDUSTRY_OBSERVATION__PERFORMER = SOCIAL_HISTORY_OBSERVATION_V4__PERFORMER;
 
 	/**
 	 * The feature id for the '<em><b>Author</b></em>' containment reference list.
@@ -86571,7 +86571,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BASIC_INDUSTRY_OBSERVATION__AUTHOR = CDAPackage.OBSERVATION__AUTHOR;
+	int BASIC_INDUSTRY_OBSERVATION__AUTHOR = SOCIAL_HISTORY_OBSERVATION_V4__AUTHOR;
 
 	/**
 	 * The feature id for the '<em><b>Informant</b></em>' containment reference list.
@@ -86580,7 +86580,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BASIC_INDUSTRY_OBSERVATION__INFORMANT = CDAPackage.OBSERVATION__INFORMANT;
+	int BASIC_INDUSTRY_OBSERVATION__INFORMANT = SOCIAL_HISTORY_OBSERVATION_V4__INFORMANT;
 
 	/**
 	 * The feature id for the '<em><b>Participant</b></em>' containment reference list.
@@ -86589,7 +86589,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BASIC_INDUSTRY_OBSERVATION__PARTICIPANT = CDAPackage.OBSERVATION__PARTICIPANT;
+	int BASIC_INDUSTRY_OBSERVATION__PARTICIPANT = SOCIAL_HISTORY_OBSERVATION_V4__PARTICIPANT;
 
 	/**
 	 * The feature id for the '<em><b>Entry Relationship</b></em>' containment reference list.
@@ -86598,7 +86598,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BASIC_INDUSTRY_OBSERVATION__ENTRY_RELATIONSHIP = CDAPackage.OBSERVATION__ENTRY_RELATIONSHIP;
+	int BASIC_INDUSTRY_OBSERVATION__ENTRY_RELATIONSHIP = SOCIAL_HISTORY_OBSERVATION_V4__ENTRY_RELATIONSHIP;
 
 	/**
 	 * The feature id for the '<em><b>Reference</b></em>' containment reference list.
@@ -86607,7 +86607,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BASIC_INDUSTRY_OBSERVATION__REFERENCE = CDAPackage.OBSERVATION__REFERENCE;
+	int BASIC_INDUSTRY_OBSERVATION__REFERENCE = SOCIAL_HISTORY_OBSERVATION_V4__REFERENCE;
 
 	/**
 	 * The feature id for the '<em><b>Precondition</b></em>' containment reference list.
@@ -86616,7 +86616,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BASIC_INDUSTRY_OBSERVATION__PRECONDITION = CDAPackage.OBSERVATION__PRECONDITION;
+	int BASIC_INDUSTRY_OBSERVATION__PRECONDITION = SOCIAL_HISTORY_OBSERVATION_V4__PRECONDITION;
 
 	/**
 	 * The feature id for the '<em><b>Reference Range</b></em>' containment reference list.
@@ -86625,7 +86625,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BASIC_INDUSTRY_OBSERVATION__REFERENCE_RANGE = CDAPackage.OBSERVATION__REFERENCE_RANGE;
+	int BASIC_INDUSTRY_OBSERVATION__REFERENCE_RANGE = SOCIAL_HISTORY_OBSERVATION_V4__REFERENCE_RANGE;
 
 	/**
 	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
@@ -86634,7 +86634,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BASIC_INDUSTRY_OBSERVATION__NULL_FLAVOR = CDAPackage.OBSERVATION__NULL_FLAVOR;
+	int BASIC_INDUSTRY_OBSERVATION__NULL_FLAVOR = SOCIAL_HISTORY_OBSERVATION_V4__NULL_FLAVOR;
 
 	/**
 	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
@@ -86643,7 +86643,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BASIC_INDUSTRY_OBSERVATION__CLASS_CODE = CDAPackage.OBSERVATION__CLASS_CODE;
+	int BASIC_INDUSTRY_OBSERVATION__CLASS_CODE = SOCIAL_HISTORY_OBSERVATION_V4__CLASS_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Mood Code</b></em>' attribute.
@@ -86652,7 +86652,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BASIC_INDUSTRY_OBSERVATION__MOOD_CODE = CDAPackage.OBSERVATION__MOOD_CODE;
+	int BASIC_INDUSTRY_OBSERVATION__MOOD_CODE = SOCIAL_HISTORY_OBSERVATION_V4__MOOD_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Negation Ind</b></em>' attribute.
@@ -86661,7 +86661,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BASIC_INDUSTRY_OBSERVATION__NEGATION_IND = CDAPackage.OBSERVATION__NEGATION_IND;
+	int BASIC_INDUSTRY_OBSERVATION__NEGATION_IND = SOCIAL_HISTORY_OBSERVATION_V4__NEGATION_IND;
 
 	/**
 	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
@@ -86670,7 +86670,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BASIC_INDUSTRY_OBSERVATION__IN_FULFILLMENT_OF1 = CDAPackage.OBSERVATION__IN_FULFILLMENT_OF1;
+	int BASIC_INDUSTRY_OBSERVATION__IN_FULFILLMENT_OF1 = SOCIAL_HISTORY_OBSERVATION_V4__IN_FULFILLMENT_OF1;
 
 	/**
 	 * The number of structural features of the '<em>Basic Industry Observation</em>' class.
@@ -86679,7 +86679,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BASIC_INDUSTRY_OBSERVATION_FEATURE_COUNT = CDAPackage.OBSERVATION_FEATURE_COUNT + 0;
+	int BASIC_INDUSTRY_OBSERVATION_FEATURE_COUNT = SOCIAL_HISTORY_OBSERVATION_V4_FEATURE_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.BasicOccupationObservationImpl <em>Basic Occupation Observation</em>}' class.
@@ -86698,7 +86698,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BASIC_OCCUPATION_OBSERVATION__REALM_CODE = CDAPackage.OBSERVATION__REALM_CODE;
+	int BASIC_OCCUPATION_OBSERVATION__REALM_CODE = SOCIAL_HISTORY_OBSERVATION_V4__REALM_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
@@ -86707,7 +86707,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BASIC_OCCUPATION_OBSERVATION__TYPE_ID = CDAPackage.OBSERVATION__TYPE_ID;
+	int BASIC_OCCUPATION_OBSERVATION__TYPE_ID = SOCIAL_HISTORY_OBSERVATION_V4__TYPE_ID;
 
 	/**
 	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
@@ -86716,7 +86716,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BASIC_OCCUPATION_OBSERVATION__TEMPLATE_ID = CDAPackage.OBSERVATION__TEMPLATE_ID;
+	int BASIC_OCCUPATION_OBSERVATION__TEMPLATE_ID = SOCIAL_HISTORY_OBSERVATION_V4__TEMPLATE_ID;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' containment reference list.
@@ -86725,7 +86725,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BASIC_OCCUPATION_OBSERVATION__ID = CDAPackage.OBSERVATION__ID;
+	int BASIC_OCCUPATION_OBSERVATION__ID = SOCIAL_HISTORY_OBSERVATION_V4__ID;
 
 	/**
 	 * The feature id for the '<em><b>Code</b></em>' containment reference.
@@ -86734,7 +86734,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BASIC_OCCUPATION_OBSERVATION__CODE = CDAPackage.OBSERVATION__CODE;
+	int BASIC_OCCUPATION_OBSERVATION__CODE = SOCIAL_HISTORY_OBSERVATION_V4__CODE;
 
 	/**
 	 * The feature id for the '<em><b>Derivation Expr</b></em>' containment reference.
@@ -86743,7 +86743,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BASIC_OCCUPATION_OBSERVATION__DERIVATION_EXPR = CDAPackage.OBSERVATION__DERIVATION_EXPR;
+	int BASIC_OCCUPATION_OBSERVATION__DERIVATION_EXPR = SOCIAL_HISTORY_OBSERVATION_V4__DERIVATION_EXPR;
 
 	/**
 	 * The feature id for the '<em><b>Text</b></em>' containment reference.
@@ -86752,7 +86752,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BASIC_OCCUPATION_OBSERVATION__TEXT = CDAPackage.OBSERVATION__TEXT;
+	int BASIC_OCCUPATION_OBSERVATION__TEXT = SOCIAL_HISTORY_OBSERVATION_V4__TEXT;
 
 	/**
 	 * The feature id for the '<em><b>Status Code</b></em>' containment reference.
@@ -86761,7 +86761,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BASIC_OCCUPATION_OBSERVATION__STATUS_CODE = CDAPackage.OBSERVATION__STATUS_CODE;
+	int BASIC_OCCUPATION_OBSERVATION__STATUS_CODE = SOCIAL_HISTORY_OBSERVATION_V4__STATUS_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
@@ -86770,7 +86770,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BASIC_OCCUPATION_OBSERVATION__EFFECTIVE_TIME = CDAPackage.OBSERVATION__EFFECTIVE_TIME;
+	int BASIC_OCCUPATION_OBSERVATION__EFFECTIVE_TIME = SOCIAL_HISTORY_OBSERVATION_V4__EFFECTIVE_TIME;
 
 	/**
 	 * The feature id for the '<em><b>Priority Code</b></em>' containment reference.
@@ -86779,7 +86779,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BASIC_OCCUPATION_OBSERVATION__PRIORITY_CODE = CDAPackage.OBSERVATION__PRIORITY_CODE;
+	int BASIC_OCCUPATION_OBSERVATION__PRIORITY_CODE = SOCIAL_HISTORY_OBSERVATION_V4__PRIORITY_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Repeat Number</b></em>' containment reference.
@@ -86788,7 +86788,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BASIC_OCCUPATION_OBSERVATION__REPEAT_NUMBER = CDAPackage.OBSERVATION__REPEAT_NUMBER;
+	int BASIC_OCCUPATION_OBSERVATION__REPEAT_NUMBER = SOCIAL_HISTORY_OBSERVATION_V4__REPEAT_NUMBER;
 
 	/**
 	 * The feature id for the '<em><b>Language Code</b></em>' containment reference.
@@ -86797,7 +86797,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BASIC_OCCUPATION_OBSERVATION__LANGUAGE_CODE = CDAPackage.OBSERVATION__LANGUAGE_CODE;
+	int BASIC_OCCUPATION_OBSERVATION__LANGUAGE_CODE = SOCIAL_HISTORY_OBSERVATION_V4__LANGUAGE_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Value</b></em>' containment reference list.
@@ -86806,7 +86806,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BASIC_OCCUPATION_OBSERVATION__VALUE = CDAPackage.OBSERVATION__VALUE;
+	int BASIC_OCCUPATION_OBSERVATION__VALUE = SOCIAL_HISTORY_OBSERVATION_V4__VALUE;
 
 	/**
 	 * The feature id for the '<em><b>Interpretation Code</b></em>' containment reference list.
@@ -86815,7 +86815,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BASIC_OCCUPATION_OBSERVATION__INTERPRETATION_CODE = CDAPackage.OBSERVATION__INTERPRETATION_CODE;
+	int BASIC_OCCUPATION_OBSERVATION__INTERPRETATION_CODE = SOCIAL_HISTORY_OBSERVATION_V4__INTERPRETATION_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Method Code</b></em>' containment reference list.
@@ -86824,7 +86824,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BASIC_OCCUPATION_OBSERVATION__METHOD_CODE = CDAPackage.OBSERVATION__METHOD_CODE;
+	int BASIC_OCCUPATION_OBSERVATION__METHOD_CODE = SOCIAL_HISTORY_OBSERVATION_V4__METHOD_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Target Site Code</b></em>' containment reference list.
@@ -86833,7 +86833,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BASIC_OCCUPATION_OBSERVATION__TARGET_SITE_CODE = CDAPackage.OBSERVATION__TARGET_SITE_CODE;
+	int BASIC_OCCUPATION_OBSERVATION__TARGET_SITE_CODE = SOCIAL_HISTORY_OBSERVATION_V4__TARGET_SITE_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Subject</b></em>' containment reference.
@@ -86842,7 +86842,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BASIC_OCCUPATION_OBSERVATION__SUBJECT = CDAPackage.OBSERVATION__SUBJECT;
+	int BASIC_OCCUPATION_OBSERVATION__SUBJECT = SOCIAL_HISTORY_OBSERVATION_V4__SUBJECT;
 
 	/**
 	 * The feature id for the '<em><b>Specimen</b></em>' containment reference list.
@@ -86851,7 +86851,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BASIC_OCCUPATION_OBSERVATION__SPECIMEN = CDAPackage.OBSERVATION__SPECIMEN;
+	int BASIC_OCCUPATION_OBSERVATION__SPECIMEN = SOCIAL_HISTORY_OBSERVATION_V4__SPECIMEN;
 
 	/**
 	 * The feature id for the '<em><b>Performer</b></em>' containment reference list.
@@ -86860,7 +86860,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BASIC_OCCUPATION_OBSERVATION__PERFORMER = CDAPackage.OBSERVATION__PERFORMER;
+	int BASIC_OCCUPATION_OBSERVATION__PERFORMER = SOCIAL_HISTORY_OBSERVATION_V4__PERFORMER;
 
 	/**
 	 * The feature id for the '<em><b>Author</b></em>' containment reference list.
@@ -86869,7 +86869,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BASIC_OCCUPATION_OBSERVATION__AUTHOR = CDAPackage.OBSERVATION__AUTHOR;
+	int BASIC_OCCUPATION_OBSERVATION__AUTHOR = SOCIAL_HISTORY_OBSERVATION_V4__AUTHOR;
 
 	/**
 	 * The feature id for the '<em><b>Informant</b></em>' containment reference list.
@@ -86878,7 +86878,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BASIC_OCCUPATION_OBSERVATION__INFORMANT = CDAPackage.OBSERVATION__INFORMANT;
+	int BASIC_OCCUPATION_OBSERVATION__INFORMANT = SOCIAL_HISTORY_OBSERVATION_V4__INFORMANT;
 
 	/**
 	 * The feature id for the '<em><b>Participant</b></em>' containment reference list.
@@ -86887,7 +86887,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BASIC_OCCUPATION_OBSERVATION__PARTICIPANT = CDAPackage.OBSERVATION__PARTICIPANT;
+	int BASIC_OCCUPATION_OBSERVATION__PARTICIPANT = SOCIAL_HISTORY_OBSERVATION_V4__PARTICIPANT;
 
 	/**
 	 * The feature id for the '<em><b>Entry Relationship</b></em>' containment reference list.
@@ -86896,7 +86896,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BASIC_OCCUPATION_OBSERVATION__ENTRY_RELATIONSHIP = CDAPackage.OBSERVATION__ENTRY_RELATIONSHIP;
+	int BASIC_OCCUPATION_OBSERVATION__ENTRY_RELATIONSHIP = SOCIAL_HISTORY_OBSERVATION_V4__ENTRY_RELATIONSHIP;
 
 	/**
 	 * The feature id for the '<em><b>Reference</b></em>' containment reference list.
@@ -86905,7 +86905,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BASIC_OCCUPATION_OBSERVATION__REFERENCE = CDAPackage.OBSERVATION__REFERENCE;
+	int BASIC_OCCUPATION_OBSERVATION__REFERENCE = SOCIAL_HISTORY_OBSERVATION_V4__REFERENCE;
 
 	/**
 	 * The feature id for the '<em><b>Precondition</b></em>' containment reference list.
@@ -86914,7 +86914,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BASIC_OCCUPATION_OBSERVATION__PRECONDITION = CDAPackage.OBSERVATION__PRECONDITION;
+	int BASIC_OCCUPATION_OBSERVATION__PRECONDITION = SOCIAL_HISTORY_OBSERVATION_V4__PRECONDITION;
 
 	/**
 	 * The feature id for the '<em><b>Reference Range</b></em>' containment reference list.
@@ -86923,7 +86923,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BASIC_OCCUPATION_OBSERVATION__REFERENCE_RANGE = CDAPackage.OBSERVATION__REFERENCE_RANGE;
+	int BASIC_OCCUPATION_OBSERVATION__REFERENCE_RANGE = SOCIAL_HISTORY_OBSERVATION_V4__REFERENCE_RANGE;
 
 	/**
 	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
@@ -86932,7 +86932,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BASIC_OCCUPATION_OBSERVATION__NULL_FLAVOR = CDAPackage.OBSERVATION__NULL_FLAVOR;
+	int BASIC_OCCUPATION_OBSERVATION__NULL_FLAVOR = SOCIAL_HISTORY_OBSERVATION_V4__NULL_FLAVOR;
 
 	/**
 	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
@@ -86941,7 +86941,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BASIC_OCCUPATION_OBSERVATION__CLASS_CODE = CDAPackage.OBSERVATION__CLASS_CODE;
+	int BASIC_OCCUPATION_OBSERVATION__CLASS_CODE = SOCIAL_HISTORY_OBSERVATION_V4__CLASS_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Mood Code</b></em>' attribute.
@@ -86950,7 +86950,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BASIC_OCCUPATION_OBSERVATION__MOOD_CODE = CDAPackage.OBSERVATION__MOOD_CODE;
+	int BASIC_OCCUPATION_OBSERVATION__MOOD_CODE = SOCIAL_HISTORY_OBSERVATION_V4__MOOD_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Negation Ind</b></em>' attribute.
@@ -86959,7 +86959,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BASIC_OCCUPATION_OBSERVATION__NEGATION_IND = CDAPackage.OBSERVATION__NEGATION_IND;
+	int BASIC_OCCUPATION_OBSERVATION__NEGATION_IND = SOCIAL_HISTORY_OBSERVATION_V4__NEGATION_IND;
 
 	/**
 	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
@@ -86968,7 +86968,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BASIC_OCCUPATION_OBSERVATION__IN_FULFILLMENT_OF1 = CDAPackage.OBSERVATION__IN_FULFILLMENT_OF1;
+	int BASIC_OCCUPATION_OBSERVATION__IN_FULFILLMENT_OF1 = SOCIAL_HISTORY_OBSERVATION_V4__IN_FULFILLMENT_OF1;
 
 	/**
 	 * The number of structural features of the '<em>Basic Occupation Observation</em>' class.
@@ -86977,7 +86977,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BASIC_OCCUPATION_OBSERVATION_FEATURE_COUNT = CDAPackage.OBSERVATION_FEATURE_COUNT + 0;
+	int BASIC_OCCUPATION_OBSERVATION_FEATURE_COUNT = SOCIAL_HISTORY_OBSERVATION_V4_FEATURE_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.GenderIdentityObservationV4Impl <em>Gender Identity Observation V4</em>}' class.
@@ -88125,7 +88125,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RESULT_ORGANIZER_V4__REALM_CODE = CDAPackage.ORGANIZER__REALM_CODE;
+	int RESULT_ORGANIZER_V4__REALM_CODE = RESULT_ORGANIZER2__REALM_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
@@ -88134,7 +88134,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RESULT_ORGANIZER_V4__TYPE_ID = CDAPackage.ORGANIZER__TYPE_ID;
+	int RESULT_ORGANIZER_V4__TYPE_ID = RESULT_ORGANIZER2__TYPE_ID;
 
 	/**
 	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
@@ -88143,7 +88143,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RESULT_ORGANIZER_V4__TEMPLATE_ID = CDAPackage.ORGANIZER__TEMPLATE_ID;
+	int RESULT_ORGANIZER_V4__TEMPLATE_ID = RESULT_ORGANIZER2__TEMPLATE_ID;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' containment reference list.
@@ -88152,7 +88152,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RESULT_ORGANIZER_V4__ID = CDAPackage.ORGANIZER__ID;
+	int RESULT_ORGANIZER_V4__ID = RESULT_ORGANIZER2__ID;
 
 	/**
 	 * The feature id for the '<em><b>Code</b></em>' containment reference.
@@ -88161,7 +88161,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RESULT_ORGANIZER_V4__CODE = CDAPackage.ORGANIZER__CODE;
+	int RESULT_ORGANIZER_V4__CODE = RESULT_ORGANIZER2__CODE;
 
 	/**
 	 * The feature id for the '<em><b>STDC Text</b></em>' containment reference.
@@ -88170,7 +88170,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RESULT_ORGANIZER_V4__STDC_TEXT = CDAPackage.ORGANIZER__STDC_TEXT;
+	int RESULT_ORGANIZER_V4__STDC_TEXT = RESULT_ORGANIZER2__STDC_TEXT;
 
 	/**
 	 * The feature id for the '<em><b>Status Code</b></em>' containment reference.
@@ -88179,7 +88179,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RESULT_ORGANIZER_V4__STATUS_CODE = CDAPackage.ORGANIZER__STATUS_CODE;
+	int RESULT_ORGANIZER_V4__STATUS_CODE = RESULT_ORGANIZER2__STATUS_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
@@ -88188,7 +88188,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RESULT_ORGANIZER_V4__EFFECTIVE_TIME = CDAPackage.ORGANIZER__EFFECTIVE_TIME;
+	int RESULT_ORGANIZER_V4__EFFECTIVE_TIME = RESULT_ORGANIZER2__EFFECTIVE_TIME;
 
 	/**
 	 * The feature id for the '<em><b>Subject</b></em>' containment reference.
@@ -88197,7 +88197,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RESULT_ORGANIZER_V4__SUBJECT = CDAPackage.ORGANIZER__SUBJECT;
+	int RESULT_ORGANIZER_V4__SUBJECT = RESULT_ORGANIZER2__SUBJECT;
 
 	/**
 	 * The feature id for the '<em><b>Specimen</b></em>' containment reference list.
@@ -88206,7 +88206,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RESULT_ORGANIZER_V4__SPECIMEN = CDAPackage.ORGANIZER__SPECIMEN;
+	int RESULT_ORGANIZER_V4__SPECIMEN = RESULT_ORGANIZER2__SPECIMEN;
 
 	/**
 	 * The feature id for the '<em><b>Performer</b></em>' containment reference list.
@@ -88215,7 +88215,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RESULT_ORGANIZER_V4__PERFORMER = CDAPackage.ORGANIZER__PERFORMER;
+	int RESULT_ORGANIZER_V4__PERFORMER = RESULT_ORGANIZER2__PERFORMER;
 
 	/**
 	 * The feature id for the '<em><b>Author</b></em>' containment reference list.
@@ -88224,7 +88224,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RESULT_ORGANIZER_V4__AUTHOR = CDAPackage.ORGANIZER__AUTHOR;
+	int RESULT_ORGANIZER_V4__AUTHOR = RESULT_ORGANIZER2__AUTHOR;
 
 	/**
 	 * The feature id for the '<em><b>Informant</b></em>' containment reference list.
@@ -88233,7 +88233,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RESULT_ORGANIZER_V4__INFORMANT = CDAPackage.ORGANIZER__INFORMANT;
+	int RESULT_ORGANIZER_V4__INFORMANT = RESULT_ORGANIZER2__INFORMANT;
 
 	/**
 	 * The feature id for the '<em><b>Participant</b></em>' containment reference list.
@@ -88242,7 +88242,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RESULT_ORGANIZER_V4__PARTICIPANT = CDAPackage.ORGANIZER__PARTICIPANT;
+	int RESULT_ORGANIZER_V4__PARTICIPANT = RESULT_ORGANIZER2__PARTICIPANT;
 
 	/**
 	 * The feature id for the '<em><b>Reference</b></em>' containment reference list.
@@ -88251,7 +88251,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RESULT_ORGANIZER_V4__REFERENCE = CDAPackage.ORGANIZER__REFERENCE;
+	int RESULT_ORGANIZER_V4__REFERENCE = RESULT_ORGANIZER2__REFERENCE;
 
 	/**
 	 * The feature id for the '<em><b>Precondition</b></em>' containment reference list.
@@ -88260,7 +88260,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RESULT_ORGANIZER_V4__PRECONDITION = CDAPackage.ORGANIZER__PRECONDITION;
+	int RESULT_ORGANIZER_V4__PRECONDITION = RESULT_ORGANIZER2__PRECONDITION;
 
 	/**
 	 * The feature id for the '<em><b>Component</b></em>' containment reference list.
@@ -88269,7 +88269,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RESULT_ORGANIZER_V4__COMPONENT = CDAPackage.ORGANIZER__COMPONENT;
+	int RESULT_ORGANIZER_V4__COMPONENT = RESULT_ORGANIZER2__COMPONENT;
 
 	/**
 	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
@@ -88278,7 +88278,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RESULT_ORGANIZER_V4__NULL_FLAVOR = CDAPackage.ORGANIZER__NULL_FLAVOR;
+	int RESULT_ORGANIZER_V4__NULL_FLAVOR = RESULT_ORGANIZER2__NULL_FLAVOR;
 
 	/**
 	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
@@ -88287,7 +88287,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RESULT_ORGANIZER_V4__CLASS_CODE = CDAPackage.ORGANIZER__CLASS_CODE;
+	int RESULT_ORGANIZER_V4__CLASS_CODE = RESULT_ORGANIZER2__CLASS_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Mood Code</b></em>' attribute.
@@ -88296,7 +88296,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RESULT_ORGANIZER_V4__MOOD_CODE = CDAPackage.ORGANIZER__MOOD_CODE;
+	int RESULT_ORGANIZER_V4__MOOD_CODE = RESULT_ORGANIZER2__MOOD_CODE;
 
 	/**
 	 * The number of structural features of the '<em>Result Organizer V4</em>' class.
@@ -88305,7 +88305,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RESULT_ORGANIZER_V4_FEATURE_COUNT = CDAPackage.ORGANIZER_FEATURE_COUNT + 0;
+	int RESULT_ORGANIZER_V4_FEATURE_COUNT = RESULT_ORGANIZER2_FEATURE_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.consol.impl.IndicationV3Impl <em>Indication V3</em>}' class.
@@ -88324,7 +88324,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INDICATION_V3__REALM_CODE = CDAPackage.OBSERVATION__REALM_CODE;
+	int INDICATION_V3__REALM_CODE = INDICATION2__REALM_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
@@ -88333,7 +88333,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INDICATION_V3__TYPE_ID = CDAPackage.OBSERVATION__TYPE_ID;
+	int INDICATION_V3__TYPE_ID = INDICATION2__TYPE_ID;
 
 	/**
 	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
@@ -88342,7 +88342,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INDICATION_V3__TEMPLATE_ID = CDAPackage.OBSERVATION__TEMPLATE_ID;
+	int INDICATION_V3__TEMPLATE_ID = INDICATION2__TEMPLATE_ID;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' containment reference list.
@@ -88351,7 +88351,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INDICATION_V3__ID = CDAPackage.OBSERVATION__ID;
+	int INDICATION_V3__ID = INDICATION2__ID;
 
 	/**
 	 * The feature id for the '<em><b>Code</b></em>' containment reference.
@@ -88360,7 +88360,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INDICATION_V3__CODE = CDAPackage.OBSERVATION__CODE;
+	int INDICATION_V3__CODE = INDICATION2__CODE;
 
 	/**
 	 * The feature id for the '<em><b>Derivation Expr</b></em>' containment reference.
@@ -88369,7 +88369,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INDICATION_V3__DERIVATION_EXPR = CDAPackage.OBSERVATION__DERIVATION_EXPR;
+	int INDICATION_V3__DERIVATION_EXPR = INDICATION2__DERIVATION_EXPR;
 
 	/**
 	 * The feature id for the '<em><b>Text</b></em>' containment reference.
@@ -88378,7 +88378,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INDICATION_V3__TEXT = CDAPackage.OBSERVATION__TEXT;
+	int INDICATION_V3__TEXT = INDICATION2__TEXT;
 
 	/**
 	 * The feature id for the '<em><b>Status Code</b></em>' containment reference.
@@ -88387,7 +88387,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INDICATION_V3__STATUS_CODE = CDAPackage.OBSERVATION__STATUS_CODE;
+	int INDICATION_V3__STATUS_CODE = INDICATION2__STATUS_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
@@ -88396,7 +88396,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INDICATION_V3__EFFECTIVE_TIME = CDAPackage.OBSERVATION__EFFECTIVE_TIME;
+	int INDICATION_V3__EFFECTIVE_TIME = INDICATION2__EFFECTIVE_TIME;
 
 	/**
 	 * The feature id for the '<em><b>Priority Code</b></em>' containment reference.
@@ -88405,7 +88405,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INDICATION_V3__PRIORITY_CODE = CDAPackage.OBSERVATION__PRIORITY_CODE;
+	int INDICATION_V3__PRIORITY_CODE = INDICATION2__PRIORITY_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Repeat Number</b></em>' containment reference.
@@ -88414,7 +88414,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INDICATION_V3__REPEAT_NUMBER = CDAPackage.OBSERVATION__REPEAT_NUMBER;
+	int INDICATION_V3__REPEAT_NUMBER = INDICATION2__REPEAT_NUMBER;
 
 	/**
 	 * The feature id for the '<em><b>Language Code</b></em>' containment reference.
@@ -88423,7 +88423,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INDICATION_V3__LANGUAGE_CODE = CDAPackage.OBSERVATION__LANGUAGE_CODE;
+	int INDICATION_V3__LANGUAGE_CODE = INDICATION2__LANGUAGE_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Value</b></em>' containment reference list.
@@ -88432,7 +88432,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INDICATION_V3__VALUE = CDAPackage.OBSERVATION__VALUE;
+	int INDICATION_V3__VALUE = INDICATION2__VALUE;
 
 	/**
 	 * The feature id for the '<em><b>Interpretation Code</b></em>' containment reference list.
@@ -88441,7 +88441,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INDICATION_V3__INTERPRETATION_CODE = CDAPackage.OBSERVATION__INTERPRETATION_CODE;
+	int INDICATION_V3__INTERPRETATION_CODE = INDICATION2__INTERPRETATION_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Method Code</b></em>' containment reference list.
@@ -88450,7 +88450,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INDICATION_V3__METHOD_CODE = CDAPackage.OBSERVATION__METHOD_CODE;
+	int INDICATION_V3__METHOD_CODE = INDICATION2__METHOD_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Target Site Code</b></em>' containment reference list.
@@ -88459,7 +88459,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INDICATION_V3__TARGET_SITE_CODE = CDAPackage.OBSERVATION__TARGET_SITE_CODE;
+	int INDICATION_V3__TARGET_SITE_CODE = INDICATION2__TARGET_SITE_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Subject</b></em>' containment reference.
@@ -88468,7 +88468,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INDICATION_V3__SUBJECT = CDAPackage.OBSERVATION__SUBJECT;
+	int INDICATION_V3__SUBJECT = INDICATION2__SUBJECT;
 
 	/**
 	 * The feature id for the '<em><b>Specimen</b></em>' containment reference list.
@@ -88477,7 +88477,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INDICATION_V3__SPECIMEN = CDAPackage.OBSERVATION__SPECIMEN;
+	int INDICATION_V3__SPECIMEN = INDICATION2__SPECIMEN;
 
 	/**
 	 * The feature id for the '<em><b>Performer</b></em>' containment reference list.
@@ -88486,7 +88486,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INDICATION_V3__PERFORMER = CDAPackage.OBSERVATION__PERFORMER;
+	int INDICATION_V3__PERFORMER = INDICATION2__PERFORMER;
 
 	/**
 	 * The feature id for the '<em><b>Author</b></em>' containment reference list.
@@ -88495,7 +88495,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INDICATION_V3__AUTHOR = CDAPackage.OBSERVATION__AUTHOR;
+	int INDICATION_V3__AUTHOR = INDICATION2__AUTHOR;
 
 	/**
 	 * The feature id for the '<em><b>Informant</b></em>' containment reference list.
@@ -88504,7 +88504,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INDICATION_V3__INFORMANT = CDAPackage.OBSERVATION__INFORMANT;
+	int INDICATION_V3__INFORMANT = INDICATION2__INFORMANT;
 
 	/**
 	 * The feature id for the '<em><b>Participant</b></em>' containment reference list.
@@ -88513,7 +88513,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INDICATION_V3__PARTICIPANT = CDAPackage.OBSERVATION__PARTICIPANT;
+	int INDICATION_V3__PARTICIPANT = INDICATION2__PARTICIPANT;
 
 	/**
 	 * The feature id for the '<em><b>Entry Relationship</b></em>' containment reference list.
@@ -88522,7 +88522,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INDICATION_V3__ENTRY_RELATIONSHIP = CDAPackage.OBSERVATION__ENTRY_RELATIONSHIP;
+	int INDICATION_V3__ENTRY_RELATIONSHIP = INDICATION2__ENTRY_RELATIONSHIP;
 
 	/**
 	 * The feature id for the '<em><b>Reference</b></em>' containment reference list.
@@ -88531,7 +88531,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INDICATION_V3__REFERENCE = CDAPackage.OBSERVATION__REFERENCE;
+	int INDICATION_V3__REFERENCE = INDICATION2__REFERENCE;
 
 	/**
 	 * The feature id for the '<em><b>Precondition</b></em>' containment reference list.
@@ -88540,7 +88540,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INDICATION_V3__PRECONDITION = CDAPackage.OBSERVATION__PRECONDITION;
+	int INDICATION_V3__PRECONDITION = INDICATION2__PRECONDITION;
 
 	/**
 	 * The feature id for the '<em><b>Reference Range</b></em>' containment reference list.
@@ -88549,7 +88549,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INDICATION_V3__REFERENCE_RANGE = CDAPackage.OBSERVATION__REFERENCE_RANGE;
+	int INDICATION_V3__REFERENCE_RANGE = INDICATION2__REFERENCE_RANGE;
 
 	/**
 	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
@@ -88558,7 +88558,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INDICATION_V3__NULL_FLAVOR = CDAPackage.OBSERVATION__NULL_FLAVOR;
+	int INDICATION_V3__NULL_FLAVOR = INDICATION2__NULL_FLAVOR;
 
 	/**
 	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
@@ -88567,7 +88567,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INDICATION_V3__CLASS_CODE = CDAPackage.OBSERVATION__CLASS_CODE;
+	int INDICATION_V3__CLASS_CODE = INDICATION2__CLASS_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Mood Code</b></em>' attribute.
@@ -88576,7 +88576,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INDICATION_V3__MOOD_CODE = CDAPackage.OBSERVATION__MOOD_CODE;
+	int INDICATION_V3__MOOD_CODE = INDICATION2__MOOD_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Negation Ind</b></em>' attribute.
@@ -88585,7 +88585,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INDICATION_V3__NEGATION_IND = CDAPackage.OBSERVATION__NEGATION_IND;
+	int INDICATION_V3__NEGATION_IND = INDICATION2__NEGATION_IND;
 
 	/**
 	 * The feature id for the '<em><b>In Fulfillment Of1</b></em>' containment reference list.
@@ -88594,7 +88594,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INDICATION_V3__IN_FULFILLMENT_OF1 = CDAPackage.OBSERVATION__IN_FULFILLMENT_OF1;
+	int INDICATION_V3__IN_FULFILLMENT_OF1 = INDICATION2__IN_FULFILLMENT_OF1;
 
 	/**
 	 * The number of structural features of the '<em>Indication V3</em>' class.
@@ -88603,7 +88603,7 @@ public interface ConsolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INDICATION_V3_FEATURE_COUNT = CDAPackage.OBSERVATION_FEATURE_COUNT + 0;
+	int INDICATION_V3_FEATURE_COUNT = INDICATION2_FEATURE_COUNT + 0;
 
 	/**
 	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.consol.GeneralHeaderConstraints <em>General Header Constraints</em>}'.

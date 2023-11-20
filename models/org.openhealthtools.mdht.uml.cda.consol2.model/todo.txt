@@ -28,33 +28,33 @@ Laboratory
 *** Coverage - Added effective time should/value shall
 *** Disability Status Observation - Added Template
 Indication (V3) - Need to add template for change in MAY to SHOULD
-Medication Dispense (V3) - Need to udpate status code
-PolicyActivity(V4) (?)  - No apparent changes - Do need updated template
+*** Medication Dispense (V3) - Need to udpate status code
+*** PolicyActivity(V4) (?)  - New Template version based on changes to comments, no changes to constraints
 *** Pregnancy Intention in Next Year
-Result Observation (V4) (?) -   ???? Did not generate specimen validation ???? Added Specimen constraint 
-Result Organizer (V4) (?) -  ???? Did not generate specimen validation ????    Added Specimen constraint 
-*** Basic Industry Observation - Added Template
-*** Basic Occupation Observation - Added Template
+*** Result Observation (V4) Added Specimen 
+*** Result Organizer (V4) (?) - Added Specimen 
+*** Basic Industry Observation - Added test
+*** Basic Occupation Observation - Added test
 *** Gender Identity Observation (V4) - Added Template
 *** Sexual Orientation Observation (V2) - No apparent changes - Perhaps the null flavor VS but it is a may and a should
 *** Related Person Relationship and Name Participant
 
 
 2023-05-01 Tests
-*** US REALM Header (?) - Does not required US REALM previous versions
-*** Coverage - Added to Test
-*** Disability Status Observation -Added to Test
- Indication (V3) - ???
-*** Medication Dispense (V3) - Added to Test
-*** PolicyActivity(V4) (?)  - No apparent changes
-*** Pregnancy Intention in Next Year
-*** Result Observation (V4) (?) - Added Specimen constraint
-*** Result Organizer (V4) (?) - No apparent changes
-*** Basic Industry Observation - Added Template
-*** Basic Occupation Observation - Added Template
-*** Gender Identity Observation (V4) - Added Template
-*** Sexual Orientation Observation (V2) - No apparent changes - Perhaps the null flavor VS but it is a may and a should
-*** Related Person Relationship and Name Participant    
+US REALM Header (?) - Does not required US REALM previous versions
+#+++ Coverage - Added to Test
+#+++ Disability Status Observation -Added to Test
+Indication (V3) - ???
+#+++ Medication Dispense (V3) - Added to Test
+#+++ PolicyActivity(V4) (?)  -  Added to Test
+#+++ Pregnancy Intention in Next Year Added test
+#+++ Result Observation (V4) (?) - Added test
+#+++ Result Organizer (V4) (?) - Added test
+#+++ Basic Industry Observation - Added Template
+#+++ Basic Occupation Observation - Added Template
+#+++ Gender Identity Observation (V4) - Added test     
+#+++ Sexual Orientation Observation (V2) - Added test     
+#+++ Related Person Relationship and Name Participant Added test     
 
 
 

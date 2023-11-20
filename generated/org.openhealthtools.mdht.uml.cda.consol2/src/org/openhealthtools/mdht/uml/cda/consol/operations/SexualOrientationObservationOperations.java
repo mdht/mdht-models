@@ -12,8 +12,6 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.emf.ecore.EObject;
 
-import org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations;
-
 import org.eclipse.mdht.uml.hl7.datatypes.util.DatatypesUtil;
 
 import org.eclipse.ocl.ParserException;
@@ -39,7 +37,6 @@ import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
  * <p>
  * The following operations are supported:
  * <ul>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SexualOrientationObservation#validateSexualOrientationObservationTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Sexual Orientation Observation Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SexualOrientationObservation#validateSexualOrientationObservationCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Sexual Orientation Observation Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SexualOrientationObservation#validateSexualOrientationObservationCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Sexual Orientation Observation Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SexualOrientationObservation#validateSexualOrientationObservationStatusCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Sexual Orientation Observation Status Code P</em>}</li>
@@ -51,12 +48,13 @@ import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SexualOrientationObservation#validateSexualOrientationObservationMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Sexual Orientation Observation Mood Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SexualOrientationObservation#validateSexualOrientationObservationIVLTSLow(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Sexual Orientation Observation IVLTS Low</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SexualOrientationObservation#validateSexualOrientationObservationIVLTSHigh(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Sexual Orientation Observation IVLTS High</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SexualOrientationObservation#validateSocialHistoryObservationV4TemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Observation V4 Template Id</em>}</li>
  * </ul>
  * </p>
  *
  * @generated
  */
-public class SexualOrientationObservationOperations extends ClinicalStatementOperations {
+public class SexualOrientationObservationOperations extends SocialHistoryObservationV4Operations {
 
 	protected static final ThreadLocal<OCL> EOCL_ENV = new ThreadLocal<OCL>() {
 		@Override
@@ -72,75 +70,6 @@ public class SexualOrientationObservationOperations extends ClinicalStatementOpe
 	 */
 	protected SexualOrientationObservationOperations() {
 		super();
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validateSexualOrientationObservationTemplateId(SexualOrientationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Sexual Orientation Observation Template Id</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateSexualOrientationObservationTemplateId(SexualOrientationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_SEXUAL_ORIENTATION_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.501' and id.extension = '2022-06-01')";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateSexualOrientationObservationTemplateId(SexualOrientationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Sexual Orientation Observation Template Id</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateSexualOrientationObservationTemplateId(SexualOrientationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-
-	protected static ThreadLocal<Constraint> VALIDATE_SEXUAL_ORIENTATION_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param sexualOrientationObservation The receiving '<em><b>Sexual Orientation Observation</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-
-	public static boolean validateSexualOrientationObservationTemplateId(
-			SexualOrientationObservation sexualOrientationObservation, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
-		DatatypesUtil.increment(context, "SexualOrientationObservationSexualOrientationObservationTemplateId", "ERROR");
-
-		if (VALIDATE_SEXUAL_ORIENTATION_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
-
-			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.SEXUAL_ORIENTATION_OBSERVATION);
-			try {
-				VALIDATE_SEXUAL_ORIENTATION_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
-					helper.createInvariant(
-						VALIDATE_SEXUAL_ORIENTATION_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-
-		if (!EOCL_ENV.get().createQuery(
-			VALIDATE_SEXUAL_ORIENTATION_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
-				sexualOrientationObservation)) {
-			if (diagnostics != null) {
-				diagnostics.add(
-					new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.SEXUAL_ORIENTATION_OBSERVATION__SEXUAL_ORIENTATION_OBSERVATION_TEMPLATE_ID,
-						ConsolPlugin.INSTANCE.getString(
-							"SexualOrientationObservationSexualOrientationObservationTemplateId"),
-						new Object[] { sexualOrientationObservation }));
-			}
-
-			return false;
-		}
-		return true;
 	}
 
 	/**
@@ -851,7 +780,7 @@ public class SexualOrientationObservationOperations extends ClinicalStatementOpe
 			SexualOrientationObservation sexualOrientationObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
-		DatatypesUtil.increment(context, "SexualOrientationObservationSexualOrientationObservationIVLTSLow", "WARNING");
+		DatatypesUtil.increment(context, "SexualOrientationObservationSexualOrientationObservationIVLTSLow", "ERROR");
 
 		if (VALIDATE_SEXUAL_ORIENTATION_OBSERVATION_IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -876,7 +805,7 @@ public class SexualOrientationObservationOperations extends ClinicalStatementOpe
 				for (EObject eObject : oclResultSet) {
 					diagnostics.add(
 						new BasicDiagnostic(
-							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.SEXUAL_ORIENTATION_OBSERVATION__SEXUAL_ORIENTATION_OBSERVATION_IVLTS_LOW,
 							ConsolPlugin.INSTANCE.getString(
 								"SexualOrientationObservationSexualOrientationObservationIVLTSLow"),
@@ -959,6 +888,75 @@ public class SexualOrientationObservationOperations extends ClinicalStatementOpe
 
 			}
 			return oclResultSet.isEmpty();
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateSocialHistoryObservationV4TemplateId(SexualOrientationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Observation V4 Template Id</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateSocialHistoryObservationV4TemplateId(SexualOrientationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_SOCIAL_HISTORY_OBSERVATION_V4_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.501' and id.extension = '2023-05-01')";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateSocialHistoryObservationV4TemplateId(SexualOrientationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Observation V4 Template Id</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateSocialHistoryObservationV4TemplateId(SexualOrientationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static ThreadLocal<Constraint> VALIDATE_SOCIAL_HISTORY_OBSERVATION_V4_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param sexualOrientationObservation The receiving '<em><b>Sexual Orientation Observation</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+
+	public static boolean validateSocialHistoryObservationV4TemplateId(
+			SexualOrientationObservation sexualOrientationObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
+		DatatypesUtil.increment(context, "SexualOrientationObservationSocialHistoryObservationV4TemplateId", "ERROR");
+
+		if (VALIDATE_SOCIAL_HISTORY_OBSERVATION_V4_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.SEXUAL_ORIENTATION_OBSERVATION);
+			try {
+				VALIDATE_SOCIAL_HISTORY_OBSERVATION_V4_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_SOCIAL_HISTORY_OBSERVATION_V4_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_SOCIAL_HISTORY_OBSERVATION_V4_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				sexualOrientationObservation)) {
+			if (diagnostics != null) {
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.SEXUAL_ORIENTATION_OBSERVATION__SOCIAL_HISTORY_OBSERVATION_V4_TEMPLATE_ID,
+						ConsolPlugin.INSTANCE.getString(
+							"SexualOrientationObservationSocialHistoryObservationV4TemplateId"),
+						new Object[] { sexualOrientationObservation }));
+			}
+
+			return false;
 		}
 		return true;
 	}

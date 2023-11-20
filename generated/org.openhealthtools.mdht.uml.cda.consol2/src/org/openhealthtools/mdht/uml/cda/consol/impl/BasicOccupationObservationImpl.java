@@ -11,8 +11,6 @@ import org.eclipse.emf.ecore.EObject;
 
 import org.eclipse.mdht.emf.runtime.util.Initializer;
 
-import org.eclipse.mdht.uml.cda.impl.ObservationImpl;
-
 import org.openhealthtools.mdht.uml.cda.consol.BasicIndustryObservation;
 import org.openhealthtools.mdht.uml.cda.consol.BasicOccupationObservation;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
@@ -26,7 +24,8 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.BasicOccupationObserva
  *
  * @generated
  */
-public class BasicOccupationObservationImpl extends ObservationImpl implements BasicOccupationObservation {
+public class BasicOccupationObservationImpl extends SocialHistoryObservationV4Impl
+		implements BasicOccupationObservation {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -44,17 +43,6 @@ public class BasicOccupationObservationImpl extends ObservationImpl implements B
 	@Override
 	protected EClass eStaticClass() {
 		return ConsolPackage.Literals.BASIC_OCCUPATION_OBSERVATION;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateBasicOccupationObservationTemplateId(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return BasicOccupationObservationOperations.validateBasicOccupationObservationTemplateId(
-			this, diagnostics, context);
 	}
 
 	/**
@@ -187,6 +175,19 @@ public class BasicOccupationObservationImpl extends ObservationImpl implements B
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
+	public boolean validateSocialHistoryObservationV4TemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return BasicOccupationObservationOperations.validateSocialHistoryObservationV4TemplateId(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public BasicOccupationObservation init() {
 		return Initializer.Util.init(this);
 	}
@@ -196,6 +197,7 @@ public class BasicOccupationObservationImpl extends ObservationImpl implements B
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public BasicOccupationObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

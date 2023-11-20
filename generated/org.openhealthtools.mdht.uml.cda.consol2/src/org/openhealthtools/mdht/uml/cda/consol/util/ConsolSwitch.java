@@ -7346,6 +7346,9 @@ public class ConsolSwitch<T> {
 				SexualOrientationObservation sexualOrientationObservation = (SexualOrientationObservation) theEObject;
 				T result = caseSexualOrientationObservation(sexualOrientationObservation);
 				if (result == null) {
+					result = caseSocialHistoryObservationV4(sexualOrientationObservation);
+				}
+				if (result == null) {
 					result = caseObservation(sexualOrientationObservation);
 				}
 				if (result == null) {
@@ -7544,6 +7547,9 @@ public class ConsolSwitch<T> {
 				BasicIndustryObservation basicIndustryObservation = (BasicIndustryObservation) theEObject;
 				T result = caseBasicIndustryObservation(basicIndustryObservation);
 				if (result == null) {
+					result = caseSocialHistoryObservationV4(basicIndustryObservation);
+				}
+				if (result == null) {
 					result = caseObservation(basicIndustryObservation);
 				}
 				if (result == null) {
@@ -7563,6 +7569,9 @@ public class ConsolSwitch<T> {
 			case ConsolPackage.BASIC_OCCUPATION_OBSERVATION: {
 				BasicOccupationObservation basicOccupationObservation = (BasicOccupationObservation) theEObject;
 				T result = caseBasicOccupationObservation(basicOccupationObservation);
+				if (result == null) {
+					result = caseSocialHistoryObservationV4(basicOccupationObservation);
+				}
 				if (result == null) {
 					result = caseObservation(basicOccupationObservation);
 				}
@@ -7676,6 +7685,12 @@ public class ConsolSwitch<T> {
 				ResultOrganizerV4 resultOrganizerV4 = (ResultOrganizerV4) theEObject;
 				T result = caseResultOrganizerV4(resultOrganizerV4);
 				if (result == null) {
+					result = caseResultOrganizer2(resultOrganizerV4);
+				}
+				if (result == null) {
+					result = caseResultOrganizer(resultOrganizerV4);
+				}
+				if (result == null) {
 					result = caseOrganizer(resultOrganizerV4);
 				}
 				if (result == null) {
@@ -7695,6 +7710,12 @@ public class ConsolSwitch<T> {
 			case ConsolPackage.INDICATION_V3: {
 				IndicationV3 indicationV3 = (IndicationV3) theEObject;
 				T result = caseIndicationV3(indicationV3);
+				if (result == null) {
+					result = caseIndication2(indicationV3);
+				}
+				if (result == null) {
+					result = caseIndication(indicationV3);
+				}
 				if (result == null) {
 					result = caseObservation(indicationV3);
 				}

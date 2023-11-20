@@ -11,8 +11,6 @@ import org.eclipse.emf.ecore.EObject;
 
 import org.eclipse.mdht.emf.runtime.util.Initializer;
 
-import org.eclipse.mdht.uml.cda.impl.ObservationImpl;
-
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.SexualOrientationObservation;
 
@@ -25,7 +23,8 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.SexualOrientationObser
  *
  * @generated
  */
-public class SexualOrientationObservationImpl extends ObservationImpl implements SexualOrientationObservation {
+public class SexualOrientationObservationImpl extends SocialHistoryObservationV4Impl
+		implements SexualOrientationObservation {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -43,17 +42,6 @@ public class SexualOrientationObservationImpl extends ObservationImpl implements
 	@Override
 	protected EClass eStaticClass() {
 		return ConsolPackage.Literals.SEXUAL_ORIENTATION_OBSERVATION;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateSexualOrientationObservationTemplateId(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return SexualOrientationObservationOperations.validateSexualOrientationObservationTemplateId(
-			this, diagnostics, context);
 	}
 
 	/**
@@ -179,6 +167,19 @@ public class SexualOrientationObservationImpl extends ObservationImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
+	public boolean validateSocialHistoryObservationV4TemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return SexualOrientationObservationOperations.validateSocialHistoryObservationV4TemplateId(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public SexualOrientationObservation init() {
 		return Initializer.Util.init(this);
 	}
@@ -188,6 +189,7 @@ public class SexualOrientationObservationImpl extends ObservationImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public SexualOrientationObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

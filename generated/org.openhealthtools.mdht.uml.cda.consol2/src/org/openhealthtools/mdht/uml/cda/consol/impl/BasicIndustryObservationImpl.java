@@ -11,8 +11,6 @@ import org.eclipse.emf.ecore.EObject;
 
 import org.eclipse.mdht.emf.runtime.util.Initializer;
 
-import org.eclipse.mdht.uml.cda.impl.ObservationImpl;
-
 import org.openhealthtools.mdht.uml.cda.consol.BasicIndustryObservation;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 
@@ -25,7 +23,7 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.BasicIndustryObservati
  *
  * @generated
  */
-public class BasicIndustryObservationImpl extends ObservationImpl implements BasicIndustryObservation {
+public class BasicIndustryObservationImpl extends SocialHistoryObservationV4Impl implements BasicIndustryObservation {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -43,17 +41,6 @@ public class BasicIndustryObservationImpl extends ObservationImpl implements Bas
 	@Override
 	protected EClass eStaticClass() {
 		return ConsolPackage.Literals.BASIC_INDUSTRY_OBSERVATION;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateBasicIndustryObservationTemplateId(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return BasicIndustryObservationOperations.validateBasicIndustryObservationTemplateId(
-			this, diagnostics, context);
 	}
 
 	/**
@@ -128,6 +115,19 @@ public class BasicIndustryObservationImpl extends ObservationImpl implements Bas
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
+	public boolean validateSocialHistoryObservationV4TemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return BasicIndustryObservationOperations.validateSocialHistoryObservationV4TemplateId(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public BasicIndustryObservation init() {
 		return Initializer.Util.init(this);
 	}
@@ -137,6 +137,7 @@ public class BasicIndustryObservationImpl extends ObservationImpl implements Bas
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public BasicIndustryObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

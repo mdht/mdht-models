@@ -3,6 +3,7 @@
  */
 package org.openhealthtools.mdht.uml.cda.consol.tests;
 
+import java.util.Collection;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
@@ -24,14 +25,14 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.BasicIndustryObservati
  * <p>
  * The following operations are supported:
  * <ul>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.BasicIndustryObservation#validateBasicIndustryObservationTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Basic Industry Observation Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.BasicIndustryObservation#validateBasicIndustryObservationCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Basic Industry Observation Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.BasicIndustryObservation#validateBasicIndustryObservationStatusCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Basic Industry Observation Status Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.BasicIndustryObservation#validateBasicIndustryObservationStatusCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Basic Industry Observation Status Code P</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.BasicIndustryObservation#validateBasicIndustryObservationStatusCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Basic Industry Observation Status Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.BasicIndustryObservation#validateBasicIndustryObservationValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Basic Industry Observation Value</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.BasicIndustryObservation#validateBasicIndustryObservationValueP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Basic Industry Observation Value P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.BasicIndustryObservation#validateBasicIndustryObservationClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Basic Industry Observation Class Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.BasicIndustryObservation#validateBasicIndustryObservationMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Basic Industry Observation Mood Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.BasicIndustryObservation#validateSocialHistoryObservationV4TemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Observation V4 Template Id</em>}</li>
  * </ul>
  * </p>
  *
@@ -39,41 +40,6 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.BasicIndustryObservati
  */
 
 public class BasicIndustryObservationTest extends CDAValidationTest {
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
-
-	public void testValidateBasicIndustryObservationTemplateId() {
-		OperationsTestCase<BasicIndustryObservation> validateBasicIndustryObservationTemplateIdTestCase = new OperationsTestCase<BasicIndustryObservation>(
-			"validateBasicIndustryObservationTemplateId", operationsForOCL.getOCLValue(
-				"VALIDATE_BASIC_INDUSTRY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(BasicIndustryObservation target) {
-
-			}
-
-			@Override
-			protected void updateToPass(BasicIndustryObservation target) {
-				target.init();
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return BasicIndustryObservationOperations.validateBasicIndustryObservationTemplateId(
-					(BasicIndustryObservation) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateBasicIndustryObservationTemplateIdTestCase.doValidationTest();
-	}
 
 	/**
 	*
@@ -137,6 +103,13 @@ public class BasicIndustryObservationTest extends CDAValidationTest {
 				CS cs = DatatypesFactory.eINSTANCE.createCS("completed");
 				target.setStatusCode(cs);
 
+			}
+
+			@Override
+			protected void setDependency(BasicIndustryObservation target) {
+				Collection<Object> passToken = new java.util.ArrayList<>(3);
+				passToken.add(target);
+				map.put("org.openhealthtools.mdht.uml.cda.consol.BasicIndustryObservationStatusCodeP", passToken);
 			}
 
 			@Override
@@ -329,6 +302,41 @@ public class BasicIndustryObservationTest extends CDAValidationTest {
 		};
 
 		validateBasicIndustryObservationMoodCodeTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateSocialHistoryObservationV4TemplateId() {
+		OperationsTestCase<BasicIndustryObservation> validateSocialHistoryObservationV4TemplateIdTestCase = new OperationsTestCase<BasicIndustryObservation>(
+			"validateSocialHistoryObservationV4TemplateId", operationsForOCL.getOCLValue(
+				"VALIDATE_SOCIAL_HISTORY_OBSERVATION_V4_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(BasicIndustryObservation target) {
+
+			}
+
+			@Override
+			protected void updateToPass(BasicIndustryObservation target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return BasicIndustryObservationOperations.validateSocialHistoryObservationV4TemplateId(
+					(BasicIndustryObservation) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateSocialHistoryObservationV4TemplateIdTestCase.doValidationTest();
 	}
 
 	/**

@@ -11,8 +11,6 @@ import org.eclipse.emf.ecore.EObject;
 
 import org.eclipse.mdht.emf.runtime.util.Initializer;
 
-import org.eclipse.mdht.uml.cda.impl.ObservationImpl;
-
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.IndicationV3;
 
@@ -25,7 +23,7 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.IndicationV3Operations
  *
  * @generated
  */
-public class IndicationV3Impl extends ObservationImpl implements IndicationV3 {
+public class IndicationV3Impl extends Indication2Impl implements IndicationV3 {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -50,8 +48,9 @@ public class IndicationV3Impl extends ObservationImpl implements IndicationV3 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateIndicationV3TemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return IndicationV3Operations.validateIndicationV3TemplateId(this, diagnostics, context);
+	@Override
+	public boolean validateIndication2TemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return IndicationV3Operations.validateIndication2TemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -59,6 +58,27 @@ public class IndicationV3Impl extends ObservationImpl implements IndicationV3 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
+	public boolean validateIndicationValueP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return IndicationV3Operations.validateIndicationValueP(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateIndicationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return IndicationV3Operations.validateIndicationValue(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public IndicationV3 init() {
 		return Initializer.Util.init(this);
 	}
@@ -68,6 +88,7 @@ public class IndicationV3Impl extends ObservationImpl implements IndicationV3 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public IndicationV3 init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

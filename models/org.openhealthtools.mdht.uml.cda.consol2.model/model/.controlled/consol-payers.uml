@@ -1205,7 +1205,9 @@ The prefix sdtc: SHALL be bound to the namespace &quot;urn:hl7-org:sdtc&quot;. T
     </nestedClassifier>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_Vf2sQOwlEeOqa975IP2wug" base_Class="_Q0ODkOwlEeOqa975IP2wug" templateId="2.16.840.1.113883.10.20.22.4.61" templateVersion="2015-08-01">
-    <ruleId>CONF:1198-8900, CONF:1198-10516, CONF:1198-32595</ruleId>
+    <ruleId>CONF:1198-8900</ruleId>
+    <ruleId>CONF:1198-10516</ruleId>
+    <ruleId>CONF:1198-32595</ruleId>
   </CDA:CDATemplate>
   <CDA:ConformsTo xmi:id="_mUegAOwlEeOqa975IP2wug" base_Generalization="_Q0P4wOwlEeOqa975IP2wug" requiresParentId="true"/>
   <CDA:PropertyValidation xmi:id="_PI4bwOwoEeOqa975IP2wug" severity="INFO" base_Property="_PI30sOwoEeOqa975IP2wug">
@@ -1334,7 +1336,7 @@ The sources of payment are represented as a Coverage Activity, which identifies 
   <CDA:ConstraintValidation xmi:id="_zOoFoA7VEeWbLdDULBrUww" severity="INFO" base_Constraint="_FskyAOwrEeOqa975IP2wug"/>
   <CDA:ConstraintValidation xmi:id="_pWavQBUIEeWCiY8iFDNBKA" severity="INFO" base_Constraint="_reFLoPftEeO297ryy8ptVg"/>
   <CDA:PropertyValidation xmi:id="_JI5LkE9jEeWsIc5CMrI4GA" base_Property="__xbs8E9iEeWsIc5CMrI4GA"/>
-  <CDA:ValueSetConstraint xmi:id="_LYjhEE9jEeWsIc5CMrI4GA" base_Property="__xbs8E9iEeWsIc5CMrI4GA" severity="WARNING">
+  <CDA:ValueSetConstraint xmi:id="_LYjhEE9jEeWsIc5CMrI4GA" base_Property="__xbs8E9iEeWsIc5CMrI4GA" uri="consol-vocab::Payer" severity="WARNING">
     <reference href="../consol-vocab.uml#_QJUE4E9kEeWsIc5CMrI4GA"/>
     <ruleId>CONF:1198-32852</ruleId>
   </CDA:ValueSetConstraint>

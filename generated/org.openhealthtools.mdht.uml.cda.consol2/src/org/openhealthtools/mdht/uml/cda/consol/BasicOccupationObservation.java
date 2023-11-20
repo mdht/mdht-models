@@ -10,8 +10,6 @@ import org.eclipse.emf.ecore.EObject;
 
 import org.eclipse.mdht.emf.runtime.util.Initializer;
 
-import org.eclipse.mdht.uml.cda.Observation;
-
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Basic Occupation Observation</b></em>'.
@@ -19,24 +17,13 @@ import org.eclipse.mdht.uml.cda.Observation;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getBasicOccupationObservation()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='BasicOccupationObservationTemplateId BasicOccupationObservationCode BasicOccupationObservationCodeP BasicOccupationObservationStatusCode BasicOccupationObservationStatusCodeP BasicOccupationObservationEffectiveTime BasicOccupationObservationClassCode BasicOccupationObservationMoodCode BasicOccupationObservationIVLTSLow' templateId.root='2.16.840.1.113883.10.20.22.4.503' templateId.extension='2023-05- 01' code.code='11341-5' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='History of Occupation' constraints.validation.dependOn.BasicOccupationObservationCode='BasicOccupationObservationCodeP' statusCode.code='completed' classCode='OBS' moodCode='EVN' constraints.validation.info='BasicOccupationObservationSubject BasicOccupationObservationIVLTSHigh' constraints.validation.warning='BasicOccupationObservationBasicIndustryObservation' constraints.validation.query='BasicOccupationObservationIVLTSLow BasicOccupationObservationIVLTSHigh'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='SocialHistoryObservationV4TemplateId BasicOccupationObservationCode BasicOccupationObservationCodeP BasicOccupationObservationStatusCode BasicOccupationObservationStatusCodeP BasicOccupationObservationEffectiveTime BasicOccupationObservationClassCode BasicOccupationObservationMoodCode BasicOccupationObservationIVLTSLow' templateId.root='2.16.840.1.113883.10.20.22.4.503' templateId.extension='2023-05-01' code.code='11341-5' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='History of Occupation' constraints.validation.dependOn.BasicOccupationObservationCode='BasicOccupationObservationCodeP' statusCode.code='completed' constraints.validation.dependOn.BasicOccupationObservationStatusCode='BasicOccupationObservationStatusCodeP' classCode='OBS' moodCode='EVN' constraints.validation.info='BasicOccupationObservationSubject BasicOccupationObservationIVLTSHigh' constraints.validation.warning='BasicOccupationObservationBasicIndustryObservation' constraints.validation.query='BasicOccupationObservationIVLTSLow BasicOccupationObservationIVLTSHigh'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolBasicOccupationObservationSubject constraints.validation.error='BasicOccupationObservationSubjectRelatedSubject'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolBasicOccupationObservationIVLTS constraints.validation.error='BasicOccupationObservationIVLTSLow' constraints.validation.info='BasicOccupationObservationIVLTSHigh'"
+ *        annotation="duplicates"
  * @generated
  */
-public interface BasicOccupationObservation extends Observation {
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId-&gt;exists(id : datatypes::II | id.root = \'2.16.840.1.113883.10.20.22.4.503\' and id.extension = \'2023-05- 01\')'"
-	 * @generated
-	 */
-	boolean validateBasicOccupationObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context);
-
+public interface BasicOccupationObservation extends SocialHistoryObservationV4 {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

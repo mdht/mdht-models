@@ -72,7 +72,7 @@ public class PregnancyIntentionOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PREGNANCY_INTENTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.281' and id.extension = '2023-05- 01')";
+	protected static final String VALIDATE_PREGNANCY_INTENTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.281' and id.extension = '2023-05-01')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePregnancyIntentionTemplateId(PregnancyIntention, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pregnancy Intention Template Id</em>}' invariant operation.

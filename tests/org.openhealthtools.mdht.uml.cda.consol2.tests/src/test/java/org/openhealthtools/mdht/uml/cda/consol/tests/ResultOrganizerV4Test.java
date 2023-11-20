@@ -23,12 +23,12 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.ResultOrganizerV4Opera
  * <p>
  * The following operations are supported:
  * <ul>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ResultOrganizerV4#validateResultOrganizerV4TemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Organizer V4 Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ResultOrganizerV4#validateResultOrganizerV4Specimen(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Organizer V4 Specimen</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ResultOrganizerV4#validateResultOrganizerV4SpecimenSpecimenRolePlayingEntityCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Organizer V4 Specimen Specimen Role Playing Entity Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ResultOrganizerV4#validateResultOrganizerV4SpecimenSpecimenRolePlayingEntityCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Organizer V4 Specimen Specimen Role Playing Entity Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ResultOrganizerV4#validateResultOrganizerV4SpecimenSpecimenRoleSpecimenPlayingEntity(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Organizer V4 Specimen Specimen Role Specimen Playing Entity</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ResultOrganizerV4#validateResultOrganizerV4SpecimenSpecimenRole(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Organizer V4 Specimen Specimen Role</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ResultOrganizerV4#validateResultOrganizer2TemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Organizer2 Template Id</em>}</li>
  * </ul>
  * </p>
  *
@@ -36,41 +36,6 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.ResultOrganizerV4Opera
  */
 
 public class ResultOrganizerV4Test extends CDAValidationTest {
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
-
-	public void testValidateResultOrganizerV4TemplateId() {
-		OperationsTestCase<ResultOrganizerV4> validateResultOrganizerV4TemplateIdTestCase = new OperationsTestCase<ResultOrganizerV4>(
-			"validateResultOrganizerV4TemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_RESULT_ORGANIZER_V4_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(ResultOrganizerV4 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(ResultOrganizerV4 target) {
-				target.init();
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return ResultOrganizerV4Operations.validateResultOrganizerV4TemplateId(
-					(ResultOrganizerV4) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateResultOrganizerV4TemplateIdTestCase.doValidationTest();
-	}
 
 	/**
 	*
@@ -134,7 +99,7 @@ public class ResultOrganizerV4Test extends CDAValidationTest {
 			protected void updateToPass(ResultOrganizerV4 target) {
 				target.getSpecimens().get(0).getSpecimenRole().getSpecimenPlayingEntity().setCode(
 					DatatypesFactory.eINSTANCE.createCE("code", "2.16.840.1.113883.6.96"));
-				
+
 			}
 
 			@Override
@@ -265,6 +230,41 @@ public class ResultOrganizerV4Test extends CDAValidationTest {
 		};
 
 		validateResultOrganizerV4SpecimenSpecimenRoleTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateResultOrganizer2TemplateId() {
+		OperationsTestCase<ResultOrganizerV4> validateResultOrganizer2TemplateIdTestCase = new OperationsTestCase<ResultOrganizerV4>(
+			"validateResultOrganizer2TemplateId",
+			operationsForOCL.getOCLValue("VALIDATE_RESULT_ORGANIZER2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(ResultOrganizerV4 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(ResultOrganizerV4 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return ResultOrganizerV4Operations.validateResultOrganizer2TemplateId(
+					(ResultOrganizerV4) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateResultOrganizer2TemplateIdTestCase.doValidationTest();
 	}
 
 	/**

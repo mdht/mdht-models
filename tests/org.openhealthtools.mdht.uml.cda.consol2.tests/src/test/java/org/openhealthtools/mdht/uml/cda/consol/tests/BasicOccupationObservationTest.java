@@ -28,11 +28,10 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.BasicOccupationObserva
  * <p>
  * The following operations are supported:
  * <ul>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.BasicOccupationObservation#validateBasicOccupationObservationTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Basic Occupation Observation Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.BasicOccupationObservation#validateBasicOccupationObservationCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Basic Occupation Observation Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.BasicOccupationObservation#validateBasicOccupationObservationCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Basic Occupation Observation Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.BasicOccupationObservation#validateBasicOccupationObservationStatusCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Basic Occupation Observation Status Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.BasicOccupationObservation#validateBasicOccupationObservationStatusCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Basic Occupation Observation Status Code P</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.BasicOccupationObservation#validateBasicOccupationObservationStatusCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Basic Occupation Observation Status Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.BasicOccupationObservation#validateBasicOccupationObservationEffectiveTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Basic Occupation Observation Effective Time</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.BasicOccupationObservation#validateBasicOccupationObservationClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Basic Occupation Observation Class Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.BasicOccupationObservation#validateBasicOccupationObservationMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Basic Occupation Observation Mood Code</em>}</li>
@@ -41,6 +40,7 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.BasicOccupationObserva
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.BasicOccupationObservation#validateBasicOccupationObservationIVLTSLow(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Basic Occupation Observation IVLTS Low</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.BasicOccupationObservation#validateBasicOccupationObservationIVLTSHigh(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Basic Occupation Observation IVLTS High</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.BasicOccupationObservation#getBasicIndustryObservation() <em>Get Basic Industry Observation</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.BasicOccupationObservation#validateSocialHistoryObservationV4TemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Observation V4 Template Id</em>}</li>
  * </ul>
  * </p>
  *
@@ -48,41 +48,6 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.BasicOccupationObserva
  */
 
 public class BasicOccupationObservationTest extends CDAValidationTest {
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
-
-	public void testValidateBasicOccupationObservationTemplateId() {
-		OperationsTestCase<BasicOccupationObservation> validateBasicOccupationObservationTemplateIdTestCase = new OperationsTestCase<BasicOccupationObservation>(
-			"validateBasicOccupationObservationTemplateId", operationsForOCL.getOCLValue(
-				"VALIDATE_BASIC_OCCUPATION_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(BasicOccupationObservation target) {
-
-			}
-
-			@Override
-			protected void updateToPass(BasicOccupationObservation target) {
-				target.init();
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return BasicOccupationObservationOperations.validateBasicOccupationObservationTemplateId(
-					(BasicOccupationObservation) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateBasicOccupationObservationTemplateIdTestCase.doValidationTest();
-	}
 
 	/**
 	*
@@ -190,6 +155,13 @@ public class BasicOccupationObservationTest extends CDAValidationTest {
 				CS cs = DatatypesFactory.eINSTANCE.createCS("completed");
 				target.setStatusCode(cs);
 
+			}
+
+			@Override
+			protected void setDependency(BasicOccupationObservation target) {
+				Collection<Object> passToken = new java.util.ArrayList<>(3);
+				passToken.add(target);
+				map.put("org.openhealthtools.mdht.uml.cda.consol.BasicOccupationObservationStatusCodeP", passToken);
 			}
 
 			@Override
@@ -507,6 +479,41 @@ public class BasicOccupationObservationTest extends CDAValidationTest {
 		BasicOccupationObservation target = objectFactory.create();
 		target.getBasicIndustryObservation();
 
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateSocialHistoryObservationV4TemplateId() {
+		OperationsTestCase<BasicOccupationObservation> validateSocialHistoryObservationV4TemplateIdTestCase = new OperationsTestCase<BasicOccupationObservation>(
+			"validateSocialHistoryObservationV4TemplateId", operationsForOCL.getOCLValue(
+				"VALIDATE_SOCIAL_HISTORY_OBSERVATION_V4_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(BasicOccupationObservation target) {
+
+			}
+
+			@Override
+			protected void updateToPass(BasicOccupationObservation target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return BasicOccupationObservationOperations.validateSocialHistoryObservationV4TemplateId(
+					(BasicOccupationObservation) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateSocialHistoryObservationV4TemplateIdTestCase.doValidationTest();
 	}
 
 	/**

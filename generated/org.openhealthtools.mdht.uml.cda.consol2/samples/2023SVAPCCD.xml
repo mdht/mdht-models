@@ -1317,7 +1317,7 @@ This sample is designed to be used in conjunction with the HL7 CDA® R2 IG: C-CD
                             <statusCode code="completed"/>
                             <effectiveTime>
                                 <!-- SHALL low/value. The low value reflects the start date of the stated occupation -->
-                                <low value="2009"/>
+                                
                                 <!-- MAY high/value. The high value reflects the end date of the stated occupation. 
 									An absent high value means the occupation is/was current at the time the document was generated -->
                                 <high value="202206"/>
@@ -3534,7 +3534,7 @@ This sample is designed to be used in conjunction with the HL7 CDA® R2 IG: C-CD
                         <organizer classCode="BATTERY" moodCode="EVN">
                             <!-- ** Result organizer (V4) ** -->
                             <templateId root="2.16.840.1.113883.10.20.22.4.1" extension="2023-05-01"/>
-                            <!-- <templateId root="2.16.840.1.113883.10.20.22.4.1" extension="2015-08-01"/> -->
+                            <templateId root="2.16.840.1.113883.10.20.22.4.1" extension="2015-08-01"/> 
                             <templateId root="2.16.840.1.113883.10.20.22.4.1"/>
                             <id root="7d5a02b0-67a4-11db-bd13-0800200c9a66"/>
                             <code code="57021-8"

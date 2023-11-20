@@ -10,8 +10,6 @@ import org.eclipse.emf.ecore.EObject;
 
 import org.eclipse.mdht.emf.runtime.util.Initializer;
 
-import org.eclipse.mdht.uml.cda.Observation;
-
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Basic Industry Observation</b></em>'.
@@ -19,22 +17,11 @@ import org.eclipse.mdht.uml.cda.Observation;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getBasicIndustryObservation()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='BasicIndustryObservationTemplateId BasicIndustryObservationCode BasicIndustryObservationStatusCode BasicIndustryObservationStatusCodeP BasicIndustryObservationValue BasicIndustryObservationValueP BasicIndustryObservationClassCode BasicIndustryObservationMoodCode' templateId.root='2.16.840.1.113883.10.20.22.4.504' templateId.extension='2023-05-01' statusCode.code='completed' value.codeSystem='2.16.840.1.114222.4.5.327' value.codeSystemName='OccupationalDataforHealth' classCode='OBS' moodCode='EVN'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='SocialHistoryObservationV4TemplateId BasicIndustryObservationCode BasicIndustryObservationStatusCode BasicIndustryObservationStatusCodeP BasicIndustryObservationValue BasicIndustryObservationValueP BasicIndustryObservationClassCode BasicIndustryObservationMoodCode' templateId.root='2.16.840.1.113883.10.20.22.4.504' templateId.extension='2023-05-01' statusCode.code='completed' constraints.validation.dependOn.BasicIndustryObservationStatusCode='BasicIndustryObservationStatusCodeP' value.codeSystem='2.16.840.1.114222.4.5.327' value.codeSystemName='OccupationalDataforHealth' classCode='OBS' moodCode='EVN'"
+ *        annotation="duplicates"
  * @generated
  */
-public interface BasicIndustryObservation extends Observation {
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId-&gt;exists(id : datatypes::II | id.root = \'2.16.840.1.113883.10.20.22.4.504\' and id.extension = \'2023-05-01\')'"
-	 * @generated
-	 */
-	boolean validateBasicIndustryObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context);
-
+public interface BasicIndustryObservation extends SocialHistoryObservationV4 {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
