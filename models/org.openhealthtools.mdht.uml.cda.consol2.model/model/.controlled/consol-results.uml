@@ -64,7 +64,8 @@ If any Results Observation within the organizer has a statusCode of 'active', th
     <ownedEnd xmi:id="_2JxziBSVEeGGzu7fmW9pXw" type="_2JxzgBSVEeGGzu7fmW9pXw" association="_2JxzhxSVEeGGzu7fmW9pXw"/>
   </uml:Association>
   <CDA:CDATemplate xmi:id="_2KC5QBSVEeGGzu7fmW9pXw" base_Class="_2JxzgBSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.4.1">
-    <ruleId>CONF:7126, CONF:9134</ruleId>
+    <ruleId>CONF:7126</ruleId>
+    <ruleId>CONF:9134</ruleId>
   </CDA:CDATemplate>
   <CDA:ConstraintValidation xmi:id="_2J_O4hSVEeGGzu7fmW9pXw" severity="WARNING" base_Constraint="_2J_O4BSVEeGGzu7fmW9pXw">
     <ruleId>CONF:7164</ruleId>

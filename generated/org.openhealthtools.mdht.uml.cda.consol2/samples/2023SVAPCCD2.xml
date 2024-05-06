@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="CDA.xsl"?>
+<!--
+ Title:        Continuity of Care Document (CCD)
+ Filename:     01 CCD-Sample.xml 
+ Created by:   HL7
+ Initial Publish Date: 10/31/2019 
+ $LastChangedDate: 04/6/2023 $
+  
+ ********************************************************
+Disclaimer: The data in this sample file is not intended to represent real patients, people or clinical events. The file depicts a fictional character's health data. 
+Any resemblance to a real person is coincidental. To illustrate as many data elements as possible, the clinical scenario may not be plausible. Dates and times also may not coorelate well from a temporal perspective.
+This sample is designed to be used in conjunction with the HL7 CDA® R2 IG: C-CDA Templates for Clinical Notes Companion Guide, Release 4.
+ ********************************************************
+ -->
+<!-- *************** US REALM HEADER (V4) *************** -->
+
+<?xml-model href="C-CDA%202.1%20Companion%20Guide%20V4.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="urn:hl7-org:v3 ../CDA-core-2.0-master/CDA-core-2.0-master/schema/extensions/SDTC/infrastructure/cda/CDA_SDTC.xsd"
+ xmlns="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:voc="urn:hl7-org:v3/voc">
+ 
+ 
+   <participant typeCode="IND">
+        <templateId root="2.16.840.1.113883.10.20.22.5.8" extension="2023-05-01"/>
+        <!-- This associatedEntity SHALL contain exactly one [1..1] @classCode="PRS" Person (CodeSystem: HL7RoleCode urn:oid:2.16.840.1.113883.5.111) (CONF:4537-33076). -->
+        <associatedEntity classCode="PRS">
+            <!-- This associatedEntity/code represents the person's relationship to the patient (Personal And Legal Relationship Role Type Value Set) -->
+           <!--  <code code="MTH" codeSystem="2.16.840.1.113883.5.111"/> -->
+            <!-- OPTIONAL ADDRESS -->
+            <addr use="HP">
+                <streetAddressLine>2222 Home Street</streetAddressLine>
+                <city>Beaverton</city>
+                <state>OR</state>
+                <postalCode>97867</postalCode>
+                <country>US</country>
+            </addr>
+            <!-- OPTIONAL TELECOM -->
+            <telecom value="tel:+1(555)555-2008" use="MC"/>
+            <associatedPerson>
+                <!-- SHALL REQUIRED US Realm Person Name Format -->
+               <!--  <name>
+                    <given>Boris</given>
+                    <given qualifier="CL">Bo</given>
+                    <family>Betterhalf</family>
+                </name> -->
+            </associatedPerson>
+        </associatedEntity>
+    </participant>
+    
+    <component>
+        <structuredBody>
+            <component>
+                <section>
+                    <!--  ** Social History Section (V3) ** -->
+                    <templateId root="2.16.840.1.113883.10.20.22.2.17" extension="2015-08-01"/>
+                    <templateId root="2.16.840.1.113883.10.20.22.2.17"/>
+                    <code code="29762-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"
+                        displayName="Social History"/>
+                    <title>SOCIAL HISTORY</title>
+                    <text>
+                        <table border="1" width="100%">
+                            <thead>
+                                <tr>
+                                    <th>Social History Observation</th>
+                                    <th>Description</th>
+                                    <th>Dates Observed</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Current Smoking Status</td>
+                                    <td>Former smoker</td>
+                                    <td>September 10, 2012</td>
+                                </tr>
+                                <tr>
+                                    <td>Tobacco Use</td>
+                                    <td>Moderate cigarette smoker, 10-19/day</td>
+                                    <td>February, 2009 - February, 2011</td>
+                                </tr>
+                                <tr>
+                                    <td>Alcoholic drinks per day</td>
+                                    <td>12</td>
+                                    <td>Since February, 2012</td>
+                                </tr>
+                                <tr>
+                                    <td>Gender Identity</td>
+                                    <td>Identifies as female gender</td>
+                                    <td>Since July 3, 2018</td>
+                                </tr>
+                                <tr>
+                                    <td>Birth Sex</td>
+                                    <td><content ID="BSex_value">Female</content></td>
+                                    <td>May 1, 1975</td>
+                                </tr>
+                                <tr>
+                                    <td>Sex</td>
+                                    <td><content ID="Sex_value">Female</content></td>
+                                    <td>May 1, 1975</td>
+                                </tr>
+                                <tr>
+                                    <td>Tribal Affiliation</td>
+                                    <td>Village of Afognak</td>
+                                    <td>May 1 ,2023</td>
+                                </tr>
+                                <tr>
+                                    <td>Basic Occupation Observation</td>
+                                    <td>Automobile Brake Bonder [Adhesive Bonding Machine Operators
+                                        and Tenders]</td>
+                                    <td>2009 - June 2022</td>
+                                </tr>
+                                <tr>
+                                    <td>Basic Industry Observation</td>
+                                    <td>Automotive repair and replacement shops, general [General
+                                        Automotive Repair]</td>
+                                    <td>2009 - June 2022</td>
+                                </tr>
+                                <tr>
+                                    <td>Pregnancy Intention in the Next Year</td>
+                                    <td>No desire to become pregnant</td>
+                                    <td>January 7, 2017 - January 7, 2018</td>
+                                </tr>
+                                <tr>
+                                    <td>Disability Status</td>
+                                    <td>I'm Vulnerable - I sometimes or periodically have acute or
+                                        chronic symptoms affecting housing, employment, social
+                                        interactions, etc.</td>
+                                    <td>November 11, 2022</td>
+                                </tr>
+
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                    <th/>
+                                    <th>Disability Questions</th>
+                                    <th>Answers</th>
+                                </tr>
+                                <tr>
+                                    <td/>
+                                    <td>Are you deaf, or do you have serious difficulty
+                                        hearing?</td>
+                                    <td>Yes</td>
+                                </tr>
+                                <tr>
+                                    <td/>
+                                    <td>Are you blind, or do you have serious difficulty seeing,
+                                        even when wearing glasses?</td>
+                                    <td>Yes</td>
+                                </tr>
+                                <tr>
+                                    <td/>
+                                    <td>Because of a physical, mental, or emotional condition, do
+                                        you have serious difficulty concentrating, remembering, or
+                                        making decisions</td>
+                                    <td>Yes</td>
+                                </tr>
+                                <tr>
+                                    <td/>
+                                    <td>Do you have serious difficulty walking or climbing
+                                        stairs?</td>
+                                    <td>Yes</td>
+                                </tr>
+                                <tr>
+                                    <td/>
+                                    <td>Do you have difficulty dressing or bathing?</td>
+                                    <td>Yes</td>
+                                </tr>
+                                <tr>
+                                    <td/>
+                                    <td>Because of a physical, mental, or emotional condition, do
+                                        you have difficulty doing errands alone such as visiting a
+                                        physician&#39;s office or shopping?</td>
+                                    <td>Yes</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </text>
+                                <!-- BASIC OCCUPATION OBSERVATION -->
+                    <entry typeCode="DRIV">
+                        <observation classCode="OBS" moodCode="EVN">
+                            <templateId root="2.16.840.1.113883.10.20.22.4.503"
+                                extension="2023-05-01"/>
+                            <templateId root="2.16.840.1.113883.10.20.22.4.38"
+                                extension="2022-06-01"/>
+                            <id root="f4dce790-8328-11db-9fe1-0800200c9a45"/>
+                            <code code="11341-5" codeSystem="2.16.840.1.113883.6.1"
+                                codeSystemName="LOINC" displayName="History of occupation"/>
+                            <statusCode code="completed"/>
+                            <effectiveTime>
+                                <!-- SHALL low/value. The low value reflects the start date of the stated occupation -->
+                                
+                                <!-- MAY high/value. The high value reflects the end date of the stated occupation. 
+									An absent high value means the occupation is/was current at the time the document was generated -->
+                                <high value="202206"/>
+                            </effectiveTime>
+                            <value xsi:type="CD" code="51-9191.00.002682"
+                                displayName="Automobile Brake Bonder [Adhesive Bonding Machine Operators and Tenders]"
+                                codeSystem="2.16.840.1.114222.4.5.327"
+                                codeSystemName="Occupational Data for Health (ODH)"/>
+                            <!-- BASIC INDUSTRY OBSERVATION -->
+                            <entryRelationship typeCode="REFR">
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <templateId root="2.16.840.1.113883.10.20.22.4.504"
+                                        extension="2023-05-01"/>
+                                    <templateId root="2.16.840.1.113883.10.20.22.4.38"
+                                        extension="2022-06-01"/>
+                                    <id root="f4dce790-8328-11db-9fe1-0800200c9a47"/>
+                                    <code code="86188-0" codeSystem="2.16.840.1.113883.6.1"
+                                        codeSystemName="LOINC"
+                                        displayName="History of occupation industry"/>
+                                    <statusCode code="completed"/>
+                                    <effectiveTime value="202203190830-0800"/>
+                                    <value xsi:type="CD" code="811111.001118"
+                                        displayName="Automotive repair and replacement shops, general [General Automotive Repair]"
+                                        codeSystem="2.16.840.1.114222.4.5.337"
+                                        codeSystemName="Occupational Data for Health (ODH)"/>
+                                </observation>
+                            </entryRelationship>
+                        </observation>
+                    </entry>
+                    
+                                 <entry>
+                        <!-- Sexual Orientation Observation -->
+                        <observation classCode="OBS" moodCode="EVN">
+                            <templateId root="2.16.840.1.113883.10.20.22.4.38"
+                                extension="2022-06-01"/>
+                            <templateId root="2.16.840.1.113883.10.20.22.4.501"
+                                extension="2023-05-01"/>
+                            <id root="7919e027-592e-4f22-9344-12460ec8c368"/>
+                            <code code="76690-7" displayName="Sexual Orientation"
+                                codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                            <statusCode code="completed"/>
+                            <effectiveTime>
+                                <low value="201211"/>
+                            </effectiveTime>
+                            <value xsi:type="CD" code="20430005" displayName="Heterosexual state"
+                                codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
+                        </observation>
+                    </entry>
+                    
+                </section>
+            </component>
+
+        </structuredBody>
+    </component>
+</ClinicalDocument>

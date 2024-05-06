@@ -2289,7 +2289,7 @@ MethodCode SHALL NOT conflict with the method inherent in Procedure / code.</bod
   <CDA:ConstraintValidation xmi:id="_Nh6p4ueGEeOqBOMhgDlycQ" severity="WARNING" base_Constraint="_Nh6p4OeGEeOqBOMhgDlycQ">
     <ruleId>CONF:1098-31977</ruleId>
   </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_N6e64ueGEeOqBOMhgDlycQ" severity="INFO" base_Constraint="_N6e64OeGEeOqBOMhgDlycQ">
+  <CDA:ConstraintValidation xmi:id="_N6e64ueGEeOqBOMhgDlycQ" severity="WARNING" base_Constraint="_N6e64OeGEeOqBOMhgDlycQ">
     <ruleId>CONF:1098-31977</ruleId>
   </CDA:ConstraintValidation>
   <CDA:CodeSystemConstraint xmi:id="_O9RYIOeHEeOqBOMhgDlycQ" code="active" displayName="Active" base_Property="_jf9D8OeFEeOqBOMhgDlycQ">
