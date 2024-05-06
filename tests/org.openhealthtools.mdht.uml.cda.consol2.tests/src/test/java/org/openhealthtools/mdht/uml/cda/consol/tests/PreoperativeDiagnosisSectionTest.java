@@ -316,7 +316,7 @@ public class PreoperativeDiagnosisSectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ConstructorTestClass extends PreoperativeDiagnosisSectionOperations {
-	};
+	}
 
 	/**
 	* Tests Operations Constructor for 100% coverage

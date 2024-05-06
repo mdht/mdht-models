@@ -222,7 +222,7 @@ public class SensoryStatusTest extends CDAValidationTest {
 
 			@Override
 			protected void setDependency(SensoryStatus target) {
-				Collection<Object> passToken = new java.util.ArrayList<Object>(3);
+				Collection<Object> passToken = new java.util.ArrayList<>(3);
 				passToken.add(target);
 				map.put("org.openhealthtools.mdht.uml.cda.consol.SensoryStatusCodeP", passToken);
 			}
@@ -616,7 +616,7 @@ public class SensoryStatusTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ConstructorTestClass extends SensoryStatusOperations {
-	};
+	}
 
 	/**
 	* Tests Operations Constructor for 100% coverage

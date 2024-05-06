@@ -355,7 +355,7 @@ public class ReferralNoteTest extends CDAValidationTest {
 
 			@Override
 			protected void setDependency(ReferralNote target) {
-				Collection<Object> passToken = new java.util.ArrayList<Object>(3);
+				Collection<Object> passToken = new java.util.ArrayList<>(3);
 				passToken.add(target);
 				map.put("org.openhealthtools.mdht.uml.cda.consol.ReferralNoteCodeP", passToken);
 			}
@@ -1567,11 +1567,58 @@ public class ReferralNoteTest extends CDAValidationTest {
 				aPer.getNames().add(pn);
 			}
 
+			// @Override
+			// protected void updateToPass(ReferralNote target) {
+			// for (Participant1 one : target.getParticipants()) {
+			// one.getAssociatedEntity().getAssociatedPerson().getNames().get(0).addText("Person Name Here");
+			// }
+			//
+			// }
+
 			@Override
-			protected void updateToPass(ReferralNote target) {
-				for (Participant1 one : target.getParticipants()) {
-					one.getAssociatedEntity().getAssociatedPerson().getNames().get(0).addText("Person Name Here");
-				}
+			public void addPassTests() {
+				addPassTest(new PassTest() {
+					@Override
+					public void updateToPass(ReferralNote target) {
+						target.init();
+						Participant1 par = CDAFactory.eINSTANCE.createParticipant1();
+						par.setTypeCode(ParticipationType.IND);
+						target.getParticipants().add(par);
+						AssociatedEntity ae = CDAFactory.eINSTANCE.createAssociatedEntity();
+						par.setAssociatedEntity(ae);
+						Person aPer = CDAFactory.eINSTANCE.createPerson();
+						ae.setAssociatedPerson(aPer);
+
+						PN pn = DatatypesFactory.eINSTANCE.createPN();
+						aPer.getNames().add(pn);
+						for (Participant1 one : target.getParticipants()) {
+							one.getAssociatedEntity().getAssociatedPerson().getNames().get(0).addText(
+								"Person Name Here");
+						}
+
+					}
+				});
+
+				addPassTest(new PassTest() {
+					@Override
+					public void updateToPass(ReferralNote target) {
+						target.init();
+						Participant1 par = CDAFactory.eINSTANCE.createParticipant1();
+						par.setTypeCode(ParticipationType.IND);
+						target.getParticipants().add(par);
+						AssociatedEntity ae = CDAFactory.eINSTANCE.createAssociatedEntity();
+						par.setAssociatedEntity(ae);
+						Person aPer = CDAFactory.eINSTANCE.createPerson();
+						ae.setAssociatedPerson(aPer);
+
+						PN pn = DatatypesFactory.eINSTANCE.createPN();
+						aPer.getNames().add(pn);
+						for (Participant1 one : target.getParticipants()) {
+							one.getAssociatedEntity().getAssociatedPerson().getNames().get(0).addFamily("familyname");
+							one.getAssociatedEntity().getAssociatedPerson().getNames().get(0).addGiven("given");
+						}
+					}
+				});
 
 			}
 
@@ -2566,7 +2613,7 @@ public class ReferralNoteTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ConstructorTestClass extends ReferralNoteOperations {
-	};
+	}
 
 	/**
 	* Tests Operations Constructor for 100% coverage

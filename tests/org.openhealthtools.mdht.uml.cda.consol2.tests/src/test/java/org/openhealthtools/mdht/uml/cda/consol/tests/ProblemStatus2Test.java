@@ -122,6 +122,18 @@ public class ProblemStatus2Test extends CDAValidationTest {
 	}
 
 	/**
+	 *
+	 * 246455001    Recurrence (qualifier value)
+	263855007    Relapse phase (qualifier value)
+	277022003    Remission phase (qualifier value)
+	
+	246455001x
+	263855007x
+	277022003x
+	413322009
+	55561003
+	73425007
+
 	*
 	* @generated NOT
 	*/
@@ -138,14 +150,110 @@ public class ProblemStatus2Test extends CDAValidationTest {
 			}
 
 			@Override
-			protected void updateToPass(ProblemStatus2 target) {
-				target.init();
-				CD value = DatatypesFactory.eINSTANCE.createCD();
-				value.setCodeSystem("2.16.840.1.113883.6.96");
-				value.setCode("444931000124107");
-				value.setDisplayName("Poorly-controlled");
-				target.getValues().add(value);
+			public void addPassTests() {
+
+				// addPassTest(new PassTest() {
+				// @Override
+				// public void updateToPass(ProblemStatus2 target) {
+				// target.init();
+				//
+				// CD value = DatatypesFactory.eINSTANCE.createCD();
+				// value.setCodeSystem("2.16.840.1.113883.6.96");
+				// value.setCode("444931000124107");
+				// value.setDisplayName("Poorly-controlled");
+				// target.getValues().add(value);
+				// }
+				// });
+
+				addPassTest(new PassTest() {
+					@Override
+					public void updateToPass(ProblemStatus2 target) {
+						target.init();
+
+						CD value = DatatypesFactory.eINSTANCE.createCD();
+						value.setCodeSystem("2.16.840.1.113883.6.96");
+						value.setCode("246455001");
+						value.setDisplayName("Poorly-controlled");
+						target.getValues().add(value);
+					}
+				});
+
+				addPassTest(new PassTest() {
+					@Override
+					public void updateToPass(ProblemStatus2 target) {
+						target.init();
+
+						CD value = DatatypesFactory.eINSTANCE.createCD();
+						value.setCodeSystem("2.16.840.1.113883.6.96");
+						value.setCode("263855007");
+						value.setDisplayName("Poorly-controlled");
+						target.getValues().add(value);
+					}
+				});
+
+				addPassTest(new PassTest() {
+					@Override
+					public void updateToPass(ProblemStatus2 target) {
+						target.init();
+
+						CD value = DatatypesFactory.eINSTANCE.createCD();
+						value.setCodeSystem("2.16.840.1.113883.6.96");
+						value.setCode("277022003");
+						value.setDisplayName("Poorly-controlled");
+						target.getValues().add(value);
+					}
+				});
+
+				addPassTest(new PassTest() {
+					@Override
+					public void updateToPass(ProblemStatus2 target) {
+						target.init();
+
+						CD value = DatatypesFactory.eINSTANCE.createCD();
+						value.setCodeSystem("2.16.840.1.113883.6.96");
+						value.setCode("413322009");
+						value.setDisplayName("Poorly-controlled");
+						target.getValues().add(value);
+					}
+				});
+
+				addPassTest(new PassTest() {
+					@Override
+					public void updateToPass(ProblemStatus2 target) {
+						target.init();
+
+						CD value = DatatypesFactory.eINSTANCE.createCD();
+						value.setCodeSystem("2.16.840.1.113883.6.96");
+						value.setCode("55561003");
+						value.setDisplayName("Poorly-controlled");
+						target.getValues().add(value);
+					}
+				});
+
+				addPassTest(new PassTest() {
+					@Override
+					public void updateToPass(ProblemStatus2 target) {
+						target.init();
+
+						CD value = DatatypesFactory.eINSTANCE.createCD();
+						value.setCodeSystem("2.16.840.1.113883.6.96");
+						value.setCode("73425007");
+						value.setDisplayName("Poorly-controlled");
+						target.getValues().add(value);
+					}
+				});
+
 			}
+
+			// @Override
+			// protected void updateToPass(ProblemStatus2 target) {
+			// target.init();
+			// CD value = DatatypesFactory.eINSTANCE.createCD();
+			// value.setCodeSystem("2.16.840.1.113883.6.96");
+			// value.setCode("444931000124107");
+			// value.setDisplayName("Poorly-controlled");
+			// target.getValues().add(value);
+			// }
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
@@ -204,7 +312,7 @@ public class ProblemStatus2Test extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ConstructorTestClass extends ProblemStatus2Operations {
-	};
+	}
 
 	/**
 	* Tests Operations Constructor for 100% coverage

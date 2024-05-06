@@ -619,7 +619,7 @@ public class MedicationFreeTextSigTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ConstructorTestClass extends MedicationFreeTextSigOperations {
-	};
+	}
 
 	/**
 	* Tests Operations Constructor for 100% coverage

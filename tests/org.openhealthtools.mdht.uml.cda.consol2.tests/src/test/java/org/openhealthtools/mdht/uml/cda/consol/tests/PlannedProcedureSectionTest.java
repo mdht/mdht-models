@@ -317,7 +317,7 @@ public class PlannedProcedureSectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ConstructorTestClass extends PlannedProcedureSectionOperations {
-	};
+	}
 
 	/**
 	* Tests Operations Constructor for 100% coverage

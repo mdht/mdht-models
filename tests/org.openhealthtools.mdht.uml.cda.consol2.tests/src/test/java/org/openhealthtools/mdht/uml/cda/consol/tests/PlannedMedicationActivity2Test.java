@@ -542,7 +542,7 @@ public class PlannedMedicationActivity2Test extends CDAValidationTest {
 
 			@Override
 			protected void setDependency(PlannedMedicationActivity2 target) {
-				Collection<Object> passToken = new java.util.ArrayList<Object>(3);
+				Collection<Object> passToken = new java.util.ArrayList<>(3);
 				passToken.add(target);
 				map.put("org.openhealthtools.mdht.uml.cda.consol.PlannedMedicationActivity2RouteCodeP", passToken);
 			}
@@ -621,7 +621,7 @@ public class PlannedMedicationActivity2Test extends CDAValidationTest {
 
 			@Override
 			protected void setDependency(PlannedMedicationActivity2 target) {
-				Collection<Object> passToken = new java.util.ArrayList<Object>(3);
+				Collection<Object> passToken = new java.util.ArrayList<>(3);
 				passToken.add(target);
 				map.put(
 					"org.openhealthtools.mdht.uml.cda.consol.PlannedMedicationActivity2ApproachSiteCodeP", passToken);
@@ -803,7 +803,7 @@ public class PlannedMedicationActivity2Test extends CDAValidationTest {
 
 			@Override
 			protected void setDependency(PlannedMedicationActivity2 target) {
-				Collection<Object> passToken = new java.util.ArrayList<Object>(3);
+				Collection<Object> passToken = new java.util.ArrayList<>(3);
 				passToken.add(target);
 				map.put(
 					"org.openhealthtools.mdht.uml.cda.consol.PlannedMedicationActivity2AdministrationUnitCodeP",
@@ -1453,7 +1453,7 @@ public class PlannedMedicationActivity2Test extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ConstructorTestClass extends PlannedMedicationActivity2Operations {
-	};
+	}
 
 	/**
 	* Tests Operations Constructor for 100% coverage

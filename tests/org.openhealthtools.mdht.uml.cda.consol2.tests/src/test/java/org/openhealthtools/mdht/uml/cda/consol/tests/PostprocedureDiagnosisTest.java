@@ -279,7 +279,7 @@ public class PostprocedureDiagnosisTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ConstructorTestClass extends PostprocedureDiagnosisOperations {
-	};
+	}
 
 	/**
 	* Tests Operations Constructor for 100% coverage

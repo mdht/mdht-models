@@ -301,7 +301,7 @@ public class EstimatedDateOfDeliveryTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ConstructorTestClass extends EstimatedDateOfDeliveryOperations {
-	};
+	}
 
 	/**
 	* Tests Operations Constructor for 100% coverage

@@ -1079,7 +1079,7 @@ public class AllergyObservationTest extends CDAValidationTest {
 					}
 				});
 
-			};
+			}
 
 			@Override
 			public void addPassTests() {
@@ -1151,7 +1151,7 @@ public class AllergyObservationTest extends CDAValidationTest {
 					}
 				});
 
-			};
+			}
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
@@ -1747,7 +1747,7 @@ public class AllergyObservationTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ConstructorTestClass extends AllergyObservationOperations {
-	};
+	}
 
 	/**
 	* Tests Operations Constructor for 100% coverage

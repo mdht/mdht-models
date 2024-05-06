@@ -1495,7 +1495,7 @@ public class AdvanceDirectiveObservationTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ConstructorTestClass extends AdvanceDirectiveObservationOperations {
-	};
+	}
 
 	/**
 	* Tests Operations Constructor for 100% coverage

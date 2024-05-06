@@ -385,7 +385,7 @@ public class ServiceDeliveryLocationTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ConstructorTestClass extends ServiceDeliveryLocationOperations {
-	};
+	}
 
 	/**
 	* Tests Operations Constructor for 100% coverage

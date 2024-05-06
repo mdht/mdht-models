@@ -598,7 +598,7 @@ public class TobaccoUseTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ConstructorTestClass extends TobaccoUseOperations {
-	};
+	}
 
 	/**
 	* Tests Operations Constructor for 100% coverage

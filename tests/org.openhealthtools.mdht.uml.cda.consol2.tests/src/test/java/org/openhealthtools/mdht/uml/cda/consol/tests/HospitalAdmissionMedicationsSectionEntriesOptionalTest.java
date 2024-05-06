@@ -322,7 +322,7 @@ public class HospitalAdmissionMedicationsSectionEntriesOptionalTest extends CDAV
 	* @generated
 	*/
 	private static class ConstructorTestClass extends HospitalAdmissionMedicationsSectionEntriesOptionalOperations {
-	};
+	}
 
 	/**
 	* Tests Operations Constructor for 100% coverage

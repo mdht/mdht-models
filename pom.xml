@@ -118,7 +118,6 @@
 
 	<modules>
 		<module>generated</module>
- <module>tests</module>
 	</modules>
 	<profiles>
 		<profile>

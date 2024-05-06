@@ -3332,7 +3332,7 @@ public class ProcedureNoteTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ConstructorTestClass extends ProcedureNoteOperations {
-	};
+	}
 
 	/**
 	* Tests Operations Constructor for 100% coverage

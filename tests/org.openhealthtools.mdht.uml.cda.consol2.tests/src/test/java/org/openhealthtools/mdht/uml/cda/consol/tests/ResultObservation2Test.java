@@ -262,7 +262,7 @@ public class ResultObservation2Test extends CDAValidationTest {
 			@Override
 			protected void updateToPass(ResultObservation2 target) {
 				target.getReferenceRanges().get(0).getObservationRange().setValue(
-					DatatypesFactory.eINSTANCE.createCD());
+					DatatypesFactory.eINSTANCE.createIVL_REAL());
 			}
 
 			@Override
@@ -434,7 +434,7 @@ public class ResultObservation2Test extends CDAValidationTest {
 						target.setCode(code);
 					}
 				});
-			};
+			}
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
@@ -700,7 +700,7 @@ public class ResultObservation2Test extends CDAValidationTest {
 
 			@Override
 			protected void setDependency(ResultObservation2 target) {
-				Collection<Object> passToken = new java.util.ArrayList<Object>(3);
+				Collection<Object> passToken = new java.util.ArrayList<>(3);
 				passToken.add(target);
 				map.put("org.openhealthtools.mdht.uml.cda.consol.ResultObservationCodeP", passToken);
 			}
@@ -790,7 +790,7 @@ public class ResultObservation2Test extends CDAValidationTest {
 								icode.setCode(codeToTest);
 								icode.setCodeSystem(OBSERVATION_INTERPRETATION_CS);
 							}
-						};
+						}
 					});
 				}
 
@@ -806,11 +806,11 @@ public class ResultObservation2Test extends CDAValidationTest {
 					}
 				});
 
-			};
+			}
 
 			@Override
 			protected void setDependency(ResultObservation2 target) {
-				Collection<Object> passToken = new java.util.ArrayList<Object>(3);
+				Collection<Object> passToken = new java.util.ArrayList<>(3);
 				passToken.add(target);
 				map.put("org.openhealthtools.mdht.uml.cda.consol.ResultObservationInterpretationCodeP", passToken);
 			}
@@ -873,7 +873,7 @@ public class ResultObservation2Test extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ConstructorTestClass extends ResultObservation2Operations {
-	};
+	}
 
 	/**
 	* Tests Operations Constructor for 100% coverage

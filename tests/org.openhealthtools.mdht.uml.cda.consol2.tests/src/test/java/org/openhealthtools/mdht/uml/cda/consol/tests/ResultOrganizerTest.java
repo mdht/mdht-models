@@ -470,7 +470,7 @@ public class ResultOrganizerTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ConstructorTestClass extends ResultOrganizerOperations {
-	};
+	}
 
 	/**
 	* Tests Operations Constructor for 100% coverage

@@ -364,7 +364,7 @@ public class AnesthesiaSectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ConstructorTestClass extends AnesthesiaSectionOperations {
-	};
+	}
 
 	/**
 	* Tests Operations Constructor for 100% coverage

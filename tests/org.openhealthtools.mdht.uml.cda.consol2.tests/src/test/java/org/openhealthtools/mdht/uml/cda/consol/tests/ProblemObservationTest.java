@@ -1086,7 +1086,7 @@ public class ProblemObservationTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ConstructorTestClass extends ProblemObservationOperations {
-	};
+	}
 
 	/**
 	* Tests Operations Constructor for 100% coverage

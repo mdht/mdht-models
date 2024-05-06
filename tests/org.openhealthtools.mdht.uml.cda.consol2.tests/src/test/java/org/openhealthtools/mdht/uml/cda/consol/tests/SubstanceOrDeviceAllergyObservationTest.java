@@ -408,7 +408,7 @@ public class SubstanceOrDeviceAllergyObservationTest extends CDAValidationTest {
 
 			@Override
 			protected void setDependency(SubstanceOrDeviceAllergyObservation target) {
-				Collection<Object> passToken = new java.util.ArrayList<Object>(3);
+				Collection<Object> passToken = new java.util.ArrayList<>(3);
 				passToken.add(target);
 				map.put("org.openhealthtools.mdht.uml.cda.consol.SubstanceOrDeviceAllergyObservationCodeP", passToken);
 			}
@@ -1044,7 +1044,7 @@ public class SubstanceOrDeviceAllergyObservationTest extends CDAValidationTest {
 					}
 				});
 
-			};
+			}
 
 			@Override
 			public void addPassTests() {
@@ -1116,7 +1116,7 @@ public class SubstanceOrDeviceAllergyObservationTest extends CDAValidationTest {
 					}
 				});
 
-			};
+			}
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
@@ -1445,7 +1445,7 @@ public class SubstanceOrDeviceAllergyObservationTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ConstructorTestClass extends SubstanceOrDeviceAllergyObservationOperations {
-	};
+	}
 
 	/**
 	* Tests Operations Constructor for 100% coverage

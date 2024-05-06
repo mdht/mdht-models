@@ -820,7 +820,7 @@ public class FunctionalStatusSectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ConstructorTestClass extends FunctionalStatusSectionOperations {
-	};
+	}
 
 	/**
 	* Tests Operations Constructor for 100% coverage

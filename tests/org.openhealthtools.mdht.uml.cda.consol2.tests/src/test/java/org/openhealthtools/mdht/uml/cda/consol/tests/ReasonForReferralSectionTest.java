@@ -267,7 +267,7 @@ public class ReasonForReferralSectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ConstructorTestClass extends ReasonForReferralSectionOperations {
-	};
+	}
 
 	/**
 	* Tests Operations Constructor for 100% coverage

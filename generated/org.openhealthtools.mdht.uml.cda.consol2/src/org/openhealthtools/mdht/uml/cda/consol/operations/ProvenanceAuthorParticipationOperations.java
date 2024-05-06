@@ -75,7 +75,7 @@ public class ProvenanceAuthorParticipationOperations extends AuthorOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PROVENANCE_AUTHOR_PARTICIPATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.5 .6' and id.extension = '2019-10-01')";
+	protected static final String VALIDATE_PROVENANCE_AUTHOR_PARTICIPATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.5.6' and id.extension = '2019-10-01')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateProvenanceAuthorParticipationTemplateId(ProvenanceAuthorParticipation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Provenance Author Participation Template Id</em>}' invariant operation.
@@ -546,7 +546,7 @@ public class ProvenanceAuthorParticipationOperations extends AuthorOperations {
 		DatatypesUtil.increment(
 			context,
 			"ProvenanceAuthorParticipationProvenanceAuthorParticipationProvenanceAssignedAuthorRepresentedOrganizationId",
-			"WARNING");
+			"ERROR");
 
 		if (VALIDATE_PROVENANCE_AUTHOR_PARTICIPATION_PROVENANCE_ASSIGNED_AUTHOR_REPRESENTED_ORGANIZATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -571,7 +571,7 @@ public class ProvenanceAuthorParticipationOperations extends AuthorOperations {
 				for (EObject eObject : oclResultSet) {
 					diagnostics.add(
 						new BasicDiagnostic(
-							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.PROVENANCE_AUTHOR_PARTICIPATION__PROVENANCE_AUTHOR_PARTICIPATION_PROVENANCE_ASSIGNED_AUTHOR_REPRESENTED_ORGANIZATION_ID,
 							ConsolPlugin.INSTANCE.getString(
 								"ProvenanceAuthorParticipationProvenanceAuthorParticipationProvenanceAssignedAuthorRepresentedOrganizationId"),
@@ -821,9 +821,7 @@ public class ProvenanceAuthorParticipationOperations extends AuthorOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PROVENANCE_AUTHOR_PARTICIPATION_PROVENANCE_ASSIGNED_AUTHOR_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.assignedAuthor->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined() and code.oclIsKindOf(datatypes::CE) and " +
-			"let value : datatypes::CE = code.oclAsType(datatypes::CE) in " +
-			"value.codeSystem = '2.16.840.1.113883.5.111' and (value.code = 'DAUINLAW' or value.code = 'FTH' or value.code = 'DAU' or value.code = 'HPOWATT' or value.code = 'MTH' or value.code = 'SON' or value.code = 'SELF' or value.code = 'SONINLAW')))";
+	protected static final String VALIDATE_PROVENANCE_AUTHOR_PARTICIPATION_PROVENANCE_ASSIGNED_AUTHOR_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.assignedAuthor->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined()))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateProvenanceAuthorParticipationProvenanceAssignedAuthorCode(ProvenanceAuthorParticipation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Provenance Author Participation Provenance Assigned Author Code</em>}' invariant operation.
@@ -852,7 +850,8 @@ public class ProvenanceAuthorParticipationOperations extends AuthorOperations {
 			Map<Object, Object> context) {
 
 		DatatypesUtil.increment(
-			context, "ProvenanceAuthorParticipationProvenanceAuthorParticipationProvenanceAssignedAuthorCode", "ERROR");
+			context, "ProvenanceAuthorParticipationProvenanceAuthorParticipationProvenanceAssignedAuthorCode",
+			"WARNING");
 
 		if (VALIDATE_PROVENANCE_AUTHOR_PARTICIPATION_PROVENANCE_ASSIGNED_AUTHOR_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
 
@@ -877,7 +876,7 @@ public class ProvenanceAuthorParticipationOperations extends AuthorOperations {
 				for (EObject eObject : oclResultSet) {
 					diagnostics.add(
 						new BasicDiagnostic(
-							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.PROVENANCE_AUTHOR_PARTICIPATION__PROVENANCE_AUTHOR_PARTICIPATION_PROVENANCE_ASSIGNED_AUTHOR_CODE,
 							ConsolPlugin.INSTANCE.getString(
 								"ProvenanceAuthorParticipationProvenanceAuthorParticipationProvenanceAssignedAuthorCode"),

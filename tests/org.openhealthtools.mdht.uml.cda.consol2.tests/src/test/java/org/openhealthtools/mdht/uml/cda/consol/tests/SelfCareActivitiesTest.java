@@ -215,7 +215,7 @@ public class SelfCareActivitiesTest extends CDAValidationTest {
 
 			@Override
 			protected void setDependency(SelfCareActivities target) {
-				Collection<Object> passToken = new java.util.ArrayList<Object>(3);
+				Collection<Object> passToken = new java.util.ArrayList<>(3);
 				passToken.add(target);
 				map.put("org.openhealthtools.mdht.uml.cda.consol.SelfCareActivitiesCodeP", passToken);
 			}
@@ -491,7 +491,7 @@ public class SelfCareActivitiesTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ConstructorTestClass extends SelfCareActivitiesOperations {
-	};
+	}
 
 	/**
 	* Tests Operations Constructor for 100% coverage

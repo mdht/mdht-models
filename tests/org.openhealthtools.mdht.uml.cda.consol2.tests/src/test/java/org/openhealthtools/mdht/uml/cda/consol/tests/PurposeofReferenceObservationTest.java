@@ -307,7 +307,7 @@ public class PurposeofReferenceObservationTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ConstructorTestClass extends PurposeofReferenceObservationOperations {
-	};
+	}
 
 	/**
 	* Tests Operations Constructor for 100% coverage

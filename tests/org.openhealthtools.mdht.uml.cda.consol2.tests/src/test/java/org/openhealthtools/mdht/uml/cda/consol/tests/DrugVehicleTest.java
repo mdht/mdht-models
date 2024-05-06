@@ -298,7 +298,7 @@ public class DrugVehicleTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ConstructorTestClass extends DrugVehicleOperations {
-	};
+	}
 
 	/**
 	* Tests Operations Constructor for 100% coverage

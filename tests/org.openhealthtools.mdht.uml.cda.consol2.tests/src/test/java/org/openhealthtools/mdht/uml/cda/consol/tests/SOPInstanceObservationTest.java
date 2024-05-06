@@ -817,7 +817,7 @@ public class SOPInstanceObservationTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ConstructorTestClass extends SOPInstanceObservationOperations {
-	};
+	}
 
 	/**
 	* Tests Operations Constructor for 100% coverage

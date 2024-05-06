@@ -630,7 +630,7 @@ public class SeriesActTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ConstructorTestClass extends SeriesActOperations {
-	};
+	}
 
 	/**
 	* Tests Operations Constructor for 100% coverage

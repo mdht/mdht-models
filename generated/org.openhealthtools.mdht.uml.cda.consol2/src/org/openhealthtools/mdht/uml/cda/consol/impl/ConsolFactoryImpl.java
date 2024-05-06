@@ -749,6 +749,72 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createBrandNameObservation();
 			case ConsolPackage.UDI_ORGANIZER:
 				return createUDIOrganizer();
+			case ConsolPackage.PROVENANCE_ASSEMBLER_PARTICIPATION_V2:
+				return createProvenanceAssemblerParticipationV2();
+			case ConsolPackage.CARE_TEAM_ORGANIZER_V2:
+				return createCareTeamOrganizerV2();
+			case ConsolPackage.CARE_TEAM_MEMBER_ACT_V2:
+				return createCareTeamMemberActV2();
+			case ConsolPackage.CARE_TEAM_MEMBER_SCHEDULE_OBSERVATION_V2:
+				return createCareTeamMemberScheduleObservationV2();
+			case ConsolPackage.CARE_TEAMS_V2:
+				return createCareTeamsV2();
+			case ConsolPackage.ASSESSMENT_SCALE_OBSERVATION_V2:
+				return createAssessmentScaleObservationV2();
+			case ConsolPackage.ASSESSMENT_SCALE_SUPPORTING_OBSERVATION_V2:
+				return createAssessmentScaleSupportingObservationV2();
+			case ConsolPackage.DATE_OF_DIAGNOSIS_ACT:
+				return createDateOfDiagnosisAct();
+			case ConsolPackage.GENDER_IDENTITY_OBSERVATION_V3:
+				return createGenderIdentityObservationV3();
+			case ConsolPackage.GOAL_OBSEVATION_V2:
+				return createGoalObsevationV2();
+			case ConsolPackage.HEALTH_CONCERN_ACT_V3:
+				return createHealthConcernActV3();
+			case ConsolPackage.PLANNED_PROCEDURE_V3:
+				return createPlannedProcedureV3();
+			case ConsolPackage.PROBLEM_OBSERVATION_V4:
+				return createProblemObservationV4();
+			case ConsolPackage.PROCEDURE_ACTIVITY_PROCEDURE_V3:
+				return createProcedureActivityProcedureV3();
+			case ConsolPackage.SECTION_TIME_RANGE_OBSERVATION:
+				return createSectionTimeRangeObservation();
+			case ConsolPackage.DEVICE_IDENTIFIER_OBSERVATION_V2:
+				return createDeviceIdentifierObservationV2();
+			case ConsolPackage.SEXUAL_ORIENTATION_OBSERVATION:
+				return createSexualOrientationObservation();
+			case ConsolPackage.SOCIAL_HISTORY_OBSERVATION_V4:
+				return createSocialHistoryObservationV4();
+			case ConsolPackage.COVERAGE_ACTIVITY_V4:
+				return createCoverageActivityV4();
+			case ConsolPackage.PREGNANCY_INTENTION:
+				return createPregnancyIntention();
+			case ConsolPackage.RELATED_PERSON_RELATIONSHIPAND_NAME_PARTICIPANT:
+				return createRelatedPersonRelationshipandNameParticipant();
+			case ConsolPackage.US_REALM_HEADER_V4:
+				return createUSRealmHeaderV4();
+			case ConsolPackage.MEDICATION_DISPENSE_V4:
+				return createMedicationDispenseV4();
+			case ConsolPackage.RESULT_OBSERVATION_V4:
+				return createResultObservationV4();
+			case ConsolPackage.DISABILITY_STATUS_OBSERVATION:
+				return createDisabilityStatusObservation();
+			case ConsolPackage.BASIC_INDUSTRY_OBSERVATION:
+				return createBasicIndustryObservation();
+			case ConsolPackage.BASIC_OCCUPATION_OBSERVATION:
+				return createBasicOccupationObservation();
+			case ConsolPackage.GENDER_IDENTITY_OBSERVATION_V4:
+				return createGenderIdentityObservationV4();
+			case ConsolPackage.REASON_V3:
+				return createReasonV3();
+			case ConsolPackage.TRIBAL_AFFILIATION:
+				return createTribalAffiliation();
+			case ConsolPackage.POLICY_ACTIVITY_V4:
+				return createPolicyActivityV4();
+			case ConsolPackage.RESULT_ORGANIZER_V4:
+				return createResultOrganizerV4();
+			case ConsolPackage.INDICATION_V3:
+				return createIndicationV3();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -2398,6 +2464,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EntryReference createEntryReference() {
 		EntryReferenceImpl entryReference = new EntryReferenceImpl();
 		return entryReference;
@@ -2463,6 +2530,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public HandoffCommunicationParticipants createHandoffCommunicationParticipants() {
 		HandoffCommunicationParticipantsImpl handoffCommunicationParticipants = new HandoffCommunicationParticipantsImpl();
 		return handoffCommunicationParticipants;
@@ -2506,6 +2574,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public NutritionRecommendation createNutritionRecommendation() {
 		NutritionRecommendationImpl nutritionRecommendation = new NutritionRecommendationImpl();
 		return nutritionRecommendation;
@@ -2626,6 +2695,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ProblemStatus2 createProblemStatus2() {
 		ProblemStatus2Impl problemStatus2 = new ProblemStatus2Impl();
 		return problemStatus2;
@@ -2658,6 +2728,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public SensoryStatus createSensoryStatus() {
 		SensoryStatusImpl sensoryStatus = new SensoryStatusImpl();
 		return sensoryStatus;
@@ -2668,6 +2739,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public LongitudinalCareWoundObservation createLongitudinalCareWoundObservation() {
 		LongitudinalCareWoundObservationImpl longitudinalCareWoundObservation = new LongitudinalCareWoundObservationImpl();
 		return longitudinalCareWoundObservation;
@@ -2689,6 +2761,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public NumberOfPressureUlcersObservation2 createNumberOfPressureUlcersObservation2() {
 		NumberOfPressureUlcersObservation2Impl numberOfPressureUlcersObservation2 = new NumberOfPressureUlcersObservation2Impl();
 		return numberOfPressureUlcersObservation2;
@@ -2710,6 +2783,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public WoundCharacteristic createWoundCharacteristic() {
 		WoundCharacteristicImpl woundCharacteristic = new WoundCharacteristicImpl();
 		return woundCharacteristic;
@@ -2753,6 +2827,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public MentalStatusOrganizer2 createMentalStatusOrganizer2() {
 		MentalStatusOrganizer2Impl mentalStatusOrganizer2 = new MentalStatusOrganizer2Impl();
 		return mentalStatusOrganizer2;
@@ -2895,6 +2970,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public MentalStatusObservation2 createMentalStatusObservation2() {
 		MentalStatusObservation2Impl mentalStatusObservation2 = new MentalStatusObservation2Impl();
 		return mentalStatusObservation2;
@@ -2905,6 +2981,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public SmokingStatusMeaningfulUse2 createSmokingStatusMeaningfulUse2() {
 		SmokingStatusMeaningfulUse2Impl smokingStatusMeaningfulUse2 = new SmokingStatusMeaningfulUse2Impl();
 		return smokingStatusMeaningfulUse2;
@@ -3157,6 +3234,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PriorityPreference createPriorityPreference() {
 		PriorityPreferenceImpl priorityPreference = new PriorityPreferenceImpl();
 		return priorityPreference;
@@ -3343,6 +3421,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public MedicationFreeTextSig createMedicationFreeTextSig() {
 		MedicationFreeTextSigImpl medicationFreeTextSig = new MedicationFreeTextSigImpl();
 		return medicationFreeTextSig;
@@ -3375,6 +3454,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public AllergyStatusObservation2 createAllergyStatusObservation2() {
 		AllergyStatusObservation2Impl allergyStatusObservation2 = new AllergyStatusObservation2Impl();
 		return allergyStatusObservation2;
@@ -3451,6 +3531,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public AdmissionDiagnosisSection2 createAdmissionDiagnosisSection2() {
 		AdmissionDiagnosisSection2Impl admissionDiagnosisSection2 = new AdmissionDiagnosisSection2Impl();
 		return admissionDiagnosisSection2;
@@ -3461,6 +3542,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public AdmissionMedicationsSectionEntriesOptional2 createAdmissionMedicationsSectionEntriesOptional2() {
 		AdmissionMedicationsSectionEntriesOptional2Impl admissionMedicationsSectionEntriesOptional2 = new AdmissionMedicationsSectionEntriesOptional2Impl();
 		return admissionMedicationsSectionEntriesOptional2;
@@ -3471,6 +3553,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public DischargeMedicationsSectionEntriesOptional2 createDischargeMedicationsSectionEntriesOptional2() {
 		DischargeMedicationsSectionEntriesOptional2Impl dischargeMedicationsSectionEntriesOptional2 = new DischargeMedicationsSectionEntriesOptional2Impl();
 		return dischargeMedicationsSectionEntriesOptional2;
@@ -3492,6 +3575,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public DischargeDiagnosisSection2 createDischargeDiagnosisSection2() {
 		DischargeDiagnosisSection2Impl dischargeDiagnosisSection2 = new DischargeDiagnosisSection2Impl();
 		return dischargeDiagnosisSection2;
@@ -3667,6 +3751,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public DischargeMedicationsSection2 createDischargeMedicationsSection2() {
 		DischargeMedicationsSection2Impl dischargeMedicationsSection2 = new DischargeMedicationsSection2Impl();
 		return dischargeMedicationsSection2;
@@ -3875,6 +3960,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ConsultationNote2 createConsultationNote2() {
 		ConsultationNote2Impl consultationNote2 = new ConsultationNote2Impl();
 		return consultationNote2;
@@ -3885,6 +3971,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ContinuityOfCareDocument2 createContinuityOfCareDocument2() {
 		ContinuityOfCareDocument2Impl continuityOfCareDocument2 = new ContinuityOfCareDocument2Impl();
 		return continuityOfCareDocument2;
@@ -3895,6 +3982,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public DiagnosticImagingReport2 createDiagnosticImagingReport2() {
 		DiagnosticImagingReport2Impl diagnosticImagingReport2 = new DiagnosticImagingReport2Impl();
 		return diagnosticImagingReport2;
@@ -3905,6 +3993,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public DischargeSummary2 createDischargeSummary2() {
 		DischargeSummary2Impl dischargeSummary2 = new DischargeSummary2Impl();
 		return dischargeSummary2;
@@ -3915,6 +4004,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public HistoryAndPhysicalNote2 createHistoryAndPhysicalNote2() {
 		HistoryAndPhysicalNote2Impl historyAndPhysicalNote2 = new HistoryAndPhysicalNote2Impl();
 		return historyAndPhysicalNote2;
@@ -3925,6 +4015,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public OperativeNote2 createOperativeNote2() {
 		OperativeNote2Impl operativeNote2 = new OperativeNote2Impl();
 		return operativeNote2;
@@ -3935,6 +4026,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ProcedureNote2 createProcedureNote2() {
 		ProcedureNote2Impl procedureNote2 = new ProcedureNote2Impl();
 		return procedureNote2;
@@ -3945,6 +4037,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ProgressNote2 createProgressNote2() {
 		ProgressNote2Impl progressNote2 = new ProgressNote2Impl();
 		return progressNote2;
@@ -3955,6 +4048,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public UnstructuredDocument2 createUnstructuredDocument2() {
 		UnstructuredDocument2Impl unstructuredDocument2 = new UnstructuredDocument2Impl();
 		return unstructuredDocument2;
@@ -3965,6 +4059,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PreconditionForSubstanceAdministration2 createPreconditionForSubstanceAdministration2() {
 		PreconditionForSubstanceAdministration2Impl preconditionForSubstanceAdministration2 = new PreconditionForSubstanceAdministration2Impl();
 		return preconditionForSubstanceAdministration2;
@@ -3975,6 +4070,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public FamilyHistoryObservation2 createFamilyHistoryObservation2() {
 		FamilyHistoryObservation2Impl familyHistoryObservation2 = new FamilyHistoryObservation2Impl();
 		return familyHistoryObservation2;
@@ -3985,6 +4081,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public HealthStatusEvaluationsAndOutcomesSection createHealthStatusEvaluationsAndOutcomesSection() {
 		HealthStatusEvaluationsAndOutcomesSectionImpl healthStatusEvaluationsAndOutcomesSection = new HealthStatusEvaluationsAndOutcomesSectionImpl();
 		return healthStatusEvaluationsAndOutcomesSection;
@@ -3995,6 +4092,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public FamilyHistoryOrganizer2 createFamilyHistoryOrganizer2() {
 		FamilyHistoryOrganizer2Impl familyHistoryOrganizer2 = new FamilyHistoryOrganizer2Impl();
 		return familyHistoryOrganizer2;
@@ -4005,6 +4103,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public FamilyHistorySection2 createFamilyHistorySection2() {
 		FamilyHistorySection2Impl familyHistorySection2 = new FamilyHistorySection2Impl();
 		return familyHistorySection2;
@@ -4015,6 +4114,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PhysicianReadingStudyPerformer2 createPhysicianReadingStudyPerformer2() {
 		PhysicianReadingStudyPerformer2Impl physicianReadingStudyPerformer2 = new PhysicianReadingStudyPerformer2Impl();
 		return physicianReadingStudyPerformer2;
@@ -4025,6 +4125,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public CareTeams createCareTeams() {
 		CareTeamsImpl careTeams = new CareTeamsImpl();
 		return careTeams;
@@ -4035,6 +4136,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public CareTeamOrganizer createCareTeamOrganizer() {
 		CareTeamOrganizerImpl careTeamOrganizer = new CareTeamOrganizerImpl();
 		return careTeamOrganizer;
@@ -4045,6 +4147,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public NoteActivity createNoteActivity() {
 		NoteActivityImpl noteActivity = new NoteActivityImpl();
 		return noteActivity;
@@ -4055,6 +4158,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public CareTeamTypeObservation createCareTeamTypeObservation() {
 		CareTeamTypeObservationImpl careTeamTypeObservation = new CareTeamTypeObservationImpl();
 		return careTeamTypeObservation;
@@ -4065,6 +4169,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public CareTeamMemberAct createCareTeamMemberAct() {
 		CareTeamMemberActImpl careTeamMemberAct = new CareTeamMemberActImpl();
 		return careTeamMemberAct;
@@ -4075,6 +4180,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public CareTeamMemberScheduleObservation createCareTeamMemberScheduleObservation() {
 		CareTeamMemberScheduleObservationImpl careTeamMemberScheduleObservation = new CareTeamMemberScheduleObservationImpl();
 		return careTeamMemberScheduleObservation;
@@ -4085,6 +4191,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ProvenanceAuthorParticipation createProvenanceAuthorParticipation() {
 		ProvenanceAuthorParticipationImpl provenanceAuthorParticipation = new ProvenanceAuthorParticipationImpl();
 		return provenanceAuthorParticipation;
@@ -4095,6 +4202,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public SerialNumberObservation createSerialNumberObservation() {
 		SerialNumberObservationImpl serialNumberObservation = new SerialNumberObservationImpl();
 		return serialNumberObservation;
@@ -4105,6 +4213,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public MRISafetyObservation createMRISafetyObservation() {
 		MRISafetyObservationImpl mriSafetyObservation = new MRISafetyObservationImpl();
 		return mriSafetyObservation;
@@ -4115,6 +4224,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ModelNumberObservation createModelNumberObservation() {
 		ModelNumberObservationImpl modelNumberObservation = new ModelNumberObservationImpl();
 		return modelNumberObservation;
@@ -4125,6 +4235,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ManufacturingDateObservation createManufacturingDateObservation() {
 		ManufacturingDateObservationImpl manufacturingDateObservation = new ManufacturingDateObservationImpl();
 		return manufacturingDateObservation;
@@ -4135,6 +4246,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public LotOrBatchNumberObservation createLotOrBatchNumberObservation() {
 		LotOrBatchNumberObservationImpl lotOrBatchNumberObservation = new LotOrBatchNumberObservationImpl();
 		return lotOrBatchNumberObservation;
@@ -4145,6 +4257,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public LatexSafetyObservation createLatexSafetyObservation() {
 		LatexSafetyObservationImpl latexSafetyObservation = new LatexSafetyObservationImpl();
 		return latexSafetyObservation;
@@ -4155,6 +4268,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ImplantableDeviceStatusObservation createImplantableDeviceStatusObservation() {
 		ImplantableDeviceStatusObservationImpl implantableDeviceStatusObservation = new ImplantableDeviceStatusObservationImpl();
 		return implantableDeviceStatusObservation;
@@ -4165,6 +4279,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ExpirationDateObservation createExpirationDateObservation() {
 		ExpirationDateObservationImpl expirationDateObservation = new ExpirationDateObservationImpl();
 		return expirationDateObservation;
@@ -4175,6 +4290,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public DistinctIdentificationCodeObservation createDistinctIdentificationCodeObservation() {
 		DistinctIdentificationCodeObservationImpl distinctIdentificationCodeObservation = new DistinctIdentificationCodeObservationImpl();
 		return distinctIdentificationCodeObservation;
@@ -4185,6 +4301,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public DeviceIdentifierObservation createDeviceIdentifierObservation() {
 		DeviceIdentifierObservationImpl deviceIdentifierObservation = new DeviceIdentifierObservationImpl();
 		return deviceIdentifierObservation;
@@ -4195,6 +4312,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public CompanyNameObservation createCompanyNameObservation() {
 		CompanyNameObservationImpl companyNameObservation = new CompanyNameObservationImpl();
 		return companyNameObservation;
@@ -4205,6 +4323,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public CatalogNumberObservation createCatalogNumberObservation() {
 		CatalogNumberObservationImpl catalogNumberObservation = new CatalogNumberObservationImpl();
 		return catalogNumberObservation;
@@ -4215,6 +4334,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public BrandNameObservation createBrandNameObservation() {
 		BrandNameObservationImpl brandNameObservation = new BrandNameObservationImpl();
 		return brandNameObservation;
@@ -4225,6 +4345,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public UDIOrganizer createUDIOrganizer() {
 		UDIOrganizerImpl udiOrganizer = new UDIOrganizerImpl();
 		return udiOrganizer;
@@ -4235,6 +4356,370 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
+	public ProvenanceAssemblerParticipationV2 createProvenanceAssemblerParticipationV2() {
+		ProvenanceAssemblerParticipationV2Impl provenanceAssemblerParticipationV2 = new ProvenanceAssemblerParticipationV2Impl();
+		return provenanceAssemblerParticipationV2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public CareTeamOrganizerV2 createCareTeamOrganizerV2() {
+		CareTeamOrganizerV2Impl careTeamOrganizerV2 = new CareTeamOrganizerV2Impl();
+		return careTeamOrganizerV2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public CareTeamMemberActV2 createCareTeamMemberActV2() {
+		CareTeamMemberActV2Impl careTeamMemberActV2 = new CareTeamMemberActV2Impl();
+		return careTeamMemberActV2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public CareTeamMemberScheduleObservationV2 createCareTeamMemberScheduleObservationV2() {
+		CareTeamMemberScheduleObservationV2Impl careTeamMemberScheduleObservationV2 = new CareTeamMemberScheduleObservationV2Impl();
+		return careTeamMemberScheduleObservationV2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public CareTeamsV2 createCareTeamsV2() {
+		CareTeamsV2Impl careTeamsV2 = new CareTeamsV2Impl();
+		return careTeamsV2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public AssessmentScaleObservationV2 createAssessmentScaleObservationV2() {
+		AssessmentScaleObservationV2Impl assessmentScaleObservationV2 = new AssessmentScaleObservationV2Impl();
+		return assessmentScaleObservationV2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public AssessmentScaleSupportingObservationV2 createAssessmentScaleSupportingObservationV2() {
+		AssessmentScaleSupportingObservationV2Impl assessmentScaleSupportingObservationV2 = new AssessmentScaleSupportingObservationV2Impl();
+		return assessmentScaleSupportingObservationV2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public DateOfDiagnosisAct createDateOfDiagnosisAct() {
+		DateOfDiagnosisActImpl dateOfDiagnosisAct = new DateOfDiagnosisActImpl();
+		return dateOfDiagnosisAct;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public GenderIdentityObservationV3 createGenderIdentityObservationV3() {
+		GenderIdentityObservationV3Impl genderIdentityObservationV3 = new GenderIdentityObservationV3Impl();
+		return genderIdentityObservationV3;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public GoalObsevationV2 createGoalObsevationV2() {
+		GoalObsevationV2Impl goalObsevationV2 = new GoalObsevationV2Impl();
+		return goalObsevationV2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public HealthConcernActV3 createHealthConcernActV3() {
+		HealthConcernActV3Impl healthConcernActV3 = new HealthConcernActV3Impl();
+		return healthConcernActV3;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public PlannedProcedureV3 createPlannedProcedureV3() {
+		PlannedProcedureV3Impl plannedProcedureV3 = new PlannedProcedureV3Impl();
+		return plannedProcedureV3;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ProblemObservationV4 createProblemObservationV4() {
+		ProblemObservationV4Impl problemObservationV4 = new ProblemObservationV4Impl();
+		return problemObservationV4;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ProcedureActivityProcedureV3 createProcedureActivityProcedureV3() {
+		ProcedureActivityProcedureV3Impl procedureActivityProcedureV3 = new ProcedureActivityProcedureV3Impl();
+		return procedureActivityProcedureV3;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public SectionTimeRangeObservation createSectionTimeRangeObservation() {
+		SectionTimeRangeObservationImpl sectionTimeRangeObservation = new SectionTimeRangeObservationImpl();
+		return sectionTimeRangeObservation;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public DeviceIdentifierObservationV2 createDeviceIdentifierObservationV2() {
+		DeviceIdentifierObservationV2Impl deviceIdentifierObservationV2 = new DeviceIdentifierObservationV2Impl();
+		return deviceIdentifierObservationV2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public SexualOrientationObservation createSexualOrientationObservation() {
+		SexualOrientationObservationImpl sexualOrientationObservation = new SexualOrientationObservationImpl();
+		return sexualOrientationObservation;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public SocialHistoryObservationV4 createSocialHistoryObservationV4() {
+		SocialHistoryObservationV4Impl socialHistoryObservationV4 = new SocialHistoryObservationV4Impl();
+		return socialHistoryObservationV4;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public CoverageActivityV4 createCoverageActivityV4() {
+		CoverageActivityV4Impl coverageActivityV4 = new CoverageActivityV4Impl();
+		return coverageActivityV4;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public PregnancyIntention createPregnancyIntention() {
+		PregnancyIntentionImpl pregnancyIntention = new PregnancyIntentionImpl();
+		return pregnancyIntention;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public RelatedPersonRelationshipandNameParticipant createRelatedPersonRelationshipandNameParticipant() {
+		RelatedPersonRelationshipandNameParticipantImpl relatedPersonRelationshipandNameParticipant = new RelatedPersonRelationshipandNameParticipantImpl();
+		return relatedPersonRelationshipandNameParticipant;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public USRealmHeaderV4 createUSRealmHeaderV4() {
+		USRealmHeaderV4Impl usRealmHeaderV4 = new USRealmHeaderV4Impl();
+		return usRealmHeaderV4;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public MedicationDispenseV4 createMedicationDispenseV4() {
+		MedicationDispenseV4Impl medicationDispenseV4 = new MedicationDispenseV4Impl();
+		return medicationDispenseV4;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ResultObservationV4 createResultObservationV4() {
+		ResultObservationV4Impl resultObservationV4 = new ResultObservationV4Impl();
+		return resultObservationV4;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public DisabilityStatusObservation createDisabilityStatusObservation() {
+		DisabilityStatusObservationImpl disabilityStatusObservation = new DisabilityStatusObservationImpl();
+		return disabilityStatusObservation;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public BasicIndustryObservation createBasicIndustryObservation() {
+		BasicIndustryObservationImpl basicIndustryObservation = new BasicIndustryObservationImpl();
+		return basicIndustryObservation;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public BasicOccupationObservation createBasicOccupationObservation() {
+		BasicOccupationObservationImpl basicOccupationObservation = new BasicOccupationObservationImpl();
+		return basicOccupationObservation;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public GenderIdentityObservationV4 createGenderIdentityObservationV4() {
+		GenderIdentityObservationV4Impl genderIdentityObservationV4 = new GenderIdentityObservationV4Impl();
+		return genderIdentityObservationV4;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ReasonV3 createReasonV3() {
+		ReasonV3Impl reasonV3 = new ReasonV3Impl();
+		return reasonV3;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public TribalAffiliation createTribalAffiliation() {
+		TribalAffiliationImpl tribalAffiliation = new TribalAffiliationImpl();
+		return tribalAffiliation;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public PolicyActivityV4 createPolicyActivityV4() {
+		PolicyActivityV4Impl policyActivityV4 = new PolicyActivityV4Impl();
+		return policyActivityV4;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ResultOrganizerV4 createResultOrganizerV4() {
+		ResultOrganizerV4Impl resultOrganizerV4 = new ResultOrganizerV4Impl();
+		return resultOrganizerV4;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public IndicationV3 createIndicationV3() {
+		IndicationV3Impl indicationV3 = new IndicationV3Impl();
+		return indicationV3;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public CriticalityObservation createCriticalityObservation() {
 		CriticalityObservationImpl criticalityObservation = new CriticalityObservationImpl();
 		return criticalityObservation;
@@ -4245,6 +4730,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public BirthSexObservation createBirthSexObservation() {
 		BirthSexObservationImpl birthSexObservation = new BirthSexObservationImpl();
 		return birthSexObservation;
@@ -4255,6 +4741,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public CourseOfCareSection createCourseOfCareSection() {
 		CourseOfCareSectionImpl courseOfCareSection = new CourseOfCareSectionImpl();
 		return courseOfCareSection;
@@ -4265,6 +4752,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PlannedInterventionAct createPlannedInterventionAct() {
 		PlannedInterventionActImpl plannedInterventionAct = new PlannedInterventionActImpl();
 		return plannedInterventionAct;
@@ -4275,6 +4763,7 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public RiskConcernAct createRiskConcernAct() {
 		RiskConcernActImpl riskConcernAct = new RiskConcernActImpl();
 		return riskConcernAct;

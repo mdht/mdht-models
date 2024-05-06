@@ -263,7 +263,7 @@ public class DrugMonitoringActTest extends CDAValidationTest {
 
 			@Override
 			protected void setDependency(DrugMonitoringAct target) {
-				Collection<Object> passToken = new java.util.ArrayList<Object>(3);
+				Collection<Object> passToken = new java.util.ArrayList<>(3);
 				passToken.add(target);
 				map.put("org.openhealthtools.mdht.uml.cda.consol.DrugMonitoringActCodeP", passToken);
 			}
@@ -833,7 +833,7 @@ public class DrugMonitoringActTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ConstructorTestClass extends DrugMonitoringActOperations {
-	};
+	}
 
 	/**
 	* Tests Operations Constructor for 100% coverage

@@ -437,7 +437,7 @@ public class QuantityMeasurementObservationTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ConstructorTestClass extends QuantityMeasurementObservationOperations {
-	};
+	}
 
 	/**
 	* Tests Operations Constructor for 100% coverage

@@ -1638,7 +1638,7 @@ The Problem Status records whether the indicated problem is active, inactive, or
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xmkAokfQEeiFfJtNAawVHw" value="1"/>
     </ownedAttribute>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_IXIVwEfOEeiFfJtNAawVHw" base_Class="_vyb38EfNEeiFfJtNAawVHw" templateId="2.16.840.1.113883.10.20.22.4.6" templateVersion="2014-06-09">
+  <CDA:CDATemplate xmi:id="_IXIVwEfOEeiFfJtNAawVHw" base_Class="_vyb38EfNEeiFfJtNAawVHw" templateId="2.16.840.1.113883.10.20.22.4.6" templateVersion="2019-06-20">
     <ruleId>CONF:1098-7359</ruleId>
     <ruleId>CONF:1098-10518</ruleId>
     <ruleId>DSTU:815/1357</ruleId>

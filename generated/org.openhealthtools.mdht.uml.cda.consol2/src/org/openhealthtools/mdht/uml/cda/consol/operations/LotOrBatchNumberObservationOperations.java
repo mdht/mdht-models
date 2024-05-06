@@ -293,7 +293,7 @@ public class LotOrBatchNumberObservationOperations extends ClinicalStatementOper
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_LOT_OR_BATCH_NUMBER_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() =  1 and self.value->forAll(element | element.oclIsTypeOf(datatypes::ST)))";
+	protected static final String VALIDATE_LOT_OR_BATCH_NUMBER_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() =  1 and self.value->forAll(element | element.oclIsTypeOf(datatypes::ED)))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateLotOrBatchNumberObservationValue(LotOrBatchNumberObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Lot Or Batch Number Observation Value</em>}' invariant operation.

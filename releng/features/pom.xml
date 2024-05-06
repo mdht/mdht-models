@@ -18,7 +18,7 @@
 
 	<modules>
 		<module>org.openhealthtools.mdht.uml.cda.models-feature</module>
-		<module>org.openhealthtools.mdht.uml.cda.models.doc-feature</module>
+		
 	</modules>
 
 

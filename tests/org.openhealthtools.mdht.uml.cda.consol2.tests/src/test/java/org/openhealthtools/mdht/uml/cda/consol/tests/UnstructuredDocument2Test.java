@@ -606,7 +606,7 @@ public class UnstructuredDocument2Test extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ConstructorTestClass extends UnstructuredDocument2Operations {
-	};
+	}
 
 	/**
 	* Tests Operations Constructor for 100% coverage

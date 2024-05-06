@@ -135,7 +135,7 @@ public class LotOrBatchNumberObservationTest extends CDAValidationTest {
 
 			@Override
 			protected void setDependency(LotOrBatchNumberObservation target) {
-				Collection<Object> passToken = new java.util.ArrayList<Object>(3);
+				Collection<Object> passToken = new java.util.ArrayList<>(3);
 				passToken.add(target);
 				map.put("org.openhealthtools.mdht.uml.cda.consol.LotOrBatchNumberObservationCodeP", passToken);
 			}
@@ -172,7 +172,7 @@ public class LotOrBatchNumberObservationTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(LotOrBatchNumberObservation target) {
 				target.init();
-				target.getValues().add(DatatypesFactory.eINSTANCE.createST("LOTNUMBER"));
+				target.getValues().add(DatatypesFactory.eINSTANCE.createED("LOTNUMBER"));
 
 			}
 
@@ -233,7 +233,7 @@ public class LotOrBatchNumberObservationTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ConstructorTestClass extends LotOrBatchNumberObservationOperations {
-	};
+	}
 
 	/**
 	* Tests Operations Constructor for 100% coverage

@@ -885,7 +885,6 @@ public class MedicationActivityTest extends CDAValidationTest {
 						}
 					});
 				}
-				;
 			}
 
 			@Override
@@ -2031,7 +2030,7 @@ public class MedicationActivityTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ConstructorTestClass extends MedicationActivityOperations {
-	};
+	}
 
 	/**
 	* Tests Operations Constructor for 100% coverage

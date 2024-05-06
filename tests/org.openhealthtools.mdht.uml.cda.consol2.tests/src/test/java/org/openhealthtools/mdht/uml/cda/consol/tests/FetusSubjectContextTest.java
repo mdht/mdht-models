@@ -183,7 +183,7 @@ public class FetusSubjectContextTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ConstructorTestClass extends FetusSubjectContextOperations {
-	};
+	}
 
 	/**
 	* Tests Operations Constructor for 100% coverage

@@ -349,7 +349,7 @@ public class FamilyHistoryDeathObservationTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ConstructorTestClass extends FamilyHistoryDeathObservationOperations {
-	};
+	}
 
 	/**
 	* Tests Operations Constructor for 100% coverage

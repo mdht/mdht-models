@@ -272,7 +272,7 @@ public class ProcedureEstimatedBloodLossSectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ConstructorTestClass extends ProcedureEstimatedBloodLossSectionOperations {
-	};
+	}
 
 	/**
 	* Tests Operations Constructor for 100% coverage

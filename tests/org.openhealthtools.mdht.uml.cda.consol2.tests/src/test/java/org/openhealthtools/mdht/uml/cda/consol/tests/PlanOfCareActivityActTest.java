@@ -234,7 +234,7 @@ public class PlanOfCareActivityActTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ConstructorTestClass extends PlanOfCareActivityActOperations {
-	};
+	}
 
 	/**
 	* Tests Operations Constructor for 100% coverage

@@ -2432,7 +2432,7 @@ public class ConsultationNoteTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ConstructorTestClass extends ConsultationNoteOperations {
-	};
+	}
 
 	/**
 	* Tests Operations Constructor for 100% coverage

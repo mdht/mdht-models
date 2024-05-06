@@ -9,7 +9,7 @@
         <body>couple</body>
       </ownedComment>
     </generalization>
-    <ownedAttribute xmi:id="_2LN98BSVEeGGzu7fmW9pXw" name="code" visibility="private">
+    <ownedAttribute xmi:id="_2LN98BSVEeGGzu7fmW9pXw" name="code" visibility="private" redefinedProperty="_bGzYihVdEeGQCvUGzi1kDQ">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2LPMEBSVEeGGzu7fmW9pXw" name="title" visibility="private">
@@ -55,6 +55,7 @@
     </generalization>
     <ownedAttribute xmi:id="_bGzYihVdEeGQCvUGzi1kDQ" name="code" visibility="private">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_9lgCcErmEd6FXKclYGEDCw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_bGzYixVdEeGQCvUGzi1kDQ" name="title" visibility="private">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
@@ -2596,7 +2597,7 @@ This template represents the status of the allergy indicating whether it is acti
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
     </ownedAttribute>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_7sDtYEc1EeiFfJtNAawVHw" base_Class="_W5MCgEc1EeiFfJtNAawVHw" templateId="2.16.840.1.113883.10.20.22.4.28" templateVersion="2014-06-09">
+  <CDA:CDATemplate xmi:id="_7sDtYEc1EeiFfJtNAawVHw" base_Class="_W5MCgEc1EeiFfJtNAawVHw" templateId="2.16.840.1.113883.10.20.22.4.28" templateVersion="2019-06-20">
     <ruleId>CONF:1098-7317</ruleId>
     <ruleId>CONF:1098-10490</ruleId>
     <ruleId>DSTU:816/1356</ruleId>

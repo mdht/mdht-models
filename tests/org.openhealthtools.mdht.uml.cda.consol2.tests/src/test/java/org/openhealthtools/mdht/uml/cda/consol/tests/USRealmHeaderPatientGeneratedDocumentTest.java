@@ -2734,7 +2734,7 @@ public class USRealmHeaderPatientGeneratedDocumentTest extends CDAValidationTest
 	* @generated
 	*/
 	private static class ConstructorTestClass extends USRealmHeaderPatientGeneratedDocumentOperations {
-	};
+	}
 
 	/**
 	* Tests Operations Constructor for 100% coverage

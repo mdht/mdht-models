@@ -773,7 +773,7 @@ public class ImmunizationActivity2Test extends CDAValidationTest {
 
 			@Override
 			protected void setDependency(ImmunizationActivity2 target) {
-				Collection<Object> passToken = new java.util.ArrayList<Object>(3);
+				Collection<Object> passToken = new java.util.ArrayList<>(3);
 				passToken.add(target);
 				map.put("org.openhealthtools.mdht.uml.cda.consol.ImmunizationActivityStatusCodeP", passToken);
 			}
@@ -882,7 +882,7 @@ public class ImmunizationActivity2Test extends CDAValidationTest {
 
 			@Override
 			protected void setDependency(ImmunizationActivity2 target) {
-				Collection<Object> passToken = new java.util.ArrayList<Object>(3);
+				Collection<Object> passToken = new java.util.ArrayList<>(3);
 				passToken.add(target);
 				map.put(
 					"org.openhealthtools.mdht.uml.cda.consol.ImmunizationActivityAdministrationUnitCodeP", passToken);
@@ -999,7 +999,7 @@ public class ImmunizationActivity2Test extends CDAValidationTest {
 
 			@Override
 			protected void setDependency(ImmunizationActivity2 target) {
-				Collection<Object> passToken = new java.util.ArrayList<Object>(3);
+				Collection<Object> passToken = new java.util.ArrayList<>(3);
 				passToken.add(target);
 				map.put("org.openhealthtools.mdht.uml.cda.consol.ImmunizationActivityRouteCodeP", passToken);
 			}
@@ -1500,7 +1500,7 @@ public class ImmunizationActivity2Test extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ConstructorTestClass extends ImmunizationActivity2Operations {
-	};
+	}
 
 	/**
 	* Tests Operations Constructor for 100% coverage

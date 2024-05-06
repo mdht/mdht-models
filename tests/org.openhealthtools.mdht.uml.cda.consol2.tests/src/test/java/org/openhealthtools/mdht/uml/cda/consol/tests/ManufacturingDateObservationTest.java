@@ -266,7 +266,7 @@ public class ManufacturingDateObservationTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ConstructorTestClass extends ManufacturingDateObservationOperations {
-	};
+	}
 
 	/**
 	* Tests Operations Constructor for 100% coverage

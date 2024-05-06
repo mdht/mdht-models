@@ -148,7 +148,7 @@ public class PayersSection2Test extends CDAValidationTest {
 
 			@Override
 			protected void setDependency(PayersSection2 target) {
-				Collection<Object> passToken = new java.util.ArrayList<Object>(3);
+				Collection<Object> passToken = new java.util.ArrayList<>(3);
 				passToken.add(target);
 				map.put("org.openhealthtools.mdht.uml.cda.consol.PayersSectionCodeP", passToken);
 			}
@@ -244,7 +244,7 @@ public class PayersSection2Test extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ConstructorTestClass extends PayersSection2Operations {
-	};
+	}
 
 	/**
 	* Tests Operations Constructor for 100% coverage

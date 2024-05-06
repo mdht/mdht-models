@@ -663,7 +663,7 @@ public class ExternalDocumentReferenceTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ConstructorTestClass extends ExternalDocumentReferenceOperations {
-	};
+	}
 
 	/**
 	* Tests Operations Constructor for 100% coverage

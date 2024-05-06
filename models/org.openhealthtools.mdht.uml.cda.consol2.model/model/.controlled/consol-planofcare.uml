@@ -2289,7 +2289,7 @@ MethodCode SHALL NOT conflict with the method inherent in Procedure / code.</bod
   <CDA:ConstraintValidation xmi:id="_Nh6p4ueGEeOqBOMhgDlycQ" severity="WARNING" base_Constraint="_Nh6p4OeGEeOqBOMhgDlycQ">
     <ruleId>CONF:1098-31977</ruleId>
   </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_N6e64ueGEeOqBOMhgDlycQ" severity="INFO" base_Constraint="_N6e64OeGEeOqBOMhgDlycQ">
+  <CDA:ConstraintValidation xmi:id="_N6e64ueGEeOqBOMhgDlycQ" severity="WARNING" base_Constraint="_N6e64OeGEeOqBOMhgDlycQ">
     <ruleId>CONF:1098-31977</ruleId>
   </CDA:ConstraintValidation>
   <CDA:CodeSystemConstraint xmi:id="_O9RYIOeHEeOqBOMhgDlycQ" code="active" displayName="Active" base_Property="_jf9D8OeFEeOqBOMhgDlycQ">
@@ -5079,7 +5079,7 @@ A Risk Concern Act represents a health concern that is a risk. A risk is a clini
     <ruleId>4435-107</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:ValueSetConstraint xmi:id="_apFI4AdLEeu6cuZQ8fwlvQ" base_Property="_6wiC9AdKEeu6cuZQ8fwlvQ" uri="consol-vocab::CareTeamCategory">
-    <reference href="../consol-vocab.uml#_MPemEAdLEeu6cuZQ8fwlvQ"/>
+    <reference href="pathmap://CONSOL_MODEL/consol-vocab.uml#_MPemEAdLEeu6cuZQ8fwlvQ"/>
     <ruleId>4435-109</ruleId>
   </CDA:ValueSetConstraint>
   <uml:Class xmi:id="_hBwkAAmBEeut3_ZvYAZhww" name="NoteActivity">
@@ -5317,7 +5317,7 @@ A Risk Concern Act represents a health concern that is a risk. A risk is a clini
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_1CJp4A2XEeuzkrfERpFDKQ" severity="WARNING" base_Association="_zMYbEg2XEeuzkrfERpFDKQ"/>
   <CDA:PropertyValidation xmi:id="_8aJLIA2XEeuzkrfERpFDKQ" base_Property="_6wiC8AdKEeu6cuZQ8fwlvQ">
-    <ruleId>4435-106</ruleId>
+    <ruleId>4435-97</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_9T1zQA2XEeuzkrfERpFDKQ" base_Property="_6wiqAAdKEeu6cuZQ8fwlvQ">
     <ruleId>CONF:4435-101</ruleId>

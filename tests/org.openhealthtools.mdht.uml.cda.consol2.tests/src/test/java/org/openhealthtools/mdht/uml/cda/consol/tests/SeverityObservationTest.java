@@ -509,7 +509,7 @@ public class SeverityObservationTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ConstructorTestClass extends SeverityObservationOperations {
-	};
+	}
 
 	/**
 	* Tests Operations Constructor for 100% coverage

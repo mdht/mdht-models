@@ -209,7 +209,7 @@ public class PatientReferralActTest extends CDAValidationTest {
 
 			@Override
 			protected void setDependency(PatientReferralAct target) {
-				Collection<Object> passToken = new java.util.ArrayList<Object>(3);
+				Collection<Object> passToken = new java.util.ArrayList<>(3);
 				passToken.add(target);
 				map.put("org.openhealthtools.mdht.uml.cda.consol.PatientReferralActMoodCodeP", passToken);
 			}
@@ -322,7 +322,7 @@ public class PatientReferralActTest extends CDAValidationTest {
 
 			@Override
 			protected void setDependency(PatientReferralAct target) {
-				Collection<Object> passToken = new java.util.ArrayList<Object>(3);
+				Collection<Object> passToken = new java.util.ArrayList<>(3);
 				passToken.add(target);
 				map.put("org.openhealthtools.mdht.uml.cda.consol.PatientReferralActCodeP", passToken);
 			}
@@ -1305,7 +1305,7 @@ public class PatientReferralActTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ConstructorTestClass extends PatientReferralActOperations {
-	};
+	}
 
 	/**
 	* Tests Operations Constructor for 100% coverage

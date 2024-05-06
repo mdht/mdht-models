@@ -23,8 +23,8 @@ import org.eclipse.mdht.uml.hl7.datatypes.CE;
 import org.eclipse.mdht.uml.hl7.datatypes.CS;
 import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
 import org.eclipse.mdht.uml.hl7.datatypes.IVL_TS;
+import org.eclipse.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship;
 import org.junit.Test;
-import org.eclipse.mdht.uml.hl7.vocab.*;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.PregnancyObservation;
 import org.openhealthtools.mdht.uml.cda.consol.operations.PregnancyObservationOperations;
@@ -270,6 +270,17 @@ public class PregnancyObservationTest extends CDAValidationTest {
 
 	/**
 	*
+	*
+	*77386006    Pregnancy (finding)
+	146799005    Possible pregnancy (situation)
+	60001007    Not pregnant (finding)
+	
+	
+	Code	Display
+	102874004	Possible pregnancy (finding)
+	60001007	Not pregnant (finding)
+	77386006	Pregnancy (finding)
+	
 	* @generated NOT
 	*/
 	@Test
@@ -285,13 +296,43 @@ public class PregnancyObservationTest extends CDAValidationTest {
 			}
 
 			@Override
-			protected void updateToPass(PregnancyObservation target) {
-				target.init();
+			public void addPassTests() {
 
-				CD value = DatatypesFactory.eINSTANCE.createCD();
-				value.setCodeSystem("2.16.840.1.113883.6.96");
-				value.setCode("77386006");
-				target.getValues().add(value);
+				addPassTest(new PassTest() {
+					@Override
+					public void updateToPass(PregnancyObservation target) {
+						target.init();
+
+						CD value = DatatypesFactory.eINSTANCE.createCD();
+						value.setCodeSystem("2.16.840.1.113883.6.96");
+						value.setCode("77386006");
+						target.getValues().add(value);
+					}
+				});
+
+				addPassTest(new PassTest() {
+					@Override
+					public void updateToPass(PregnancyObservation target) {
+						target.init();
+
+						CD value = DatatypesFactory.eINSTANCE.createCD();
+						value.setCodeSystem("2.16.840.1.113883.6.96");
+						value.setCode("102874004");
+						target.getValues().add(value);
+					}
+				});
+
+				addPassTest(new PassTest() {
+					@Override
+					public void updateToPass(PregnancyObservation target) {
+						target.init();
+
+						CD value = DatatypesFactory.eINSTANCE.createCD();
+						value.setCodeSystem("2.16.840.1.113883.6.96");
+						value.setCode("60001007");
+						target.getValues().add(value);
+					}
+				});
 
 			}
 
@@ -479,7 +520,7 @@ public class PregnancyObservationTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ConstructorTestClass extends PregnancyObservationOperations {
-	};
+	}
 
 	/**
 	* Tests Operations Constructor for 100% coverage

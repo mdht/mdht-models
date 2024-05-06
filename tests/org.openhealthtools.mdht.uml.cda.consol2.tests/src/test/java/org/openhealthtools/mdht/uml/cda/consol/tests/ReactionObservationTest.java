@@ -1030,7 +1030,7 @@ public class ReactionObservationTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ConstructorTestClass extends ReactionObservationOperations {
-	};
+	}
 
 	/**
 	* Tests Operations Constructor for 100% coverage
@@ -1052,7 +1052,7 @@ public class ReactionObservationTest extends CDAValidationTest {
 
 	private enum ENTRY_RELATIONSHIP_OBJECT {
 		SEVERITY_OBS, PROCEDURE_ACTIVITY_PROCEDURE, MEDICATION_ACTIVITY
-	};
+	}
 
 	/**
 	 * Creates the entryRelationship object with one entry based on the input type

@@ -602,7 +602,7 @@ Reason for deprecation: Cognitive Status Problem Observation has been merged, wi
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#__I8BwDxZEd6JwqSGecoePg"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ty-kceY6EeGINOJ_SD9_dA" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ty-kcOY6EeGINOJ_SD9_dA" value="*"/>
-      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
+      <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_HWZw0OY6EeGINOJ_SD9_dA" base_Class="_1ZKPgOY2EeGINOJ_SD9_dA" templateId="2.16.840.1.113883.10.20.22.4.86">

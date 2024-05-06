@@ -265,7 +265,7 @@ b. If a URL is referenced, then it SHOULD have a corresponding linkHTML element 
         <body>couple</body>
       </ownedComment>
     </generalization>
-    <ownedAttribute xmi:id="_2KiBcBSVEeGGzu7fmW9pXw" name="code" visibility="private">
+    <ownedAttribute xmi:id="_2KiBcBSVEeGGzu7fmW9pXw" name="code" visibility="private" redefinedProperty="_1RZdJxVdEeGQCvUGzi1kDQ">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2KjPkBSVEeGGzu7fmW9pXw" name="title" visibility="private">
@@ -314,6 +314,7 @@ NOTE: The descriptions in this section differentiate between &quot;advance direc
     </generalization>
     <ownedAttribute xmi:id="_1RZdJxVdEeGQCvUGzi1kDQ" name="code" visibility="private">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_9lgCcErmEd6FXKclYGEDCw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_1RZdKBVdEeGQCvUGzi1kDQ" name="title" visibility="private">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
