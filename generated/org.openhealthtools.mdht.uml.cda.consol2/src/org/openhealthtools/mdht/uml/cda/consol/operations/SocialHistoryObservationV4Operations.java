@@ -40,8 +40,8 @@ import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SocialHistoryObservationV4#validateSocialHistoryObservationV4Value(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Observation V4 Value</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SocialHistoryObservationV4#validateSocialHistoryObservationV4ClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Observation V4 Class Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SocialHistoryObservationV4#validateSocialHistoryObservationV4MoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Observation V4 Mood Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SocialHistoryObservationV4#validateSocialHistoryObservationV4StatusCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Observation V4 Status Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SocialHistoryObservationV4#validateSocialHistoryObservationV4StatusCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Observation V4 Status Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SocialHistoryObservationV4#validateSocialHistoryObservationV4StatusCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Observation V4 Status Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SocialHistoryObservationV4#validateSocialHistoryObservationV4EffectiveTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Observation V4 Effective Time</em>}</li>
  * </ul>
  * </p>
@@ -563,27 +563,6 @@ public class SocialHistoryObservationV4Operations extends ClinicalStatementOpera
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateSocialHistoryObservationV4StatusCodeP(SocialHistoryObservationV4, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Observation V4 Status Code P</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateSocialHistoryObservationV4StatusCodeP(SocialHistoryObservationV4, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_SOCIAL_HISTORY_OBSERVATION_V4_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined())";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateSocialHistoryObservationV4StatusCodeP(SocialHistoryObservationV4, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Observation V4 Status Code P</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateSocialHistoryObservationV4StatusCodeP(SocialHistoryObservationV4, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-
-	protected static ThreadLocal<Constraint> VALIDATE_SOCIAL_HISTORY_OBSERVATION_V4_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
-
-	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
@@ -626,20 +605,6 @@ public class SocialHistoryObservationV4Operations extends ClinicalStatementOpera
 						new Object[] { socialHistoryObservationV4 }));
 			}
 
-			if (context != null) {
-				// generate a pass token for my dependent constraints to short-circuit or filter results
-				@SuppressWarnings("unchecked")
-				Collection<Object> passToken = (Collection<Object>) context.get(
-					"org.openhealthtools.mdht.uml.cda.consol.SocialHistoryObservationV4StatusCodeP");
-				if (passToken == null) {
-					// anticipate a reasonably healthy model
-					passToken = new java.util.ArrayList<>(3);
-					context.put(
-						"org.openhealthtools.mdht.uml.cda.consol.SocialHistoryObservationV4StatusCodeP", passToken);
-				}
-				passToken.add(socialHistoryObservationV4);
-			}
-
 			return false;
 		}
 		return true;
@@ -668,6 +633,27 @@ public class SocialHistoryObservationV4Operations extends ClinicalStatementOpera
 	protected static ThreadLocal<Constraint> VALIDATE_SOCIAL_HISTORY_OBSERVATION_V4_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
+	 * The cached OCL expression body for the '{@link #validateSocialHistoryObservationV4StatusCodeP(SocialHistoryObservationV4, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Observation V4 Status Code P</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateSocialHistoryObservationV4StatusCodeP(SocialHistoryObservationV4, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_SOCIAL_HISTORY_OBSERVATION_V4_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined())";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateSocialHistoryObservationV4StatusCodeP(SocialHistoryObservationV4, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Observation V4 Status Code P</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateSocialHistoryObservationV4StatusCodeP(SocialHistoryObservationV4, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static ThreadLocal<Constraint> VALIDATE_SOCIAL_HISTORY_OBSERVATION_V4_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+
+	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
@@ -681,14 +667,6 @@ public class SocialHistoryObservationV4Operations extends ClinicalStatementOpera
 	public static boolean validateSocialHistoryObservationV4StatusCode(
 			SocialHistoryObservationV4 socialHistoryObservationV4, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		Object passToken = (context == null)
-				? null
-				: context.get("org.openhealthtools.mdht.uml.cda.consol.SocialHistoryObservationV4StatusCodeP");
-		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(socialHistoryObservationV4)) {
-			// I have a free pass to short-circuit
-			return true;
-		}
 
 		DatatypesUtil.increment(context, "SocialHistoryObservationV4SocialHistoryObservationV4StatusCode", "ERROR");
 

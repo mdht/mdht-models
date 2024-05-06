@@ -33,8 +33,8 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.SocialHistoryObservati
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SocialHistoryObservationV4#validateSocialHistoryObservationV4Value(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Observation V4 Value</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SocialHistoryObservationV4#validateSocialHistoryObservationV4ClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Observation V4 Class Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SocialHistoryObservationV4#validateSocialHistoryObservationV4MoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Observation V4 Mood Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SocialHistoryObservationV4#validateSocialHistoryObservationV4StatusCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Observation V4 Status Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SocialHistoryObservationV4#validateSocialHistoryObservationV4StatusCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Observation V4 Status Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SocialHistoryObservationV4#validateSocialHistoryObservationV4StatusCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Observation V4 Status Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SocialHistoryObservationV4#validateSocialHistoryObservationV4EffectiveTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Observation V4 Effective Time</em>}</li>
  * </ul>
  * </p>
@@ -361,13 +361,6 @@ public class SocialHistoryObservationV4Test extends CDAValidationTest {
 				CS cs = DatatypesFactory.eINSTANCE.createCS("completed");
 				target.setStatusCode(cs);
 
-			}
-
-			@Override
-			protected void setDependency(SocialHistoryObservationV4 target) {
-				Collection<Object> passToken = new java.util.ArrayList<>(3);
-				passToken.add(target);
-				map.put("org.openhealthtools.mdht.uml.cda.consol.SocialHistoryObservationV4StatusCodeP", passToken);
 			}
 
 			@Override

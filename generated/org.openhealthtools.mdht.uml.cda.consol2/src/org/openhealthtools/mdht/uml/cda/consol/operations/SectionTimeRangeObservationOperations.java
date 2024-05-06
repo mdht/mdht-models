@@ -32,7 +32,6 @@ import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
  * <ul>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SectionTimeRangeObservation#validateSectionTimeRangeObservationTextReferenceValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Section Time Range Observation Text Reference Value</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SectionTimeRangeObservation#validateSectionTimeRangeObservationTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Section Time Range Observation Template Id</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SectionTimeRangeObservation#validateSectionTimeRangeObservationId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Section Time Range Observation Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SectionTimeRangeObservation#validateSectionTimeRangeObservationCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Section Time Range Observation Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SectionTimeRangeObservation#validateSectionTimeRangeObservationText(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Section Time Range Observation Text</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SectionTimeRangeObservation#validateSectionTimeRangeObservationStatusCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Section Time Range Observation Status Code</em>}</li>
@@ -206,27 +205,6 @@ public class SectionTimeRangeObservationOperations extends ClinicalStatementOper
 		}
 		return true;
 	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validateSectionTimeRangeObservationId(SectionTimeRangeObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Section Time Range Observation Id</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateSectionTimeRangeObservationId(SectionTimeRangeObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_SECTION_TIME_RANGE_OBSERVATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (not self.id->isEmpty())";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateSectionTimeRangeObservationId(SectionTimeRangeObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Section Time Range Observation Id</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateSectionTimeRangeObservationId(SectionTimeRangeObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-
-	protected static ThreadLocal<Constraint> VALIDATE_SECTION_TIME_RANGE_OBSERVATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
 
 	/**
 	 * <!-- begin-user-doc -->

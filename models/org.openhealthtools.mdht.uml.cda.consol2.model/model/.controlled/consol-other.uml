@@ -2866,7 +2866,7 @@ If the ID isn't referencing an author described elsewhere in the document, then 
   <CDA:PropertyValidation xmi:id="_zCrKAOHqEeO04sHNODkHmQ" severity="INFO" base_Property="_zCqi8OHqEeO04sHNODkHmQ">
     <ruleId>CONF:1098-7488</ruleId>
   </CDA:PropertyValidation>
-  <CDA:ValueSetConstraint xmi:id="_zCsYIOHqEeO04sHNODkHmQ" base_Property="_zCqi8OHqEeO04sHNODkHmQ" severity="WARNING">
+  <CDA:ValueSetConstraint xmi:id="_zCsYIOHqEeO04sHNODkHmQ" base_Property="_zCqi8OHqEeO04sHNODkHmQ" uri="consol-vocab::Problem" severity="WARNING">
     <reference href="../consol-vocab.uml#_2SVSkRSVEeGGzu7fmW9pXw"/>
     <ruleId>CONF:1098-7489</ruleId>
   </CDA:ValueSetConstraint>

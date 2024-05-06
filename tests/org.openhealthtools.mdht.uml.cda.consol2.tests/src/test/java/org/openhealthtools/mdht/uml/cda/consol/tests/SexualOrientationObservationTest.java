@@ -26,7 +26,6 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.SexualOrientationObser
  * <p>
  * The following operations are supported:
  * <ul>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SexualOrientationObservation#validateSexualOrientationObservationTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Sexual Orientation Observation Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SexualOrientationObservation#validateSexualOrientationObservationCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Sexual Orientation Observation Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SexualOrientationObservation#validateSexualOrientationObservationCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Sexual Orientation Observation Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SexualOrientationObservation#validateSexualOrientationObservationStatusCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Sexual Orientation Observation Status Code P</em>}</li>
@@ -38,6 +37,7 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.SexualOrientationObser
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SexualOrientationObservation#validateSexualOrientationObservationMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Sexual Orientation Observation Mood Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SexualOrientationObservation#validateSexualOrientationObservationIVLTSLow(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Sexual Orientation Observation IVLTS Low</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SexualOrientationObservation#validateSexualOrientationObservationIVLTSHigh(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Sexual Orientation Observation IVLTS High</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SexualOrientationObservation#validateSocialHistoryObservationV4TemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Observation V4 Template Id</em>}</li>
  * </ul>
  * </p>
  *
@@ -45,41 +45,6 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.SexualOrientationObser
  */
 
 public class SexualOrientationObservationTest extends CDAValidationTest {
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
-
-	public void testValidateSexualOrientationObservationTemplateId() {
-		OperationsTestCase<SexualOrientationObservation> validateSexualOrientationObservationTemplateIdTestCase = new OperationsTestCase<SexualOrientationObservation>(
-			"validateSexualOrientationObservationTemplateId", operationsForOCL.getOCLValue(
-				"VALIDATE_SEXUAL_ORIENTATION_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(SexualOrientationObservation target) {
-
-			}
-
-			@Override
-			protected void updateToPass(SexualOrientationObservation target) {
-				target.init();
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return SexualOrientationObservationOperations.validateSexualOrientationObservationTemplateId(
-					(SexualOrientationObservation) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateSexualOrientationObservationTemplateIdTestCase.doValidationTest();
-	}
 
 	/**
 	*
@@ -137,8 +102,8 @@ public class SexualOrientationObservationTest extends CDAValidationTest {
 			protected void updateToPass(SexualOrientationObservation target) {
 				target.init();
 
-				// CD cd = DatatypesFactory.eINSTANCE.createCD();
-				// target.setCode(cd);
+				CD cd = DatatypesFactory.eINSTANCE.createCD("76690-7", "2.16.840.1.113883.6.1");
+				target.setCode(cd);
 
 			}
 
@@ -497,6 +462,41 @@ public class SexualOrientationObservationTest extends CDAValidationTest {
 		};
 
 		validateSexualOrientationObservationIVLTSHighTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateSocialHistoryObservationV4TemplateId() {
+		OperationsTestCase<SexualOrientationObservation> validateSocialHistoryObservationV4TemplateIdTestCase = new OperationsTestCase<SexualOrientationObservation>(
+			"validateSocialHistoryObservationV4TemplateId", operationsForOCL.getOCLValue(
+				"VALIDATE_SOCIAL_HISTORY_OBSERVATION_V4_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(SexualOrientationObservation target) {
+
+			}
+
+			@Override
+			protected void updateToPass(SexualOrientationObservation target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return SexualOrientationObservationOperations.validateSocialHistoryObservationV4TemplateId(
+					(SexualOrientationObservation) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateSocialHistoryObservationV4TemplateIdTestCase.doValidationTest();
 	}
 
 	/**

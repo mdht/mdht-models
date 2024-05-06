@@ -75,7 +75,7 @@ public class PlannedProcedureV3Operations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PLANNED_PROCEDURE_V3_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.41' and id.extension = '2014-06-09')";
+	protected static final String VALIDATE_PLANNED_PROCEDURE_V3_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.41' and id.extension = '2022-06-01')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePlannedProcedureV3TemplateId(PlannedProcedureV3, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Procedure V3 Template Id</em>}' invariant operation.

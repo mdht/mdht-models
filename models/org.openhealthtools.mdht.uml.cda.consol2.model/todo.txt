@@ -1,0 +1,61 @@
+Coverage - 
+(new) Coverage Activity - no apparent changes
+(new) Policy Activity - no apparent changes
+Health Status/Assessments 
+(existing) Assessment Scale Observation
+(existing) Assessment Scale Supporting Observation
+(new) Functional Status Observation
+(new) Disability Status Observation
+(new) Mental Status Observation
+(new) Pregnancy Observation - added PregnancyIntention, no change to pregnancy observation
+Laboratory
+(new) Specimen Type
+(existing) Result Organizer
+(existing) Result Observation Medication
+(existing) Medication Information
+(new) Medication Activity ->Indication
+(new)  Medication Dispense Demographics
+(existing) US Realm Header
+(new) Basic Industry Observation
+(new) Basic Occupation Observation
+(new) Tribal Affiliation Observation
+(new) Sex Observation
+(new) Related Person Relationship and Name Participant Procedure
+(new) Reason for Referral Section
+
+2023-05-01 updates
+*** US REALM Header (?) - Does not required US REALM previous versions
+*** Coverage - Added effective time should/value shall
+*** Disability Status Observation - Added Template
+Indication (V3) - Need to add template for change in MAY to SHOULD
+*** Medication Dispense (V3) - Need to udpate status code
+*** PolicyActivity(V4) (?)  - New Template version based on changes to comments, no changes to constraints
+*** Pregnancy Intention in Next Year
+*** Result Observation (V4) Added Specimen 
+*** Result Organizer (V4) (?) - Added Specimen 
+*** Basic Industry Observation - Added test
+*** Basic Occupation Observation - Added test
+*** Gender Identity Observation (V4) - Added Template
+*** Sexual Orientation Observation (V2) - No apparent changes - Perhaps the null flavor VS but it is a may and a should
+*** Related Person Relationship and Name Participant
+
+
+2023-05-01 Tests
+US REALM Header (?) - Does not required US REALM previous versions
+#+++ Coverage - Added to Test
+#+++ Disability Status Observation -Added to Test
+Indication (V3) - ???
+#+++ Medication Dispense (V3) - Added to Test
+#+++ PolicyActivity(V4) (?)  -  Added to Test
+#+++ Pregnancy Intention in Next Year Added test
+#+++ Result Observation (V4) (?) - Added test
+#+++ Result Organizer (V4) (?) - Added test
+#+++ Basic Industry Observation - Added Template
+#+++ Basic Occupation Observation - Added Template
+#+++ Gender Identity Observation (V4) - Added test     
+#+++ Sexual Orientation Observation (V2) - Added test     
+#+++ Related Person Relationship and Name Participant Added test     
+
+
+
+completed

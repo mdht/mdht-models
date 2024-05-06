@@ -3526,6 +3526,9 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
         <subsettedProperty href=".controlled/consol-socialhistory.uml#_2JSrURSVEeGGzu7fmW9pXw"/>
       </ownedAttribute>
       <nestedClassifier xmi:type="uml:Class" xmi:id="_GgGvUAHlEe2uf-Hpx0eOMw" name="IVLTS">
+        <ownedComment xmi:id="_nvIW0G3oEe66V-uSC1tAAg">
+          <body>INLINE</body>
+        </ownedComment>
         <generalization xmi:id="_GgIkgAHlEe2uf-Hpx0eOMw">
           <general xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
         </generalization>
@@ -3905,9 +3908,7 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
       <ownedEnd xmi:id="_NAu1EQF0Ee2uf-Hpx0eOMw" type="_MVjxIAF0Ee2uf-Hpx0eOMw" association="_NAu1EAF0Ee2uf-Hpx0eOMw"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_64AX4AHxEe2uf-Hpx0eOMw" name="SexualOrientationObservation">
-      <generalization xmi:id="_64AX4QHxEe2uf-Hpx0eOMw">
-        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL///cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
-      </generalization>
+      <generalization xmi:id="_64AX4QHxEe2uf-Hpx0eOMw" general="_iyxr0AQ3Ee2zXtXLgnLahw"/>
       <ownedAttribute xmi:id="_BJEGQAHyEe2uf-Hpx0eOMw" name="code" visibility="private" aggregation="composite">
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
         <redefinedProperty href="pathmap://CDA_MODEL///cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
@@ -3989,16 +3990,626 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
       </ownedAttribute>
       <ownedAttribute xmi:id="_QWbP0AQ4Ee2zXtXLgnLahw" name="statusCode" visibility="private" aggregation="composite">
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QWbP0QQ4Ee2zXtXLgnLahw"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QWbP0gQ4Ee2zXtXLgnLahw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_s9U-kXzREe6-T-DQA50CNA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_s9U-kHzREe6-T-DQA50CNA" value="1"/>
         <redefinedProperty href="pathmap://CDA_MODEL///cda.uml#_c-D3cEo8Ed6c3qsAxlFHaQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_aN5EMAQ4Ee2zXtXLgnLahw" name="effectiveTime" visibility="private" aggregation="composite">
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_aN5EMQQ4Ee2zXtXLgnLahw"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_aN5EMgQ4Ee2zXtXLgnLahw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_sOjNAXzREe6-T-DQA50CNA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_sOjNAHzREe6-T-DQA50CNA" value="1"/>
         <redefinedProperty href="pathmap://CDA_MODEL///cda.uml#_fUQ50Eo8Ed6c3qsAxlFHaQ"/>
       </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_SlGOAGOgEe6ibMoBz2vFZw" name="CoverageActivityV4">
+      <generalization xmi:id="_SlIqQGOgEe6ibMoBz2vFZw">
+        <general xmi:type="uml:Class" href=".controlled/consol-payers.uml#_aJr6ULkxEeODDJAC5t5vpw"/>
+      </generalization>
+      <ownedAttribute xmi:id="_Nb1WwHQKEe66V-uSC1tAAg" name="effectiveTime" visibility="private" type="_UmXq0HQKEe66V-uSC1tAAg" aggregation="composite">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2dQHwHz0Ee6-T-DQA50CNA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2dPgsHz0Ee6-T-DQA50CNA" value="1"/>
+        <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_hbddYEocEd6c3qsAxlFHaQ"/>
+      </ownedAttribute>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_UmXq0HQKEe66V-uSC1tAAg" name="IVLTS">
+        <generalization xmi:id="_UmXq0XQKEe66V-uSC1tAAg">
+          <general xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
+        </generalization>
+        <ownedAttribute xmi:id="_VJJnwHQKEe66V-uSC1tAAg" name="value" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://DATATYPES_MODEL/datatypes.uml#_CWZPMEWyEeC7E8_5Rmjcog"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XDZG4HQKEe66V-uSC1tAAg" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_XDYf0HQKEe66V-uSC1tAAg" value="1"/>
+          <redefinedProperty href="pathmap://DATATYPES_MODEL/datatypes.uml#_HXr2YD5_Ed6cla2oXsPtlA"/>
+        </ownedAttribute>
+      </nestedClassifier>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_c5csQGbNEe6ibMoBz2vFZw" name="PregnancyIntention">
+      <generalization xmi:id="_c5dTUGbNEe6ibMoBz2vFZw">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL///cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
+      </generalization>
+      <ownedAttribute xmi:id="_iUSkUGbNEe6ibMoBz2vFZw" name="id" visibility="private" aggregation="composite">
+        <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FdW_0WbOEe6ibMoBz2vFZw" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FdW_0GbOEe6ibMoBz2vFZw" value="1"/>
+        <subsettedProperty href="pathmap://CDA_MODEL///cda.uml#_UGBfwEo8Ed6c3qsAxlFHaQ"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_iUVAkGbNEe6ibMoBz2vFZw" name="statusCode" visibility="private" aggregation="composite">
+        <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_GLxlAWbOEe6ibMoBz2vFZw" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_GLxlAGbOEe6ibMoBz2vFZw" value="1"/>
+        <redefinedProperty href="pathmap://CDA_MODEL///cda.uml#_c-D3cEo8Ed6c3qsAxlFHaQ"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_iUVno2bNEe6ibMoBz2vFZw" name="value" visibility="private" aggregation="composite">
+        <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_H06GAWbOEe6ibMoBz2vFZw" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_H06GAGbOEe6ibMoBz2vFZw" value="1"/>
+        <subsettedProperty href="pathmap://CDA_MODEL///cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_iUWOsGbNEe6ibMoBz2vFZw" name="classCode" visibility="private">
+        <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__yVecEDcEd6xYZuu1VKCVw"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_Lhg6oGbOEe6ibMoBz2vFZw" value="OBS"/>
+        <redefinedProperty href="pathmap://CDA_MODEL///cda.uml#_FcjT0EbtEd6besF9iFIJkQ"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_iUWOsWbNEe6ibMoBz2vFZw" name="moodCode" visibility="private">
+        <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_Kk_oAGbOEe6ibMoBz2vFZw" value="INT"/>
+        <redefinedProperty href="pathmap://CDA_MODEL///cda.uml#_BLZhcEo_Ed6c3qsAxlFHaQ"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_9k6c4GbNEe6ibMoBz2vFZw" name="code" visibility="private" aggregation="composite">
+        <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+        <redefinedProperty href="pathmap://CDA_MODEL///cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_Bl0goG3sEe66V-uSC1tAAg" name="effectiveTime" visibility="private" type="_DZMiwG3sEe66V-uSC1tAAg" aggregation="composite">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_LuBfsG3sEe66V-uSC1tAAg" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_LuA4oG3sEe66V-uSC1tAAg" value="1"/>
+        <redefinedProperty href="pathmap://CDA_MODEL///cda.uml#_fUQ50Eo8Ed6c3qsAxlFHaQ"/>
+      </ownedAttribute>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_DZMiwG3sEe66V-uSC1tAAg" name="IVLTS">
+        <ownedComment xmi:id="_1KRwgG3sEe66V-uSC1tAAg">
+          <body>INLINE</body>
+        </ownedComment>
+        <generalization xmi:id="_DZNJ0G3sEe66V-uSC1tAAg">
+          <general xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
+        </generalization>
+        <ownedAttribute xmi:id="_EQbswG3sEe66V-uSC1tAAg" name="low" visibility="private" aggregation="composite">
+          <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_BY5uUD6AEd6cla2oXsPtlA"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_McB1MW3sEe66V-uSC1tAAg" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_McB1MG3sEe66V-uSC1tAAg" value="1"/>
+          <redefinedProperty href="pathmap://DATATYPES_MODEL/datatypes.uml#_fmxbID6AEd6cla2oXsPtlA"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_EQcT0G3sEe66V-uSC1tAAg" name="high" visibility="private" aggregation="composite">
+          <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_BY5uUD6AEd6cla2oXsPtlA"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NHraQW3sEe66V-uSC1tAAg" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NHraQG3sEe66V-uSC1tAAg" value="1"/>
+          <redefinedProperty href="pathmap://DATATYPES_MODEL/datatypes.uml#_jfCGID6AEd6cla2oXsPtlA"/>
+        </ownedAttribute>
+      </nestedClassifier>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_S4QnQGblEe6ibMoBz2vFZw" name="RelatedPersonRelationshipandNameParticipant">
+      <generalization xmi:id="_S4QnQWblEe6ibMoBz2vFZw">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL///cda.uml#_4_GbMEcZEd6besF9iFIJkQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_beoAIGblEe6ibMoBz2vFZw" name="associatedEntity" visibility="private" type="_d4id0GblEe6ibMoBz2vFZw" aggregation="composite" association="_beoAI2blEe6ibMoBz2vFZw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_beoAIWblEe6ibMoBz2vFZw" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_beoAImblEe6ibMoBz2vFZw" value="1"/>
+        <redefinedProperty href="pathmap://CDA_MODEL///cda.uml#_mV9NcUcnEd6besF9iFIJkQ"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_GaIdMGbmEe6ibMoBz2vFZw" name="typeCode" visibility="private">
+        <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__y7BekDcEd6xYZuu1VKCVw"/>
+        <redefinedProperty href="pathmap://CDA_MODEL///cda.uml#_bmsJsErdEd6FXKclYGEDCw"/>
+      </ownedAttribute>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_d4id0GblEe6ibMoBz2vFZw" name="AssociatedEntity">
+        <ownedComment xmi:id="_K2yjgIWXEe61YZC3Kb7p3A">
+          <body>INLINE</body>
+        </ownedComment>
+        <generalization xmi:id="_d4id0WblEe6ibMoBz2vFZw">
+          <general xmi:type="uml:Class" href="pathmap://CDA_MODEL///cda.uml#_8OcHAEcDEd6besF9iFIJkQ"/>
+        </generalization>
+        <ownedAttribute xmi:id="_hlWGwGblEe6ibMoBz2vFZw" name="code" visibility="private" aggregation="composite">
+          <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_AONGcWbmEe6ibMoBz2vFZw" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_AONGcGbmEe6ibMoBz2vFZw" value="1"/>
+          <redefinedProperty href="pathmap://CDA_MODEL///cda.uml#_9XNrsEoeEd6c3qsAxlFHaQ"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_hlWGw2blEe6ibMoBz2vFZw" name="addr" visibility="private" aggregation="composite">
+          <type xmi:type="uml:Class" href=".controlled/consol-documents.uml#_i4zXgPIPEeGu1M-cCXg0Dg"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hlWGxGblEe6ibMoBz2vFZw"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hlWGxWblEe6ibMoBz2vFZw" value="*"/>
+          <subsettedProperty href="pathmap://CDA_MODEL///cda.uml#_-czawEoeEd6c3qsAxlFHaQ"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_hlWt0GblEe6ibMoBz2vFZw" name="telecom" visibility="private" aggregation="composite">
+          <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_22o_kD52Ed6cla2oXsPtlA"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hlWt0WblEe6ibMoBz2vFZw"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hlWt0mblEe6ibMoBz2vFZw" value="*"/>
+          <subsettedProperty href="pathmap://CDA_MODEL///cda.uml#__ZTfQEoeEd6c3qsAxlFHaQ"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_hlWt02blEe6ibMoBz2vFZw" name="classCode" visibility="private">
+          <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__zE3C0DcEd6xYZuu1VKCVw"/>
+          <redefinedProperty href="pathmap://CDA_MODEL///cda.uml#_AkaAcEofEd6c3qsAxlFHaQ"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_hlWt1GblEe6ibMoBz2vFZw" name="associatedPerson" visibility="private" type="_k87toGblEe6ibMoBz2vFZw" aggregation="composite" association="_hlWt12blEe6ibMoBz2vFZw">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__DpX0WblEe6ibMoBz2vFZw" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__DpX0GblEe6ibMoBz2vFZw" value="1"/>
+          <redefinedProperty href="pathmap://CDA_MODEL///cda.uml#_3pHXUUcnEd6besF9iFIJkQ"/>
+        </ownedAttribute>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_k87toGblEe6ibMoBz2vFZw" name="Person">
+          <ownedComment xmi:id="_Baj_kIYZEe6iTr31UMdfZg">
+            <body>INLINE</body>
+          </ownedComment>
+          <generalization xmi:id="_k87toWblEe6ibMoBz2vFZw">
+            <general xmi:type="uml:Class" href="pathmap://CDA_MODEL///cda.uml#_Je2yMEcaEd6besF9iFIJkQ"/>
+          </generalization>
+          <ownedAttribute xmi:id="_lxWNIGblEe6ibMoBz2vFZw" name="name" visibility="private" aggregation="composite">
+            <type xmi:type="uml:Class" href=".controlled/consol-documents.uml#_KoARoBoeEeyvG_WM4zd-8g"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_96MccGblEe6ibMoBz2vFZw" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_96L1YGblEe6ibMoBz2vFZw" value="*"/>
+            <qualifier xmi:id="_lxWNI2blEe6ibMoBz2vFZw" name="sDTCDesc" visibility="private" aggregation="composite">
+              <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_CowXkDxaEd6JwqSGecoePg"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lxWNJGblEe6ibMoBz2vFZw"/>
+            </qualifier>
+            <subsettedProperty href="pathmap://CDA_MODEL///cda.uml#_L08A0ErgEd6FXKclYGEDCw"/>
+          </ownedAttribute>
+        </nestedClassifier>
+      </nestedClassifier>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_beoAI2blEe6ibMoBz2vFZw" memberEnd="_beoAIGblEe6ibMoBz2vFZw _beoAJGblEe6ibMoBz2vFZw">
+      <ownedEnd xmi:id="_beoAJGblEe6ibMoBz2vFZw" type="_S4QnQGblEe6ibMoBz2vFZw" association="_beoAI2blEe6ibMoBz2vFZw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_hlWt12blEe6ibMoBz2vFZw" memberEnd="_hlWt1GblEe6ibMoBz2vFZw _hlWt2GblEe6ibMoBz2vFZw">
+      <ownedEnd xmi:id="_hlWt2GblEe6ibMoBz2vFZw" type="_d4id0GblEe6ibMoBz2vFZw" association="_hlWt12blEe6ibMoBz2vFZw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_FU9IYGbnEe6ibMoBz2vFZw" name="USRealmHeaderV4">
+      <generalization xmi:id="_FU9IYWbnEe6ibMoBz2vFZw">
+        <general xmi:type="uml:Class" href=".controlled/consol-documents.uml#_dduXkJ5OEeOr4eM3k36wAg"/>
+      </generalization>
+      <ownedAttribute xmi:id="_N-ZqcGbnEe6ibMoBz2vFZw" name="participant" visibility="private" type="_S4QnQGblEe6ibMoBz2vFZw" aggregation="composite" association="_N-aRgGbnEe6ibMoBz2vFZw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_N-ZqcWbnEe6ibMoBz2vFZw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_N-ZqcmbnEe6ibMoBz2vFZw" value="*"/>
+        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_iEOSgUcnEd6besF9iFIJkQ"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_N-aRgGbnEe6ibMoBz2vFZw" memberEnd="_N-ZqcGbnEe6ibMoBz2vFZw _N-aRgWbnEe6ibMoBz2vFZw">
+      <ownedEnd xmi:id="_N-aRgWbnEe6ibMoBz2vFZw" type="_FU9IYGbnEe6ibMoBz2vFZw" association="_N-aRgGbnEe6ibMoBz2vFZw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_8FlHYGbpEe6ibMoBz2vFZw" name="MedicationDispenseV4">
+      <generalization xmi:id="_8FlHYWbpEe6ibMoBz2vFZw">
+        <general xmi:type="uml:Class" href=".controlled/consol-medications.uml#_qH-ckOXfEeOkFcFJ9uzEEw"/>
+      </generalization>
+      <ownedAttribute xmi:id="_BgnqwGwvEe66V-uSC1tAAg" name="code" visibility="private" aggregation="composite">
+        <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_uMDRIXz1Ee6-T-DQA50CNA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_uMDRIHz1Ee6-T-DQA50CNA" value="1"/>
+        <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_1JZ7sErtEd6FXKclYGEDCw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_rWXdcHz1Ee6-T-DQA50CNA" name="statusCode" visibility="private" aggregation="composite">
+        <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rWXdcXz1Ee6-T-DQA50CNA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rWXdcnz1Ee6-T-DQA50CNA" value="1"/>
+        <redefinedProperty href=".controlled/consol-medications.uml#_smEh0MNpEeSRNKqIviDQAg"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_EEVUYGbvEe6ibMoBz2vFZw" name="ResultObservationV4">
+      <generalization xmi:id="_EEVUYWbvEe6ibMoBz2vFZw">
+        <general xmi:type="uml:Class" href=".controlled/consol-results.uml#_H85E0PF7EeOmsLWmq5fnqQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_OQF9wGbvEe6ibMoBz2vFZw" name="specimen" visibility="private" type="_XCQW8GbvEe6ibMoBz2vFZw" aggregation="composite" association="_OQGk0GbvEe6ibMoBz2vFZw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OQF9wWbvEe6ibMoBz2vFZw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OQF9wmbvEe6ibMoBz2vFZw" value="*"/>
+        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_3qHbQUxpEd6h-an5IXo-DA"/>
+      </ownedAttribute>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_XCQW8GbvEe6ibMoBz2vFZw" name="Specimen">
+        <ownedComment xmi:id="_Dt7oYIQAEe65RJ9boffi_A">
+          <body>INLINE</body>
+        </ownedComment>
+        <generalization xmi:id="_XCQW8WbvEe6ibMoBz2vFZw">
+          <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_mdwKcEcaEd6besF9iFIJkQ"/>
+        </generalization>
+        <ownedAttribute xmi:id="_Xm8_cGbvEe6ibMoBz2vFZw" name="specimenRole" visibility="private" type="_b8_yoGbvEe6ibMoBz2vFZw" aggregation="composite" association="_Xm9mgGbvEe6ibMoBz2vFZw">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Xm8_cWbvEe6ibMoBz2vFZw" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Xm8_cmbvEe6ibMoBz2vFZw" value="1"/>
+          <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_OBFaQUoaEd6c3qsAxlFHaQ"/>
+        </ownedAttribute>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_b8_yoGbvEe6ibMoBz2vFZw" name="SpecimenRole">
+          <generalization xmi:id="_b9AZsGbvEe6ibMoBz2vFZw">
+            <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_nos6oEcaEd6besF9iFIJkQ"/>
+          </generalization>
+          <ownedAttribute xmi:id="_gBVKwGbvEe6ibMoBz2vFZw" name="specimenPlayingEntity" visibility="private" type="_he1DgGbvEe6ibMoBz2vFZw" aggregation="composite" association="_gBVx0GbvEe6ibMoBz2vFZw">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_gBVKwWbvEe6ibMoBz2vFZw"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_gBVKwmbvEe6ibMoBz2vFZw" value="1"/>
+            <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_cNBUgUoaEd6c3qsAxlFHaQ"/>
+          </ownedAttribute>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_he1DgGbvEe6ibMoBz2vFZw" name="PlayingEntity">
+            <generalization xmi:id="_he1DgWbvEe6ibMoBz2vFZw">
+              <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_Lr9i8EcaEd6besF9iFIJkQ"/>
+            </generalization>
+            <ownedAttribute xmi:id="_iJtzkGbvEe6ibMoBz2vFZw" name="code" visibility="private" aggregation="composite">
+              <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_mWDRIGbvEe6ibMoBz2vFZw" value="1"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_mWCDAGbvEe6ibMoBz2vFZw" value="1"/>
+              <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_JVhioErhEd6FXKclYGEDCw"/>
+            </ownedAttribute>
+          </nestedClassifier>
+        </nestedClassifier>
+      </nestedClassifier>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_OQGk0GbvEe6ibMoBz2vFZw" memberEnd="_OQF9wGbvEe6ibMoBz2vFZw _OQGk0WbvEe6ibMoBz2vFZw">
+      <ownedEnd xmi:id="_OQGk0WbvEe6ibMoBz2vFZw" type="_EEVUYGbvEe6ibMoBz2vFZw" association="_OQGk0GbvEe6ibMoBz2vFZw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Xm9mgGbvEe6ibMoBz2vFZw" memberEnd="_Xm8_cGbvEe6ibMoBz2vFZw _Xm9mgWbvEe6ibMoBz2vFZw">
+      <ownedEnd xmi:id="_Xm9mgWbvEe6ibMoBz2vFZw" type="_XCQW8GbvEe6ibMoBz2vFZw" association="_Xm9mgGbvEe6ibMoBz2vFZw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_gBVx0GbvEe6ibMoBz2vFZw" memberEnd="_gBVKwGbvEe6ibMoBz2vFZw _gBVx0WbvEe6ibMoBz2vFZw">
+      <ownedEnd xmi:id="_gBVx0WbvEe6ibMoBz2vFZw" type="_b8_yoGbvEe6ibMoBz2vFZw" association="_gBVx0GbvEe6ibMoBz2vFZw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_F27rEGwsEe66V-uSC1tAAg" name="DisabilityStatusObservation">
+      <generalization xmi:id="_F2_VcGwsEe66V-uSC1tAAg">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL///cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
+      </generalization>
+      <ownedAttribute xmi:id="_QAHhkGwsEe66V-uSC1tAAg" name="code" visibility="private" aggregation="composite">
+        <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+        <redefinedProperty href="pathmap://CDA_MODEL///cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_QAJWwGwsEe66V-uSC1tAAg" name="statusCode" visibility="private" aggregation="composite">
+        <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QAJWwWwsEe66V-uSC1tAAg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QAJWwmwsEe66V-uSC1tAAg" value="1"/>
+        <redefinedProperty href="pathmap://CDA_MODEL///cda.uml#_c-D3cEo8Ed6c3qsAxlFHaQ"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_QAKk4GwsEe66V-uSC1tAAg" name="effectiveTime" visibility="private" aggregation="composite">
+        <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QAKk4WwsEe66V-uSC1tAAg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QAKk4mwsEe66V-uSC1tAAg" value="1"/>
+        <redefinedProperty href="pathmap://CDA_MODEL///cda.uml#_fUQ50Eo8Ed6c3qsAxlFHaQ"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_QAKk42wsEe66V-uSC1tAAg" name="value" visibility="private" aggregation="composite">
+        <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_s9yhQGxtEe66V-uSC1tAAg" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_s9xTIGxtEe66V-uSC1tAAg" value="1"/>
+        <subsettedProperty href="pathmap://CDA_MODEL///cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_QANBIGwsEe66V-uSC1tAAg" name="classCode" visibility="private">
+        <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__yVecEDcEd6xYZuu1VKCVw"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_q28JgGxtEe66V-uSC1tAAg" value="OBS"/>
+        <redefinedProperty href="pathmap://CDA_MODEL///cda.uml#_FcjT0EbtEd6besF9iFIJkQ"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_QANoMGwsEe66V-uSC1tAAg" name="moodCode" visibility="private">
+        <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_rtnS0GxtEe66V-uSC1tAAg" value="EVN"/>
+        <redefinedProperty href="pathmap://CDA_MODEL///cda.uml#_BLZhcEo_Ed6c3qsAxlFHaQ"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_krpVcGwsEe66V-uSC1tAAg" name="assessmentScaleObservationV2" type="_PmLJsO5iEeyzELqFfLgO9w" association="_krpVc2wsEe66V-uSC1tAAg">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_krpVcWwsEe66V-uSC1tAAg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_krpVcmwsEe66V-uSC1tAAg" value="*"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_krpVc2wsEe66V-uSC1tAAg" memberEnd="_krpVcGwsEe66V-uSC1tAAg _krpVdGwsEe66V-uSC1tAAg">
+      <ownedEnd xmi:id="_krpVdGwsEe66V-uSC1tAAg" type="_F27rEGwsEe66V-uSC1tAAg" association="_krpVc2wsEe66V-uSC1tAAg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_vm-6QGwvEe66V-uSC1tAAg" name="BasicIndustryObservation">
+      <generalization xmi:id="_vm-6QWwvEe66V-uSC1tAAg" general="_iyxr0AQ3Ee2zXtXLgnLahw"/>
+      <ownedAttribute xmi:id="_5CHX8GwvEe66V-uSC1tAAg" name="code" visibility="private" aggregation="composite">
+        <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+        <redefinedProperty href="pathmap://CDA_MODEL///cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_5CHX8WwvEe66V-uSC1tAAg" name="statusCode" visibility="private" aggregation="composite">
+        <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_BIXtYGwwEe66V-uSC1tAAg" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_BIXGUGwwEe66V-uSC1tAAg" value="1"/>
+        <redefinedProperty href="pathmap://CDA_MODEL///cda.uml#_c-D3cEo8Ed6c3qsAxlFHaQ"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_5CH_AGwvEe66V-uSC1tAAg" name="value" visibility="private" aggregation="composite">
+        <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_B5av0GwwEe66V-uSC1tAAg" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_B5aIwGwwEe66V-uSC1tAAg" value="1"/>
+        <subsettedProperty href="pathmap://CDA_MODEL///cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_5CH_A2wvEe66V-uSC1tAAg" name="classCode" visibility="private">
+        <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__yVecEDcEd6xYZuu1VKCVw"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_Fc42kGwwEe66V-uSC1tAAg" value="OBS"/>
+        <redefinedProperty href="pathmap://CDA_MODEL///cda.uml#_FcjT0EbtEd6besF9iFIJkQ"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_5CH_BGwvEe66V-uSC1tAAg" name="moodCode" visibility="private">
+        <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_nb7LEGw0Ee66V-uSC1tAAg" value="EVN"/>
+        <redefinedProperty href="pathmap://CDA_MODEL///cda.uml#_BLZhcEo_Ed6c3qsAxlFHaQ"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_Vs7PMGwzEe66V-uSC1tAAg" name="BasicOccupationObservation">
+      <generalization xmi:id="_Vs72QGwzEe66V-uSC1tAAg" general="_iyxr0AQ3Ee2zXtXLgnLahw"/>
+      <ownedAttribute xmi:id="_fWi00GwzEe66V-uSC1tAAg" name="code" visibility="private" aggregation="composite">
+        <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+        <redefinedProperty href="pathmap://CDA_MODEL///cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_fWjb4GwzEe66V-uSC1tAAg" name="statusCode" visibility="private" aggregation="composite">
+        <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_pOk0cGw0Ee66V-uSC1tAAg" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_pOkNYGw0Ee66V-uSC1tAAg" value="1"/>
+        <redefinedProperty href="pathmap://CDA_MODEL///cda.uml#_c-D3cEo8Ed6c3qsAxlFHaQ"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_fWjb42wzEe66V-uSC1tAAg" name="effectiveTime" visibility="private" type="_gEC-kGw0Ee66V-uSC1tAAg" aggregation="composite">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rhf5UGw0Ee66V-uSC1tAAg" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rhfSQGw0Ee66V-uSC1tAAg" value="1"/>
+        <redefinedProperty href="pathmap://CDA_MODEL///cda.uml#_fUQ50Eo8Ed6c3qsAxlFHaQ"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_fWjb5mwzEe66V-uSC1tAAg" name="classCode" visibility="private">
+        <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__yVecEDcEd6xYZuu1VKCVw"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_usNXQGwzEe66V-uSC1tAAg" value="OBS"/>
+        <redefinedProperty href="pathmap://CDA_MODEL///cda.uml#_FcjT0EbtEd6besF9iFIJkQ"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_fWjb52wzEe66V-uSC1tAAg" name="moodCode" visibility="private">
+        <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_vYU2YGwzEe66V-uSC1tAAg" value="EVN"/>
+        <redefinedProperty href="pathmap://CDA_MODEL///cda.uml#_BLZhcEo_Ed6c3qsAxlFHaQ"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_fWjb6GwzEe66V-uSC1tAAg" name="subject" visibility="private" type="_P2pi4Gw0Ee66V-uSC1tAAg" aggregation="composite" association="_fWjb62wzEe66V-uSC1tAAg">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fWjb6WwzEe66V-uSC1tAAg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fWjb6mwzEe66V-uSC1tAAg" value="1"/>
+        <redefinedProperty href="pathmap://CDA_MODEL///cda.uml#_aCPXcUxpEd6h-an5IXo-DA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_UgmJgGw0Ee66V-uSC1tAAg" name="basicIndustryObservation" type="_vm-6QGwvEe66V-uSC1tAAg" association="_Ugmwkmw0Ee66V-uSC1tAAg">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_tcpXYGw0Ee66V-uSC1tAAg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tcowUGw0Ee66V-uSC1tAAg" value="1"/>
+      </ownedAttribute>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_P2pi4Gw0Ee66V-uSC1tAAg" name="Subject">
+        <generalization xmi:id="_P2pi4Ww0Ee66V-uSC1tAAg">
+          <general xmi:type="uml:Class" href="pathmap://CDA_MODEL///cda.uml#_rNlWoEcaEd6besF9iFIJkQ"/>
+        </generalization>
+        <ownedAttribute xmi:id="_QXg0QGw0Ee66V-uSC1tAAg" name="relatedSubject" visibility="private" aggregation="composite" association="_QXhbUGw0Ee66V-uSC1tAAg">
+          <type xmi:type="uml:Class" href="pathmap://CDA_MODEL///cda.uml#_grTqsEcaEd6besF9iFIJkQ"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QXg0QWw0Ee66V-uSC1tAAg" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QXg0Qmw0Ee66V-uSC1tAAg" value="1"/>
+          <redefinedProperty href="pathmap://CDA_MODEL///cda.uml#_IqmIoUoYEd6c3qsAxlFHaQ"/>
+        </ownedAttribute>
+      </nestedClassifier>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_gEC-kGw0Ee66V-uSC1tAAg" name="IVLTS">
+        <ownedComment xmi:id="_HVLWYG0LEe66V-uSC1tAAg">
+          <body>INLINE</body>
+        </ownedComment>
+        <generalization xmi:id="_gEDloGw0Ee66V-uSC1tAAg">
+          <general xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
+        </generalization>
+        <ownedAttribute xmi:id="_iggZ8Gw0Ee66V-uSC1tAAg" name="low" visibility="private" aggregation="composite">
+          <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_BY5uUD6AEd6cla2oXsPtlA"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iggZ8Ww0Ee66V-uSC1tAAg"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iggZ8mw0Ee66V-uSC1tAAg" value="1"/>
+          <redefinedProperty href="pathmap://DATATYPES_MODEL/datatypes.uml#_fmxbID6AEd6cla2oXsPtlA"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_ighBAGw0Ee66V-uSC1tAAg" name="high" visibility="private" aggregation="composite">
+          <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_BY5uUD6AEd6cla2oXsPtlA"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_mTe8UGw0Ee66V-uSC1tAAg" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_mTeVQGw0Ee66V-uSC1tAAg" value="1"/>
+          <redefinedProperty href="pathmap://DATATYPES_MODEL/datatypes.uml#_jfCGID6AEd6cla2oXsPtlA"/>
+        </ownedAttribute>
+      </nestedClassifier>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_fWjb62wzEe66V-uSC1tAAg" memberEnd="_fWjb6GwzEe66V-uSC1tAAg _fWjb7GwzEe66V-uSC1tAAg">
+      <ownedEnd xmi:id="_fWjb7GwzEe66V-uSC1tAAg" type="_Vs7PMGwzEe66V-uSC1tAAg" association="_fWjb62wzEe66V-uSC1tAAg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_QXhbUGw0Ee66V-uSC1tAAg" memberEnd="_QXg0QGw0Ee66V-uSC1tAAg _QXhbUWw0Ee66V-uSC1tAAg">
+      <ownedEnd xmi:id="_QXhbUWw0Ee66V-uSC1tAAg" type="_P2pi4Gw0Ee66V-uSC1tAAg" association="_QXhbUGw0Ee66V-uSC1tAAg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Ugmwkmw0Ee66V-uSC1tAAg" memberEnd="_UgmJgGw0Ee66V-uSC1tAAg _Ugmwk2w0Ee66V-uSC1tAAg">
+      <ownedEnd xmi:id="_Ugmwk2w0Ee66V-uSC1tAAg" type="_Vs7PMGwzEe66V-uSC1tAAg" association="_Ugmwkmw0Ee66V-uSC1tAAg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_cHuWIGw4Ee66V-uSC1tAAg" name="GenderIdentityObservationV4">
+      <generalization xmi:id="_cHu9MGw4Ee66V-uSC1tAAg" general="_iyxr0AQ3Ee2zXtXLgnLahw"/>
+      <ownedAttribute xmi:id="_nk91h2w4Ee66V-uSC1tAAg" name="value" visibility="private" aggregation="composite">
+        <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_AiYVUGw5Ee66V-uSC1tAAg" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_AiXHMGw5Ee66V-uSC1tAAg" value="1"/>
+        <subsettedProperty href="pathmap://CDA_MODEL///cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_QlmhUGw5Ee66V-uSC1tAAg" name="effectiveTime" visibility="private" type="_S4P5YGw5Ee66V-uSC1tAAg" aggregation="composite" redefinedProperty="_aN5EMAQ4Ee2zXtXLgnLahw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QlmhUWw5Ee66V-uSC1tAAg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QlmhUmw5Ee66V-uSC1tAAg" value="1"/>
+      </ownedAttribute>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_S4P5YGw5Ee66V-uSC1tAAg" name="IVLTS">
+        <ownedComment xmi:id="_y3t_YG3pEe66V-uSC1tAAg">
+          <body>INLINE</body>
+        </ownedComment>
+        <generalization xmi:id="_S4QgcGw5Ee66V-uSC1tAAg">
+          <general xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
+        </generalization>
+        <ownedAttribute xmi:id="_TgrLUGw5Ee66V-uSC1tAAg" name="low" visibility="private" aggregation="composite">
+          <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_BY5uUD6AEd6cla2oXsPtlA"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Vq2j4Gw5Ee66V-uSC1tAAg" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Vq180Gw5Ee66V-uSC1tAAg" value="1"/>
+          <redefinedProperty href="pathmap://DATATYPES_MODEL/datatypes.uml#_fmxbID6AEd6cla2oXsPtlA"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_TgrLU2w5Ee66V-uSC1tAAg" name="high" visibility="private" aggregation="composite">
+          <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_BY5uUD6AEd6cla2oXsPtlA"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TgrLVGw5Ee66V-uSC1tAAg"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TgrLVWw5Ee66V-uSC1tAAg" value="1"/>
+          <redefinedProperty href="pathmap://DATATYPES_MODEL/datatypes.uml#_jfCGID6AEd6cla2oXsPtlA"/>
+        </ownedAttribute>
+      </nestedClassifier>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_Dig2UHQMEe66V-uSC1tAAg" name="ReasonV3">
+      <generalization xmi:id="_DihdYHQMEe66V-uSC1tAAg">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL///cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
+      </generalization>
+      <ownedAttribute xmi:id="_O1UAQHQMEe66V-uSC1tAAg" name="id" visibility="private" aggregation="composite">
+        <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4vi3cXQVEe6DropIV1xnCg" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4vi3cHQVEe6DropIV1xnCg" value="*"/>
+        <subsettedProperty href="pathmap://CDA_MODEL///cda.uml#_UGBfwEo8Ed6c3qsAxlFHaQ"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_O1UnUHQMEe66V-uSC1tAAg" name="code" visibility="private" aggregation="composite">
+        <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+        <redefinedProperty href="pathmap://CDA_MODEL///cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_O1UnUXQMEe66V-uSC1tAAg" name="statusCode" visibility="private" aggregation="composite">
+        <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3PFKQXQVEe6DropIV1xnCg" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3PFKQHQVEe6DropIV1xnCg" value="1"/>
+        <redefinedProperty href="pathmap://CDA_MODEL///cda.uml#_c-D3cEo8Ed6c3qsAxlFHaQ"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_O1VOYnQMEe66V-uSC1tAAg" name="effectiveTime" visibility="private" type="_hDK30HQMEe66V-uSC1tAAg" aggregation="composite">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2BjAIXQVEe6DropIV1xnCg" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2BjAIHQVEe6DropIV1xnCg" value="1"/>
+        <redefinedProperty href="pathmap://CDA_MODEL///cda.uml#_fUQ50Eo8Ed6c3qsAxlFHaQ"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_O1VOZXQMEe66V-uSC1tAAg" name="value" visibility="private" aggregation="composite">
+        <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1Ivv4XQVEe6DropIV1xnCg" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1Ivv4HQVEe6DropIV1xnCg" value="1"/>
+        <subsettedProperty href="pathmap://CDA_MODEL///cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_O1V1cHQMEe66V-uSC1tAAg" name="classCode" visibility="private">
+        <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__yVecEDcEd6xYZuu1VKCVw"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_ZOUbcHQMEe66V-uSC1tAAg" value="OBS"/>
+        <redefinedProperty href="pathmap://CDA_MODEL///cda.uml#_FcjT0EbtEd6besF9iFIJkQ"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_O1V1cXQMEe66V-uSC1tAAg" name="moodCode" visibility="private">
+        <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_ZzygAHQMEe66V-uSC1tAAg" value="EVN"/>
+        <redefinedProperty href="pathmap://CDA_MODEL///cda.uml#_BLZhcEo_Ed6c3qsAxlFHaQ"/>
+      </ownedAttribute>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_hDK30HQMEe66V-uSC1tAAg" name="IVLTS">
+        <generalization xmi:id="_hDLe4HQMEe66V-uSC1tAAg">
+          <general xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
+        </generalization>
+        <ownedAttribute xmi:id="_htiDcHQMEe66V-uSC1tAAg" name="low" visibility="private" aggregation="composite">
+          <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_BY5uUD6AEd6cla2oXsPtlA"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_htiDcXQMEe66V-uSC1tAAg"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_htiDcnQMEe66V-uSC1tAAg" value="1"/>
+          <redefinedProperty href="pathmap://DATATYPES_MODEL/datatypes.uml#_fmxbID6AEd6cla2oXsPtlA"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_htiDc3QMEe66V-uSC1tAAg" name="high" visibility="private" aggregation="composite">
+          <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_BY5uUD6AEd6cla2oXsPtlA"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_htiDdHQMEe66V-uSC1tAAg"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_htiDdXQMEe66V-uSC1tAAg" value="1"/>
+          <redefinedProperty href="pathmap://DATATYPES_MODEL/datatypes.uml#_jfCGID6AEd6cla2oXsPtlA"/>
+        </ownedAttribute>
+      </nestedClassifier>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_VknrYHzUEe6-T-DQA50CNA" name="TribalAffiliation">
+      <generalization xmi:id="_VkoScHzUEe6-T-DQA50CNA" general="_iyxr0AQ3Ee2zXtXLgnLahw"/>
+      <ownedAttribute xmi:id="_ZtygMHzUEe6-T-DQA50CNA" name="code" visibility="private" aggregation="composite">
+        <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+        <redefinedProperty href="pathmap://CDA_MODEL///cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_ZtygMXzUEe6-T-DQA50CNA" name="statusCode" visibility="private" aggregation="composite">
+        <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ZtygMnzUEe6-T-DQA50CNA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZtygM3zUEe6-T-DQA50CNA" value="1"/>
+        <redefinedProperty href="pathmap://CDA_MODEL///cda.uml#_c-D3cEo8Ed6c3qsAxlFHaQ"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_ZtzHQHzUEe6-T-DQA50CNA" name="effectiveTime" visibility="private" type="_s4V_0HzwEe6-T-DQA50CNA" aggregation="composite">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_P34gIXzWEe6-T-DQA50CNA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_P34gIHzWEe6-T-DQA50CNA" value="1"/>
+        <redefinedProperty href="pathmap://CDA_MODEL///cda.uml#_fUQ50Eo8Ed6c3qsAxlFHaQ"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_ZtzHQ3zUEe6-T-DQA50CNA" name="classCode" visibility="private">
+        <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__yVecEDcEd6xYZuu1VKCVw"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_ahF6gHzWEe6-T-DQA50CNA" value="OBS"/>
+        <redefinedProperty href="pathmap://CDA_MODEL///cda.uml#_FcjT0EbtEd6besF9iFIJkQ"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_ZtzHRHzUEe6-T-DQA50CNA" name="moodCode" visibility="private">
+        <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_7qovcHzwEe6-T-DQA50CNA" value="EVN"/>
+        <redefinedProperty href="pathmap://CDA_MODEL///cda.uml#_BLZhcEo_Ed6c3qsAxlFHaQ"/>
+      </ownedAttribute>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_s4V_0HzwEe6-T-DQA50CNA" name="IVLTS">
+        <generalization xmi:id="_s4X1AHzwEe6-T-DQA50CNA">
+          <general xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
+        </generalization>
+        <ownedAttribute xmi:id="_uzO_MHzwEe6-T-DQA50CNA" name="value" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://DATATYPES_MODEL/datatypes.uml#_CWZPMEWyEeC7E8_5Rmjcog"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2T4GIXzwEe6-T-DQA50CNA" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2T4GIHzwEe6-T-DQA50CNA" value="1"/>
+          <redefinedProperty href="pathmap://DATATYPES_MODEL/datatypes.uml#_HXr2YD5_Ed6cla2oXsPtlA"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_uzO_M3zwEe6-T-DQA50CNA" name="low" visibility="private" aggregation="composite">
+          <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_BY5uUD6AEd6cla2oXsPtlA"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3k63QHzwEe6-T-DQA50CNA"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3k6QMHzwEe6-T-DQA50CNA"/>
+          <redefinedProperty href="pathmap://DATATYPES_MODEL/datatypes.uml#_fmxbID6AEd6cla2oXsPtlA"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_uzPmQHzwEe6-T-DQA50CNA" name="center" visibility="private" aggregation="composite">
+          <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_4ysYYD59Ed6cla2oXsPtlA"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4OsNAXzwEe6-T-DQA50CNA"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4OsNAHzwEe6-T-DQA50CNA"/>
+          <redefinedProperty href="pathmap://DATATYPES_MODEL/datatypes.uml#_imjmAD6AEd6cla2oXsPtlA"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_uzPmQ3zwEe6-T-DQA50CNA" name="width" visibility="private" aggregation="composite">
+          <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_3mPzYD59Ed6cla2oXsPtlA"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_41o4QHzwEe6-T-DQA50CNA"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_41oRMHzwEe6-T-DQA50CNA"/>
+          <redefinedProperty href="pathmap://DATATYPES_MODEL/datatypes.uml#_kXgmQD6AEd6cla2oXsPtlA"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_uzPmRnzwEe6-T-DQA50CNA" name="high" visibility="private" aggregation="composite">
+          <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_BY5uUD6AEd6cla2oXsPtlA"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5XzKIXzwEe6-T-DQA50CNA"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5XzKIHzwEe6-T-DQA50CNA"/>
+          <redefinedProperty href="pathmap://DATATYPES_MODEL/datatypes.uml#_jfCGID6AEd6cla2oXsPtlA"/>
+        </ownedAttribute>
+      </nestedClassifier>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_IWHKQHz2Ee6-T-DQA50CNA" name="PolicyActivityV4">
+      <generalization xmi:id="_IWHKQXz2Ee6-T-DQA50CNA">
+        <general xmi:type="uml:Class" href=".controlled/consol-payers.uml#_Q0ODkOwlEeOqa975IP2wug"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_7M9GMHz2Ee6-T-DQA50CNA" name="ResultOrganizerV4">
+      <generalization xmi:id="_7M9GMXz2Ee6-T-DQA50CNA">
+        <general xmi:type="uml:Class" href=".controlled/consol-results.uml#_gU40UPGEEeOmsLWmq5fnqQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_7E6OAIQIEe6b6cxET2sbuA" name="specimen" visibility="private" type="_Dlal8Hz3Ee6-T-DQA50CNA" aggregation="composite" association="_7E61EIQIEe6b6cxET2sbuA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_i8PS8YQKEe6b6cxET2sbuA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_i8PS8IQKEe6b6cxET2sbuA" value="1"/>
+        <subsettedProperty href="pathmap://CDA_MODEL///cda.uml#_yqVukUxpEd6h-an5IXo-DA"/>
+      </ownedAttribute>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_Dlal8Hz3Ee6-T-DQA50CNA" name="Specimen">
+        <ownedComment xmi:id="_imD9sIQBEe65RJ9boffi_A">
+          <body>INLINE</body>
+        </ownedComment>
+        <generalization xmi:id="_Dlal8Xz3Ee6-T-DQA50CNA">
+          <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_mdwKcEcaEd6besF9iFIJkQ"/>
+        </generalization>
+        <ownedAttribute xmi:id="_Dlal8nz3Ee6-T-DQA50CNA" name="specimenRole" visibility="private" type="_Dlal9Xz3Ee6-T-DQA50CNA" aggregation="composite">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Dlal83z3Ee6-T-DQA50CNA" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Dlal9Hz3Ee6-T-DQA50CNA" value="1"/>
+          <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_OBFaQUoaEd6c3qsAxlFHaQ"/>
+        </ownedAttribute>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_Dlal9Xz3Ee6-T-DQA50CNA" name="SpecimenRole">
+          <ownedComment xmi:id="_Dl4Q4IQGEe65RJ9boffi_A">
+            <body>INLINE</body>
+          </ownedComment>
+          <generalization xmi:id="_Dlal9nz3Ee6-T-DQA50CNA">
+            <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_nos6oEcaEd6besF9iFIJkQ"/>
+          </generalization>
+          <ownedAttribute xmi:id="_Dlal93z3Ee6-T-DQA50CNA" name="specimenPlayingEntity" visibility="private" type="_Dlal-nz3Ee6-T-DQA50CNA" aggregation="composite">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Dlal-Hz3Ee6-T-DQA50CNA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Dlal-Xz3Ee6-T-DQA50CNA" value="1"/>
+            <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_cNBUgUoaEd6c3qsAxlFHaQ"/>
+          </ownedAttribute>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_Dlal-nz3Ee6-T-DQA50CNA" name="PlayingEntity">
+            <generalization xmi:id="_Dlal-3z3Ee6-T-DQA50CNA">
+              <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_Lr9i8EcaEd6besF9iFIJkQ"/>
+            </generalization>
+            <ownedAttribute xmi:id="_Dlal_Hz3Ee6-T-DQA50CNA" name="code" visibility="private" aggregation="composite">
+              <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Dlal_Xz3Ee6-T-DQA50CNA" value="1"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Dlal_nz3Ee6-T-DQA50CNA" value="1"/>
+              <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_JVhioErhEd6FXKclYGEDCw"/>
+            </ownedAttribute>
+          </nestedClassifier>
+        </nestedClassifier>
+      </nestedClassifier>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_NR7m0IQDEe65RJ9boffi_A" name="IndicationV3">
+      <generalization xmi:id="_NR7m0YQDEe65RJ9boffi_A">
+        <general xmi:type="uml:Class" href=".controlled/consol-other.uml#_PrEOIOHoEeO04sHNODkHmQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_z-oHUIe3Ee6kLbgWmgMY1g" name="value" visibility="private" aggregation="composite">
+        <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_z-oHUYe3Ee6kLbgWmgMY1g"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_z-oHUoe3Ee6kLbgWmgMY1g" value="1"/>
+        <redefinedProperty href=".controlled/consol-other.uml#_zCqi8OHqEeO04sHNODkHmQ"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_7E61EIQIEe6b6cxET2sbuA" memberEnd="_7E6OAIQIEe6b6cxET2sbuA _7E7cIIQIEe6b6cxET2sbuA">
+      <ownedEnd xmi:id="_7E7cIIQIEe6b6cxET2sbuA" type="_7M9GMHz2Ee6-T-DQA50CNA" association="_7E61EIQIEe6b6cxET2sbuA"/>
     </packagedElement>
     <profileApplication xmi:id="_2B97UBSVEeGGzu7fmW9pXw">
       <eAnnotations xmi:id="_2B97URSVEeGGzu7fmW9pXw" source="http://www.eclipse.org/uml2/2.0.0/UML">
@@ -6130,7 +6741,7 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
     <ruleId>4515-32311</ruleId>
     <ruleId>4515-32312</ruleId>
   </CDA:CodeSystemConstraint>
-  <CDA:CDATemplate xmi:id="_0sljAAHnEe2uf-Hpx0eOMw" base_Class="_yNEh4O6GEeyzELqFfLgO9w" templateId="2.16.840.1.113883.10.20.22.4.41" templateVersion="2014-06-09">
+  <CDA:CDATemplate xmi:id="_0sljAAHnEe2uf-Hpx0eOMw" base_Class="_yNEh4O6GEeyzELqFfLgO9w" templateId="2.16.840.1.113883.10.20.22.4.41" templateVersion="2022-06-01">
     <ruleId>4515-30444</ruleId>
   </CDA:CDATemplate>
   <CDA:PropertyValidation xmi:id="_9pEV0AHnEe2uf-Hpx0eOMw" base_Property="_80mzAAHnEe2uf-Hpx0eOMw">
@@ -6164,7 +6775,7 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
     <reference href="pathmap://CONSOL_MODEL///consol-vocab.uml#_2H3vABSVEeGGzu7fmW9pXw"/>
     <ruleId>4515-7683</ruleId>
   </CDA:ValueSetConstraint>
-  <CDA:CDATemplate xmi:id="_DkiqMAHyEe2uf-Hpx0eOMw" base_Class="_64AX4AHxEe2uf-Hpx0eOMw" templateId="2.16.840.1.113883.10.20.22.4.501" templateVersion="2022-06-01">
+  <CDA:CDATemplate xmi:id="_DkiqMAHyEe2uf-Hpx0eOMw" base_Class="_64AX4AHxEe2uf-Hpx0eOMw" templateId="2.16.840.1.113883.10.20.22.4.501" templateVersion="2023-05-01">
     <ruleId>4515-185</ruleId>
   </CDA:CDATemplate>
   <CDA:PropertyValidation xmi:id="_HDBjQAHyEe2uf-Hpx0eOMw" base_Property="_BJEtUAHyEe2uf-Hpx0eOMw">
@@ -6188,7 +6799,7 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
   <CDA:PropertyValidation xmi:id="_c07wYAHyEe2uf-Hpx0eOMw" base_Property="_BJEGRAHyEe2uf-Hpx0eOMw">
     <ruleId>4515-32882</ruleId>
   </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_g0KmEAHyEe2uf-Hpx0eOMw" severity="WARNING" base_Property="_fEAQAAHyEe2uf-Hpx0eOMw">
+  <CDA:PropertyValidation xmi:id="_g0KmEAHyEe2uf-Hpx0eOMw" base_Property="_fEAQAAHyEe2uf-Hpx0eOMw">
     <ruleId>4515-32884</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_i_J28AHyEe2uf-Hpx0eOMw" severity="INFO" base_Property="_fEAQAwHyEe2uf-Hpx0eOMw">
@@ -6235,4 +6846,283 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
   <CDA:PropertyValidation xmi:id="_cY4VEAQ4Ee2zXtXLgnLahw" base_Property="_aN5EMAQ4Ee2zXtXLgnLahw">
     <ruleId>4515-31868</ruleId>
   </CDA:PropertyValidation>
+  <CDA:CDATemplate xmi:id="_VIkQUGOgEe6ibMoBz2vFZw" base_Class="_SlGOAGOgEe6ibMoBz2vFZw" templateId="2.16.840.1.113883.10.20.22.4.60" templateVersion="2023-05-01">
+    <ruleId>4537-</ruleId>
+    <ruleId>8897</ruleId>
+  </CDA:CDATemplate>
+  <CDA:PropertyValidation xmi:id="_mhBDcGbNEe6ibMoBz2vFZw" base_Property="_iUSkUGbNEe6ibMoBz2vFZw">
+    <ruleId>CONF:4537-26981</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_nG2UYGbNEe6ibMoBz2vFZw" base_Property="_iUVAkGbNEe6ibMoBz2vFZw">
+    <ruleId>CONF:4537-26551</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_pCloUGbNEe6ibMoBz2vFZw" base_Property="_iUVno2bNEe6ibMoBz2vFZw">
+    <ruleId>4537-26559</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_qAHAgGbNEe6ibMoBz2vFZw" base_Property="_iUWOsGbNEe6ibMoBz2vFZw">
+    <ruleId>CONF:4537-26557</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_qz508GbNEe6ibMoBz2vFZw" base_Property="_iUWOsWbNEe6ibMoBz2vFZw">
+    <ruleId>CONF:4537-26558)</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:CDATemplate xmi:id="_zqnW8GbNEe6ibMoBz2vFZw" base_Class="_c5csQGbNEe6ibMoBz2vFZw" templateId="2.16.840.1.113883.10.20.22.4.281" templateVersion="2023-05-01">
+    <ruleId>CONF:4537-26552</ruleId>
+  </CDA:CDATemplate>
+  <CDA:PropertyValidation xmi:id="_-W6hkGbNEe6ibMoBz2vFZw" base_Property="_9k6c4GbNEe6ibMoBz2vFZw">
+    <ruleId>CONF:4537-26550</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:CodeSystemConstraint xmi:id="_N0PyQGbOEe6ibMoBz2vFZw" code="86645-9" displayName="Pregnancy intention in the next year Reported Nom" base_Property="_9k6c4GbNEe6ibMoBz2vFZw">
+    <reference href="pathmap://TERM_MODEL///CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </CDA:CodeSystemConstraint>
+  <CDA:CodeSystemConstraint xmi:id="_flHL0GbOEe6ibMoBz2vFZw" code="completed" displayName="completed" base_Property="_iUVAkGbNEe6ibMoBz2vFZw">
+    <reference href="pathmap://TERM_MODEL///CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
+  </CDA:CodeSystemConstraint>
+  <CDA:ValueSetConstraint xmi:id="_41XvIGbOEe6ibMoBz2vFZw" base_Property="_iUVno2bNEe6ibMoBz2vFZw" uri="consol-vocab::Pregnancy Intention">
+    <reference href="pathmap://CONSOL_MODEL///consol-vocab.uml#_8sfKoWbOEe6ibMoBz2vFZw"/>
+    <ruleId>4537-26559</ruleId>
+  </CDA:ValueSetConstraint>
+  <CDA:PropertyValidation xmi:id="_o1O04GblEe6ibMoBz2vFZw" base_Property="_hlWGwGblEe6ibMoBz2vFZw">
+    <ruleId>CONF:4537-32985</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_poHqYGblEe6ibMoBz2vFZw" severity="WARNING" base_Property="_hlWGw2blEe6ibMoBz2vFZw">
+    <ruleId>CONF:4537-32979</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_qkhoQGblEe6ibMoBz2vFZw" severity="WARNING" base_Property="_hlWt0GblEe6ibMoBz2vFZw">
+    <ruleId>4537-</ruleId>
+    <ruleId>32986</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_rTsbYGblEe6ibMoBz2vFZw" base_Property="_hlWt02blEe6ibMoBz2vFZw"/>
+  <CDA:AssociationValidation xmi:id="_sLj3gGblEe6ibMoBz2vFZw" base_Association="_hlWt12blEe6ibMoBz2vFZw"/>
+  <CDA:PropertyValidation xmi:id="_ze3GAGblEe6ibMoBz2vFZw" base_Property="_lxWNIGblEe6ibMoBz2vFZw">
+    <ruleId>CONF:4537-32987</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:CDATemplate xmi:id="_3z8P4GblEe6ibMoBz2vFZw" base_Class="_S4QnQGblEe6ibMoBz2vFZw" templateId="2.16.840.1.113883.10.20.22.5.8" templateVersion="2023-05-01"/>
+  <CDA:AssociationValidation xmi:id="_6Z8BwGblEe6ibMoBz2vFZw" base_Association="_beoAI2blEe6ibMoBz2vFZw">
+    <ruleId>CONF:4537-32978</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:PropertyValidation xmi:id="_HSQ_EGbmEe6ibMoBz2vFZw" base_Property="_GaIdMGbmEe6ibMoBz2vFZw">
+    <ruleId>CONF:4537-32982</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:AssociationValidation xmi:id="_TTaAQGbnEe6ibMoBz2vFZw" severity="WARNING" base_Association="_N-aRgGbnEe6ibMoBz2vFZw">
+    <ruleId>CONF:4537-32994</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:CDATemplate xmi:id="_K_kBIGbvEe6ibMoBz2vFZw" base_Class="_EEVUYGbvEe6ibMoBz2vFZw" templateId="2.16.840.1.113883.10.20.22.4.2" templateVersion="2023-05-01"/>
+  <CDA:AssociationValidation xmi:id="_WAQucGbvEe6ibMoBz2vFZw" severity="INFO" base_Association="_OQGk0GbvEe6ibMoBz2vFZw">
+    <ruleId>CONF:4537-32611</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:PropertyValidation xmi:id="_m9froGbvEe6ibMoBz2vFZw" base_Property="_iJtzkGbvEe6ibMoBz2vFZw">
+    <ruleId>CONF:4537-32614</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:AssociationValidation xmi:id="_oewqEGbvEe6ibMoBz2vFZw" base_Association="_gBVx0GbvEe6ibMoBz2vFZw"/>
+  <CDA:AssociationValidation xmi:id="_pEd_MGbvEe6ibMoBz2vFZw" base_Association="_Xm9mgGbvEe6ibMoBz2vFZw">
+    <ruleId>CONF:4537-32612</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:CodeSystemConstraint xmi:id="_GFuH4GbwEe6ibMoBz2vFZw" base_Property="_iJtzkGbvEe6ibMoBz2vFZw">
+    <reference href="pathmap://TERM_MODEL///CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+  </CDA:CodeSystemConstraint>
+  <CDA:CDATemplate xmi:id="_SpleMGwsEe66V-uSC1tAAg" base_Class="_F27rEGwsEe66V-uSC1tAAg" templateId="2.16.840.1.113883.10.20.22.4.505" templateVersion="2023-05-01">
+    <ruleId>CONF:4537-32619</ruleId>
+  </CDA:CDATemplate>
+  <CDA:PropertyValidation xmi:id="_YpxfAGwsEe66V-uSC1tAAg" base_Property="_QAHhkGwsEe66V-uSC1tAAg">
+    <ruleId>CONF:4537-32624</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_ZIieoGwsEe66V-uSC1tAAg" base_Property="_QAJWwGwsEe66V-uSC1tAAg">
+    <ruleId>CONF:4537-32625</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_ZlOaoGwsEe66V-uSC1tAAg" base_Property="_QAKk4GwsEe66V-uSC1tAAg">
+    <ruleId>CONF:4537-32627</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_aENcsGwsEe66V-uSC1tAAg" base_Property="_QAKk42wsEe66V-uSC1tAAg">
+    <ruleId>CONF:4537-32628</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_bz5RoGwsEe66V-uSC1tAAg" base_Property="_QANBIGwsEe66V-uSC1tAAg">
+    <ruleId>CONF:4537-32620</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_cRKccGwsEe66V-uSC1tAAg" base_Property="_QANoMGwsEe66V-uSC1tAAg">
+    <ruleId>CONF:4537-32621</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:AssociationValidation xmi:id="_mCB5kGwsEe66V-uSC1tAAg" severity="INFO" base_Association="_krpVc2wsEe66V-uSC1tAAg"/>
+  <CDA:CodeSystemConstraint xmi:id="_8Y9fUGwsEe66V-uSC1tAAg" code="89571-4" displayName="Disability Status" base_Property="_QAHhkGwsEe66V-uSC1tAAg">
+    <reference href="pathmap://TERM_MODEL///CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </CDA:CodeSystemConstraint>
+  <CDA:ValueSetConstraint xmi:id="_BvgtQGwtEe66V-uSC1tAAg" base_Property="_QAKk42wsEe66V-uSC1tAAg" uri="consol-vocab::CUBS Disability">
+    <reference href="pathmap://CONSOL_MODEL///consol-vocab.uml#_IESeAGwtEe66V-uSC1tAAg"/>
+  </CDA:ValueSetConstraint>
+  <CDA:CDATemplate xmi:id="_mxyQoGwuEe66V-uSC1tAAg" base_Class="_8FlHYGbpEe6ibMoBz2vFZw" templateId="2.16.840.1.113883.10.20.22.4.18" templateVersion="2023-05-01">
+    <ruleId>CONF:4537-7453</ruleId>
+  </CDA:CDATemplate>
+  <CDA:PropertyValidation xmi:id="_DdQ9oGwvEe66V-uSC1tAAg" base_Property="_BgnqwGwvEe66V-uSC1tAAg">
+    <ruleId>CONF:4537-32974</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:ValueSetConstraint xmi:id="_F70DsGwvEe66V-uSC1tAAg" base_Property="_BgnqwGwvEe66V-uSC1tAAg" uri="consol-vocab::MedicationDispesnseStatusVS">
+    <reference href="pathmap://CONSOL_MODEL///consol-vocab.uml#_ekH_MWbqEe6ibMoBz2vFZw"/>
+  </CDA:ValueSetConstraint>
+  <CDA:PropertyValidation xmi:id="_9U_iYGwvEe66V-uSC1tAAg" base_Property="_5CHX8GwvEe66V-uSC1tAAg">
+    <ruleId>4537-33010</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_-FytMGwvEe66V-uSC1tAAg" base_Property="_5CHX8WwvEe66V-uSC1tAAg">
+    <ruleId>4537-33011</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_-kuE4GwvEe66V-uSC1tAAg" base_Property="_5CH_AGwvEe66V-uSC1tAAg">
+    <ruleId>4537-33022</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="__FpnsGwvEe66V-uSC1tAAg" base_Property="_5CH_A2wvEe66V-uSC1tAAg">
+    <ruleId>4537-33018</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="__nuaAGwvEe66V-uSC1tAAg" base_Property="_5CH_BGwvEe66V-uSC1tAAg">
+    <ruleId>4537-33019</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:CodeSystemConstraint xmi:id="_IFkwEGwwEe66V-uSC1tAAg" code="completed" base_Property="_5CHX8WwvEe66V-uSC1tAAg">
+    <reference href="pathmap://TERM_MODEL///CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
+    <ruleId>4537-33017</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:ValueSetConstraint xmi:id="_2oupQGwwEe66V-uSC1tAAg" base_Property="_5CH_AGwvEe66V-uSC1tAAg" uri="consol-vocab::IndustryNAICSDetailODH">
+    <reference href="pathmap://CONSOL_MODEL///consol-vocab.uml#_gQPkUGwwEe66V-uSC1tAAg"/>
+    <ruleId>4537-33022</ruleId>
+  </CDA:ValueSetConstraint>
+  <CDA:PropertyValidation xmi:id="_kXrMYGwzEe66V-uSC1tAAg" base_Property="_fWi00GwzEe66V-uSC1tAAg">
+    <ruleId>CONF:4537-32996</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_k-lbYGwzEe66V-uSC1tAAg" base_Property="_fWjb4GwzEe66V-uSC1tAAg">
+    <ruleId>CONF:4537-32997</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_ldEHIGwzEe66V-uSC1tAAg" base_Property="_fWjb42wzEe66V-uSC1tAAg">
+    <ruleId>CONF:4537-33005</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_l_HEQGwzEe66V-uSC1tAAg" base_Property="_fWjb5mwzEe66V-uSC1tAAg">
+    <ruleId>CONF:4537-33000</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_mq9doGwzEe66V-uSC1tAAg" base_Property="_fWjb52wzEe66V-uSC1tAAg">
+    <ruleId>CONF:4537-33001</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:AssociationValidation xmi:id="_nR9MMGwzEe66V-uSC1tAAg" severity="INFO" base_Association="_fWjb62wzEe66V-uSC1tAAg"/>
+  <CDA:CDATemplate xmi:id="_pNTekGwzEe66V-uSC1tAAg" base_Class="_Vs7PMGwzEe66V-uSC1tAAg" templateId="2.16.840.1.113883.10.20.22.4.503" templateVersion="2023-05-01"/>
+  <CDA:CodeSystemConstraint xmi:id="_z72E4GwzEe66V-uSC1tAAg" code="11341-5" displayName="History of Occupation" base_Property="_fWi00GwzEe66V-uSC1tAAg">
+    <reference href="pathmap://TERM_MODEL///CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </CDA:CodeSystemConstraint>
+  <CDA:CodeSystemConstraint xmi:id="_4a9UgGwzEe66V-uSC1tAAg" code="completed" base_Property="_fWjb4GwzEe66V-uSC1tAAg">
+    <reference href="pathmap://TERM_MODEL///CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
+  </CDA:CodeSystemConstraint>
+  <CDA:AssociationValidation xmi:id="_Rz8WAGw0Ee66V-uSC1tAAg" base_Association="_QXhbUGw0Ee66V-uSC1tAAg"/>
+  <CDA:EntryRelationship xmi:id="_Y7PI0Gw0Ee66V-uSC1tAAg" severity="WARNING" base_Association="_Ugmwkmw0Ee66V-uSC1tAAg" typeCode="REFR">
+    <ruleId>CONF:4537-33060</ruleId>
+  </CDA:EntryRelationship>
+  <CDA:ActRelationship xmi:id="_bCJK8Gw0Ee66V-uSC1tAAg" base_Association="_Ugmwkmw0Ee66V-uSC1tAAg"/>
+  <CDA:PropertyValidation xmi:id="_ji5EAGw0Ee66V-uSC1tAAg" base_Property="_iggZ8Gw0Ee66V-uSC1tAAg">
+    <ruleId>CONF:4537-33007</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_lRRRYGw0Ee66V-uSC1tAAg" severity="INFO" base_Property="_ighBAGw0Ee66V-uSC1tAAg">
+    <ruleId>CONF:4537-33008</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_sJRHIGw4Ee66V-uSC1tAAg" base_Property="_nk91h2w4Ee66V-uSC1tAAg">
+    <ruleId>CONF:4537-1223</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:ValueSetConstraint xmi:id="_Hu0G0Gw5Ee66V-uSC1tAAg" base_Property="_nk91h2w4Ee66V-uSC1tAAg" uri="consol-vocab::GenderIdentityUSCDICore">
+    <reference href="pathmap://CONSOL_MODEL///consol-vocab.uml#_s1PAse5pEeyzELqFfLgO9w"/>
+  </CDA:ValueSetConstraint>
+  <CDA:PropertyValidation xmi:id="_QlnIYGw5Ee66V-uSC1tAAg" base_Property="_QlmhUGw5Ee66V-uSC1tAAg">
+    <ruleId>4515-31868</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_Wur_cGw5Ee66V-uSC1tAAg" base_Property="_TgrLUGw5Ee66V-uSC1tAAg">
+    <ruleId>CONF:4537-33070</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_XhHh8Gw5Ee66V-uSC1tAAg" severity="WARNING" negationIndicator="true" base_Property="_TgrLU2w5Ee66V-uSC1tAAg">
+    <ruleId>CONF:4537-33071</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:CodeSystemConstraint xmi:id="_uag98GxtEe66V-uSC1tAAg" code="completed" displayName="completed" base_Property="_QAJWwGwsEe66V-uSC1tAAg">
+    <reference href="pathmap://TERM_MODEL///CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
+  </CDA:CodeSystemConstraint>
+  <CDA:CDATemplate xmi:id="_pmkkIG3pEe66V-uSC1tAAg" base_Class="_cHuWIGw4Ee66V-uSC1tAAg" templateId="2.16.840.1.113883.10.20.34.3.45" templateVersion="2023-05-01"/>
+  <CDA:PropertyValidation xmi:id="_GnHQQG3sEe66V-uSC1tAAg" base_Property="_Bl0goG3sEe66V-uSC1tAAg">
+    <ruleId>4537-26560</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_HU_C4G3sEe66V-uSC1tAAg" base_Property="_EQbswG3sEe66V-uSC1tAAg">
+    <ruleId>4537-26821</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_H7hecG3sEe66V-uSC1tAAg" base_Property="_EQcT0G3sEe66V-uSC1tAAg">
+    <ruleId>4537-2682</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_QlIqAHQKEe66V-uSC1tAAg" severity="WARNING" base_Property="_Nb1WwHQKEe66V-uSC1tAAg">
+    <ruleId>CONF:4537-33064</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_V_xGsHQKEe66V-uSC1tAAg" base_Property="_VJJnwHQKEe66V-uSC1tAAg">
+    <ruleId>CONF:4537-33065</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_S0ZsAHQMEe66V-uSC1tAAg" base_Property="_O1UAQHQMEe66V-uSC1tAAg">
+    <ruleId>CONF:4537-26998</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_TU04gHQMEe66V-uSC1tAAg" base_Property="_O1UnUHQMEe66V-uSC1tAAg">
+    <ruleId>CONF:4537-11361</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_Tx6dIHQMEe66V-uSC1tAAg" base_Property="_O1UnUXQMEe66V-uSC1tAAg">
+    <ruleId>CONF:4537-11364</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_URNBMHQMEe66V-uSC1tAAg" base_Property="_O1VOYnQMEe66V-uSC1tAAg">
+    <ruleId>CONF:4537-11366</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_Uw2KkHQMEe66V-uSC1tAAg" base_Property="_O1VOZXQMEe66V-uSC1tAAg"/>
+  <CDA:PropertyValidation xmi:id="_VSXjQHQMEe66V-uSC1tAAg" base_Property="_O1V1cHQMEe66V-uSC1tAAg">
+    <ruleId>CONF:4537-11357</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_V4LmEHQMEe66V-uSC1tAAg" base_Property="_O1V1cXQMEe66V-uSC1tAAg">
+    <ruleId>CONF:4537-11358</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_ikjyEHQMEe66V-uSC1tAAg" base_Property="_htiDcHQMEe66V-uSC1tAAg">
+    <ruleId>CONF:4537-27551</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_jTWKsHQMEe66V-uSC1tAAg" severity="INFO" base_Property="_htiDc3QMEe66V-uSC1tAAg">
+    <ruleId>CONF:4537-27552</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:CodeSystemConstraint xmi:id="_l-2HoHQMEe66V-uSC1tAAg" code="completed" displayName="completed" base_Property="_O1UnUXQMEe66V-uSC1tAAg">
+    <reference href="pathmap://TERM_MODEL///CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:4537-11365</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:CodeSystemConstraint xmi:id="_seNXwHQMEe66V-uSC1tAAg" code="77301-0" displayName="Reason care action performed or not" base_Property="_O1UnUHQMEe66V-uSC1tAAg">
+    <reference href="pathmap://TERM_MODEL///CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:4537-11362</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:CDATemplate xmi:id="_2wwqsHzVEe6-T-DQA50CNA" base_Class="_VknrYHzUEe6-T-DQA50CNA" templateId="2.16.840.1.113883.10.20.22.4.506" templateVersion="2023-05-01"/>
+  <CDA:CodeSystemConstraint xmi:id="_8GFJkHzVEe6-T-DQA50CNA" code="95370-3" displayName="Tribal affiliation" base_Property="_ZtygMHzUEe6-T-DQA50CNA">
+    <reference href="pathmap://TERM_MODEL///CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_CZvgAHzWEe6-T-DQA50CNA" base_Property="_ZtygMHzUEe6-T-DQA50CNA"/>
+  <CDA:PropertyValidation xmi:id="_QyAmEHzWEe6-T-DQA50CNA" base_Property="_ZtzHQHzUEe6-T-DQA50CNA"/>
+  <CDA:PropertyValidation xmi:id="_RehGwHzWEe6-T-DQA50CNA" base_Property="_ZtygMXzUEe6-T-DQA50CNA"/>
+  <CDA:PropertyValidation xmi:id="_YrE0EHzWEe6-T-DQA50CNA" base_Property="_ZtzHQ3zUEe6-T-DQA50CNA"/>
+  <CDA:PropertyValidation xmi:id="_ZP6mgHzWEe6-T-DQA50CNA" base_Property="_ZtzHRHzUEe6-T-DQA50CNA"/>
+  <CDA:PropertyValidation xmi:id="_wwA08HzwEe6-T-DQA50CNA" base_Property="_uzO_MHzwEe6-T-DQA50CNA"/>
+  <CDA:PropertyValidation xmi:id="_x3VCUHzwEe6-T-DQA50CNA" base_Property="_uzO_M3zwEe6-T-DQA50CNA"/>
+  <CDA:PropertyValidation xmi:id="_z0aaEHzwEe6-T-DQA50CNA" base_Property="_uzPmQHzwEe6-T-DQA50CNA"/>
+  <CDA:PropertyValidation xmi:id="_0a6ZYHzwEe6-T-DQA50CNA" base_Property="_uzPmQ3zwEe6-T-DQA50CNA"/>
+  <CDA:PropertyValidation xmi:id="_0_S40HzwEe6-T-DQA50CNA" base_Property="_uzPmRnzwEe6-T-DQA50CNA"/>
+  <CDA:PropertyValidation xmi:id="_rWYrkHz1Ee6-T-DQA50CNA" base_Property="_rWXdcHz1Ee6-T-DQA50CNA">
+    <ruleId>CONF:14537-32361</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:CodeSystemConstraint xmi:id="_zScjMHz1Ee6-T-DQA50CNA" code="completed" displayName="Completed" base_Property="_rWXdcHz1Ee6-T-DQA50CNA"/>
+  <CDA:CDATemplate xmi:id="__Sq-YHz2Ee6-T-DQA50CNA" base_Class="_7M9GMHz2Ee6-T-DQA50CNA" templateId="2.16.840.1.113883.10.20.22.4.1" templateVersion="2023-05-01"/>
+  <CDA:PropertyValidation xmi:id="_JyEVcHz3Ee6-T-DQA50CNA" base_Property="_Dlal8nz3Ee6-T-DQA50CNA">
+    <ruleId>4537-32616</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_LpKZ8Hz3Ee6-T-DQA50CNA" base_Property="_Dlal93z3Ee6-T-DQA50CNA">
+    <ruleId>4537-32617</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_NDQZYHz3Ee6-T-DQA50CNA" base_Property="_Dlal_Hz3Ee6-T-DQA50CNA">
+    <ruleId>CONF:4537-32618</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:CodeSystemConstraint xmi:id="_YamFEHz3Ee6-T-DQA50CNA" base_Property="_Dlal_Hz3Ee6-T-DQA50CNA">
+    <reference href="pathmap://TERM_MODEL///CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+  </CDA:CodeSystemConstraint>
+  <CDA:CDATemplate xmi:id="_i_9O8IQCEe65RJ9boffi_A" base_Class="_vm-6QGwvEe66V-uSC1tAAg" templateId="2.16.840.1.113883.10.20.22.4.504" templateVersion="2023-05-01"/>
+  <CDA:CDATemplate xmi:id="_QUA3wIQDEe65RJ9boffi_A" base_Class="_NR7m0IQDEe65RJ9boffi_A" templateId="2.16.840.1.113883.10.20.22.4.19" templateVersion="2023-05-01"/>
+  <CDA:AssociationValidation xmi:id="_9Qk0UIQIEe6b6cxET2sbuA" severity="INFO" base_Association="_7E61EIQIEe6b6cxET2sbuA">
+    <ruleId>4537-32615</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:CDATemplate xmi:id="_RBWIoIWUEe61YZC3Kb7p3A" base_Class="_IWHKQHz2Ee6-T-DQA50CNA" templateId="2.16.840.1.113883.10.20.22.4.61" templateVersion="2023-05-01"/>
+  <CDA:PropertyValidation xmi:id="_z-oHU4e3Ee6kLbgWmgMY1g" severity="INFO" base_Property="_z-oHUIe3Ee6kLbgWmgMY1g">
+    <ruleId>CONF:1098-7488</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:ValueSetConstraint xmi:id="_z-ouYIe3Ee6kLbgWmgMY1g" base_Property="_z-oHUIe3Ee6kLbgWmgMY1g" uri="consol-vocab::Problem" severity="INFO">
+    <reference href="consol-vocab.uml#_2SVSkRSVEeGGzu7fmW9pXw"/>
+    <ruleId>CONF:1098-7489</ruleId>
+  </CDA:ValueSetConstraint>
 </xmi:XMI>

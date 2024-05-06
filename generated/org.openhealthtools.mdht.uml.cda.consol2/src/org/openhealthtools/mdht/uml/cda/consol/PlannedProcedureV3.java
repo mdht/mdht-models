@@ -19,7 +19,7 @@ import org.eclipse.mdht.uml.cda.Procedure;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getPlannedProcedureV3()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='PlannedProcedureV3TemplateId PlannedProcedureV3Id PlannedProcedureV3Code PlannedProcedureV3StatusCode PlannedProcedureV3StatusCodeP PlannedProcedureV3ClassCode PlannedProcedureV3MoodCode PlannedProcedureV3MoodCodeP' templateId.root='2.16.840.1.113883.10.20.22.4.41' templateId.extension='2014-06-09' statusCode.code='active' constraints.validation.dependOn.PlannedProcedureV3StatusCode='PlannedProcedureV3StatusCodeP' constraints.validation.warning='PlannedProcedureV3EffectiveTime' constraints.validation.info='PlannedProcedureV3MethodCode PlannedProcedureV3TargetSiteCode' classCode='PROC' constraints.validation.dependOn.PlannedProcedureV3MoodCode='PlannedProcedureV3MoodCodeP'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='PlannedProcedureV3TemplateId PlannedProcedureV3Id PlannedProcedureV3Code PlannedProcedureV3StatusCode PlannedProcedureV3StatusCodeP PlannedProcedureV3ClassCode PlannedProcedureV3MoodCode PlannedProcedureV3MoodCodeP' templateId.root='2.16.840.1.113883.10.20.22.4.41' templateId.extension='2022-06-01' statusCode.code='active' constraints.validation.dependOn.PlannedProcedureV3StatusCode='PlannedProcedureV3StatusCodeP' constraints.validation.warning='PlannedProcedureV3EffectiveTime' constraints.validation.info='PlannedProcedureV3MethodCode PlannedProcedureV3TargetSiteCode' classCode='PROC' constraints.validation.dependOn.PlannedProcedureV3MoodCode='PlannedProcedureV3MoodCodeP'"
  * @generated
  */
 public interface PlannedProcedureV3 extends Procedure {
@@ -30,7 +30,7 @@ public interface PlannedProcedureV3 extends Procedure {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId-&gt;exists(id : datatypes::II | id.root = \'2.16.840.1.113883.10.20.22.4.41\' and id.extension = \'2014-06-09\')'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId-&gt;exists(id : datatypes::II | id.root = \'2.16.840.1.113883.10.20.22.4.41\' and id.extension = \'2022-06-01\')'"
 	 * @generated
 	 */
 	boolean validatePlannedProcedureV3TemplateId(DiagnosticChain diagnostics, Map<Object, Object> context);

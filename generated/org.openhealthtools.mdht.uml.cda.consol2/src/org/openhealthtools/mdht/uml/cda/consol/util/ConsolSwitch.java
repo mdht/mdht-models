@@ -7346,6 +7346,9 @@ public class ConsolSwitch<T> {
 				SexualOrientationObservation sexualOrientationObservation = (SexualOrientationObservation) theEObject;
 				T result = caseSexualOrientationObservation(sexualOrientationObservation);
 				if (result == null) {
+					result = caseSocialHistoryObservationV4(sexualOrientationObservation);
+				}
+				if (result == null) {
 					result = caseObservation(sexualOrientationObservation);
 				}
 				if (result == null) {
@@ -7376,6 +7379,354 @@ public class ConsolSwitch<T> {
 				}
 				if (result == null) {
 					result = caseInfrastructureRoot(socialHistoryObservationV4);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.COVERAGE_ACTIVITY_V4: {
+				CoverageActivityV4 coverageActivityV4 = (CoverageActivityV4) theEObject;
+				T result = caseCoverageActivityV4(coverageActivityV4);
+				if (result == null) {
+					result = caseCoverageActivity2(coverageActivityV4);
+				}
+				if (result == null) {
+					result = caseCoverageActivity(coverageActivityV4);
+				}
+				if (result == null) {
+					result = caseCDA_Act(coverageActivityV4);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(coverageActivityV4);
+				}
+				if (result == null) {
+					result = caseAct(coverageActivityV4);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(coverageActivityV4);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.PREGNANCY_INTENTION: {
+				PregnancyIntention pregnancyIntention = (PregnancyIntention) theEObject;
+				T result = casePregnancyIntention(pregnancyIntention);
+				if (result == null) {
+					result = caseObservation(pregnancyIntention);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(pregnancyIntention);
+				}
+				if (result == null) {
+					result = caseAct(pregnancyIntention);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(pregnancyIntention);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.RELATED_PERSON_RELATIONSHIPAND_NAME_PARTICIPANT: {
+				RelatedPersonRelationshipandNameParticipant relatedPersonRelationshipandNameParticipant = (RelatedPersonRelationshipandNameParticipant) theEObject;
+				T result = caseRelatedPersonRelationshipandNameParticipant(relatedPersonRelationshipandNameParticipant);
+				if (result == null) {
+					result = caseParticipant1(relatedPersonRelationshipandNameParticipant);
+				}
+				if (result == null) {
+					result = caseParticipation(relatedPersonRelationshipandNameParticipant);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(relatedPersonRelationshipandNameParticipant);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.US_REALM_HEADER_V4: {
+				USRealmHeaderV4 usRealmHeaderV4 = (USRealmHeaderV4) theEObject;
+				T result = caseUSRealmHeaderV4(usRealmHeaderV4);
+				if (result == null) {
+					result = caseUSRealmHeader2(usRealmHeaderV4);
+				}
+				if (result == null) {
+					result = caseGeneralHeaderConstraints(usRealmHeaderV4);
+				}
+				if (result == null) {
+					result = caseClinicalDocument(usRealmHeaderV4);
+				}
+				if (result == null) {
+					result = caseAct(usRealmHeaderV4);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(usRealmHeaderV4);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.MEDICATION_DISPENSE_V4: {
+				MedicationDispenseV4 medicationDispenseV4 = (MedicationDispenseV4) theEObject;
+				T result = caseMedicationDispenseV4(medicationDispenseV4);
+				if (result == null) {
+					result = caseMedicationDispense2(medicationDispenseV4);
+				}
+				if (result == null) {
+					result = caseMedicationDispense(medicationDispenseV4);
+				}
+				if (result == null) {
+					result = caseSupply(medicationDispenseV4);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(medicationDispenseV4);
+				}
+				if (result == null) {
+					result = caseAct(medicationDispenseV4);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(medicationDispenseV4);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.RESULT_OBSERVATION_V4: {
+				ResultObservationV4 resultObservationV4 = (ResultObservationV4) theEObject;
+				T result = caseResultObservationV4(resultObservationV4);
+				if (result == null) {
+					result = caseResultObservation2(resultObservationV4);
+				}
+				if (result == null) {
+					result = caseResultObservation(resultObservationV4);
+				}
+				if (result == null) {
+					result = caseObservation(resultObservationV4);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(resultObservationV4);
+				}
+				if (result == null) {
+					result = caseAct(resultObservationV4);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(resultObservationV4);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.DISABILITY_STATUS_OBSERVATION: {
+				DisabilityStatusObservation disabilityStatusObservation = (DisabilityStatusObservation) theEObject;
+				T result = caseDisabilityStatusObservation(disabilityStatusObservation);
+				if (result == null) {
+					result = caseObservation(disabilityStatusObservation);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(disabilityStatusObservation);
+				}
+				if (result == null) {
+					result = caseAct(disabilityStatusObservation);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(disabilityStatusObservation);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.BASIC_INDUSTRY_OBSERVATION: {
+				BasicIndustryObservation basicIndustryObservation = (BasicIndustryObservation) theEObject;
+				T result = caseBasicIndustryObservation(basicIndustryObservation);
+				if (result == null) {
+					result = caseSocialHistoryObservationV4(basicIndustryObservation);
+				}
+				if (result == null) {
+					result = caseObservation(basicIndustryObservation);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(basicIndustryObservation);
+				}
+				if (result == null) {
+					result = caseAct(basicIndustryObservation);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(basicIndustryObservation);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.BASIC_OCCUPATION_OBSERVATION: {
+				BasicOccupationObservation basicOccupationObservation = (BasicOccupationObservation) theEObject;
+				T result = caseBasicOccupationObservation(basicOccupationObservation);
+				if (result == null) {
+					result = caseSocialHistoryObservationV4(basicOccupationObservation);
+				}
+				if (result == null) {
+					result = caseObservation(basicOccupationObservation);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(basicOccupationObservation);
+				}
+				if (result == null) {
+					result = caseAct(basicOccupationObservation);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(basicOccupationObservation);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.GENDER_IDENTITY_OBSERVATION_V4: {
+				GenderIdentityObservationV4 genderIdentityObservationV4 = (GenderIdentityObservationV4) theEObject;
+				T result = caseGenderIdentityObservationV4(genderIdentityObservationV4);
+				if (result == null) {
+					result = caseSocialHistoryObservationV4(genderIdentityObservationV4);
+				}
+				if (result == null) {
+					result = caseObservation(genderIdentityObservationV4);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(genderIdentityObservationV4);
+				}
+				if (result == null) {
+					result = caseAct(genderIdentityObservationV4);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(genderIdentityObservationV4);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.REASON_V3: {
+				ReasonV3 reasonV3 = (ReasonV3) theEObject;
+				T result = caseReasonV3(reasonV3);
+				if (result == null) {
+					result = caseObservation(reasonV3);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(reasonV3);
+				}
+				if (result == null) {
+					result = caseAct(reasonV3);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(reasonV3);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.TRIBAL_AFFILIATION: {
+				TribalAffiliation tribalAffiliation = (TribalAffiliation) theEObject;
+				T result = caseTribalAffiliation(tribalAffiliation);
+				if (result == null) {
+					result = caseSocialHistoryObservationV4(tribalAffiliation);
+				}
+				if (result == null) {
+					result = caseObservation(tribalAffiliation);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(tribalAffiliation);
+				}
+				if (result == null) {
+					result = caseAct(tribalAffiliation);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(tribalAffiliation);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.POLICY_ACTIVITY_V4: {
+				PolicyActivityV4 policyActivityV4 = (PolicyActivityV4) theEObject;
+				T result = casePolicyActivityV4(policyActivityV4);
+				if (result == null) {
+					result = casePolicyActivity2(policyActivityV4);
+				}
+				if (result == null) {
+					result = casePolicyActivity(policyActivityV4);
+				}
+				if (result == null) {
+					result = caseCDA_Act(policyActivityV4);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(policyActivityV4);
+				}
+				if (result == null) {
+					result = caseAct(policyActivityV4);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(policyActivityV4);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.RESULT_ORGANIZER_V4: {
+				ResultOrganizerV4 resultOrganizerV4 = (ResultOrganizerV4) theEObject;
+				T result = caseResultOrganizerV4(resultOrganizerV4);
+				if (result == null) {
+					result = caseResultOrganizer2(resultOrganizerV4);
+				}
+				if (result == null) {
+					result = caseResultOrganizer(resultOrganizerV4);
+				}
+				if (result == null) {
+					result = caseOrganizer(resultOrganizerV4);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(resultOrganizerV4);
+				}
+				if (result == null) {
+					result = caseAct(resultOrganizerV4);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(resultOrganizerV4);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case ConsolPackage.INDICATION_V3: {
+				IndicationV3 indicationV3 = (IndicationV3) theEObject;
+				T result = caseIndicationV3(indicationV3);
+				if (result == null) {
+					result = caseIndication2(indicationV3);
+				}
+				if (result == null) {
+					result = caseIndication(indicationV3);
+				}
+				if (result == null) {
+					result = caseObservation(indicationV3);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(indicationV3);
+				}
+				if (result == null) {
+					result = caseAct(indicationV3);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(indicationV3);
 				}
 				if (result == null) {
 					result = defaultCase(theEObject);
@@ -12741,6 +13092,231 @@ public class ConsolSwitch<T> {
 	 * @generated
 	 */
 	public T caseSocialHistoryObservationV4(SocialHistoryObservationV4 object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Coverage Activity V4</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Coverage Activity V4</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseCoverageActivityV4(CoverageActivityV4 object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Pregnancy Intention</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Pregnancy Intention</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T casePregnancyIntention(PregnancyIntention object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Related Person Relationshipand Name Participant</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Related Person Relationshipand Name Participant</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseRelatedPersonRelationshipandNameParticipant(RelatedPersonRelationshipandNameParticipant object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>US Realm Header V4</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>US Realm Header V4</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseUSRealmHeaderV4(USRealmHeaderV4 object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Medication Dispense V4</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Medication Dispense V4</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseMedicationDispenseV4(MedicationDispenseV4 object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Result Observation V4</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Result Observation V4</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseResultObservationV4(ResultObservationV4 object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Disability Status Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Disability Status Observation</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseDisabilityStatusObservation(DisabilityStatusObservation object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Basic Industry Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Basic Industry Observation</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseBasicIndustryObservation(BasicIndustryObservation object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Basic Occupation Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Basic Occupation Observation</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseBasicOccupationObservation(BasicOccupationObservation object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Gender Identity Observation V4</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Gender Identity Observation V4</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseGenderIdentityObservationV4(GenderIdentityObservationV4 object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Reason V3</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Reason V3</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseReasonV3(ReasonV3 object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Tribal Affiliation</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Tribal Affiliation</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseTribalAffiliation(TribalAffiliation object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Policy Activity V4</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Policy Activity V4</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T casePolicyActivityV4(PolicyActivityV4 object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Result Organizer V4</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Result Organizer V4</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseResultOrganizerV4(ResultOrganizerV4 object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Indication V3</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Indication V3</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseIndicationV3(IndicationV3 object) {
 		return null;
 	}
 

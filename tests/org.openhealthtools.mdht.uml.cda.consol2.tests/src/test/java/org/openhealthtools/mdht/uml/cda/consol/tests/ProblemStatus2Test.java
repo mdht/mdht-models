@@ -126,14 +126,14 @@ public class ProblemStatus2Test extends CDAValidationTest {
 	 * 246455001    Recurrence (qualifier value)
 	263855007    Relapse phase (qualifier value)
 	277022003    Remission phase (qualifier value)
-
+	
 	246455001x
 	263855007x
 	277022003x
 	413322009
 	55561003
 	73425007
-	
+
 	*
 	* @generated NOT
 	*/

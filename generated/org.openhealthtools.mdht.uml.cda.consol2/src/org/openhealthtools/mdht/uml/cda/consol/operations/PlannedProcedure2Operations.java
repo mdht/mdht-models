@@ -183,7 +183,7 @@ public class PlannedProcedure2Operations extends PlanOfCareActivityProcedureOper
 	public static boolean validatePlannedProcedure2CodeFromCptOrIcd(PlannedProcedure2 plannedProcedure2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		DatatypesUtil.increment(context, "PlannedProcedure2PlannedProcedure2CodeFromCptOrIcd", "INFO");
+		DatatypesUtil.increment(context, "PlannedProcedure2PlannedProcedure2CodeFromCptOrIcd", "WARNING");
 
 		if (VALIDATE_PLANNED_PROCEDURE2_CODE_FROM_CPT_OR_ICD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
 
@@ -204,7 +204,7 @@ public class PlannedProcedure2Operations extends PlanOfCareActivityProcedureOper
 			if (diagnostics != null) {
 				diagnostics.add(
 					new BasicDiagnostic(
-						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PLANNED_PROCEDURE2__PLANNED_PROCEDURE2_CODE_FROM_CPT_OR_ICD,
 						ConsolPlugin.INSTANCE.getString("PlannedProcedure2PlannedProcedure2CodeFromCptOrIcd"),
 						new Object[] { plannedProcedure2 }));
