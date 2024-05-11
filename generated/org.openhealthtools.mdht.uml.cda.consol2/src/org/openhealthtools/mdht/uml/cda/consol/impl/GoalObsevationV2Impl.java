@@ -11,8 +11,6 @@ import org.eclipse.emf.ecore.EObject;
 
 import org.eclipse.mdht.emf.runtime.util.Initializer;
 
-import org.eclipse.mdht.uml.cda.impl.ObservationImpl;
-
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.GoalObsevationV2;
 
@@ -25,7 +23,7 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.GoalObsevationV2Operat
  *
  * @generated
  */
-public class GoalObsevationV2Impl extends ObservationImpl implements GoalObsevationV2 {
+public class GoalObsevationV2Impl extends GoalObservationImpl implements GoalObsevationV2 {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -43,15 +41,6 @@ public class GoalObsevationV2Impl extends ObservationImpl implements GoalObsevat
 	@Override
 	protected EClass eStaticClass() {
 		return ConsolPackage.Literals.GOAL_OBSEVATION_V2;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateGoalObsevationV2TemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GoalObsevationV2Operations.validateGoalObsevationV2TemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -131,6 +120,17 @@ public class GoalObsevationV2Impl extends ObservationImpl implements GoalObsevat
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
+	public boolean validateGoalObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return GoalObsevationV2Operations.validateGoalObservationTemplateId(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public GoalObsevationV2 init() {
 		return Initializer.Util.init(this);
 	}
@@ -140,6 +140,7 @@ public class GoalObsevationV2Impl extends ObservationImpl implements GoalObsevat
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public GoalObsevationV2 init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

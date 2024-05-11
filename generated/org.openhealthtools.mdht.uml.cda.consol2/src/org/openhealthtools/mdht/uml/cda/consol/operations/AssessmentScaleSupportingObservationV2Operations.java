@@ -84,7 +84,7 @@ public class AssessmentScaleSupportingObservationV2Operations extends ClinicalSt
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_ASSESSMENT_SCALE_SUPPORTING_OBSERVATION_V2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_ASSESSMENT_SCALE_SUPPORTING_OBSERVATION_V2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -154,7 +154,7 @@ public class AssessmentScaleSupportingObservationV2Operations extends ClinicalSt
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_ASSESSMENT_SCALE_SUPPORTING_OBSERVATION_V2_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_ASSESSMENT_SCALE_SUPPORTING_OBSERVATION_V2_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -224,7 +224,7 @@ public class AssessmentScaleSupportingObservationV2Operations extends ClinicalSt
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_ASSESSMENT_SCALE_SUPPORTING_OBSERVATION_V2_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_ASSESSMENT_SCALE_SUPPORTING_OBSERVATION_V2_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -278,7 +278,7 @@ public class AssessmentScaleSupportingObservationV2Operations extends ClinicalSt
 					"org.openhealthtools.mdht.uml.cda.consol.AssessmentScaleSupportingObservationV2StatusCodeP");
 				if (passToken == null) {
 					// anticipate a reasonably healthy model
-					passToken = new java.util.ArrayList<>(3);
+					passToken = new java.util.ArrayList<Object>(3);
 					context.put(
 						"org.openhealthtools.mdht.uml.cda.consol.AssessmentScaleSupportingObservationV2StatusCodeP",
 						passToken);
@@ -311,7 +311,7 @@ public class AssessmentScaleSupportingObservationV2Operations extends ClinicalSt
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_ASSESSMENT_SCALE_SUPPORTING_OBSERVATION_V2_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_ASSESSMENT_SCALE_SUPPORTING_OBSERVATION_V2_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -472,7 +472,7 @@ public class AssessmentScaleSupportingObservationV2Operations extends ClinicalSt
 					"org.openhealthtools.mdht.uml.cda.consol.AssessmentScaleSupportingObservationV2CodeP");
 				if (passToken == null) {
 					// anticipate a reasonably healthy model
-					passToken = new java.util.ArrayList<>(3);
+					passToken = new java.util.ArrayList<Object>(3);
 					context.put(
 						"org.openhealthtools.mdht.uml.cda.consol.AssessmentScaleSupportingObservationV2CodeP",
 						passToken);
@@ -562,7 +562,7 @@ public class AssessmentScaleSupportingObservationV2Operations extends ClinicalSt
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_ASSESSMENT_SCALE_SUPPORTING_OBSERVATION_V2_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_ASSESSMENT_SCALE_SUPPORTING_OBSERVATION_V2_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -632,7 +632,7 @@ public class AssessmentScaleSupportingObservationV2Operations extends ClinicalSt
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_ASSESSMENT_SCALE_SUPPORTING_OBSERVATION_V2_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_ASSESSMENT_SCALE_SUPPORTING_OBSERVATION_V2_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * The cached OCL expression body for the '{@link #validateAssessmentScaleSupportingObservationV2Value(AssessmentScaleSupportingObservationV2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Assessment Scale Supporting Observation V2 Value</em>}' operation.
@@ -653,7 +653,7 @@ public class AssessmentScaleSupportingObservationV2Operations extends ClinicalSt
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_ASSESSMENT_SCALE_SUPPORTING_OBSERVATION_V2_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_ASSESSMENT_SCALE_SUPPORTING_OBSERVATION_V2_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * The cached OCL expression body for the '{@link #validateAssessmentScaleSupportingObservationV2CodeP(AssessmentScaleSupportingObservationV2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Assessment Scale Supporting Observation V2 Code P</em>}' operation.
@@ -674,7 +674,7 @@ public class AssessmentScaleSupportingObservationV2Operations extends ClinicalSt
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_ASSESSMENT_SCALE_SUPPORTING_OBSERVATION_V2_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_ASSESSMENT_SCALE_SUPPORTING_OBSERVATION_V2_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * The cached OCL expression body for the '{@link #validateAssessmentScaleSupportingObservationV2Code(AssessmentScaleSupportingObservationV2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Assessment Scale Supporting Observation V2 Code</em>}' operation.
@@ -697,7 +697,7 @@ public class AssessmentScaleSupportingObservationV2Operations extends ClinicalSt
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_ASSESSMENT_SCALE_SUPPORTING_OBSERVATION_V2_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_ASSESSMENT_SCALE_SUPPORTING_OBSERVATION_V2_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->

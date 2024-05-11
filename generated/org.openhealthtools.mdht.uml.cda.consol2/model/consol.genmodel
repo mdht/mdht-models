@@ -18471,10 +18471,6 @@
       </genOperations>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="consol.ecore#//GoalObsevationV2">
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//GoalObsevationV2/GoalObsevationV2TemplateId">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GoalObsevationV2/GoalObsevationV2TemplateId/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GoalObsevationV2/GoalObsevationV2TemplateId/context"/>
-      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//GoalObsevationV2/GoalObsevationV2Id">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GoalObsevationV2/GoalObsevationV2Id/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GoalObsevationV2/GoalObsevationV2Id/context"/>

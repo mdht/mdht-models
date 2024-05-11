@@ -7200,6 +7200,9 @@ public class ConsolSwitch<T> {
 				GoalObsevationV2 goalObsevationV2 = (GoalObsevationV2) theEObject;
 				T result = caseGoalObsevationV2(goalObsevationV2);
 				if (result == null) {
+					result = caseGoalObservation(goalObsevationV2);
+				}
+				if (result == null) {
 					result = caseObservation(goalObsevationV2);
 				}
 				if (result == null) {

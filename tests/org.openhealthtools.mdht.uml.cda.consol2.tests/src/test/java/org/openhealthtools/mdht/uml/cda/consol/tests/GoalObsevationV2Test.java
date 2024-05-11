@@ -26,7 +26,6 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.GoalObsevationV2Operat
  * <p>
  * The following operations are supported:
  * <ul>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GoalObsevationV2#validateGoalObsevationV2TemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Goal Obsevation V2 Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GoalObsevationV2#validateGoalObsevationV2Id(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Goal Obsevation V2 Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GoalObsevationV2#validateGoalObsevationV2Code(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Goal Obsevation V2 Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GoalObsevationV2#validateGoalObsevationV2StatusCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Goal Obsevation V2 Status Code P</em>}</li>
@@ -35,6 +34,7 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.GoalObsevationV2Operat
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GoalObsevationV2#validateGoalObsevationV2ClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Goal Obsevation V2 Class Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GoalObsevationV2#validateGoalObsevationV2MoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Goal Obsevation V2 Mood Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GoalObsevationV2#validateGoalObsevationV2Author(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Goal Obsevation V2 Author</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GoalObsevationV2#validateGoalObservationTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Goal Observation Template Id</em>}</li>
  * </ul>
  * </p>
  *
@@ -47,36 +47,36 @@ public class GoalObsevationV2Test extends CDAValidationTest {
 	*
 	* @generated
 	*/
-	@Test
-
-	public void testValidateGoalObsevationV2TemplateId() {
-		OperationsTestCase<GoalObsevationV2> validateGoalObsevationV2TemplateIdTestCase = new OperationsTestCase<GoalObsevationV2>(
-			"validateGoalObsevationV2TemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_GOAL_OBSEVATION_V2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(GoalObsevationV2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(GoalObsevationV2 target) {
-				target.init();
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return GoalObsevationV2Operations.validateGoalObsevationV2TemplateId(
-					(GoalObsevationV2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateGoalObsevationV2TemplateIdTestCase.doValidationTest();
-	}
+	// @Test
+	//
+	// public void testValidateGoalObsevationV2TemplateId() {
+	// OperationsTestCase<GoalObsevationV2> validateGoalObsevationV2TemplateIdTestCase = new OperationsTestCase<GoalObsevationV2>(
+	// "validateGoalObsevationV2TemplateId",
+	// operationsForOCL.getOCLValue("VALIDATE_GOAL_OBSEVATION_V2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+	// objectFactory) {
+	//
+	// @Override
+	// protected void updateToFail(GoalObsevationV2 target) {
+	//
+	// }
+	//
+	// @Override
+	// protected void updateToPass(GoalObsevationV2 target) {
+	// target.init();
+	//
+	// }
+	//
+	// @Override
+	// protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+	//
+	// return GoalObsevationV2Operations.validateGoalObsevationV2TemplateId(
+	// (GoalObsevationV2) objectToTest, diagnostician, map);
+	// }
+	//
+	// };
+	//
+	// validateGoalObsevationV2TemplateIdTestCase.doValidationTest();
+	// }
 
 	/**
 	*
@@ -164,7 +164,8 @@ public class GoalObsevationV2Test extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(GoalObsevationV2 target) {
-				target.init();
+				// target.init();
+
 			}
 
 			@Override
@@ -213,7 +214,7 @@ public class GoalObsevationV2Test extends CDAValidationTest {
 
 			@Override
 			protected void setDependency(GoalObsevationV2 target) {
-				Collection<Object> passToken = new java.util.ArrayList<>(3);
+				Collection<Object> passToken = new java.util.ArrayList<Object>(3);
 				passToken.add(target);
 				map.put("org.openhealthtools.mdht.uml.cda.consol.GoalObsevationV2StatusCodeP", passToken);
 			}
@@ -372,6 +373,41 @@ public class GoalObsevationV2Test extends CDAValidationTest {
 		};
 
 		validateGoalObsevationV2AuthorTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateGoalObservationTemplateId() {
+		OperationsTestCase<GoalObsevationV2> validateGoalObservationTemplateIdTestCase = new OperationsTestCase<GoalObsevationV2>(
+			"validateGoalObservationTemplateId",
+			operationsForOCL.getOCLValue("VALIDATE_GOAL_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(GoalObsevationV2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(GoalObsevationV2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return GoalObsevationV2Operations.validateGoalObservationTemplateId(
+					(GoalObsevationV2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateGoalObservationTemplateIdTestCase.doValidationTest();
 	}
 
 	/**

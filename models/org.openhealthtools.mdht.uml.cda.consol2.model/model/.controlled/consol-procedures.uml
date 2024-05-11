@@ -2620,8 +2620,8 @@ The common notion of &quot;procedure&quot; is broader than that specified by the
     </ownedAttribute>
     <ownedAttribute xmi:id="_56A9oMnLEeSr1c1X9ACWbg" name="authorParticipation" association="_56Cy0MnLEeSr1c1X9ACWbg">
       <type xmi:type="uml:Class" href="consol-other.uml#_7jqj4KrlEeOxqJAXCMXUYg"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8ZnMkMnLEeSr1c1X9ACWbg" value="1"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8ZmlgMnLEeSr1c1X9ACWbg" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5YgQwQ-YEe-vJI34HJ-pNA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5YgQwA-YEe-vJI34HJ-pNA" value="*"/>
     </ownedAttribute>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_chMe8MnKEeSr1c1X9ACWbg" name="ProcedureActPerformer">
       <ownedComment xmi:id="_f_yswMnKEeSr1c1X9ACWbg">
@@ -2765,8 +2765,8 @@ This template represents procedures that result in new information about the pat
     </ownedAttribute>
     <ownedAttribute xmi:id="_w--_gMxAEeS1kaU6ESW4Lg" name="authorParticipation" association="_w_ANoMxAEeS1kaU6ESW4Lg">
       <type xmi:type="uml:Class" href="consol-other.uml#_7jqj4KrlEeOxqJAXCMXUYg"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zgTFscxAEeS1kaU6ESW4Lg" value="1"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zgTFsMxAEeS1kaU6ESW4Lg" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-M1icQ-YEe-vJI34HJ-pNA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-M1icA-YEe-vJI34HJ-pNA" value="*"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_-wcSUMxCEeS1kaU6ESW4Lg" name="reactionObservation2" association="_-wdgcMxCEeS1kaU6ESW4Lg">
       <type xmi:type="uml:Class" href="consol-allergies.uml#_U3yosPDxEeOKPKE9au0oug"/>

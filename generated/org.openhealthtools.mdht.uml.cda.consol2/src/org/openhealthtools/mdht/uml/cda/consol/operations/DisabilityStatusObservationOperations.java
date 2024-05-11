@@ -94,7 +94,7 @@ public class DisabilityStatusObservationOperations extends ClinicalStatementOper
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_DISABILITY_STATUS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_DISABILITY_STATUS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -163,7 +163,7 @@ public class DisabilityStatusObservationOperations extends ClinicalStatementOper
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_DISABILITY_STATUS_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_DISABILITY_STATUS_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -214,7 +214,7 @@ public class DisabilityStatusObservationOperations extends ClinicalStatementOper
 					"org.openhealthtools.mdht.uml.cda.consol.DisabilityStatusObservationCodeP");
 				if (passToken == null) {
 					// anticipate a reasonably healthy model
-					passToken = new java.util.ArrayList<>(3);
+					passToken = new java.util.ArrayList<Object>(3);
 					context.put("org.openhealthtools.mdht.uml.cda.consol.DisabilityStatusObservationCodeP", passToken);
 				}
 				passToken.add(disabilityStatusObservation);
@@ -246,7 +246,7 @@ public class DisabilityStatusObservationOperations extends ClinicalStatementOper
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_DISABILITY_STATUS_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_DISABILITY_STATUS_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -322,7 +322,7 @@ public class DisabilityStatusObservationOperations extends ClinicalStatementOper
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_DISABILITY_STATUS_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_DISABILITY_STATUS_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -374,7 +374,7 @@ public class DisabilityStatusObservationOperations extends ClinicalStatementOper
 					"org.openhealthtools.mdht.uml.cda.consol.DisabilityStatusObservationStatusCodeP");
 				if (passToken == null) {
 					// anticipate a reasonably healthy model
-					passToken = new java.util.ArrayList<>(3);
+					passToken = new java.util.ArrayList<Object>(3);
 					context.put(
 						"org.openhealthtools.mdht.uml.cda.consol.DisabilityStatusObservationStatusCodeP", passToken);
 				}
@@ -406,7 +406,7 @@ public class DisabilityStatusObservationOperations extends ClinicalStatementOper
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_DISABILITY_STATUS_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_DISABILITY_STATUS_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -483,7 +483,7 @@ public class DisabilityStatusObservationOperations extends ClinicalStatementOper
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_DISABILITY_STATUS_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_DISABILITY_STATUS_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -555,7 +555,7 @@ public class DisabilityStatusObservationOperations extends ClinicalStatementOper
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_DISABILITY_STATUS_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_DISABILITY_STATUS_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -623,7 +623,7 @@ public class DisabilityStatusObservationOperations extends ClinicalStatementOper
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_DISABILITY_STATUS_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_DISABILITY_STATUS_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -691,7 +691,7 @@ public class DisabilityStatusObservationOperations extends ClinicalStatementOper
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_DISABILITY_STATUS_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_DISABILITY_STATUS_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -760,7 +760,7 @@ public class DisabilityStatusObservationOperations extends ClinicalStatementOper
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_DISABILITY_STATUS_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_DISABILITY_STATUS_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -829,7 +829,7 @@ public class DisabilityStatusObservationOperations extends ClinicalStatementOper
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_DISABILITY_STATUS_OBSERVATION_ASSESSMENT_SCALE_OBSERVATION_V2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_DISABILITY_STATUS_OBSERVATION_ASSESSMENT_SCALE_OBSERVATION_V2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -927,7 +927,7 @@ public class DisabilityStatusObservationOperations extends ClinicalStatementOper
 		@SuppressWarnings("unchecked")
 		Collection<AssessmentScaleObservationV2> result = (Collection<AssessmentScaleObservationV2>) query.evaluate(
 			disabilityStatusObservation);
-		return new BasicEList.UnmodifiableEList<>(result.size(), result.toArray());
+		return new BasicEList.UnmodifiableEList<AssessmentScaleObservationV2>(result.size(), result.toArray());
 	}
 
 } // DisabilityStatusObservationOperations

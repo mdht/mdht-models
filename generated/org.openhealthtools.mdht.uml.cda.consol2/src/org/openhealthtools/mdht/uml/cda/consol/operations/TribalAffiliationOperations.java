@@ -89,7 +89,7 @@ public class TribalAffiliationOperations extends SocialHistoryObservationV4Opera
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_TRIBAL_AFFILIATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_TRIBAL_AFFILIATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -137,7 +137,7 @@ public class TribalAffiliationOperations extends SocialHistoryObservationV4Opera
 					"org.openhealthtools.mdht.uml.cda.consol.TribalAffiliationCodeP");
 				if (passToken == null) {
 					// anticipate a reasonably healthy model
-					passToken = new java.util.ArrayList<>(3);
+					passToken = new java.util.ArrayList<Object>(3);
 					context.put("org.openhealthtools.mdht.uml.cda.consol.TribalAffiliationCodeP", passToken);
 				}
 				passToken.add(tribalAffiliation);
@@ -169,7 +169,7 @@ public class TribalAffiliationOperations extends SocialHistoryObservationV4Opera
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_TRIBAL_AFFILIATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_TRIBAL_AFFILIATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -242,7 +242,7 @@ public class TribalAffiliationOperations extends SocialHistoryObservationV4Opera
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_TRIBAL_AFFILIATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_TRIBAL_AFFILIATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -307,7 +307,7 @@ public class TribalAffiliationOperations extends SocialHistoryObservationV4Opera
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_TRIBAL_AFFILIATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_TRIBAL_AFFILIATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -373,7 +373,7 @@ public class TribalAffiliationOperations extends SocialHistoryObservationV4Opera
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_TRIBAL_AFFILIATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_TRIBAL_AFFILIATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -438,7 +438,7 @@ public class TribalAffiliationOperations extends SocialHistoryObservationV4Opera
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_TRIBAL_AFFILIATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_TRIBAL_AFFILIATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -503,7 +503,7 @@ public class TribalAffiliationOperations extends SocialHistoryObservationV4Opera
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_TRIBAL_AFFILIATION_IVLTS_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<>();
+	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_TRIBAL_AFFILIATION_IVLTS_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<Query<?, ?, ?>>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -575,7 +575,7 @@ public class TribalAffiliationOperations extends SocialHistoryObservationV4Opera
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_TRIBAL_AFFILIATION_IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<>();
+	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_TRIBAL_AFFILIATION_IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<Query<?, ?, ?>>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -647,7 +647,7 @@ public class TribalAffiliationOperations extends SocialHistoryObservationV4Opera
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_TRIBAL_AFFILIATION_IVLTS_CENTER__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<>();
+	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_TRIBAL_AFFILIATION_IVLTS_CENTER__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<Query<?, ?, ?>>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -719,7 +719,7 @@ public class TribalAffiliationOperations extends SocialHistoryObservationV4Opera
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_TRIBAL_AFFILIATION_IVLTS_WIDTH__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<>();
+	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_TRIBAL_AFFILIATION_IVLTS_WIDTH__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<Query<?, ?, ?>>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -791,7 +791,7 @@ public class TribalAffiliationOperations extends SocialHistoryObservationV4Opera
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_TRIBAL_AFFILIATION_IVLTS_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<>();
+	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_TRIBAL_AFFILIATION_IVLTS_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<Query<?, ?, ?>>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -863,7 +863,7 @@ public class TribalAffiliationOperations extends SocialHistoryObservationV4Opera
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_SOCIAL_HISTORY_OBSERVATION_V4_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_SOCIAL_HISTORY_OBSERVATION_V4_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->

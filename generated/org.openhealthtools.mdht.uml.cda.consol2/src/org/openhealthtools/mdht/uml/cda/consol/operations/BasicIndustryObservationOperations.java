@@ -81,7 +81,7 @@ public class BasicIndustryObservationOperations extends SocialHistoryObservation
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_BASIC_INDUSTRY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_BASIC_INDUSTRY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -201,7 +201,7 @@ public class BasicIndustryObservationOperations extends SocialHistoryObservation
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_BASIC_INDUSTRY_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_BASIC_INDUSTRY_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * The cached OCL expression body for the '{@link #validateBasicIndustryObservationStatusCode(BasicIndustryObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Basic Industry Observation Status Code</em>}' operation.
@@ -223,7 +223,7 @@ public class BasicIndustryObservationOperations extends SocialHistoryObservation
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_BASIC_INDUSTRY_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_BASIC_INDUSTRY_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -273,7 +273,7 @@ public class BasicIndustryObservationOperations extends SocialHistoryObservation
 					"org.openhealthtools.mdht.uml.cda.consol.BasicIndustryObservationStatusCodeP");
 				if (passToken == null) {
 					// anticipate a reasonably healthy model
-					passToken = new java.util.ArrayList<>(3);
+					passToken = new java.util.ArrayList<Object>(3);
 					context.put(
 						"org.openhealthtools.mdht.uml.cda.consol.BasicIndustryObservationStatusCodeP", passToken);
 				}
@@ -306,7 +306,7 @@ public class BasicIndustryObservationOperations extends SocialHistoryObservation
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_BASIC_INDUSTRY_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_BASIC_INDUSTRY_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -372,7 +372,7 @@ public class BasicIndustryObservationOperations extends SocialHistoryObservation
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_BASIC_INDUSTRY_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_BASIC_INDUSTRY_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -439,7 +439,7 @@ public class BasicIndustryObservationOperations extends SocialHistoryObservation
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_BASIC_INDUSTRY_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_BASIC_INDUSTRY_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -506,7 +506,7 @@ public class BasicIndustryObservationOperations extends SocialHistoryObservation
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_BASIC_INDUSTRY_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_BASIC_INDUSTRY_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -573,7 +573,7 @@ public class BasicIndustryObservationOperations extends SocialHistoryObservation
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_SOCIAL_HISTORY_OBSERVATION_V4_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_SOCIAL_HISTORY_OBSERVATION_V4_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->

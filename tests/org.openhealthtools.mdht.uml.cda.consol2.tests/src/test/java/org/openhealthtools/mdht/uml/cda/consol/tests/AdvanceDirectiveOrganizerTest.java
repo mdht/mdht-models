@@ -322,7 +322,7 @@ public class AdvanceDirectiveOrganizerTest extends CDAValidationTest {
 
 			@Override
 			protected void setDependency(AdvanceDirectiveOrganizer target) {
-				Collection<Object> passToken = new java.util.ArrayList<>(3);
+				Collection<Object> passToken = new java.util.ArrayList<Object>(3);
 				passToken.add(target);
 				map.put("org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveOrganizerStatusCodeP", passToken);
 			}

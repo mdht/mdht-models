@@ -82,7 +82,7 @@ public class SectionTimeRangeObservationOperations extends ClinicalStatementOper
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_SECTION_TIME_RANGE_OBSERVATION_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_SECTION_TIME_RANGE_OBSERVATION_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -156,7 +156,7 @@ public class SectionTimeRangeObservationOperations extends ClinicalStatementOper
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_SECTION_TIME_RANGE_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_SECTION_TIME_RANGE_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -238,7 +238,7 @@ public class SectionTimeRangeObservationOperations extends ClinicalStatementOper
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_SECTION_TIME_RANGE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_SECTION_TIME_RANGE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -306,7 +306,7 @@ public class SectionTimeRangeObservationOperations extends ClinicalStatementOper
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_SECTION_TIME_RANGE_OBSERVATION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_SECTION_TIME_RANGE_OBSERVATION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -375,7 +375,7 @@ public class SectionTimeRangeObservationOperations extends ClinicalStatementOper
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_SECTION_TIME_RANGE_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_SECTION_TIME_RANGE_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -444,7 +444,7 @@ public class SectionTimeRangeObservationOperations extends ClinicalStatementOper
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_SECTION_TIME_RANGE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_SECTION_TIME_RANGE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -512,7 +512,7 @@ public class SectionTimeRangeObservationOperations extends ClinicalStatementOper
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_SECTION_TIME_RANGE_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_SECTION_TIME_RANGE_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -581,7 +581,7 @@ public class SectionTimeRangeObservationOperations extends ClinicalStatementOper
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_SECTION_TIME_RANGE_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_SECTION_TIME_RANGE_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -650,7 +650,7 @@ public class SectionTimeRangeObservationOperations extends ClinicalStatementOper
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_SECTION_TIME_RANGE_OBSERVATION_IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<>();
+	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_SECTION_TIME_RANGE_OBSERVATION_IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<Query<?, ?, ?>>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -724,7 +724,7 @@ public class SectionTimeRangeObservationOperations extends ClinicalStatementOper
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_SECTION_TIME_RANGE_OBSERVATION_IVLTS_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<>();
+	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_SECTION_TIME_RANGE_OBSERVATION_IVLTS_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<Query<?, ?, ?>>();
 
 	/**
 	 * <!-- begin-user-doc -->

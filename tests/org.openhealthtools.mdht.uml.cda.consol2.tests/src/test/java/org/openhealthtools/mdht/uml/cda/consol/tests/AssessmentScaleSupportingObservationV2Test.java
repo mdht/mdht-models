@@ -218,7 +218,7 @@ public class AssessmentScaleSupportingObservationV2Test extends CDAValidationTes
 
 			@Override
 			protected void setDependency(AssessmentScaleSupportingObservationV2 target) {
-				Collection<Object> passToken = new java.util.ArrayList<>(3);
+				Collection<Object> passToken = new java.util.ArrayList<Object>(3);
 				passToken.add(target);
 				map.put(
 					"org.openhealthtools.mdht.uml.cda.consol.AssessmentScaleSupportingObservationV2StatusCodeP",
@@ -338,7 +338,7 @@ public class AssessmentScaleSupportingObservationV2Test extends CDAValidationTes
 
 			@Override
 			protected void setDependency(AssessmentScaleSupportingObservationV2 target) {
-				Collection<Object> passToken = new java.util.ArrayList<>(3);
+				Collection<Object> passToken = new java.util.ArrayList<Object>(3);
 				passToken.add(target);
 				map.put(
 					"org.openhealthtools.mdht.uml.cda.consol.AssessmentScaleSupportingObservationV2CodeP", passToken);

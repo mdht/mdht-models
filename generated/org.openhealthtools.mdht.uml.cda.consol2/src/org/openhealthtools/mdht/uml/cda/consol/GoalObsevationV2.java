@@ -10,8 +10,6 @@ import org.eclipse.emf.ecore.EObject;
 
 import org.eclipse.mdht.emf.runtime.util.Initializer;
 
-import org.eclipse.mdht.uml.cda.Observation;
-
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Goal Obsevation V2</b></em>'.
@@ -19,10 +17,11 @@ import org.eclipse.mdht.uml.cda.Observation;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getGoalObsevationV2()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='GoalObsevationV2TemplateId GoalObsevationV2Id GoalObsevationV2Code GoalObsevationV2StatusCode GoalObsevationV2StatusCodeP GoalObsevationV2ClassCode GoalObsevationV2MoodCode' templateId.root='2.16.840.1.113883.10.20.22.4.121' templateId.extension='2022-06-01' constraints.validation.dependOn.GoalObsevationV2StatusCode='GoalObsevationV2StatusCodeP' constraints.validation.info='GoalObsevationV2Value' classCode='OBS' moodCode='GOL' constraints.validation.warning='GoalObsevationV2Author'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='GoalObservationTemplateId GoalObsevationV2Id GoalObsevationV2Code GoalObsevationV2StatusCode GoalObsevationV2StatusCodeP GoalObsevationV2ClassCode GoalObsevationV2MoodCode' templateId.root='2.16.840.1.113883.10.20.22.4.121' templateId.extension='2022-06-01' constraints.validation.dependOn.GoalObsevationV2StatusCode='GoalObsevationV2StatusCodeP' constraints.validation.info='GoalObsevationV2Value' classCode='OBS' moodCode='GOL' constraints.validation.warning='GoalObsevationV2Author'"
+ *        annotation="duplicates"
  * @generated
  */
-public interface GoalObsevationV2 extends Observation {
+public interface GoalObsevationV2 extends GoalObservation {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -30,19 +29,7 @@ public interface GoalObsevationV2 extends Observation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId-&gt;exists(id : datatypes::II | id.root = \'2.16.840.1.113883.10.20.22.4.121\' and id.extension = \'2022-06-01\')'"
-	 * @generated
-	 */
-	boolean validateGoalObsevationV2TemplateId(DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.id-&gt;isEmpty() or self.id-&gt;exists(element | element.isNullFlavorUndefined())) implies (not self.id-&gt;isEmpty())'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.id-&gt;isEmpty() or self.id-&gt;exists(element | element.isNullFlavorUndefined())) implies (( not self.id-&gt;isEmpty()) )'"
 	 * @generated
 	 */
 	boolean validateGoalObsevationV2Id(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -90,7 +77,7 @@ public interface GoalObsevationV2 extends Observation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.value-&gt;isEmpty() or self.value-&gt;exists(element | element.isNullFlavorUndefined())) implies (not self.value-&gt;isEmpty())'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.value-&gt;isEmpty() or self.value-&gt;exists(element | element.isNullFlavorUndefined())) implies (( not self.value-&gt;isEmpty()) )'"
 	 * @generated
 	 */
 	boolean validateGoalObsevationV2Value(DiagnosticChain diagnostics, Map<Object, Object> context);

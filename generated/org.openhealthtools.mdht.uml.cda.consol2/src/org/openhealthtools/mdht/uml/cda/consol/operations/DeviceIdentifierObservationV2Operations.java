@@ -81,7 +81,7 @@ public class DeviceIdentifierObservationV2Operations extends ClinicalStatementOp
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_DEVICE_IDENTIFIER_OBSERVATION_V2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_DEVICE_IDENTIFIER_OBSERVATION_V2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -151,7 +151,7 @@ public class DeviceIdentifierObservationV2Operations extends ClinicalStatementOp
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_DEVICE_IDENTIFIER_OBSERVATION_V2_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_DEVICE_IDENTIFIER_OBSERVATION_V2_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -203,7 +203,7 @@ public class DeviceIdentifierObservationV2Operations extends ClinicalStatementOp
 					"org.openhealthtools.mdht.uml.cda.consol.DeviceIdentifierObservationV2CodeP");
 				if (passToken == null) {
 					// anticipate a reasonably healthy model
-					passToken = new java.util.ArrayList<>(3);
+					passToken = new java.util.ArrayList<Object>(3);
 					context.put(
 						"org.openhealthtools.mdht.uml.cda.consol.DeviceIdentifierObservationV2CodeP", passToken);
 				}
@@ -236,7 +236,7 @@ public class DeviceIdentifierObservationV2Operations extends ClinicalStatementOp
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_DEVICE_IDENTIFIER_OBSERVATION_V2_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_DEVICE_IDENTIFIER_OBSERVATION_V2_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -314,7 +314,7 @@ public class DeviceIdentifierObservationV2Operations extends ClinicalStatementOp
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_DEVICE_IDENTIFIER_OBSERVATION_V2_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_DEVICE_IDENTIFIER_OBSERVATION_V2_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -384,7 +384,7 @@ public class DeviceIdentifierObservationV2Operations extends ClinicalStatementOp
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_DEVICE_IDENTIFIER_OBSERVATION_V2IIUD_IISSUINGAGENCY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_DEVICE_IDENTIFIER_OBSERVATION_V2IIUD_IISSUINGAGENCY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -459,7 +459,7 @@ public class DeviceIdentifierObservationV2Operations extends ClinicalStatementOp
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_DEVICE_IDENTIFIER_OBSERVATION_V2II_ROOT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<>();
+	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_DEVICE_IDENTIFIER_OBSERVATION_V2II_ROOT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<Query<?, ?, ?>>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -533,7 +533,7 @@ public class DeviceIdentifierObservationV2Operations extends ClinicalStatementOp
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_DEVICE_IDENTIFIER_OBSERVATION_V2II_EXTENSION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<>();
+	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_DEVICE_IDENTIFIER_OBSERVATION_V2II_EXTENSION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<Query<?, ?, ?>>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -608,7 +608,7 @@ public class DeviceIdentifierObservationV2Operations extends ClinicalStatementOp
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_DEVICE_IDENTIFIER_OBSERVATION_V2II_DISPLAYABLE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<>();
+	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_DEVICE_IDENTIFIER_OBSERVATION_V2II_DISPLAYABLE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<Query<?, ?, ?>>();
 
 	/**
 	 * <!-- begin-user-doc -->

@@ -91,7 +91,7 @@ public class SexualOrientationObservationOperations extends SocialHistoryObserva
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_SEXUAL_ORIENTATION_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_SEXUAL_ORIENTATION_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -143,7 +143,7 @@ public class SexualOrientationObservationOperations extends SocialHistoryObserva
 					"org.openhealthtools.mdht.uml.cda.consol.SexualOrientationObservationCodeP");
 				if (passToken == null) {
 					// anticipate a reasonably healthy model
-					passToken = new java.util.ArrayList<>(3);
+					passToken = new java.util.ArrayList<Object>(3);
 					context.put("org.openhealthtools.mdht.uml.cda.consol.SexualOrientationObservationCodeP", passToken);
 				}
 				passToken.add(sexualOrientationObservation);
@@ -175,7 +175,7 @@ public class SexualOrientationObservationOperations extends SocialHistoryObserva
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_SEXUAL_ORIENTATION_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_SEXUAL_ORIENTATION_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -252,7 +252,7 @@ public class SexualOrientationObservationOperations extends SocialHistoryObserva
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_SEXUAL_ORIENTATION_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_SEXUAL_ORIENTATION_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -305,7 +305,7 @@ public class SexualOrientationObservationOperations extends SocialHistoryObserva
 					"org.openhealthtools.mdht.uml.cda.consol.SexualOrientationObservationStatusCodeP");
 				if (passToken == null) {
 					// anticipate a reasonably healthy model
-					passToken = new java.util.ArrayList<>(3);
+					passToken = new java.util.ArrayList<Object>(3);
 					context.put(
 						"org.openhealthtools.mdht.uml.cda.consol.SexualOrientationObservationStatusCodeP", passToken);
 				}
@@ -337,7 +337,7 @@ public class SexualOrientationObservationOperations extends SocialHistoryObserva
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_SEXUAL_ORIENTATION_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_SEXUAL_ORIENTATION_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -415,7 +415,7 @@ public class SexualOrientationObservationOperations extends SocialHistoryObserva
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_SEXUAL_ORIENTATION_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_SEXUAL_ORIENTATION_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -487,7 +487,7 @@ public class SexualOrientationObservationOperations extends SocialHistoryObserva
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_SEXUAL_ORIENTATION_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_SEXUAL_ORIENTATION_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -556,7 +556,7 @@ public class SexualOrientationObservationOperations extends SocialHistoryObserva
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_SEXUAL_ORIENTATION_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_SEXUAL_ORIENTATION_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -625,7 +625,7 @@ public class SexualOrientationObservationOperations extends SocialHistoryObserva
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_SEXUAL_ORIENTATION_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_SEXUAL_ORIENTATION_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -694,7 +694,7 @@ public class SexualOrientationObservationOperations extends SocialHistoryObserva
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_SEXUAL_ORIENTATION_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_SEXUAL_ORIENTATION_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -763,7 +763,7 @@ public class SexualOrientationObservationOperations extends SocialHistoryObserva
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_SEXUAL_ORIENTATION_OBSERVATION_IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<>();
+	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_SEXUAL_ORIENTATION_OBSERVATION_IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<Query<?, ?, ?>>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -837,7 +837,7 @@ public class SexualOrientationObservationOperations extends SocialHistoryObserva
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_SEXUAL_ORIENTATION_OBSERVATION_IVLTS_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<>();
+	protected static ThreadLocal<Query<?, ?, ?>> VALIDATE_SEXUAL_ORIENTATION_OBSERVATION_IVLTS_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = new ThreadLocal<Query<?, ?, ?>>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -911,7 +911,7 @@ public class SexualOrientationObservationOperations extends SocialHistoryObserva
 	 * @ordered
 	 */
 
-	protected static ThreadLocal<Constraint> VALIDATE_SOCIAL_HISTORY_OBSERVATION_V4_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<>();
+	protected static ThreadLocal<Constraint> VALIDATE_SOCIAL_HISTORY_OBSERVATION_V4_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->

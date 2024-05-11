@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Continuity of Care Document (CCD) (V3) IGpg115 -->
+<ClinicalDocument xmlns="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+     <realmCode code="US"/>
+     <typeId root="2.16.840.1.113883.1.3" extension="POCD_HD000040"/>
+     <templateId root="2.16.840.1.113883.10.20.22.1.1"/>
+     <templateId root="2.16.840.1.113883.10.20.22.1.1" extension="2015-08-01"/>
+     <templateId root="2.16.840.1.113883.10.20.22.1.1" extension="2023-05-01"/>
+     <templateId root="2.16.840.1.113883.10.20.22.1.2"/>
+     <templateId root="2.16.840.1.113883.10.20.22.1.2" extension="2015-08-01"/>
+     <id root="2.13.129.19201.1231"/>
+     <code code="34133-9" displayName="Summarization of Episode Note" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+     <title>Continuity of Care Document</title>
+     <effectiveTime value="202404191500-0400"/>
+     <confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25"/>
+     <languageCode code="en"/>
+     <recordTarget>
+          <patientRole>
+               <!-- Patient Identifiers-->
+               <id extension="C0-B20210517152848815" root="2.13.129.19201.1231.2.1.1"/>
+               <id extension="a444a4b9-1131-5387-981f-78025feacd61" root="2.13.129.19201.1231.2.1.3"/>
+               <!-- Patient Address -->
+               <addr use="H">
+                    <streetAddressLine>1402 Dariy Dr</streetAddressLine>
+                    <city>BEAVERTON</city>
+                    <state>OR</state>
+                    <postalCode>97006</postalCode>
+                    <country>USA</country>
+                    <useablePeriod xsi:type="IVL_TS">
+                         <low nullFlavor="UNK"/>
+                         <high value="20210517"/>
+                    </useablePeriod>
+               </addr>
+               <addr use="HP">
+                    <streetAddressLine>1357 Amber Dr</streetAddressLine>
+                    <city>BEAVERTON</city>
+                    <state>OR</state>
+                    <postalCode>97006</postalCode>
+                    <country>USA</country>
+                    <useablePeriod xsi:type="IVL_TS">
+                         <low value="20210517"/>
+                         <high nullFlavor="NA"/>
+                    </useablePeriod>
+               </addr>
+               <!-- Patient Telephone/Contact Details -->
+               <telecom use="MC" value="tel:+1(555)777-1234"/>
+               <telecom use="HP" value="tel:+1(555)723-1544"/>
+               <telecom value="mailto:happykid@gmail.com"/>
+               <patient>
+                    <!-- Patient Name -->
+                    <name use="L">
+                         <family>Kid</family>
+                         <given>Happy</given>
+                         <given>Always</given>
+                    </name>
+                    <!-- Administrative Gender -->
+                    <administrativeGenderCode code="F" displayName="Female" codeSystemName="AdministrativeGender" codeSystem="2.16.840.1.113883.5.1"/>
+                    <!-- Birthdate -->
+                    <birthTime value="20180601"/>
+                    <!-- Deceased Indicator -->
+                    <sdtc:deceasedInd value="false"/>
+                    <!-- Marital Status -->
+                    <maritalStatusCode nullFlavor="UNK"/>
+                    <!-- Religious Affiliation -->
+                    <religiousAffiliationCode nullFlavor="UNK"/>
+                    <!-- Patient Race -->
+                    <raceCode code="2106-3" displayName="White" codeSystemName="Race and Ethnicity - CDC" codeSystem="2.16.840.1.113883.6.238"/>
+                    <!-- Additional Race -->
+                    <sdtc:raceCode code="2108-9" displayName="European" codeSystemName="Race and Ethnicity - CDC" codeSystem="2.16.840.1.113883.6.238"/>
+                    <!-- Patient Ethnicity -->
+                    <ethnicGroupCode code="2186-5" displayName="Not Hispanic or Latino" codeSystemName="Race and Ethnicity - CDC" codeSystem="2.16.840.1.113883.6.238"/>
+                    <!-- Detailed Ethnicity -->
+                    <sdtc:ethnicGroupCode nullFlavor="UNK"/>
+                    <!-- Place of birth -->
+                    <birthplace>
+                         <place>
+                              <addr>
+                                   <streetAddressLine nullFlavor="UNK"/>
+                                   <city nullFlavor="UNK"/>
+                                   <state nullFlavor="UNK"/>
+                                   <postalCode nullFlavor="UNK"/>
+                              </addr>
+                         </place>
+                    </birthplace>
+                    <languageCommunication>
+                         <languageCode code="en"/>
+                         <!-- "Patient's preferred language" -->
+                         <preferenceInd value="true"/>
+                    </languageCommunication>
+               </patient>
+               <!-- Provider Organization -->
+               <providerOrganization>
+                    <id nullFlavor="UNK"/>
+                    <name nullFlavor="UNK"/>
+                    <telecom nullFlavor="UNK"/>
+                    <addr>
+                         <streetAddressLine nullFlavor="UNK"/>
+                         <city nullFlavor="UNK"/>
+                         <state nullFlavor="UNK"/>
+                         <postalCode nullFlavor="UNK"/>
+                    </addr>
+               </providerOrganization>
+          </patientRole>
+     </recordTarget>
+     <!-- The author element represents the creator of the clinical document. The author may be a device or a person. CDA R2 requires thatauthor and author timestamp be asserted in the document header. From there, authorship propagates to contained sections and containedentries, unless explicitly overridden.-->
+     <author>
+          <time value="20240425091734-0400"/>
+          <assignedAuthor>
+               <id root="2.13.129.19201.1231"/>
+               <addr use="WP">
+                    <streetAddressLine>2472 Rocky Place</streetAddressLine>
+                    <city>Beaverton</city>
+                    <state>OR</state>
+                    <postalCode>97006</postalCode>
+                    <country>US</country>
+               </addr>
+               <telecom use="WP" value="tel:+1(555)888-1234"/>
+               <assignedAuthoringDevice>
+                    <manufacturerModelName>CERT22XN.US</manufacturerModelName>
+                    <softwareName>CERT22N</softwareName>
+               </assignedAuthoringDevice>
+               <representedOrganization>
+                    <id root="2.13.129.19201.1231"/>
+                    <name>Neighborhood Physicians Practice</name>
+                    <telecom use="WP" value="tel:+1(555)888-1234"/>
+                    <addr use="WP">
+                         <streetAddressLine>2472 Rocky Place</streetAddressLine>
+                         <city>Beaverton</city>
+                         <state>OR</state>
+                         <postalCode>97006</postalCode>
+                         <country>US</country>
+                    </addr>
+               </representedOrganization>
+          </assignedAuthor>
+     </author>
+     <!-- The custodian element represents the organization that is in charge of maintaining and is entrusted withthe care of the document. -->
+     <custodian>
+          <assignedCustodian>
+               <representedCustodianOrganization>
+                    <id root="2.13.129.19201.1231"/>
+                    <name>Neighborhood Physicians Practi</name>
+                    <telecom use="WP" value="tel:+1(555)888-1234"/>
+                    <addr use="WP">
+                         <streetAddressLine>2472 Rocky Place</streetAddressLine>
+                         <city>Beaverton</city>
+                         <state>OR</state>
+                         <postalCode>97006</postalCode>
+                         <country>US</country>
+                    </addr>
+               </representedCustodianOrganization>
+          </assignedCustodian>
+     </custodian>
+     <!-- The participant represents supporting entities -->
+     <participant typeCode="IND">
+          <associatedEntity classCode="PRS">
+               <code nullFlavor="NA">
+                    <originalText>Father</originalText>
+               </code>
+               <addr>
+                    <streetAddressLine>1357 Amber Drive</streetAddressLine>
+                    <city>BEAVERTON</city>
+                    <state>OR</state>
+                    <postalCode>97006</postalCode>
+               </addr>
+               <telecom value="tel:+1(555)777-1234"/>
+               <associatedPerson>
+                    <name>
+                         <family>Newman</family>
+                         <given>Matthew</given>
+                    </name>
+               </associatedPerson>
+          </associatedEntity>
+     </participant>
+     <!-- The participant represents supporting entities -->
+     <participant typeCode="IND">
+          <!-- Indicates the start and end date of the relationship between the contact and the patient. -->
+          <time>
+               <low value="20200622"/>
+          </time>
+          <associatedEntity classCode="PRS">
+               <code nullFlavor="NA">
+                    <originalText>Nurse</originalText>
+               </code>
+               <addr>
+                    <streetAddressLine>2472 Rocky Place</streetAddressLine>
+                    <city>BEAVERTON</city>
+                    <state>OR</state>
+                    <postalCode>97006</postalCode>
+               </addr>
+               <telecom value="tel:+1(555)555-1002"/>
+               <associatedPerson>
+                    <name>
+                         <family>Davis</family>
+                         <given>Tracy</given>
+                    </name>
+               </associatedPerson>
+          </associatedEntity>
+     </participant>
+     <documentationOf>
+          <serviceEvent classCode="PCPR">
+               <!-- The effectiveTime reflects the provision of care summarized in the document. -->
+               <effectiveTime>
+                    <low value="202006221400-0400"/>
+                    <high value="202404250916-0400"/>
+               </effectiveTime>
+               <performer typeCode="PRF">
+                    <functionCode code="ATTPHYS" displayName="Attending Provider" codeSystemName="ParticipationFunction" codeSystem="2.16.840.1.113883.5.88">
+                         <originalText>Attending Provider</originalText>
+                    </functionCode>
+                    <!-- Indicates the start and end date of the relationship between the contact and the patient. -->
+                    <time>
+                         <low value="20200601"/>
+                    </time>
+                    <assignedEntity>
+                         <id nullFlavor="UNK"/>
+                         <code nullFlavor="NA"/>
+                         <addr>
+                              <streetAddressLine>2472 Rocky Place</streetAddressLine>
+                              <city>BEAVERTON</city>
+                              <state>OR</state>
+                              <postalCode>97006</postalCode>
+                         </addr>
+                         <telecom use="WP" value="tel:+1(555)555-1002"/>
+                         <assignedPerson>
+                              <name>
+                                   <family>Davis</family>
+                                   <given>Albert</given>
+                              </name>
+                         </assignedPerson>
+                         <representedOrganization>
+                              <id nullFlavor="UNK"/>
+                              <addr>
+                                   <streetAddressLine nullFlavor="UNK"/>
+                                   <city nullFlavor="UNK"/>
+                                   <state nullFlavor="UNK"/>
+                                   <postalCode nullFlavor="UNK"/>
+                              </addr>
+                         </representedOrganization>
+                    </assignedEntity>
+               </performer>
+          </serviceEvent>
+     </documentationOf>
+     <component>
+          <structuredBody>
+               <!-- Goals Section IGpg301 -->
+               <component>
+                    <section>
+                         <templateId root="2.16.840.1.113883.10.20.22.2.60"/>
+                         <code code="61146-7" displayName="Goals" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                         <title>Goals</title>
+                         <text>
+                              <table>
+                                   <thead>
+                                        <tr>
+                                             <th>Acute Goals</th>
+                                             <th>Author</th>
+                                             <th>Authored Date</th>
+                                        </tr>
+                                   </thead>
+                                   <tbody>
+                                        <tr>
+                                             <td ID="goal-ac1">"a. Get rid of intermittent fever that is occurring every few weeks.<br/>b. Need to gain more energy to do regular activities"</td>
+                                             <td>MEREDITH MD<br/>Community Health Hospitals</td>
+                                             <td>May 26th, 2021 10:31am</td>
+                                        </tr>
+                                   </tbody>
+                              </table>
+                              <br/>
+                         </text>
+                         <!-- Goal Observation IGpg515 -->
+                         <entry>
+                              <observation classCode="OBS" moodCode="GOL">
+                              
+                                   <templateId root="2.16.840.1.113883.10.20.22.4.121" extension="2022-06-01"/>
+                                    <templateId root="2.16.840.1.113883.10.20.22.4.121"/>
+                                   <id root="7f5274d3-bc5f-49ff-867d-ade73eb307d5"/>
+                                   <code nullFlavor="UNK">
+                                        <originalText>
+                                             <reference value="#goals-ac1"/>
+                                        </originalText>
+                                   </code>
+                                   <statusCode code="active"/>
+                                   <author>
+                                        <templateId root="2.16.840.1.113883.10.20.22.4.119"/>
+                                        <time nullFlavor="UNK"/>
+                                        <assignedAuthor>
+                                             <id nullFlavor="UNK"/>
+                                        </assignedAuthor>
+                                   </author>
+                              </observation>
+                         </entry>
+                    </section>
+               </component>
+          </structuredBody>
+     </component>
+</ClinicalDocument>

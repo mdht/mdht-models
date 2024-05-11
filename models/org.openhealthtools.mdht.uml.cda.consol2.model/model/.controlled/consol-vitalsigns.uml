@@ -217,7 +217,7 @@
     <ruleId>CONF:7300</ruleId>
     <ruleId>R2.0=CONF:1098-7300</ruleId>
   </CDA:PropertyValidation>
-  <CDA:ValueSetConstraint xmi:id="_2OrhuxSVEeGGzu7fmW9pXw" base_Property="_2OrhuBSVEeGGzu7fmW9pXw" severity="WARNING">
+  <CDA:ValueSetConstraint xmi:id="_2OrhuxSVEeGGzu7fmW9pXw" base_Property="_2OrhuBSVEeGGzu7fmW9pXw" uri="consol-vocab::HITSP Vital Sign Result Type" severity="WARNING">
     <reference href="../consol-vocab.uml#_2O3u9BSVEeGGzu7fmW9pXw"/>
     <ruleId>CONF:7301</ruleId>
     <ruleId>R2.0=CONF:1098-7301</ruleId>
@@ -695,7 +695,7 @@ Vital signs are represented in the same way as other results, but are aggregated
     <ruleId>CONF:1098-7307</ruleId>
   </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_nkHIoM9CEeSJsu9BbhWxmQ" base_Property="_eEbiIM9CEeSJsu9BbhWxmQ">
-    <reference href="pathmap://CONSOL_MODEL/consol-vocab.uml#_LEfp8JrZEea9R7VeOazsfg"/>
+    <reference href="../consol-vocab.uml#_LEfp8JrZEea9R7VeOazsfg"/>
     <ruleId>CONF:1098-32886</ruleId>
     <ruleId>DSTU:1220</ruleId>
     <ruleId>DSTU:814</ruleId>

@@ -3548,7 +3548,7 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_oMRKIO5sEeyzELqFfLgO9w" name="GoalObsevationV2">
       <generalization xmi:id="_oMRKIe5sEeyzELqFfLgO9w">
-        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL///cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
+        <general xmi:type="uml:Class" href=".controlled/consol-planofcare.uml#_-miMII9TEeOB0eBUISUB4Q"/>
       </generalization>
       <ownedAttribute xmi:id="_MzGkIO5tEeyzELqFfLgO9w" name="id" visibility="private" aggregation="composite">
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
@@ -6592,7 +6592,7 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
   <CDA:PropertyValidation xmi:id="_N5GHkO6IEeyzELqFfLgO9w" base_Property="_BDxa8e6IEeyzELqFfLgO9w">
     <ruleId>4515-9042</ruleId>
   </CDA:PropertyValidation>
-  <CDA:ValueSetConstraint xmi:id="_dxnfcO6IEeyzELqFfLgO9w" base_Property="_BDwz6u6IEeyzELqFfLgO9w" uri="consol-vocab::Problem">
+  <CDA:ValueSetConstraint xmi:id="_dxnfcO6IEeyzELqFfLgO9w" base_Property="_BDwz6u6IEeyzELqFfLgO9w" uri="consol-vocab::Problem" severity="WARNING">
     <reference href="pathmap://CONSOL_MODEL///consol-vocab.uml#_2SVSkRSVEeGGzu7fmW9pXw"/>
     <ruleId>4515-9058</ruleId>
   </CDA:ValueSetConstraint>
