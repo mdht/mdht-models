@@ -897,15 +897,15 @@ Value Set Source: http://www.hl7.org&#xD;
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_MTK-YOJsEeG3cO7ebC3QuA" name="HealthStatus">
       <ownedLiteral xmi:id="_TMveQOJsEeG3cO7ebC3QuA" name="81323004"/>
-      <ownedLiteral xmi:id="_U4AtQOJsEeG3cO7ebC3QuA" name="313386006"/>
       <ownedLiteral xmi:id="_YOruIOJsEeG3cO7ebC3QuA" name="162467007"/>
-      <ownedLiteral xmi:id="_aYmoAOJsEeG3cO7ebC3QuA" name="161901003"/>
       <ownedLiteral xmi:id="_bwOiQOJsEeG3cO7ebC3QuA" name="271593001"/>
-      <ownedLiteral xmi:id="_eIRXsOJsEeG3cO7ebC3QuA" name="21134002"/>
-      <ownedLiteral xmi:id="_gxSBUOJsEeG3cO7ebC3QuA" name="161045001"/>
       <ownedLiteral xmi:id="_HrA_8MEnEeSjB6vMjDsL5Q" name="419099009"/>
       <ownedLiteral xmi:id="_M_3kwMEnEeSjB6vMjDsL5Q" name="135818000"/>
       <ownedLiteral xmi:id="_Q5vZUMEnEeSjB6vMjDsL5Q" name="135815002"/>
+      <ownedLiteral xmi:id="_7GnyACG4Ee-9h8ncyxVnIg" name="21134002"/>
+      <ownedLiteral xmi:id="_F4c84CG5Ee-9h8ncyxVnIg" name="27624003"/>
+      <ownedLiteral xmi:id="_PM-cQCG5Ee-9h8ncyxVnIg" name="765205004"/>
+      <ownedLiteral xmi:id="_YKdUoCG5Ee-9h8ncyxVnIg" name="161045001"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_EA1dEOWTEeGKmvzED_He2w" name="Tobacco Use"/>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_bgiMQOWUEeGKmvzED_He2w" name="Smoking Status">
@@ -2298,13 +2298,9 @@ Used to enumerate the relationships between two clinical documents for document 
   <term:ValueSetVersion xmi:id="_MTK-YeJsEeG3cO7ebC3QuA" identifier="2.16.840.1.113883.1.11.20.12" definition="Represents the general health status of the patient." binding="Dynamic" base_Enumeration="_MTK-YOJsEeG3cO7ebC3QuA">
     <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
-  <term:ValueSetCode xmi:id="_TMveQeJsEeG3cO7ebC3QuA" conceptName="Alive and well" base_EnumerationLiteral="_TMveQOJsEeG3cO7ebC3QuA"/>
-  <term:ValueSetCode xmi:id="_U4AtQeJsEeG3cO7ebC3QuA" conceptName="In remission" base_EnumerationLiteral="_U4AtQOJsEeG3cO7ebC3QuA"/>
-  <term:ValueSetCode xmi:id="_YOruIeJsEeG3cO7ebC3QuA" conceptName="Symptom free" base_EnumerationLiteral="_YOruIOJsEeG3cO7ebC3QuA"/>
-  <term:ValueSetCode xmi:id="_aYmoAeJsEeG3cO7ebC3QuA" conceptName="Chronically ill" base_EnumerationLiteral="_aYmoAOJsEeG3cO7ebC3QuA"/>
-  <term:ValueSetCode xmi:id="_bwOiQeJsEeG3cO7ebC3QuA" conceptName="Severely ill" base_EnumerationLiteral="_bwOiQOJsEeG3cO7ebC3QuA"/>
-  <term:ValueSetCode xmi:id="_eIRXseJsEeG3cO7ebC3QuA" conceptName="Disabled" base_EnumerationLiteral="_eIRXsOJsEeG3cO7ebC3QuA"/>
-  <term:ValueSetCode xmi:id="_gxSBUeJsEeG3cO7ebC3QuA" conceptName="Severely disabled" base_EnumerationLiteral="_gxSBUOJsEeG3cO7ebC3QuA"/>
+  <term:ValueSetCode xmi:id="_TMveQeJsEeG3cO7ebC3QuA" conceptName="Normal general body function (finding)" base_EnumerationLiteral="_TMveQOJsEeG3cO7ebC3QuA"/>
+  <term:ValueSetCode xmi:id="_YOruIeJsEeG3cO7ebC3QuA" conceptName="Free of Symptoms (situation)" base_EnumerationLiteral="_YOruIOJsEeG3cO7ebC3QuA"/>
+  <term:ValueSetCode xmi:id="_bwOiQeJsEeG3cO7ebC3QuA" conceptName="Moribund (finding)" base_EnumerationLiteral="_bwOiQOJsEeG3cO7ebC3QuA"/>
   <term:ValueSetVersion xmi:id="_EA1dEeWTEeGKmvzED_He2w" identifier="2.16.840.1.113883.11.20.9.41" url="http://vtsl.vetmed.vt.edu/TerminologyMgt/RF2Browser/ISA.cfm?SCT_ConceptID=365980008" definition="Contains all values descending from the SNOMED CT?? 365980008 tobacco use and exposure - finding hierarchy&#xD;&#xA;http://www.nlm.nih.gov/research/umls/Snomed/snomed_main.html" binding="Dynamic" base_Enumeration="_EA1dEOWTEeGKmvzED_He2w">
     <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
@@ -3148,9 +3144,9 @@ Used to enumerate the relationships between two clinical documents for document 
   <term:ValueSetVersion xmi:id="_3uYZkKZKEeSy2PrVxD6riw" identifier="2.16.840.1.113883.11.20.9.65" version="2014-05-15" source="Value Set Source: http://www.search.loinc.org" definition="Additional section types that may be used under the Physical Examination section." base_Enumeration="_3uXygKZKEeSy2PrVxD6riw">
     <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
-  <term:ValueSetCode xmi:id="_HrA_8cEnEeSjB6vMjDsL5Q" conceptName="Deceased" base_EnumerationLiteral="_HrA_8MEnEeSjB6vMjDsL5Q"/>
-  <term:ValueSetCode xmi:id="_M_4L0MEnEeSjB6vMjDsL5Q" conceptName="General health poor" base_EnumerationLiteral="_M_3kwMEnEeSjB6vMjDsL5Q"/>
-  <term:ValueSetCode xmi:id="_Q5vZUcEnEeSjB6vMjDsL5Q" conceptName="General health good" base_EnumerationLiteral="_Q5vZUMEnEeSjB6vMjDsL5Q"/>
+  <term:ValueSetCode xmi:id="_HrA_8cEnEeSjB6vMjDsL5Q" conceptName="Dead (finding)" base_EnumerationLiteral="_HrA_8MEnEeSjB6vMjDsL5Q"/>
+  <term:ValueSetCode xmi:id="_M_4L0MEnEeSjB6vMjDsL5Q" conceptName="General health poor (finding)" base_EnumerationLiteral="_M_3kwMEnEeSjB6vMjDsL5Q"/>
+  <term:ValueSetCode xmi:id="_Q5vZUcEnEeSjB6vMjDsL5Q" conceptName="General health good (finding)" base_EnumerationLiteral="_Q5vZUMEnEeSjB6vMjDsL5Q"/>
   <term:ValueSetVersion xmi:id="_eCHOYMKTEeSqg-Exmsy2kg" identifier="2.16.840.1.113762.1.4.1010.8" url="https://vsac.nlm.nih.gov/" definition="Administrable vaccine medication formulations represented using  either a &quot;generic&quot; or &quot;brand-specific&quot; concept. &#xA;Value set intensionally defined from RXNORM (OID: 2.16.840.1.113883.6.88), comprised of those codes whose ingredients map to NDC codes that the CDC associates with CVX codes." binding="Dynamic" base_Enumeration="_eCGnUMKTEeSqg-Exmsy2kg">
     <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_dSLxoaDqEd-dVeaMP0XXQw"/>
   </term:ValueSetVersion>
@@ -3578,4 +3574,8 @@ Used to enumerate the relationships between two clinical documents for document 
   <term:CodeSystemVersion xmi:id="_oKQNgWwwEe66V-uSC1tAAg" identifier="2.16.840.1.114222.4.5.327" base_Enumeration="_oKQNgGwwEe66V-uSC1tAAg"/>
   <term:CodeSystemVersion xmi:id="_AQ8bEHQQEe66V-uSC1tAAg" identifier="2.16.840.1.113883.5.140" base_Enumeration="_AQ70AHQQEe66V-uSC1tAAg"/>
   <term:CodeSystemVersion xmi:id="_EnjaAIZbEe6kLbgWmgMY1g" identifier="2.16.840.1.113883.6.90" fullName="ICD10" base_Enumeration="_Eniy8IZbEe6kLbgWmgMY1g"/>
+  <term:ValueSetCode xmi:id="_7GrcYCG4Ee-9h8ncyxVnIg" conceptName="Disability (finding)" base_EnumerationLiteral="_7GnyACG4Ee-9h8ncyxVnIg"/>
+  <term:ValueSetCode xmi:id="_F4c84SG5Ee-9h8ncyxVnIg" conceptName="Chronic disease (disorder)" base_EnumerationLiteral="_F4c84CG5Ee-9h8ncyxVnIg"/>
+  <term:ValueSetCode xmi:id="_PM_DUCG5Ee-9h8ncyxVnIg" conceptName="Disorder in remission (disorder)" base_EnumerationLiteral="_PM-cQCG5Ee-9h8ncyxVnIg"/>
+  <term:ValueSetCode xmi:id="_YKdUoSG5Ee-9h8ncyxVnIg" conceptName="Disability - severe (finding)" base_EnumerationLiteral="_YKdUoCG5Ee-9h8ncyxVnIg"/>
 </xmi:XMI>

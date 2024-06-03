@@ -684,7 +684,7 @@ public class HealthStatusObservationOperations extends ClinicalStatementOperatio
 	 */
 	protected static final String VALIDATE_HEALTH_STATUS_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and " +
 			"let value : datatypes::CD = element.oclAsType(datatypes::CD) in " +
-			"value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '81323004' or value.code = '313386006' or value.code = '162467007' or value.code = '161901003' or value.code = '271593001' or value.code = '21134002' or value.code = '161045001' or value.code = '419099009' or value.code = '135818000' or value.code = '135815002')))";
+			"value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '81323004' or value.code = '162467007' or value.code = '271593001' or value.code = '419099009' or value.code = '135818000' or value.code = '135815002' or value.code = '21134002' or value.code = '27624003' or value.code = '765205004' or value.code = '161045001')))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateHealthStatusObservationValue(HealthStatusObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Health Status Observation Value</em>}' invariant operation.
