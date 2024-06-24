@@ -3415,7 +3415,7 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
         <redefinedProperty href="pathmap://CDA_MODEL///cda.uml#_BLZhcEo_Ed6c3qsAxlFHaQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_AtKbIPDgEeyzELqFfLgO9w" name="value" visibility="private" aggregation="composite">
-        <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+        <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#__I8BwDxZEd6JwqSGecoePg"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_C8eyYfDgEeyzELqFfLgO9w" value="1"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_C8eyYPDgEeyzELqFfLgO9w" value="1"/>
         <subsettedProperty href="pathmap://CDA_MODEL///cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
