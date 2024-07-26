@@ -40,7 +40,7 @@
       <ownedLiteral xmi:id="_2HnQVBSVEeGGzu7fmW9pXw" name="aborted"/>
       <ownedLiteral xmi:id="_2HnQVRSVEeGGzu7fmW9pXw" name="completed"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_2H150BSVEeGGzu7fmW9pXw" name="Medication Route FDA Value Set"/>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_2H150BSVEeGGzu7fmW9pXw" name="SPL Drug Route of Administration Terminology"/>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_2H3H8RSVEeGGzu7fmW9pXw" name="Body Site"/>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_2H49IBSVEeGGzu7fmW9pXw" name="Medication Product Form Value Set">
       <ownedLiteral xmi:id="_iqQsQRMsEeK4go_VqYg1Bw" name="C42887"/>
@@ -3535,7 +3535,7 @@ Used to enumerate the relationships between two clinical documents for document 
   <term:ValueSetCode xmi:id="_8ifHgQPEEe2tgO6cHznuZA" conceptName="Homosexual (finding)" base_EnumerationLiteral="_8ifHgAPEEe2tgO6cHznuZA"/>
   <term:ValueSetCode xmi:id="_ArF7oQPFEe2tgO6cHznuZA" conceptName="Bisexual (finding)" usageNote="Bisexual (finding)" base_EnumerationLiteral="_ArF7oAPFEe2tgO6cHznuZA"/>
   <term:ValueSetCode xmi:id="_CjK3kQPFEe2tgO6cHznuZA" conceptName="Sexually attracted to neither male nor female sex (finding)" usageNote="Sexually attracted to neither male nor female sex (finding)" base_EnumerationLiteral="_CjK3kAPFEe2tgO6cHznuZA"/>
-  <term:ValueSetVersion xmi:id="_UeD4sCI2Ee2zx5mIhiR9ow" identifier="2.16.840.1.113762.1.4.1099.2" fullName="Extended Pregnancy Status Value Set" url="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1099.24" binding="Dynamic" base_Enumeration="_UeA1YCI2Ee2zx5mIhiR9ow">
+  <term:ValueSetVersion xmi:id="_UeD4sCI2Ee2zx5mIhiR9ow" identifier="2.16.840.1.113762.1.4.1099.24" fullName="Extended Pregnancy Status Value Set" url="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1099.24" binding="Dynamic" base_Enumeration="_UeA1YCI2Ee2zx5mIhiR9ow">
     <codeSystem href="pathmap://TERM_MODEL///CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
   <term:ValueSetCode xmi:id="_djsAcCI2Ee2zx5mIhiR9ow" conceptName="Possible pregnancy (finding)" base_EnumerationLiteral="_djrZYCI2Ee2zx5mIhiR9ow"/>
