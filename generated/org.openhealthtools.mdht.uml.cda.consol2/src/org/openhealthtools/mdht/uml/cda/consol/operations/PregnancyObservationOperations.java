@@ -498,7 +498,8 @@ public class PregnancyObservationOperations extends ClinicalStatementOperations 
 	 */
 	protected static final String VALIDATE_PREGNANCY_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and " +
 			"let value : datatypes::CD = element.oclAsType(datatypes::CD) in " +
-			"value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '102874004' or value.code = '60001007' or value.code = '77386006')))";
+			"value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '146799005" +
+			"146799005' or value.code = '60001007' or value.code = '77386006')))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePregnancyObservationValue(PregnancyObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pregnancy Observation Value</em>}' invariant operation.
