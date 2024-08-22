@@ -1862,7 +1862,7 @@ Used to enumerate the relationships between two clinical documents for document 
       <ownedLiteral xmi:id="_CjK3kAPFEe2tgO6cHznuZA" name="765288000"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_UeA1YCI2Ee2zx5mIhiR9ow" name="ExtendedPregnancyStatusValueSet">
-      <ownedLiteral xmi:id="_djrZYCI2Ee2zx5mIhiR9ow" name="102874004"/>
+      <ownedLiteral xmi:id="_djrZYCI2Ee2zx5mIhiR9ow" name="146799005&#xA;146799005"/>
       <ownedLiteral xmi:id="_kCeBwCI2Ee2zx5mIhiR9ow" name="60001007"/>
       <ownedLiteral xmi:id="_mxsBECI2Ee2zx5mIhiR9ow" name="77386006"/>
     </packagedElement>
@@ -3538,7 +3538,7 @@ Used to enumerate the relationships between two clinical documents for document 
   <term:ValueSetVersion xmi:id="_UeD4sCI2Ee2zx5mIhiR9ow" identifier="2.16.840.1.113762.1.4.1099.24" fullName="Extended Pregnancy Status Value Set" url="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1099.24" binding="Dynamic" base_Enumeration="_UeA1YCI2Ee2zx5mIhiR9ow">
     <codeSystem href="pathmap://TERM_MODEL///CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
-  <term:ValueSetCode xmi:id="_djsAcCI2Ee2zx5mIhiR9ow" conceptName="Possible pregnancy (finding)" base_EnumerationLiteral="_djrZYCI2Ee2zx5mIhiR9ow"/>
+  <term:ValueSetCode xmi:id="_djsAcCI2Ee2zx5mIhiR9ow" conceptName="Possible pregnancy (situation)" base_EnumerationLiteral="_djrZYCI2Ee2zx5mIhiR9ow"/>
   <term:ValueSetCode xmi:id="_kCeBwSI2Ee2zx5mIhiR9ow" conceptName="Not pregnant (finding)" base_EnumerationLiteral="_kCeBwCI2Ee2zx5mIhiR9ow"/>
   <term:ValueSetCode xmi:id="_mxsoICI2Ee2zx5mIhiR9ow" conceptName="Pregnancy (finding)" base_EnumerationLiteral="_mxsBECI2Ee2zx5mIhiR9ow"/>
   <term:ValueSetVersion xmi:id="_8sfKoWbOEe6ibMoBz2vFZw" base_Enumeration="_8sfKoGbOEe6ibMoBz2vFZw">
