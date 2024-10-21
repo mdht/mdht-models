@@ -1862,7 +1862,7 @@ Used to enumerate the relationships between two clinical documents for document 
       <ownedLiteral xmi:id="_CjK3kAPFEe2tgO6cHznuZA" name="765288000"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_UeA1YCI2Ee2zx5mIhiR9ow" name="ExtendedPregnancyStatusValueSet">
-      <ownedLiteral xmi:id="_djrZYCI2Ee2zx5mIhiR9ow" name="146799005&#xA;146799005"/>
+      <ownedLiteral xmi:id="_djrZYCI2Ee2zx5mIhiR9ow" name="146799005"/>
       <ownedLiteral xmi:id="_kCeBwCI2Ee2zx5mIhiR9ow" name="60001007"/>
       <ownedLiteral xmi:id="_mxsBECI2Ee2zx5mIhiR9ow" name="77386006"/>
     </packagedElement>
