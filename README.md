@@ -1,3 +1,9 @@
+# I *ARCHIVED 1/1/2025
+This respository has been combined with based MDHT repository 
+Releases will be available here 
+https://gitlab.eclipse.org/eclipse/mdht/modeling.mdht.git
+ 
+
 # Welcome to the Model Driven Health Tools Model Repository
 On this site you will find all the MDHT projects supporting the various CDA based implementation guides including Consolidated CDA
 
